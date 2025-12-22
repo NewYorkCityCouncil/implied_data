@@ -1,0 +1,17 @@
+Using the entire text file above, I would like you to identify what data the agency would need to fulfill their legal requirements. The text gives information on the programs and various responsibilities the agency has. I want you to parse out what information they need to actually accomplish it. 
+
+How to think about what counts as a dataset: 
+ - Don’t include information that is likely not maintained in a tabular format, for example: job applications, rules and regulations, receipts, etc. Give a separate list of this type of information at the end. Data I am looking for will be information that is tabular, regularly created or maintained by an agency, and records a measurement, transaction, or determination related to the mission of an agency. Even if they are required to be kept, photos, research documents, and other text or image information should not be included as data for this case. 
+
+ - Don’t duplicate datasets. Combine datasets as best as possible, by workflow, program, department, or measurement type. Potential signs that a dataset can be combined with another are: 
+ 	- If a dataset already exists containing measurements on the same objects. For example, building type can be a column in the larger dataset describing all buildings, rather than a separate dataset indicating building type. 
+ 	- If the information is the same type as another dataset. For example, inspections for mold and inspections for lead cold be unified as a single dataset for all inspections, with a column indicating inspection type. 
+	 - If all the information in a potential dataset is contained within other datasets that could be connected. In this case the dataset does not need to exist itself, as it can be created by merging other datasets. 
+	- Datasets should NOT be combined on a topic basis, but rather should be combined on a measurement basis or an item basis. A dataset tracking meals delivered to seniors and a dataset tracking the number of tomato plants ordered, while both related to food, are related to very different programs. Prioritize separating by information flow within the organization. For example, inspections and maintenance are both activities performed on the same objects, but are likely managed by different teams and need different information. Because of the operational flow, these two should be tracked separately, but reference the same object IDs in order to maintain the option of combining. 
+
+
+ - Datasets should always be at the measurement level, not aggregated. If the charter says an agency must report average processing times, the agency is still storing information on the processing time at the case level. I want the incident/event level data they would use to calculate averages. 
+
+ - Make sure datasets are framed in the way the agency would interact with the data, by workflow and department. Measurements, transactions, and determinations related to the same program or purpose should be combined wherever possible.
+
+ - Remember agencies need to manage and run their operations. Infer operational datasets implied by the text, e.g. they may need to track all the signs they post, or computers they maintain, or MRI machines and their status, etc. 

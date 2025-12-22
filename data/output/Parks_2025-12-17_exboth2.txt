@@ -1,0 +1,1144 @@
+**Section 1, Mission Summary:**
+The Department of Parks and Recreation is responsible for the management, care, and improvement of all public parks, squares, playgrounds, and recreational facilities within the city, promoting their use for public recreation, ornamental purposes, conservation, and environmental education. The agency provides and maintains vital public spaces and recreational opportunities, enhancing the health, welfare, cultural development, and quality of life for all city residents.
+
+**Section 2, Data Summary:**
+
+1.  Park Property Inventory
+2.  Tree Inventory
+3.  Park Maintenance & Inspection Log
+4.  Violation & Enforcement Action Log
+5.  Capital Project Log
+6.  Special Event & Demonstration Permits
+7.  Recreation Activity Permits
+8.  Marina & Mooring Permits
+9.  Vessel & Mooring Maintenance Log
+10. Reported Accident & Hazardous Condition Log
+11. Public Restroom Inventory
+12. Swimming Pool Inventory
+13. Beach Water Quality Monitoring
+14. Recreation Center Memberships
+15. Urban Park Ranger Program Registrations
+16. Tree Removal Permits & Replacements
+17. Tree-Related Incident & Pruning Log
+18. Seized & Impounded Vehicle Log
+19. Adopt-A-Park Sponsorships
+20. Donated Property & Funds Tracking
+21. Compost Facility Operations Log
+22. Wildfire Incident Log
+23. Bollard Installation Log
+24. Diaper Changing Station Implementation Log
+25. Swimming & Water Safety Program Enrollments
+26. Recreation Facility Accessibility Assessment
+27. Street Tree Maintenance and Sidewalk Repair Requests
+28. Playground Pesticide Exposure Cleaning Log
+29. School Playground Access Report Data
+30. Indoor Basketball Court Access Information
+31. GreenThumb Garden Registrations & Licenses
+
+**Section 3, Data Details:**
+
+**Dataset 1: Park Property Inventory**
+
+**Quotes:**
+- "to manage and care for all parks, squares and public places, the sidewalks immediately adjoining the same and all playgrounds, playground fixtures and other recreation properties, except those within the jurisdiction of the board of education or other agencies" (§ 533.a.1)
+- "to maintain the beauty and utility of all parks, squares, public places, playgrounds and other recreational properties, except those within the jurisdiction of the board of education and to institute and execute all measures for the improvement thereof for ornamental purposes and for the beneficial uses of the people of the city" (§ 533.a.3)
+- "to have the management, direction and control of all real or personal property granted, devised, bequeathed or conveyed to the city for the extension, improvement or ornamentation of the parks, squares or public places in the city or for the establishment or maintenance, within the limits of any such park, square or public place, of playgrounds, other recreational properties and other facilities within the department's jurisdiction" (§ 533.a.8)
+- "The term "park" means a park under the jurisdiction of the department." (§ 18-166.a)
+- "The term “playground” means any premises or grounds of a public school or other facility owned or operated by or on behalf of the department of education or by a charter school that contains any device, structure, or implement, fixed or portable, used or intended to be used by persons under the age of 18 for recreational or athletic purposes, including, but not limited to, a sliding board, swing, jungle gym, sandbox, climbing bar, wading pool, obstacle course, swimming pool, seesaw, baseball diamond, athletic field, or basketball court." (§ 18-167.a)
+
+**Why:** Essential for managing, maintaining, and reporting on all real properties under the department's jurisdiction.
+
+**One row represents:** A distinct piece of real property (park, square, playground, public place, etc.) under the department's jurisdiction.
+
+**Columns:**
+- Property ID (Unique Identifier)
+- Property Name
+- Property Type (e.g., Park, Square, Playground, Public Place, Beach, Recreation Center)
+- Borough
+- Community District
+- Address/Location Description
+- Total Acreage
+- Functional Acreage (if applicable)
+- Coordinates (Latitude, Longitude)
+- Date Acquired
+- Jurisdiction (e.g., Department, co-managed with other entity)
+- Historical Significance Flag
+- Conservation/Environmental Designation (e.g., wildlife refuge, nature center)
+
+**Dataset 2: Tree Inventory**
+
+**Quotes:**
+- "to plant and maintain trees" (§ 533.a.4)
+- "The planting, care and cultivation of all trees and other forms of vegetation in streets shall be under the exclusive jurisdiction of the commissioner" (§ 18-104)
+- "All trees in streets, which on investigation are found to be without ownership, shall be under the exclusive care and cultivation of the commissioner" (§ 18-105)
+- "All plantings conducted by the department after May 1, 2014, shall conform to the stormwater retention planting manual." (§ 18-140.c)
+- "All plantings conducted by the department after May 1, 2014, shall conform to the design manual promulgated or drafted pursuant to this section." (§ 18-141.c)
+- "The term “urban forest” means all the trees contained within New York city, whether or not they are under the jurisdiction of the commissioner or on property owned by the city." (§ 18-164.a)
+
+**Why:** Crucial for managing and maintaining the city's urban forest and street trees.
+
+**One row represents:** A single tree under the department's jurisdiction.
+
+**Columns:**
+- Tree ID
+- Species (Common Name, Scientific Name)
+- Location Type (e.g., Street, Park, Playground, Plaza)
+- **Property ID** (Dataset 1)
+- Address/Specific Location Details
+- Planting Date (estimated if unknown)
+- Initial Caliper Inch
+- Current Caliper Inch
+- Street Tree Flag (Yes/No)
+- Stormwater Retentive Planting (Yes/No)
+- Native Species (Yes/No)
+- Obstruction Status (e.g., traffic signal, building contact)
+- Ownership Status (if not agency-owned)
+- Historical Specimen Flag
+- Estimated Lifespan
+
+**Dataset 3: Park Maintenance & Inspection Log**
+
+**Quotes:**
+- "to manage and care for all parks, squares and public places... to maintain the beauty and utility" (§ 533.a.1, § 533.a.3)
+- "The department shall inspect any location within four days of receiving notice that any traffic control signal, select traffic control device or traffic control device at such location is not visible or legible to a motorist who must obey or rely upon such sign due to an obstruction by a tree, bush or other vegetation or any portion thereof." (§ 18-105.1.b)
+- "The department shall within ten days of the inspection required pursuant to subdivision b of this section prune or cause to be pruned any tree, bush or other vegetation found to require pruning because it obstructs any select traffic control device or traffic control signal; provided that the department shall prioritize such pruning the department determines is most immediately needed to correct a hazard." (§ 18-105.1.c)
+- "The department shall within twenty days of the inspection required pursuant to subdivision b of this section prune or cause to be pruned any tree, bush or other vegetation found to require pruning because it obstructs any traffic control device." (§ 18-105.1.d)
+- "The commissioner shall have charge of the care and maintenance thereof and shall prominently post each beach as having "polluted waters not recommended for bathing" as periodically determined by the commissioner of health." (§ 18-108)
+- "The commissioner shall post the dates and results of departmental inspections of property under the jurisdiction of the department on its official website within seven days of the completion of the inspection cycle in which such inspection was made" (§ 18-131.d)
+- "The department shall develop standards for grading park features through an inspection program conducted independently from agency maintenance staff. In determining a grade for a park feature, the standards shall consider whether the condition of any park feature is suitable for the intended state of such park feature. Upon the conclusion of an inspection, a grade of acceptable or unacceptable for the relevant park features shall be issued." (§ 18-158.b)
+- "By December 31, 2022 and every six months thereafter, the department shall submit a report to the mayor and the council regarding park features under the jurisdiction of the department that were found to receive an unacceptable rating three or more times during a six month period" (§ 18-158.c)
+- "Within 24 hours of the spraying of any pesticide by or on behalf of a city agency, the department shall clean all park playground equipment located less than the minimum distance from such spraying, as set forth in rule by the department of health and mental hygiene, at which such equipment will not be exposed to such pesticide." (§ 18-148.1.b)
+- "The term "fixed-post maintenance staff" means department maintenance staff who are assigned to perform maintenance work at a specific property under the jurisdiction of the commissioner." (§ 18-144.a)
+- "The term "mobile maintenance crew staff" means department maintenance staff who are not assigned to work out of a specific property under the jurisdiction of the commissioner, but travel to different properties to perform maintenance work." (§ 18-144.a)
+- "On or before December 1 of each year, the commissioner shall, for the immediately preceding fiscal year, submit a report to the mayor and the council on the maintenance work performed by department staff at each property under the jurisdiction of the commissioner." (§ 18-144.b)
+
+**Why:** Tracks all maintenance and inspection activities across park properties, ensuring upkeep and public safety.
+
+**One row represents:** A single maintenance action or inspection event for a park feature or property.
+
+**Columns:**
+- Maintenance/Inspection ID
+- Date of Activity
+- **Property ID** (Dataset 1)
+- Feature Type (e.g., Lawn, Playground Equipment, Path, Restroom, Fence)
+- Description of Issue/Activity
+- Inspector/Staff ID
+- Staff Type (Fixed-post, Mobile Crew)
+- Work-hours Expended
+- Cost of Materials
+- Inspection Result (e.g., Pass, Fail, Acceptable, Unacceptable)
+- Follow-up Action Required (Yes/No)
+- Date Follow-up Action Completed
+- Pesticide Exposure Cleaning (Yes/No)
+- Source of Request (e.g., Scheduled, Complaint, Emergency, Internal)
+
+**Dataset 4: Violation & Enforcement Action Log**
+
+**Quotes:**
+- "Any violation of such rules or regulations shall be an offense punishable by imprisonment of up to one day or by a fine of not more than 200 dollars. Any violation of such rules or regulations shall also subject the violator to a civil penalty of not more than 300 dollars for each violation" (§ 533.a.9.i)
+- "violation of such rules and regulations shall be punishable by a civil penalty of not more than five hundred dollars for each violation, which may be recovered in a proceeding before the environmental control board." (§ 533.a.9-a, 9-b, 9-c)
+- "Any individual, firm, corporation, agent, employee or person under the control of such individual, firm or corporation violating the provisions of subdivision a of this section concerning a tree shall be liable to arrest and upon conviction thereof shall be deemed guilty of a misdemeanor and shall be punished by a fine of not more than fifteen thousand dollars or by imprisonment of not more than one year or by both such fine and imprisonment for each such violation." (§ 18-129.b)
+- "Any violation of these rules shall subject the respondent to a civil penalty which may be recovered in a proceeding before the Office of Administrative Trials and Hearings" (§ 1-07.a)
+- "Violation of this paragraph constitutes a misdemeanor." (Multiple throughout § 1-03, § 1-04, § 1-05)
+- "the ballfield permit holder of any league that violates the provisions of subdivisions b or e shall receive a warning for a first violation, and shall be liable for a civil penalty of $500 for each subsequent violation" (§ 18-150.i.1)
+- "The ballfield permit holder of any league that violates the provisions of subdivision c shall be liable for a civil penalty of no more than $2,500 for each automated external defibrillator that is not returned in satisfactory condition to the department" (§ 18-150.i.2)
+- "The Dockmaster may order the removal of a pet from a Marina where the owner or other person in charge or control of the pet has failed or refused to prevent the pet from harassing or harming other persons, or has failed or refused repeatedly to remove, clear or clean feces or vomit deposited by the pet on the walkways or docks." (§ 3-18.c)
+
+**Why:** Essential for tracking all violations of park rules and regulations, ensuring compliance and enforcement actions.
+
+**One row represents:** A single violation incident or enforcement action.
+
+**Columns:**
+- Violation ID
+- Incident Date & Time
+- **Property ID** (Dataset 1)
+- Location Details
+- Violation Type (e.g., Littering, Unleashed Dog, Unlawful Vending, Tree Damage, Pollution, Unpermitted Event)
+- Offense Code/Rule Section
+- Violator ID (if identified)
+- Violator Type (Individual, Organization, League)
+- Enforcement Officer ID
+- Enforcement Agency (e.g., Parks Enforcement, NYPD)
+- Action Taken (e.g., Warning, Notice of Violation, Arrest, Seizure)
+- Penalty Imposed (Fine Amount, Imprisonment Term)
+- Civil Penalty Amount
+- Payment Status (e.g., Paid, Outstanding)
+- Adjudication Status (e.g., Pending, Liable, Not Liable)
+- Date of Adjudication
+- Appeal Status (if applicable)
+- Subsequent Violation Flag (Yes/No)
+
+**Dataset 5: Capital Project Log**
+
+**Quotes:**
+- "within the amounts appropriated therefor, enter into contracts for the rendition or operation of services and facilities for the mentally disabled on a per capita basis or otherwise" (§ 556.d.9)
+- "within the amounts appropriated therefor, execute such programs and maintain such facilities for the mentally disabled as may be authorized under such appropriations" (§ 556.d.10)
+- "For each capital project, under the jurisdiction of the department for which certain data is posted on the public online capital projects database pursuant to section 5-108, the department shall post on the website of the department, the status of each such capital project." (§ 18-145.a)
+- "The total amount of funds allocated to such project or, when applicable, a range of the funds available" (§ 18-145.a.2)
+- "The identification of each separate source of funding allocated to such project" (§ 18-145.a.3)
+- "A description of such project" (§ 18-145.a.4)
+- "The location of such project, specified by borough and community district" (§ 18-145.a.5)
+- "A description of any phase of such capital project that is delayed and the reason for such delay" (§ 18-145.a.7)
+- "A description of any projected or actual cost overrun for each phase of such project." (§ 18-145.a.8)
+- "The department shall also post on its website the total number of capital projects that were completed during the most recent fiscal year, the average amount of time taken to complete such projects" (§ 18-145.b)
+- "notification of such change order by facsimile, regular mail, electronic mail or by personal delivery to each council member, if any, who allocated funds for such capital project" (§ 18-153)
+- "The Department shall charge for bid documents requested in relation to a capital project procurement" (§ 2-09.e)
+- "Before construction work on a covered capital project commences, the department shall determine the lead level of soil within the area of such covered capital project." (§ 18-156.b)
+
+**Why:** Manages the planning, execution, and oversight of all capital projects, including financial tracking and status updates.
+
+**One row represents:** A single phase of a capital project.
+
+**Columns:**
+- Capital Project ID
+- Project Name
+- Project Description
+- **Property ID** (Dataset 1)
+- Borough
+- Community District
+- Project Phase (e.g., Design, Construction, Completion)
+- Estimated Start Date
+- Actual Start Date
+- Estimated Completion Date
+- Actual Completion Date
+- Allocated Funds
+- Funding Source (e.g., City, State, Federal, Council Member, Private)
+- Actual Cost
+- Cost Overrun (Yes/No)
+- Cost Overrun Amount
+- Delay (Yes/No)
+- Reason for Delay
+- Change Order ID (if applicable)
+- Change Order Value
+- Council Member Notified (Yes/No)
+- Lead Testing Required (Yes/No)
+- Lead Level (if tested)
+- Remediation Required (Yes/No)
+- Remediation Status
+- Bid Document Fee Charged (Yes/No)
+- Bid Document Fee Amount
+
+**Dataset 6: Special Event & Demonstration Permits**
+
+**Quotes:**
+- "No person shall hold or sponsor any event that significantly interferes with ordinary park use without a permit issued by the Department." (§ 1-05.a.1)
+- "No person shall hold or sponsor any special event or demonstration without a permit issued by the Department." (§ 1-05.a.2)
+- "Applications for special event permits must be received at least twenty-one days prior to the requested date for the special event." (§ 2-08.b.1)
+- "Applications for demonstration permits must be received at least five days prior to the requested date for the demonstration." (§ 2-08.b.2)
+- "The Commissioner may establish specific guidelines for certain designated parks or park locations." (§ 2-08.j)
+- "The granting of a permit does not give the permittee the right to sell or offer for sale any articles, tickets, or refreshments within or adjacent to any park area. To do this requires a separate Temporary Use Authorization issued by the Department." (§ 2-08.l)
+- "Permittees must confine their activities to the locations and times specified on their permit." (§ 2-08.j)
+- "Permit applications must indicate whether electrical energy is required for the event. Permittees shall be responsible for the procurement of and payment for any electrical energy used during the event." (§ 2-08.o)
+- "Permittees are responsible for cleaning and restoring the site after the event." (§ 2-08.p)
+- "Permittees shall be held liable for any and all damages or injuries to persons or property that may occur or be caused by the use of the permit." (§ 2-08.q)
+- "Should there be any injuries, accidents, or other health incidents at an event, permittee must notify the Department immediately by calling the Department's hotline, 1-800-201-PARK." (§ 2-08.r)
+- "In any calendar year there will be a maximum of seven permits granted for large events on the Great Lawn." (§ 2-08.t.1)
+- "Attendance at large events may not exceed 60,000 persons." (§ 2-08.t.3)
+- "Applications for special event and demonstration permits for events to take place on the Great Lawn in Central Park must be received no less than two (2) or more than nine (9) months before the date of the proposed event." (§ 2-08.b.7)
+- "A Multi-Day FMCP Event, subject to these provisions, may only be held in the Historic Core Area." (§ 2-08.w.4.A)
+- "In any calendar year, there will be a maximum of two permits granted for Multi-Day FMCP Events" (§ 2-08.w.4.B)
+- "A permit granted for a Multi-Day FMCP Event may be modified or cancelled if the New York Mets (or any successor MLB team) has a regular-season game re-scheduled to occur during the time for which such permit was granted, or if the New York Mets (or any successor MLB team) has a post-season game that is scheduled to occur during the time for which such permit was granted in the event the Commissioner determines that that such multi-day event cannot safely take place during such MLB event." (§ 2-08.w.4.D)
+
+**Why:** Tracks all authorized special events and demonstrations, including application details, conditions, and outcomes, to manage public spaces.
+
+**One row represents:** A single special event or demonstration permit.
+
+**Columns:**
+- Permit ID
+- Application Date
+- Applicant Name/Organization
+- Event Type (Special Event, Demonstration)
+- Event Name
+- Proposed Start Date & Time
+- Proposed End Date & Time
+- Location Requested (e.g., Great Lawn, FMCP Historic Core Area)
+- **Property ID** (Dataset 1)
+- Expected Attendance
+- Electrical Energy Required (Yes/No)
+- Electrical Energy Payment Status
+- Site Cleaning/Restoration Status
+- Damage Occurred (Yes/No)
+- Damage Cost
+- Liability Insurance Required (Yes/No)
+- Liability Insurance Provided (Yes/No)
+- Bond Required (Yes/No)
+- Bond Posted (Yes/No)
+- Permit Status (e.g., Approved, Denied, Revoked, Cancelled)
+- Reason for Denial/Revocation/Cancellation
+- Alternative Location/Time Offered (Yes/No)
+- Appeal Status (e.g., Pending, Upheld, Reversed)
+- Concession Fee Applied (Yes/No)
+- Concession Fee Amount
+- Vending Authorized (Yes/No)
+- Vehicle Permit Issued (Yes/No)
+- Multi-Day Event (Yes/No)
+- Large Event (Yes/No, for Great Lawn)
+- Historic Core Area Event (Yes/No, for FMCP)
+- MLB Game Conflict (Yes/No, for FMCP events)
+- Advertisement placed before permit approval (Yes/No)
+
+**Dataset 7: Recreation Activity Permits**
+
+**Quotes:**
+- "Each tennis player must have a valid tennis permit to play on outdoor tennis courts" (§ 2-01)
+- "Seasonal tennis permits are issued on an annual basis, and may be used for unlimited play during the tennis season for which they were issued in one-hour increments for singles play and two-hour increments for doubles play." (§ 2-01.a.2)
+- "A single-play tennis permit may be used during the tennis season in which it was purchased to play tennis for one hour on tennis courts under the jurisdiction of the Department." (§ 2-01.a.5)
+- "Each player must be the holder of a permit." (§ 2-02.a, § 2-03.a)
+- "Season Locker Permits are strictly personal and not transferable." (§ 2-04.a)
+- "A permit allows a permittee and his or her guests to use the City's access facilities for a kayak or canoe." (§ 2-06.a)
+- "Any person who wishes to reserve a ballfield or court of any size under the jurisdiction or management of the Department for basketball, handball, baseball, softball, cricket, roller hockey, volleyball, football, lacrosse, rugby, ultimate frisbee, soccer, or any other ballfield or court sport must obtain a written permit from the Department." (§ 2-12.b.1)
+
+**Why:** Manages access and use of various recreational facilities and activities.
+
+**One row represents:** A single permit for a recreational activity.
+
+**Columns:**
+- Permit ID
+- Permit Type (e.g., Seasonal Tennis, Single-Play Tennis, Croquet, Lawn Bowling, Locker, Model Yacht Storage, Kayak/Canoe Launch, Ballfield/Court Game, Ballfield/Court Practice)
+- Applicant ID (linking to a Staff/Resident/Organization dataset)
+- Applicant Type (Individual, Youth League, Adult League, School League, Organization)
+- Activity Type (e.g., Tennis, Croquet, Soccer, Kayaking)
+- Start Date
+- End Date
+- Facility/Court Name
+- **Property ID** (Dataset 1)
+- Number of Hours Permitted
+- Fee Charged
+- Fee Paid (Yes/No)
+- Payment Date
+- Permit Status (e.g., Active, Expired, Revoked, Transferred)
+- Transfer Flag (Yes/No)
+- Insurance Required (Yes/No)
+- Insurance Provided (Yes/No)
+- Clean-up Bond Required (Yes/No)
+- Clean-up Bond Posted (Yes/No)
+
+**Dataset 8: Marina & Mooring Permits**
+
+**Quotes:**
+- "These rules apply to the permissible use of the marinas operated by the Department, including but not limited to the West 79th Street Boat Basin... Sheepshead Bay Piers... World's Fair Marina" (§ 3-01)
+- "These rules apply to the permissible use of mooring fields in Sheepshead Bay, Great Kills Harbor and adjacent to the West 79th Street Boat Basin" (§ 4-01)
+- "No person shall dock, store or launch a Vessel at a Marina without an appropriate Permit from the Department and without payment of all required fees." (§ 3-06.a)
+- "All recreational Vessels must be personally owned and such ownership reflected on registration or U.S. Coast Guard documentation." (§ 3-06.c)
+- "Dockage permits shall not be issued unless the applicant presents evidence of hull and liability insurance, either New York State registration or documentation by the U.S. Coast Guard and successful completion of a U.S. Coast Guard boating safety course or sufficient nautical experience" (§ 3-06.g)
+- "A Permit shall be issued to the named Permittee for a particular Vessel and is not transferable." (§ 3-06.h)
+- "The Supervisory Dockmaster may revoke, terminate or refuse to renew any Permit" (§ 3-06.j)
+- "The Department shall maintain and utilize a Waiting List for the issuance of Boat Basin seasonal dockage permits and mooring permits" (§ 3-07)
+- "No person shall place a mooring or moor a vessel in a mooring field without a permit from the Department." (§ 4-04.a)
+- "A permit shall authorize the use of a mooring that meets the requirements... the location of a mooring at a particular position in the mooring field, and the mooring of a particular vessel identified by size, type, registration number and mooring designation." (§ 4-04.b)
+- "The term of a permit issued for the Sheepshead Bay or Great Kills Harbor mooring fields is for one year commencing May 1. The term of a permit issued for the West 79th Street Boat Basin mooring fields is for six months commencing May 1. The Department may also issue transient permits for a term to be determined by the Department on a case-by-case basis." (§ 4-04.i)
+- "Commercial Permits may be issued at the World's Fair Marina, Boat Basin, and Dyckman Marina to operators of commercial Vessels upon terms to be determined by the Department." (§ 3-22.a)
+
+**Why:** Manages the authorization, assignment, and regulation of vessels in marinas and mooring fields, including commercial operations.
+
+**One row represents:** A single permit for a vessel or mooring.
+
+**Columns:**
+- Permit ID
+- Permittee ID (linking to a Resident/Organization dataset)
+- Permit Type (e.g., Seasonal Dockage, Transient Dockage, Mooring, Commercial Vessel, Parking)
+- Marina Name (e.g., West 79th Street Boat Basin, World's Fair Marina, Sheepshead Bay Piers, Dyckman Marina)
+- Vessel ID
+- Vessel Name
+- Vessel Type (e.g., Sailboat, Motorboat, Houseboat, Dinghy, Kayak, Canoe, PWC)
+- Vessel Length (linear feet)
+- Vessel Registration/Documentation Number
+- Insurance Provider
+- Insurance Policy Number
+- Boating Safety Course Completion (Yes/No)
+- Nautical Experience Level
+- Slip/Mooring ID
+- Start Date
+- End Date
+- Fee Charged
+- Fee Paid (Yes/No)
+- Payment Date
+- Permit Status (e.g., Active, Expired, Revoked, Terminated)
+- Reason for Revocation/Termination
+- Outstanding Fees (Yes/No)
+- Credit Card on File (Yes/No)
+- Security Deposit Required (Yes/No)
+- Security Deposit Amount
+- Waiting List Application Date (if applicable)
+- Commercial Operations (Yes/No)
+- Commercial Plan Provided (Yes/No)
+- USCG Captain's License (Yes/No, for Commercial)
+- Commercial Trip Type (e.g., <=6 passengers, >6 passengers)
+- Commercial Pickup Fee (if applicable)
+- Guest Overnight Pass Issued (Yes/No)
+
+**Dataset 9: Vessel & Mooring Maintenance Log**
+
+**Quotes:**
+- "All Vessels (transient, seasonal, mooring or year round) must be and remain in safe operational condition. Any existing Permittee with an operational and seaworthy Vessel must continuously maintain an operational and seaworthy Vessel." (§ 3-06.f.1)
+- "Before issuing a Permit and otherwise upon reasonable notice, the Chief Dockmaster may inspect a Vessel and/or require a demonstration of the Vessel's operational capability in open water." (§ 3-06.f.1)
+- "All vessels shall be adequately tied to the dock and shall have sufficient fenders and dock lines to secure the vessel in all wind and weather conditions. The dockmaster may require the replacement of dock lines which he or she finds to be inadequate or, where necessary, may in his or her discretion replace the dock lines and charge the cost to the permittee or owner of the vessel." (§ 3-09.b)
+- "All Vessels in the Marinas and all equipment thereon must be maintained in good order and free of any hazard to persons, Vessels or facility structures." (§ 3-10.a)
+- "No structural modifications may be made to the superstructure of a Vessel docked at a Marina and/or permitted to use a Marina without the express written consent of the Dockmaster." (§ 3-10.b)
+- "The Department may order a Permittee to take specific remedial measures within a reasonable period of time, as determined by the Dockmaster." (§ 3-11.e)
+- "All vessels docked in the facility shall have on board at all times all equipment required by the Coast Guard, as well as for vessels longer than 25 feet: (a) Two 10-pound CO2 canister fire extinguishers or two dry chemical 20 pound ABC fire extinguishers approved for marine use and stored at opposite ends of the vessel. (b) No fewer than two operable automatic smoke alarms." (§ 3-12)
+- "All electrical or utility connections must be free of defects." (§ 3-13.a)
+- "Vessel owners must receive pre-approval from the Dockmaster before applying anti-fouling paint to their Vessel." (§ 3-08.s)
+- "Moorings shall be inspected for deterioration at least every two years and repaired or replaced if necessary." (§ 4-07.e)
+
+**Why:** Tracks the condition, inspection, and maintenance of all vessels and moorings to ensure safety and compliance.
+
+**One row represents:** A single inspection, maintenance event, or structural modification for a vessel or mooring.
+
+**Columns:**
+- Event ID
+- Event Date
+- **Permit ID** (Dataset 8)
+- **Vessel ID** (from Dataset 8)
+- Marina Name
+- Event Type (e.g., Inspection, Maintenance, Modification Approval, Repair Order, Safety Equipment Check, Paint Pre-approval)
+- Description of Activity/Issue
+- Findings/Condition Report
+- Required Remedial Measures
+- Deadline for Remedial Measures
+- Remedial Measures Completed (Yes/No)
+- Date Completed
+- Inspection Officer ID
+- Structural Modification Approved (Yes/No)
+- Certified Naval Architect Approval (Yes/No, for major modifications)
+- Fire Extinguisher Status
+- Smoke Alarm Status
+- Electrical Connection Status
+- Anti-fouling Paint Pre-approval (Yes/No)
+- Mooring Inspection Date
+- Mooring Condition Rating
+
+**Dataset 10: Reported Accident & Hazardous Condition Log**
+
+**Quotes:**
+- "The commissioner shall be required to establish a telephone reporting system so that the public can notify the department of any accident or hazardous condition which may occur or exist within park property." (§ 18-131.b.1)
+- "The commissioner shall be required to maintain a record of reports of such accidents or hazardous conditions by borough and service district which shall be provided to the council and mayor on an annual basis." (§ 18-131.b.2)
+- "Such report shall include any action taken by the department in response to such reported accident or hazardous condition." (§ 18-131.b.2)
+- "Should there be any injuries, accidents, or other health incidents at an event, permittee must notify the Department immediately by calling the Department's hotline, 1-800-201-PARK." (§ 2-08.r)
+- "The number and location of incidents that required emergency assistance by a lifeguard at each beach and pool under the jurisdiction of the department that occurred during the immediately preceding 12 months ending October 1 of that year" (§ 18-163.a.4)
+
+**Why:** Records all reported incidents and hazards to ensure timely response and track resolutions for public safety.
+
+**One row represents:** A single report of an accident, hazardous condition, or emergency incident.
+
+**Columns:**
+- Report ID
+- Date & Time Reported
+- Reporting Method (e.g., Telephone, Hotline, Online)
+- **Property ID** (Dataset 1)
+- Location Details (Specific within property)
+- Type of Incident (e.g., Accident, Hazardous Condition, Emergency Assistance, Injury)
+- Description of Incident/Hazard
+- Reporter Contact Information (if provided)
+- Department Response Date & Time
+- Action Taken
+- Status (e.g., Resolved, Ongoing, Escalated)
+- Resolution Date
+- Lifeguard Involvement (Yes/No)
+- Number of Injuries (if applicable)
+- Damage to Property (Yes/No)
+- Estimated Damage Cost
+
+**Dataset 11: Public Restroom Inventory**
+
+**Quotes:**
+- "The department shall maintain a website listing all public restrooms under the jurisdiction and management of the commissioner, which shall include: 1. The location of each public restroom; 2. The number of sinks, toilets and changing tables in each public restroom; 3. A website link to data related to the general level of cleanliness of each public restroom and the condition and functionality of each feature and the fixtures within, as determined by an inspection performed pursuant to this section; 4. A website link to information regarding department reporting procedures for complaints related to applicable accessibility requirements; and 5. Any other feature of each public restroom the department deems relevant." (§ 18-158.e)
+- "By December 31, 2027, every restroom intended for use by the general public in every park under the jurisdiction of the commissioner shall have a safe, sanitary and convenient diaper changing station, deck, table or similar amenity, which shall comply with section 603.5 (Diaper Changing Tables) of ICC A117.1" (§ 18-159.a)
+
+**Why:** Provides a comprehensive record of public restrooms, their features, and maintenance status.
+
+**One row represents:** A single public restroom facility.
+
+**Columns:**
+- Restroom ID
+- **Property ID** (Dataset 1)
+- Location Details (within property)
+- Number of Sinks
+- Number of Toilets
+- Number of Diaper Changing Stations (or similar amenity)
+- Diaper Changing Station Compliance Status (ICC A117.1)
+- Diaper Changing Station Exemption (Yes/No)
+- Diaper Changing Station Exemption Reason
+- Cleanliness Rating (current from inspection)
+- Accessibility Compliance Status (current from inspection)
+- Operational Status (Open/Closed)
+- Publicly Accessible (Yes/No)
+- Features (e.g., Family restroom, Shower facilities)
+
+**Dataset 12: Swimming Pool Inventory**
+
+**Quotes:**
+- "The term “playground” means any premises or grounds of a public school or other facility owned or operated by or on behalf of the department of education or by a charter school that contains any device, structure, or implement, fixed or portable, used or intended to be used by persons under the age of 18 for recreational or athletic purposes, including, but not limited to... a swimming pool" (§ 18-167.a)
+- "The bathing season of each year for beaches and pools under the jurisdiction of the department ends on the Sunday following Labor Day and (ii) during such season, each such bathing beach and pool remains open to the public each day, at a minimum, from the hours of 10:00 a.m. to 6:00 p.m." (§ 18-154.a)
+- "An agency or office designated by the mayor... shall conduct a survey of property owned and controlled by the city of New York in each borough to analyze whether any such property may be suitable for the construction of a swimming pool" (§ 18-161.a)
+- "Such survey shall include... The location of each surveyed property and a description of the city agency or office that has jurisdiction over such property; An analysis of the condition of each surveyed property and a determination whether construction of a swimming pool on such property is feasible" (§ 18-161.a.1, 2)
+- "an assessment of existing swimming pools located on property owned and controlled by the city of New York... For each such swimming pool undergoing capital reconstruction or planned to undergo capital reconstruction, an assessment that describes the capital or maintenance needs that prompted the capital work, the current estimated costs for such work" (§ 18-161.b)
+- "The number of indoor and outdoor pools that are under the jurisdiction of the department, the number of such pools closed to the public for maintenance or other purposes as of October 1 of that year, and when each closed pool is estimated to be reopened for public use." (§ 18-163.a.5)
+
+**Why:** Catalogs all swimming pools, their status, operational details, and capital needs for management and public information.
+
+**One row represents:** A single swimming pool facility.
+
+**Columns:**
+- Pool ID
+- **Property ID** (Dataset 1)
+- Location Details
+- Pool Type (e.g., Outdoor, Indoor, Wading)
+- Jurisdiction (e.g., Department, DOE, Charter School)
+- Operational Status (Open/Closed)
+- Reason for Closure (if applicable)
+- Estimated Reopening Date (if closed)
+- Bathing Season Start Date
+- Bathing Season End Date
+- Daily Opening Hours
+- Daily Closing Hours
+- Capital Reconstruction Planned (Yes/No)
+- Capital Needs Description
+- Estimated Capital Costs
+- Maintenance Needs Description
+- Environmental Justice Area (Yes/No)
+- Feasible for New Construction (Yes/No)
+- Current Educational/Recreational Programs
+- Community District Served
+
+**Dataset 13: Beach Water Quality Monitoring**
+
+**Quotes:**
+- "The commissioner shall have charge of the care and maintenance thereof and shall prominently post each beach as having "polluted waters not recommended for bathing" as periodically determined by the commissioner of health." (§ 18-108)
+- "The commissioner shall post the following at all comfort stations at all bathing beaches under the jurisdiction of the department, on its official website, and at such other places or times as the commissioner shall deem appropriate or as required by law, rule or regulation: 1. The dates and the results of departmental inspections of the bathing beach at which such information is posted." (§ 18-131.c.1)
+- "The commissioner of health and mental hygiene shall make available on its official website and to the 311 citizen service center the information set forth in subparagraphs i through vi of this paragraph, and shall make the information in subparagraphs i, ii and iv of this paragraph available within twenty-four hours of receiving the results of any test performed" (§ 18-131.c.3)
+- "the single day enterococci geometric mean for samples taken at a particular bathing beach by the department of health and mental hygiene" (§ 18-131.c.3.i)
+- "the enterococcus bacteria thirty day geometric mean for such particular bathing beach" (§ 18-131.c.3.ii)
+- "an explanation as to the enterococcus bacteria level that could affect a closure at the particular bathing beach" (§ 18-131.c.3.iii)
+- "dates and results of any inspections or tests made pursuant to New York city health code article one hundred sixty-seven" (§ 18-131.c.3.iv)
+- "an explanation as to the weather and other conditions that could result in issuing an advisory or closing the particular bathing beach" (§ 18-131.c.3.v)
+
+**Why:** Tracks water quality at bathing beaches to ensure public health and inform users of safety conditions.
+
+**One row represents:** A single water quality test or beach inspection event.
+
+**Columns:**
+- Test/Inspection ID
+- Date of Test/Inspection
+- Time of Test/Inspection
+- **Property ID** (Dataset 1) (Beach Name)
+- Location within Beach (if specific sampling points)
+- Testing Agency (e.g., DOHMH, Department)
+- Enterococci Single Day Geometric Mean
+- Enterococcus Bacteria 30 Day Geometric Mean
+- Bacteria Level Affecting Closure
+- Test Result (Pass/Fail)
+- Advisory Issued (Yes/No)
+- Closure Issued (Yes/No)
+- Reason for Advisory/Closure (e.g., High Bacteria, Weather)
+- Weather Conditions at Time of Test
+- Date Results Received
+- Public Notification Date
+- Resolution/Reopening Date
+
+**Dataset 14: Recreation Center Memberships**
+
+**Quotes:**
+- "Annual membership fees for each recreation center under the jurisdiction of the department shall be reduced for persons 62 years of age or older, veterans and persons with disabilities." (§ 18-149.a)
+- "Annual membership for each recreation center under the jurisdiction of the department shall be free for persons between 18 and 24 years of age." (§ 18-149.b)
+- "Adult Membership Fee" (§ 2-14.a)
+- "Child Membership Fee" (§ 2-14.a)
+- "Person with Disability Membership Fee" (§ 2-14.a)
+- "Recreation Center With Indoor Pool" (§ 2-14.a)
+- "Recreation Center Without Indoor Pool" (§ 2-14.a)
+- "Session Fees" (§ 2-14.a)
+- "No person shall use any recreation center and/or participate in activities requiring the payment of a session fee as defined in this section unless such person has paid the applicable annual membership fee" (§ 2-14.b)
+- "The Commissioner shall charge a recreation center member subject to these provisions the amount set forth in the following schedule for an annual membership." (§ 2-14.c)
+
+**Why:** Manages membership for recreation centers, including various fee structures and eligibility.
+
+**One row represents:** A single recreation center membership.
+
+**Columns:**
+- Membership ID
+- Member ID (linking to a Resident/User dataset)
+- Member Name
+- Age Group (e.g., Child, Young Adult, Adult, Senior)
+- Special Status (e.g., Veteran, Person with Disability, IDNYC Card Holder)
+- Membership Type (e.g., With Indoor Pool, Without Indoor Pool)
+- **Recreation Center ID** (Dataset 16)
+- Start Date
+- End Date
+- Annual Fee
+- Fee Paid (Yes/No)
+- Payment Date
+- Session Fee Paid (Yes/No, for specific classes)
+- Session Fee Amount
+- Membership Status (Active, Expired)
+- Eligibility Documentation Provided (Yes/No)
+
+**Dataset 15: Urban Park Ranger Program Registrations**
+
+**Quotes:**
+- "Urban Park Rangers provide programs on environmental education, outdoor recreation, wildlife management, and active conservation, including: (1) Weekend Adventure: offered to the public year-round at no cost to participants; (2) Natural Classroom: offered to schools, youth groups and other organizations for a fee... (3) Custom Adventures: day and overnight programs offered to camps and other youth groups for a fee... (4) Adventure Course: offered to groups of all ages on the low- and high-ropes course at Alley Pond Park for a fee" (§ 2-15.a)
+- "The Urban Park Rangers may cancel a program for the following reasons: (1) Inclement or severe weather... (2) A group that has not paid the entire fee for a scheduled program may not attend the program." (§ 2-15.b)
+- "A group that has scheduled and fully paid for a Natural Classroom, Custom Adventure, or Adventure Course Program and then cancels the program is subject to the following policies" (§ 2-15.c)
+
+**Why:** Tracks registrations and participation in Urban Park Ranger programs, including fee collection and cancellations.
+
+**One row represents:** A single registration for an Urban Park Ranger program.
+
+**Columns:**
+- Registration ID
+- Participant/Group ID (linking to a Resident/Organization dataset)
+- Program Name
+- Program Type (e.g., Weekend Adventure, Natural Classroom, Custom Adventure Day, Custom Adventure Overnight, Adventure Course)
+- Program Date
+- Program Location (e.g., Alley Pond Park)
+- Number of Participants
+- Fee Charged (if applicable)
+- Fee Paid (Yes/No)
+- Payment Date
+- Program Status (e.g., Scheduled, Cancelled, Completed)
+- Cancellation Reason (e.g., Weather, Non-payment)
+- Refund/Credit Issued (Yes/No)
+- Refund/Credit Amount
+- Discount Applied (e.g., Title I School)
+
+**Dataset 16: Recreation Center Inventory**
+
+**Quotes:**
+- "Maintain and operate public health centers and clinics as shall be established in the department" (§ 556.d.1)
+- "The Department will place automated external defibrillators in the following locations: (1) Van Cortlandt Park Visitor Center... (2) Owen Dolen Golden Age Center... (3) St. James Recreation Center... (4) St. Mary's Recreation Center... (5) Williamsbridge Oval Play Center... (6) Hunt's Point Recreation Center" (§ 2-16.a) (Similar lists for other boroughs)
+- "Recreation Center With Indoor Pool" (§ 2-14.a)
+- "Recreation Center Without Indoor Pool" (§ 2-14.a)
+- "Subject to appropriation, staffing requirements, and the availability of adequate facilities, the department, in consultation with the department of education, shall offer water safety instruction at no cost to New York city public school second grade students." (§ 18-160.b)
+- "Subject to appropriation and the availability of adequate facilities and sufficient staffing to meet the requirements of this section, the department shall offer swimming lessons for children and adults, including persons with disabilities, at each indoor pool location under the jurisdiction of the commissioner that is open to the public." (§ 18-162)
+
+**Why:** Maintains a record of all recreation centers, their facilities, and equipment (like AEDs) for operational management.
+
+**One row represents:** A single recreation center.
+
+**Columns:**
+- Recreation Center ID
+- Recreation Center Name
+- **Property ID** (Dataset 1)
+- Address
+- Borough
+- Has Indoor Pool (Yes/No)
+- Has Fitness Equipment (Yes/No)
+- Has Computer Resource Center (Yes/No)
+- AED Onsite (Yes/No)
+- AED Quantity
+- AED Last Inspection Date
+- Water Safety Instruction Offered (Yes/No)
+- Swimming Lessons Offered (Yes/No)
+- Operating Hours
+- Operational Status (Open/Closed)
+
+**Dataset 17: Tree Removal Permits & Replacements**
+
+**Quotes:**
+- "Any person that intends to remove any tree that is within the jurisdiction of the commissioner, shall obtain a permit from the department prior to such removal." (§ 18-107.a)
+- "The department shall charge a fee for each permit issued pursuant to this section, which shall be sufficient to cover the cost of replacing any tree proposed to be removed." (§ 18-107.b)
+- "Upon determining that a person may be issued a permit pursuant to this section, the department shall inform such person in writing of the fee required, the number and size of the replacement trees to be planted, the method used in making these calculations, and the period of time prescribed by subdivision d or f of this section during which replacement trees shall be planted." (§ 18-107.c)
+- "The location of replacement tree planting and the timing of such planting shall be as determined by the department horticultural officer" (§ 18-107.d)
+- "Such replacement trees shall, at a minimum, equal one caliper inch of replacement tree for each caliper inch of tree removed" (§ 18-107.e.1)
+- "The provisions of this section shall apply to all city agencies, including the department, provided, however, that (i) no city agency or city contractor or subcontractor shall be required to pay a fee to the department" (§ 18-107.f)
+- "Any person who intends to remove any tree under the jurisdiction of the Department shall apply for and obtain a permit under this chapter prior to such removal." (§ 5-01.a)
+- "If a removal permit is approved by the Commissioner, the Department, no later than ninety (90) days following the filing of a completed application for a permit, shall inform the applicant, based on the factors herein, the number and size of replacement trees to be planted and the period of time during which the replacement trees shall be planted and the fee for such replacements." (§ 5-02.a)
+- "The number of trees needed to replace each tree approved for removal shall be determined by calculating the size, condition, species and location rating of the tree proposed for removal." (§ 5-02.a)
+- "If a person granted a permit... requests that the Department plant any required replacement trees, such person shall pay the required fee to the Department prior to the issuance of any such permit" (§ 5-02.b.1)
+- "If a tree is damaged beyond recovery or if it is damaged so that it poses a safety risk... it shall be removed... at the permittee's expense... In such instances, the tree shall be evaluated for replacement purposes... based on its condition prior to suffering irreparable damage." (§ 5-02.c)
+- "If a tree is destroyed and removed without a permit... there shall be a rebuttable presumption that such tree was in perfect condition prior to such removal." (§ 5-02.d)
+- "If a tree is damaged or injured, but not destroyed or removed, a Department horticultural officer will make the following two (2) appraisals using the method established in 56 RCNY § 5-02(a) in order to determine the value of the damaged or injured tree." (§ 5-02.e)
+- "The location of replacement trees shall be determined by the Department's horticultural officer" (§ 5-02.f)
+
+**Why:** Tracks permits for tree removal, assesses required replacements, collects fees, and ensures proper planting of new trees.
+
+**One row represents:** A single tree removal permit and its associated replacement details.
+
+**Columns:**
+- Permit ID
+- Application Date
+- Applicant Name/Organization
+- **Tree ID** (Dataset 2) of Removed Tree
+- Location of Removed Tree
+- Reason for Removal
+- Removed Tree Caliper Inches
+- Removed Tree Condition Rating (pre-damage if applicable)
+- Removed Tree Species Rating
+- Removed Tree Location Rating
+- Hazard Caused by Applicant (Yes/No, if tree was hazardous)
+- Permit Fee Charged
+- Applicant to Plant Replacements (Yes/No)
+- Number of Replacement Trees Required
+- Caliper Inches of Replacement Trees Required
+- Cost per Replacement Tree
+- Total Replacement Fee Due
+- Fee Payment Status
+- Date Fee Paid/Refunded
+- Replacement Planting Deadline
+- Actual Replacement Planting Date
+- Location of Replacement Trees
+- Replacement Trees Planted by Department (Yes/No)
+- City Agency Exemption (Yes/No)
+- Damages Sought (Yes/No, for unlawful removal)
+- Damages Amount
+- Appraised Value of Injured Tree (pre-injury)
+- Appraised Value of Injured Tree (post-injury)
+- Difference/Replacement Value for Injury
+
+**Dataset 18: Tree-Related Incident & Pruning Log**
+
+**Quotes:**
+- "The department shall inspect any location within four days of receiving notice that any traffic control signal, select traffic control device or traffic control device at such location is not visible or legible to a motorist who must obey or rely upon such sign due to an obstruction by a tree, bush or other vegetation or any portion thereof." (§ 18-105.1.b)
+- "The department shall within ten days of the inspection required pursuant to subdivision b of this section prune or cause to be pruned any tree, bush or other vegetation found to require pruning because it obstructs any select traffic control device or traffic control signal" (§ 18-105.1.c)
+- "The department shall maintain a log of all notices of the type described in subdivision b of this section. Such log shall include the date and time such notice was received, the date and time on which such location was inspected, and the date and time when such tree, bush or other vegetation was pruned or the date and time of a determination that such tree, bush or other vegetation did not require pruning, as applicable." (§ 18-105.1.e)
+- "The department shall develop criteria, including a rating system, for the prioritization for maintenance of any tree that is: (i) under the jurisdiction of the commissioner; and (ii) adjacent to a building or other structure." (§ 18-105.2.a)
+- "The department, in consultation with the office of emergency management, department of sanitation, local electric corporations, and other utility corporations identified by the department, shall develop a protocol for the removal of trees on city property that have been downed or damaged as a result of severe weather events." (§ 18-142.a)
+- "to establish a system whereby each report of downed or damaged trees is provided with a unique identifier or tracking number and a method to notify the local electric corporation and other utility corporations identified by the department when a downed or damaged tree on city property has been removed" (§ 18-142.a.3)
+- "The department shall inspect each tree under its jurisdiction over 6 inches in caliper, to determine if any issue threatens the health of such tree or causes such tree to pose a threat to public safety, at least once between each time such tree is pruned by the department or by a person authorized by the department to perform routine scheduled maintenance of such tree." (§ 18-157.a)
+- "No later than November 1 of each year, the department shall... submit an annual report... The total number and location of all covered trees inspected by the department or persons authorized by the department, the result of such inspections and the actions taken by the department in response to such inspections" (§ 18-157.c.1)
+- "The number and location of requests or referrals for inspection of a covered tree through the 311 citizen service center or other means and the number of such trees that were inspected by the department" (§ 18-157.c.2)
+
+**Why:** Tracks all tree-related inspections, maintenance (pruning), and incidents (downed/damaged trees) for health and public safety.
+
+**One row represents:** A single tree inspection, pruning, or downed tree event.
+
+**Columns:**
+- Event ID
+- Event Date & Time
+- **Tree ID** (Dataset 2)
+- Event Type (e.g., Traffic Signal Obstruction Inspection, Pruning, Health Assessment, Downed/Damaged Tree Report)
+- Source of Request (e.g., 311, Internal Inspection, Weather Event, Citizen Notice)
+- Notice Date & Time (if from external source)
+- Inspection Date & Time
+- Inspector/Crew ID
+- Findings (e.g., Obstruction, Health Issue, Damage Description, Hazard)
+- Action Taken (e.g., Pruned, Removed, Determined No Pruning Needed, Repaired, Notified Utility)
+- Date Action Taken
+- Status (e.g., Resolved, Pending Utility Action)
+- Utility Notification Date (if applicable)
+- Utility Confirmation of Safety (Yes/No)
+- Severity Rating (for health/hazard)
+- Prioritization Rating (for maintenance)
+- Work-hours Expended
+- Cost of Materials
+
+**Dataset 19: Seized & Impounded Vehicle Log**
+
+**Quotes:**
+- "Where a summons or a notice of violation is issued for a violation of subdivision (b) [operating unauthorized vehicles on beaches], an authorized designee of the commissioner or a member of the police department may seize and impound the motorcycle, all terrain vehicle, snowmobile or motor vehicle." (§ 18-108.1.c.3)
+- "A motorcycle, all terrain vehicle, snowmobile or motor vehicle seized and impounded pursuant to this section shall be released to the owner or other person lawfully entitled to possession upon payment of the costs of removal and storage as set forth in the rules of the department and proof of payment of any fine or civil penalty imposed for the violation" (§ 18-108.1.d)
+- "The owner of a motorcycle, all terrain vehicle, snowmobile or motor vehicle shall be given the opportunity for a post seizure hearing within five business days before the environmental control board regarding the seizure." (§ 18-108.1.e)
+- "Upon the seizure of a motorcycle, all terrain vehicle, snowmobile or motor vehicle pursuant to this section, the operator shall be given written notice of the procedure for redemption of the motorcycle, all terrain vehicle, snowmobile or motor vehicle and the procedure for requesting a post seizure hearing." (§ 18-108.1.f)
+- "Any vehicle seized pursuant to Administrative Code § 18-108.1, which is not released and removed from City property pursuant to subdivision (c) of this section within 10 days following the making of a request by the representative of the Commissioner or the Police Commissioner to remove it, shall be deemed to be an abandoned vehicle." (§ 2-11.d)
+- "The charge for removal of a vehicle pursuant to this section shall be twenty-five dollars ($25.00). The storage charge for storing a vehicle pursuant to this section shall be five dollars ($5.00) per day or fraction thereof" (§ 2-11.e)
+
+**Why:** Documents all vehicle seizures, impoundments, and releases, ensuring proper legal process and cost recovery.
+
+**One row represents:** A single vehicle seizure incident.
+
+**Columns:**
+- Seizure ID
+- Date & Time of Seizure
+- Location of Seizure (e.g., Beach Name, **Property ID** (Dataset 1))
+- Vehicle Type (e.g., Motorcycle, ATV, Snowmobile, Motor Vehicle)
+- Vehicle Make, Model, License Plate
+- Operator ID (if known)
+- Owner ID (if different from operator)
+- **Violation ID** (Dataset 4)
+- Seizing Officer ID
+- Impoundment Location
+- Notice Provided to Operator (Yes/No)
+- Notice Provided to Owner (Yes/No)
+- Post-Seizure Hearing Requested (Yes/No)
+- Post-Seizure Hearing Outcome
+- Release Status (e.g., Released, Abandoned, Disposed)
+- Date of Release/Disposal
+- Removal Charge
+- Storage Charges Accrued
+- Total Fees Paid for Release
+- Date Fees Paid
+- Abandoned Status (Yes/No)
+- Disposal Method (e.g., Auction, Salvage)
+
+**Dataset 20: Adopt-A-Park Sponsorships**
+
+**Quotes:**
+- "The commissioner is authorized to enter into agreements with one or more individuals, corporations, partnerships or other entities... to sponsor any park, playground, beach, pool, recreation center, ballfield, green space, greenstreet, vehicle, equipment, structure or other property under the jurisdiction of the department" (§ 18-133.b)
+- "Such sponsor may elect to be recognized by a sign at or on the area sponsored which shall not be larger than the standard sign used by the department." (§ 18-133.b)
+- "Sponsorship agreements may be entered into for a period of one to eight years from the date of the agreement." (§ 18-133.c)
+- "Sponsors shall make a sponsorship payment to be determined by the commissioner, which shall reflect the size and nature of the sponsored area and the maintenance, level of use, security and program costs or any portion thereof to be undertaken or provided for by the sponsor." (§ 18-133.f.1)
+- "Such sponsorship payments shall be treated as private categorical grants and shall be used solely by the department for the sponsored area for park maintenance, capital projects, security, recreation, art and educational programs and the acquisition and development of parkland and related structures or facilities. Any grant in the amount of five thousand dollars or more shall be separately identified." (§ 18-133.f.1)
+- "the commissioner may enter into a sponsorship agreement at a reduced sponsorship payment or no sponsorship payment with one or more organizations or individuals who undertake the responsibility to perform uncompensated volunteer assistance of beautification and/or clean-up work consistent with departmental standards." (§ 18-133.f.2)
+
+**Why:** Tracks agreements with external entities for park sponsorship, including financial contributions and in-kind services.
+
+**One row represents:** A single Adopt-A-Park sponsorship agreement.
+
+**Columns:**
+- Agreement ID
+- Sponsor Name/Organization
+- Sponsor Type (Individual, Corporation, Partnership, Other Entity)
+- Sponsored Property/Area Name
+- **Property ID** (Dataset 1)
+- Start Date
+- End Date
+- Agreement Term (years)
+- Sponsorship Payment Amount
+- Payment Schedule
+- Payment Status
+- In-kind Services Provided (Description)
+- Estimated Value of In-kind Services
+- Volunteer Hours Contributed
+- Signage for Recognition (Yes/No)
+- Grant Identified (Yes/No, if >= $5000)
+- Indemnification Clause (Yes/No)
+- Renewal Date
+- Agreement Status (Active, Expired, Terminated)
+
+**Dataset 21: Donated Property & Funds Tracking**
+
+**Quotes:**
+- "to have the management, direction and control of all real or personal property granted, devised, bequeathed or conveyed to the city for the extension, improvement or ornamentation of the parks, squares or public places" (§ 533.a.8)
+- "Gifts of real and personal property, except such surplus animals and duplicate specimens as the commissioner may deem it judicious to dispose of by sale or otherwise, shall be forever properly protected, preserved and arranged for public use and enjoyment." (§ 18-111.a)
+- "The commissioner, with his or her annual report, shall make a statement of the condition of all the gifts, devises and bequests of the previous year, and of the names of the persons making the same." (§ 18-111.b)
+- "Beginning December 1, 2009, and annually thereafter, the commissioner shall submit a report to the council for the immediately preceding fiscal year on funds and the value of goods donated by non-governmental sources to the department for parks under the jurisdiction of the department." (§ 18-134)
+- "Such report shall include (i) the amount of funds and the value of goods donated by organizations or individuals to the department by park where such funding or goods are designated for a particular park, or by service district or borough if there is no such designation, provided that such funds or goods are valued at more than five thousand dollars" (§ 18-134)
+- "where the department has entered into a conservancy arrangement... with a conservancy... to provide maintenance and operation services for a park... the department shall require such entity to provide data to the department concerning the total amount of expenditures made by such entity for such park or portion of a park." (§ 18-134)
+
+**Why:** Records all donations (funds, goods, property) received by the department, including their value, source, and designated use.
+
+**One row represents:** A single donation of funds, goods, or property.
+
+**Columns:**
+- Donation ID
+- Date of Donation
+- Donor Name/Organization (Anonymous if requested)
+- Donation Type (Funds, Goods, Real Property, Personal Property)
+- Description of Goods/Property (if not funds)
+- Monetary Value
+- Designated Purpose (e.g., specific park, capital project, program)
+- **Property ID** (Dataset 1) (if designated for a specific park)
+- Service District (if designated)
+- Borough (if designated)
+- Conservancy Expenditure Data (if from conservancy)
+- Conservancy Name
+- Conservancy Arrangement Date
+- Receipt Issued (Yes/No)
+
+**Dataset 22: Compost Facility Operations Log**
+
+**Quotes:**
+- "The department shall establish compost facilities within parks for the composting of plant waste collected at parks within its jurisdiction pursuant to the following timetable: 1. On or before July 1, 2026, at least 1 compost facility within 2 parks in each borough... 2. On or before July 1, 2027, at least 1 compost facility within 3 parks in each borough... 3. On or before July 1, 2028, at least 1 compost facility within 5 parks in each borough" (§ 18-165.b)
+- "The department shall use a compost facility in a park to compost plant waste collected from such park as well as other nearby parks within the department’s jurisdiction." (§ 18-165.c.1)
+- "The department shall report annually on the operation of compost facilities established pursuant to this section. Such report shall include... The total amount of plant waste managed at each compost facility; The annual cost of operating each compost facility; For each park where a compost facility has been established, a description of the disposal process for plant waste from such park that was in effect prior to the establishment of such facility; and The number of staff members working at each compost facility." (§ 18-165.d)
+
+**Why:** Tracks the establishment and operation of compost facilities, including waste managed, costs, and staffing.
+
+**One row represents:** A single compost facility's operational record for a specific period (e.g., annually, or per batch).
+
+**Columns:**
+- Compost Facility ID
+- Facility Name
+- **Property ID** (Dataset 1) (Host Park)
+- Borough
+- Establishment Date
+- Operational Status (Active, Planned)
+- Reporting Year
+- Total Plant Waste Managed (tons/cubic yards)
+- Annual Operating Cost
+- Number of Staff Members
+- Prior Plant Waste Disposal Process (for host park)
+- Waste Source Parks (list of **Property IDs** if from other parks)
+
+**Dataset 23: Wildfire Incident Log**
+
+**Quotes:**
+- "The department, in consultation with the department of environmental protection, fire department, police department, and office of emergency management, shall develop a wildfire mitigation strategic planning report on mitigating the proliferation of wildfires occurring in parks." (§ 18-166.b)
+- "Such wildfire mitigation strategic planning report shall include... A list of any park in which 2 or more wildfires have occurred during the prior 10 years" (§ 18-166.b.2)
+- "A description of any actions by the department to mitigate wildfires that have occurred in parks during the prior 10 years" (§ 18-166.b.3)
+- "No later than March 1, 2026, and no later than March 1 of each year thereafter, the department shall submit an annual report to the mayor and speaker of the council on any wildfire that occurred in a park during the preceding calendar year." (§ 18-166.c)
+- "Such report shall include... The location of such wildfire; The duration of such wildfire; Any efforts used to mitigate such wildfire; The cause of such wildfire... and A description of any damage caused by such wildfire." (§ 18-166.c)
+
+**Why:** Records details of wildfire incidents in parks, including location, cause, mitigation efforts, and damage.
+
+**One row represents:** A single wildfire incident.
+
+**Columns:**
+- Wildfire ID
+- Incident Date & Time
+- **Property ID** (Dataset 1)
+- Location Details (within park)
+- Duration (start and end time)
+- Cause (if identified)
+- Mitigation Efforts Taken
+- Damage Description (e.g., acreage burned, specific assets damaged)
+- Estimated Damage Cost
+- Responding Agencies (e.g., FDNY, NYPD, DEP, OEM, Department)
+- Prior Wildfire Incidents at this location (count for 10 years)
+- Mitigation Actions Taken at this location (prior)
+
+**Dataset 24: Bollard Installation Log**
+
+**Quotes:**
+- "By July 30, 2019, and every year thereafter, the commissioner shall submit to the council an annual report on the installation of bollards in the city. Such report shall include: 1. The total number of locations under the jurisdiction of the department where bollards have been installed by the department and the total number of such bollards installed in the 12-month period ending on June 30 of such year; and 2. The total number of authorizations for bollard installation by third parties at locations under the jurisdiction of the department issued during the 12-month period ending on June 30 of such year." (§ 18-155.b)
+
+**Why:** Tracks the installation of bollards by the department and authorizations for third-party installations.
+
+**One row represents:** A single bollard installation or authorization.
+
+**Columns:**
+- Bollard ID
+- Installation Date
+- Location Description
+- **Property ID** (Dataset 1)
+- Installed By (Department, Third-Party)
+- Third-Party Name (if applicable)
+- Authorization ID (if Third-Party)
+- Number of Bollards Installed
+- Purpose (e.g., Vehicle Deterrence, Safety)
+- Material (e.g., Concrete, Metal)
+
+**Dataset 25: Diaper Changing Station Implementation Log**
+
+**Quotes:**
+- "By December 31, 2027, every restroom intended for use by the general public in every park under the jurisdiction of the commissioner shall have a safe, sanitary and convenient diaper changing station" (§ 18-159.a)
+- "By December 31, 2026, three quarters of the restrooms subject to the requirements of subdivision a of this section shall have a diaper changing station" (§ 18-159.b)
+- "By December 31, 2025, one-half of the restrooms subject to the requirements of subdivision a of this section shall have a diaper changing station" (§ 18-159.c)
+- "Where the commissioner determines... that a restroom does not offer sufficient space... or that the installation... would negatively impact public safety, the commissioner shall notify the speaker of the council and the council member in whose district such restroom is located within 10 days of such determination being made." (§ 18-159.d)
+
+**Why:** Monitors the progress of installing diaper changing stations in public restrooms and tracks any exemptions.
+
+**One row represents:** A single diaper changing station installation or an exemption determination.
+
+**Columns:**
+- Installation/Exemption ID
+- Date of Activity/Determination
+- **Restroom ID** (Dataset 11)
+- **Property ID** (Dataset 1)
+- Activity Type (e.g., Installation, Exemption)
+- Installation Date (if installed)
+- Compliance Status (ICC A117.1)
+- Exemption Granted (Yes/No)
+- Reason for Exemption
+- Council Member Notified (Yes/No)
+- Notification Date
+
+**Dataset 26: Swimming & Water Safety Program Enrollments**
+
+**Quotes:**
+- "The department, in consultation with the department of education, shall offer water safety instruction at no cost to New York city public school second grade students." (§ 18-160.b)
+- "Subject to appropriation and the availability of adequate facilities and sufficient staffing to meet the requirements of this section, the department shall offer swimming lessons for children and adults, including persons with disabilities, at each indoor pool location under the jurisdiction of the commissioner that is open to the public." (§ 18-162)
+- "Such lessons shall be free of charge to residents of the city with a valid recreation center membership issued by the department and shall be offered no less than 3 days per week." (§ 18-162)
+
+**Why:** Tracks enrollment and participation in free swimming lessons and water safety instruction programs.
+
+**One row represents:** A single enrollment in a swimming or water safety program.
+
+**Columns:**
+- Enrollment ID
+- Program Name (e.g., Water Safety Instruction, Swimming Lessons)
+- Program Start Date
+- Program End Date
+- **Recreation Center ID** (Dataset 16) or **Pool ID** (Dataset 12)
+- Participant ID (linking to Resident/User dataset)
+- Participant Age
+- Participant Status (e.g., Public School 2nd Grader, Adult, Person with Disability)
+- Recreation Center Membership (Yes/No, if applicable)
+- Fee Charged (should be $0 for these programs)
+- Attendance Count (per session)
+- Instructor ID
+- Outcome (e.g., Completed, Dropped Out)
+
+**Dataset 27: Recreation Facility Accessibility Assessment**
+
+**Quotes:**
+- "park facilities, including but not limited to playgrounds, beaches, and pools, that have features specifically designed to be used by people with disabilities, and the location of such features" (§ 18-143.a.1)
+- "park facilities that have been assessed during the immediately preceding calendar year for their compliance with the 2010 standards for accessible design, or where applicable, the uniform federal accessible standards or the 1991 Americans with disabilities act standards for accessible design" (§ 18-143.a.2.i)
+- "whether such assessment was performed in response to a complaint from a member of the public or in connection with plans to perform construction work" (§ 18-143.a.2.ii)
+- "the findings from such assessment as to what actions need to be undertaken to address accessibility" (§ 18-143.a.2.iii)
+- "the plans that have been made to address accessibility based on such assessment" (§ 18-143.a.2.iv)
+- "work undertaken within the immediately preceding calendar year to bring parks facilities into compliance with such standards" (§ 18-143.a.3)
+- "work planned to be undertaken during the current calendar year to bring parks facilities into compliance with such standards." (§ 18-143.a.4)
+- "The report required by subdivision c of this section shall include... A plan that describes the work deemed necessary by the department to be performed in order to bring such feature into a condition where it would be rated as acceptable pursuant to an inspection performed by the department; and An estimate of the cost and timeframe required to complete such work." (§ 18-158.d.3, 4)
+
+**Why:** Documents assessments of park facilities for ADA compliance and tracks planned and completed work to improve accessibility.
+
+**One row represents:** A single accessibility assessment for a park facility.
+
+**Columns:**
+- Assessment ID
+- Assessment Date
+- **Property ID** (Dataset 1)
+- Facility Type (e.g., Playground, Beach, Pool, Restroom, Path)
+- Assessed By
+- Reason for Assessment (e.g., Scheduled, Complaint, Construction Plan)
+- ADA Standards Used (e.g., 2010 ADA, UFAS)
+- Findings (e.g., Areas of Non-Compliance, Features for Disabilities)
+- Required Actions for Accessibility
+- Accessibility Improvement Plan ID
+- Estimated Cost for Improvements
+- Estimated Timeframe for Improvements
+- Work Undertaken (Yes/No)
+- Work Completion Date
+- Work Planned (Yes/No)
+- Work Plan Year
+
+**Dataset 28: Street Tree Maintenance and Sidewalk Repair Requests**
+
+**Quotes:**
+- "The department shall post on its website certain information relating to street tree maintenance and sidewalk repair. Such information shall be updated not less frequently than quarterly and shall, at a minimum, include the following: 1. The approximate date and location of each upcoming, regularly scheduled street tree pruning, street tree stump removal and street tree planting" (§ 18-151.1)
+- "The date, location and status of each street tree pruning, street tree stump removal and street tree planting that occurred within the previous six months" (§ 18-151.2)
+- "For each planned sidewalk repair to address sidewalk damage that was (i) reported through a 311 citizen service center request or reported by other means of notification and (ii) caused by a street tree under the jurisdiction of the department: (a) The approximate date and location of such repair; and (b) The date of the initial request for repair." (§ 18-151.3)
+- "For work to address sidewalk damage (i) that was caused by a street tree under the jurisdiction of the department and (ii) where such repair or inspection commenced in the previous six months: (a) For each sidewalk repair or inspection, the date, location and status of such repair or inspection, including the sidewalk rating that resulted from such inspection; and (b) For each sidewalk inspection, the number of notifications concerning such damage received through the 311 citizen service center request or reported by other means of notification in the 90 day-period preceding commencement of such work." (§ 18-151.4)
+
+**Why:** Manages requests and actions related to street tree maintenance and associated sidewalk repairs.
+
+**One row represents:** A single street tree maintenance or sidewalk repair request/event.
+
+**Columns:**
+- Request ID
+- Request Date
+- Source of Request (e.g., 311, Other Notification, Scheduled)
+- **Tree ID** (Dataset 2) (if applicable)
+- Location (Address/Cross Street)
+- Activity Type (e.g., Pruning, Stump Removal, Planting, Sidewalk Repair, Sidewalk Inspection)
+- Damage Caused by Tree (Yes/No, for sidewalk)
+- Sidewalk Rating (if inspected)
+- Approximate Start Date
+- Approximate End Date
+- Actual Start Date
+- Actual End Date
+- Status (e.g., Planned, In Progress, Completed, Delayed)
+- Number of 311 Notifications (for sidewalk damage in 90 days)
+
+**Dataset 29: Playground Pesticide Exposure Cleaning Log**
+
+**Quotes:**
+- "Within 24 hours of the spraying of any pesticide by or on behalf of a city agency, the department shall clean all park playground equipment located less than the minimum distance from such spraying, as set forth in rule by the department of health and mental hygiene, at which such equipment will not be exposed to such pesticide." (§ 18-148.1.b)
+
+**Why:** Records instances where playground equipment is cleaned due to pesticide exposure, ensuring safety.
+
+**One row represents:** A single pesticide exposure cleaning event for playground equipment.
+
+**Columns:**
+- Cleaning Event ID
+- Cleaning Date & Time
+- **Property ID** (Dataset 1) (Playground Name)
+- Equipment Location/Description
+- Pesticide Spraying Date & Time
+- Pesticide Spraying Agency/Contractor
+- Minimum Safe Distance (DOHMH Rule)
+- Distance from Spraying
+- Cleaning Performed By
+- Cleaning Method
+- Safety Confirmed (Yes/No)
+
+**Dataset 30: School Playground Access Report Data**
+
+**Quotes:**
+- "No later than 75 days after the effective date of the local law that added this section, and annually thereafter, the department of education, in consultation with the department and the school construction authority, shall submit to the mayor and the speaker of the council a report about playgrounds to which the department of education may provide access to the public after school on weekdays when school is in session, and from 8:00 a.m. to dusk on weekends and on weekdays when school is not in session." (§ 18-167.b)
+- "Such report shall prioritize access to playgrounds located in environmental justice areas." (§ 18-167.b)
+- "Such report shall include... A list of no less than 15 playgrounds, including no less than 1 playground located in an environmental justice area, that the department of education may operate and maintain for use by the public... and the reason the department of education included each such playground on such list" (§ 18-167.b.1)
+- "A description of the duties and responsibilities of the department and the department of education in relation to operating and maintaining any playground on such list" (§ 18-167.b.2)
+- "The estimated budget required to operate and maintain all such playgrounds after school on weekdays when school is in session, and from 8:00 a.m. to dusk on weekends and on weekdays when school is not in session" (§ 18-167.b.3)
+- "Any anticipated challenges in relation to providing access to the public to any such playground during such days and times." (§ 18-167.b.4)
+
+**Why:** Catalogs school playgrounds considered for public access, outlining operational details, budget, and challenges.
+
+**One row represents:** A single school playground identified for potential public access.
+
+**Columns:**
+- Playground ID
+- School Name
+- Address
+- Borough
+- Environmental Justice Area (Yes/No)
+- Agency Jurisdiction (DOE, Parks, Joint)
+- Proposed Public Access Hours (Weekdays After School, Weekends, Non-School Weekdays)
+- Reason for Inclusion on List
+- Estimated Annual Operating & Maintenance Budget
+- Anticipated Challenges
+- Roles & Responsibilities (DOE, Department)
+- Currently Publicly Accessible (prior to this initiative)
+
+**Dataset 31: Indoor Basketball Court Access Information**
+
+**Quotes:**
+- "The department shall post on its website information regarding the use of indoor basketball courts, including, but not limited to, how to access, in accordance with department of education policy, indoor basketball courts under the jurisdiction of the department of education that may be used by basketball leagues on days when the weather does not allow for the use of outdoor basketball courts." (§ 18-168.b)
+
+**Why:** Provides and tracks information on indoor basketball court availability and access for public use.
+
+**One row represents:** A single indoor basketball court designated for public or league access.
+
+**Columns:**
+- Court ID
+- Location Name
+- Address
+- Borough
+- Jurisdiction (Department, DOE)
+- Public Access Days/Hours
+- Basketball League Access Days/Hours
+- Access Policy Link
+- Bad Weather Policy Link
+- Contact Information for Booking/Inquiries
+- Last Update Date
+
+**Dataset 32: GreenThumb Garden Registrations & Licenses**
+
+**Quotes:**
+- "This chapter establishes certain procedures with respect to the operation of Gardens registered and licensed with GreenThumb" (§ 6-02)
+- "The Department will issue a License if the proposed Licensee and Garden meet the Registration criteria established by GreenThumb. The Department shall renew such License if the Licensee complies with the terms and conditions set forth therein and continues to meet the Registration criteria established by GreenThumb." (§ 6-03.a)
+- "If the Licensee has not complied with the terms of or fails to renew the License, fails to meet the Registration criteria established by GreenThumb, abandons the Garden, or if an Uncured Default has occurred, the Department will attempt to identify a successor Gardening Group and offer a License to it for the Garden." (§ 6-03.a)
+- "Licenses will set forth terms and conditions under which the Licensee will design and install a plant garden on a Lot and will thereafter maintain such Garden and all plants and conforming structures contained therein" (§ 6-03.b)
+- "The City will retain title to the Lot and the Licensee will not have any leasehold or other interest in the land comprising such Lot, any improvement thereon, or any equipment provided by GreenThumb." (§ 6-03.e)
+- "GreenThumb." A division within the Department responsible for the City's urban gardening program. (§ 6-01)
+- "Gardening Group." An organized group of individuals who maintain a Garden and are collectively represented by the Garden Contact Person. The Garden Contact Person shall by April 15 of each calendar year provide a list to GreenThumb of the names and contact information for all members of the Gardening Group. (§ 6-01)
+- "Default." A Gardening Group's failure or refusal to (i) comply with GreenThumb Registration requirements, (ii) complete the Registration process, (iii) comply with the terms of its Registration, (iv) comply with GreenThumb License requirements, (v) enter into a License, or (vi) comply with its License. (§ 6-01)
+- "Default Notice." A notice from the Department or an Other Agency directing a Gardening Group to cure an Accelerated Default within 30 days after the date of such notice or a notice to cure a Default within 6 months after the date of such notice. (§ 6-01)
+- "Uncured Default." A Default that remains uncured six months after the date of a Default Notice or an Accelerated Default that remains uncured 30 days after the date of a Default Notice. (§ 6-01)
+
+**Why:** Tracks the registration, licensing, and compliance of community gardens to ensure proper management and use of city-owned land.
+
+**One row represents:** A single GreenThumb Garden's license and registration status.
+
+**Columns:**
+- License ID
+- Garden Name
+- **Lot ID** (linking to a Property/Land Parcel dataset)
+- Address
+- Gardening Group Name
+- Garden Contact Person Name
+- Alternate Garden Contact Person Name
+- Registration Date
+- License Start Date
+- License End Date
+- License Status (Active, Expired, Terminated)
+- Compliance with Terms (Yes/No)
+- Default Status (No Default, Default, Uncured Default)
+- Date of Default Notice
+- Default Cure Deadline
+- Successor Gardening Group Identified (Yes/No)
+- Garden Maintenance Status (Safe, Orderly, Other)
+- Other Authorized Uses Permitted (Yes/No)
+- City Property Title Retained (Yes/No)
+- Licensee Interest in Land (None)
+- All Members List Provided (Yes/No)
+- All Members List Date
+
+---
+
+**Section 4, Non-tabular Data Summary:**
+
+*   **Job Applications and HR Records**: Records pertaining to the employment, performance, and internal management of department staff.
+*   **Rules and Regulations Documents**: Official documents outlining the operational guidelines, prohibitions, and policies enforced by the department.
+*   **Permit Application Forms**: The physical or digital forms used by individuals and organizations to apply for various permits (e.g., recreational, event, tree removal, vending).
+*   **Receipts and Payment Records**: Individual financial transaction records for fees, fines, and services.
+*   **Contracts and Agreements**: Legal documents detailing partnerships, concessions, leases, and other formal arrangements with external entities (e.g., New York Zoological Society, conservancies, restaurants).
+*   **Architectural Plans, Designs, and Specifications**: Blueprints, renderings, and technical documents for park and facility development, improvement, and maintenance (e.g., park system plans, bicycle area designs, stormwater retention planting manual, biodiversity design manual).
+*   **Research Documents, Studies, and Reports**: Written analyses and findings from health research, environmental studies, advisory committee evaluations, and mandated annual reports (e.g., non-governmental funding report, wildfire mitigation plan, urban forest plan).
+*   **Maps and GIS Data**: Geospatial representations of park boundaries, designated areas, tree locations, land use, and infrastructure.
+*   **Photographs and Other Image/Video Media**: Visual records of park conditions, artworks, events, and documentation related to permit applications or incidents.
+*   **Legal Documents and Court Orders**: Official legal mandates, court decisions, and administrative tribunal findings related to violations, property rights, or operational directives.
+*   **Public Outreach and Educational Materials**: Brochures, signage, website content, and program guides used to inform and educate the public on park rules, conservation, safety, and available services.
+*   **Vendor Display Stand Specifications/Guidelines**: Detailed descriptive text and diagrams outlining the permissible dimensions, placement, and nature of vending displays.
+*   **Mooring System Specifications**: Technical descriptions and requirements for the construction and maintenance of mooring components (anchors, chains, buoys).
+*   **Official Correspondence**: Letters, emails, and other written communications for formal notifications, requests, and responses (e.g., capital project change order notifications, permit denial appeals, GreenThumb notices).

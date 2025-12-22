@@ -1,0 +1,254 @@
+Here is the requested information extracted from the provided Fire Department Charter and Administrative Code text:
+
+**Part 1:**
+
+The Fire Department's mission is to protect life, property, and public safety through fire suppression, prevention, investigation, and emergency medical services across New York City, impacting residents, businesses, and visitors. Key programs involve fire code enforcement, hazardous material regulation, and emergency response.
+
+1.  Building Inspections and Violations (Includes fire hazards, fire alarm systems, and violations of fire laws)
+2.  Certificate of Fitness Applications and Credentials
+3.  Permitting (Includes hazardous materials, combustibles, hot work, and other regulated activities)
+4.  Fire Alarm System Design and Installation (Includes Professional Certification, Letters of Acceptance, and Project Authorizations)
+5.  Contraband Materials Management (Includes Seizures, Disposal, and Reclamation)
+6.  Fuel Management (includes Storage, Dispensing, Transfers, and Leaks)
+7.  Emergency Action Plan (EAP) Staff Information and Training Records
+8.  Training Compliance (Includes training for elder abuse and fire safety)
+9.  Inspections and Maintenance (Includes fire protection equipment, alarms, means of egress, and general maintenance)
+10. Contained Fire Laws (FDNY summons, Certification of Correction, Stipulations, Violation)
+
+**Part 2:**
+
+**Dataset 1: Building Inspections and Violations**
+Quotes:
+
+*   Section 490. a.   The commissioner is empowered to:
+(1)Cause any building, structure, tunnel, enclosure, vessel, place or premises to be inspected for fire hazards by any officer or employee of the department designated for such purpose.
+*   Section 490. b.   Whenever in any investigation or inspection carried on by the department a condition is found which in the opinion of the commissioner should be referred to any other department, he shall promptly make such reference in writing.
+*   Section 492. The commissioner and his deputies and such other officers or employees of the department as are authorized by the commissioner may without fee or hindrance enter and inspect all vessels, premises, grounds, structures, buildings and every part thereof and all underground passages of every sort in the city or in the port of New York for compliance with the provisions of law or rules and regulations enforced by the department.
+
+Why: To record and track building inspections for fire hazards and violations.
+* Dataset Title: Building Inspections and Violations
+    *   Inspection ID
+    *   Premises ID: address, building name, etc.
+    *   Date of Inspection
+    *   Inspector ID
+    *   Inspection Type: routine, complaint-based, follow-up
+    *   Area Inspected (specific location within the building)
+    *   Fire Hazards Found
+    *   Violation Category (1-30 from § 109-02.b)
+    *   Violation Details: specific code violated
+    *   Order to Remedy Condition Issued?: Y/N
+    *   Compliance Date
+    *   Date of Re-inspection
+    *   Compliance Achieved?: Y/N
+    *   Referral to Other Department (if any): Department, Date
+ - Potential Links: Premises ID can link to other datasets tracking addresses.
+
+**Dataset 2: Certificate of Fitness Applications and Credentials**
+Quotes:
+
+*   § 113-01. (b) (1) Applicants for certificates of fitness and certificates of qualification shall meet the minimum qualifications and comply with the general requirements set forth in FC 113 and this section. Holders of certificates of fitness and certificates of qualification shall maintain all qualifications and comply with all requirements throughout the term of the certificate.
+*   § 113-01(g) Misconduct. In addition to any other penalties provided by law, misconduct on the part of an applicant or holder of a certificate of fitness or certificate of qualification shall be grounds for denial, non-renewal, suspension or revocation of a certificate, and denial of an application for a certificate or the opportunity to take a certificate examination.
+
+Why: To manage and track certifications required for various fire safety activities.
+* Dataset Title: Certificate of Fitness and Qualification Records
+    *   Applicant ID
+    *   Certificate Number
+    *   Certificate Type
+    *   Application Date
+    *   Application Status: Submitted, Approved, Denied, Revoked, Suspended, Not In Use
+    *   Employee Name
+    *   Employer (if applicable)
+    *   Employer Address (if applicable)
+    *   Work Location
+    *   Driver's License/Passport/Birth Certificate Provided?: Y/N
+    *   Recommendation Letter Provided?: Y/N
+    *   Delinquent on Child Support Payments?: Y/N
+    *   Exam Date
+    *   Exam Score
+    *   Expiration Date
+    *   Misconduct Record: Date, Type, Outcome
+    *   Registration (for certificates of qualification): premises address, building designation and location of system to be supervised
+ - Potential Links: Employee ID can link to training compliance records.
+
+**Dataset 3: Permitting**
+Quotes:
+
+*   Section 488. The commissioner shall have the power and it shall be his duty to enforce all laws and the rules and regulations of the board of standards and appeals in respect to:… 1. The manufacture, storage, sale, transportation or use of combustibles, chemicals, explosives, inflammable or other dangerous substances, articles, compounds or mixtures.
+*   § 109-02.b Violation Category 3: Permits Failure to obtain, renew or otherwise possess a Department permit required for any material, operation or facility regulated by the Fire Code, in violation of FC 105.6; and/or such other Fire Code, Administrative Code, or rule sections as provide therefor.
+
+Why: Track and manage permits for regulated materials and activities.
+* Dataset Title: Department Permits
+    *   Permit ID
+    *   Premises ID (address)
+    *   Permit Type: (e.g. hazardous materials, combustibles, hot work, tents)
+    *   Material/Activity
+    *   Quantity Authorized
+    *   Application Date
+    *   Applicant Name
+    *   Certificate of Fitness Required?: Y/N, CF type, CF Number
+    *   Approval Date
+    *   Expiration Date
+    *   Any restrictions or conditions on permit?: Y/N, details.
+    *   Fees Paid?: Y/N, amount.
+     - Potential Links: Premises ID can link to other datasets tracking addresses.
+
+**Dataset 4: Fire Alarm System Design and Installation**
+Quotes:
+
+*   § 104-02 Professional Certification of Fire Alarm System Design and Installation.
+*   § 105-01 Approval of Fire Alarm System Design and Installation.
+*   § 104-04 Certification of Corrected Defects in Fire Alarm System Installations.
+
+Why: To track the design, installation, and correction of fire alarm systems, including professional certifications.
+* Dataset Title: Fire Alarm Systems and Project Records
+    *   Premises ID
+    *   System Type (core, non-core, new installation, alteration)
+    *   Application ID: Design, Installation, or professional Corrective Action
+    *   Application Date
+    *   Registered Design Professional Name
+    *   Registered Design Professional License Number
+    *   Professionally Certified?: Y/N
+    *   Professional Certifier Name
+    *   CF Number
+    *   Letter of Acceptance Issued?: Y/N, Date
+    *   Project Authorization Issued?: Y/N, Date
+    *   Inspection Date
+    *   Inspector ID
+    *   Number of Defects Identified
+    *   Defect Type (104.04b)
+    *    Certification of Corrected Defects Submitted?: Y/N
+    *   Professional Verification of Corrected Defects CF #:
+    *    Letter of Approval Issued?: Y/N, Date
+- Potential Links: Inspector ID can link to personnel records; Premises ID to address; Corrective Actions to Violations;
+
+**Dataset 5: Contraband Materials Management**
+Quotes:
+
+*   § 104-03 Disposal of Contraband Materials.
+*   § 104-03(c) Opportunity to Reclaim Contraband Material.
+*   § 104-03(d) Procedures for Disposal of Contraband Material.
+
+Why: To track seized contraband and its disposal/reclamation.
+* Dataset Title: Contraband Materials
+    *   Seizure ID
+    *   Seizure Date
+    *   Location of Seizure (Premises ID/Address)
+    *   Description of Contraband Material (type, quantity, size, serial number)
+    *   Owner Identified?: Y/N, Name, Address
+    *   Notice of Seizure Given?: Y/N, to Whom (Possessor/Owner), Date
+    *   Disposal Deadline
+    *   Reclaimed?: Y/N
+    *   Date Reclaimed (if applicable)
+    *   Removal and Storage Fee
+    *   Disposal Method (if not reclaimed)
+ - Potential Links: Premises ID can link to other datasets tracking addresses.
+
+**Dataset 6: Fuel Management**
+Quotes:
+
+*   § 102-01(d)(3)(A) An existing underground liquid motor fuel storage tank designed and installed after April 2000
+*   FC 5704.2
+*   § 3305-01 Crane Aerial Fueling Operations.
+*   § 5704-03 Indoor and Aboveground Combustible Liquid Storage Systems.
+
+Why: Track fuel storage, dispensing, and potential leaks.
+* Dataset Title: Fuel Storage and Management
+    *   Tank ID
+    *   Facility ID: address, site name
+    *   Fuel Type
+    *   Tank Type: above ground, underground, mobile
+    *   Tank Capacity
+    *   Date Installed
+    *   Date Decommissioned/Removed (if applicable)
+    *   Leak Detection System Type
+    *   Date of Last Inspection of Leak Detection System
+    *   Date of Last Test
+    *   Was Testing Successful?: Y/N
+    *    Cause of Failure and Corrective Action Taken (if applicable)
+ - Potential Links: Facility ID can link to other datasets tracking addresses.
+
+**Dataset 7: EAP Staff Information and Training Records**
+Quotes:
+
+*   FC Chapter 4, § 401-07 Fire and Non-Fire Emergency Drills, § 113-02 Fire and Life Safety Director Certificate of Fitness
+
+Why: In order to verify training of all FLS/EAP, fire safterty brigade or other necessary staff, this information must be tracked.
+    *   FLS DIRECTOR ID
+    *   Deputy FLS Director ID
+    *   FSP staff
+    *   Emergency contact number
+    *   Certificate Number
+    *   Training sessions
+    * Training hours
+ - Potential Links: FLS DIRECTOR ID & Deputy FLS Director ID can link back to certificate of fitness
+**Dataset 8: Training Compliance**
+Quotes:
+
+*   § 21-203 Elder abuse training.
+*   § 113-04 Accreditation of Training Courses.
+*   § 113-01 Certificates of Fitness and Certificates of Qualification.
+
+Why: In order to ensure the trainings are conducted they must be tracked.
+* Dataset Title: Elder Abuse and Fire Safety Training Records
+    *   Employee ID
+    *   Training Type: Initial, Repeat
+    *   Course Date
+    *   Course Provider
+    *   In Compliance?: Y/N
+    *    Repeat Training required?: Y/N
+ - Potential Links: Employee ID can link to personnel records and senior center IDs
+
+**Dataset 9: Inspection and Maintenance**
+Quotes:
+
+*   Section 490. The commissioner is empowered to:… (2) Inspect and test any automatic or other fire alarm system or fire extinguishing equipment.
+*   § 109-02 Consolidation of Administrative Code Provisions for Enforcement Purposes.
+
+Why: To track inspections, tests, and maintenance of various equipment, devices, systems, facilities or premises to ensure compliance.
+* Dataset Title: General Maintenance
+    *   Type of Inspected Devices and Equipment (fire extinguishers, alarms, and other systems)
+    *   Date of Last Inspection
+    *   Inspector ID
+    *   Findings: satisfactory, needs repair, replaced
+    *   Maintenance Actions Taken and Dates
+ - Potential Links: Premises ID can link to other datasets tracking addresses.
+
+**Dataset 10: Contained Fire Laws**
+Quotes: 
+
+*   § 109-01 FDNY Summons, Certification of Correction and Stipulation Procedures.
+
+Why: To track violation and FDNY summons,
+* Dataset Title: All FDNY Summonses
+    *   Summons ID
+    *   Date of Offense
+    *   Address of Offense
+    *   Violation Code 
+    *   Description of Violation
+    *   Correction Ordered?: Y/N
+    *   Correction Certification Received Date
+    *   Certification Accepted?: Y/N
+    *   Mitigated Penalty: amount
+ - Potential Links: Premises ID can link to other datasets tracking addresses.
+
+**Implied Information (Non-Tabular Datasets):**
+
+*   Building occupants names
+*   Job applications.
+*   Rules and regulations.
+*   Receipts.
+*   HR Notes.
+*   Paper applications for permits.
+*   Federal licenses and certifications.
+*   Detailed inspection and testing reports for fire protection systems (beyond the summary in the logbook).
+*   Contracts with central station companies.
+*   Training programs details.
+*   Accreditation files for training courses and institutions.
+*   Insurance policies and associated claims.
+*   Legal proceedings beyond the outcomes recorded in the violations dataset.
+*   Historical records relating to pre-existing conditions.
+*   Communications with other agencies (DOB, DEP, etc.)
+*   Undue hardship demonstrations for projects in progress.
+*   Public notifications regarding closures or relocations.
+*   Examination questions for certificates of fitness and qualifications.
+*   Data sets for complaints and issues from concerned citizen

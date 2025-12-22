@@ -1,0 +1,49 @@
+---
+title: "run_query"
+output: html_document
+date: "2025-12-03"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T)
+#source("00_load_dependencies.R")
+#source("../../tokens.R")
+#setAPI(gemini_key)
+```
+
+## Settings
+
+```{r}
+#dept = "Parks"
+```
+
+## Run
+
+```{r load_data}
+#charter = read_file(paste0("../data/input/", dept, "_charter.txt"))
+#adcode = read_file(paste0("../data/input/", dept, "_adcode.txt"))
+#rules = read_file(paste0("../data/input/", dept, "_rules.txt"))
+
+#prompt_start = read_file("../data/input/prompt_start.txt")
+#prompt_examples = read_file("../data/input/prompt_examples.txt")
+#prompt_end = read_file("../data/input/prompt_end.txt")
+#prompt = paste(prompt_start, 
+#               "Here is the Charter:", charter, 
+#               "Here is the Administrative Code:", adcode,
+#               "Here are the Agency Rules:", rules, 
+#               prompt_examples, 
+#               prompt_end)
+```
+
+```{r run}
+#response = gemini(prompt, model = "2.5-flash", 
+#                  maxOutputTokens = 60000, timeout = 1800)
+#file_name = paste0("../data/output/", dept, "_", Sys.Date(), ".txt")
+#write_file(response, file_name)
+#write_file(response, "../data/output/temp.txt")
+```
+
+## Response 
+
+```{r, child = "../data/output/temp.txt", results = "asis"}
+```

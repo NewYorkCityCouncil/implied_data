@@ -1,0 +1,129 @@
+Section 1, Mission Summary:
+The agency's mission is to coordinate, manage, and monitor New York City's preparedness and response to all types of emergencies and potential incidents requiring a multi-agency effort. It oversees citywide emergency planning, public awareness, training, and resource coordination to protect public health and safety. The agency directly impacts constituents by ensuring a coordinated and effective emergency response, enhancing public safety, and providing essential services during crises.
+
+Section 2, Data Summary:
+1.  Emergency Incidents & Response Log
+2.  Resource Deployment Log
+3.  Emergency Plans Register
+4.  Inter-Agency Resource Inventory
+5.  Training and Drill Events
+6.  Agency Meeting and Coordination Log
+7.  Public Information and Engagement Log
+8.  Agency Emergency Plan Compliance Tracking
+9.  Grants and Funding Log
+10. Department Personnel Roster
+11. Department Internal Asset Inventory
+12. Emergency Food Delivery Transactions Log
+
+Section 3, Data Details:
+
+1.  **Emergency Incidents & Response Log**
+    *   **Quotes:**
+        *   "coordinate the city's response to all emergency conditions and potential incidents which require a multi-agency response, including but not limited to severe weather, threats from natural hazards and natural disasters, power and other public service outages, labor unrest other than the keeping of the peace, water main breaks, transportation and transit incidents, hazardous substance discharges, building collapses, aviation disasters, explosions, acts of terrorism and such other emergency conditions and incidents which affect public health and safety;" (Section 497.a)
+        *   "monitor on a constant basis all potential emergency conditions and potential incidents which may require a multi-agency response;" (Section 497.b)
+        *   "operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+        *   "coordinate New York city's civil defense effort in accordance with the provisions of the Defense Emergency Act of New York state and the city's civil defense emergency operations plan, as such plan may be amended from time to time;" (Section 497.m)
+    *   **Why:** Tracks all emergencies and potential threats, central to coordinating response and EOC operations.
+    *   **One row represents:** A single emergency condition, potential incident, or civil defense event.
+    *   **Important columns:** Incident ID, Incident Type, Incident Status, Start Date/Time, End Date/Time, Location (address, coordinates), Impacted Area, Agencies Notified, EOC Activation Status, Resources Deployed (links to 3), Commissioner Recommendations, Public Information Released (links to 7), Incident Description, Severity Level, Multi-Agency Response Required.
+
+2.  **Resource Deployment Log**
+    *   **Quotes:**
+        *   "All agencies further shall promptly provide the department with all appropriate material, equipment and resources needed for emergency management functions, including personnel." (Section 498.a)
+        *   "coordinate the city's response to all emergency conditions and potential incidents which require a multi-agency response" (Section 497.a)
+        *   "operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+    *   **Why:** Records the allocation and deployment of resources during incidents for effective management.
+    *   **One row represents:** A single deployment event of a resource to an incident.
+    *   **Important columns:** Deployment ID, Incident ID (links to 1), Resource ID (links to 4 or 11), Resource Type, Quantity Deployed, Deployment Start Date/Time, Deployment End Date/Time, Destination/Purpose, Status, Agency Providing Resource.
+
+3.  **Emergency Plans Register**
+    *   **Quotes:**
+        *   "prepare plans for responding to emergency conditions and potential incidents, including but not limited to plans for the implementation of such emergency orders as may be approved by the mayor to protect public safety and facilitate the rapid response and mobilization of agencies and resources;" (Section 497.d)
+        *   "coordinate with all city agencies to ensure that all such agencies develop, implement and periodically review citywide emergency plans;" (Section 497.j)
+        *   "No later than two years after the effective date of the local law that created this subdivision, and every two years thereafter, the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (Section 498.b)
+        *   "Following each review conducted pursuant to subdivision b of this section, the department shall publish on its website a list of citywide emergency plans coordinated by the department and a summary of each such plan, including but not limited to information on the roles and responsibilities of relevant agencies and other partners." (Section 498.c)
+    *   **Why:** Manages the development, review, and publication of all citywide emergency plans.
+    *   **One row represents:** A single citywide emergency plan.
+    *   **Important columns:** Plan ID, Plan Title, Plan Version, Creation Date, Last Review Date, Next Review Due Date, Lead Agency, Contributing Agencies (links to 6), Summary (for public disclosure), Publication Status, Public Comment Period Start Date, Public Comment Period End Date, Mayor's Determination for Non-Publication (if applicable).
+
+4.  **Inter-Agency Resource Inventory**
+    *   **Quotes:**
+        *   "All agencies further shall promptly provide the department with all appropriate material, equipment and resources needed for emergency management functions, including personnel." (Section 498.a)
+    *   **Why:** Tracks available external resources from other agencies for emergency management functions.
+    *   **One row represents:** A specific resource (piece of equipment, type of material, personnel skill) offered by an external agency.
+    *   **Important columns:** Resource ID, Agency ID (links to 6), Agency Name, Resource Type, Resource Name/Description, Quantity Available, Location, Contact Person, Availability Status, Last Updated Date.
+
+5.  **Training and Drill Events**
+    *   **Quotes:**
+        *   "coordinate and implement training programs for public safety and health, including emergency response drills, to prepare for emergency conditions and potential incidents which may require a multi-agency response;" (Section 497.c)
+    *   **Why:** Manages the scheduling, content, and attendance for all emergency preparedness training and drills.
+    *   **One row represents:** A single training program or emergency response drill session.
+    *   **Important columns:** Training/Drill ID, Event Type, Title, Description, Date, Time, Location, Instructor/Facilitator, Target Audience, Agencies Participating (links to 6), Number of Participants, Evaluation/Outcome Summary, Associated Incident Type.
+
+6.  **Agency Meeting and Coordination Log**
+    *   **Quotes:**
+        *   "hold regular and frequent meetings of designated emergency response personnel of all city agencies that are determined by the commissioner to have a direct or support role in the city's management of emergency conditions and potential incidents which may require a multi-agency response;" (Section 497.h)
+        *   "coordinate with state, federal and other governmental bodies to effectuate the purposes of the department;" (Section 497.k)
+        *   "coordinate the operation of the local emergency planning committee established pursuant to Title III of the federal Superfund Amendments and Reauthorization Act;" (Section 497.l)
+        *   "the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (Section 498.b)
+    *   **Why:** Records details of inter-agency meetings for coordination and plan review.
+    *   **One row represents:** A single meeting or coordination event.
+    *   **Important columns:** Meeting ID, Meeting Type, Date, Time, Location, Chair/Host Agency, Participating Agencies, Attendees Count, Agenda, Key Decisions/Action Items, Related Plan ID (links to 3).
+
+7.  **Public Information and Engagement Log**
+    *   **Quotes:**
+        *   "increase public awareness as to the appropriate responses by members of the public to emergency conditions and potential incidents, and review the city's systems for disseminating information to the public;" (Section 497.f)
+        *   "The department shall establish procedures through which members of the public can submit public comments on emergency planning." (Section 498.d)
+    *   **Why:** Tracks public awareness efforts, information dissemination, and public feedback on emergency planning.
+    *   **One row represents:** A single public awareness activity, information dissemination event, or public comment submission.
+    *   **Important columns:** Activity ID, Activity Type, Date, Channel, Content Summary, Target Audience, Public Comments Count (if campaign), Related Plan ID (if public comment on plan, links to 3), Public Comment Submission ID, Public Comment Content, Public Comment Status.
+
+8.  **Agency Emergency Plan Compliance Tracking**
+    *   **Quotes:**
+        *   "coordinate with all city agencies to ensure that all such agencies develop, implement and periodically review citywide emergency plans;" (Section 497.j)
+        *   "No later than two years after the effective date of the local law that created this subdivision, and every two years thereafter, the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (Section 498.b)
+    *   **Why:** Monitors each city agency's adherence to developing, implementing, and reviewing emergency plans.
+    *   **One row represents:** An assessment of an agency's compliance with emergency planning requirements for a specific review cycle.
+    *   **Important columns:** Compliance ID, Agency ID (links to 6), Agency Name, Plan ID (links to 3), Review Cycle Start Date, Review Cycle End Date, Compliance Status, Notes on Deficiencies, Date of Last Update, Next Review Date.
+
+9.  **Grants and Funding Log**
+    *   **Quotes:**
+        *   "acquire federal and other funding for emergency management, including but not limited to disaster relief, and civil defense, and assist other agencies in obtaining such funding;" (Section 497.i)
+    *   **Why:** Manages the application, award, and assistance process for emergency management funding.
+    *   **One row represents:** A single grant application or funding award.
+    *   **Important columns:** Grant ID, Grant Name, Funder, Application Date, Award Date, Amount Requested, Amount Awarded, Status, Purpose, Agencies Assisted (links to 6), Reporting Requirements, Funds Disbursed, Funds Received, Project Start Date, Project End Date.
+
+10. **Department Personnel Roster**
+    *   **Quotes:**
+        *   "There shall be an emergency management department, which may also be known as the New York city office of emergency management, the head of which shall be the commissioner of emergency management." (Section 495)
+        *   "The commissioner shall have the power to appoint and, at pleasure, remove deputies, one to be known as first deputy commissioner." (Section 496)
+        *   "The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+    *   **Why:** Fundamental for managing staff, roles, and internal organizational structure.
+    *   **One row represents:** A single employee of the Emergency Management Department.
+    *   **Important columns:** Employee ID, Employee Name, Title, Department/Unit, Contact Information, Start Date, Current Status, Training Records (links to 5, for individual staff), Role in Emergency Response.
+
+11. **Department Internal Asset Inventory**
+    *   **Quotes:**
+        *   "operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+        *   *Implied by general operational necessity of running a department.*
+    *   **Why:** Tracks the department's own physical assets and equipment required for operations.
+    *   **One row represents:** A single piece of equipment or asset owned/maintained by the department.
+    *   **Important columns:** Asset ID, Asset Name, Asset Type, Acquisition Date, Cost, Location, Condition, Maintenance Schedule, Last Maintenance Date, Responsible Department/Unit, Status.
+
+12. **Emergency Food Delivery Transactions Log**
+    *   **Quotes:**
+        *   "§ 1-01 Emergency Food Delivery. [Terminated*]" (Chapter 1)
+    *   **Why:** Records individual requests and fulfillment for the emergency food delivery program.
+    *   **One row represents:** A single request for emergency food delivery.
+    *   **Important columns:** Delivery Request ID, Request Date/Time, Constituent Name, Constituent Address, Contact Information, Food Preference/Dietary Restrictions, Number of People Served, Delivery Date/Time, Delivery Status, Volunteer/Staff ID (links to 10), Partner Agency Involved.
+
+Section 4, Non-tabular Data Summary:
+*   Job applications and employee HR notes
+*   Official rules and regulations promulgated by the commissioner
+*   Financial receipts and invoices for departmental expenditures
+*   Detailed emergency plans documents (beyond the metadata tracked in the register)
+*   Research documents and reports related to emergency response capabilities or public information systems
+*   Photos or videos of emergency incidents or training drills
+*   Mayor's Executive Orders related to emergencies or plan determinations
+*   Legal documents and agreements pertaining to grants, funding, and inter-governmental coordination
+*   Raw textual content of public comments submitted on emergency planning

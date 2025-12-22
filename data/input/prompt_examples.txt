@@ -1,0 +1,320 @@
+
+As an example of identifying datasets from text, here are four text blocks from different parts of the Administrative Code and Charter, and the datasets identified from them, in the format I’d like you to return: 
+
+Text 1: “§ 17-373 Permit applications.
+   a.   An application for a permit required pursuant to section 17-372 of this title or for the renewal of such a permit shall be made and submitted on forms furnished by the department.
+   b.   The applicant shall be eighteen years of age or older.
+   c.   The application shall contain all information required by the department. If the applicant for the permit is a sole proprietorship, the application shall be signed by the individual who would be the permittee. If the applicant is a partnership, the application shall be signed by a partner. If the applicant is a limited partnership, the application shall be signed by the managing or general partner. If the applicant is a corporation, the application shall be signed by an officer or director of the corporation or by any member, if management is vested in members. If the applicant is a limited liability company, the application shall be signed by any manager of the limited liability company. Such signature shall constitute an agreement that the permittee assumes responsibility for the conduct of the business, occupation or other activity concerned in accordance with the requirements of this subchapter or other applicable law.
+   d.   In addition to the following information, the application shall be accompanied by such other information, evidence or documentation as the department may require or as may be provided for in this subchapter or other applicable law or rule applicable to the department. The application shall, at a minimum, include:
+      1.   The name, age, gender, residence and business address, and telephone numbers of the applicant, each member of the partnership, limited liability company or group, and each officer of the corporation, as applicable;
+      2.   To the extent that such information is relevant to the conduct of the business, trade, occupation or other activity under permit, information concerning the applicant, its individual members or officers, relating to education, training or experience, moral character, physical health, addiction to alcohol or habit-forming drugs, history of prior criminal conviction, including violations and offenses, history of mental illness, and record of insolvency or bankruptcy;
+      3.   Proof of current workers' compensation and disability benefits insurance coverage for all employees, or of a certificate of exemption filed with the workers' compensation board;
+      4.   The e-mail address of (i) the individual owner of the business, (ii) the person exercising daily management and control of the business, or (iii) the person who is authorized by law to accept service of process on behalf of the applicant; and
+      5.   [Reserved.]
+      6.   Any information that the department determines may be necessary in order to contact the permittee in the event of an emergency.
+   e.   The commissioner shall not issue or renew a permit unless department records show there are no finally determined uncorrected violations or unpaid outstanding fines, penalties or forfeitures imposed by any court, administrative tribunal established within the office of administrative trials and hearings or administrative tribunal established in accordance with the administrative code or the charter, which are due and payable by the applicant or the permittee.
+   f.   The commissioner shall not issue a new permit or renewal of an existing permit to any person listed on the animal abuse registry created pursuant to chapter sixteen of this title.
+   g.   The commissioner shall not issue a new permit to any entity based on a sale or change of ownership of a permitted business or activity regulated by laws or rules enforced by the department, where department or other records show any finally determined uncorrected violations or unpaid fines and penalties, unless the applicant submits proof satisfactory to the department that the transfer of the business was the result of an arm's length transaction. Such proof shall consist of documents showing that:
+      1.   The applicant has assumed complete management, control and operation of the permitted business or activity from the prior permittee;
+      2.   The applicant has paid market value consideration for the material assets of the permitted business; and
+      3.   Neither the applicant nor any member or officer of a partnership or corporation is related by blood or marriage to the owner(s) or manager(s) of the entity holding the permit prior to the transfer of the permitted business.
+   The commissioner's denial of an application pursuant to this subdivision shall be a final agency determination not subject to administrative appeal.
+   h.   The acceptance of an application and fee for a new permit or the renewal of a permit shall not preclude the commissioner from taking any action that he or she deems necessary, including, but not limited to, the denial of a new permit or renewal permit if department or other investigatory or pre-permit inspections disclose conditions or circumstances indicating that a permit should not be issued or renewed. If an application for a new permit or renewal of an existing permit is denied, the application fee shall not be refunded.
+(L.L. 2015/005, 1/17/2015, eff. 1/1/2016; Am. L.L. 2015/053, 6/2/2015, eff. 1/1/2016; Am. L.L. 2024/132, 12/21/2024, retro. eff. 12/15/2024)”
+
+**Dataset 1: Pet Shop Permits and Applications**
+	
+**Quotes:** 
+
+ - § 17-373 " An application for a permit required … shall be made”
+
+**Why:** In order to administer the permits, this information must be tracked.
+
+**One row represents:** An application for a pet shop permit. 
+
+**Covers:** New and renewed pet shop permits.
+
+**Columns:**
+
+ - Application ID  
+ 
+ - Application type: Initial, Renewal, or Transfer
+
+ - Application status: Submitted, In Review, Active, Expired, Rejected
+
+ - Shop ID  
+
+ - Applicant type (sole proprietorship, partnership, corporation, limited liability company)
+
+ - Applicant name
+
+ - Applicant age
+
+ - Applicant gender
+
+ - Applicant residence address 
+
+ - Applicant business address
+
+ - Applicant telephone number
+
+ - Applicant email address
+
+ - Did application provide proof of current workers' compensation and disability benefits insurance coverage?
+
+ - Any uncorrected violations/unpaid outstanding fines, penalties or forfeitures by individual or org?
+
+ - Names of all officers/members of the partnership, limited liability company, group, or corporation
+
+
+Text 2: “§21-120.1 Family child care and group family child care.
+   a.   Definitions. For the purposes of this section, the following definitions shall apply:
+      1.   "Family child care provider" shall mean an individual who is registered pursuant to section three hundred ninety of the social services law.
+      2.   "Group family child care provider" shall mean an individual who is licensed pursuant to section three hundred ninety of the social services law.
+      3.   "Administration" shall mean the administration for children's services.
+      4.   "Child care provider" or "provider" shall mean a family child care provider or a group family child care provider.
+      5.   "Authorized family child care service" shall mean an individual, association, corporation, partnership, institution, organization, or other entity that has been designated by the administration, or other appropriate agencies of the city and in consultation with the administration, as qualified to inspect the home of a family child care provider or group family child care provider seeking eligibility to provide subsidized child care, assist in bringing such provider into full compliance with all applicable laws, regulations and rules in order for such family child care provider or group family child care provider to be designated as eligible to provide subsidized child care and/or monitor the performance of a child care provider that is providing subsidized child care.
+      6.   "Subsidized child care" shall mean all child care services provided by a child care provider paid for wholly or partially with public funds, where payment is made by or pursuant to grants or contracts with a child care provider or authorized family child care service or by issuance of a child care certificate to a parent.
+      7.   "Child care certificate" shall mean a certificate or voucher that is issued directly to a parent who may use such certificate or voucher only as payment for child care services or as a deposit for child care services if such a deposit is required of other children being cared for by the provider.
+      8.   "Parent" shall mean a custodial parent, legal guardian or other person having legal custody of a child.
+   b.   The administration shall perform the tasks and provide the services described in this subdivision with respect to providers of subsidized child care provided, however, that such tasks and services may be delegated to an authorized family child care service to the extent permitted by law:
+      1.   monitoring the care provided to each child and ensuring that each child's individual needs are being met, identifying children in need of further evaluation and making appropriate referrals for individual or family-related services;
+      2.   inspecting a child care provider's home within thirty days of the placement of the first child receiving subsidized child care with that child care provider for the purpose of determining that such child care provider meets the requirements of section three hundred ninety of the social services law, the regulations promulgated thereunder, and any plan approved pursuant to section three hundred ninety of the social services law, and that the child care provider is capable of providing safe and suitable care to children which is supportive of their physical, intellectual, emotional and social well-being. When the inspection is to be conducted by an authorized family child care service, the child care provider shall furnish to such authorized family child care service a true copy of the provider's completed application form and all other supporting documents and related materials in the provider's possession. However, this paragraph shall not apply to those providers of subsidized child care who were providing such care prior to the effective date of this section and received payment for such care exclusively through child care certificates;
+      3.   arranging for a visit to a child care provider's home by a parent prior to the placement of such parent's child receiving subsidized child care with that child care provider for the purpose of determining that such child care provider is capable of providing safe and suitable care which is supportive of that child's physical, intellectual, emotional and social well-being;
+      4.   inspecting the operation of every home where subsidized child care is provided no less than five times each year, which shall be in addition to and separate and distinct from any visits performed pursuant to paragraph (3) of this subdivision or mandated by the United States department of agriculture pursuant to the child and adult care food program, for the purpose of ensuring that child care is provided in accordance with the requirements of all applicable laws, regulations and rules, provided, however, that twenty percent of those providers of subsidized child care who are providing such child care on the effective date of this section and receive payment for such child care exclusively through child care certificates shall be inspected each month following approval of the provisions of this paragraph by the New York state office of children and family services, so that each such provider shall be inspected within five months subsequent to such approval, and all such providers shall be inspected four additional times during the first year following such approval;
+      5.   inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months in which a child care provider is providing subsidized child care and at least one additional time during the next six months, which shall be in addition to and separate and distinct from any visits and inspections required by paragraphs (2), (3) and (4) of this subdivision, except that this paragraph shall not apply to a provider who is participating in the child and adult care food program of the United States department of agriculture and those providers of subsidized child care who were providing such child care prior to the effective date of this section and received payment for such child care exclusively through child care certificates;
+      6.   in addition to and separate and distinct from those visits and inspections required by paragraphs (3) and (4) of this subdivision, inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months after the provider has had eligibility to provide subsidized child care restored subsequent to the effective date of this paragraph or has been adjudicated to have violated any provision of any applicable law, regulation or rule unless it is determined at the time the violation is adjudicated that the violation (a) did not adversely affect public health, (b) did not relate to on-site sanitation, fire hazards or safety hazards, (c) did not relate to staff qualifications or program requirements and (d) did not relate to the discipline, supervision or nutrition of any child in the provider's care. The administration shall also perform such additional inspections as it determines are necessary for it to establish that a provider whose eligibility to provide subsidized child care has been restored is capable of providing safe and suitable care to children which is supportive of their physical, intellectual, emotional and social well-being and to establish that any violations of the type described in this paragraph have been corrected.
+      7.   assisting in the collection and review of medical and immunization information which is required to be maintained for all children for which the provider is providing subsidized child care and the monitoring of those medical and immunization requirements;”
+
+**Dataset 1: Child Care Provider Home Inspections** 	
+
+**Quotes: **
+
+ - § 21-120.1.b.2 "The administration shall … inspecting a child care provider's home within thirty days of the placement of the first child receiving subsidized child care with that child care provider”
+
+- § 21-120.1.b.3 “arranging for a visit to a child care provider's home by a parent prior to the placement of such parent's child”
+
+- § 21-120.1.b.4 “inspecting the operation of every home where subsidized child care is provided no less than five times each year”
+
+**Why:** In order to ensure the inspections are conducted they must be tracked.
+
+**One row represents:** An inspection of a child care provider's home. 
+
+**Covers:** 
+ - Inspections (within thirty days of the placement of the first child receiving subsidized child care) of providers of subsidized child care.
+
+ - Annual inspections of home child care providers no less than five times each year.
+
+ - Two inspections of home child care providers in the first six months in which they provide subsidized child care.
+
+**Columns:**
+
+ - Child Care Provider ID
+
+ - Inspection Type: Initial, Parent, Annual, First Six Months, Additional
+
+ - Initial Child Placement Date
+
+ - Exempted via providing care prior to the effective date of this section?
+
+ - Exempted via receiving payment for such care exclusively through child care certificates?
+
+ - Exempted via United States department of agriculture child and adult care food program?
+
+ - Inspection Date
+
+ - Inspector ID
+
+ - Inspector Organization
+
+
+**Dataset 2: Child Immunization Information**	
+
+**Quotes:**
+
+ - § 21-120.1.b.7 "collection and review of medical and immunization information which is required to be maintained”
+
+**Why:** Explicitly required to be collected and maintained.
+
+**One row represents:** A child immunization. 
+
+**Covers:** 
+ - Immunizations for children receiving subsidized child care.
+
+**Columns:**
+
+ - Child Care Provider ID
+
+ - Child ID
+
+ - Child Name
+
+ - Immunizations received 
+
+ - Immunizations needed
+
+
+Text 3: “§ 21-203 Elder abuse training.
+   a.   The commissioner shall develop a program to train senior service providers in the detection and reporting of elder abuse. Such program shall also include training on the counseling of elder abuse victims.
+   b.   The commissioner shall require that employees of senior centers and employees of entities that contract with the department to provide services to senior citizens, be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years, if such employee has or is expected to have significant and direct person to person contact with senior citizens.
+   c.   The commissioner shall require senior centers to hold at least two educational sessions per year during which guests and members of the senior center will receive counseling regarding elder abuse prevention and awareness and be instructed on how to detect and report instances of elder abuse.
+   d.   The commissioner shall require that every senior center post signage in a prominent common area section within the center that directs those who need information regarding elder abuse detection, reporting, counseling and services to call either the 311 citizen service system or the department's Elderly Crime Victims Resource Center.”
+
+**Dataset 1: Senior Center Staff Training Events**	
+
+**Quotes:** 
+
+ - § 21-203.a "commissioner shall develop a program to train senior service providers in the detection and reporting of elder abuse”
+
+ - § 21-203.b "require that employees of senior centers … be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years”
+
+ - § 21-203.c "shall require senior centers to hold at least two educational sessions per year”
+
+**Why:** In order to ensure the trainings are conducted they must be tracked.
+
+**One row represents:** A training event held by a senior center. 
+
+**Covers:** 
+ - Mandatory senior center employees elder abuse detection trainings.
+
+ - Mandatory public elder abuse prevention trainings.
+
+**Columns:**
+
+ - Training ID
+
+ - Senior Center ID
+
+ - Senior Center Name
+
+ - Event Date
+
+ - Event Time
+
+ - Session Leader ID
+
+ - Session Leader Name
+
+ - Training Type (staff or public)
+
+ - Attendance Count
+
+ - Staff Attendance Count
+
+ - Member Attendance Count
+
+**Dataset 2: Senior Center Staff Training Attendance** 	
+
+**Quotes: **
+
+ - § 21-203.a "commissioner shall develop a program to train senior service providers in the detection and reporting of elder abuse”
+
+ - § 21-203.b "require that employees of senior centers … be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years”
+
+**Why:** In order to ensure each employee is in compliance, attendance must be tracked.
+
+**One row represents:** An elder abuse detection training event attended by senior center staff that counts towards compliance.  
+
+**Covers:** 
+ - Attendance at mandatory elder abuse detection trainings for senior center employees.
+
+**Columns:**
+
+ - Senior Center ID
+
+ - Employee ID
+
+ - Employee Name
+
+ - Training Type: Initial, Repeat
+
+ - Date of Training 
+
+ - Training ID (Dataset 1) 
+
+ - Date Next Training Required By 
+
+ - In Compliance?
+
+
+
+Text 4: “Section 556. Functions, powers and duties of the department.
+Except as otherwise provided by law, the department shall have jurisdiction to regulate all matters affecting health in the city of New York and to perform all those functions and operations performed by the city that relate to the health of the people of the city, including but not limited to the mental health, intellectual and developmental disability, alcoholism and substance abuse-related needs of the people of the city. The jurisdiction of the department shall include but not be limited to the following:
+…
+d.   Promotion or provision of public health services.
+      (1)   Maintain and operate public health centers and clinics as shall be established in the department;
+      (2)   engage in or promote health research for the purpose of improving the quality of medical and health care; in conducting such research, the department shall have the authority to conduct medical audits, to receive reports on forms prepared or prescribed by the department; such information when received by the department shall be kept confidential and used solely for the purpose of medical or scientific research or the improvement of the quality of medical care;
+      (3)   produce, standardize and distribute certain diagnostic, preventive and therapeutic products and conduct laboratory examinations for the diagnosis, prevention and control of disease;
+      (4)   promote or provide for public education on mental disability and the prevention and control of disease;
+      (5)   promote or provide for programs for the prevention and control of disease and for the prevention, diagnosis, care, treatment, social and vocational rehabilitation, special education and training of the mentally disabled;
+      (6)   promote or provide diagnostic and therapeutic services for maternity and child health, family planning, communicable disease, medical rehabilitation and other diseases and conditions affecting public health;
+      (7)   promote or provide medical and health services for school children and the ambulant sick and needy persons of the city;
+      (8)   promote or provide medical and health services for the incarcerated individuals of prisons maintained and operated by the city;
+      (9)   within the amounts appropriated therefor, enter into contracts for the rendition or operation of services and facilities for the mentally disabled on a per capita basis or otherwise, including contracts executed pursuant to subdivision e of section 41.19 of the mental hygiene law;
+      (10)   within the amounts appropriated therefor, execute such programs and maintain such facilities for the mentally disabled as may be authorized under such appropriations; and
+      (11)   use the services and facilities of public or private voluntary institutions whenever practical, and encourage all providers of services to cooperate with or participate in the program of services for the mentally disabled, whether by contract or otherwise.”
+
+**Dataset 1: Public Health Center Inventory Orders**	
+
+**Quotes: **
+
+ - § Section 556.d.1 "Maintain and operate public health centers and clinics”
+
+ - § Section 556.d.3 "conduct laboratory examinations for the diagnosis, prevention and control of disease”
+
+ - § Section 556.d.6 "provide diagnostic and therapeutic services for maternity and child health”
+
+ - § Section 556.d.3 "Maintain and operate public health centers and clinics”
+
+**Why:** To run a health center/clinic it’s necessary to order and use the stock of various necessary inventory, like masks, gloves, pipettes, etc.
+
+**One row represents:** An order of consumable stock necessary to run Public Health Centers.
+
+**Contains:**
+ - All orders for consumable stock, across all Public Health Centers.
+
+**Columns:**
+
+ - Order Date
+
+ - Item
+
+ - Quantity
+
+ - Cost
+
+ - Center ID
+
+ - Center Name
+
+
+**Dataset 2: Public Health Center Capital Tracking**	
+
+**Quotes:** 
+
+ - § Section 556.d.1 "Maintain and operate public health centers and clinics”
+
+ - § Section 556.d.3 "conduct laboratory examinations for the diagnosis, prevention and control of disease”
+
+**Why:** To run a health center/clinic it’s necessary to maintain stock of capital investments needed to run laboratory experiments, like MRI machines, X-rays, etc.  
+
+**One row represents:** An order of a capital investment necessary to run a public health center. 
+
+**Contains:**
+ - All orders for capital needs, across all Public Health Centers.
+
+**Columns:**
+
+ - Order Date
+
+ - Item
+
+ - Quantity
+
+ - Cost
+
+ - Center ID
+
+ - Center Name
+
+ - Expected Necessary Replacement Date
