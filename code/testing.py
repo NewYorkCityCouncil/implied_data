@@ -1,12 +1,13 @@
 import google.generativeai as genai
 from google.generativeai.types import RequestOptions
 from google.api_core import retry
+from datetime import datetime
 
 #-----------------------------------------------------------------------------------
 # prep + settings
 #-----------------------------------------------------------------------------------
 
-dept = "Fire"
+dept = "Transportation"
 exec(open("../tokens.py").read())
 
 
@@ -45,7 +46,7 @@ def submit_gemini_query(api_key, system_message, user_message):
                                                     initial=10, 
                                                     multiplier=2, 
                                                     maximum=60, 
-                                                    timeout=1800
+                                                    timeout=300
                                                 )
                                             )
                                         )
@@ -58,10 +59,6 @@ def submit_gemini_query(api_key, system_message, user_message):
 #-----------------------------------------------------------------------------------
 
 # read in texts
-f = open('path/to/file.txt')
-content = f.read()
-f.close()
-
 charter = open("data/input/" + dept + "_charter.txt").read()
 adcode = open("data/input/" + dept + "_adcode.txt").read()
 rules = open("data/input/" + dept + "_rules.txt").read()
@@ -82,9 +79,10 @@ prompt = "<role>" + prompt_persona + "</role>\n\n" +\
     "<instructions>" + prompt_instructions + "</instructions>\n\n" +\
     "<examples>" + prompt_examples + "</examples>\n\n" +\
     "<output_format>" + prompt_format + "</output_format>\n\n" +\
-     "<final_instructions>" + prompt_final + "</final_instructions>"
+    "<final_instructions>" + prompt_final + "</final_instructions>"
+# "Here are the Agency Rules: " + rules +  "</context>\n\n" +\
 
-with open("data/output/full_prompt.txt", "a") as file:
+with open("data/output/full_prompt.txt", "w") as file:
     file.write(prompt)
 
 #-----------------------------------------------------------------------------------
@@ -93,3 +91,10 @@ with open("data/output/full_prompt.txt", "a") as file:
 
 response = submit_gemini_query(api_key = gemini_key, system_message = prompt_persona, 
                                 user_message = prompt)
+
+with open("data/output/temp.txt", "w") as file:
+    file.write(response)
+
+file_name = "data/output/"+dept+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
+with open(file_name, "w") as file:
+    file.write(response)
