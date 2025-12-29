@@ -59,9 +59,9 @@ def submit_gemini_query(api_key, system_message, user_message):
 #-----------------------------------------------------------------------------------
 
 # read in texts
-charter = open("data/input/" + dept + "_charter.txt").read()
-adcode = open("data/input/" + dept + "_adcode.txt").read()
-rules = open("data/input/" + dept + "_rules.txt").read()
+charter = open("data/input/nyc_code/" + dept + "_charter.txt").read()
+adcode = open("data/input/nyc_code/" + dept + "_adcode.txt").read()
+rules = open("data/input/nyc_code/" + dept + "_rules.txt").read()
 
 # read in prompts
 prompt_persona = open("data/input/prompt_persona.txt").read()
