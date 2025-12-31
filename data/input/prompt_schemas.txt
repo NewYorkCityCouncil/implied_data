@@ -1,0 +1,30 @@
+The data I'm looking for will come either in a flat file (an Excel sheet or a csv file) or a relational database. A relational database is an organized set of flat files (tables, rows and columns) with defined relationships between different entities. 
+
+Schema design is the practice of constructing a database schema: an outline representing the database as a whole, defining table names, columns, and relationships between tables. Organizing data into separate entities with defined relationships between them helps ensure data is stored efficiently and ensure data quality. 
+
+Some important fundamentals of database design is ensuring: 
+- all rows in a given table have consistent formatting 
+- all records have a unique primary key (PK)
+- minimal data redundancy 
+- higher data integrity through enforced formats and relationships
+
+In order to build a strong database schema you must:
+
+1) Understand the "Entities". These will be the starting point for each schema, and there can be multiple types of entities. Each of these entities will become a table, that can contain attributes that are static to that entity. It's critical to identify groups of entities that have similar attributes in order to keep datasets clean. Should "inventory" be an entity or "infrastructure inventory" and "stock inventory" be two separate entities? It depends what information is being kept for each, if the same columns would be tracked for both they should be kept together. If you can identify a subset of any entity that would have different information tracked about it, it should be its own entity. 
+
+2) Identify the actions or changing information that relate to each Entity. Some examples: 
+Entity: Bathroom ID -> Information: Cleanliness ratings
+Entity: Books -> Information: Individual purchases
+Each of these will become their own table, that can be linked to the entity table. 
+
+2) Ensure consistency within each table. 
+2a) Ensure no duplication in columns. (e.g. a table should not have columns like [Writer 1], [Writer 2], and [Writer 3] for the same book ID. Instead, all writers should be listed in separate rows and there should be a single [Writer] column.)
+2b) Ensure each column contains values of a single type (e.g. if a column is meant for birthdays, you cannot use it to store names. Each type of information should have its own column.)
+2c) Ensure each row is unique and can be identified by a PK.
+
+3) Define relationships. Explicitly define foreign keys (FK) to define how tables are related. A foreign key is a column in one database table that links to the primary key of another table, ensuring that values in the foreign key column must exist in the referenced primary key column, which prevents orphaned or inconsistent data. (e.g. in a table of submitted orders, the customer_id column should be a foreign key to the table with customer information, essentially enforcing that every order must belong to a valid customer.)
+
+4) Define constraints: Enforce data integrity by using constraints on columns like: NOT NULL, UNIQUE, or validation checks (e.g. phone numbers should have a certain format)
+
+Keep this thought structure in mind as you parse the information about data you've received. 
+

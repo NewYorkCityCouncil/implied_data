@@ -2,18 +2,19 @@ import google.generativeai as genai
 from google.generativeai.types import RequestOptions
 from google.api_core import retry
 from datetime import datetime
+import time
 
 #-----------------------------------------------------------------------------------
 # prep + settings
 #-----------------------------------------------------------------------------------
 
-dept = "Transportation"
+dept = "Parks"
 exec(open("../tokens.py").read())
 
 
 #-----------------------------------------------------------------------------------
-# define query that deals with calling when it gets a 429
-# from https://stackoverflow.com/questions/78846882/gemini-status-429-no-matter-what
+# functions
+# first from https://stackoverflow.com/questions/78846882/gemini-status-429-no-matter-what
 #-----------------------------------------------------------------------------------
 
 def submit_gemini_query(api_key, system_message, user_message):
@@ -53,48 +54,95 @@ def submit_gemini_query(api_key, system_message, user_message):
 
     return response.text
 
+def pull_gemini_ops(dept, type):
+
+    file = open("data/input/nyc_code/" + dept + "_" + type + ".txt").read()
+    prompt = "<instructions>" + prompt_instructions_one + "</instructions>\n\n" +\
+        "<context>" +\
+            "Here is the ", type + ": " + file +\
+        "</context>\n\n" +\
+        "<instructions>" + prompt_instructions_one + "</instructions>\n\n" +\
+        "<examples>" + prompt_examples + "</examples>\n\n" +\
+        "<output_format>" + prompt_formatshort + "</output_format>\n\n" +\
+        "<final_instructions>" + prompt_final + "</final_instructions>"
+
+    response = submit_gemini_query(api_key = gemini_key, 
+                                   system_message = prompt_persona_ops, 
+                                   user_message = prompt)
+
+    file_name = "data/output/"+dept+"_"+type+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
+    with open(file_name, "w") as file:
+        file.write(response)
+
+    return response
+
+def pull_gemini_db(dept):
+
+    d = datetime.today().strftime('%Y-%m-%d')
+    charter = open("data/output/"+dept+"_charter_"+d+".txt" ).read()
+    adcode = open("data/output/"+dept+"_adcode_"+d+".txt" ).read()
+    rules = open("data/output/"+dept+"_rules_"+d+".txt" ).read()
+
+    prompt = "<instructions>" + prompt_instructions_two + " " +\
+        prompt_schemas + "</instructions>\n\n" +\
+        "<context>" +\
+            "Here are the datasets identified from the Charter: " + charter +\
+            "Here are the datasets identified from the Administrative Code: " + adcode +\
+            "Here are the datasets identified from the Rules: " + rules +\
+        "</context>\n\n" +\
+        "<instructions>" + prompt_instructions_two + "</instructions>\n\n" +\
+        "<output_format>" + prompt_format + "</output_format>\n\n" +\
+        "<final_instructions>" + prompt_final + "</final_instructions>"
+
+    response = submit_gemini_query(api_key = gemini_key, 
+                                   system_message = prompt_persona_db, 
+                                   user_message = prompt)
+
+    file_name = "data/output/"+dept+"_combined_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
+    with open(file_name, "w") as file:
+        file.write(response)
+
+def time_elapsed(start):
+    elapsed = round(time.time() - start, 0)
+    if elapsed > 60: 
+        elapsed = round(elapsed/60, 1)
+        return(f"{elapsed} (minutes)")
+    elif elapsed > 3600: 
+        elapsed = round(elapsed/3600, 2)
+        return(f"{elapsed} (hours)")
+    else: 
+        return(f"{int(elapsed)} (seconds)")
+
 
 #-----------------------------------------------------------------------------------
 # bring in prompt info
 #-----------------------------------------------------------------------------------
 
-# read in texts
-charter = open("data/input/nyc_code/" + dept + "_charter.txt").read()
-adcode = open("data/input/nyc_code/" + dept + "_adcode.txt").read()
-rules = open("data/input/nyc_code/" + dept + "_rules.txt").read()
-
-# read in prompts
-prompt_persona = open("data/input/prompt_persona.txt").read()
-prompt_instructions = open("data/input/prompt_instructions.txt").read()
-prompt_format = open("data/input/prompt_format.txt").read()
+# read in prompts for first pass
+prompt_persona_ops = open("data/input/prompt_persona_ops.txt").read()
+prompt_instructions_one = open("data/input/prompt_instructions_one.txt").read()
+prompt_formatshort = open("data/input/prompt_formatshort.txt").read()
 prompt_examples = open("data/input/prompt_examples.txt").read()
 prompt_final = open("data/input/prompt_final.txt").read()
 
-# combine to final prompt
-prompt = "<role>" + prompt_persona + "</role>\n\n" +\
-    "<instructions>" + prompt_instructions + "</instructions>\n\n" +\
-    "<context>" + "Here is the Charter: " + charter +\
-    "Here is the Administrative Code: " + adcode +\
-    "Here are the Agency Rules: " + rules +  "</context>\n\n" +\
-    "<instructions>" + prompt_instructions + "</instructions>\n\n" +\
-    "<examples>" + prompt_examples + "</examples>\n\n" +\
-    "<output_format>" + prompt_format + "</output_format>\n\n" +\
-    "<final_instructions>" + prompt_final + "</final_instructions>"
-# "Here are the Agency Rules: " + rules +  "</context>\n\n" +\
+# read in prompts for second pass
+prompt_persona_db = open("data/input/prompt_persona_db.txt").read()
+prompt_instructions_two = open("data/input/prompt_instructions_one.txt").read()
+prompt_format = open("data/input/prompt_format.txt").read()
+prompt_schemas = open("data/input/prompt_schemas.txt").read()
 
-with open("data/output/full_prompt.txt", "w") as file:
-    file.write(prompt)
 
 #-----------------------------------------------------------------------------------
 # query gemini
 #-----------------------------------------------------------------------------------
 
-response = submit_gemini_query(api_key = gemini_key, system_message = prompt_persona, 
-                                user_message = prompt)
+# query data from each document
+for cur_doc in ['charter', 'adcode', 'rules']:
+    start = time.time()
+    response = pull_gemini_ops(dept, cur_doc)
+    print(f"{time_elapsed(start)} to finish query for: {cur_doc}.")
 
-with open("data/output/temp.txt", "w") as file:
-    file.write(response)
-
-file_name = "data/output/"+dept+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
-with open(file_name, "w") as file:
-    file.write(response)
+# combine the datasets from each document
+start = time.time()
+response = pull_gemini_db(dept)
+print(f"{time_elapsed(start)} to finish combining the datasets from all documents.")

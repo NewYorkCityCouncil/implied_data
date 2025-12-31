@@ -1,0 +1,638 @@
+**Department of Transportation Data Requirements**
+
+**1. Traffic Control Device Inventory**
+
+*   **Quotes:**
+    *   Section 2903.a.(2) "establish, determine, control, install and maintain the design, type, size and location of any and all signs, signals, marking, and similar devices indicating the names of the streets and other public places and for guiding, directing or otherwise regulating and controlling vehicular and pedestrian traffic in the streets, squares, parks, parkways, highways, roads, alleys, marginal streets, bridges and other public ways of the city;"
+*   **Why:** To manage and maintain traffic control devices, the agency needs a comprehensive record of each device.
+*   **One row represents:** A single traffic control device (sign, signal, marking).
+*   **Covers:** All signs, signals, markings, and similar devices for traffic and pedestrian control.
+*   **Columns:**
+    *   Device ID
+    *   Device Type (e.g., Stop Sign, Traffic Light, Crosswalk Marking, Street Name Sign)
+    *   Design Specifications
+    *   Size
+    *   Location (GPS coordinates, Street Address, Intersection)
+    *   Installation Date
+    *   Last Maintenance Date (linked to Dataset 2)
+    *   Status (Active, Damaged, Removed)
+    *   Associated Street/Highway ID (linked to Dataset 3)
+
+**2. Traffic Control Device Maintenance Records**
+
+*   **Quotes:**
+    *   Section 2903.a.(2) "establish, determine, control, install and maintain the design, type, size and location of any and all signs, signals, marking, and similar devices indicating the names of the streets and other public places and for guiding, directing or otherwise regulating and controlling vehicular and pedestrian traffic in the streets, squares, parks, parkways, highways, roads, alleys, marginal streets, bridges and other public ways of the city;"
+*   **Why:** To ensure proper functioning and track the upkeep of all traffic control devices.
+*   **One row represents:** A single maintenance or installation event for a traffic control device.
+*   **Covers:** All installation, repair, replacement, or inspection activities for traffic control devices.
+*   **Columns:**
+    *   Maintenance Record ID
+    *   Device ID (linked to Dataset 1)
+    *   Date of Service
+    *   Type of Service (Installation, Repair, Replacement, Inspection)
+    *   Description of Work Performed
+    *   Personnel/Team ID
+    *   Cost of Service
+    *   Outcome/Status (e.g., Completed, Pending, Requires Further Action)
+
+**3. Roadway Segment Inventory**
+
+*   **Quotes:**
+    *   Section 2903.b.(2) "designing, constructing and repairing of public roads, streets, highways and parkways;"
+    *   Section 2903.b.(3) "paving, repaving, resurfacing and repairing of all public roads, streets, including marginal streets and places, highways and parkways and the relaying of all pavement removed for any cause including cleaning, sweeping, landscaping and maintenance functions for arterial highways as defined by regulation;"
+    *   Section 2903.b.(1) "regulating, grading, curbing, flagging and guttering of streets, including marginal streets and places, and the laying of crosswalks;"
+*   **Why:** To manage and track the condition and characteristics of all public roads, streets, highways, and parkways.
+*   **One row represents:** A defined segment of a public road, street, highway, or parkway.
+*   **Covers:** All public roads, streets, highways, parkways, marginal streets, and associated features like curbs, flags, gutters, and crosswalks.
+*   **Columns:**
+    *   Roadway Segment ID
+    *   Street Name
+    *   Start Location (e.g., intersection, GPS)
+    *   End Location (e.g., intersection, GPS)
+    *   Length
+    *   Width
+    *   Type (e.g., Arterial Highway, Local Street, Parkway)
+    *   Pavement Type
+    *   Last Paving/Resurfacing Date (linked to Dataset 4)
+    *   Condition Rating
+    *   Presence of Curbs/Flags/Gutters/Crosswalks
+
+**4. Infrastructure Maintenance Work Orders (Roadways, Sidewalks, Lots)**
+
+*   **Quotes:**
+    *   Section 2903.b.(2) "designing, constructing and repairing of public roads, streets, highways and parkways;"
+    *   Section 2903.b.(3) "paving, repaving, resurfacing and repairing of all public roads, streets, including marginal streets and places, highways and parkways and the relaying of all pavement removed for any cause including cleaning, sweeping, landscaping and maintenance functions for arterial highways as defined by regulation;"
+    *   Section 2903.b.(1) "regulating, grading, curbing, flagging and guttering of streets, including marginal streets and places, and the laying of crosswalks;"
+    *   Section 2903.b.(4) "filling of sunken lots, fencing of vacant lots, digging down of lots and licensing of vaults under sidewalks;"
+    *   Section 2903.b.(8) "clearing, grubbing, grading, filling or excavating of vacant lots and other land areas, as provided by law;"
+    *   Section 2904.(1) "install, reconstruct, repave and repair the sidewalk flags in front of or abutting such property, including but not limited to the intersection quadrant for corner property"
+    *   Section 2904.(2) "fence any vacant lot or lots comprising part or all of such property and fill any sunken lot or lots comprising part or all of such property or cut down any raised lot or lots comprising part or all of such property"
+*   **Why:** To track all construction, repair, and maintenance activities for roads, sidewalks, and lots, whether performed by the agency or property owners.
+*   **One row represents:** A single work order for infrastructure construction, repair, or maintenance.
+*   **Covers:** Construction, repair, paving, resurfacing, grading, curbing, flagging, guttering, crosswalk laying, lot filling/fencing/digging, clearing, grubbing, excavating, and sidewalk flag work.
+*   **Columns:**
+    *   Work Order ID
+    *   Related Asset ID (e.g., Roadway Segment ID (linked to Dataset 3), Property ID (linked to Dataset 10))
+    *   Work Order Type (e.g., Paving, Sidewalk Repair, Lot Fencing, Curb Installation)
+    *   Description of Work
+    *   Date Issued
+    *   Scheduled Start Date
+    *   Actual Start Date
+    *   Scheduled Completion Date
+    *   Actual Completion Date
+    *   Assigned Department/Contractor
+    *   Personnel/Team ID
+    *   Cost
+    *   Status (e.g., Open, In Progress, Completed, Canceled)
+    *   Source (e.g., Internal, Citizen Complaint (linked to Dataset 11), Property Owner Order (linked to Dataset 10))
+
+**5. Bridge and Tunnel Inventory**
+
+*   **Quotes:**
+    *   Section 2903.b.(6) "construction, alteration and maintenance of all bridges and tunnels. The commissioner shall issue a report to the mayor, city council and the people of the city about the condition of all bridges and tunnels operated and maintained by the department on March first, as of December thirty-first of the preceding calendar year."
+*   **Why:** To maintain a comprehensive record of all bridges and tunnels under the department's jurisdiction.
+*   **One row represents:** A single bridge or tunnel.
+*   **Covers:** All bridges and tunnels operated and maintained by the department.
+*   **Columns:**
+    *   Bridge/Tunnel ID
+    *   Name
+    *   Location (GPS coordinates, connecting streets/areas)
+    *   Type (e.g., Suspension Bridge, Tunnel, Overpass)
+    *   Construction Date
+    *   Length
+    *   Number of Lanes
+    *   Last Condition Assessment Date (linked to Dataset 6)
+    *   Overall Condition Rating
+    *   Last Major Rehabilitation Date (linked to Dataset 7)
+    *   Capital Funds Appropriated (for reporting)
+    *   Revenue Budget Funds Appropriated (for reporting)
+
+**6. Bridge and Tunnel Condition Assessments**
+
+*   **Quotes:**
+    *   Section 2903.b.(6) "The commissioner shall issue a report to the mayor, city council and the people of the city about the condition of all bridges and tunnels operated and maintained by the department on March first, as of December thirty-first of the preceding calendar year."
+*   **Why:** To systematically record the condition of bridges and tunnels for maintenance planning and reporting.
+*   **One row represents:** A single condition assessment for a bridge or tunnel.
+*   **Covers:** Regular and special condition assessments for all bridges and tunnels.
+*   **Columns:**
+    *   Assessment ID
+    *   Bridge/Tunnel ID (linked to Dataset 5)
+    *   Assessment Date
+    *   Inspector ID
+    *   Assessment Type (e.g., Routine, Special, Post-Event)
+    *   Structural Condition Rating
+    *   Deck Condition Rating
+    *   Substructure Condition Rating
+    *   Overall Condition Rating
+    *   Deficiencies Identified
+    *   Recommended Actions
+    *   Date of Report Submission
+
+**7. Bridge and Tunnel Maintenance Work Orders**
+
+*   **Quotes:**
+    *   Section 2903.b.(6) "construction, alteration and maintenance of all bridges and tunnels."
+*   **Why:** To track all construction, alteration, and maintenance activities for bridges and tunnels.
+*   **One row represents:** A single work order for bridge or tunnel construction, alteration, or maintenance.
+*   **Covers:** All construction, alteration, and maintenance activities for bridges and tunnels.
+*   **Columns:**
+    *   Work Order ID
+    *   Bridge/Tunnel ID (linked to Dataset 5)
+    *   Work Order Type (e.g., Repair, Rehabilitation, Painting, Inspection Follow-up)
+    *   Description of Work
+    *   Date Issued
+    *   Scheduled Start Date
+    *   Actual Start Date
+    *   Scheduled Completion Date
+    *   Actual Completion Date
+    *   Assigned Department/Contractor
+    *   Personnel/Team ID
+    *   Cost
+    *   Status (e.g., Open, In Progress, Completed, Canceled)
+    *   Related Condition Assessment ID (linked to Dataset 6)
+
+**8. Ferry and Marine Facility Inventory**
+
+*   **Quotes:**
+    *   Section 2903.c.(1) "maintain and operate the ferries of the city;"
+    *   Section 2903.c.(2) "be responsible for constructing, acquiring, operating, maintaining or controlling all ferry boats, ferry houses, ferry terminals and equipment thereof and all wharf property and marginal roads adjacent to such wharves, ferry houses and terminals necessary for the operation of the ferries and related facilities, including parking sites;"
+    *   Section 2903.c.(6) "construct, operate and maintain marinas and public boat launching ramps and related facilities of ferry property and collect fees for the use thereof;"
+*   **Why:** To manage and track all ferry boats, ferry houses, terminals, wharf property, marinas, and boat launching ramps.
+*   **One row represents:** A single ferry boat, ferry house, ferry terminal, marina, or public boat launching ramp.
+*   **Covers:** All ferry boats, ferry houses, ferry terminals, wharf property, marginal roads, parking sites, marinas, and public boat launching ramps.
+*   **Columns:**
+    *   Facility/Asset ID
+    *   Name
+    *   Type (e.g., Ferry Boat, Ferry Terminal, Marina, Boat Ramp)
+    *   Location (GPS coordinates, address)
+    *   Acquisition/Construction Date
+    *   Capacity (for boats/terminals)
+    *   Condition Rating
+    *   Last Maintenance Date (linked to Dataset 9)
+    *   Associated Wharf Property ID
+    *   Parking Site Capacity (if applicable)
+
+**9. Ferry and Marine Facility Maintenance Records**
+
+*   **Quotes:**
+    *   Section 2903.c.(1) "maintain and operate the ferries of the city;"
+    *   Section 2903.c.(2) "be responsible for constructing, acquiring, operating, maintaining or controlling all ferry boats, ferry houses, ferry terminals and equipment thereof and all wharf property and marginal roads adjacent to such wharves, ferry houses and terminals necessary for the operation of the ferries and related facilities, including parking sites;"
+    *   Section 2903.c.(6) "construct, operate and maintain marinas and public boat launching ramps and related facilities of ferry property and collect fees for the use thereof; such fees to be deposited in a special fund for the continued maintenance, operation or reconstruction of public marine facilities."
+*   **Why:** To track all maintenance, repair, and operational activities for ferries and marine facilities.
+*   **One row represents:** A single maintenance or operational event for a ferry or marine facility.
+*   **Covers:** All maintenance, repair, and operational activities for ferry boats, ferry houses, terminals, marinas, and boat launching ramps.
+*   **Columns:**
+    *   Maintenance Record ID
+    *   Facility/Asset ID (linked to Dataset 8)
+    *   Date of Service
+    *   Type of Service (e.g., Repair, Inspection, Cleaning, Operational Check)
+    *   Description of Work Performed
+    *   Personnel/Team ID
+    *   Cost of Service
+    *   Outcome/Status (e.g., Completed, Pending, Requires Further Action)
+    *   Fund Source (e.g., General, Public Marine Facilities Fund)
+
+**10. Property Owner Orders and Liens (Sidewalks, Lots, Signs)**
+
+*   **Quotes:**
+    *   Section 2903.a.(17)(c) "Whenever the department shall determine that such a sign should be installed or affixed, it may order the owner of the property to perform such work. Such order shall specify the work to be performed and shall fix a reasonable time for compliance."
+    *   Section 2903.a.(17)(d) "Upon the owner's failure to comply with such order or notice within thirty days of service thereof, the department may perform the work or cause same to be performed, the cost of which, together with administrative expenses... shall constitute a debt recoverable from the owner by lien on the property affected or otherwise."
+    *   Section 2903.a.(17)(e) "Service of a notice or order upon an owner pursuant to the provisions of this section shall be made upon such owner or upon his or her designated managing agent personally or by certified or registered mail, return receipt requested, addressed to the person whose name appears on the records of the city collector as being the owner of the premises."
+    *   Section 2903.a.(17)(f) "A copy of such notice or order shall also be filed in the office of the clerk of the county where the property is situated, together with proof of service thereof."
+    *   Section 2903.a.(17)(g) "A notice of such account, stating the amount due and the nature of the charge, shall be mailed by the city collector, within five days after such entry, to the last known address of the person whose name appears on the records of the city collector as being the owner or the agent or as the person designated by the owner to receive tax bills or where no name appears, to the premises, addressed to either the owner or the agent."
+    *   Section 2903.a.(17)(h) "If such charge is not paid within ninety days from the date of entry, it shall be the duty of the city collector to charge and receive interest thereon, to be calculated to the date of payment from the date of entry."
+    *   Section 2904 "The owner of any property at his own cost, shall (1) install, reconstruct, repave and repair the sidewalk flags... and (2) fence any vacant lot... fill any sunken lot... or cut down any raised lot... whenever the transportation department shall so order... In the event that the owner fails to comply... the transportation department may provide for the doing of same at the expense of the owner..."
+*   **Why:** To track orders issued to property owners for required work, their compliance, and subsequent liens/charges if the city performs the work.
+*   **One row represents:** A single order issued to a property owner for required work.
+*   **Covers:** Orders for sign installation/affixing, sidewalk flag installation/repair, vacant lot fencing, sunken lot filling, and raised lot cutting.
+*   **Columns:**
+    *   Order ID
+    *   Property ID (e.g., Parcel ID, Address)
+    *   Property Owner Name
+    *   Property Owner Address
+    *   Designated Managing Agent Name
+    *   Order Date
+    *   Work Type (e.g., Sign Installation, Sidewalk Repair, Lot Fencing)
+    *   Description of Work Ordered
+    *   Compliance Deadline
+    *   Owner Compliance Status (e.g., Complied, Non-Compliant, Work Performed by City)
+    *   Date of Compliance/Non-Compliance Determination
+    *   Cost of City Performance (if applicable)
+    *   Administrative Expenses (if applicable)
+    *   Total Debt Amount
+    *   Lien Status (e.g., Filed, Paid, Foreclosed)
+    *   Date Lien Filed
+    *   Date of Entry of Account
+    *   Interest Charged
+    *   Date of Payment
+    *   County Clerk Filing Date
+    *   Proof of Service (Yes/No)
+
+**11. Property Owner Complaint Log (Sidewalks/Lots)**
+
+*   **Quotes:**
+    *   Section 2903.a.(18) "upon receipt of a complaint in the appropriate borough office of the department concerning a measurement error, incorrect property assessment, or that the property qualifies for local law sixty-seven, the borough office shall notify the property owner, within ten business days, in writing, where appropriate, that all records will be reviewed and the results will be sent, if applicable, to the sidewalk assessment review board within the department for review within thirty days of receipt of the complaint."
+    *   Section 2903.a.(18) "Upon receipt of complaint in the appropriate borough office of the department regarding the quality of work, the department shall send an inspector to investigate the complaint within thirty days."
+    *   Section 2903.a.(18) "If the quality of the work is determined to be poor, the work shall be corrected by the appropriate contractor within eighteen months of substantial completion."
+    *   Section 2903.a.(18) "Upon request of the owner of property, the department through the appropriate borough office shall within fifteen business days provide for the reinspection as provided in section 19-152 of the administrative code of the city of New York."
+*   **Why:** To track and manage property owner complaints regarding sidewalk assessments and work quality, ensuring timely responses and resolutions.
+*   **One row represents:** A single complaint received from a property owner.
+*   **Covers:** Complaints related to measurement errors, incorrect property assessments, Local Law 67 qualification, and quality of work performed on sidewalks/lots.
+*   **Columns:**
+    *   Complaint ID
+    *   Property ID (e.g., Parcel ID, Address)
+    *   Property Owner Name
+    *   Complaint Date
+    *   Borough Office
+    *   Complaint Type (e.g., Measurement Error, Incorrect Assessment, LL67 Qualification, Work Quality)
+    *   Description of Complaint
+    *   Date Owner Notified of Review
+    *   Date Records Sent to Sidewalk Assessment Review Board
+    *   SARB Determination Date
+    *   Date Owner Notified of SARB Determination
+    *   Inspection Date (for quality of work complaints)
+    *   Inspector ID
+    *   Inspection Outcome (e.g., Poor Quality, No Correction Required)
+    *   Correction Required (Yes/No)
+    *   Contractor Responsible for Correction
+    *   Correction Due Date
+    *   Date of Reinspection Request
+    *   Date of Reinspection
+    *   Owner Notified of Right to File Claim/Appeal (Yes/No)
+    *   Claim Form Provided (Yes/No)
+    *   Complaint Status (e.g., Open, Under Review, Resolved, Appealed)
+
+**12. Traffic Violations and Citations**
+
+*   **Quotes:**
+    *   Section 2903.a.(1) "The violation of such rules and regulations shall be a traffic infraction triable by a judge of the criminal court of the city of New York and, except as otherwise provided by law, punishable by not more than fifteen days' imprisonment, or by a fine of not more than fifty dollars, or both, and may also be adjudicated pursuant to title nineteen of the administrative code or pursuant to articles 2-A and 2-B of the vehicle and traffic law."
+    *   Section 2903.a.(14) "enforce laws, rules and regulations concerning the parking of vehicles and the movement and conduct of vehicular and pedestrian traffic;"
+    *   Section 2903.a.(14)(b) "The commissioner may employ, hire and retain officers, agents and employees for the purpose of enforcing laws, rules and regulations prohibiting, regulating, directing, controlling or restricting the parking of vehicles and the movement and conduct of vehicular and pedestrian traffic, which officers, agents and employees are hereby authorized, empowered and designated to issue, make and serve tickets, summonses and complaints for traffic infractions pursuant to article two-A of the vehicle and traffic law and such rules and regulations as may be promulgated thereunder, to issue, make and serve simplified traffic informations and to issue, make and serve appearance tickets for traffic infractions, misdemeanors and violations related to the movement and conduct of vehicular traffic, pursuant to article two-B of the vehicle and traffic law and title nineteen of the administrative code of the city of New York and such rules and regulations as may be promulgated thereunder."
+*   **Why:** To track all traffic and parking violations, citations issued, and their adjudication status.
+*   **One row represents:** A single traffic or parking violation incident.
+*   **Covers:** All violations of traffic rules, regulations, and laws, including parking, standing, stopping, and vehicular/pedestrian movement.
+*   **Columns:**
+    *   Citation ID
+    *   Violation Date
+    *   Violation Time
+    *   Location (Street, Intersection, GPS)
+    *   Violation Type/Code
+    *   Description of Violation
+    *   Issuing Officer/Employee ID
+    *   Vehicle License Plate Number
+    *   Vehicle Make/Model
+    *   Driver/Owner Information (if available)
+    *   Fine Amount
+    *   Penalty Amount
+    *   Payment Status (e.g., Paid, Unpaid, Contested)
+    *   Adjudication Status (e.g., Pending, Guilty, Dismissed)
+    *   Date of Adjudication
+    *   Payment Method (e.g., Cash, Credit Card (linked to Dataset 13))
+    *   Fund Destination (e.g., Traffic Improvement Fund (linked to Dataset 14))
+
+**13. Credit Card Payment Transactions**
+
+*   **Quotes:**
+    *   Section 2903.a.(13-a) "in conjunction with the commissioner of finance and with any other city agency, enter into at least one agreement with a financing agency or card issuer to provide for the acceptance by the city of credit cards as an alternate means of payment of fines, civil penalties, charges and fees incurred due to a violation of any law, rule, or regulation providing for or regulating parking, stopping, standing or trespassing of a motor vehicle."
+    *   Section 2903.a.(13-b) "consult with the commissioner of finance or the police commissioner, or any other appropriate agency head, one or more of whom shall enter into at least one agreement with a financing agency or card issuer to provide for the acceptance by the city of at least two major credit cards as an alternate means of payment of fees or charges required to be paid in order to retrieve a motor vehicle which has been towed due to a violation of any law, rule, or regulation providing for or regulating parking, stopping, standing or trespassing of a motor vehicle."
+*   **Why:** To track all credit card payments for fines, penalties, charges, and fees related to parking, stopping, standing, trespassing, and vehicle towing.
+*   **One row represents:** A single credit card transaction.
+*   **Covers:** Credit card payments for parking fines, civil penalties, charges, fees, and vehicle towing fees.
+*   **Columns:**
+    *   Transaction ID
+    *   Date of Transaction
+    *   Amount Paid
+    *   Payment Type (e.g., Fine, Penalty, Towing Fee)
+    *   Related Citation ID (linked to Dataset 12) or Towing Event ID (implied)
+    *   Credit Card Type (MasterCard, Visa, American Express, Discover)
+    *   Financing Agency/Card Issuer
+    *   Transaction Status (e.g., Approved, Declined)
+    *   Processing Fees (if any)
+    *   Net Amount to City
+    *   Fund Destination (e.g., Traffic Improvement Fund (linked to Dataset 14))
+
+**14. Traffic Improvement Fund Transactions**
+
+*   **Quotes:**
+    *   Section 2903.a.(13) "The parking fees and fines and penalties for violation of parking rules so collected shall be paid into a special fund to be known as the "traffic improvement fund." The revenues of such fund, upon authorization by the council, shall be used for the payment of all costs of purchase, rental, engineering, installation, operation, maintenance and repair of parking meters, for the collection of coins, for the enforcement of rules and regulations pertaining to vehicular parking, the collections of fines and penalties for violation of such rules and regulations, and for the payment of interest on, amortization of, or payment of any indebtedness contracted by the city in connection with the installation, operation and maintenance of parking meters. Any revenues remaining after such payments are made shall be used for capital and other expenditures to ameliorate traffic conditions which adversely affect the welfare of the city;"
+*   **Why:** To track all revenues and expenditures of the special "traffic improvement fund."
+*   **One row represents:** A single financial transaction (revenue or expenditure) related to the traffic improvement fund.
+*   **Covers:** All parking fees, fines, penalties, and expenditures for parking meter operations, enforcement, debt service, and capital/other expenditures to ameliorate traffic conditions.
+*   **Columns:**
+    *   Transaction ID
+    *   Date of Transaction
+    *   Transaction Type (e.g., Revenue, Expenditure)
+    *   Source/Destination (e.g., Parking Meter Fees, Parking Fines, Meter Purchase, Enforcement Costs)
+    *   Amount
+    *   Description
+    *   Related Citation ID (linked to Dataset 12) or Parking Meter ID (linked to Dataset 15) or Credit Card Transaction ID (linked to Dataset 13)
+    *   Authorization Reference (e.g., Council Resolution)
+
+**15. Parking Meter Inventory**
+
+*   **Quotes:**
+    *   Section 2903.a.(13) "establish parking meter zones, determine the design, type, size, location and use of parking meters and fix the fees for parking in parking areas and public parking garages"
+    *   Section 2903.a.(13) "The revenues of such fund... shall be used for the payment of all costs of purchase, rental, engineering, installation, operation, maintenance and repair of parking meters, for the collection of coins..."
+*   **Why:** To manage and track all parking meters, their locations, types, and operational status.
+*   **One row represents:** A single parking meter.
+*   **Covers:** All parking meters in established parking meter zones, parking areas, and public parking garages.
+*   **Columns:**
+    *   Parking Meter ID
+    *   Location (GPS coordinates, Street Address, Parking Zone ID)
+    *   Design Type
+    *   Size
+    *   Installation Date
+    *   Fee Structure
+    *   Last Collection Date
+    *   Last Maintenance Date (linked to Dataset 16)
+    *   Status (e.g., Active, Out of Order, Removed)
+    *   Parking Zone ID
+
+**16. Parking Meter Maintenance and Collection Records**
+
+*   **Quotes:**
+    *   Section 2903.a.(13) "The revenues of such fund... shall be used for the payment of all costs of purchase, rental, engineering, installation, operation, maintenance and repair of parking meters, for the collection of coins..."
+*   **Why:** To track all maintenance, repair, and coin collection activities for parking meters.
+*   **One row represents:** A single maintenance, repair, or coin collection event for a parking meter.
+*   **Covers:** All installation, repair, maintenance, and coin collection activities for parking meters.
+*   **Columns:**
+    *   Event ID
+    *   Parking Meter ID (linked to Dataset 15)
+    *   Date of Event
+    *   Event Type (e.g., Maintenance, Repair, Coin Collection, Installation)
+    *   Description of Work Performed/Collection Details
+    *   Personnel/Team ID
+    *   Cost of Service (for maintenance/repair)
+    *   Amount Collected (for coin collection)
+    *   Outcome/Status (e.g., Completed, Pending, Requires Further Action)
+    *   Fund Destination (linked to Dataset 14)
+
+**17. Disabled Parking Permit Applications and Issuances**
+
+*   **Quotes:**
+    *   Section 2903.a.(15) "issue special vehicle identification parking permits;"
+    *   Section 2903.a.(15)(a) "The commissioner shall issue a special vehicle identification parking permit to a New York city resident who requires the use of a private automobile for transportation and to a non-resident who requires the use of a private automobile for transportation to a school in which such applicant is enrolled or to a place of employment, when such person has been certified by the department of health and mental hygiene or a provider designated by the department or the department of health and mental hygiene, who shall make such certification in accordance with standards and guidelines prescribed by the department or the department of health and mental hygiene, as having a permanent disability seriously impairing mobility. A permit shall be issued to such person upon his or her application."
+    *   Section 2903.a.(15)(c) "The name, address and telephone number where the permittee can be reached shall be written on the reverse side of the permit... Such permit shall also include on the front side thereof, the license plate number (s) of the vehicle(s) which will be used to transport the permittee. The commissioner shall allow the permittee to add or delete license plate number(s) as may be necessary; however, at no time shall the number of license plate numbers on any given permit exceed ten."
+    *   Section 2903.a.(15)(a) "Such permit shall not be transferable and shall be revoked if used on behalf of any other person. Any abuse by any person to whom such permit has been issued of any privilege, benefit or consideration granted pursuant to such permit, shall be sufficient cause for revocation of said permit."
+    *   Section 2903.a.(15)(e) "Certifications by the department of health and mental hygiene of applications for special vehicle identification permits shall be made at those district health offices designated for such purpose by the commissioner of health and mental hygiene."
+*   **Why:** To manage the application, issuance, and revocation of special parking permits for disabled persons.
+*   **One row represents:** A single application for a special vehicle identification parking permit.
+*   **Covers:** Applications for new, renewed, or modified special vehicle identification parking permits for disabled persons.
+*   **Columns:**
+    *   Application ID
+    *   Permit ID
+    *   Applicant Name
+    *   Applicant Address
+    *   Applicant Phone Number
+    *   Resident Status (NYC Resident, Non-Resident)
+    *   Non-Resident School/Employment Location (if applicable)
+    *   Date of Application
+    *   DOHMH Certification Date
+    *   DOHMH Certifying Office
+    *   Disability Type (Permanent, Seriously Impairing Mobility)
+    *   Permit Status (e.g., Approved, Denied, Issued, Revoked)
+    *   Date Issued
+    *   Expiration Date
+    *   License Plate Numbers (up to 10)
+    *   Date of Last License Plate Update
+    *   Revocation Reason (if applicable)
+    *   Date of Revocation
+    *   Applicant Type (Self, Parent, Spouse, Domestic Partner, Guardian, Other)
+
+**18. Citizen Complaint Log (General Traffic/Parking)**
+
+*   **Quotes:**
+    *   Section 2903.a.(17) "Establish and publicize a telephone number for citizen reporting of violations of section 1203-c of the vehicle and traffic law;"
+*   **Why:** To record and track citizen reports of traffic and parking violations, particularly VTL 1203-c.
+*   **One row represents:** A single citizen complaint.
+*   **Covers:** Citizen reports of violations of VTL 1203-c (parking for disabled persons) and other general traffic/parking complaints.
+*   **Columns:**
+    *   Complaint ID
+    *   Date of Complaint
+    *   Time of Complaint
+    *   Reporting Method (e.g., Phone, Online)
+    *   Complainant Contact Info (Optional, for follow-up)
+    *   Location of Violation (Street, Intersection, GPS)
+    *   Violation Type (e.g., VTL 1203-c, Double Parking)
+    *   Description of Violation
+    *   Vehicle License Plate Number (if applicable)
+    *   Date Assigned to Enforcement
+    *   Enforcement Officer ID
+    *   Outcome (e.g., Citation Issued (linked to Dataset 12), No Violation Found, Referred to Police)
+    *   Resolution Date
+
+**19. Street Use and Opening Permits**
+
+*   **Quotes:**
+    *   Section 2903.b.(5) "issuance of permits to builders and others to use or open a street;"
+*   **Why:** To track permits issued for opening or using city streets.
+*   **One row represents:** A single permit application for street use or opening.
+*   **Covers:** Permits issued to builders and others for using or opening streets for various purposes (e.g., utility work, construction access).
+*   **Columns:**
+    *   Permit ID
+    *   Application Date
+    *   Applicant Name/Company
+    *   Applicant Contact Information
+    *   Location of Work (Street, Intersection, GPS)
+    *   Purpose of Street Use/Opening
+    *   Start Date of Permit
+    *   End Date of Permit
+    *   Permit Status (e.g., Approved, Denied, Active, Expired)
+    *   Conditions of Permit
+    *   Fee Charged
+    *   Date Fee Paid
+    *   Inspection Dates (during/after work)
+    *   Restoration Completion Date
+
+**20. Marine Facility Permits (Photography/Television)**
+
+*   **Quotes:**
+    *   Section 2903.c.(5) "issue permits for the control of television and photography activities within or upon ferries and related facilities;"
+*   **Why:** To track permits issued for television and photography activities on ferries and related facilities.
+*   **One row represents:** A single permit application for television or photography activities.
+*   **Covers:** Permits for television and photography activities within or upon ferries and related facilities.
+*   **Columns:**
+    *   Permit ID
+    *   Application Date
+    *   Applicant Name/Company
+    *   Applicant Contact Information
+    *   Purpose of Activity (e.g., Commercial Shoot, Documentary)
+    *   Location of Activity (e.g., Ferry Boat ID (linked to Dataset 8), Ferry Terminal ID (linked to Dataset 8))
+    *   Start Date of Activity
+    *   End Date of Activity
+    *   Permit Status (e.g., Approved, Denied, Active, Expired)
+    *   Conditions of Permit
+    *   Fee Charged
+    *   Date Fee Paid
+
+**21. Marine Facility Fee Collections (Marinas/Boat Ramps)**
+
+*   **Quotes:**
+    *   Section 2903.c.(6) "construct, operate and maintain marinas and public boat launching ramps and related facilities of ferry property and collect fees for the use thereof; such fees to be deposited in a special fund for the continued maintenance, operation or reconstruction of public marine facilities."
+*   **Why:** To track fees collected for the use of marinas and public boat launching ramps.
+*   **One row represents:** A single fee collection transaction for marina or boat ramp use.
+*   **Covers:** Fees collected for the use of marinas and public boat launching ramps.
+*   **Columns:**
+    *   Transaction ID
+    *   Date of Collection
+    *   Facility ID (linked to Dataset 8)
+    *   Fee Type (e.g., Docking Fee, Launching Fee, Storage Fee)
+    *   Amount Collected
+    *   Payment Method
+    *   Payer Name/ID
+    *   Duration of Use (if applicable)
+    *   Fund Destination (Public Marine Facilities Fund)
+
+**22. Public Marine Facilities Fund Transactions**
+
+*   **Quotes:**
+    *   Section 2903.c.(6) "such fees to be deposited in a special fund for the continued maintenance, operation or reconstruction of public marine facilities."
+*   **Why:** To track all revenues and expenditures of the special fund for public marine facilities.
+*   **One row represents:** A single financial transaction (revenue or expenditure) related to the public marine facilities fund.
+*   **Covers:** All fees collected from marinas and boat ramps, and expenditures for maintenance, operation, or reconstruction of public marine facilities.
+*   **Columns:**
+    *   Transaction ID
+    *   Date of Transaction
+    *   Transaction Type (e.g., Revenue, Expenditure)
+    *   Source/Destination (e.g., Marina Fees, Boat Ramp Fees, Facility Maintenance, Reconstruction Project)
+    *   Amount
+    *   Description
+    *   Related Marine Facility ID (linked to Dataset 8) or Marine Facility Fee Collection ID (linked to Dataset 21)
+
+**23. Traffic Engineering Studies and Surveys**
+
+*   **Quotes:**
+    *   Section 2903.a.(5) "collect and compile traffic data and prepare engineering studies and surveys in regard to vehicular and pedestrian traffic;"
+    *   Section 2903.a.(11) "prepare analyses of traffic accidents with a view to determining their causes and means for their prevention;"
+*   **Why:** To track all traffic engineering studies, surveys, and accident analyses conducted.
+*   **One row represents:** A single traffic engineering study, survey, or accident analysis.
+*   **Covers:** All engineering studies, surveys, and accident analyses related to vehicular and pedestrian traffic.
+*   **Columns:**
+    *   Study/Survey ID
+    *   Title
+    *   Date Initiated
+    *   Date Completed
+    *   Purpose (e.g., Traffic Flow Improvement, Safety Analysis, Accident Cause Determination)
+    *   Location/Area of Study
+    *   Methodology Used
+    *   Key Findings
+    *   Recommendations
+    *   Report File Location
+    *   Related Traffic Data Collection ID (linked to Dataset 24)
+
+**24. Traffic Flow and Incident Data**
+
+*   **Quotes:**
+    *   Section 2903.a.(5) "collect and compile traffic data and prepare engineering studies and surveys in regard to vehicular and pedestrian traffic;"
+    *   Section 2903.a.(11) "prepare analyses of traffic accidents with a view to determining their causes and means for their prevention;"
+*   **Why:** To collect raw data on vehicular and pedestrian traffic, and traffic accidents, for analysis and reporting.
+*   **One row represents:** A single traffic measurement point (e.g., vehicle count, speed) or a single traffic accident.
+*   **Covers:** Vehicular and pedestrian traffic counts, speeds, congestion levels, and detailed records of traffic accidents.
+*   **Columns:**
+    *   Data Point ID (or Accident ID)
+    *   Date and Time
+    *   Location (GPS coordinates, Street, Intersection)
+    *   Data Type (e.g., Vehicle Count, Pedestrian Count, Speed Measurement, Accident)
+    *   Measurement Value (e.g., number of vehicles, average speed)
+    *   Direction of Travel (if applicable)
+    *   Weather Conditions (for accidents)
+    *   Number of Vehicles Involved (for accidents)
+    *   Number of Injuries/Fatalities (for accidents)
+    *   Contributing Factors (for accidents)
+    *   Data Collection Method (e.g., Sensor, Manual Count, Police Report)
+    *   Related Study ID (linked to Dataset 23)
+
+**25. Street Lighting Inventory**
+
+*   **Quotes:**
+    *   Section 2903.b.(10) "designing, constructing and maintaining a lighting system for streets, highways, parks and public places in the city."
+    *   Section 2903.a.(3) "make recommendations to the mayor as to the design and location of highway lighting devices, poles and fixtures, and the type of intensity of illumination of streets and highways;"
+*   **Why:** To manage and track all street lighting devices, poles, and fixtures.
+*   **One row represents:** A single street lighting device or pole.
+*   **Covers:** All lighting devices, poles, and fixtures that comprise the city's street lighting system.
+*   **Columns:**
+    *   Light ID
+    *   Location (GPS coordinates, Street Address)
+    *   Type of Fixture
+    *   Pole Type
+    *   Installation Date
+    *   Intensity of Illumination
+    *   Last Maintenance Date (linked to Dataset 26)
+    *   Status (e.g., Active, Damaged, Out of Service)
+    *   Associated Street/Highway ID (linked to Dataset 3)
+
+**26. Street Lighting Maintenance Records**
+
+*   **Quotes:**
+    *   Section 2903.b.(10) "designing, constructing and maintaining a lighting system for streets, highways, parks and public places in the city."
+*   **Why:** To track all maintenance and repair activities for the street lighting system.
+*   **One row represents:** A single maintenance or repair event for a street light.
+*   **Covers:** All installation, repair, replacement, or inspection activities for street lighting devices.
+*   **Columns:**
+    *   Maintenance Record ID
+    *   Light ID (linked to Dataset 25)
+    *   Date of Service
+    *   Type of Service (e.g., Bulb Replacement, Fixture Repair, Pole Repair, Inspection)
+    *   Description of Work Performed
+    *   Personnel/Team ID
+    *   Cost of Service
+    *   Outcome/Status (e.g., Completed, Pending, Requires Further Action)
+
+**27. Highway Construction Project Signage Records**
+
+*   **Quotes:**
+    *   Section 2906 "The commissioner may provide that on any city-sponsored, authorized or assisted arterial highway construction site, or major repair site that in the discretion of the commissioner is likely to substantially disrupt traffic, signs be posted at least one half mile or more prior to the area under construction or repair warning motorists of the fact that such work is in progress and, wherever possible, advising of an available alternate route."
+*   **Why:** To track the deployment of warning signs for highway construction and major repair sites.
+*   **One row represents:** A record of signage deployment for a specific highway construction or repair project.
+*   **Covers:** Signage posted for city-sponsored, authorized, or assisted arterial highway construction or major repair sites.
+*   **Columns:**
+    *   Project ID
+    *   Project Name
+    *   Location of Construction/Repair
+    *   Start Date of Project
+    *   End Date of Project
+    *   Signage Deployment Date
+    *   Number of Signs Posted
+    *   Location of Each Sign (e.g., distance from site, GPS)
+    *   Type of Warning (e.g., Work in Progress, Alternate Route)
+    *   Signage Removal Date
+    *   Disruption Level (Commissioner's Discretion)
+
+**28. Property Entry Records (Surveys/Investigations)**
+
+*   **Quotes:**
+    *   Section 2905 "The commissioner or his agent when authorized by him may in accordance with law enter upon public or private property the purpose of making surveys, borings or other investigations necessary for the exercise of the powers or the performance of the duties of the department."
+*   **Why:** To document all instances of authorized entry onto public or private property for surveys, borings, or investigations.
+*   **One row represents:** A single instance of entry onto a property for investigation.
+*   **Covers:** Entries onto public or private property for surveys, borings, or other investigations.
+*   **Columns:**
+    *   Entry ID
+    *   Date of Entry
+    *   Time of Entry
+    *   Property Address/ID
+    *   Property Type (Public, Private)
+    *   Purpose of Entry (e.g., Survey, Boring, Investigation)
+    *   Authorized Agent ID
+    *   Authorization Reference (e.g., Commissioner's Directive)
+    *   Outcome/Findings (brief description)
+    *   Refusal to Permit Entry (Yes/No)
+    *   Action Taken for Refusal (if applicable)
+
+**Non-Tabular Information:**
+
+*   **Rules and Regulations:** Section 2903.a.(1) "make such rules and regulations for the conduct of vehicular and pedestrian traffic"
+*   **Comprehensive City Traffic Plan:** Section 2903.a.(4) "prepare and submit to the mayor a proposed comprehensive city traffic plan;"
+*   **Detailed Reports on Traffic Conditions:** Section 2903.a.(6) "prepare and submit to the mayor detailed reports in regard to traffic conditions in the city;"
+*   **Recommendations for Ameliorating Traffic Conditions:** Section 2903.a.(7) "make recommendations to the mayor in regard to methods of ameliorating traffic conditions"
+*   **Proposals for Amendment of Resolutions, Rules, Regulations, and Proposed Legislation:** Section 2903.a.(8) "submit to the mayor from time to time for consideration and forwarding to appropriate city agencies, specific proposals for amendment of any resolutions, rules, or regulations of any city agency which affect traffic conditions in the city, and proposed legislation which may be necessary to implement and effectuate such proposals;"
+*   **Recommendations for Street Improvements, Parking Facilities, Off-Street Loading/Parking:** Section 2903.a.(9) "prepare and submit to the mayor, for consideration and forwarding to the council, the city planning commission and to other agencies of the city, recommendations and proposals for the improvement of existing streets, street widening and location of new streets, avenues, highways and parkways; the location and design of parking garages and parking areas; the establishment of public parking garages and parking areas; the location, type and design of off-street loading and unloading and parking facilities; and other matters relating to traffic control;"
+*   **Reports, Recommendations, and Suggestions from Public/Private Agencies and Civic Groups:** Section 2903.a.(10) "coordinate the efforts of and consider the reports, recommendations and suggestions of public and private agencies and civic groups in regard to traffic conditions and traffic control in the city;"
+*   **Educational Activities Materials:** Section 2903.a.(12) "carry on educational activities for the purpose of promoting traffic safety and free movement of vehicular and pedestrian traffic in the city;"
+*   **Bridge and Tunnel Condition Report:** Section 2903.b.(6) "The commissioner shall issue a report to the mayor, city council and the people of the city about the condition of all bridges and tunnels operated and maintained by the department on March first, as of December thirty-first of the preceding calendar year. The report shall include a description of all capital and revenue budget funds appropriated for rehabilitation and maintenance of bridges and tunnels as well as the program developed by the commission for the maintenance of all bridges and tunnels in the city of New York;"
+*   **Ferry Service Change Notices:** Section 2903.c.(2) "no substantial or general change in the level of services furnished upon any such ferry facility... except upon not less than thirty days notice to the city planning commission and the council. Provided, further that notice of such change shall be conspicuously posted in a public place at each ferry house and terminal for a continuous period of at least thirty days in advance of any such change taking effect and in addition, such notice shall further be published at least once during such thirty day period in a daily newspaper of general circulation in the city;"
+*   **Plans and Recommendations for Mass Transportation Facilities:** Section 2903.d.(1) "prepare or review plans and recommendations with respect to the nature, location, construction, operation and financing of roads, highways, bridges, tunnels, subways or other facilities for mass transportation"
+*   **Mass Transportation Planning and Programming Documents:** Section 2903.d.(2) "develop and coordinate planning and programming for all forms of mass transportation within the city of New York"
+*   **Recommendations to Mass Transit Authorities:** Section 2903.d.(3) "make recommendations to the mayor, the metropolitan transportation authority, the New York city transit authority, the port authority of New York and New Jersey and other city, state and federal authorities and agencies concerning the mass transit needs of the city of New York."
+*   **Regulations for Seasonal Horticultural Operations:** Section 2903.b.(7) "with the exception of seasonal horticultural operations, as defined by regulations to be adopted by the commissioner"
+*   **Regulations for Special Vehicle Identification Permit Certifications:** Section 2903.a.(15)(e) "At least one such district health office shall be designated in each borough for special vehicle identification permit certifications. Such certifications shall be available by appointment at each of said borough health offices, or an alternative location within the borough as designated by the commissioner by regulation, on a regular basis."
+*   **Signs in Borough Offices Advising Public of Rights:** Section 2903.a.(18) "The department shall also post signs in conspicuous places in the borough offices advising the public of such rights;"
