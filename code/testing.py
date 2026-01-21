@@ -3,13 +3,28 @@ from google.generativeai.types import RequestOptions
 from google.api_core import retry
 from datetime import datetime
 import time
+import pandas as pd 
+import re
 
 #-----------------------------------------------------------------------------------
 # prep + settings
 #-----------------------------------------------------------------------------------
 
-dept = "Parks"
+dept = "Correction"
 exec(open("../tokens.py").read())
+
+
+#-----------------------------------------------------------------------------------
+# bring in open dataset info
+#-----------------------------------------------------------------------------------
+
+datasets = pd.read_csv("https://data.cityofnewyork.us/resource/5tqd-u88y.csv?$limit=99999999999")
+datasets = datasets[(~datasets.uid.isna()) & (~datasets.datasetinformation_agency.isna())]
+agency_names = datasets.datasetinformation_agency.unique()
+matches = [bool(re.search(dept, s)) for s in list(agency_names)]
+full_dept = agency_names[matches][0]
+
+dept_opendata = datasets[datasets.datasetinformation_agency == full_dept][['name', 'description', 'type']]
 
 
 #-----------------------------------------------------------------------------------
@@ -63,7 +78,7 @@ def pull_gemini_ops(dept, type):
         "</context>\n\n" +\
         "<instructions>" + prompt_instructions_one + "</instructions>\n\n" +\
         "<examples>" + prompt_examples + "</examples>\n\n" +\
-        "<output_format>" + prompt_formatshort + "</output_format>\n\n" +\
+        "<output_format>" + prompt_format_one + "</output_format>\n\n" +\
         "<final_instructions>" + prompt_final + "</final_instructions>"
 
     response = submit_gemini_query(api_key = gemini_key, 
@@ -89,9 +104,10 @@ def pull_gemini_db(dept):
             "Here are the datasets identified from the Charter: " + charter +\
             "Here are the datasets identified from the Administrative Code: " + adcode +\
             "Here are the datasets identified from the Rules: " + rules +\
-        "</context>\n\n" +\
-        "<instructions>" + prompt_instructions_two + "</instructions>\n\n" +\
-        "<output_format>" + prompt_format + "</output_format>\n\n" +\
+            "Here are the titles and descriptions of all the datasets the agency has on Open Data: " +\
+            dept_opendata.to_string() + " \n\n " + "</context>\n\n " +\
+        "<instructions>" + prompt_instructions_two + "</instructions>\n\n " +\
+        "<output_format>" + prompt_format_two + "</output_format>\n\n " +\
         "<final_instructions>" + prompt_final + "</final_instructions>"
 
     response = submit_gemini_query(api_key = gemini_key, 
@@ -121,16 +137,15 @@ def time_elapsed(start):
 # read in prompts for first pass
 prompt_persona_ops = open("data/input/prompt_persona_ops.txt").read()
 prompt_instructions_one = open("data/input/prompt_instructions_one.txt").read()
-prompt_formatshort = open("data/input/prompt_formatshort.txt").read()
+prompt_format_one = open("data/input/prompt_format_one.txt").read()
 prompt_examples = open("data/input/prompt_examples.txt").read()
 prompt_final = open("data/input/prompt_final.txt").read()
 
 # read in prompts for second pass
 prompt_persona_db = open("data/input/prompt_persona_db.txt").read()
-prompt_instructions_two = open("data/input/prompt_instructions_one.txt").read()
-prompt_format = open("data/input/prompt_format.txt").read()
+prompt_instructions_two = open("data/input/prompt_instructions_two.txt").read()
+prompt_format_two = open("data/input/prompt_format_two.txt").read()
 prompt_schemas = open("data/input/prompt_schemas.txt").read()
-
 
 #-----------------------------------------------------------------------------------
 # query gemini

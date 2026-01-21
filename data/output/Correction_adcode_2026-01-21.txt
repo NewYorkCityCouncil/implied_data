@@ -1,0 +1,1166 @@
+**Identified Tabular Datasets**
+
+1.  **Incarcerated Individual Demographics & Custody Records**
+    *   **Quotes:**
+        *   "The commissioner of correction may designate any institution or part thereof under the jurisdiction of the commissioner for the safekeeping of persons committed to the department of correction." § 9-101
+        *   "The commissioner of correction shall have power to transfer prisoners from any prison or correctional institution under his or her control to any other prison or correctional institution under the jurisdiction of the department." § 9-104
+        *   "The commissioner of correction shall have authority concerning the care and custody of witnesses in criminal proceedings committed to the institutions under the commissioner's charge." § 9-105
+        *   "The commissioner of correction shall so far as practicable classify all felons, misdemeanants and violators of local laws under the commissioner's charge, so that the youthful or less hardened offenders shall be segregated from the older or more hardened offenders." § 9-109
+        *   "The commissioner of correction shall keep and preserve a proper record of all persons who shall come under the commissioner's care or custody, and of the disposition of each, with full particulars as to the name, age, sex, color, nativity and religious faith, together with a statement of the cause and length of detention." § 9-121
+        *   "The commissioner of correction shall have custody of civil prisoners and the prisons wherein they are confined." § 9-125.a
+        *   "The department of correction shall collect, from any sentenced incarcerated individual who will serve, after sentencing, ten days or more in any city correctional institution, information relating to such incarcerated individual's housing, employment and sobriety needs." § 9-127.b
+        *   "The term "adolescent" means an incarcerated individual 16 or 17 years of age. The term "adult" means an incarcerated individual 22 years of age or older. The term "young adult" means an incarcerated individual 18 to 21 years of age." § 9-130.a
+        *   "The department shall inform every incarcerated individual upon admission to the custody of the department, in writing, using plain and simple language, of their rights under department policy..." § 9-139.a
+        *   "The department shall maintain a policy that requires its employees to refer to individuals in custody by their names and their preferred pronouns, if known and if practicable..." § 9-139.h
+        *   "The total number of persons in the custody of the department; The total and average numbers of persons in the Special Consideration Unit, or any other housing unit dedicated to the housing of transgender, gender non-binary, or intersex persons; The number and percentage of persons in the custody of the department who have identified themselves to the department, or have been identified by another person or agency on their behalf, as having a gender identity different from the sex assigned to the person at birth, or that were assigned an "X" gender marker or an intersex identification at birth; This data shall be further disaggregated by self-described gender identity including, but not limited to, transgender, gender non-conforming, non-binary, or intersex;" § 9-165.b.1-3
+    *   **Why:** Core mission requires tracking all individuals under custody, their personal details, legal status, and movements for management and reporting.
+    *   **One row represents:** A single incarcerated individual's record within the department's custody.
+    *   **Covers:** All persons committed to the department, including criminal and civil prisoners, and witnesses.
+    *   **Columns:**
+        *   Incarcerated Individual ID (Unique Identifier)
+        *   Name
+        *   Age
+        *   Sex (Assigned at Birth)
+        *   Gender Identity (Self-reported: Transgender, Gender Non-conforming, Non-binary, Intersex, Male, Female, X Gender Marker, etc.)
+        *   Preferred Pronouns
+        *   Race/Color
+        *   Nativity
+        *   Religious Faith
+        *   Date of Admission
+        *   Cause of Detention (e.g., felony, misdemeanor, local law violation, witness, civil process)
+        *   Length of Detention (Expected/Actual)
+        *   Custody Status (e.g., pre-trial, sentenced, witness, civil)
+        *   Current Facility ID (Links to Dataset 2)
+        *   Current Housing Unit Type (e.g., general population, segregated housing, MHU, Special Consideration Unit)
+        *   Classification (e.g., youthful/less hardened, older/more hardened, security risk group)
+        *   Housing, Employment, Sobriety Needs (Collected upon sentencing for 10+ days)
+        *   Educational Background (Self-reported highest level)
+        *   Borough of Arrest
+        *   Mental Health Treatment Level (Links to Dataset 10)
+        *   Medically Vulnerable Status (during public health emergency)
+        *   Pregnancy Status (Yes/No)
+        *   Date of Birth
+        *   New York State Identification Number (NYSID) / Booking and Case Number
+        *   Legal Representative ID (if known)
+        *   English Language Learner Status (from DOE)
+        *   Dyslexia Risk Screening Status (Yes/No/Declined)
+        *   Dyslexia Intervention Referral Status (Yes/No)
+
+2.  **Jail Facility & Building Inventory**
+    *   **Quotes:**
+        *   "The commissioner of correction may designate any institution or part thereof under the jurisdiction of the commissioner for the safekeeping of persons committed to the department of correction." § 9-101
+        *   "The board of estimate by resolution may designate from time to time any building or buildings within the city to be the common jails of such city or of any of the counties therein." § 9-102
+        *   "The commissioner of correction is empowered to set aside in the city prison a sufficient space for the purposes of installing a library for the incarcerated individuals. The commissioner of correction may do likewise in any other place in which persons are held for infractions of the law pending a determination by a court." § 9-111.a
+        *   "The commissioner of correction may use for agricultural purposes all the lands under his or her jurisdiction which are capable of cultivation and which are not otherwise occupied or utilized." § 9-123
+        *   "Every city correctional facility under the sole jurisdiction and control of the department built after the effective date of the local law that added this section shall comply with the following requirements: Design requirements... General requirements... Individual living quarters... Dormitories... Housing units... Bathrooms shall be accessible at all times..." § 9-159.b
+        *   "The department shall digitize paper-based communications and ensure that correctional facilities built after the effective date of the local law that added this section are wired in such a fashion to allow for such electronic communications." § 9-159.c
+        *   "The department coordinator for borough-based jail transition shall: Advise and assist the department regarding the cessation of housing incarcerated individuals in jails located on Rikers Island and the transition to housing incarcerated individuals in jails other than jails located on Rikers Island;" § 9-175.b.1
+    *   **Why:** Essential for managing physical infrastructure, allocating resources, and ensuring compliance with facility standards.
+    *   **One row represents:** A single correctional institution, building, or designated area within a facility.
+    *   **Covers:** All city correctional institutions, common jails, designated parts thereof, and associated lands.
+    *   **Columns:**
+        *   Facility ID (Unique Identifier)
+        *   Facility Name
+        *   Facility Type (e.g., City Prison, Common Jail, Rikers Island, Borough Jail)
+        *   Location (Address, Borough)
+        *   Designation Date
+        *   Capacity (Total, by housing unit type)
+        *   Current Occupancy
+        *   Special Designations (e.g., female prisoners only, youthful offenders, civil prisoners, Special Consideration Unit)
+        *   Land Area (for agricultural use)
+        *   Building Construction/Renovation Date (for § 9-159 compliance)
+        *   Design Features (e.g., institutional appearance, use of bars, call buttons, internet capability, re-entry service spaces, clinical spaces, HVAC, visiting spaces, outdoor recreation)
+        *   Living Quarter Details (e.g., square footage, toilet, sink, bed, storage, window access, lighting)
+        *   Dormitory Details (e.g., toilets, sinks, showers, window access, floor space per person)
+        *   Housing Unit Details (e.g., recreation area, kitchenette)
+        *   Electronic Communication Infrastructure Status
+        *   Last Inspection Date (Links to Dataset 14)
+        *   Next Inspection Date (Links to Dataset 14)
+
+3.  **Staff Demographics & Employment Records**
+    *   **Quotes:**
+        *   "Where a member of the uniformed force shall be charged with the commission of a crime, he or she may be suspended without pay for the duration of the time that said criminal charges are pending final disposition." § 9-112
+        *   "Absence, without leave and without an explanation, of any member of the force for five consecutive work days shall be deemed and held to be a resignation..." § 9-113
+        *   "Women correction officers shall have charge of and shall supervise all female prisoners and all parts of prisons occupied by such prisoners..." § 9-115.a
+        *   "The uniformed force of the department of correction shall consist of the following ranks: Correction officers. Captains. Assistant deputy wardens. Deputy wardens. Wardens." § 9-117.a
+        *   "A correction officer or correction officers from the department of correction shall at all times direct and guard all incarcerated individuals of any of the institutions in the department of correction who are performing work for any other agency." § 9-122
+        *   "The salaries of the employees of such commissaries shall be fixed by the mayor." § 9-118.e
+        *   "The term "staff" means anyone other than an incarcerated individual who works at a facility operated by the department." § 9-130.a
+        *   "The total number of staff employed by the department, disaggregated by uniform and non-uniform staff; and further disaggregated by out sick and not out sick;" § 9-160.b.8
+        *   "The commissioner of citywide administrative services, in collaboration with the commissioner, shall administer civil service examinations for individuals incarcerated for a period of 10 days or longer in any city correctional facility." § 9-164.a
+        *   "The department coordinator for borough-based jail transition shall: ... submit to the mayor and the speaker of the council a staffing report for each jail on Rikers Island, which shall include, but need not be limited to, information on the uniformed and civilian staff needed to operate each type of housing unit in such jail..." § 9-175.b.4
+    *   **Why:** Essential for managing human resources, tracking personnel, and ensuring compliance with staffing and pay regulations.
+    *   **One row represents:** A single employee of the Department of Correction or Correctional Health Services.
+    *   **Covers:** All uniformed and civilian staff, including those in commissaries and those providing health services.
+    *   **Columns:**
+        *   Staff ID (Unique Identifier)
+        *   Name
+        *   Employee Type (Uniformed, Civilian, Correctional Health Staff)
+        *   Rank/Title (e.g., Correction Officer, Captain, Warden, Health Care Professional)
+        *   Gender
+        *   Employment Status (Active, Suspended, Resigned, Retired, Terminated)
+        *   Hire Date
+        *   Salary
+        *   Current Assignment/Facility ID (Links to Dataset 2)
+        *   Criminal Charges Pending (Yes/No)
+        *   Departmental Charges Pending (Yes/No)
+        *   Probationary Term Status
+        *   Line of Duty Incapacity Status (Yes/No)
+        *   Line of Duty Incapacity Start Date
+        *   Line of Duty Incapacity End Date
+        *   Sick Leave Status (Yes/No)
+        *   Last Training Date (e.g., trauma-informed care, opioid antagonist, child visitor interaction) (Links to Dataset 19, 20, 21)
+        *   Next Training Due Date (Links to Dataset 19, 20, 21)
+        *   Civil Service Examination Eligibility (Yes/No)
+        *   Civil Service Examination Date (Links to Dataset 22)
+        *   Civil Service Examination Score (Links to Dataset 22)
+        *   Previous Sexual Abuse Allegations (Substantiated, Unsubstantiated, Pending) (Links to Dataset 12, 13)
+
+4.  **Staff Work Schedules & Attendance**
+    *   **Quotes:**
+        *   "The commissioner of correction or other officer or officers having the management, control or direction of the department of correction shall divide all the custodial officers in each employee classification into three platoons at each institution." § 9-116.b
+        *   "Tours of duty shall commence at midnight, eight o'clock ante meridian and four o'clock post meridian of each consecutive twenty-four hours. Such tours of duty shall hereinafter be designated as normal tours of duty. At the discretion of the warden or other officer or officers in charge of an institution, other tours of duty may be created." § 9-116.c
+        *   "Every member of each platoon shall be entitled to at least one calendar day of rest upon the completion of every six tours of duty. This day of rest shall not be deferred longer than one calendar week after such member has become entitled thereto." § 9-116.c
+        *   "All custodial officers shall be allowed a vacation period as may be authorized in leave regulations promulgated by the mayor. During an emergency, as defined herein, the vacation period may be withheld for such length of time as may be necessary." § 9-116.d
+        *   "Absence, without leave and without an explanation, of any member of the force for five consecutive work days shall be deemed and held to be a resignation..." § 9-113
+    *   **Why:** Critical for operational management, ensuring adequate staffing, and compliance with labor laws and platoon system requirements.
+    *   **One row represents:** A single scheduled tour of duty or a recorded absence/leave for a staff member.
+    *   **Covers:** All custodial officers' work schedules, attendance, days of rest, and vacation periods.
+    *   **Columns:**
+        *   Staff ID (Links to Dataset 3)
+        *   Date
+        *   Shift Type (e.g., Normal Tour, Miscellaneous Tour, Special Duty Squad)
+        *   Scheduled Start Time
+        *   Scheduled End Time
+        *   Actual Start Time
+        *   Actual End Time
+        *   Facility ID (Links to Dataset 2)
+        *   Platoon Assignment
+        *   Day of Rest Status (Scheduled, Taken, Deferred)
+        *   Vacation Status (Scheduled, Taken, Withheld)
+        *   Absence Type (e.g., Sick, AWOL, Leave, Emergency Duty)
+        *   Absence Reason (if applicable)
+        *   Back Pay Eligibility (Yes/No, if suspended)
+        *   Hours Worked
+
+5.  **Medical Appointments & Sick Calls**
+    *   **Quotes:**
+        *   "Correctional health services... shall establish a program for the treatment of substance abuse through the use of medication assisted treatment..." § 9-107.a
+        *   "The term "clinic production" means the department's process by which an incarcerated individual is escorted for a medical appointment." § 9-108.a
+        *   "The term "medical appointment" means any patient encounter requested by correctional health services." § 9-108.a
+        *   "The term "non-production" means an instance where an incarcerated individual is not escorted for a medical appointment requested by correctional health services." § 9-108.a
+        *   "The term "production refusal" means a refusal by an incarcerated individual to allow the department to produce such incarcerated individual to clinic for a medical appointment." § 9-108.a
+        *   "The term "sick call" means the department's process by which an incarcerated individual requests to be seen by a health care professional for the purpose of assessing or treating such incarcerated individual's non-emergency medical complaint." § 9-108.a
+        *   "Where individuals are not produced for medical appointments, department personnel shall record the facility, along with the reason for non-production..." § 9-108.d
+        *   "Where individuals are not produced to a health care professional for a medical appointment, correctional health services will provide to the department the names of such individuals and a specified time-frame of when they should be produced as deemed clinically appropriate." § 9-108.e
+        *   "The number of requests made by incarcerated individuals for medical or mental health treatment and the number granted," § 9-134.b.xxvi
+        *   "The number of calls made to any correctional health services phone number designed to handle calls from incarcerated individuals, and the number of voice messages left on such phone number;" § 9-160.c.3
+        *   "The number of persons in the custody of the department receiving prenatal care; and The number of persons in the custody of the department receiving postnatal care." § 9-163.b.8-9
+    *   **Why:** Essential for tracking healthcare provision, identifying barriers to access, and ensuring medical needs are met.
+    *   **One row represents:** A single medical appointment request, sick call, or patient encounter.
+    *   **Covers:** All medical appointments, sick calls, and related production/non-production events for incarcerated individuals.
+    *   **Columns:**
+        *   Appointment/Sick Call ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Request Date
+        *   Scheduled Appointment Date/Time
+        *   Actual Appointment Date/Time
+        *   Appointment Type (e.g., Medical, Mental Health, Substance Abuse, Prenatal, Postnatal)
+        *   Request Type (e.g., Sick Call, CHS Request, Follow-up)
+        *   Health Care Professional ID (Links to Dataset 3)
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Unit Type
+        *   Production Status (Produced, Non-produced, Refused, Walk-out)
+        *   Non-Production Reason (e.g., court, visits, programming, barbershop, recreation, other)
+        *   Non-Production Narrative (if "other")
+        *   Refusal/Walk-out Reason (if given)
+        *   CHS Production Recommendation (Yes/No)
+        *   CHS Recommended Production Timeframe
+        *   Outcome (e.g., Seen, Treated, Rescheduled, Not Seen)
+        *   Call Log ID (if initiated by phone call)
+        *   Call Date/Time
+        *   Call Type (e.g., medical, mental health)
+        *   Call Outcome (e.g., answered, voicemail)
+
+6.  **Substance Abuse Treatment Enrollments & Progress**
+    *   **Quotes:**
+        *   "Correctional health services... shall establish a program for the treatment of substance abuse through the use of medication assisted treatment, including the administration of methadone, buprenorphine, and naltrexone. The program shall be available on a voluntary basis only to such incarcerated individuals as apply, subject to a medical evaluation, before acceptance, of their need for such treatment." § 9-107.a
+        *   "The commissioner of correction shall ensure that any housing unit in which transgender, intersex, non-binary, or gender non-conforming individuals are housed has access to the same substance abuse treatment as other incarcerated individuals." § 9-107.b
+        *   "available services relating to... drug and alcohol treatment and counseling..." § 9-139.c
+    *   **Why:** To track participation and effectiveness of mandated substance abuse treatment programs.
+    *   **One row represents:** An incarcerated individual's enrollment in a substance abuse treatment program.
+    *   **Covers:** Voluntary medication-assisted treatment (MAT) for substance abuse, including methadone, buprenorphine, and naltrexone.
+    *   **Columns:**
+        *   Enrollment ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Enrollment Date
+        *   Program Type (e.g., Methadone, Buprenorphine, Naltrexone, Counseling)
+        *   Voluntary Participation (Yes/No)
+        *   Medical Evaluation Date
+        *   Medical Need for Treatment (Yes/No)
+        *   Start Date of Treatment
+        *   End Date of Treatment
+        *   Treatment Status (Active, Completed, Discontinued)
+        *   Reason for Discontinuation (if applicable)
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Unit Type (e.g., transgender, intersex, non-binary, gender non-conforming)
+        *   Treatment Provider (e.g., CHS, contracted entity)
+        *   Outcome/Progress Notes (e.g., compliance, relapse, dosage changes)
+
+7.  **Program Participation & Education Records**
+    *   **Quotes:**
+        *   "The commissioner of correction may establish and maintain schools or classes for the instruction and training of the incarcerated individuals of any institution under the commissioner's charge, and shall offer to all incarcerated individuals incarcerated for more than 10 days a minimum of five hours per day of incarcerated individual programming or education, excluding weekends and holidays." § 9-110
+        *   "The department shall evaluate incarcerated individual programming each calendar year. For purposes of this section, "incarcerated individual programming" includes but is not limited to any structured services offered directly to incarcerated individuals for the purposes of vocational training, counseling, cognitive behavioral therapy, addressing drug dependencies, or any similar purpose." § 9-144
+        *   "available services relating to education, vocational development, drug and alcohol treatment and counseling, and mental health treatment and counseling services." § 9-139.c
+        *   "The programming and services available to incarcerated individuals and children in the nursery, including but not limited to the following categories: parenting, health and mental health, drug and/or alcohol addiction, vocational, educational, recreational, or other life skills;" § 9-142.d.6
+        *   "The number of adolescents enrolled in educational programming. The number of young adults enrolled in educational programming, and the percentage of such young adults so enrolled." § 9-151.c.1-2
+        *   "The number of hours of compulsory educational programming afforded to adolescents on each school day, and an identification of the curriculum subject areas included in educational programming." § 9-151.c.3
+        *   "The number of 17-year-old adolescents who graduated from high school, and the number of young adults enrolled in educational programming who graduated from high school." § 9-151.c.6
+        *   "The number of adolescents participating in department of education vocational educational programming, the nature of such programming, and the number of such adolescents who complete such programming." § 9-151.c.17
+        *   "The average and median number of credits accumulated by adolescents enrolled in high school educational programming, and the average and median number of credits accumulated by young adults enrolled in high school educational programming." § 9-151.c.19
+        *   "The number of adolescents enrolled in physical education at department of education sites." § 9-151.c.21
+        *   "The department shall offer to screen all incarcerated persons between the ages of 18 and 21 who self-report that they do not have a high school diploma or its equivalent for being at risk of dyslexia within 10 days of entering custody of the department." § 9-166.b
+        *   "The department shall refer such incarcerated person who was identified through the screening as being at risk of dyslexia to a program that provides evidence-based interventions as necessary for persons who are at risk of dyslexia." § 9-166.b
+    *   **Why:** To track participation, hours, and outcomes of educational, vocational, and other rehabilitative programs.
+    *   **One row represents:** An incarcerated individual's participation in a specific program or educational activity.
+    *   **Covers:** All instruction, training, vocational development, counseling, cognitive behavioral therapy, drug dependency programs, mental health treatment, parenting, recreation, and other life skills programs.
+    *   **Columns:**
+        *   Participation ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Program ID (Links to Dataset 20)
+        *   Program Name
+        *   Program Type (e.g., Education, Vocational, Counseling, CBT, Substance Abuse, Mental Health, Parenting, Recreation, Life Skills, Dyslexia Intervention)
+        *   Enrollment Date
+        *   Start Date
+        *   End Date
+        *   Hours Offered (per day/week/total)
+        *   Hours Utilized (per day/week/total)
+        *   Attendance Status (Present, Absent, Excused)
+        *   Completion Status (Completed, Dropped Out, Transferred)
+        *   Completion Date
+        *   Success/Compliance Rate (if applicable)
+        *   Outcome Measurements (if applicable)
+        *   Curriculum Subject Area (for education)
+        *   Educational Goal (e.g., Regents Diploma, High School Equivalency)
+        *   High School Graduation Date
+        *   High School Equivalency Test Administered (Yes/No)
+        *   High School Equivalency Test Pass Date
+        *   Functional Level on Basic Adult Education Test
+        *   Individualized Educational Plan (IEP) Status (Yes/No)
+        *   Special Education Services Received (Yes/No)
+        *   English Language Learner (ELL) Status (Yes/No)
+        *   Credits Accumulated
+        *   Post-Release School Attendance (6-month, 1-year)
+        *   Physical Education Enrollment (Yes/No)
+        *   Dyslexia Screening Date
+        *   Dyslexia Risk Identified (Yes/No)
+        *   Dyslexia Screening Refusal (Yes/No, with video/written statement reference)
+        *   Dyslexia Intervention Program ID (Links to Dataset 20)
+        *   Facility ID (Links to Dataset 2)
+        *   Provider (e.g., DOC, DOE, contracted)
+
+8.  **Incarcerated Individual Disciplinary Infractions**
+    *   **Quotes:**
+        *   "Officers in any institution in the department of correction shall use all suitable means to defend themselves, to enforce discipline, and to secure the persons of incarcerated individuals who shall: Neglect or refuse to perform the work assigned... Wilfully violate the rules and regulations... Resist or disobey any lawful command... Offer violence to any officer or to any other prisoner... Injure or attempt to injure any such institution or the appurtenances thereof or any property therein. Attempt to escape. Combine with any one or more persons for any of the aforesaid purposes." § 9-114.a
+        *   "fight infractions written against incarcerated individuals;" § 9-130.b.1
+        *   "The number of incarcerated individuals who received infractions while in segregated housing units or MHU, (xii) the number of incarcerated individuals who received infractions that led to the imposition of additional punitive segregation time," § 9-134.b.xi-xii
+        *   "The number of departmental infractions issued to adolescents at a department of education site, and the number of departmental infractions issued to young adults at a department of education school site, in total and disaggregated by the type of infraction, as defined by the department." § 9-151.d.1
+        *   "The department shall not place an incarcerated person in restrictive housing until a hearing on such placement is held and the person is found to have committed a violent grade I offense." § 9-167.f
+        *   "For each instance a disciplinary charge that could result in restrictive housing is dismissed or an incarcerated individual is found not guilty of the disciplinary charge, the department shall prepare an incident report that includes a description of the disciplinary charge and the reasons for the dismissal or not guilty determination." § 9-167.h.9
+    *   **Why:** To track all disciplinary actions, ensure due process, and manage behavior within facilities.
+    *   **One row represents:** A single disciplinary infraction issued to an incarcerated individual.
+    *   **Covers:** All violations of rules and regulations, including refusal to work, disobedience, violence, property damage, escape attempts, and fight infractions.
+    *   **Columns:**
+        *   Infraction ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Date of Incident
+        *   Time of Incident
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Area Type
+        *   Staff ID (Reporting Officer) (Links to Dataset 3)
+        *   Infraction Type/Description (e.g., refusal to work, rule violation, violence, property damage, escape attempt, fight)
+        *   Infraction Grade (e.g., Grade One, Two, Three, Violent Grade I Offense)
+        *   Disciplinary Hearing Date
+        *   Hearing Officer ID (Links to Dataset 3)
+        *   Legal Counsel/Advocate Present (Yes/No)
+        *   Interpreter Used (Yes/No, Language)
+        *   Evidence Presented (Description/Reference)
+        *   Witness Testimony (Summary/Reference)
+        *   Hearing Outcome (Guilty, Not Guilty, Dismissed)
+        *   Reason for Dismissal/Not Guilty (if applicable)
+        *   Sanction Imposed (e.g., punitive segregation, loss of privileges, additional time)
+        *   Sanction Start Date
+        *   Sanction End Date
+        *   Impact on Punitive Segregation Time (Yes/No)
+        *   Location of Incident (e.g., education site, segregated housing unit)
+
+9.  **Use of Force Incidents**
+    *   **Quotes:**
+        *   "The officers in any institution of the department of correction shall not inflict any blows upon a prisoner except in self-defense or to suppress a revolt or insurrection." § 9-114.b
+        *   "The term "use of force A" means a use of force by staff on an incarcerated individual resulting in an injury that requires medical treatment beyond the prescription of over-the-counter analgesics or the administration of minor first aid..." § 9-130.a
+        *   "The term "use of force B" means a use of force by staff on an incarcerated individual which does not require hospitalization or medical treatment beyond the prescription of over-the-counter analgesics or the administration of minor first aid..." § 9-130.a
+        *   "The term "use of force C" means a use of force by staff on an incarcerated individual resulting in no injury to staff or incarcerated individual..." § 9-130.a
+        *   "actual incidents of use of force A; actual incidents of use of force B; actual incidents of use of force C;" § 9-130.b.4-6
+        *   "allegations of use of force A; actual incidents of use of force A; incarcerated individual hospitalization as a result of use of force A;" § 9-130.c.16-18
+        *   "The commissioner shall post on the department's website the directive stating the department's current policies regarding the use of force by departmental staff on incarcerated individuals..." § 9-138
+        *   "The following information by indicating the rate per 100 female incarcerated individuals in the custody of the department, disaggregated by whether or not the incident took place in the nursery: (i) incidents of use of force A, (ii) incidents of use of force B, (iii) incidents of use of force C, and (iv) incidents of use of force C in which chemical agents are used." § 9-142.d.7
+        *   "The number of incidents of use of force A at a department of education site, in total and disaggregated by whether such use of force was used on an adolescent or young adult." § 9-151.d.4
+        *   "The number and rate of incidents for which the department determined that staff violated a departmental rule or was otherwise subject to discipline, the type of incident that occurred, and the type of discipline recommended and actually imposed for such incidents." § 9-152.b.2
+        *   "The department shall record, via body-worn or handheld camera, video, including audio, every interaction between incarcerated individuals and correction officers in which an incarcerated individual is informed about a scheduled court appearance and shall maintain a database with the video files created pursuant to this subdivision." § 9-146.d
+        *   "The total number of individuals for which use of force was required to compel the individual to be delivered to the court facility on the date of their scheduled court appearance, disaggregated by housing facility." § 9-146.g.7
+        *   "The term "use of force" means an instance where staff used their hands or other parts of their body, objects, instruments, chemical agents, electric devices, firearm, or any other physical method to restrain, subdue, or compel an incarcerated individual to act in a particular way, or stop acting in a particular way." § 9-134.a
+        *   "The department shall not place an incarcerated person in restraints unless an individualized determination is made that restraints are necessary to prevent an imminent risk of self-injury or injury to other persons." § 9-167.e.1
+    *   **Why:** Critical for accountability, monitoring staff conduct, ensuring safety, and compliance with use of force policies.
+    *   **One row represents:** A single incident where staff used force on an incarcerated individual.
+    *   **Covers:** All instances of staff using physical force, mechanical restraints, chemical agents, or electric devices on incarcerated individuals.
+    *   **Columns:**
+        *   Use of Force Incident ID (Unique Identifier)
+        *   Date of Incident
+        *   Time of Incident
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Area Type
+        *   Location Type (e.g., general population, segregated housing, nursery, education site, court transport)
+        *   Incarcerated Individual ID (Subject of Force) (Links to Dataset 1)
+        *   Incarcerated Individual Age Group (Adolescent, Young Adult, Adult)
+        *   Staff ID (Perpetrator of Force) (Links to Dataset 3)
+        *   Type of Force Used (e.g., hands, body, object, instrument, chemical agent, electric device, mechanical restraints)
+        *   Use of Force Classification (A, B, C)
+        *   Injury to Incarcerated Individual (Yes/No)
+        *   Description of Incarcerated Individual Injury (if any)
+        *   Medical Treatment Required for Incarcerated Individual (Yes/No)
+        *   Hospitalization of Incarcerated Individual (Yes/No)
+        *   Injury to Staff (Yes/No)
+        *   Description of Staff Injury (if any)
+        *   Medical Treatment Required for Staff (Yes/No)
+        *   Reason for Use of Force (e.g., self-defense, suppress revolt, enforce discipline, compel court appearance)
+        *   Chemical Agents Used (Yes/No)
+        *   Electric Devices Used (Yes/No)
+        *   Mechanical Restraints Used (Yes/No)
+        *   Restraint Type
+        *   Restraint Duration
+        *   Individualized Determination for Restraints (Yes/No)
+        *   Least Restrictive Restraint Used (Yes/No)
+        *   Video Camera Surveillance (Yes/No)
+        *   Video File Reference (Links to Dataset 26)
+        *   Investigation Status (Open, Closed)
+        *   Investigation Outcome (Substantiated, Unsubstantiated, Unfounded)
+        *   Departmental Rule Violation (Yes/No)
+        *   Discipline Recommended (Links to Dataset 11)
+        *   Discipline Imposed (Links to Dataset 11)
+        *   Referral to DA/DOI (Yes/No)
+        *   Referral Date
+        *   Court Appearance Compulsion (Yes/No)
+
+10. **Medical & Mental Health Treatment Records**
+    *   **Quotes:**
+        *   "Correctional health services, or any entity with which the department of correction or the department of health and mental hygiene contracts to provide healthcare for incarcerated individuals, shall establish a program for the treatment of substance abuse through the use of medication assisted treatment..." § 9-107.a
+        *   "The number of incarcerated individuals receiving mental health services," § 9-134.b.vii
+        *   "The number of incarcerated individuals prescribed anti-psychotic medications, mood stabilizers or anti-anxiety medications, disaggregated by the type of medication," § 9-134.b.xxv
+        *   "available services relating to... mental health treatment and counseling services." § 9-139.c
+        *   "The term "eligible incarcerated individual" means an incarcerated individual whose period of confinement in a city correctional facility lasts 24 hours or longer, and who, during such confinement, receives treatment for a mental illness..." § 9-143.a
+        *   "Correctional health services shall ensure that all medical and substance abuse professionals working with transgender individuals receive specialized training on transgender and gender-affirming care conducted by an individual or organization with expertise in the subject." § 9-145.e
+        *   "The department shall ensure that any housing unit where transgender, gender nonconforming, non-binary, and intersex individuals are housed has access to the same mental health treatment as units housing other incarcerated individuals." § 9-158
+        *   "The number of people in custody with a serious mental illness;" § 9-160.b.13
+        *   "The number of persons in the custody of the department receiving prenatal care; and The number of persons in the custody of the department receiving postnatal care." § 9-163.b.8-9
+        *   "The department shall refer an incarcerated person who was identified through the screening as being at risk of dyslexia to a program that provides evidence-based interventions as necessary for persons who are at risk of dyslexia." § 9-166.b
+        *   "The term “de-escalation confinement” means holding an incarcerated person in a cell immediately following an incident where the person has caused physical injury or poses a specific risk of imminent serious physical injury to staff, themselves or other incarcerated persons." § 9-167.a
+        *   "The department shall conduct visual and aural observation of each person in de-escalation confinement every 15 minutes, shall refer any health concerns to medical or mental health staff, and shall bring any person displaying any indications of any need for medical documentation, observation, or treatment to the medical clinic." § 9-167.c.3
+        *   "The department, in consultation with correctional health services, shall make available, in all areas of any facility of the department where incarcerated individuals are housed, opioid antagonists for use by uniformed staff and incarcerated individuals." § 9-173.c
+        *   "The term “forensic psychiatric examination” means an examination performed by a psychiatric examiner pursuant to section 730 of the criminal procedure law." § 9-169.a
+    *   **Why:** To track all medical and mental health services provided, ensuring appropriate care and compliance with treatment mandates.
+    *   **One row represents:** A specific medical or mental health treatment, service, or medication provided to an incarcerated individual.
+    *   **Covers:** All health and mental health services, including medication, counseling, specialized care (e.g., transgender, prenatal, postnatal), and referrals for specific conditions (e.g., dyslexia, substance abuse).
+    *   **Columns:**
+        *   Treatment ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Date of Service
+        *   Service Type (e.g., Mental Health Counseling, Medication Administration, Prenatal Care, Postnatal Care, Transgender Care, Dyslexia Intervention, Opioid Antagonist Administration, Forensic Psychiatric Examination)
+        *   Health Care Professional ID (Links to Dataset 3)
+        *   Medication Prescribed (Name, Dosage, Type - e.g., anti-psychotic, mood stabilizer, anti-anxiety, opioid antagonist)
+        *   Reason for Treatment/Service
+        *   Treatment Start Date
+        *   Treatment End Date
+        *   Treatment Status (Active, Completed, Discontinued)
+        *   Outcome/Progress Notes
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Unit Type (e.g., MHU, transgender housing)
+        *   Serious Mental Illness Status (Yes/No)
+        *   Referral Source (e.g., sick call, staff observation, screening)
+        *   Opioid Antagonist Administered (Yes/No)
+        *   Opioid Overdose Prevention Kit Provided (Yes/No, upon discharge)
+        *   Forensic Psychiatric Examination Order Date
+        *   Forensic Psychiatric Examination Scheduled Date
+        *   Forensic Psychiatric Examination Completion Date
+        *   Forensic Psychiatric Examination Outcome (Fit/Unfit to Stand Trial)
+        *   Reason for Non-Completion of Exam (if applicable)
+        *   Referral to Appropriate Institution (Yes/No)
+        *   Discharge Date to Appropriate Institution
+
+11. **Staff Disciplinary Actions**
+    *   **Quotes:**
+        *   "Where a member of the uniformed force shall be charged with the commission of a crime, he or she may be suspended without pay for the duration of the time that said criminal charges are pending final disposition." § 9-112
+        *   "If the member is found not guilty of such criminal charges he or she shall be paid full back pay for the period of suspension." § 9-112
+        *   "However, after the final disposition of said criminal charges no member of the uniformed force shall be suspended without pay for more than thirty days while awaiting disposition of departmental charges against such member." § 9-112
+        *   "If the member is found not guilty of the departmental charges such member shall be paid full back pay for the period he or she had been suspended while awaiting disposition of the departmental charges against such member." § 9-112
+        *   "Nothing in this section shall be construed to affect the rights, powers and duties of the commissioner pursuant to any other provision of law, including, but not limited to, the right to discipline a correction officer by termination, reduction of salary, or any other appropriate measure..." § 9-117.1.b
+        *   "The number and rate of incidents for which the department determined that staff violated a departmental rule or was otherwise subject to discipline, the type of incident that occurred, and the type of discipline recommended and actually imposed for such incidents." § 9-152.b.2
+        *   "For substantiated allegations, if the perpetrator was a staff person, whether during the pendency of the investigation such staff person resigned, was suspended, placed on modified duty, assigned to a post without contact with incarcerated individuals, assigned to a post with restricted contact with incarcerated individuals, placed on administrative leave, or administered any other form of discipline;" § 9-156.b.30
+        *   "For substantiated allegations, whether the allegation was referred for disciplinary action, including whether the department declined to file disciplinary charges, or if disciplinary charges were filed, the outcome of such disciplinary proceeding and whether the alleged staff perpetrator resigned or retired in lieu of charges or as part of a negotiated plea;" § 9-156.b.31
+        *   "The outcome of any investigation related to the alleged incident, including but not limited to, any discipline or penalties imposed on the alleged perpetrator;" § 9-156.1.b.19
+        *   "Any report required by this subdivision shall include a unique identifier for each employee under investigation for alleged misconduct that lead to an individual’s death and provide: Whether the employee was terminated; Whether the employee resigned; Whether a staff misconduct case was opened regarding the employee’s involvement in circumstances that contributed to the individual’s death; If a staff misconduct case was opened regarding the employee’s involvement in the circumstances that contributed to the individual’s death: The date the department commenced an investigation of such employee; The date the department concluded such investigation, where applicable; The rules or departmental policies alleged to have been violated; Whether the department imposed any penalty or discipline as result of the investigation of an employee, and if so, a description of any such discipline; If the office of administrative trials and hearings adjudicates any charge resulting from such investigation, the date on which the department referred the case to the office of administrative trials and hearings and; Whether the department referred the case to the department of investigation, a district attorney, or the attorney general." § 9-171.i.1-6
+    *   **Why:** To track all disciplinary actions against staff, ensuring fairness, accountability, and compliance with legal and departmental policies.
+    *   **One row represents:** A single disciplinary action or investigation against a staff member.
+    *   **Covers:** All charges, suspensions, investigations, and disciplinary outcomes for uniformed and civilian staff.
+    *   **Columns:**
+        *   Disciplinary Action ID (Unique Identifier)
+        *   Staff ID (Links to Dataset 3)
+        *   Date of Incident
+        *   Allegation Type (e.g., criminal charge, departmental rule violation, use of force misconduct, sexual abuse/harassment, misconduct related to incarcerated individual death)
+        *   Description of Allegation
+        *   Date Charges Filed
+        *   Investigation Start Date
+        *   Investigation End Date
+        *   Investigation Outcome (Substantiated, Unsubstantiated, Unfounded, Pending)
+        *   Departmental Rule(s) Violated (if applicable)
+        *   Discipline Recommended (e.g., suspension, termination, salary reduction, modified duty, administrative leave, post reassignment)
+        *   Discipline Imposed
+        *   Date Discipline Imposed
+        *   Suspension Start Date (if applicable)
+        *   Suspension End Date (if applicable)
+        *   Back Pay Awarded (Yes/No, Amount)
+        *   Formal Proceeding (OATH) Referral (Yes/No)
+        *   Formal Proceeding Outcome
+        *   Commissioner's Decision on Sanction (Accepted, Rejected, Modified)
+        *   Referral to DA/DOI/AG (Yes/No)
+        *   Referral Date
+        *   Resignation/Retirement in Lieu of Charges (Yes/No)
+        *   Related Incident ID (e.g., Use of Force Incident ID (Dataset 9), Sexual Abuse Incident ID (Dataset 12), Incarcerated Individual Death ID (Dataset 17))
+
+12. **Sexual Abuse & Harassment Allegations (Incarcerated Individual/Staff/Visitor)**
+    *   **Quotes:**
+        *   "The term "sexual abuse" has the same meaning as set forth in 28 CFR § 115.6, or successor regulation, promulgated pursuant to the federal prison rape elimination act of 2003." § 9-130.a
+        *   "allegations of sexual abuse of an incarcerated individual by an incarcerated individual; substantiated incidents of sexual abuse of an incarcerated individual by an incarcerated individual; allegations of sexual abuse of an incarcerated individual by staff; and substantiated incidents of sexual abuse of an incarcerated individual by staff." § 9-130.d
+        *   "The term "sexual abuse" includes any of the following acts against a visitor, performed by staff with or without consent of the visitor..." § 9-140.a
+        *   "The term "sexual harassment" means acts conducted by staff on visitors, including (1) any unwelcome sexual advances, requests for sexual favors, or verbal comments, gestures, or actions of a derogatory or offensive sexual nature..." § 9-140.a
+        *   "The number of instances of allegations of staff on incarcerated individual sexual assault, (xl) the number of instances of substantiated staff on incarcerated individual sexual assault, (xli) the number of instances of allegations of incarcerated individual on staff sexual assault, and (xlii) the number of instances of substantiated incarcerated individual on staff sexual assault." § 9-134.b.xxxix-xlii
+        *   "The term "sexual abuse by staff of an incarcerated individual" includes any of the following acts conducted by staff, with or without consent of the incarcerated individual..." § 9-156.a
+        *   "The term "sexual abuse by an incarcerated individual" includes any of the following acts if the victim and perpetrator are both incarcerated individuals, and if the victim does not consent, is coerced into such act by overt or implied threats of violence, or is unable to consent or refuse..." § 9-156.a
+        *   "The term "sexual harassment" includes (1) any unwelcome sexual advances, requests for sexual favors, or verbal comments, gestures, or actions of a derogatory or offensive sexual nature; and (2) any verbal comments or gestures of a sexual nature..." § 9-156.a
+        *   "The department shall provide to the speaker of the council and the board of correction a report of alleged incidents of sexual abuse and sexual harassment that occurred, or for which an investigation was pending, during the preceding six-month period." § 9-156.b
+        *   "The term “sexual assault of staff” means any non-consensual physical conduct of a sexual nature by an incarcerated individual toward or against staff, including but not limited to patting, rubbing, kissing, grabbing, pinching, or touching." § 9-156.1.a
+        *   "The term “sexual harassment of staff” means any of the following acts conducted by an incarcerated individual toward or against staff: (i) verbal comments or obscene gestures of a sexual nature, including sexually suggestive remarks, jokes, innuendos or leering; (ii) intentional touching of the incarcerated individual’s own body in plain view of staff, in a manner that demonstrates it is for the purpose of sexual arousal, gratification, annoyance, or offense; and (iii) any act made by an incarcerated individual to request, solicit, or otherwise encourage staff to engage in sexual activity." § 9-156.1.a
+    *   **Why:** Mandated by federal and local law to track, investigate, and report all allegations of sexual abuse and harassment to ensure safety and accountability.
+    *   **One row represents:** A single allegation of sexual abuse or sexual harassment.
+    *   **Covers:** All allegations of sexual abuse and harassment involving incarcerated individuals (victim/perpetrator), staff (victim/perpetrator), and visitors (victim).
+    *   **Columns:**
+        *   Allegation ID (Unique Identifier)
+        *   Date of Incident
+        *   Time of Incident (7-3pm, 3-11pm, 11pm-7am)
+        *   Date Reported
+        *   Method of Reporting (e.g., direct, 311, attorney, third party)
+        *   Allegation Type (Sexual Abuse, Sexual Harassment, Sexual Assault of Staff)
+        *   Victim Type (Incarcerated Individual, Staff, Visitor)
+        *   Victim ID (Links to Dataset 1 or 3)
+        *   Victim Gender Identity
+        *   Victim Age Group (e.g., 18-25, 26-35, 36-40, 41-60, over 60, under 18)
+        *   Victim Race
+        *   Victim Mental Illness Treatment Status (Yes/No)
+        *   Victim Transgender/Intersex Identity (Yes/No)
+        *   Victim LGBTQ+ Identity (Lesbian, Gay, Bi-sexual) (Yes/No)
+        *   Perpetrator Type (Incarcerated Individual, Staff)
+        *   Perpetrator ID (Links to Dataset 1 or 3)
+        *   Perpetrator Gender Identity
+        *   Perpetrator Staff Type (Civilian, Uniformed)
+        *   Perpetrator Previous Allegations (Substantiated, Unsubstantiated, Pending) (Links to Dataset 11)
+        *   Facility ID (Links to Dataset 2)
+        *   Location Type (e.g., service area, housing area, restroom, visitor waiting area, nursery, education site)
+        *   Housing Area Type (if applicable)
+        *   Specific Acts Alleged (e.g., penetration, touching, verbal comments, gestures)
+        *   Incident during Authorized Search (Yes/No)
+        *   Video Camera Surveillance (Yes/No)
+        *   Video File Reference (Links to Dataset 26)
+        *   DNA/Physical Evidence Obtained (Yes/No)
+        *   Rape Kit Administered (Yes/No/Declined/Not Applicable)
+        *   Rape Kit Not Applicable Reason (if applicable)
+        *   Investigation Opened Date
+        *   Investigation Closed Date
+        *   Investigation Division (e.g., Facility Investigation, Investigation Division)
+        *   Investigation Outcome (Substantiated, Unsubstantiated, Unfounded, Pending)
+        *   Victim Notified of Outcome (Yes/No)
+        *   Victim Referred to Trauma/Rape Crisis Services (Yes/No)
+        *   Perpetrator/Victim Separated (Yes/No)
+        *   Referral to DA/DOI (Yes/No)
+        *   Referral Date
+        *   Reason Not Referred to DA (if applicable)
+        *   Criminal Charges Brought (Yes/No)
+        *   Perpetrator Re-arrested (Yes/No)
+        *   Discipline Imposed (Links to Dataset 11)
+        *   Staff Training Status (for perpetrator, if staff) (Links to Dataset 19)
+        *   Staff Training Last Date (for perpetrator, if staff) (Links to Dataset 19)
+        *   Alleged Victim Claimed Gender/Sexual Orientation Bias (Yes/No)
+
+13. **Assaults & Other Violent Incidents**
+    *   **Quotes:**
+        *   "The term "assault" means any action taken with intent to cause physical injury to another person." § 9-130.a
+        *   "assaults on incarcerated individuals by incarcerated individuals involving stabbings, shootings or slashings;" § 9-130.b.2
+        *   "assaults on incarcerated individuals by incarcerated individuals in which an incarcerated individual suffered a serious injury, excluding assaults involving stabbings, shootings or slashings;" § 9-130.b.3
+        *   "assaults on staff by incarcerated individuals in which staff suffered serious injury." § 9-130.b.7
+        *   "homicides of incarcerated individuals by incarcerated individuals;" § 9-130.c.9
+        *   "attempted suicides by incarcerated individuals; suicides by incarcerated individuals;" § 9-130.c.10-11
+        *   "incidents in which an incarcerated individual splashed staff;" § 9-130.c.15
+        *   "The number of incarcerated individuals who committed suicide, (xiv) the number of incarcerated individuals who attempted suicide, (xv) the number of incarcerated individuals on suicide watch, (xvi) the number of incarcerated individuals who caused injury to themselves (excluding suicide attempt), (xvii) the number of incarcerated individuals seriously injured while in segregated housing units or MHU, (xviii) the number of incarcerated individuals who were sent to non-psychiatric hospitals outside the city jails, (xix) the number of incarcerated individuals who died (non-suicide)," § 9-134.b.xiii-xix
+        *   "The number of unique assaults on department of education staff by incarcerated individuals." § 9-151.c.22
+        *   "The number of assaults on staff at a department of education site, in total and disaggregated by whether such assault was committed by an adolescent or young adult." § 9-151.d.3
+        *   "The term “violence” means the use of force or power, threatened or actual, against another person, or against a group or community." § 9-165.a
+        *   "The number and percentage of such persons as described in paragraph 3 of this subdivision who have made an allegation, complaint, or report, whether verbal or in writing, as a result of experiencing violence, harassment, or discrimination." § 9-165.b.8
+        *   "The number of maternal mortalities known to the service while in the custody of the department; The number of maternal mortalities while in the custody of the department considered to be a pregnancy-associated death, if information necessary to make such determination is available to the service; The number of maternal mortalities while in the custody of the department considered to be a pregnancy-related death, if information necessary to make such determination is available to the service;" § 9-163.b.5-7
+        *   "The department shall notify the office of chief medical examiner and the board of correction as soon as practicable after becoming aware of a death of an incarcerated individual in the custody of the department..." § 9-171.b
+        *   "The number of suspected opioid overdoses by incarcerated individuals that did not result in the death of such individual, and the number of suspected opioid overdoses where an opioid antagonist was administered." § 9-173.f.2
+    *   **Why:** Critical for monitoring safety, identifying high-risk areas, and ensuring timely response to serious incidents.
+    *   **One row represents:** A single incident of assault, self-harm, suicide, homicide, or other violent event.
+    *   **Covers:** All assaults (incarcerated individual on incarcerated individual, incarcerated individual on staff, staff on incarcerated individual), homicides, suicides, attempted suicides, self-harm, splashing incidents, and deaths (maternal, opioid overdose, other).
+    *   **Columns:**
+        *   Incident ID (Unique Identifier)
+        *   Date of Incident
+        *   Time of Incident
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Area Type
+        *   Location Type (e.g., general population, segregated housing, MHU, nursery, education site)
+        *   Incident Type (e.g., Assault, Homicide, Suicide, Attempted Suicide, Self-Harm, Splashing, Death, Opioid Overdose)
+        *   Victim ID (Links to Dataset 1 or 3)
+        *   Victim Type (Incarcerated Individual, Staff)
+        *   Victim Age Group (Adolescent, Young Adult, Adult)
+        *   Perpetrator ID (Links to Dataset 1 or 3)
+        *   Perpetrator Type (Incarcerated Individual, Staff)
+        *   Weapon Used (e.g., stabbing, shooting, slashing, none)
+        *   Injury Type (e.g., serious injury, superficial, disfigurement, organ impairment, fracture, laceration, concussion, internal)
+        *   Medical Treatment Required (Yes/No)
+        *   Hospitalization (Yes/No)
+        *   Cause of Death (if applicable)
+        *   Maternal Mortality Type (Pregnancy-associated, Pregnancy-related) (if applicable)
+        *   Opioid Antagonist Administered (Yes/No)
+        *   Video Camera Surveillance (Yes/No)
+        *   Video File Reference (Links to Dataset 26)
+        *   Investigation Status (Open, Closed)
+        *   Investigation Outcome (Substantiated, Unsubstantiated, Unfounded)
+        *   Referral to DA/DOI (Yes/No)
+        *   Referral Date
+        *   Related Use of Force Incident ID (Links to Dataset 9)
+        *   Related Sexual Abuse Allegation ID (Links to Dataset 12)
+        *   Next of Kin Notification Date (Links to Dataset 17)
+        *   Attorney Notification Date (Links to Dataset 17)
+
+14. **Facility Inspections & Maintenance Records**
+    *   **Quotes:**
+        *   "The chief officer of any institution under the charge of the commissioner of correction shall make his or her requisitions in writing upon the commissioner for all articles such officer deems necessary to be used in such institution. Such officer shall keep an accurate account thereof." § 9-119
+        *   "The accounts of the commissaries shall be subject to supervision, examination and audit by the comptroller and all other powers of the comptroller in accordance with the provisions of the charter and code." § 9-118.a
+        *   "The department shall ensure that all data collected pursuant to this section is securely retained, and shall retain such data indefinitely after the date of initial collection unless federal or state law requires otherwise." § 9-140.g (Implies data retention for facility-related incidents)
+        *   "Every city correctional facility under the sole jurisdiction and control of the department built after the effective date of the local law that added this section shall comply with the following requirements: Design requirements... General requirements... Individual living quarters... Dormitories... Housing units... Bathrooms shall be accessible at all times..." § 9-159.b
+        *   "Spaces used for de-escalation confinement must, at a minimum, have the features specified in sections 1-03 and 1-04 of title 40 of the rules of the city of New York and be maintained in accordance with the personal hygiene and space requirements set forth in such sections;" § 9-167.c.1
+        *   "The department shall not place any incarcerated person in a locked decontamination shower nor in any other locked space in any facility that does not have, at a minimum, the features specified in sections 1-03 and 1-04 of title 40 of the rules of the city of New York and maintained in accordance with the personal hygiene and space requirements as set forth in such sections." § 9-167.c.7.a
+        *   "No less than once each week, the department shall verify and document that opioid antagonists are available in such areas for use by uniformed staff and incarcerated individuals." § 9-173.c
+    *   **Why:** To ensure facilities meet safety, hygiene, and operational standards, and to track resource allocation.
+    *   **One row represents:** A single inspection, maintenance request, or requisition for a facility or its assets.
+    *   **Covers:** All inspections, requisitions for articles, maintenance records, and compliance checks for facility standards.
+    *   **Columns:**
+        *   Record ID (Unique Identifier)
+        *   Facility ID (Links to Dataset 2)
+        *   Date
+        *   Type (e.g., Inspection, Requisition, Maintenance Request, Compliance Check)
+        *   Inspector/Requester ID (Links to Dataset 3)
+        *   Description of Item/Issue
+        *   Status (e.g., Open, Closed, Approved, Denied, Completed)
+        *   Outcome/Findings (e.g., compliant, non-compliant, repair needed, item delivered)
+        *   Corrective Actions Required
+        *   Corrective Actions Completion Date
+        *   Compliance with § 9-159 Design Requirements (Yes/No, if applicable)
+        *   Compliance with Hygiene/Space Requirements (Yes/No)
+        *   Opioid Antagonist Availability Check (Yes/No)
+        *   Opioid Antagonist Stock Level
+        *   Cost (if applicable)
+
+15. **Discharge Planning & Re-entry Services**
+    *   **Quotes:**
+        *   "The department of correction shall collect, from any sentenced incarcerated individual who will serve, after sentencing, ten days or more in any city correctional institution, information relating to such incarcerated individual's housing, employment and sobriety needs." § 9-127.b
+        *   "For the purposes of this section and sections 9-128 and 9-129 of this title, "discharge planning" shall mean the creation of a plan for post-release services and assistance with access to community-based resources and government benefits designed to promote an incarcerated individual's successful reintegration into the community." § 9-127.b
+        *   "The term "eligible incarcerated individual" means a person who served a sentence of 30 days or more in the custody of the department, and who is being released from the custody of the department to the community." § 9-127.1.a
+        *   "Prior to the release of an eligible incarcerated individual from the custody of the department, a designee of the department shall to the extent practicable develop and offer to such incarcerated individual a discharge plan." § 9-127.1.b
+        *   "The department of correction shall provide assistance with the preparation of applications for government benefits and identification to sentenced incarcerated individuals who will serve, after sentencing, thirty days or more in any city correctional institution and who receive discharge planning services from the department of correction or any social services organization under contract with the department of correction..." § 9-128.b
+        *   "The commissioner of correction shall submit a report to the mayor and the council by October first of each year regarding implementation of sections 9-127 and 9-128 of this title and other discharge planning efforts, and, beginning October first, two thousand eight and annually thereafter, regarding recidivism among incarcerated individuals receiving discharge planning services from the department of correction or any social services organization under contract with the department of correction." § 9-129
+        *   "The department shall make best efforts to provide records relating to an individual's period of incarceration necessary to rectify erroneous warrants within three business days of the request for such records." § 9-153
+        *   "The department, in consultation with correctional health services, shall make available an opioid overdose prevention kit to an incarcerated individual upon discharge of such individual from a city jail to the community." § 9-173.g
+    *   **Why:** To track the provision of re-entry services, assess their effectiveness, and comply with reporting on recidivism.
+    *   **One row represents:** A single discharge planning event or re-entry service provided to an incarcerated individual.
+    *   **Covers:** All discharge plans, referrals to social services, assistance with government benefits/ID, and provision of re-entry resources.
+    *   **Columns:**
+        *   Discharge Planning ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Eligibility Status (Yes/No, for 30+ day sentence)
+        *   Discharge Date
+        *   Discharge Plan Developed (Yes/No)
+        *   Discharge Plan Offered (Yes/No)
+        *   Reason Discharge Plan Not Required (e.g., transferred to other agency/hospital, already required by law)
+        *   Housing Needs Identified
+        *   Employment Needs Identified
+        *   Sobriety Needs Identified
+        *   Social Service Organization ID (if contracted)
+        *   Consent to Share Information (Yes/No)
+        *   Re-entry Services Provided (e.g., case management, employment connections, housing assistance)
+        *   Government Benefits Application Assistance (Yes/No)
+        *   Identification Application Assistance (Yes/No)
+        *   Birth Certificate Request Date (if applicable)
+        *   Birth Certificate Provided Date (if applicable)
+        *   Letter of Incarceration Provided (Yes/No)
+        *   Connections Guidebook Offered (Yes/No)
+        *   Erroneous Warrant Rectification Request Date
+        *   Erroneous Warrant Records Provided Date
+        *   Opioid Overdose Prevention Kit Provided (Yes/No)
+        *   Recidivism Status (Returned to custody within 1 year) (Yes/No)
+        *   Recidivism Date (if applicable)
+
+16. **Grievance & Complaint Log**
+    *   **Quotes:**
+        *   "The term "grievable complaint" means a complaint handled by the office of constituent and grievance services. The term includes but is not limited to a complaint regarding classification, clothing, commissary, correspondence, employment, environmental, food, inmate account, housing, length of sentence, laundry, law library, medical, mental health, personal hygiene, phone, programs, property, recreation, religion, rules and regulations, school, search, social service, transportation, and visits." § 9-136.a
+        *   "The term "non-grievable complaint" means any complaint which is not handled by the office of constituent and grievance services, including but not limited to a complaint regarding an allegation of assault, sexual assault/abuse, and verbal misconduct from a staff member; an allegation of assault, sexual assault/abuse, and non-sexual harassment from another incarcerated individual; individual security status; medical and mental health staff; request for accommodation due to a disability or claim of discrimination based on disability or perceived disability; request for protective custody; freedom of information laws, housing, and the grievance process." § 9-136.a
+        *   "The department shall utilize an electronic tracking system to record all grievable and non-grievable complaints handled by the office of constituent and grievance services and shall provide the board of correction access to such system." § 9-136.d
+        *   "Complaints and requests made by or on behalf of an incarcerated individual to 311 and forwarded to the department shall be addressed by the office of constituent and grievance services." § 9-136.e
+        *   "The department shall install grievance kiosks in each facility where incarcerated individuals may file grievances electronically and in a private setting by December 31, 2026." § 9-136.g
+        *   "The department shall inform all incarcerated individuals in writing, using plain and simple language, of the protections against retaliation for filing a grievance, complaint, or request." § 9-139.g
+        *   "The number and percentage of such persons as described in paragraph 3 of this subdivision who have made an allegation, complaint, or report, whether verbal or in writing, as a result of experiencing violence, harassment, or discrimination." § 9-165.b.8
+    *   **Why:** To track all complaints, ensure proper handling, and identify systemic issues within the correctional system.
+    *   **One row represents:** A single grievance or complaint submitted by or on behalf of an incarcerated individual.
+    *   **Covers:** All grievable and non-grievable complaints, including those forwarded from 311, regarding various aspects of confinement.
+    *   **Columns:**
+        *   Grievance ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Date Submitted
+        *   Method of Submission (e.g., written, kiosk, 311, attorney, advocate, public official, third party, phone)
+        *   Complaint Type (Grievable, Non-Grievable)
+        *   Grievance Category (e.g., classification, clothing, commissary, medical, mental health, housing, visits, violence, harassment, discrimination)
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Area Type
+        *   Complaint Description
+        *   Referral Destination (if non-grievable)
+        *   Resolution Stage (e.g., initial review, appeal)
+        *   Resolution Date
+        *   Resolution Outcome (e.g., resolved, dismissed, granted, denied)
+        *   Reason for Dismissal (if applicable)
+        *   Appeal Filed (Yes/No)
+        *   Appeal Outcome
+        *   Appeal Resolution Date
+        *   Kiosk Used (Yes/No)
+        *   Physical Receipt Provided (Yes/No)
+        *   Language of Grievance/Assistance Provided
+
+17. **Incarcerated Individual Deaths**
+    *   **Quotes:**
+        *   "The chief officer of any institution under the charge of the commissioner of correction shall report once in each week to the commissioner of correction. Such report shall set forth: ... The number who have become sick or who have died." § 9-120.2
+        *   "homicides of incarcerated individuals by incarcerated individuals; suicides by incarcerated individuals;" § 9-130.c.9-11
+        *   "The number of incarcerated individuals who committed suicide, (xiv) the number of incarcerated individuals who attempted suicide, (xv) the number of incarcerated individuals on suicide watch, (xvi) the number of incarcerated individuals who caused injury to themselves (excluding suicide attempt), (xvii) the number of incarcerated individuals seriously injured while in segregated housing units or MHU, (xviii) the number of incarcerated individuals who were sent to non-psychiatric hospitals outside the city jails, (xix) the number of incarcerated individuals who died (non-suicide)," § 9-134.b.xiii-xix
+        *   "The number of deaths of incarcerated individuals related to the infection;" § 9-160.b.9
+        *   "The number of maternal mortalities known to the service while in the custody of the department; The number of maternal mortalities while in the custody of the department considered to be a pregnancy-associated death, if information necessary to make such determination is available to the service; The number of maternal mortalities while in the custody of the department considered to be a pregnancy-related death, if information necessary to make such determination is available to the service;" § 9-163.b.5-7
+        *   "The department shall notify the office of chief medical examiner and the board of correction as soon as practicable after becoming aware of a death of an incarcerated individual in the custody of the department..." § 9-171.b
+        *   "The department shall document any efforts of the department to notify the next of kin of such incarcerated individual pursuant to section 3-10 of title 40 of the rules of the city of New York..." § 9-171.c
+        *   "The department shall make a good faith effort to notify the attorney of an incarcerated individual who has died as soon as practicable after notifying the next of kin of such individual..." § 9-171.b
+        *   "The department shall post on the department’s website information about how the next of kin of an incarcerated individual who has died may obtain such individual’s personal items..." § 9-171.f
+        *   "The prison death review board shall keep a record of any meetings or any other proceedings of such board." § 9-172.c
+    *   **Why:** Legally mandated to track, investigate, and report all deaths in custody, including notifications and review processes.
+    *   **One row represents:** A single death of an incarcerated individual in department custody.
+    *   **Covers:** All deaths, including suicides, homicides, non-suicides, maternal mortalities, and deaths related to public health emergencies.
+    *   **Columns:**
+        *   Death ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Date of Death
+        *   Time of Death
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Area Type
+        *   Cause of Death (e.g., suicide, homicide, illness, overdose, maternal, other)
+        *   Maternal Mortality Type (Pregnancy-associated, Pregnancy-related) (if applicable)
+        *   Public Health Emergency Related (Yes/No)
+        *   Hospitalization Due to Infection (Yes/No)
+        *   Office of Chief Medical Examiner Notification Date/Time
+        *   Board of Correction Notification Date/Time
+        *   Next of Kin Notification Date/Time
+        *   Next of Kin Name
+        *   Next of Kin Relationship
+        *   Next of Kin Notification Method
+        *   Employee Notifying Next of Kin (Staff ID) (Links to Dataset 3)
+        *   Interpreter Used for NOK Notification (Yes/No, Language)
+        *   Attorney Notification Date/Time
+        *   Attorney ID (Links to Dataset 25)
+        *   DOI/AG/DA Investigation (Yes/No)
+        *   DOI/AG/DA Investigation Request/Direction (Yes/No)
+        *   Department/CHS Response to DOI/BOC Recommendations (Yes/No, Reasons for non-implementation)
+        *   Staff Misconduct Investigation Opened (Yes/No) (Links to Dataset 11)
+        *   Personal Items Return Information Posted (Yes/No)
+        *   Prison Death Review Board Convened (Yes/No)
+        *   Prison Death Review Board Meeting Date (Links to Dataset 27)
+
+18. **Segregated Housing Placements & Conditions**
+    *   **Quotes:**
+        *   "The commissioner of correction may set apart one or more of the penal institutions for the custody of such youthful or less hardened offenders, and he or she is empowered to transfer such offenders thereto from any penal institution of the city." § 9-109
+        *   "The term "segregated housing unit" means any city jail housing units in which incarcerated individuals are regularly restricted to their cells more than the maximum number of hours as set forth in subdivision (b) of section 1-05 of chapter 1 of title 40 of the rules of the city of New York... Segregated housing units include, but are not limited to, punitive segregation housing and enhanced supervision housing." § 9-134.a
+        *   "The term "mental health unit" ("MHU") means any separate housing area staffed by mental health clinicians where incarcerated individuals with mental illness who have been found guilty of violating department rules are housed, including but not limited to restricted housing units and clinical alternative to punitive segregation units." § 9-134.a
+        *   "The commissioner shall post a report every 60 days... setting forth the number of city jail inmates who have been found guilty of violating departmental rules but have yet to be placed in punitive segregation, restrictive housing or a clinical alternative to punitive segregation housing, or any successor to such housing units..." § 9-135
+        *   "The number of incarcerated individuals sent to segregated housing units and MHU during the period, (iv) the number of incarcerated individuals sent to segregated housing units and MHU from mental observation housing areas, (v) the number of incarcerated individuals, by highest infraction offense grade as classified by the department, (grade one, two, or three), (vi) the number of incarcerated individuals serving punitive segregation in the following specified ranges: less than ten days, ten to thirty days, thirty-one to ninety days, ninety-one to one hundred eighty days, one hundred eighty-one to three hundred sixty-five days, and more than three hundred sixty-five days," § 9-134.b.iii-vi
+        *   "The term “solitary confinement” means any placement of an incarcerated person in a cell, other than at night for sleeping for a period not to exceed eight hours in any 24-hour period or during the day for a count not to exceed two hours in any 24-hour period." § 9-167.a
+        *   "The department shall not place an incarcerated person in a cell, other than at night for sleeping for a period not to exceed eight hours in any 24-hour period or during the day for count not to exceed two hours in any 24-hour period, unless for the purpose of de-escalation confinement or during emergency lock-ins." § 9-167.b
+        *   "The maximum duration a person can be held in de-escalation confinement shall not exceed four hours immediately following the incident precipitating such person’s placement in such confinement. Under no circumstances may the department place a person in de-escalation confinement for more than four hours total in any 24-hour period, or more than 12 hours in any seven-day period;" § 9-167.c.6
+        *   "The department shall not place an incarcerated person in restrictive housing for longer than necessary and for no more than a total of 60 days in any 12 month period." § 9-167.h.1
+        *   "The department shall discharge an incarcerated person from restrictive housing if such person has not engaged in behavior that presents a specific, significant, and imminent threat to the safety and security of themselves or other persons during the preceding 15 days. In all circumstances, the department shall discharge an incarcerated person from restrictive housing within 30 days after their initial placement in such housing." § 9-167.h.3
+        *   "A person placed in restrictive housing must have interaction with other people and access to congregate programming and amenities comparable to those housed outside restrictive housing, including access to at least seven hours per day of out-of-cell congregate programming or activities with groups of people in a group setting all in the same shared space without physical barriers separating such people that is conducive to meaningful and regular social interaction." § 9-167.h.4
+    *   **Why:** To track all placements in segregated housing, ensure compliance with duration limits, and monitor conditions and services provided.
+    *   **One row represents:** A single placement of an incarcerated individual into a segregated housing unit, MHU, de-escalation confinement, or pre-hearing temporary restrictive housing.
+    *   **Covers:** All placements in punitive segregation, enhanced supervision housing, mental health units, de-escalation confinement, and pre-hearing temporary restrictive housing.
+    *   **Columns:**
+        *   Placement ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Placement Start Date/Time
+        *   Placement End Date/Time
+        *   Housing Unit Type (e.g., Segregated Housing Unit, MHU, Punitive Segregation, Enhanced Supervision Housing, De-escalation Confinement, Pre-hearing Temporary Restrictive Housing)
+        *   Facility ID (Links to Dataset 2)
+        *   Reason for Placement (e.g., disciplinary infraction, security risk, mental health need, de-escalation, pre-hearing)
+        *   Origin of Placement (e.g., general population, mental observation housing)
+        *   Highest Infraction Offense Grade (if applicable) (Links to Dataset 8)
+        *   Security Risk Group
+        *   Subject to Enhanced Restraints (Yes/No)
+        *   Length of Stay (Days)
+        *   Mental Health Services Received (Yes/No) (Links to Dataset 10)
+        *   Age Group (e.g., 21 and under, 10-year intervals over 21)
+        *   Race
+        *   Gender
+        *   Infractions Received While Housed (Yes/No) (Links to Dataset 8)
+        *   Additional Punitive Segregation Time Imposed (Yes/No)
+        *   Suicide Attempt (Yes/No) (Links to Dataset 13)
+        *   Suicide Watch Status (Yes/No)
+        *   Self-Injury (Excluding Suicide Attempt) (Yes/No) (Links to Dataset 13)
+        *   Serious Injury While Housed (Yes/No) (Links to Dataset 13)
+        *   Transferred to Non-Psychiatric Hospital (Yes/No)
+        *   Transferred to Psychiatric Hospital (Yes/No)
+        *   Transferred from General Punitive Segregation to MHU (Yes/No)
+        *   Transferred from MHU to Segregated Housing Unit (Yes/No)
+        *   Anti-Psychotic Medication Prescribed (Yes/No) (Links to Dataset 10)
+        *   Mood Stabilizers Prescribed (Yes/No) (Links to Dataset 10)
+        *   Anti-Anxiety Medications Prescribed (Yes/No) (Links to Dataset 10)
+        *   Medical/Mental Health Treatment Requests (Number, Granted) (Links to Dataset 5)
+        *   Congregate Religious Services Requests (Number, Granted)
+        *   Law Library Assistance Requests (Number, Granted)
+        *   Telephone Call Requests (Number, Granted, Disaggregated by type)
+        *   Recreation Days Offered
+        *   Recreation Hours Attended
+        *   Recreation Hours Offered Before 6 AM
+        *   Shower Days Offered
+        *   Showers Taken
+        *   Visits Received (Yes/No) (Links to Dataset 23)
+        *   Allegations of Use of Force (Number) (Links to Dataset 9)
+        *   Instances of Use of Force A, B, C (Number) (Links to Dataset 9)
+        *   Contraband Found (Number)
+        *   Allegations of Sexual Assault (Staff on II, II on Staff) (Number) (Links to Dataset 12)
+        *   Substantiated Sexual Assault (Staff on II, II on Staff) (Number) (Links to Dataset 12)
+        *   De-escalation Confinement Incident ID (if applicable) (Links to Dataset 28)
+        *   Restrictive Housing Hearing Date
+        *   Restrictive Housing Hearing Outcome (Guilty, Not Guilty, Dismissed)
+        *   Reason for Dismissal/Not Guilty (if applicable)
+        *   Pre-hearing Temporary Restrictive Housing (Yes/No)
+        *   Commissioner/Deputy Commissioner Approval for Pre-hearing RH (Yes/No)
+        *   Review Date (15-day review for RH)
+        *   Discharge from RH after Review (Yes/No)
+        *   Reason for Continued RH (if applicable)
+        *   Program/Treatment/Service/Corrective Action Recommended for RH
+        *   Program/Treatment/Service/Corrective Action Provided for RH
+        *   Behavior Presenting Threat (Yes/No, for 15-day period)
+        *   Out-of-Cell Hours Provided (per day)
+        *   Congregate Programming/Activities Access (Yes/No)
+        *   Voluntary Decline Congregate Programming (Yes/No, with written/videotape reference)
+        *   Trauma-Informed, Age-Appropriate Programming Access (for under 22) (Yes/No)
+
+19. **Staff Training Records**
+    *   **Quotes:**
+        *   "The department shall identify where trauma-informed care is appropriate and provide training for all appropriate staff on such care." § 9-145.b
+        *   "Correctional health services shall ensure that all medical and substance abuse professionals working with transgender individuals receive specialized training on transgender and gender-affirming care conducted by an individual or organization with expertise in the subject." § 9-145.e
+        *   "The department shall implement annual training regarding the treatment of visitors for staff who interact regularly with visitors." § 9-140.f
+        *   "The department shall provide training for all uniformed staff of the department on the administration of opioid antagonists. The department shall also make such training available to individuals incarcerated in city correctional facilities." § 9-173.b.1
+        *   "The department shall provide to staff access to mental health resources relating to reducing stress and other adverse mental health impacts for persons working in correctional facilities." § 9-156.2.b
+        *   "The department shall establish a program for child visitors and other participants of visits with incarcerated persons that include child visitors. Such program shall provide: ... Training for department staff who interact with child visitors on minimizing stress for child visitors, which shall include, but need not be limited to, information about child development and communicating with children of various ages;" § 9-168.b.2
+    *   **Why:** To track all staff training, ensure compliance with mandates, and monitor professional development.
+    *   **One row represents:** A single training session attended by a staff member.
+    *   **Covers:** All mandated and offered training, including trauma-informed care, transgender care, visitor interaction, opioid antagonist administration, child visitor interaction, and mental health resources.
+    *   **Columns:**
+        *   Training Session ID (Unique Identifier)
+        *   Staff ID (Links to Dataset 3)
+        *   Training Date
+        *   Training Type (e.g., Trauma-Informed Care, Transgender Care, Visitor Interaction, Opioid Antagonist Administration, Child Visitor Interaction, Mental Health Resources)
+        *   Training Provider/Organization
+        *   Training Duration (Hours)
+        *   Completion Status (Completed, Attended, Not Completed)
+        *   Certification/Credential Obtained (if applicable)
+        *   Next Training Due Date (if recurring)
+        *   Training Materials Description (Links to Dataset 29)
+
+20. **Training Program Catalog**
+    *   **Quotes:**
+        *   "The department shall identify where trauma-informed care is appropriate and provide training for all appropriate staff on such care." § 9-145.b
+        *   "Correctional health services shall ensure that all medical and substance abuse professionals working with transgender individuals receive specialized training on transgender and gender-affirming care conducted by an individual or organization with expertise in the subject." § 9-145.e
+        *   "The department shall implement annual training regarding the treatment of visitors for staff who interact regularly with visitors." § 9-140.f
+        *   "The department shall provide training for all uniformed staff of the department on the administration of opioid antagonists." § 9-173.b.1
+        *   "The department shall provide to staff access to mental health resources relating to reducing stress and other adverse mental health impacts for persons working in correctional facilities." § 9-156.2.b
+        *   "The department shall establish a program for child visitors and other participants of visits with incarcerated persons that include child visitors. Such program shall provide: ... Training for department staff who interact with child visitors on minimizing stress for child visitors, which shall include, but need not be limited to, information about child development and communicating with children of various ages;" § 9-168.b.2
+    *   **Why:** To manage and describe all available training programs for staff and incarcerated individuals.
+    *   **One row represents:** A single training program offered by the department.
+    *   **Covers:** All training programs, including those for staff (trauma-informed care, transgender care, visitor interaction, opioid antagonist, child visitor interaction, mental health resources) and incarcerated individuals (opioid antagonist, dyslexia intervention).
+    *   **Columns:**
+        *   Program ID (Unique Identifier)
+        *   Program Name
+        *   Program Description
+        *   Target Audience (e.g., Uniformed Staff, Civilian Staff, Medical Professionals, Incarcerated Individuals)
+        *   Mandatory/Voluntary
+        *   Frequency (e.g., Annual, One-time)
+        *   Duration (Hours)
+        *   Curriculum/Topics Covered
+        *   Learning Objectives
+        *   Training Materials Reference (Links to Dataset 29)
+        *   Provider/Department
+        *   Certification/Credential Offered (Yes/No)
+        *   Standards Compliance (e.g., SAMHSA, NIC)
+
+21. **Emergency Lock-in Incidents**
+    *   **Quotes:**
+        *   "The term "department-wide emergency lock-in" means any period of time during which incarcerated individuals are confined to their cells or beds throughout all department facilities, but shall not include any scheduled period of lock-in." § 9-155.a
+        *   "The term "facility emergency lock-in" means any period of time during which incarcerated individuals are confined to their cells or beds within all housing areas of an individual departmental facility, but shall not include any scheduled period of lock-in." § 9-155.a
+        *   "The term "housing area emergency lock-in" means any period of time during which incarcerated individuals within an individual housing area within a facility are confined to their cells or beds, but shall not include any scheduled period of lock-in." § 9-155.a
+        *   "The term "lock-in extension" means when a scheduled period of lock-in is extended." § 9-155.a
+        *   "The term "partial facility emergency lock-in" means any period of time during which incarcerated individuals are confined to their cells or beds within a segment of an individual departmental facility, but shall not include any scheduled period of lock-in." § 9-155.a
+        *   "The term "continuous lock-in" means any period of time in which incarcerated individuals are confined to their cells or beds due to the combination of an emergency lock-in and either a scheduled lock-in or a lock-in extension, or both." § 9-155.a
+        *   "The number of department-wide emergency lock-ins, in total and disaggregated by the reason for such emergency lock-in, as determined by the department;" § 9-155.b.1
+        *   "The mean and median duration of emergency lock-ins disaggregated by department-wide emergency lock-ins... facility emergency lock-ins... partial facility emergency lock-ins... and housing area emergency lock-ins..." § 9-155.b.7
+        *   "The number of times mandated services are affected by an emergency lock-in or lock in extension, disaggregated by service type;" § 9-155.b.8
+        *   "Emergency lock-ins may only be used when the Commissioner, a Deputy Commissioner, or another equivalent member of department senior leadership with responsibility for the operations of security for a facility determines that such lock-in is necessary to de-escalate an emergency that poses a threat of specific, significant and imminent harm to incarcerated persons or staff." § 9-167.j.1
+        *   "Such lock-ins may not last more than four hours." § 9-167.j.1
+        *   "Throughout an emergency lock-in, the department shall conduct visual and aural observation of every person locked in every fifteen (15) minutes, shall refer any health concerns to medical or mental health staff, and shall bring any person displaying any indications of any need for medical documentation, observation, or treatment to the medical clinic." § 9-167.j.2
+        *   "The department shall immediately provide notice to the public on its website of an emergency lock-in, including information on any restrictions on visits, phone calls, counsel visits or court appearances." § 9-167.j.3
+    *   **Why:** To track all emergency lock-ins, their causes, durations, and impacts on incarcerated individuals and services.
+    *   **One row represents:** A single emergency lock-in event.
+    *   **Covers:** All department-wide, facility, partial facility, and housing area emergency lock-ins, including extensions.
+    *   **Columns:**
+        *   Lock-in ID (Unique Identifier)
+        *   Start Date/Time
+        *   End Date/Time
+        *   Duration (Hours)
+        *   Type of Lock-in (e.g., Department-wide, Facility, Partial Facility, Housing Area, Lock-in Extension, Continuous Lock-in)
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Area Type (if applicable)
+        *   Reason for Lock-in (e.g., emergency, security threat, riot, prison break)
+        *   Commissioner/Deputy Commissioner Approval (Yes/No)
+        *   Less Restrictive Measures Exhausted (Yes/No)
+        *   Number of Incarcerated Individuals Affected
+        *   Mandated Services Affected (List, e.g., law library, recreation, religious services, sick call, visits, education)
+        *   Number of Scheduled Medical/Mental Health Appointments Missed (Links to Dataset 5)
+        *   Number of Medical/Mental Health Requests Denied (Links to Dataset 5)
+        *   Visits Affected (Yes/No) (Links to Dataset 23)
+        *   Counsel Visits Affected (Yes/No) (Links to Dataset 23)
+        *   Court Appearances Affected (Yes/No) (Links to Dataset 24)
+        *   Programs Affected (List) (Links to Dataset 7)
+        *   Actions Taken During Lock-in
+        *   Number of Staff Diverted (Links to Dataset 3)
+        *   Visual/Aural Observation Conducted (Yes/No, every 15 min)
+        *   Health Concerns Referred to Medical/Mental Health (Yes/No)
+        *   Tablet/Phone Access Provided (Yes/No, if applicable)
+        *   Public Notice Provided (Yes/No)
+        *   Incarcerated Individual ID (if individual lock-in) (Links to Dataset 1)
+        *   Incarcerated Individual Race (if individual lock-in) (Links to Dataset 1)
+        *   Incarcerated Individual Age (if individual lock-in) (Links to Dataset 1)
+        *   Incarcerated Individual Gender Identity (if individual lock-in) (Links to Dataset 1)
+        *   Incarcerated Individual Mental Health Treatment Level (if individual lock-in) (Links to Dataset 10)
+
+22. **Civil Service Examination Participation**
+    *   **Quotes:**
+        *   "The commissioner of citywide administrative services, in collaboration with the commissioner, shall administer civil service examinations for individuals incarcerated for a period of 10 days or longer in any city correctional facility." § 9-164.a
+        *   "Any such individual who meets the minimum qualifications required to sit for a civil service examination shall be permitted to take such examination, absent any significant overriding security concern or exigent circumstances, provided that such individual shall be offered a makeup examination when such concern or circumstances are no longer present." § 9-164.a
+        *   "The department shall make available study materials and practice examinations, as practicable, to such individuals." § 9-164.a
+        *   "The commissioner, in collaboration with the commissioner of citywide administrative services, shall make available information regarding civil service examinations to individuals incarcerated for a period of 10 days or longer in any city correctional facility, including basic or introductory civil service information sessions; information regarding the examination process, including how to apply for an examination; and any existing schedule of civil service examinations." § 9-164.b
+    *   **Why:** To track incarcerated individuals' access to and participation in civil service examinations, and compliance with offering study materials.
+    *   **One row represents:** An incarcerated individual's attempt to take a civil service examination.
+    *   **Covers:** All civil service examinations administered to incarcerated individuals.
+    *   **Columns:**
+        *   Examination Participation ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Examination Date
+        *   Examination Type/Title
+        *   Eligibility Status (Yes/No)
+        *   Minimum Qualifications Met (Yes/No)
+        *   Permitted to Take Exam (Yes/No)
+        *   Reason for Denial (if applicable, e.g., security concern, exigent circumstances)
+        *   Makeup Exam Offered (Yes/No)
+        *   Makeup Exam Date (if applicable)
+        *   Examination Score/Result
+        *   Study Materials Provided (Yes/No)
+        *   Practice Examinations Provided (Yes/No)
+        *   Information Session Attended (Yes/No)
+        *   Application Assistance Provided (Yes/No)
+        *   Facility ID (Links to Dataset 2)
+
+23. **Visitation Log**
+    *   **Quotes:**
+        *   "The department of correction shall reduce its Hart's Island visitation policy to writing, post such policy on the department of correction website and make it available to anyone who requests a copy." § 9-133.a
+        *   "The term "visitor" means any person who enters a city jail with the stated intention of visiting an incarcerated individual at any city jail, or any person who is screened by the department for visitation purposes, including but not limited to professionals and any person who registers to visit an incarcerated individual in the department's visitor tracking system." § 9-140.a
+        *   "The total number of visitors to city jails, the total number of visitors to borough jail facilities, and the total number of visitors to city jails on Rikers Island." § 9-140.b.1
+        *   "The number of visitors unable to visit an incarcerated individual at any city jail, in total and disaggregated by the reason such visit was not completed." § 9-140.b.3
+        *   "The department shall establish a program for child visitors and other participants of visits with incarcerated persons that include child visitors." § 9-168.b
+        *   "The department shall make best efforts to reduce the time that a child visitor waits prior to commencing a visit with an incarcerated person." § 9-168.c
+        *   "The department... shall establish and operate an online system for scheduling in person visits and tele-visits with incarcerated persons in the custody of the department..." § 9-170.a
+        *   "The ability for a person to request a date and time to visit an incarcerated person and, following approval by the department of a date and time, to reserve such date and time;" § 9-170.a.1
+        *   "The ability for a person who has used such system to schedule a visit with an incarcerated person to cancel such visit;" § 9-170.a.2
+        *   "The ability for the department to notify a person who has used such system to schedule a visit with an incarcerated person that such visit must be canceled..." § 9-170.a.3
+        *   "A person who has used the online system to request a date and time for a visit with an incarcerated person and is not approved by the department to reserve such date and time shall receive the reason for which the department did not approve the request." § 9-170.d
+    *   **Why:** To track all visitation activity, monitor access, identify reasons for denied visits, and manage scheduling systems.
+    *   **One row represents:** A single scheduled or attempted visit between a visitor and an incarcerated individual.
+    *   **Covers:** All in-person visits, tele-visits, and attempts, including those by professionals and child visitors.
+    *   **Columns:**
+        *   Visit ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Visitor ID (Unique Identifier for Visitor)
+        *   Visitor Type (e.g., Professional, Family, Child)
+        *   Professional Service Type (if applicable, e.g., lawyer, doctor, religious advisor)
+        *   Scheduled Visit Date/Time
+        *   Actual Visit Date/Time
+        *   Visit Type (In-person, Tele-visit)
+        *   Facility ID (Links to Dataset 2)
+        *   Visit Status (Completed, Not Completed, Canceled by Visitor, Canceled by Department, Denied)
+        *   Reason for Not Completed/Denied/Canceled (if applicable)
+        *   Online Scheduling System Used (Yes/No)
+        *   Online Request Date/Time
+        *   Online Approval Status (Approved, Denied)
+        *   Online Denial Reason (if applicable)
+        *   Visitor Arrival Time
+        *   Wait Time for Child Visitor (Minutes)
+        *   Child Visitor Program Utilized (Yes/No)
+        *   Specially Designed Visiting Area Used (Yes/No)
+        *   Complaint Regarding Online System (Yes/No) (Links to Dataset 16)
+        *   Related Sexual Abuse/Harassment Allegation ID (Links to Dataset 12)
+        *   Related Intervention Incident ID (Links to Dataset 28)
+
+24. **Court Appearance Transportation Log**
+    *   **Quotes:**
+        *   "The department shall, within 48 hours of admission of an incarcerated individual to the custody of the department, determine whether an incarcerated individual has any pending court appearances scheduled in New York city criminal court or the criminal term of New York state supreme court..." § 9-146.a
+        *   "The department shall... provide, as required by the court, transportation for every incarcerated individual for all such court appearances." § 9-146.b.2
+        *   "The department shall record, via body-worn or handheld camera, video, including audio, every interaction between incarcerated individuals and correction officers in which an incarcerated individual is informed about a scheduled court appearance and shall maintain a database with the video files created pursuant to this subdivision." § 9-146.d
+        *   "If consent is provided to the department by an incarcerated individual, the department shall provide, within 3 business days to the defense attorney on record of such incarcerated individual, the video file of an interaction in which that incarcerated individual is informed that they have a court appearance..." § 9-146.e
+        *   "The department shall independently establish, or establish by working with the office of court administration, a means by which real-time information regarding an incarcerated individual’s departure from their housing facility on the date of their scheduled court appearance can be communicated to the defense attorney on record of such incarcerated individual..." § 9-146.f
+        *   "The total number of scheduled court appearances, disaggregated by housing facility and venue of the scheduled court appearance;" § 9-146.g.1
+        *   "The total number of individuals that were delivered to the court facility on the date of their scheduled court appearance, disaggregated by housing facility and venue of the scheduled court appearance;" § 9-146.g.2
+        *   "The total number of individuals who were not delivered to the court facility on the date of their court appearance disaggregated by housing facility and venue of the scheduled court appearance, and the reason the individual was not delivered to the court facility;" § 9-146.g.3
+        *   "The total number of individuals for which use of force was required to compel the individual to be delivered to the court facility on the date of their scheduled court appearance, disaggregated by housing facility." § 9-146.g.7
+        *   "The department shall provide every incarcerated individual appearing for a trial or before a grand jury with access to clothing in their personal property prior to transport for such appearance..." § 9-147
+    *   **Why:** To track all court appearances, transportation logistics, and compliance with clothing and notification requirements.
+    *   **One row represents:** A single scheduled court appearance for an incarcerated individual.
+    *   **Covers:** All court appearances in NYC Criminal Court or NYS Supreme Court, including virtual and on-site.
+    *   **Columns:**
+        *   Court Appearance ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Scheduled Court Date
+        *   Scheduled Court Time
+        *   Court Venue (e.g., NYC Criminal Court, NYS Supreme Court)
+        *   Appearance Type (e.g., trial, grand jury, virtual, on-site)
+        *   Case Type (e.g., pending, payment of surcharges)
+        *   Facility ID (Links to Dataset 2)
+        *   Housing Facility
+        *   Transportation Status (Delivered, Not Delivered)
+        *   Reason for Non-Delivery (if applicable)
+        *   Departure Time from Housing Facility
+        *   Arrival Time at Court Facility
+        *   Delivery Time Category (e.g., before 10am, 10am-12pm, after 12pm)
+        *   Use of Force Required (Yes/No) (Links to Dataset 9)
+        *   Video Recording of Notification (Yes/No)
+        *   Video File Reference (Links to Dataset 26)
+        *   Consent for Video Release to Attorney (Yes/No)
+        *   Video Provided to Defense Attorney (Yes/No)
+        *   Defense Attorney Notification of Departure (Yes/No)
+        *   Personal Clothing Access Provided (Yes/No)
+        *   Department-Provided Clothing (Yes/No, Type)
+        *   Court Order for Uniform (Yes/No)
+
+25. **Legal Representative Information**
+    *   **Quotes:**
+        *   "The department shall make a good faith effort to notify the attorney of an incarcerated individual who has died as soon as practicable after notifying the next of kin of such individual..." § 9-171.b
+        *   "If consent is provided to the department by an incarcerated individual, the department shall provide, within 3 business days to the defense attorney on record of such incarcerated individual, the video file of an interaction in which that incarcerated individual is informed about a scheduled court appearance..." § 9-146.e
+        *   "The department shall independently establish, or establish by working with the office of court administration, a means by which real-time information regarding an incarcerated individual’s departure from their housing facility on the date of their scheduled court appearance can be communicated to the defense attorney on record of such incarcerated individual..." § 9-146.f
+        *   "Institutional defense provider. The term "institutional defense provider" means any private institutional legal services organization selected in accordance with section 13-02 of title 43 of the rules of the city of New York to represent indigent persons, or any successor provision thereto." § 9-150.a
+        *   "If such website identifies an institutional defense provider as the legal representative of such individual, the department shall telephone or email such institutional defense provider within ninety minutes of generation of such a list to inform them that such individual is held solely due to a bail amount of less than $10..." § 9-150.d
+        *   "An incarcerated person shall have the right to be represented by their legal counsel or advocate;" § 9-167.f.1.i
+    *   **Why:** To maintain accurate contact information for legal representatives and ensure timely communication regarding incarcerated individuals.
+    *   **One row represents:** A single legal representative or institutional defense provider.
+    *   **Covers:** All attorneys, legal counsel, advocates, and institutional defense providers representing incarcerated individuals.
+    *   **Columns:**
+        *   Legal Representative ID (Unique Identifier)
+        *   Name/Organization Name
+        *   Type (e.g., Attorney, Advocate, Institutional Defense Provider)
+        *   Contact Person (if organization)
+        *   Phone Number
+        *   Email Address
+        *   Associated Incarcerated Individual ID (Links to Dataset 1)
+        *   Date of Assignment/Representation
+        *   Source of Information (e.g., OCA database, incarcerated individual self-report)
+
+26. **Video Surveillance & Evidence Records**
+    *   **Quotes:**
+        *   "The department shall record, via body-worn or handheld camera, video, including audio, every interaction between incarcerated individuals and correction officers in which an incarcerated individual is informed about a scheduled court appearance and shall maintain a database with the video files created pursuant to this subdivision." § 9-146.d
+        *   "The total number of court production videos stored in the department’s database and the total number of court production videos provided to defense counsel pursuant to subdivision e." § 9-146.g
+        *   "Whether video camera surveillance recorded the incident;" § 9-156.b.16
+        *   "The department shall provide any person in the care and custody of the department with a pending criminal proceeding access to evidence review technology for the purpose of enabling such person to review evidence that may be used in such proceeding, including audio, text, and visual materials." § 9-174.b
+    *   **Why:** To store and manage video and other electronic evidence, ensuring accessibility for legal proceedings and reporting.
+    *   **One row represents:** A single video recording or piece of electronically stored information.
+    *   **Covers:** All video recordings of court appearance notifications, use of force incidents, sexual abuse/harassment incidents, and other electronically stored information used as evidence.
+    *   **Columns:**
+        *   Video/Evidence ID (Unique Identifier)
+        *   Date of Recording/Creation
+        *   Time of Recording/Creation
+        *   Location (Facility ID, Housing Area) (Links to Dataset 2)
+        *   Recording Device Type (e.g., body-worn camera, handheld camera, fixed surveillance)
+        *   Incident Type (e.g., Court Appearance Notification, Use of Force, Sexual Abuse, Other)
+        *   Related Incident ID (Links to Dataset 9, 12, 24, 28)
+        *   Incarcerated Individual ID (Subject) (Links to Dataset 1)
+        *   Staff ID (Involved) (Links to Dataset 3)
+        *   File Path/Storage Location
+        *   Duration
+        *   Audio Included (Yes/No)
+        *   Provided to Defense Attorney (Yes/No)
+        *   Date Provided to Defense Attorney
+        *   Consent for Release (Yes/No)
+        *   Evidence Review Technology Access (Yes/No)
+        *   Date Accessed via ERT
+        *   ERT User ID (Links to Dataset 1)
+
+27. **Prison Death Review Board Meetings**
+    *   **Quotes:**
+        *   "The board of correction may request that the prison death review board established pursuant to section 3-10 of title 40 of the rules of the city of New York be convened." § 9-172.b
+        *   "The prison death review board shall keep a record of any meetings or any other proceedings of such board." § 9-172.c
+        *   "The prison death review board shall include: The executive director of the board of correction, who shall serve as chair; The deputy mayor for public safety... The chief medical officer of correctional health... The commissioner of correction... The chief medical examiner..." § 9-172.d
+    *   **Why:** To document the proceedings and outcomes of the Prison Death Review Board, ensuring oversight and accountability for deaths in custody.
+    *   **One row represents:** A single meeting or proceeding of the Prison Death Review Board.
+    *   **Covers:** All meetings and proceedings of the Prison Death Review Board.
+    *   **Columns:**
+        *   Meeting ID (Unique Identifier)
+        *   Date of Meeting
+        *   Time of Meeting
+        *   Death ID (Incarcerated Individual Death being reviewed) (Links to Dataset 17)
+        *   Attendees (List of Board Members present, Staff IDs) (Links to Dataset 3)
+        *   Key Discussions/Findings
+        *   Recommendations Made
+        *   Action Items Assigned
+        *   Meeting Minutes/Record Reference
+
+28. **De-escalation Confinement & Restraints Usage Log**
+    *   **Quotes:**
+        *   "The term “de-escalation confinement” means holding an incarcerated person in a cell immediately following an incident where the person has caused physical injury or poses a specific risk of imminent serious physical injury to staff, themselves or other incarcerated persons." § 9-167.a
+        *   "The maximum duration a person can be held in de-escalation confinement shall not exceed four hours immediately following the incident precipitating such person’s placement in such confinement. Under no circumstances may the department place a person in de-escalation confinement for more than four hours total in any 24-hour period, or more than 12 hours in any seven-day period;" § 9-167.c.6
+        *   "For each instance an incarcerated person is placed in de-escalation confinement as described in subdivision c of this section, the department shall prepare an incident report that includes a detailed description of why isolation was necessary to de-escalate an immediate conflict and the length of time the incarcerated person was placed in such confinement." § 9-167.d
+        *   "The department shall not place an incarcerated person in restraints unless an individualized determination is made that restraints are necessary to prevent an imminent risk of self-injury or injury to other persons." § 9-167.e.1
+        *   "Restraints shall not be used on an incarcerated person under the age of 22 except in the following circumstances: (i) during transportation in and out of a facility... and (ii) during escorted movement within a facility to and from out-of-cell activities where an individualized determination is made that restraints are necessary to prevent an immediate risk of self-injury or injury to other persons." § 9-167.e.1
+        *   "The department shall not place an incarcerated person in restraints beyond the use of restraints described in paragraph 1 of this subdivision, or on two consecutive days, until a hearing is held to determine if the continued use of restraints is necessary for the safety of others." § 9-167.e.2
+    *   **Why:** To track all instances of de-escalation confinement and restraint usage, ensuring compliance with strict time limits and individualized determinations.
+    *   **One row represents:** A single instance of de-escalation confinement or application of restraints.
+    *   **Covers:** All uses of de-escalation confinement and physical restraints on incarcerated individuals.
+    *   **Columns:**
+        *   Incident ID (Unique Identifier)
+        *   Incarcerated Individual ID (Links to Dataset 1)
+        *   Date of Incident
+        *   Start Time
+        *   End Time
+        *   Duration (Hours)
+        *   Type (De-escalation Confinement, Restraints Usage)
+        *   Facility ID (Links to Dataset 2)
+        *   Location (e.g., cell, transport, escorted movement)
+        *   Reason for Confinement/Restraints (e.g., physical injury, imminent serious physical injury risk to self/others)
+        *   Detailed Description of Behavior
+        *   Why Isolation/Restraints Necessary to De-escalate
+        *   Staff ID (Involved) (Links to Dataset 3)
+        *   Individualized Determination Made (Yes/No)
+        *   Least Restrictive Form Used (Yes/No)
+        *   Incarcerated Individual Age (Under 22, 22+)
+        *   Restraint Type (if applicable)
+        *   Restraint Purpose (e.g., transport, escorted movement)
+        *   Restraint Hearing Held (Yes/No)
+        *   Restraint Hearing Date
+        *   Restraint Hearing Outcome
+        *   Daily Review of Restraints (Yes/No)
+        *   Continued Restraint Authorization (Yes/No, Max 7 days)
+        *   Visual/Aural Observation Conducted (Yes/No, every 15 min)
+        *   Crisis Intervention/De-escalation Efforts (Description)
+        *   Health Concerns Referred to Medical/Mental Health (Yes/No)
+        *   Tablet/Phone Access Provided (Yes/No)
+        *   Transfer to Pre-hearing Temporary Restrictive Housing (Yes/No) (Links to Dataset 18)
+
+29. **Library & Resource Inventory**
+    *   **Quotes:**
+        *   "The commissioner of correction is empowered to set aside in the city prison a sufficient space for the purposes of installing a library for the incarcerated individuals." § 9-111.a
+        *   "The commissioner of correction is authorized to accept contributions of books, pamphlets and periodicals. All such contributions shall be recorded and catalogued; an account thereof shall be kept and a report concerning the same shall be made to the commissioner of correction at least once in each calendar year." § 9-111.b
+        *   "The number of requests made by incarcerated individuals for assistance from the law library and the number granted," § 9-134.b.xxviii
+        *   "The department shall make available study materials and practice examinations, as practicable, to such individuals." § 9-164.a
+        *   "The department shall provide any person in the care and custody of the department with a pending criminal proceeding access to evidence review technology for the purpose of enabling such person to review evidence that may be used in such proceeding, including audio, text, and visual materials." § 9-174.b
+        *   "Providing such a person with access to a law library equipped with tablets, desktop computers or other devices that such person may use to access such evidence review technology;" § 9-174.b.2
+        *   "The department shall establish a program for child visitors and other participants of visits with incarcerated persons that include child visitors. Such program shall provide: Toys, games, books, and activities, such as arts and crafts, and disinfecting wipes in any visiting area;" § 9-168.b.1
+        *   "The department shall post on its website a description of the program for child visitors required by this section, including any protocols or processes for cleaning and, where necessary, replenishing toys, games, books and activities in visiting areas..." § 9-168.f
+    *   **Why:** To manage library resources, track contributions, and ensure availability of educational and legal materials.
+    *   **One row represents:** A single item in a library or resource inventory.
+    *   **Covers:** All books, pamphlets, periodicals, study materials, practice examinations, tablets, desktop computers, toys, games, and activities available to incarcerated individuals and visitors.
+    *   **Columns:**
+        *   Item ID (Unique Identifier)
+        *   Item Name/Title
+        *   Item Type (e.g., Book, Pamphlet, Periodical, Study Material, Practice Exam, Tablet, Desktop Computer, Toy, Game, Art/Craft Supply)
+        *   Location (Facility ID, Library Name, Visiting Area) (Links to Dataset 2)
+        *   Acquisition Date
+        *   Acquisition Method (e.g., Purchase, Contribution)
+        *   Contributor Name (if contribution)
+        *   Condition (e.g., New, Used, Damaged)
+        *   Quantity (for consumables like art supplies)
+        *   Availability Status (e.g., In Stock, Checked Out, In Repair)
+        *   Last Inventory Date
+        *   Last Cleaning/Replenishment Date (for child visitor items)
+        *   Evidence Review Technology Installed (Yes/No, for devices)
+
+30. **Commissary & Manufacturing Inventory/Transactions**
+    *   **Quotes:**
+        *   "The commissioner of correction may establish a commissary in any institution under the commissioner's jurisdiction for the use and benefit of the incarcerated individuals and employees thereof." § 9-118.a
+        *   "All moneys received from the sales of such commissaries shall be paid over semi-monthly to the commissioner of finance without deduction." § 9-118.a
+        *   "All moneys received from the sales from such commissaries shall be kept in a separate and distinct fund to be known as the commissary fund. Such fund shall be used for: The purchase of all merchandise for resale in such commissaries; The purchase of supplies, materials, and equipment for such commissaries; The furnishing of work or labor to be done for such commissaries; and All other costs and expenses of operating such commissaries other than the salaries of officers and employees employed in such commissaries." § 9-118.b
+        *   "The establishment of a fund to be known as "manufacturing fund, department of correction," is authorized. The comptroller is directed to place in such fund all moneys received or realized through the sale of articles manufactured by the department of correction." § 9-124
+        *   "The comptroller is authorized to charge against such fund any voucher received from the department of correction for the purchase of materials, supplies, equipment, repairs, replacements and royalties on manufacturing industry machines to be used in its manufacturing industries." § 9-124
+        *   "When an incarcerated individual is released from custody in a departmental facility, the department shall, as part of the discharge process, assist the individual in receiving unused commissary funds." § 9-162.a
+        *   "Immediately upon request from a formerly incarcerated individual at a location at which commissary funds are made available, the department shall return up to $200 of such funds in cash, and any funds to which such individual is entitled that exceed $200 shall be distributed by check and sent by mail if all necessary information, including a name and mailing address, is provided by such individual." § 9-162.b
+    *   **Why:** To manage commissary and manufacturing operations, track inventory, sales, purchases, and fund balances.
+    *   **One row represents:** A single transaction (sale, purchase, transfer) or inventory record for commissary or manufacturing.
+    *   **Covers:** All merchandise, supplies, materials, equipment, and articles related to commissaries and manufacturing industries.
+    *   **Columns:**
+        *   Transaction ID (Unique Identifier)
+        *   Date of Transaction/Record
+        *   Type (e.g., Commissary Sale, Commissary Purchase, Manufacturing Sale, Manufacturing Purchase, Inventory Adjustment, Fund Transfer)
+        *   Item ID (Unique Identifier for product/material)
+        *   Item Name
+        *   Quantity
+        *   Unit Price
+        *   Total Amount
+        *   Fund Type (Commissary Fund, Manufacturing Fund)
+        *   Incarcerated Individual ID (if commissary sale/fund return) (Links to Dataset 1)
+        *   Employee ID (if commissary sale) (Links to Dataset 3)
+        *   Facility ID (Links to Dataset 2)
+        *   Vendor ID (if purchase)
+        *   Voucher Reference (if purchase)
+        *   Check Number (if fund return)
+        *   Mailing Address (for fund return check)
+        *   Cash Amount Returned (for fund return)
+        *   Unclaimed Funds Status (Yes/No)
+        *   Efforts to Return Unclaimed Funds (Description)
+
+**Non-Tabular Information:**
+
+*   **Rules and Regulations:** Departmental rules, regulations, directives (e.g., use of force directive § 9-138, Hart's Island visitation policy § 9-133, nursery procedures § 9-142.c, trauma-informed care guidelines § 9-145.c, bill of rights § 9-139, grievance process procedures § 9-136.f, solitary confinement rules § 9-167.f.1, child visitor program description § 9-168.f).
+*   **Reports and Summaries:** Aggregate reports (e.g., monthly non-production report § 9-108.d, quarterly jail data reports § 9-130.b-c, annual recidivism report § 9-129, annual programming evaluation summary § 9-144, annual trauma-informed care report § 9-145.d, annual education reports § 9-151.b-e, annual use of force investigations report § 9-152.b, annual admission delays report § 9-149.d, annual commissary funds report § 9-162.e, annual pregnant persons medical outcomes report § 9-163.b, quarterly gender identity report § 9-165.b, quarterly dyslexia screening report § 9-166.f, quarterly de-escalation confinement report § 9-167.d, quarterly restrictive housing report § 9-167.h.9, quarterly emergency lock-in report § 9-167.j.4, annual child visitor program report § 9-168.e, quarterly forensic psychiatric examinations report § 9-169.b, annual online visitation scheduling report § 9-170.e, biannual work release program report § 9-176.c).
+*   **Legal Documents:** Judicial warrants, civil immigration detainers, court orders, criminal procedure law references, penal law sections, federal regulations (e.g., § 9-131.a, § 9-169.a).
+*   **Policy Documents:** Language access plan (§ 9-139.e), leave regulations promulgated by the mayor (§ 9-116.d), security clearance protocols (§ 9-161.c).
+*   **Informational Materials:** Connections guidebook (§ 9-139.f), pamphlets for opioid overdose prevention kits (§ 9-173.a), civil service information sessions and schedules (§ 9-164.b-c).
+*   **Narrative Descriptions:** Brief narratives for "other" non-production reasons (§ 9-108.d), detailed descriptions for de-escalation confinement and restrictive housing incident reports (§ 9-167.d, § 9-167.h.9), emergency lock-in incident reports (§ 9-167.j.4).
+*   **Website Content:** Hart's Island electronic burial database (§ 9-132.a), Hart's Island visitation policy (§ 9-133.a), use of force directive (§ 9-138), bill of rights documents (§ 9-139.d), emergency lock-in public notice (§ 9-167.j.3), child visitor program description (§ 9-168.f).
+*   **Agreements:** Agreement with Office of Court Administration for database access (§ 9-146.c).
+*   **Recommendations/Assessments:** Recommendations from the Board of Correction ad hoc committee on work release program (§ 9-176.b), recommendations from the department coordinator for borough-based jail transition (§ 9-175.b.2).
+*   **Study Findings:** Feasibility study on tele-visits (§ 9-168.d).
+*   **Working Group Records:** Records of the doula services working group meetings (§ 9-161.e).

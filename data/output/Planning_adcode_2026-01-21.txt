@@ -1,0 +1,616 @@
+**Identified Tabular Datasets**
+
+**1. City Map Features**
+
+*   **Quotes:**
+    *   "The city map is to be deemed final and conclusive with respect to the location, width and grades of the streets shown thereon, so far as such location, width and grades have been duly adopted." § 25-101
+    *   "There shall be located and laid out on the city map all parks, playgrounds, streets, courtyards abutting streets, bridges, tunnels and approaches to bridges and tunnels, and improvements of navigation in accordance with bulkhead and pierhead lines established pursuant to section seven hundred five of the charter. The width and grades of all streets so located and laid out shall be indicated thereon." § 25-102
+    *   "Whenever any street in the city shall have been used as such for upward of twenty years without having the grade thereof established by law, the level or surface of such street as so used shall be deemed to be and to have been the grade thereof." § 25-105
+    *   "It shall be unlawful to open any streets through the grounds belonging to the corporation of Fordham University in its actual occupation of the area generally bounded by Bronx Park on the north and east, Fordham Road on the south, and the tracks of the Harlem Division of the New York Central and Hudson River Railroad Company on the west." § 25-109.a
+    *   "It shall also be unlawful to open any streets through or upon any part of the land and premises owned by New York University, extending from Sedgwick avenue to Aqueduct avenue, and lying immediately south of and adjacent to One hundred eighty-first street, sometimes called University avenue, so long as the same shall be owned or occupied for educational purposes by such university." § 25-109.b
+    *   "It shall be unlawful to open any streets through the grounds of Columbia University, from One hundred sixteenth street to One hundred twentieth street, between Amsterdam avenue and Broadway, so long as such grounds are owned or occupied for educational purposes." § 25-109.c
+    *   "It shall be unlawful to open any streets through or upon any part of the land and premises owned by Manhattan College, within the territory bounded by West 244th street and its easterly prolongation, Post road and Spuyten Duyvil parkway, so long as the same shall be owned or occupied for educational purposes." § 25-109.d
+    *   "It shall be unlawful to open any streets through or upon any part of the land and premises owned by the college of Mount Saint Vincent, without the territory bounded approximately by the northerly city line, Riverdale avenue, West 261st street, Netherland avenue, a line about thirteen hundred feet southerly of the city line and the tracks of the New York Central and Hudson River Railroad, so long as the same shall be owned or occupied for educational purposes." § 25-109.e
+    *   "It shall be unlawful to open any streets through or upon any part of the land or premises owned by the college of Mount Saint Vincent, except West 261st street, between Riverdale avenue and the New York Central and Hudson River Railroad right-of-way and Palisade avenue south of West 261st street as they are now indicated upon the city map, or as they may in the future be changed in width or alignment, within the territory bounded approximately by the northerly city line, Riverdale avenue, West 261st street, Palisade avenue, a line about 1,400 feet southerly of the city line and the tracks of the New York Central and Hudson River Railroad, so long as they shall be owned or occupied for educational purposes." § 25-109.f
+*   **Why:** The agency must maintain a conclusive city map with detailed information on all public features and specific land restrictions.
+*   **One row represents:** A single mapped feature on the city map.
+*   **Covers:** All parks, playgrounds, streets, courtyards, bridges, tunnels, approaches, navigation improvements, and areas with street opening restrictions.
+*   **Columns:**
+    *   Feature ID
+    *   Feature Type (e.g., Street, Park, Bridge, Tunnel, Playground, Courtyard, Navigation Improvement)
+    *   Feature Name
+    *   Location (e.g., geographic coordinates, geometric data)
+    *   Width
+    *   Grade (including "established by user" status)
+    *   Date Established/Adopted
+    *   Special Restriction Flag (e.g., "No Street Opening")
+    *   Restricted Institution Name (if applicable, e.g., Fordham University)
+
+**2. Zoning Districts and Regulations**
+
+*   **Quotes:**
+    *   "The city planning commission... shall have power to regulate and limit the height and bulk of buildings, to regulate and determine the area of yards, courts and other open spaces and to regulate density of population. The commission... may divide the city into districts of such number, shape and area as it may deem best suited to carry out such purposes." § 25-110.a
+    *   "The regulations as to height and bulk of buildings, the area of yards, courts and other open spaces and density of population shall be uniform for each class of buildings throughout each district. The regulation in one or more districts may differ from those in other districts." § 25-110.b
+    *   "The city planning commission... may regulate and restrict the location of trades and industries and the location of buildings designed for specific uses, and may divide the city into districts of such number, shape and area as it may deem best suited to carry out such purposes." § 25-111.a
+    *   "For each such district, regulations may be imposed designating the trades and industries that shall be excluded or subjected to special regulations and designating the uses for which buildings may not be erected or altered." § 25-111.b
+*   **Why:** The agency is legally empowered to create and enforce zoning districts and their associated regulations.
+*   **One row represents:** A specific zoning district or a specific regulation within a district.
+*   **Covers:** All established zoning districts and the regulations governing building height, bulk, open spaces, population density, and land use within them.
+*   **Columns:**
+    *   Zoning District ID
+    *   District Name
+    *   District Boundaries (e.g., geographic coordinates, geometric data)
+    *   Regulation Type (e.g., Height, Bulk, Yard Area, Court Area, Open Space, Density, Trade/Industry Location, Specific Use Restriction)
+    *   Regulation Details (e.g., specific limits, permitted/excluded uses)
+    *   Class of Buildings Affected
+    *   Effective Date of Regulation
+
+**3. Privately Owned Public Spaces (POPS) Inventory**
+
+*   **Quotes:**
+    *   "The term "privately owned public space" means (1) a plaza, residential plaza, urban plaza, public plaza, elevated plaza, arcade, through block arcade, through block galleria, through block connection, open air concourse, covered pedestrian space, publicly accessible space or sidewalk widening provided for in the zoning resolution now or previously in effect; (2) such other privately owned outdoor or indoor space required to be open to the public and for which the department of city planning maintains a record in the privately owned public space data set accessible through the open data web portal that is linked to nyc.gov or successor website pursuant to section 23-502; and (3) such other privately owned outdoor or indoor spaces required to be open to the public pursuant to any of the following actions occurring on or after January 1, 2001: (i) a decision, authorization, certification, or special permit issued by the city planning commission; (ii) a certification issued by the chair of the city planning commission; (iii) a variance of the zoning resolution or special permit issued by the board of standards and appeals; or (iv) action taken by the council pursuant to section 197-d of the charter." § 25-114.a
+    *   "On July 1, 2019 and annually thereafter, the department of city planning shall provide to the mayor and the speaker of the council a report that shall, at minimum, contain the following information about each privately owned public space in existence on the date of such report: 1. The address; 2. The type of privately owned public space; 3. If the privately owned public space was established pursuant to a provision of the zoning resolution now or previously in effect, a citation to such provision; 4. If the privately owned public space was established pursuant to a decision, authorization, or certification issued by the city planning commission, the chair of the city planning commission or the board of standards and appeals, the application number of such decision, authorization, or certification; 5. The operational requirements for such privately owned public space including the hours of access and all required amenities for such privately owned public space;" § 25-114.b.1-5
+    *   "the owner of each privately owned public space shall post in such privately owned public space signage, of such size, design and content and in such location as may be specified by rule of the department of city planning, stating the name and contact information of the person charged by such owner with oversight of complaints about such privately owned public space. In addition to any other information as may be required by the department of city planning, such signage shall include a statement that such privately owned public space is open to the public, the hours it is open, the primary amenities it is required to provide, and a statement that complaints can be registered by calling 311. In relation to any privately owned public spaces established on or after October 1, 2017, such signage shall also include a site map, as approved by the department, displaying the contours of such privately owned public space relative to the other structures on the zoning lot and the adjacent streets or public ways." § 25-114.e
+*   **Why:** The agency must maintain a comprehensive record of all privately owned public spaces and their specific requirements.
+*   **One row represents:** A single privately owned public space.
+*   **Covers:** All plazas, arcades, connections, and other publicly accessible spaces established through zoning or other city actions.
+*   **Columns:**
+    *   POPS ID
+    *   Address
+    *   POPS Type (e.g., Plaza, Arcade, Through Block Connection)
+    *   Establishment Method (e.g., Zoning Resolution, CPC Decision, BSA Variance, Council Action)
+    *   Establishing Citation/Application Number
+    *   Operational Requirements (e.g., hours of access, list of required amenities)
+    *   Required Signage (Yes/No)
+    *   Signage Content Requirements
+    *   Site Map Required (Yes/No)
+    *   Site Map Approval Status
+    *   Date Established
+
+**4. Housing Unit Inventory**
+
+*   **Quotes:**
+    *   "Extremely low income affordable housing (ELI-AH) unit... a housing unit that is required to be affordable to an extremely low income household pursuant to a regulatory agreement, restrictive declaration or other similar instrument with a federal, state or local governmental entity or instrumentality." § 25-117.a (similar definitions for VLI-AH, LI-AH, MI-AH, MIDI-AH)
+    *   "Housing security, affordability and quality, including but not limited to... share of housing units that are rent-stabilized, share of housing units that are income-restricted, share of housing units affordable to ELI, VLI, LI, MI, MIDI and HI households, residential eviction cases filed in housing court and residential evictions executed by city marshals pursuant to a warrant issued in accordance with section 749 of the real property actions and proceedings law, share of housing units with three or more maintenance deficiencies, share of housing units that are overcrowded" § 25-117.c.4
+    *   "Housing production, including but not limited to total additions and subtractions to housing units; ELI-AH, VLI-AH, LI-AH, MI-AH and MIDI-AH unit production; ELI-AH, VLI-AH, LI-AH, MI-AH and MIDI-AH unit preservation;" § 25-117.c.5
+    *   "For projects with residential floor area... a second section listing the number of ELI-AH, VLI-AH, LI-AH, MI-AH and MIDI-AH units and units that are not income-restricted that are expected to be created and their expected rents or prices, as well as the household incomes needed to afford such units without incurring housing cost burden." § 25-118.c.2
+    *   "The number of housing units attributed to new building construction, alteration or demolition; and... The number of affordable housing units created, based on criteria selected or developed by the department." § 25-119.b.4-5
+*   **Why:** The agency needs to track all housing units, their characteristics, affordability status, and changes over time for various reports and analyses.
+*   **One row represents:** A single housing unit.
+*   **Covers:** All housing units in the city, including market-rate, rent-stabilized, and income-restricted units, tracking their production, preservation, and quality.
+*   **Columns:**
+    *   Housing Unit ID
+    *   Address
+    *   Building ID
+    *   Unit Type (e.g., Apartment, Condo, Single-Family Home)
+    *   Number of Bedrooms
+    *   Current Rent/Price
+    *   Rent-Stabilized (Yes/No)
+    *   Income-Restricted (Yes/No)
+    *   Affordability Level (e.g., ELI-AH, VLI-AH, LI-AH, MI-AH, MIDI-AH, HI-AH, Market Rate)
+    *   Regulatory Agreement ID
+    *   Date of Affordability Restriction
+    *   Date of Construction/Alteration/Demolition
+    *   Project ID (if part of a development project, links to **Covered Projects Registry (16)**)
+    *   Number of Maintenance Deficiencies
+    *   Overcrowded (Yes/No)
+    *   Housing Tenure (Owner-occupied, Renter-occupied)
+
+**5. Industrial Business Zones (IBZ) Registry**
+
+*   **Quotes:**
+    *   "The term “industrial business zone” means an industrial business zone designated pursuant to section 22-626." § 25-120.a
+    *   "For each designated industrial business zone: (a) Economic and land use data for the prior twenty years to the extent practicable, including where available and accessible: (1) Employment data... (2) Real estate data... (3) Land use data at the tax lot level; and (4) Data on as-of-right and discretionary New York city and New York state tax credits or other financial incentives administered for businesses in the industrial sector located in such zone. (b) An identification of city-owned and city-leased property in such zone." § 25-120.b.3
+    *   "An identification of primary industrial areas and potential land use policy objectives;" § 25-120.b.5.c.(2)
+    *   "An assessment of access to existing infrastructure, such as freight rail, truck routes, and maritime access, that is supporting or could support manufacturing and industrial activities." § 25-120.b.4.d
+*   **Why:** The agency must maintain a registry of all designated industrial business zones and their key characteristics for strategic planning.
+*   **One row represents:** A single industrial business zone.
+*   **Covers:** All designated industrial business zones in the city.
+*   **Columns:**
+    *   IBZ ID
+    *   IBZ Name
+    *   Boundaries (e.g., geographic coordinates, geometric data)
+    *   Date Designated
+    *   Strategic Planning Area
+    *   Primary Industrial Area (Yes/No)
+    *   Access to Truck Routes (Yes/No)
+    *   Access to Freight Rail (Yes/No)
+    *   Access to Maritime Freight (Yes/No)
+
+**6. Tax Lot Land Use**
+
+*   **Quotes:**
+    *   "The term "community garden" means a tax lot where a garden registered with the department of parks and recreation is located." § 25-116.a
+    *   "The department of city planning shall assign a land use category to a community garden, in accordance with its methodology for classifying such a lot, that describes such garden in the primary land use tax lot output database as open space, outdoor recreation, a community garden, or other similar description. The department shall not assign a community garden a land use category in such database that describes such garden as vacant." § 25-116.b
+    *   "Land use data at the tax lot level;" § 25-120.b.3.a.(3)
+*   **Why:** The agency needs to classify and track the primary land use for each tax lot, especially for community gardens and industrial areas.
+*   **One row represents:** A single tax lot's land use classification.
+*   **Covers:** All tax lots in the city, with specific attention to community gardens and industrial areas.
+*   **Columns:**
+    *   Tax Lot ID
+    *   Land Use Category (e.g., Open Space, Outdoor Recreation, Community Garden, Residential, Industrial, Commercial, Vacant)
+    *   Date of Classification
+    *   Source of Classification (e.g., Department of City Planning, Parks and Recreation)
+    *   Informational Status Flag (as per § 25-116.c)
+    *   **Community Garden ID (if applicable, links to Community Gardens Registry if one existed)**
+
+**7. Official Survey Stations**
+
+*   **Quotes:**
+    *   "The latitudes and longitudes determined in conformity with the method used by the United States coast and geodetic survey for primary stations; the rectangular spherical coordinates for secondary stations; and the rectangular co-ordinates referring to a given fixed central meridian, or assumed meridian, for all stations, shall continue to be official and binding upon all officers making any map or plan relating to any borough, or part thereof." § 25-104
+*   **Why:** The agency must maintain official and binding survey station data for all mapping and planning activities.
+*   **One row represents:** A single official surveying station.
+*   **Covers:** All primary and secondary official surveying stations.
+*   **Columns:**
+    *   Station ID
+    *   Station Type (Primary, Secondary)
+    *   Latitude
+    *   Longitude
+    *   Rectangular Spherical Coordinates
+    *   Rectangular Coordinates (referring to a given fixed central meridian, or assumed meridian)
+    *   Date Established/Last Verified
+
+**8. City Map Amendment Applications**
+
+*   **Quotes:**
+    *   "The city planning commission, with the approval of the mayor, may at any time require the president of any borough to make recommendations for the completion of the city map of the whole or of a part of the territory for which the city map shall not at such time have been finally established and adopted and to report the same to the commission within a fixed and specified time." § 25-103
+    *   "Notwithstanding any provisions of the not-for-profit corporation law, or of any other law, general or special, that portion of the city map relating to Interborough Parkway shall not be altered or amended so as to affect the lands of any cemetery association except by and with the consent of the trustees of any such cemetery association the lands of which would be affected, and of the board of estimate." § 25-108
+*   **Why:** The agency needs to track all applications and recommendations for changes or completion of the city map.
+*   **One row represents:** A single application or recommendation for a city map amendment.
+*   **Covers:** All requests for alterations or completion of the city map, including those affecting cemetery lands.
+*   **Columns:**
+    *   Application ID
+    *   Date Submitted
+    *   Applicant Type (e.g., Borough President, Other)
+    *   Applicant Details
+    *   Proposed Change Description
+    *   Affected **City Map Feature IDs (1)**
+    *   Status (e.g., Submitted, Under Review, Approved, Denied)
+    *   Approval Date
+    *   Cemetery Land Affected (Yes/No)
+    *   Cemetery Association Consent Required (Yes/No)
+    *   Cemetery Association Consent Obtained (Yes/No)
+    *   Board of Estimate Consent Required (Yes/No)
+    *   Board of Estimate Consent Obtained (Yes/No)
+
+**9. Subdivision Map Filings and Approvals**
+
+*   **Quotes:**
+    *   "Every map referred to in section two hundred two of the charter shall be prepared, approved and certified and shall be filed as follows: one copy thereof in the office in which conveyances of real estate are required to be recorded in the county in which the land shown thereon is situated; one copy thereof in the office of the corporation counsel; one copy thereof in the office of the president of the borough in which the land shown on the map is situated; one copy thereof in the office of the secretary of the board of estimate; one copy thereof in the office of the department of city planning; one copy thereof in the office of the city clerk; and, one copy thereof in the office of the department of buildings for the county in which the land shown thereon is situated." § 25-113.a
+    *   "The register or county clerk, as the case may be, shall refuse: 1. To receive for filing any such subdivision map unless the commission or the department of buildings has certified that the subdivision does not result in the violation of any applicable zoning laws. 2. To accept for recording any deed or other instrument affecting real property which has a map attached thereto or made a part thereof, unless it shall have endorsed thereon the certification of the secretary of the board of estimate to the effect that the same has been approved pursuant to section two hundred two of the charter and unless the commissioner of the department of buildings has certified that such subdivision does not result in the violation of any applicable zoning laws." § 25-113.b
+*   **Why:** The agency must track the filing, approval, and certification of all subdivision maps and related deeds.
+*   **One row represents:** A single subdivision map filing or deed recording request.
+*   **Covers:** All subdivision maps and deeds of subdivision property requiring certification and filing.
+*   **Columns:**
+    *   Filing ID
+    *   Map/Deed Type (Subdivision Map, Deed with Map)
+    *   Date Submitted
+    *   Applicant Name
+    *   Property Description/Location
+    *   Zoning Compliance Certification (Yes/No)
+    *   Certifying Department (City Planning Commission, Department of Buildings)
+    *   Board of Estimate Approval (Yes/No)
+    *   Secretary of Board of Estimate Certification (Yes/No)
+    *   Filing Status (Accepted, Refused)
+    *   Refusal Reason (if applicable)
+    *   Date Filed/Recorded
+    *   Filing Location (e.g., County Register, Corporation Counsel, Borough President, Board of Estimate, City Planning, City Clerk, Buildings Department)
+
+**10. Zoning Resolution Amendment Applications**
+
+*   **Quotes:**
+    *   "An application for changes in the zoning resolution pursuant to section 200 of the charter, other than changes in the designation of zoning districts, may be filed with the department of city planning and shall, at the applicant's election, be exempt from the pre-application requirements of chapter 10 of title 62 of the rules of the city of New York, if at least one of the applicants is a borough president, the mayor or the land use committee of the council if two-thirds of the members of such committee shall have voted to approve such filing." § 25-115.a
+    *   "applications submitted pursuant to section 201 of the charter for a citywide amendment to the zoning resolution affecting 5 or more community districts" § 25-118.b
+*   **Why:** The agency needs to track all applications for amendments to the zoning resolution, including pre-application exemptions.
+*   **One row represents:** A single application for a zoning resolution amendment.
+*   **Covers:** All applications for changes to the zoning resolution text or map.
+*   **Columns:**
+    *   Application ID
+    *   Date Submitted
+    *   Applicant Type (e.g., Borough President, Mayor, Council Committee, Other)
+    *   Proposed Change Description
+    *   Affected **Zoning District IDs (2)**
+    *   Pre-application Exemption Claimed (Yes/No)
+    *   Exemption Reason (if claimed)
+    *   Status (e.g., Submitted, Certified, Referred, Approved, Denied)
+    *   Approval Date
+
+**11. Public Utility Property Filings**
+
+*   **Quotes:**
+    *   "Every public utility corporation, within ninety days after its acquisition of any real property within the city, shall file in the office of the president of the borough in which such property is situated, a map or survey drawn to a scale and accurately indicating the location and boundaries of such property with reference to the streets, avenues, bridges, tunnels, bulkhead or pierhead lines, parks or other public places shown on the city map. Every such corporation shall within the same period of time file a copy of each such map or survey in the office of the department of city planning and in the office of the commissioner of transportation. For a failure to file any such map or survey or copy thereof within the period required therefor such public utility corporation shall be liable to the city in a penalty of ten dollars for each and every day during which such map or survey or copy thereof has not been filed, as hereinabove required, and an action may be brought for the recovery thereof in the name of the city." § 25-106
+*   **Why:** The agency must track public utility property acquisitions, required map filings, and associated penalties for non-compliance.
+*   **One row represents:** A single map or survey filing event by a public utility corporation.
+*   **Covers:** All real property acquisitions by public utility corporations within the city.
+*   **Columns:**
+    *   Filing ID
+    *   Public Utility Corporation Name
+    *   Property Address/Location
+    *   Acquisition Date
+    *   Required Filing Deadline
+    *   Borough President Office Filing Date
+    *   City Planning Office Filing Date
+    *   Transportation Commissioner Office Filing Date
+    *   Filed On Time (Yes/No)
+    *   Penalty Accrued (daily rate)
+    *   Total Penalty Amount Due
+    *   Penalty Paid Date
+
+**12. POPS Inspections**
+
+*   **Quotes:**
+    *   "Such agency shall inspect each privately owned public space no later than June 30, 2019 and at least once every three years thereafter to ensure that such space is in compliance with applicable law and shall issue notices of violation returnable to the office of administrative trials and hearings." § 25-114.f.1
+    *   "Enforcement actions include but are not limited to inspections, issuance of notices of violations, decisions of administrative tribunals within the office of administrative trials and hearings and the imposition of penalties." § 25-114.f.2
+*   **Why:** The agency is mandated to regularly inspect privately owned public spaces to ensure compliance with applicable laws.
+*   **One row represents:** A single inspection of a privately owned public space.
+*   **Covers:** All mandated inspections of privately owned public spaces.
+*   **Columns:**
+    *   Inspection ID
+    *   **POPS ID (11)**
+    *   Inspection Date
+    *   Inspector ID
+    *   Compliance Status (e.g., Compliant, Non-Compliant)
+    *   Notice of Violation Issued (Yes/No)
+    *   **Violation ID (if issued, links to POPS Enforcement Actions (15))**
+    *   Next Scheduled Inspection Date
+
+**13. POPS Enforcement Actions**
+
+*   **Quotes:**
+    *   "Such agency shall inspect each privately owned public space no later than June 30, 2019 and at least once every three years thereafter to ensure that such space is in compliance with applicable law and shall issue notices of violation returnable to the office of administrative trials and hearings." § 25-114.f.1
+    *   "On December 31 of each year, the commissioner of such agency shall report to the mayor and the speaker of the council the following information in connection with each privately owned public space: a list of the complaints received, the enforcement actions taken, whether the department of buildings authorized closure of such privately owned public space and if so, the duration of and reason for each such closure. Enforcement actions include but are not limited to inspections, issuance of notices of violations, decisions of administrative tribunals within the office of administrative trials and hearings and the imposition of penalties." § 25-114.f.2
+*   **Why:** The agency must track all enforcement actions taken against privately owned public spaces, including violations, penalties, and closures.
+*   **One row represents:** A single enforcement action (e.g., a notice of violation, a penalty, a closure).
+*   **Covers:** All notices of violation, administrative tribunal decisions, penalties, and authorized closures related to privately owned public spaces.
+*   **Columns:**
+    *   Enforcement Action ID
+    *   **POPS ID (11)**
+    *   Action Type (e.g., Notice of Violation, Penalty Imposition, Administrative Decision, Closure Authorization)
+    *   Date of Action
+    *   Description of Violation
+    *   Administrative Tribunal Decision (if applicable)
+    *   Penalty Amount
+    *   Penalty Paid Date
+    *   DOB Closure Authorized (Yes/No)
+    *   Closure Start Date
+    *   Closure End Date
+    *   Reason for Closure
+
+**14. POPS Complaints**
+
+*   **Quotes:**
+    *   "A mechanism for electronically filing complaints about privately owned public spaces with the department of buildings and the agency designated pursuant to subdivision f of this section;" § 25-114.c.4
+    *   "On December 31 of each year, the commissioner of such agency shall report to the mayor and the speaker of the council the following information in connection with each privately owned public space: a list of the complaints received, the enforcement actions taken..." § 25-114.f.2
+    *   "signage shall include... a statement that complaints can be registered by calling 311." § 25-114.e
+*   **Why:** The agency needs to track all complaints received about privately owned public spaces to inform enforcement and reporting.
+*   **One row represents:** A single complaint about a privately owned public space.
+*   **Covers:** All complaints received about privately owned public spaces through various channels.
+*   **Columns:**
+    *   Complaint ID
+    *   **POPS ID (11)**
+    *   Date Received
+    *   Complaint Source (e.g., Website, 311, Direct Filing)
+    *   Complaint Description
+    *   Status (e.g., Open, Investigated, Resolved)
+    *   Resolution Date
+    *   Enforcement Action Taken (Yes/No)
+    *   **Enforcement Action ID (if applicable, links to POPS Enforcement Actions (15))**
+
+**15. POPS Owner Compliance Reports**
+
+*   **Quotes:**
+    *   "If such privately owned public space is required by applicable law to file a periodic compliance report with the department: (a) Whether such report was filed as required; and (b) The compliance status indicated by such report." § 25-114.b.6
+*   **Why:** The agency must track whether POPS owners file required compliance reports and the status indicated in those reports.
+*   **One row represents:** A single compliance report filed by a POPS owner.
+*   **Covers:** All periodic compliance reports required from owners of privately owned public spaces.
+*   **Columns:**
+    *   Report ID
+    *   **POPS ID (11)**
+    *   Reporting Period
+    *   Date Filed
+    *   Required (Yes/No)
+    *   Filed as Required (Yes/No)
+    *   Compliance Status Indicated by Report
+
+**16. Covered Projects Registry**
+
+*   **Quotes:**
+    *   "The term "covered project" means a project that includes one or more related land use applications, for which the city or a not-for-profit corporation of which a majority of its members are appointed by the mayor is either the applicant or a co-applicant, that: 1. The city planning commission has approved or approved with modifications for a matter described in paragraphs 3, 4, 8, or 10 of subdivision a of section 197-c; 2. The commission decision for which has been approved or approved with modifications by the council pursuant to section 197-d of the charter and is not subject to further action pursuant to subdivision e or f of such section; and 3. Changes the floor area or density for housing permitted on an as-of-right basis on at least four adjacent blocks of real property affected by the application." § 25-119.a
+    *   "For each covered project approved by the city council on or after January 1, 2009, the department shall conduct a study of changes in population and housing that have occurred since the effective date of such covered project." § 25-119.b
+    *   "By the end of the calendar year beginning 14 years after the effective date of a covered project, the department shall transmit to the mayor and the speaker of the council and publish on its website a report documenting the results of the study described in subdivision b of this section." § 25-119.c
+*   **Why:** The agency must identify and track "covered projects" to ensure the mandated population and housing analyses are conducted and reported.
+*   **One row represents:** A single "covered project."
+*   **Covers:** All projects meeting the definition of a "covered project" approved by the city council.
+*   **Columns:**
+    *   Project ID
+    *   Project Name
+    *   Applicant Type (City, Not-for-profit)
+    *   Related Land Use Application IDs (list of relevant application IDs, e.g., from **Zoning Resolution Amendment Applications (10)**)
+    *   City Planning Commission Approval Date
+    *   City Council Approval Date
+    *   Effective Date of Project
+    *   Changes Floor Area/Density for Housing (Yes/No)
+    *   Number of Adjacent Blocks Affected
+    *   Population and Housing Study Required (Yes/No)
+    *   Study Completion Date
+    *   Report Publication Date
+
+**17. Racial Equity Report Filings**
+
+*   **Quotes:**
+    *   "For an application submitted on or after June 1, 2022, an applicant shall file, in accordance with this subdivision, a racial equity report described in this section. Such report shall be required for all applications submitted pursuant to section 201 of the charter for a citywide amendment to the zoning resolution affecting 5 or more community districts, applications submitted for designation of historic districts pursuant to section 3020 of the charter affecting at least 4 city blocks, and for applications submitted pursuant to subdivision a of section 197-c of the charter that seek approval for (i) an acquisition or disposition of land to facilitate a non-residential project containing at least 50,000 square feet of floor area, (ii) an acquisition or disposition of land to facilitate a residential project... (iii) an increase in permitted residential floor area of at least 50,000 square feet, (iv) an increase in permitted non-residential floor area by at least 200,000 square feet or (v) a decrease in permitted floor area or number of housing units on at least four contiguous city blocks. However, in addition to the foregoing, any application seeking approval of change to the permitted floor area for any use in a manufacturing district or change to the use regulations of a manufacturing district... related to a building in such project containing at least 100,000 square feet of floor area, shall be subject to the requirements of this section." § 25-118.b
+    *   "The department shall identify on its website any application for which an applicant does not submit a racial equity report as required by this section. The department shall promptly notify any person required to receive such report pursuant to subdivision b of this section that such report was not timely filed, and if such report is subsequently filed, shall notify any such person of such filings." § 25-118.d
+*   **Why:** The agency must track the submission and content of racial equity reports for specific land use applications and ensure compliance.
+*   **One row represents:** A single racial equity report filed for a land use application.
+*   **Covers:** All racial equity reports required for citywide zoning amendments, historic district designations, and large-scale land use projects.
+*   **Columns:**
+    *   Report ID
+    *   **Land Use Application ID (links to relevant application dataset, e.g., Zoning Resolution Amendment Applications (10) or Covered Projects Registry (16))**
+    *   Date Filed
+    *   Applicant Name
+    *   Project Type (e.g., Residential, Non-Residential, Historic District)
+    *   Residential Floor Area (sq ft)
+    *   Non-Residential Floor Area (sq ft)
+    *   Manufacturing District Change (Yes/No)
+    *   Number of ELI-AH Units Expected
+    *   Number of VLI-AH Units Expected
+    *   Number of LI-AH Units Expected
+    *   Number of MI-AH Units Expected
+    *   Number of MIDI-AH Units Expected
+    *   Number of Non-Income-Restricted Units Expected
+    *   Expected Rents/Prices
+    *   Projected Jobs by Sector/Occupation
+    *   Median Wage Levels of Projected Jobs
+    *   Workforce Racial/Ethnic Composition (for projected jobs)
+    *   Workforce Educational Attainment (for projected jobs)
+    *   Community Profile Summary Included (Yes/No)
+    *   Fair Housing Narrative Statement Included (Yes/No)
+    *   Estimated Construction Jobs
+    *   Timely Filed (Yes/No)
+    *   Notification of Non-Filing Sent (Yes/No)
+
+**18. Business Census (Industrial Sector)**
+
+*   **Quotes:**
+    *   "Employment data including but not limited to department of labor quarterly census data on employment and wages data on the number of businesses and jobs in such zone disaggregated by sector and subsector, and workforce demographics for such zone including race, ethnicity, and country of origin;" § 25-120.b.3.a.(1)
+    *   "policies for increasing the participation of local business enterprises, minority- and women-owned business enterprises, and emerging business enterprises in the industrial sector;" § 25-120.b.5.b
+*   **Why:** The agency needs to collect and analyze detailed business and employment data within industrial sectors, especially in IBZs, for strategic planning.
+*   **One row represents:** A single business establishment or a record of employment data for a business.
+*   **Covers:** Businesses operating within the industrial sector, particularly those located in industrial business zones.
+*   **Columns:**
+    *   Business ID
+    *   Business Name
+    *   Address
+    *   **IBZ ID (21)**
+    *   Industrial Sector
+    *   Industrial Subsector
+    *   Number of Jobs
+    *   Workforce Demographics (e.g., aggregated Race, Ethnicity, Country of Origin)
+    *   Date of Data Collection
+    *   MBE/WBE/EBE Certified (Yes/No)
+    *   **Certification ID (if applicable, links to MBE/WBE/EBE Certifications (25))**
+
+**19. Industrial Property Transactions**
+
+*   **Quotes:**
+    *   "Real estate data including average sale and rent prices per square foot for industrial and commercial properties in such zone;" § 25-120.b.3.a.(2)
+*   **Why:** The agency needs to track real estate market data for industrial and commercial properties within IBZs for economic analysis.
+*   **One row represents:** A single industrial or commercial property sale or rental transaction.
+*   **Covers:** Sales and rental transactions for industrial and commercial properties within industrial business zones.
+*   **Columns:**
+    *   Transaction ID
+    *   Property Address
+    *   **IBZ ID (21)**
+    *   Property Type (Industrial, Commercial)
+    *   Transaction Type (Sale, Rent)
+    *   Transaction Date
+    *   Sale Price
+    *   Rent Price (per square foot)
+    *   Square Footage
+
+**20. Industrial Financial Incentives**
+
+*   **Quotes:**
+    *   "Data on as-of-right and discretionary New York city and New York state tax credits or other financial incentives administered for businesses in the industrial sector located in such zone." § 25-120.b.3.a.(4)
+    *   "Recommendations for improving or establishing new financial incentives available to businesses in the industrial sector;" § 25-120.b.5.a
+*   **Why:** The agency needs to track all financial incentives provided to businesses in the industrial sector, especially within IBZs.
+*   **One row represents:** A single financial incentive awarded to an industrial business.
+*   **Covers:** All city and state tax credits and other financial incentives administered for industrial sector businesses.
+*   **Columns:**
+    *   Incentive ID
+    *   **Business ID (22)**
+    *   Incentive Type (e.g., Tax Credit, Grant, Loan)
+    *   Source (City, State)
+    *   Amount
+    *   Award Date
+    *   Expiration Date
+    *   Status
+
+**21. City-Owned/Leased Property Inventory**
+
+*   **Quotes:**
+    *   "An identification of city-owned and city-leased property in such zone." § 25-120.b.3.b
+    *   "An identification of potential capital investments, including for sustainable infrastructure and for development of city-owned or city-leased property within such area." § 25-120.b.5.c.(3)
+*   **Why:** The agency needs to identify and track city-owned and city-leased properties, particularly within industrial business zones, for strategic planning.
+*   **One row represents:** A single city-owned or city-leased property.
+*   **Covers:** All city-owned and city-leased properties, with a focus on those within industrial business zones.
+*   **Columns:**
+    *   Property ID
+    *   Address
+    *   **IBZ ID (21)**
+    *   Ownership Status (Owned, Leased)
+    *   Lease Start Date (if leased)
+    *   Lease End Date (if leased)
+    *   Current Use
+    *   Potential for Industrial Development (Yes/No)
+    *   Capital Investment Planned (Yes/No)
+    *   Sustainable Infrastructure Planned (Yes/No)
+
+**22. MBE/WBE/EBE Certifications**
+
+*   **Quotes:**
+    *   "The term “minority-owned business enterprise” means a business certified as a minority-owned business enterprise in accordance with section 1304 of the charter." § 25-120.a (similar definitions for WBE, EBE)
+    *   "policies for increasing the participation of local business enterprises, minority- and women-owned business enterprises, and emerging business enterprises in the industrial sector;" § 25-120.b.5.b
+*   **Why:** The agency needs to track businesses certified as Minority-owned, Women-owned, or Emerging Business Enterprises to promote their participation.
+*   **One row represents:** A single business certification.
+*   **Covers:** All businesses certified as Minority-owned, Women-owned, or Emerging Business Enterprises.
+*   **Columns:**
+    *   Certification ID
+    *   **Business ID (22)**
+    *   Certification Type (MBE, WBE, EBE)
+    *   Certification Date
+    *   Expiration Date
+    *   Status (Active, Expired, Revoked)
+
+**23. Workforce Development Program Participation (Industrial Sector)**
+
+*   **Quotes:**
+    *   "Recommendations relating to workforce development programs and policies, including educational and local hiring programming, and policies for increasing the participation of local business enterprises, minority- and women-owned business enterprises, and emerging business enterprises in the industrial sector;" § 25-120.b.5.b
+*   **Why:** The agency needs to track participation in workforce development programs aimed at the industrial sector to assess their effectiveness.
+*   **One row represents:** A single participant in a workforce development program.
+*   **Covers:** Individuals participating in workforce development programs related to the industrial sector.
+*   **Columns:**
+    *   Program Participation ID
+    *   Program ID
+    *   Program Name
+    *   Participant ID
+    *   Participant Name
+    *   Start Date
+    *   End Date
+    *   Outcome (e.g., Job Placement, Certification Achieved)
+    *   Educational Programming (Yes/No)
+    *   Local Hiring Component (Yes/No)
+
+**24. Eviction Records**
+
+*   **Quotes:**
+    *   "residential eviction cases filed in housing court and residential evictions executed by city marshals pursuant to a warrant issued in accordance with section 749 of the real property actions and proceedings law" § 25-117.c.4
+*   **Why:** The agency needs to track residential eviction cases and executions as an indicator of housing security.
+*   **One row represents:** A single residential eviction case or execution.
+*   **Covers:** All residential eviction cases filed in housing court and evictions executed by city marshals.
+*   **Columns:**
+    *   Eviction Case ID
+    *   **Housing Unit ID (17)**
+    *   Address
+    *   Date Case Filed
+    *   Date Warrant Issued
+    *   Date Eviction Executed
+    *   City Marshal ID
+    *   Outcome (e.g., Eviction Executed, Case Dismissed, Settlement)
+
+**25. Affordable Housing Lottery Records**
+
+*   **Quotes:**
+    *   "affordable housing lottery applicants and awardees as described in the most recent report required by section 26-2602" § 25-117.c.4
+    *   "summary of the distribution of households by income levels corresponding to ELI, VLI, LI, MI, MIDI and HI households disaggregated by race and Hispanic origin, and of the available data on affordable housing lottery applicants and awardees" § 25-118.c.4
+*   **Why:** The agency needs to track applicants and awardees for affordable housing lotteries to assess access to affordable housing.
+*   **One row represents:** A single application or award in an affordable housing lottery.
+*   **Covers:** All applications and awards for affordable housing lotteries.
+*   **Columns:**
+    *   Lottery Application ID
+    *   Applicant ID
+    *   Application Date
+    *   **Housing Unit ID (17)**
+    *   Income Level (ELI, VLI, LI, MI, MIDI, HI)
+    *   Household Size
+    *   Race
+    *   Hispanic Origin
+    *   Awarded (Yes/No)
+    *   Award Date
+
+**26. Homeless Shelter System Census**
+
+*   **Quotes:**
+    *   "number of individuals and families in the shelter system operated by the department of homeless services or a provider under contract or similar agreement with the department of homeless services by community district based on last known address of such individuals or families, where known." § 25-117.c.4
+*   **Why:** The agency needs to track individuals and families in the homeless shelter system to understand housing insecurity.
+*   **One row represents:** A single entry of an individual or family into the shelter system.
+*   **Covers:** All individuals and families entering the city's homeless shelter system.
+*   **Columns:**
+    *   Shelter Entry ID
+    *   Individual/Family ID
+    *   Date of Entry
+    *   Shelter ID
+    *   Shelter Provider
+    *   Last Known Address (Community District)
+    *   Exit Date
+    *   Exit Destination
+
+**27. Cemetery Land Use Approvals (Queens)**
+
+*   **Quotes:**
+    *   "The provisions of subdivision a of this section shall not in any manner prevent an incorporated religious society organized under the laws of the state of New York prior to the year eighteen hundred twenty-five now owning cemetery land in Queens county from acquiring and using land of not more than ten acres contiguous to said cemetery land as and when said additional land in its ownership and use for cemetery purposes has been approved by the city council." § 25-112.b
+    *   "The provisions of subdivision a of this section shall not in any manner prevent a cemetery corporation organized under the laws of the state of New York prior to the year nineteen hundred nine, now owning cemetery land in Queens county, from using additional land lawfully taken by recorded deed or devise prior to December 31, 1972, provided such additional land consists of not more than two acres on one or more contiguous lots across a street and opposite said cemetery land, and its use for cemetery purposes has been approved by the city council after a public hearing. Notice of such public hearing shall be published pursuant to the requirements of section 1506 of the not-for-profit corporation law, or successor provision of law, in a newspaper of general circulation. The applicant shall submit to the council proof of publication in the form of a signed certificate of publication, with the affidavits of publication of such newspaper annexed thereto. The applicant shall pay the costs of such publication." § 25-112.c
+*   **Why:** The agency must track specific City Council approvals for exceptions to the prohibition of new cemeteries in Queens.
+*   **One row represents:** A single application for cemetery land use approval in Queens.
+*   **Covers:** All applications for exceptions to the prohibition of cemetery land use in Queens County.
+*   **Columns:**
+    *   Application ID
+    *   Applicant Name (Religious Society, Cemetery Corporation)
+    *   Property Address/Location
+    *   Acreage Requested
+    *   Contiguous Land (Yes/No)
+    *   Across Street (Yes/No)
+    *   Prior Deed/Devise Date (if applicable)
+    *   City Council Approval Date
+    *   Public Hearing Date
+    *   Proof of Publication Submitted (Yes/No)
+    *   Publication Costs Paid (Yes/No)
+    *   Status (Approved, Denied)
+
+**28. Street/Park Name Signage Inventory**
+
+*   **Quotes:**
+    *   "the name given by such local law shall be posted on a sign placed at the location of such street, park, playground or portion thereof, or any facility or structure, located and laid out on the city map." § 25-102.1.a
+    *   "the name added by such local law shall be posted on a sign placed adjacent to or near a sign bearing the name of such street or portion thereof indicated on the city map." § 25-102.1.b
+    *   "The department of transportation may establish different colors for signs bearing a street name not officially indicated on the city map and signs bearing a street name officially indicated on the city map, and may provide for the replacement of any sign bearing a dual name by two separate signs of such color as the department shall determine." § 25-102.1.c
+*   **Why:** The agency needs to track the placement and characteristics of street and park name signs, especially for co-named or renamed features.
+*   **One row represents:** A single street or park name sign.
+*   **Covers:** All signs posted for street, park, playground, facility, or structure names.
+*   **Columns:**
+    *   Sign ID
+    *   **City Map Feature ID (1)**
+    *   Location (e.g., coordinates, intersection)
+    *   Name Displayed on Sign
+    *   Official Name (Yes/No)
+    *   Dual Name (Yes/No)
+    *   Sign Color
+    *   Installation Date
+    *   Last Maintenance Date
+    *   Replacement Date
+
+**29. Named Feature Biographical Information**
+
+*   **Quotes:**
+    *   "Beginning July 1, 2023, for any street, park, playground, facility or structure, or portion thereof, renamed or co-named in accordance with section 25-102.1 of this chapter, an office or agency designated by the mayor, shall make biographical and/or background information about the person or entity for whom the naming is on behalf of available on its website within 90 days of the enactment of the local law which named the street, park, playground, facility or structure, or portion thereof." § 25-102.2.a
+    *   "To the extent practicable, no later than July 1, 2024, an office or agency designated by the mayor, shall make biographical and/or background information available on its website about the person or entity for whom a street, park, playground, facility or structure, or portion thereof, was renamed or co-named by any bill enacted between January 1, 1990 and July 1, 2023." § 25-102.2.b
+*   **Why:** The agency must track the biographical information for named features and ensure its timely publication online.
+*   **One row represents:** A single biographical entry for a named person or entity associated with a city feature.
+*   **Covers:** Biographical and background information for all persons or entities for whom a street, park, playground, facility, or structure has been named or co-named.
+*   **Columns:**
+    *   Biographical Entry ID
+    *   **City Map Feature ID (1)**
+    *   Named Person/Entity
+    *   Local Law Enactment Date
+    *   Date Information Made Available Online
+    *   Website URL
+    *   Compliance Status (e.g., On Time, Late, Not Yet Due)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications (general agency operations)
+*   Rules and regulations (e.g., zoning resolution text, department rules, the administrative code itself)
+*   Receipts (general financial operations)
+*   Photos (e.g., of POPS signage, site maps)
+*   Research documents (e.g., the "equitable development data tool" reports, "racial equity reports" themselves, "industrial development strategic plan" documents, "population and housing analysis" reports)
+*   Maps and surveys (e.g., public utility maps, subdivision maps, site maps for POPS)
+*   Legal documents (e.g., deeds, regulatory agreements, restrictive declarations, local laws)
+*   Public hearing notices and affidavits of publication (for cemetery approvals)
+*   City's fair housing plan (referenced in § 25-118.c.5)
+*   Local business assessment surveys (referenced in § 25-120.b.4.b)
+*   Biographical and/or background information content itself (the actual text/documents, not the metadata about its availability)
+*   Environmental conditions summaries (referenced in § 25-120.b.4.c)
+*   Policy statements (referenced in § 25-120.b.1)
+*   Overviews of policies (referenced in § 25-120.b.2)
+*   Recommendations for goals and strategies (referenced in § 25-120.b.5)

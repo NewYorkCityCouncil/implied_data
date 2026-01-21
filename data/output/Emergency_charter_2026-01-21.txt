@@ -1,0 +1,451 @@
+**Non-Tabular Information:**
+*   Job applications
+*   Rules and regulations (e.g., promulgated by the commissioner)
+*   Receipts
+*   Photos
+*   Research documents
+*   Text or image information (e.g., full emergency plans, detailed summaries of plans, public comments content, detailed recommendations to the mayor, detailed training materials)
+*   Legal changes (e.g., to the Defense Emergency Act)
+*   Software contracts (the contracts themselves, not their status or details)
+*   Environmental compliance documents (the documents themselves)
+*   Building repair specifications
+*   Uniform provision specifications
+*   Detailed content of public awareness materials
+*   Detailed content of training programs
+
+---
+
+**1. Emergency Incidents and Responses**
+
+**Quotes:**
+- "coordinate the city's response to all emergency conditions and potential incidents which require a multi-agency response, including but not limited to severe weather, threats from natural hazards and natural disasters, power and other public service outages, labor unrest other than the keeping of the peace, water main breaks, transportation and transit incidents, hazardous substance discharges, building collapses, aviation disasters, explosions, acts of terrorism and such other emergency conditions and incidents which affect public health and safety;" (§497.a)
+- "monitor on a constant basis all potential emergency conditions and potential incidents which may require a multi-agency response;" (§497.b)
+- "operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (§497.g)
+- "The department shall be the lead agency in the coordination and facilitation of resources in incidents involving public safety and health, including incidents which may involve acts of terrorism." (§498.a)
+
+**Why:** To effectively coordinate and manage emergency responses, the agency must track each incident and its multi-agency response.
+
+**One row represents:** A single emergency condition or potential incident requiring multi-agency response.
+
+**Covers:** All emergency conditions and potential incidents that require or may require a multi-agency response, from initial monitoring to full resolution.
+
+**Columns:**
+- Incident ID
+- Incident Status (e.g., Monitored, Active, Resolved, Closed)
+- Incident Type (e.g., Severe Weather, Natural Hazard, Power Outage, Water Main Break, Transportation Incident, Hazardous Substance Discharge, Building Collapse, Aviation Disaster, Explosion, Act of Terrorism, Other)
+- Incident Sub-Type (e.g., Hurricane, Blizzard, Flood, Earthquake, Cyber Attack)
+- Date/Time Detected
+- Date/Time Declared Emergency (if applicable)
+- Date/Time EOC Activated (if applicable)
+- Date/Time EOC Deactivated (if applicable)
+- Date/Time Resolution Achieved
+- Date/Time Incident Closed
+- Geographic Location (e.g., address, coordinates, borough, zone)
+- Lead Agency (EMD or other, if delegated)
+- List of Responding Agencies (e.g., Fire, Police, Health, Sanitation, Transportation)
+- Resources Deployed (e.g., personnel count, equipment type, specific assets)
+- Impact Assessment (e.g., fatalities, injuries, property damage estimate, service disruptions)
+- Public Information Dissemination Channels Used (e.g., social media, emergency alerts, press conferences)
+- Incident Commander/Lead EMD Official (links to Dataset 14)
+- Related Emergency Plan ID (links to Dataset 2)
+- Mayoral Declaration Status (Yes/No, Date)
+- Federal/State Aid Requested (Yes/No, Date, Type)
+- Federal/State Aid Received (Yes/No, Date, Amount)
+
+---
+
+**2. Emergency Plans**
+
+**Quotes:**
+- "prepare plans for responding to emergency conditions and potential incidents, including but not limited to plans for the implementation of such emergency orders as may be approved by the mayor to protect public safety and facilitate the rapid response and mobilization of agencies and resources;" (§497.d)
+- "coordinate with all city agencies to ensure that all such agencies develop, implement and periodically review citywide emergency plans;" (§497.j)
+- "coordinate New York city's civil defense effort in accordance with the provisions of the Defense Emergency Act of New York state and the city's civil defense emergency operations plan, as such plan may be amended from time to time;" (§497.m)
+- "No later than two years after the effective date of the local law that created this subdivision, and every two years thereafter, the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (§498.b)
+- "Following each review conducted pursuant to subdivision b of this section, the department shall publish on its website a list of citywide emergency plans coordinated by the department and a summary of each such plan, including but not limited to information on the roles and responsibilities of relevant agencies and other partners." (§498.c)
+
+**Why:** To manage, track, and ensure the existence and currency of all emergency plans, both EMD's and citywide.
+
+**One row represents:** A single emergency plan.
+
+**Covers:** All emergency plans prepared by EMD, citywide emergency plans coordinated by EMD, and the city's civil defense emergency operations plan.
+
+**Columns:**
+- Plan ID
+- Plan Name
+- Plan Type (e.g., Citywide, Departmental, Hazard-Specific, Civil Defense)
+- Lead Department/Agency for Plan Development
+- Date Created
+- Last Review Date (links to Dataset 5)
+- Next Scheduled Review Date
+- Approval Status (e.g., Draft, Approved, Under Revision)
+- Approval Date
+- Version Number
+- Scope/Applicability (e.g., citywide, specific borough, specific hazard)
+- Key Agencies Involved in Plan (list of Agency IDs)
+- Roles and Responsibilities Summary (text field, but could be a link to a separate table of roles)
+- Publicly Available (Yes/No)
+- Publication Date (if publicly available)
+- Mayoral Determination for Non-Publication (Yes/No, Date, Reason if Yes)
+- URL to Plan Summary (if published)
+
+---
+
+**3. Training and Drill Events**
+
+**Quotes:**
+- "coordinate and implement training programs for public safety and health, including emergency response drills, to prepare for emergency conditions and potential incidents which may require a multi-agency response;" (§497.c)
+
+**Why:** To ensure adequate preparation for emergencies, the agency must track all training programs and drills conducted.
+
+**One row represents:** A single training program or emergency response drill event.
+
+**Covers:** All training programs and emergency response drills coordinated or implemented by EMD for public safety and health.
+
+**Columns:**
+- Event ID
+- Event Name
+- Event Type (e.g., Training Program, Emergency Response Drill)
+- Date of Event
+- Start Time
+- End Time
+- Location
+- Lead EMD Coordinator ID (links to Dataset 14)
+- Participating Agencies (list of Agency IDs)
+- Number of Participants
+- Objectives of Event
+- Outcome/Evaluation Summary
+- Lessons Learned
+- Follow-up Actions Required
+- Related Emergency Plan ID (links to Dataset 2)
+- Funding Source (e.g., Federal, City, Other)
+
+---
+
+**4. Agency Coordination Meetings**
+
+**Quotes:**
+- "hold regular and frequent meetings of designated emergency response personnel of all city agencies that are determined by the commissioner to have a direct or support role in the city's management of emergency conditions and potential incidents which may require a multi-agency response;" (§497.h)
+
+**Why:** To ensure effective inter-agency coordination, the agency must track all regular and frequent meetings with city agencies.
+
+**One row represents:** A single meeting of designated emergency response personnel.
+
+**Covers:** All regular and frequent meetings held by EMD with designated emergency response personnel from other city agencies.
+
+**Columns:**
+- Meeting ID
+- Meeting Date
+- Meeting Time
+- Meeting Location (e.g., EOC, Agency Office, Virtual)
+- Meeting Type (e.g., Regular Coordination, Incident-Specific, Planning)
+- EMD Chair/Host ID (links to Dataset 14)
+- Attending Agencies (list of Agency IDs)
+- Key Topics Discussed
+- Decisions Made
+- Action Items (list of Action Item IDs, could link to a separate Action Item dataset)
+- Next Meeting Date (if scheduled)
+- Related Emergency Plan ID (links to Dataset 2)
+- Related Incident ID (links to Dataset 1)
+
+---
+
+**5. Citywide Emergency Plan Review Cycles**
+
+**Quotes:**
+- "No later than two years after the effective date of the local law that created this subdivision, and every two years thereafter, the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (§498.b)
+- "Following each review conducted pursuant to subdivision b of this section, the department shall publish on its website a list of citywide emergency plans coordinated by the department and a summary of each such plan, including but not limited to information on the roles and responsibilities of relevant agencies and other partners. Publication of summaries concerning a particular plan shall not be required where the mayor has determined that it would impede the city's ability to plan for and respond to threats to security including terrorism and cyber attacks; however, in such instances the department shall disclose the existence of such plans and identity relevant agencies and other partners involved in implementation of such plans." (§498.c)
+
+**Why:** To ensure compliance with the biennial review mandate and track the outcomes and publications related to these reviews.
+
+**One row represents:** A single biennial review cycle of citywide emergency plans.
+
+**Covers:** All mandated biennial review cycles of citywide emergency plans coordinated by EMD.
+
+**Columns:**
+- Review Cycle ID
+- Review Start Date
+- Review End Date
+- Mandated Review Due Date
+- Status (e.g., In Progress, Completed, Overdue)
+- EMD Lead Coordinator ID (links to Dataset 14)
+- Participating Agencies in Review (list of Agency IDs)
+- Number of Plans Reviewed
+- Date List of Plans Published
+- URL to Published List of Plans
+- Date Summaries Published (if applicable)
+- URL to Published Plan Summaries (if applicable)
+- Mayoral Determination for Non-Publication of Summaries (Yes/No, Date, Reason if Yes)
+- Plans with Non-Published Summaries (list of Plan IDs from Dataset 2)
+- Public Comment Period Start Date (links to Dataset 11)
+- Public Comment Period End Date (links to Dataset 11)
+
+---
+
+**6. Funding Applications and Awards**
+
+**Quotes:**
+- "acquire federal and other funding for emergency management, including but not limited to disaster relief, and civil defense, and assist other agencies in obtaining such funding;" (§497.i)
+
+**Why:** To manage and track all efforts to acquire funding for emergency management and disaster relief.
+
+**One row represents:** A single funding application or award.
+
+**Covers:** All federal and other funding applications submitted by EMD, awards received, and assistance provided to other agencies for obtaining funding.
+
+**Columns:**
+- Funding Record ID
+- Record Type (e.g., Application, Award, Assistance Provided)
+- Funding Source (e.g., Federal, State, Private Grant, City Allocation)
+- Grant Program Name
+- Application Date
+- Application Status (e.g., Submitted, Pending, Approved, Denied)
+- Award Date (if applicable)
+- Award Amount (if applicable)
+- EMD Project Lead ID (links to Dataset 14)
+- Assisted Agency ID (if applicable, for assistance provided)
+- Purpose of Funding (e.g., Disaster Relief, Training, Equipment, Civil Defense)
+- Related Emergency Plan ID (links to Dataset 2)
+- Related Incident ID (links to Dataset 1)
+- Reporting Requirements (Yes/No, Due Dates)
+
+---
+
+**7. Public Awareness Campaigns and Activities**
+
+**Quotes:**
+- "increase public awareness as to the appropriate responses by members of the public to emergency conditions and potential incidents, and review the city's systems for disseminating information to the public;" (§497.f)
+
+**Why:** To track efforts to educate the public and review information dissemination systems, ensuring public readiness.
+
+**One row represents:** A single public awareness campaign or information dissemination activity.
+
+**Covers:** All activities undertaken by EMD to increase public awareness and review information dissemination systems.
+
+**Columns:**
+- Activity ID
+- Activity Name
+- Activity Type (e.g., Campaign, Public Service Announcement, Workshop, System Review)
+- Start Date
+- End Date
+- Target Audience
+- Channels Used (e.g., TV, Radio, Social Media, Website, Community Meetings, Emergency Alert System)
+- EMD Lead Coordinator ID (links to Dataset 14)
+- Partner Agencies/Organizations
+- Budget Allocated
+- Reach/Engagement Metrics (e.g., impressions, attendees, survey results)
+- Outcome/Effectiveness Review Date
+- Recommendations from System Review
+- Related Emergency Plan ID (links to Dataset 2)
+
+---
+
+**8. Agency Resource Contributions**
+
+**Quotes:**
+- "All agencies shall provide the department promptly with all information relevant to the performance of the emergency management functions and shall collect and make available any information requested by the department for use in emergency planning. All agencies further shall promptly provide the department with all appropriate material, equipment and resources needed for emergency management functions, including personnel." (§498.a)
+
+**Why:** To track the provision of information, material, equipment, and personnel from other agencies to EMD.
+
+**One row represents:** A single instance of an agency providing information, material, equipment, or personnel to EMD.
+
+**Covers:** All instances where city agencies provide information, material, equipment, or personnel to EMD for emergency management functions.
+
+**Columns:**
+- Contribution ID
+- Contributing Agency ID
+- Date Provided
+- Type of Contribution (e.g., Information, Material, Equipment, Personnel)
+- Description of Contribution
+- Quantity/Duration (if applicable, e.g., 5 personnel, 3 vehicles, 2 weeks)
+- Value (if quantifiable)
+- Purpose/Request Context (e.g., Emergency Planning, Incident Response, Drill Support)
+- Related Emergency Plan ID (links to Dataset 2)
+- Related Incident ID (links to Dataset 1)
+- EMD Recipient/Requestor ID (links to Dataset 14)
+
+---
+
+**9. Local Emergency Planning Committee (LEPC) Activities**
+
+**Quotes:**
+- "coordinate the operation of the local emergency planning committee established pursuant to Title III of the federal Superfund Amendments and Reauthorization Act;" (§497.l)
+
+**Why:** To track the coordination and activities of the LEPC as mandated by federal law.
+
+**One row represents:** A single LEPC meeting or significant activity.
+
+**Covers:** All meetings and significant operational activities of the Local Emergency Planning Committee coordinated by EMD.
+
+**Columns:**
+- LEPC Activity ID
+- Activity Type (e.g., Meeting, Exercise, Plan Update, Public Forum)
+- Date of Activity
+- EMD Coordinator ID (links to Dataset 14)
+- Attendees (list of names/affiliations)
+- Key Topics Discussed
+- Decisions Made
+- Action Items (list of Action Item IDs)
+- Related Emergency Plan ID (links to Dataset 2, specifically hazardous substance plans)
+- Compliance with SARA Title III Requirements (Yes/No)
+
+---
+
+**10. Civil Defense Activities**
+
+**Quotes:**
+- "coordinate New York city's civil defense effort in accordance with the provisions of the Defense Emergency Act of New York state and the city's civil defense emergency operations plan, as such plan may be amended from time to time;" (§497.m)
+
+**Why:** To track the coordination and implementation of New York City's civil defense efforts.
+
+**One row represents:** A single civil defense activity or initiative.
+
+**Covers:** All activities related to coordinating New York City's civil defense effort.
+
+**Columns:**
+- Civil Defense Activity ID
+- Activity Name
+- Activity Type (e.g., Planning, Training, Exercise, Public Information, Resource Mobilization)
+- Date of Activity
+- EMD Lead Coordinator ID (links to Dataset 14)
+- Participating Agencies/Partners
+- Objectives
+- Outcomes
+- Compliance with Defense Emergency Act (Yes/No)
+- Related Civil Defense Emergency Operations Plan ID (links to Dataset 2)
+
+---
+
+**11. Public Comments on Emergency Planning**
+
+**Quotes:**
+- "The department shall establish procedures through which members of the public can submit public comments on emergency planning." (§498.d)
+
+**Why:** To track the receipt and processing of public comments on emergency planning.
+
+**One row represents:** A single public comment submission.
+
+**Covers:** All public comments submitted by members of the public on emergency planning.
+
+**Columns:**
+- Comment ID
+- Date Submitted
+- Submission Method (e.g., Online Form, Email, Mail, Public Hearing)
+- Commenter Type (e.g., Individual, Organization, Anonymous)
+- Related Emergency Plan ID (if specified, links to Dataset 2)
+- Related Review Cycle ID (if specified, links to Dataset 5)
+- EMD Department/Official Responsible for Review
+- Status (e.g., Received, Under Review, Addressed)
+- Date Status Updated
+- Summary of Comment (brief text, full comment is non-tabular)
+- Action Taken (if any)
+
+---
+
+**12. Recommendations to Mayor**
+
+**Quotes:**
+- "make recommendations to the mayor concerning the city's emergency response capabilities and concerning the city's capacity to address potential emergency conditions and potential incidents;" (§497.e)
+
+**Why:** To track all recommendations made by EMD to the Mayor regarding emergency capabilities and capacity.
+
+**One row represents:** A single recommendation submitted to the Mayor.
+
+**Covers:** All recommendations made by the Commissioner to the Mayor.
+
+**Columns:**
+- Recommendation ID
+- Date Submitted
+- Subject of Recommendation (e.g., Response Capabilities, Capacity, Specific Incident)
+- EMD Commissioner/Official Submitting (links to Dataset 14)
+- Status (e.g., Submitted, Under Review, Approved, Rejected, Implemented)
+- Date Status Updated
+- Mayoral Response Date (if any)
+- Related Emergency Plan ID (links to Dataset 2)
+- Related Incident ID (links to Dataset 1)
+- Implementation Actions (if any, could link to a separate Action Item dataset)
+
+---
+
+**13. Inter-governmental Coordination Activities**
+
+**Quotes:**
+- "coordinate with state, federal and other governmental bodies to effectuate the purposes of the department;" (§497.k)
+
+**Why:** To track coordination efforts with state, federal, and other governmental bodies.
+
+**One row represents:** A single coordination activity with an external governmental body.
+
+**Covers:** All coordination activities with state, federal, and other governmental bodies.
+
+**Columns:**
+- Coordination Activity ID
+- Activity Type (e.g., Meeting, Joint Exercise, Information Exchange, Policy Discussion)
+- Date of Activity
+- External Governmental Body (e.g., NYS OEM, FEMA, neighboring county EMD)
+- EMD Lead Coordinator ID (links to Dataset 14)
+- Key Topics Discussed
+- Outcomes/Agreements
+- Related Emergency Plan ID (links to Dataset 2)
+- Related Incident ID (links to Dataset 1)
+
+---
+
+**14. EMD Personnel Records**
+
+**Quotes:**
+- "The commissioner shall be appointed by the mayor." (§495)
+- "The commissioner shall have the power to appoint and, at pleasure, remove deputies, one to be known as first deputy commissioner." (§496)
+- "The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (§497)
+
+**Why:** To manage internal staff, appointments, and ensure proper administration and discipline within the department.
+
+**One row represents:** A single EMD employee or appointed official.
+
+**Covers:** All personnel within the Emergency Management Department, including the Commissioner and deputies.
+
+**Columns:**
+- Employee ID
+- First Name
+- Last Name
+- Job Title (e.g., Commissioner, First Deputy Commissioner, Deputy Commissioner, Coordinator, Analyst)
+- Department/Division
+- Date of Appointment/Hire
+- Date of Removal/Departure
+- Reporting Manager ID (links to Employee ID within this dataset)
+- Current Status (e.g., Active, On Leave, Terminated)
+- Required Certifications (list of Certification IDs, could link to a separate Certifications dataset)
+- Training Completed (list of Training IDs, could link to Dataset 3)
+- Contact Information (e.g., email, phone)
+- Security Clearance Level
+
+---
+
+**15. EMD Asset and Equipment Inventory**
+
+**Quotes:**
+- "operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (§497.g)
+- "All agencies further shall promptly provide the department with all appropriate material, equipment and resources needed for emergency management functions, including personnel." (§498.a)
+
+**Why:** To manage and track all physical assets and equipment owned or managed by EMD, essential for operations.
+
+**One row represents:** A single physical asset or piece of equipment.
+
+**Covers:** All physical assets and equipment owned, leased, or managed by the Emergency Management Department, including EOC equipment, vehicles, and IT infrastructure.
+
+**Columns:**
+- Asset ID
+- Asset Name/Description
+- Asset Type (e.g., Vehicle, IT Equipment, Communication Device, EOC Furniture, Generator)
+- Manufacturer
+- Model Number
+- Serial Number
+- Acquisition Date
+- Acquisition Cost
+- Current Location (e.g., EOC, Warehouse, Vehicle Fleet)
+- Status (e.g., Operational, Under Repair, Decommissioned)
+- Last Maintenance Date
+- Next Scheduled Maintenance Date
+- Responsible Department/Unit
+- Condition (e.g., Excellent, Good, Fair, Poor)
+- Assigned To (Employee ID, links to Dataset 14, if applicable)
+- Funding Source (e.g., City Budget, Federal Grant - links to Dataset 6)

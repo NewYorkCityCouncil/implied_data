@@ -1,0 +1,826 @@
+**Section 1, Mission Summary:**
+
+The agency's mission is to guide the physical development of the city through comprehensive planning, zoning, and land use review procedures, ensuring equitable growth and public engagement. They are required to run key programs including the Uniform Land Use Review Procedure (ULURP), environmental reviews, city map maintenance, zoning regulation, city facility planning, and oversight of privately owned public spaces. The agency significantly impacts constituents by shaping the built environment, influencing housing affordability, and determining the location and accessibility of public and private facilities and spaces.
+
+**Section 2, Data Summary:**
+
+1.  Land Use Applications & Plans
+2.  Review Process Events (Meetings, Hearings, Decisions, Referrals)
+3.  Environmental Reviews
+4.  City Map & Geographic Features
+5.  Zoning Districts & Regulations
+6.  Privately Owned Public Spaces (POPS)
+7.  City Facilities
+8.  City-Owned & Leased Property
+9.  Housing Units & Related Social Indicators
+10. Industrial Business Zones (IBZ) & Industrial Development
+11. City Planning Commission (CPC) Members
+12. Department Employees
+13. Public Notices & Filings
+14. Fee & Contribution Payments
+15. Racial Equity Reports
+16. Project Commitments
+17. Subdivision Map Filings
+18. Public Utility Property Filings
+19. Cemetery Land Use Approvals
+20. Named Feature Biographical Information
+21. Reports & Plans Filing Log
+22. Official Survey Stations
+23. External Facility Locations
+24. MBE/WBE/EBE Certifications
+25. Workforce Development Programs
+
+**Section 3, Data Details:**
+
+**1. Land Use Applications & Plans**
+*   **Open Data Match:** "ZAP Search data" (494), 90% similarity. This dataset tracks filed land use applications, including ULURP and Non-ULURP, with project name, status, description, and geography.
+*   **Quotes:**
+    *   "Except as otherwise provided in this charter, applications by any person or agency for changes, approvals, contracts, consents, permits or authorization thereof, respecting the use, development or improvement of real property subject to city regulation shall be reviewed pursuant to a uniform review procedure..." (Charter 1, Section 197-c.a)
+    *   "The agency must track all applications submitted for the Uniform Land Use Review Procedure (ULURP) and their certification status." (Charter 1, Why)
+    *   "Plans for the development, growth, and improvement of the city and of its boroughs and community districts may be proposed by (1) the mayor, (2) the city planning commission, (3) the department of city planning, (4) a borough president... (5) a borough board... or (6) a community board..." (Charter 3, Section 197-a.a)
+    *   "The agency must track all proposed city development plans, their review process, and final determinations." (Charter 3, Why)
+    *   "Applications for changes in the zoning resolution may be filed by any taxpayer, community board, borough board, borough president, by the mayor or by the land use committee of the council..." (Charter 4, Section 201.a)
+    *   "Applications for special permits within the jurisdiction of the city planning commission under the zoning resolution may be filed by any person or agency." (Charter 4, Section 201.b)
+    *   "The agency must track all applications and resolutions for zoning changes and special permits, including their review and protest processes." (Charter 4, Why)
+    *   "The agency proposing any such acquisition shall file with the department of city planning a notice of intent to acquire." (Charter 11, Section 195.a)
+    *   "The agency is required to review and approve/disapprove city acquisitions of office space or buildings for office use." (Charter 11, Why)
+    *   "A request for any action shall be submitted to the Department of City Planning. The application must be submitted as provided for in the instructions on the Department of City Planning's website." (Rules 1, § 2-02(a)(1))
+    *   "The Department or the Commission shall certify the application as complete when compliance has been achieved with all of the following: (i) The standard application form... has been completed in its entirety... (ii) All accompanying documents, maps, plans, drawings, and other information are properly organized and presented... (iii) The information supplied... is fully sufficient to address all issues of jurisdiction and substance... (iv) All reviews by necessary and related agencies... have been completed... (v) A determination has been made whether the action is subject to City or State Environmental Quality Review, and if so subject, the lead agency has issued either: (A) a Negative or Conditional Negative Declaration; or (B) a Notice of Acceptance of a Draft Environmental Impact Statement." (Rules 1, § 2-02(a)(5))
+    *   "An applicant may at any time file with the Commission a statement that its application is withdrawn... the application in question shall be void and no further processing of such application... shall be undertaken..." (Rules 1, § 2-02(d))
+    *   "All proposed plans shall be submitted to the Department of City Planning..." (Rules 1, § 6-02(b))
+    *   "A concession shall be considered a major concession and therefore subject to Sections 197-c and 197-d of the Charter only if: (a) it has been determined pursuant to City Environmental Quality Review to require an Environmental Impact Statement, or (b) except as provided in 62 RCNY § 7-03, the concession will cause one or more of the thresholds set forth in 62 RCNY § 7-02 to be exceeded." (Rules 1, § 7-01)
+*   **Why this data is implied:** The agency's core function is to process and track diverse land use applications and development plans.
+*   **One row represents:** A single application or plan submitted for review.
+*   **Covers:** All applications and plans subject to ULURP, CEQR, WRP consistency review, 197-a plans, major concessions, parking certifications, street wall width certifications, FRESH certifications, zoning changes, special permits, city map changes, and city property acquisitions/dispositions.
+*   **Columns:** Application/Plan ID (PK), Application Type, Applicant Type, Applicant Name, Applicant Contact Information, Project Name/Description, Project Location (address, borough, tax block, lot(s)), Geographic Area Covered, Submission Date, Initial Review Status, Initial Review Deficiency Details, Docket Number, Substantive Review Status, Substantive Review Deficiency Details, Date of Notice of Receipt, Date of Certification of Completeness, Certification Criteria Met, Certification Appeal Status, Date of Withdrawal, "Doing Business Database" Information Provided, Related **Environmental Review ID** (3), Related **Pre-Application ID** (2.6), Related **Fee Payment ID** (14), Current Status, Lead Agency (for CEQR/SEQRA), Affected Borough President, Affected Community Board(s), Affected Borough Board(s), Charter Sections Applicable, Zoning Resolution Sections Applicable, Proposed Modification Details, Date of Last Action/Update.
+
+**2. Review Process Events (Meetings, Hearings, Decisions, Referrals)**
+*   **Open Data Match:** "ZAP Search data" (494), 80% similarity. This dataset includes project status, which implies tracking of review events.
+*   **Quotes:**
+    *   "The agency must track all actions and decisions made by various entities during the ULURP process for each application." (Charter 2, Why)
+    *   "The agency must track all proposed city development plans, their review process, and final determinations." (Charter 3, Why)
+    *   "The agency must track all applications and resolutions for zoning changes and special permits, including their review and protest processes." (Charter 4, Why)
+    *   "The agency is required to review and approve/disapprove city acquisitions of office space or buildings for office use." (Charter 11, Why)
+    *   "The agency must track all applications and recommendations for changes or completion of the city map." (Admin Code 8, Why)
+    *   "The agency must track the filing, approval, and certification of all subdivision maps and related deeds." (Admin Code 9, Why)
+    *   "The agency needs to track all applications for amendments to the zoning resolution, including pre-application exemptions." (Admin Code 10, Why)
+    *   "The regular public hearings of the City Planning Commission shall be held twice monthly on Wednesday at 10 a.m. in City Hall... Other regular public meetings of the City Planning Commission, also known as Review Sessions, shall be held twice monthly on Monday at 22 Reade Street, Spector Hall..." (Rules 2, § 1-01(a))
+    *   "Final action by the Commission shall be by the affirmative vote of not less than seven members at a meeting open to the public." (Rules 3, § 1-01(d))
+    *   "The Chair shall direct a roll call upon every proposition to be acted upon pursuant to Sections 195, 197-a, 197-c, 200 and 201 of the Charter... Votes shall be taken by the ayes and nays." (Rules 3, § 1-01(h))
+    *   "within sixty (60) calendar days after a community board's receipt of a complete application... the community board shall hold a public hearing and adopt and submit as provided herein a written recommendation concerning such application." (Rules 2, § 2-03(a)(1))
+    *   "The adoption of a community board recommendation or the waiver of a public hearing and recommendation shall be by a public vote which results in approval by a majority of the appointed members present during the presence of a quorum, at a duly called meeting." (Rules 3, § 2-03(f)(2))
+    *   "The Department of City Planning shall refer such additional application documents or amendments within five (5) days to each affected borough president, community board or borough board, and to the City Council." (Rules 8, § 2-02(a)(3))
+    *   "These rules establish submission and meeting participation requirements ("Pre-Application Process") prior to the filing of land use applications... or of applications for environmental review..." (Rules 6, § 10-01)
+*   **Why this data is implied:** The agency's review processes involve numerous meetings, hearings, decisions, and referrals that must be tracked.
+*   **One row represents:** A single event (meeting, hearing, decision, referral, pre-application stage) in the review process.
+*   **Covers:** All formal events and stages in the review of applications and plans, including CPC meetings/hearings, Community Board/Borough Board hearings/recommendations, public scoping meetings, pre-application meetings (Informational, ID, RWCDS), and all formal referrals.
+*   **Columns:** Event ID (PK), Event Type (e.g., CPC Public Hearing, Community Board Recommendation, CPC Vote, Application Referral, Informational Meeting), Date, Time, Location, Presiding Officer, Related **Application/Plan ID** (1), Decision-Making Body, Proposition/Action Description, Vote Outcome, Required Affirmative Votes, Actual Affirmative Votes, Total Votes Cast, Individual Commissioner/Member Votes (for CPC), Reasons for Decision/Vote, Conditions Attached to Approval, Borough President Objection Filed, Date Decision Filed/Transmitted, Quorum Requirement, Quorum Met, Number of Members Present, List of Members Present, Order of Business, Audio Recording/Stenographic Record Available, Related **Public Notice ID** (13), Minutes Approval Status, Date Minutes Approved, Notes/Summary of Proceedings, Related **Speaker Record IDs** (2.1), Referring Entity, Recipient Entity Type, Recipient Entity Name/ID, Referral Type, Required Response Date, Actual Response Date, Response Summary, Compliance with Referral Timeline, Pre-Application Stage (e.g., PAS Submission, ID Meeting, RWCDS Memo), Pre-Application Status, Date Applicant Notified to File Formal Application, On Hold Status, Date Placed On Hold, Date Removed From Hold, Project Record Closed/Application Terminated.
+
+**2.1. Hearing Speaker Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The Chair shall establish the order in which speakers are heard at public hearings. Speakers shall be limited to no more than three minutes to present testimony unless more time is permitted by the Chair." (Rules 15, § 1-01(j))
+    *   "Record. The record of a public meeting, including a public hearing, shall consist of either an audio recording or verbatim stenographic record of the proceedings; a list of speakers' names and affiliations, if any; a notation of each speaker's own indication, on a form provided for that purpose, of support or opposition to the proposal; and any exhibits or written statements offered by speakers." (Rules 15, § 1-02(c))
+    *   "The record of a public hearing shall consist of but not be limited to a list of speaker's names and affiliations (if any), a notation of each speaker's own indication, on a form provided for that purpose, of support or opposition to the application, and any exhibits or written statements offered by speakers." (Rules 15, § 2-03(d)(4))
+*   **Why this data is implied:** Documenting public participation at hearings is a legal requirement for transparency and record-keeping.
+*   **One row represents:** A single speaker's testimony at a public hearing.
+*   **Covers:** All speakers at public hearings held by the City Planning Commission, Community Boards, and Borough Boards.
+*   **Columns:** Speaker Record ID (PK), Related **Event ID** (2), Speaker Name, Affiliation, Indicated Stance (Support, Opposition, Neutral), Testimony Summary, Time Allotted (minutes), Time Spoken (minutes), Exhibits/Written Statements Offered (Yes/No, reference/link), Order of Appearance.
+
+**3. Environmental Reviews**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Environmental Impact Statement (EIS) Required? (Yes/No/Pending)" (Charter 1, Columns)
+    *   "The city planning commission shall oversee implementation of laws that require environmental reviews of actions taken by the city." (Charter 10, Section 192.e)
+    *   "The agency is responsible for overseeing and coordinating environmental reviews for city actions and plans." (Charter 10, Why)
+    *   "A determination has been made whether the action is subject to City or State Environmental Quality Review, and if so subject, the lead agency has issued either: (A) a Negative or Conditional Negative Declaration; or (B) a Notice of Acceptance of a Draft Environmental Impact Statement." (Rules 5, § 2-02(a)(5)(v))
+    *   "Receive and maintain on file notifications of commencement of environmental review, determinations of significance (including completed environmental assessment statements), draft and final scopes issued pursuant to 62 RCNY § 5-07, draft and final environmental impact statements, and significant supporting documentation comprising the official records of environmental reviews," (Rules 5, § 5-04(c)(5)(i))
+    *   "Within fifteen days after a notice of determination (positive declaration) is issued, the lead agency shall issue a draft scope, which may be prepared by the applicant but must be approved by the lead agency." (Rules 5, § 5-07(a))
+    *   "If the lead agencies determine that the proposed action is not an exempt action or a Type II action... and that the action will not have a significant effect on the environment, they shall issue a Negative Declaration..." (Rules 5, § 6-07(b)(1))
+    *   "If the lead agencies determine... that the action may have a significant effect on the environment, they shall issue a Notice of Determination which shall contain... a request that the applicant prepare or cause to be prepared... a draft EIS..." (Rules 5, § 6-07(b)(3))
+*   **Why this data is implied:** Maintaining a comprehensive record of environmental review documents and determinations is a core legal and operational requirement.
+*   **One row represents:** A single environmental review document or determination.
+*   **Covers:** All environmental reviews required by law for proposed city actions, plans, or ULURP applications, including notifications, EAS, determinations of significance (ND, CND, NOD), draft/final scopes, draft/final EIS, and notices of completion.
+*   **Columns:** Environmental Review ID (PK), Related **Application/Plan ID** (1), Document Type, Lead Agency, Date Issued/Filed, Action Identifying Number, Brief Description of Action, Proposed Location of Action, Determination of Significance (Yes/No), Reasons for Determination, Conditions/Modifications for CND, Applicant Acceptance of CND Conditions (Yes/No, Date), Possible Significant Effects (for NOD), EIS Preparation Request (for NOD), Public Review and Comment Period Start Date (for DEIS), Public Review and Comment Period End Date (for DEIS), Related **Event ID** (2) (for Public Scoping Meeting), Related **Public Notice ID** (13), Environmental Report Provided by Applicant (Yes/No), EIS Scope, Contents, Adequacy Judgment, Mitigation Measures Proposed, Consultation with Agencies on Mitigations (Yes/No, Agencies Consulted), Record of Comments Received on DEIS, Applicant's Response to Comments, EIS Revision/Updating Details, Programmatic EIS (Yes/No), Programmatic EIS Amendment/Supplement Details, Official Record File Location/Link.
+
+**4. City Map & Geographic Features**
+*   **Open Data Match:** "Digital City Map (multiple)" (455), 95% similarity. This includes datasets for official mapped streets and parks, street width, type and grade, pierhead lines, bulkhead lines and City Map alterations.
+*   **Quotes:**
+    *   "The agency is explicitly required to be the custodian of the city map and record all authorized changes." (Charter 5, Why)
+    *   "The director of city planning shall be the custodian of the city map, and it shall be his or her duty to complete and maintain the same and to register thereon all changes resulting from action authorized by law." (Charter 5, Section 198.b)
+    *   "The city map is to be deemed final and conclusive with respect to the location, width and grades of the streets shown thereon, so far as such location, width and grades have been duly adopted." (Admin Code 1, § 25-101)
+    *   "There shall be located and laid out on the city map all parks, playgrounds, streets, courtyards abutting streets, bridges, tunnels and approaches to bridges and tunnels, and improvements of navigation in accordance with bulkhead and pierhead lines established pursuant to section seven hundred five of the charter. The width and grades of all streets so located and laid out shall be indicated thereon." (Admin Code 1, § 25-102)
+    *   "The agency must maintain a conclusive city map with detailed information on all public features and specific land restrictions." (Admin Code 1, Why)
+    *   "The agency needs to track all applications and recommendations for changes or completion of the city map." (Admin Code 8, Why)
+    *   "The agency needs to track the placement and characteristics of street and park name signs, especially for co-named or renamed features." (Admin Code 28, Why)
+*   **Why this data is implied:** The agency is the custodian of the city map and must track all its features and changes.
+*   **One row represents:** A single mapped feature on the city map or a single legally authorized change.
+*   **Covers:** All parks, playgrounds, streets, courtyards, bridges, tunnels, approaches, navigation improvements, areas with street opening restrictions, and all additions to or changes in the city map.
+*   **Columns:** Feature ID (PK), Feature Type (e.g., Street, Park, Bridge, Tunnel, Playground, Courtyard, Navigation Improvement, Bulkhead Line, Pierhead Line), Feature Name, Location (geographic coordinates, geometric data), Width, Grade (including "established by user" status), Date Established/Adopted, Special Restriction Flag (e.g., "No Street Opening"), Restricted Institution Name (if applicable), Map Change ID (PK), Description of Change, Date Authorized, Effective Date, Legal Authorization Reference, Affected Map Area, Filing Date with Corporation Counsel, Filing Date with City Clerk, Filing Date with Borough President, Filing Date with County Real Estate Records Office, Related **Application/Plan ID** (1) (if change was part of ULURP), Sign ID (PK), Related **Feature ID** (4), Sign Location, Name Displayed on Sign, Official Name (Yes/No), Dual Name (Yes/No), Sign Color, Installation Date, Last Maintenance Date, Replacement Date.
+
+**5. Zoning Districts & Regulations**
+*   **Open Data Match:** "Georeferenced NYC Zoning Maps" (457), 90% similarity. This is a raster dataset of the entire zoning map catalog for the City of New York as one seamless citywide zoning map.
+*   **Quotes:**
+    *   "The city planning commission... shall have power to regulate and limit the height and bulk of buildings, to regulate and determine the area of yards, courts and other open spaces and to regulate density of population. The commission... may divide the city into districts of such number, shape and area as it may deem best suited to carry out such purposes." (Admin Code 2, § 25-110.a)
+    *   "The regulations as to height and bulk of buildings, the area of yards, courts and other open spaces and density of population shall be uniform for each class of buildings throughout each district. The regulation in one or more districts may differ from those in other districts." (Admin Code 2, § 25-110.b)
+    *   "The agency is legally empowered to create and enforce zoning districts and their associated regulations." (Admin Code 2, Why)
+*   **Why this data is implied:** The agency is legally empowered to create and enforce zoning districts and their associated regulations.
+*   **One row represents:** A specific zoning district or a specific regulation within a district.
+*   **Covers:** All established zoning districts and the regulations governing building height, bulk, open spaces, population density, and land use within them.
+*   **Columns:** Zoning District ID (PK), District Name, District Boundaries (geographic coordinates, geometric data), Regulation Type (e.g., Height, Bulk, Yard Area, Court Area, Open Space, Density, Trade/Industry Location, Specific Use Restriction), Regulation Details (e.g., specific limits, permitted/excluded uses), Class of Buildings Affected, Effective Date of Regulation.
+
+**6. Privately Owned Public Spaces (POPS)**
+*   **Open Data Match:** "Privately Owned Public Spaces (POPS) Inventory" (Admin Code 3), 95% similarity. This dataset tracks all plazas, arcades, connections, and other publicly accessible spaces established through zoning or other city actions. "Waterfront Public Access Areas (WPAAs)" (487), "Waterfront Public Access Areas (WPAAs) Access Points" (488), "Waterfront Public Access Areas (WPAAs) Footprints" (489) are also highly relevant.
+*   **Quotes:**
+    *   "The term "privately owned public space" means (1) a plaza, residential plaza, urban plaza, public plaza, elevated plaza, arcade, through block arcade, through block galleria, through block connection, open air concourse, covered pedestrian space, publicly accessible space or sidewalk widening provided for in the zoning resolution now or previously in effect..." (Admin Code 3, § 25-114.a)
+    *   "On July 1, 2019 and annually thereafter, the department of city planning shall provide to the mayor and the speaker of the council a report that shall, at minimum, contain the following information about each privately owned public space in existence on the date of such report: 1. The address; 2. The type of privately owned public space; 3. If the privately owned public space was established pursuant to a provision of the zoning resolution now or previously in effect, a citation to such provision; 4. If the privately owned public space was established pursuant to a decision, authorization, or certification issued by the city planning commission, the chair of the city planning commission or the board of standards and appeals, the application number of such decision, authorization, or certification; 5. The operational requirements for such privately owned public space including the hours of access and all required amenities for such privately owned public space;" (Admin Code 3, § 25-114.b.1-5)
+    *   "The agency must maintain a comprehensive record of all privately owned public spaces and their specific requirements." (Admin Code 3, Why)
+    *   "Such agency shall inspect each privately owned public space no later than June 30, 2019 and at least once every three years thereafter to ensure that such space is in compliance with applicable law and shall issue notices of violation returnable to the office of administrative trials and hearings." (Admin Code 12, § 25-114.f.1)
+    *   "The agency is mandated to regularly inspect privately owned public spaces to ensure compliance with applicable laws." (Admin Code 12, Why)
+    *   "The agency must track all enforcement actions taken against privately owned public spaces, including violations, penalties, and closures." (Admin Code 13, Why)
+    *   "The agency needs to track all complaints received about privately owned public spaces to inform enforcement and reporting." (Admin Code 14, Why)
+    *   "The agency must track whether POPS owners file required compliance reports and the status indicated in those reports." (Admin Code 15, Why)
+    *   "The agency is responsible for reviewing and approving signage systems for POPS to ensure public accessibility and compliance." (Rules 12, Why)
+*   **Why this data is implied:** The agency is mandated to inventory, regulate, inspect, and enforce compliance for all privately owned public spaces.
+*   **One row represents:** A single privately owned public space.
+*   **Covers:** All plazas, arcades, connections, and other publicly accessible spaces established through zoning or other city actions, including their operational requirements, inspections, enforcement actions, complaints, owner compliance reports, and signage system approvals.
+*   **Columns:** POPS ID (PK), Address, POPS Type, Establishment Method, Establishing Citation/Application Number, Operational Requirements (e.g., hours of access, list of required amenities), Required Signage (Yes/No), Signage Content Requirements, Site Map Required (Yes/No), Site Map Approval Status, Date Established, Inspection ID (PK), Related **POPS ID** (6), Inspection Date, Inspector ID, Compliance Status, Notice of Violation Issued (Yes/No), Related **Enforcement Action ID** (6.1), Next Scheduled Inspection Date, Enforcement Action ID (PK), Related **POPS ID** (6), Action Type, Date of Action, Description of Violation, Administrative Tribunal Decision, Penalty Amount, Penalty Paid Date, DOB Closure Authorized (Yes/No), Closure Start Date, Closure End Date, Reason for Closure, Complaint ID (PK), Related **POPS ID** (6), Date Received, Complaint Source, Complaint Description, Status, Resolution Date, Enforcement Action Taken (Yes/No), Related **Enforcement Action ID** (6.1), Report ID (PK), Related **POPS ID** (6), Reporting Period, Date Filed, Required (Yes/No), Filed as Required (Yes/No), Compliance Status Indicated by Report, POPS Signage Approval ID (PK), Related **POPS ID** (6), Owner/Manager Name, Owner/Manager Contact Information, Submission Date of Design Review Package, Date of DCP Approval, Signage System Installation Deadline, Date of Actual Installation, Extension Request (Yes/No), Extension Reason, Extension Approval Date, Signage Content: Open to Public Statement (Yes/No), Signage Content: Hours of Operation (Yes/No, Details), Signage Content: Primary Amenities Listed (Yes/No, Details), Signage Content: 311 Complaint Info (Yes/No), Signage Content: Public Space Logo (Yes/No, Compliance), Signage Content: Site Map (Yes/No), Signage Content: International Logo of Access (Yes/No), Compliance Status, Related **Fee Payment ID** (14), Most Recently Approved Drawings (reference/link), Technical Drawings of Signage System (reference/link).
+
+**7. City Facilities**
+*   **Open Data Match:** "Capital Projects Database (CPDB)" (441), 85% similarity. This captures key data points on potential, planned, and ongoing capital projects, including spatial data.
+*   **Quotes:**
+    *   "The agency must track all proposed city facility actions, the planning process, and their implementation status." (Charter 6, Why)
+    *   "Not later than the first day of July, nineteen hundred ninety, the mayor, after consulting with each of the borough presidents, shall file with the city planning commission proposed rules establishing criteria for (1) the location of new city facilities and (2) the significant expansion, closing or significant reduction in size or capacity for service delivery of existing facilities." (Charter 6, Section 203.a)
+    *   "Each year not later than the fifteenth day of November, the mayor shall submit to the council, borough presidents, borough boards and community boards a citywide statement of needs concerning city facilities prepared in accordance with the criteria established pursuant to section two hundred three." (Charter 6, Section 204.a)
+    *   "City facility: A facility providing city services whose location, expansion, closing or reduction in size is subject to control and supervision by a city agency, and which is: (i) operated by the city on property owned or leased by the city which is greater than 750 square feet in total floor area; or (ii) used primarily for a program or programs operated pursuant to a written agreement on behalf of the city which derives at least 50 percent and at least $50,000 of its annual funding from the city." (Rules 10, Appendix A, Article 3(a))
+    *   "The sponsoring agency and... the City Planning Commission, shall consider the following criteria: (a) Compatibility of the facility with existing facilities and programs... (b) Extent to which neighborhood character would be adversely affected by a concentration of city and/or non-city facilities. (c) Suitability of the site to provide cost-effective delivery of the intended services... (d) Consistency with the locational and other specific criteria for the facility identified in the Statement of Needs... (e) Consistency with any plan adopted pursuant to Section 197-a of the Charter." (Rules 10, Appendix A, Article 4.1)
+    *   "To publish the required annual index, the agency needs to collect and maintain raw data on residential facility beds." (Rules 11, Why)
+*   **Why this data is implied:** Managing city facilities requires a comprehensive inventory and tracking of siting, expansion, and reduction actions against established criteria.
+*   **One row represents:** A single city facility or a significant action (siting, expansion, closing, reduction) related to a facility.
+*   **Covers:** All city facilities (new, existing, expanded, closed, reduced) subject to the Section 203 criteria, including local/neighborhood, regional/citywide, residential, transportation, waste management, administrative offices, and data processing facilities, as well as bed counts for residential facilities.
+*   **Columns:** Facility ID (PK), Facility Name, Facility Type, Facility Category, Sponsoring Agency, Property Address, Borough, Community District ID, Tax Lot ID, Ownership Status, Total Floor Area (sq ft), Service Capacity, Funding Source, Percentage of City Funding, Annual City Funding Amount, Action Type (e.g., New Siting, Significant Expansion, Significant Reduction, Closing, Change in Use), Action Date, Related **Application/Plan ID** (1) (if subject to ULURP/Section 195), Statement of Needs Reference (Yes/No, Date, Specific Criteria), Consistency with 197-a Plan (Yes/No, Related **Application/Plan ID** (1)), Compatibility with Existing Facilities (Assessment), Neighborhood Character Impact (Assessment), Cost-Effectiveness Assessment, Site Suitability for Service Delivery/Operations, Need Assessment, Accessibility Assessment, Distribution Analysis, Minimum Size Justification, Traffic/Transit Adequacy, Environmental Impact Assessment, Concentration Avoidance, Support Services Availability, Alternative Sites Considered (Yes/No, Details), Monitoring Committee Established (Yes/No, Date), Monitoring Committee Reporting Schedule, Agency Statement Submitted (Yes/No, for non-ULURP/195 actions), Date Agency Statement Submitted, Reasons for Inconsistencies, Residential Facility Bed Count ID (PK), Reporting Period, Related **Facility ID** (7), Operator Type, Number of Beds, Operational Status, Population of Community District.
+
+**8. City-Owned & Leased Property**
+*   **Open Data Match:** "City Owned and Leased Property (COLP)" (445, 446), 95% similarity. These are shapefiles of city-owned and leased properties and uses. "Gazetteer of City Owned Property" (456) is also a list of city-owned properties and uses.
+*   **Quotes:**
+    *   "The agency is required to maintain and annually update a map and explanatory text of all city-owned real property." (Charter 12, Why)
+    *   "The statement of needs shall be accompanied by a map together with explanatory text, indicating (1) the location and current use of all city-owned real property, (2) all final commitments relating to the disposition or future use of city-owned real property, including assignments by the department of citywide administrative services pursuant to clause b of subdivision three of section sixteen hundred two..." (Charter 12, Section 204.d)
+    *   "An identification of city-owned and city-leased property in such zone." (Admin Code 21, § 25-120.b.3.b)
+    *   "The agency needs to identify and track city-owned and city-leased properties, particularly within industrial business zones, for strategic planning." (Admin Code 21, Why)
+*   **Why this data is implied:** The agency is mandated to maintain an inventory of all city-owned and leased real property.
+*   **One row represents:** A single parcel of city-owned or city-leased real property.
+*   **Covers:** All real property owned or leased by the city, including its current use, disposition commitments, and assignments.
+*   **Columns:** Property ID (PK) (e.g., Block/Lot), Address, Borough, Community District, Current Use, Current Occupant/Agency, Final Commitment for Disposition/Future Use (Yes/No), Description of Final Commitment, Date of Final Commitment, Assignment by DCAS (Yes/No), Date of DCAS Assignment, Last Update Date, Ownership Status (Owned, Leased), Lease Start Date (if leased), Lease End Date (if leased), Related **IBZ ID** (10), Potential for Industrial Development (Yes/No), Capital Investment Planned (Yes/No), Sustainable Infrastructure Planned (Yes/No).
+
+**9. Housing Units & Related Social Indicators**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Extremely low income affordable housing (ELI-AH) unit... a housing unit that is required to be affordable to an extremely low income household pursuant to a regulatory agreement, restrictive declaration or other similar instrument with a federal, state or local governmental entity or instrumentality." (Admin Code 4, § 25-117.a)
+    *   "Housing security, affordability and quality, including but not limited to... share of housing units that are rent-stabilized, share of housing units that are income-restricted, share of housing units affordable to ELI, VLI, LI, MI, MIDI and HI households, residential eviction cases filed in housing court and residential evictions executed by city marshals pursuant to a warrant issued in accordance with section 749 of the real property actions and proceedings law, share of housing units with three or more maintenance deficiencies, share of housing units that are overcrowded" (Admin Code 4, § 25-117.c.4)
+    *   "The agency needs to track all housing units, their characteristics, affordability status, and changes over time for various reports and analyses." (Admin Code 4, Why)
+    *   "The agency needs to track residential eviction cases and executions as an indicator of housing security." (Admin Code 24, Why)
+    *   "The agency needs to track applicants and awardees for affordable housing lotteries to assess access to affordable housing." (Admin Code 25, Why)
+    *   "The agency needs to track individuals and families in the homeless shelter system to understand housing insecurity." (Admin Code 26, Why)
+*   **Why this data is implied:** The agency is required to track housing units, their affordability, and related social indicators for planning and reporting.
+*   **One row represents:** A single housing unit, eviction case, lottery application/award, or shelter entry.
+*   **Covers:** All housing units in the city (market-rate, rent-stabilized, income-restricted), their production, preservation, and quality, as well as residential eviction cases, affordable housing lottery applications/awards, and entries into the homeless shelter system.
+*   **Columns:** Housing Unit ID (PK), Address, Building ID, Unit Type, Number of Bedrooms, Current Rent/Price, Rent-Stabilized (Yes/No), Income-Restricted (Yes/No), Affordability Level, Regulatory Agreement ID, Date of Affordability Restriction, Date of Construction/Alteration/Demolition, Related **Project ID** (16), Number of Maintenance Deficiencies, Overcrowded (Yes/No), Housing Tenure, Eviction Case ID (PK), Related **Housing Unit ID** (9), Eviction Address, Date Case Filed, Date Warrant Issued, Date Eviction Executed, City Marshal ID, Outcome, Lottery Application ID (PK), Applicant ID, Application Date, Related **Housing Unit ID** (9), Income Level, Household Size, Race, Hispanic Origin, Awarded (Yes/No), Award Date, Shelter Entry ID (PK), Individual/Family ID, Date of Entry, Shelter ID, Shelter Provider, Last Known Address (Community District), Exit Date, Exit Destination.
+
+**10. Industrial Business Zones (IBZ) & Industrial Development**
+*   **Open Data Match:** "Significant Maritime and Industrial Areas (SMIA) boundaries" (484), 80% similarity. This is a shapefile of SMIA boundaries that define the geographic scope of New York City's Waterfront Revitalization Program (WRP). "WRP Arthur Kill Ecologically Sensitive Maritime and Industrial Area (ESMIA)" (491) is also relevant.
+*   **Quotes:**
+    *   "The term “industrial business zone” means an industrial business zone designated pursuant to section 22-626." (Admin Code 5, § 25-120.a)
+    *   "For each designated industrial business zone: (a) Economic and land use data for the prior twenty years to the extent practicable, including where available and accessible: (1) Employment data... (2) Real estate data... (3) Land use data at the tax lot level; and (4) Data on as-of-right and discretionary New York city and New York state tax credits or other financial incentives administered for businesses in the industrial sector located in such zone." (Admin Code 5, § 25-120.b.3)
+    *   "The agency must maintain a registry of all designated industrial business zones and their key characteristics for strategic planning." (Admin Code 5, Why)
+    *   "The agency needs to collect and analyze detailed business and employment data within industrial sectors, especially in IBZs, for strategic planning." (Admin Code 18, Why)
+    *   "The agency needs to track real estate market data for industrial and commercial properties within IBZs for economic analysis." (Admin Code 19, Why)
+    *   "The agency needs to track all financial incentives provided to businesses in the industrial sector, especially within IBZs." (Admin Code 20, Why)
+    *   "The agency needs to track participation in workforce development programs aimed at the industrial sector to assess their effectiveness." (Admin Code 23, Why)
+*   **Why this data is implied:** The agency is mandated to track and analyze data related to industrial business zones and industrial development.
+*   **One row represents:** A single industrial business zone, business establishment, property transaction, financial incentive, or workforce program participation.
+*   **Covers:** All designated industrial business zones, businesses operating within them, industrial/commercial property transactions, financial incentives awarded to industrial businesses, and participation in industrial workforce development programs.
+*   **Columns:** IBZ ID (PK), IBZ Name, Boundaries (geographic coordinates, geometric data), Date Designated, Strategic Planning Area, Primary Industrial Area (Yes/No), Access to Truck Routes (Yes/No), Access to Freight Rail (Yes/No), Access to Maritime Freight (Yes/No), Business ID (PK), Business Name, Address, Related **IBZ ID** (10), Industrial Sector, Industrial Subsector, Number of Jobs, Workforce Demographics, Date of Data Collection, MBE/WBE/EBE Certified (Yes/No), Related **Certification ID** (24), Transaction ID (PK), Property Address, Related **IBZ ID** (10), Property Type, Transaction Type, Transaction Date, Sale Price, Rent Price (per square foot), Square Footage, Incentive ID (PK), Related **Business ID** (10), Incentive Type, Source, Amount, Award Date, Expiration Date, Status, Program Participation ID (PK), Program ID, Program Name, Participant ID, Participant Name, Start Date, End Date, Outcome, Educational Programming (Yes/No), Local Hiring Component (Yes/No).
+
+**11. City Planning Commission (CPC) Members**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The agency must track the appointments, terms, and roles of all City Planning Commission members to ensure proper governance." (Charter 8, Why)
+    *   "The agency must track any disciplinary actions or removal proceedings against commission members." (Charter 9, Why)
+    *   "A quorum shall consist of seven members." (Rules 16, § 1-01(c))
+    *   "Final action by the Commission shall be by the affirmative vote of not less than seven members at a meeting open to the public." (Rules 16, § 1-01(d))
+    *   "The Chair shall direct a roll call upon every proposition to be acted upon..." (Rules 16, § 1-01(h))
+*   **Why this data is implied:** Tracking Commission members is essential for managing meetings, ensuring quorums, and recording votes.
+*   **One row represents:** A single City Planning Commission member or a single appointment/disciplinary action.
+*   **Covers:** All appointed members of the City Planning Commission, their appointments, terms, roles, and any disciplinary actions.
+*   **Columns:** Member ID (PK), Member Name, Position (e.g., Chair, Vice-Chair, Member), Appointing Official, Appointment Date, Term Start Date, Term End Date (scheduled), Actual End Date (if different), Reason for Vacancy, Council Confirmation Date, Successor Appointment ID, Designated as Vice-Chair (Yes/No), Vice-Chair Designation Date, Disciplinary Action ID (PK), Related **Member ID** (11), Date Charges Filed, Description of Charges, Hearing Date, OATH Findings of Fact, OATH Recommended Decision, Appointing Official Final Action, Date of Final Action, Reason for Final Action, Active Status (Yes/No), Contact Information, City Employee Status (Yes/No), Related **Decision/Vote ID** (2).
+
+**12. Department Employees**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The department shall employ such planning experts, engineers, architects and other officers and employees as may be required to perform its duties, within the appropriation therefor." (Charter 14, Section 191.c)
+    *   "The agency needs to manage its staff, including their roles and contact information." (Charter 14, Why)
+*   **Why this data is implied:** The agency needs to manage its staff, including their roles and contact information.
+*   **One row represents:** A single employee of the Department of City Planning.
+*   **Covers:** All employees of the Department of City Planning.
+*   **Columns:** Employee ID (PK), Employee Name, Job Title, Department/Division, Contact Information (email, phone), Role (e.g., Planning Expert, Engineer, Architect, BSA Coordinator), Start Date, End Date (if applicable), Employment Status.
+
+**13. Public Notices & Filings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The agency is required to make transcripts of public meetings and hearings available and manage requests for copies." (Charter 15, Why)
+    *   "The agency is required to provide a record and searchable testimony for BSA applications where it has submitted testimony." (Charter 16, Why)
+    *   "The agency is required to provide advance notice and convey copies of various plans, proposals, RFPs, and Letters of Intent to affected community boards and borough presidents." (Charter 17, Why)
+    *   "The agency is involved in the process of establishing and amending rules for city facility location criteria." (Charter 18, Why)
+    *   "The agency is required to file a comprehensive waterfront plan every ten years." (Charter 19, Why)
+    *   "The agency is required to file a zoning and planning report every four years." (Charter 20, Why)
+    *   "All proposals scheduled for public hearings shall be duly advertised in accordance with Charter provisions and all applicable laws." (Rules 7, § 1-01(m))
+    *   "by publication in The City Record for the five (5) days of publication immediately preceding and including the date of the public hearing;" (Rules 7, § 2-03(c)(1))
+    *   "by publication in the Comprehensive City Planning Calendar distributed not less than five (5) calendar days prior to the date of public hearing;" (Rules 7, § 2-03(c)(2))
+    *   "at least eight (8) days prior to the Commission public hearing a notice, on a form provided by the Department of City Planning, shall be posted by the applicant in the building subject to the application, informing the tenants of the proposed action and the right of the public to appear at the Commission hearing and testify;" (Rules 7, § 2-06(e)(1))
+*   **Why this data is implied:** Legal requirements mandate public notification for various actions and hearings, necessitating a system to track these notices.
+*   **One row represents:** A single public notice, advertisement, or official filing.
+*   **Covers:** All required public notices for hearings (CPC, Community Board, Borough Board, Public Scoping), notifications to applicants, property owners, and tenants, advertisements in The City Record, Comprehensive City Planning Calendar, and local newspapers, as well as records of meeting transcripts, BSA testimony, and various mandated reports and plans.
+*   **Columns:** Public Notice ID (PK), Related **Application/Plan ID** (1), Related **Event ID** (2), Notice Type, Date of Publication/Mailing/Posting, Publication/Distribution Channel, Publication/Mailing/Posting Start Date, Publication/Mailing/Posting End Date, Recipient Group, Content Summary/Link to Full Text, Affidavit of Mailing/Posting Submitted (Yes/No), Date Affidavit Submitted, Affidavit Signatory, Specific Location of Posting, Compliance with Notice Period, Meeting/Hearing ID (PK), Date of Meeting/Hearing, Type, Subject/Agenda, Transcript Availability Date, Transcript Location, Public Inspection Status, Transcript Request Count, Transcript Copy Fee Charged (Yes/No), Testimony Record ID (PK), BSA Application Number, Date of BSA Application, Type of BSA Application, Date Testimony Submitted, Submitting Entity, Testimony Content (reference to searchable format location), Website Posting Date, Notification ID (PK), Item Type (e.g., Preliminary Plan, Final Plan, RFP, Solicitation, Letter of Intent), Item Title/Description, Issuing/Filing Entity, Date of Issuance/Filing, Related Land Location, Affected Community Boards, Affected Borough Presidents, Date Notified/Conveyed to CBs, Date Notified/Conveyed to BPs, Exception Applied (Yes/No), Rulemaking Event ID (PK), Rule Set ID, Event Type, Event Date, Description of Rules/Amendments, Consultation with Borough Presidents (Yes/No), Notice of Proposed Rule Making Publication Date, CPC Decision Date, CPC Decision, Filing Date with Council, Plan Filing ID (PK), Plan Title, Filing Date, Filing Cycle, Consultation with City Agencies (Yes/No), Consultation with State Agencies (Yes/No), Consultation with Federal Agencies (Yes/No), Public Input Received (Yes/No), Filing Date with Mayor, Filing Date with Council, Filing Date with Public Advocate, Filing Date with Borough Presidents, Filing Date with Community Boards, Report Filing ID (PK), Report Type, Filing Date, Filing Cycle, Filing Date with Mayor, Filing Date with Council, Filing Date with Public Advocate, Filing Date with Borough Presidents, Filing Date with Community Boards.
+
+**14. Fee & Contribution Payments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The Department may not consider the application as filed unless it includes all required components and shall not consider the application as filed unless the required fee has been paid or is paid concurrently with the submission of the application." (Rules 4, § 2-02(a)(1))
+    *   "every application made pursuant to Executive Order 91 and 62 RCNY Ch. 5 requires a non-refundable fee which shall be submitted to the lead agency for the action..." (Rules 4, § 3-01)
+    *   "Contributions to the Theater Subdistrict Fund pursuant to § 81-744 of the New York City Zoning Resolution shall be made in an amount equal to $24.65 per square foot of floor area transferred." (Rules 14, § 3-10)
+    *   "Contributions to the West Chelsea Affordable Housing Fund pursuant to § 98-262 (c) of the New York City Zoning Resolution shall be made in an amount equal to $625 per square foot of floor area increase as of the effective date of this rule." (Rules 14, § 3-11)
+    *   "The agency is responsible for tracking mandatory contributions to specific funds related to development projects." (Rules 14, Why)
+*   **Why this data is implied:** Tracking fee payments and development contributions is crucial for financial management and compliance.
+*   **One row represents:** A single fee payment transaction or a single contribution payment.
+*   **Covers:** All fees collected for CEQR applications, ULURP applications, zoning certifications/authorizations, natural feature restoration, zoning verification, POPS signage design reviews, and mandatory contributions to funds like the Theater Subdistrict Fund and West Chelsea Affordable Housing Fund.
+*   **Columns:** Fee Payment ID (PK), Related **Application/Plan ID** (1), Fee Type, Payment Date, Amount Paid, Payment Method, Applicant Name, Payer Name, Square Footage (if applicable for fee calculation), Number of Seats (if applicable), Number of Dwelling Units (if applicable), Zoning Lot Area (if applicable), Floor Area Transferred/Bonus (if applicable), Fee Schedule Section Applied, Exemption Applied (Yes/No), Exemption Reason, Contribution ID (PK), Related **Application/Plan ID** (1), Fund Name, Zoning Resolution Section, Contribution Date, Amount Contributed, Floor Area Transferred/Increased (sq ft), Per Square Foot Rate Applied, Rate Adjustment Factor (if applicable), Date of Rate Adjustment (if applicable), Payer Name, Payer Contact Information.
+
+**15. Racial Equity Reports**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "For an application submitted on or after June 1, 2022, an applicant shall file, in accordance with this subdivision, a racial equity report described in this section. Such report shall be required for all applications submitted pursuant to section 201 of the charter for a citywide amendment to the zoning resolution affecting 5 or more community districts, applications submitted for designation of historic districts pursuant to section 3020 of the charter affecting at least 4 city blocks, and for applications submitted pursuant to subdivision a of section 197-c of the charter that seek approval for (i) an acquisition or disposition of land to facilitate a non-residential project containing at least 50,000 square feet of floor area, (ii) an acquisition or disposition of land to facilitate a residential project... (iii) an increase in permitted residential floor area of at least 50,000 square feet, (iv) an increase in permitted non-residential floor area by at least 200,000 square feet or (v) a decrease in permitted floor area or number of housing units on at least four contiguous city blocks." (Admin Code 17, § 25-118.b)
+    *   "The department shall identify on its website any application for which an applicant does not submit a racial equity report as required by this section. The department shall promptly notify any person required to receive such report pursuant to subdivision b of this section that such report was not timely filed, and if such report is subsequently filed, shall notify any such person of such filings." (Admin Code 17, § 25-118.d)
+*   **Why this data is implied:** The agency must track the submission and content of racial equity reports for specific land use applications and ensure compliance.
+*   **One row represents:** A single racial equity report filed for a land use application.
+*   **Covers:** All racial equity reports required for citywide zoning amendments, historic district designations, and large-scale land use projects.
+*   **Columns:** Report ID (PK), Related **Application/Plan ID** (1), Date Filed, Applicant Name, Project Type, Residential Floor Area (sq ft), Non-Residential Floor Area (sq ft), Manufacturing District Change (Yes/No), Number of ELI-AH Units Expected, Number of VLI-AH Units Expected, Number of LI-AH Units Expected, Number of MI-AH Units Expected, Number of MIDI-AH Units Expected, Number of Non-Income-Restricted Units Expected, Expected Rents/Prices, Projected Jobs by Sector/Occupation, Median Wage Levels of Projected Jobs, Workforce Racial/Ethnic Composition, Workforce Educational Attainment, Community Profile Summary Included (Yes/No), Fair Housing Narrative Statement Included (Yes/No), Estimated Construction Jobs, Timely Filed (Yes/No), Notification of Non-Filing Sent (Yes/No).
+
+**16. Project Commitments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Such agency as the mayor shall designate shall establish and maintain a publicly accessible online searchable list of all commitments described in this section that relate to an application that: (1) the city planning commission has approved or approved with modifications for a matter described in paragraph one, three, four, five, six, eight, ten, or eleven of subdivision a of section one hundred ninety-seven-c or a change in the text of the zoning resolution pursuant to section two hundred or two hundred one; (2) the commission decision has been approved or approved with modifications by the council pursuant to section one hundred ninety-seven-d and is not subject to further action pursuant to subdivision e or f of such section; and (3) involves at least four adjacent blocks of real property." (Charter 7, Section 206.b)
+    *   "Within thirty days of final council approval of a commission decision described in this section, the designated agency shall submit to the council and record on such list the commitments described in this section, including a description of each commitment, the target commencement and completion dates, the application number, the agency or agencies responsible for implementation of such commitment, and any funding amount set forth in the letter establishing the commitment." (Charter 7, Section 206.e)
+    *   "The agency is required to establish and maintain a publicly accessible list of commitments related to large-scale ULURP applications." (Charter 7, Why)
+    *   "The agency must identify and track "covered projects" to ensure the mandated population and housing analyses are conducted and reported." (Admin Code 16, Why)
+*   **Why this data is implied:** The agency is required to track commitments and conduct studies for qualifying large-scale projects.
+*   **One row represents:** A single commitment made in relation to a qualifying ULURP application or a single "covered project."
+*   **Covers:** Commitments made by the Mayor or designated representatives related to ULURP applications involving at least four adjacent blocks of real property, and all projects meeting the definition of a "covered project" approved by the city council.
+*   **Columns:** Commitment ID (PK), Related **Application/Plan ID** (1), Commitment Description, Commitment Type, Letter Date Establishing Commitment, Funding Amount (if applicable), Target Commencement Date, Target Completion Date, Responsible Agency(ies) for Implementation, Last Progress Update Date, Progress Status, Changes to Information Since Last Update, Completed Within Preceding Year (Yes/No), Project ID (PK), Project Name, Applicant Type, Related **Application/Plan ID** (1) (list of relevant application IDs), City Planning Commission Approval Date, City Council Approval Date, Effective Date of Project, Changes Floor Area/Density for Housing (Yes/No), Number of Adjacent Blocks Affected, Population and Housing Study Required (Yes/No), Study Completion Date, Report Publication Date.
+
+**17. Subdivision Map Filings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Every map referred to in section two hundred two of the charter shall be prepared, approved and certified and shall be filed as follows: one copy thereof in the office in which conveyances of real estate are required to be recorded in the county in which the land shown thereon is situated; one copy thereof in the office of the corporation counsel; one copy thereof in the office of the president of the borough in which the land shown on the map is situated; one copy thereof in the office of the secretary of the board of estimate; one copy thereof in the office of the department of city planning; one copy thereof in the office of the city clerk; and, one copy thereof in the office of the department of buildings for the county in which the land shown thereon is situated." (Admin Code 9, § 25-113.a)
+    *   "The register or county clerk, as the case may be, shall refuse: 1. To receive for filing any such subdivision map unless the commission or the department of buildings has certified that the subdivision does not result in the violation of any applicable zoning laws. 2. To accept for recording any deed or other instrument affecting real property which has a map attached thereto or made a part thereof, unless it shall have endorsed thereon the certification of the secretary of the board of estimate to the effect that the same has been approved pursuant to section two hundred two of the charter and unless the commissioner of the department of buildings has certified that such subdivision does not result in the violation of any applicable zoning laws." (Admin Code 9, § 25-113.b)
+*   **Why this data is implied:** The agency must track the filing, approval, and certification of all subdivision maps and related deeds.
+*   **One row represents:** A single subdivision map filing or deed recording request.
+*   **Covers:** All subdivision maps and deeds of subdivision property requiring certification and filing.
+*   **Columns:** Filing ID (PK), Map/Deed Type, Date Submitted, Applicant Name, Property Description/Location, Zoning Compliance Certification (Yes/No), Certifying Department, Board of Estimate Approval (Yes/No), Secretary of Board of Estimate Certification (Yes/No), Filing Status, Refusal Reason (if applicable), Date Filed/Recorded, Filing Location.
+
+**18. Public Utility Property Filings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Every public utility corporation, within ninety days after its acquisition of any real property within the city, shall file in the office of the president of the borough in which such property is situated, a map or survey drawn to a scale and accurately indicating the location and boundaries of such property with reference to the streets, avenues, bridges, tunnels, bulkhead or pierhead lines, parks or other public places shown on the city map." (Admin Code 11, § 25-106)
+    *   "The agency must track public utility property acquisitions, required map filings, and associated penalties for non-compliance." (Admin Code 11, Why)
+*   **Why this data is implied:** The agency must track public utility property acquisitions, required map filings, and associated penalties for non-compliance.
+*   **One row represents:** A single map or survey filing event by a public utility corporation.
+*   **Covers:** All real property acquisitions by public utility corporations within the city.
+*   **Columns:** Filing ID (PK), Public Utility Corporation Name, Property Address/Location, Acquisition Date, Required Filing Deadline, Borough President Office Filing Date, City Planning Office Filing Date, Transportation Commissioner Office Filing Date, Filed On Time (Yes/No), Penalty Accrued (daily rate), Total Penalty Amount Due, Penalty Paid Date.
+
+**19. Cemetery Land Use Approvals**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The provisions of subdivision a of this section shall not in any manner prevent an incorporated religious society organized under the laws of the state of New York prior to the year eighteen hundred twenty-five now owning cemetery land in Queens county from acquiring and using land of not more than ten acres contiguous to said cemetery land as and when said additional land in its ownership and use for cemetery purposes has been approved by the city council." (Admin Code 27, § 25-112.b)
+    *   "The agency must track specific City Council approvals for exceptions to the prohibition of new cemeteries in Queens." (Admin Code 27, Why)
+*   **Why this data is implied:** The agency must track specific City Council approvals for exceptions to the prohibition of new cemeteries in Queens.
+*   **One row represents:** A single application for cemetery land use approval in Queens.
+*   **Covers:** All applications for exceptions to the prohibition of cemetery land use in Queens County.
+*   **Columns:** Application ID (PK), Applicant Name, Property Address/Location, Acreage Requested, Contiguous Land (Yes/No), Across Street (Yes/No), Prior Deed/Devise Date (if applicable), City Council Approval Date, Public Hearing Date, Proof of Publication Submitted (Yes/No), Publication Costs Paid (Yes/No), Status.
+
+**20. Named Feature Biographical Information**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Beginning July 1, 2023, for any street, park, playground, facility or structure, or portion thereof, renamed or co-named in accordance with section 25-102.1 of this chapter, an office or agency designated by the mayor, shall make biographical and/or background information about the person or entity for whom the naming is on behalf of available on its website within 90 days of the enactment of the local law which named the street, park, playground, facility or structure, or portion thereof." (Admin Code 29, § 25-102.2.a)
+    *   "The agency must track the biographical information for named features and ensure its timely publication online." (Admin Code 29, Why)
+*   **Why this data is implied:** The agency must track the biographical information for named features and ensure its timely publication online.
+*   **One row represents:** A single biographical entry for a named person or entity associated with a city feature.
+*   **Covers:** Biographical and background information for all persons or entities for whom a street, park, playground, facility, or structure has been named or co-named.
+*   **Columns:** Biographical Entry ID (PK), Related **Feature ID** (4), Named Person/Entity, Local Law Enactment Date, Date Information Made Available Online, Website URL, Compliance Status.
+
+**21. Reports & Plans Filing Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Not later than the thirty-first day of December, two thousand and ten and not less than every ten years thereafter, the department of city planning shall file with the mayor, the council, the public advocate, the borough presidents, and the community boards, a comprehensive waterfront plan." (Charter 19, Section 205)
+    *   "The agency is required to file a comprehensive waterfront plan every ten years." (Charter 19, Why)
+    *   "Not later than the thirty-first day of December, nineteen hundred ninety-two and every four years thereafter, the commission shall file with the mayor, the council, the public advocate, the borough presidents, and community boards, a zoning and planning report." (Charter 20, Section 192.f)
+    *   "The agency is required to file a zoning and planning report every four years." (Charter 20, Why)
+*   **Why this data is implied:** The agency is mandated to regularly file specific reports and plans with various city entities.
+*   **One row represents:** A single filing of a required report or plan.
+*   **Covers:** All comprehensive waterfront plans and zoning and planning reports filed by the Department of City Planning/City Planning Commission.
+*   **Columns:** Report Filing ID (PK), Report Type (e.g., Comprehensive Waterfront Plan, Zoning and Planning Report), Filing Date, Filing Cycle, Filing Date with Mayor, Filing Date with Council, Filing Date with Public Advocate, Filing Date with Borough Presidents, Filing Date with Community Boards.
+
+**22. Official Survey Stations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The latitudes and longitudes determined in conformity with the method used by the United States coast and geodetic survey for primary stations; the rectangular spherical coordinates for secondary stations; and the rectangular co-ordinates referring to a given fixed central meridian, or assumed meridian, for all stations, shall continue to be official and binding upon all officers making any map or plan relating to any borough, or part thereof." (Admin Code 7, § 25-104)
+    *   "The agency must maintain official and binding survey station data for all mapping and planning activities." (Admin Code 7, Why)
+*   **Why this data is implied:** The agency must maintain official and binding survey station data for all mapping and planning activities.
+*   **One row represents:** A single official surveying station.
+*   **Covers:** All primary and secondary official surveying stations.
+*   **Columns:** Station ID (PK), Station Type (Primary, Secondary), Latitude, Longitude, Rectangular Spherical Coordinates, Rectangular Coordinates, Date Established/Last Verified.
+
+**23. External Facility Locations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The statement of needs shall be accompanied by a map together with explanatory text, indicating... (3) to the extent such information is available to the city, (i) the location of health and social service facilities operated by the state of New York or the federal government or pursuant to written agreement on behalf of the state or the federal government; and (ii) the location of transportation or waste management facilities operated by public entities or by private entities pursuant to written agreements with public entities, or by other private entities that provide comparable services." (Charter 13, Section 204.d)
+    *   "The agency is required to map and track the locations of certain non-city-owned facilities." (Charter 13, Why)
+*   **Why this data is implied:** The agency is required to map and track the locations of certain non-city-owned facilities.
+*   **One row represents:** A single external facility location.
+*   **Covers:** Health and social service facilities operated by state/federal government or their contractors, and transportation/waste management facilities operated by public/private entities.
+*   **Columns:** Facility ID (PK), Facility Name, Address, Borough, Community District, Facility Type, Operating Entity Type, Operating Entity Name, Agreement Type (if applicable), Last Information Update Date.
+
+**24. MBE/WBE/EBE Certifications**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The term “minority-owned business enterprise” means a business certified as a minority-owned business enterprise in accordance with section 1304 of the charter." (Admin Code 22, § 25-120.a)
+    *   "The agency needs to track businesses certified as Minority-owned, Women-owned, or Emerging Business Enterprises to promote their participation." (Admin Code 22, Why)
+*   **Why this data is implied:** The agency needs to track businesses certified as Minority-owned, Women-owned, or Emerging Business Enterprises to promote their participation.
+*   **One row represents:** A single business certification.
+*   **Covers:** All businesses certified as Minority-owned, Women-owned, or Emerging Business Enterprises.
+*   **Columns:** Certification ID (PK), Related **Business ID** (10), Certification Type (MBE, WBE, EBE), Certification Date, Expiration Date, Status.
+
+**25. Workforce Development Programs**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Recommendations relating to workforce development programs and policies, including educational and local hiring programming, and policies for increasing the participation of local business enterprises, minority- and women-owned business enterprises, and emerging business enterprises in the industrial sector;" (Admin Code 23, § 25-120.b.5.b)
+    *   "The agency needs to track participation in workforce development programs aimed at the industrial sector to assess their effectiveness." (Admin Code 23, Why)
+*   **Why this data is implied:** The agency needs to track participation in workforce development programs aimed at the industrial sector to assess their effectiveness.
+*   **One row represents:** A single workforce development program.
+*   **Covers:** Workforce development programs related to the industrial sector.
+*   **Columns:** Program ID (PK), Program Name, Program Description, Target Sector, Educational Programming (Yes/No), Local Hiring Component (Yes/No), Start Date, End Date, Status.
+
+**Section 4, Unmatched Open Datasets:**
+
+*   2010 Census Tract to Neighborhood Tabulation Area Equivalency table
+*   2020 Public Use Microdata Areas (PUMAs)
+*   ACS Demographic Profiles at the Neighborhood Tabulation Area (NTA) level
+*   Bike Counts
+*   Bike Counts (shapefile)
+*   Census Demographics at the Neighborhood Tabulation Area (NTA) level
+*   Census Demographics at the NYC City Council district (CNCLD) level
+*   Census Demographics at the NYC Community District (CD) level
+*   COMMUNITY DEVELOPMENT BLOCK GRANT 2010 CENSUS TRACT ELIGIBILITY
+*   Demographic Profile of ACS 1 Year Estimates at the New York City and Borough level
+*   Demographic Profiles of ACS 5 Year Estimates at the Neighborhood Tabulation Area (NTA) level
+*   Demographic Profiles of ACS 5 Year Estimates at the New York City and Borough level
+*   Demographic Profiles of ACS 5 Year Estimates at the Public Use Microdata Areas (PUMA) level
+*   Demographics and profiles at the Neighborhood Tabulation Area (NTA) level
+*   Demographics and profiles at the Public Use Microdata Area (PUMA ) subarea level
+*   Mandatory Inclusionary Housing
+*   Projected Sea Level Rise
+*   Pseudo Lots
+*   Publicly Owned Waterfront
+*   Public Use Microdata Areas (PUMA)
+*   Roadbed Pointer List (RPL)
+*   Special Natural Waterfront Areas (SNWA) boundaries
+*   Transit Zones
+*   Waterfront Revitalization Program (WRP)
+*   WRP Priority Marine Activity Zones (PMAZ)
+*   WRP Recognized Ecological Complexes (REC)
+*   Zoning Quartersection Map Index
+*   Zoning Section Map Index
+
+**Section 5, Non-tabular Data Summary:**
+
+The agency likely maintains a significant amount of non-tabular data crucial for its operations and compliance. This includes:
+
+*   **Application and Project Documentation:** Full text of job applications, rules and regulations (e.g., 62 RCNY, Zoning Resolution, Charter provisions, SEQRA Regulations, Open Meetings Law), receipts, photos (e.g., of POPS signage, site maps), research documents (e.g., environmental reports, underlying studies for EIS, technical standards and methodologies, strategic policy statements, capital strategies, zoning and planning reports, social indicators reports, equitable development data tool reports, racial equity reports themselves, industrial development strategic plan documents, population and housing analysis reports), audio recordings or verbatim stenographic records of proceedings, exhibits or written statements offered by speakers at hearings, by-laws adopted by community boards or borough boards, instructions on the Department of City Planning's website (e.g., for application submission, fee payment forms), written waivers of agency review, guidelines for notification and review of federal and state actions (appended to WRP), City's CEQR Technical Manual, Mayor's Office of Environmental Coordination forms (e.g., CEQR short/full form), New York City Department of Buildings Technical Policy and Procedure #10/88, New York State Department of Environmental Conservation Division of Air Resources Guidelines for Evaluation and Control of Ambient Air Contaminants (DAR-1), Noise Exposure Map (NEM) Report for John F. Kennedy Airport and LaGuardia Airport, Required Signage Symbols file and "New York City Privately Owned Public Space Signage Standards and Specifications" document, affidavits attesting to mailing/posting of notices, written opinions by the Director of City Planning (interpretations), City Administrative Procedure Act, Executive Order 91 (as amended), New York State Open Meetings Law, New York State Environmental Quality Review Act (SEQRA), National Environmental Policy Act of 1969, New York State Executive Law Article 42, 16 U.S.C. §§ 1451 et seq., New York City Administrative Code § 20-225, Local Law 34 for the year 2007, Local Law 116 of 2017, as amended by Local Law 250 of 2017, 28 RCNY § 41-23, 6 NYCRR Part 617, 15 RCNY Chapter 24, 6 NYCRR Part 617.4, 617.6(e)(5), 617.12, 617.13, Section 2800(h) of the Charter (community board meeting obligation), Section 85 of the Charter (borough board voting), Section 204(f) of the Charter (Borough President alternative sites), Section 362(c) of the Charter (responsible agency for franchises), Section 1301(2)(f) of the Charter (leasing wharf property), Section 2903(c)(2) of the Charter (DOT actions), Section 1302 of the Charter (waterfront plans), Section 2704 of the Charter (local service delivery districts), Appendix H to the New York City Zoning Resolution (arterial highways), Appendix C to Title 62 (Types of Residential Facilities), Citywide Statement of Needs (document), Mayor's and Borough President's strategic policy statements, Community Board's Statement of District Needs and Budget Priorities, Published Department of City Planning land use plans, Ten Year Capital Strategy, Four-year capital program, Report on Social Indicators, Zoning and Planning Report, by-laws of community boards and borough boards, written objection to Commission's vote (Borough President), written waiver of public hearing and recommendation (Community Board, Borough Board), written request for review of action not in community district (Community Board, Borough Board), written request for review of plan outside borough (Borough President), written request to expedite plan distribution (Sponsoring agency), written statement of explanation for delayed vote (Commission), written findings and recommendations on Council modification (Commission), written statement for supplementary environmental review (Commission), written explanation for not considering non-city properties (Sponsoring agency), written request for consensus building process (Borough President), agreements reached during consensus building process, reports from facility monitoring committees, agency head responses to committee reports, affidavit from owner/applicant attesting to licensee not in control of premises, restrictive declaration for parking spaces, surrendered/non-renewed licenses from NYC Department of Consumer Affairs, written signoff from lead agency for hazardous materials, determination from NYC Landmarks Preservation Commission (LPC), archaeological document study, writing from LPC regarding archaeological/historic preservation concerns, construction protection plan, confirmation to lead agency regarding air quality pollutant concentrations, representative peak hour outdoor noise sampling, written request for additional information or meetings (Department to Applicant), confirmation of PAS receipt (Department to Applicant), comments on draft CEQR short/full form (Department to Applicant), notification of project classification (Department to Applicant), notification of sufficient information for land use actions/environmental review (Department to Applicant), notification of acceptance of RWCDS Memorandum (Department to Applicant), notification of draft land use application completeness (Department to Applicant), notification of draft CEQR short/full form completeness (Department to Applicant), written notification of project being placed on hold (Department to project sponsor).
+*   **Maps and Surveys:** The actual geographic data of the city map, including its visual representation and underlying spatial data, maps of subdivisions or plattings of land, public utility maps, site maps for POPS, and the map of city-owned real property.
+*   **Legal Documents:** The full text of the zoning resolution and its amendments, deeds, regulatory agreements, restrictive declarations, local laws, public hearing notices and affidavits of publication (for cemetery approvals), and protest documents against zoning resolutions.
+*   **Biographical Information:** The actual text/documents containing biographical and/or background information for named city features.
+*   **Policy and Planning Documents:** The full text of proposed rules for city facility location criteria, the citywide statement of needs, departmental statements of need, comprehensive waterfront plans, zoning and planning reports, requests for proposals (RFPs) and other solicitations, letters of intent, written recommendations/waivers from community boards, borough boards, and borough presidents, written explanations for CPC actions, Council modification text, CPC statements on Council modifications, mayoral disapproval/objection letters, research documents/studies, district needs statements and budget priorities, city's fair housing plan, local business assessment surveys, environmental conditions summaries, and policy statements.
+
+These non-tabular items represent the raw content, context, and legal framework that the tabular data references and supports. They are essential for understanding the "why" and "how" of the agency's operations.
+**Section 1, Mission Summary:**
+
+The agency's mission is to guide the physical development of the city through comprehensive planning, zoning, and land use review procedures, ensuring equitable growth and public engagement. They are required to run key programs including the Uniform Land Use Review Procedure (ULURP), environmental reviews, city map maintenance, zoning regulation, city facility planning, and oversight of privately owned public spaces. The agency significantly impacts constituents by shaping the built environment, influencing housing affordability, and determining the location and accessibility of public and private facilities and spaces.
+
+**Section 2, Data Summary:**
+
+1.  Land Use Applications & Plans
+2.  Review Process Events (Meetings, Hearings, Decisions, Referrals)
+3.  Environmental Reviews
+4.  City Map & Geographic Features
+5.  Zoning Districts & Regulations
+6.  Privately Owned Public Spaces (POPS)
+7.  City Facilities
+8.  City-Owned & Leased Property
+9.  Housing Units & Related Social Indicators
+10. Industrial Business Zones (IBZ) & Industrial Development
+11. City Planning Commission (CPC) Members
+12. Department Employees
+13. Public Notices & Filings
+14. Fee & Contribution Payments
+15. Racial Equity Reports
+16. Project Commitments
+17. Subdivision Map Filings
+18. Public Utility Property Filings
+19. Cemetery Land Use Approvals
+20. Named Feature Biographical Information
+21. Reports & Plans Filing Log
+22. Official Survey Stations
+23. External Facility Locations
+24. MBE/WBE/EBE Certifications
+25. Workforce Development Programs
+
+**Section 3, Data Details:**
+
+**1. Land Use Applications & Plans**
+*   **Open Data Match:** "ZAP Search data" (494), 90% similarity. This dataset tracks filed land use applications, including ULURP and Non-ULURP, with project name, status, description, and geography.
+*   **Quotes:**
+    *   "Except as otherwise provided in this charter, applications by any person or agency for changes, approvals, contracts, consents, permits or authorization thereof, respecting the use, development or improvement of real property subject to city regulation shall be reviewed pursuant to a uniform review procedure..." (Charter 1, Section 197-c.a)
+    *   "The agency must track all applications submitted for the Uniform Land Use Review Procedure (ULURP) and their certification status." (Charter 1, Why)
+    *   "Plans for the development, growth, and improvement of the city and of its boroughs and community districts may be proposed by (1) the mayor, (2) the city planning commission, (3) the department of city planning, (4) a borough president... (5) a borough board... or (6) a community board..." (Charter 3, Section 197-a.a)
+    *   "The agency must track all proposed city development plans, their review process, and final determinations." (Charter 3, Why)
+    *   "Applications for changes in the zoning resolution may be filed by any taxpayer, community board, borough board, borough president, by the mayor or by the land use committee of the council..." (Charter 4, Section 201.a)
+    *   "Applications for special permits within the jurisdiction of the city planning commission under the zoning resolution may be filed by any person or agency." (Charter 4, Section 201.b)
+    *   "The agency must track all applications and resolutions for zoning changes and special permits, including their review and protest processes." (Charter 4, Why)
+    *   "The agency proposing any such acquisition shall file with the department of city planning a notice of intent to acquire." (Charter 11, Section 195.a)
+    *   "The agency is required to review and approve/disapprove city acquisitions of office space or buildings for office use." (Charter 11, Why)
+    *   "A request for any action shall be submitted to the Department of City Planning. The application must be submitted as provided for in the instructions on the Department of City Planning's website." (Rules 1, § 2-02(a)(1))
+    *   "The Department or the Commission shall certify the application as complete when compliance has been achieved with all of the following: (i) The standard application form... has been completed in its entirety... (ii) All accompanying documents, maps, plans, drawings, and other information are properly organized and presented... (iii) The information supplied... is fully sufficient to address all issues of jurisdiction and substance... (iv) All reviews by necessary and related agencies... have been completed... (v) A determination has been made whether the action is subject to City or State Environmental Quality Review, and if so subject, the lead agency has issued either: (A) a Negative or Conditional Negative Declaration; or (B) a Notice of Acceptance of a Draft Environmental Impact Statement." (Rules 1, § 2-02(a)(5))
+    *   "An applicant may at any time file with the Commission a statement that its application is withdrawn... the application in question shall be void and no further processing of such application... shall be undertaken..." (Rules 1, § 2-02(d))
+    *   "All proposed plans shall be submitted to the Department of City Planning..." (Rules 1, § 6-02(b))
+    *   "A concession shall be considered a major concession and therefore subject to Sections 197-c and 197-d of the Charter only if: (a) it has been determined pursuant to City Environmental Quality Review to require an Environmental Impact Statement, or (b) except as provided in 62 RCNY § 7-03, the concession will cause one or more of the thresholds set forth in 62 RCNY § 7-02 to be exceeded." (Rules 1, § 7-01)
+*   **Why this data is implied:** The agency's core function is to process and track diverse land use applications and development plans.
+*   **One row represents:** A single application or plan submitted for review.
+*   **Covers:** All applications and plans subject to ULURP, CEQR, WRP consistency review, 197-a plans, major concessions, parking certifications, street wall width certifications, FRESH certifications, zoning changes, special permits, city map changes, and city property acquisitions/dispositions.
+*   **Columns:** Application/Plan ID (PK), Application Type, Applicant Type, Applicant Name, Applicant Contact Information (address, phone, email), Project Name/Description, Project Location (address, borough, tax block, lot(s)), Geographic Area Covered (e.g., community district(s), borough, citywide), Submission Date, Initial Review Status (e.g., Complete, Deficient, Rejected), Initial Review Deficiency Details, Docket Number, Substantive Review Status (e.g., In Progress, Deficient, Complete), Substantive Review Deficiency Details, Date of Notice of Receipt, Date of Certification of Completeness, Certification Criteria Met (e.g., forms complete, documents organized, jurisdiction/substance addressed, agency reviews complete, environmental determination made, E-designation notification), Certification Appeal Status (e.g., Appealed, Denied, Certified by Appeal), Date of Withdrawal (if applicable), "Doing Business Database" Information Provided (Yes/No), Related **Environmental Review ID** (3), Related **Pre-Application ID** (2.6), Related **Fee Payment ID** (14), Current Status (e.g., Submitted, In Review, Certified, Referred, Public Hearing Scheduled, Commission Action Pending, Approved, Disapproved, Withdrawn, On Hold, Closed, Terminated), Lead Agency (for CEQR/SEQRA), Affected Borough President, Affected Community Board(s), Affected Borough Board(s), Charter Sections Applicable (e.g., 197-c, 200, 201, 218, 364, 363, 374, 220, 1602, 668), Zoning Resolution Sections Applicable (e.g., 11-15, 13-442, 16-341, 16-351, 16-352, 13-45, 73-30, 73-125, 73-66, 73-243, 93-82, 132-51, 63-30), Proposed Modification Details (if applicable), Date of Last Action/Update.
+
+**2. Review Process Events (Meetings, Hearings, Decisions, Referrals)**
+*   **Open Data Match:** "ZAP Search data" (494), 80% similarity. This dataset includes project status, which implies tracking of review events.
+*   **Quotes:**
+    *   "The agency must track all actions and decisions made by various entities during the ULURP process for each application." (Charter 2, Why)
+    *   "The agency must track all proposed city development plans, their review process, and final determinations." (Charter 3, Why)
+    *   "The agency must track all applications and resolutions for zoning changes and special permits, including their review and protest processes." (Charter 4, Why)
+    *   "The agency is required to review and approve/disapprove city acquisitions of office space or buildings for office use." (Charter 11, Why)
+    *   "The agency must track all applications and recommendations for changes or completion of the city map." (Admin Code 8, Why)
+    *   "The agency must track the filing, approval, and certification of all subdivision maps and related deeds." (Admin Code 9, Why)
+    *   "The agency needs to track all applications for amendments to the zoning resolution, including pre-application exemptions." (Admin Code 10, Why)
+    *   "The regular public hearings of the City Planning Commission shall be held twice monthly on Wednesday at 10 a.m. in City Hall... Other regular public meetings of the City Planning Commission, also known as Review Sessions, shall be held twice monthly on Monday at 22 Reade Street, Spector Hall..." (Rules 2, § 1-01(a))
+    *   "Final action by the Commission shall be by the affirmative vote of not less than seven members at a meeting open to the public." (Rules 3, § 1-01(d))
+    *   "The Chair shall direct a roll call upon every proposition to be acted upon pursuant to Sections 195, 197-a, 197-c, 200 and 201 of the Charter... Votes shall be taken by the ayes and nays." (Rules 3, § 1-01(h))
+    *   "within sixty (60) calendar days after a community board's receipt of a complete application... the community board shall hold a public hearing and adopt and submit as provided herein a written recommendation concerning such application." (Rules 2, § 2-03(a)(1))
+    *   "The adoption of a community board recommendation or the waiver of a public hearing and recommendation shall be by a public vote which results in approval by a majority of the appointed members present during the presence of a quorum, at a duly called meeting." (Rules 3, § 2-03(f)(2))
+    *   "The Department of City Planning shall refer such additional application documents or amendments within five (5) days to each affected borough president, community board or borough board, and to the City Council." (Rules 8, § 2-02(a)(3))
+    *   "These rules establish submission and meeting participation requirements ("Pre-Application Process") prior to the filing of land use applications... or of applications for environmental review..." (Rules 6, § 10-01)
+*   **Why this data is implied:** The agency's review processes involve numerous meetings, hearings, decisions, and referrals that must be tracked.
+*   **One row represents:** A single event (meeting, hearing, decision, referral, pre-application stage) in the review process.
+*   **Covers:** All formal events and stages in the review of applications and plans, including CPC meetings/hearings, Community Board/Borough Board hearings/recommendations, public scoping meetings, pre-application meetings (Informational, ID, RWCDS), and all formal referrals.
+*   **Columns:** Event ID (PK), Event Type (e.g., CPC Public Hearing, Community Board Recommendation, CPC Vote, Application Referral, Informational Meeting), Date, Time, Location (e.g., City Hall, 22 Reade Street, 120 Broadway, specific community district/borough location), Presiding Officer, Related **Application/Plan ID** (1), Decision-Making Body (e.g., CPC, Community Board, Borough Board), Proposition/Action Description, Vote Outcome (e.g., Approved, Denied, Passed, Failed), Required Affirmative Votes (e.g., 7, 9, majority, unanimous), Actual Affirmative Votes, Total Votes Cast, Individual Commissioner/Member Votes (e.g., Commissioner Name, Vote: Aye/Nay/Abstain) (for CPC), Reasons for Decision/Vote (summary or reference to report), Conditions Attached to Approval (if any), Borough President Objection Filed (Yes/No, if applicable for CPC decisions), Date Decision Filed/Transmitted, Quorum Requirement (e.g., 7 members, 20% of appointed members, majority of appointed members), Quorum Met (Yes/No), Number of Members Present, List of Members Present (for quorum tracking), Order of Business (for CPC regular public hearings), Audio Recording/Stenographic Record Available (Yes/No), Related **Public Notice ID** (13), Minutes Approval Status (for CPC meetings), Date Minutes Approved, Notes/Summary of Proceedings, Related **Speaker Record IDs** (2.1), Referring Entity (e.g., Department of City Planning, City Planning Commission, Board of Standards and Appeals), Recipient Entity Type (e.g., Department Division, City Agency, Community Board, Borough President, Borough Board, City Council), Recipient Entity Name/ID, Referral Type (e.g., Notice of Receipt, Complete Application, Additional Documents, Proposed Modification, Withdrawal Notice, BSA Application), Required Response Date (if applicable), Actual Response Date (if applicable), Response Summary (e.g., recommendation, waiver, no action), Compliance with Referral Timeline (Yes/No), Pre-Application Stage (e.g., PAS Submission, ID Meeting, RWCDS Memo), Pre-Application Status (e.g., Complete, Incomplete, Accepted), Date Applicant Notified to File Formal Application, On Hold Status (Yes/No), Date Placed On Hold, Date Removed From Hold, Project Record Closed/Application Terminated (Yes/No), Date Closed/Terminated.
+
+**2.1. Hearing Speaker Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The Chair shall establish the order in which speakers are heard at public hearings. Speakers shall be limited to no more than three minutes to present testimony unless more time is permitted by the Chair." (Rules 15, § 1-01(j))
+    *   "Record. The record of a public meeting, including a public hearing, shall consist of either an audio recording or verbatim stenographic record of the proceedings; a list of speakers' names and affiliations, if any; a notation of each speaker's own indication, on a form provided for that purpose, of support or opposition to the proposal; and any exhibits or written statements offered by speakers." (Rules 15, § 1-02(c))
+    *   "The record of a public hearing shall consist of but not be limited to a list of speaker's names and affiliations (if any), a notation of each speaker's own indication, on a form provided for that purpose, of support or opposition to the application, and any exhibits or written statements offered by speakers." (Rules 15, § 2-03(d)(4))
+*   **Why this data is implied:** Documenting public participation at hearings is a legal requirement for transparency and record-keeping.
+*   **One row represents:** A single speaker's testimony at a public hearing.
+*   **Covers:** All speakers at public hearings held by the City Planning Commission, Community Boards, and Borough Boards.
+*   **Columns:** Speaker Record ID (PK), Related **Event ID** (2), Speaker Name, Affiliation (if any), Indicated Stance (Support, Opposition, Neutral), Testimony Summary (or reference to full testimony), Time Allotted (minutes), Time Spoken (minutes), Exhibits/Written Statements Offered (Yes/No, reference/link), Order of Appearance.
+
+**3. Environmental Reviews**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Environmental Impact Statement (EIS) Required? (Yes/No/Pending)" (Charter 1, Columns)
+    *   "The city planning commission shall oversee implementation of laws that require environmental reviews of actions taken by the city." (Charter 10, Section 192.e)
+    *   "The agency is responsible for overseeing and coordinating environmental reviews for city actions and plans." (Charter 10, Why)
+    *   "A determination has been made whether the action is subject to City or State Environmental Quality Review, and if so subject, the lead agency has issued either: (A) a Negative or Conditional Negative Declaration; or (B) a Notice of Acceptance of a Draft Environmental Impact Statement." (Rules 5, § 2-02(a)(5)(v))
+    *   "Receive and maintain on file notifications of commencement of environmental review, determinations of significance (including completed environmental assessment statements), draft and final scopes issued pursuant to 62 RCNY § 5-07, draft and final environmental impact statements, and significant supporting documentation comprising the official records of environmental reviews," (Rules 5, § 5-04(c)(5)(i))
+    *   "Within fifteen days after a notice of determination (positive declaration) is issued, the lead agency shall issue a draft scope, which may be prepared by the applicant but must be approved by the lead agency." (Rules 5, § 5-07(a))
+    *   "If the lead agencies determine that the proposed action is not an exempt action or a Type II action... and that the action will not have a significant effect on the environment, they shall issue a Negative Declaration..." (Rules 5, § 6-07(b)(1))
+    *   "If the lead agencies determine... that the action may have a significant effect on the environment, they shall issue a Notice of Determination which shall contain... a request that the applicant prepare or cause to be prepared... a draft EIS..." (Rules 5, § 6-07(b)(3))
+*   **Why this data is implied:** Maintaining a comprehensive record of environmental review documents and determinations is a core legal and operational requirement.
+*   **One row represents:** A single environmental review document or determination.
+*   **Covers:** All environmental reviews required by law for proposed city actions, plans, or ULURP applications, including notifications, EAS, determinations of significance (ND, CND, NOD), draft/final scopes, draft/final EIS, and notices of completion.
+*   **Columns:** Environmental Review ID (PK), Related **Application/Plan ID** (1), Document Type (e.g., Notification of Commencement, EAS, Negative Declaration, Conditional Negative Declaration, Notice of Determination/Positive Declaration, Draft Scope, Final Scope, Draft EIS, Final EIS, Notice of Completion DEIS, Notice of Completion FEIS), Lead Agency, Date Issued/Filed, Action Identifying Number, Brief Description of Action, Proposed Location of Action, Determination of Significance (Yes/No, for ND/CND/NOD), Reasons for Determination (for ND/CND), Conditions/Modifications for CND, Applicant Acceptance of CND Conditions (Yes/No, Date), Possible Significant Effects (for NOD), EIS Preparation Request (for NOD), Public Review and Comment Period Start Date (for DEIS), Public Review and Comment Period End Date (for DEIS), Related **Event ID** (2) (for Public Scoping Meeting), Related **Public Notice ID** (13), Environmental Report Provided by Applicant (Yes/No), EIS Scope, Contents, Adequacy Judgment (Lead Agency's independent judgment), Mitigation Measures Proposed (summary or reference), Consultation with Agencies on Mitigations (Yes/No, Agencies Consulted), Record of Comments Received on DEIS (summary or reference), Applicant's Response to Comments (summary or reference), EIS Revision/Updating Details (for FEIS), Programmatic EIS (Yes/No), Programmatic EIS Amendment/Supplement Details (if applicable), Official Record File Location/Link.
+
+**4. City Map & Geographic Features**
+*   **Open Data Match:** "Digital City Map (multiple)" (455), 95% similarity. This includes datasets for official mapped streets and parks, street width, type and grade, pierhead lines, bulkhead lines and City Map alterations.
+*   **Quotes:**
+    *   "The agency is explicitly required to be the custodian of the city map and record all authorized changes." (Charter 5, Why)
+    *   "The director of city planning shall be the custodian of the city map, and it shall be his or her duty to complete and maintain the same and to register thereon all changes resulting from action authorized by law." (Charter 5, Section 198.b)
+    *   "The city map is to be deemed final and conclusive with respect to the location, width and grades of the streets shown thereon, so far as such location, width and grades have been duly adopted." (Admin Code 1, § 25-101)
+    *   "There shall be located and laid out on the city map all parks, playgrounds, streets, courtyards abutting streets, bridges, tunnels and approaches to bridges and tunnels, and improvements of navigation in accordance with bulkhead and pierhead lines established pursuant to section seven hundred five of the charter. The width and grades of all streets so located and laid out shall be indicated thereon." (Admin Code 1, § 25-102)
+    *   "The agency must maintain a conclusive city map with detailed information on all public features and specific land restrictions." (Admin Code 1, Why)
+    *   "The agency needs to track all applications and recommendations for changes or completion of the city map." (Admin Code 8, Why)
+    *   "The agency needs to track the placement and characteristics of street and park name signs, especially for co-named or renamed features." (Admin Code 28, Why)
+*   **Why this data is implied:** The agency is the custodian of the city map and must track all its features and changes.
+*   **One row represents:** A single mapped feature on the city map or a single legally authorized change.
+*   **Covers:** All parks, playgrounds, streets, courtyards, bridges, tunnels, approaches, navigation improvements, areas with street opening restrictions, and all additions to or changes in the city map.
+*   **Columns:** Feature ID (PK), Feature Type (e.g., Street, Park, Bridge, Tunnel, Playground, Courtyard, Navigation Improvement, Bulkhead Line, Pierhead Line), Feature Name, Location (e.g., geographic coordinates, geometric data), Width, Grade (including "established by user" status), Date Established/Adopted, Special Restriction Flag (e.g., "No Street Opening"), Restricted Institution Name (if applicable, e.g., Fordham University), Map Change ID (PK), Description of Change, Date Authorized, Effective Date, Legal Authorization Reference, Affected Map Area (coordinates, description), Filing Date with Corporation Counsel, Filing Date with City Clerk, Filing Date with Borough President (by borough), Filing Date with County Real Estate Records Office (by county), Related **Application/Plan ID** (1) (if change was part of ULURP), Sign ID (PK), Related **Feature ID** (4), Sign Location (e.g., coordinates, intersection), Name Displayed on Sign, Official Name (Yes/No), Dual Name (Yes/No), Sign Color, Installation Date, Last Maintenance Date, Replacement Date.
+
+**5. Zoning Districts & Regulations**
+*   **Open Data Match:** "Georeferenced NYC Zoning Maps" (457), 90% similarity. This is a raster dataset of the entire zoning map catalog for the City of New York as one seamless citywide zoning map.
+*   **Quotes:**
+    *   "The city planning commission... shall have power to regulate and limit the height and bulk of buildings, to regulate and determine the area of yards, courts and other open spaces and to regulate density of population. The commission... may divide the city into districts of such number, shape and area as it may deem best suited to carry out such purposes." (Admin Code 2, § 25-110.a)
+    *   "The regulations as to height and bulk of buildings, the area of yards, courts and other open spaces and density of population shall be uniform for each class of buildings throughout each district. The regulation in one or more districts may differ from those in other districts." (Admin Code 2, § 25-110.b)
+    *   "The agency is legally empowered to create and enforce zoning districts and their associated regulations." (Admin Code 2, Why)
+*   **Why this data is implied:** The agency is legally empowered to create and enforce zoning districts and their associated regulations.
+*   **One row represents:** A specific zoning district or a specific regulation within a district.
+*   **Covers:** All established zoning districts and the regulations governing building height, bulk, open spaces, population density, and land use within them.
+*   **Columns:** Zoning District ID (PK), District Name, District Boundaries (e.g., geographic coordinates, geometric data), Regulation Type (e.g., Height, Bulk, Yard Area, Court Area, Open Space, Density, Trade/Industry Location, Specific Use Restriction), Regulation Details (e.g., specific limits, permitted/excluded uses), Class of Buildings Affected, Effective Date of Regulation.
+
+**6. Privately Owned Public Spaces (POPS)**
+*   **Open Data Match:** "Privately Owned Public Spaces (POPS) Inventory" (Admin Code 3), 95% similarity. This dataset tracks all plazas, arcades, connections, and other publicly accessible spaces established through zoning or other city actions. "Waterfront Public Access Areas (WPAAs)" (487), "Waterfront Public Access Areas (WPAAs) Access Points" (488), "Waterfront Public Access Areas (WPAAs) Footprints" (489) are also highly relevant.
+*   **Quotes:**
+    *   "The term "privately owned public space" means (1) a plaza, residential plaza, urban plaza, public plaza, elevated plaza, arcade, through block arcade, through block galleria, through block connection, open air concourse, covered pedestrian space, publicly accessible space or sidewalk widening provided for in the zoning resolution now or previously in effect..." (Admin Code 3, § 25-114.a)
+    *   "On July 1, 2019 and annually thereafter, the department of city planning shall provide to the mayor and the speaker of the council a report that shall, at minimum, contain the following information about each privately owned public space in existence on the date of such report: 1. The address; 2. The type of privately owned public space; 3. If the privately owned public space was established pursuant to a provision of the zoning resolution now or previously in effect, a citation to such provision; 4. If the privately owned public space was established pursuant to a decision, authorization, or certification issued by the city planning commission, the chair of the city planning commission or the board of standards and appeals, the application number of such decision, authorization, or certification; 5. The operational requirements for such privately owned public space including the hours of access and all required amenities for such privately owned public space;" (Admin Code 3, § 25-114.b.1-5)
+    *   "The agency must maintain a comprehensive record of all privately owned public spaces and their specific requirements." (Admin Code 3, Why)
+    *   "Such agency shall inspect each privately owned public space no later than June 30, 2019 and at least once every three years thereafter to ensure that such space is in compliance with applicable law and shall issue notices of violation returnable to the office of administrative trials and hearings." (Admin Code 12, § 25-114.f.1)
+    *   "The agency is mandated to regularly inspect privately owned public spaces to ensure compliance with applicable laws." (Admin Code 12, Why)
+    *   "The agency must track all enforcement actions taken against privately owned public spaces, including violations, penalties, and closures." (Admin Code 13, Why)
+    *   "The agency needs to track all complaints received about privately owned public spaces to inform enforcement and reporting." (Admin Code 14, Why)
+    *   "The agency must track whether POPS owners file required compliance reports and the status indicated in those reports." (Admin Code 15, Why)
+    *   "The agency is responsible for reviewing and approving signage systems for POPS to ensure public accessibility and compliance." (Rules 12, Why)
+*   **Why this data is implied:** The agency is mandated to inventory, regulate, inspect, and enforce compliance for all privately owned public spaces.
+*   **One row represents:** A single privately owned public space.
+*   **Covers:** All plazas, arcades, connections, and other publicly accessible spaces established through zoning or other city actions, including their operational requirements, inspections, enforcement actions, complaints, owner compliance reports, and signage system approvals.
+*   **Columns:** POPS ID (PK), Address, POPS Type (e.g., Plaza, Arcade, Through Block Connection), Establishment Method (e.g., Zoning Resolution, CPC Decision, BSA Variance, Council Action), Establishing Citation/Application Number, Operational Requirements (e.g., hours of access, list of required amenities), Required Signage (Yes/No), Signage Content Requirements, Site Map Required (Yes/No), Site Map Approval Status, Date Established, Inspection ID (PK), Related **POPS ID** (6), Inspection Date, Inspector ID, Compliance Status (e.g., Compliant, Non-Compliant), Notice of Violation Issued (Yes/No), Related **Enforcement Action ID** (6.1), Next Scheduled Inspection Date, Enforcement Action ID (PK), Related **POPS ID** (6), Action Type (e.g., Notice of Violation, Penalty Imposition, Administrative Decision, Closure Authorization), Date of Action, Description of Violation, Administrative Tribunal Decision (if applicable), Penalty Amount, Penalty Paid Date, DOB Closure Authorized (Yes/No), Closure Start Date, Closure End Date, Reason for Closure, Complaint ID (PK), Related **POPS ID** (6), Date Received, Complaint Source (e.g., Website, 311, Direct Filing), Complaint Description, Status (e.g., Open, Investigated, Resolved), Resolution Date, Enforcement Action Taken (Yes/No), Related **Enforcement Action ID** (6.1), Report ID (PK), Related **POPS ID** (6), Reporting Period, Date Filed, Required (Yes/No), Filed as Required (Yes/No), Compliance Status Indicated by Report, POPS Signage Approval ID (PK), Related **POPS ID** (6), Owner/Manager Name, Owner/Manager Contact Information (for complaints), Submission Date of Design Review Package, Date of DCP Approval, Signage System Installation Deadline, Date of Actual Installation, Extension Request (Yes/No), Extension Reason, Extension Approval Date, Signage Content: Open to Public Statement (Yes/No), Signage Content: Hours of Operation (Yes/No, Details), Signage Content: Primary Amenities Listed (Yes/No, Details), Signage Content: 311 Complaint Info (Yes/No), Signage Content: Public Space Logo (Yes/No, Compliance), Signage Content: Site Map (Yes/No, for POPS established after 10/1/2017), Signage Content: International Logo of Access (Yes/No, for accessible POPS), Compliance Status (e.g., Approved, Installed, Non-Compliant), Related **Fee Payment ID** (14), Most Recently Approved Drawings (reference/link), Technical Drawings of Signage System (reference/link).
+
+**7. City Facilities**
+*   **Open Data Match:** "Capital Projects Database (CPDB)" (441), 85% similarity. This captures key data points on potential, planned, and ongoing capital projects, including spatial data.
+*   **Quotes:**
+    *   "The agency must track all proposed city facility actions, the planning process, and their implementation status." (Charter 6, Why)
+    *   "Not later than the first day of July, nineteen hundred ninety, the mayor, after consulting with each of the borough presidents, shall file with the city planning commission proposed rules establishing criteria for (1) the location of new city facilities and (2) the significant expansion, closing or significant reduction in size or capacity for service delivery of existing facilities." (Charter 6, Section 203.a)
+    *   "Each year not later than the fifteenth day of November, the mayor shall submit to the council, borough presidents, borough boards and community boards a citywide statement of needs concerning city facilities prepared in accordance with the criteria established pursuant to section two hundred three." (Charter 6, Section 204.a)
+    *   "City facility: A facility providing city services whose location, expansion, closing or reduction in size is subject to control and supervision by a city agency, and which is: (i) operated by the city on property owned or leased by the city which is greater than 750 square feet in total floor area; or (ii) used primarily for a program or programs operated pursuant to a written agreement on behalf of the city which derives at least 50 percent and at least $50,000 of its annual funding from the city." (Rules 10, Appendix A, Article 3(a))
+    *   "The sponsoring agency and... the City Planning Commission, shall consider the following criteria: (a) Compatibility of the facility with existing facilities and programs... (b) Extent to which neighborhood character would be adversely affected by a concentration of city and/or non-city facilities. (c) Suitability of the site to provide cost-effective delivery of the intended services... (d) Consistency with the locational and other specific criteria for the facility identified in the Statement of Needs... (e) Consistency with any plan adopted pursuant to Section 197-a of the Charter." (Rules 10, Appendix A, Article 4.1)
+    *   "To publish the required annual index, the agency needs to collect and maintain raw data on residential facility beds." (Rules 11, Why)
+*   **Why this data is implied:** Managing city facilities requires a comprehensive inventory and tracking of siting, expansion, and reduction actions against established criteria.
+*   **One row represents:** A single city facility or a significant action (siting, expansion, closing, reduction) related to a facility.
+*   **Covers:** All city facilities (new, existing, expanded, closed, reduced) subject to the Section 203 criteria, including local/neighborhood, regional/citywide, residential, transportation, waste management, administrative offices, and data processing facilities, as well as bed counts for residential facilities.
+*   **Columns:** Facility ID (PK), Facility Name, Facility Type (e.g., Branch Library, Fire Station, Hospital, Correctional Facility, Administrative Office, Data Processing, Sewage Treatment Plant, Group Home), Facility Category (e.g., Local/Neighborhood, Regional/Citywide, Residential, Transportation/Waste Management, Administrative/Data Processing), Sponsoring Agency, Property Address, Borough, Community District ID, Tax Lot ID, Ownership Status (City-owned, City-leased, Other), Total Floor Area (sq ft), Service Capacity (e.g., number of beds, vehicles, seats, tons/day), Funding Source (City, State, Federal, Private), Percentage of City Funding (if applicable), Annual City Funding Amount (if applicable), Action Type (e.g., New Siting, Significant Expansion, Significant Reduction, Closing, Change in Use), Action Date, Related **Application/Plan ID** (1) (if subject to ULURP/Section 195), Statement of Needs Reference (Yes/No, Date, Specific Criteria), Consistency with 197-a Plan (Yes/No, Related **Application/Plan ID** (1)), Compatibility with Existing Facilities (Assessment), Neighborhood Character Impact (Assessment), Cost-Effectiveness Assessment, Site Suitability for Service Delivery/Operations, Need Assessment (for local/regional facilities), Accessibility Assessment (for local facilities), Distribution Analysis (for regional facilities), Minimum Size Justification (for regional facilities), Traffic/Transit Adequacy (for regional facilities), Environmental Impact Assessment (for transportation/waste facilities), Concentration Avoidance (for residential facilities), Support Services Availability (for residential facilities), Alternative Sites Considered (Yes/No, Details), Monitoring Committee Established (Yes/No, Date), Monitoring Committee Reporting Schedule, Agency Statement Submitted (Yes/No, for non-ULURP/195 actions), Date Agency Statement Submitted, Reasons for Inconsistencies (if any), Residential Facility Bed Count ID (PK), Reporting Period (e.g., Year), Related **Facility ID** (7), Operator Type (City, State, Federal, Private), Number of Beds, Operational Status (e.g., In Operation, Approved for Operation), Population of Community District (for ratio calculation).
+
+**8. City-Owned & Leased Property**
+*   **Open Data Match:** "City Owned and Leased Property (COLP)" (445, 446), 95% similarity. These are shapefiles of city-owned and leased properties and uses. "Gazetteer of City Owned Property" (456) is also a list of city-owned properties and uses.
+*   **Quotes:**
+    *   "The agency is required to maintain and annually update a map and explanatory text of all city-owned real property." (Charter 12, Why)
+    *   "The statement of needs shall be accompanied by a map together with explanatory text, indicating (1) the location and current use of all city-owned real property, (2) all final commitments relating to the disposition or future use of city-owned real property, including assignments by the department of citywide administrative services pursuant to clause b of subdivision three of section sixteen hundred two..." (Charter 12, Section 204.d)
+    *   "An identification of city-owned and city-leased property in such zone." (Admin Code 21, § 25-120.b.3.b)
+    *   "The agency needs to identify and track city-owned and city-leased properties, particularly within industrial business zones, for strategic planning." (Admin Code 21, Why)
+*   **Why this data is implied:** The agency is mandated to maintain an inventory of all city-owned and leased real property.
+*   **One row represents:** A single parcel of city-owned or city-leased real property.
+*   **Covers:** All real property owned or leased by the city, including its current use, disposition commitments, and assignments.
+*   **Columns:** Property ID (PK) (e.g., Block/Lot), Address, Borough, Community District, Current Use, Current Occupant/Agency, Final Commitment for Disposition/Future Use (Yes/No), Description of Final Commitment, Date of Final Commitment, Assignment by DCAS (Yes/No), Date of DCAS Assignment, Last Update Date, Ownership Status (Owned, Leased), Lease Start Date (if leased), Lease End Date (if leased), Related **IBZ ID** (10), Potential for Industrial Development (Yes/No), Capital Investment Planned (Yes/No), Sustainable Infrastructure Planned (Yes/No).
+
+**9. Housing Units & Related Social Indicators**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Extremely low income affordable housing (ELI-AH) unit... a housing unit that is required to be affordable to an extremely low income household pursuant to a regulatory agreement, restrictive declaration or other similar instrument with a federal, state or local governmental entity or instrumentality." (Admin Code 4, § 25-117.a)
+    *   "Housing security, affordability and quality, including but not limited to... share of housing units that are rent-stabilized, share of housing units that are income-restricted, share of housing units affordable to ELI, VLI, LI, MI, MIDI and HI households, residential eviction cases filed in housing court and residential evictions executed by city marshals pursuant to a warrant issued in accordance with section 749 of the real property actions and proceedings law, share of housing units with three or more maintenance deficiencies, share of housing units that are overcrowded" (Admin Code 4, § 25-117.c.4)
+    *   "The agency needs to track all housing units, their characteristics, affordability status, and changes over time for various reports and analyses." (Admin Code 4, Why)
+    *   "The agency needs to track residential eviction cases and executions as an indicator of housing security." (Admin Code 24, Why)
+    *   "The agency needs to track applicants and awardees for affordable housing lotteries to assess access to affordable housing." (Admin Code 25, Why)
+    *   "The agency needs to track individuals and families in the homeless shelter system to understand housing insecurity." (Admin Code 26, Why)
+*   **Why this data is implied:** The agency is required to track housing units, their affordability, and related social indicators for planning and reporting.
+*   **One row represents:** A single housing unit, eviction case, lottery application/award, or shelter entry.
+*   **Covers:** All housing units in the city (market-rate, rent-stabilized, income-restricted), their production, preservation, and quality, as well as residential eviction cases, affordable housing lottery applications/awards, and entries into the homeless shelter system.
+*   **Columns:** Housing Unit ID (PK), Address, Building ID, Unit Type (e.g., Apartment, Condo, Single-Family Home), Number of Bedrooms, Current Rent/Price, Rent-Stabilized (Yes/No), Income-Restricted (Yes/No), Affordability Level (e.g., ELI-AH, VLI-AH, LI-AH, MI-AH, MIDI-AH, HI-AH, Market Rate), Regulatory Agreement ID, Date of Affordability Restriction, Date of Construction/Alteration/Demolition, Related **Project ID** (16), Number of Maintenance Deficiencies, Overcrowded (Yes/No), Housing Tenure (Owner-occupied, Renter-occupied), Eviction Case ID (PK), Related **Housing Unit ID** (9), Eviction Address, Date Case Filed, Date Warrant Issued, Date Eviction Executed, City Marshal ID, Outcome (e.g., Eviction Executed, Case Dismissed, Settlement), Lottery Application ID (PK), Applicant ID, Application Date, Related **Housing Unit ID** (9), Income Level (ELI, VLI, LI, MI, MIDI, HI), Household Size, Race, Hispanic Origin, Awarded (Yes/No), Award Date, Shelter Entry ID (PK), Individual/Family ID, Date of Entry, Shelter ID, Shelter Provider, Last Known Address (Community District), Exit Date, Exit Destination.
+
+**10. Industrial Business Zones (IBZ) & Industrial Development**
+*   **Open Data Match:** "Significant Maritime and Industrial Areas (SMIA) boundaries" (484), 80% similarity. This is a shapefile of SMIA boundaries that define the geographic scope of New York City's Waterfront Revitalization Program (WRP). "WRP Arthur Kill Ecologically Sensitive Maritime and Industrial Area (ESMIA)" (491) is also relevant.
+*   **Quotes:**
+    *   "The term “industrial business zone” means an industrial business zone designated pursuant to section 22-626." (Admin Code 5, § 25-120.a)
+    *   "For each designated industrial business zone: (a) Economic and land use data for the prior twenty years to the extent practicable, including where available and accessible: (1) Employment data... (2) Real estate data... (3) Land use data at the tax lot level; and (4) Data on as-of-right and discretionary New York city and New York state tax credits or other financial incentives administered for businesses in the industrial sector located in such zone." (Admin Code 5, § 25-120.b.3)
+    *   "The agency must maintain a registry of all designated industrial business zones and their key characteristics for strategic planning." (Admin Code 5, Why)
+    *   "The agency needs to collect and analyze detailed business and employment data within industrial sectors, especially in IBZs, for strategic planning." (Admin Code 18, Why)
+    *   "The agency needs to track real estate market data for industrial and commercial properties within IBZs for economic analysis." (Admin Code 19, Why)
+    *   "The agency needs to track all financial incentives provided to businesses in the industrial sector, especially within IBZs." (Admin Code 20, Why)
+    *   "The agency needs to track participation in workforce development programs aimed at the industrial sector to assess their effectiveness." (Admin Code 23, Why)
+*   **Why this data is implied:** The agency is mandated to track and analyze data related to industrial business zones and industrial development.
+*   **One row represents:** A single industrial business zone, business establishment, property transaction, financial incentive, or workforce program participation.
+*   **Covers:** All designated industrial business zones, businesses operating within them, industrial/commercial property transactions, financial incentives awarded to industrial businesses, and participation in industrial workforce development programs.
+*   **Columns:** IBZ ID (PK), IBZ Name, Boundaries (e.g., geographic coordinates, geometric data), Date Designated, Strategic Planning Area, Primary Industrial Area (Yes/No), Access to Truck Routes (Yes/No), Access to Freight Rail (Yes/No), Access to Maritime Freight (Yes/No), Business ID (PK), Business Name, Address, Related **IBZ ID** (10), Industrial Sector, Industrial Subsector, Number of Jobs, Workforce Demographics (e.g., aggregated Race, Ethnicity, Country of Origin), Date of Data Collection, MBE/WBE/EBE Certified (Yes/No), Related **Certification ID** (24), Transaction ID (PK), Property Address, Related **IBZ ID** (10), Property Type (Industrial, Commercial), Transaction Type (Sale, Rent), Transaction Date, Sale Price, Rent Price (per square foot), Square Footage, Incentive ID (PK), Related **Business ID** (10), Incentive Type (e.g., Tax Credit, Grant, Loan), Source (City, State), Amount, Award Date, Expiration Date, Status, Program Participation ID (PK), Program ID, Program Name, Participant ID, Participant Name, Start Date, End Date, Outcome (e.g., Job Placement, Certification Achieved), Educational Programming (Yes/No), Local Hiring Component (Yes/No).
+
+**11. City Planning Commission (CPC) Members**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The agency must track the appointments, terms, and roles of all City Planning Commission members to ensure proper governance." (Charter 8, Why)
+    *   "The agency must track any disciplinary actions or removal proceedings against commission members." (Charter 9, Why)
+    *   "A quorum shall consist of seven members." (Rules 16, § 1-01(c))
+    *   "Final action by the Commission shall be by the affirmative vote of not less than seven members at a meeting open to the public." (Rules 16, § 1-01(d))
+    *   "The Chair shall direct a roll call upon every proposition to be acted upon..." (Rules 16, § 1-01(h))
+*   **Why this data is implied:** Tracking Commission members is essential for managing meetings, ensuring quorums, and recording votes.
+*   **One row represents:** A single City Planning Commission member or a single appointment/disciplinary action.
+*   **Covers:** All appointed members of the City Planning Commission, their appointments, terms, roles, and any disciplinary actions.
+*   **Columns:** Member ID (PK), Member Name, Position (e.g., Chair, Vice-Chair, Member), Appointing Official (e.g., Mayor, Public Advocate, Borough President), Appointment Date, Term Start Date, Term End Date (scheduled), Actual End Date (if different), Reason for Vacancy (if applicable, e.g., expiration, resignation, removal), Council Confirmation Date (if required), Successor Appointment ID (if applicable), Designated as Vice-Chair (Yes/No), Vice-Chair Designation Date (if applicable), Disciplinary Action ID (PK), Related **Member ID** (11), Date Charges Filed, Description of Charges, Hearing Date, Office of Administrative Trials and Hearings (OATH) Findings of Fact, OATH Recommended Decision, Appointing Official Final Action (e.g., Removal, No Action), Date of Final Action, Reason for Final Action, Active Status (Yes/No), Contact Information (for notices), City Employee Status (Yes/No), Related **Decision/Vote ID** (2).
+
+**12. Department Employees**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The department shall employ such planning experts, engineers, architects and other officers and employees as may be required to perform its duties, within the appropriation therefor." (Charter 14, Section 191.c)
+    *   "The agency needs to manage its staff, including their roles and contact information." (Charter 14, Why)
+*   **Why this data is implied:** The agency needs to manage its staff, including their roles and contact information.
+*   **One row represents:** A single employee of the Department of City Planning.
+*   **Covers:** All employees of the Department of City Planning.
+*   **Columns:** Employee ID (PK), Employee Name, Job Title, Department/Division, Contact Information (email, phone), Role (e.g., Planning Expert, Engineer, Architect, BSA Coordinator), Start Date, End Date (if applicable), Employment Status (e.g., Active, Terminated).
+
+**13. Public Notices & Filings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The agency is required to make transcripts of public meetings and hearings available and manage requests for copies." (Charter 15, Why)
+    *   "The agency is required to provide a record and searchable testimony for BSA applications where it has submitted testimony." (Charter 16, Why)
+    *   "The agency is required to provide advance notice and convey copies of various plans, proposals, RFPs, and Letters of Intent to affected community boards and borough presidents." (Charter 17, Why)
+    *   "The agency is involved in the process of establishing and amending rules for city facility location criteria." (Charter 18, Why)
+    *   "The agency is required to file a comprehensive waterfront plan every ten years." (Charter 19, Why)
+    *   "The agency is required to file a zoning and planning report every four years." (Charter 20, Why)
+    *   "All proposals scheduled for public hearings shall be duly advertised in accordance with Charter provisions and all applicable laws." (Rules 7, § 1-01(m))
+    *   "by publication in The City Record for the five (5) days of publication immediately preceding and including the date of the public hearing;" (Rules 7, § 2-03(c)(1))
+    *   "by publication in the Comprehensive City Planning Calendar distributed not less than five (5) calendar days prior to the date of public hearing;" (Rules 7, § 2-03(c)(2))
+    *   "at least eight (8) days prior to the Commission public hearing a notice, on a form provided by the Department of City Planning, shall be posted by the applicant in the building subject to the application, informing the tenants of the proposed action and the right of the public to appear at the Commission hearing and testify;" (Rules 7, § 2-06(e)(1))
+*   **Why this data is implied:** Legal requirements mandate public notification for various actions and hearings, necessitating a system to track these notices.
+*   **One row represents:** A single public notice, advertisement, or official filing.
+*   **Covers:** All required public notices for hearings (CPC, Community Board, Borough Board, Public Scoping), notifications to applicants, property owners, and tenants, advertisements in The City Record, Comprehensive City Planning Calendar, and local newspapers, as well as records of meeting transcripts, BSA testimony, and various mandated reports and plans.
+*   **Columns:** Public Notice ID (PK), Related **Application/Plan ID** (1), Related **Event ID** (2), Notice Type (e.g., Public Hearing Advertisement, Notice of Hearing to Applicant, Property Owner Notification, Tenant Posting, Draft EIS Notice, Notice of Completion DEIS, Notice of Completion FEIS), Date of Publication/Mailing/Posting, Publication/Distribution Channel (e.g., City Record, Comprehensive City Planning Calendar, Local Newspaper, Direct Mail, Building Posting), Publication/Mailing/Posting Start Date, Publication/Mailing/Posting End Date, Recipient Group (e.g., General Public, Applicant, Property Owners, Tenants, Community Boards, Borough Presidents, Borough Boards, City Council, DEC), Content Summary/Link to Full Text, Affidavit of Mailing/Posting Submitted (Yes/No, for property owners/tenants), Date Affidavit Submitted, Affidavit Signatory, Specific Location of Posting (for tenant notices), Compliance with Notice Period (Yes/No), Meeting/Hearing ID (PK), Date of Meeting/Hearing, Type (e.g., Public Meeting, Public Hearing), Subject/Agenda, Transcript Availability Date, Transcript Location (e.g., URL, physical archive reference), Public Inspection Status (e.g., Available, Overdue), Transcript Request Count, Transcript Copy Fee Charged (Yes/No), Testimony Record ID (PK), BSA Application Number, Date of BSA Application, Type of BSA Application (e.g., Variance, Special Permit), Date Testimony Submitted, Submitting Entity (e.g., Department of City Planning, City Planning Commission), Testimony Content (reference to searchable format location), Website Posting Date, Notification ID (PK), Item Type (e.g., Preliminary Plan, Final Plan, RFP, Solicitation, Letter of Intent), Item Title/Description, Issuing/Filing Entity, Date of Issuance/Filing, Related Land Location (address, borough, community district), Affected Community Boards (list), Affected Borough Presidents (list), Date Notified/Conveyed to CBs, Date Notified/Conveyed to BPs, Exception Applied (Yes/No, for matters of no appreciable public concern), Rulemaking Event ID (PK), Rule Set ID (e.g., Initial Criteria, Amendment 1), Event Type (e.g., Mayor Files Proposed Rules, CPC Publishes Notice, CPC Approves Rules, Mayor Submits Amendments), Event Date, Description of Rules/Amendments, Consultation with Borough Presidents (Yes/No), Notice of Proposed Rule Making Publication Date, CPC Decision Date, CPC Decision (e.g., Approve, Approve with Modifications, Not to Approve), Filing Date with Council, Plan Filing ID (PK), Plan Title, Filing Date, Filing Cycle (e.g., 2010, 2020), Consultation with City Agencies (Yes/No), Consultation with State Agencies (Yes/No), Consultation with Federal Agencies (Yes/No), Public Input Received (Yes/No), Filing Date with Mayor, Filing Date with Council, Filing Date with Public Advocate, Filing Date with Borough Presidents, Filing Date with Community Boards, Report Filing ID (PK), Report Type (e.g., Zoning and Planning Report), Filing Date, Filing Cycle (e.g., 1992, 1996), Filing Date with Mayor, Filing Date with Council, Filing Date with Public Advocate, Filing Date with Borough Presidents, Filing Date with Community Boards.
+
+**14. Fee & Contribution Payments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The Department may not consider the application as filed unless it includes all required components and shall not consider the application as filed unless the required fee has been paid or is paid concurrently with the submission of the application." (Rules 4, § 2-02(a)(1))
+    *   "every application made pursuant to Executive Order 91 and 62 RCNY Ch. 5 requires a non-refundable fee which shall be submitted to the lead agency for the action..." (Rules 4, § 3-01)
+    *   "Contributions to the Theater Subdistrict Fund pursuant to § 81-744 of the New York City Zoning Resolution shall be made in an amount equal to $24.65 per square foot of floor area transferred." (Rules 14, § 3-10)
+    *   "Contributions to the West Chelsea Affordable Housing Fund pursuant to § 98-262 (c) of the New York City Zoning Resolution shall be made in an amount equal to $625 per square foot of floor area increase as of the effective date of this rule." (Rules 14, § 3-11)
+    *   "The agency is responsible for tracking mandatory contributions to specific funds related to development projects." (Rules 14, Why)
+*   **Why this data is implied:** Tracking fee payments and development contributions is crucial for financial management and compliance.
+*   **One row represents:** A single fee payment transaction or a single contribution payment.
+*   **Covers:** All fees collected for CEQR applications, ULURP applications, zoning certifications/authorizations, natural feature restoration, zoning verification, POPS signage design reviews, and mandatory contributions to funds like the Theater Subdistrict Fund and West Chelsea Affordable Housing Fund.
+*   **Columns:** Fee Payment ID (PK), Related **Application/Plan ID** (1), Fee Type (e.g., CEQR, ULURP Special Permit, ULURP Zoning Map Amendment, City Map Change, Landfill, Franchise, Revocable Consent, Zoning Text Amendment, Zoning Certification, Zoning Authorization, Natural Feature Restoration, Zoning Verification, POPS Signage Design Review, Supplemental Environmental Mitigation, Supplemental Large Project), Payment Date, Amount Paid, Payment Method (e.g., electronic, check), Applicant Name, Payer Name (if different from applicant), Square Footage (if applicable for fee calculation), Number of Seats (for sidewalk cafes, if applicable), Number of Dwelling Units (for authorizations, if applicable), Zoning Lot Area (for certain fees, if applicable), Floor Area Transferred/Bonus (if applicable), Fee Schedule Section Applied (e.g., 3-02(a), 3-07(a)(1)), Exemption Applied (Yes/No, e.g., federal/state/city agency, non-profit neighborhood association), Exemption Reason, Contribution ID (PK), Related **Application/Plan ID** (1), Fund Name (e.g., Theater Subdistrict Fund, West Chelsea Affordable Housing Fund), Zoning Resolution Section (e.g., § 81-744, § 98-262(c)), Contribution Date, Amount Contributed, Floor Area Transferred/Increased (sq ft), Per Square Foot Rate Applied, Rate Adjustment Factor (if applicable), Date of Rate Adjustment (if applicable), Payer Name, Payer Contact Information.
+
+**15. Racial Equity Reports**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "For an application submitted on or after June 1, 2022, an applicant shall file, in accordance with this subdivision, a racial equity report described in this section. Such report shall be required for all applications submitted pursuant to section 201 of the charter for a citywide amendment to the zoning resolution affecting 5 or more community districts, applications submitted for designation of historic districts pursuant to section 3020 of the charter affecting at least 4 city blocks, and for applications submitted pursuant to subdivision a of section 197-c of the charter that seek approval for (i) an acquisition or disposition of land to facilitate a non-residential project containing at least 50,000 square feet of floor area, (ii) an acquisition or disposition of land to facilitate a residential project... (iii) an increase in permitted residential floor area of at least 50,000 square feet, (iv) an increase in permitted non-residential floor area by at least 200,000 square feet or (v) a decrease in permitted floor area or number of housing units on at least four contiguous city blocks." (Admin Code 17, § 25-118.b)
+    *   "The department shall identify on its website any application for which an applicant does not submit a racial equity report as required by this section. The department shall promptly notify any person required to receive such report pursuant to subdivision b of this section that such report was not timely filed, and if such report is subsequently filed, shall notify any such person of such filings." (Admin Code 17, § 25-118.d)
+*   **Why this data is implied:** The agency must track the submission and content of racial equity reports for specific land use applications and ensure compliance.
+*   **One row represents:** A single racial equity report filed for a land use application.
+*   **Covers:** All racial equity reports required for citywide zoning amendments, historic district designations, and large-scale land use projects.
+*   **Columns:** Report ID (PK), Related **Application/Plan ID** (1), Date Filed, Applicant Name, Project Type (e.g., Residential, Non-Residential, Historic District), Residential Floor Area (sq ft), Non-Residential Floor Area (sq ft), Manufacturing District Change (Yes/No), Number of ELI-AH Units Expected, Number of VLI-AH Units Expected, Number of LI-AH Units Expected, Number of MI-AH Units Expected, Number of MIDI-AH Units Expected, Number of Non-Income-Restricted Units Expected, Expected Rents/Prices, Projected Jobs by Sector/Occupation, Median Wage Levels of Projected Jobs, Workforce Racial/Ethnic Composition (for projected jobs), Workforce Educational Attainment (for projected jobs), Community Profile Summary Included (Yes/No), Fair Housing Narrative Statement Included (Yes/No), Estimated Construction Jobs, Timely Filed (Yes/No), Notification of Non-Filing Sent (Yes/No).
+
+**16. Project Commitments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Such agency as the mayor shall designate shall establish and maintain a publicly accessible online searchable list of all commitments described in this section that relate to an application that: (1) the city planning commission has approved or approved with modifications for a matter described in paragraph one, three, four, five, six, eight, ten, or eleven of subdivision a of section one hundred ninety-seven-c or a change in the text of the zoning resolution pursuant to section two hundred or two hundred one; (2) the commission decision has been approved or approved with modifications by the council pursuant to section one hundred ninety-seven-d and is not subject to further action pursuant to subdivision e or f of such section; and (3) involves at least four adjacent blocks of real property." (Charter 7, Section 206.b)
+    *   "Within thirty days of final council approval of a commission decision described in this section, the designated agency shall submit to the council and record on such list the commitments described in this section, including a description of each commitment, the target commencement and completion dates, the application number, the agency or agencies responsible for implementation of such commitment, and any funding amount set forth in the letter establishing the commitment." (Charter 7, Section 206.e)
+    *   "The agency is required to establish and maintain a publicly accessible list of commitments related to large-scale ULURP applications." (Charter 7, Why)
+    *   "The agency must identify and track "covered projects" to ensure the mandated population and housing analyses are conducted and reported." (Admin Code 16, Why)
+*   **Why this data is implied:** The agency is required to track commitments and conduct studies for qualifying large-scale projects.
+*   **One row represents:** A single commitment made in relation to a qualifying ULURP application or a single "covered project."
+*   **Covers:** Commitments made by the Mayor or designated representatives related to ULURP applications involving at least four adjacent blocks of real property, and all projects meeting the definition of a "covered project" approved by the city council.
+*   **Columns:** Commitment ID (PK), Related **Application/Plan ID** (1), Commitment Description, Commitment Type (e.g., City/NFP Applicant, Funding >= $1M), Letter Date Establishing Commitment, Funding Amount (if applicable), Target Commencement Date, Target Completion Date, Responsible Agency(ies) for Implementation, Last Progress Update Date, Progress Status (e.g., Not Started, In Progress, Completed, Delayed), Changes to Information Since Last Update, Completed Within Preceding Year (Yes/No), Project ID (PK), Project Name, Applicant Type (City, Not-for-profit), Related **Application/Plan ID** (1) (list of relevant application IDs), City Planning Commission Approval Date, City Council Approval Date, Effective Date of Project, Changes Floor Area/Density for Housing (Yes/No), Number of Adjacent Blocks Affected, Population and Housing Study Required (Yes/No), Study Completion Date, Report Publication Date.
+
+**17. Subdivision Map Filings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Every map referred to in section two hundred two of the charter shall be prepared, approved and certified and shall be filed as follows: one copy thereof in the office in which conveyances of real estate are required to be recorded in the county in which the land shown thereon is situated; one copy thereof in the office of the corporation counsel; one copy thereof in the office of the president of the borough in which the land shown on the map is situated; one copy thereof in the office of the secretary of the board of estimate; one copy thereof in the office of the department of city planning; one copy thereof in the office of the city clerk; and, one copy thereof in the office of the department of buildings for the county in which the land shown thereon is situated." (Admin Code 9, § 25-113.a)
+    *   "The register or county clerk, as the case may be, shall refuse: 1. To receive for filing any such subdivision map unless the commission or the department of buildings has certified that the subdivision does not result in the violation of any applicable zoning laws. 2. To accept for recording any deed or other instrument affecting real property which has a map attached thereto or made a part thereof, unless it shall have endorsed thereon the certification of the secretary of the board of estimate to the effect that the same has been approved pursuant to section two hundred two of the charter and unless the commissioner of the department of buildings has certified that such subdivision does not result in the violation of any applicable zoning laws." (Admin Code 9, § 25-113.b)
+*   **Why this data is implied:** The agency must track the filing, approval, and certification of all subdivision maps and related deeds.
+*   **One row represents:** A single subdivision map filing or deed recording request.
+*   **Covers:** All subdivision maps and deeds of subdivision property requiring certification and filing.
+*   **Columns:** Filing ID (PK), Map/Deed Type (Subdivision Map, Deed with Map), Date Submitted, Applicant Name, Property Description/Location, Zoning Compliance Certification (Yes/No), Certifying Department (City Planning Commission, Department of Buildings), Board of Estimate Approval (Yes/No), Secretary of Board of Estimate Certification (Yes/No), Filing Status (Accepted, Refused), Refusal Reason (if applicable), Date Filed/Recorded, Filing Location (e.g., County Register, Corporation Counsel, Borough President, Board of Estimate, City Planning, City Clerk, Buildings Department).
+
+**18. Public Utility Property Filings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Every public utility corporation, within ninety days after its acquisition of any real property within the city, shall file in the office of the president of the borough in which such property is situated, a map or survey drawn to a scale and accurately indicating the location and boundaries of such property with reference to the streets, avenues, bridges, tunnels, bulkhead or pierhead lines, parks or other public places shown on the city map." (Admin Code 11, § 25-106)
+    *   "The agency must track public utility property acquisitions, required map filings, and associated penalties for non-compliance." (Admin Code 11, Why)
+*   **Why this data is implied:** The agency must track public utility property acquisitions, required map filings, and associated penalties for non-compliance.
+*   **One row represents:** A single map or survey filing event by a public utility corporation.
+*   **Covers:** All real property acquisitions by public utility corporations within the city.
+*   **Columns:** Filing ID (PK), Public Utility Corporation Name, Property Address/Location, Acquisition Date, Required Filing Deadline, Borough President Office Filing Date, City Planning Office Filing Date, Transportation Commissioner Office Filing Date, Filed On Time (Yes/No), Penalty Accrued (daily rate), Total Penalty Amount Due, Penalty Paid Date.
+
+**19. Cemetery Land Use Approvals**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The provisions of subdivision a of this section shall not in any manner prevent an incorporated religious society organized under the laws of the state of New York prior to the year eighteen hundred twenty-five now owning cemetery land in Queens county from acquiring and using land of not more than ten acres contiguous to said cemetery land as and when said additional land in its ownership and use for cemetery purposes has been approved by the city council." (Admin Code 27, § 25-112.b)
+    *   "The agency must track specific City Council approvals for exceptions to the prohibition of new cemeteries in Queens." (Admin Code 27, Why)
+*   **Why this data is implied:** The agency must track specific City Council approvals for exceptions to the prohibition of new cemeteries in Queens.
+*   **One row represents:** A single application for cemetery land use approval in Queens.
+*   **Covers:** All applications for exceptions to the prohibition of cemetery land use in Queens County.
+*   **Columns:** Application ID (PK), Applicant Name (Religious Society, Cemetery Corporation), Property Address/Location, Acreage Requested, Contiguous Land (Yes/No), Across Street (Yes/No), Prior Deed/Devise Date (if applicable), City Council Approval Date, Public Hearing Date, Proof of Publication Submitted (Yes/No), Publication Costs Paid (Yes/No), Status (Approved, Denied).
+
+**20. Named Feature Biographical Information**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Beginning July 1, 2023, for any street, park, playground, facility or structure, or portion thereof, renamed or co-named in accordance with section 25-102.1 of this chapter, an office or agency designated by the mayor, shall make biographical and/or background information about the person or entity for whom the naming is on behalf of available on its website within 90 days of the enactment of the local law which named the street, park, playground, facility or structure, or portion thereof." (Admin Code 29, § 25-102.2.a)
+    *   "The agency must track the biographical information for named features and ensure its timely publication online." (Admin Code 29, Why)
+*   **Why this data is implied:** The agency must track the biographical information for named features and ensure its timely publication online.
+*   **One row represents:** A single biographical entry for a named person or entity associated with a city feature.
+*   **Covers:** Biographical and background information for all persons or entities for whom a street, park, playground, facility, or structure has been named or co-named.
+*   **Columns:** Biographical Entry ID (PK), Related **Feature ID** (4), Named Person/Entity, Local Law Enactment Date, Date Information Made Available Online, Website URL, Compliance Status (e.g., On Time, Late, Not Yet Due).
+
+**21. Reports & Plans Filing Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Not later than the thirty-first day of December, two thousand and ten and not less than every ten years thereafter, the department of city planning shall file with the mayor, the council, the public advocate, the borough presidents, and the community boards, a comprehensive waterfront plan." (Charter 19, Section 205)
+    *   "The agency is required to file a comprehensive waterfront plan every ten years." (Charter 19, Why)
+    *   "Not later than the thirty-first day of December, nineteen hundred ninety-two and every four years thereafter, the commission shall file with the mayor, the council, the public advocate, the borough presidents, and community boards, a zoning and planning report." (Charter 20, Section 192.f)
+    *   "The agency is required to file a zoning and planning report every four years." (Charter 20, Why)
+*   **Why this data is implied:** The agency is mandated to regularly file specific reports and plans with various city entities.
+*   **One row represents:** A single filing of a required report or plan.
+*   **Covers:** All comprehensive waterfront plans and zoning and planning reports filed by the Department of City Planning/City Planning Commission.
+*   **Columns:** Report Filing ID (PK), Report Type (e.g., Comprehensive Waterfront Plan, Zoning and Planning Report), Filing Date, Filing Cycle (e.g., 2010, 2020), Filing Date with Mayor, Filing Date with Council, Filing Date with Public Advocate, Filing Date with Borough Presidents, Filing Date with Community Boards.
+
+**22. Official Survey Stations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The latitudes and longitudes determined in conformity with the method used by the United States coast and geodetic survey for primary stations; the rectangular spherical coordinates for secondary stations; and the rectangular co-ordinates referring to a given fixed central meridian, or assumed meridian, for all stations, shall continue to be official and binding upon all officers making any map or plan relating to any borough, or part thereof." (Admin Code 7, § 25-104)
+    *   "The agency must maintain official and binding survey station data for all mapping and planning activities." (Admin Code 7, Why)
+*   **Why this data is implied:** The agency must maintain official and binding survey station data for all mapping and planning activities.
+*   **One row represents:** A single official surveying station.
+*   **Covers:** All primary and secondary official surveying stations.
+*   **Columns:** Station ID (PK), Station Type (Primary, Secondary), Latitude, Longitude, Rectangular Spherical Coordinates, Rectangular Coordinates (referring to a given fixed central meridian, or assumed meridian), Date Established/Last Verified.
+
+**23. External Facility Locations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The statement of needs shall be accompanied by a map together with explanatory text, indicating... (3) to the extent such information is available to the city, (i) the location of health and social service facilities operated by the state of New York or the federal government or pursuant to written agreement on behalf of the state or the federal government; and (ii) the location of transportation or waste management facilities operated by public entities or by private entities pursuant to written agreements with public entities, or by other private entities that provide comparable services." (Charter 13, Section 204.d)
+    *   "The agency is required to map and track the locations of certain non-city-owned facilities." (Charter 13, Why)
+*   **Why this data is implied:** The agency is required to map and track the locations of certain non-city-owned facilities.
+*   **One row represents:** A single external facility location.
+*   **Covers:** Health and social service facilities operated by state/federal government or their contractors, and transportation/waste management facilities operated by public/private entities.
+*   **Columns:** Facility ID (PK), Facility Name, Address, Borough, Community District, Facility Type (e.g., Health, Social Service, Transportation, Waste Management), Operating Entity Type (e.g., State, Federal, Public, Private), Operating Entity Name, Agreement Type (if applicable, e.g., written agreement with state/federal/public entity), Last Information Update Date.
+
+**24. MBE/WBE/EBE Certifications**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The term “minority-owned business enterprise” means a business certified as a minority-owned business enterprise in accordance with section 1304 of the charter." (Admin Code 22, § 25-120.a)
+    *   "The agency needs to track businesses certified as Minority-owned, Women-owned, or Emerging Business Enterprises to promote their participation." (Admin Code 22, Why)
+*   **Why this data is implied:** The agency needs to track businesses certified as Minority-owned, Women-owned, or Emerging Business Enterprises to promote their participation.
+*   **One row represents:** A single business certification.
+*   **Covers:** All businesses certified as Minority-owned, Women-owned, or Emerging Business Enterprises.
+*   **Columns:** Certification ID (PK), Related **Business ID** (10), Certification Type (MBE, WBE, EBE), Certification Date, Expiration Date, Status (Active, Expired, Revoked).
+
+**25. Workforce Development Programs**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Recommendations relating to workforce development programs and policies, including educational and local hiring programming, and policies for increasing the participation of local business enterprises, minority- and women-owned business enterprises, and emerging business enterprises in the industrial sector;" (Admin Code 23, § 25-120.b.5.b)
+    *   "The agency needs to track participation in workforce development programs aimed at the industrial sector to assess their effectiveness." (Admin Code 23, Why)
+*   **Why this data is implied:** The agency needs to track participation in workforce development programs aimed at the industrial sector to assess their effectiveness.
+*   **One row represents:** A single workforce development program.
+*   **Covers:** Workforce development programs related to the industrial sector.
+*   **Columns:** Program ID (PK), Program Name, Program Description, Target Sector, Educational Programming (Yes/No), Local Hiring Component (Yes/No), Start Date, End Date, Status.
+
+**Section 4, Unmatched Open Datasets:**
+
+*   **2010 Census Tract to Neighborhood Tabulation Area Equivalency table**
+*   **2020 Public Use Microdata Areas (PUMAs)**
+*   **ACS Demographic Profiles at the Neighborhood Tabulation Area (NTA) level**
+*   **Bike Counts**
+*   **Bike Counts (shapefile)**
+*   **Census Demographics at the Neighborhood Tabulation Area (NTA) level**
+*   **Census Demographics at the NYC City Council district (CNCLD) level**
+*   **Census Demographics at the NYC Community District (CD) level**
+*   **COMMUNITY DEVELOPMENT BLOCK GRANT 2010 CENSUS TRACT ELIGIBILITY**
+*   **Demographic Profile of ACS 1 Year Estimates at the New York City and Borough level**
+*   **Demographic Profiles of ACS 5 Year Estimates at the Neighborhood Tabulation Area (NTA) level**
+*   **Demographic Profiles of ACS 5 Year Estimates at the New York City and Borough level**
+*   **Demographic Profiles of ACS 5 Year Estimates at the Public Use Microdata Areas (PUMA) level**
+*   **Demographics and profiles at the Neighborhood Tabulation Area (NTA) level**
+*   **Demographics and profiles at the Public Use Microdata Area (PUMA ) subarea level**
+*   **Mandatory Inclusionary Housing**
+*   **Projected Sea Level Rise**
+*   **Pseudo Lots**
+*   **Publicly Owned Waterfront**
+*   **Public Use Microdata Areas (PUMA)**
+*   **Roadbed Pointer List (RPL)**
+*   **Special Natural Waterfront Areas (SNWA) boundaries**
+*   **Transit Zones**
+*   **Waterfront Revitalization Program (WRP)**
+*   **WRP Priority Marine Activity Zones (PMAZ)**
+*   **WRP Recognized Ecological Complexes (REC)**
+*   **Zoning Quartersection Map Index**
+*   **Zoning Section Map Index**
+
+**Section 5, Non-tabular Data Summary:**
+
+The agency likely maintains a significant amount of non-tabular data crucial for its operations and compliance. This includes:
+
+*   **Application and Project Documentation:** Full text of job applications, rules and regulations (e.g., 62 RCNY, Zoning Resolution, Charter provisions, SEQRA Regulations, Open Meetings Law), receipts, photos (e.g., of POPS signage, site maps), research documents (e.g., environmental reports, underlying studies for EIS, technical standards and methodologies, strategic policy statements, capital strategies, zoning and planning reports, social indicators reports, equitable development data tool reports, racial equity reports themselves, industrial development strategic plan documents, population and housing analysis reports), audio recordings or verbatim stenographic records of proceedings, exhibits or written statements offered by speakers at hearings, by-laws adopted by community boards or borough boards, instructions on the Department of City Planning's website (e.g., for application submission, fee payment forms), written waivers of agency review, guidelines for notification and review of federal and state actions (appended to WRP), City's CEQR Technical Manual, Mayor's Office of Environmental Coordination forms (e.g., CEQR short/full form), New York City Department of Buildings Technical Policy and Procedure #10/88, New York State Department of Environmental Conservation Division of Air Resources Guidelines for Evaluation and Control of Ambient Air Contaminants (DAR-1), Noise Exposure Map (NEM) Report for John F. Kennedy Airport and LaGuardia Airport, Required Signage Symbols file and "New York City Privately Owned Public Space Signage Standards and Specifications" document, affidavits attesting to mailing/posting of notices, written opinions by the Director of City Planning (interpretations), City Administrative Procedure Act, Executive Order 91 (as amended), New York State Open Meetings Law, New York State Environmental Quality Review Act (SEQRA), National Environmental Policy Act of 1969, New York State Executive Law Article 42, 16 U.S.C. §§ 1451 et seq., New York City Administrative Code § 20-225, Local Law 34 for the year 2007, Local Law 116 of 2017, as amended by Local Law 250 of 2017, 28 RCNY § 41-23, 6 NYCRR Part 617, 15 RCNY Chapter 24, 6 NYCRR Part 617.4, 617.6(e)(5), 617.12, 617.13, Section 2800(h) of the Charter (community board meeting obligation), Section 85 of the Charter (borough board voting), Section 204(f) of the Charter (Borough President alternative sites), Section 362(c) of the Charter (responsible agency for franchises), Section 1301(2)(f) of the Charter (leasing wharf property), Section 2903(c)(2) of the Charter (DOT actions), Section 1302 of the Charter (waterfront plans), Section 2704 of the Charter (local service delivery districts), Appendix H to the New York City Zoning Resolution (arterial highways), Appendix C to Title 62 (Types of Residential Facilities), Citywide Statement of Needs (document), Mayor's and Borough President's strategic policy statements, Community Board's Statement of District Needs and Budget Priorities, Published Department of City Planning land use plans, Ten Year Capital Strategy, Four-year capital program, Report on Social Indicators, Zoning and Planning Report, by-laws of community boards and borough boards, written objection to Commission's vote (Borough President), written waiver of public hearing and recommendation (Community Board, Borough Board), written request for review of action not in community district (Community Board, Borough Board), written request for review of plan outside borough (Borough President), written request to expedite plan distribution (Sponsoring agency), written statement of explanation for delayed vote (Commission), written findings and recommendations on Council modification (Commission), written statement for supplementary environmental review (Commission), written explanation for not considering non-city properties (Sponsoring agency), written request for consensus building process (Borough President), agreements reached during consensus building process, reports from facility monitoring committees, agency head responses to committee reports, affidavit from owner/applicant attesting to licensee not in control of premises, restrictive declaration for parking spaces, surrendered/non-renewed licenses from NYC Department of Consumer Affairs, written signoff from lead agency for hazardous materials, determination from NYC Landmarks Preservation Commission (LPC), archaeological document study, writing from LPC regarding archaeological/historic preservation concerns, construction protection plan, confirmation to lead agency regarding air quality pollutant concentrations, representative peak hour outdoor noise sampling, written request for additional information or meetings (Department to Applicant), confirmation of PAS receipt (Department to Applicant), comments on draft CEQR short/full form (Department to Applicant), notification of project classification (Department to Applicant), notification of sufficient information for land use actions/environmental review (Department to Applicant), notification of acceptance of RWCDS Memorandum (Department to Applicant), notification of draft land use application completeness (Department to Applicant), notification of draft CEQR short/full form completeness (Department to Applicant), written notification of project being placed on hold (Department to project sponsor).
+*   **Maps and Surveys:** The actual geographic data of the city map, including its visual representation and underlying spatial data, maps of subdivisions or plattings of land, public utility maps, site maps for POPS, and the map of city-owned real property.
+*   **Legal Documents:** The full text of the zoning resolution and its amendments, deeds, regulatory agreements, restrictive declarations, local laws, public hearing notices and affidavits of publication (for cemetery approvals), and protest documents against zoning resolutions.
+*   **Biographical Information:** The actual text/documents containing biographical and/or background information for named city features.
+*   **Policy and Planning Documents:** The full text of proposed rules for city facility location criteria, the citywide statement of needs, departmental statements of need, comprehensive waterfront plans, zoning and planning reports, requests for proposals (RFPs) and other solicitations, letters of intent, written recommendations/waivers from community boards, borough boards, and borough presidents, written explanations for CPC actions, Council modification text, CPC statements on Council modifications, mayoral disapproval/objection letters, research documents/studies, district needs statements and budget priorities, city's fair housing plan, local business assessment surveys, environmental conditions summaries, and policy statements.
+
+These non-tabular items represent the raw content, context, and legal framework that the tabular data references and supports. They are essential for understanding the "why" and "how" of the agency's operations.

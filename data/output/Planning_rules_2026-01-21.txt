@@ -1,0 +1,713 @@
+**1. Application/Plan Tracking**
+
+**Quotes:**
+*   § 2-01 "The land use review procedure which is set out herein shall govern the following actions: (a) changes in the City Map... (b) approval of a map of a subdivision... (c) designations of zoning districts... (d) adoption of special permits... (e) selection of sites for capital projects... (f) granting of revocable consents... (g) authorization of improvements in real property... (h) approval of housing or urban renewal plans and projects... (i) approval of sanitary or waterfront landfills... (j) approval of sale, lease... exchange or other disposition of real property... (k) acquisitions by the city of real property..."
+*   § 2-02(a)(1) "A request for any action shall be submitted to the Department of City Planning. The application must be submitted as provided for in the instructions on the Department of City Planning's website. This includes the submission of forms requesting information required for the "doing business database" established by Local Law 34 for the year 2007, and must include all of the information and documents required by such instructions and forms."
+*   § 2-02(a)(2) "The Department of City Planning shall, within five (5) days, review each application to ensure that all required forms, documents and other exhibits supplied have been submitted and prepared as required by the instructions. If any of the documentation is missing or has been improperly prepared, the applicant will be notified that the submitted application has been rejected, along with a listing of its deficiencies If the documentation is in order, the Department shall assign a docket number and shall transmit a Notice of Receipt of the application..."
+*   § 2-02(a)(5) "The Department or the Commission shall certify the application as complete when compliance has been achieved with all of the following: (i) The standard application form... has been completed in its entirety... (ii) All accompanying documents, maps, plans, drawings, and other information are properly organized and presented... (iii) The information supplied... is fully sufficient to address all issues of jurisdiction and substance... (iv) All reviews by necessary and related agencies... have been completed... (v) A determination has been made whether the action is subject to City or State Environmental Quality Review, and if so subject, the lead agency has issued either: (A) a Negative or Conditional Negative Declaration; or (B) a Notice of Acceptance of a Draft Environmental Impact Statement."
+*   § 2-02(d) "An applicant may at any time file with the Commission a statement that its application is withdrawn... the application in question shall be void and no further processing of such application... shall be undertaken..."
+*   § 2-02.1 "Applications to amend the Zoning Resolution pursuant to Section 201 of the Charter and actions to amend the Zoning Resolution initiated by the Commission pursuant to Section 200 of the Charter, which concern revisions to the text of the Zoning Resolution, shall be subject to the provisions of subdivisions (b), (c), (d) and (g) of 62 RCNY § 2-06 and subdivision (c) of 62 RCNY § 2-02."
+*   § 3-06 "every type of application listed in 62 RCNY § 3.07, Schedule of Charges, shall include a non-returnable fee which shall be paid..."
+*   § 6-02(b) "All proposed plans shall be submitted to the Department of City Planning... If a plan has been initiated by a community board, borough board or Borough President, this initial submission shall include a summary record of the public hearing held by the board or Borough President."
+*   § 6-03(b) "Within 30 days after its presentation by the Department staff, the Commission shall determine... whether the proposed plan is of appropriate form and sufficient content, and whether it is in accordance with sound planning policy."
+*   § 7-01 "A concession shall be considered a major concession and therefore subject to Sections 197-c and 197-d of the Charter only if: (a) it has been determined pursuant to City Environmental Quality Review to require an Environmental Impact Statement, or (b) except as provided in 62 RCNY § 7-03, the concession will cause one or more of the thresholds set forth in 62 RCNY § 7-02 to be exceeded."
+*   § 8-03(a) "Following notification pursuant to 62 RCNY § 8-02(a)(ii) that a draft application is complete, the applicant shall file the application pursuant to 62 RCNY § 10-09 with the Department of City Planning."
+*   § 9-03 "Following notification pursuant to 62 RCNY § 9-02(b) or (c) that a draft application is complete, the applicant must file the application pursuant to 62 RCNY § 10-09 with the Department of City Planning."
+*   § 10-09(a) "After an Applicant receives notification... that it may proceed to file a land use application, the Applicant may file such application with the Department in accordance with 62 RCNY § 2-02(a)(1)."
+*   § 12-03(a) "The Department will queue all projects in the order that their respective FAS was received by the Department, provided that, with respect to an FAS that is a PAS, such PAS has been determined by the Department to be complete in accordance with 62 RCNY § 10-04(b)."
+
+**Why:** The agency's core mission involves processing various land use applications and plans, requiring detailed tracking of each submission's lifecycle.
+
+**One row represents:** A single application or plan submitted for review.
+
+**Covers:** All applications and plans subject to ULURP, CEQR, WRP consistency review, 197-a plans, major concessions, parking certifications, street wall width certifications, and FRESH certifications.
+
+**Columns:**
+*   **Application/Plan ID**
+*   Application Type (e.g., City Map Change, Subdivision Approval, Zoning District Designation, Special Permit, Capital Project Site Selection, Revocable Consent, Real Property Improvement Authorization, Housing/Urban Renewal Plan, Landfill Approval, City Property Disposition, City Property Acquisition, Zoning Resolution Amendment, 197-a Plan, Major Concession, Parking Certification, Street Wall Width Certification, FRESH Certification)
+*   Applicant Type (e.g., City Agency, Taxpayer, Community Board, Borough Board, Borough President, Mayor, Land Use Committee of Council, Private Person/Agency)
+*   Applicant Name
+*   Applicant Contact Information (address, phone, email)
+*   Project Name/Description
+*   Project Location (address, borough, tax block, lot(s))
+*   Geographic Area Covered (e.g., community district(s), borough, citywide)
+*   Submission Date
+*   Initial Review Status (e.g., Complete, Deficient, Rejected)
+*   Initial Review Deficiency Details
+*   Docket Number
+*   Substantive Review Status (e.g., In Progress, Deficient, Complete)
+*   Substantive Review Deficiency Details
+*   Date of Notice of Receipt
+*   Date of Certification of Completeness
+*   Certification Criteria Met (e.g., forms complete, documents organized, jurisdiction/substance addressed, agency reviews complete, environmental determination made, E-designation notification)
+*   Certification Appeal Status (e.g., Appealed, Denied, Certified by Appeal)
+*   Date of Withdrawal (if applicable)
+*   "Doing Business Database" Information Provided (Yes/No)
+*   Related **Environmental Review ID** (Dataset 5)
+*   Related **Pre-Application ID** (Dataset 6)
+*   Related **Fee Payment ID** (Dataset 4)
+*   Current Status (e.g., Submitted, In Review, Certified, Referred, Public Hearing Scheduled, Commission Action Pending, Approved, Disapproved, Withdrawn, On Hold, Closed, Terminated)
+*   Lead Agency (for CEQR/SEQRA)
+*   Affected Borough President
+*   Affected Community Board(s)
+*   Affected Borough Board(s)
+*   Charter Sections Applicable (e.g., 197-c, 200, 201, 218, 364, 363, 374, 220, 1602, 668)
+*   Zoning Resolution Sections Applicable (e.g., 11-15, 13-442, 16-341, 16-351, 16-352, 13-45, 73-30, 73-125, 73-66, 73-243, 93-82, 132-51, 63-30)
+*   Proposed Modification Details (if applicable)
+*   Date of Last Action/Update
+
+**2. Meeting and Hearing Events**
+
+**Quotes:**
+*   § 1-01(a) "The regular public hearings of the City Planning Commission shall be held twice monthly on Wednesday at 10 a.m. in City Hall... Other regular public meetings of the City Planning Commission, also known as Review Sessions, shall be held twice monthly on Monday at 22 Reade Street, Spector Hall..."
+*   § 1-01(b) "Special meetings of the City Planning Commission may be called by the Chair or by seven members."
+*   § 1-01(f) "The order of business at regular public hearings shall be as follows unless otherwise ordered by the Chair. (1) Roll call. (2) Approval of minutes of previous meetings. (3) Scheduling dates for future hearings. (4) Public Hearings. (5) Reports on previously heard items."
+*   § 1-01(j) "The Chair shall establish the order in which speakers are heard at public hearings. Speakers shall be limited to no more than three minutes to present testimony unless more time is permitted by the Chair."
+*   § 1-02(c) "Record. The record of a public meeting, including a public hearing, shall consist of either an audio recording or verbatim stenographic record of the proceedings; a list of speakers' names and affiliations, if any; a notation of each speaker's own indication, on a form provided for that purpose, of support or opposition to the proposal; and any exhibits or written statements offered by speakers."
+*   § 2-03(a)(1) "within sixty (60) calendar days after a community board's receipt of a complete application... the community board shall hold a public hearing and adopt and submit as provided herein a written recommendation concerning such application."
+*   § 2-03(d)(3) "A public hearing shall require a quorum of 20% of the appointed members of the community board, but in no event fewer than seven such members. The minutes of a meeting at which a public hearing was held shall include a record of the individual members present."
+*   § 2-05(a) "an affected borough board may conduct a public hearing on an application and submit a written recommendation to the Commission."
+*   § 2-05(c)(3) "A public hearing shall require a quorum of a majority of the borough board's members who are entitled to vote on the application in question."
+*   § 2-06(a) "The Commission shall hold a public hearing on all applications made pursuant to Section 197-c of the Charter not later than sixty (60) calendar days after the expiration of the time allowed for the filing of a recommendation or waiver with it by an affected Borough President."
+*   § 5-07 "The scoping process shall include a public scoping meeting and take place in accordance with the following procedure:"
+*   § 6-02(b) "If a plan has been initiated by a community board, borough board or Borough President, this initial submission shall include a summary record of the public hearing held by the board or Borough President."
+*   § 6-06(b) "Each community board which has received from the Department of City Planning a proposed plan affecting land in its district shall conduct a public hearing on the plan except when a single borough-wide hearing is to be held on a borough plan."
+*   § 6-07(b) "Public hearing. Notice of the public hearing shall be given and the hearing conducted in accordance with the ULURP rules governing Commission hearings."
+*   § 10-03(b) "Within forty-five (45) days of an Applicant contacting a Borough Office to schedule an Informational Meeting, the Department must hold an Informational Meeting subject to the Applicant's availability."
+*   § 10-05(a) "Within ninety (90) days of notifying an Applicant... that the Department will hold an ID Meeting, the Department must hold such a meeting with the Applicant subject to the Applicant's availability."
+*   § 10-06(b)(1)(ii) "Where a RWCDS Meeting is required, the Department must hold the meeting within thirty (30) days of notifying the Applicant that the Department requires a RWCDS Meeting, subject to the Applicant's availability."
+
+**Why:** Tracking all meetings and hearings is essential for procedural compliance, public transparency, and decision-making.
+
+**One row represents:** A single meeting or public hearing event.
+
+**Covers:** All City Planning Commission meetings (regular, special, review sessions, public hearings), Community Board public hearings, Borough Board public hearings, public scoping meetings, Informational Meetings, Interdivisional (ID) Meetings, and Reasonable Worst Case Development Scenario (RWCDS) Meetings.
+
+**Columns:**
+*   **Meeting/Hearing ID**
+*   Meeting/Hearing Type (e.g., CPC Regular Public Hearing, CPC Review Session, CPC Special Meeting, Community Board Public Hearing, Borough Board Public Hearing, Public Scoping Meeting, Informational Meeting, ID Meeting, RWCDS Meeting)
+*   Date
+*   Time
+*   Location (e.g., City Hall, 22 Reade Street, 120 Broadway, specific community district/borough location)
+*   Chairperson/Presiding Officer
+*   **Related Application/Plan ID** (Dataset 1)
+*   Quorum Requirement (e.g., 7 members, 20% of appointed members, majority of appointed members)
+*   Quorum Met (Yes/No)
+*   Number of Members Present
+*   List of Members Present (for quorum tracking)
+*   Order of Business (for CPC regular public hearings)
+*   Audio Recording/Stenographic Record Available (Yes/No)
+*   **Related Public Notice ID** (Dataset 7)
+*   Minutes Approval Status (for CPC meetings)
+*   Date Minutes Approved
+*   Notes/Summary of Proceedings
+*   **Related Speaker Record IDs** (Dataset 15)
+
+**3. Decision and Vote Records**
+
+**Quotes:**
+*   § 1-01(d) "Final action by the Commission shall be by the affirmative vote of not less than seven members at a meeting open to the public."
+*   § 1-01(h) "The Chair shall direct a roll call upon every proposition to be acted upon pursuant to Sections 195, 197-a, 197-c, 200 and 201 of the Charter... Votes shall be taken by the ayes and nays."
+*   § 1-01(i) "The vote upon every proposition voted upon shall be recorded in the minutes."
+*   § 2-03(f)(2) "The adoption of a community board recommendation or the waiver of a public hearing and recommendation shall be by a public vote which results in approval by a majority of the appointed members present during the presence of a quorum, at a duly called meeting. The vote shall be taken in accordance with the by-laws of the community board."
+*   § 2-05(e)(2) "Adoption of a recommendation shall be by a public roll call vote which results in approval by a majority of the members entitled to vote on the application in question present during the presence of a quorum, at a duly called meeting."
+*   § 2-06(g)(2) "The Commission shall act by the affirmative roll call vote of at least seven (7) members at a public meeting, except that pursuant to subdivision h of Section 197-c of the Charter approval or approval with modifications of an application relating to a new city facility... shall require the affirmative vote of nine members of the Commission if the affected Borough President: (i) recommends against approval... and (ii) has proposed an alternative location..."
+*   § 2-06(g)(3)(vii) "The report shall include: ... (vii) the votes of individual Commissioners;"
+*   § 6-07(c) "The Commission shall vote by resolution to approve, approve with modifications or disapprove the plan. Such vote shall be taken within 60 days following the public hearing..."
+
+**Why:** Capturing the outcome of deliberations and individual votes is a fundamental legal requirement for transparency and accountability.
+
+**One row represents:** A single vote or final decision on a proposition or application.
+
+**Covers:** All votes and final actions taken by the City Planning Commission, Community Boards, and Borough Boards on applications and plans.
+
+**Columns:**
+*   **Decision/Vote ID**
+*   **Related Application/Plan ID** (Dataset 1)
+*   **Related Meeting/Hearing ID** (Dataset 2)
+*   Decision-Making Body (e.g., CPC, Community Board, Borough Board)
+*   Proposition/Action Description
+*   Decision Type (e.g., Approve, Approve with Modifications, Disapprove, Recommend Approval, Recommend Disapproval, Waive Hearing/Recommendation)
+*   Vote Date
+*   Vote Outcome (e.g., Approved, Denied, Passed, Failed)
+*   Required Affirmative Votes (e.g., 7, 9, majority, unanimous)
+*   Actual Affirmative Votes
+*   Total Votes Cast
+*   Individual Commissioner/Member Votes (e.g., Commissioner Name, Vote: Aye/Nay/Abstain)
+*   Reasons for Decision/Vote (summary or reference to report)
+*   Conditions Attached to Approval (if any)
+*   Borough President Objection Filed (Yes/No, if applicable for CPC decisions)
+*   Date Decision Filed/Transmitted
+
+**4. Fee Payments**
+
+**Quotes:**
+*   § 2-02(a)(1) "The Department may not consider the application as filed unless it includes all required components and shall not consider the application as filed unless the required fee has been paid or is paid concurrently with the submission of the application."
+*   § 3-01 "every application made pursuant to Executive Order 91 and 62 RCNY Ch. 5 requires a non-refundable fee which shall be submitted to the lead agency for the action... The fee for an application shall be as prescribed in the following Schedule of Charges, 62 RCNY § 3-02."
+*   § 3-01 "Fees shall be paid in the forms indicated on the Department of City Planning's website when the application is filed. No application shall be processed by the lead agency until the fee has been paid. Additional fees may be charged by service providers in connection with electronic payment processing."
+*   § 3-02 "Schedule of Charges. (a) Projects measurable in square feet. (b) Projects not measurable in square footage. (c) Supplemental Fee for Environmental Mitigation."
+*   § 3-06 "every type of application listed in 62 RCNY § 3.07, Schedule of Charges, shall include a non-returnable fee which shall be paid in the forms indicated on the Department of City Planning's website when the application is filed."
+*   § 3-07 "Schedule of Charges. (a) Applications for Special Permits and Zoning Map amendments... (b) Applications for changes to the City Map, Landfills... (c) Applications for franchises and revocable consents... (d) Applications for amendments to the text of the Zoning Resolution... (e) Applications for zoning certifications and zoning authorizations... (f) Modifications, follow-up actions and renewals. (g) Supplemental Fee for Large Projects."
+*   § 3-08 "Natural Feature Restoration Fee. In the event that an application... for the restoration of trees that have been removed or topography that has been altered without the prior approval... the fee for such application shall be $.10 per square foot..."
+*   § 3-09 "Fee for Zoning Verification. The fee for a request that the Department of City Planning verify in writing the zoning district(s) in which a property is located shall be $110 per request."
+*   § 11-05 "A fee in the amount of $500, payable to the DCP, will be charged for each privately owned public space signage design review that is not part of an application for DCP's review of a new privately owned public space or the redesign of an existing privately owned public space pursuant to the Zoning Resolution or Section 197-c of the Charter."
+
+**Why:** Tracking fee payments is crucial for financial management, compliance, and ensuring applications are properly processed.
+
+**One row represents:** A single fee payment transaction.
+
+**Covers:** All fees collected for CEQR applications, ULURP applications, zoning certifications/authorizations, natural feature restoration, zoning verification, and POPS signage design reviews.
+
+**Columns:**
+*   **Fee Payment ID**
+*   **Related Application/Plan ID** (Dataset 1)
+*   Fee Type (e.g., CEQR, ULURP Special Permit, ULURP Zoning Map Amendment, City Map Change, Landfill, Franchise, Revocable Consent, Zoning Text Amendment, Zoning Certification, Zoning Authorization, Natural Feature Restoration, Zoning Verification, POPS Signage Design Review, Supplemental Environmental Mitigation, Supplemental Large Project)
+*   Payment Date
+*   Amount Paid
+*   Payment Method (e.g., electronic, check)
+*   Applicant Name
+*   Payer Name (if different from applicant)
+*   Square Footage (if applicable for fee calculation)
+*   Number of Seats (for sidewalk cafes, if applicable)
+*   Number of Dwelling Units (for authorizations, if applicable)
+*   Zoning Lot Area (for certain fees, if applicable)
+*   Floor Area Transferred/Bonus (if applicable)
+*   Fee Schedule Section Applied (e.g., 3-02(a), 3-07(a)(1))
+*   Exemption Applied (Yes/No, e.g., federal/state/city agency, non-profit neighborhood association)
+*   Exemption Reason
+
+**5. Environmental Review Documents and Determinations**
+
+**Quotes:**
+*   § 2-02(a)(5)(v) "A determination has been made whether the action is subject to City or State Environmental Quality Review, and if so subject, the lead agency has issued either: (A) a Negative or Conditional Negative Declaration; or (B) a Notice of Acceptance of a Draft Environmental Impact Statement."
+*   § 5-02(c)(3)(iii) "Determination of Significance. "Determination of significance" shall mean a negative declaration, conditional negative declaration or notice of determination (positive declaration)."
+*   § 5-04(c)(5)(i) "Receive and maintain on file notifications of commencement of environmental review, determinations of significance (including completed environmental assessment statements), draft and final scopes issued pursuant to 62 RCNY § 5-07, draft and final environmental impact statements, and significant supporting documentation comprising the official records of environmental reviews,"
+*   § 5-05(b)(1) "After the determination that an action requires environmental review, the lead agency shall notify the OEC that it is commencing environmental review and complete or cause to be completed the standardized environmental assessment statement provided by the OEC."
+*   § 5-05(b)(4) "Lead agencies shall transmit copies of the following to the OEC upon issuance: notifications of commencement of environmental review, determinations of significance (including completed environmental assessment statements), draft and final scopes, draft and final environmental impact statements."
+*   § 5-07(a) "Within fifteen days after a notice of determination (positive declaration) is issued, the lead agency shall issue a draft scope, which may be prepared by the applicant but must be approved by the lead agency."
+*   § 5-07(e) "Within thirty days after the public scoping meeting, the lead agency shall issue a final scope, which may be prepared by the applicant and approved by the lead agency."
+*   § 6-07(b)(1) "If the lead agencies determine that the proposed action is not an exempt action or a Type II action... and that the action will not have a significant effect on the environment, they shall issue a Negative Declaration..."
+*   § 6-07(b)(2) "If the lead agencies determine... that the action will not have a significant effect on the environment if the applicant modifies its proposed action in accordance with conditions or alternatives designed to avoid adverse environmental impacts, they shall issue a Conditional Negative Declaration..."
+*   § 6-07(b)(3) "If the lead agencies determine... that the action may have a significant effect on the environment, they shall issue a Notice of Determination which shall contain... a request that the applicant prepare or cause to be prepared... a draft EIS..."
+*   § 6-10(a) "Upon the satisfactory completion of a draft EIS, the lead agencies shall immediately prepare, file and make available for public inspection a Notice of Completion..."
+*   § 6-11(b) "Immediately upon the completion of a final EIS, the lead agencies shall prepare, file, transmit and make available for public inspection a Notice of Completion of a final EIS..."
+
+**Why:** Maintaining a comprehensive record of environmental review documents and determinations is a core legal and operational requirement.
+
+**One row represents:** A single environmental review document or determination.
+
+**Covers:** Notifications of commencement, environmental assessment statements (EAS), determinations of significance (Negative Declarations, Conditional Negative Declarations, Notices of Determination/Positive Declarations), draft scopes, final scopes, draft environmental impact statements (EIS), final EIS, and notices of completion for EIS.
+
+**Columns:**
+*   **Environmental Review ID**
+*   **Related Application/Plan ID** (Dataset 1)
+*   Document Type (e.g., Notification of Commencement, EAS, Negative Declaration, Conditional Negative Declaration, Notice of Determination/Positive Declaration, Draft Scope, Final Scope, Draft EIS, Final EIS, Notice of Completion DEIS, Notice of Completion FEIS)
+*   Lead Agency
+*   Date Issued/Filed
+*   Action Identifying Number
+*   Brief Description of Action
+*   Proposed Location of Action
+*   Determination of Significance (Yes/No, for ND/CND/NOD)
+*   Reasons for Determination (for ND/CND)
+*   Conditions/Modifications for CND
+*   Applicant Acceptance of CND Conditions (Yes/No, Date)
+*   Possible Significant Effects (for NOD)
+*   EIS Preparation Request (for NOD)
+*   Public Review and Comment Period Start Date (for DEIS)
+*   Public Review and Comment Period End Date (for DEIS)
+*   **Related Public Scoping Meeting ID** (Dataset 2)
+*   **Related Public Notice ID** (Dataset 7)
+*   Environmental Report Provided by Applicant (Yes/No)
+*   EIS Scope, Contents, Adequacy Judgment (Lead Agency's independent judgment)
+*   Mitigation Measures Proposed (summary or reference)
+*   Consultation with Agencies on Mitigations (Yes/No, Agencies Consulted)
+*   Record of Comments Received on DEIS (summary or reference)
+*   Applicant's Response to Comments (summary or reference)
+*   EIS Revision/Updating Details (for FEIS)
+*   Programmatic EIS (Yes/No)
+*   Programmatic EIS Amendment/Supplement Details (if applicable)
+*   Official Record File Location/Link
+
+**6. Pre-Application Process Tracking**
+
+**Quotes:**
+*   § 10-01 "These rules establish submission and meeting participation requirements ("Pre-Application Process") prior to the filing of land use applications... or of applications for environmental review..."
+*   § 10-03(a) "Before filing a land use application or application for environmental review, an Applicant must contact the Department Borough Office... to schedule an Informational Meeting..."
+*   § 10-03(c) "At or after an Informational Meeting, an Applicant proceeding with filing a land use application or application for environmental review must request from the Department a Project ID number..."
+*   § 10-04(a) "Following the issuance of a Project ID number... an Applicant must submit a Pre-Application Statement ("PAS") to the Department."
+*   § 10-05(a) "Within ninety (90) days of notifying an Applicant... that the Department will hold an ID Meeting, the Department must hold such a meeting with the Applicant..."
+*   § 10-06(a) "Following notification... that the Applicant's project is classified as Type I or Unlisted... an Applicant proceeding with filing a land use application or application for environmental review must submit a RWCDS Memorandum."
+*   § 10-07(a) "The Department may request a draft land use application... an Applicant proceeding with filing a land use application must submit a draft land use application to the Department for review."
+*   § 10-08(a) "Following notification... that the Applicant may proceed to submit a draft CEQR short/full form, an Applicant proceeding with filing an application for environmental review must submit a draft CEQR short/full form to the Department for review."
+
+**Why:** Tracking the pre-application stages ensures efficient resource allocation and consistent feedback to applicants.
+
+**One row represents:** A single pre-application process for a proposed project.
+
+**Covers:** All stages of the pre-application process, including Informational Meetings, Project ID issuance, Pre-Application Statements (PAS), Interdivisional (ID) Meetings, Reasonable Worst Case Development Scenario (RWCDS) Memoranda, Draft Land Use Applications, and Draft CEQR Short/Full Forms.
+
+**Columns:**
+*   **Pre-Application ID**
+*   **Related Application/Plan ID** (Dataset 1)
+*   Applicant Name
+*   Project Name/Description
+*   Project ID Number (assigned by Department)
+*   Informational Meeting Date
+*   Informational Meeting Status (e.g., Held, Rescheduled, Pending)
+*   Informational Meeting Materials Submitted (Yes/No)
+*   PAS Submission Date
+*   PAS Review Status (e.g., Complete, Incomplete, Revised)
+*   PAS Deficiency Details
+*   ID Meeting Required (Yes/No)
+*   ID Meeting Date
+*   ID Meeting Status (e.g., Held, Rescheduled, Pending)
+*   RWCDS Memorandum Submission Date
+*   RWCDS Memorandum Review Status (e.g., Accepted, Further Info Required, RWCDS Meeting Required)
+*   RWCDS Meeting Date (if held)
+*   Draft Land Use Application Submission Date
+*   Draft Land Use Application Review Status (e.g., Complete, Incomplete, Revised)
+*   Draft CEQR Short/Full Form Submission Date
+*   Draft CEQR Short/Full Form Review Status (e.g., Substantially Complete, Comments Provided, Revised)
+*   Date Applicant Notified to File Formal Application
+*   Exemption from Pre-Application Process (Yes/No)
+*   Exemption Reason (e.g., PAS submitted prior to rule, RWCDS memo submitted prior to rule)
+*   Date of Last Communication with Applicant
+*   On Hold Status (Yes/No)
+*   Date Placed On Hold
+*   Date Removed From Hold
+*   Project Record Closed/Application Terminated (Yes/No)
+*   Date Closed/Terminated
+
+**7. Public Notices and Advertisements**
+
+**Quotes:**
+*   § 1-01(m) "All proposals scheduled for public hearings shall be duly advertised in accordance with Charter provisions and all applicable laws."
+*   § 2-03(c)(1) "by publication in The City Record for the five (5) days of publication immediately preceding and including the date of the public hearing;"
+*   § 2-03(c)(2) "by publication in the Comprehensive City Planning Calendar distributed not less than five (5) calendar days prior to the date of public hearing;"
+*   § 2-03(c)(3) "to the applicant ten (10) days prior to the date of hearing (with such notice also forwarded to the Department of City Planning);"
+*   § 2-03(c)(4) "for all actions that result in acquisition of property by the City... the applicant shall notify the owner or owners of the property in question by mail... not later than five (5) days prior to the date of hearing. An affidavit attesting to the mailing and a copy of the notice shall be submitted to the Department of City Planning prior to the Commission's public hearing;"
+*   § 2-05(b)(1) "by publication in The City Record for the five (5) days of publication immediately preceding and including the date of the public hearing;"
+*   § 2-05(b)(2) "by publication in the Comprehensive City Planning Calendar distributed not less than five (5) calendar days prior to the date of hearing;"
+*   § 2-06(d)(1) "by publication in The City Record beginning not less than ten (10) calendar days immediately prior to the date of hearing and continuing until the day prior to the hearing;"
+*   § 2-06(d)(2) "by publication in the Comprehensive City Planning Calendar distributed not less than ten (10) calendar days prior to the date of hearing;"
+*   § 2-06(e)(1) "at least eight (8) days prior to the Commission public hearing a notice, on a form provided by the Department of City Planning, shall be posted by the applicant in the building subject to the application, informing the tenants of the proposed action and the right of the public to appear at the Commission hearing and testify;"
+*   § 5-07(b) "Upon issuance of the draft scope... the lead agency shall publish in the City Record a notice indicating that a draft environmental impact statement will be prepared for the proposed action and requesting public comment..."
+*   § 6-10(c)(3) "Notice of the public hearing... shall be published at least 10 calendar days in advance of the public hearing in a newspaper of general circulation in the area of the potential impact and effect of the proposed action."
+
+**Why:** Legal requirements mandate public notification for various actions and hearings, necessitating a system to track these notices.
+
+**One row represents:** A single public notice or advertisement.
+
+**Covers:** All required public notices for hearings (CPC, Community Board, Borough Board, Public Scoping), notifications to applicants, property owners, and tenants, and advertisements in The City Record, Comprehensive City Planning Calendar, and local newspapers.
+
+**Columns:**
+*   **Public Notice ID**
+*   **Related Application/Plan ID** (Dataset 1)
+*   **Related Meeting/Hearing ID** (Dataset 2)
+*   Notice Type (e.g., Public Hearing Advertisement, Notice of Hearing to Applicant, Property Owner Notification, Tenant Posting, Draft EIS Notice, Notice of Completion DEIS, Notice of Completion FEIS)
+*   Date of Publication/Mailing/Posting
+*   Publication/Distribution Channel (e.g., City Record, Comprehensive City Planning Calendar, Local Newspaper, Direct Mail, Building Posting)
+*   Publication/Mailing/Posting Start Date
+*   Publication/Mailing/Posting End Date
+*   Recipient Group (e.g., General Public, Applicant, Property Owners, Tenants, Community Boards, Borough Presidents, Borough Boards, City Council, DEC)
+*   Content Summary/Link to Full Text
+*   Affidavit of Mailing/Posting Submitted (Yes/No, for property owners/tenants)
+*   Date Affidavit Submitted
+*   Affidavit Signatory
+*   Specific Location of Posting (for tenant notices)
+*   Compliance with Notice Period (Yes/No)
+
+**8. Application Referrals**
+
+**Quotes:**
+*   § 2-02(a)(2) "the Department shall assign a docket number and shall transmit a Notice of Receipt of the application to all the appropriate Department divisions and other agencies which review such application, and to the community board(s), Borough President(s), borough board (when appropriate), the City Council and the applicant..."
+*   § 2-02(a)(3) "The Department of City Planning shall refer such additional application documents or amendments within five (5) days to each affected borough president, community board or borough board, and to the City Council."
+*   § 2-02(b) "within nine (9) calendar days after the certification... the Department of City Planning shall make the following referrals: (1) any application relating to a proposal which occupies or would occupy land located in only one community district shall be referred to the community board for such district; (2) any application relating to a proposal which occupies or would occupy land located in two or more community districts shall be referred to the community board for each such district and to the borough board for the appropriate borough; (3) any application relating to a proposal which occupies or would occupy land located in a joint interest area... shall be referred to the community board for each community district bounding such area and to the borough board for the appropriate borough; (4) all applications shall be referred to the Borough President of the borough in question; (5) all applications shall be referred to the City Council."
+*   § 2-02(d) "The Commission shall promptly give notice of such withdrawal to the board or boards, to the Borough President to which the application was referred... and to the Council..."
+*   § 2-06(c)(1) "Promptly upon its decision to schedule a proposed modification for public hearing, the Commission shall refer the proposed modification to the community board or community boards, borough board, and the affected Borough President to which the application was earlier referred..."
+*   § 2-08(a)(1) "the Board of Standards and Appeals shall refer the application to the community board within which district the site is located or, in the case of an application involving a site located within two or more community districts, to the community boards for such districts and to the borough board for the appropriate borough."
+*   § 2-09(a) "Unless otherwise provided herein, any referrals and filings required under this chapter shall be directed to the entities below as follows: (1) if to the Commission... (2) if to a community board... (3) if to a borough board... (4) if to the Board of Standards and Appeals... (5) if to the City Council..."
+*   § 6-06(a) "When pursuant to 62 RCNY § 6-03(b), the Commission directs the Department to distribute a proposed plan, the Department shall transmit the plan simultaneously to all affected community boards, Borough Presidents and borough boards..."
+
+**Why:** Tracking referrals ensures all relevant parties are informed and can participate in the review process within specified timelines.
+
+**One row represents:** A single instance of an application or plan being referred to an entity.
+
+**Covers:** All referrals of applications, plans, and modifications to Department divisions, other agencies, community boards, borough presidents, borough boards, and the City Council.
+
+**Columns:**
+*   **Referral ID**
+*   **Related Application/Plan ID** (Dataset 1)
+*   Date of Referral
+*   Referring Entity (e.g., Department of City Planning, City Planning Commission, Board of Standards and Appeals)
+*   Recipient Entity Type (e.g., Department Division, City Agency, Community Board, Borough President, Borough Board, City Council)
+*   Recipient Entity Name/ID
+*   Referral Type (e.g., Notice of Receipt, Complete Application, Additional Documents, Proposed Modification, Withdrawal Notice, BSA Application)
+*   Required Response Date (if applicable)
+*   Actual Response Date (if applicable)
+*   Response Summary (e.g., recommendation, waiver, no action)
+*   Compliance with Referral Timeline (Yes/No)
+
+**9. Property E-Designations**
+
+**Quotes:**
+*   § 2-02(a)(5)(vi) "Notification of any proposed (E) designation has been submitted to the Department of City Planning as required pursuant to 62 RCNY § 2-02(e) hereof."
+*   § 2-02(e)(1) "If an application for an amendment to the Zoning Map or text of the zoning resolution... includes an (E) designation with respect to potential hazardous materials, air quality or noise on any tax lot or zoning lot pursuant to § 11-15 of the Zoning Resolution... the owner or owners of any such tax lot or zoning lot... shall be notified of the proposed (E) designation."
+*   § 2-02(e)(2) "Such notification shall be by first-class mail and shall be made to the person(s) or entity(ies) identified in the official records of the City of New York as the fee owners of such tax lot or zoning lot and shall be sent to the address or addresses indicated in such records."
+*   § 5-05(f)(2)(i)(B) "consented to the establishment of an (E) designation for hazardous materials pursuant to § 11-15 of the New York City Zoning Resolution and 15 RCNY Chapter 24 on the developable sites, provided that where an (E) designation is not available and the development site will be developed pursuant to a regulatory agreement with a government agency, such government agency shall include protections and development oversight requirements equivalent to an (E) designation found in 15 RCNY Chapter 24 in such regulatory agreement;"
+*   § 5-05(f)(2)(v)(B) "agreed to establishment of an (E) designation for noise pursuant to § 11-15 of the NYC Zoning Resolution on any developable sites that cannot meet the requirements of item (A) above, provided that where the development site will be developed pursuant to a regulatory agreement with a government agency, such government agency shall include protections equivalent to those imposed by an (E) designation for noise attenuation in such regulatory agreement."
+
+**Why:** E-designations are legal conditions on properties, requiring tracking for compliance and notification.
+
+**One row represents:** A single E-designation applied to a tax lot or zoning lot.
+
+**Covers:** All proposed and established (E) designations related to hazardous materials, air quality, or noise on tax lots or zoning lots.
+
+**Columns:**
+*   **E-Designation ID**
+*   **Related Application/Plan ID** (Dataset 1)
+*   Tax Lot ID
+*   Zoning Lot ID
+*   Property Address
+*   Borough
+*   E-Designation Type (e.g., Hazardous Materials, Air Quality, Noise)
+*   Zoning Resolution Section (e.g., § 11-15)
+*   Date Proposed
+*   Date Established
+*   Lead Agency for Notification
+*   Owner Notification Date
+*   Owner Name at Time of Notification
+*   Owner Address at Time of Notification
+*   Notification Content (description of zoning, right to testify, contact info, ZR § 11-15 reference)
+*   Owner Consent to E-Designation (Yes/No, if applicable)
+*   Regulatory Agreement in Lieu of E-Designation (Yes/No)
+*   Regulatory Agreement Details (if applicable)
+*   Compliance Status (e.g., Active, Fulfilled, Monitored)
+
+**10. City Facilities Inventory and Siting**
+
+**Quotes:**
+*   Appendix A, Article 3(a) "City facility: A facility providing city services whose location, expansion, closing or reduction in size is subject to control and supervision by a city agency, and which is: (i) operated by the city on property owned or leased by the city which is greater than 750 square feet in total floor area; or (ii) used primarily for a program or programs operated pursuant to a written agreement on behalf of the city which derives at least 50 percent and at least $50,000 of its annual funding from the city."
+*   Appendix A, Article 3(b) "New facility: A city facility newly established as a result of an acquisition, lease, construction, or contractual action or the substantial change in use of an existing facility."
+*   Appendix A, Article 3(f) "Significant expansion: An addition of real property by purchase, lease or interagency transfer, or construction of an enlargement, which would expand the lot area, floor area or capacity of a city facility by 25 percent or more and by at least 500 square feet."
+*   Appendix A, Article 3(g) "Significant reduction: A surrender or discontinuance of the use of real property that would reduce the size or capacity to deliver service of a city facility by 25 percent or more."
+*   Appendix A, Article 4.1 "The sponsoring agency and... the City Planning Commission, shall consider the following criteria: (a) Compatibility of the facility with existing facilities and programs... (b) Extent to which neighborhood character would be adversely affected by a concentration of city and/or non-city facilities. (c) Suitability of the site to provide cost-effective delivery of the intended services... (d) Consistency with the locational and other specific criteria for the facility identified in the Statement of Needs... (e) Consistency with any plan adopted pursuant to Section 197-a of the Charter."
+*   Appendix A, Article 5.1 "Need for the facility or expansion in the community or local service delivery district... Accessibility of the site to those it is intended to serve."
+*   Appendix A, Article 6.1 "Need for the facility or expansion... Distribution of similar facilities throughout the city... Size of the facility... Adequacy of the streets and transit to handle the volume and frequency of traffic generated by the facility."
+*   Appendix A, Article 7.1 "Suitability of the site to provide cost-effective operations... Suitability of the site for operational efficiency... Consistency with the locational and other specific criteria for the facility stated in the Statement of Needs... Whether the facility can be located so as to support development and revitalization of the city's regional business districts..."
+*   Appendix A, Article 8.1 "The extent to which the closing or reduction would create or significantly increase any existing imbalance among communities of service levels relative to need... Consistency with the specific criteria for selecting the facility for closure or reduction as identified in the Statement of Needs."
+*   Appendix A, Article 9.1 "Whenever an agency takes an action with respect to a city facility that is subject to these criteria but is not subject to ULURP or to Charter Section 195 review, the agency shall submit a statement to the Mayor... which describes the agency's consideration and application of the relevant sections of these criteria, and states the reasons for any inconsistencies."
+
+**Why:** Managing city facilities requires a comprehensive inventory and tracking of siting, expansion, and reduction actions against established criteria.
+
+**One row represents:** A single city facility or a significant action (siting, expansion, closing, reduction) related to a facility.
+
+**Covers:** All city facilities (new, existing, expanded, closed, reduced) subject to the Section 203 criteria, including local/neighborhood, regional/citywide, residential, transportation, waste management, administrative offices, and data processing facilities.
+
+**Columns:**
+*   **Facility ID**
+*   Facility Name
+*   Facility Type (e.g., Branch Library, Fire Station, Hospital, Correctional Facility, Administrative Office, Data Processing, Sewage Treatment Plant, Group Home)
+*   Facility Category (e.g., Local/Neighborhood, Regional/Citywide, Residential, Transportation/Waste Management, Administrative/Data Processing)
+*   Sponsoring Agency
+*   Property Address
+*   Borough
+*   Community District ID
+*   Tax Lot ID
+*   Ownership Status (City-owned, City-leased, Other)
+*   Total Floor Area (sq ft)
+*   Service Capacity (e.g., number of beds, vehicles, seats, tons/day)
+*   Funding Source (City, State, Federal, Private)
+*   Percentage of City Funding (if applicable)
+*   Annual City Funding Amount (if applicable)
+*   Action Type (e.g., New Siting, Significant Expansion, Significant Reduction, Closing, Change in Use)
+*   Action Date
+*   **Related Application/Plan ID** (Dataset 1, if subject to ULURP/Section 195)
+*   Statement of Needs Reference (Yes/No, Date, Specific Criteria)
+*   Consistency with 197-a Plan (Yes/No, **Related 197-a Plan ID** from Dataset 1)
+*   Compatibility with Existing Facilities (Assessment)
+*   Neighborhood Character Impact (Assessment)
+*   Cost-Effectiveness Assessment
+*   Site Suitability for Service Delivery/Operations
+*   Need Assessment (for local/regional facilities)
+*   Accessibility Assessment (for local facilities)
+*   Distribution Analysis (for regional facilities)
+*   Minimum Size Justification (for regional facilities)
+*   Traffic/Transit Adequacy (for regional facilities)
+*   Environmental Impact Assessment (for transportation/waste facilities)
+*   Concentration Avoidance (for residential facilities)
+*   Support Services Availability (for residential facilities)
+*   Alternative Sites Considered (Yes/No, Details)
+*   Monitoring Committee Established (Yes/No, Date)
+*   Monitoring Committee Reporting Schedule
+*   Agency Statement Submitted (Yes/No, for non-ULURP/195 actions)
+*   Date Agency Statement Submitted
+*   Reasons for Inconsistencies (if any)
+
+**11. Residential Facility Bed Count Index Data**
+
+**Quotes:**
+*   Appendix A, Article 6.53 "In community districts with a high ratio of residential facility beds to population, the proposed siting shall be subject to the following additional considerations: ... To facilitate this evaluation, the Department of City Planning will publish annually an index of the number of beds per thousand population, by type of residential facility (as set forth in Appendix C) and overall, in each community district. The index will be based upon the number of beds in all city, state, federal, and private facilities in operation or approved for operation."
+*   Appendix A, Attachment C "Types of Residential Facilities (as referenced in Section 6.53)* a) Correctional facilities... b) Nursing homes and health-related facilities... c) Small residential care facilities and temporary housing facilities, serving no more than 25 people... d) Large temporary and transitional housing facilities, providing shelter or transitional housing for more than 25 people e) Large residential care facilities, serving more than 25 people..."
+
+**Why:** To publish the required annual index, the agency needs to collect and maintain raw data on residential facility beds.
+
+**One row represents:** A single residential facility's bed count for a specific reporting period.
+
+**Covers:** Bed counts for all city, state, federal, and private residential facilities in operation or approved for operation, categorized by type and community district.
+
+**Columns:**
+*   **Residential Facility Bed Count ID**
+*   Reporting Period (e.g., Year)
+*   **Related Facility ID** (Dataset 10, if a City Facility)
+*   Facility Name
+*   Facility Address
+*   Borough
+*   Community District ID
+*   Facility Type (e.g., Correctional, Nursing Home, Small Residential Care, Large Temporary Housing, Large Residential Care)
+*   Operator Type (City, State, Federal, Private)
+*   Number of Beds
+*   Operational Status (e.g., In Operation, Approved for Operation)
+*   Population of Community District (for ratio calculation)
+
+**12. Privately Owned Public Spaces (POPS) Signage System Approvals**
+
+**Quotes:**
+*   § 11-01 "This rule applies in addition to sections 37-53(h) (Design Standards for Pedestrian Circulation Spaces) and 37-751 (Public space signage systems) of the New York City Zoning Resolution..."
+*   § 11-02 "The purpose of this rule is to ensure that all privately owned public spaces have clear, visible, and readable signage at appropriate locations within such spaces that easily identifies such spaces as open to the public and also presents other information related to such privately owned public space."
+*   § 11-04(a) "Prior to installation of any signage at a privately owned public space after the effective date of this rule, a signage system pursuant to this rule must be reviewed and approved by the DCP for compliance with the requirements of this rule;"
+*   § 11-04(b) "The signage system in all privately owned public spaces must include the following, provided in technical drawings that illustrate compliance with the provisions of this rule: (1) The name and contact information of the person or entity charged by the owner with oversight of complaints... (2) A statement that such space is open to the public; (3) The hours the space is open to the public; (4) The primary amenities required in the space; (5) A statement that complaints can be registered by calling 311... (6) A public space logo... (7) For all privately owned public spaces established on or after October 1, 2017, such signage system must also include a site map... (8) For all privately owned public spaces with access for persons with disabilities, such signage system must also include the International Logo of Access..."
+*   § 11-05 "Prior to installation of any signage at a privately owned public space after the effective date of this rule, an owner or manager... must submit to the DCP a package for approval, consisting of the following materials: (a) The form... requesting a design review; (b) Copies of the most recently approved drawings... (c) A plan for a signage system, prepared in accordance with the requirements herein."
+*   § 11-06 "owners of a privately owned public space without any previously approved signage... will have 180 days from the effective date of this rule to submit a complete design review package to the DCP for approval... All other owners will have two years... Privately owned public space owners will have 90 days from the date of DCP approval to install signage that complies with the approved plan(s)."
+
+**Why:** The agency is responsible for reviewing and approving signage systems for POPS to ensure public accessibility and compliance.
+
+**One row represents:** A single signage system approval for a privately owned public space.
+
+**Covers:** All design review requests and approvals for signage systems in privately owned public spaces (POPS).
+
+**Columns:**
+*   **POPS Signage Approval ID**
+*   POPS ID (from DCP's open data set)
+*   POPS Address
+*   Owner/Manager Name
+*   Owner/Manager Contact Information (for complaints)
+*   Submission Date of Design Review Package
+*   Date of DCP Approval
+*   Signage System Installation Deadline
+*   Date of Actual Installation
+*   Extension Request (Yes/No)
+*   Extension Reason
+*   Extension Approval Date
+*   Signage Content: Open to Public Statement (Yes/No)
+*   Signage Content: Hours of Operation (Yes/No, Details)
+*   Signage Content: Primary Amenities Listed (Yes/No, Details)
+*   Signage Content: 311 Complaint Info (Yes/No)
+*   Signage Content: Public Space Logo (Yes/No, Compliance)
+*   Signage Content: Site Map (Yes/No, for POPS established after 10/1/2017)
+*   Signage Content: International Logo of Access (Yes/No, for accessible POPS)
+*   Compliance Status (e.g., Approved, Installed, Non-Compliant)
+*   **Related Fee Payment ID** (Dataset 4, for design review fee)
+*   Most Recently Approved Drawings (reference/link)
+*   Technical Drawings of Signage System (reference/link)
+
+**13. Zoning Verification Requests**
+
+**Quotes:**
+*   § 3-09 "Fee for Zoning Verification. The fee for a request that the Department of City Planning verify in writing the zoning district(s) in which a property is located shall be $110 per request. Each zoning verification request shall be made in writing, and shall include the address, borough, tax block and lot(s) of the property. Each separate property shall be a separate request; however, a property comprised of multiple contiguous tax lots shall be treated as a single request."
+
+**Why:** The agency provides a specific service for zoning verification, requiring tracking of requests and their outcomes.
+
+**One row represents:** A single request for zoning verification.
+
+**Covers:** All written requests for the Department of City Planning to verify the zoning district(s) of a property.
+
+**Columns:**
+*   **Zoning Verification Request ID**
+*   Request Date
+*   Requester Name
+*   Requester Contact Information
+*   Property Address
+*   Borough
+*   Tax Block
+*   Tax Lot(s)
+*   Number of Contiguous Tax Lots (if applicable)
+*   **Related Fee Payment ID** (Dataset 4)
+*   Date Fee Paid
+*   Verification Outcome (e.g., Verified, Unable to Verify)
+*   Zoning District(s) Verified
+*   Date Verification Provided
+*   Verification Document Reference/Link
+
+**14. Development Contributions**
+
+**Quotes:**
+*   § 3-10 "Contributions to the Theater Subdistrict Fund pursuant to § 81-744 of the New York City Zoning Resolution shall be made in an amount equal to $24.65 per square foot of floor area transferred."
+*   § 3-11 "Contributions to the West Chelsea Affordable Housing Fund pursuant to § 98-262 (c) of the New York City Zoning Resolution shall be made in an amount equal to $625 per square foot of floor area increase as of the effective date of this rule."
+*   § 3-11 "This amount shall be adjusted each year by a factor equal to the ratio of the per square foot contribution to the MIH Affordable Housing Fund for eligible MIH developments in Manhattan Community District 4 for the current year to such per square foot contribution for the prior year. Such adjustments shall take effect automatically upon adjustment by HPD to the contribution rate to the MIH Affordable Housing Fund pursuant to 28 RCNY § 41-23."
+
+**Why:** The agency is responsible for tracking mandatory contributions to specific funds related to development projects.
+
+**One row represents:** A single contribution payment to a designated fund.
+
+**Covers:** Contributions to the Theater Subdistrict Fund and the West Chelsea Affordable Housing Fund.
+
+**Columns:**
+*   **Contribution ID**
+*   **Related Application/Plan ID** (Dataset 1)
+*   Fund Name (e.g., Theater Subdistrict Fund, West Chelsea Affordable Housing Fund)
+*   Zoning Resolution Section (e.g., § 81-744, § 98-262(c))
+*   Contribution Date
+*   Amount Contributed
+*   Floor Area Transferred/Increased (sq ft)
+*   Per Square Foot Rate Applied
+*   Rate Adjustment Factor (if applicable)
+*   Date of Rate Adjustment (if applicable)
+*   Payer Name
+*   Payer Contact Information
+
+**15. Hearing Speaker Records**
+
+**Quotes:**
+*   § 1-01(j) "The Chair shall establish the order in which speakers are heard at public hearings. Speakers shall be limited to no more than three minutes to present testimony unless more time is permitted by the Chair."
+*   § 1-02(c) "Record... a list of speakers' names and affiliations, if any; a notation of each speaker's own indication, on a form provided for that purpose, of support or opposition to the proposal; and any exhibits or written statements offered by speakers."
+*   § 2-03(d)(4) "The record of a public hearing shall consist of but not be limited to a list of speaker's names and affiliations (if any), a notation of each speaker's own indication, on a form provided for that purpose, of support or opposition to the application, and any exhibits or written statements offered by speakers."
+*   § 2-05(c)(4) "The record of a public hearing shall consist of a list of speakers' names and affiliations if any, a notation of each speaker's own indication, on the form provided for that purpose, of support or opposition to the application and any exhibits or written statements offered by speakers."
+*   § 2-06(g)(3)(ii) "A report of the Commission shall be written with respect to each application... The report shall include: ... (ii) a summary of testimony at all Commission public hearings held on the application;"
+
+**Why:** Documenting public participation at hearings is a legal requirement for transparency and record-keeping.
+
+**One row represents:** A single speaker's testimony at a public hearing.
+
+**Covers:** All speakers at public hearings held by the City Planning Commission, Community Boards, and Borough Boards.
+
+**Columns:**
+*   **Speaker Record ID**
+*   **Related Meeting/Hearing ID** (Dataset 2)
+*   Speaker Name
+*   Affiliation (if any)
+*   Indicated Stance (Support, Opposition, Neutral)
+*   Testimony Summary (or reference to full testimony)
+*   Time Allotted (minutes)
+*   Time Spoken (minutes)
+*   Exhibits/Written Statements Offered (Yes/No, reference/link)
+*   Order of Appearance
+
+**16. Commission Member Roster**
+
+**Quotes:**
+*   § 1-01(c) "A quorum shall consist of seven members."
+*   § 1-01(d) "Final action by the Commission shall be by the affirmative vote of not less than seven members at a meeting open to the public."
+*   § 1-01(f)(1) "Roll call."
+*   § 1-01(h) "The Chair shall direct a roll call upon every proposition to be acted upon..."
+*   § 1-01(k) "City employees designated by the Chair shall be the only persons allowed within the guard rail of the dais during public meetings."
+*   § 1-02(a) "Notices of all special meetings shall be given to each member by the Calendar Officer."
+*   § 2-06(g)(2) "The Commission shall act by the affirmative roll call vote of at least seven (7) members at a public meeting, except that... approval... shall require the affirmative vote of nine members of the Commission..."
+*   § 2-06(g)(3)(vii) "The report shall include: ... (vii) the votes of individual Commissioners;"
+
+**Why:** Tracking Commission members is essential for managing meetings, ensuring quorums, and recording votes.
+
+**One row represents:** A single City Planning Commission member.
+
+**Covers:** All appointed members of the City Planning Commission.
+
+**Columns:**
+*   **Commissioner ID**
+*   Commissioner Name
+*   Appointment Date
+*   Term End Date
+*   Role (e.g., Chair, Member)
+*   Active Status (Yes/No)
+*   Contact Information (for notices)
+*   City Employee Status (Yes/No)
+*   **Related Vote Record IDs** (Dataset 3)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations (e.g., 62 RCNY itself, Zoning Resolution, Charter provisions, SEQRA Regulations, Open Meetings Law)
+*   Receipts (individual transaction records, but the *fees* themselves are tabular)
+*   Photos
+*   Research documents (e.g., environmental reports, underlying studies for EIS, technical standards and methodologies, strategic policy statements, capital strategies, zoning and planning reports, social indicators reports)
+*   Audio recordings or verbatim stenographic records of proceedings
+*   Exhibits or written statements offered by speakers at hearings
+*   By-laws adopted by community boards or borough boards
+*   Instructions on the Department of City Planning's website (e.g., for application submission, fee payment forms)
+*   "Doing business database" (external reference, not maintained by this agency)
+*   Written waivers of agency review
+*   Guidelines for notification and review of federal and state actions (appended to WRP)
+*   City's CEQR Technical Manual
+*   Mayor's Office of Environmental Coordination forms (e.g., CEQR short/full form)
+*   New York City Department of Buildings Technical Policy and Procedure #10/88
+*   New York State Department of Environmental Conservation Division of Air Resources Guidelines for Evaluation and Control of Ambient Air Contaminants (DAR-1)
+*   Noise Exposure Map (NEM) Report for John F. Kennedy Airport and LaGuardia Airport
+*   Required Signage Symbols file and "New York City Privately Owned Public Space Signage Standards and Specifications" document
+*   Affidavits attesting to mailing/posting of notices
+*   Written opinions by the Director of City Planning (interpretations)
+*   City Administrative Procedure Act
+*   Executive Order 91 (as amended)
+*   New York State Open Meetings Law
+*   New York State Environmental Quality Review Act (SEQRA)
+*   National Environmental Policy Act of 1969
+*   New York State Executive Law Article 42
+*   16 U.S.C. §§ 1451 et seq.
+*   New York City Administrative Code § 20-225
+*   Local Law 34 for the year 2007
+*   Local Law 116 of 2017, as amended by Local Law 250 of 2017
+*   28 RCNY § 41-23
+*   6 NYCRR Part 617
+*   15 RCNY Chapter 24
+*   6 NYCRR Part 617.4, 617.6(e)(5), 617.12, 617.13
+*   Section 2800(h) of the Charter (community board meeting obligation)
+*   Section 85 of the Charter (borough board voting)
+*   Section 204(f) of the Charter (Borough President alternative sites)
+*   Section 362(c) of the Charter (responsible agency for franchises)
+*   Section 1301(2)(f) of the Charter (leasing wharf property)
+*   Section 2903(c)(2) of the Charter (DOT actions)
+*   Section 1302 of the Charter (waterfront plans)
+*   Section 2704 of the Charter (local service delivery districts)
+*   Appendix H to the New York City Zoning Resolution (arterial highways)
+*   Appendix C to Title 62 (Types of Residential Facilities)
+*   Citywide Statement of Needs (document)
+*   Mayor's and Borough President's strategic policy statements
+*   Community Board's Statement of District Needs and Budget Priorities
+*   Published Department of City Planning land use plans
+*   Ten Year Capital Strategy
+*   Four-year capital program
+*   Report on Social Indicators
+*   Zoning and Planning Report
+*   By-laws of community boards and borough boards
+*   Written objection to Commission's vote (Borough President)
+*   Written waiver of public hearing and recommendation (Community Board, Borough Board)
+*   Written request for review of action not in community district (Community Board, Borough Board)
+*   Written request for review of plan outside borough (Borough President)
+*   Written request to expedite plan distribution (Sponsoring agency)
+*   Written statement of explanation for delayed vote (Commission)
+*   Written findings and recommendations on Council modification (Commission)
+*   Written statement for supplementary environmental review (Commission)
+*   Written explanation for not considering non-city properties (Sponsoring agency)
+*   Written request for consensus building process (Borough President)
+*   Agreements reached during consensus building process
+*   Reports from facility monitoring committees
+*   Agency head responses to committee reports
+*   Affidavit from owner/applicant attesting to licensee not in control of premises
+*   Restrictive declaration for parking spaces
+*   Surrendered/non-renewed licenses from NYC Department of Consumer Affairs
+*   Written signoff from lead agency for hazardous materials
+*   Determination from NYC Landmarks Preservation Commission (LPC)
+*   Archaeological document study
+*   Writing from LPC regarding archaeological/historic preservation concerns
+*   Construction Protection Plan
+*   Confirmation to lead agency regarding air quality pollutant concentrations
+*   Representative peak hour outdoor noise sampling
+*   Written request for additional information or meetings (Department to Applicant)
+*   Confirmation of PAS receipt (Department to Applicant)
+*   Comments on draft CEQR short/full form (Department to Applicant)
+*   Notification of project classification (Department to Applicant)
+*   Notification of sufficient information for land use actions/environmental review (Department to Applicant)
+*   Notification of acceptance of RWCDS Memorandum (Department to Applicant)
+*   Notification of draft land use application completeness (Department to Applicant)
+*   Notification of draft CEQR short/full form completeness (Department to Applicant)
+*   Written notification of project being placed on hold (Department to project sponsor)

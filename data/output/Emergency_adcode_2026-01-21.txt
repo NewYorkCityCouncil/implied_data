@@ -1,0 +1,470 @@
+**Data Systems for Emergency Management Agency**
+
+**1. Emergency Event Log**
+
+**Quotes:**
+ - § 30-102.a: "what specific actions the office may take when the national weather service forecasts the occurrence of certain specified severe weather conditions, as determined by the office, including identifying what other agencies or offices of city, state or federal government shall be contacted or consulted; (2) based on the national weather service consultation and inter-agency communications, whether and at what level to activate emergency support functions"
+ - § 30-103.a: "the term "snow event" shall mean any snowfall equal to or in excess of six inches within a period of twenty-four hours in any of the five boroughs based on the department of sanitation's measurements."
+ - § 30-103.b.1: "a list of all snow events during the reporting period"
+ - § 30-103.b.4: "a list of any snow-related emergency warnings or declarations issued by the city or state during the reporting period and actions taken pursuant to each such warning or declaration"
+ - § 30-104: "food and water access plan to be utilized after coastal storms and other severe weather and natural disaster events"
+ - § 30-105: "sheltering plan... as a result of coastal storms and other severe weather and natural disaster events."
+ - § 30-106: "community recovery plan to be utilized before, during and after coastal storms and other severe weather and natural disaster events."
+ - § 30-107.a.1: "small business and non-profit organization recovery plan to be utilized after coastal storms and other severe weather and natural disaster events."
+ - § 30-108: "traffic management plan... during and after coastal storms and other severe weather and natural disaster events"
+ - § 30-109: "fuel management plan... during and after coastal storms and other severe weather and natural disaster events"
+ - § 30-110: "tracking of persons in special medical needs shelters established as a result of coastal storms and other severe weather and natural disaster events."
+ - § 30-111: "outreach and recovery plan to assist vulnerable and homebound individuals before, during and after coastal storms and other severe weather and natural disaster events."
+ - § 30-116.a: "Heat-related emergency. The term “heat-related emergency” means an occurrence of high temperatures or other circumstances during which the national weather service issues a warning or alert relating to extreme heat, or during which the commissioner of health and mental hygiene determines that the level of the heat index is unsafe or unhealthy for vulnerable populations."
+ - § 30-117.a: "Flash flood. The term “flash flood” means flooding that begins within 6 hours, and often within 3 hours, of heavy rainfall."
+
+**Why:** The agency must track all emergency events to fulfill reporting, planning, and response mandates.
+
+**One row represents:** A single emergency event (e.g., a specific snowstorm, a heatwave, a coastal storm).
+
+**Covers:** All types of emergencies the agency is responsible for managing, including weather, natural disasters, and utility outages.
+
+**Columns:**
+ - Event ID
+ - Event Type (e.g., Snow Event, Coastal Storm, Heat-Related Emergency, Flash Flood, Utility Outage, Natural Disaster)
+ - Event Name/Description
+ - Start Date/Time
+ - End Date/Time
+ - Affected Boroughs/Geographic Area
+ - National Weather Service Forecast Details (e.g., snowfall amount, heat index, flood warning)
+ - OEM Determination of Severity
+ - Emergency Support Functions (ESF) Activation Level
+ - State/Federal Agencies Contacted/Consulted
+ - Mutual Aid Requested (Yes/No)
+ - City/State Emergency Warnings/Declarations Issued (Yes/No)
+ - Declaration Details (e.g., type, date/time issued)
+ - Actions Taken Pursuant to Declaration
+ - Lead Agency for Response
+ - Event Status (e.g., Active, Concluded, Recovery Phase)
+
+**2. Emergency Response Agency/Entity Performance Assessments**
+
+**Quotes:**
+ - § 30-103.b.3: "an assessment of the performance of each such agency or office for each snow event during the reporting period, including an assessment of interagency coordination"
+ - § 30-103.c.2: "an assessment of how such equipment and resources were deployed and overseen by city agencies or offices"
+ - § 30-103.c.3: "assessment on how such individuals were deployed and overseen by city agencies or offices"
+ - § 30-112.b: "The commissioner shall assess any plan referenced in subdivision a of this section whenever such plan is activated. Such assessment shall consider the reports and recommendations issued by any task force or commission following such activation."
+ - § 30-116.d.8: "an evaluation of the measures taken to reduce the impact of heat-related emergencies and the number of heat-related deaths during the previous summer seasons"
+
+**Why:** The agency is legally required to assess performance of all involved entities for each emergency event.
+
+**One row represents:** A performance assessment for a specific agency/entity during a particular emergency event.
+
+**Covers:** Performance evaluations of city, state, federal agencies, and private entities involved in emergency preparation and response.
+
+**Columns:**
+ - Assessment ID
+ - **Event ID** (links to Dataset 1: Emergency Event Log)
+ - Agency/Entity Name
+ - Agency/Entity Type (e.g., City Agency, State Agency, Private Entity)
+ - Responsibilities during Event
+ - Performance Rating/Score
+ - Performance Notes/Details
+ - Interagency Coordination Assessment
+ - Equipment Deployment Assessment
+ - Personnel Deployment Assessment
+ - Date of Assessment
+ - Assessor ID
+ - Recommendations for Improvement
+
+**3. Emergency Response Equipment Inventory**
+
+**Quotes:**
+ - § 30-103.c.1: "an inventory of all city-owned snow management equipment and resources that were used during any snow event"
+ - § 30-103.c.2: "an inventory of privately-owned snow management equipment and resources used by the city during any snow event"
+ - § 30-108.a: "the installation of back-up power capability, including but not limited to the consideration of the effectiveness of installing solar power and other alternative energy sources with respect to street lights and traffic control signals to keep the roadway network functioning to the maximum possible extent during power outages"
+ - § 30-109.b: "the criteria for determining the amount of fuel reserves in the city of New York that should be maintained and for what priority purposes"
+ - § 30-105.f: "a reassessment of the emergency shelter supply stockpile at least annually, as well as immediately before and after such plan is activated, to determine whether appropriate supplies are available and adequate"
+
+**Why:** The agency needs to track all available equipment and resources for emergency response and preparedness.
+
+**One row represents:** A single piece of emergency response equipment or a specific resource type.
+
+**Covers:** City-owned and privately-owned equipment, backup power systems, and emergency supply stockpiles.
+
+**Columns:**
+ - Equipment ID
+ - Equipment Type (e.g., Snow Plow, Generator, Solar Panel, Fuel Tank, Shelter Supply Kit)
+ - Description
+ - Owner Type (City-owned, Privately-owned)
+ - Current Location
+ - Status (e.g., Operational, Under Repair, Deployed)
+ - Last Maintenance Date
+ - Acquisition Date
+ - Capacity/Quantity (for bulk items like fuel reserves, supply kits)
+ - Associated Contract ID (if privately owned, links to Dataset 11: Emergency Vendor Contracts)
+ - Deployment History (reference to **Event ID** from Dataset 1)
+
+**4. Emergency Response Personnel/Volunteer Registry**
+
+**Quotes:**
+ - § 30-103.c.3: "the number of individuals who registered with the city to work during any snow event, and assessment on how such individuals were deployed and overseen by city agencies or offices and strategies, contracts or agreements used to ensure that such individuals were available to the city"
+ - § 30-105.b: "a description of shelter staffing and management, including but not limited to an explanation of how key shelter staff positions such as shelter managers and clinical staff will be determined and how shelters will be adequately staffed with trained medical personnel to the extent necessary for each such shelter's needs"
+ - § 30-106.a: "the establishment of community recovery directors and deputy recovery directors or other such similar positions for each of the five boroughs"
+ - § 30-106.a.1: "the criteria for how such directors, deputies or other such similar positions are chosen"
+ - § 30-106.a.2: "a description of the basic duties and responsibilities of such directors, deputies or other such similar positions including, but not limited to: the timing of deployment in the field following such events"
+ - § 30-109.d: "the prioritization of fuel access for persons involved in rescue, recovery and clean-up operations, including but not limited to emergency services and critical health, public safety and sanitation personnel"
+ - § 30-116.b: "shall be staffed by no less than 1 natural person during hours such cooling center is open to the public."
+
+**Why:** The agency needs to manage and deploy personnel and volunteers for various emergency response roles.
+
+**One row represents:** A registered individual available for emergency work or a specific emergency personnel role.
+
+**Covers:** Individuals registered for snow events, shelter staff, community recovery directors, and other emergency personnel.
+
+**Columns:**
+ - Personnel/Volunteer ID
+ - Name
+ - Contact Information
+ - Role/Specialty (e.g., Snow Worker, Shelter Manager, Clinical Staff, Community Recovery Director, Emergency Services, Public Safety, Sanitation)
+ - Affiliation (e.g., City Employee, Volunteer, Contractor)
+ - Training/Certifications
+ - Availability Status
+ - Deployment History (reference to **Event ID** from Dataset 1, **Facility ID** from Dataset 5)
+ - Date Registered
+ - Contract/Agreement Details (if applicable, links to Dataset 11: Emergency Vendor Contracts)
+ - Deployment Oversight Agency/Office
+
+**5. Emergency Facility Locations**
+
+**Quotes:**
+ - § 30-104.d: "criteria for how food and water distribution points are identified and how such distribution points will be publicized"
+ - § 30-105.a: "a description of the types of evacuation centers and shelters, number and location of evacuation centers, how persons are transferred from an evacuation center to a shelter, and a mechanism to identify locations to be used as shelters, including shelters that are adequate for habitability for long-term stays"
+ - § 30-106.e: "the establishment of field recovery offices in or near affected communities as soon as practicable after such events take place"
+ - § 30-116.b: "The commissioner... shall designate cooling centers when there is a heat-related emergency in the city. ... In determining the locations of such centers, the commissioner shall consider factors including, but not limited to, areas in which vulnerable populations reside and the heat vulnerability index."
+ - § 30-116.c: "the location and hours of operation of any cooling center open during such heat-related emergency."
+ - § 30-116.d.4.c: "a list of potential locations of cooling centers by street address, cross streets, and ZIP code"
+ - § 30-116.d.4.d: "the potential hours of operations, maximum capacity, and accessibility for individuals with disabilities for each such center"
+ - § 30-117.b: "existing public or private facilities suitable for individuals seeking refuge in anticipation of a flash flood event."
+
+**Why:** The agency needs a comprehensive list of all designated emergency facilities and their operational details.
+
+**One row represents:** A single emergency facility location.
+
+**Covers:** Evacuation centers, shelters (short, medium, long-term, special medical needs), food/water distribution points, field recovery offices, and cooling centers.
+
+**Columns:**
+ - Facility ID
+ - Facility Name
+ - Facility Type (e.g., Evacuation Center, General Shelter, Special Medical Needs Shelter, Food/Water Distribution Point, Field Recovery Office, Cooling Center)
+ - Street Address
+ - Cross Streets
+ - ZIP Code
+ - Geographic Coordinates
+ - Capacity (Maximum Occupancy)
+ - Accessibility for Persons with Disabilities (Yes/No, details)
+ - Owner/Operator (e.g., City, Private, Non-Profit)
+ - Designated for Long-Term Stays (Yes/No)
+ - Availability Status (e.g., Active, Standby, Closed)
+ - Operational Hours (during activation)
+ - Staffing Requirements
+ - Amenities (e.g., restrooms, drinking water, showers, laundry, food options)
+ - Vulnerable Population Area (Yes/No, based on HVI)
+ - Associated **Event ID** (if activated for a specific event, links to Dataset 1: Emergency Event Log)
+
+**6. Shelter Occupancy and Needs**
+
+**Quotes:**
+ - § 30-105.h: "a mechanism for tracking the daily census at each shelter, including the number of persons with special medical needs, the number of persons who enter and exit each day, and to the extent practicable, a general description of the locations to which such persons exited"
+ - § 30-105.i: "a mechanism to track the medical needs of persons at shelters who request assistance in meeting such needs, including but not limited to needed medications and placement in the proper type of shelter"
+ - § 30-105.j: "a mechanism to advise persons who receive federal, state or city public assistance benefits of how to avoid disruption of such benefits due to an inability to meet program requirements as a result of their stay in such shelter"
+ - § 30-110.a: "a mechanism to adequately track persons who enter or exit a special medical needs shelter"
+ - § 30-110.b: "a mechanism for the dissemination of bracelets or other wearable identification devices to be used on a voluntary basis by any person entering a special medical needs shelter... such person's name, address, emergency contact information, and information provided regarding the medical needs of such person, or an identification number or other identifier that will enable the shelter operator to locate such information"
+ - § 30-110.c: "a mechanism to track the medical needs of any person using a special medical needs shelter... including but not limited to needed medications"
+ - § 30-110.d: "a mechanism for enabling persons who use special medical needs shelters and who do not object to disclosure of their location to be contacted by their family members and guardians"
+
+**Why:** The agency must track individuals in shelters, their movements, and their specific needs for effective care and reunification.
+
+**One row represents:** A single person's entry, exit, or daily status update at a shelter.
+
+**Covers:** All individuals staying in general and special medical needs shelters during emergency events.
+
+**Columns:**
+ - Record ID
+ - **Event ID** (links to Dataset 1: Emergency Event Log)
+ - **Facility ID** (links to Dataset 5: Emergency Facility Locations)
+ - Person ID (unique identifier for the individual)
+ - Name
+ - Entry Date/Time
+ - Exit Date/Time
+ - Exit Destination (general description)
+ - Special Medical Needs (Yes/No)
+ - Medical Needs Details (e.g., needed medications, specific conditions)
+ - Public Assistance Benefits Recipient (Yes/No)
+ - Public Assistance Benefit Type
+ - Wearable ID Provided (Yes/No)
+ - Wearable ID Number
+ - Emergency Contact Information
+ - Consent to Disclose Location (Yes/No)
+ - Daily Census Date
+ - Shelter Manager ID (links to Dataset 4: Emergency Response Personnel/Volunteer Registry)
+
+**7. Assisted Individuals Registry (Vulnerable/Homebound)**
+
+**Quotes:**
+ - § 30-111.a: "a description of how the office will identify, conduct outreach to, communicate with, and otherwise assist vulnerable and homebound individuals before, during and after the impact of such events"
+ - § 30-111.b: "the development of a mechanism for utilizing lists of homebound and vulnerable individuals, to the extent consistent with applicable confidentiality requirements, which shall include: (1) the use of existing lists of such individuals maintained by community based organizations, service providers and relevant agencies, including but not limited to the department for the aging, the department of health and mental hygiene, the department of social services/human resources administration, and the New York city housing authority; (2) the office's Advance Warning System or successor system; and (3) a process whereby vulnerable and homebound individuals receive information about how to request that they be included in such existing lists or system"
+ - § 30-111.d: "the creation of a Door-to-Door Task Force that will be responsible for developing and implementing a strategy to locate and assist vulnerable and homebound individuals, provide such individuals with information, and assist with any recovery efforts that take place after such events, including the delivery of necessary supplies and services"
+
+**Why:** The agency needs to maintain a confidential registry of vulnerable and homebound individuals to provide targeted assistance.
+
+**One row represents:** A single vulnerable or homebound individual registered for assistance.
+
+**Covers:** Individuals identified through existing lists, the Advance Warning System, or self-registration.
+
+**Columns:**
+ - Individual ID
+ - Name
+ - Address
+ - Contact Information
+ - Vulnerability Type (e.g., Homebound, Medical Needs, Elderly, Disability)
+ - Source of Information (e.g., Self-Registered, DFTA List, DOHMH List, HRA List, NYCHA List, AWS)
+ - Registration Date
+ - Consent for Inclusion (Yes/No)
+ - Emergency Contact Information
+ - Language Preference
+ - Assistance Provided (reference to **Event ID** from Dataset 1, type of assistance)
+ - Door-to-Door Task Force Interaction (Yes/No, Date)
+
+**8. Assisted Organizations Registry (Small Business/Non-Profit)**
+
+**Quotes:**
+ - § 30-107.a.2: "work with small business owners and non-profit organizations throughout New York city to identify critical resources necessary for the continued functioning of such small businesses and non-profit organizations during and after such events."
+ - § 30-107.a.3.ii: "the establishment of a voluntary database of small businesses and non-profit organizations, including but not limited to utilizing any existing database of small businesses and non-profit organizations maintained by the department of small business services, to provide that such businesses and organizations receive alerts regarding such events, recovery assistance, and other relevant information and to conduct outreach with such small businesses and non-profit organizations to encourage their registration in such database"
+
+**Why:** The agency needs a database of small businesses and non-profits to provide alerts and recovery assistance.
+
+**One row represents:** A single small business or non-profit organization registered for emergency assistance.
+
+**Covers:** Small businesses and non-profit organizations that voluntarily register or are identified for outreach.
+
+**Columns:**
+ - Organization ID
+ - Organization Name
+ - Organization Type (Small Business, Non-Profit)
+ - Business Category (as determined by SBS Commissioner)
+ - Address
+ - Contact Person Name
+ - Contact Email
+ - Contact Phone Number
+ - Registration Date
+ - Source of Registration (e.g., Voluntary, SBS Database)
+ - Alerts Received (reference to **Communication ID** from Dataset 10: Emergency Public Communications Log)
+ - Recovery Assistance Provided (reference to **Event ID** from Dataset 1, type of assistance)
+ - Language Preference
+
+**9. Impact Assessment Surveys (Small Business/Non-Profit)**
+
+**Quotes:**
+ - § 30-107.a.3.i: "an evaluation of the potential impact of disruptions on small businesses and non-profit organizations as a result of such events, including a mechanism to conduct an impact analysis for major categories of small businesses and non-profit organizations, as determined by the commissioner of small business services, in order to identify disruptions unique to each such category, and the implementation of measures to prevent or mitigate such disruptions and to support recovery of the small business and non-profit sectors"
+ - § 30-107.a.3.iii: "conducting a survey of small business owners and non-profit organizations after such events to identify resources necessary for recovery, which shall include but not be limited to an assessment of small businesses such as whether a business is open, closed or partially in operation, damage to business facilities, lost revenues, the number of employees affected and whether there is a plan for employees to return to such business if such employees are unable to work, whether additional workers are needed or hired to assist with recovery efforts, a description of the type of assistance necessary for recovery, the type and amount of insurance that such business has, and whether such business has filed insurance claims and the status of such claims"
+
+**Why:** The agency must survey businesses and non-profits post-event to assess impact and identify recovery needs.
+
+**One row represents:** A single survey response from a small business or non-profit organization after an emergency event.
+
+**Covers:** Post-event surveys conducted with registered and non-registered small businesses and non-profits.
+
+**Columns:**
+ - Survey ID
+ - **Event ID** (links to Dataset 1: Emergency Event Log)
+ - **Organization ID** (links to Dataset 8: Assisted Organizations Registry, if registered)
+ - Organization Name (if not registered)
+ - Survey Date
+ - Business Status (Open, Closed, Partially Operational)
+ - Damage to Facilities (Yes/No, Description)
+ - Estimated Lost Revenues
+ - Number of Employees Affected
+ - Employee Return Plan (Yes/No, Details)
+ - Additional Workers Needed (Yes/No, Number)
+ - Type of Assistance Necessary for Recovery
+ - Insurance Type and Amount
+ - Insurance Claim Filed (Yes/No)
+ - Insurance Claim Status
+ - Survey Language
+
+**10. Emergency Public Communications Log**
+
+**Quotes:**
+ - § 30-104.a: "how and to what extent the city will disseminate information to the public about the availability of food and water services"
+ - § 30-104.h: "a mechanism to provide that, to the extent practicable, all public communications, written or otherwise, are available in the most commonly spoken languages of affected communities"
+ - § 30-106.d: "the creation of a uniform information sharing and distribution plan to be used by each community recovery director to properly inform residents, elected officials and the press about the services available through the community recovery director and his or her team on the ground, and ways to contact community recovery personnel"
+ - § 30-106.g: "an information dissemination strategy that identifies and utilizes major hubs and distribution centers, including partnering with non-city distribution sites, to share information about services available to clients, elected officials, and press, and that requires that to the extent practicable, all public communications, written or otherwise, are available in the most commonly spoken languages of affected communities."
+ - § 30-107.b: "To the extent practicable, all public communications, written or otherwise, with small businesses and non-profit organizations as set forth in this section, shall be available in the most commonly spoken languages of affected communities."
+ - § 30-108.h: "a mechanism to provide that, to the extent practicable, all public communications, written or otherwise, are available in the most commonly spoken languages of affected communities."
+ - § 30-109.f: "a mechanism to provide that, to the extent practicable, all public communications, written or otherwise, are available in the most commonly spoken languages of affected communities."
+ - § 30-111.f: "a mechanism to provide that, to the extent practicable, all public communications, written or otherwise, are available in the most commonly spoken languages of affected communities"
+ - § 30-114: "The commissioner shall develop and disseminate localized emergency preparedness materials for communities in which there is a risk of evacuation due to coastal storms or hurricanes to increase public awareness"
+ - § 30-115.a: "Any emergency alert originated by a city office or city agency that is issued through a commercial mobile service alert system established pursuant to 47 U.S.C. § 1201 shall, to the extent practicable and to the extent permissible under regulations enacted pursuant to such section, be issued in no fewer than the two most commonly spoken languages within the area covered by the emergency alert"
+ - § 30-115.b: "Any emergency notification system operated and controlled by the office of emergency management... shall offer each notification in no fewer than the seven most commonly spoken languages within the city"
+ - § 30-116.c: "The commissioner shall post on the website of the office any health alerts issued by the office or the department of health and mental hygiene during a heat-related emergency, and the location and hours of operation of any cooling center open during such heat-related emergency. The commissioner shall post such information on or before May 1 of each year, and make such information available in the designated citywide languages"
+ - § 30-116.d.2: "a description of how the commissioner and the commissioner of health and mental hygiene will communicate to residents the dangers of heat exposure"
+ - § 30-116.d.7: "a description of how the commissioner and the commissioner of health and mental hygiene, or any other office or agency, will provide public communications, written or otherwise, in the designated citywide languages"
+ - § 30-116.e: "The office... shall conduct a public education and outreach campaign on heat-related emergencies and strategies for preventing health risks"
+ - § 30-116.f: "The office shall provide an owner or operator of a building designated as a cooling center with a flyer or other written notice stating that such building is a cooling center and direct or request the owner or operator to post such flyer or notice near an entrance to such cooling center during a heat-related emergency. Such flyer or other written notice shall be provided in the designated citywide languages"
+ - § 30-117.c: "The commissioner shall establish an outreach program to increase registration for Notify NYC alerts and to coordinate efforts across agencies to increase public awareness regarding the appropriate responses by members of the public to flash flood risks"
+
+**Why:** The agency is mandated to issue various public communications, alerts, and educational materials in multiple languages.
+
+**One row represents:** A single public communication, alert, or piece of outreach material issued.
+
+**Covers:** All emergency alerts, notifications, public information, health alerts, and educational/outreach materials disseminated by the agency.
+
+**Columns:**
+ - Communication ID
+ - **Event ID** (links to Dataset 1: Emergency Event Log, if event-specific)
+ - Communication Type (e.g., Emergency Alert, Public Information, Health Alert, Educational Material, Outreach Campaign)
+ - Target Audience (e.g., General Public, Small Businesses, Vulnerable Individuals, Specific Community)
+ - Content Summary
+ - Date/Time Issued
+ - Issuing Agency/Department
+ - Distribution Channel (e.g., Commercial Mobile Alert System, Notify NYC, Email, Text, Phone, Social Media, Internet, In-Person, Mass Mail, Website)
+ - Geographic Area Covered (e.g., Citywide, Specific Boroughs/ZIP codes)
+ - Languages Issued In (list of languages)
+ - Original Language
+ - Translation Status (e.g., Real-time, Pre-translated)
+ - Link to Online Content (if applicable)
+ - Associated **Facility ID** (if related to a specific facility, e.g., cooling center flyer, links to Dataset 5: Emergency Facility Locations)
+
+**11. Emergency Vendor Contracts**
+
+**Quotes:**
+ - § 30-103.c.2: "strategies, contracts or agreements used to ensure that such snow management equipment and resources were available to the city"
+ - § 30-103.c.3: "strategies, contracts or agreements used to ensure that such individuals were available to the city"
+ - § 30-104.f: "identification of contracts, if any, that can be activated during and immediately after such events for vendors that can provide and distribute food and water, including but not limited to, hot food providers, trucks and drivers"
+
+**Why:** The agency needs to track all contracts and agreements for emergency equipment, resources, personnel, and services.
+
+**One row represents:** A single contract or agreement with a vendor for emergency services or resources.
+
+**Covers:** Contracts for snow management equipment, privately-owned resources, emergency personnel, food/water providers, and transportation.
+
+**Columns:**
+ - Contract ID
+ - Vendor Name
+ - Vendor Contact Information
+ - Service/Resource Provided (e.g., Snow Management Equipment, Emergency Personnel, Food/Water Distribution, Hot Food, Trucks/Drivers)
+ - Contract Start Date
+ - Contract End Date
+ - Contract Status (e.g., Active, Expired, Activated)
+ - Activation Criteria
+ - Payment Terms
+ - Associated **Equipment ID** (if for specific equipment, links to Dataset 3: Emergency Response Equipment Inventory)
+ - Associated **Personnel/Volunteer ID** (if for specific personnel, links to Dataset 4: Emergency Response Personnel/Volunteer Registry)
+ - Associated **Event ID** (if activated for an event, links to Dataset 1: Emergency Event Log)
+
+**12. Emergency Plan Management Log**
+
+**Quotes:**
+ - § 30-102.a: "The commissioner shall develop protocols that shall include, but need not be limited to, the following: (1) what specific actions the office may take when the national weather service forecasts the occurrence of certain specified severe weather conditions"
+ - § 30-104: "The commissioner shall develop or update... a food and water access plan"
+ - § 30-105: "The commissioner... shall develop or update a sheltering plan"
+ - § 30-106: "The commissioner shall develop or update... a community recovery plan"
+ - § 30-107.a.1: "The commissioner... shall develop or update... a small business and non-profit organization recovery plan"
+ - § 30-108: "The commissioner shall develop or update... a traffic management plan"
+ - § 30-109: "The commissioner shall develop or update... a fuel management plan"
+ - § 30-110: "The commissioner... shall develop or update a plan... for the tracking of persons in special medical needs shelters"
+ - § 30-111: "The commissioner... shall develop or update... an outreach and recovery plan to assist vulnerable and homebound individuals"
+ - § 30-112.a: "The commissioner shall provide to the city council a copy of any plan prepared by the New York city office of emergency management... The commissioner shall also provide the city council with updated versions of such plans within sixty days of plan revisions."
+ - § 30-112.b: "The commissioner shall assess any plan referenced in subdivision a of this section whenever such plan is activated. ... The commissioner shall also assess any such plan at least once every two years, whether or not such plan has been activated"
+ - § 30-116.d: "On or before May 15, 2026... the commissioner... shall submit to the speaker of the council and make available to the public on the city’s website a plan describing how the city will provide individuals with information on the dangers of heat exposure, access to cooling... The commissioner shall update such plan by no later than May 15 of each year."
+ - § 30-117.b: "The office shall develop guidance for facilitating safe evacuation before flash flood emergencies."
+
+**Why:** The agency is legally required to develop, update, assess, and report on various emergency plans.
+
+**One row represents:** A specific version or assessment of an emergency plan.
+
+**Covers:** All emergency plans and protocols developed, updated, or assessed by the agency.
+
+**Columns:**
+ - Plan ID
+ - Plan Name (e.g., Food and Water Access Plan, Sheltering Plan, Snow Protocols, Cooling Center Plan)
+ - Plan Type (e.g., Operational Plan, Protocol, Guidance)
+ - Version Number
+ - Last Revision Date
+ - Next Scheduled Review Date
+ - Date Submitted to City Council
+ - Date Made Public
+ - Activation Date (if activated for an event, links to **Event ID** from Dataset 1)
+ - Assessment Date
+ - Assessment Findings/Recommendations
+ - Changes Made Post-Assessment
+ - Task Force/Commission Reports Considered
+ - Public Safety Compromise (Yes/No, if disclosure withheld)
+
+**13. Critical Infrastructure Status Updates**
+
+**Quotes:**
+ - § 30-108.a: "the installation of back-up power capability, including but not limited to the consideration of the effectiveness of installing solar power and other alternative energy sources with respect to street lights and traffic control signals to keep the roadway network functioning to the maximum possible extent during power outages"
+ - § 30-108.g: "where appropriate, recommending to the appropriate state transportation authorities the elimination or reduction of fares on buses, subways and ferries"
+ - § 30-109.c: "the establishment and maintenance of lines of communication between the city and the industries that provide fuel to the city of New York"
+ - § 30-109.e: "a process for assessing transportation routes to maximize the delivery of fuel within the city of New York"
+ - § 30-108: "traffic management plan... where such events severely impact automotive, subway, and/or commuter train transportation in the city of New York."
+ - § 30-104.g: "criteria for assessing transportation routes that allow for the distribution of food and water that accounts for emergency road and bridge closures"
+
+**Why:** The agency needs to monitor the status of critical infrastructure (transportation, power, fuel) during emergencies.
+
+**One row represents:** A status update for a specific piece of critical infrastructure or transportation route.
+
+**Covers:** Street lights, traffic signals, subway/bus/ferry services, fuel supply points, and transportation routes.
+
+**Columns:**
+ - Status Update ID
+ - **Event ID** (links to Dataset 1: Emergency Event Log)
+ - Infrastructure Type (e.g., Traffic Signal, Street Light, Subway Line, Bus Route, Ferry Service, Fuel Station, Road, Bridge)
+ - Infrastructure ID/Location
+ - Status (e.g., Operational, Outage, Partial Service, Closed, Impassable)
+ - Power Source (e.g., Grid, Backup Generator, Solar)
+ - Date/Time of Update
+ - Reporting Agency/Source
+ - Impact Description (e.g., traffic congestion, service disruption)
+ - Alternative Options Available (e.g., expanded bus/ferry, alternative routes)
+ - Fuel Supply Level (for fuel stations/reserves)
+ - Fares (Normal, Reduced, Eliminated)
+
+**14. Public Feedback/Complaint Log**
+
+**Quotes:**
+ - § 30-116.e: "Such public education and outreach campaign shall provide information about how to submit feedback about a cooling center, including any obstacles to accessing such cooling center."
+ - § 30-116.f: "Such flyer or other written notice... shall include information about how to submit feedback about a cooling center, including any obstacles to accessing such cooling center."
+
+**Why:** The agency is required to collect feedback, specifically regarding cooling centers, to improve services.
+
+**One row represents:** A single piece of feedback or a complaint received from the public.
+
+**Covers:** Feedback and complaints related to cooling centers and potentially other emergency services.
+
+**Columns:**
+ - Feedback ID
+ - Date/Time Received
+ - Feedback Type (e.g., Complaint, Suggestion, Positive Feedback)
+ - Subject (e.g., Cooling Center, General Emergency Response, Communication)
+ - **Facility ID** (if related to a specific facility, links to Dataset 5: Emergency Facility Locations)
+ - Description of Feedback/Complaint
+ - Obstacles Reported (if applicable)
+ - Contact Information (if provided, optional)
+ - Resolution Status
+ - Date of Resolution
+
+**Non-Tabular Information:**
+
+*   **Rules and Regulations:** The administrative code itself, and any internal rules or regulations developed by the office.
+*   **Job Applications:** Information related to hiring processes.
+*   **Receipts:** Financial transaction records, typically stored in accounting systems.
+*   **Photos:** Visual documentation of events, damage, or facilities.
+*   **Research Documents:** Studies, analyses, or reports that are not raw, tabular data.
+*   **Plans (as documents):** The full text of the Food and Water Access Plan, Sheltering Plan, Community Recovery Plan, etc., as distinct documents.
+*   **Reports (as documents):** Annual snow preparedness and response reports, emergency management plan assessment reports, cooling center program reports, flash flood outreach reports.
+*   **Protocols (as documents):** Weather emergency protocols.
+*   **Recommendations (as documents):** Weather emergencies and prolonged utility outage preparedness recommendations for residential and commercial buildings.
+*   **Localized Emergency Preparedness Materials (as documents/media):** Flyers, brochures, online content for specific communities.
+*   **Public Education Campaign Materials (as documents/media):** Content for heat-related emergency campaigns.
+*   **Community Based Organization (CBO) Consultation Records:** Notes or summaries from consultations with CBOs.
+*   **Inter-agency Communications:** Records of specific communications between agencies (e.g., emails, meeting minutes).
+*   **National Weather Service Consultations:** Records of specific consultations.
+*   **Legal Changes:** Updates to laws or regulations affecting the agency.
