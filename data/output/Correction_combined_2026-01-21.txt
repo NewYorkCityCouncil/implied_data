@@ -1,0 +1,769 @@
+**Section 1, Mission Summary:**
+
+The agency's mission is to manage the care, custody, and control of all individuals incarcerated in city institutions, ensuring their safety, providing rehabilitative programs, and facilitating their reintegration into the community. Key programs include managing correctional facilities, providing healthcare and mental health services, offering educational and vocational training, overseeing prisoner labor, and implementing discharge planning. The agency's impacts on constituents include ensuring the secure and humane detention of individuals, promoting rehabilitation, and contributing to public safety through effective re-entry.
+
+**Section 2, Data Summary:**
+
+1.  **Incarcerated Individual Records**
+2.  **Facility Inventory**
+3.  **Transportation Vehicle Inventory**
+4.  **Staff Records**
+5.  **Board of Correction Member Appointments**
+6.  **Incarcerated Individual Movement Log**
+7.  **Building Maintenance Work Orders**
+8.  **Facility Inspections & Requisitions**
+9.  **Departmental Inventory & Supply Chain**
+10. **Incarcerated Individual Program Participation**
+11. **Program Catalog**
+12. **Prisoner Labor Assignments**
+13. **Incarcerated Individual Grievance Log**
+14. **Employee Grievances**
+15. **Incarcerated Individual Death Records**
+16. **Prison Death Review Board Meetings**
+17. **Board of Correction Oversight Events**
+18. **BOC Reports and Recommendations**
+19. **Incarcerated Individual Healthcare Records**
+20. **Incarcerated Individual Disciplinary Infractions**
+21. **Incarcerated Individual Disciplinary Hearings & Outcomes**
+22. **Incarcerated Individual Appeals**
+23. **Use of Force Incidents**
+24. **Staff Disciplinary Actions**
+25. **Sexual Abuse & Harassment Allegations**
+26. **Assaults & Other Violent Incidents**
+27. **Discharge Planning & Re-entry Services**
+28. **Segregated Housing Placements & Conditions**
+29. **Staff Work Schedules & Attendance**
+30. **Staff Training Records**
+31. **Emergency Lock-in Incidents**
+32. **Civil Service Examination Participation**
+33. **Visitation Log**
+34. **Legal Representative Information**
+35. **Video Surveillance & Evidence Records**
+36. **De-escalation Confinement & Restraints Usage Log**
+37. **Library & Resource Inventory**
+38. **Inmate Property Management**
+39. **Inmate Privilege Determinations**
+40. **Inmate Drug and Alcohol Testing**
+
+**Section 3, Data Details:**
+
+**1. Incarcerated Individual Records**
+*   **Open Data Match:** Inmate Discharges (575) - 70% similarity. The open dataset is a subset (discharges) but contains similar core attributes.
+*   **Quotes:**
+    *   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants, all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment and violators of ordinances or local laws and for the detention of witnesses who are unable to furnish security for their appearance in criminal proceedings, except such places for the detention of prisoners or persons charged with crime as are by law placed under the charge of some other agency." (Charter Section 623.1)
+    *   "All authority, except as otherwise provided by law, concerning the care and custody of felons, misdemeanants and violators of local laws held in the institutions under his charge." (Charter Section 623.4)
+    *   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Charter Section 623.6)
+    *   "Every incarcerated individual of an institution under the authority of the commissioner shall be employed in some form of industry, in farming operations or other employment..." (Charter Section 625)
+    *   "Those persons held for trial may be employed in the same manner as sentenced prisoners, provided they give their consent in writing." (Charter Section 625)
+    *   "The board shall establish minimum standards for the care, custody, correction, treatment, supervision, and discipline of all persons held or confined under the jurisdiction of the department..." (Charter Section 626.e)
+    *   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance (1) by or on behalf of any person held or confined under the jurisdiction of the department..." (Charter Section 626.f)
+    *   "The board shall investigate such death and prepare a report about such investigation." (Charter Section 626.i.2)
+    *   "Upon request from the next of kin of an incarcerated individual who has died, the board shall provide to such next of kin records provided to the board by the department and correctional health services for purposes of such investigation..." (Charter Section 626.i.4)
+    *   "The commissioner of correction may designate any institution or part thereof under the jurisdiction of the commissioner for the safekeeping of persons committed to the department of correction." (Admin Code § 9-101)
+    *   "The commissioner of correction shall have power to transfer prisoners from any prison or correctional institution under his or her control to any other prison or correctional institution under the jurisdiction of the department." (Admin Code § 9-104)
+    *   "The commissioner of correction shall have authority concerning the care and custody of witnesses in criminal proceedings committed to the institutions under the commissioner's charge." (Admin Code § 9-105)
+    *   "The commissioner of correction shall so far as practicable classify all felons, misdemeanants and violators of local laws under the commissioner's charge, so that the youthful or less hardened offenders shall be segregated from the older or more hardened offenders." (Admin Code § 9-109)
+    *   "The commissioner of correction shall keep and preserve a proper record of all persons who shall come under the commissioner's care or custody, and of the disposition of each, with full particulars as to the name, age, sex, color, nativity and religious faith, together with a statement of the cause and length of detention." (Admin Code § 9-121)
+    *   "The commissioner of correction shall have custody of civil prisoners and the prisons wherein they are confined." (Admin Code § 9-125.a)
+    *   "The department of correction shall collect, from any sentenced incarcerated individual who will serve, after sentencing, ten days or more in any city correctional institution, information relating to such incarcerated individual's housing, employment and sobriety needs." (Admin Code § 9-127.b)
+    *   "The term "adolescent" means an incarcerated individual 16 or 17 years of age. The term "adult" means an incarcerated individual 22 years of age or older. The term "young adult" means an incarcerated individual 18 to 21 years of age." (Admin Code § 9-130.a)
+    *   "The department shall inform every incarcerated individual upon admission to the custody of the department, in writing, using plain and simple language, of their rights under department policy..." (Admin Code § 9-139.a)
+    *   "The department shall maintain a policy that requires its employees to refer to individuals in custody by their names and their preferred pronouns, if known and if practicable..." (Admin Code § 9-139.h)
+    *   "The total number of persons in the custody of the department; The total and average numbers of persons in the Special Consideration Unit, or any other housing unit dedicated to the housing of transgender, gender non-binary, or intersex persons; The number and percentage of persons in the custody of the department who have identified themselves to the department, or have been identified by another person or agency on their behalf, as having a gender identity different from the sex assigned to the person at birth, or that were assigned an "X" gender marker or an intersex identification at birth; This data shall be further disaggregated by self-described gender identity including, but not limited to, transgender, gender non-conforming, non-binary, or intersex;" (Admin Code § 9-165.b.1-3)
+    *   "The department shall offer to screen all incarcerated persons between the ages of 18 and 21 who self-report that they do not have a high school diploma or its equivalent for being at risk of dyslexia within 10 days of entering custody of the department." (Admin Code § 9-166.b)
+    *   "This chapter sets forth rules relating to inmates of New York City Department of Correction ("Department") facilities." (Rules § 1-01)
+    *   "All inmates will also be provided separately with detailed information relating to their incarceration, including the subjects covered in 39 RCNY § 1-02." (Rules § 1-01)
+    *   "When you first come to jail, any property that is taken from you..." (Rules § 1-02(a))
+    *   "Upon incarceration, you will be given more information about what property may be kept in jail and how to get other property back after discharge." (Rules § 1-02(a))
+    *   "An inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c)..." (Rules § 1-03(c))
+    *   "Good Time" shall mean a discretionary reduction of up to one third of the term of commitment for a definite sentence or certain civil commitments, as allowed by the New York State Correction Law." (Rules § 1-03(b))
+    *   "Security Risk Group" shall mean persons such as gang members, intended or actual contraband recipients, and weapons carriers or users..." (Rules § 1-03(b))
+    *   "Inmates shall carry and display their Department ID at all times when outside their cell or sleeping quarters." (Rules § 1-03(c)(17))
+    *   "Inmates shall not refuse to provide a DNA sample if they meet the criteria as set forth in Article 49-B of the New York State Executive Law qualifying a person as a designated offender." (Rules § 1-03(c)(30))
+*   **Why:** This data is essential for managing the care, custody, legal status, and needs of every individual under the department's jurisdiction.
+*   **One row represents:** A single incarcerated individual.
+*   **Covers:** All individuals held or confined under the jurisdiction of the Department of Correction, including criminal and civil prisoners, and witnesses.
+*   **Columns:** Incarcerated Individual ID (PK), Full Name, Date of Birth, Age, Sex (Assigned at Birth), Gender Identity, Preferred Pronouns, Race/Color, Nativity, Religious Faith, Legal Status, Custody Status, Admission Date, Expected Release/Transfer Date, Date of Discharge, Cause of Detention, Length of Detention, Current Facility ID (FK to 2), Current Housing Unit/Ward, Classification, Hospital Care Required, Psychiatric Observation/Treatment Required, Consent for Labor (for pre-trial detainees), Vulnerable Population Status, Next of Kin Contact Information, Death Date, Cause of Death, Housing Needs, Employment Needs, Sobriety Needs, Educational Background, Borough of Arrest, Mental Health Treatment Level (FK to 19), Medically Vulnerable Status, Pregnancy Status, NYSID/Booking and Case Number, Legal Representative ID (FK to 34), English Language Learner Status, Dyslexia Risk Screening Status, Dyslexia Intervention Referral Status, Initial Good Time Eligibility, Current Good Time Balance, Security Risk Group Status, Security Risk Group Affiliation, DNA Designated Offender Status, DNA Sample Provided, Department ID Number (FK to 38), Language Preference, Literacy Status, Vision/Hearing Impairment Status, Complex Case Status.
+
+**2. Facility Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants..." (Charter Section 623.1)
+    *   "Charge and management of persons or any other institution of the city placed under his jurisdiction by law." (Charter Section 623.3)
+    *   "The commissioner shall maintain and operate buildings and structures under his jurisdiction." (Charter Section 624)
+    *   "The commissioner may construct such additions and repairs to buildings under his jurisdiction..." (Charter Section 624)
+    *   "The inspection and visitation at any time of all institutions and facilities under the jurisdiction of the department;" (Charter Section 626.c.1)
+    *   "Any council member is authorized to inspect and visit at any time the institutions and facilities under the jurisdiction of the department." (Charter Section 627)
+    *   "The commissioner of correction may designate any institution or part thereof under the jurisdiction of the commissioner for the safekeeping of persons committed to the department of correction." (Admin Code § 9-101)
+    *   "The board of estimate by resolution may designate from time to time any building or buildings within the city to be the common jails of such city or of any of the counties therein." (Admin Code § 9-102)
+    *   "The commissioner of correction is empowered to set aside in the city prison a sufficient space for the purposes of installing a library for the incarcerated individuals. The commissioner of correction may do likewise in any other place in which persons are held for infractions of the law pending a determination by a court." (Admin Code § 9-111.a)
+    *   "The commissioner of correction may use for agricultural purposes all the lands under his or her jurisdiction which are capable of cultivation and which are not otherwise occupied or utilized." (Admin Code § 9-123)
+    *   "Every city correctional facility under the sole jurisdiction and control of the department built after the effective date of the local law that added this section shall comply with the following requirements: Design requirements... General requirements... Individual living quarters... Dormitories... Housing units... Bathrooms shall be accessible at all times..." (Admin Code § 9-159.b)
+    *   "The department shall digitize paper-based communications and ensure that correctional facilities built after the effective date of the local law that added this section are wired in such a fashion to allow for such electronic communications." (Admin Code § 9-159.c)
+    *   "The department coordinator for borough-based jail transition shall: Advise and assist the department regarding the cessation of housing incarcerated individuals in jails located on Rikers Island and the transition to housing incarcerated individuals in jails other than jails located on Rikers Island;" (Admin Code § 9-175.b.1)
+    *   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York, the family court of the state of New York within the city of New York, the supreme court in the counties of New York, Bronx, Kings, Queens and Richmond..." (Charter Section 623.2)
+*   **Why:** This data is necessary to manage, maintain, and oversee all physical facilities where incarcerated individuals are held.
+*   **One row represents:** A single institution, building, court pen, or major facility under the department's jurisdiction.
+*   **Covers:** All correctional institutions, administrative buildings, hospital wards, court pens, and other structures managed by the department.
+*   **Columns:** Facility ID (PK), Facility Name, Facility Type, Address, Borough, Designation Date, Capacity (Total, by housing unit type), Current Occupancy, Special Designations, Land Area (for agricultural use), Date of Construction, Last Major Renovation Date, Building Construction/Renovation Date, Design Features, Living Quarter Details, Dormitory Details, Housing Unit Details, Electronic Communication Infrastructure Status, Current Operational Status, Responsible Department/Unit, Square Footage, Last Inspection Date (FK to 8), Next Inspection Date (FK to 8).
+
+**3. Transportation Vehicle Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York... and of all vehicles employed in the transportation of prisoners who have been sentenced, are awaiting trial or are held for any other cause." (Charter Section 623.2)
+    *   "All authority in relation to the custody and transportation of persons held for any cause in criminal proceedings and all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment, in any county within the city." (Charter Section 623.5)
+*   **Why:** This data tracks the assets specifically used for the transportation of incarcerated individuals.
+*   **One row represents:** A single transportation vehicle.
+*   **Covers:** All vehicles used for prisoner transportation.
+*   **Columns:** Asset ID (PK), Asset Type, Name/Identifier, Current Depot, License Plate, Capacity, Acquisition Date, Maintenance Schedule, Last Maintenance Date, Operational Status, Vehicle Make/Model, Vehicle VIN.
+
+**4. Staff Records**
+*   **Open Data Match:** Aggregate Employee Statistics (972) - 80% similarity. The open dataset provides aggregate staff records with attributes.
+*   **Quotes:**
+    *   "The commissioner may appoint two deputies." (Charter Section 622)
+    *   "The board may appoint an executive director to serve at its pleasure with such duties and responsibilities as the board may assign, and other professional, clerical, and support personnel within appropriations for such purpose." (Charter Section 626.b)
+    *   "The commissioner shall designate such of the department's stenographic, clerical and other assistance to the board as may be necessary for the proper performance of its functions." (Charter Section 626.b)
+    *   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance... (2) by any employee of the department." (Charter Section 626.f)
+    *   "Where a member of the uniformed force shall be charged with the commission of a crime, he or she may be suspended without pay for the duration of the time that said criminal charges are pending final disposition." (Admin Code § 9-112)
+    *   "Absence, without leave and without an explanation, of any member of the force for five consecutive work days shall be deemed and held to be a resignation..." (Admin Code § 9-113)
+    *   "Women correction officers shall have charge of and shall supervise all female prisoners and all parts of prisons occupied by such prisoners..." (Admin Code § 9-115.a)
+    *   "The uniformed force of the department of correction shall consist of the following ranks: Correction officers. Captains. Assistant deputy wardens. Deputy wardens. Wardens." (Admin Code § 9-117.a)
+    *   "A correction officer or correction officers from the department of correction shall at all times direct and guard all incarcerated individuals of any of the institutions in the department of correction who are performing work for any other agency." (Admin Code § 9-122)
+    *   "The salaries of the employees of such commissaries shall be fixed by the mayor." (Admin Code § 9-118.e)
+    *   "The term "staff" means anyone other than an incarcerated individual who works at a facility operated by the department." (Admin Code § 9-130.a)
+    *   "The total number of staff employed by the department, disaggregated by uniform and non-uniform staff; and further disaggregated by out sick and not out sick;" (Admin Code § 9-160.b.8)
+    *   "The commissioner of citywide administrative services, in collaboration with the commissioner, shall administer civil service examinations for individuals incarcerated for a period of 10 days or longer in any city correctional facility." (Admin Code § 9-164.a)
+    *   "The department coordinator for borough-based jail transition shall: ... submit to the mayor and the speaker of the council a staffing report for each jail on Rikers Island, which shall include, but need not be limited to, information on the uniformed and civilian staff needed to operate each type of housing unit in such jail..." (Admin Code § 9-175.b.4)
+*   **Why:** This data is fundamental for managing the department's workforce, including appointments, roles, and assignments.
+*   **One row represents:** A single employee or staff member of the Department of Correction or Board of Correction.
+*   **Covers:** All employees of the Department of Correction and the Board of Correction, including uniformed, civilian, and correctional health staff.
+*   **Columns:** Employee ID (PK), Full Name, Job Title, Department/Unit, Employee Type, Rank/Title, Gender, Hire Date, Employment Status, Salary, Supervisor ID (FK to 4), Assigned to BOC, Contact Information, Certifications/Qualifications, Criminal Charges Pending, Departmental Charges Pending, Probationary Term Status, Line of Duty Incapacity Status, Line of Duty Incapacity Start Date, Line of Duty Incapacity End Date, Sick Leave Status, Last Training Date (FK to 30), Next Training Due Date (FK to 30), Civil Service Examination Eligibility, Civil Service Examination Date (FK to 32), Civil Service Examination Score (FK to 32), Previous Sexual Abuse Allegations (FK to 24, 25).
+
+**5. Board of Correction Member Appointments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "There shall be a city board of correction to consist of nine members. Members shall be appointed for a term of six years. Vacancies shall be filled for the remainder of the unexpired term. Three members shall be appointed by the mayor, three by the council, and three by the mayor on the nomination jointly by the presiding justices of the appellate division of the supreme court for the first and second judicial departments. Appointments shall be made by the three respective appointing authorities on a rotating basis to fill any vacancy occurring on or after the effective date of this charter. Members of the board may be reimbursed for expenses incurred in the performance of their duties. The chairman of the board shall be designated from time to time by the mayor from among its members. Members of the board may be removed by the mayor for cause and after a hearing at which they shall be entitled to representation by counsel." (Charter Section 626.a)
+*   **Why:** This data tracks the composition and tenure of the Board of Correction, ensuring proper governance and oversight.
+*   **One row represents:** A single appointment of a Board of Correction member.
+*   **Covers:** All members of the City Board of Correction.
+*   **Columns:** Member ID (PK), Full Name, Appointing Authority, Appointment Date, Term Start Date, Term End Date, Is Chairman, Date Designated Chairman, Reason for Vacancy, Date of Removal, Reimbursement for Expenses.
+
+**6. Incarcerated Individual Movement Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York, the family court of the state of New York within the city of New York, the supreme court in the counties of New York, Bronx, Kings, Queens and Richmond and of all vehicles employed in the transportation of prisoners who have been sentenced, are awaiting trial or are held for any other cause." (Charter Section 623.2)
+    *   "All authority in relation to the custody and transportation of persons held for any cause in criminal proceedings and all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment, in any county within the city." (Charter Section 623.5)
+    *   "The department shall, within 48 hours of admission of an incarcerated individual to the custody of the department, determine whether an incarcerated individual has any pending court appearances scheduled in New York city criminal court or the criminal term of New York state supreme court..." (Admin Code § 9-146.a)
+    *   "The department shall... provide, as required by the court, transportation for every incarcerated individual for all such court appearances." (Admin Code § 9-146.b.2)
+    *   "The department shall record, via body-worn or handheld camera, video, including audio, every interaction between incarcerated individuals and correction officers in which an incarcerated individual is informed about a scheduled court appearance and shall maintain a database with the video files created pursuant to this subdivision." (Admin Code § 9-146.d)
+    *   "If consent is provided to the department by an incarcerated individual, the department shall provide, within 3 business days to the defense attorney on record of such incarcerated individual, the video file of an interaction in which that incarcerated individual is informed that they have a court appearance..." (Admin Code § 9-146.e)
+    *   "The department shall independently establish, or establish by working with the office of court administration, a means by which real-time information regarding an incarcerated individual’s departure from their housing facility on the date of their scheduled court appearance can be communicated to the defense attorney on record of such incarcerated individual..." (Admin Code § 9-146.f)
+    *   "The total number of scheduled court appearances, disaggregated by housing facility and venue of the scheduled court appearance;" (Admin Code § 9-146.g.1)
+    *   "The total number of individuals that were delivered to the court facility on the date of their scheduled court appearance, disaggregated by housing facility and venue of the scheduled court appearance;" (Admin Code § 9-146.g.2)
+    *   "The total number of individuals who were not delivered to the court facility on the date of their court appearance disaggregated by housing facility and venue of the scheduled court appearance, and the reason the individual was not delivered to the court facility;" (Admin Code § 9-146.g.3)
+    *   "The total number of individuals for which use of force was required to compel the individual to be delivered to the court facility on the date of their scheduled court appearance, disaggregated by housing facility." (Admin Code § 9-146.g.7)
+    *   "The department shall provide every incarcerated individual appearing for a trial or before a grand jury with access to clothing in their personal property prior to transport for such appearance..." (Admin Code § 9-147)
+    *   "Inmates shall follow facility rules and staff orders relating to movement inside and outside the facility, including, but not limited to, rules and orders dealing with seating, lock-in and lock-out." (Rules § 1-03(c)(19) 117.10)
+    *   "Inmates shall not be out of their assigned area, including being in a cell to which they are not assigned, nor shall inmates leave an assigned area such as a work area or program area, without authorization." (Rules § 1-03(c)(19) 117.11)
+    *   "Exiting Department property, a Department facility, or vehicle without permission from Department staff is an escape." (Rules § 1-03(c)(12) 111.10)
+*   **Why:** This data is crucial for tracking the secure movement and location of incarcerated individuals at all times.
+*   **One row represents:** A single transportation or movement event for an incarcerated individual.
+*   **Covers:** All movements of incarcerated individuals between institutions, court pens, hospitals, or other locations, including court appearances.
+*   **Columns:** Movement Event ID (PK), Incarcerated Individual ID (FK to 1), Movement Date, Movement Time, Movement Type, Origin Location Type, Origin Location ID (FK to 2 or 3), Destination Location Type, Destination Location ID (FK to 2 or 3), Reason for Movement, Transportation Vehicle ID (FK to 3), Escorting Officer(s) ID (FK to 4), Movement Status, Scheduled Court Date, Scheduled Court Time, Court Venue, Appearance Type, Case Type, Departure Time from Housing Facility, Arrival Time at Court Facility, Delivery Time Category, Use of Force Required (FK to 23), Video Recording of Notification (FK to 35), Video File Reference (FK to 35), Consent for Video Release to Attorney, Video Provided to Defense Attorney, Defense Attorney Notification of Departure, Personal Clothing Access Provided, Department-Provided Clothing, Court Order for Uniform, Authorized, Authorizing Staff Member ID (FK to 4).
+
+**7. Building Maintenance Work Orders**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner shall maintain and operate buildings and structures under his jurisdiction." (Charter Section 624)
+    *   "The commissioner may construct such additions and repairs to buildings under his jurisdiction as can be accomplished by the use of the labor of persons under his care and custody and with materials in the possession of the department." (Charter Section 624)
+*   **Why:** This data tracks all maintenance and repair work, ensuring facilities are safe and operational, and managing resources.
+*   **One row represents:** A single maintenance or repair work order/activity.
+*   **Covers:** All maintenance, repairs, and construction activities performed on buildings and structures under the department's jurisdiction.
+*   **Columns:** Work Order ID (PK), Facility ID (FK to 2), Location within Facility, Issue Description, Date Reported, Date Assigned, Assigned Team/Individual ID (FK to 4), Materials Used (FK to 9), Prisoner Labor Utilized, Prisoner Labor Hours, Completion Date, Status, Cost of Materials, Total Labor Hours.
+
+**8. Facility Inspections & Requisitions**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The chief officer of any institution under the charge of the commissioner of correction shall make his or her requisitions in writing upon the commissioner for all articles such officer deems necessary to be used in such institution. Such officer shall keep an accurate account thereof." (Admin Code § 9-119)
+    *   "The accounts of the commissaries shall be subject to supervision, examination and audit by the comptroller and all other powers of the comptroller in accordance with the provisions of the charter and code." (Admin Code § 9-118.a)
+    *   "The department shall ensure that all data collected pursuant to this section is securely retained, and shall retain such data indefinitely after the date of initial collection unless federal or state law requires otherwise." (Admin Code § 9-140.g)
+    *   "Every city correctional facility under the sole jurisdiction and control of the department built after the effective date of the local law that added this section shall comply with the following requirements: Design requirements... General requirements... Individual living quarters... Dormitories... Housing units... Bathrooms shall be accessible at all times..." (Admin Code § 9-159.b)
+    *   "Spaces used for de-escalation confinement must, at a minimum, have the features specified in sections 1-03 and 1-04 of title 40 of the rules of the city of New York and be maintained in accordance with the personal hygiene and space requirements set forth in such sections;" (Admin Code § 9-167.c.1)
+    *   "The department shall not place any incarcerated person in a locked decontamination shower nor in any other locked space in any facility that does not have, at a minimum, the features specified in sections 1-03 and 1-04 of title 40 of the rules of the city of New York and maintained in accordance with the personal hygiene and space requirements as set forth in such sections." (Admin Code § 9-167.c.7.a)
+    *   "No less than once each week, the department shall verify and document that opioid antagonists are available in such areas for use by uniformed staff and incarcerated individuals." (Admin Code § 9-173.c)
+*   **Why:** To ensure facilities meet safety, hygiene, and operational standards, and to track resource allocation.
+*   **One row represents:** A single inspection, maintenance request, or requisition for a facility or its assets.
+*   **Covers:** All inspections, requisitions for articles, maintenance records, and compliance checks for facility standards.
+*   **Columns:** Record ID (PK), Facility ID (FK to 2), Date, Type, Inspector/Requester ID (FK to 4), Description of Item/Issue, Status, Outcome/Findings, Corrective Actions Required, Corrective Actions Completion Date, Compliance with § 9-159 Design Requirements, Compliance with Hygiene/Space Requirements, Opioid Antagonist Availability Check, Opioid Antagonist Stock Level, Cost.
+
+**9. Departmental Inventory & Supply Chain**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner may construct such additions and repairs to buildings under his jurisdiction as can be accomplished by the use of the labor of persons under his care and custody and with materials in the possession of the department." (Charter Section 624)
+    *   "Every incarcerated individual of an institution under the authority of the commissioner shall be employed in some form of industry, in farming operations or other employment, and products thereof shall be utilized in the institutions under the commissioner or in any other agency." (Charter Section 625)
+    *   "The commissioner of correction may establish a commissary in any institution under the commissioner's jurisdiction for the use and benefit of the incarcerated individuals and employees thereof." (Admin Code § 9-118.a)
+    *   "All moneys received from the sales of such commissaries shall be paid over semi-monthly to the commissioner of finance without deduction." (Admin Code § 9-118.a)
+    *   "All moneys received from the sales from such commissaries shall be kept in a separate and distinct fund to be known as the commissary fund. Such fund shall be used for: The purchase of all merchandise for resale in such commissaries; The purchase of supplies, materials, and equipment for such commissaries; The furnishing of work or labor to be done for such commissaries; and All other costs and expenses of operating such commissaries other than the salaries of officers and employees employed in such commissaries." (Admin Code § 9-118.b)
+    *   "The establishment of a fund to be known as "manufacturing fund, department of correction," is authorized. The comptroller is directed to place in such fund all moneys received or realized through the sale of articles manufactured by the department of correction." (Admin Code § 9-124)
+    *   "The comptroller is authorized to charge against such fund any voucher received from the department of correction for the purchase of materials, supplies, equipment, repairs, replacements and royalties on manufacturing industry machines to be used in its manufacturing industries." (Admin Code § 9-124)
+    *   "When an incarcerated individual is released from custody in a departmental facility, the department shall, as part of the discharge process, assist the individual in receiving unused commissary funds." (Admin Code § 9-162.a)
+    *   "Immediately upon request from a formerly incarcerated individual at a location at which commissary funds are made available, the department shall return up to $200 of such funds in cash, and any funds to which such individual is entitled that exceed $200 shall be distributed by check and sent by mail if all necessary information, including a name and mailing address, is provided by such individual." (Admin Code § 9-162.b)
+*   **Why:** This data tracks the acquisition, storage, and use of materials for maintenance, repairs, and prisoner labor programs, and commissary/manufacturing operations.
+*   **One row represents:** A single type of material, product, or transaction in inventory.
+*   **Covers:** All raw materials, supplies, and products (including those made by incarcerated individuals) held by the department, and all commissary/manufacturing transactions.
+*   **Columns:** Item ID (PK), Item Name/Description, Item Type, Unit of Measure, Current Stock Level, Minimum Stock Level, Reorder Point, Last Restock Date, Last Restock Quantity, Supplier Information, Storage Location (FK to 2), Product of Prisoner Labor, Intended Use, Transaction ID, Date of Transaction/Record, Transaction Type, Quantity, Unit Price, Total Amount, Fund Type, Incarcerated Individual ID (FK to 1), Employee ID (FK to 4), Vendor ID, Voucher Reference, Check Number, Mailing Address, Cash Amount Returned, Unclaimed Funds Status, Efforts to Return Unclaimed Funds.
+
+**10. Incarcerated Individual Program Participation**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Charter Section 623.6)
+    *   "Correctional health services... shall establish a program for the treatment of substance abuse through the use of medication assisted treatment, including the administration of methadone, buprenorphine, and naltrexone. The program shall be available on a voluntary basis only to such incarcerated individuals as apply, subject to a medical evaluation, before acceptance, of their need for such treatment." (Admin Code § 9-107.a)
+    *   "The commissioner of correction shall ensure that any housing unit in which transgender, intersex, non-binary, or gender non-conforming individuals are housed has access to the same substance abuse treatment as other incarcerated individuals." (Admin Code § 9-107.b)
+    *   "The commissioner of correction may establish and maintain schools or classes for the instruction and training of the incarcerated individuals of any institution under the commissioner's charge, and shall offer to all incarcerated individuals incarcerated for more than 10 days a minimum of five hours per day of incarcerated individual programming or education, excluding weekends and holidays." (Admin Code § 9-110)
+    *   "The department shall evaluate incarcerated individual programming each calendar year. For purposes of this section, "incarcerated individual programming" includes but is not limited to any structured services offered directly to incarcerated individuals for the purposes of vocational training, counseling, cognitive behavioral therapy, addressing drug dependencies, or any similar purpose." (Admin Code § 9-144)
+    *   "available services relating to education, vocational development, drug and alcohol treatment and counseling, and mental health treatment and counseling services." (Admin Code § 9-139.c)
+    *   "The programming and services available to incarcerated individuals and children in the nursery, including but not limited to the following categories: parenting, health and mental health, drug and/or alcohol addiction, vocational, educational, recreational, or other life skills;" (Admin Code § 9-142.d.6)
+    *   "The number of adolescents enrolled in educational programming. The number of young adults enrolled in educational programming, and the percentage of such young adults so enrolled." (Admin Code § 9-151.c.1-2)
+    *   "The number of hours of compulsory educational programming afforded to adolescents on each school day, and an identification of the curriculum subject areas included in educational programming." (Admin Code § 9-151.c.3)
+    *   "The number of 17-year-old adolescents who graduated from high school, and the number of young adults enrolled in educational programming who graduated from high school." (Admin Code § 9-151.c.6)
+    *   "The number of adolescents participating in department of education vocational educational programming, the nature of such programming, and the number of such adolescents who complete such programming." (Admin Code § 9-151.c.17)
+    *   "The average and median number of credits accumulated by adolescents enrolled in high school educational programming, and the average and median number of credits accumulated by young adults enrolled in high school educational programming." (Admin Code § 9-151.c.19)
+    *   "The number of adolescents enrolled in physical education at department of education sites." (Admin Code § 9-151.c.21)
+    *   "The department shall offer to screen all incarcerated persons between the ages of 18 and 21 who self-report that they do not have a high school diploma or its equivalent for being at risk of dyslexia within 10 days of entering custody of the department." (Admin Code § 9-166.b)
+    *   "The department shall refer such incarcerated person who was identified through the screening as being at risk of dyslexia to a program that provides evidence-based interventions as necessary for persons who are at risk of dyslexia." (Admin Code § 9-166.b)
+*   **Why:** This data tracks the engagement and progress of incarcerated individuals in rehabilitative, educational, and treatment programs.
+*   **One row represents:** A single incarcerated individual's enrollment or participation in a specific program session.
+*   **Covers:** All re-training, counseling, rehabilitative, educational, vocational, and substance abuse treatment programs offered to incarcerated individuals.
+*   **Columns:** Participation ID (PK), Incarcerated Individual ID (FK to 1), Program ID (FK to 11), Program Name, Program Type, Enrollment Date, Start Date, End Date, Hours Offered, Hours Utilized, Attendance Status, Completion Status, Completion Date, Success/Compliance Rate, Outcome Measurements, Curriculum Subject Area, Educational Goal, High School Graduation Date, High School Equivalency Test Administered, High School Equivalency Test Pass Date, Functional Level on Basic Adult Education Test, Individualized Educational Plan (IEP) Status, Special Education Services Received, English Language Learner (ELL) Status, Credits Accumulated, Post-Release School Attendance, Physical Education Enrollment, Dyslexia Screening Date, Dyslexia Risk Identified, Dyslexia Screening Refusal, Dyslexia Intervention Program ID (FK to 11), Facility ID (FK to 2), Provider.
+
+**11. Program Catalog**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Charter Section 623.6)
+    *   "Correctional health services... shall establish a program for the treatment of substance abuse through the use of medication assisted treatment..." (Admin Code § 9-107.a)
+    *   "The commissioner of correction may establish and maintain schools or classes for the instruction and training of the incarcerated individuals of any institution under the commissioner's charge..." (Admin Code § 9-110)
+    *   "The department shall evaluate incarcerated individual programming each calendar year. For purposes of this section, "incarcerated individual programming" includes but is not limited to any structured services offered directly to incarcerated individuals for the purposes of vocational training, counseling, cognitive behavioral therapy, addressing drug dependencies, or any similar purpose." (Admin Code § 9-144)
+    *   "available services relating to education, vocational development, drug and alcohol treatment and counseling, and mental health treatment and counseling services." (Admin Code § 9-139.c)
+    *   "The department shall refer an incarcerated person who was identified through the screening as being at risk of dyslexia to a program that provides evidence-based interventions as necessary for persons who are at risk of dyslexia." (Admin Code § 9-166.b)
+*   **Why:** To manage and describe all available programs for incarcerated individuals.
+*   **One row represents:** A single program offered by the department.
+*   **Covers:** All rehabilitative, educational, vocational, counseling, and treatment programs for incarcerated individuals.
+*   **Columns:** Program ID (PK), Program Name, Program Description, Target Audience, Mandatory/Voluntary, Frequency, Duration, Curriculum/Topics Covered, Learning Objectives, Provider/Department, Certification/Credential Offered, Standards Compliance.
+
+**12. Prisoner Labor Assignments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Every incarcerated individual of an institution under the authority of the commissioner shall be employed in some form of industry, in farming operations or other employment, and products thereof shall be utilized in the institutions under the commissioner or in any other agency." (Charter Section 625)
+    *   "Those persons held for trial may be employed in the same manner as sentenced prisoners, provided they give their consent in writing." (Charter Section 625)
+    *   "Such incarcerated individuals or prisoners held for trial may be detailed by the commissioner to perform work or service on the grounds and buildings or on any public improvement under the charge of any other agency." (Charter Section 625)
+*   **Why:** This data tracks the mandatory employment of incarcerated individuals, including consent for pre-trial detainees, and work details.
+*   **One row represents:** A single assignment of an incarcerated individual to a labor activity.
+*   **Covers:** All employment, industry, farming operations, and work services performed by incarcerated individuals.
+*   **Columns:** Labor Assignment ID (PK), Incarcerated Individual ID (FK to 1), Assignment Start Date, Assignment End Date, Labor Type, Work Location (FK to 2), External Agency Name/ID, Supervisor ID (FK to 4), Hours Worked, Consent Obtained (for pre-trial detainees), Products Produced (FK to 9).
+
+**13. Incarcerated Individual Grievance Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance (1) by or on behalf of any person held or confined under the jurisdiction of the department..." (Charter Section 626.f)
+    *   "Starting July 1, 2021, the board shall issue a report, at least every three years, on issues related to the department's grievance process. Such report shall incorporate direct feedback from incarcerated individuals and proposed recommendations for relevant improvements, and shall include a section of recommendations on how to improve the grievance process for vulnerable populations, including incarcerated individuals who are lesbian, gay, bisexual, transgender, intersex, and gender nonconforming." (Charter Section 626.f)
+    *   "The term "grievable complaint" means a complaint handled by the office of constituent and grievance services. The term includes but is not limited to a complaint regarding classification, clothing, commissary, correspondence, employment, environmental, food, inmate account, housing, length of sentence, laundry, law library, medical, mental health, personal hygiene, phone, programs, property, recreation, religion, rules and regulations, school, search, social service, transportation, and visits." (Admin Code § 9-136.a)
+    *   "The term "non-grievable complaint" means any complaint which is not handled by the office of constituent and grievance services, including but not limited to a complaint regarding an allegation of assault, sexual assault/abuse, and verbal misconduct from a staff member; an allegation of assault, sexual assault/abuse, and non-sexual harassment from another incarcerated individual; individual security status; medical and mental health staff; request for accommodation due to a disability or claim of discrimination based on disability or perceived disability; request for protective custody; freedom of information laws, housing, and the grievance process." (Admin Code § 9-136.a)
+    *   "The department shall utilize an electronic tracking system to record all grievable and non-grievable complaints handled by the office of constituent and grievance services and shall provide the board of correction access to such system." (Admin Code § 9-136.d)
+    *   "Complaints and requests made by or on behalf of an incarcerated individual to 311 and forwarded to the department shall be addressed by the office of constituent and grievance services." (Admin Code § 9-136.e)
+    *   "The department shall install grievance kiosks in each facility where incarcerated individuals may file grievances electronically and in a private setting by December 31, 2026." (Admin Code § 9-136.g)
+    *   "The department shall inform all incarcerated individuals in writing, using plain and simple language, of the protections against retaliation for filing a grievance, complaint, or request." (Admin Code § 9-139.g)
+    *   "The number and percentage of such persons as described in paragraph 3 of this subdivision who have made an allegation, complaint, or report, whether verbal or in writing, as a result of experiencing violence, harassment, or discrimination." (Admin Code § 9-165.b.8)
+*   **Why:** This data is essential for tracking and addressing complaints from incarcerated individuals, ensuring accountability and informing policy.
+*   **One row represents:** A single grievance, complaint, or request for assistance filed by or on behalf of an incarcerated individual.
+*   **Covers:** All grievable and non-grievable complaints, including those forwarded from 311, regarding various aspects of confinement.
+*   **Columns:** Grievance ID (PK), Incarcerated Individual ID (FK to 1), Date Filed, Date Submitted, Method of Submission, Complaint Type, Grievance Category, Description of Grievance, Institution ID (FK to 2), Facility ID (FK to 2), Housing Area Type, Date of Initial Review, Resolution Stage, Resolution/Action Taken, Resolution Date, Status, Outcome, Reason for Dismissal, Appeal Filed (FK to 22), Appeal Outcome, Appeal Resolution Date, Feedback Incorporated into Report, Vulnerable Population Flag, Kiosk Used, Physical Receipt Provided, Language of Grievance/Assistance Provided, Referral Destination.
+
+**14. Employee Grievances**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance... (2) by any employee of the department." (Charter Section 626.f)
+*   **Why:** This data tracks complaints from department employees, ensuring a fair process and addressing workplace issues.
+*   **One row represents:** A single grievance, complaint, or request for assistance filed by a department employee.
+*   **Covers:** All grievances, complaints, or requests for assistance from employees of the Department of Correction.
+*   **Columns:** Grievance ID (PK), Employee ID (FK to 4), Date Filed, Grievance Type, Description of Grievance, Department/Unit Involved, Date of Initial Review, Resolution/Action Taken, Date of Resolution, Status.
+
+**15. Incarcerated Individual Death Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The board shall investigate such death and prepare a report about such investigation." (Charter Section 626.i.2)
+    *   "Upon request from the next of kin of an incarcerated individual who has died, the board shall provide to such next of kin records provided to the board by the department and correctional health services for purposes of such investigation..." (Charter Section 626.i.4)
+    *   "The chief officer of any institution under the charge of the commissioner of correction shall report once in each week to the commissioner of correction. Such report shall set forth: ... The number who have become sick or who have died." (Admin Code § 9-120.2)
+    *   "homicides of incarcerated individuals by incarcerated individuals; suicides by incarcerated individuals;" (Admin Code § 9-130.c.9-11)
+    *   "The number of incarcerated individuals who committed suicide, (xiv) the number of incarcerated individuals who attempted suicide, (xv) the number of incarcerated individuals on suicide watch, (xvi) the number of incarcerated individuals who caused injury to themselves (excluding suicide attempt), (xvii) the number of incarcerated individuals seriously injured while in segregated housing units or MHU, (xviii) the number of incarcerated individuals who were sent to non-psychiatric hospitals outside the city jails, (xix) the number of incarcerated individuals who died (non-suicide)," (Admin Code § 9-134.b.xiii-xix)
+    *   "The number of deaths of incarcerated individuals related to the infection;" (Admin Code § 9-160.b.9)
+    *   "The number of maternal mortalities known to the service while in the custody of the department; The number of maternal mortalities while in the custody of the department considered to be a pregnancy-associated death, if information necessary to make such determination is available to the service; The number of maternal mortalities while in the custody of the department considered to be a pregnancy-related death, if information necessary to make such determination is available to the service;" (Admin Code § 9-163.b.5-7)
+    *   "The department shall notify the office of chief medical examiner and the board of correction as soon as practicable after becoming aware of a death of an incarcerated individual in the custody of the department..." (Admin Code § 9-171.b)
+    *   "The department shall document any efforts of the department to notify the next of kin of such incarcerated individual pursuant to section 3-10 of title 40 of the rules of the city of New York..." (Admin Code § 9-171.c)
+    *   "The department shall make a good faith effort to notify the attorney of an incarcerated individual who has died as soon as practicable after notifying the next of kin of such individual..." (Admin Code § 9-171.b)
+    *   "The department shall post on the department’s website information about how the next of kin of an incarcerated individual who has died may obtain such individual’s personal items..." (Admin Code § 9-171.f)
+    *   "The prison death review board shall keep a record of any meetings or any other proceedings of such board." (Admin Code § 9-172.c)
+*   **Why:** Legally mandated to track, investigate, and report all deaths in custody, including notifications and review processes.
+*   **One row represents:** A single death of an incarcerated individual in department custody.
+*   **Covers:** All deaths, including suicides, homicides, non-suicides, maternal mortalities, and deaths related to public health emergencies.
+*   **Columns:** Death ID (PK), Incarcerated Individual ID (FK to 1), Date of Death, Time of Death, Location of Death (FK to 2), Facility ID (FK to 2), Housing Area Type, Cause of Death, Maternal Mortality Type, Public Health Emergency Related, Hospitalization Due to Infection, Office of Chief Medical Examiner Notification Date/Time, Board of Correction Notification Date/Time, Next of Kin Notification Date/Time, Next of Kin Name, Next of Kin Relationship, Next of Kin Notification Method, Employee Notifying Next of Kin (FK to 4), Interpreter Used for NOK Notification, Attorney Notification Date/Time, Attorney ID (FK to 34), DOI/AG/DA Investigation, DOI/AG/DA Investigation Request/Direction, BOC Investigation Initiated, BOC Investigation Start Date, BOC Investigation Conclusion Date, Report Submission Date to Department/Correctional Health Services, Report Posting Date on Website, Statement Posting Dates, Recommendations Made, Department/CHS Response to DOI/BOC Recommendations, Staff Misconduct Investigation Opened (FK to 24), Personal Items Return Information Posted, Prison Death Review Board Convened (FK to 16), Prison Death Review Board Meeting Date (FK to 16), Next of Kin Request for Records, Date Records Provided to Next of Kin.
+
+**16. Prison Death Review Board Meetings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The board of correction may request that the prison death review board established pursuant to section 3-10 of title 40 of the rules of the city of New York be convened." (Admin Code § 9-172.b)
+    *   "The prison death review board shall keep a record of any meetings or any other proceedings of such board." (Admin Code § 9-172.c)
+    *   "The prison death review board shall include: The executive director of the board of correction, who shall serve as chair; The deputy mayor for public safety... The chief medical officer of correctional health... The commissioner of correction... The chief medical examiner..." (Admin Code § 9-172.d)
+*   **Why:** To document the proceedings and outcomes of the Prison Death Review Board, ensuring oversight and accountability for deaths in custody.
+*   **One row represents:** A single meeting or proceeding of the Prison Death Review Board.
+*   **Covers:** All meetings and proceedings of the Prison Death Review Board.
+*   **Columns:** Meeting ID (PK), Date of Meeting, Time of Meeting, Death ID (FK to 15), Attendees (List of Board Members present, Staff IDs (FK to 4)), Key Discussions/Findings, Recommendations Made, Action Items Assigned, Meeting Minutes/Record Reference.
+
+**17. Board of Correction Oversight Events**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The inspection and visitation at any time of all institutions and facilities under the jurisdiction of the department;" (Charter Section 626.c.1)
+    *   "The inspection of all books, records, documents, and papers of the department;" (Charter Section 626.c.2)
+    *   "Any council member is authorized to inspect and visit at any time the institutions and facilities under the jurisdiction of the department." (Charter Section 627)
+*   **Why:** This data tracks all oversight activities by the Board of Correction and Council members, ensuring compliance and transparency.
+*   **One row represents:** A single inspection or visitation event by the Board of Correction or a Council member.
+*   **Covers:** All inspections and visitations of department institutions, facilities, books, records, documents, and papers by the Board of Correction or Council members.
+*   **Columns:** Inspection/Visit ID (PK), Date of Inspection/Visit, Time of Inspection/Visit, Inspecting/Visiting Entity, Inspector/Visitor Name(s), Facility ID Visited (FK to 2), Purpose of Visit, Findings/Observations Summary, Recommendations Made, Follow-up Required.
+
+**18. BOC Reports and Recommendations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The preparation for submission to the mayor, the council, and the commissioner of proposals for capital planning and improvements; studies and reports concerned with the development of the department's correctional program planning; and studies and reports in regard to methods of promoting closer cooperation of custodial, probation, and parole agencies of government and the courts;" (Charter Section 626.c.3)
+    *   "The board, annually and at such other times as it may determine, shall submit to the mayor, the council, and the commissioner reports, findings and recommendations in regard to the matters within its jurisdiction." (Charter Section 626.d)
+    *   "The board, or by written designation, a member of the board or the executive director, may conduct hearings, or study or investigate any matter within the jurisdiction of the department, and the board may make recommendations and submit reports of its findings to the appropriate authorities." (Charter Section 626.h)
+*   **Why:** This data tracks the formal outputs of the Board of Correction, documenting their oversight activities and policy recommendations.
+*   **One row represents:** A single report, proposal, or set of recommendations submitted by the Board of Correction.
+*   **Covers:** All formal reports, proposals, findings, and recommendations submitted by the Board of Correction.
+*   **Columns:** Report ID (PK), Report Title/Subject, Submission Date, Recipient(s), Report Type, Key Recommendations Summary, Related Inspection/Investigation ID (FK to 15 or 17), Date Posted on Website.
+
+**19. Incarcerated Individual Healthcare Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Correctional health services... shall establish a program for the treatment of substance abuse through the use of medication assisted treatment..." (Admin Code § 9-107.a)
+    *   "The term "clinic production" means the department's process by which an incarcerated individual is escorted for a medical appointment." (Admin Code § 9-108.a)
+    *   "The term "medical appointment" means any patient encounter requested by correctional health services." (Admin Code § 9-108.a)
+    *   "The term "non-production" means an instance where an incarcerated individual is not escorted for a medical appointment requested by correctional health services." (Admin Code § 9-108.a)
+    *   "The term "production refusal" means a refusal by an incarcerated individual to allow the department to produce such incarcerated individual to clinic for a medical appointment." (Admin Code § 9-108.a)
+    *   "The term "sick call" means the department's process by which an incarcerated individual requests to be seen by a health care professional for the purpose of assessing or treating such incarcerated individual's non-emergency medical complaint." (Admin Code § 9-108.a)
+    *   "Where individuals are not produced for medical appointments, department personnel shall record the facility, along with the reason for non-production..." (Admin Code § 9-108.d)
+    *   "Where individuals are not produced to a health care professional for a medical appointment, correctional health services will provide to the department the names of such individuals and a specified time-frame of when they should be produced as deemed clinically appropriate." (Admin Code § 9-108.e)
+    *   "The number of requests made by incarcerated individuals for medical or mental health treatment and the number granted," (Admin Code § 9-134.b.xxvi)
+    *   "The number of calls made to any correctional health services phone number designed to handle calls from incarcerated individuals, and the number of voice messages left on such phone number;" (Admin Code § 9-160.c.3)
+    *   "The number of persons in the custody of the department receiving prenatal care; and The number of persons in the custody of the department receiving postnatal care." (Admin Code § 9-163.b.8-9)
+    *   "The number of incarcerated individuals receiving mental health services," (Admin Code § 9-134.b.vii)
+    *   "The number of incarcerated individuals prescribed anti-psychotic medications, mood stabilizers or anti-anxiety medications, disaggregated by the type of medication," (Admin Code § 9-134.b.xxv)
+    *   "available services relating to... mental health treatment and counseling services." (Admin Code § 9-139.c)
+    *   "The term "eligible incarcerated individual" means an incarcerated individual whose period of confinement in a city correctional facility lasts 24 hours or longer, and who, during such confinement, receives treatment for a mental illness..." (Admin Code § 9-143.a)
+    *   "Correctional health services shall ensure that all medical and substance abuse professionals working with transgender individuals receive specialized training on transgender and gender-affirming care conducted by an individual or organization with expertise in the subject." (Admin Code § 9-145.e)
+    *   "The department shall ensure that any housing unit where transgender, gender nonconforming, non-binary, and intersex individuals are housed has access to the same mental health treatment as units housing other incarcerated individuals." (Admin Code § 9-158)
+    *   "The number of people in custody with a serious mental illness;" (Admin Code § 9-160.b.13)
+    *   "The department shall refer an incarcerated person who was identified through the screening as being at risk of dyslexia to a program that provides evidence-based interventions as necessary for persons who are at risk of dyslexia." (Admin Code § 9-166.b)
+    *   "The term “de-escalation confinement” means holding an incarcerated person in a cell immediately following an incident where the person has caused physical injury or poses a specific risk of imminent serious physical injury to staff, themselves or other incarcerated persons." (Admin Code § 9-167.a)
+    *   "The department shall conduct visual and aural observation of each person in de-escalation confinement every 15 minutes, shall refer any health concerns to medical or mental health staff, and shall bring any person displaying any indications of any need for medical documentation, observation, or treatment to the medical clinic." (Admin Code § 9-167.c.3)
+    *   "The department, in consultation with correctional health services, shall make available, in all areas of any facility of the department where incarcerated individuals are housed, opioid antagonists for use by uniformed staff and incarcerated individuals." (Admin Code § 9-173.c)
+    *   "The term “forensic psychiatric examination” means an examination performed by a psychiatric examiner pursuant to section 730 of the criminal procedure law." (Admin Code § 9-169.a)
+*   **Why:** Essential for tracking healthcare provision, identifying barriers to access, and ensuring medical and mental health needs are met.
+*   **One row represents:** A single medical appointment request, sick call, patient encounter, or specific treatment/medication provided.
+*   **Covers:** All medical appointments, sick calls, related production/non-production events, and all health and mental health services provided to incarcerated individuals.
+*   **Columns:** Record ID (PK), Incarcerated Individual ID (FK to 1), Request Date, Scheduled Appointment Date/Time, Actual Appointment Date/Time, Appointment Type, Request Type, Health Care Professional ID (FK to 4), Facility ID (FK to 2), Housing Unit Type, Production Status, Non-Production Reason, Non-Production Narrative, Refusal/Walk-out Reason, CHS Production Recommendation, CHS Recommended Production Timeframe, Outcome, Call Log ID, Call Date/Time, Call Type, Call Outcome, Date of Service, Service Type, Medication Prescribed (Name, Dosage, Type), Reason for Treatment/Service, Treatment Start Date, Treatment End Date, Treatment Status, Outcome/Progress Notes, Serious Mental Illness Status, Referral Source, Opioid Antagonist Administered, Opioid Overdose Prevention Kit Provided, Forensic Psychiatric Examination Order Date, Forensic Psychiatric Examination Scheduled Date, Forensic Psychiatric Examination Completion Date, Forensic Psychiatric Examination Outcome, Reason for Non-Completion of Exam, Referral to Appropriate Institution.
+
+**20. Incarcerated Individual Disciplinary Infractions**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Officers in any institution in the department of correction shall use all suitable means to defend themselves, to enforce discipline, and to secure the persons of incarcerated individuals who shall: Neglect or refuse to perform the work assigned... Wilfully violate the rules and regulations... Resist or disobey any lawful command... Offer violence to any officer or to any other prisoner... Injure or attempt to injure any such institution or the appurtenances thereof or any property therein. Attempt to escape. Combine with any one or more persons for any of the aforesaid purposes." (Admin Code § 9-114.a)
+    *   "fight infractions written against incarcerated individuals;" (Admin Code § 9-130.b.1)
+    *   "The number of incarcerated individuals who received infractions while in segregated housing units or MHU, (xii) the number of incarcerated individuals who received infractions that led to the imposition of additional punitive segregation time," (Admin Code § 9-134.b.xi-xii)
+    *   "The number of departmental infractions issued to adolescents at a department of education site, and the number of departmental infractions issued to young adults at a department of education school site, in total and disaggregated by the type of infraction, as defined by the department." (Admin Code § 9-151.d.1)
+    *   "The department shall not place an incarcerated person in restrictive housing until a hearing on such placement is held and the person is found to have committed a violent grade I offense." (Admin Code § 9-167.f)
+    *   "For each instance a disciplinary charge that could result in restrictive housing is dismissed or an incarcerated individual is found not guilty of the disciplinary charge, the department shall prepare an incident report that includes a description of the disciplinary charge and the reasons for the dismissal or not guilty determination." (Admin Code § 9-167.h.9)
+    *   "This section sets forth the behavior that is prohibited in Department of Correction ("Department") facilities. The grade of each offense is listed." (Rules § 1-03(a))
+    *   "An inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade I" offense shall be guilty of the stated Grade I offense; an inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade II" offense shall be guilty of the stated Grade II offense; and an inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade III" offense shall be guilty of the stated Grade III offense." (Rules § 1-03(c))
+    *   "The acts of conspiracy, attempt, and accessory will be punishable to the same degree as the actual offense involved." (Rules § 1-03(a))
+    *   "Possession of contraband may subject an inmate to criminal prosecution as well as disciplinary action." (Rules § 1-03(b))
+    *   "Any person who tries to introduce contraband into a facility may also be subject to criminal prosecution." (Rules § 1-03(b))
+    *   "Inmates shall not refuse to provide a DNA sample if they meet the criteria as set forth in Article 49-B of the New York State Executive Law qualifying a person as a designated offender." (Rules § 1-03(c)(30))
+    *   "Inmates shall not refuse to provide a urine, hair, saliva, or other sample, according to the Department's policy and procedures, when they have been notified by the head of the facility or his/her designee that they have been selected for drug/alcohol testing, whether by random selection or based on reasonable suspicion." (Rules § 1-03(c)(31))
+    *   "Inmates shall not test positive for nor be found under the influence of alcohol or illegal drugs/substances." (Rules § 1-03(c)(32))
+    *   "Inmates shall not adulterate or tamper with, or attempt to adulterate or tamper with a urine sample or offer as their own a urine sample of another individual." (Rules § 1-03(c)(32))
+    *   "Inmates shall not engage in acts of hate against any person due to a belief or perception regarding such person's race, color, national origin, affiliation with any group, religion, religious practice, age, gender, disability, or sexual orientation." (Rules § 1-03(c)(33))
+*   **Why:** To track all alleged violations of inmate rules of conduct, including details for investigation and adjudication.
+*   **One row represents:** A single alleged disciplinary infraction incident.
+*   **Covers:** All reported instances of prohibited conduct by incarcerated individuals.
+*   **Columns:** Infraction Incident ID (PK), Incarcerated Individual ID (FK to 1), Date of Incident, Time of Incident, Facility ID (FK to 2), Housing Area Type, Location of Incident, Staff ID (Reporting Officer) (FK to 4), Rule Violated, Offense Grade, Description of Incident, Witness(es), Evidence Collected, Involved Parties, Type of Involvement, Related Criminal Offense, Referred to Law Enforcement, Status, Date of Notice of Infraction Issued, Notice of Infraction ID (FK to 21).
+
+**21. Incarcerated Individual Disciplinary Hearings & Outcomes**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "When you are placed in any of the most restrictive security categories (other than Pre-Hearing Detention, which is addressed in subsection (b) below), you will be given written notice of: (i) The reasons for the designation. (ii) The evidence relied upon. (iii) The right to a hearing before an impartial Adjudication Captain appointed from the Adjudication Unit. (iv) Your rights at the hearing." (Rules § 1-04(a)(1))
+    *   "When you are placed in Pre-Hearing Detention (PHD) prior to your disciplinary hearing, (i) You will be issued a Notice of Pre-Hearing Detention within twenty-four (24) hours of the placement, which will state the reason for the placement in PHD. (ii) You will have the opportunity to respond to the Notice of Pre-Hearing Detection, verbally, or in writing in a designated space on the Notice form. (iii) The infraction hearing will be completed within three (3) business days of your transfer to PHD whenever possible, but you shall not be held in PHD for more than seven (7) business days. If the hearing is not held in such time, you must be released from PHD." (Rules § 1-04(b)(1))
+    *   "If you are not placed in PHD, the infraction hearing will take place within three (3) business days after you receive written notice, unless any further delay is justified in accordance with disciplinary due process" (Rules § 1-04(b)(2))
+    *   "Your hearing may be held in absentia (that is, without you present) only if the following occurs: (i) you are notified of the hearing and refuse to appear; or (ii) you appear and are extremely disruptive, causing a situation that is unduly hazardous to institutional safety that necessitates your removal from the hearing room If your hearing is held in absentia, the justification for holding the hearing in absentia shall be clearly documented in the Adjudication Captain's decision." (Rules § 1-04(b)(2))
+    *   "At your hearing, you have the following rights: (i) To personally appear; (ii) To make statements; (iii) To present material, relevant, and non-duplicative evidence; (iv) To have witnesses testify at the hearing... (v) If you are non-English speaking, illiterate, blind, deaf, have poor vision, are hard of hearing, or if your case is very complicated, you have a right to be helped by a "hearing facilitator"... (vi) If you do not understand or are not able to communicate in English well enough to conduct the hearing in English, you have a right to an interpreter... (vii) You have a right to appeal a decision against you. (viii) You have a right to have the hearing recorded." (Rules § 1-04(b)(3))
+    *   "If you are transferred to protective custody (PC), the Department will determine within two (2) business days whether you should continue in such housing. If you do not consent to a decision to continue PC placement, you will be provided with written notice as set forth in 39 RCNY § 1-04(a)(1)." (Rules § 1-04(c)(1))
+    *   "The hearing will be held no sooner than 24 hours and no later than three (3) business days after you receive the written notice of your PC housing placement..." (Rules § 1-04(c)(2))
+    *   "The Adjudication Captain will recommend whether you should remain in PC to the Operations Security Intelligence Unit (OSIU) in writing within one (1) business day after the hearing. You will receive a copy of the decision from OSIU." (Rules § 1-04(c)(3))
+    *   "If you are placed in PC the Department will review your placement thirty (30) days after OSIU initially determined the assignment and then every sixty (60) days thereafter to see if you should remain in PC. You will be notified in writing of the results of that review." (Rules § 1-04(c)(4))
+    *   "If you are found guilty of violating a Department rule of conduct, your penalty will depend on the seriousness of your offense. Grade I offenses are the most serious and Grade III offenses are the least serious." (Rules § 1-05(a))
+    *   "Any of the penalties set forth below, or a combination of them, may be imposed on you for violating Department rules of conduct." (Rules § 1-05(a))
+    *   "Reprimand. You may lose one or more privileges, temporarily or permanently..." (Rules § 1-05(b))
+    *   "Loss of Good Time. If you are sentenced and serving your time in a Department facility, you may lose good time." (Rules § 1-05(c))
+    *   "Punitive Segregation. (i) The maximum period of punitive segregation for a Grade I offense is ninety (90) days for each disciplinary charge." (Rules § 1-05(d))
+    *   "Restitution. If you are found guilty of damaging or destroying City property, you may be ordered to pay restitution... If you are found guilty of an assault that causes a need for medical services, you can be ordered to make a restitution payment towards the cost to the City of providing such medical services." (Rules § 1-05(e))
+    *   "Repeated offenses. The third time you are found guilty of a rule of conduct violation for the same offense during the same period of incarceration, you may be sentenced to a penalty that applies to the next higher grade of offenses." (Rules § 1-05(f))
+    *   "Surcharge. A disciplinary surcharge, in the maximum amount allowed by law, may be imposed on you for violating a rule of conduct." (Rules § 1-05(g))
+*   **Why:** To track the entire process of disciplinary hearings, custody designations, and imposed penalties, ensuring due process and compliance.
+*   **One row represents:** A single disciplinary hearing, custody designation review, or penalty imposed for an incarcerated individual.
+*   **Covers:** All disciplinary infraction hearings, Pre-Hearing Detention (PHD) placements and reviews, Protective Custody (PC) placements and reviews, and all penalties resulting from disciplinary findings.
+*   **Columns:** Hearing ID (PK), Infraction Incident ID (FK to 20), Incarcerated Individual ID (FK to 1), Hearing Type, Date of Notice Issued, Date of Hearing, Time of Hearing, Adjudication Captain ID (FK to 4), Adjudication Captain Name, Hearing Facilitator Provided, Hearing Facilitator ID (FK to 4), Interpreter Provided, Interpreter Language, Inmate Present, Reason for Absentia, Justification for Absentia Documented, Witnesses Called, Evidence Presented, Hearing Recorded, Hearing Outcome, Reasons for Decision, Date of Decision, Decision Document ID, PHD Placement Date, PHD Release Date, PHD Hearing Completed within 3 business days, PHD Held for more than 7 business days, PC Placement Date, PC Consent, PC Hearing Held within 3 business days, OSIU Recommendation Date (for PC), OSIU Decision Date (for PC), Next PC Review Date, Appeal Filed (FK to 22), Penalty ID (PK), Date Penalty Imposed, Penalty Type, Offense Grade, Mitigating Circumstances Considered, Description of Reprimand/Privilege Loss, Good Time Lost, Punitive Segregation Days, Punitive Segregation Start Date, Punitive Segregation End Date, Restitution Ordered, Restitution Amount, Restitution Reason, Surcharge Imposed, Surcharge Amount, Repeated Offense, Enhanced Penalty Applied, Notice of Disciplinary Disposition ID.
+
+**22. Incarcerated Individual Appeals**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "If you are affected by a determination made pursuant to this subdivision [telephone calls], you may appeal such determination to the New York City Board of Correction by providing written notice." (Rules § 1-02(d))
+    *   "The Board will issue a written response upon the appeal within five (5) business days after receiving the appeal." (Rules § 1-02(d))
+    *   "If you are affected by a determination made pursuant to this subdivision [visits], you may appeal such determination to the New York City Board of Correction and to the Commanding Officer by providing written notice." (Rules § 1-02(e))
+    *   "The Board, or its designee, will issue a written decision upon the appeal within five (5) business days after receiving notice of the requested review." (Rules § 1-02(e))
+    *   "You have the right to appeal an adverse decision rendered by the Adjudication Captain within two (2) business days of service of the decision." (Rules § 1-06)
+    *   "If you have been sentenced to a total of thirty (30) days or more of punitive segregation or loss of all your good time on any one (1) Notice of Disciplinary Disposition (6500D), your appeal shall be forwarded to the General Counsel in the Department's Legal Division." (Rules § 1-06)
+    *   "Within five (5) business days of the receipt of your appeal, you will receive a written decision from the General Counsel regarding such appeal, unless further documentation/information is required by the General Counsel to decide your appeal." (Rules § 1-06)
+    *   "If you are sentenced to less than thirty (30) days punitive segregation or loss of less than all of your good time, you may appeal that decision to the Warden of the facility where the infraction occurred." (Rules § 1-06)
+*   **Why:** To track all inmate appeals related to disciplinary decisions and privilege limitations, ensuring timely processing and compliance.
+*   **One row represents:** A single appeal filed by an incarcerated individual.
+*   **Covers:** Appeals of disciplinary decisions and appeals of telephone call or visit limitations.
+*   **Columns:** Appeal ID (PK), Incarcerated Individual ID (FK to 1), Related Hearing ID (FK to 21), Related Privilege Determination ID (FK to 39), Date of Original Decision/Determination, Date Appeal Filed, Appeal Type, Appeal Recipient, Reason for Appeal, Supporting Materials Submitted, Date Appeal Received by Reviewing Authority, Date Written Decision Issued, Decision Issued within 5 Business Days, Reason for Extension, Appeal Outcome, Appeal Decision Document ID, CPLR Article 78 Petition Filed.
+
+**23. Use of Force Incidents**
+*   **Open Data Match:** Inmate Assault on Staff (299) - 60% similarity. The open dataset is a subset (assaults on staff) of use of force incidents.
+*   **Quotes:**
+    *   "The officers in any institution of the department of correction shall not inflict any blows upon a prisoner except in self-defense or to suppress a revolt or insurrection." (Admin Code § 9-114.b)
+    *   "The term "use of force A" means a use of force by staff on an incarcerated individual resulting in an injury that requires medical treatment beyond the prescription of over-the-counter analgesics or the administration of minor first aid..." (Admin Code § 9-130.a)
+    *   "The term "use of force B" means a use of force by staff on an incarcerated individual which does not require hospitalization or medical treatment beyond the prescription of over-the-counter analgesics or the administration of minor first aid..." (Admin Code § 9-130.a)
+    *   "The term "use of force C" means a use of force by staff on an incarcerated individual resulting in no injury to staff or incarcerated individual..." (Admin Code § 9-130.a)
+    *   "actual incidents of use of force A; actual incidents of use of force B; actual incidents of use of force C;" (Admin Code § 9-130.b.4-6)
+    *   "allegations of use of force A; actual incidents of use of force A; incarcerated individual hospitalization as a result of use of force A;" (Admin Code § 9-130.c.16-18)
+    *   "The commissioner shall post on the department's website the directive stating the department's current policies regarding the use of force by departmental staff on incarcerated individuals..." (Admin Code § 9-138)
+    *   "The following information by indicating the rate per 100 female incarcerated individuals in the custody of the department, disaggregated by whether or not the incident took place in the nursery: (i) incidents of use of force A, (ii) incidents of use of force B, (iii) incidents of use of force C, and (iv) incidents of use of force C in which chemical agents are used." (Admin Code § 9-142.d.7)
+    *   "The number of incidents of use of force A at a department of education site, in total and disaggregated by whether such use of force was used on an adolescent or young adult." (Admin Code § 9-151.d.4)
+    *   "The number and rate of incidents for which the department determined that staff violated a departmental rule or was otherwise subject to discipline, the type of incident that occurred, and the type of discipline recommended and actually imposed for such incidents." (Admin Code § 9-152.b.2)
+    *   "The department shall record, via body-worn or handheld camera, video, including audio, every interaction between incarcerated individuals and correction officers in which an incarcerated individual is informed about a scheduled court appearance and shall maintain a database with the video files created pursuant to this subdivision." (Admin Code § 9-146.d)
+    *   "The total number of individuals for which use of force was required to compel the individual to be delivered to the court facility on the date of their scheduled court appearance, disaggregated by housing facility." (Admin Code § 9-146.g.7)
+    *   "The term "use of force" means an instance where staff used their hands or other parts of their body, objects, instruments, chemical agents, electric devices, firearm, or any other physical method to restrain, subdue, or compel an incarcerated individual to act in a particular way, or stop acting in a particular way." (Admin Code § 9-134.a)
+    *   "The department shall not place an incarcerated person in restraints unless an individualized determination is made that restraints are necessary to prevent an imminent risk of self-injury or injury to other persons." (Admin Code § 9-167.e.1)
+*   **Why:** Critical for accountability, monitoring staff conduct, ensuring safety, and compliance with use of force policies.
+*   **One row represents:** A single incident where staff used force on an incarcerated individual.
+*   **Covers:** All instances of staff using physical force, mechanical restraints, chemical agents, or electric devices on incarcerated individuals.
+*   **Columns:** Use of Force Incident ID (PK), Date of Incident, Time of Incident, Facility ID (FK to 2), Housing Area Type, Location Type, Incarcerated Individual ID (Subject of Force) (FK to 1), Incarcerated Individual Age Group, Staff ID (Perpetrator of Force) (FK to 4), Type of Force Used, Use of Force Classification, Injury to Incarcerated Individual, Description of Incarcerated Individual Injury, Medical Treatment Required for Incarcerated Individual, Hospitalization of Incarcerated Individual, Injury to Staff, Description of Staff Injury, Medical Treatment Required for Staff, Reason for Use of Force, Chemical Agents Used, Electric Devices Used, Mechanical Restraints Used, Restraint Type, Restraint Duration, Individualized Determination for Restraints, Least Restrictive Restraint Used, Video Camera Surveillance (FK to 35), Video File Reference (FK to 35), Investigation Status, Investigation Outcome, Departmental Rule Violation, Discipline Recommended (FK to 24), Discipline Imposed (FK to 24), Referral to DA/DOI, Referral Date, Court Appearance Compulsion.
+
+**24. Staff Disciplinary Actions**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Where a member of the uniformed force shall be charged with the commission of a crime, he or she may be suspended without pay for the duration of the time that said criminal charges are pending final disposition." (Admin Code § 9-112)
+    *   "If the member is found not guilty of such criminal charges he or she shall be paid full back pay for the period of suspension." (Admin Code § 9-112)
+    *   "However, after the final disposition of said criminal charges no member of the uniformed force shall be suspended without pay for more than thirty days while awaiting disposition of departmental charges against such member." (Admin Code § 9-112)
+    *   "If the member is found not guilty of the departmental charges such member shall be paid full back pay for the period he or she had been suspended while awaiting disposition of the departmental charges against such member." (Admin Code § 9-112)
+    *   "Nothing in this section shall be construed to affect the rights, powers and duties of the commissioner pursuant to any other provision of law, including, but not limited to, the right to discipline a correction officer by termination, reduction of salary, or any other appropriate measure..." (Admin Code § 9-117.1.b)
+    *   "The number and rate of incidents for which the department determined that staff violated a departmental rule or was otherwise subject to discipline, the type of incident that occurred, and the type of discipline recommended and actually imposed for such incidents." (Admin Code § 9-152.b.2)
+    *   "For substantiated allegations, if the perpetrator was a staff person, whether during the pendency of the investigation such staff person resigned, was suspended, placed on modified duty, assigned to a post without contact with incarcerated individuals, assigned to a post with restricted contact with incarcerated individuals, placed on administrative leave, or administered any other form of discipline;" (Admin Code § 9-156.b.30)
+    *   "For substantiated allegations, whether the allegation was referred for disciplinary action, including whether the department declined to file disciplinary charges, or if disciplinary charges were filed, the outcome of such disciplinary proceeding and whether the alleged staff perpetrator resigned or retired in lieu of charges or as part of a negotiated plea;" (Admin Code § 9-156.b.31)
+    *   "The outcome of any investigation related to the alleged incident, including but not limited to, any discipline or penalties imposed on the alleged perpetrator;" (Admin Code § 9-156.1.b.19)
+    *   "Any report required by this subdivision shall include a unique identifier for each employee under investigation for alleged misconduct that lead to an individual’s death and provide: Whether the employee was terminated; Whether the employee resigned; Whether a staff misconduct case was opened regarding the employee’s involvement in circumstances that contributed to the individual’s death; If a staff misconduct case was opened regarding the employee’s involvement in the circumstances that contributed to the individual’s death: The date the department commenced an investigation of such employee; The date the department concluded such investigation, where applicable; The rules or departmental policies alleged to have been violated; Whether the department imposed any penalty or discipline as result of the investigation of an employee, and if so, a description of any such discipline; If the office of administrative trials and hearings adjudicates any charge resulting from such investigation, the date on which the department referred the case to the office of administrative trials and hearings and; Whether the department referred the case to the department of investigation, a district attorney, or the attorney general." (Admin Code § 9-171.i.1-6)
+*   **Why:** To track all disciplinary actions against staff, ensuring fairness, accountability, and compliance with legal and departmental policies.
+*   **One row represents:** A single disciplinary action or investigation against a staff member.
+*   **Covers:** All charges, suspensions, investigations, and disciplinary outcomes for uniformed and civilian staff.
+*   **Columns:** Disciplinary Action ID (PK), Staff ID (FK to 4), Date of Incident, Allegation Type, Description of Allegation, Date Charges Filed, Investigation Start Date, Investigation End Date, Investigation Outcome, Departmental Rule(s) Violated, Discipline Recommended, Discipline Imposed, Date Discipline Imposed, Suspension Start Date, Suspension End Date, Back Pay Awarded, Formal Proceeding (OATH) Referral, Formal Proceeding Outcome, Commissioner's Decision on Sanction, Referral to DA/DOI/AG, Referral Date, Resignation/Retirement in Lieu of Charges, Related Incident ID (FK to 15, 23, 25, 26).
+
+**25. Sexual Abuse & Harassment Allegations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The term "sexual abuse" has the same meaning as set forth in 28 CFR § 115.6, or successor regulation, promulgated pursuant to the federal prison rape elimination act of 2003." (Admin Code § 9-130.a)
+    *   "allegations of sexual abuse of an incarcerated individual by an incarcerated individual; substantiated incidents of sexual abuse of an incarcerated individual by an incarcerated individual; allegations of sexual abuse of an incarcerated individual by staff; and substantiated incidents of sexual abuse of an incarcerated individual by staff." (Admin Code § 9-130.d)
+    *   "The term "sexual abuse" includes any of the following acts against a visitor, performed by staff with or without consent of the visitor..." (Admin Code § 9-140.a)
+    *   "The term "sexual harassment" means acts conducted by staff on visitors, including (1) any unwelcome sexual advances, requests for sexual favors, or verbal comments, gestures, or actions of a derogatory or offensive sexual nature..." (Admin Code § 9-140.a)
+    *   "The number of instances of allegations of staff on incarcerated individual sexual assault, (xl) the number of instances of substantiated staff on incarcerated individual sexual assault, (xli) the number of instances of allegations of incarcerated individual on staff sexual assault, and (xlii) the number of instances of substantiated incarcerated individual on staff sexual assault." (Admin Code § 9-134.b.xxxix-xlii)
+    *   "The term "sexual abuse by staff of an incarcerated individual" includes any of the following acts conducted by staff, with or without consent of the incarcerated individual..." (Admin Code § 9-156.a)
+    *   "The term "sexual abuse by an incarcerated individual" includes any of the following acts if the victim and perpetrator are both incarcerated individuals, and if the victim does not consent, is coerced into such act by overt or implied threats of violence, or is unable to consent or refuse..." (Admin Code § 9-156.a)
+    *   "The term "sexual harassment" includes (1) any unwelcome sexual advances, requests for sexual favors, or verbal comments, gestures, or actions of a derogatory or offensive sexual nature; and (2) any verbal comments or gestures of a sexual nature..." (Admin Code § 9-156.a)
+    *   "The department shall provide to the speaker of the council and the board of correction a report of alleged incidents of sexual abuse and sexual harassment that occurred, or for which an investigation was pending, during the preceding six-month period." (Admin Code § 9-156.b)
+    *   "The term “sexual assault of staff” means any non-consensual physical conduct of a sexual nature by an incarcerated individual toward or against staff, including but not limited to patting, rubbing, kissing, grabbing, pinching, or touching." (Admin Code § 9-156.1.a)
+    *   "The term “sexual harassment of staff” means any of the following acts conducted by an incarcerated individual toward or against staff: (i) verbal comments or obscene gestures of a sexual nature, including sexually suggestive remarks, jokes, innuendos or leering; (ii) intentional touching of the incarcerated individual’s own body in plain view of staff, in a manner that demonstrates it is for the purpose of sexual arousal, gratification, annoyance, or offense; and (iii) any act made by an incarcerated individual to request, solicit, or otherwise encourage staff to engage in sexual activity." (Admin Code § 9-156.1.a)
+*   **Why:** Mandated by federal and local law to track, investigate, and report all allegations of sexual abuse and harassment to ensure safety and accountability.
+*   **One row represents:** A single allegation of sexual abuse or sexual harassment.
+*   **Covers:** All allegations of sexual abuse and harassment involving incarcerated individuals (victim/perpetrator), staff (victim/perpetrator), and visitors (victim).
+*   **Columns:** Allegation ID (PK), Date of Incident, Time of Incident, Date Reported, Method of Reporting, Allegation Type, Victim Type, Victim ID (FK to 1 or 4), Victim Gender Identity, Victim Age Group, Victim Race, Victim Mental Illness Treatment Status, Victim Transgender/Intersex Identity, Victim LGBTQ+ Identity, Perpetrator Type, Perpetrator ID (FK to 1 or 4), Perpetrator Gender Identity, Perpetrator Staff Type, Perpetrator Previous Allegations (FK to 24), Facility ID (FK to 2), Location Type, Housing Area Type, Specific Acts Alleged, Incident during Authorized Search, Video Camera Surveillance (FK to 35), Video File Reference (FK to 35), DNA/Physical Evidence Obtained, Rape Kit Administered, Rape Kit Not Applicable Reason, Investigation Opened Date, Investigation Closed Date, Investigation Division, Investigation Outcome, Victim Notified of Outcome, Victim Referred to Trauma/Rape Crisis Services, Perpetrator/Victim Separated, Referral to DA/DOI, Referral Date, Reason Not Referred to DA, Criminal Charges Brought, Perpetrator Re-arrested, Discipline Imposed (FK to 24), Staff Training Status (FK to 30), Staff Training Last Date (FK to 30), Alleged Victim Claimed Gender/Sexual Orientation Bias.
+
+**26. Assaults & Other Violent Incidents**
+*   **Open Data Match:** Inmate Assault on Staff (299) - 70% similarity. The open dataset is a subset (assaults on staff) of violent incidents.
+*   **Quotes:**
+    *   "The term "assault" means any action taken with intent to cause physical injury to another person." (Admin Code § 9-130.a)
+    *   "assaults on incarcerated individuals by incarcerated individuals involving stabbings, shootings or slashings;" (Admin Code § 9-130.b.2)
+    *   "assaults on incarcerated individuals by incarcerated individuals in which an incarcerated individual suffered a serious injury, excluding assaults involving stabbings, shootings or slashings;" (Admin Code § 9-130.b.3)
+    *   "assaults on staff by incarcerated individuals in which staff suffered serious injury." (Admin Code § 9-130.b.7)
+    *   "homicides of incarcerated individuals by incarcerated individuals;" (Admin Code § 9-130.c.9)
+    *   "attempted suicides by incarcerated individuals; suicides by incarcerated individuals;" (Admin Code § 9-130.c.10-11)
+    *   "incidents in which an incarcerated individual splashed staff;" (Admin Code § 9-130.c.15)
+    *   "The number of incarcerated individuals who committed suicide, (xiv) the number of incarcerated individuals who attempted suicide, (xv) the number of incarcerated individuals on suicide watch, (xvi) the number of incarcerated individuals who caused injury to themselves (excluding suicide attempt), (xvii) the number of incarcerated individuals seriously injured while in segregated housing units or MHU, (xviii) the number of incarcerated individuals who were sent to non-psychiatric hospitals outside the city jails, (xix) the number of incarcerated individuals who died (non-suicide)," (Admin Code § 9-134.b.xiii-xix)
+    *   "The number of unique assaults on department of education staff by incarcerated individuals." (Admin Code § 9-151.c.22)
+    *   "The number of assaults on staff at a department of education site, in total and disaggregated by whether such assault was committed by an adolescent or young adult." (Admin Code § 9-151.d.3)
+    *   "The term “violence” means the use of force or power, threatened or actual, against another person, or against a group or community." (Admin Code § 9-165.a)
+    *   "The number and percentage of such persons as described in paragraph 3 of this subdivision who have made an allegation, complaint, or report, whether verbal or in writing, as a result of experiencing violence, harassment, or discrimination." (Admin Code § 9-165.b.8)
+    *   "The number of maternal mortalities known to the service while in the custody of the department; The number of maternal mortalities while in the custody of the department considered to be a pregnancy-associated death, if information necessary to make such determination is available to the service; The number of maternal mortalities while in the custody of the department considered to be a pregnancy-related death, if information necessary to make such determination is available to the service;" (Admin Code § 9-163.b.5-7)
+    *   "The department shall notify the office of chief medical examiner and the board of correction as soon as practicable after becoming aware of a death of an incarcerated individual in the custody of the department..." (Admin Code § 9-171.b)
+    *   "The number of suspected opioid overdoses by incarcerated individuals that did not result in the death of such individual, and the number of suspected opioid overdoses where an opioid antagonist was administered." (Admin Code § 9-173.f.2)
+*   **Why:** Critical for monitoring safety, identifying high-risk areas, and ensuring timely response to serious incidents.
+*   **One row represents:** A single incident of assault, self-harm, suicide, homicide, or other violent event.
+*   **Covers:** All assaults (incarcerated individual on incarcerated individual, incarcerated individual on staff, staff on incarcerated individual), homicides, suicides, attempted suicides, self-harm, splashing incidents, and deaths (maternal, opioid overdose, other).
+*   **Columns:** Incident ID (PK), Date of Incident, Time of Incident, Facility ID (FK to 2), Housing Area Type, Location Type, Incident Type, Victim ID (FK to 1 or 4), Victim Type, Victim Age Group, Perpetrator ID (FK to 1 or 4), Perpetrator Type, Weapon Used, Injury Type, Medical Treatment Required, Hospitalization, Cause of Death, Maternal Mortality Type, Opioid Antagonist Administered, Video Camera Surveillance (FK to 35), Video File Reference (FK to 35), Investigation Status, Investigation Outcome, Referral to DA/DOI, Referral Date, Related Use of Force Incident ID (FK to 23), Related Sexual Abuse Allegation ID (FK to 25), Next of Kin Notification Date (FK to 15), Attorney Notification Date (FK to 15).
+
+**27. Discharge Planning & Re-entry Services**
+*   **Open Data Match:** Inmate Discharges (575) - 50% similarity. The open dataset contains discharge information, but not the detailed planning/services.
+*   **Quotes:**
+    *   "The department of correction shall collect, from any sentenced incarcerated individual who will serve, after sentencing, ten days or more in any city correctional institution, information relating to such incarcerated individual's housing, employment and sobriety needs." (Admin Code § 9-127.b)
+    *   "For the purposes of this section and sections 9-128 and 9-129 of this title, "discharge planning" shall mean the creation of a plan for post-release services and assistance with access to community-based resources and government benefits designed to promote an incarcerated individual's successful reintegration into the community." (Admin Code § 9-127.b)
+    *   "The term "eligible incarcerated individual" means a person who served a sentence of 30 days or more in the custody of the department, and who is being released from the custody of the department to the community." (Admin Code § 9-127.1.a)
+    *   "Prior to the release of an eligible incarcerated individual from the custody of the department, a designee of the department shall to the extent practicable develop and offer to such incarcerated individual a discharge plan." (Admin Code § 9-127.1.b)
+    *   "The department of correction shall provide assistance with the preparation of applications for government benefits and identification to sentenced incarcerated individuals who will serve, after sentencing, thirty days or more in any city correctional institution and who receive discharge planning services from the department of correction or any social services organization under contract with the department of correction..." (Admin Code § 9-128.b)
+    *   "The commissioner of correction shall submit a report to the mayor and the council by October first of each year regarding implementation of sections 9-127 and 9-128 of this title and other discharge planning efforts, and, beginning October first, two thousand eight and annually thereafter, regarding recidivism among incarcerated individuals receiving discharge planning services from the department of correction or any social services organization under contract with the department of correction." (Admin Code § 9-129)
+    *   "The department shall make best efforts to provide records relating to an individual's period of incarceration necessary to rectify erroneous warrants within three business days of the request for such records." (Admin Code § 9-153)
+    *   "The department, in consultation with correctional health services, shall make available an opioid overdose prevention kit to an incarcerated individual upon discharge of such individual from a city jail to the community." (Admin Code § 9-173.g)
+*   **Why:** To track the provision of re-entry services, assess their effectiveness, and comply with reporting on recidivism.
+*   **One row represents:** A single discharge planning event or re-entry service provided to an incarcerated individual.
+*   **Covers:** All discharge plans, referrals to social services, assistance with government benefits/ID, and provision of re-entry resources.
+*   **Columns:** Discharge Planning ID (PK), Incarcerated Individual ID (FK to 1), Eligibility Status, Discharge Date, Discharge Plan Developed, Discharge Plan Offered, Reason Discharge Plan Not Required, Housing Needs Identified, Employment Needs Identified, Sobriety Needs Identified, Social Service Organization ID, Consent to Share Information, Re-entry Services Provided, Government Benefits Application Assistance, Identification Application Assistance, Birth Certificate Request Date, Birth Certificate Provided Date, Letter of Incarceration Provided, Connections Guidebook Offered, Erroneous Warrant Rectification Request Date, Erroneous Warrant Records Provided Date, Opioid Overdose Prevention Kit Provided, Recidivism Status, Recidivism Date.
+
+**28. Segregated Housing Placements & Conditions**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner of correction may set apart one or more of the penal institutions for the custody of such youthful or less hardened offenders, and he or she is empowered to transfer such offenders thereto from any penal institution of the city." (Admin Code § 9-109)
+    *   "The term "segregated housing unit" means any city jail housing units in which incarcerated individuals are regularly restricted to their cells more than the maximum number of hours as set forth in subdivision (b) of section 1-05 of chapter 1 of title 40 of the rules of the city of New York... Segregated housing units include, but are not limited to, punitive segregation housing and enhanced supervision housing." (Admin Code § 9-134.a)
+    *   "The term "mental health unit" ("MHU") means any separate housing area staffed by mental health clinicians where incarcerated individuals with mental illness who have been found guilty of violating department rules are housed, including but not limited to restricted housing units and clinical alternative to punitive segregation units." (Admin Code § 9-134.a)
+    *   "The commissioner shall post a report every 60 days... setting forth the number of city jail inmates who have been found guilty of violating departmental rules but have yet to be placed in punitive segregation, restrictive housing or a clinical alternative to punitive segregation housing, or any successor to such housing units..." (Admin Code § 9-135)
+    *   "The number of incarcerated individuals sent to segregated housing units and MHU during the period, (iv) the number of incarcerated individuals sent to segregated housing units and MHU from mental observation housing areas, (v) the number of incarcerated individuals, by highest infraction offense grade as classified by the department, (grade one, two, or three), (vi) the number of incarcerated individuals serving punitive segregation in the following specified ranges: less than ten days, ten to thirty days, thirty-one to ninety days, ninety-one to one hundred eighty days, one hundred eighty-one to three hundred sixty-five days, and more than three hundred sixty-five days," (Admin Code § 9-134.b.iii-vi)
+    *   "The term “solitary confinement” means any placement of an incarcerated person in a cell, other than at night for sleeping for a period not to exceed eight hours in any 24-hour period or during the day for a count not to exceed two hours in any 24-hour period." (Admin Code § 9-167.a)
+    *   "The department shall not place an incarcerated person in a cell, other than at night for sleeping for a period not to exceed eight hours in any 24-hour period or during the day for count not to exceed two hours in any 24-hour period, unless for the purpose of de-escalation confinement or during emergency lock-ins." (Admin Code § 9-167.b)
+    *   "The maximum duration a person can be held in de-escalation confinement shall not exceed four hours immediately following the incident precipitating such person’s placement in such confinement. Under no circumstances may the department place a person in de-escalation confinement for more than four hours total in any 24-hour period, or more than 12 hours in any seven-day period;" (Admin Code § 9-167.c.6)
+    *   "The department shall not place an incarcerated person in restrictive housing for longer than necessary and for no more than a total of 60 days in any 12 month period." (Admin Code § 9-167.h.1)
+    *   "The department shall discharge an incarcerated person from restrictive housing if such person has not engaged in behavior that presents a specific, significant, and imminent threat to the safety and security of themselves or other persons during the preceding 15 days. In all circumstances, the department shall discharge an incarcerated person from restrictive housing within 30 days after their initial placement in such housing." (Admin Code § 9-167.h.3)
+    *   "A person placed in restrictive housing must have interaction with other people and access to congregate programming and amenities comparable to those housed outside restrictive housing, including access to at least seven hours per day of out-of-cell congregate programming or activities with groups of people in a group setting all in the same shared space without physical barriers separating such people that is conducive to meaningful and regular social interaction." (Admin Code § 9-167.h.4)
+*   **Why:** To track all placements in segregated housing, ensure compliance with duration limits, and monitor conditions and services provided.
+*   **One row represents:** A single placement of an incarcerated individual into a segregated housing unit, MHU, de-escalation confinement, or pre-hearing temporary restrictive housing.
+*   **Covers:** All placements in punitive segregation, enhanced supervision housing, mental health units, de-escalation confinement, and pre-hearing temporary restrictive housing.
+*   **Columns:** Placement ID (PK), Incarcerated Individual ID (FK to 1), Placement Start Date/Time, Placement End Date/Time, Housing Unit Type, Facility ID (FK to 2), Reason for Placement, Origin of Placement, Highest Infraction Offense Grade (FK to 20), Security Risk Group, Subject to Enhanced Restraints, Length of Stay (Days), Mental Health Services Received (FK to 19), Age Group, Race, Gender, Infractions Received While Housed (FK to 20), Additional Punitive Segregation Time Imposed, Suicide Attempt (FK to 26), Suicide Watch Status, Self-Injury (Excluding Suicide Attempt) (FK to 26), Serious Injury While Housed (FK to 26), Transferred to Non-Psychiatric Hospital, Transferred to Psychiatric Hospital, Transferred from General Punitive Segregation to MHU, Transferred from MHU to Segregated Housing Unit, Anti-Psychotic Medication Prescribed (FK to 19), Mood Stabilizers Prescribed (FK to 19), Anti-Anxiety Medications Prescribed (FK to 19), Medical/Mental Health Treatment Requests (FK to 19), Congregate Religious Services Requests, Law Library Assistance Requests, Telephone Call Requests, Recreation Days Offered, Recreation Hours Attended, Recreation Hours Offered Before 6 AM, Shower Days Offered, Showers Taken, Visits Received (FK to 33), Allegations of Use of Force (FK to 23), Instances of Use of Force A, B, C (FK to 23), Contraband Found, Allegations of Sexual Assault (Staff on II, II on Staff) (FK to 25), Substantiated Sexual Assault (Staff on II, II on Staff) (FK to 25), De-escalation Confinement Incident ID (FK to 36), Restrictive Housing Hearing Date, Restrictive Housing Hearing Outcome, Reason for Dismissal/Not Guilty, Pre-hearing Temporary Restrictive Housing, Commissioner/Deputy Commissioner Approval for Pre-hearing RH, Review Date (15-day review for RH), Discharge from RH after Review, Reason for Continued RH, Program/Treatment/Service/Corrective Action Recommended for RH, Program/Treatment/Service/Corrective Action Provided for RH, Behavior Presenting Threat, Out-of-Cell Hours Provided, Congregate Programming/Activities Access, Voluntary Decline Congregate Programming, Trauma-Informed, Age-Appropriate Programming Access.
+
+**29. Staff Work Schedules & Attendance**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner of correction or other officer or officers having the management, control or direction of the department of correction shall divide all the custodial officers in each employee classification into three platoons at each institution." (Admin Code § 9-116.b)
+    *   "Tours of duty shall commence at midnight, eight o'clock ante meridian and four o'clock post meridian of each consecutive twenty-four hours. Such tours of duty shall hereinafter be designated as normal tours of duty. At the discretion of the warden or other officer or officers in charge of an institution, other tours of duty may be created." (Admin Code § 9-116.c)
+    *   "Every member of each platoon shall be entitled to at least one calendar day of rest upon the completion of every six tours of duty. This day of rest shall not be deferred longer than one calendar week after such member has become entitled thereto." (Admin Code § 9-116.c)
+    *   "All custodial officers shall be allowed a vacation period as may be authorized in leave regulations promulgated by the mayor. During an emergency, as defined herein, the vacation period may be withheld for such length of time as may be necessary." (Admin Code § 9-116.d)
+    *   "Absence, without leave and without an explanation, of any member of the force for five consecutive work days shall be deemed and held to be a resignation..." (Admin Code § 9-113)
+*   **Why:** Critical for operational management, ensuring adequate staffing, and compliance with labor laws and platoon system requirements.
+*   **One row represents:** A single scheduled tour of duty or a recorded absence/leave for a staff member.
+*   **Covers:** All custodial officers' work schedules, attendance, days of rest, and vacation periods.
+*   **Columns:** Staff ID (FK to 4), Date, Shift Type, Scheduled Start Time, Scheduled End Time, Actual Start Time, Actual End Time, Facility ID (FK to 2), Platoon Assignment, Day of Rest Status, Vacation Status, Absence Type, Absence Reason, Back Pay Eligibility, Hours Worked.
+
+**30. Staff Training Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The department shall identify where trauma-informed care is appropriate and provide training for all appropriate staff on such care." (Admin Code § 9-145.b)
+    *   "Correctional health services shall ensure that all medical and substance abuse professionals working with transgender individuals receive specialized training on transgender and gender-affirming care conducted by an individual or organization with expertise in the subject." (Admin Code § 9-145.e)
+    *   "The department shall implement annual training regarding the treatment of visitors for staff who interact regularly with visitors." (Admin Code § 9-140.f)
+    *   "The department shall provide training for all uniformed staff of the department on the administration of opioid antagonists. The department shall also make such training available to individuals incarcerated in city correctional facilities." (Admin Code § 9-173.b.1)
+    *   "The department shall provide to staff access to mental health resources relating to reducing stress and other adverse mental health impacts for persons working in correctional facilities." (Admin Code § 9-156.2.b)
+    *   "The department shall establish a program for child visitors and other participants of visits with incarcerated persons that include child visitors. Such program shall provide: ... Training for department staff who interact with child visitors on minimizing stress for child visitors, which shall include, but need not be limited to, information about child development and communicating with children of various ages;" (Admin Code § 9-168.b.2)
+*   **Why:** To track all staff training, ensure compliance with mandates, and monitor professional development.
+*   **One row represents:** A single training session attended by a staff member.
+*   **Covers:** All mandated and offered training, including trauma-informed care, transgender care, visitor interaction, opioid antagonist administration, child visitor interaction, and mental health resources.
+*   **Columns:** Training Session ID (PK), Staff ID (FK to 4), Training Date, Training Type, Training Provider/Organization, Training Duration (Hours), Completion Status, Certification/Credential Obtained, Next Training Due Date, Training Materials Description (FK to 37).
+
+**31. Emergency Lock-in Incidents**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The term "department-wide emergency lock-in" means any period of time during which incarcerated individuals are confined to their cells or beds throughout all department facilities, but shall not include any scheduled period of lock-in." (Admin Code § 9-155.a)
+    *   "The term "facility emergency lock-in" means any period of time during which incarcerated individuals are confined to their cells or beds within all housing areas of an individual departmental facility, but shall not include any scheduled period of lock-in." (Admin Code § 9-155.a)
+    *   "The term "housing area emergency lock-in" means any period of time during which incarcerated individuals within an individual housing area within a facility are confined to their cells or beds, but shall not include any scheduled period of lock-in." (Admin Code § 9-155.a)
+    *   "The term "lock-in extension" means when a scheduled period of lock-in is extended." (Admin Code § 9-155.a)
+    *   "The term "partial facility emergency lock-in" means any period of time during which incarcerated individuals are confined to their cells or beds within a segment of an individual departmental facility, but shall not include any scheduled period of lock-in." (Admin Code § 9-155.a)
+    *   "The term "continuous lock-in" means any period of time in which incarcerated individuals are confined to their cells or beds due to the combination of an emergency lock-in and either a scheduled lock-in or a lock-in extension, or both." (Admin Code § 9-155.a)
+    *   "The number of department-wide emergency lock-ins, in total and disaggregated by the reason for such emergency lock-in, as determined by the department;" (Admin Code § 9-155.b.1)
+    *   "The mean and median duration of emergency lock-ins disaggregated by department-wide emergency lock-ins... facility emergency lock-ins... partial facility emergency lock-ins... and housing area emergency lock-ins..." (Admin Code § 9-155.b.7)
+    *   "The number of times mandated services are affected by an emergency lock-in or lock in extension, disaggregated by service type;" (Admin Code § 9-155.b.8)
+    *   "Emergency lock-ins may only be used when the Commissioner, a Deputy Commissioner, or another equivalent member of department senior leadership with responsibility for the operations of security for a facility determines that such lock-in is necessary to de-escalate an emergency that poses a threat of specific, significant and imminent harm to incarcerated persons or staff." (Admin Code § 9-167.j.1)
+    *   "Such lock-ins may not last more than four hours." (Admin Code § 9-167.j.1)
+    *   "Throughout an emergency lock-in, the department shall conduct visual and aural observation of every person locked in every fifteen (15) minutes, shall refer any health concerns to medical or mental health staff, and shall bring any person displaying any indications of any need for medical documentation, observation, or treatment to the medical clinic." (Admin Code § 9-167.j.2)
+    *   "The department shall immediately provide notice to the public on its website of an emergency lock-in, including information on any restrictions on visits, phone calls, counsel visits or court appearances." (Admin Code § 9-167.j.3)
+*   **Why:** To track all emergency lock-ins, their causes, durations, and impacts on incarcerated individuals and services.
+*   **One row represents:** A single emergency lock-in event.
+*   **Covers:** All department-wide, facility, partial facility, and housing area emergency lock-ins, including extensions.
+*   **Columns:** Lock-in ID (PK), Start Date/Time, End Date/Time, Duration (Hours), Type of Lock-in, Facility ID (FK to 2), Housing Area Type, Reason for Lock-in, Commissioner/Deputy Commissioner Approval, Less Restrictive Measures Exhausted, Number of Incarcerated Individuals Affected, Mandated Services Affected, Number of Scheduled Medical/Mental Health Appointments Missed (FK to 19), Number of Medical/Mental Health Requests Denied (FK to 19), Visits Affected (FK to 33), Counsel Visits Affected (FK to 33), Court Appearances Affected (FK to 6), Programs Affected (FK to 10), Actions Taken During Lock-in, Number of Staff Diverted (FK to 4), Visual/Aural Observation Conducted, Health Concerns Referred to Medical/Mental Health, Tablet/Phone Access Provided, Public Notice Provided, Incarcerated Individual ID (FK to 1), Incarcerated Individual Race (FK to 1), Incarcerated Individual Age (FK to 1), Incarcerated Individual Gender Identity (FK to 1), Incarcerated Individual Mental Health Treatment Level (FK to 19).
+
+**32. Civil Service Examination Participation**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner of citywide administrative services, in collaboration with the commissioner, shall administer civil service examinations for individuals incarcerated for a period of 10 days or longer in any city correctional facility." (Admin Code § 9-164.a)
+    *   "Any such individual who meets the minimum qualifications required to sit for a civil service examination shall be permitted to take such examination, absent any significant overriding security concern or exigent circumstances, provided that such individual shall be offered a makeup examination when such concern or circumstances are no longer present." (Admin Code § 9-164.a)
+    *   "The department shall make available study materials and practice examinations, as practicable, to such individuals." (Admin Code § 9-164.a)
+    *   "The commissioner, in collaboration with the commissioner of citywide administrative services, shall make available information regarding civil service examinations to individuals incarcerated for a period of 10 days or longer in any city correctional facility, including basic or introductory civil service information sessions; information regarding the examination process, including how to apply for an examination; and any existing schedule of civil service examinations." (Admin Code § 9-164.b)
+*   **Why:** To track incarcerated individuals' access to and participation in civil service examinations, and compliance with offering study materials.
+*   **One row represents:** An incarcerated individual's attempt to take a civil service examination.
+*   **Covers:** All civil service examinations administered to incarcerated individuals.
+*   **Columns:** Examination Participation ID (PK), Incarcerated Individual ID (FK to 1), Examination Date, Examination Type/Title, Eligibility Status, Minimum Qualifications Met, Permitted to Take Exam, Reason for Denial, Makeup Exam Offered, Makeup Exam Date, Examination Score/Result, Study Materials Provided, Practice Examinations Provided, Information Session Attended, Application Assistance Provided, Facility ID (FK to 2).
+
+**33. Visitation Log**
+*   **Open Data Match:** Local Law 85 – Visitation Quarterly (940) - 60% similarity. The open dataset is an aggregated report of visitation metrics.
+*   **Quotes:**
+    *   "The department of correction shall reduce its Hart's Island visitation policy to writing, post such policy on the department of correction website and make it available to anyone who requests a copy." (Admin Code § 9-133.a)
+    *   "The term "visitor" means any person who enters a city jail with the stated intention of visiting an incarcerated individual at any city jail, or any person who is screened by the department for visitation purposes, including but not limited to professionals and any person who registers to visit an incarcerated individual in the department's visitor tracking system." (Admin Code § 9-140.a)
+    *   "The total number of visitors to city jails, the total number of visitors to borough jail facilities, and the total number of visitors to city jails on Rikers Island." (Admin Code § 9-140.b.1)
+    *   "The number of visitors unable to visit an incarcerated individual at any city jail, in total and disaggregated by the reason such visit was not completed." (Admin Code § 9-140.b.3)
+    *   "The department shall establish a program for child visitors and other participants of visits with incarcerated persons that include child visitors." (Admin Code § 9-168.b)
+    *   "The department shall make best efforts to reduce the time that a child visitor waits prior to commencing a visit with an incarcerated person." (Admin Code § 9-168.c)
+    *   "The department... shall establish and operate an online system for scheduling in person visits and tele-visits with incarcerated persons in the custody of the department..." (Admin Code § 9-170.a)
+    *   "The ability for a person to request a date and time to visit an incarcerated person and, following approval by the department of a date and time, to reserve such date and time;" (Admin Code § 9-170.a.1)
+    *   "The ability for a person who has used such system to schedule a visit with an incarcerated person to cancel such visit;" (Admin Code § 9-170.a.2)
+    *   "The ability for the department to notify a person who has used such system to schedule a visit with an incarcerated person that such visit must be canceled..." (Admin Code § 9-170.a.3)
+    *   "A person who has used the online system to request a date and time for a visit with an incarcerated person and is not approved by the department to reserve such date and time shall receive the reason for which the department did not approve the request." (Admin Code § 9-170.d)
+    *   "If you are affected by a determination made pursuant to this subdivision [visits], you may appeal such determination to the New York City Board of Correction and to the Commanding Officer by providing written notice." (Rules § 1-02(e))
+*   **Why:** To track all visitation activity, monitor access, identify reasons for denied visits, and manage scheduling systems.
+*   **One row represents:** A single scheduled or attempted visit between a visitor and an incarcerated individual.
+*   **Covers:** All in-person visits, tele-visits, and attempts, including those by professionals and child visitors.
+*   **Columns:** Visit ID (PK), Incarcerated Individual ID (FK to 1), Visitor ID (PK for Visitor), Visitor Type, Professional Service Type, Scheduled Visit Date/Time, Actual Visit Date/Time, Visit Type, Facility ID (FK to 2), Visit Status, Reason for Not Completed/Denied/Canceled, Online Scheduling System Used, Online Request Date/Time, Online Approval Status, Online Denial Reason, Visitor Arrival Time, Wait Time for Child Visitor (Minutes), Child Visitor Program Utilized, Specially Designed Visiting Area Used, Complaint Regarding Online System (FK to 13), Related Sexual Abuse/Harassment Allegation ID (FK to 25), Related Intervention Incident ID (FK to 36), Appeal Filed (FK to 22).
+
+**34. Legal Representative Information**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The department shall make a good faith effort to notify the attorney of an incarcerated individual who has died as soon as practicable after notifying the next of kin of such individual..." (Admin Code § 9-171.b)
+    *   "If consent is provided to the department by an incarcerated individual, the department shall provide, within 3 business days to the defense attorney on record of such incarcerated individual, the video file of an interaction in which that incarcerated individual is informed about a scheduled court appearance..." (Admin Code § 9-146.e)
+    *   "The department shall independently establish, or establish by working with the office of court administration, a means by which real-time information regarding an incarcerated individual’s departure from their housing facility on the date of their scheduled court appearance can be communicated to the defense attorney on record of such incarcerated individual..." (Admin Code § 9-146.f)
+    *   "Institutional defense provider. The term "institutional defense provider" means any private institutional legal services organization selected in accordance with section 13-02 of title 43 of the rules of the city of New York to represent indigent persons, or any successor provision thereto." (Admin Code § 9-150.a)
+    *   "If such website identifies an institutional defense provider as the legal representative of such individual, the department shall telephone or email such institutional defense provider within ninety minutes of generation of such a list to inform them that such individual is held solely due to a bail amount of less than $10..." (Admin Code § 9-150.d)
+    *   "An incarcerated person shall have the right to be represented by their legal counsel or advocate;" (Admin Code § 9-167.f.1.i)
+*   **Why:** To maintain accurate contact information for legal representatives and ensure timely communication regarding incarcerated individuals.
+*   **One row represents:** A single legal representative or institutional defense provider.
+*   **Covers:** All attorneys, legal counsel, advocates, and institutional defense providers representing incarcerated individuals.
+*   **Columns:** Legal Representative ID (PK), Name/Organization Name, Type, Contact Person, Phone Number, Email Address, Associated Incarcerated Individual ID (FK to 1), Date of Assignment/Representation, Source of Information.
+
+**35. Video Surveillance & Evidence Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The department shall record, via body-worn or handheld camera, video, including audio, every interaction between incarcerated individuals and correction officers in which an incarcerated individual is informed about a scheduled court appearance and shall maintain a database with the video files created pursuant to this subdivision." (Admin Code § 9-146.d)
+    *   "The total number of court production videos stored in the department’s database and the total number of court production videos provided to defense counsel pursuant to subdivision e." (Admin Code § 9-146.g)
+    *   "Whether video camera surveillance recorded the incident;" (Admin Code § 9-156.b.16)
+    *   "The department shall provide any person in the care and custody of the department with a pending criminal proceeding access to evidence review technology for the purpose of enabling such person to review evidence that may be used in such proceeding, including audio, text, and visual materials." (Admin Code § 9-174.b)
+*   **Why:** To store and manage video and other electronic evidence, ensuring accessibility for legal proceedings and reporting.
+*   **One row represents:** A single video recording or piece of electronically stored information.
+*   **Covers:** All video recordings of court appearance notifications, use of force incidents, sexual abuse/harassment incidents, and other electronically stored information used as evidence.
+*   **Columns:** Video/Evidence ID (PK), Date of Recording/Creation, Time of Recording/Creation, Location (FK to 2), Recording Device Type, Incident Type, Related Incident ID (FK to 6, 23, 25, 26, 36), Incarcerated Individual ID (Subject) (FK to 1), Staff ID (Involved) (FK to 4), File Path/Storage Location, Duration, Audio Included, Provided to Defense Attorney, Date Provided to Defense Attorney, Consent for Release, Evidence Review Technology Access, Date Accessed via ERT, ERT User ID (FK to 1).
+
+**36. De-escalation Confinement & Restraints Usage Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The term “de-escalation confinement” means holding an incarcerated person in a cell immediately following an incident where the person has caused physical injury or poses a specific risk of imminent serious physical injury to staff, themselves or other incarcerated persons." (Admin Code § 9-167.a)
+    *   "The maximum duration a person can be held in de-escalation confinement shall not exceed four hours immediately following the incident precipitating such person’s placement in such confinement. Under no circumstances may the department place a person in de-escalation confinement for more than four hours total in any 24-hour period, or more than 12 hours in any seven-day period;" (Admin Code § 9-167.c.6)
+    *   "For each instance an incarcerated person is placed in de-escalation confinement as described in subdivision c of this section, the department shall prepare an incident report that includes a detailed description of why isolation was necessary to de-escalate an immediate conflict and the length of time the incarcerated person was placed in such confinement." (Admin Code § 9-167.d)
+    *   "The department shall not place an incarcerated person in restraints unless an individualized determination is made that restraints are necessary to prevent an imminent risk of self-injury or injury to other persons." (Admin Code § 9-167.e.1)
+    *   "Restraints shall not be used on an incarcerated person under the age of 22 except in the following circumstances: (i) during transportation in and out of a facility... and (ii) during escorted movement within a facility to and from out-of-cell activities where an individualized determination is made that restraints are necessary to prevent an immediate risk of self-injury or injury to other persons." (Admin Code § 9-167.e.1)
+    *   "The department shall not place an incarcerated person in restraints beyond the use of restraints described in paragraph 1 of this subdivision, or on two consecutive days, until a hearing is held to determine if the continued use of restraints is necessary for the safety of others." (Admin Code § 9-167.e.2)
+*   **Why:** To track all instances of de-escalation confinement and restraint usage, ensuring compliance with strict time limits and individualized determinations.
+*   **One row represents:** A single instance of de-escalation confinement or application of restraints.
+*   **Covers:** All uses of de-escalation confinement and physical restraints on incarcerated individuals.
+*   **Columns:** Incident ID (PK), Incarcerated Individual ID (FK to 1), Date of Incident, Start Time, End Time, Duration (Hours), Type, Facility ID (FK to 2), Location, Reason for Confinement/Restraints, Detailed Description of Behavior, Why Isolation/Restraints Necessary to De-escalate, Staff ID (Involved) (FK to 4), Individualized Determination Made, Least Restrictive Form Used, Incarcerated Individual Age, Restraint Type, Restraint Purpose, Restraint Hearing Held, Restraint Hearing Date, Restraint Hearing Outcome, Daily Review of Restraints, Continued Restraint Authorization, Visual/Aural Observation Conducted, Crisis Intervention/De-escalation Efforts, Health Concerns Referred to Medical/Mental Health, Tablet/Phone Access Provided, Transfer to Pre-hearing Temporary Restrictive Housing (FK to 28).
+
+**37. Library & Resource Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner of correction is empowered to set aside in the city prison a sufficient space for the purposes of installing a library for the incarcerated individuals." (Admin Code § 9-111.a)
+    *   "The commissioner of correction is authorized to accept contributions of books, pamphlets and periodicals. All such contributions shall be recorded and catalogued; an account thereof shall be kept and a report concerning the same shall be made to the commissioner of correction at least once in each calendar year." (Admin Code § 9-111.b)
+    *   "The number of requests made by incarcerated individuals for assistance from the law library and the number granted," (Admin Code § 9-134.b.xxviii)
+    *   "The department shall make available study materials and practice examinations, as practicable, to such individuals." (Admin Code § 9-164.a)
+    *   "The department shall provide any person in the care and custody of the department with a pending criminal proceeding access to evidence review technology for the purpose of enabling such person to review evidence that may be used in such proceeding, including audio, text, and visual materials." (Admin Code § 9-174.b)
+    *   "Providing such a person with access to a law library equipped with tablets, desktop computers or other devices that such person may use to access such evidence review technology;" (Admin Code § 9-174.b.2)
+    *   "The department shall establish a program for child visitors and other participants of visits with incarcerated persons that include child visitors. Such program shall provide: Toys, games, books, and activities, such as arts and crafts, and disinfecting wipes in any visiting area;" (Admin Code § 9-168.b.1)
+    *   "The department shall post on its website a description of the program for child visitors required by this section, including any protocols or processes for cleaning and, where necessary, replenishing toys, games, books and activities in visiting areas..." (Admin Code § 9-168.f)
+*   **Why:** To manage library resources, track contributions, and ensure availability of educational and legal materials.
+*   **One row represents:** A single item in a library or resource inventory.
+*   **Covers:** All books, pamphlets, periodicals, study materials, practice examinations, tablets, desktop computers, toys, games, and activities available to incarcerated individuals and visitors.
+*   **Columns:** Item ID (PK), Item Name/Title, Item Type, Location (FK to 2), Acquisition Date, Acquisition Method, Contributor Name, Condition, Quantity, Availability Status, Last Inventory Date, Last Cleaning/Replenishment Date, Evidence Review Technology Installed.
+
+**38. Inmate Property Management**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "When you first come to jail, any property that is taken from you that involves a criminal offense may be forwarded to the appropriate law enforcement agency for possible criminal prosecution and subject you to disciplinary action." (Rules § 1-02(a))
+    *   "Property taken from you that does not involve a criminal offense will be identified, receipted, stored and returned to you after your discharge from Department custody." (Rules § 1-02(a))
+    *   "Upon incarceration, you will be given more information about what property may be kept in jail and how to get other property back after discharge." (Rules § 1-02(a))
+    *   "Contraband" shall mean any item that is not sold in the commissary, that is not on the approved list of permissible items, that is possessed in more than the approved amount, or that the inmate does not have permission to possess." (Rules § 1-03(b))
+    *   "Possession of contraband may subject an inmate to criminal prosecution as well as disciplinary action." (Rules § 1-03(b))
+    *   "Any person who tries to introduce contraband into a facility may also be subject to criminal prosecution." (Rules § 1-03(b))
+    *   "Inmates shall not possess any tobacco-related products..." (Rules § 1-03(c)(4) 103.05)
+    *   "Inmates shall not make, possess, sell or exchange any amount of alcoholic beverage." (Rules § 1-03(c)(4) 103.08)
+    *   "Inmates shall not make, possess, sell or exchange any type of contraband weapon." (Rules § 1-03(c)(4) 103.10)
+    *   "Inmates shall not possess or transport a Department-issued razor outside the housing area." (Rules § 1-03(c)(4) 103.10.5)
+    *   "Inmates shall return all Department-issued razors after shaving is completed..." (Rules § 1-03(c)(4) 103.10.6)
+    *   "Inmates shall not possess more than one Department-issued razor." (Rules § 1-03(c)(4) 103.10.7)
+    *   "Inmates shall not make, possess, sell, give or exchange any amount of narcotic, narcotic paraphernalia, or any other controlled substance..." (Rules § 1-03(c)(4) 103.11)
+    *   "Inmates shall not make, possess, sell, give or exchange any type of escape paraphernalia." (Rules § 1-03(c)(4) 103.12)
+    *   "Inmates shall not possess any type of electronic telecommunications and/or recording device or instrument..." (Rules § 1-03(c)(4) 103.12.5)
+    *   "Inmates shall not possess money whose value exceeds twenty (20) dollars in cash, checks, credit cards... Money confiscated as contraband will be deposited in the City's treasury and will not be returned to the inmate." (Rules § 1-03(c)(4) 103.12.7)
+    *   "Inmates shall not possess prescription drugs that they are not authorized by medical staff to possess." (Rules § 1-03(c)(4) 103.13)
+    *   "Inmates shall not possess prescription or non-prescription drugs in quantities in excess of that authorized by medical staff." (Rules § 1-03(c)(4) 103.13.5)
+    *   "Inmates are not authorized to possess expired prescription medication or drugs." (Rules § 1-03(c)(4) 103.13.5)
+    *   "Inmates shall not possess any other unauthorized items not specifically listed within this section." (Rules § 1-03(c)(4) 103.19)
+    *   "Inmates shall be charged restitution for a new Department ID." (Rules § 1-03(c)(17) 115.12)
+    *   "If you are found guilty of damaging or destroying City property, you may be ordered to pay restitution, which can be as much as the replacement cost of the item or property, plus the labor costs of fixing or replacing the item you damaged or destroyed." (Rules § 1-05(e))
+*   **Why:** To accurately track all inmate property, including items taken at intake, contraband, and property damage for restitution.
+*   **One row represents:** A single item of property associated with an inmate (either stored, confiscated, or damaged).
+*   **Covers:** Inmate personal property upon intake, confiscated contraband, and City property damaged by inmates.
+*   **Columns:** Property Record ID (PK), Inmate ID (FK to 1), Item Description, Item Category, Property Status, Date Recorded, Location of Property, Staff Member ID Recording Action (FK to 4), Receipt Number, Contraband Type, Contraband Value, Disposition of Contraband, Date of Disposition, Related Infraction Incident ID (FK to 20), Restitution Amount Ordered (FK to 21), Restitution Amount Paid, Date of Return to Inmate, Condition on Return, Criminal Prosecution Referral.
+
+**39. Inmate Privilege Determinations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The Department may limit your right to participate in recreation for a security related reason in accordance with State Commission of Correction standards (9 NYCRR § 7028.6)." (Rules § 1-02(b))
+    *   "You may attend religious services with general population inmates unless you are found to pose a threat to the safety and security of the institution..." (Rules § 1-02(c))
+    *   "The Department may limit your telephone calls if they constitute a threat to institutional safety or security, if you abuse the telephone regulations or in accordance with a court order." (Rules § 1-02(d))
+    *   "If you are affected by a determination made pursuant to this subdivision [telephone calls], you may appeal such determination to the New York City Board of Correction..." (Rules § 1-02(d))
+    *   "The Department may revoke, deny or limit your contact visits if they constitute a serious threat to institutional safety or security." (Rules § 1-02(e))
+    *   "If you are affected by a determination made pursuant to this subdivision [visits], you may appeal such determination to the New York City Board of Correction and to the Commanding Officer..." (Rules § 1-02(e))
+    *   "You may lose one or more privileges, temporarily or permanently, except that: (i) You will not be deprived of the right to receive visitors, although contact visits may be replaced with non-contact visits. (ii) You will not be deprived of the right to send or receive mail. (iii) You will not be deprived of the right to contact legal counsel. (iv) You will not be deprived of the right to have recreation as a sanction for an infraction." (Rules § 1-05(b))
+*   **Why:** To track inmate access to privileges, any limitations imposed, and the reasons for those limitations, ensuring compliance with regulations and appeal rights.
+*   **One row represents:** A specific determination or action regarding an inmate's privilege.
+*   **Covers:** Recreation, religious services, telephone calls, and visits.
+*   **Columns:** Privilege Determination ID (PK), Incarcerated Individual ID (FK to 1), Privilege Type, Date of Determination/Action, Staff Member ID Making Determination (FK to 4), Determination Type, Reason for Limitation/Denial/Revocation, Specific Limitation Details, Duration of Limitation, Reference to State Commission of Correction Standards, Reference to NYC Board of Correction Standards, Court Order Reference, Appeal Filed (FK to 22), Date of Appeal Decision, Outcome of Appeal.
+
+**40. Inmate Drug and Alcohol Testing**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Inmates shall not refuse to provide a urine, hair, saliva, or other sample, according to the Department's policy and procedures, when they have been notified by the head of the facility or his/her designee that they have been selected for drug/alcohol testing, whether by random selection or based on reasonable suspicion." (Rules § 1-03(c)(31))
+    *   "Inmates shall not test positive for nor be found under the influence of alcohol or illegal drugs/substances." (Rules § 1-03(c)(32) 130.11)
+    *   "Inmates shall not adulterate or tamper with, or attempt to adulterate or tamper with a urine sample or offer as their own a urine sample of another individual." (Rules § 1-03(c)(32) 130.12)
+*   **Why:** To track all drug and alcohol tests administered to inmates, including the reason, results, and any related infractions.
+*   **One row represents:** A single drug or alcohol test administered to an inmate.
+*   **Covers:** All random and suspicion-based drug/alcohol tests.
+*   **Columns:** Test ID (PK), Incarcerated Individual ID (FK to 1), Date of Test, Time of Test, Testing Staff Member ID (FK to 4), Test Type, Reason for Test, Notification Date, Sample Provided, Refusal to Provide Sample, Sample Tampered/Adulterated, Test Result, Substance Detected, Confirmation Test Performed, Confirmation Test Result, Related Infraction Incident ID (FK to 20).
+
+**Section 4, Unmatched Open Datasets:**
+
+*   None. All Open Datasets provided were either directly matched or identified as aggregated versions of the detailed datasets.
+
+**Section 5, Non-tabular Data Summary:**
+
+*   **Rules and Regulations:** Departmental rules, regulations, directives (e.g., use of force directive § 9-138, Hart's Island visitation policy § 9-133, nursery procedures § 9-142.c, trauma-informed care guidelines § 9-145.c, bill of rights § 9-139, grievance process procedures § 9-136.f, solitary confinement rules § 9-167.f.1, child visitor program description § 9-168.f, Inmate Rule Book (39 RCNY Chapter 1), Department Policy and Procedures for Drug/Alcohol Testing).
+*   **Reports and Summaries:** Aggregate reports (e.g., monthly non-production report § 9-108.d, quarterly jail data reports § 9-130.b-c, annual recidivism report § 9-129, annual programming evaluation summary § 9-144, annual trauma-informed care report § 9-145.d, annual education reports § 9-151.b-e, annual use of force investigations report § 9-152.b, annual admission delays report § 9-149.d, annual commissary funds report § 9-162.e, annual pregnant persons medical outcomes report § 9-163.b, quarterly gender identity report § 9-165.b, quarterly dyslexia screening report § 9-166.f, quarterly de-escalation confinement report § 9-167.d, quarterly restrictive housing report § 9-167.h.9, quarterly emergency lock-in report § 9-167.j.4, annual child visitor program report § 9-168.e, quarterly forensic psychiatric examinations report § 9-169.b, annual online visitation scheduling report § 9-170.e, biannual work release program report § 9-176.c).
+*   **Legal Documents:** Judicial warrants, civil immigration detainers, court orders, criminal procedure law references, penal law sections, federal regulations (e.g., § 9-131.a, § 9-169.a, State Commission of Correction Standards (9 NYCRR § 7028.6), New York City Board of Correction Standards (40 RCNY § 1-07), New York State Correction Law, Prison Rape Elimination Act (PREA) Definition of Sexual Abuse, Article 49-B of the New York State Executive Law, CPLR Article 78 Petition).
+*   **Policy Documents:** Language access plan (§ 9-139.e), leave regulations promulgated by the mayor (§ 9-116.d), security clearance protocols (§ 9-161.c).
+*   **Informational Materials:** Connections guidebook (§ 9-139.f), pamphlets for opioid overdose prevention kits (§ 9-173.a), civil service information sessions and schedules (§ 9-164.b-c), Detailed Incarceration Information (documents provided to inmates upon incarceration regarding property, recreation limits, religious rights, telephone calls, and visits), Commissary Approved List of Permissible Items, Approved List of Permissible Items (General).
+*   **Narrative Descriptions:** Brief narratives for "other" non-production reasons (§ 9-108.d), detailed descriptions for de-escalation confinement and restrictive housing incident reports (§ 9-167.d, § 9-167.h.9), emergency lock-in incident reports (§ 9-167.j.4).
+*   **Website Content:** Hart's Island electronic burial database (§ 9-132.a), Hart's Island visitation policy (§ 9-133.a), use of force directive (§ 9-138), bill of rights documents (§ 9-139.d), emergency lock-in public notice (§ 9-167.j.3), child visitor program description (§ 9-168.f).
+*   **Agreements:** Agreement with Office of Court Administration for database access (§ 9-146.c).
+*   **Recommendations/Assessments:** Recommendations from the Board of Correction ad hoc committee on work release program (§ 9-176.b), recommendations from the department coordinator for borough-based jail transition (§ 9-175.b.2).
+*   **Study Findings:** Feasibility study on tele-visits (§ 9-168.d).
+*   **Working Group Records:** Records of the doula services working group meetings (§ 9-161.e).
+*   **Forms/Notices:** Notice of Pre-Hearing Detention, Adjudication Captain's Decision, OSIU Decision (for PC), Notice of Disciplinary Disposition (6500D), Written Appeal Notices.
+*   **Physical Evidence:** Job applications, receipts, photos, written consents for labor (the physical document itself), direct feedback from incarcerated individuals (raw qualitative data for reports), Medical Staff Authorizations.
+*   **Research Documents:** The content of studies and reports.
+*   **Software Contracts:** Contracts for software systems.
+*   **Legal Changes:** Records of legislative or regulatory changes.

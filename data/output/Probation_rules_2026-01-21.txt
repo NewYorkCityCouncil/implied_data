@@ -1,0 +1,216 @@
+**1. Probationer Master Data**
+
+**Quotes:**
+- "Defendant's full name." (§ 1-01)
+- "NYSIS number." (§ 1-01)
+- "Indictment or Docket number." (§ 1-01)
+- "County of conviction." (§ 1-01)
+- "Sentence received, date and name of judge." (§ 1-01)
+- "Aliases used by defendant." (§ 1-01)
+- "If sentenced to probation, the county and name of supervising officer." (§ 1-01)
+- "If sentenced to a term of imprisonment, the name and address of the facility where served and the inmate identification number." (§ 1-01)
+- "Defendant's date of birth." (§ 1-01)
+- "any individual currently serving or who shall be sentenced to a period of probation in New York City upon conviction of any crime under article thirty-one of the Vehicle and Traffic Law shall pay an administrative fee of thirty dollars per month" (§ 3-01.a)
+- "The probationer shall include his or her case name and case number on the money order or check." (§ 3-01.b)
+
+**Why:** This foundational dataset tracks all individuals under probation, essential for managing their cases, fees, and report requests.
+
+**One row represents:** A single probationer.
+
+**Covers:** All individuals sentenced to probation under the Department's jurisdiction.
+
+**Columns:**
+- Probationer ID
+- Defendant's Full Name
+- NYSIS Number
+- Indictment or Docket Number
+- County of Conviction
+- Sentence Received
+- Sentence Date
+- Sentencing Judge Name
+- Aliases Used
+- Supervising Officer Name
+- Supervising County
+- Imprisonment Facility Name
+- Imprisonment Facility Address
+- Inmate Identification Number
+- Date of Birth
+- Probation Start Date
+- Probation End Date
+- Fee Obligation Status (e.g., Obligated, Waived)
+
+**2. Pre-Sentence Report Requests**
+
+**Quotes:**
+- "The request for such records shall be in writing, indicating the case name and appellate court where pending, submitted by the subject-defendant, counsel on appeal, or the Assistant District Attorney, or by order of the sentencing court or by subpoena" (§ 1-01)
+- "In order to identify the correct records, the request shall also include the following information: Defendant's full name. NYSIS number. Indictment or Docket number. County of conviction. Sentence received, date and name of judge. The request should also include whenever possible the following: Aliases used by defendant. If sentenced to probation, the county and name of supervising officer. If sentenced to a term of imprisonment, the name and address of the facility where served and the inmate identification number. Defendant's date of birth." (§ 1-01)
+- "Upon receipt of a proper request, as indicated above, the Department of Probation shall cause three copies of the pre-sentence investigation report to be forwarded to the appropriate appellate court." (§ 1-02.a)
+- "Requests for probation records should be made as far in advance of the date for perfection of the appeal as is possible. Cases which are two or more years old are archived and take a minimum of three to four weeks to locate and forward to the appellate court. Some take longer." (§ 1-02.b)
+- "It is the responsibility of the requesting party to ascertain whether the probation records have reached the appellate court. No notice will be sent by the Department of Probation. However, if the appellate court indicates that the records have not been received in a reasonable time, further inquiries should be directed either in writing or by telephone" (§ 1-02.c)
+
+**Why:** This dataset tracks all requests for pre-sentence reports, ensuring compliance with legal disclosure procedures and timelines.
+
+**One row represents:** A single request for a pre-sentence report.
+
+**Covers:** All requests for pre-sentence investigation reports received by the Department.
+
+**Columns:**
+- Request ID
+- Request Date
+- Requestor Type (e.g., Subject-Defendant, Counsel, ADA, Court Order, Subpoena)
+- Case Name
+- Appellate Court Where Pending
+- **Probationer ID** (links to Dataset 1)
+- Defendant's Full Name (from request)
+- NYSIS Number (from request)
+- Indictment or Docket Number (from request)
+- County of Conviction (from request)
+- Sentence Received (from request)
+- Sentence Date (from request)
+- Sentencing Judge Name (from request)
+- Aliases Used (from request)
+- Supervising Officer Name (from request)
+- Imprisonment Facility Name (from request)
+- Inmate Identification Number (from request)
+- Date of Birth (from request)
+- Date Report Forwarded to Appellate Court
+- Archived Status of Records (Y/N)
+- Date of Follow-up Inquiry (if any)
+- Request Status (e.g., Received, Processing, Forwarded, Archived Delay)
+
+**3. Probation Administrative Fee Payments**
+
+**Quotes:**
+- "any individual currently serving or who shall be sentenced to a period of probation in New York City upon conviction of any crime under article thirty-one of the Vehicle and Traffic Law shall pay an administrative fee of thirty dollars per month to the New York City Department of Probation." (§ 3-01.a)
+- "The probation administrative fee shall be paid on the first of every month, commencing on November 1, 2010." (§ 3-01.b)
+- "The fee shall be payable by money order, certified check or cashier's check made out to the New York City Department of Probation or any electronic, credit card or debit card payment method that the New York City Department of Probation develops the capacity to accept." (§ 3-01.b)
+- "The probationer shall include his or her case name and case number on the money order or check." (§ 3-01.b)
+- "Failure to pay the probation administrative fee in full, unless the fee has been waived pursuant to subdivision d of this section, shall subject the probationer to collection pursuant to all applicable laws." (§ 3-01.c)
+
+**Why:** This dataset tracks all monthly fee payments, ensuring proper collection and enforcement of administrative fees.
+
+**One row represents:** A single monthly fee payment transaction.
+
+**Covers:** All administrative fee payments made by probationers.
+
+**Columns:**
+- Payment ID
+- **Probationer ID** (links to Dataset 1)
+- Case Name (from payment)
+- Case Number (from payment)
+- Payment Date
+- Payment Amount
+- Payment Method (e.g., Money Order, Certified Check, Cashier's Check, Electronic, Credit Card, Debit Card)
+- Month/Year Covered by Payment
+- Payment Status (e.g., Paid, Partial, Overdue)
+- Outstanding Balance for Period (calculated)
+- Enforcement Action Taken (Y/N)
+- Date of Enforcement Action
+
+**4. Probation Administrative Fee Waiver Applications**
+
+**Quotes:**
+- "The Department shall grant a temporary waiver of all of the probation administrative fee when a probationer has provided proof that (i) his or her combined household income is less than 200% of the Federal Poverty Guidelines or (ii) there exist additional financial circumstances that would render the probationer indigent, such that the payment of the administrative fee would work an unreasonable hardship on the probationer, his or her immediate family, or any other person who is dependent on such person for financial support." (§ 3-01.d.2)
+- "A probationer applying for a waiver or the renewal of a waiver shall mail a signed and dated "Request for Temporary Waiver" form, including an explanation of any additional financial circumstances that would render the probationer indigent" (§ 3-01.d.3.i)
+- "The probationer shall attach proof of income and proof of dependants with the "Request for Temporary Waiver" form." (§ 3-01.d.3.ii)
+- "The Department shall review the application and determine whether to issue a waiver or to return the application with a request for further documentation." (§ 3-01.d.4)
+- "If the Department denies the application for a waiver, written notice shall be mailed or sent electronically to the probationer at the address in the Department's records informing the probationer of the reasons for denial and of the probationer's right to appeal the determination in writing within fifteen calendar days of the date of the notice." (§ 3-01.d.4)
+- "The commissioner or his or her designee shall review the probationer's written appeal and shall issue a determination, which shall be final." (§ 3-01.d.4)
+- "A waiver shall remain in effect for one year." (§ 3-01.d.5.i)
+- "A probationer who has been granted a waiver shall inform the Department of Probation immediately upon a change of his or her circumstances affecting the probationer's eligibility for the waiver." (§ 3-01.d.5.ii)
+- "The Department may terminate the waiver upon a determination that the probationer is no longer eligible for the waiver." (§ 3-01.d.5.iii)
+- "A probationer may apply to renew a waiver by submitting an application as provided in paragraph 3 of this subdivision." (§ 3-01.d.5.iv)
+
+**Why:** This dataset tracks the entire lifecycle of fee waiver applications, ensuring fair and compliant processing, determinations, and renewals/terminations.
+
+**One row represents:** A single application for a fee waiver or renewal.
+
+**Covers:** All applications for temporary waivers of the probation administrative fee, including renewals and terminations.
+
+**Columns:**
+- Waiver Application ID
+- **Probationer ID** (links to Dataset 1)
+- Application Type (e.g., Initial, Renewal)
+- Application Date
+- Combined Household Income (as reported)
+- Number of Dependents (as reported)
+- Dependent Details (e.g., Relationship, Income, Support Provided)
+- Proof of Income Submitted (Y/N)
+- Proof of Dependents Submitted (Y/N)
+- Explanation of Additional Financial Circumstances
+- DWI Fee Review Officer ID
+- Application Status (e.g., Submitted, Under Review, Approved, Denied, Returned for Documentation)
+- Date of Determination
+- Reason for Denial (if applicable)
+- Appeal Filed (Y/N)
+- Appeal Date (if filed)
+- Appeal Outcome (if filed)
+- Waiver Start Date (if approved)
+- Waiver End Date (if approved, 1 year from start)
+- Date of Change in Circumstances Notification
+- Waiver Termination Date (if applicable)
+- Reason for Waiver Termination (if applicable)
+
+**5. Employee Master Data**
+
+**Quotes:**
+- "New York City Department of Probation adjudications regarding the fitness and discipline of agency employees will be conducted by the Office of Administrative Trials and Hearings." (§ 2-01)
+
+**Why:** This foundational dataset tracks all agency employees, necessary for managing internal operations and disciplinary actions.
+
+**One row represents:** A single employee of the Department of Probation.
+
+**Covers:** All employees of the New York City Department of Probation.
+
+**Columns:**
+- Employee ID
+- Employee Full Name
+- Department/Office
+- Position/Title
+- Hire Date
+- Employment Status (e.g., Active, Terminated, Leave)
+
+**6. Employee Adjudication Cases**
+
+**Quotes:**
+- "New York City Department of Probation adjudications regarding the fitness and discipline of agency employees will be conducted by the Office of Administrative Trials and Hearings." (§ 2-01)
+- "After conducting an adjudication and analyzing all testimony and other evidence, the hearing officer shall make written proposed findings of fact and recommend decisions, which shall be reviewed and finally determined by the Commissioner of the Department of Probation." (§ 2-01)
+
+**Why:** This dataset tracks all employee fitness and discipline cases, ensuring proper process and record-keeping for adjudications.
+
+**One row represents:** A single employee adjudication case.
+
+**Covers:** All fitness and discipline adjudications for New York City Department of Probation employees.
+
+**Columns:**
+- Adjudication Case ID
+- **Employee ID** (links to Dataset 5)
+- Employee Name
+- Date Case Initiated
+- Allegations/Charges
+- OATH Case Number
+- Hearing Officer Name
+- Hearing Dates
+- Date of Proposed Findings of Fact
+- Date of Recommended Decision
+- Commissioner's Final Determination Date
+- Outcome of Adjudication (e.g., Dismissed, Reprimand, Suspension, Termination)
+- Sanction Imposed (if any)
+- Appeal Filed (Y/N)
+- Appeal Outcome (if any)
+
+---
+
+**Non-Tabular Information:**
+
+*   Pre-sentence investigation reports (documents)
+*   Rules and regulations (e.g., Title 42, Executive Law § 257-c, Administrative Code § 9-201, CPL 390.50)
+*   Federal Poverty Guidelines (external reference document)
+*   Money orders, certified checks, cashier's checks (physical payment instruments)
+*   "Request for Temporary Waiver" forms (application documents)
+*   Proof of income documentation (e.g., income tax returns, paystubs, public assistance statements - documents)
+*   Proof of dependents documentation (e.g., birth certificates, marriage certificates - documents)
+*   Written proposed findings of fact and recommended decisions from OATH (documents)
+*   Testimony and other evidence from adjudications (documents, recordings)
+*   Written notices of waiver denial or termination (correspondence documents)
+*   Probationer's written appeal of waiver determination (correspondence document)

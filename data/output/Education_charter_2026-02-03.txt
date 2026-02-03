@@ -1,0 +1,404 @@
+**Identified Tabular Datasets**
+
+**1. Board Member Compensation Records**
+*   **Quotes:**
+    *   "Members of the board of education, other than the president, shall be compensated at the rate of one hundred sixty dollars and the president of the board at the rate of one hundred seventy-five dollars per calendar day when performing the work of the board, provided, however, that in any fiscal year a member or president shall not be compensated for more than two hundred ten calendar days for all work performed by such member or president during the fiscal year." (Section 520.1)
+*   **Why:** To accurately compensate board members and ensure compliance with daily and annual compensation limits.
+*   **One row represents:** A single day a board member performed work for the board.
+*   **Covers:** Daily work performed by all board members, including the president, for compensation tracking.
+*   **Columns:**
+    *   Board Member ID
+    *   Board Member Name
+    *   Role (Member, President)
+    *   Date of Work
+    *   Compensation Rate for Day
+    *   Daily Compensation Amount
+    *   Fiscal Year
+    *   Days Worked in Fiscal Year (cumulative for reporting)
+
+**2. Agency Property Inventory**
+*   **Quotes:**
+    *   "The title to all property, real and personal, heretofore or hereafter acquired for school or educational purposes, and also the title to all property, real and personal, purchased for school or educational purposes with any school moneys, whether derived from the issue of bonds or raised by taxation, shall be vested in the city, but under the care and control of the board of education for the purposes of public education, recreation and other public uses." (Section 521.a)
+    *   "The city shall have power to take and hold any property, real or personal, devised or bequeathed or transferred to it for the purposes of education in said city; but such property shall be under the care and control of the board of education for the purposes of public education, recreation and other public uses in the city." (Section 521.c)
+    *   "Not later than the twenty sixth day of April, the board of education shall submit to the mayor, the borough presidents and the council an itemized statement, covering those portions of the city's capital plant, as defined in section eleven hundred ten-a, which have been committed to the care and control of the board of education or officers or employees thereof, by project type and, within project type, by personal services and other-than-personal services, of the amounts appropriated for maintenance of such portions of the capital plant in the previous and current fiscal years as originally adopted and as modified through the first nine months of the current fiscal year, and of the amounts actually expended for such maintenance in the previous fiscal year and through the first nine months of the current fiscal year and the amounts estimated to be expended for such purpose during the balance of the current fiscal year; and, an explanation of the substantive differences, if any, between the amounts actually expended for such maintenance in the previous fiscal year or projected to be expended for such purpose in the current fiscal year and the amounts originally appropriated for such purpose for such years." (Section 521.d)
+*   **Why:** To maintain care and control of all agency property and report on capital plant maintenance.
+*   **One row represents:** A single piece of real or personal property under the agency's care and control.
+*   **Covers:** All real estate (land, buildings) and significant personal property (equipment, vehicles, furniture) owned or controlled by the agency.
+*   **Columns:**
+    *   Property ID
+    *   Property Name/Description
+    *   Property Type (Real, Personal)
+    *   Location (Address, Building ID - links to Dataset 3)
+    *   Acquisition Date
+    *   Acquisition Cost
+    *   Current Value
+    *   Purpose of Use (Education, Recreation, Other Public Use)
+    *   Maintenance Project Type (for capital plant reporting)
+    *   Fiscal Year Maintenance Appropriation (Original)
+    *   Fiscal Year Maintenance Appropriation (Modified)
+    *   Fiscal Year Maintenance Expenditure (Actual)
+    *   Estimated Maintenance Expenditure (Balance of Current FY)
+    *   Explanation of Differences (if applicable)
+
+**3. School Building and Room Inventory**
+*   **Quotes:**
+    *   "School" shall mean any elementary, middle or high school within the jurisdiction of the New York city department of education and in any educational facility owned or leased by the city of New York, holding some combination thereof including, but not limited to, district 75 schools and charter schools;" (Section 522.g)
+    *   "Such report shall include the total number of each type of room or space listed below, indicate whether such type of room or space is shared by multiple schools, and provide the following information for each school building and each school within a building or structure that holds one or more schools, and shall identify space utilized for a specified purpose if such space is primarily utilized for such identified purpose no less than fifty percent of the time, provided that nothing herein shall prevent the reporting of additional spaces that are utilized for less than fifty percent of the time if such percentage of time is indicated in the report, provided that all information required by this subdivision shall be aggregated citywide, as well as disaggregated by community school district, council district and borough:" (Section 522.g)
+    *   "1. Cluster rooms or specialty rooms used for the purpose of delivering specialized instruction and the purposes for which such rooms are utilized in such subject areas including, but not limited to, art, music, dance, science, computer, theatre and shop, by type of usage, and the square footage of each such room;" (Section 522.g.1)
+    *   "2. Rooms utilized for occupational or physical therapy, speech, hearing, vision, adaptive physical education, counseling, school-based support teams and testing accommodations for students with disabilities, by type of usage, and the square footage of each such room;" (Section 522.g.2)
+    *   "3. Rooms utilized for academic intervention services, and the square footage of each such room;" (Section 522.g.3)
+    *   "4. Rooms utilized as physical fitness space including, but not limited to, gymnasiums and other physical fitness space, including the square footage of each such room;" (Section 522.g.4)
+    *   "5. Non-instructional spaces, such as hallways, used for instructional purposes, academic intervention services, or therapeutic or counseling services;" (Section 522.g.5)
+    *   "6. Health clinics, and the square footage of each such health clinic;" (Section 522.g.6)
+    *   "7. Student locker rooms;" (Section 522.g.7)
+    *   "8. Student bathrooms;" (Section 522.g.8)
+    *   "9. Teachers' lounges;" (Section 522.g.9)
+    *   "10. Auditoriums, and the square footage of each such auditorium;" (Section 522.g.10)
+    *   "11. Libraries, and the square footage of each such library;" (Section 522.g.11)
+    *   "12. Lunchrooms, the square footage of each such lunchroom, and the number of periods or half periods in which the lunchroom is utilized for the purpose of serving meals each day by each school;" (Section 522.g.12)
+    *   "13. Rooms or spaces occupied by non-school organizations, and the square footage being occupied by each such organization." (Section 522.g.13)
+*   **Why:** To track and report on the capacity and utilization of school buildings and various types of rooms.
+*   **One row represents:** A specific room or defined space within a school building.
+*   **Covers:** All rooms and spaces within school buildings, detailing their type, usage, and square footage.
+*   **Columns:**
+    *   Room ID
+    *   School Building ID (links to Dataset 4)
+    *   School ID (if multiple schools in building - links to Dataset 4)
+    *   Room Name/Number
+    *   Room Type (e.g., Classroom, Cluster Room, Therapy Room, Health Clinic, Gymnasium, Library, Lunchroom, Teachers' Lounge, Bathroom, Locker Room, Auditorium, Non-instructional space)
+    *   Specific Usage (e.g., Art, Music, Science, OT, PT, AIS, Counseling, Testing Accommodations, Physical Fitness, Instructional, Therapeutic)
+    *   Square Footage
+    *   Is Shared by Multiple Schools? (Yes/No)
+    *   Primary Utilization Percentage (if <50%, indicate actual percentage)
+    *   Occupied by Non-School Organization? (Yes/No)
+    *   Non-School Organization Name (if applicable)
+    *   Lunchroom Periods Utilized Daily (if applicable)
+    *   Community School District
+    *   Council District
+    *   Borough
+
+**4. School Capital Projects**
+*   **Quotes:**
+    *   "Not later than the first day of February of the year two thousand and three and on a quarterly basis thereafter, not later than May first, August first, November first, and February first of each year, the chancellor of the city school district shall submit to the council an itemized statement covering the status of every school capital project that was completed during the immediately preceding fiscal quarter or not completed but for which funding was appropriated. This statement shall include, but not be limited to, the following information for each such project: (1) the total amount appropriated for the school capital project; (2) the original and current total estimated cost of the school capital project, disaggregated by project phase, including, but not limited to, scope, design, and construction; (3) the projected or actual start and end date of each such project phase; (4) the total amount expended on the project as of the last day of the immediately preceding fiscal quarter, disaggregated by project phase; (5) a clear explanation of the reasons for any projected or actual cost overrun of ten percent or more of the total estimated cost of the project; (6) a clear explanation of the reasons for any delay of sixty days or longer with respect to any phase of the project and (7) the name, office phone number and e-mail address of the project manager, or person responsible for reporting on the project, within three months of appropriation for the school capital project." (Section 521.e)
+    *   "The chancellor of the city school district shall provide additional electronic notification to the council within thirty days of learning of any of the following with respect to any school capital project: (1) any projected or actual delay of sixty days or more with respect to any phase of the project and (2) any projected or actual change of ten percent or more of the total estimated cost of the project. The chancellor of the city school district shall also provide the information required by this subdivision to the council member who represents the district in which the project is located." (Section 521.f)
+    *   "The office of management and budget shall provide electronic notification to the council immediately upon issuing a certificate to proceed for every school capital project The office of management and budget shall also provide the information required in this subdivision to the council member who represents the district in which the project is located." (Section 521.g)
+    *   "For purposes of subdivisions e, f, and g, "school capital project" shall mean: (1) any project included in any current or prior five-year educational facilities capital plan; and (2) any capital project for a school facility for which funding was appropriated to the department of education or its successor pursuant to sections two hundred eleven, two hundred forty-nine, or two hundred fifty-four." (Section 521.h)
+*   **Why:** To track the status, costs, and timelines of all school capital projects for reporting and oversight.
+*   **One row represents:** A single school capital project.
+*   **Covers:** All school capital projects, from appropriation through completion, including those in current or prior five-year plans.
+*   **Columns:**
+    *   Project ID
+    *   Project Name/Description
+    *   School ID (links to Dataset 5)
+    *   Total Appropriated Amount
+    *   Original Total Estimated Cost
+    *   Current Total Estimated Cost
+    *   Project Phase (e.g., Scope, Design, Construction)
+    *   Project Phase Original Start Date
+    *   Project Phase Original End Date
+    *   Project Phase Actual Start Date
+    *   Project Phase Actual End Date
+    *   Total Amount Expended (as of last fiscal quarter)
+    *   Amount Expended by Phase (as of last fiscal quarter)
+    *   Cost Overrun (Projected/Actual) (if >=10%)
+    *   Reason for Cost Overrun
+    *   Delay (Projected/Actual) (if >=60 days)
+    *   Reason for Delay
+    *   Project Manager Name
+    *   Project Manager Office Phone
+    *   Project Manager Email
+    *   Date of Appropriation
+    *   Certificate to Proceed Issued Date
+    *   Council Member District
+    *   Project Completion Date (if applicable)
+    *   Fiscal Quarter Reported
+
+**5. School General Statistics**
+*   **Quotes:**
+    *   "The department of education shall on or before the thirtieth day of November in each year make and transmit to the mayor a report in writing, for the year ending on the thirty-first day of July next preceding, stating the whole number of schools under its jurisdiction during the said year; the number of teachers; the total number of pupils on register, and the average attendance at each school; the number of high schools and training schools for teachers, with the number of teachers and the attendance of pupils at each; the corporate schools or societies from which reports have been made to the department of education, the length of time such schools have been kept open, and the number of teachers and of pupils taught in each such school and the total amount of money expended for the purposes of public education in the city during the preceding fiscal year." (Section 522.a)
+*   **Why:** To track fundamental operational metrics for all schools and report annually to the mayor.
+*   **One row represents:** Annual statistical data for a single school.
+*   **Covers:** All schools under the agency's jurisdiction, including high schools, training schools, and corporate schools.
+*   **Columns:**
+    *   School ID
+    *   School Name
+    *   School Type (e.g., Elementary, Middle, High, Training, Corporate)
+    *   Fiscal Year
+    *   Number of Teachers
+    *   Total Pupils on Register
+    *   Average Daily Attendance
+    *   Length of Time School Kept Open (for corporate schools)
+    *   Total Money Expended for Public Education (citywide, for reporting)
+
+**6. Non-Standard Classroom Inventory**
+*   **Quotes:**
+    *   "The department of education shall report to the council annually, on or before October fifteenth of each year, the number of non-standard classrooms within the public school system. Such report shall provide the number of non-standard classrooms, disaggregated by: school; zip code; school district; instructional region; community district; council district; and borough, and for each non-standard classroom, the number of children who attend classes in each such non-standard classroom. For purposes of this section, the term "non-standard classrooms" shall mean any of the following spaces that are used for subject-matter instruction where students are intended to be seated at desks: a transportable classroom unit; a classroom located in a structure that was not built or renovated with the intention that such structure be a permanent educational facility; a classroom located in a multi-purpose room, also called a cluster room, and not used for the specialized instructional, administrative or other purposes for which such room was designed or intended; a classroom located in a space that was not designed for classroom use when built or when last fully renovated; and a classroom the use of which violates any New York city or state law pertaining to classroom design, location or amenity or the type of interior space that may lawfully be used as classroom space." (Section 522.b)
+*   **Why:** To identify, track, and report on the number and location of non-standard classrooms and their student occupancy.
+*   **One row represents:** A single non-standard classroom.
+*   **Covers:** All spaces identified as non-standard classrooms within the public school system.
+*   **Columns:**
+    *   Non-Standard Classroom ID
+    *   School ID (links to Dataset 5)
+    *   Room ID (if applicable, links to Dataset 3)
+    *   Non-Standard Type (e.g., Transportable Unit, Non-Permanent Structure, Multi-Purpose Room Misused, Not Designed for Classroom Use, Violates Law)
+    *   Description of Non-Standard Condition
+    *   Number of Children Attending Classes
+    *   Zip Code
+    *   School District
+    *   Instructional Region
+    *   Community District
+    *   Council District
+    *   Borough
+
+**7. Class Enrollment and Size**
+*   **Quotes:**
+    *   "The department of education shall submit a report on class sizes to the city council 3 times annually, on or before November 15, February 15, and June 30 of each year. Each November 15 report shall reflect preliminary class sizes as of the preceding October 31, each February 15 report shall reflect updated class sizes as of the preceding October 31, and each June 30 report shall reflect class sizes as of the preceding June 15. Such reports shall include the following information regarding class sizes in New York city public schools: 1. For each school and, separately, for each academic program within a school or school building, including smaller schools housed within larger institutions and specialized programs, such as those for gifted students and for students with special needs, the average class size per grade of all classes, including classes primarily serving students with autism, and the actual class size of each class in such school or program;" (Section 522.c.1)
+    *   "6. Such report shall, when reporting data for middle school and high school classes with students in different grade levels, report class sizes per grade band and subject." (Section 522.c.6)
+    *   "2. Be made by category of class, such as 12-to-1 or 5-to-1 student/ teacher ratio, with respect to students who attend classes exclusively for children who have individualized education plans;" (Section 522.e.2)
+*   **Why:** To track and report detailed class size information by school, program, grade, and subject multiple times annually.
+*   **One row represents:** A single class at a specific school on a given reporting date.
+*   **Covers:** All classes in New York City public schools, including specialized programs, excluding certain incarcerated/probationary student classes and non-core vocational classes.
+*   **Columns:**
+    *   Class ID
+    *   School ID (links to Dataset 5)
+    *   Academic Program Name (if applicable)
+    *   Grade Level
+    *   Grade Band (for middle/high school)
+    *   Subject (for middle/high school core academic subjects)
+    *   Class Type (e.g., General Education, Gifted, Special Needs, Autism, IEP 12:1, IEP 5:1)
+    *   Number of Students Enrolled
+    *   Reporting Date (October 31, June 15)
+    *   Report Type (Preliminary, Updated, Final)
+    *   Excluded from Reporting? (Yes/No, with reason: incarcerated, vocational non-core)
+
+**8. Student Safety Training Records**
+*   **Quotes:**
+    *   "Not later than May thirtieth, two thousand fifteen, and annually thereafter, the department of education shall submit to the speaker of the council a report regarding training on student safety protocols for department of education personnel. Such report shall include, but need not be limited to: (1) general details on the type and scope of the training administered, (2) the intended audience for each training, and (3) whether such training was mandatory for certain personnel." (Section 528.d)
+*   **Why:** To track and report on student safety protocol training provided to department personnel.
+*   **One row represents:** A single student safety training session.
+*   **Covers:** All training sessions on student safety protocols administered to Department of Education personnel.
+*   **Columns:**
+    *   Training ID
+    *   Training Date
+    *   Training Title/Description
+    *   Training Scope
+    *   Intended Audience
+    *   Is Mandatory? (Yes/No)
+    *   Number of Personnel Attended
+    *   Personnel IDs Attended (links to Dataset 10)
+
+**9. School Security Device Inventory and Status**
+*   **Quotes:**
+    *   "The department of education, in consultation with the police department, shall install security cameras and door alarms at schools and consolidated school locations operated by the department of education where the chancellor, in consultation with the police department, deems such cameras and door alarms appropriate for safety purposes. Such cameras may be placed at the entrance and exit doors of each school and may be placed in any area of the school where individuals do not have a reasonable expectation of privacy. The number, type, placement, and location of such cameras within each school shall be at the discretion of the department of education, in consultation with the principal of each school and the police department. Door alarms may be placed at the discretion of the department of education, in consultation with the police department, at the exterior doors of school buildings under the jurisdiction of the department of education, including buildings serving grades pre-kindergarten through five or a district 75 program. Such alarms should provide an audible alert indicating an unauthorized departure from the school building." (Section 528.a)
+    *   "By the end of two thousand six, the potential installation of cameras shall have been reviewed for all schools under the jurisdiction of the department of education, including elementary schools. At the end of two thousand six, the department of education shall submit a report to the city council indicating, for each school under its jurisdiction, the findings of the review and the reasons for the findings contained therein." (Section 528.b)
+    *   "By May thirtieth, two thousand fifteen, the department of education shall complete such evaluation for all schools under its jurisdiction, including buildings serving grades pre-kindergarten through five or a district 75 program. By such date, the department of education shall submit a report to the speaker of the council that describes the results of the evaluation conducted pursuant to this subdivision, including, but not limited to, a list of the school buildings where the installation of door alarms has been deemed to be an appropriate safety measure and a timeline for such installation." (Section 528.c)
+*   **Why:** To track the installation, evaluation, and status of security cameras and door alarms in schools.
+*   **One row represents:** A single security device (camera or door alarm) or a review/evaluation for a school.
+*   **Covers:** All security cameras and door alarms installed or evaluated for installation in schools.
+*   **Columns:**
+    *   Device ID
+    *   School ID (links to Dataset 5)
+    *   Device Type (Security Camera, Door Alarm)
+    *   Location within School (e.g., Entrance, Exit, Hallway, Exterior Door)
+    *   Installation Date
+    *   Operational Status (Active, Inactive, Under Repair)
+    *   Evaluation Date (for potential installation)
+    *   Evaluation Finding (Appropriate, Not Appropriate)
+    *   Reason for Finding
+    *   Installation Priority (if applicable)
+    *   Installation Timeline (if applicable)
+
+**10. School Incident Reports (Crime and Disruptive Behavior)**
+*   **Quotes:**
+    *   "The New York city department of education, or its successor, shall make available to the public, pursuant to subdivision d of this section, reports that reflect the environment of criminal and seriously disruptive behavior in schools operated by the department of education." (Section 529.a)
+    *   "Such reports shall include an annual reporting, on a city-wide basis as well as for each school or co-located group of schools operated by the department of education, of information reported by the New York city police department to the department of education on the following: the total amount of major felony crime, disaggregated by felony category; the total amount of other crime, disaggregated by crimes against persons and crimes against property; and the total amount of non-criminal incidents." (Section 529.b)
+    *   "Such reports shall also include an annual reporting, on a city-wide basis as well as for each school or co-located group of schools operated by the department of education, of incidents designated by the chancellor in the citywide standards of discipline and intervention measures (the "discipline code") as seriously disruptive, dangerous or violent behavior in schools operated by the department of education, as reported in the department of education's online occurrence reporting system, or a successor reporting system." (Section 529.c)
+    *   "Where, the board, a committee of the board or officer or employee of the city school district of the city of New York has evidence or other information relating to a suspected crime, the board, committee, officer or employee which has such information shall immediately report such evidence or other information to the police department and the special commissioner of investigation, in a form and manner prescribed by rule by the police department, and to the school's principal, provided, however, that if such evidence or other information directly or indirectly involves or implicates such school principal, the report shall be made to the district superintendent as well as the police department." (Section 526-a.b)
+    *   "Where there is a suspected crime against a child, the school principal or district superintendent shall promptly notify the parent or legal guardian of such child about whom a report has been made, except where, after consultation with the police department and the special commissioner of investigation, it is determined that such notification would impede a criminal investigation." (Section 526-a.c)
+*   **Why:** To track and report all criminal, seriously disruptive, dangerous, or violent incidents in schools, and suspected crimes.
+*   **One row represents:** A single incident of crime, seriously disruptive behavior, or a suspected crime.
+*   **Covers:** All major felony crimes, other crimes (against persons/property), non-criminal incidents, and seriously disruptive/dangerous/violent behaviors occurring in schools, as well as all suspected crimes reported to authorities.
+*   **Columns:**
+    *   Incident ID
+    *   School ID (links to Dataset 5)
+    *   Incident Date
+    *   Incident Time
+    *   Incident Type (Major Felony, Other Crime Against Person, Other Crime Against Property, Non-Criminal, Seriously Disruptive, Dangerous, Violent, Suspected Crime)
+    *   Felony Category (if Major Felony)
+    *   Description of Incident
+    *   Perpetrator Type (Adult, Student, Other)
+    *   Victim Type (Adult, Student, Other)
+    *   Is Bias-Related? (Yes/No)
+    *   Reported by (Employee ID, Board Member ID, Committee Name)
+    *   Date Reported to Police Department
+    *   Date Reported to Special Commissioner of Investigation
+    *   Date Reported to School Principal
+    *   Date Reported to District Superintendent (if principal implicated)
+    *   Police Department Case Number
+    *   SCI Case Number
+    *   Child Victim ID (if applicable, links to Dataset 11)
+    *   Parent/Guardian Notified? (Yes/No)
+    *   Date Parent/Guardian Notified
+    *   Notification Impeded by Investigation? (Yes/No)
+    *   Reporting System (e.g., Police Dept, DOE Online Occurrence)
+
+**11. Student Enrollment Changes (New Schools & Increases)**
+*   **Quotes:**
+    *   "The New York city department of education, or its successor, shall report annually to the metropolitan transportation authority, on or before the fifteenth day of August of each year, the following information: 1. The name and address of any school under the jurisdiction of the department of education that is to begin its first year of operation in the upcoming school year, the number of students enrolled in any such school, and the zip codes of the students and the percentage of such students in each such zip code attending each respective school; 2. The name and address of any school receiving an increase of 200 or more students enrolled for the upcoming school year, the zip codes of the new students enrolled in any such school, and the percentage of such new students in each such zip code." (Section 530.a)
+*   **Why:** To report annually to the MTA on new school openings and significant enrollment increases for transportation planning.
+*   **One row represents:** A school with a new opening or a significant enrollment increase in a given school year.
+*   **Covers:** Schools beginning their first year of operation and schools with an increase of 200 or more students.
+*   **Columns:**
+    *   School ID (links to Dataset 5)
+    *   School Name
+    *   School Address
+    *   School Year
+    *   Change Type (New School, Enrollment Increase)
+    *   Total Students Enrolled (for new schools)
+    *   Number of New Students (for enrollment increases)
+    *   Student Zip Code
+    *   Number of Students from this Zip Code
+    *   Percentage of Students from this Zip Code
+
+**12. Out-of-State Facility Placements**
+*   **Quotes:**
+    *   "The department shall report to the city council twice annually, on or before the first day of September and February, respectively, information concerning children placed in out-of-state facilities, including but not limited to: (1) The name and location of each such out-of-state facility at which the department places children and the number of children placed by the department at each such out-of-state facility. (2) The general population served by each such out-of-state facility, including but not limited to, the number of individuals served, and the age, race, gender and nature of any disabilities of such individuals, to the extent such information is available to the department. (3) The types of services and therapies provided by each such out-of-state facility. (4) The total amount spent annually by the department to provide services to children at out-of-state facilities, the total amount spent by the department to provide services to children at each such out-of-state facility and the average cost per child to provide services at each such out-of-state facility. (5) The number of children who are discharged from each such out-of-state facility annually, and, if applicable, information concerning the type of facilities in which such children are subsequently placed. (6) For each out-of-state facility listed pursuant to paragraph (1) of this subdivision, information known by the department concerning whether (i) any enforcement action has been taken with respect to the license, certificate, charter or other authorization held by such facility, (ii) the department has informed the New York state department of education of any such enforcement action and (iii) the facility has taken or is taking any action with respect to such enforcement action. (7) For each out-of-state facility listed pursuant to paragraph (1) of this subdivision, the final outcome of any investigation known by the department of abuse or neglect regarding any child placed by the department in such facility to the extent that such information may be made public consistent with applicable laws, including the law of the jurisdiction where such investigation was conducted. (8) The department shall promptly notify in writing the parents or guardians of any child who is placed in an out-of-state facility of any information with respect to such out-of-state-facility that is reported pursuant to paragraphs (6) and (7) of this subdivision." (Section 530.b)
+*   **Why:** To track and report on children placed in out-of-state facilities, including facility details, costs, and incidents.
+*   **One row represents:** A single child's placement in an out-of-state facility.
+*   **Covers:** All city residents under 22 years of age placed by the department in out-of-state facilities.
+*   **Columns:**
+    *   Child ID (links to Dataset 13)
+    *   Out-of-State Facility ID
+    *   Facility Name
+    *   Facility Location (City, State)
+    *   Placement Start Date
+    *   Placement End Date (if applicable)
+    *   Services/Therapies Provided
+    *   Annual Cost for Child at Facility
+    *   Discharge Date (if applicable)
+    *   Subsequent Placement Type (if discharged)
+    *   Enforcement Action Taken Against Facility? (Yes/No)
+    *   Description of Enforcement Action
+    *   Date NYS DOE Informed of Enforcement Action
+    *   Facility Action Regarding Enforcement
+    *   Abuse/Neglect Investigation Outcome (if applicable)
+    *   Date Parent/Guardian Notified of Facility Issues
+    *   Reporting Period (e.g., Sep-Feb, Feb-Aug)
+
+**13. Student Discharge and Transfer Records**
+*   **Quotes:**
+    *   "Not later than June 30th of the year two thousand and twelve and on an annual basis thereafter, the chancellor of the city school district of the city of New York shall submit to the council and post on the department's website, a report which identifies the number of students discharged or transferred during the previous school year from each school under the jurisdiction of such district including any and all discharge and transfer codes utilized by the district and disaggregated by cohort for grades nine through twelve and by grade for students in grade six through eight. Such report shall include, but not be limited to, the following information: 1. The total number of students discharged from each school in grades nine through twelve, disaggregated by cohort, age as of December 31st of the previous calendar year, race/ethnicity, gender, English language learner status and special education status. 2. The total number of students discharged from each school in grades six through eight, disaggregated by grade, race/ethnicity, gender, English language learner status and special education status. 3. The total number of students in grades nine through twelve who left their respective school, disaggregated by all discharge, transfer and graduation codes used by the department. 4. The total number of students in grades six through eight who left their respective school, disaggregated by all discharge, transfer and graduation codes used by the department. 5. The total number of students in grades nine through twelve, discharged due to reasons relating to pregnancy or parenting. 6. The total number of students in grades six through eight, disaggregated by grade, discharged to parochial schools or private schools. 7. The total number of students in grades nine through twelve, disaggregated by cohort, discharged to parochial schools or private schools. 8. The total number of students in grades six through eight, disaggregated by grade, enrolled in school at correctional facilities or detention programs. 9. The total number of students in grades nine through twelve, disaggregated by cohort, enrolled in school at correctional facilities or detention programs. 10. The total number of students discharged in grades six through eight, disaggregated by grade, receiving special education services. 11. The total number of students discharged in grades nine through twelve, disaggregated by cohort, receiving special education services. 12. All information required by this section shall be aggregated citywide, as well as disaggregated by borough and community school district." (Section 530-b.b)
+*   **Why:** To track and report individual student discharges and transfers from schools with detailed demographic and reason codes.
+*   **One row represents:** A single student's discharge or transfer event from a school.
+*   **Covers:** All students (under 21) who are discharged or transferred from any school under the department's jurisdiction.
+*   **Columns:**
+    *   Student ID
+    *   School ID (links to Dataset 5)
+    *   Event Date
+    *   Event Type (Discharge, Transfer, Graduation)
+    *   Discharge/Transfer Code
+    *   Reason for Discharge/Transfer (e.g., Private School, Parochial School, Non-DOE Institution, Absence, Pregnancy/Parenting, Correctional Facility, GED Program)
+    *   Grade Level
+    *   Cohort (for grades 9-12)
+    *   Age (as of Dec 31st of previous calendar year)
+    *   Race/Ethnicity
+    *   Gender
+    *   English Language Learner Status (Yes/No)
+    *   Special Education Status (Yes/No)
+    *   Borough
+    *   Community School District
+
+**14. School Closure and Graduation Impact**
+*   **Quotes:**
+    *   "Not later than February 1st of the year two thousand and twelve and on an annual basis thereafter, the chancellor of the city school district of the city of New York shall submit to the council and post on the department's website, a report which identifies schools under the jurisdiction of such district that have been closed during the previous school year and the number of students at each such school who did not complete their respective graduation requirements prior to the closure of such school. Such report shall include, but not be limited to, the following information with respect to such students who did not complete graduation requirements in the prior school year: 1. The total number and percentage of students at each such school assigned to a different school and the school to which each such student was assigned, including, but not limited to, alternative education programs, young adult borough center programs and general education development programs. 2. The total number and percentage of students who were absent from school 0 to 20, 21-40, 41-60, 61-80, and 81-100 percent of the time in the prior school year. 3. The total number and percentage of students who utilized a credit recovery option in order to accumulate credits. 4. The total number and percentage of students receiving special education services including, but not limited to, students assigned to self-contained programs. 5. The total number and percentage of students who were assigned a dropout code by the department including, but not limited to, students who were identified by the department as having an unknown address, exceeding 21 years of age, entering military service or voluntarily withdrawing. 6. For students in grades nine through twelve, the total number and percentage of students at each school whose grade point average was recorded below 2.0; between 2.0 and 3.0; and between 3.0 and 4.0. 7. All information required by this subdivision shall be disaggregated by grade, age as of December 31st of the previous calendar year, race/ ethnicity, gender, English language learner status, and special education status. 8. All information required by this subdivision shall be aggregated citywide, as well as disaggregated by borough and community school district." (Section 530-c.b)
+*   **Why:** To track and report the impact of school closures on students who have not completed graduation requirements.
+*   **One row represents:** A student from a closed school who did not complete graduation requirements.
+*   **Covers:** Students from schools closed in the previous school year who had not completed graduation requirements.
+*   **Columns:**
+    *   Student ID
+    *   Closed School ID (links to Dataset 5)
+    *   School Closure Date
+    *   Assigned New School ID (links to Dataset 5)
+    *   New Program Type (e.g., Alternative Education, YABC, GED)
+    *   Absence Percentage (e.g., 0-20%, 21-40%)
+    *   Utilized Credit Recovery? (Yes/No)
+    *   Receiving Special Education Services? (Yes/No)
+    *   Assigned Self-Contained Program? (Yes/No)
+    *   Dropout Code (if applicable)
+    *   GPA (for grades 9-12)
+    *   Grade Level
+    *   Age (as of Dec 31st of previous calendar year)
+    *   Race/Ethnicity
+    *   Gender
+    *   English Language Learner Status (Yes/No)
+    *   Special Education Status (Yes/No)
+    *   Borough
+    *   Community School District
+
+**15. PCB Inspection and Remediation Records**
+*   **Quotes:**
+    *   "Reportable PCB levels" shall mean written test results of light fixtures including, but not limited to, air, wipe or bulk sample analysis, performed by or at the request of the department, the New York city school construction authority or the United States environmental protection agency that show concentrations of PCBs which exceed the amount allowable pursuant to the applicable regulations promulgated by the United States environmental protection agency, and shall also mean the inspection results of light fixtures that are leaking and presumed to have used or to be using PCB light ballasts." (Section 530-d.a.5, 530-e.a.5)
+    *   "The department shall notify the parents of students and the employees in any public school that has been inspected or tested for reportable PCB levels of the results of such inspection or testing, and whether the results of such inspection or testing were negative or positive, within seven days of receiving such results;" (Section 530-d.b)
+    *   "The notification required pursuant to subdivision b of this section shall include information setting forth the steps the department has taken and will take to address such reportable PCB levels, including the timeframe during which such reportable PCB levels were or will be addressed. If such steps are not completed within such timeframe then the department shall notify such parents and employees of the new timeframe for such steps. The department shall also notify such parents and employees within seven days of the date such steps to address reportable PCB levels are completed." (Section 530-d.c)
+    *   "Not later than the fifteenth day of April of the year 2012 and annually thereafter not later than the fifteenth day of November, the department shall submit to the council a report, regarding the progress of the department's PCB lighting removal plan and the department's efforts to address caulk in public schools and shall post such report on the department's website. The report shall include, but not be limited to: information regarding the overall progress on such plan including, but not limited to, an updated list of public schools identified as part of such plan, the steps that will be taken to address reportable PCB levels at such schools, and the schedule for addressing such reportable PCB levels at such schools; a list of schools where reportable PCB levels have been addressed, the steps taken to address such reportable PCB levels including, but not limited to, information regarding whether light fixtures and floor tiles were removed, replaced or remediated, and the timeframe during which such reportable PCB levels were addressed; a list of schools for which notification was sent to parents and employees pursuant to subdivision b of section 530-d of this chapter, the steps taken to address the presence and removal, replacement or remediation of PCB light ballasts at such schools, including the number of light fixtures and floor tiles that were removed, replaced or remediated and the reasons for which inspection or testing for reportable PCB levels occurred including, but not limited to, routine inspection and discovery of a leaking ballast or pursuant to a consent order or any existing agreement with the United States environmental protection agency; a summary of the test results for any routine testing for PCBs in caulk performed by or at the direction of the department or the New York city school construction authority including, but not limited to, which schools were tested and for what reason, and information pertaining to the steps the department has taken and will take to address the presence and removal of PCBs in caulking including, but not limited to, the test results of any pilot study conducted pursuant to a consent order or any existing agreement with the United States environmental protection agency, an update on the status of such pilot study, and in the event that the department and New York City school construction authority reach agreement with the United States environmental protection agency at some future date on a final citywide PCB management plan, as described in and pursuant to all terms and conditions of the existing agreement with EPA, a description and update on PCB management activities, including the management of PCBs in caulking, implemented under such a final plan." (Section 530-e.b)
+*   **Why:** To track all PCB inspections, test results, remediation efforts, and notifications to ensure environmental compliance and safety.
+*   **One row represents:** A single PCB inspection, test, or remediation action for a specific item/area.
+*   **Covers:** All inspections, tests, and remediation activities related to PCBs in public schools, including light ballasts and caulk.
+*   **Columns:**
+    *   PCB Event ID
+    *   School ID (links to Dataset 5)
+    *   Location within School (e.g., Room ID - links to Dataset 3, specific area)
+    *   Event Date
+    *   Event Type (Inspection, Test, Remediation, Notification)
+    *   Item/Material Tested (e.g., Light Fixture, Caulk, Air Sample, Wipe Sample, Bulk Sample)
+    *   Test Result (e.g., PCB Concentration, Leaking Ballast, Negative, Positive)
+    *   Reportable PCB Level? (Yes/No)
+    *   Reason for Inspection/Testing (e.g., Routine, Leaking Ballast Discovery, Consent Order)
+    *   Remediation Action Taken (e.g., Removal, Replacement, Remediation)
+    *   Number of Light Fixtures Removed/Replaced/Remediated
+    *   Number of Floor Tiles Removed/Replaced/Remediated
+    *   Remediation Start Date
+    *   Remediation Completion Date
+    *   Parent/Employee Notification Date
+    *   Notification Content (Steps taken, timeframe)
+    *   Updated Timeframe Notification Date (if applicable)
+    *   PCB Lighting Removal Plan Identified? (Yes/No)
+    *   Pilot Study Status (for caulk)
+    *   Community School District
+    *   Council District
+    *   Borough
+
+**16. Arts Instruction Compliance and Staffing**
+*   **Quotes:**
+    *   "Not later than February 15th 2014, and on an annual basis thereafter by the 15th of February, the department shall submit to the council and post on the department's website, data regarding the provision of instructional requirements for the arts in schools for the preceding school year. Such report shall include, but not be limited to: 1. The total number and percentage of schools serving students in grades one through six that have met all instructional requirements in all of the following disciplines: music, dance, theatre and visual arts; 2. The total number and percentage of students in grade eight who have: i. completed all instructional requirements for the arts grades seven through eight; 3. The total number and percentage of high school graduates who have: i. completed all instructional requirements for the arts for grades nine through twelve; 4. The total number of full-time licensed arts instructors on staff for grades seven through twelve including but not limited to their areas of arts certification; and 5. The total number of part-time licensed arts instructors on staff for grades seven through twelve including but not limited to their areas of arts certification." (Section 530-f.b)
+    *   "Data shall include demographic information regarding the racial and ethnic composition of the school and shall include, but shall not be limited to, the percentage of special education students and the percentage of English language learners." (Section 530-f.c)
+*   **Why:** To track and report on schools' compliance with arts instructional requirements and arts instructor staffing levels.
+*   **One row represents:** A school's arts instruction compliance status for a specific grade band and discipline, or an arts instructor.
+*   **Covers:** Arts instruction compliance for grades 1-12 and staffing of licensed arts instructors.
+*   **Columns:**
+    *   School ID (links to Dataset 5)
+    *   School Year
+    *   Grade Band (e.g., 1-6, 7-8, 9-12)
+    *   Discipline (Music, Dance, Theatre, Visual Arts)
+    *   Met Instructional Requirements? (Yes/No)
+    *   Number of Students Completing Requirements (for grades 7-8, 9-12)
+    *   Total Students in Grade Band (for percentage calculation)
+    *   Full-Time Arts Instructors (count)
+    *   Part-Time Arts Instructors (count)
+    *   Instructor Certification Area (e.g., Music, Dance, Theatre, Visual Arts)
+    *   School Racial/Ethnic Composition (percentage)
+    *   Percentage of Special Education Students in School
+    *   Percentage of English Language Learners in School
+    *   City Council District
+    *   Community School District
+
+**Non-Tabular Information:**
+
+*   **Rules and Regulations:** Police department rules for crime reporting (Section 526-a.b, e). Chancellor's discipline code (Section 529.c). New York City or State law pertaining to classroom design (Section 522.b). New York State Education Law (Section 530.a.4). Part 100 of Title 8, New York Code Rules and Regulations (Instructional requirements for the arts) (Section 530-f.a). Applicable federal, state, or local laws relating to privacy of student information (Section 530.c, 530-b.c, 530-c.c, 530-f.e). Applicable regulations promulgated by the United States environmental protection agency (Section 530-d.a.5, 530-e.a.5).
+*   **Legal Documents/Agreements:** Certificates to proceed for capital projects (Section 521.g). Consent orders or agreements with the United States environmental protection agency (Section 530-e.b).
+*   **Reports (Aggregated/Narrative):** Annual reports to the Mayor (Section 522.a). Annual reports to the Council on non-standard classrooms (Section 522.b). Quarterly/Annual reports on capital project status (Section 521.e). Electronic notifications for capital project delays/cost changes (Section 521.f). Electronic notifications for certificates to proceed (Section 521.g). Class size reports (Section 522.c). Capacity and utilization reports (Section 522.g). Reports on security camera/door alarm evaluations (Section 528.b, c). Student safety training reports (Section 528.d). School incident reports (Section 529.b, c). Annual reports to MTA (Section 530.a). Biannual reports on out-of-state facilities (Section 530.b). Annual reports on student discharge/transfer (Section 530-b.b). Annual reports on school closure/graduation impact (Section 530-c.b). PCB notification to parents/employees (Section 530-d.b, c, d). PCB progress reports (Section 530-e.b). Annual reports on instructional arts requirements (Section 530-f.b).
+*   **Investigation Records:** Evidence/information relating to suspected crimes (Section 526-a.b). Records of official misconduct, negligence, or discrediting conduct for board member removal (Section 523). Investigation records by the board or committee (Section 526).
+*   **Communication Records:** Electronic notifications to council members (Section 521.f, g). Parent/guardian notifications for suspected crimes (Section 526-a.c). Parent/guardian notifications for out-of-state facility issues (Section 530.b.8). Parent/employee notifications for PCBs (Section 530-d.b, c, d).
+*   **Website Content:** Department's website for class size reports (Section 522.f). School web portals for capacity/utilization reports (Section 522.f). Department's website for school incident reports (Section 529.d). Department's website for student discharge/transfer reports (Section 530-b.b). Department's website for school closure/graduation impact reports (Section 530-c.b). Department's website for PCB reports (Section 530-e.b). Department's website for instructional arts reports (Section 530-f.b). Link to DOHMH FAQ on PCBs (Section 530-e.c).
+*   **Methodologies:** Detailed description of methodologies used to calculate class size data (Section 522.c.5).
+*   **Automobile Use Records:** Records of board member automobile use for public duties (Section 520.2).

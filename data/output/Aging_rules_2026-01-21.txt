@@ -1,0 +1,545 @@
+**Identified Tabular Datasets**
+
+**1. SADC Complaints**
+
+**Quotes:**
+*   "Complaints may be filed with the ombudsperson by a participant of an SADC; by the parent, child, spouse, sibling, or legal guardian of a participant of a SADC; or by a person working at an SADC as an employee, contractor, or volunteer. Complaints filed by any other person may also be received at the discretion of the ombudsperson, who will consider, among other factors, the nature or severity of the alleged misconduct, the availability of evidence or witnesses, the credibility of the complaint, and the number of complaints received by the ombudsperson regarding the SADC." (§ 2-02.a)
+*   "Complaints to the ombudsperson may be submitted in a form and manner determined by the ombudsperson." (§ 2-02.b)
+*   "The ombudsperson may dismiss any complaint that is not filed in accordance with this section." (§ 2-02.c)
+*   "When a complaint is received, the ombudsperson will notify the complainant via email or first-class mail that their complaint has been received." (§ 2-03.a)
+*   "Upon receipt of a complaint, the ombudsperson will determine whether the Complaint Subject is operating as an SADC in New York City. If so, the complaint will be accepted. If not, the complaint will be dismissed." (§ 2-03.b)
+*   "The ombudsperson will determine whether the Complaint Subject has registered with the Department, as required by subdivision b of § 21-204 of the Administrative Code. If not, the ombudsperson will notify the Complaint Subject via email or first-class mail and notify the official responsible for enforcing such requirement of the SADC's failure to register." (§ 2-03.c)
+*   "Where the ombudsperson accepts a complaint that includes a matter within the sole jurisdiction of another agency... the ombudsperson will refer the complaint to the other agency." (§ 2-04.a)
+*   "Where the ombudsperson accepts a complaint that includes a matter partly within the jurisdiction of another agency, the ombudsperson may refer the entire complaint to the other agency... or may refer only those elements of the complaint that are within the jurisdiction of the other agency to that agency." (§ 2-04.b)
+*   "If the ombudsperson refers any element of an accepted complaint to another agency pursuant to this section, the ombudsperson must (i) notify the Complaint Subject of its referral, (ii) notify the state Department of Health, the state Office for the Aging, and the state Office of the Medicaid Inspector General of the complaint and its referral, and (iii) notify the complainant of its referral." (§ 2-04.c)
+*   "If the ombudsperson referred the entire complaint to another agency, the ombudsperson will dismiss the complaint and notify the Complaint Subject and the complainant... that the complaint has been referred to another agency and dismissed before the ombudsperson." (§ 2-04.c)
+*   "If an accepted complaint has not been referred entirely to another agency or dismissed... the ombudsperson will investigate the complaint." (§ 2-05.a)
+*   "Upon completion of its investigation, the ombudsperson will determine either that there is insufficient evidence or sufficient evidence to substantiate a violation..." (§ 2-06.a)
+*   "If the ombudsperson determines that there is insufficient evidence of a violation, the complaint will be dismissed." (§ 2-06.b)
+*   "If the ombudsperson determines that there is sufficient evidence of a violation, a factual determination, in writing, describing the violation and the evidence of the violation will be made." (§ 2-06.c)
+*   "The ombudsperson will notify the Complaint Subject, all known MLTCs, and the complainant... of the determination that there is sufficient evidence of a violation." (§ 2-06.c)
+*   "A Complaint Subject or any MLTC may appeal a factual determination that there was a violation to the Commissioner." (§ 2-07.a)
+*   "After making a factual determination of a violation... the ombudsperson will request a corrective action plan from the Complaint Subject." (§ 2-08.a)
+*   "If the corrective action plan is approved, the complaint will be marked resolved and the Complaint Subject will be responsible for implementing the corrective action plan." (§ 2-08.a.2.a)
+*   "Where a complaint has been resolved through the approval of a corrective action plan, the ombudsperson will notify the complainant... that a corrective action plan has been implemented and the complaint has been resolved." (§ 2-08.a.4)
+
+**Why:** The agency must track the lifecycle of every complaint to ensure proper processing, investigation, determination, and resolution.
+
+**One row represents:** A single complaint filed with the ombudsperson.
+
+**Covers:** All complaints received regarding Social Adult Day Care programs.
+
+**Columns:**
+*   Complaint ID
+*   SADC ID (linked to Dataset 2)
+*   Complainant Type (e.g., Participant, Family, Employee, Other)
+*   Complainant Name
+*   Complainant Contact Information (Email, Mail, Phone)
+*   Anonymous Complaint (Yes/No)
+*   Filing Date
+*   Submission Method
+*   Ombudsperson Discretionary Acceptance (Yes/No, if applicable)
+*   Initial Processing Status (e.g., Received, Accepted, Dismissed)
+*   Initial Dismissal Reason (e.g., Not SADC in NYC, Not Filed per Section)
+*   Initial Dismissal Date
+*   Referral Status (e.g., None, Sole Jurisdiction, Partial Jurisdiction, Entirely Referred)
+*   Referred Agency(ies)
+*   Referral Date
+*   Investigation Start Date
+*   Investigation End Date
+*   Factual Determination (e.g., Insufficient Evidence, Sufficient Evidence)
+*   Factual Determination Date
+*   Violation Description (if sufficient evidence)
+*   Appeal Filed (Yes/No)
+*   Appeal ID (linked to Dataset 7)
+*   Corrective Action Plan Requested (Yes/No)
+*   Corrective Action Plan ID (linked to Dataset 6)
+*   Complaint Resolution Status (e.g., Dismissed, Referred Entirely, Resolved by CAP, NOV Issued)
+*   Resolution Date
+
+**2. SADC Registrations**
+
+**Quotes:**
+*   "A SADC must register on the Department's website or using an electronic form as designated by the Department in accordance with subdivision b of § 21-204 of the Administrative Code." (§ 2-21.a)
+*   "Such registration must include at least the following information: Registrant's name and if SADC is operating under any other business name or names; Registrant's address; Registrant's phone number; Registrant's Tax ID; Registrant’s days and hours of operation; Year SADC established; Registrant’s business type; SADC Director's name and contact information; Registrant's corporate structure and ownership; Registrant's corporate address; Expiration date of Registrant’s Food Service Establishment Permit (if applicable); Registrant’s Certificate of Occupancy (yes/no); Whether Registrant is certified with NYS Office of Medicaid Inspector General (yes/no); Status of SADC operations; Name of local fire jurisdiction and date notified of SADC's presence; Physical accessibility of the SADC facility; Registrant’s contracted Managed Long Term Care plans; Registrant’s number of work shifts per day; and Registrant’s anticipated average attendance per shift or per day; and Registrant’s anticipated average number of staff per shift or per day." (§ 2-21.a.1-20)
+*   "A fee of $900 will be charged for each SADC registration." (§ 2-21.b)
+*   "A SADC must submit changes to any of the information required by subdivision a of this section... within 30 days of the effective date of such changes. A fee of $240 will be charged for each such submission." (§ 2-21.c)
+*   "A SADC must notify the Department within 30 days of ceasing operation. Upon receipt of such notice, the Department will terminate such SADC’s registration." (§ 2-21.d)
+*   "A SADC that has not operated for six months or more must immediately notify the Department. Upon receipt of such notice, the Department will terminate such SADC’s registration." (§ 2-21.e)
+
+**Why:** The agency is legally required to maintain a registry of all Social Adult Day Care programs operating in New York City.
+
+**One row represents:** A single SADC registration.
+
+**Covers:** All initial SADC registrations, updates, and terminations.
+
+**Columns:**
+*   SADC ID
+*   Registrant Name
+*   Other Business Name(s)
+*   Registrant Address
+*   Registrant Phone Number
+*   Registrant Tax ID
+*   Days and Hours of Operation
+*   Year SADC Established
+*   Business Type
+*   SADC Director Name
+*   SADC Director Contact Information
+*   Corporate Structure
+*   Ownership Details
+*   Corporate Address
+*   Food Service Establishment Permit Expiration Date (if applicable)
+*   Certificate of Occupancy (Yes/No)
+*   NYS Office of Medicaid Inspector General Certified (Yes/No)
+*   Status of SADC Operations
+*   Local Fire Jurisdiction Name
+*   Date Notified Fire Jurisdiction
+*   Physical Accessibility of Facility
+*   Contracted Managed Long Term Care (MLTC) Plans (list)
+*   Number of Work Shifts per Day
+*   Anticipated Average Attendance per Shift/Day
+*   Anticipated Average Staff per Shift/Day
+*   Registration Date
+*   Last Change Submission Date
+*   Registration Status (e.g., Active, Ceased Operation, Terminated for Non-Operation)
+*   Date Ceased Operation (if applicable)
+*   Date Non-Operation Began (if applicable)
+
+**3. Notices of Violation and Penalties**
+
+**Quotes:**
+*   "Upon notification, the official may issue a notice of violation, returnable to the Office of Administrative Trials and Hearings, with a civil penalty pursuant to the schedule set forth in 69 RCNY § 2-31." (§ 2-03.c)
+*   "The Department may issue a notice of violation, returnable to the Office of Administrative Tribunals and Hearings, and impose a civil penalty in accordance with the schedule in 69 RCNY § 2-31, when a corrective action plan is not implemented within 60 days of a request made pursuant to this section, or when the ombudsperson determines the Complaint Subject has failed to implement an approved corrective action plan." (§ 2-08.b)
+*   "Civil penalties for the following violations of this chapter shall be assessed per day as follows: ... Section of Law, Violation Description, Penalty, Default Penalty, Maximum Penalty." (§ 2-31.a)
+*   "Unless otherwise specified in the notice of violation, if the Department charges a business or individual with a violation, there shall be a rebuttable presumption that the violation continued every day, without interruption, from the date specified by the Department in the notice of violation as the first date of violation through the hearing date." (§ 2-31.a.1)
+*   "The first date of violation specified by the Department in the notice of violation may be the date of an inspection at which the violation(s) is identified, or any other date on which the violation(s) first occurred, such as the first date an SADC was operating without having registered with the Department." (§ 2-31.a.2)
+*   "Regardless of the date specified by the Department in the notice of violation, if the Department presents at the hearing a copy of a decision or order from a prior proceeding finding that the business or individual engaged in the same violation, or a copy of a settlement from a prior proceeding resolving a charge of the same violation, there shall be a rebuttable presumption that the violation continued every day, without interruption, from the date of such decision, order or settlement through the date of the hearing, unless the decision, order or settlement specifically states otherwise." (§ 2-31.a.3)
+*   "A party may present credible evidence at the hearing to rebut the presumption of continued violation, such as written proof, receipts, photographs or other documentation indicating that the party corrected the violation." (§ 2-31.a.4)
+*   "Civil penalties for the following violations of this chapter shall be assessed per violation as follows: Section of Law, Violation Description, Penalty, Default Penalty, Maximum Penalty." (§ 2-31.b)
+
+**Why:** The agency is mandated to issue notices of violation and assess civil penalties for non-compliance with SADC regulations.
+
+**One row represents:** A single notice of violation issued.
+
+**Covers:** All notices of violation issued to Social Adult Day Care programs.
+
+**Columns:**
+*   NOV ID
+*   SADC ID (linked to Dataset 2)
+*   Complaint ID (linked to Dataset 1, if applicable)
+*   Issuance Date
+*   Returnable to OATH (Yes/No)
+*   Violation Section of Law (e.g., 69 RCNY § 2-21, 9 NYCRR § 6654.20(d)(1)(i))
+*   Violation Description (from penalty schedule)
+*   First Date of Violation
+*   Presumption of Continued Violation (Yes/No)
+*   Rebuttal Evidence Provided (Yes/No)
+*   Rebuttal Evidence Details
+*   Penalty Type (e.g., Per Day, Per Violation)
+*   Daily Penalty Amount (if applicable)
+*   Default Penalty Amount
+*   Maximum Penalty Amount
+*   Total Penalty Assessed
+*   Payment Status (e.g., Outstanding, Paid, Waived)
+*   Payment Date (if paid)
+*   Prior Proceeding Decision/Order/Settlement (Yes/No)
+*   Prior Proceeding Date (if applicable)
+*   Prior Proceeding Details
+
+**4. SADC Facility Visits and Inspections**
+
+**Quotes:**
+*   "As part of such investigation, the ombudsperson may require that the Complaint Subject or an MLTC provide any information or records necessary to conduct such investigation. The ombudsperson may also visit the Complaint Subject facilities and other locations relevant to the subject matter of the complaint during normal operating hours, conduct interviews, inspect any records required to be maintained by the Complaint Subject by the State SADC Regulations, and collect any other relevant evidence necessary to conduct a thorough investigation." (§ 2-05.b)
+*   "If access to any property or records the ombudsperson seeks to inspect pursuant to this section is denied, the ombudsperson may seek judicial authorization and may access that property or records pursuant to the authorization." (§ 2-05.c)
+*   "In exigent circumstances where there is an imminent and serious threat to health or safety, the ombudsperson may enter on any property without such judicial authorization to inspect for compliance with § 21-204 of the Administrative Code, in accordance with law." (§ 2-05.c)
+*   "The ombudsperson will monitor compliance with an approved corrective action plan through the investigative tools provided in 69 RCNY § 2-05." (§ 2-08.a.5)
+
+**Why:** The agency conducts visits and inspections to investigate complaints, monitor corrective action plans, and ensure SADC compliance.
+
+**One row represents:** A single visit or inspection event at an SADC facility.
+
+**Covers:** All investigative visits, compliance inspections, and monitoring visits to SADC facilities.
+
+**Columns:**
+*   Visit ID
+*   SADC ID (linked to Dataset 2)
+*   Complaint ID (linked to Dataset 1, if applicable)
+*   Visit Date
+*   Visit Type (e.g., Complaint Investigation, CAP Monitoring, Registration Check, Exigent Circumstance)
+*   Inspector ID
+*   Records Inspected (list of types, e.g., participant records, staff records, policies)
+*   Interviews Conducted (list of roles/individuals)
+*   Evidence Collected (description)
+*   Access Denied (Yes/No)
+*   Judicial Authorization Sought (Yes/No)
+*   Judicial Authorization Granted (Yes/No)
+*   Exigent Circumstances (Yes/No)
+*   Overall Findings Summary
+
+**5. SADC Violation Findings**
+
+**Quotes:**
+*   "Upon completion of its investigation, the ombudsperson will determine either that there is insufficient evidence or sufficient evidence to substantiate a violation of the provisions of subdivision a of § 21-204 of the Administrative Code." (§ 2-06.a)
+*   "If the ombudsperson determines that there is sufficient evidence of a violation, a factual determination, in writing, describing the violation and the evidence of the violation will be made." (§ 2-06.c)
+*   "All SADCs subject to the provisions of this Chapter are required to comply with the specific provisions of subdivisions (d) and (e) of section 6654.20 of Title 9 of the New York Rules and Regulations (“NYCRR”)..." (§ 2-22.a)
+*   "Civil penalties for the following violations of this chapter shall be assessed per day as follows: Section of Law, Violation Description..." (§ 2-31.a)
+*   "Civil penalties for the following violations of this chapter shall be assessed per violation as follows: Section of Law, Violation Description..." (§ 2-31.b)
+
+**Why:** The agency needs to record specific instances of non-compliance identified during investigations and inspections to support factual determinations and potential penalties.
+
+**One row represents:** A single finding of a specific violation.
+
+**Covers:** All specific violations identified during SADC investigations and facility visits.
+
+**Columns:**
+*   Finding ID
+*   Visit ID (linked to Dataset 4, if applicable)
+*   Complaint ID (linked to Dataset 1, if applicable)
+*   SADC ID (linked to Dataset 2)
+*   Violation Section of Law (e.g., 9 NYCRR § 6654.20(d)(1)(iii)(b))
+*   Violation Description (from penalty schedule)
+*   Date of Finding
+*   Evidence Supporting Finding
+*   Corrected (Yes/No)
+*   Correction Date (if applicable)
+*   Factual Determination Status (e.g., Substantiated, Not Substantiated)
+*   NOV ID (linked to Dataset 3, if applicable)
+
+**6. Corrective Action Plans (CAPs)**
+
+**Quotes:**
+*   "After making a factual determination of a violation pursuant to 69 RCNY § 2-06, the ombudsperson will request a corrective action plan from the Complaint Subject." (§ 2-08.a)
+*   "Along with or in addition to the notice of a factual determination made to the Complaint Subject... the ombudsperson will request that the Complaint Subject develop a corrective action plan in response to such determination." (§ 2-08.a.1)
+*   "The ombudsman may approve a corrective action plan provided by the Complaint Subject where the ombudsperson determines such plan is sufficient to resolve the violation... and where the Complaint Subject provides a certification that all MLTCs have consented to the corrective action plan..." (§ 2-08.a.2.a)
+*   "The ombudsperson may deem that an MLTC has consented to a proposed corrective action plan... upon a showing... that: (i) the Complaint Subject presented the proposed corrective action plan to the MLTC, (ii) the Complaint Subject made attempts to gain the consent of the MLTC, and (iii) after a reasonable amount of time... the MLTC did not provide consent, disapproval, or any other feedback..." (§ 2-08.a.2.b)
+*   "In determining whether a corrective action plan is sufficient... the ombudsperson may consider the seriousness of the violation, the extent of any injuries or other detrimental effects caused by the violation, the Complaint Subject's past record of any related violations, and the Complaint Subject's past and present efforts to prevent any violations." (§ 2-08.a.3)
+*   "The ombudsperson may also consider whether the corrective action plan identifies with specificity the causes of each violation described in the factual determination, provides a plan sufficient to correct each violation, and provides a plan to prevent the recurrence of each violation." (§ 2-08.a.3)
+*   "Where a complaint has been resolved through the approval of a corrective action plan, the ombudsperson will notify the complainant... that a corrective action plan has been implemented and the complaint has been resolved." (§ 2-08.a.4)
+*   "The ombudsperson will monitor compliance with an approved corrective action plan through the investigative tools provided in 69 RCNY § 2-05." (§ 2-08.a.5)
+*   "If the ombudsperson determines the Complaint Subject has failed to fully implement the corrective action plan, the ombudsperson may make a new factual determination... and may consider the corrective action plan to not be implemented..." (§ 2-08.a.5)
+
+**Why:** The agency manages and monitors corrective action plans to resolve identified violations and ensure SADC compliance.
+
+**One row represents:** A single corrective action plan.
+
+**Covers:** All corrective action plans requested, submitted, approved, and monitored for SADC violations.
+
+**Columns:**
+*   CAP ID
+*   Complaint ID (linked to Dataset 1)
+*   SADC ID (linked to Dataset 2)
+*   Request Date
+*   Submission Date
+*   Approval Date
+*   Ombudsperson Approval (Yes/No)
+*   MLTC Consent Certification (Yes/No)
+*   MLTC Deemed Consent Details (if applicable)
+*   Seriousness of Violation Considered (Yes/No)
+*   Extent of Injuries Considered (Yes/No)
+*   Past Record of Violations Considered (Yes/No)
+*   Past/Present Prevention Efforts Considered (Yes/No)
+*   Specific Causes Identified in Plan (Yes/No)
+*   Plan to Correct Violation(s) (Yes/No)
+*   Plan to Prevent Recurrence (Yes/No)
+*   Monitoring Start Date
+*   Monitoring End Date
+*   Compliance Status (e.g., Implemented, Failed)
+*   Failure Date (if failed)
+*   New Factual Determination Made (Yes/No, if failed)
+
+**7. SADC Complaint Appeals**
+
+**Quotes:**
+*   "A Complaint Subject or any MLTC may appeal a factual determination that there was a violation to the Commissioner." (§ 2-07.a)
+*   "A notice of appeal must be filed with the Commissioner... within 10 business days of the factual determination that there was a violation." (§ 2-07.a.1)
+*   "The notice of appeal must include the full name of the appellant, the identity and location of the Complaint Subject, a copy of the factual determination being appealed, and a statement that the appellant intends to appeal the factual determination." (§ 2-07.a.1)
+*   "The appeal must be perfected within 20 business days of the factual determination." (§ 2-07.a.2)
+*   "The appeal must be filed in writing with the Commissioner... The appeal must include the identity of the Complaint Subject, a copy of the factual determination being appealed, and a statement of the reasons why the Complaint Subject believes the factual determination to be incorrect." (§ 2-07.a.2)
+*   "Petitions for an extension of these deadlines may be presented in writing before the due date for a notice of appeal or the perfection of the appeal and will be granted upon a showing of reasonable cause." (§ 2-07.a.3)
+*   "The Commissioner will make best efforts to render a written decision as to whether the factual determinations are correct or incorrect, including a statement of the reasons for the decision, within 60 business days of receipt of the perfected appeal." (§ 2-07.a.4)
+*   "The Commissioner will provide its decision... to the Complaint Subject, all MLTCs, and the complainant." (§ 2-07.a.4)
+*   "A written decision by the Commissioner upholding or modifying a factual determination will be considered a factual determination subject to 69 RCNY § 2-08." (§ 2-07.a.5)
+*   "If the Complaint Subject or an MLTC files a notice of appeal or perfects its appeal, the ombudsperson will notify all MLTCs of the action..." (§ 2-07.c)
+*   "The written decision of the Commissioner pursuant to this section may not be appealed." (§ 2-07.d)
+
+**Why:** The agency must track appeals of factual determinations to ensure due process and finality of decisions.
+
+**One row represents:** A single appeal of a factual determination.
+
+**Covers:** All appeals filed by Complaint Subjects or MLTCs regarding SADC factual determinations.
+
+**Columns:**
+*   Appeal ID
+*   Complaint ID (linked to Dataset 1)
+*   Appellant Type (e.g., Complaint Subject, MLTC)
+*   Appellant Name
+*   SADC ID (linked to Dataset 2)
+*   Notice of Appeal Filing Date
+*   Appeal Perfection Date
+*   Extension Petition Filed (Yes/No)
+*   Extension Granted (Yes/No)
+*   Extension Reason (if granted)
+*   Commissioner Decision Date
+*   Commissioner Decision (e.g., Uphold, Modify, Overturn)
+*   Reasons for Commissioner Decision
+*   Notification Sent to MLTCs of Appeal (Yes/No)
+
+**8. SADC Participant Record Review Findings**
+
+**Quotes:**
+*   "All SADCs subject to the provisions of this Chapter are required to comply with the specific provisions of subdivisions (d) and (e) of section 6654.20 of Title 9 of the New York Rules and Regulations (“NYCRR”)..." (§ 2-22.a)
+*   Penalty Schedule lists violations related to participant records and services, e.g.:
+    *   "Served ineligible participant 9 NYCRR § 6654.20(d)(1)(i)" (§ 2-31.b)
+    *   "Could not meet/manage individual needs 9 NYCRR § 6654.20(d)(1)(ii)(a)" (§ 2-31.b)
+    *   "Admitted individual without assessment 9 NYCRR § 6654.20(d)(1)(ii)(b)" (§ 2-31.b)
+    *   "Failed to properly discharge participant 9 NYCRR § 6654.20(d)(1)(ii)(c)" (§ 2-31.b)
+    *   "Service plan untimely developed/reviewed 9 NYCRR § 6654.20(d)(1)(iii)(b)" (§ 2-31.a)
+    *   "Service plan inconsistent with needs 9 NYCRR § 6654.20(d)(1)(iii)(c)" (§ 2-31.a)
+    *   "Well-being goals insufficient 9 NYCRR § 6654.20(d)(1)(iii)(d)(1)" (§ 2-31.a)
+    *   "Capacity goals insufficient 9 NYCRR § 6654.20(d)(1)(iii)(d)(2)" (§ 2-31.a)
+    *   "Participant outcome goals missing 9 NYCRR § 6654.20(d)(1)(iii)(e)" (§ 2-31.b)
+    *   "Services inconsistent with service plan 9 NYCRR § 6654.20(d)(1)(iii)(a)" (§ 2-31.b)
+    *   "Socialization not properly planned 9 NYCRR § 6654.20(d)(1)(iv)(a)(1)(i)" (§ 2-31.b)
+    *   "Group activities not included 9 NYCRR § 6654.20(d)(1)(iv)(a)(1)(ii)" (§ 2-31.b)
+    *   "Insufficient socialization goals 9 NYCRR § 6654.20(d)(1)(iv)(a)(1)(iii)" (§ 2-31.b)
+    *   "Improper supervision/monitoring 9 NYCRR § 6654.20(d)(1)(iv)(a)(2)(i)" (§ 2-31.b)
+    *   "Improper safety/assistance measures 9 NYCRR § 6654.20(d)(1)(iv)(a)(2)(ii)" (§ 2-31.b)
+    *   "Some assistance not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(i)" (§ 2-31.b)
+    *   "Total assistance not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(ii)" (§ 2-31.b)
+    *   "Dressing assistance not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(iii)(A)" (§ 2-31.b)
+    *   "Bathing assistance not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(iii)(B)" (§ 2-31.b)
+    *   "Grooming assistance not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(iii)(C)" (§ 2-31.b)
+    *   "Self-medication help not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(iii)(D)" (§ 2-31.b)
+    *   "Skin care assistance not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(iii)(E)" (§ 2-31.b)
+    *   "Dressings assistance not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(iii)(F)" (§ 2-31.b)
+    *   "Equipment assistance not given 9 NYCRR § 6654.20(d)(1)(iv)(a)(3)(iii)(G)" (§ 2-31.b)
+    *   "Meals/snacks not served appropriately 9 NYCRR § 6654.20(d)(1)(iv)(a)(4)(i)" (§ 2-31.b)
+    *   "Meals failed nutrition standards 9 NYCRR § 6654.20(d)(1)(iv)(a)(4)(ii)" (§ 2-31.b)
+    *   "Meals failed nutrition standards 9 NYCRR § 6654.20(d)(1)(iv)(a)(4)(iii)" (§ 2-31.b)
+    *   "Optional services failed standards 9 NYCRR § 6654.20(d)(1)(iv)(b)(1)(i-iv)" (§ 2-31.b)
+    *   "Transportation services failed standards 9 NYCRR § 6654.20(d)(1)(iv)(b)(2)" (§ 2-31.b)
+    *   "Caregiver assistance failed standards 9 NYCRR § 6654.20(d)(1)(iv)(b)(3)(i-v)" (§ 2-31.b)
+    *   "Case coordination failed standards 9 NYCRR § 6654.20(d)(1)(iv)(b)(4)(i-ii)" (§ 2-31.b)
+    *   "Violation of Participant Rights 9 NYCRR § 6654.20(e)(1)(i-vi)" (§ 2-31.a, § 2-31.b)
+    *   "Fail to visibly/publicly post rights/contact info 9 NYCRR § 6654.20(e)(3)" (§ 2-31.a)
+    *   "Failed to provide/explain participant rights 9 NYCRR § 6654.20(e)(2)" (§ 2-31.b)
+
+**Why:** The agency must track findings from its review of SADC participant records and service delivery to ensure compliance with NYS regulations.
+
+**One row represents:** A specific finding related to SADC participant records or service delivery.
+
+**Covers:** All findings from agency reviews of SADC participant eligibility, assessments, service plans, and direct services.
+
+**Columns:**
+*   Finding ID
+*   Visit ID (linked to Dataset 4, if applicable)
+*   SADC ID (linked to Dataset 2)
+*   Participant ID (internal to SADC, if applicable)
+*   Date of Review
+*   Reviewer ID
+*   Violation Section of Law (from penalty schedule, e.g., 9 NYCRR § 6654.20(d)(1)(i))
+*   Violation Description (from penalty schedule)
+*   Compliance Status (e.g., Compliant, Non-Compliant)
+*   Evidence Supporting Finding
+*   Corrected (Yes/No)
+*   Correction Date (if applicable)
+
+**9. SADC Staff Record Review Findings**
+
+**Quotes:**
+*   "All SADCs subject to the provisions of this Chapter are required to comply with the specific provisions of subdivisions (d) and (e) of section 6654.20 of Title 9 of the New York Rules and Regulations (“NYCRR”)..." (§ 2-22.a)
+*   Penalty Schedule lists violations related to staffing, e.g.:
+    *   "Failed to maintain adequate staffing 9 NYCRR § 6654.20(d)(2)(iv)(a)(1)" (§ 2-31.a)
+    *   "Failed to meet daily minimum staffing 9 NYCRR § 6654.20(d)(2)(iv)(a)(2)" (§ 2-31.b)
+    *   "Staff health status not documented 9 NYCRR § 6654.20(d)(2)(iv)(a)(3)(i)" (§ 2-31.a)
+    *   "Staff ppd test result not documented 9 NYCRR § 6654.20(d)(2)(iv)(a)(3)(ii)" (§ 2-31.a)
+    *   "Failed to have a paid director on staff 9 NYCRR § 6654.20(d)(2)(iv)(b)(1)" (§ 2-31.a)
+    *   "Director not qualified 9 NYCRR § 6654.20(d)(2)(iv)(b)(1)(i)" (§ 2-31.a)
+    *   "Director authority inappropriate 9 NYCRR § 6654.20(d)(2)(iv)(b)(1)(ii)(A)" (§ 2-31.a)
+    *   "Director failed legal compliance 9 NYCRR § 6654.20(d)(2)(iv)(b)(1)(ii)(B)" (§ 2-31.a)
+    *   "Director failed to submit reports 9 NYCRR § 6654.20(d)(2)(iv)(b)(1)(ii)(C)" (§ 2-31.a)
+    *   "Director did not enforce policies 9 NYCRR § 6654.20(d)(2)(iv)(b)(1)(ii)(D)" (§ 2-31.a)
+    *   "Staff did not carry out service plan 9 NYCRR § 6654.20(d)(2)(iv)(b)(2)(i)" (§ 2-31.b)
+    *   "Staff did not complete training 9 NYCRR § 6654.20(d)(2)(iv)(b)(2)(ii)" (§ 2-31.a)
+    *   "Volunteers did not receive training 9 NYCRR § 6654.20(d)(2)(iv)(b)(3)(i)" (§ 2-31.a)
+    *   "Volunteers were not monitored 9 NYCRR § 6654.20(d)(2)(iv)(b)(3)(ii)" (§ 2-31.a)
+    *   "Staff did not complete orientation 9 NYCRR § 6654.20(d)(2)(iv)(c)(1)(i)" (§ 2-31.a)
+    *   "Staff did not complete training 9 NYCRR § 6654.20(d)(2)(iv)(c)(1)(ii)" (§ 2-31.a)
+    *   "No annual in-service staff training 9 NYCRR § 6654.20(d)(2)(iv)(c)(1)(iii)" (§ 2-31.a)
+    *   "No annual emergency staff training 9 NYCRR § 6654.20(d)(2)(iv)(c)(1)(iv)" (§ 2-31.a)
+    *   "Staff training failed standards 9 NYCRR § 6654.20(d)(2)(iv)(c)(2)" (§ 2-31.a)
+    *   "Staff training not documented 9 NYCRR § 6654.20(d)(2)(iv)(c)(3)" (§ 2-31.b)
+    *   "No personal care skill training 9 NYCRR § 6654.20(d)(2)(iv)(d)(1)(i)" (§ 2-31.a)
+    *   "No body mechanics training 9 NYCRR § 6654.20(d)(2)(iv)(d)(1)(ii)" (§ 2-31.a)
+    *   "No behavior management training 9 NYCRR § 6654.20(d)(2)(iv)(d)(1)(iii)" (§ 2-31.a)
+    *   "Additional training failed standards 9 NYCRR § 6654.20(d)(2)(iv)(d)(2)(i-iii)" (§ 2-31.a)
+    *   "Training failed to assess competency 9 NYCRR § 6654.20(d)(2)(iv)(d)(2)(iv)" (§ 2-31.a)
+    *   "Failed to document equivalent skill 9 NYCRR § 6654.20(d)(2)(iv)(d)(3)(iv)" (§ 2-31.a)
+    *   "Failed to provide periodic training 9 NYCRR § 6654.20(d)(2)(iv)(d)(4)" (§ 2-31.a)
+
+**Why:** The agency must track findings from its review of SADC staffing, qualifications, and training to ensure compliance with NYS regulations.
+
+**One row represents:** A specific finding related to SADC staffing or staff records.
+
+**Covers:** All findings from agency reviews of SADC staffing levels, director qualifications, staff/volunteer training, and health documentation.
+
+**Columns:**
+*   Finding ID
+*   Visit ID (linked to Dataset 4, if applicable)
+*   SADC ID (linked to Dataset 2)
+*   Staff ID (internal to SADC, if applicable)
+*   Date of Review
+*   Reviewer ID
+*   Violation Section of Law (from penalty schedule, e.g., 9 NYCRR § 6654.20(d)(2)(iv)(a)(1))
+*   Violation Description (from penalty schedule)
+*   Compliance Status (e.g., Compliant, Non-Compliant)
+*   Evidence Supporting Finding
+*   Corrected (Yes/No)
+*   Correction Date (if applicable)
+
+**10. SADC Policy and Facility Review Findings**
+
+**Quotes:**
+*   "All SADCs subject to the provisions of this Chapter are required to comply with the specific provisions of subdivisions (d) and (e) of section 6654.20 of Title 9 of the New York Rules and Regulations (“NYCRR”)..." (§ 2-22.a)
+*   Penalty Schedule lists violations related to policies and facilities, e.g.:
+    *   "Eligibility policies failed standards 9 NYCRR § 6654.20(d)(2)(i)(a)" (§ 2-31.a)
+    *   "Admission/discharge policies failed standard 9 NYCRR § 6654.20(d)(2)(i)(b)" (§ 2-31.a)
+    *   "Service plan policies failed standards 9 NYCRR § 6654.20(d)(2)(i)(c)" (§ 2-31.a)
+    *   "Staffing plan policies failed standards 9 NYCRR § 6654.20(d)(2)(i)(d)" (§ 2-31.a)
+    *   "Participant rights policies failed standards 9 NYCRR § 6654.20(d)(2)(i)(e)" (§ 2-31.a)
+    *   "Service delivery policies failed standards 9 NYCRR § 6654.20(d)(2)(i)(f)" (§ 2-31.a)
+    *   "Program evaluation policies failed standards 9 NYCRR § 6654.20(d)(2)(i)(g)" (§ 2-31.a)
+    *   "Records policies failed standards 9 NYCRR § 6654.20(d)(2)(i)(h)" (§ 2-31.a)
+    *   "Emergency prep policies failed standards 9 NYCRR § 6654.20(d)(2)(i)(i)" (§ 2-31.a)
+    *   "Operations evaluation failed standards 9 NYCRR § 6654.20(d)(2)(ii)(a)" (§ 2-31.a)
+    *   "Failed to maintain copy of self-evaluation 9 NYCRR § 6654.20(d)(2)(ii)(b)" (§ 2-31.a)
+    *   "Failed to retain administrative records 9 NYCRR § 6654.20(d)(2)(iii)(a)(1)" (§ 2-31.a)
+    *   "Failed to retain participant records 9 NYCRR § 6654.20(d)(2)(iii)(a)(2)" (§ 2-31.a)
+    *   "Failed to retain services records 9 NYCRR § 6654.20(d)(2)(iii)(a)(3)" (§ 2-31.a)
+    *   "Failed to maintain record confidentiality 9 NYCRR § 6654.20(d)(2)(iii)(b)" (§ 2-31.a)
+    *   "Facility has insufficient space for program 9 NYCRR § 6654.20(d)(2)(vi)(a)" (§ 2-31.a)
+    *   "Building/equipment failed safety standards 9 NYCRR § 6654.20(d)(2)(vi)(b)" (§ 2-31.a)
+    *   "Failed to notify fire authority of program 9 NYCRR § 6654.20(d)(2)(vi)(c)" (§ 2-31.a)
+    *   "No current, written emergency procedures 9 NYCRR § 6654.20(d)(2)(vii)(a)" (§ 2-31.a)
+    *   "No emergency contact info for participants 9 NYCRR § 6654.20(d)(2)(vii)(b)" (§ 2-31.a)
+    *   "No documentation of fire drills conducted 9 NYCRR § 6654.20(d)(2)(vii)(c)" (§ 2-31.a)
+    *   "Insufficient insurance coverage 9 NYCRR § 6654.20(d)(2)(viii)" (§ 2-31.a)
+
+**Why:** The agency must track findings from its review of SADC policies, procedures, and facility conditions to ensure compliance with NYS regulations.
+
+**One row represents:** A specific finding related to SADC policies, procedures, or facility conditions.
+
+**Covers:** All findings from agency reviews of SADC operational policies, record-keeping, facility safety, and emergency preparedness.
+
+**Columns:**
+*   Finding ID
+*   Visit ID (linked to Dataset 4, if applicable)
+*   SADC ID (linked to Dataset 2)
+*   Date of Review
+*   Reviewer ID
+*   Violation Section of Law (from penalty schedule, e.g., 9 NYCRR § 6654.20(d)(2)(i)(a))
+*   Violation Description (from penalty schedule)
+*   Compliance Status (e.g., Compliant, Non-Compliant)
+*   Evidence Supporting Finding
+*   Corrected (Yes/No)
+*   Correction Date (if applicable)
+
+**11. Agency Notifications Log**
+
+**Quotes:**
+*   "When a complaint is received, the ombudsperson will notify the complainant via email or first-class mail that their complaint has been received." (§ 2-03.a)
+*   "If not [registered], the ombudsperson will notify the Complaint Subject via email or first-class mail and notify the official responsible for enforcing such requirement of the SADC's failure to register." (§ 2-03.c)
+*   "If the ombudsperson refers any element of an accepted complaint to another agency pursuant to this section, the ombudsperson must (i) notify the Complaint Subject of its referral, (ii) notify the state Department of Health, the state Office for the Aging, and the state Office of the Medicaid Inspector General of the complaint and its referral, and (iii) notify the complainant of its referral. All such notices must be sent by email or first-class mail." (§ 2-04.c)
+*   "If the ombudsperson referred the entire complaint to another agency, the ombudsperson will dismiss the complaint and notify the Complaint Subject and the complainant, by email or first-class mail, that the complaint has been referred to another agency and dismissed before the ombudsperson." (§ 2-04.c)
+*   "If the ombudsperson determines that there is insufficient evidence of a violation, the complaint will be dismissed. The ombudsperson will notify the Complaint Subject, all known MLTCs, and the complainant, by email or first-class mail, that the complaint has been dismissed." (§ 2-06.b)
+*   "If the ombudsperson determines that there is sufficient evidence of a violation... The ombudsperson will notify the Complaint Subject, all known MLTCs, and the complainant, by email or first-class mail, of the determination that there is sufficient evidence of a violation." (§ 2-06.c)
+*   "The Commissioner will provide its decision, by email or first-class mail, to the Complaint Subject, all MLTCs, and the complainant." (§ 2-07.a.4)
+*   "If the Complaint Subject or an MLTC files a notice of appeal or perfects its appeal, the ombudsperson will notify all MLTCs of the action by email or first-class mail." (§ 2-07.c)
+*   "Where a complaint has been resolved through the approval of a corrective action plan, the ombudsperson will notify the complainant by email or first-class mail that a corrective action plan has been implemented and the complaint has been resolved." (§ 2-08.a.4)
+
+**Why:** The agency has numerous legal obligations to send notifications to various parties at different stages of the complaint and enforcement process.
+
+**One row represents:** A single notification sent by the agency.
+
+**Covers:** All formal notifications sent by the Department for the Aging related to SADC complaints, registrations, and enforcement.
+
+**Columns:**
+*   Notification ID
+*   Related Entity ID (e.g., Complaint ID (Dataset 1), SADC ID (Dataset 2), Appeal ID (Dataset 7), NOV ID (Dataset 3))
+*   Related Entity Type (e.g., Complaint, SADC Registration, Appeal, NOV)
+*   Recipient Type (e.g., Complainant, Complaint Subject, MLTC, State DOH, State OFA, State OMIG, Enforcement Official)
+*   Recipient Name
+*   Recipient Contact Information
+*   Notification Date
+*   Method (e.g., Email, First-Class Mail)
+*   Content Summary
+*   Specific Section Triggering Notification (e.g., § 2-03.a, § 2-04.c)
+
+**12. Adjudication Cases**
+
+**Quotes:**
+*   "New York City Department for the Aging adjudications regarding the fitness and discipline of agency employees, and adjudications conducted pursuant to its Expanded In-Home Services for the Elderly Program, will be conducted by the Office of Administrative Trials and Hearings." (§ 1-01)
+*   "After conducting an adjudication and analyzing all testimony and other evidence, the hearing officer in both types of hearings shall make written proposed findings of fact and recommend decisions, which shall be reviewed and finally determined by the Commissioner." (§ 1-01)
+
+**Why:** The agency is legally required to conduct and track adjudications for employee discipline and the Expanded In-Home Services for the Elderly Program.
+
+**One row represents:** A single adjudication case.
+
+**Covers:** All adjudications concerning agency employees and the Expanded In-Home Services for the Elderly Program.
+
+**Columns:**
+*   Adjudication Case ID
+*   Case Type (e.g., Employee Fitness/Discipline, EISEP)
+*   Employee ID (if applicable)
+*   EISEP Program ID (if applicable)
+*   Filing Date
+*   OATH Hearing Officer Name
+*   Proposed Findings of Fact (summary/status)
+*   Recommended Decision (summary/status)
+*   Commissioner's Final Determination (summary/status)
+*   Final Determination Date
+
+**13. SADC Registration Fee Payments**
+
+**Quotes:**
+*   "A fee of $900 will be charged for each SADC registration." (§ 2-21.b)
+*   "A fee of $240 will be charged for each such submission [changes to registration]." (§ 2-21.c)
+*   "In order to resume operations, such SADC must submit a new registration and pay the registration fee pursuant to subdivisions a and b of this section." (§ 2-21.e)
+
+**Why:** The agency charges and collects fees for SADC registrations and changes, requiring a system to track these financial transactions.
+
+**One row represents:** A single fee payment transaction.
+
+**Covers:** All payments for SADC registrations and registration changes.
+
+**Columns:**
+*   Payment ID
+*   SADC ID (linked to Dataset 2)
+*   Payment Type (e.g., Initial Registration, Change Submission, Re-registration)
+*   Amount Paid
+*   Payment Date
+*   Transaction ID (if applicable)
+*   Payment Status (e.g., Paid, Pending, Refunded)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations (e.g., 69 RCNY, 9 NYCRR § 6654.20)
+*   Receipts (for fees, but the payment transaction is tabular)
+*   Testimony and other evidence from adjudications
+*   Written proposed findings of fact and recommended decisions from OATH
+*   Commissioner's final determination documents
+*   Complaint submission forms
+*   Information or records provided by Complaint Subject or MLTC during investigation (e.g., policies, internal reports)
+*   Written factual determinations
+*   Notices of appeal documents
+*   Statements of reasons for appeal
+*   Commissioner's written appeal decisions
+*   Corrective action plans (the detailed plan documents)
+*   Proof of workers' compensation and disability benefits insurance coverage
+*   Certificates of exemption
+*   Photos, research documents, other text or image information
+*   Judicial authorizations
+*   Evidence to rebut presumption of continued violation (e.g., written proof, photographs)

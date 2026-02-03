@@ -5,12 +5,13 @@ from datetime import datetime
 import time
 import pandas as pd 
 import re
+import os
 
 #-----------------------------------------------------------------------------------
 # prep + settings
 #-----------------------------------------------------------------------------------
 
-dept = "Correction"
+dept = "Education"
 exec(open("../tokens.py").read())
 
 
@@ -69,12 +70,23 @@ def submit_gemini_query(api_key, system_message, user_message):
 
     return response.text
 
-def pull_gemini_ops(dept, type):
+def pull_gemini_ops(dept, doc_type):
 
-    file = open("data/input/nyc_code/" + dept + "_" + type + ".txt").read()
+    file_type = "data/input/nyc_code/" + dept + "_" + doc_type + ".txt"
+    file_save = "data/output/"+dept+"_"+doc_type+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
+
+    f_exists = os.path.exists(file_type)
+    if not f_exists: 
+        print(f"{doc_type} file does not exist - saving dummy file for the {dept} {doc_type}")
+        with open(file_save, "w") as file:
+            file.write("NA")
+        return
+
+    file = open(file_type).read()
+
     prompt = "<instructions>" + prompt_instructions_one + "</instructions>\n\n" +\
         "<context>" +\
-            "Here is the ", type + ": " + file +\
+            "Here is the ", doc_type + ": " + file +\
         "</context>\n\n" +\
         "<instructions>" + prompt_instructions_one + "</instructions>\n\n" +\
         "<examples>" + prompt_examples + "</examples>\n\n" +\
@@ -85,8 +97,7 @@ def pull_gemini_ops(dept, type):
                                    system_message = prompt_persona_ops, 
                                    user_message = prompt)
 
-    file_name = "data/output/"+dept+"_"+type+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
-    with open(file_name, "w") as file:
+    with open(file_save, "w") as file:
         file.write(response)
 
     return response
@@ -146,6 +157,7 @@ prompt_persona_db = open("data/input/prompt_persona_db.txt").read()
 prompt_instructions_two = open("data/input/prompt_instructions_two.txt").read()
 prompt_format_two = open("data/input/prompt_format_two.txt").read()
 prompt_schemas = open("data/input/prompt_schemas.txt").read()
+
 
 #-----------------------------------------------------------------------------------
 # query gemini

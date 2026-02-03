@@ -1,0 +1,151 @@
+**Data Systems for the Department of Probation**
+
+**1. Probationer Master Data**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:**
+    *   § 9-203.a "Probationer. The term "probationer" means a person the department has been ordered to supervise."
+    *   § 9-203.c.1 "The age of the probationer, where applicable, in the following categories at a minimum: (a) up to age 15, (b) 16 - 18, (c) 18 - 24, and (d) 25 and older. For the purposes of subdivision b of this section, such age shall be calculated by using the probationer’s age at the end of the reporting period, and for the purposes of subdivision c of this section such age shall be calculated by using the probationer’s age at the time at which their period of supervision began;"
+    *   § 9-203.c.2 "Whether the underlying case for which the probationer was ordered to be monitored by the department was classified by state law, or by equivalent laws of another state, as a: (a) juvenile delinquency, (b) juvenile offender, (c) youthful offender, or (d) adult criminal case;"
+    *   § 9-203.c.5 "The risk level of the probationer, as described in section 351.6 of title 9 of the compilation of codes, rules and regulations of the state of New York, or any successor regulation."
+*   **Why:** Essential for identifying and categorizing individuals under supervision and for meeting various reporting requirements.
+*   **One row represents:** A single individual under the department's supervision.
+*   **Covers:** All persons the Department of Probation has been ordered to supervise.
+*   **Columns:** Probationer ID, Gender, Race, Date of Birth, Probation Start Date, Expected Probation End Date, Underlying Case Type, Most Serious Offense (if applicable), Initial Risk Level, Current Probation Status.
+
+**2. Probationer Supervision Events**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:**
+    *   § 9-203.b.2 "The number and percentage of probationers who were: (a) arrested for a non-criminal offense; (b) arrested for any crime; (c) arrested for a misdemeanor; (d) arrested for a felony; disaggregated by whether such felony is a violent felony offense as such term is defined by section 70.02 of the penal law or any successor statute, or whether such probationers were felony drug offenders or second felony drug offenders, as such terms are defined by section 70.70 of the penal law or any successor statute; (e) convicted of a non-criminal offense, (f) convicted of a misdemeanor; or (g) convicted of a felony, disaggregated by whether such felony is a violent felony offense as such term is defined by section 70.02 of the penal law or any successor statute, or whether such probationers were felony drug offenders or second felony drug offenders, as such terms are defined by section 70.70 of the penal law or any successor statute;"
+    *   § 9-203.b.3 "With respect to the probationers who were arrested for any non-criminal offense, misdemeanor or felony during their probation, as reported in paragraph 2 of this subdivision, the number of arrests that resulted in sentences of incarceration other than time served, disaggregated by such category of arrest;"
+    *   § 9-203.b.4 "The number and percentage of probationers who were arrested within the following periods of time from the date of their sentence: (a) 1 month, (b) 3 months, (c) 6 months, (d) 1 year, (e) 2 years, and (f) 3 years;"
+    *   § 9-203.b.5 "The number and percentage of probationers who: (a) were in full compliance with the terms of their probation, (b) violated the terms of their probation, in total and disaggregated by whether such violation was based on an arrest or another ground, or (c) violated the terms of their probation, and there was filed a related declaration of delinquency, petition of violation, or similar court filing, in total and disaggregated by whether such declaration was based on an arrest, a violation of the technical terms of probation, or absconding;"
+    *   § 9-203.b.6 "The number and percentage of probationers whose period of probation was successfully completed during the reporting period, and the mean and median length of their period of probation;"
+    *   § 9-203.c.4 "For probationers who committed a technical violation of their probation resulting in a related declaration of delinquency, petition of violation, or similar court filing, the specific probation conditions violated, disaggregated by the age ranges specified in paragraph 1 of this subdivision;"
+    *   § 9-206.a "The department of probation shall not require individuals on probation to submit to marijuana testing unless a determination is made, based on an individual's history and personal circumstances, that abstinence from marijuana is necessary to otherwise lead an otherwise law-abiding life."
+*   **Why:** Tracks all critical events and compliance status changes for probationers to meet extensive reporting requirements.
+*   **One row represents:** A single significant event or status update during a probationer's supervision.
+*   **Covers:** All arrests, convictions, violations, compliance checks, marijuana testing decisions, and probation completion statuses for supervised individuals.
+*   **Columns:** Event ID, **Probationer ID (linked to Dataset 1)**, Event Date, Event Type (e.g., Arrest, Conviction, Violation, Compliance Check, Marijuana Testing Decision, Probation End, Declaration of Delinquency, Absconding, Successful Completion), Event Details (e.g., Charge, Conviction Type, Violation Description, Specific Condition Violated, Marijuana Testing Required Y/N, Test Result), Arrest Category (e.g., Non-Criminal, Misdemeanor, Felony, Violent Felony, Drug Offender), Conviction Category, Resulted in Incarceration (Y/N), Compliance Status at Event, Age at Event, Risk Level at Event.
+
+**3. Youth Case Intake and Adjustment Events**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:**
+    *   § 9-208.b "report on the number of cases in the previous quarter in the following categories: 1. Juvenile delinquents under 16 years of age at the time of arrest whose intake cases originated in family court; 2. Juvenile delinquents under 16 years of age at the time of arrest whose intake cases were transferred to family court from the youth part of criminal court; 3. Youth 16 and 17 years of age at the time of arrest whose intake cases originated in family court; and 4. Youth 16 and 17 years of age at the time of arrest whose cases were transferred from the youth part of criminal court to family court."
+    *   § 9-208.c.1 "The number of youth screened for adjustment in family court, and further disaggregated by age at the time of arrest, gender, race, the most serious offense, and age at time of intake;"
+    *   § 9-208.c.2 "The number of individuals whose cases have been adjusted, and further disaggregated by age at time of arrest, gender, race, the most serious offense, and age at time of intake;"
+    *   § 9-208.c.3 "The average number of days from an individual’s arrest to adjustment intake interview;"
+    *   § 9-208.c.4 "The reasons stated for not adjusting an individual, further disaggregated by, gender, race, the most serious offense, and age at the time of arrest;"
+    *   § 9-208.c.5 "The number of individuals who successfully complete adjustment and have their cases diverted;"
+    *   § 9-208.c.6 "The number of individuals who are referred from the department of probation to the law department for failure to follow conditions of adjustment;"
+    *   § 9-208.c.7 "The number of individuals receiving probation services;"
+    *   § 9-208.c.8 "The number of individuals detained, disaggregated by age at time of arrest, gender, race, the most serious offense, risk level score, and age at the time of risk assessment interview;"
+    *   § 9-208.c.9 "The number and percent of dispositional recommendations for placement, disaggregated by age, gender, and race."
+*   **Why:** Tracks the detailed progression of youth cases through intake, adjustment, and disposition to meet specific reporting requirements.
+*   **One row represents:** A single event or status update related to a youth's intake or adjustment process.
+*   **Covers:** All youth cases handled by the department, from initial intake through adjustment, detention, and dispositional recommendations.
+*   **Columns:** Youth Case ID, **Probationer ID (linked to Dataset 1, if applicable)**, Event Date, Event Type (e.g., Intake, Screening for Adjustment, Adjustment Interview, Adjustment Decision, Detention, Referral to Law Dept, Dispositional Recommendation), Age at Arrest, Age at Intake, Age at Risk Assessment Interview, Gender, Race, Most Serious Offense, Risk Level Score, Adjustment Status (e.g., Screened, Adjusted, Not Adjusted, Completed, Failed), Reason for Not Adjusting, Adjustment Conditions, Detention Status (Y/N), Placement Recommendation (Y/N), Dispositional Recommendation Type.
+
+**4. Probationer Financial Transactions**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:**
+    *   § 9-201.a "any individual currently serving or who shall be sentenced to a period of probation upon conviction of any crime under article thirty-one of the vehicle and traffic law shall pay to the department of probation an administrative fee of thirty dollars per month."
+    *   § 9-201.d "The department of probation shall waive all or part of the administrative fee where, because of the indigence of the offender, the payment of the administrative fee would work an unreasonable hardship on the person convicted, his or her immediate family, or any other person who is dependent on such person for financial support."
+    *   § 9-201.e "In the event of non-payment of any fees that have not been waived by the department of probation, the city of New York may seek to enforce payment in any manner permitted by law for enforcement of a debt."
+    *   § 9-202.a "In accordance with section 252-a of the family court act, when ordered by the court to conduct an investigation pursuant to section six hundred fifty-three of the family court act, the department of probation shall receive an investigation fee of not less than fifty dollars and not more than five hundred dollars from the parties in such proceeding for performing such investigation."
+    *   § 9-202.b "Such investigation fee shall be determined by the court based on the party's ability to pay the fee, and the schedule for payment shall be fixed by the court issuing the order for investigation, pursuant to the guidelines issued by the director of the New York state division of probation and correctional alternatives."
+    *   § 9-202.c "The court, in its discretion, may waive the investigation fee when the parties lack sufficient means to pay the fee."
+    *   § 9-202.d "The court shall apportion the investigation fee between the parties based upon the respective financial circumstances of the parties and the equities of the case."
+*   **Why:** Tracks all fees owed, paid, and waived by probationers and other parties to ensure legal compliance and revenue collection.
+*   **One row represents:** A single fee transaction (payment, waiver, or billing event).
+*   **Covers:** All administrative fees from probationers and investigation fees from parties in family court proceedings.
+*   **Columns:** Transaction ID, **Probationer ID (linked to Dataset 1, if applicable)**, Party Name (for investigation fees), Fee Type (Administrative, Investigation), Date Due, Amount Due, Date Paid, Amount Paid, Waiver Status (Full, Partial, None), Waiver Reason, Court Order ID (for investigation fees), Apportionment Details (for investigation fees), Collection Action Taken.
+
+**5. Immigration Detainer and Information Requests**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:**
+    *   § 9-205.b "The department may only honor a civil immigration detainer by holding a person if: 1. federal immigration authorities present the department with a judicial warrant for the detention of the person who is the subject of such civil immigration detainer at the time such civil immigration detainer is presented; and 2. a search of state and federal databases, or any similar or successor databases, accessed through the New York state division of criminal justice services e-JusticeNY computer application, or any similar or successor computer application maintained by the city or state of New York, indicates, or the department has been informed by a court or any other governmental entity, that such person: (a) has been convicted of a violent or serious crime, or (b) is identified as a possible match in the terrorist screening database."
+    *   § 9-205.f.1 "the number of civil immigration detainers received from federal immigration authorities;"
+    *   § 9-205.f.2 "the number of persons held pursuant to civil immigration detainers;"
+    *   § 9-205.f.3 "the number of persons transferred to the custody of federal immigration authorities pursuant to civil immigration detainers;"
+    *   § 9-205.f.4 "the number of persons for whom civil immigration detainers were not honored;"
+    *   § 9-205.f.5 "the number of requests from federal immigration authorities concerning a person's incarceration status, release dates, court appearance dates, scheduled appointment dates or times, or any other information related to such person, and the number of responses honoring such requests, disaggregated by: i. the number of responses to federal immigration authorities concerning a person with no convictions for a violent or serious crime... ii. the number of responses to federal immigration authorities concerning a person with at least one conviction for a violent or serious crime... iii. the number of responses to federal immigration authorities concerning a person with no convictions for a violent or serious crime who were identified as a possible match in the terrorist screening database..."
+*   **Why:** Tracks all interactions with federal immigration authorities to ensure compliance with legal requirements and for mandatory reporting.
+*   **One row represents:** A single civil immigration detainer or information request received by the department.
+*   **Covers:** All civil immigration detainers and information requests from federal immigration authorities concerning individuals under the department's purview.
+*   **Columns:** Request ID, Request Date, Request Type (Detainer, Information Request), **Probationer ID (linked to Dataset 1)**, Federal Agency Requesting, Judicial Warrant Presented (Y/N), Conviction of Violent/Serious Crime (Y/N), Terrorist Screening Database Match (Y/N), Detainer Honored (Y/N), Date Held (if detainer honored), Date Transferred to Federal Custody (if detainer honored), Information Requested (e.g., Incarceration Status, Release Dates), Information Provided (Y/N), Types of Information Provided, Transfer Facilitated (Y/N).
+
+**6. Department Programs**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:**
+    *   § 9-204 "The department of probation shall evaluate the effectiveness of each program operated by the department."
+    *   § 9-204 "(i) the amount of funding received; (ii) the number of individuals served; (iii) a brief description of the services provided, including a program’s length, requirements, and target populations, where applicable;"
+*   **Why:** Provides a master list of all programs for evaluation and reporting on services provided.
+*   **One row represents:** A single program operated by the department.
+*   **Covers:** All programs operated by the Department of Probation.
+*   **Columns:** Program ID, Program Name, Description, Target Population, Program Length, Requirements, Total Funding Received (for reporting period), Department Owner.
+
+**7. Program Participation Records**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:**
+    *   § 9-204 "(ii) the number of individuals served;"
+    *   § 9-204 "(iv) recidivism and compliance rates, if applicable, provided that such summary may calculate recidivism without using data for participants who only participated in such programming for a minimal period of time, where such period of time is identified in such summary."
+*   **Why:** Tracks individual participation in programs to assess effectiveness and calculate recidivism/compliance rates.
+*   **One row represents:** A single probationer's enrollment in a specific program.
+*   **Covers:** All probationers participating in any program operated by the department.
+*   **Columns:** Participation ID, **Probationer ID (linked to Dataset 1)**, **Program ID (linked to Dataset 6)**, Enrollment Date, Completion Date, Reason for Exit, Minimal Participation Flag (Y/N), Post-Program Recidivism Status, Post-Program Compliance Status.
+
+**8. Employee Records**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:** Implied by the need to run an agency with staff, manage payroll, and ensure certifications (from prompt instructions).
+*   **Why:** Essential for managing the department's workforce and administrative functions.
+*   **One row represents:** A single employee of the department.
+*   **Covers:** All employees of the Department of Probation.
+*   **Columns:** Employee ID, Name, Department, Job Title, Hire Date, Contact Information (Email, Phone), Employment Status (Active, Leave, Terminated).
+
+**9. Employee Certifications and Training**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:** Implied by "ensuring specialists are up to date on required certifications" (from prompt instructions).
+*   **Why:** Tracks employee qualifications and training compliance to ensure staff are equipped and legally compliant.
+*   **One row represents:** A single certification or training event for an employee.
+*   **Covers:** All certifications and mandatory training completed by department employees.
+*   **Columns:** Record ID, **Employee ID (linked to Dataset 8)**, Certification/Training Name, Issuing Body/Provider, Date Issued/Completed, Expiration Date, Status (Current, Expired, Upcoming).
+
+**10. Asset Inventory**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:** Implied by "Building repair", "computers they maintain", "MRI machines and their status" (from prompt instructions).
+*   **Why:** Manages the department's physical assets for operational efficiency and accountability.
+*   **One row represents:** A single physical asset owned or managed by the department.
+*   **Covers:** All physical assets, including buildings, vehicles, and equipment, used by the Department of Probation.
+*   **Columns:** Asset ID, Asset Type (e.g., Building, Vehicle, Computer, Office Equipment), Description, Manufacturer, Model, Serial Number, Location, Acquisition Date, Purchase Cost, Current Status (e.g., Operational, Under Repair, Retired), Department Owner.
+
+**11. Maintenance Records**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:** Implied by "Building repair", "maintenance records" (from prompt instructions).
+*   **Why:** Tracks all maintenance activities for department assets to ensure operational readiness and compliance.
+*   **One row represents:** A single maintenance event performed on an asset.
+*   **Covers:** All maintenance and repair activities for assets owned or managed by the Department of Probation.
+*   **Columns:** Maintenance ID, **Asset ID (linked to Dataset 10)**, Maintenance Date, Description of Work Performed, Service Provider (Internal/External), Cost, Next Scheduled Maintenance Date, Outcome (e.g., Repaired, Replaced, Inspected).
+
+**12. Contract Management**
+*   **OpenData Match:** Not applicable (no access to OpenData).
+*   **Quotes:** Implied by "keeping software contracts" (from prompt instructions).
+*   **Why:** Manages all contractual agreements to ensure compliance, track obligations, and manage vendor relationships.
+*   **One row represents:** A single contract entered into by the department.
+*   **Covers:** All contracts for services, software, and other agreements with external vendors.
+*   **Columns:** Contract ID, Vendor Name, Contract Type (e.g., Software License, Service Agreement, Lease), Description, Start Date, End Date, Renewal Date, Contract Value, Department Responsible, Status (Active, Expired, Terminated).
+
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations
+*   Receipts
+*   Research documents
+*   Photos
+*   Legal changes
+*   Agency policies (e.g., immigration detainer policy § 9-205.g)
+*   Court orders (e.g., for investigation fees § 9-202.b)
+*   Judicial warrants (for immigration detainers § 9-205.b.1)
+*   Guidelines issued by the New York state division of probation and correctional alternatives (§ 9-202.b)
+*   Appendix A references (L.L. 2010/029, L.L. 2016/090, L.L. 2017/226)
+*   Specific legal statutes and regulations referenced (e.g., section 257-c of the executive law, article thirty-one of the vehicle and traffic law, section 420.10 of the criminal procedure law, section 252-a of the family court act, section six hundred fifty-three of the family court act, section 70.02 of the penal law, section 70.70 of the penal law, section 308.1 of the New York family court act, section 351.6 of title 9 of the compilation of codes, rules and regulations of the state of New York, article 12 of the correction law, section 301.2 of the family court act).
+*   e-JusticeNY computer application (this is a system, not data).
