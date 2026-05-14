@@ -1,0 +1,688 @@
+**1. Financial Transactions Ledger**
+
+**Quotes:**
+*   § 11-104.a "The commissioner of finance shall keep books showing the receipts of moneys from all sources, and designating the sources of same, and also showing the amounts paid from time to time on account of the several appropriations, the forms of which shall be prescribed by the comptroller."
+*   § 11-106 "The commissioner of finance shall once in each week report in writing to the mayor and to the comptroller all moneys received by the commissioner, the amount of all warrants paid by him or her since the commissioner's last report, and the amount remaining to the credit of the city."
+*   § 11-108 "No warrant shall be signed by the comptroller or countersigned by the commissioner of finance, except upon vouchers for the expenditures of the amount named therein, duly prepared and audited according to the methods prescribed by the comptroller, and filed with the comptroller, except in the case of judgments, in which case a transcript thereof shall be filed."
+*   § 11-109 "The commissioner of finance shall exhibit his or her bank book to the comptroller on the first Tuesday of every month and oftener when required."
+*   § 11-111 "Notwithstanding any provision of the charter, any city treasury or sinking fund moneys which have been duly withdrawn from any bank or trust company upon proper warrant and check to the order of the head or heads of any agency or agencies may be redeposited by such head or heads of such agency or agencies in a properly designated deposit bank and thereafter such redeposited moneys may be withdrawn upon check signed by him or her or them without additional warrant."
+*   § 11-121.b "At close of office hours each day, the city collector shall render to the commissioner of finance or the deputy commissioner of finance in such borough, a statement of the sums so received, and at the same time pay over to such commissioner of finance or deputy commissioner of finance, the amount received on such day. The city collector shall thereupon receive from such commissioner of finance or deputy commissioner of finance a voucher for the payment of such sums which he or she shall exhibit to the comptroller not later than the next succeeding business day."
+*   § 11-121.c "At the close of office hours each day, the city collector shall also furnish a statement to the comptroller who shall file the same in his or her office. Such statement shall indicate in detail such sums so received and the respective parcels on account of which the same were paid. The comptroller shall, on each day, immediately after receiving such statement, compare it with a voucher furnished to him or her by the commissioner of finance indicating the sums which have been paid on such day to the commissioner of finance and if the aggregate amounts thereof shall correspond, shall credit the city collector in his or her books with such amount."
+
+**Why:** Essential for tracking all financial inflows and outflows, ensuring accountability, and generating required financial reports.
+
+**One row represents:** A single financial transaction (receipt, payment, warrant, withdrawal, redeposit).
+
+**Covers:** All monetary transactions handled by the Department of Finance, including tax payments, agency withdrawals, and general city receipts/payments.
+
+**Columns:**
+*   Transaction ID
+*   Transaction Date
+*   Transaction Type (e.g., Receipt, Payment, Warrant, Agency Withdrawal, Agency Redeposit)
+*   Source/Destination (e.g., Taxpayer, Agency, Bank)
+*   Amount
+*   Description/Purpose (e.g., Tax Payment, Appropriation, Judgment)
+*   **Taxpayer ID** (if applicable, links to Dataset 2)
+*   **Property ID** (if applicable, links to Dataset 4)
+*   **Agency ID** (if applicable)
+*   Warrant ID (if applicable)
+*   Voucher ID (if applicable)
+*   Bank Account ID
+*   Payment Method (e.g., Check, Credit Card, EFT)
+*   Status (e.g., Processed, Cleared, Pending)
+*   Recording User ID
+*   Borough Office (for City Collector receipts)
+
+**2. Taxpayer/Entity Registry**
+
+**Quotes:**
+*   § 11-102.1.a "The commissioner of finance in the proper discharge of his duties in the administration and collection of taxes, assessments, arrears or other charges payable to the city may require any person to furnish such identifying number as the commissioner may prescribe for securing proper identification of such person, including but not limited to a social security account number or federal employer identification number."
+*   § 11-102.1.b "Any person who fails to supply such identifying number within thirty days after written demand therefor shall be liable for a civil penalty of not more than one thousand dollars."
+*   § 11-125.g "For purposes of this section, the term "taxpayer" shall include any person liable for payment of any tax specified in subdivision a of this section."
+*   § 11-126 "When used in this title, the term "partnership" shall mean an entity classified as a partnership for federal income tax purposes, including a subchapter K limited liability company, and the term "partner" or the term "member" when used in relation to a partnership shall include a member of a subchapter K limited liability company, unless the context requires otherwise. The term "subchapter K limited liability company" shall mean a limited liability company classified as a partnership for federal income tax purposes. The term "limited liability company" means a domestic limited liability company or a foreign limited liability company, as defined in section one hundred two of the state limited liability company law, a limited liability investment company formed pursuant to section five hundred seven of the banking law, or a limited liability trust company formed pursuant to section one hundred two-a of the banking law."
+*   § 11-127.j "For purposes of this section, the term "eligible taxpayer" shall include any person liable for payment or collection of any tax or charge specified in subdivision a of this section."
+*   § 11-130.1.b ""Tax debtor" means a natural person or any entity other than a natural person named on a city tax warrant and identified thereon as a judgment debtor."
+*   § 11-131.b "For purposes of the voluntary disclosure and compliance program established under this section, an eligible taxpayer is an individual, partnership, estate, trust, corporation, limited liability company, joint stock company, or any other company, trustee, receiver, assignee, referee, society, association, business or any other person subject to a tax imposed by this title and who meets the following criteria:"
+*   § 11-132.a.6 ""Tax return preparer" means any person who prepares for compensation, or who employs or engages one or more persons to prepare for compensation, any authorized tax document. For purposes of this section, the term "tax return preparer" also includes a payroll service."
+*   § 11-133 "Where a corporation files an application for consent to dissolution with the commissioner of finance..."
+*   § 11-143 "The department shall make best efforts to collect the name, telephone number, and email address of every owner of real property in the city, or where such information is not available, the name, telephone number, and email address of an individual authorized to receive communications regarding the real property on behalf of such owner."
+
+**Why:** Centralized management of all individuals and entities interacting with the Department of Finance for tax and financial purposes.
+
+**One row represents:** A unique taxpayer or entity (individual, partnership, corporation, LLC, etc.).
+
+**Covers:** All persons and entities liable for taxes/charges, tax debtors, tax return preparers, and property owners.
+
+**Columns:**
+*   Taxpayer ID (Unique identifier)
+*   Entity Type (e.g., Individual, Partnership, Corporation, LLC, Trust, Estate, Tax Return Preparer)
+*   Legal Name / Business Name
+*   Doing Business As (DBA) Name (if applicable)
+*   Social Security Number (SSN) / Federal Employer Identification Number (FEIN) / Other Taxpayer ID
+*   Primary Contact Name
+*   Primary Contact Title
+*   Mailing Address
+*   Physical Address (if different)
+*   Phone Number
+*   Email Address
+*   Date of Registration/First Interaction
+*   Status (e.g., Active, Inactive, Dissolved)
+*   Date Identifying Number Demanded (if applicable)
+*   Identifying Number Compliance Status
+*   Civil Penalty for Non-Compliance (if applicable)
+*   **Related Taxpayer ID** (for partners, officers, members, etc., linking to other rows in this dataset)
+
+**3. Tax and Charge Liability Records**
+
+**Quotes:**
+*   § 11-102.1.a "The commissioner of finance in the proper discharge of his duties in the administration and collection of taxes, assessments, arrears or other charges payable to the city may require any person to furnish such identifying number as the commissioner may prescribe for securing proper identification of such person, including but not limited to a social security account number or federal employer identification number."
+*   § 11-118 "The duties of the bureau of city collections shall also include the collection of water rents, charges, fines and penalties in connection with the water supply, including arrears, sewer rents, sewer surcharges, charges, fines and penalties in connection with the sewer system as defined in sections 24-514 and 24-523 of the code, including arrears, interest on bonds and mortgages and revenue arising from the sale of property belonging to or managed by the city."
+*   § 11-121.a "The city collector or the deputy collector in each borough office of the city collector shall enter upon accounts, to be maintained in each such office for each parcel of property, the payment of taxes, assessments, sewer rents or water rents thereon, the amount therefor, and the date when paid."
+*   § 11-123 "In computing the amount of any interest required to be paid under section 11-224 (except subdivision j thereof), 11-224.1, 11-264, 11-306, 11-307, 11-312, 11-313, 17-151, 19-152, 24-317, 24-512, 24-605, 26-128, 26-517.1, 27-2144 or 27-4029.1 of the code, such interest shall be compounded daily."
+*   § 11-124.a "The commissioner of finance may establish a procedure for providing conciliation conferences for purposes of settling contested determinations of taxes or charges or denials of refunds or credits with respect to taxes or charges imposed under chapter five, six, seven, eight, nine, eleven, twelve, thirteen, fourteen, fifteen, twenty-one, twenty-two, twenty-four, twenty-five or twenty-seven of this title..."
+*   § 11-128.c "the commissioner may require the payment of real property taxes by electronic funds transfer for properties with annual real property tax liability equal to or greater than three hundred thousand dollars."
+*   § 11-128.h "Where the department of finance or its designee attempts to debit a taxpayer's account pursuant to a valid electronic funds transfer agreement and is unable to successfully complete the electronic funds transfer due to insufficient funds or other cause not attributable to the department of finance or its designee, in addition to any interest accruing from the late payment of taxes in accordance with applicable law, the same fee that is imposed for a dishonored check pursuant to section eighty-five of the general municipal law shall be imposed on the affected real property, and such fee may be collected in the manner provided in such section."
+*   § 11-129.a "At intervals determined by the commissioner of finance, the department of finance shall send to owners of real property a statement of account for the property, which shall represent a bill for taxes, charges and assessments, and which shall include, in a manner determined by the commissioner, a description of taxes, charges and assessments that remain unpaid on the property, and payments received by the department for taxes, charges and assessments on the property, and which may include additional information as the commissioner deems appropriate."
+*   § 11-129.1.a "No later than 45 days after the date on which each installment of real property tax is due pursuant to paragraph (b) of subdivision 2 of section 1519-a of the charter, the department of finance shall send a notification to each owner of real property with an assessed value of two hundred fifty thousand dollars or less where the amount of tax liens arising as a result of the nonpayment of taxes on such property exceeds $100."
+*   § 11-133 "Where a corporation files an application for consent to dissolution with the commissioner of finance for purposes of obtaining non-judicial dissolution under article ten of the business corporation law or article ten of the not-for-profit corporation law, such consent shall be issued by the commissioner only if the commissioner has determined that all fees, taxes, penalties and interest imposed on such corporation under chapters six, seven, eight, ten, eleven, twelve, thirteen, fourteen, fifteen, twenty-one, twenty-four, twenty-five and twenty-seven of this title have been (a) paid in full, or (b) paid pursuant to an offer in compromise pursuant to paragraph c or d of subdivision two of section fifteen hundred four of the New York city charter."
+*   § 11-136.a "No later than November first of each year, the department of finance shall submit to the council, and make available on the department's website, a report on the outstanding debt for base penalties, default penalties, and default judgments issued for notices of violations returnable to the environmental control board and referred to the department for collection during the previous fiscal year..."
+
+**Why:** To accurately track all financial obligations owed to the city, including taxes, assessments, rents, fines, and penalties.
+
+**One row represents:** A specific tax, charge, assessment, fine, or penalty liability for a given period or event.
+
+**Covers:** All types of taxes (commercial rent, utility, real property transfer, hotel room occupancy, business income, etc.), assessments, water/sewer rents, fines, and penalties.
+
+**Columns:**
+*   Liability ID
+*   **Taxpayer ID** (links to Dataset 2)
+*   **Property ID** (if applicable, links to Dataset 4)
+*   Tax/Charge Type (e.g., Real Property Tax, Commercial Rent Tax, Water Rent, Sewer Surcharge, Civil Penalty, ECB Fine)
+*   Tax Period / Event Date
+*   Original Amount Due
+*   Due Date
+*   Amount Paid
+*   Date Paid
+*   Outstanding Balance
+*   Interest Accrued
+*   Penalties Accrued
+*   Total Amount Due (Original + Interest + Penalties - Payments)
+*   Status (e.g., Due, Paid, Overdue, In Arrears, Liened, Contested, Waived)
+*   Date Status Changed
+*   Source of Liability (e.g., Assessment Roll, Tax Return, ECB Judgment)
+*   **ECB Judgment ID** (if applicable, links to Dataset 13)
+*   Refund/Credit Amount (if applicable)
+*   Refund/Credit Date (if applicable)
+*   Identifying Number Demand Status (if applicable)
+*   Civil Penalty for Identifying Number Non-Compliance (if applicable)
+
+**4. Real Property Records**
+
+**Quotes:**
+*   § 11-121.a "The city collector or the deputy collector in each borough office of the city collector shall enter upon accounts, to be maintained in each such office for each parcel of property, the payment of taxes, assessments, sewer rents or water rents thereon, the amount therefor, and the date when paid."
+*   § 11-128.c "the commissioner may require the payment of real property taxes by electronic funds transfer for properties with annual real property tax liability equal to or greater than three hundred thousand dollars."
+*   § 11-128.h "Where the department of finance or its designee attempts to debit a taxpayer's account pursuant to a valid electronic funds transfer agreement and is unable to successfully complete the electronic funds transfer due to insufficient funds or other cause not attributable to the department of finance or its designee, in addition to any interest accruing from the late payment of taxes in accordance with applicable law, the same fee that is imposed for a dishonored check pursuant to section eighty-five of the general municipal law shall be imposed on the affected real property, and such fee may be collected in the manner provided in such section."
+*   § 11-128.k.2 "Any penalty charge imposed under this subdivision shall be a lien against the real property for which the taxpayer failed to make a payment in the manner required by this section, and shall accrue interest at the same rate as is imposed on a delinquent tax on real property, to be calculated to the date of payment from the date of entry. Such lien shall be a tax lien within the meaning of sections 11-319 and 11-401 and may be sold, enforced or foreclosed in the manner provided in chapters three and four of this title."
+*   § 11-129.a "At intervals determined by the commissioner of finance, the department of finance shall send to owners of real property a statement of account for the property, which shall represent a bill for taxes, charges and assessments, and which shall include, in a manner determined by the commissioner, a description of taxes, charges and assessments that remain unpaid on the property, and payments received by the department for taxes, charges and assessments on the property, and which may include additional information as the commissioner deems appropriate."
+*   § 11-129.1.a "No later than 45 days after the date on which each installment of real property tax is due pursuant to paragraph (b) of subdivision 2 of section 1519-a of the charter, the department of finance shall send a notification to each owner of real property with an assessed value of two hundred fifty thousand dollars or less where the amount of tax liens arising as a result of the nonpayment of taxes on such property exceeds $100."
+*   § 11-134.1.a "if applying for the senior citizen homeowner exemption pursuant to section 11-245.3 of this title, a copy of government-issued identification such as a driver's license, passport or birth certificate for all owners turning sixty-five by December thirty-first in the year in which they submit the application for an exemption pursuant to such section; a copy of the previous year's federal tax returns and schedules and attachments for all owners to which the application for an exemption will apply."
+*   § 11-135.1.a "A description of the way the department determines market value and assessed value for all class one and class two property in the city of New York, and the way the property tax assessment determined by such values affects a property owner's property tax bill."
+*   § 11-140 "Not less than quarterly, the department of finance shall report to the speaker of the council and to the mayor a plan and a timeline for revocation of benefits under section 421-a of the real property tax law for each designated building for which such department received, during the reporting period, a final notice of revocation of such benefits for noncompliance with applicable affordability requirements or applicable rent registration requirements from the department of housing preservation and development pursuant to chapters 15 and 16 of title 26 of the code."
+*   § 11-141 "The department shall, prior to the first day of January, provide notice to owners of class two properties, as defined in subdivision 1 of section 1802 of the real property tax law, of their annual obligation to register any dwelling units within their building that are subject to rent stabilization, pursuant to chapter 4 of title 26, with the state division of housing and community renewal."
+*   § 11-142.a "The commissioner of finance shall designate an employee of the department of finance to serve as an ombudsperson for not-for-profit organizations that own real property."
+*   § 11-143 "The department shall make best efforts to collect the name, telephone number, and email address of every owner of real property in the city, or where such information is not available, the name, telephone number, and email address of an individual authorized to receive communications regarding the real property on behalf of such owner."
+
+**Why:** To manage all real property information, including ownership, valuation, tax liabilities, and exemption status, for accurate billing and compliance.
+
+**One row represents:** A unique parcel of real property.
+
+**Covers:** All real properties in the city, including their assessed values, market values, ownership, and tax-related attributes.
+
+**Columns:**
+*   Property ID (Borough, Block, Lot)
+*   Property Address
+*   Property Class (e.g., Class One, Class Two)
+*   Market Value
+*   Assessed Value
+*   Current Owner **Taxpayer ID** (links to Dataset 2)
+*   Owner Contact Name
+*   Owner Contact Phone
+*   Owner Contact Email
+*   Date of Ownership Transfer
+*   Annual Real Property Tax Liability
+*   EFT Payment Requirement Status (Yes/No)
+*   EFT Enrollment Status (if required)
+*   Tax Lien Status (Yes/No)
+*   Total Tax Lien Amount
+*   421-a Benefit Status (if applicable)
+*   421-a Revocation Status (if applicable)
+*   Rent Stabilization Status (for Class Two properties)
+*   Not-for-Profit Ownership Status (Yes/No)
+*   Exemption Status (e.g., Senior Citizen, Disability, STAR, Veterans, Clergy, Not-for-Profit)
+*   Last Statement of Account Sent Date
+*   Last Tax Lien Notification Sent Date
+
+**5. Property Tax Exemption Applications & Status**
+
+**Quotes:**
+*   § 11-134.1.a "if applying for the senior citizen homeowner exemption pursuant to section 11-245.3 of this title, a copy of government-issued identification such as a driver's license, passport or birth certificate for all owners turning sixty-five by December thirty-first in the year in which they submit the application for an exemption pursuant to such section; a copy of the previous year's federal tax returns and schedules and attachments for all owners to which the application for an exemption will apply. If any owner was not required to file, such applicant must submit proof of earnings, such as copies of W-2 forms, if applicable; social security benefit statements, if applicable; pension and annuity retirement income, if applicable; documentation of any unreimbursed medical or prescription expenses, if available; and any other information the commissioner deems necessary."
+*   § 11-134.1.b "if applying for the exemption for persons with disabilities pursuant to section 11-245.4 of this title, a copy of the previous year's federal tax returns and schedules and attachments for all owners to which the application for an exemption will apply. If any owner was not required to file, such applicant must submit proof of earnings, such as copies of W-2 forms, if applicable; social security benefit statements, if applicable; pension and annuity retirement income, if applicable; documentation of any unreimbursed medical or prescription expenses, if available; a copy of either an award letter from the social security administration, an award letter from the railroad retirement board or United States postal service, or a certificate from the state commission for the blind and visually handicapped; and any other information the commissioner deems necessary."
+*   § 11-134.1.c "if applying for the school tax relief exemption pursuant to section four hundred twenty-five of the real property tax law, a copy of the previous year's federal tax returns and schedules and attachments for all owners to which the application for an exemption will apply. If any owner was not required to file, such applicant must submit proof of earnings, such as copies of W-2 forms, if applicable; social security benefit statements, if applicable; pension and annuity retirement income, if applicable; and any other information the commissioner deems necessary."
+*   § 11-134.1.d "if applying for the enhanced school tax relief exemption pursuant to subdivision four of section four hundred twenty-five of the real property tax law, a copy of government-issued identification such as a driver's license, passport or birth certificate; a copy of the previous year's federal tax returns and schedules and attachments for all owners to which the application for an exemption will apply. If any owner was not required to file, such applicant must submit proof of earnings, such as copies of W-2 forms, if applicable; social security benefit statements, if applicable; pension and annuity retirement income, if applicable; and any other information the commissioner deems necessary."
+*   § 11-134.1.e "if applying for the exemption for veterans pursuant to sections four hundred fifty-eight and four hundred fifty-eight-a of the real property tax law, a copy of DD Form 214 "Certificate of Release or Discharge from Active Duty" or similar document issued by the United States Department of Defense upon a military service member's retirement, separation or discharge from active-duty military; if the applicant served in a combat zone or theater, then a copy of proof of service in such zone or theater; if disabled in a line of duty, then a copy of a letter from the Veterans Administration documenting the disability rating for such veteran seeking a property tax exemption; and any other information the commissioner deems necessary."
+*   § 11-134.1.f "if applying for the exemption for clergy pursuant to section four hundred sixty of the real property tax law, a verification letter from the church employer; in cases where such clergy member was unable to perform such work due to an illness or impairment, then a copy of a physician's statement; in the case where the clergy member is over seventy, then a copy of a government-issued identification card, birth certificate, or baptismal certificate; or in the case where the applicant is the surviving unremarried spouse of the clergy member, then a copy of the applicant's marriage certificate and a copy* the deceased spouse's death certificate; and any other information the commissioner deems necessary."
+*   § 11-134.2 "Any application for any exemption referenced in this section shall contain a certification clause that informs applicants that execution and submission of an application for an exemption referenced herein shall be deemed a certification by such applicant that all statements made on such application are true and correct to the best of the applicant's knowledge and that such applicant has made no willful false statements of material fact."
+*   § 11-142.c.1 "Any application for an exemption from real property taxation pursuant to section 420-a, 420-b, 446, or 462 of the real property tax law;"
+*   § 11-142.c.2 "Any denial, revocation or termination of such exemption;"
+
+**Why:** To process, track, and manage all applications for various property tax exemptions and ensure compliance with eligibility criteria.
+
+**One row represents:** A single application for a property tax exemption.
+
+**Covers:** Applications for Senior Citizen Homeowner Exemption, Persons with Disabilities Exemption, School Tax Relief (STAR) Exemption, Enhanced STAR Exemption, Veterans Exemption, Clergy Exemption, and Not-for-Profit Exemptions.
+
+**Columns:**
+*   Application ID
+*   Application Date
+*   Exemption Type (e.g., Senior Citizen, Disability, STAR, Enhanced STAR, Veterans, Clergy, Not-for-Profit)
+*   **Property ID** (links to Dataset 4)
+*   **Applicant Taxpayer ID** (links to Dataset 2)
+*   Applicant Name
+*   Applicant Age (for Senior Citizen, Enhanced STAR, Clergy)
+*   Applicant Income (from tax returns, W-2s, SS benefits, pensions)
+*   Unreimbursed Medical/Prescription Expenses (for Senior Citizen, Disability)
+*   Disability Status Proof (e.g., SSA award, RRB award, Blind certificate)
+*   Veteran Status Proof (DD Form 214, combat zone proof, VA disability rating)
+*   Clergy Status Proof (verification letter, physician's statement, ID/birth/baptismal certificate, marriage/death certificate for spouse)
+*   Certification of Truthfulness (Yes/No)
+*   Application Status (e.g., Submitted, In Review, Approved, Denied, Revoked, Terminated)
+*   Approval/Denial Date
+*   Reason for Denial/Revocation/Termination
+*   Effective Start Date of Exemption
+*   Effective End Date of Exemption
+*   Exemption Amount/Percentage
+*   Reviewer ID
+
+**6. Rent Increase Exemption (SCRIE/DRIE) Applications & Status**
+
+**Quotes:**
+*   § 11-137.a.1 "The commissioner of finance shall designate an employee of the department of finance to serve as the ombudsperson for the senior citizen rent increase exemption program set forth in title twenty-six of this code and designate a different employee of the department of finance to serve as the ombudsperson for the disability rent increase exemption program set forth in title twenty-six of this code."
+*   § 11-137.a.2 "Such statement, along with the name and title of the ombudsperson for the relevant rent increase exemption program, and the email address for, or a link to directly contact, such ombudsperson through the department of finance's website shall also be included on any notice issued by the department of finance pertaining to a rent increase exemption program where such notice is related to: (i) the denial, or the appeal of a denial of, such application; (ii) the termination of benefits due to the death of a tenant sent to the household or the landlord; (iii) the revocation of benefits sent to the tenant or the landlord; (iv) the denial of a tenant's application for benefit takeover; and (v) any other document deemed appropriate by the department of finance."
+*   § 11-137.c.1 "the total number of tenants estimated to be eligible for the rent increase exemption programs, disaggregated by program, enrollment status, borough, and neighborhood;"
+*   § 11-137.c.2 "for tenants enrolled in the senior citizen rent increase exemption program and in the disability rent increase exemption program, the average and median: (i) number of years receiving the rent increase exemption; (ii) household size; (iii) age; (iv) annual household income; (v) amount paid in rent by the tenant; and (vi) amount of the tax abatement credit received by the landlord on behalf of a tenant;"
+*   § 11-138.b "The department of finance shall provide any tenants enrolled in the senior citizen rent increase exemption or disability rent increase exemption program pursuant to section 26-509 with the following information: 1. the rent amount on which the benefit calculation is based; 2. an explanation that the benefit calculation is based on the legal regulated rent, except that the benefit calculation may be based on a preferential rent in the following cases: (a) the tenant pays a preferential rent pursuant to a written agreement with the landlord that states that the preferential rent will be charged for the life of the tenancy; or (b) the tenant lives in a building that has received a tax credit pursuant to section 42 of the internal revenue code; 3. the legal regulated rent amount; 4. an explanation that the tenant may continue to pay the preferential rent, in accordance with the terms of the lease, even after enrolling in the program; and 5. beginning January 1, 2018, in cases where a tenant who pays a preferential rent submits an initial or renewal application for the senior citizen rent increase exemption or disability rent increase exemption program, the preferential rent amount."
+*   § 11-138.d "No later than January 1, 2018, in cases where a tenant who pays a preferential rent submits an initial or renewal application for the senior citizen rent increase exemption or disability rent increase exemption program, the department of finance shall ensure that any computer system or database used by the department of finance for the purpose of maintaining or compiling information about applicants and beneficiaries of the program contains both the legal regulated and preferential rents."
+
+**Why:** To administer, track, and report on the Senior Citizen Rent Increase Exemption (SCRIE) and Disability Rent Increase Exemption (DRIE) programs.
+
+**One row represents:** A single application or renewal for a rent increase exemption.
+
+**Covers:** Initial applications, renewal applications, benefit takeovers, and apartment benefit transfers for SCRIE and DRIE programs.
+
+**Columns:**
+*   Application ID
+*   Application Date
+*   Exemption Program Type (SCRIE/DRIE)
+*   Application Type (Initial, Renewal, Benefit Takeover, Apartment Transfer)
+*   **Tenant Taxpayer ID** (links to Dataset 2)
+*   Tenant Name
+*   Tenant Age (for SCRIE)
+*   Tenant Disability Status (for DRIE)
+*   Tenant Household Size
+*   Tenant Annual Household Income
+*   **Property ID** (links to Dataset 4)
+*   Apartment Unit Number
+*   Landlord **Taxpayer ID** (links to Dataset 2)
+*   Legal Regulated Rent Amount
+*   Preferential Rent Amount (if applicable)
+*   Rent Amount on which Benefit Calculation is Based
+*   Benefit Calculation Amount
+*   Tax Abatement Credit Received by Landlord
+*   Application Status (e.g., Submitted, Approved, Denied, Revoked, Terminated, Appealed)
+*   Approval/Denial Date
+*   Reason for Denial/Revocation/Termination
+*   Effective Start Date of Exemption
+*   Effective End Date of Exemption
+*   Number of Years Receiving Exemption
+*   Reviewer ID
+*   Notice Sent Date (for approval, denial, termination, revocation, etc.)
+*   Building has Section 42 Tax Credit (Yes/No)
+
+**7. Payment Processing Records**
+
+**Quotes:**
+*   § 11-105.2 "The city may enter into agreements with one or more financing agencies or card issuers to provide for the acceptance by the city of credit cards as an alternate means of payment of fines, civil penalties, taxes, fees, rent, rates, charges or other amounts owed by a person to the city. Any such agreement shall govern the terms and conditions upon which a credit card proffered as a means of payment of a fine, civil penalty, tax, fee, rent, rate, charge or other amount shall be accepted or declined and the manner in and conditions upon which the financing agency or card issuer shall pay to the city the amount of fines, civil penalties, taxes, fees, rent, rates, charges or other amounts paid by means of credit cards pursuant to such agreement."
+*   § 11-105.3 "Notwithstanding any other provision of law to the contrary, any agency or department of the city which, pursuant to an agreement entered into under this section, accepts credit cards as a means of payment of fines, civil penalties, taxes, fees, rent, rates, charges or other amounts owed by a person to the city shall be authorized to charge and collect from any person offering a credit card as a means of payment of a fine a reasonable and uniform fee as a condition of accepting such credit card in payment of a fine, civil penalty, tax, fee, rent, rate, charge or other amount. Such fee shall not exceed the cost incurred by the agency or department in connection with such credit card transaction, which cost shall include any fee payable by the city to the financing agency."
+*   § 11-128.b "Notwithstanding any provision of law to the contrary, the department of finance may accept and, as authorized by this section, require payment of real property taxes by electronic funds transfer, and may authorize a designee to accept such payments. The department of finance, or its designee, may take all actions necessary to complete and administer such transactions, including but not limited to requesting and collecting necessary information and the debiting of specified accounts as provided for by this section."
+*   § 11-128.d "The owner of real property, or other person or entity authorized by such owner to pay real property taxes on real property for which payment must be made by electronic funds transfer under this section, may choose between participating in a taxpayer initiated payment program or an automatic debit program, as set forth in this subdivision and described in rules promulgated by the commissioner of finance."
+*   § 11-128.f "To administer the payment of real property taxes by electronic funds transfer by automatic debit as described in paragraph two of subdivision d of this section, the department of finance may require that the party responsible for the payment of real property taxes: 1. execute an electronic funds transfer agreement with the department of finance or its designee, on a form approved by the department of finance. Such form may be in a format designated by the commissioner, including an electronic format. The agreement shall require that the taxpayer authorize the department of finance or its designee to debit such account on the last date by which the real property taxes may be paid without the accrual of interest in accordance with applicable law; and 2. furnish the department of finance or its designee with information to enable the department of finance to complete the electronic funds transfer transaction. Such information shall include, but not be limited to, the name and address of the bank from which an electronic funds transfer shall be authorized, the account number from which the payment shall be authorized, the American Bankers Association (ABA) routing number of the bank where the taxpayer maintains an account and the borough, block and lot of the real property for which such payments are authorized."
+*   § 11-128.g "Notwithstanding any provision of law to the contrary, where real property taxes are required to be made by electronic funds transfer pursuant to subdivision c of this section, payment of real property tax by electronic funds transfer shall be deemed timely and not subject to interest charges if: 1. for taxpayers enrolled in a taxpayer initiated program pursuant to paragraph one of subdivision d of this section, (i) the taxpayer properly initiates payment on the last date by which the real property taxes may be paid without the accrual of interest in accordance with applicable law; and (ii) on the last date by which the real property taxes may be paid without the accrual of interest in accordance with applicable law, such account contains sufficient funds to enable the successful completion of the electronic funds transfer; or 2. for taxpayers enrolled in an automatic debit program pursuant to paragraph two of subdivision d of this section, (i) the department of finance or its designee has been authorized to debit the taxpayer's account on the last date by which the real property taxes may be paid without the accrual of interest in accordance with applicable law; (ii) such account is properly identified; and (iii) on the date such payment is due, such account contains sufficient funds to enable the successful completion of the electronic funds transfer."
+*   § 11-128.h "Where the department of finance or its designee attempts to debit a taxpayer's account pursuant to a valid electronic funds transfer agreement and is unable to successfully complete the electronic funds transfer due to insufficient funds or other cause not attributable to the department of finance or its designee, in addition to any interest accruing from the late payment of taxes in accordance with applicable law, the same fee that is imposed for a dishonored check pursuant to section eighty-five of the general municipal law shall be imposed on the affected real property, and such fee may be collected in the manner provided in such section."
+
+**Why:** To track all electronic and credit card payment transactions, including associated fees, agreements, and compliance with EFT requirements.
+
+**One row represents:** A single payment transaction made via credit card or electronic funds transfer (EFT).
+
+**Covers:** All credit card payments for fines, civil penalties, taxes, fees, rent, rates, charges, and all EFT payments for real property taxes.
+
+**Columns:**
+*   Payment Transaction ID
+*   Transaction Date
+*   Payment Method (Credit Card, EFT - Taxpayer Initiated, EFT - Automatic Debit)
+*   **Taxpayer ID** (links to Dataset 2)
+*   **Liability ID** (links to Dataset 3)
+*   Amount Paid
+*   Payment Status (e.g., Approved, Declined, Returned, Pending)
+*   Return Reason (for failed EFT)
+*   Associated Fee Amount (for credit card or returned EFT)
+*   Financing Agency/Card Issuer ID
+*   Agreement ID (with financing agency/card issuer)
+*   EFT Enrollment ID (for EFT payments)
+*   Bank Name (for EFT)
+*   Bank Account Number (masked) (for EFT)
+*   ABA Routing Number (for EFT)
+*   **Property ID** (for real property tax EFT, links to Dataset 4)
+*   Timely Payment Status (Yes/No)
+*   Penalty for Returned Payment (if applicable)
+
+**8. Tax Enforcement Actions**
+
+**Quotes:**
+*   § 11-102.1.b "Any person who fails to supply such identifying number within thirty days after written demand therefor shall be liable for a civil penalty of not more than one thousand dollars."
+*   § 11-128.k.1 "With respect to any real property as to which real property taxes are required to be paid by electronic funds transfer under this section, but for which an installment of real property taxes is not paid by electronic funds transfer and is paid instead by any other method, including payment by check, (i) with respect to the first installment that is paid by any other method, including payment by check, the department of finance shall mail a warning notice to the taxpayer setting forth the requirement to make payment by electronic funds transfer and the penalties for failure to do so; and (ii) with respect to each and every subsequent installment that is paid by any other method, including payment by check, the department of finance shall impose a penalty charge in the amount of one percent of the amount of the tax installment that was required under this section to be paid by electronic funds transfer."
+*   § 11-128.k.2 "Any penalty charge imposed under this subdivision shall be a lien against the real property for which the taxpayer failed to make a payment in the manner required by this section, and shall accrue interest at the same rate as is imposed on a delinquent tax on real property, to be calculated to the date of payment from the date of entry. Such lien shall be a tax lien within the meaning of sections 11-319 and 11-401 and may be sold, enforced or foreclosed in the manner provided in chapters three and four of this title."
+*   § 11-130.2.a "To assist the commissioner of finance in the collection of debts, the department of finance shall develop and operate a financial institution data match system for the purpose of identifying and seizing the non-exempt assets of tax debtors as identified by the commissioner of finance."
+*   § 11-130.3 "Each financial institution shall provide identifying information each calendar quarter to the department of finance for each tax debtor identified by the department who or that maintains an account at the institution. The identifying information shall include the tax debtor's name, address, and social security number or other taxpayer identification number, and all account numbers and balances in each account."
+*   § 11-130.5 "Both the financial institution furnishing a report to the commissioner under this section and the commissioner's authorized designee are prohibited from disclosing to the tax debtor that the name of the tax debtor has been received from or furnished to the commissioner, unless authorized in writing by the commissioner to do so. A violation of this subdivision will result in the imposition of a civil penalty equal to the greater of one thousand dollars or the amount in the account of the person to whom the disclosure was made for each instance of unauthorized disclosure by the financial institution."
+*   § 11-132.e.1 "If a tax return preparer is required to file authorized tax documents electronically pursuant to subdivision b of this section, and that preparer fails to file one or more of those documents electronically, then that preparer will be subject to a penalty of fifty dollars for each failure to electronically file an authorized tax document, unless it is shown that the failure is due to reasonable cause and not due to willful neglect."
+*   § 11-132.e.2 "If a taxpayer is required to electronically pay any tax liability or other amount due shown on, or required to be paid with, an authorized tax document required to be filed electronically pursuant to subdivision b or c of this section, and that taxpayer fails to electronically pay one or more of those liabilities or other amounts due, then that taxpayer will be subject to a penalty of fifty dollars for each failure to electronically pay."
+
+**Why:** To track all enforcement actions taken against taxpayers, including penalties, data match activities, and tax liens, for compliance and collection.
+
+**One row represents:** A single enforcement action or data match event.
+
+**Covers:** Civil penalties for non-compliance with identifying number requests, EFT payment non-compliance, electronic filing/payment non-compliance, financial institution data match requests, and associated penalties.
+
+**Columns:**
+*   Enforcement Action ID
+*   Action Date
+*   Action Type (e.g., Civil Penalty, Data Match Request, Tax Lien Imposition, Warning Notice)
+*   **Taxpayer ID** (links to Dataset 2)
+*   **Liability ID** (links to Dataset 3)
+*   **Property ID** (if applicable, links to Dataset 4)
+*   Reason for Action (e.g., Failure to provide ID, EFT non-compliance, E-filing non-compliance, Delinquent Tax Debt)
+*   Penalty Amount Imposed
+*   Penalty Payment Status
+*   Date Penalty Paid
+*   Data Match Request Date
+*   Financial Institution ID (for data match)
+*   Account Information Received (Yes/No)
+*   Account Numbers Identified (masked)
+*   Account Balances Identified
+*   Disclosure Violation Penalty (if applicable)
+*   Tax Lien Date
+*   Tax Lien Amount
+*   Tax Lien Status (e.g., Active, Sold, Foreclosed, Released)
+*   Warning Notice Sent Date (for EFT non-compliance)
+
+**9. Conciliation Conference Records**
+
+**Quotes:**
+*   § 11-124.a "The commissioner of finance may establish a procedure for providing conciliation conferences for purposes of settling contested determinations of taxes or charges or denials of refunds or credits with respect to taxes or charges imposed under chapter five, six, seven, eight, nine, eleven, twelve, thirteen, fourteen, fifteen, twenty-one, twenty-two, twenty-four, twenty-five or twenty-seven of this title, or for the purpose of settling disputes arising from the notification of the refusal to grant, the suspension or the revocation of a license issued pursuant to chapter thirteen of this title. If such a procedure is established, a conciliation conference shall be provided at the option of any taxpayer or any other person subject to the provisions of any of such chapters. For purposes of this subdivision, if the commissioner of finance fails to act with respect to a refund application before the expiration of the time period after which the taxpayer may file a petition for refund with the tax appeals tribunal established by section one hundred sixty-eight of the charter pursuant to subdivision (c) of section 11-529 or subdivision three of section 11-680 of the code, such failure shall be deemed to be the denial of a refund."
+*   § 11-124.b "A request for a conciliation conference shall be made in the manner set forth in rules promulgated by the commissioner of finance and, notwithstanding any provision of law to the contrary, shall suspend the running of the period of limitations for the filing of a petition with the tax appeals tribunal under chapter five, six, seven, eight, nine, eleven, twelve, thirteen, fourteen, fifteen, twenty-one, twenty-two, twenty-four, twenty-five or twenty-seven of this title until such time as a conciliation decision is rendered by the commissioner of finance, or until the person who requested the conciliation conference makes a written request to discontinue or withdraw from the conciliation proceeding."
+*   § 11-124.c "Nothing contained herein shall prevent any taxpayer or any other person who has received a notice of determination, notice of deficiency or notice of denial of a claim for refund from filing a petition with the tax appeals tribunal if the time for filing such a petition has not elapsed."
+
+**Why:** To manage and track requests for conciliation conferences, their outcomes, and their impact on the statute of limitations for tax appeals.
+
+**One row represents:** A single request for a conciliation conference.
+
+**Covers:** All requests for conciliation conferences regarding contested tax/charge determinations, refund denials, or license disputes.
+
+**Columns:**
+*   Conference Request ID
+*   Request Date
+*   **Taxpayer ID** (links to Dataset 2)
+*   **Liability ID** (if applicable, links to Dataset 3)
+*   Dispute Type (e.g., Tax Determination, Refund Denial, License Refusal/Suspension/Revocation)
+*   Tax/Charge Chapter Involved
+*   Date of Notice of Determination/Deficiency/Denial
+*   Conference Date
+*   Conciliator ID
+*   Conference Outcome (e.g., Settled, Withdrawn, Decision Rendered, Referred to Tax Appeals Tribunal)
+*   Settlement Amount (if applicable)
+*   Decision Date
+*   Impact on Statute of Limitations (e.g., Suspended, Resumed)
+*   Date of Suspension/Resumption
+*   Withdrawal Request Date (if applicable)
+
+**10. Amnesty and Voluntary Disclosure Program Records**
+
+**Quotes:**
+*   § 11-125.a "Notwithstanding any other provision of law to the contrary, the commissioner of finance shall establish a three-month amnesty program, to be effective during the fiscal year of the city beginning July first, nineteen hundred ninety-four, for all taxpayers owing any commercial rent or occupancy tax imposed by chapter seven of this title, utility tax imposed by chapter eleven of this title, real property transfer tax imposed by chapter twenty-one of this title or hotel room occupancy tax imposed by chapter twenty-five of this title. Such amnesty program shall apply, (1) in the case of the commercial rent or occupancy tax, to tax liabilities for tax periods ending on or before May thirty-first, nineteen hundred ninety-three, (2) in the case of the utility tax, to tax liabilities for tax periods ending on or before March thirty-first, nineteen hundred ninety-four, (3) in the case of the real property transfer tax, to tax liabilities arising out of taxable events occurring before April first, nineteen hundred ninety-four and (4) in the case of the hotel room occupancy tax, to tax liabilities for tax periods ending on or before February twenty-eighth, nineteen hundred ninety-four. Amnesty tax return forms shall be in a form prescribed by the commissioner of finance and shall provide for specifications by the taxpayer of the tax and the taxable period or taxable event for which amnesty is being sought. The taxpayer must also provide such additional information as is required by the commissioner of finance. Amnesty shall be granted only for the tax and taxable periods or taxable events specified by the taxpayer on such forms (hereinafter referred to as "designated taxes")."
+*   § 11-125.b "Such amnesty program shall provide that upon written application by any taxpayer, and upon evidence of payment to the city of New York by such taxpayer of all designated taxes plus interest, the commissioner of finance shall waive any penalties which may be applicable, and no civil, administrative or criminal action or proceeding shall be brought against the taxpayer relating to the designated taxes plus interest. Failure to pay all designated taxes plus interest shall invalidate any amnesty granted pursuant to this section."
+*   § 11-125.c "Amnesty shall not be granted to any taxpayer who is the subject of any criminal investigation being conducted by any agency of the city of New York or of the state of New York or any political subdivision thereof or to any taxpayer who is a party to any civil or criminal litigation which is pending on the date of the taxpayer's application in any court of this state or the United States for nonpayment, delinquency or fraud in relation to any of the designated taxes plus interest. A civil litigation shall not be deemed to be pending if the taxpayer withdraws from such litigation prior to the granting of amnesty."
+*   § 11-127.a "Notwithstanding any other provision of law to the contrary, the commissioner of finance shall establish a three-month amnesty program, to be effective during the fiscal year of the city beginning July first, two thousand three for taxpayers owing taxes or charges imposed, or formerly imposed by the above enumerated chapters of this title. Such amnesty program shall apply to tax liabilities for taxable periods ending, or transactions occurring, on or before December thirty-first, two thousand one. Amnesty applications and tax return forms shall be in a form prescribed by the commissioner of finance and shall provide for specifications by the taxpayer of the tax and taxable period or taxable event for which amnesty is being sought. The taxpayer must also provide such additional information as is required by the commissioner of finance. Amnesty shall be granted only for liabilities for taxes and charges imposed or formerly imposed under the above chapters for the taxable periods or taxable events specified by the taxpayer on such forms (hereinafter referred to as "designated taxes")."
+*   § 11-127.b "Such amnesty program shall provide that upon written application by the taxpayer, and upon evidence of payment to the city of New York by such taxpayer of all designated taxes plus interest as provided in subdivision c of this section, the commissioner of finance shall waive any penalties that may be applicable. Such commissioner shall also waive any amount of interest that would be applicable in the absence of this amnesty program in excess of the amount required to be paid pursuant to subdivision c of this section. No civil, administrative or criminal action or proceeding shall be brought against the taxpayer relating to the designated taxes plus interest required by this amnesty program. Failure to pay all designated taxes plus interest required by this amnesty program shall invalidate any amnesty granted pursuant to this program."
+*   § 11-127.d "If a taxpayer received any benefit either under the amnesty program established by section 11-125 of this chapter, or the amnesty program established by section eighty-four of chapter seven hundred sixty-five of the laws of nineteen hundred eighty-five, with respect to a liability for any tax or charge, such taxpayer shall not be eligible for amnesty under the program established by this section for any liability for that same tax or charge for the same or any other tax period."
+*   § 11-127.e "Amnesty shall not be granted to a taxpayer who is the subject of any criminal investigation being conducted by an agency of the city of New York or the state of New York or any political subdivision thereof; or to any taxpayer who is a party to any criminal litigation that is pending on the date of the taxpayer's amnesty application in any court of this state or the United States, for nonpayment, delinquency or fraud in relation to any of the designated taxes. Amnesty shall also not be granted to any taxpayer that has been convicted of a crime relating to a designated tax. Amnesty shall not be granted to any taxpayer with respect to liabilities for taxes or charges to the extent that the taxpayer's liability for such taxes or charges was the subject of an audit pending with the city of New York department of finance on March tenth, two thousand three. Amnesty shall not be available to a taxpayer for any liability for a designated tax, penalty or interest that is the subject of an existing installment payment agreement on the day this amnesty program begins. Amnesty shall be available to any taxpayer who is a party to an administrative proceeding or civil litigation commenced in the city of New York department of finance conciliation bureau, the tax appeals tribunal or any court of this state and pending on the date of the taxpayer's amnesty application with respect to a matter that is the subject of such proceeding or litigation, provided the taxpayer withdraws from such proceeding or litigation prior to the granting of amnesty and the proceeding or litigation does not involve a matter that was the subject of an audit pending with the city of New York department of finance on March tenth, two thousand three."
+*   § 11-131.a "Notwithstanding the provisions of any other law to the contrary, there is hereby established a voluntary disclosure and compliance program, as described in this section, to be administered by the commissioner, for all eligible taxpayers as described in this section, owing any tax imposed or previously imposed under this title."
+*   § 11-131.b "For purposes of the voluntary disclosure and compliance program established under this section, an eligible taxpayer is an individual, partnership, estate, trust, corporation, limited liability company, joint stock company, or any other company, trustee, receiver, assignee, referee, society, association, business or any other person subject to a tax imposed by this title and who meets the following criteria: (1) the taxpayer is not currently under audit by the department; (2) the taxpayer is one who is voluntarily disclosing a New York city tax liability that the department has not determined, calculated, researched or identified at the time of the disclosure; (3) the taxpayer is not currently a party to any criminal investigation being conducted by an agency of the state or any political subdivision thereof; and (4) the taxpayer is not seeking to disclose participation in a tax avoidance transaction that is a federal or New York state reportable or listed transaction."
+*   § 11-131.c "Under the voluntary disclosure and compliance program, upon execution of a voluntary disclosure and compliance agreement by the eligible taxpayer and the commissioner, the commissioner shall waive any applicable penalties for the following: (1) failure to pay any such tax liability; (2) failure to file a return or report with respect to any such tax liability; and (3) failure to pay estimated tax. In addition, no criminal action or proceeding shall be brought against an eligible taxpayer relating to the tax liability covered by the agreement. This agreement shall not preclude the auditing of the returns filed to determine if those returns were completed in accordance with existing law and regulation. Intentional failure to pay all the taxes, plus related interest, pursuant to the voluntary disclosure and compliance agreement entered into between the taxpayer and the commissioner, shall invalidate any waiver of penalty, invalidate the forbearance of any administrative or criminal action or proceeding."
+*   § 11-131.e.1 "If the taxpayer and the tax liability are eligible under the voluntary disclosure and compliance program, the commissioner is authorized to enter into a voluntary disclosure and compliance agreement with the taxpayer. A voluntary disclosure and compliance agreement will be in a form to be established by the commissioner and include such terms as the commissioner may reasonably require to satisfy the taxpayer's disclosed tax obligations and enable and require the taxpayer to comply with the applicable provisions of this title in the future. The taxpayer must pay the tax and the related interest that are the subject of the voluntary disclosure and compliance agreement when the agreement is executed or within the time stated on a bill issued to the taxpayer by the commissioner. In the event the commissioner is satisfied that the taxpayer cannot make immediate full payment of the disclosed tax liability, the commissioner may enter into an installment payment program with the taxpayer for the payment of the tax and interest due. The commissioner may require a financial disclosure statement setting forth information concerning the taxpayer's current assets, liabilities, earnings, and other financial information before entering into an installment payment plan with the taxpayer. In addition to any other information and terms that the commissioner determines are appropriate, the voluntary disclosure and compliance agreement shall provide that, if the taxpayer complies with the terms of the compliance agreement, the taxpayer will not be subject to any criminal tax prosecution in New York city for the conduct disclosed by the taxpayer."
+
+**Why:** To manage and track applications, eligibility, payments, and outcomes for all tax amnesty and voluntary disclosure programs.
+
+**One row represents:** A single application or agreement under an amnesty or voluntary disclosure program.
+
+**Covers:** All amnesty programs (1994, 2003, hotel operators) and the ongoing voluntary disclosure and compliance program.
+
+**Columns:**
+*   Program Application ID
+*   Program Type (e.g., Amnesty 1994, Amnesty 2003, Hotel Amnesty, Voluntary Disclosure)
+*   Application Date
+*   **Taxpayer ID** (links to Dataset 2)
+*   Designated Tax Type
+*   Taxable Period / Event
+*   Original Tax Liability Amount
+*   Calculated Interest Amount (under program rules)
+*   Total Payment Required (Tax + Interest)
+*   Payment Date
+*   Payment Status (e.g., Paid in Full, Installment Plan)
+*   Penalties Waived (Yes/No)
+*   Interest Waived (Yes/No, and amount)
+*   Application Status (e.g., Submitted, Approved, Denied, Rescinded)
+*   Approval/Denial/Rescission Date
+*   Reason for Denial/Rescission
+*   Eligibility Criteria Met (e.g., Not under audit, No criminal investigation, No pending litigation, Not previously amnestied for same tax)
+*   Withdrawal from Litigation/Proceeding Date (if applicable)
+*   Audit Pending on Cutoff Date (Yes/No, for 2003 amnesty)
+*   Existing Installment Agreement (Yes/No, for 2003 amnesty)
+*   Hotel Operator Registration Status (for Hotel Amnesty)
+*   Number of Hotel Rooms (for Hotel Amnesty)
+*   Financial Disclosure Statement Received (for Voluntary Disclosure installment plan)
+*   Compliance Agreement ID (for Voluntary Disclosure)
+*   Intentional False Information/Evasion (Yes/No, for Voluntary Disclosure rescission)
+
+**11. Electronic Filing and Payment Compliance Records**
+
+**Quotes:**
+*   § 11-132.b "The commissioner may, by rule, require that if a tax return preparer prepared more than one hundred original tax documents during any calendar year beginning on or after January first, two thousand nine, and if, in any succeeding calendar year that tax return preparer prepares one or more authorized tax documents using tax software, then, for that succeeding calendar year and for each subsequent calendar year thereafter, all authorized tax documents prepared by that tax return preparer must be filed electronically, in accordance with instructions prescribed by the commissioner."
+*   § 11-132.c "The commissioner may, by rule, require that if a taxpayer does not utilize a tax return preparer to prepare an authorized tax document during any calendar year beginning on or after January first, two thousand ten, but instead prepares that document itself using tax software, then, for that calendar year and for each subsequent calendar year thereafter, all authorized tax documents prepared by the taxpayer using tax software must be filed electronically, in accordance with instructions prescribed by the commissioner."
+*   § 11-132.d "The commissioner may, by rule, require that any tax liability or other amount due shown on, or required to be paid with, an authorized tax document required to be filed electronically pursuant to subdivision b or c of this section must be paid by the taxpayer electronically, in accordance with instructions prescribed by the commissioner."
+*   § 11-132.e.1 "If a tax return preparer is required to file authorized tax documents electronically pursuant to subdivision b of this section, and that preparer fails to file one or more of those documents electronically, then that preparer will be subject to a penalty of fifty dollars for each failure to electronically file an authorized tax document, unless it is shown that the failure is due to reasonable cause and not due to willful neglect. For purposes of this paragraph, reasonable cause shall include, but not be limited to, a taxpayer's election not to electronically file the authorized tax document."
+*   § 11-132.e.2 "If a taxpayer is required to electronically pay any tax liability or other amount due shown on, or required to be paid with, an authorized tax document required to be filed electronically pursuant to subdivision b or c of this section, and that taxpayer fails to electronically pay one or more of those liabilities or other amounts due, then that taxpayer will be subject to a penalty of fifty dollars for each failure to electronically pay."
+
+**Why:** To monitor compliance with mandatory electronic filing and payment requirements for tax documents and impose penalties for non-compliance.
+
+**One row represents:** A single tax document filing or payment transaction subject to electronic requirements.
+
+**Covers:** All authorized tax documents and associated payments required to be filed/paid electronically by tax return preparers and taxpayers using tax software.
+
+**Columns:**
+*   Compliance Record ID
+*   Tax Document ID (internal reference to the filed document)
+*   **Taxpayer ID** (links to Dataset 2)
+*   **Tax Return Preparer ID** (if applicable, links to Dataset 2)
+*   Tax Document Type
+*   Tax Period
+*   Filing Due Date
+*   Payment Due Date
+*   Required Electronic Filing (Yes/No)
+*   Actual Filing Method (Electronic/Paper)
+*   Electronic Filing Compliance Status (Yes/No)
+*   Reasonable Cause for Non-Compliance (if applicable)
+*   Electronic Filing Penalty Imposed (Yes/No)
+*   Electronic Filing Penalty Amount
+*   Required Electronic Payment (Yes/No)
+*   Actual Payment Method (Electronic/Other)
+*   Electronic Payment Compliance Status (Yes/No)
+*   Electronic Payment Penalty Imposed (Yes/No)
+*   Electronic Payment Penalty Amount
+*   Date Penalty Assessed
+*   Penalty Payment Status
+
+**12. Child Care Tax Credit Applications**
+
+**Quotes:**
+*   § 11-144.a.1 ""Child care program." The term "child care program" means a child care program for which a permit to operate such program has been issued by the department of health and mental hygiene pursuant to article forty-seven of the health code."
+*   § 11-144.a.2 ""Child care rate." The term "child care rate" means the weekly child care subsidy market rates, based on the sixty-ninth percentile of the 2017-18 New York state child care market rate survey, for infant and toddler care provided by a permitted day care center in county cluster five, as reflected in the 2019 child care market rate survey report published by the New York state office of children and family services in compliance with section 98.45 of title forty-five of the code of federal regulations, provided that the department of finance may, by rule, revise such rates based on subsequent editions of the child care market rate survey report, as published by such office, or any other similar report published by such office in compliance with such section."
+*   § 11-144.a.3 ""Child care seats." The term "child care seats" means the maximum number of children to be allowed on the premises of a child care program at any time that such program is in operation as specified on the permit issued for such program by the department of health and mental hygiene."
+*   § 11-144.a.4 ""Child care seats that are occupied." The term "child care seats that are occupied" means, for each service year in which a child care program is in operation, the average daily number of children in attendance on the premises of such child care program."
+*   § 11-144.a.5 ""Creates child care." The term "creates child care" means the making available of child care seats in a child care program by a taxpayer, directly or through a third party, for employees of such taxpayer, where such child care program was not available prior to April first, two thousand twenty-two, provided that the costs imposed on such employees for such child care program do not exceed forty percent of the child care rate."
+*   § 11-144.a.6 ""Expands child care." The term "expands child care" means the increase in the number of child care seats in a child care program made available by a taxpayer, directly or through a third party, for employees of such taxpayer, provided that such increase requires a new or amended permit issued by the department of health and mental hygiene pursuant to article forty-seven of the health code on or after April first, two thousand twenty-two, and, provided, further, that the costs imposed on such employees for such child care program do not exceed forty percent of the child care rate."
+*   § 11-144.a.7 ""Service year." The term "service year" means the twelve-month period commencing on October first and ending on September thirtieth in the subsequent calendar year."
+*   § 11-144.b "Credit allowed. A taxpayer that creates child care or expands child care shall be allowed a credit against the tax imposed by chapter five, or by subchapter two or three-a of chapter six, of this title to be credited or refunded, without interest, in accordance with the provisions of subdivision (q) of section 11-503, subdivision twenty-three of section 11-604 and subdivision twenty-three of section 11-654 of this title. The amount of such credit shall be, for the portion of the service year in which the child care program was in operation, the sum of: (i) the product of the number of infant child care seats that have been created or expanded and twenty percent of the child care rate for such infant child care seats; and (ii) the product of the number of toddler child care seats that have been created or expanded and twenty percent of the child care rate for such toddler child care seats; provided that such infant and toddler child care seats are child care seats that are occupied. Notwithstanding the preceding sentence, a credit shall not be allowed for more than twenty-five child care seats that are occupied, and the amount of such credit may be reduced as a result of an allocation of available funds, as described in subdivision e of this section, for such credit."
+*   § 11-144.c "Application process. A taxpayer must submit an application for such credit by November first of the calendar year in which the service year has ended. 1. Such application shall include but not be limited to: (a) a permit issued by the department of health and mental hygiene to operate a child care center indicating the number of child care seats or, in the case of a child care center that has experienced an expansion of child care seats, a permit issued by such department demonstrating such expansion; and (b) a certification from an independent certified public accountant that provides: (1) the total number of child care seats that are child care seats that are occupied during such service year; (2) of such total number of child care seats that are occupied, the number of infant child care seats that are occupied and the number of toddler child care seats that are occupied; and (3) to the extent the taxpayer has expanded child care, the number of child care seats in existence before such expansion and the number of such child care seats that were occupied before such expansion. 2. No later than January thirty-first of the calendar year following the calendar year in which the application was submitted, the department of finance shall approve or deny such application and provide a calculation of the amount of such credit as determined by subdivision e of this section for any application that has been approved."
+*   § 11-144.e "Maximum amount of credit available. For each of the three tax years in which the credit authorized by this section is available, the aggregate amount of such credit shall be a maximum of twenty-five million dollars. To the extent that the department of finance has determined that the aggregate amount of such credit, as calculated pursuant to subdivision b of this section, would exceed twenty-five million dollars, such department shall reduce the amount of credit to be granted to each taxpayer who has applied for such credit in accordance with a process to be developed in rules promulgated by such department. In developing such process, the department may consider factors including, but not limited to, the date of application, the number of child care seats in a child care program that are occupied, and the extent to which the taxpayer bears the cost of the child care that is provided to the employees of such taxpayer."
+
+**Why:** To administer and track applications for the child care credit, verify eligibility, calculate credit amounts, and manage the aggregate credit cap.
+
+**One row represents:** A single application for the child care tax credit for a specific service year.
+
+**Covers:** All applications for the child care credit against business income taxes.
+
+**Columns:**
+*   Application ID
+*   Application Date
+*   **Taxpayer ID** (links to Dataset 2)
+*   Service Year (e.g., 2022-2023)
+*   Child Care Program Name
+*   Child Care Program Permit ID (from DOHMH)
+*   Permit Issue Date
+*   Permit Type (New/Amended for expansion)
+*   Child Care Action (Creates Child Care/Expands Child Care)
+*   Cost to Employees (Percentage of Child Care Rate)
+*   Total Child Care Seats (as per permit)
+*   Number of Infant Child Care Seats (as per permit)
+*   Number of Toddler Child Care Seats (as per permit)
+*   Average Daily Occupied Seats (Total)
+*   Average Daily Occupied Infant Seats
+*   Average Daily Occupied Toddler Seats
+*   Pre-Expansion Child Care Seats (if applicable)
+*   Pre-Expansion Occupied Seats (if applicable)
+*   CPA Certification Received (Yes/No)
+*   Calculated Credit Amount (before allocation)
+*   Approved Credit Amount (after allocation)
+*   Application Status (e.g., Submitted, Approved, Denied)
+*   Approval/Denial Date
+*   Tax Year Applied To
+*   Taxpayer Cost Bearing Factor (for allocation)
+*   Reviewer ID
+
+**13. ECB Violation Judgments**
+
+**Quotes:**
+*   § 11-136.a "No later than November first of each year, the department of finance shall submit to the council, and make available on the department's website, a report on the outstanding debt for base penalties, default penalties, and default judgments issued for notices of violations returnable to the environmental control board and referred to the department for collection during the previous fiscal year, and base penalties, default penalties, and default judgments issued for notices of violations returnable to the environmental control board and referred to the department for collection that remain in full force and effect, pursuant to subparagraph (i) of paragraph one of subdivision d of section 1049-a of the charter. Such report shall include: (1) the total number of judgments referred to the department by the environmental control board, including the number of default judgments; (2) the total dollar amount of judgments referred to the department, disaggregated by base penalty, interest, and default penalty; (3) the average length of time for referral of a judgment from the environmental control board to the department; (4) the total dollar amount collected by the department for judgments; (5) an analysis of the length of time for collection of judgments described in paragraph four; (6) the total number of judgments that require corrective action by a respondent; (7) the enforcement efforts used by the department to collect judgments described in paragraph four; and (8) the total number of judgments that are no longer in full force and effect, pursuant to subparagraph (i) of paragraph one of subdivision d of section 1049-a of the charter, and the total dollar amount of such judgments. The department shall disaggregate the information required by paragraphs one through eight of this subdivision by the agency in which the notice of violation originated, and the fiscal year in which the judgment was entered."
+*   § 11-136.b ""Base penalty" means, with respect to any notice of violation returnable to the environmental control board, the penalty that would be imposed upon a timely admission by the respondent or finding of liability after a hearing, pursuant to the environmental control board penalty schedule, without regard to reductions of penalty in cases of mitigation or involving stipulations. "Default judgment" means a judgment of the environmental control board, pursuant to subparagraph (d) of paragraph one of subdivision d of section 1049-a of the charter, determining a respondent's liability based upon that respondent's failure to plead within the time allowed by the rules of the environmental control board or failure to appear before the environmental control board on a designated hearing date or on a subsequent date following an adjournment. "Default penalty" means a penalty imposed by the environmental control board, pursuant to section 1049-a of the charter, in the maximum amount prescribed by law for the violation charged. "Respondent" means a person or entity named as the subject of a notice of violation returnable to, or a judgment issued by, the environmental control board, or such other person or entity who asserts legal responsibility for the liability of the person or entity named in the notice or the judgment."
+
+**Why:** To track all Environmental Control Board (ECB) judgments referred to the Department of Finance for collection, including penalties, collection efforts, and status.
+
+**One row represents:** A single ECB judgment referred to the Department of Finance.
+
+**Covers:** All ECB judgments, including default judgments, referred for collection.
+
+**Columns:**
+*   ECB Judgment ID
+*   Notice of Violation ID
+*   Referral Date to DOF
+*   Fiscal Year Judgment Entered
+*   **Respondent Taxpayer ID** (links to Dataset 2)
+*   Originating Agency of Violation
+*   Judgment Type (e.g., Base Penalty, Default Judgment)
+*   Base Penalty Amount
+*   Default Penalty Amount (if applicable)
+*   Interest Amount (as of referral)
+*   Total Judgment Amount (as of referral)
+*   Current Outstanding Debt
+*   Collection Status (e.g., Active, Collected, Partially Collected, No Longer in Force)
+*   Date Collection Status Changed
+*   Collection Efforts Used (e.g., Lien, Levy, Payment Plan)
+*   Amount Collected
+*   Date of Last Collection
+*   Requires Corrective Action (Yes/No)
+*   Length of Time for Referral (days)
+*   Length of Time for Collection (days, if collected)
+
+**14. Official Bonds and Authorizations**
+
+**Quotes:**
+*   § 11-103 "The commissioner and any deputy commissioner of finance, within ten days after receiving notice of his or her appointment and before the commissioner enters upon his or her office, shall give a bond to the city and to the people of the state of New York in the sum of three hundred thousand dollars, with not less than four sufficient sureties to be approved by the comptroller, conditioned that he or she will faithfully discharge the duties of the commissioner's office and all trusts imposed on him or her by law in virtue of the commissioner's office, including all duties in connection with the tax on mortgages as prescribed by article eleven of the tax law. Such bond shall be deemed to extend to the faithful execution of the duties of the office until a new appointment shall be made and confirmed, and the person so appointed enters upon the performance of the commissioner's duties. In case of any official misconduct or default on the part of such commissioner or any deputy commissioner of finance, or their subordinates, an action upon such bond may be begun and prosecuted to judgment by the city, which, after first paying therefrom the expenses of the litigation, shall cause the proceeds of such judgment to be distributed as shall be lawful and equitable among the persons and objects injured or defrauded by such official misconduct or default of the commissioner or any deputy commissioner of finance or any of their subordinates."
+*   § 11-112 "Notwithstanding any provision of the charter, the comptroller or commissioner of finance may designate and authorize any deputies, assistant deputies, or employees to sign, each in his or her own name and in place of and for the comptroller or commissioner of finance, respectively, any or all checks or warrants, including those issued against sinking fund and trust fund bank accounts. A warrant or check so signed shall be of the same force and effect as if signed by the comptroller or commissioner of finance, respectively. The designation or designations of deputies shall be made in writing in the manner set forth in section ninety-four of the charter. The designation or designations of assistant deputies or employees shall be in writing, signed in duplicate by the comptroller or the commissioner of finance, respectively, and shall be duly filed and remain of record in the office of the comptroller and the department of finance. The period for which each such designation of deputies, assistant deputies and employees shall continue in force shall be specified therein and may be terminated by the comptroller or commissioner of finance, respectively, at any time by filing in the same office or offices in which the designation has been filed a written notice of such termination signed by the comptroller or commissioner of finance, respectively."
+*   § 11-113 "Notwithstanding any provision of the charter, checks drawn upon any bank or trust company for payment of payrolls or disbursements for relief, required to be signed by the head of an agency or his or her authorized designee, may be signed by the facsimile signature or signatures of the person or persons authorized to sign such checks, if the head of such agency so authorizes by an instrument in writing signed by the head of such agency and filed with the comptroller; and, in such event, any bank or trust company shall, acting in good faith and without notice of any defect or invalidity, be authorized to pay and be protected in paying any checks bearing or purporting to bear the facsimile signature or signatures of the person or persons duly authorized to sign such checks, regardless of the person by whom or the means by which the actual or purported facsimile signature or signatures thereon may have been affixed thereto, if such facsimile signature or signatures closely resemble the facsimile specimens from time to time filed with such banks or trust companies by the head of the agency in question; provided, however, that nothing herein contained shall release such bank or trust company from any liability arising from any cause or fact other than the fact that such facsimile signature is not a genuine facsimile signature affixed with appropriate authority."
+*   § 11-115 "The commissioner of finance shall appoint the city collector. The city collector, before entering upon the duties of his or her office, shall enter into a bond to the city of New York to be approved by the commissioner of finance and comptroller in the penal sum of twenty-five thousand dollars, which bond shall be conditioned for the faithful performance of the duties of the office by the officer giving such bond. Such bond shall be a lien on all the real estate held by the collector executing the same, or any surety thereto, within any of the counties in the city at the time of the filing thereof, unless there be named and described in or on any such bond, real estate in one or more of such counties equal in value to the amount of such bond and owned by a surety, in which case the bond shall be a lien on such real estate so described and upon all the real estate of such city collector, and no other, and shall continue to be such lien until the condition, together with all costs and charges which may accrue by the prosecution thereof, shall be fully satisfied, or until such lien be released, not to exceed, however, the period of ten years after the time when the officer who has given such bond shall have ceased to hold his or her office, unless an action thereon has been commenced and shall then be pending."
+*   § 11-116 "The city collector shall take from each deputy a bond, in such penal sum and with such sureties as may be approved by the city collector and by the comptroller and commissioner of finance, which bond shall run to the city collector, the city and to whom it may concern, and shall be conditioned for the faithful performance of the duties of such deputy. Each bond taken in pursuance of the provisions of this section shall be filed with the comptroller. Each deputy collector shall have all the powers and be subject to all the duties of the city collector in respect to the collection and receipt of taxes, assessments, water rents and arrears."
+*   § 11-117 "If at any time during the continuance in office of the city collector or deputy collectors the comptroller or commissioner of finance shall deem any surety of them to be insufficient, he or she may require the city collector or deputy collectors to enter into a new bond to be approved in like manner as prescribed in section 11-115 of this chapter, within such time as the comptroller may direct, not being less than ten days after requiring such new bond to be given. In case of the neglect or refusal of any such officer to furnish such bond within the time so directed, the comptroller or commissioner of finance may declare his or her office vacant."
+*   § 11-120 "The bond given by the city collector shall be filed and remain in the office of the comptroller, and true copies thereof, certified by the comptroller, shall be filed in the office of the clerk of each of the counties embraced within the city, and shall be public records. In case a certificate of the adjustment of the accounts of the city collector be made, a true copy thereof, certified by the comptroller, shall be filed in each of the offices in which a copy of the bond of the city collector shall have been filed."
+
+**Why:** To ensure proper financial controls and accountability by tracking required bonds for key personnel and authorizations for signing financial instruments.
+
+**One row represents:** A single bond or a single authorization for a signatory.
+
+**Covers:** Bonds for the Commissioner, Deputy Commissioners, City Collector, and Deputy Collectors; and authorizations for deputies, assistant deputies, and employees to sign checks/warrants, including facsimile signatures.
+
+**Columns:**
+*   Record ID
+*   Record Type (e.g., Bond, Signatory Authorization, Facsimile Signature Authorization)
+*   **Employee ID** (for person holding office/authorized)
+*   Employee Name
+*   Office/Position
+*   Bond Amount (if applicable)
+*   Sureties (names, number)
+*   Comptroller Approval Date (for bonds)
+*   Bond Filing Date
+*   Bond Expiration Date (if applicable)
+*   Bond Renewal Date (if applicable)
+*   Bond Status (e.g., Active, Expired, Insufficient, Vacant Office)
+*   Authorization Type (e.g., Check, Warrant, Payroll, Relief)
+*   Authorization Scope (e.g., All, Specific Accounts)
+*   Authorization Start Date
+*   Authorization End Date (if specified)
+*   Authorization Termination Date (if applicable)
+*   Facsimile Specimen Filed (Yes/No, for facsimile signatures)
+*   Agency Head Authorization Date (for facsimile signatures)
+
+**15. Property Owner Communications and Outreach**
+
+**Quotes:**
+*   § 11-129.a "At intervals determined by the commissioner of finance, the department of finance shall send to owners of real property a statement of account for the property, which shall represent a bill for taxes, charges and assessments, and which shall include, in a manner determined by the commissioner, a description of taxes, charges and assessments that remain unpaid on the property, and payments received by the department for taxes, charges and assessments on the property, and which may include additional information as the commissioner deems appropriate. In any statement of account representing a bill for real property taxes due on July 1, when the amount of taxes due is based on a calculation using the tax rate for the prior fiscal year, the department shall include a notice that the taxes due are subject to adjustment upon the adoption of the tax rate for the new fiscal year, and that a subsequent bill issued during the course of the tax year may reflect the adjusted amount of tax due and the new tax rate."
+*   § 11-129.b "The statement of account shall be sent to owners who notified the department of a mailing address for such statements, or, if no mailing address has been so provided, to the owner of record at the property address appearing on the assessment roll."
+*   § 11-129.c "Notwithstanding subdivision b of this section, in lieu of mailing the statement of account, the department may send the statement of account by electronic means to any owner whose electronic mailing address is known to the department."
+*   § 11-129.d "The department shall establish and maintain a system to contact owners by electronic-mail and provide access electronically to a receipt for, and information on, each payment made for charges on a statement of account. The department shall notify owners of the availability of such system on the statement of account and shall solicit the submission of an email address at the time of payment. Such receipt shall include the property address, borough, block and lot number, the amount paid, and the date the payment was received, and may include additional information as the commissioner of finance deems appropriate. Such system shall also provide information on how the amount paid was applied toward the tax, charge or assessment on the statement of account. The city shall not be liable for any damages as a result of failure to provide access to a receipt, nor shall any cause of action arise from such failure."
+*   § 11-129.1.a "No later than 45 days after the date on which each installment of real property tax is due pursuant to paragraph (b) of subdivision 2 of section 1519-a of the charter, the department of finance shall send a notification to each owner of real property with an assessed value of two hundred fifty thousand dollars or less where the amount of tax liens arising as a result of the nonpayment of taxes on such property exceeds $100."
+*   § 11-129.1.b "No later than 45 days after the date on which each installment of real property tax is due pursuant to paragraph (b) of subdivision 3 of section 1519-a of the charter, the department of finance shall send a notification to each owner of real property with an assessed value of more than two hundred fifty thousand dollars where the amount of tax liens arising as a result of the nonpayment of taxes on such property exceeds $100."
+*   § 11-129.1.c "A notification required pursuant to subdivision a or b of this section shall include a summary of all tax liens on such property, other than a tax lien arising as a result of the nonpayment of sewer rents, sewer surcharges, or water rents and interest and penalties thereon, as such terms are defined in section 11-301. Such notification shall advise an owner of real property regarding obtaining information from the department of environmental protection about any such tax lien arising as a result of the nonpayment of sewer rents, sewer surcharges, or water rents."
+*   § 11-135.4 "Upon the recording of any document with the city register or the office of the Richmond county clerk transferring an ownership interest in any class one property or in any class two property that is a residential condominium or residential cooperative or a four family residential property, as such classes of property are defined in subdivision one of section eighteen hundred two of the real property tax law, the department shall send by mail, or, for any owner whose email address is known to the department, by email, such brochure to the grantee or grantees of such ownership interest."
+*   § 11-137.a.2 "A statement that inquiries may be made to the 311 citizen service center or submitted electronically through the website of the department of finance shall be posted on a page of such website that is dedicated to these rent increase exemption programs. Such statement, along with the name and title of the ombudsperson for the relevant rent increase exemption program, and the email address for, or a link to directly contact, such ombudsperson through the department of finance's website shall also be included on any notice issued by the department of finance pertaining to a rent increase exemption program where such notice is related to: (i) the denial, or the appeal of a denial of, such application; (ii) the termination of benefits due to the death of a tenant sent to the household or the landlord; (iii) the revocation of benefits sent to the tenant or the landlord; (iv) the denial of a tenant's application for benefit takeover; and (v) any other document deemed appropriate by the department of finance."
+*   § 11-138.c.1 "The information required pursuant to subdivision b of this section shall be included in any notice issued by the department of finance pertaining to the senior citizen rent increase exemption or disability rent increase exemption program where such notice is related to: (a) the approval of such application; (b) the approval of a tenant's application for an apartment benefit transfer; (c) the approval of a tenant's application for benefit takeover; (d) any notice of a tax abatement credit adjustment sent to the tenant; (e) the approval of a tenant's application for a redetermination; and (f) any other document deemed appropriate by the department of finance."
+*   § 11-139.b "Participating agencies shall offer information about the senior citizen rent increase exemption program provided by the department of finance to all persons identified as sixty-two years of age or older together with written applications and related forms for services, other than emergency services, provided by such agency, in the same languages as such written applications or forms where practicable."
+*   § 11-141 "The department shall, prior to the first day of January, provide notice to owners of class two properties, as defined in subdivision 1 of section 1802 of the real property tax law, of their annual obligation to register any dwelling units within their building that are subject to rent stabilization, pursuant to chapter 4 of title 26, with the state division of housing and community renewal. Such notice shall also include information regarding financing programs administered by the department of housing preservation and development to facilitate affordability. Such notice shall, when practicable, be included on the property tax bill for payment of the installment of real property tax that is due and payable on the first day of January."
+*   § 11-142.c "Contact information for such ombudsperson shall be posted on the department of finance's website and on any notice issued by the department of finance pertaining to ownership of real property by a not-for-profit organization, including, but not limited to: 1. Any application for an exemption from real property taxation pursuant to section 420-a, 420-b, 446, or 462 of the real property tax law; 2. Any denial, revocation or termination of such exemption; or 3. Any notice required pursuant to subdivision b of section 11-320 of a sale of a tax lien."
+
+**Why:** To track all official communications and outreach efforts to property owners and program participants, ensuring compliance with notification requirements.
+
+**One row represents:** A single communication event (e.g., sending a statement, notice, brochure, or responding to an inquiry).
+
+**Covers:** Statements of account, tax lien notifications, informational brochures, SCRIE/DRIE notices, Class Two property notices, and ombudsperson inquiries/responses.
+
+**Columns:**
+*   Communication ID
+*   Communication Date
+*   Communication Type (e.g., Statement of Account, Tax Lien Notification, Brochure, SCRIE/DRIE Notice, Class Two Property Notice, Ombudsperson Inquiry, Ombudsperson Response)
+*   **Property ID** (if applicable, links to Dataset 4)
+*   **Recipient Taxpayer ID** (links to Dataset 2)
+*   Recipient Name
+*   Recipient Address
+*   Recipient Email Address
+*   Delivery Method (Mail, Email)
+*   Content Summary (e.g., Tax bill, Tax lien summary, SCRIE approval, Rent stabilization reminder)
+*   Related Program/Exemption (e.g., SCRIE, DRIE, 421-a, Not-for-Profit Exemption)
+*   Inquiry Type (for ombudsperson inquiries)
+*   Inquiry Resolution (for ombudsperson inquiries)
+*   Ombudsperson ID (for ombudsperson communications)
+*   Participating Agency (for SCRIE info distribution)
+
+**16. Internal Personnel Actions**
+
+**Quotes:**
+*   § 11-119.a "In case of inability of the city collector to perform the duties of his or her office by reason of sickness or absence from the city, the commissioner of finance shall designate some suitable person to perform the duties of the city collector's office during such inability or absence, and shall, if the comptroller so requires, take from such person a bond, with sufficient sureties, in the manner hereinafter prescribed."
+*   § 11-119.b "If the city collector or any deputy collector shall on any day omit or neglect to furnish to the commissioner of finance or to the comptroller, respectively, the statements and vouchers required in section 11-121 of this chapter, or to make the prescribed daily payments, it shall be the duty of the commissioner of finance forthwith to suspend him or her from office. In case of such suspension, the commissioner of finance shall appoint a suitable person to perform the duties of the officer so suspended, who shall continue to act as such officer until the person suspended shall be restored or another person shall have been appointed. On making such temporary appointment, the commissioner of finance shall be required to take from the person so appointed a bond, with two sufficient sureties, to be approved by the comptroller and filed with the comptroller, in such penal sum as the comptroller may deem just, conditioned for the faithful performance of the duties of the office during the continuance of the person appointed therein; and all the provisions of law prescribing the duties of the city collector and deputy collectors shall apply to the person or persons so appointed."
+
+**Why:** To track temporary appointments and suspensions of key personnel, ensuring continuity of operations and compliance with bonding requirements.
+
+**One row represents:** A single personnel action related to temporary designation or suspension.
+
+**Covers:** Temporary designations for City Collector absence/sickness and suspensions of City Collector or Deputy Collectors.
+
+**Columns:**
+*   Action ID
+*   Action Date
+*   Action Type (e.g., Temporary Designation, Suspension)
+*   **Affected Employee ID**
+*   Affected Employee Name
+*   Affected Employee Position
+*   Reason for Action (e.g., Sickness, Absence, Failure to Furnish Statements/Vouchers, Failure to Make Payments)
+*   Temporary Appointee **Employee ID** (if applicable)
+*   Temporary Appointee Name
+*   Temporary Appointee Position
+*   Temporary Appointee Bond Required (Yes/No)
+*   Temporary Appointee Bond Status (if applicable, links to Dataset 14)
+*   Action Start Date
+*   Action End Date (if applicable)
+*   Restoration Date (if applicable)
+*   New Appointment Date (if applicable)
+
+---
+
+**Non-Tabular Information:**
+
+*   **Agency Seal:** The physical seal itself. (§ 11-101)
+*   **Rules and Regulations:** Rules promulgated by the Commissioner of Finance (e.g., for conciliation conferences, amnesty programs, EFT, e-filing). (§ 11-124.d, § 11-125.f, § 11-127.i, § 11-128.l, § 11-131.f, § 11-132.g, § 11-139.c)
+*   **Informational Brochures:** The content and design of the brochures for property owners. (§ 11-135)
+*   **Website Content:** Information posted on the department's website (e.g., ombudsperson contact info, rent increase exemption program details). (§ 11-137.a.2, § 11-142.c)
+*   **Legal Documents:** Copies of papers, records, books, documents, maps, minutes, proceedings filed in the department of finance or boards/commissions. (§ 11-102)
+*   **Vouchers:** Physical or digital copies of vouchers for expenditures. (§ 11-108)
+*   **Transcripts of Judgments:** Legal documents filed for judgments. (§ 11-108)
+*   **Bank Books:** Physical or digital records of bank accounts. (§ 11-109)
+*   **Written Designations/Notices of Termination:** Documents for authorizing subordinates to sign checks/warrants. (§ 11-112)
+*   **Facsimile Signature Specimens:** Samples of authorized facsimile signatures. (§ 11-113)
+*   **Written Agreements for Payment:** Agreements for tax liabilities for corporate dissolution. (§ 11-133)
+*   **Government-Issued Identification:** Copies of driver's licenses, passports, birth certificates for exemption applications. (§ 11-134)
+*   **Federal Tax Returns and Schedules/Attachments:** Submitted for exemption applications. (§ 11-134)
+*   **Proof of Earnings:** W-2 forms, social security benefit statements, pension/annuity income for exemption applications. (§ 11-134)
+*   **Documentation of Unreimbursed Medical/Prescription Expenses:** For exemption applications. (§ 11-134)
+*   **Award Letters/Certificates:** From SSA, RRB, USPS, State Commission for the Blind and Visually Handicapped for disability exemptions. (§ 11-134)
+*   **DD Form 214 / Proof of Combat Service / VA Disability Letter:** For veteran exemptions. (§ 11-134)
+*   **Verification Letter from Church Employer / Physician's Statement / Marriage Certificate / Death Certificate:** For clergy exemptions. (§ 11-134)
+*   **Certification Clauses:** Text included on application forms. (§ 11-134.2)
+*   **Reports to Council/Mayor:** The actual reports generated (e.g., on ECB violations, rent increase exemptions, 421-a revocations). These are outputs, not raw data. (§ 11-136.a, § 11-137.a.3, § 11-137.c, § 11-140)
+*   **Permits from DOHMH:** Child care program permits. (§ 11-144.c.1.a)
+*   **CPA Certifications:** For child care tax credit applications. (§ 11-144.c.1.b)
+*   **Financial Disclosure Statements:** Required for voluntary disclosure installment plans. (§ 11-131.e.1)
+*   **Voluntary Disclosure and Compliance Agreements:** The executed agreements themselves. (§ 11-131.c, § 11-131.e.1)
+*   **Tax Return Forms:** Amnesty tax return forms. (§ 11-125.a, § 11-127.a)
+*   **Electronic Funds Transfer Agreements:** Agreements with taxpayers for automatic debit. (§ 11-128.f.1)
+*   **Waiver Applications:** For EFT hardship. (§ 11-128.i)
+*   **Written Demands for Identifying Numbers:** (§ 11-102.1.b)
+*   **Written Notices of Termination:** For signatory authorizations. (§ 11-112)
+*   **Written Notices of Suspension:** For City Collector/Deputy Collector. (§ 11-119.b)
+*   **Written Notice of New Bond Requirement:** For City Collector/Deputy Collectors. (§ 11-117)
+*   **Certified Copies of Bonds:** For filing in county clerk offices. (§ 11-120)
+*   **Vouchers for Daily Payments:** From Commissioner of Finance to City Collector. (§ 11-121.b)
+*   **Statements of Sums Received:** From City Collector to Commissioner of Finance and Comptroller. (§ 11-121.b, § 11-121.c)
+*   **Written Requests to Discontinue/Withdraw:** From conciliation proceedings. (§ 11-124.b)
+*   **Written Applications for Amnesty:** (§ 11-125.b, § 11-127.b)
+*   **Written Applications for Voluntary Disclosure:** (§ 11-131.d)
+*   **Written Applications for Consent to Dissolution:** (§ 11-133)
+*   **Written Applications for Exemptions:** (§ 11-134)
+*   **Written Applications for Child Care Credit:** (§ 11-144.c)
+*   **Notices of Revocation (421-a):** From HPD to DOF. (§ 11-140)
+*   **Rent Registration History:** From State Division of Housing and Community Renewal. (§ 11-138.c.2)
+*   **Complaints of Rent Overcharge:** Filed with State Division of Housing and Community Renewal. (§ 11-138.c.2)
+*   **Recommendations from Ombudspersons:** To the Commissioner of Finance. (§ 11-137.a.1.iii)
+*   **Inquiries/Complaints to Ombudspersons:** (§ 11-137.a.1.i, § 11-137.a.3.ii)
+*   **Inquiries to 311 Citizen Service Center:** Regarding rent increase exemption programs. (§ 11-137.a.2, § 11-137.a.3.i)
+*   **Information from Participating Agencies:** About SCRIE program. (§ 11-139.b)
+*   **Public Outreach Materials:** For not-for-profit ombudsperson. (§ 11-142.c.2)
+*   **Rules for Credit Allocation:** For child care credit. (§ 11-144.e)
+*   **Tax Software:** The software itself. (§ 11-132.a.7)
+*   **Tax Documents:** Returns, reports, or other documents relating to a tax. (§ 11-132.a.5)

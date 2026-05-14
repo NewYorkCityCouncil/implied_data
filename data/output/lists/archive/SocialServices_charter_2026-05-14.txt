@@ -1,0 +1,156 @@
+**1. Social Services Case Records**
+
+**Quotes:**
+ - Section 603: "the commissioner shall have the powers and perform the duties of a commissioner of social services under the social services law, provided that no form of outdoor relief shall be dispensed by the city except under the provisions of a state or local law which shall specifically provide the method, manner and conditions of dispensing the same."
+
+**Why:** To fulfill its core mission, the agency must track individuals receiving social services and their eligibility.
+
+**One row represents:** A single social services case for an individual or household.
+
+**Covers:** All individuals or households receiving social services from the department, including those receiving outdoor relief.
+
+**Columns:**
+ - Case ID
+ - Client ID
+ - Client Name
+ - Client Address
+ - Household Size
+ - Case Open Date
+ - Case Status (Active, Closed, Pending)
+ - Eligibility Determination Date
+ - Eligibility Criteria Met
+ - Primary Social Worker ID (linked to Dataset 6)
+ - Approved Service Types (e.g., financial assistance, housing support, food aid)
+ - Referral Source
+ - Case Close Date (if applicable)
+ - Reason for Closure
+
+**2. Outdoor Relief Disbursement Records**
+
+**Quotes:**
+ - Section 603: "no form of outdoor relief shall be dispensed by the city except under the provisions of a state or local law which shall specifically provide the method, manner and conditions of dispensing the same."
+
+**Why:** The agency must track the specific transactions of outdoor relief to ensure compliance with legal provisions.
+
+**One row represents:** A single instance of outdoor relief dispensed to a client.
+
+**Covers:** All disbursements of outdoor relief provided by the agency.
+
+**Columns:**
+ - Disbursement ID
+ - Case ID (linked to Dataset 1)
+ - Client ID (linked to Dataset 1)
+ - Disbursement Date
+ - Disbursement Type (e.g., direct financial aid, voucher, in-kind)
+ - Amount/Value of Disbursement
+ - Method of Disbursement (e.g., direct deposit, check, physical voucher)
+ - Conditions Met for Disbursement (e.g., specific need, emergency status)
+ - Legal Provision/Law Authorizing Disbursement
+ - Approving Staff ID (linked to Dataset 6)
+ - Status (Approved, Denied, Disbursed)
+
+**3. Agency Institutions Inventory**
+
+**Quotes:**
+ - Section 604: "The commissioner shall control, maintain and operate such institutions as are now or may be put under his or her control."
+
+**Why:** To control, maintain, and operate institutions, the agency needs a comprehensive list of all its facilities.
+
+**One row represents:** A single public institution under the commissioner's control.
+
+**Covers:** All public institutions controlled, maintained, and operated by the Department of Social Services.
+
+**Columns:**
+ - Institution ID
+ - Institution Name
+ - Institution Address
+ - Institution Type (e.g., shelter, community center, administrative office)
+ - Capacity (e.g., number of beds, occupancy limit)
+ - Date Established/Acquired
+ - Current Status (Operational, Under Renovation, Closed)
+ - Managing Department/Division
+ - Primary Contact Person ID (linked to Dataset 6)
+
+**4. Institution Maintenance Activity Records**
+
+**Quotes:**
+ - Section 604: "The commissioner shall control, maintain and operate such institutions as are now or may be put under his or her control."
+
+**Why:** To maintain institutions, the agency must track all maintenance requests, activities, and resolutions.
+
+**One row represents:** A single maintenance request or activity performed at an institution.
+
+**Covers:** All maintenance activities, both scheduled and unscheduled, for agency-controlled institutions.
+
+**Columns:**
+ - Maintenance Activity ID
+ - Institution ID (linked to Dataset 3)
+ - Request Date
+ - Reported By (Staff ID, linked to Dataset 6)
+ - Problem Description
+ - Maintenance Type (e.g., plumbing, electrical, structural, HVAC)
+ - Priority Level
+ - Scheduled Date
+ - Completion Date
+ - Performed By (Internal Staff ID or Vendor Name)
+ - Cost of Repair
+ - Resolution Description
+ - Status (Open, In Progress, Completed, Canceled)
+
+**5. Institution Operational Activity Records**
+
+**Quotes:**
+ - Section 604: "The commissioner shall control, maintain and operate such institutions as are now or may be put under his or her control."
+
+**Why:** To operate institutions effectively, the agency needs to track daily activities, incidents, and resource utilization.
+
+**One row represents:** A specific operational event, incident, or daily metric at an institution.
+
+**Covers:** Key operational events, incidents, and daily metrics across all agency-controlled institutions.
+
+**Columns:**
+ - Operational Record ID
+ - Institution ID (linked to Dataset 3)
+ - Date of Record/Event
+ - Event Type (e.g., daily census, incident report, staffing change, program delivery)
+ - Description of Event/Metric
+ - Relevant Value (e.g., number of residents, incident severity, staff count)
+ - Reporting Staff ID (linked to Dataset 6)
+ - Follow-up Actions Required
+ - Status (Open, Closed)
+
+**6. Agency Employee Roster**
+
+**Quotes:**
+ - Section 601: "There shall be a department of social services the head of which shall be the commissioner of social services."
+ - Section 602: "The commissioner may appoint three deputies."
+
+**Why:** To manage its staff and organizational structure, the agency needs to track all employees and their roles.
+
+**One row represents:** A single employee within the Department of Social Services.
+
+**Covers:** All employees, including the commissioner and deputies, within the Department of Social Services.
+
+**Columns:**
+ - Employee ID
+ - First Name
+ - Last Name
+ - Job Title
+ - Department/Division
+ - Supervisor ID (linked to Employee ID within this dataset)
+ - Appointment Date
+ - Employment Status (Active, Leave, Terminated)
+ - Contact Information (Email, Phone)
+ - Required Certifications/Licenses
+ - Date of Last Certification Renewal
+
+---
+
+**Non-Tabular Information:**
+
+*   **Social Services Law:** The full text of the social services law and related statutes.
+*   **Chapters 24-A and 24-B:** Legal texts referenced for exceptions to commissioner's powers.
+*   **Administrative Code Appendix A (L.L. 1993/051, L.L. 2003/052):** Unconsolidated provisions referenced in editor's notes.
+*   **State or local laws for outdoor relief:** Specific legal documents detailing methods, manners, and conditions for dispensing outdoor relief.
+*   **Job Applications:** Documents submitted by prospective employees.
+*   **Rules and Regulations:** Internal and external policy documents governing agency operations and programs.

@@ -1,0 +1,404 @@
+**Identified Tabular Datasets**
+
+**1. Employment Certificates and Permits**
+
+**Quotes:**
+- "It shall be unlawful, except as otherwise provided by law, to employ in any trade, business or service a minor who does not present an employment certificate or permit issued in accordance with this article and section one hundred thirty-five of the labor law." (§ 3215.1)
+- "Employment certificates or permits may be revoked for cause by the chancellor in New York city and elsewhere by the superintendent of schools or the district superintendent of schools within their respective jurisdictions, or, by a principal of a nonpublic secondary school for a student attending such school." (§ 3215-a.2)
+- "A student non-factory employment certificate may be issued to a minor fourteen or fifteen years of age who is attending day school." (§ 3216.1)
+- "A student general employment certificate may be issued to a minor sixteen or seventeen years of age who is attending day school." (§ 3216.2)
+- "A full-time employment certificate may be issued to a minor sixteen or seventeen years of age who is not attending day school or who declares his intention to leave day school for full-time employment." (§ 3216.3)
+- "A limited employment certificate may be issued as provided in subdivision two of section thirty-two hundred twenty of this article." (§ 3216.4)
+- "A special employment certificate may be issued as provided in section thirty-two hundred twenty-five of this article." (§ 3216.5)
+- "An employment certificate shall be valid not only for the initial employment but also for subsequent employments in work permitted by the particular type of certificate." (§ 3216.6)
+- "An employment certificate shall expire two years from the date of its issuance, except as otherwise provided in this article." (§ 3216.7)
+- "An employment certificate shall be kept on file at the place of the minor's employment and shall be returned to the minor when the employment terminates." (§ 3216.8)
+- "A farm work permit may be issued to a minor fourteen or fifteen years of age authorizing employment in farm service." (§ 3226.1)
+- "A street trade for the purposes of part one of this article shall include the carrying, selling, exposing or offering for sale of newspapers or periodicals, and work as a bootblack, but shall not include the occupation engaged in by a newspaper carrier as defined in subdivision one of section thirty-two hundred twenty-eight of this chapter." (§ 3227.1)
+- "No minor under fourteen years of age shall be engaged in a street trade; and no minor from fourteen to eighteen years of age shall be so engaged unless a street trades permit has been lawfully issued to the minor." (§ 3227.3)
+- "A street trades permit shall be issued in the same manner and with the same requirements as in the case of an employment certificate. Such a permit shall expire two years from the date of its issuance." (§ 3227.4)
+- "A "newspaper carrier" is a minor between the ages of eleven and eighteen years of age who engages in the occupation of delivering, or selling and delivering, newspapers, shopping papers or periodicals to customers at their homes or places of business." (§ 3228.1)
+- "A "newspaper carrier" shall possess a newspaper carrier permit and shall carry it upon his or her person when engaged in the occupation of delivering, or selling and delivering, newspapers, shopping papers or periodicals to homes or places of business." (§ 3228.2)
+
+**Why:** To regulate child labor, the agency must track the issuance, status, and details of all employment certificates and permits.
+
+**One row represents:** A single employment certificate or permit issued to a minor.
+
+**Covers:** All types of employment certificates and permits issued to minors, including student non-factory, student general, full-time, limited, special, farm work, street trades, and newspaper carrier permits.
+
+**Columns:**
+- Certificate/Permit ID
+- Minor ID (linked to Minor Information)
+- Certificate/Permit Type (e.g., Student Non-Factory, Full-Time, Farm Work, Street Trades, Newspaper Carrier)
+- Issuance Date
+- Expiration Date
+- Issuing Official ID (linked to Certificating Official Information)
+- Issuing Official Jurisdiction
+- Current Employer ID (linked to Employer Information)
+- Current Employer Name
+- Employment Start Date
+- Employment End Date
+- Certificate/Permit Status (e.g., Active, Expired, Revoked, Returned, Destroyed)
+- Revocation Date
+- Revocation Reason
+- Academic Performance at Revocation (e.g., number of failed courses)
+- Attendance Record at Revocation
+- Economic Need at Revocation
+- Participation in Cooperative/Work Study/School-to-Work Program at Revocation
+- Physical Disability Description (for limited certificates)
+- Limited Occupation (for limited certificates)
+- Limited Employer (for limited certificates)
+- Permanent Disability Flag (for limited certificates)
+- Initial Employment (Y/N)
+- Subsequent Employment (Y/N)
+- Electronic Registration Updated for Subsequent Employer (Y/N, effective May 9, 2027)
+- Kept on File at Employment Location (Y/N)
+- Returned to Minor (Y/N)
+- Destroyed (Y/N, effective May 9, 2027)
+- Temporary Services Employer (Y/N)
+- Original Certificate ID (if copy for temporary services)
+
+**2. Employment Certificate Applications**
+
+**Quotes:**
+- "An application for an employment certificate shall be made by a minor on a form prescribed by the commissioner of education." (§ 3217.1)
+- "Before issuing an employment certificate the issuing official shall require the minor to submit the following: a. Evidence of age; b. Written consent of the parent or guardian; c. A certificate of physical fitness; and d. If the application is for a full-time employment certificate, a schooling record." (§ 3217.2)
+- "In addition, in a city or school district which, pursuant to section thirty-two hundred five, subdivision three, of this article, requires minors from sixteen to seventeen years of age who are not employed to attend school, the certificating official shall require a minor applying for a full-time employment certificate to submit the following: a. A pledge of employment; and b. A schooling record." (§ 3217.2)
+- "To obtain a farm work permit a minor shall present to the issuing officer the following: a. Evidence of age; b. Written consent of the parent or guardian; and c. A certificate of physical fitness." (§ 3226.3)
+
+**Why:** The agency needs to track the progress and required submissions for each employment certificate or permit application.
+
+**One row represents:** A single application for an employment certificate or permit.
+
+**Covers:** All applications for employment certificates and permits, including initial applications and renewals.
+
+**Columns:**
+- Application ID
+- Minor ID (linked to Minor Information)
+- Application Date
+- Requested Certificate/Permit Type (e.g., Student Non-Factory, Farm Work)
+- Application Status (e.g., Submitted, In Review, Approved, Denied)
+- Denial Reason
+- Date Evidence of Age Submitted
+- Type of Age Evidence Submitted (e.g., Birth Certificate, Passport)
+- Parent/Guardian Consent Submitted (Y/N)
+- Date Parent/Guardian Consent Submitted
+- Physical Fitness Certificate ID (linked to Physical Fitness Certificates, if applicable)
+- Schooling Record ID (linked to Schooling Records, if applicable)
+- Pledge of Employment ID (linked to Pledge of Employment Records, if applicable)
+- Full-Time Certificate Pledge Required (Y/N)
+- School District Requiring Pledge (if applicable)
+- Issuing Official ID (linked to Certificating Official Information)
+- Date of Issuance Decision
+- Issued Certificate/Permit ID (linked to Employment Certificates and Permits)
+
+**3. School Census Records**
+
+**Quotes:**
+- "In the cities of New York, Buffalo and Rochester provision shall be made by the board of education for taking a school census in connection with the work of enforcing part one of this article." (§ 3240)
+- "The board of education of each city, except in cities having a population of one hundred twenty-five thousand or more, shall constitute a permanent census board in such city. Such board shall, under its regulations, cause a census of the children in its city to be taken and to be amended from day to day..." (§ 3241.1)
+- "Such census shall include all persons between birth and eighteen years of age and in the case of physically or mentally handicapped children between birth and twenty-one years of age, their names, their respective residences by street and number, the day of the month and the year of their birth, the names of the persons in parental relation to them, such information relating to physical or mental defects, to illiteracy, to employment and to the enforcement of the law relating to child labor and compulsory education as the education department and the board of education of each such city shall require and also such further information as such board of education shall require." (§ 3241.2)
+- "Such board shall provide to the commissioner of education upon written request therefor and in such form as shall be prescribed by him, a report containing the names, ages and addresses of those children who are blind or deaf and those having serious physical or mental defects." (§ 3241.3)
+- "It shall be the duty of persons in parental relation to any person between such ages residing within the limits of any such city to make such reports as the board of education of such city shall require." (§ 3241.4)
+- "The trustees or board of education of every school district may cause a census to be taken of all children between birth and eighteen years of age, including all such facts and information as are required in the census provided for in section thirty-two hundred forty-one of this part." (§ 3242)
+- "Such census shall be prepared biennially for children between ages five and eighteen who are entitled to attend the public schools without payment of tuition in duplicate in their respective school districts, and one copy thereof filed with the teacher or principal and the other copy filed with the district superintendent or superintendent on or before the fifteenth day of October." (§ 3242)
+- "For pre-school students from birth to five years of age, such census may be prepared and filed biennially on or before the fifteenth day of October." (§ 3242)
+- "All information regarding a student with a disability under the age of twenty-one years shall be filed annually with the superintendent of the board of cooperative educational services of which said district may be a part." (§ 3242)
+
+**Why:** The agency is legally mandated to conduct and maintain a comprehensive census of children for educational and child labor enforcement purposes.
+
+**One row represents:** A single child's entry in the school census.
+
+**Covers:** All children between birth and eighteen years of age (or twenty-one for physically/mentally handicapped children) residing within the school district or city.
+
+**Columns:**
+- Census Record ID
+- Child ID (linked to Minor Information)
+- Child Name
+- Date of Birth
+- Residence Address (Street, Number, City, State, Zip)
+- Parent/Guardian Name (linked to Parent/Guardian Information)
+- Physical/Mental Defects (Y/N)
+- Disability Type (if applicable)
+- Illiteracy (Y/N)
+- Employment Status (Y/N)
+- Child Labor Law Enforcement Information
+- Compulsory Education Law Enforcement Information
+- Census Date
+- Census Type (e.g., City, School District)
+- Pre-school Student (Y/N)
+- Biennial Census Date (for pre-school or 5-18)
+- Annual Disability Filing Date (for students with disabilities under 21)
+- Report to Commissioner of Education (Y/N)
+- Public School Education (Y/N)
+- Education Location (if not public school)
+- Compulsory School Age Reached (Y/N)
+- Date Reached Compulsory School Age
+- School Sent To ID (linked to School Information)
+- School Change Date
+- New School ID (linked to School Information)
+- Work Change Date
+- Residence Change Date
+- New Residence Address
+- New Resident (Y/N)
+- Date Became Resident
+
+**4. Foster Care Child Educational Placements**
+
+**Quotes:**
+- "the social services district, in consultation with the appropriate local educational agency or agencies, shall designate either the school district of origin or the school district of residence within which the child in foster care shall be entitled to attend in accordance with a best interest determination made by the applicable social services district or voluntary authorized agency..." (§ 3244.2.a)
+- "The child shall be entitled to attend the school of origin or any school that children and youth who live in the attendance area in which the foster care placement is located are eligible to attend, including a preschool, subject to a best interest determination..." (§ 3244.2.a)
+- "Upon notification of the designation made by the social services district for a foster care youth, the designated school district of attendance shall immediately: (1) enroll the child or youth in foster care even if the child or youth is unable to produce records normally a requirement for enrollment..." (§ 3244.2.d)
+- "treat the child or youth in foster care as a resident for all purposes" (§ 3244.2.d.2)
+- "make a written request to the school district where the child's records are located for a copy of such records." (§ 3244.2.d.3)
+- "Where the school of origin is a charter school, the school district designated pursuant to this subdivision shall be deemed to be the school district of residence of such child for purposes of fiscal and programmatic responsibility under article fifty-six of this chapter and shall be responsible for transportation of the child in foster care." (§ 3244.2.f)
+- "each local educational agency... shall designate a local educational agency point of contact for children and youth in foster care." (§ 3244.2.g)
+
+**Why:** The agency must track the educational placement decisions, enrollment status, and record transfers for children in foster care to ensure their right to education.
+
+**One row represents:** A single educational placement decision and enrollment for a child in foster care.
+
+**Covers:** All children in foster care, their designated school districts, schools of attendance, and enrollment details.
+
+**Columns:**
+- Foster Care Placement Record ID
+- Child ID (linked to Minor Information)
+- Foster Care Placement ID (linked to Foster Care Placements)
+- Social Services District ID (linked to Social Services District Information)
+- Voluntary Authorized Agency ID
+- Best Interest Determination Date
+- Designated School District of Attendance ID (linked to School District Information)
+- School of Origin ID (linked to School Information)
+- School District of Origin ID (linked to School District Information)
+- School District of Residence ID (linked to School District Information)
+- Enrollment Date
+- Enrollment Status (e.g., Enrolled, Excluded)
+- Exclusion Reason (if applicable)
+- Records Requested Date
+- Records Received Date
+- Records Transfer Status (e.g., Pending, Received, Partial)
+- Charter School of Origin (Y/N)
+- Fiscal Responsibility School District ID (linked to School District Information)
+- Programmatic Responsibility School District ID (linked to School District Information)
+- Placement in Contiguous State (Y/N)
+- Moved from One Foster Care Placement to Another (Y/N)
+- Terminal Year in Building (Y/N)
+- Comparable Services Provided (Y/N)
+- LEA Point of Contact ID (linked to LEA Points of Contact)
+
+**5. Violations and Penalties**
+
+**Quotes:**
+- "Except as otherwise provided, a violation of part one of this article shall be punishable for the first offense by a fine not exceeding ten dollars or ten days' imprisonment; for each subsequent offense by a fine not exceeding fifty dollars, or by imprisonment not exceeding thirty days, or by both such fine and imprisonment." (§ 3233)
+- "A violation of sections thirty-two hundred fifteen, thirty-two hundred twenty-three and thirty-two hundred twenty-four of this article shall be punishable for a first offense by a fine of not less than twenty nor more than fifty dollars; for a second offense by a fine of not less than fifty nor more than two hundred fifty dollars, or by imprisonment for not more than thirty days or by both such fine and imprisonment; for a third offense by a fine of not less than two hundred fifty dollars, or by imprisonment for not more than sixty days, or by both such fine and imprisonment." (§ 3233)
+- "Any person who knowingly makes a false statement in or in relation to any application made for an employment certificate or permit as to any matter required by this chapter to appear in any affidavit, record, transcript, certificate or permit therein provided for, is guilty of a misdemeanor and upon conviction shall be punished..." (§ 3233)
+
+**Why:** The agency needs to track all violations of child labor and education laws, including false statements, and the associated penalties.
+
+**One row represents:** A single violation incident.
+
+**Covers:** All violations of Part One of the article, including unlawful employment, employer duties, temporary services, and false statements in applications.
+
+**Columns:**
+- Violation ID
+- Date of Violation
+- Section Violated (e.g., § 3215, § 3223)
+- Offender Type (e.g., Minor, Employer, Parent/Guardian)
+- Offender ID (linked to Minor Information, Employer Information, or Parent/Guardian Information)
+- Description of Violation
+- First Offense (Y/N)
+- Fine Amount Imposed
+- Imprisonment Days Imposed
+- Court Case ID
+- Date of Conviction
+- False Statement Made (Y/N)
+- Related Document ID (e.g., Application ID, Certificate/Permit ID, Schooling Record ID, Physical Fitness Certificate ID, Pledge ID)
+- Status (e.g., Reported, Under Investigation, Adjudicated, Penalty Paid)
+
+**6. Physical Fitness Certificates (for Employment)**
+
+**Quotes:**
+- "A certificate of physical fitness shall be issued to a minor if a thorough physical examination made within twelve months of his or her application for an employment certificate shows that such minor is of sound health, and if there are no known health problems at the time of issuance of the certificate, and if the applicant is physically qualified for lawful employment." (§ 3220.1)
+- "If a known health problem exists at the time of the application for such certificate, another examination may be required by the issuing authority." (§ 3220.1)
+- "Such certificate shall be issued and such physical examination shall be made, in a city of over three hundred thousand population, by a physician designated by the board of health, and elsewhere by the director of school health services charged with the duty of making physical examinations of all school children or by any physician duly licensed to practice medicine in this state." (§ 3220.1)
+- "A new certificate of physical fitness shall not be required if one had been issued to the minor within twelve months." (§ 3220.1)
+- "If the physician authorized to issue certificates of physical fitness shall find that a minor from fourteen to eighteen years of age is not physically sound but that in the physician's opinion the minor may safely engage in certain occupations as specified by the regulations of the commissioner of education, the physician shall require a pledge of employment and may issue to the minor a certificate of limited physical fitness, and shall describe therein the physical disability of the minor and shall indicate the particular employer and the occupation in which the minor may engage." (§ 3220.2)
+- "A limited employment certificate issued to a minor from fourteen to eighteen years of age who has presented a certificate of limited physical fitness shall be valid for not more than six months from the date of its issuance and shall bear on the face of the certificate the date of its expiration and the particular employer and occupation to which the employment of the minor is limited; provided, however, that the examining physician may indicate upon the certificate of limited physical fitness that the physical disability of the minor is of a permanent nature, in which case such certificate shall not expire at the end of six months but shall remain valid for so long as the nature and type of work set forth in the pledge of employment remain substantially the same." (§ 3220.2)
+- "A record made of the physical examination shall show whether a certificate of physical fitness has been issued or withheld. Such record shall be sent to the certificating official." (§ 3220.3)
+- "A certificate of physical fitness issued in another state to a minor seeking employment in this state may be accepted in lieu of the certificate of physical fitness required by subdivision one of this section, provided the standards for issuing such certificates in the other state are deemed substantially equivalent to those of this state in accordance with regulations adopted by the commissioner of education." (§ 3220.4)
+
+**Why:** The agency needs to track the physical fitness determinations for minors applying for employment certificates, especially for limited certificates.
+
+**One row represents:** A single physical fitness certificate issued for a minor.
+
+**Covers:** All physical fitness certificates issued to minors for employment purposes, including those with limited physical fitness.
+
+**Columns:**
+- Physical Fitness Certificate ID
+- Minor ID (linked to Minor Information)
+- Examination Date
+- Physician ID (linked to Physician Information)
+- Physician Jurisdiction
+- Sound Health (Y/N)
+- Known Health Problems at Issuance (Y/N)
+- Physically Qualified for Lawful Employment (Y/N)
+- Limited Physical Fitness (Y/N)
+- Physical Disability Description (if limited)
+- Permitted Occupations (if limited)
+- Permitted Employer (if limited)
+- Certificate Expiration Date (for limited, if not permanent)
+- Permanent Disability Flag (Y/N, if limited)
+- Record Sent to Certificating Official (Y/N)
+- Accepted from Another State (Y/N)
+- Other State Standards Equivalent (Y/N)
+- Related Application ID (linked to Employment Certificate Applications)
+
+**7. Schooling Records**
+
+**Quotes:**
+- "The schooling record shall be issued by the principal of the school the minor attends or last attended, or by a teacher deputized by the principal or by a supervising official..." (§ 3222.1)
+- "On application of the person in parental relation, a schooling record shall be issued promptly to a minor who complies with the following conditions: a. Presents a certificate of physical fitness. ... b. Meets the specified age requirement." (§ 3222.2)
+- "Such schooling record shall show, when practicable, the name of the school and grade or class which the minor is then attending or last attended." (§ 3222.3)
+- "Upon notification by the division of criminal justice services that a child has been listed as a missing child, a school in which the child is currently or was previously enrolled shall flag the schooling record of the child..." (§ 3222.4)
+- "The school shall immediately report to the local law enforcement authority and the division of criminal justice services any request concerning flagged schooling records or knowledge as to the whereabouts of any missing child." (§ 3222.4)
+- "Upon notification by the division of criminal justice services that a reported missing child has been recovered, the school shall remove the flag from the person's schooling record." (§ 3222.4)
+
+**Why:** The agency needs to track schooling records as a required input for certain employment certificates and for managing information about missing children.
+
+**One row represents:** A single schooling record for a minor.
+
+**Covers:** Schooling records for minors, particularly those applying for employment certificates, and includes flags for missing children.
+
+**Columns:**
+- Schooling Record ID
+- Minor ID (linked to Minor Information)
+- School ID (linked to School Information)
+- School Name
+- Grade/Class Attending or Last Attended
+- Issuing Official ID (linked to Certificating Official Information)
+- Issuance Date
+- Parent/Guardian Application Date
+- Physical Fitness Certificate ID (linked to Physical Fitness Certificates, if presented)
+- Age Requirement Met (Y/N)
+- Missing Child Flag (Y/N)
+- Date Flagged as Missing
+- Date Recovered (if applicable)
+- Notification to Law Enforcement (Y/N)
+- Notification to DCJS (Y/N)
+- Request for Flagged Record Date
+- Requesting Entity for Flagged Record
+- Related Application ID (linked to Employment Certificate Applications)
+
+**8. Pledge of Employment Records**
+
+**Quotes:**
+- "The pledge of employment shall be signed by the initial prospective employer or his authorized representative and shall show his name and place of business, the minor's name, the number of days per week and the number of hours per day and per week during which he will be employed, the hours of the beginning and the ending of work, and the nature and type of the employment." (§ 3221)
+
+**Why:** The agency needs to track the specific details of a minor's prospective employment as required for certain employment certificate applications.
+
+**One row represents:** A single pledge of employment.
+
+**Covers:** All pledges of employment submitted as part of an employment certificate application.
+
+**Columns:**
+- Pledge ID
+- Minor ID (linked to Minor Information)
+- Employer ID (linked to Employer Information)
+- Employer Name
+- Employer Place of Business
+- Number of Days Per Week
+- Number of Hours Per Day
+- Number of Hours Per Week
+- Work Start Time
+- Work End Time
+- Nature of Employment
+- Type of Employment
+- Pledge Signed Date
+- Related Application ID (linked to Employment Certificate Applications)
+
+**9. Foster Care Transportation Records**
+
+**Quotes:**
+- "Notwithstanding any other provision of law, any child or youth in foster care who requires transportation in order to attend a school of origin designated pursuant to subdivision two of this section, shall be entitled to receive such transportation pursuant to this paragraph." (§ 3244.4.a)
+- "The designated school district of attendance shall provide transportation to and from the child's foster care placement location and the school of origin." (§ 3244.4.a)
+- "Any cost incurred for such transportation that is allowable up to fifty miles each way pursuant to the applicable provision of parts two and three of article seventy-three of this chapter or herein, shall be aidable pursuant to subdivision seven of section thirty-six hundred two of this chapter..." (§ 3244.4.a)
+- "where any child or youth in foster care attends the school district of residence and such child does not attend the school of origin, such school district shall provide transportation to such child on the same basis as a resident student." (§ 3244.4.b)
+- "Excess allowable transportation costs beyond those reimbursed in paragraphs a and b of this subdivision resulting from the attendance of a child or youth in foster care shall be shared between the social services district responsible for the foster care costs of the child or youth and the designated school district of attendance equally." (§ 3244.4.c)
+- "The school district and local social services district are expected to consider and utilize all allowable funding sources, including any available federal funds, to cover additional transportation costs." (§ 3244.4.c)
+- "school districts and social services districts that have written agreements relating to how excess transportation costs should be funded... shall not be subject to this paragraph." (§ 3244.4.c)
+- "Where the child has been placed in foster care in a contiguous state and has designated a school of origin located in the state of New York, the designated school district of attendance in New York state shall collaborate with the social services district to arrange for transportation." (§ 3244.4.d)
+
+**Why:** The agency needs to track transportation arrangements, costs, and reimbursement for children in foster care to ensure compliance with legal requirements.
+
+**One row represents:** A single transportation arrangement or event for a foster care child.
+
+**Covers:** All transportation services provided to children in foster care for educational purposes.
+
+**Columns:**
+- Transportation Record ID
+- Child ID (linked to Minor Information)
+- Foster Care Placement ID (linked to Foster Care Placements)
+- Designated School District of Attendance ID (linked to School District Information)
+- School of Origin ID (linked to School Information)
+- Transportation Type (e.g., To School of Origin, To Residence School)
+- Transportation Provider
+- Date of Service
+- Cost Incurred
+- Allowable Cost
+- Aidable Cost
+- Excess Cost
+- Social Services District Share of Excess Cost
+- School District Share of Excess Cost
+- Federal Funds Utilized (Y/N)
+- Written Agreement for Excess Costs (Y/N)
+- Contiguous State Collaboration (Y/N)
+- Related Educational Placement ID (linked to Foster Care Child Educational Placements)
+
+**10. School District Interpreter Service Requests**
+
+**Quotes:**
+- "The board of education or trustees of each school district shall ensure that at any meeting or activity which is conducted by the board of education, trustees, school district or a district school which is specific to a child's educational program and which parents or persons in parental relationship who are deaf or hard of hearing, as defined by the commissioner, attend, the board of education or trustees shall provide interpreter services at no charge to such persons, provided a written request therefor is made to the school district within a reasonable time prior to the scheduled meeting or activity." (§ 3230.1)
+- "In the event interpreter services are requested, the school district shall appoint an interpreter of the deaf to interpret the proceedings of the meeting or activity." (§ 3230.1)
+- "In the event that an interpreter is unavailable, other reasonable accommodations shall be made which are satisfactory to the parents or guardians." (§ 3230.1)
+- "Each board of education or trustees shall adopt a policy which shall establish the time limitation for requesting interpreter services, examples of what constitutes reasonable accommodations and how the regulations of the commissioner promulgated pursuant to this chapter shall be implemented." (§ 3230.2)
+
+**Why:** The agency needs to track requests for interpreter services for deaf/hard of hearing parents to ensure compliance with accessibility requirements.
+
+**One row represents:** A single request for interpreter services for a school meeting or activity.
+
+**Covers:** All requests for interpreter services made by deaf or hard of hearing parents/guardians for school-initiated meetings or activities.
+
+**Columns:**
+- Request ID
+- School District ID (linked to School District Information)
+- Meeting/Activity ID (internal identifier for the specific event)
+- Child ID (linked to Minor Information)
+- Parent/Guardian ID (linked to Parent/Guardian Information)
+- Parent/Guardian Deaf/Hard of Hearing (Y/N)
+- Request Date
+- Scheduled Meeting/Activity Date
+- Interpreter Services Provided (Y/N)
+- Interpreter ID (if provided)
+- Interpreter Agency (if applicable)
+- Interpreter Unavailable (Y/N)
+- Reasonable Accommodation Made (Y/N)
+- Accommodation Description (if applicable)
+- Policy Adopted by School Board (Y/N)
+- Compliance Status (e.g., Met, Not Met, Accommodated)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications (as full documents)
+*   Rules and regulations (e.g., commissioner's regulations, labor law provisions)
+*   Receipts
+*   Photos
+*   Research documents
+*   Affidavits of age
+*   Written consent forms from parents/guardians
+*   Full physical examination records (beyond the certificate summary)
+*   Full schooling records (beyond the summary information)
+*   Pledge of employment forms (the physical document)
+*   Policies adopted by school boards (e.g., interpreter services policy)
+*   Written agreements between school districts and social services districts regarding excess transportation costs

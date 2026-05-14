@@ -6,6 +6,7 @@ import time
 import pandas as pd 
 import re
 import os
+#import sys
 
 #-----------------------------------------------------------------------------------
 # prep + settings
@@ -13,19 +14,48 @@ import os
 
 dept = "Education"
 exec(open("../tokens.py").read())
+gemini_key = os.getenv("gemini_key")
 
 
 #-----------------------------------------------------------------------------------
 # bring in open dataset info
 #-----------------------------------------------------------------------------------
 
+# load in data
 datasets = pd.read_csv("https://data.cityofnewyork.us/resource/5tqd-u88y.csv?$limit=99999999999")
 datasets = datasets[(~datasets.uid.isna()) & (~datasets.datasetinformation_agency.isna())]
+
+# identify data from correct agency
 agency_names = datasets.datasetinformation_agency.unique()
 matches = [bool(re.search(dept, s)) for s in list(agency_names)]
 full_dept = agency_names[matches][0]
+print(full_dept)
 
+# keep only relevant data
 dept_opendata = datasets[datasets.datasetinformation_agency == full_dept][['name', 'description', 'type']]
+
+# clean data to condense datasets across years etc
+temp = dept_opendata
+temp.name = temp.name.replace("[0-9\-]+", " ", regex=True)  
+temp.name = temp.name.replace("\s+", " ", regex=True).str.strip()
+
+
+#-----------------------------------------------------------------------------------
+# bring in mmr info
+#-----------------------------------------------------------------------------------
+
+# load in data
+mmr = pd.read_csv("https://data.cityofnewyork.us/resource/wcrd-6u4m.csv?$limit=99999999999")
+
+# identify data from correct agency
+agency_names = mmr.agency.unique()
+matches = [bool(re.search(dept, s)) for s in list(agency_names)]
+full_dept = agency_names[matches][0]
+print(full_dept)
+
+# keep only relevant data
+dept_mmr = mmr[(mmr.agency == full_dept) & 
+               (mmr.is_the_source_of_this == 'The underlying data is owned by another agency or entity.')] #[['name', 'description', 'type']]
 
 
 #-----------------------------------------------------------------------------------
@@ -33,7 +63,7 @@ dept_opendata = datasets[datasets.datasetinformation_agency == full_dept][['name
 # first from https://stackoverflow.com/questions/78846882/gemini-status-429-no-matter-what
 #-----------------------------------------------------------------------------------
 
-def submit_gemini_query(api_key, system_message, user_message):
+def submit_gemini_query(api_key, system_message, user_message, temp = 0, max_tokens = 60000):
     
     genai.configure(api_key=api_key)
 
@@ -44,8 +74,8 @@ def submit_gemini_query(api_key, system_message, user_message):
         {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}]
 
     generation_config = {
-        "temperature": 0,
-        "max_output_tokens": 60000
+        "temperature": temp,
+        "max_output_tokens": max_tokens
     }
     
     model = genai.GenerativeModel(
@@ -55,24 +85,16 @@ def submit_gemini_query(api_key, system_message, user_message):
         safety_settings=safety_settings
     )
 
-    chat_session = model.start_chat(history=[])
-
-    response = chat_session.send_message(user_message,
-                                            request_options=RequestOptions(
-                                                retry=retry.Retry(
-                                                    initial=10, 
-                                                    multiplier=2, 
-                                                    maximum=60, 
-                                                    timeout=300
-                                                )
-                                            )
-                                        )
+    response = model.generate_content(
+            user_message,
+            request_options=RequestOptions(retry=retry.Retry(initial=10, multiplier=2, maximum=60, timeout=300))
+        )
 
     return response.text
 
-def pull_gemini_ops(dept, doc_type):
+def pull_gemini_ops(dept, level_gov, doc_type):
 
-    file_type = "data/input/nyc_code/" + dept + "_" + doc_type + ".txt"
+    file_type = "data/input/" + level_gov + "/" + dept + "_" + doc_type + ".txt"
     file_save = "data/output/"+dept+"_"+doc_type+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
 
     f_exists = os.path.exists(file_type)
@@ -102,9 +124,8 @@ def pull_gemini_ops(dept, doc_type):
 
     return response
 
-def pull_gemini_db(dept):
+def pull_gemini_db(dept, d = datetime.today().strftime('%Y-%m-%d')):
 
-    d = datetime.today().strftime('%Y-%m-%d')
     charter = open("data/output/"+dept+"_charter_"+d+".txt" ).read()
     adcode = open("data/output/"+dept+"_adcode_"+d+".txt" ).read()
     rules = open("data/output/"+dept+"_rules_"+d+".txt" ).read()
@@ -166,7 +187,8 @@ prompt_schemas = open("data/input/prompt_schemas.txt").read()
 # query data from each document
 for cur_doc in ['charter', 'adcode', 'rules']:
     start = time.time()
-    response = pull_gemini_ops(dept, cur_doc)
+    response_state = pull_gemini_ops(dept, "nys_code", cur_doc)
+    response = pull_gemini_ops(dept, "nyc_code", cur_doc)
     print(f"{time_elapsed(start)} to finish query for: {cur_doc}.")
 
 # combine the datasets from each document

@@ -1,0 +1,802 @@
+**Identified Datasets**
+
+**1. Real Property Parcels**
+
+**Quotes:**
+*   "assess for taxation all the taxable real property in the city" (Section 1504.1)
+*   "The taxable status of all real property assessable for taxation in the city shall be fixed for the succeeding fiscal year on the fifth day of January in each year." (Section 1507)
+*   "The assessors, under the direction of the commissioner, shall assess all the real property in the several districts that may be assigned to them by the commissioner" (Section 1506)
+*   "When any separately assessed parcel of real estate shall have been divided prior to the first day of June, the commissioner may apportion the assessment thereof in such manner as may be provided by law." (Section 1513)
+*   "notify the owner, as recorded in said department or division, of such increase by first-class mail" (Section 1511)
+*   "the person whose name appears on the records in the office of the city collector as being the owner or agent of the owner of the real estate affected thereby" (Section 1512)
+
+**Why:** To manage and assess all real property, the agency needs a master record of each parcel.
+
+**One row represents:** A unique parcel of real property in the city.
+
+**Covers:** All taxable and exempt real property parcels within the city.
+
+**Columns:**
+*   Parcel ID (Unique Identifier)
+*   Borough
+*   Block
+*   Lot
+*   Property Address
+*   Property Type (e.g., residential, commercial, utility, cooperative, condominium)
+*   Number of Dwelling Units (for cooperative/condominium properties)
+*   Owner Name
+*   Owner Mailing Address
+*   Agent Name (if applicable)
+*   Agent Mailing Address (if applicable)
+*   Tax Class (e.g., Class One, Class Two, as per Real Property Tax Law)
+*   Exemption Status (e.g., fully exempt, partially exempt)
+*   Last Division Date (if parcel was divided)
+
+**2. Real Property Assessment Records**
+
+**Quotes:**
+*   "assess for taxation all the taxable real property in the city and prepare the assessment rolls." (Section 1504.1)
+*   "The assessors, under the direction of the commissioner, shall assess all the real property in the several districts that may be assigned to them by the commissioner and shall prepare the assessment rolls." (Section 1506)
+*   "The term "assessment" shall mean a determination by the assessors of (a) the taxable status of real property as of the taxable status date; and (b) the valuation of real property, including the valuation of exempt real property, and where such property is partially exempt, the valuation of both the taxable and exempt portions." (Section 1506)
+*   "The taxable status of all real property assessable for taxation in the city shall be fixed for the succeeding fiscal year on the fifth day of January in each year." (Section 1507)
+*   "The assessors shall commence to assess real estate on the first day of July in each year" (Section 1508)
+*   "compute from the annual record of the assessed valuation of real estate in each borough the total aggregate amount of the assessed valuation of real property appearing on such annual record for such borough" (Section 1509)
+*   "The books of the annual record of the assessed valuation of real estate shall be opened to the public not later than the fifteenth day of January in each year" (Section 1510)
+*   "the commissioner may place on such books any real estate and also the assessed valuation of any such real estate that may have been omitted from such books on the day of the opening thereof, and may increase or diminish the assessed valuation of any real estate as in the commissioner's judgment may be just or necessary for the equalization of taxation" (Section 1512)
+*   "the commissioner shall cause to be prepared, from such books, assessment rolls for each borough" (Section 1514.1)
+*   "The rolls so certified must, on or before the twentieth day of June in each year, be delivered by the commissioner to the council." (Section 1514.2)
+*   "At such annual meeting the council shall cause to be set down in the assessment rolls, opposite to the several sums set down in the valuation of real property, the respective sums, in dollars and cents, to be paid as a tax thereon" (Section 1517)
+
+**Why:** To track the annual valuation and taxable status of each property for tax purposes.
+
+**One row represents:** A single assessment record for a specific real property parcel for a given fiscal year.
+
+**Covers:** All annual assessments, including initial, omitted, increased, or diminished valuations, for all real property.
+
+**Columns:**
+*   Assessment ID (Unique Identifier)
+*   Fiscal Year
+*   Assessment Date
+*   Taxable Status Date
+*   **Parcel ID** (Links to Dataset 1)
+*   Assessed Valuation (Total)
+*   Taxable Valuation
+*   Exempt Valuation
+*   Exemption Type (if applicable)
+*   Assessor ID
+*   Assessment Type (e.g., Initial, Omitted, Increased, Diminished)
+*   Reason for Change (if applicable)
+*   Date Books Opened for Public Inspection
+*   Date Assessment Roll Certified
+*   Date Assessment Roll Delivered to Council
+
+**3. Real Property Tax Bills and Payments**
+
+**Quotes:**
+*   "The department shall collect all real property taxes, water and sewer charges, other assessments and arrears against real property" (Section 1504.2.b)
+*   "the council shall cause to be set down in the assessment rolls, opposite to the several sums set down in the valuation of real property, the respective sums, in dollars and cents, to be paid as a tax thereon" (Section 1517)
+*   "the commissioner shall give notice...that all taxes shall be due and payable" (Section 1519, 1519-a)
+*   "all taxes upon real estate for each fiscal year shall be due and payable in four equal installments" (Section 1519.1.a, 1519-a.2.a)
+*   "all taxes upon real estate for each fiscal year shall be due and payable in two equal installments" (Section 1519.1.b, 1519-a.3.a)
+*   "Any installment of taxes on real estate for any fiscal year may be paid, in full or in part, twenty-five days prior to the date on which the first installment for such fiscal year would otherwise become due and payable or at any time thereafter and...a discount shall be allowed" (Section 1519.3, 1519-a.2.c, 1519-a.3.c, 1519-a.7)
+*   "The commissioner shall charge, receive and collect the interest and penalties upon taxes on real estate not paid when due and payable" (Section 1520)
+*   "All taxes shall be and become liens on the real estate affected thereby and shall be construed as and deemed to be charged thereon on the respective days when they become due and payable, and not earlier, and shall remain such liens until paid." (Section 1519.2, 1519-a.6)
+*   "If property is acquired by the city in a condemnation proceeding, on the date that title vests in the city, any tax due prior to the title vesting date, and interest, shall be due and payable, and shall become an equitable lien with first priority against any condemnation award." (Section 1519-a.9)
+*   "The commissioner may provide a discount...to taxpayers who pay their real property taxes by electronic funds transfer." (Section 1519-a.7.g.i)
+*   "The commissioner may provide a discount...to taxpayers whose annual real property tax liability exceeds one million dollars and who pay their real property taxes before the date such taxes become due and payable" (Section 1519-a.7.g.ii)
+
+**Why:** To track all real property tax liabilities, billing, payments, discounts, interest, and penalties.
+
+**One row represents:** A single real property tax installment or a payment transaction.
+
+**Covers:** All real property tax bills, installment schedules, payments, discounts, interest, and penalties.
+
+**Columns:**
+*   Tax Bill ID (Unique Identifier)
+*   **Parcel ID** (Links to Dataset 1)
+*   Fiscal Year
+*   Installment Number (e.g., 1 of 4, 1 of 2)
+*   Installment Due Date
+*   Original Installment Amount
+*   Tax Payment Date
+*   Payment Amount
+*   Discount Applied
+*   Discount Rate
+*   Interest Charged
+*   Penalties Charged
+*   Total Amount Paid
+*   Payment Method (e.g., check, EFT)
+*   Is Mortgage Escrow Agent Payment? (Yes/No)
+*   Outstanding Balance for Installment
+*   Lien Status (e.g., Active, Paid, Condemned)
+*   Condemnation Date (if applicable)
+*   EFT Discount Applied (Yes/No)
+*   Large Taxpayer Early Payment Discount Applied (Yes/No)
+*   Date Bill Available Online (for electronic notification)
+
+**4. Non-Property Tax Accounts and Transactions**
+
+**Quotes:**
+*   "The department shall administer all excise and non-property taxes imposed or administered by the city." (Section 1504.2.a)
+*   "The department shall collect...all other taxes, assessments and arrears payable to the city." (Section 1504.2.b)
+*   "the commissioner shall have the exclusive authority to compromise any excise or nonproperty taxes or annual vault charges or any warrant or judgment for excise or nonproperty taxes or annual vault charges administered by the commissioner, and the civil penalties, interest and additions to tax or charge in connection therewith" (Section 1504.2.c)
+*   "The commissioner shall have the exclusive authority to compromise civil liability...where such liability arises in connection with an excise or nonproperty tax or annual vault charge administered by the commissioner" (Section 1504.2.d)
+*   "contracts with collection agencies for the collection of (i) any or all tax warrants and judgments for all city taxes subject to collection by the department, other than real property taxes" (Section 1527.1)
+
+**Why:** To manage and track all non-property tax liabilities, payments, and related enforcement actions.
+
+**One row represents:** A single non-property tax assessment, payment, or adjustment for a specific taxpayer.
+
+**Covers:** All excise taxes, non-property taxes, annual vault charges, and other non-real property assessments.
+
+**Columns:**
+*   Taxpayer ID (Unique Identifier)
+*   Taxpayer Name
+*   Taxpayer Address
+*   Tax Account Number
+*   Tax Type (e.g., Excise, Non-Property, Annual Vault Charge)
+*   Fiscal Period/Tax Year
+*   Assessment Date
+*   Original Tax Amount Assessed
+*   Payment Date
+*   Payment Amount
+*   Interest Charged
+*   Penalties Charged
+*   Additions to Tax/Charge
+*   Total Amount Paid
+*   Outstanding Balance
+*   Payment Method
+*   Compromise Agreement ID (Links to Dataset 10, if applicable)
+*   Warrant/Judgment ID (Links to Dataset 11, if applicable)
+*   Collection Agency Referral ID (Links to Dataset 12, if applicable)
+
+**5. City Treasury Financial Transactions**
+
+**Quotes:**
+*   "prepare and disburse payroll checks upon a master warrant prepared by the comptroller" (Section 1503)
+*   "receipt and safekeeping of all moneys paid into the city treasury and payment of money out of the treasury" (Section 1504)
+*   "provide for the reception and safekeeping of all moneys paid into the treasury of the city and for the payment of all moneys on warrants drawn by the comptroller and countersigned by the commissioner." (Section 1504.3.a)
+*   "No money shall be paid out of the treasury except on a warrant authorized by law, signed by the comptroller and countersigned by the commissioner of finance which shall refer to the law under and to the appropriation against which it is drawn." (Section 1522)
+*   "The commissioner shall deposit all moneys which shall come into the commissioner's hands on account of the city on the day of receipt thereof, or on the business day next succeeding, in such banks and trust companies as shall have been designated as deposit banks" (Section 1523.1)
+*   "The moneys so deposited shall be placed to the account of the commissioner who shall keep a record in which shall be entered the commissioner's accounts of deposits in, and moneys drawn from, the banks and trust companies" (Section 1523.1)
+*   "Each such bank and trust company shall transmit to the comptroller a weekly statement of the moneys which shall be received and paid by it on account of the commissioner." (Section 1523.1)
+*   "The commissioner shall draw moneys of the city from said banks or trust companies only by checks subjoined and attached to warrants and subscribed by the commissioner or by payment orders duly authorized by the comptroller and the commissioner" (Section 1523.2)
+*   "agree to pay into the city treasury interest or to provide the city with equivalent value on the daily balances" (Section 1524.2.a.1)
+*   "The city may maintain a revenue stabilization fund to serve as a year-to-year reserve account" (Section 1528)
+
+**Why:** To track all financial inflows and outflows of the city treasury, ensuring accountability and proper fund management.
+
+**One row represents:** A single financial transaction (deposit, withdrawal, payment, interest receipt) involving the city treasury.
+
+**Covers:** All receipts, disbursements, deposits, withdrawals, and interest earnings related to the city's general funds and revenue stabilization fund.
+
+**Columns:**
+*   Transaction ID (Unique Identifier)
+*   Transaction Date
+*   Transaction Type (e.g., Deposit, Withdrawal, Payroll Disbursement, Tax Receipt, Interest Earned, Fund Transfer)
+*   Amount
+*   Source/Destination Account (e.g., Taxpayer ID, Vendor ID, Bank Account Number)
+*   **Designated Bank ID** (Links to Dataset 8, if applicable)
+*   Warrant ID (if applicable)
+*   Comptroller Signature (Yes/No)
+*   Commissioner Signature (Yes/No)
+*   Law/Appropriation Reference
+*   Fund Type (e.g., General Fund, Revenue Stabilization Fund)
+*   Description
+
+**6. Trust Fund Accounts and Transactions**
+
+**Quotes:**
+*   "administration and management of certain trust funds held by the city" (Section 1504)
+*   "The department shall administer and manage all trust funds received or held by the city pursuant to a judgment, decree or order of any court or under section eleven hundred twenty-three of the surrogate's court procedure act, section ninety-nine-m of the general municipal law, sections eighty-seven and one hundred eleven-h of the social services law, sections four hundred twenty-six and four hundred thirty-two of the real property law, section two hundred four of the lien law and section five hundred fifty-three of the county law, and in such administration it shall be deemed to be acting in a fiduciary capacity." (Section 1504.3.b)
+*   "The department shall provide for the receipt and safekeeping of all such moneys of the trust funds held by the city and disburse the same on warrants signed by the comptroller." (Section 1504.3.b)
+*   "The department may waive the fees to which the commissioner is entitled under section ninety-nine-m of the general municipal law" (Section 1504.3.b)
+*   "the department may combine all such trust funds into one or more common trust funds, which may be deposited in such savings banks, trust companies, banks or banking associations...or invested in legal investments for trustees or savings banks." (Section 1504.3.c.i)
+*   "The department may retain trust funds temporarily pending investment or deposit or to meet cash requirements" (Section 1504.3.c.ii)
+*   "When trust funds are received by the department it shall forthwith open and maintain a separate ledger account for each action, proceeding or matter and shall keep an exact accounting of all such funds and all income earned thereon" (Section 1504.3.c.iii)
+
+**Why:** To fulfill fiduciary duties by meticulously tracking each trust fund's balance, transactions, and income.
+
+**One row represents:** A single financial transaction (deposit, withdrawal, investment, income, fee waiver) for a specific trust fund account.
+
+**Covers:** All trust funds managed by the city, including their individual ledger accounts, deposits, withdrawals, investments, and earned income.
+
+**Columns:**
+*   Trust Fund Account ID (Unique Identifier for the specific action/proceeding/matter)
+*   Court Case/Legal Reference (if applicable)
+*   Beneficiary Name
+*   Fund Type (e.g., Court Ordered, General Municipal Law, Social Services Law)
+*   Transaction Date
+*   Transaction Type (e.g., Deposit, Withdrawal, Investment, Income Earned, Fee Waiver)
+*   Amount
+*   Current Balance
+*   Income Earned (for this transaction)
+*   Investment Details (if applicable, e.g., common trust fund, specific security)
+*   **Designated Bank ID** (Links to Dataset 8, if applicable, for deposits)
+*   Comptroller Warrant ID (for disbursements)
+*   Fee Waiver Applied (Yes/No)
+*   Reason for Fee Waiver
+
+**7. Parking Violation Tickets and Payments**
+
+**Quotes:**
+*   "The department shall operate and control the parking violations bureau." (Section 1504.4)
+*   "The commissioner shall appoint the director of the bureau, deputy director and all other officers and employees of the bureau, and hearing examiners." (Section 1504.4)
+
+**Why:** To manage the issuance, adjudication, and collection of parking violation fines.
+
+**One row represents:** A single parking violation ticket issued or a payment made towards a ticket.
+
+**Covers:** All parking violation tickets issued by the bureau, including their status, payments, and hearing outcomes.
+
+**Columns:**
+*   Ticket ID (Unique Identifier)
+*   Violation Date
+*   Violation Time
+*   Issuing Officer ID
+*   Vehicle License Plate Number
+*   Vehicle State
+*   Vehicle Make/Model
+*   Violation Code
+*   Violation Location
+*   Original Fine Amount
+*   Date Due
+*   Payment Date
+*   Payment Amount
+*   Outstanding Balance
+*   Payment Method
+*   Interest/Penalties Applied
+*   Hearing Requested (Yes/No)
+*   Hearing Date
+*   Hearing Examiner ID
+*   Hearing Outcome (e.g., Upheld, Dismissed, Reduced)
+*   Adjudicated Fine Amount
+*   Warrant/Judgment ID (Links to Dataset 11, if applicable)
+*   Collection Agency Referral ID (Links to Dataset 12, if applicable)
+
+**8. Designated Deposit Banks and Compliance**
+
+**Quotes:**
+*   "The commissioner shall deposit all moneys...in such banks and trust companies as shall have been designated as deposit banks" (Section 1523.1)
+*   "The banking commission which consists of the mayor, the commissioner and the comptroller shall, by majority vote, by written notice to the commissioner, designate the banks or trust companies in which all moneys of the city shall be deposited" (Section 1524.1)
+*   "The banking commission shall notify the council within thirty days of receiving an application for designation or redesignation, and shall also notify the council within thirty days of approving or denying such application and, if designation or redesignation was denied, the basis for denial." (Section 1524.1)
+*   "No bank or trust company shall be designated pursuant to this section unless: (1) it shall agree to pay into the city treasury interest or to provide the city with equivalent value on the daily balances... (2) it shall file...a certificate...setting forth that its board of directors has established and will adhere to a policy of hiring and promotion of employees and officers without regard to sex, race, color, religion... (3) it does not provide the following services...to the Government of Burma... (4) it has certified that neither it nor any of its affiliates is or will become a predatory lender" (Section 1524.2.a)
+*   "If the banking commission by a majority vote shall decide that a requirement or condition contained in paragraph a of this subdivision has been violated...such designation may be revoked." (Section 1524.2.b)
+*   "The commissioner shall...establish criteria by which to evaluate whether banks are using the means at their disposal to comply with the embargo on trade and financial transactions with Burma and any other sanctions imposed by the United States government" (Section 1523.3)
+*   "The commissioner shall...classify such banks according to such criteria and publish notice of such classification in the City Record." (Section 1523.3)
+*   "The commissioner may at any time...change the classification of a bank and publish notice of such change." (Section 1523.3)
+*   "The failure of a bank to provide information requested by the commissioner for the purposes of this subdivision shall be grounds for the commissioner to lower the classification of the bank." (Section 1523.3)
+
+**Why:** To manage the list of approved financial institutions for city deposits and ensure their ongoing compliance with legal and ethical standards.
+
+**One row represents:** A single bank or trust company designated (or considered for designation) as a city depository.
+
+**Covers:** All banks designated or applying for designation as city depositories, including their compliance status and related actions.
+
+**Columns:**
+*   **Designated Bank ID** (Unique Identifier)
+*   Bank Name
+*   Bank Address
+*   Application Date
+*   Designation Date
+*   Designation Status (e.g., Approved, Denied, Revoked, Pending)
+*   Date of Last Status Change
+*   Reason for Denial/Revocation
+*   Interest Rate Agreement (Yes/No)
+*   EEO Policy Certificate Filed (Yes/No)
+*   Burma Sanctions Compliance (Yes/No)
+*   Predatory Lender Certification (Yes/No)
+*   Burma Compliance Classification (e.g., High, Medium, Low)
+*   Date of Last Burma Compliance Classification
+*   Information Provision Compliance (Yes/No, for Burma criteria)
+*   **Community Investment Advisory Board Report ID** (Links to Dataset 9, if applicable)
+
+**9. Community Investment Bank Performance Data**
+
+**Quotes:**
+*   "The board shall...assess the credit, financial and banking services needs throughout the City with a particular emphasis on low and moderate income individuals and communities" (Section 1524-a.1.a.1)
+*   "establish benchmarks, best practices, and recommendations for meeting the needs identified" (Section 1524-a.1.a.2)
+*   "Issue an annual report...which (i) addresses how each bank that is designated as a deposit bank...is meeting the needs identified...including an evaluation of how each bank performed relative to the benchmarks and best practices... (ii) identifies areas of improvement...and areas where improvement is necessary... (iii) specifically identifies any deposit bank's failure to provide information requested... (v) summarizes, in tabular format, the data collected by the board pursuant to paragraphs a through g of subdivision 3 of this section" (Section 1524-a.1.b)
+*   "collect and consider information at the census tract level, relating to the credit, financial and banking services needs throughout the City and the extent to which such needs are being met, including but not limited to, information, to the extent applicable, regarding each deposit bank's efforts to: a. address the key credit and financial services needs of small businesses; b. develop and offer financial services and products that are most needed by low and moderate income individuals and communities throughout the city and provide physical branches; c. provide funding, including construction and permanent loans and investments, for affordable housing and economic development projects in low and moderate income communities; d. In the case of properties acquired by foreclosure and owned by the bank, reasonably address serious material and health and safety deficiencies in the maintenance and condition of the property; e. conduct consumer outreach, settlement conferences, and similar actions relating to mortgage assistance and foreclosure prevention, and provide information, at the community district level to the board, relating to mortgage and foreclosure actions, including, but not limited to, total number of loans serviced and/or owned by the bank, total number of loans that are at least sixty days delinquent, total number of foreclosures commenced, total number of foreclosures prevented through loan modification, short sales, deeds in lieu of foreclosure or other mechanisms, total number of loan modifications applications, total number of loan modifications made and denied, and bank owned properties donated or sold at a discount; f. partner in the community development efforts of the city; g. positively impact on the city and its communities through activities including, but not limited to, philanthropic work and charitable giving; and h. plan for and articulate how the bank will respond to the credit, financial and banking services needs of the city identified by the needs assessment" (Section 1524-a.3)
+
+**Why:** To systematically collect and evaluate data on designated banks' community investment and service provision efforts.
+
+**One row represents:** A specific performance metric or data point reported by a designated bank for a given fiscal year and geographic area.
+
+**Covers:** All data collected from designated banks for the Community Investment Advisory Board's needs assessments and annual reports.
+
+**Columns:**
+*   Report ID (Unique Identifier for the annual report/data collection cycle)
+*   Fiscal Year
+*   **Designated Bank ID** (Links to Dataset 8)
+*   Geographic Level (e.g., Citywide, Borough, Community District, Census Tract)
+*   Metric Category (e.g., Small Business Lending, Affordable Housing, Foreclosure Prevention, Philanthropy)
+*   Metric Name (e.g., Total Small Business Loans, Number of Branches in LMI Areas, Affordable Housing Loan Amount, Number of Foreclosures Commenced)
+*   Metric Value
+*   Benchmark Performance (e.g., Met, Exceeded, Below)
+*   Areas for Improvement Identified
+*   Failure to Provide Information (Yes/No)
+*   Number of Loans Serviced/Owned
+*   Number of Loans 60+ Days Delinquent
+*   Number of Foreclosures Commenced
+*   Number of Foreclosures Prevented (by type)
+*   Number of Loan Modification Applications
+*   Number of Loan Modifications Made
+*   Number of Loan Modifications Denied
+*   Number of Bank-Owned Properties Donated/Sold at Discount
+
+**10. Tax Compromise Agreements**
+
+**Quotes:**
+*   "The department shall have the power to settle and adjust all claims in favor of or against the city" (Section 1504.2.a)
+*   "the commissioner shall have the exclusive authority to compromise any excise or nonproperty taxes or annual vault charges or any warrant or judgment for excise or nonproperty taxes or annual vault charges administered by the commissioner, and the civil penalties, interest and additions to tax or charge in connection therewith, if the tax debtor has been discharged in bankruptcy, or is shown by proofs submitted to be insolvent" (Section 1504.2.c)
+*   "the commissioner shall have the exclusive authority to compromise civil liability...where such liability arises in connection with an excise or nonproperty tax or annual vault charge administered by the commissioner, at any time prior to the time the tax or administrative action becomes finally and irrevocably fixed" (Section 1504.2.d)
+*   "Upon acceptance of an offer in compromise by the commissioner, the matter may not be reopened except upon a showing of fraud, malfeasance or misrepresentation of a material fact." (Section 1504.2.d)
+*   "Whenever a compromise is made by the department of any such liability, there shall be placed on file in the office of the commissioner the opinion of the commissioner or a deputy commissioner, with reasons therefor, with a statement of: (i) the amount of excise or nonproperty tax or annual vault charge and any other issues that may be the subject of such compromise, (ii) the amount of interest, additions to the tax or penalty imposed by law on the taxpayer or other persons against whom the administrative action was taken by the department, and (iii) the amount actually paid in accordance with the terms of the compromise." (Section 1504.2.d)
+
+**Why:** To track all agreements made to settle or adjust tax liabilities, ensuring proper documentation and compliance.
+
+**One row represents:** A single tax compromise agreement.
+
+**Covers:** All compromises for excise, non-property, and annual vault taxes, including civil penalties, interest, and additions.
+
+**Columns:**
+*   Compromise Agreement ID (Unique Identifier)
+*   Agreement Date
+*   **Taxpayer ID** (Links to Dataset 4)
+*   Tax Type (e.g., Excise, Non-Property, Annual Vault Charge)
+*   Fiscal Period/Tax Year
+*   Original Tax Amount Due
+*   Original Interest Due
+*   Original Penalties Due
+*   Original Additions to Tax Due
+*   Total Original Liability
+*   Compromised Tax Amount
+*   Compromised Interest Amount
+*   Compromised Penalties Amount
+*   Compromised Additions to Tax Amount
+*   Total Compromised Amount
+*   Amount Actually Paid
+*   Reason for Compromise (e.g., Bankruptcy, Insolvency, Pre-Administrative Review)
+*   Approval Status (e.g., Approved, Denied)
+*   Approval Date
+*   Approving Official (Commissioner/Deputy Commissioner)
+*   Supreme Court Approval Required (Yes/No, if > $100k)
+*   Supreme Court Approval Date (if applicable)
+*   Reopened (Yes/No)
+*   Reason Reopened (e.g., Fraud, Malfeasance)
+
+**11. Tax Warrants and Judgments**
+
+**Quotes:**
+*   "the commissioner shall have the exclusive authority to compromise any excise or nonproperty taxes or annual vault charges or any warrant or judgment for excise or nonproperty taxes or annual vault charges" (Section 1504.2.c)
+*   "contracts with collection agencies for the collection of (i) any or all tax warrants and judgments for all city taxes subject to collection by the department, other than real property taxes" (Section 1527.1)
+*   "The city sheriff shall exercise the functions, powers and duties formerly exercised by the sheriffs of the several counties." (Section 1526.2)
+
+**Why:** To track all legal instruments issued for the enforcement and collection of outstanding tax liabilities.
+
+**One row represents:** A single tax warrant or judgment issued.
+
+**Covers:** All warrants and judgments issued for the collection of city taxes (excluding real property taxes, which are handled via liens on Dataset 3).
+
+**Columns:**
+*   Warrant/Judgment ID (Unique Identifier)
+*   Issuance Date
+*   **Taxpayer ID** (Links to Dataset 4)
+*   Tax Type (e.g., Excise, Non-Property, Annual Vault Charge, Parking Violation)
+*   Original Amount Due (from tax/violation)
+*   Interest/Penalties at Issuance
+*   Total Amount on Warrant/Judgment
+*   Status (e.g., Active, Satisfied, Compromised, Referred to Sheriff, Referred to Collection Agency)
+*   Satisfaction Date
+*   **Compromise Agreement ID** (Links to Dataset 10, if applicable)
+*   **Collection Agency Referral ID** (Links to Dataset 12, if applicable)
+*   **Sheriff Enforcement Action ID** (Links to Dataset 14, if applicable)
+
+**12. Collection Agency Referrals**
+
+**Quotes:**
+*   "the commissioner may enter into contracts with collection agencies for the collection of (i) any or all tax warrants and judgments for all city taxes subject to collection by the department, other than real property taxes, or (ii) city water and sewer charges, or both" (Section 1527.1)
+*   "Any such contract shall apply only to such tax warrants and judgments and to such water and sewer charges as the commissioner may refer to the collection agency, and shall be terminable at the will of the commissioner." (Section 1527.2)
+*   "The consideration to be paid to such collection agency may be a percentage or percentages of the amount collected by such agency" (Section 1527.3)
+*   "No legal action to collect tax warrants and judgments or water and sewer charges under any contract entered into pursuant to this section shall be initiated without the express written permission of the corporation counsel" (Section 1527.4)
+
+**Why:** To track all tax warrants, judgments, and water/sewer charges referred to external collection agencies.
+
+**One row represents:** A single tax warrant, judgment, or water/sewer charge referred to a collection agency.
+
+**Covers:** All cases referred to collection agencies for non-real property taxes, warrants, judgments, and water/sewer charges.
+
+**Columns:**
+*   Referral ID (Unique Identifier)
+*   Referral Date
+*   **Collection Agency Contract ID** (Links to Dataset 25)
+*   **Taxpayer ID** (Links to Dataset 4, if applicable)
+*   **Warrant/Judgment ID** (Links to Dataset 11, if applicable)
+*   **Water/Sewer Charge ID** (Links to Dataset 16, if applicable)
+*   Original Amount Referred
+*   Amount Collected by Agency
+*   Agency Fee/Commission Paid
+*   Date Collection Agency Reported Payment
+*   Current Status (e.g., Active, Collected, Uncollectible, Returned)
+*   Legal Action Initiated (Yes/No)
+*   Corporation Counsel Approval Date (for legal action)
+
+**13. Employee Payroll Disbursements**
+
+**Quotes:**
+*   "the power and duty to prepare and disburse payroll checks upon a master warrant prepared by the comptroller as prescribed in the administrative code." (Section 1503)
+
+**Why:** To accurately record and track all payroll payments made to agency employees.
+
+**One row represents:** A single payroll disbursement to an employee.
+
+**Covers:** All payroll checks or direct deposits disbursed by the department.
+
+**Columns:**
+*   Payroll Disbursement ID (Unique Identifier)
+*   Payment Date
+*   **Employee ID** (Links to Dataset 22)
+*   Payment Amount (Gross)
+*   Payment Amount (Net)
+*   Warrant ID (from Comptroller)
+*   Payment Method (e.g., Check, Direct Deposit)
+*   Pay Period Start Date
+*   Pay Period End Date
+*   Deductions (e.g., taxes, benefits)
+*   Taxes Withheld
+
+**14. Sheriff Enforcement Actions**
+
+**Quotes:**
+*   "The mayor shall appoint one deputy commissioner whose function shall be to serve as the city sheriff." (Section 1502)
+*   "There shall be within the department an office of the city sheriff which shall be subject to the supervision and control of the commissioner of finance." (Section 1526.1)
+*   "Except as otherwise provided by law, the city sheriff shall exercise the functions, powers and duties formerly exercised by the sheriffs of the several counties." (Section 1526.2)
+
+**Why:** To track all enforcement actions carried out by the City Sheriff's office, such as executing warrants and enforcing judgments.
+
+**One row represents:** A single enforcement action performed by the City Sheriff.
+
+**Covers:** All civil enforcement actions, including execution of warrants, levies, and sales, performed by the City Sheriff.
+
+**Columns:**
+*   Enforcement Action ID (Unique Identifier)
+*   Action Date
+*   **Sheriff ID** (Links to Dataset 22)
+*   Action Type (e.g., Warrant Execution, Levy, Sale, Eviction)
+*   **Warrant/Judgment ID** (Links to Dataset 11, if applicable)
+*   Case/Court Reference Number
+*   Subject Name/Entity
+*   Subject Address
+*   Outcome (e.g., Successful, Unsuccessful, Partial)
+*   Amount Collected (if applicable)
+*   Property Seized/Sold (Description, if applicable)
+*   Date of Return to Court
+
+**15. Recorded Documents (City Register)**
+
+**Quotes:**
+*   "There shall be within the department a city register who shall be appointed by the mayor." (Section 1525.1)
+*   "The functions, powers and duties formerly exercised by the registers or registrars of the several counties shall remain with the city register." (Section 1525.2)
+
+**Why:** To maintain a comprehensive record of all documents filed with the City Register, such as deeds, mortgages, and liens.
+
+**One row represents:** A single document recorded by the City Register.
+
+**Covers:** All deeds, mortgages, liens, and other property-related documents filed with the City Register.
+
+**Columns:**
+*   Document ID (Unique Identifier)
+*   Recording Date
+*   Document Type (e.g., Deed, Mortgage, Lien, Satisfaction, Assignment)
+*   **Parcel ID** (Links to Dataset 1, if property-related)
+*   Grantor Name
+*   Grantee Name
+*   Lien Holder Name (if applicable)
+*   Amount (e.g., mortgage amount, lien amount)
+*   Book/Page Reference (if applicable)
+*   Instrument Number
+*   Borough
+*   Block
+*   Lot
+*   Status (e.g., Active, Satisfied, Released)
+
+**16. Water and Sewer Charges**
+
+**Quotes:**
+*   "The department shall collect all real property taxes, water and sewer charges, other assessments and arrears against real property" (Section 1504.2.b)
+*   "the commissioner may enter into contracts with collection agencies for the collection of...city water and sewer charges" (Section 1527.1)
+
+**Why:** To track all water and sewer charges billed and collected by the department.
+
+**One row represents:** A single water or sewer charge billed to a property.
+
+**Covers:** All water and sewer charges, including billing, payments, and arrears.
+
+**Columns:**
+*   Charge ID (Unique Identifier)
+*   **Parcel ID** (Links to Dataset 1)
+*   Billing Period Start Date
+*   Billing Period End Date
+*   Billing Date
+*   Original Charge Amount
+*   Payment Date
+*   Payment Amount
+*   Outstanding Balance
+*   Interest/Penalties Applied
+*   **Arrears Record ID** (Links to Dataset 17, if in arrears)
+*   **Collection Agency Referral ID** (Links to Dataset 12, if referred)
+
+**17. Arrears Records**
+
+**Quotes:**
+*   "the collection of arrears due the city and all other sums due the city" (Section 1504)
+*   "The department shall collect all real property taxes, water and sewer charges, other assessments and arrears against real property and all other taxes, assessments and arrears payable to the city." (Section 1504.2.b)
+
+**Why:** To track all outstanding debts owed to the city from various sources.
+
+**One row represents:** A single outstanding arrears record for a specific charge or tax.
+
+**Covers:** All types of arrears due to the city, including real property taxes, non-property taxes, water/sewer charges, and other assessments.
+
+**Columns:**
+*   Arrears Record ID (Unique Identifier)
+*   **Parcel ID** (Links to Dataset 1, if real property related)
+*   **Taxpayer ID** (Links to Dataset 4, if non-property tax related)
+*   **Charge ID** (Links to Dataset 16, if water/sewer related)
+*   Original Debt Type (e.g., Real Property Tax, Non-Property Tax, Water/Sewer Charge, Parking Violation)
+*   Original Debt ID (e.g., Tax Bill ID, Non-Property Tax Account ID, Ticket ID)
+*   Date Debt Became Arrears
+*   Original Arrears Amount
+*   Current Arrears Amount
+*   Interest Accrued
+*   Penalties Accrued
+*   Last Payment Date
+*   Last Payment Amount
+*   Status (e.g., Active, Paid, Compromised, Referred)
+*   **Compromise Agreement ID** (Links to Dataset 10, if applicable)
+*   **Warrant/Judgment ID** (Links to Dataset 11, if applicable)
+*   **Collection Agency Referral ID** (Links to Dataset 12, if applicable)
+
+**18. Real Property Assessment Change Notices**
+
+**Quotes:**
+*   "The department or division responsible for the assessment of real property shall, upon an increase in assessed valuation of real property, notify the owner, as recorded in said department or division, of such increase by first- class mail at least thirty days prior to the final date for filing any appeal." (Section 1511)
+*   "no such addition to the books and no such increase in assessed valuation shall be made, except upon mailing ten days' prior written notice addressed to the person whose name appears on the records in the office of the city collector as being the owner or agent of the owner of the real estate affected thereby at the last known address of such owner or agent." (Section 1512)
+*   "When such notice is mailed after the first day of February, such owners may apply for a correction of such assessment so added or so increased within twenty days after the mailing of such notice" (Section 1512)
+
+**Why:** To track all official notifications sent to property owners regarding changes to their property assessments.
+
+**One row represents:** A single notice sent to a property owner regarding an assessment change.
+
+**Covers:** All notices of increased or added assessed valuation for real property.
+
+**Columns:**
+*   Notice ID (Unique Identifier)
+*   Notice Date
+*   **Parcel ID** (Links to Dataset 1)
+*   **Assessment ID** (Links to Dataset 2, for the specific assessment record being changed)
+*   Owner Name (as recorded)
+*   Mailing Address
+*   Change Type (e.g., Increase in Valuation, Omitted Property Added)
+*   Previous Assessed Valuation
+*   New Assessed Valuation
+*   Date Mailed
+*   Affidavit of Mailing Filed (Yes/No)
+*   Appeal Filing Deadline
+*   Correction Application Deadline (if mailed after Feb 1)
+
+**19. Real Property Assessment Apportionment Records**
+
+**Quotes:**
+*   "When any separately assessed parcel of real estate shall have been divided prior to the first day of June, the commissioner may apportion the assessment thereof in such manner as may be provided by law." (Section 1513)
+
+**Why:** To track the division of assessed parcels and the subsequent apportionment of their assessments.
+
+**One row represents:** A single assessment apportionment event for a divided real property parcel.
+
+**Covers:** All instances where a separately assessed parcel is divided and its assessment is apportioned.
+
+**Columns:**
+*   Apportionment ID (Unique Identifier)
+*   Apportionment Date
+*   **Original Parcel ID** (Links to Dataset 1)
+*   Original Assessed Valuation
+*   New Parcel ID 1 (Links to Dataset 1)
+*   Apportioned Valuation 1
+*   New Parcel ID 2 (Links to Dataset 1)
+*   Apportioned Valuation 2
+*   ... (for additional new parcels)
+*   Reason for Division/Apportionment
+*   Legal Basis for Apportionment
+
+**20. Real Property Entry Records**
+
+**Quotes:**
+*   "The commissioner or any assessor may, in accordance with law, enter upon real property and into buildings and structures at all reasonable times to ascertain the character of the property." (Section 1521)
+*   "Refusal by the owner or the agent of such owner to permit such entry shall be a misdemeanor" (Section 1521)
+
+**Why:** To document instances of property entry by assessors and any related issues like refusal.
+
+**One row represents:** A single attempt or successful entry by an assessor onto real property.
+
+**Covers:** All entries onto real property by assessors for valuation purposes, including instances of refusal.
+
+**Columns:**
+*   Entry ID (Unique Identifier)
+*   Entry Date
+*   Entry Time
+*   **Parcel ID** (Links to Dataset 1)
+*   Assessor ID (Links to Dataset 22)
+*   Purpose of Entry (e.g., Valuation, Character Ascertainment)
+*   Entry Outcome (e.g., Successful, Refused, No Access)
+*   Owner/Agent Present (Yes/No)
+*   Refusal Reported (Yes/No)
+*   Legal Action for Refusal (Yes/No)
+*   Notes/Observations
+
+**21. Official Bond Records**
+
+**Quotes:**
+*   "The commissioner and deputy commissioners shall provide a bond." (Section 1502)
+
+**Why:** To track the provision and status of required bonds for key agency officials.
+
+**One row represents:** A single bond provided by an official.
+
+**Covers:** Bonds provided by the Commissioner and Deputy Commissioners.
+
+**Columns:**
+*   Bond ID (Unique Identifier)
+*   **Employee ID** (Links to Dataset 22, for the official)
+*   Official Title (e.g., Commissioner, Deputy Commissioner)
+*   Bond Provider
+*   Bond Amount
+*   Bond Effective Date
+*   Bond Expiration Date
+*   Bond Status (e.g., Active, Expired, Renewed)
+*   Date of Last Verification
+
+**22. Agency Employee Records**
+
+**Quotes:**
+*   "The mayor may appoint three deputy commissioners. In addition, the mayor shall appoint one deputy commissioner whose function shall be to serve as the city sheriff." (Section 1502)
+*   "The commissioner shall appoint, within the appropriation therefor, as many assessors as shall be necessary for the performance of such functions" (Section 1504.1)
+*   "The commissioner shall appoint the director of the bureau, deputy director and all other officers and employees of the bureau, and hearing examiners." (Section 1504.4)
+*   "the commissioner of finance may exercise or assign within the department such management functions of the office of the sheriff, including but not limited to those functions related to the appointment and removal of deputy sheriffs and other personnel of such office pursuant to the civil service law" (Section 1526.1)
+
+**Why:** To manage basic information for all agency staff, including their roles and appointments.
+
+**One row represents:** A single employee of the Department of Finance.
+
+**Covers:** All employees of the Department of Finance, including the Commissioner, Deputy Commissioners, City Sheriff, Assessors, Parking Violations Bureau staff, and other personnel.
+
+**Columns:**
+*   **Employee ID** (Unique Identifier)
+*   First Name
+*   Last Name
+*   Job Title (e.g., Commissioner, Deputy Commissioner, Assessor, Hearing Examiner, Deputy Sheriff)
+*   Department/Bureau
+*   Appointment Date
+*   Employment Status (e.g., Active, Resigned, Retired)
+*   Date of Last Bond (if applicable, links to Dataset 21)
+*   Required Certifications (e.g., for assessors, hearing examiners)
+*   Certification Expiration Date
+
+**23. Bank Collateral Records**
+
+**Quotes:**
+*   "Each such bank and trust company shall before deposits are made...execute and file with the commissioner a bond to the city...and, as security for such funds, shall deposit with the comptroller outstanding unmatured obligations of the United States of America, or any obligation fully guaranteed or insured as to interest and principal by the United States of America acting through an agency, subdivision, department or division thereof, obligations of the state of New York or obligations of the city of New York, the value of which at the existing prices on the open market shall be equal to the estimated amount of the proposed deposit" (Section 1524.3)
+*   "On the withdrawal of all or a part of the funds deposited in any depository and a closing or depleting of the account thereof...the commissioner and the comptroller shall certify to such settlement or depletion of difference and direct the surrender of the whole or a proportionate share of the securities so deposited to the owner or owners thereof." (Section 1524.4)
+
+**Why:** To track the securities provided by designated banks as collateral for city deposits, ensuring fund security.
+
+**One row represents:** A single security deposited by a bank as collateral.
+
+**Covers:** All outstanding unmatured obligations and other securities deposited by designated banks as collateral for city funds.
+
+**Columns:**
+*   Collateral ID (Unique Identifier)
+*   **Designated Bank ID** (Links to Dataset 8)
+*   Security Type (e.g., US Treasury Obligation, NY State Obligation, NYC Obligation)
+*   Security Description
+*   Face Value
+*   Market Value (at time of deposit)
+*   Deposit Date
+*   Maturity Date
+*   Associated Deposit Amount (the city deposit it secures)
+*   Date of Withdrawal/Surrender
+*   Status (e.g., Active, Surrendered)
+
+**24. Agency Asset Inventory**
+
+**Quotes:**
+*   "The department shall maintain in each borough an office for the performance of such powers and duties." (Section 1505)
+*   "The commissioner upon receiving the assessment rolls and warrants shall immediately cause the assessment rolls and warrants to be filed in the respective borough offices." (Section 1518.2)
+
+**Why:** To manage and track the physical assets and infrastructure necessary for the agency's operations.
+
+**One row represents:** A single physical asset owned or maintained by the agency.
+
+**Covers:** All physical assets, including office equipment, furniture, and potentially IT hardware, used across the department's offices.
+
+**Columns:**
+*   Asset ID (Unique Identifier)
+*   Asset Name/Description
+*   Asset Type (e.g., Computer, Printer, Desk, Filing Cabinet, Office Space)
+*   Location (e.g., Borough Office, Specific Room)
+*   Acquisition Date
+*   Acquisition Cost
+*   Condition
+*   Maintenance Schedule
+*   Last Maintenance Date
+*   Disposal Date (if applicable)
+*   Assigned To (Employee ID, if applicable, links to Dataset 22)
+
+**25. Collection Agency Contracts**
+
+**Quotes:**
+*   "the commissioner may enter into contracts with collection agencies for the collection of (i) any or all tax warrants and judgments for all city taxes subject to collection by the department, other than real property taxes, or (ii) city water and sewer charges, or both" (Section 1527.1)
+*   "any such contract shall be subject to the provisions of sections three hundred twelve and three hundred thirteen." (Section 1527.1)
+*   "Any such contract shall apply only to such tax warrants and judgments and to such water and sewer charges as the commissioner may refer to the collection agency, and shall be terminable at the will of the commissioner." (Section 1527.2)
+*   "The consideration to be paid to such collection agency may be a percentage or percentages of the amount collected by such agency, or as otherwise provided in the contract, but shall be within the amount appropriated and available for such purpose." (Section 1527.3)
+*   "Before beginning performance of a contract authorized by subdivision one of this section, the contracting collection agency shall give security for faithful performance and shall provide such insurance policies, including but not limited to a comprehensive general liability insurance, naming the city as a party in interest, as the commissioner may require." (Section 1527.5)
+*   "No contract entered into pursuant to this section may be so worded as to grant to any contracting collection agency the exclusive right to perform any work authorized by this section." (Section 1527.6)
+
+**Why:** To manage and track all contracts with external collection agencies, ensuring compliance and performance.
+
+**One row represents:** A single contract with a collection agency.
+
+**Covers:** All contracts entered into by the commissioner with collection agencies for tax warrants, judgments, and water/sewer charges.
+
+**Columns:**
+*   **Collection Agency Contract ID** (Unique Identifier)
+*   Agency Name
+*   Contract Start Date
+*   Contract End Date
+*   Contract Status (e.g., Active, Expired, Terminated)
+*   Termination Date (if applicable)
+*   Termination Reason (if applicable)
+*   Scope of Work (e.g., Tax Warrants, Water/Sewer Charges)
+*   Payment Terms (e.g., Percentage of Collection, Fixed Fee)
+*   Security Provided (Yes/No)
+*   Insurance Provided (Yes/No)
+*   Comptroller Approval of Security/Insurance (Yes/No)
+*   Exclusive Rights Granted (Yes/No, should be No)
+
+---
+
+**Non-Tabular Information**
+
+The following information is mentioned in the charter but is likely not maintained in a tabular format as per the instructions (e.g., documents, reports, rules, or general concepts):
+
+*   **Job Applications:** Implied by the appointment of various staff (Section 1502, 1504.1, 1504.4, 1526.1).
+*   **Rules and Regulations:** General legal framework for operations (e.g., for tax compromises, bank criteria, discount rates).
+*   **Receipts:** Individual paper receipts for payments, unless digitized into a transaction log (Section 1519.3).
+*   **Public Hearing Transcripts/Comments:** For Community Investment Advisory Board needs assessments (Section 1524-a.1.a.1.i, 1524-a.4).
+*   **Affidavits of Mailing:** For assessment increase notices (Section 1511, 1512).
+*   **Certificates of Correctness:** Annexed to assessment rolls (Section 1514.2).
+*   **Statements and Estimates by the Mayor:** Regarding the budget and probable receipts (Section 1515).
+*   **Banking Commission Recommendations/Reports:** On proposed discount percentages (Section 1519-a.7.b).
+*   **Bank Certificates for EEO Policy:** Filed by designated banks (Section 1524.2.a.2).
+*   **Bonds for Safekeeping Deposits:** Executed by banks (Section 1524.3).
+*   **Public Advocate Warrants:** Authorizing tax collection (Section 1518.1).
+*   **City Record Advertisements:** For public inspection of assessment rolls and tax due dates (Section 1510, 1519, 1519-a).
+*   **Opinions of Commissioner/Deputy Commissioner:** With reasons for tax compromises (Section 1504.2.d).
+*   **Written Determination for Updated Revenue Estimates:** By the mayor (Section 1515.c).
+*   **Alternative Revenue Estimates:** Submitted by persons/organizations (Section 1515.d, e).
+*   **Council Resolutions:** For adopting discount percentages (Section 1519-a.7.c).
+*   **Mortgage Escrow Agent Definitions:** Legal definitions (Section 1519.4.c).
+*   **Criteria for Evaluating Banks:** Established by the commissioner for Burma compliance (Section 1523.3).
+*   **Notices of Bank Classification/Revocation:** Published in the City Record (Section 1523.3, 1524.2.b).
+*   **Written Notice to Commissioner:** For bank designation by the banking commission (Section 1524.1).
+*   **Report Detailing Research and Analytical Methods:** For discount percentage recommendations (Section 1519-a.7.b).
+*   **Proof of Arm's Length Transaction:** (from example text, not charter, but illustrative of non-tabular proof).
+*   **Legal Proceedings/Court Orders:** Underlying trust funds or tax appeals (Section 1504.2.a, 1504.3.b).
+*   **Budget Documents:** Referenced in tax rate fixing (Section 1515, 1516).
+*   **City Clerk Warrants:** Procured for tax collection (Section 1518.1).
+*   **Certificates of Aggregate Valuation:** Transmitted to the state comptroller (Section 1517).
+*   **Written Recommendation to Council:** From banking commission on discount percentage (Section 1519-a.7.b).
+*   **Written Determination by Mayor:** For fiscally necessary updates to revenue estimates (Section 1515.c).
+*   **Guidelines for City Agencies:** For depositing/investing funds based on bank classification (Section 1523.3).
+*   **Electronic Mail Notifications:** To property owners about online tax bills (Section 1519-a.10).

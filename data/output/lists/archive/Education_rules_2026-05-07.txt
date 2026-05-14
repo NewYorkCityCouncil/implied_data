@@ -1,0 +1,544 @@
+**Non-Tabular Information:**
+*   Job applications
+*   Rules and regulations
+*   Receipts
+*   Photos
+*   Research documents
+*   Detailed inspection reports
+*   Legal documents
+*   Contracts (the full text of contracts, not the registry entry)
+*   Medical audit reports (the full report, not the summary record)
+*   Public education materials/content
+*   Counseling content
+*   Application forms (the blank forms themselves)
+
+---
+
+**Identified Datasets:**
+
+**1. Pet Shop Permits and Applications**
+
+**Quotes:**
+*   "§ 17-373 Permit applications. a. An application for a permit required pursuant to section 17-372 of this title or for the renewal of such a permit shall be made and submitted on forms furnished by the department." (§ 17-373.a)
+*   "e. The commissioner shall not issue or renew a permit unless department records show there are no finally determined uncorrected violations or unpaid outstanding fines, penalties or forfeitures imposed by any court, administrative tribunal established within the office of administrative trials and hearings or administrative tribunal established in accordance with the administrative code or the charter, which are due and payable by the applicant or the permittee." (§ 17-373.e)
+*   "f. The commissioner shall not issue a new permit or renewal of an existing permit to any person listed on the animal abuse registry created pursuant to chapter sixteen of this title." (§ 17-373.f)
+*   "g. The commissioner shall not issue a new permit to any entity based on a sale or change of ownership of a permitted business or activity regulated by laws or rules enforced by the department, where department or other records show any finally determined uncorrected violations or unpaid fines and penalties, unless the applicant submits proof satisfactory to the department that the transfer of the business was the result of an arm's length transaction." (§ 17-373.g)
+
+**Why:** To administer and enforce pet shop permits, the agency must track applications, applicant details, and compliance status.
+
+**One row represents:** An application for a pet shop permit.
+
+**Covers:** New, renewal, and transfer applications for pet shop permits.
+
+**Columns:**
+*   Application ID
+*   Application type: Initial, Renewal, or Transfer
+*   Application status: Submitted, In Review, Active, Expired, Rejected, Denied
+*   Shop ID
+*   Applicant type (sole proprietorship, partnership, corporation, limited liability company)
+*   Applicant name
+*   Applicant age
+*   Applicant gender
+*   Applicant residence address
+*   Applicant business address
+*   Applicant telephone number
+*   Applicant email address
+*   Proof of current workers' compensation and disability benefits insurance coverage provided? (Y/N)
+*   Any uncorrected violations/unpaid outstanding fines, penalties or forfeitures by individual or organization? (Y/N)
+*   Listed on animal abuse registry? (Y/N)
+*   Names of all officers/members of the partnership, limited liability company, group, or corporation
+*   Transfer of business: Arm's length transaction proof provided? (Y/N)
+*   Transfer of business: Applicant assumed complete management? (Y/N)
+*   Transfer of business: Applicant paid market value? (Y/N)
+*   Transfer of business: Applicant/members/officers related by blood/marriage to prior owner/manager? (Y/N)
+
+**2. Child Care Provider Home Inspections**
+
+**Quotes:**
+*   "§ 21-120.1.b.2 inspecting a child care provider's home within thirty days of the placement of the first child receiving subsidized child care with that child care provider for the purpose of determining that such child care provider meets the requirements of section three hundred ninety of the social services law, the regulations promulgated thereunder, and any plan approved pursuant to section three hundred ninety of the social services law, and that the child care provider is capable of providing safe and suitable care to children which is supportive of their physical, intellectual, emotional and social well-being." (§ 21-120.1.b.2)
+*   "§ 21-120.1.b.3 arranging for a visit to a child care provider's home by a parent prior to the placement of such parent's child receiving subsidized child care with that child care provider for the purpose of determining that such child care provider is capable of providing safe and suitable care which is supportive of that child's physical, intellectual, emotional and social well-being" (§ 21-120.1.b.3)
+*   "§ 21-120.1.b.4 inspecting the operation of every home where subsidized child care is provided no less than five times each year, which shall be in addition to and separate and distinct from any visits performed pursuant to paragraph (3) of this subdivision or mandated by the United States department of agriculture pursuant to the child and adult care food program, for the purpose of ensuring that child care is provided in accordance with the requirements of all applicable laws, regulations and rules" (§ 21-120.1.b.4)
+*   "§ 21-120.1.b.5 inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months in which a child care provider is providing subsidized child care and at least one additional time during the next six months, which shall be in addition to and separate and distinct from any visits and inspections required by paragraphs (2), (3) and (4) of this subdivision" (§ 21-120.1.b.5)
+*   "§ 21-120.1.b.6 in addition to and separate and distinct from those visits and inspections required by paragraphs (3) and (4) of this subdivision, inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months after the provider has had eligibility to provide subsidized child care restored subsequent to the effective date of this paragraph or has been adjudicated to have violated any provision of any applicable law, regulation or rule" (§ 21-120.1.b.6)
+
+**Why:** To ensure child care providers meet safety and suitability standards, the agency must track all mandated inspections.
+
+**One row represents:** An inspection of a child care provider's home.
+
+**Covers:** All mandated inspections for subsidized child care providers, including initial, parent visits, annual, first-year, and post-violation inspections.
+
+**Columns:**
+*   Child Care Provider ID
+*   Inspection Type: Initial, Parent Visit, Annual, First Six Months, Next Six Months, Post-Restoration/Violation, Additional
+*   Initial Child Placement Date (if applicable)
+*   Exempted via providing care prior to effective date? (Y/N)
+*   Exempted via receiving payment exclusively through child care certificates? (Y/N)
+*   Exempted via USDA Child and Adult Care Food Program? (Y/N)
+*   Inspection Date
+*   Inspector ID
+*   Inspector Organization
+*   Inspection Findings Summary
+*   Compliance Status (Compliant, Non-Compliant, Violation Issued)
+*   Follow-up Inspection Required? (Y/N)
+*   Date of Next Required Inspection
+
+**3. Public Health Service Delivery Records**
+
+**Quotes:**
+*   "§ Section 556.d.1 Maintain and operate public health centers and clinics as shall be established in the department" (§ 556.d.1)
+*   "§ Section 556.d.5 promote or provide for programs for the prevention and control of disease and for the prevention, diagnosis, care, treatment, social and vocational rehabilitation, special education and training of the mentally disabled" (§ 556.d.5)
+*   "§ Section 556.d.6 promote or provide diagnostic and therapeutic services for maternity and child health, family planning, communicable disease, medical rehabilitation and other diseases and conditions affecting public health" (§ 556.d.6)
+*   "§ Section 556.d.7 promote or provide medical and health services for school children and the ambulant sick and needy persons of the city" (§ 556.d.7)
+*   "§ Section 556.d.8 promote or provide medical and health services for the incarcerated individuals of prisons maintained and operated by the city" (§ 556.d.8)
+
+**Why:** To fulfill its mandate to provide diverse public health services, the agency must track all services delivered.
+
+**One row represents:** A single public health service provided to an individual.
+
+**Covers:** Diagnostic, therapeutic, preventive, rehabilitative, and educational services across various public health programs (maternity, child health, family planning, communicable disease, mental health, school health, incarcerated individuals).
+
+**Columns:**
+*   Service ID
+*   Patient ID
+*   Public Health Center ID (linked to **Dataset 10**)
+*   Service Type (e.g., Maternity Care, Child Health Check-up, Family Planning Consultation, Communicable Disease Treatment, Mental Health Diagnosis, Vocational Rehabilitation, School Health Screening, Incarcerated Individual Medical Visit)
+*   Service Date
+*   Service Provider ID (e.g., Doctor, Nurse, Counselor)
+*   Service Outcome/Notes Summary
+*   Referral Made? (Y/N)
+*   Referral Type
+*   Program ID (if part of a specific program)
+
+**4. Employee Certifications and Training**
+
+**Quotes:**
+*   "ensuring specialists are up to date on required certifications" (from prompt instructions)
+*   "§ 21-203.b The commissioner shall require that employees of senior centers and employees of entities that contract with the department to provide services to senior citizens, be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years, if such employee has or is expected to have significant and direct person to person contact with senior citizens." (§ 21-203.b)
+
+**Why:** To ensure all employees, especially specialists and those in direct contact with the public, maintain required qualifications.
+
+**One row represents:** A single certification or required training for an employee.
+
+**Covers:** All mandatory certifications and recurring training requirements for agency employees, including elder abuse training.
+
+**Columns:**
+*   Employee ID
+*   Certification/Training Name
+*   Issuing Body/Training Provider
+*   Date Issued/Completed
+*   Expiration Date
+*   Status (Current, Expired, Due for Renewal, In Progress)
+*   Compliance Status (Compliant, Non-Compliant)
+*   Date Next Training Required By (for recurring training like elder abuse)
+*   Training Event ID (linked to **Dataset 6**)
+
+**5. Child Care Monitoring and Referrals**
+
+**Quotes:**
+*   "§ 21-120.1.b.1 monitoring the care provided to each child and ensuring that each child's individual needs are being met, identifying children in need of further evaluation and making appropriate referrals for individual or family-related services" (§ 21-120.1.b.1)
+
+**Why:** To ensure the well-being of children in subsidized care and facilitate necessary support services.
+
+**One row represents:** A monitoring event or a referral action for a child.
+
+**Covers:** Ongoing monitoring of children's needs and any subsequent referrals for individual or family services.
+
+**Columns:**
+*   Monitoring/Referral ID
+*   Child ID
+*   Child Care Provider ID (linked to **Dataset 2**)
+*   Date of Monitoring/Referral
+*   Monitor/Staff ID
+*   Child's Needs Met (Y/N/Partial)
+*   Notes on Child's Well-being/Needs
+*   Referral Made? (Y/N)
+*   Referral Type (e.g., Medical, Mental Health, Family Support, Educational)
+*   Referral Date
+*   Referral Agency/Service
+*   Referral Status (e.g., Pending, Completed, Declined)
+*   Referral Outcome Summary
+
+**6. Senior Center Staff Training Events**
+
+**Quotes:**
+*   "§ 21-203.a The commissioner shall develop a program to train senior service providers in the detection and reporting of elder abuse. Such program shall also include training on the counseling of elder abuse victims." (§ 21-203.a)
+*   "§ 21-203.b The commissioner shall require that employees of senior centers and employees of entities that contract with the department to provide services to senior citizens, be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years" (§ 21-203.b)
+*   "§ 21-203.c The commissioner shall require senior centers to hold at least two educational sessions per year during which guests and members of the senior center will receive counseling regarding elder abuse prevention and awareness and be instructed on how to detect and report instances of elder abuse." (§ 21-203.c)
+
+**Why:** To track the scheduling and execution of mandatory elder abuse training events for staff and public education sessions.
+
+**One row represents:** A training event held by a senior center.
+
+**Covers:** Mandatory elder abuse detection trainings for senior center employees and public elder abuse prevention educational sessions.
+
+**Columns:**
+*   Training Event ID
+*   Senior Center ID
+*   Senior Center Name
+*   Event Date
+*   Event Time
+*   Session Leader ID
+*   Session Leader Name
+*   Training Type (Staff, Public Education)
+*   Attendance Count (Total)
+*   Staff Attendance Count (for staff trainings)
+*   Member/Public Attendance Count (for public sessions)
+*   Training Topic/Curriculum Version
+
+**7. Senior Center Staff Training Attendance**
+
+**Quotes:**
+*   "§ 21-203.b The commissioner shall require that employees of senior centers ... be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years" (§ 21-203.b)
+
+**Why:** To ensure individual senior center employees comply with mandatory elder abuse training requirements.
+
+**One row represents:** An elder abuse detection training event attended by senior center staff that counts towards compliance.
+
+**Covers:** Attendance records for mandatory elder abuse detection trainings for senior center employees.
+
+**Columns:**
+*   Attendance Record ID
+*   Senior Center ID
+*   Employee ID
+*   Employee Name
+*   Training Type: Initial, Refresher
+*   Date of Training
+*   Training Event ID (linked to **Dataset 6**)
+*   Date Next Training Required By
+*   In Compliance? (Y/N)
+
+**8. Child Immunization Information**
+
+**Quotes:**
+*   "§ 21-120.1.b.7 assisting in the collection and review of medical and immunization information which is required to be maintained for all children for which the provider is providing subsidized child care and the monitoring of those medical and immunization requirements" (§ 21-120.1.b.7)
+
+**Why:** To ensure all children in subsidized care meet required immunization standards.
+
+**One row represents:** A child's immunization record.
+
+**Covers:** Immunizations for children receiving subsidized child care.
+
+**Columns:**
+*   Child ID
+*   Child Care Provider ID (linked to **Dataset 2**)
+*   Child Name
+*   Immunization Name (e.g., MMR, DTaP, Polio)
+*   Date Administered
+*   Immunization Status (e.g., Complete, Partial, Exempt)
+*   Next Dose Due Date (if applicable)
+*   Medical Exemption (Y/N)
+*   Religious Exemption (Y/N)
+
+**9. Laboratory Examination Records**
+
+**Quotes:**
+*   "§ Section 556.d.3 produce, standardize and distribute certain diagnostic, preventive and therapeutic products and conduct laboratory examinations for the diagnosis, prevention and control of disease" (§ 556.d.3)
+
+**Why:** To track all laboratory examinations performed for disease diagnosis, prevention, and control.
+
+**One row represents:** A single laboratory examination performed.
+
+**Covers:** All laboratory examinations conducted by or for the agency for public health purposes.
+
+**Columns:**
+*   Examination ID
+*   Patient ID (if applicable)
+*   Specimen ID
+*   Test Type (e.g., Blood Culture, PCR, Antibody Test)
+*   Test Date
+*   Result (e.g., Positive, Negative, Value)
+*   Performing Lab ID (linked to **Dataset 10**)
+*   Ordering Physician/Program ID
+*   Disease/Condition Tested For
+*   Result Interpretation
+
+**10. Public Health Center Registry**
+
+**Quotes:**
+*   "§ Section 556.d.1 Maintain and operate public health centers and clinics as shall be established in the department" (§ 556.d.1)
+
+**Why:** To manage and track the operational details of all public health centers and clinics.
+
+**One row represents:** A single public health center or clinic.
+
+**Covers:** All public health centers and clinics maintained and operated by the department.
+
+**Columns:**
+*   Center ID
+*   Center Name
+*   Address
+*   Contact Phone Number
+*   Center Type (e.g., Clinic, Lab, Administrative Office)
+*   Operating Hours
+*   Services Offered (e.g., Immunizations, STD Testing, Family Planning)
+*   Date Established
+*   Status (Open, Closed, Under Renovation)
+
+**11. Public Health Center Inventory Orders**
+
+**Quotes:**
+*   "§ Section 556.d.1 Maintain and operate public health centers and clinics" (§ 556.d.1)
+*   "§ Section 556.d.3 conduct laboratory examinations for the diagnosis, prevention and control of disease" (§ 556.d.3)
+*   "§ Section 556.d.6 provide diagnostic and therapeutic services for maternity and child health" (§ 556.d.6)
+
+**Why:** To manage the procurement and stock of consumable supplies necessary for public health centers and clinics.
+
+**One row represents:** An order of consumable stock necessary to run Public Health Centers.
+
+**Covers:** All orders for consumable stock (e.g., masks, gloves, reagents, vaccines) across all Public Health Centers.
+
+**Columns:**
+*   Order ID
+*   Order Date
+*   Item Name
+*   Quantity Ordered
+*   Unit Cost
+*   Total Cost
+*   Vendor ID
+*   Center ID (linked to **Dataset 10**)
+*   Date Received
+*   Status (Ordered, Received, Backordered)
+
+**12. Public Health Center Capital Tracking**
+
+**Quotes:**
+*   "§ Section 556.d.1 Maintain and operate public health centers and clinics" (§ 556.d.1)
+*   "§ Section 556.d.3 conduct laboratory examinations for the diagnosis, prevention and control of disease" (§ 556.d.3)
+
+**Why:** To manage and track capital investments (equipment) essential for public health center operations.
+
+**One row represents:** A single capital asset (e.g., MRI machine, X-ray unit) acquired for a public health center.
+
+**Covers:** All capital equipment and long-term assets used in Public Health Centers.
+
+**Columns:**
+*   Asset ID
+*   Item Name
+*   Manufacturer
+*   Model Number
+*   Serial Number
+*   Acquisition Date
+*   Purchase Cost
+*   Center ID (linked to **Dataset 10**)
+*   Expected Useful Life (Years)
+*   Expected Necessary Replacement Date
+*   Current Status (In Use, Under Repair, Retired)
+*   Last Calibration/Maintenance Date
+
+**13. Agency Contracts Registry**
+
+**Quotes:**
+*   "§ Section 556.d.9 within the amounts appropriated therefor, enter into contracts for the rendition or operation of services and facilities for the mentally disabled on a per capita basis or otherwise, including contracts executed pursuant to subdivision e of section 41.19 of the mental hygiene law" (§ 556.d.9)
+*   "keeping software contracts" (from prompt instructions)
+
+**Why:** To manage all contracts the agency enters into for services, facilities, software, and other operational needs.
+
+**One row represents:** A single contract entered into by the agency.
+
+**Covers:** All contracts for services, facilities, software, and other operational agreements.
+
+**Columns:**
+*   Contract ID
+*   Vendor/Provider ID (linked to **Dataset 14**)
+*   Contract Type (e.g., Service, Software, Facility Lease, Grant)
+*   Contract Title/Description
+*   Start Date
+*   End Date
+*   Total Contract Value
+*   Payment Terms
+*   Services/Products Covered
+*   Department Responsible
+*   Contract Status (Active, Expired, Terminated)
+*   Renewal Option (Y/N)
+*   Date of Last Review
+
+**14. External Service Provider Registry**
+
+**Quotes:**
+*   "§ 21-120.1.a.5 "Authorized family child care service" shall mean an individual, association, corporation, partnership, institution, organization, or other entity that has been designated by the administration, or other appropriate agencies of the city and in consultation with the administration, as qualified to inspect the home of a family child care provider or group family child care provider seeking eligibility to provide subsidized child care, assist in bringing such provider into full compliance with all applicable laws, regulations and rules in order for such family child care provider or group family child care provider to be designated as eligible to provide subsidized child care and/or monitor the performance of a child care provider that is providing subsidized child care." (§ 21-120.1.a.5)
+*   "§ Section 556.d.11 use the services and facilities of public or private voluntary institutions whenever practical, and encourage all providers of services to cooperate with or participate in the program of services for the mentally disabled, whether by contract or otherwise." (§ 556.d.11)
+
+**Why:** To maintain a comprehensive record of all external entities partnering with or providing services to the agency.
+
+**One row represents:** An external institution or provider partnering with the agency.
+
+**Covers:** All authorized family child care services, public/private voluntary institutions, and other service providers.
+
+**Columns:**
+*   Provider ID
+*   Provider Name
+*   Address
+*   Contact Person
+*   Contact Email
+*   Contact Phone Number
+*   Provider Type (e.g., Authorized Child Care Service, Voluntary Institution, Contractor)
+*   Services Offered
+*   Partnership Type (Contract, Voluntary, Designated)
+*   Designation/Approval Date
+*   Status (Active, Inactive, Suspended)
+
+**15. Medical Audit Records**
+
+**Quotes:**
+*   "§ Section 556.d.2 engage in or promote health research for the purpose of improving the quality of medical and health care; in conducting such research, the department shall have the authority to conduct medical audits, to receive reports on forms prepared or prescribed by the department" (§ 556.d.2)
+
+**Why:** To track the performance and findings of medical audits conducted to improve healthcare quality.
+
+**One row represents:** A single medical audit conducted.
+
+**Covers:** All medical audits performed by the department for quality improvement purposes.
+
+**Columns:**
+*   Audit ID
+*   Audit Date
+*   Audited Entity ID (e.g., Public Health Center ID (linked to **Dataset 10**), External Provider ID (linked to **Dataset 14**))
+*   Audit Scope/Focus
+*   Key Findings Summary
+*   Compliance Status (Compliant, Non-Compliant, Recommendations Issued)
+*   Follow-up Action Required? (Y/N)
+*   Follow-up Date
+*   Auditor ID
+
+**16. Diagnostic/Therapeutic Product Distribution**
+
+**Quotes:**
+*   "§ Section 556.d.3 produce, standardize and distribute certain diagnostic, preventive and therapeutic products and conduct laboratory examinations for the diagnosis, prevention and control of disease" (§ 556.d.3)
+
+**Why:** To track the distribution of diagnostic, preventive, and therapeutic products produced or managed by the agency.
+
+**One row represents:** A distribution event of a product.
+
+**Covers:** All distributions of diagnostic, preventive, and therapeutic products (e.g., vaccines, test kits, medications).
+
+**Columns:**
+*   Distribution ID
+*   Product ID
+*   Product Name
+*   Batch Number
+*   Quantity Distributed
+*   Distribution Date
+*   Recipient Entity ID (e.g., Public Health Center ID (linked to **Dataset 10**), External Provider ID (linked to **Dataset 14**))
+*   Recipient Entity Type
+*   Shipped By/Method
+*   Expiration Date of Product
+
+**17. Public Health Education Events**
+
+**Quotes:**
+*   "§ Section 556.d.4 promote or provide for public education on mental disability and the prevention and control of disease" (§ 556.d.4)
+
+**Why:** To track public education initiatives aimed at promoting health and preventing disease.
+
+**One row represents:** A single public education event.
+
+**Covers:** All public education events related to mental disability, disease prevention, and control.
+
+**Columns:**
+*   Event ID
+*   Event Date
+*   Event Time
+*   Topic/Theme
+*   Location (e.g., Public Health Center ID (linked to **Dataset 10**), Community Center)
+*   Audience Type (e.g., General Public, Specific Community Group)
+*   Attendance Count
+*   Presenter ID
+*   Materials Distributed (Y/N)
+
+**18. Employee Time Records**
+
+**Quotes:**
+*   "employee timecards" (from prompt instructions)
+
+**Why:** To accurately track employee work hours for payroll, project management, and compliance.
+
+**One row represents:** A single time entry for an employee.
+
+**Covers:** All time entries for agency employees.
+
+**Columns:**
+*   Time Record ID
+*   Employee ID
+*   Date
+*   Start Time
+*   End Time
+*   Activity/Project Code
+*   Hours Worked
+*   Overtime Hours
+*   Approved By (Supervisor ID)
+*   Approval Date
+*   Status (Pending, Approved, Rejected)
+
+**19. Facility/Equipment Maintenance Records**
+
+**Quotes:**
+*   "Building repair, uniform provision, environmental compliance, managing payroll, ensuring specialists are up to date on required certifications, keeping software contracts, legal changes, etc. There are all sorts of overhead to running an agency that is not immediately obvious from the objectives, but must be considered." (from prompt instructions)
+*   "Maintain and operate public health centers and clinics" (§ 556.d.1)
+
+**Why:** To ensure the proper functioning and safety of agency facilities and equipment.
+
+**One row represents:** A single maintenance event or request.
+
+**Covers:** Maintenance activities for agency buildings, public health centers (linked to **Dataset 10**), and equipment (linked to **Dataset 12**).
+
+**Columns:**
+*   Maintenance ID
+*   Asset ID (e.g., Building ID, Equipment ID (linked to **Dataset 12**))
+*   Asset Type (e.g., Building, HVAC, MRI Machine)
+*   Maintenance Type (e.g., Preventive, Repair, Calibration, Inspection)
+*   Date Requested
+*   Date Performed
+*   Performed By (Internal Staff ID or Vendor ID (linked to **Dataset 14**))
+*   Cost
+*   Status (Scheduled, In Progress, Completed, Canceled)
+*   Problem Description
+*   Resolution Details
+*   Next Scheduled Maintenance Date
+
+**20. Citizen Complaint Log**
+
+**Quotes:**
+*   "call center complaint logs" (from prompt instructions)
+*   "§ 21-203.d The commissioner shall require that every senior center post signage in a prominent common area section within the center that directs those who need information regarding elder abuse detection, reporting, counseling and services to call either the 311 citizen service system or the department's Elderly Crime Victims Resource Center." (§ 21-203.d)
+
+**Why:** To systematically record, track, and resolve complaints received from the public.
+
+**One row represents:** A single complaint received.
+
+**Covers:** All complaints received through various channels, including those related to elder abuse.
+
+**Columns:**
+*   Complaint ID
+*   Date Received
+*   Channel (e.g., Phone (311), Email, Web Form, In-Person)
+*   Complainant ID (if identifiable and consent given)
+*   Subject/Category (e.g., Elder Abuse, Service Quality, Facility Issue)
+*   Description Summary
+*   Department Assigned
+*   Assigned Staff ID
+*   Status (Open, In Progress, Resolved, Closed)
+*   Resolution Date
+*   Resolution Details
+*   Referral to other agency (Y/N)
+*   Referral Agency
+
+**21. Senior Center Signage Inventory**
+
+**Quotes:**
+*   "§ 21-203.d The commissioner shall require that every senior center post signage in a prominent common area section within the center that directs those who need information regarding elder abuse detection, reporting, counseling and services to call either the 311 citizen service system or the department's Elderly Crime Victims Resource Center." (§ 21-203.d)
+
+**Why:** To ensure compliance with mandatory signage requirements and track the status of posted signs.
+
+**One row represents:** A specific sign posted at a senior center.
+
+**Covers:** All mandated signage, specifically elder abuse information signs, posted in senior centers.
+
+**Columns:**
+*   Sign ID
+*   Senior Center ID
+*   Sign Type (e.g., Elder Abuse Information, Emergency Exit)
+*   Location within Center (e.g., Lobby, Dining Area)
+*   Date Posted
+*   Last Inspection Date
+*   Condition (Good, Damaged, Missing)
+*   Compliance Status (Compliant, Non-Compliant)
+*   Date of Next Inspection Due

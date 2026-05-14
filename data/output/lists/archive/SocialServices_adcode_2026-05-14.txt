@@ -1,0 +1,583 @@
+**Identified Datasets**
+
+**1. Client Applications (Cash Assistance, SNAP, Medicaid, HIV/AIDS Services, Emergency Grants)**
+*   **Quotes:**
+    *   § 21-128.b: "The commissioner shall direct staff of the division to provide access to benefits and services to every eligible person with HIV who requests assistance, and shall ensure the provision of benefits and services to eligible persons with HIV. Any eligible person shall receive only those benefits and services for which such person qualifies in accordance with the applicable eligibility standards..."
+    *   § 21-128.c.1: "Upon written or oral application to the division for benefits and services or submission of documents required to establish eligibility for benefits and services by a person with HIV, such person shall immediately be provided with a receipt which shall include... a statement as to whether any application for such benefits and services is complete or incomplete, and if incomplete, such receipt shall identify any information or documents needed in order for the application to be deemed complete."
+    *   § 21-132.1.c: "Upon written or oral application to the department for food stamps an applicant shall immediately be provided with a receipt, which shall be in the form of a checklist and shall include, at a minimum, the date of the application, a description of the information received, and an indication as to whether any application for such benefits and services is complete or incomplete, and if incomplete, such receipt shall identify any information or documents needed in order for the application to be deemed complete."
+    *   § 21-134.c: "Semiannual report for heads of household aged sixteen through twenty. ...report regarding the total number of individuals aged sixteen through twenty who applied for public assistance as head of household during the previous six months and of those, the total number accepted and rejected..."
+    *   § 21-142.c: "Denial report. The department shall post on its website and submit to the speaker of the council and the public advocate a report on instances in which applications for ongoing cash or supplemental nutrition assistance were denied during the relevant reporting period."
+    *   § 21-150.g: "Reporting on emergency assistance grants. ...The report shall include the number and percentage of: 1. New applications submitted solely for an emergency assistance grant; 2. Applications for emergency assistance grants that were accepted; and 3. Applications for emergency assistance grants that were not accepted."
+    *   § 21-153.a: "Application confirmation notice. No later than 48 hours after submission of a written or oral application to the department for cash assistance... or supplemental nutrition assistance program benefits, the department shall provide the applicant with an application confirmation notice..."
+    *   § 21-153.b: "Document receipts. Within 5 days of submission of a document related to an application for cash assistance... or supplemental nutrition assistance program benefits, the department shall provide a receipt..."
+    *   § 21-153.c: "Illegible documents. If the department determines that a document submitted as part of an application... is illegible, the department shall notify the applicant..."
+    *   § 21-156.b: "Provide a web form for any application that allows a person to sign and submit such application electronically; and 2. Provide an option for a person to conduct by telephone any interview required for purposes of completion of any application..."
+    *   § 21-195.a: "the agency and each agency contractor shall maintain records of the primary language of every individual who seeks or receives benefits or services from the agency or agency contractor."
+*   **Why:** The agency must track all applications for benefits, their status, and associated documentation to manage eligibility and service provision.
+*   **One row represents:** A single application for a benefit or service.
+*   **Covers:** Applications for cash assistance, SNAP, Medicaid, HIV/AIDS services, and emergency assistance grants.
+*   **Columns:**
+    *   Application ID
+    *   Client ID (links to Client Demographics)
+    *   Application Date
+    *   Application Type (e.g., Cash Assistance, SNAP, Medicaid, HIV/AIDS Services, Emergency Grant)
+    *   Submission Method (e.g., Online, Phone, In-person, Fax)
+    *   Primary Language of Applicant (links to Language Access Service Delivery)
+    *   Application Status (e.g., Submitted, In Review, Complete, Incomplete, Approved, Denied, Reopened)
+    *   Date Application Status Changed
+    *   Reason for Incomplete Application (if applicable)
+    *   Reason for Denial (if applicable, using WMS denial codes)
+    *   Date of Denial
+    *   Date of Approval
+    *   Processing Time (from completed application to approval/denial)
+    *   Interview Required?
+    *   Interview Conducted?
+    *   Interview Date
+    *   Interview Method (e.g., In-person, Phone)
+    *   Date of Last Recertification
+    *   Next Recertification Due Date
+    *   Is Case Head 16-20 years old?
+    *   Is Case Head 16-24 years old?
+    *   Council District of Case Head
+    *   Case Head Race
+    *   Case Head Ethnicity
+    *   Case Head Gender
+    *   Case Head Age Category
+    *   Case Head Limited English Proficiency?
+    *   Case Head Received Disability Accommodation?
+    *   Associated Document ID (links to Client Document Submissions)
+
+**2. Client Case Management & Service Delivery**
+*   **Quotes:**
+    *   § 21-107: "The commissioner shall have power to pay for the cost of the removal or transportation of any person who may come under the commissioner's charge whenever in his or her judgment the city will thereby be relieved from an unnecessary or improper charge."
+    *   § 21-108.b: "If a sufficiently able relative of a poor person fails to support him or her... such commissioner may apply to the family court for an order to compel him or her to pay the reasonable charge determined by such commissioner for the care of such relative..."
+    *   § 21-108.d: "Instead of bringing legal proceedings... the commissioner can directly enter into an agreement with a relative for the payment of the charges determined by such commissioner to be the reasonable charge for the care of the person maintained or about to be maintained by such commissioner as a public charge."
+    *   § 21-109.a: "If it shall at any time be ascertained that any person, who has received support or care or treatment from the city through the commissioner, has real or personal property or other means of enabling him or her to reimburse the city, an action may be maintained... to recover such sums of money as may have been expended by the city..."
+    *   § 21-109.b: "Instead of bringing the legal proceedings... such commissioner may determine the reasonable value of such support or care or treatment, and enter into an agreement for its payment."
+    *   § 21-112.1: "It shall be the duty of the commissioner to keep and preserve a proper record of: 1. All persons who shall come under his or her care or custody, and of the disposition made of such persons..."
+    *   § 21-112.2: "All persons who are inmates of private institutions who are accepted by him or her as proper charges upon the city."
+    *   § 21-114.b: "It shall be the duty of the commissioner or of the superintendent of any municipal lodging house acting under such commissioner or superintendent, to provide for any applicants for shelter who, in his or her judgment, may properly be received, plain and wholesome food and lodging for a night, free of charge, and also to cause such applicants to be bathed on admission and their clothing to be steamed and disinfected."
+    *   § 21-115: "The commissioner may establish, in his or her discretion, one or more day nurseries, and may adopt rules and regulations for the free admission thereto of children under ten years of age."
+    *   § 21-116.a: "The commissioner may establish a commissary at camp LaGuardia and a commissary at the Neponsit home for the aged for the use and benefit of the residents and employees thereof."
+    *   § 21-117.1: "The commissioner shall have the power to and may... enter into a contract to make rental payments to the owner, landlord, lessee, managing agent of, or other person entitled to rent and receive rental payments for, housing accommodations whenever (a) a recipient of public assistance and care has neglected or failed to make rental payment and payment has not otherwise been made, or (b) a housing accommodation is vacant and the owner... agrees in such contract to hold such housing accommodation vacant and to accept as a new tenant a recipient of public assistance and care designated by the commissioner..."
+    *   § 21-124.1.a-c: "Beginning on October 1, 1995... the commissioner shall report... on the homeless diversion teams including... a. the number of clients interviewed; b. the number of clients diverted, how and to where diverted; and c. the number of clients who presented themselves as homeless during the reporting period subsequent to a diversion and the number of days since such initial diversion."
+    *   § 21-127: "The commissioner shall direct staff of the division established pursuant to section 21-126 to provide to persons with HIV... (i) intensive case management... and (ii) transportation and nutrition allowances."
+    *   § 21-128.c.2.c: "Within 90 days of initial placement in emergency housing or of completion of the physical documentation required from the client for the application for non-emergency housing... the division must provide every client who is eligible for non-emergency housing a referral to an available medically appropriate non-emergency housing option..."
+    *   § 21-128.c.2.d: "For any client who remains homeless or in emergency housing for over 45 days... the division shall provide a referral to another medically appropriate non-emergency housing option..."
+    *   § 21-128.c.3: "Where no statute, law, regulation, or rule provides a time period within which a benefit or service shall be provided to an eligible person... such benefit or service shall be provided no later than 20 business days following submission of all information or documentation required to determine eligibility."
+    *   § 21-128.d: "Where a person with HIV who applies for benefits and services... indicates that 1 or more minor children reside with such person... such person shall be given information and program referrals on child care options and custody planning..."
+    *   § 21-129.1.b: "The department shall refer any individual who discloses to their case manager... that while in a HASA facility, they received an opioid antagonist to combat symptoms consistent with those of an opioid overdose occurring within a HASA facility, to appropriate service providers for appropriate additional services."
+    *   § 21-134.b: "Cash assistance caseload engagement status report for heads of household aged sixteen through twenty-four. ...report regarding the engagement status of heads of household between and including the ages of sixteen and twenty-four..." (details engaged in employment, WEP, other work activity, substance abuse treatment, education/training, job search, in engagement process, in sanction process, with sanction in effect).
+    *   § 21-136.b: "The commissioner shall prepare semiannual reports regarding referrals to adult protective services. Each such report shall include... the total number of referrals received by adult protective services during each six month period and the number of referred individuals who were determined ineligible during such six month period..."
+    *   § 21-141.b: "annual reports regarding exits from domestic violence emergency shelters and domestic violence tier II shelters for the preceding calendar year. Such reports shall include... the total number of individuals and the total number of families who exited either a domestic violence emergency shelter or a domestic violence tier II shelter during the preceding calendar year, disaggregated by the type of housing such individuals and families residing in upon their exit."
+    *   § 21-142.b: "Termination report. The department shall post on its website and submit... a report on instances in which ongoing cash or supplemental nutrition assistance was terminated during the relevant reporting period."
+    *   § 21-142.d: "Re-open after termination. The department shall post on its website and submit... a report on reopened cases for the relevant reporting period."
+    *   § 21-144.b: "The status of a rental assistance application or renewal request to be made available online to the applicant or provider. Such status shall include specific information on where in the process of the rental assistance request an application is, and whether and when any rental assistance payments have been issued."
+    *   § 21-145.d: "The department shall provide monthly rental assistance to an owner or a landlord on behalf of a household in receipt of a rental assistance voucher in the amount equal to the actual monthly rent of the leased apartment or single room occupancy, up to the maximum rental allowance, minus the household rent contribution."
+    *   § 21-145.e.2: "If the amount by which the household rent contribution is reduced... is greater than the household’s rent contribution, the department shall issue a check to the household in the amount of such excess within the month in which such excess is accrued."
+    *   § 21-145.e.3: "If the household receives a shelter allowance that is reduced... the department shall issue a check to the household in the amount of such reduction within the month in which such reduction is accrued."
+    *   § 21-145.3.b: "The department shall provide landlords the option to accept rental assistance payments via an electronic transfer into a bank account."
+    *   § 21-145.4.b: "CityFHEPS rental assistance payments report. ...The report shall include a table in which each row represents a unique rental voucher and shall include... Rental assistance payment amount; Rental assistance payment month; Zip code of rental assistance recipient; Whether rental assistance payment was timely or sent after the scheduled payment date, and reason for late payment..."
+    *   § 21-148.b: "information on supportive housing contained within the coordinated assessment and placement system (CAPS) for the preceding fiscal year. Such reports shall include... The total number of unique individuals or families determined eligible for supportive housing... referred for an interview... not referred... received an interview... rejected for supportive housing... still awaiting placement..."
+    *   § 21-150.h: "Notification of emergency assistance grant application determination. ...send an automated email or text message to the applicant upon a determination of an emergency assistance grant application for rental assistance... send an automated email or text message to the applicant’s building owner or to a managing agent designated by the building owner to collect the rental payments of the applicant. ...upon the approval of the applicant’s emergency assistance application..."
+    *   § 21-152.b: "a report on removals conducted during the prior quarter. The report shall include a table in which each row references a unique occurrence of a removal."
+    *   § 21-152.c: "a report on the same-day outcomes for individuals experiencing homelessness involved in a removal during the prior quarter. Such report shall include a table in which each row references a unique occurrence of a removal."
+*   **Why:** The agency must track all services provided to clients, their progress, and outcomes to ensure effective program delivery and compliance.
+*   **One row represents:** A specific service event, payment, referral, or status update for a client.
+*   **Covers:** General client records, HIV/AIDS case management, homeless diversion, relative support, property recovery, transportation/removal, municipal lodging, day nursery admissions, commissary sales, rental payments, rental subsidies, supportive housing referrals/placements, emergency assistance grant disbursements, opioid antagonist administration, domestic violence shelter exits, APS referrals, and public assistance case status changes.
+*   **Columns:**
+    *   Service Event ID
+    *   Client ID (links to Client Demographics)
+    *   Case ID (links to Client Applications)
+    *   Service Type (e.g., Case Management Session, Transportation, Shelter Placement, Rental Payment, Referral, Diversion, Opioid Antagonist Admin, APS Referral, Housing Interview, Case Status Change)
+    *   Service Date/Time
+    *   Staff ID (links to Agency Personnel & Staffing)
+    *   Service Provider ID (if external, links to Vendor/Contractor Management)
+    *   Service Outcome (e.g., Diverted, Placed, Payment Issued, Referral Accepted/Rejected)
+    *   Amount (for financial transactions like rental payments, allowances, recovery)
+    *   Payment Due Date (for rental assistance)
+    *   Payment Issue Date (for rental assistance)
+    *   Payment Timeliness (Timely, Late)
+    *   Reason for Late Payment
+    *   Housing Type (e.g., Emergency, Non-Emergency, Supportive, DV Shelter, Municipal Lodging)
+    *   Housing Facility ID (links to Agency Facilities & Infrastructure)
+    *   Referral Type (e.g., Non-emergency housing, Child care, Custody planning, Legal assistance, Other services)
+    *   Referral Date
+    *   Referral Outcome
+    *   Homeless Diversion Outcome (e.g., Diverted, Not Diverted)
+    *   Homeless Diversion Destination
+    *   Days Since Initial Diversion (if re-presenting as homeless)
+    *   Engagement Status (e.g., Engaged in Employment, WEP, Education/Training, Job Search, In Sanction Process)
+    *   Engagement Activity Details
+    *   Sanction Status (e.g., In Conciliation, Awaiting Scheduling, Fair Hearing, In Effect)
+    *   Case Closure Reason (using WMS closing codes)
+    *   Case Reopened Date
+    *   Case Reopen Reason (using WMS reopen codes)
+    *   Days to Reopen Case
+    *   Opioid Antagonist Administered? (Yes/No)
+    *   Opioid Antagonist Administration Date
+    *   Opioid Antagonist Administered By (Staff/Resident)
+    *   DV Shelter Exit Type (e.g., NYCHA, Rental Subsidy, Private Apt, Supportive Housing, DHS Shelter, Unknown)
+    *   APS Referral Source
+    *   APS Eligibility Determination
+    *   Reason for APS Ineligibility
+    *   Involuntary Confinement Period (for supportive housing eligibility)
+    *   Likely Homeless Post-Confinement?
+    *   Email/Text Notification Sent (for emergency assistance grant determination)
+    *   Email/Text Notification Type (Applicant/Owner)
+
+**3. Child Welfare Case Management & Placements**
+*   **Quotes:**
+    *   § 21-102: "The commissioner shall have power to commit, place out, discharge, or transfer any child who may be in his or her custody, or who may have been placed by him or her in an institution as a public charge..."
+    *   § 21-103: "In placing out, transferring or committing any such child, the commissioner... shall place out the child with an individual of the same religious faith as the parents of the child, or transfer or commit the child to an institution governed by persons of the same religious faith as the parents of the child."
+    *   § 21-104.a: "The term of commitment of each destitute and neglected child shall be: 1. Until such child shall attain the age of sixteen years, or 2. Until such child shall be given over in adoption by the institution to which it shall have been committed to some suitable person, or 3. Until such child shall be returned to its parents, relatives, or guardians, or otherwise discharged."
+    *   § 21-104.b: "The commissioner, may, however, provide care in an institution, agency boarding home, or family free or boarding home for any destitute minor between sixteen and eighteen years of age who cannot be properly cared for in his or her own home..."
+    *   § 21-105: "Each such institution caring for destitute and neglected children shall file with the commissioner at the end of every three months a list containing both the names of all the children received or discharged during the month, and the names and residence of the parents and guardians of such children so far as known. Each such institution shall keep a book in which it shall cause to be entered the name and address of each parent, relative or other person visiting an inmate of such institution who is in whole or in part a charge upon the city, and such name and address shall be entered upon the occasion of each visit by any such person."
+    *   § 21-112.1: "It shall be the duty of the commissioner to keep and preserve a proper record of: 1. All persons who shall come under his or her care or custody, and of the disposition made of such persons..."
+    *   § 21-120.1.b.1: "monitoring the care provided to each child and ensuring that each child's individual needs are being met, identifying children in need of further evaluation and making appropriate referrals for individual or family-related services;"
+    *   § 21-120.1.b.13.iv: "that the child care provider maintains a register, or an approved equivalent... showing for each child for whom child care is provided: (a) the name and date of birth of such child; (b) the names and addresses of his or her parents, including designated emergency contact persons and their telephone numbers; and (c) such other information as may be required by the state office of children and family services or other appropriate agency or office;"
+*   **Why:** The agency must track the custody, placement, and care of children, including their interactions with institutions and family.
+*   **One row represents:** A child's entry into care, placement, transfer, discharge, or a visit.
+*   **Covers:** Children in the care or custody of the commissioner, their placements in institutions, agency boarding homes, or family homes, and visits by parents/relatives.
+*   **Columns:**
+    *   Child Welfare Event ID
+    *   Child ID (links to Client Demographics)
+    *   Event Type (e.g., Received into Custody, Committed, Placed Out, Transferred, Discharged, Adoption, Returned to Parents, Institution Visit)
+    *   Event Date
+    *   Institution ID (if applicable, links to Vendor/Contractor Management)
+    *   Placement Type (e.g., Institution, Agency Boarding Home, Family Free Home, Family Boarding Home)
+    *   Placement Start Date
+    *   Placement End Date
+    *   Reason for Discharge/Transfer
+    *   Religious Faith of Child's Parents
+    *   Religious Faith of Placement
+    *   Is Placement Certified by State Board of Social Welfare?
+    *   Is Placement Fire Protected (if out of city)?
+    *   Child Age at Commitment
+    *   Child Age at Discharge
+    *   Visitor Name (for institution visits)
+    *   Visitor Address (for institution visits)
+    *   Relationship to Child (for institution visits)
+    *   Visit Date (for institution visits)
+    *   Child's Individual Needs Met? (Yes/No)
+    *   Referral for Further Evaluation? (Yes/No)
+    *   Referral Details
+
+**4. Child Care Provider & Personnel Screening/Compliance**
+*   **Quotes:**
+    *   § 21-119.a: "Each person, corporation, or other entity under contract with the city to provide child care services shall be responsible for the recruitment of appropriate personnel; verification of credentials and references; review of criminal record information; screening of all current and prospective personnel; and selection and hiring of all personnel necessary to furnish child care services. Screening shall include, but not be limited to (1) fingerprinting; (2) review of criminal convictions and pending criminal actions... (3) inquiry with the statewide central register of child abuse and maltreatment and; (4) for prospective personnel, inquiry with the applicant's three most recent employers."
+    *   § 21-119.c: "The department shall require appropriate documentation from the contractor indicating compliance with this section."
+    *   § 21-120.1.b.11: "assisting every child care provider in creating and maintaining a file containing fingerprint records of such provider and fingerprint records of every employee of such child care provider, any volunteer acting on behalf of such child care provider and any member of the household of such child care provider who is sixteen years of age and older, and overseeing the activities of each such provider to assure that fingerprint records are maintained for each person in a category described herein;"
+    *   § 21-120.1.b.12: "monitoring the files required to be maintained by every child care provider containing medical records of such provider and medical records of every employee of such child care provider, any volunteer acting on behalf of such child care provider and any member of the household of such child care provider and overseeing the activities of each such provider to assure that medical records containing the most up-to-date information are maintained for each person in a category described herein;"
+    *   § 21-120.1.b.13: "making determinations as to whether an individual who has submitted an application to be registered or licensed as a child care provider or a registered or licensed child care provider will be able to provide family child care or group family child care in accordance with all applicable laws, regulations, rules... In making such a determination, the administration shall consider... (i) that clearance with the State Central Register of Child Abuse and Maltreatment has been completed for the applicant or child care provider, every employee... (ii) whether the applicant or child care provider, every employee... has a record of criminal conviction... (iii) that the applicant or child care provider and every employee... and all other members of the household have had a health examination and been examined for tuberculosis within the previous twelve months;"
+*   **Why:** The agency must track the screening and compliance status of child care providers and their personnel to ensure child safety.
+*   **One row represents:** A screening or compliance check for a child care provider or an individual associated with a provider.
+*   **Covers:** Family child care providers, group family child care providers, their employees, volunteers, and household members (16+ years old) providing subsidized child care.
+*   **Columns:**
+    *   Screening ID
+    *   Child Care Provider ID (links to Vendor/Contractor Management)
+    *   Individual ID (for provider, employee, volunteer, household member)
+    *   Individual Role (e.g., Provider, Employee, Volunteer, Household Member)
+    *   Screening Type (e.g., Fingerprinting, Criminal Record Review, SCR Inquiry, Employer Inquiry, Health Exam)
+    *   Screening Date
+    *   Screening Result (e.g., Cleared, Pending, Red Flag)
+    *   Criminal Conviction Record? (Yes/No)
+    *   Pending Criminal Actions? (Yes/No)
+    *   SCR Clearance Status (State Central Register of Child Abuse and Maltreatment)
+    *   Employer Inquiry Result (for 3 most recent employers)
+    *   Written Consent for Fingerprinting/Criminal Review? (Yes/No)
+    *   Health Examination Date
+    *   Tuberculosis Exam Date
+    *   Eligibility Determination Date
+    *   Eligibility Status (Eligible, Ineligible, Suspended)
+    *   Reason for Ineligibility/Suspension
+    *   Compliance Documentation Received? (Yes/No)
+
+**5. Child Care Provider Home Inspections**
+*   **Quotes:**
+    *   § 21-120.1.b.2: "inspecting a child care provider's home within thirty days of the placement of the first child receiving subsidized child care with that child care provider..."
+    *   § 21-120.1.b.3: "arranging for a visit to a child care provider's home by a parent prior to the placement of such parent's child receiving subsidized child care with that child care provider..."
+    *   § 21-120.1.b.4: "inspecting the operation of every home where subsidized child care is provided no less than five times each year..."
+    *   § 21-120.1.b.5: "inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months in which a child care provider is providing subsidized child care and at least one additional time during the next six months..."
+    *   § 21-120.1.b.6: "inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months after the provider has had eligibility to provide subsidized child care restored subsequent to the effective date of this paragraph or has been adjudicated to have violated any provision of any applicable law, regulation or rule..."
+*   **Why:** The agency must track all mandated inspections and visits to child care provider homes to ensure safety and compliance.
+*   **One row represents:** A single inspection or visit to a child care provider's home.
+*   **Covers:** Inspections and parent visits for family child care providers and group family child care providers offering subsidized child care.
+*   **Columns:**
+    *   Inspection ID
+    *   Child Care Provider ID (links to Vendor/Contractor Management)
+    *   Inspection Date
+    *   Inspector ID (links to Agency Personnel & Staffing)
+    *   Inspection Type (e.g., Initial Placement, Parent Visit, Annual, First 6 Months, Subsequent 6 Months, Post-Violation, Additional)
+    *   Initial Child Placement Date (if Initial Placement type)
+    *   Exemption Status (e.g., Pre-effective date, Child Care Certificate only, CACFP participant)
+    *   Compliance Status (e.g., Compliant, Non-compliant, Corrected)
+    *   Violation Found? (Yes/No)
+    *   Violation Details (if any)
+    *   Violation Affect Public Health? (Yes/No)
+    *   Violation Relate to Sanitation/Fire/Safety? (Yes/No)
+    *   Violation Relate to Staff Qualifications/Program Requirements? (Yes/No)
+    *   Violation Relate to Discipline/Supervision/Nutrition? (Yes/No)
+    *   Eligibility Restored Date (if Post-Violation type)
+    *   Follow-up Inspection Required? (Yes/No)
+    *   Follow-up Inspection Date
+
+**6. Child Care Provider Training & Certifications**
+*   **Quotes:**
+    *   § 21-120.a: "the department shall provide training in the detection and reporting of child abuse for all appropriate current and prospective day care and head start personnel."
+    *   § 21-120.1.b.8: "providing instruction and training to child care providers, as needed, in order to comply with all applicable laws, regulations and rules;"
+    *   § 21-120.1.b.13.v: "that the child care provider has received or shall receive not less than the training required by section three hundred ninety-a of the social services law and any regulations promulgated pursuant thereto or the plan approved pursuant to paragraph f of subdivision three of section three hundred ninety of the social services law where such plan establishes different training requirements;"
+    *   § 21-120.1.d.3.iv: "ensure that each caregiver and any assistant caregiver has received or will receive not less than fifteen hours of training within the first year of their registration or licensure, and each biennial period thereafter..."
+*   **Why:** The agency must track mandatory training for child care providers and their staff to ensure compliance with safety and care standards.
+*   **One row represents:** A training session completed by a child care provider or their staff.
+*   **Covers:** Child care providers, caregivers, and assistant caregivers receiving mandated training.
+*   **Columns:**
+    *   Training Completion ID
+    *   Child Care Provider ID (links to Vendor/Contractor Management)
+    *   Individual ID (for provider, caregiver, assistant caregiver)
+    *   Individual Role
+    *   Training Date
+    *   Training Hours
+    *   Training Type (e.g., Child Abuse Detection/Reporting, Early Childhood Development, Nutrition/Health, Program Development, Safety/Security, Business Record Maintenance, Laws/Regulations)
+    *   Training Provider
+    *   Certification/Licensure Date
+    *   Next Training Due Date
+    *   In Compliance? (Yes/No)
+
+**7. Public Solicitation Licenses**
+*   **Quotes:**
+    *   § 21-111.a: "It shall be unlawful for any person, organization, society, association or corporation or their agents or representatives to solicit money... except upon a license issued by the commissioner..."
+    *   § 21-111.b: "Application to solicit funds for any cause whatever... shall be addressed to the commissioner and such application shall contain the following information: 1. Name and purpose of the cause... 2. Names and addresses of the officers and directors... 3. Time for which permission is sought and localities and places of solicitation. 4. Whether or not any commissions, fees, wages or emoluments are to be expended... 5. Such other information as the commissioner shall require."
+    *   § 21-111.c: "It shall be the duty of the commissioner, before granting permission to solicit funds... to compel the applicant to file with him or her a signed statement of all moneys collected... the expenditures connected therewith, together with the names and addresses of all persons receiving wages, commissions or emoluments and the amounts so expended."
+*   **Why:** The agency must track applications, issuance, and compliance for public solicitation licenses.
+*   **One row represents:** A single application for a public solicitation license.
+*   **Covers:** Organizations, societies, associations, or corporations applying for licenses to solicit funds in public.
+*   **Columns:**
+    *   License Application ID
+    *   Organization Name
+    *   Organization Purpose
+    *   Officer/Director Names
+    *   Officer/Director Addresses
+    *   Requested Solicitation Start Date
+    *   Requested Solicitation End Date
+    *   Localities/Places of Solicitation
+    *   Commissions/Fees/Wages/Emoluments Expended? (Yes/No)
+    *   Total Moneys Collected (previous year)
+    *   Total Expenditures (previous year)
+    *   Names/Addresses of Persons Receiving Compensation
+    *   Amounts Expended as Compensation
+    *   Application Status (e.g., Submitted, Approved, Denied)
+    *   License Issue Date
+    *   License Expiration Date
+    *   License Number
+    *   Compliance Status (e.g., Compliant, Violation)
+    *   Violation Details (e.g., unlabeled box, volunteer misrepresentation)
+
+**8. Agency Staff Training & Certifications (Internal)**
+*   **Quotes:**
+    *   § 21-129.b.1: "The department shall provide opioid antagonist administration training to staff working at HASA facilities..."
+    *   § 21-129.b.2: "For such staff identified by the department, the department shall (i) provide a refresher training every two years or (ii) otherwise require that each trained employee undergo a refresher training every two years."
+    *   § 21-137: "The department shall conduct biannual trainings... on best practices in identifying persons who may be eligible for adult protective services and how to refer such persons to adult protective services."
+    *   § 21-140.a: "the department shall conduct two trainings per year on best practices for improving interactions between department employees and clients of the department."
+    *   § 21-147.c: "Beginning no later than six months after the effective date of this local law, and at least once every two years thereafter, the department shall... provide training to all appropriate employees identified by the department who work directly with clients at domestic violence emergency shelters."
+    *   § 21-151.b: "The commissioner shall establish a training program for housing specialists employed by providers under contract or similar agreement with the department that shall include, but not be limited to, establishing expertise in the various housing programs to which eligible homeless clients may be referred and proper case management techniques."
+    *   § 21-194: "The agency and each agency contractor shall screen bilingual personnel and interpreter personnel for their ability to provide language assistance services. The agency and each agency contractor shall provide annual training for bilingual personnel and interpreter personnel and ensure that they are providing appropriate language assistance services."
+*   **Why:** The agency must track all mandatory training and certifications for its employees and contracted staff.
+*   **One row represents:** A training session completed by an agency employee or contracted staff member.
+*   **Covers:** Agency employees and contracted staff receiving opioid antagonist administration training, APS training, client service training, LGBTQI+ DV shelter training, housing specialist training, and language assistance training.
+*   **Columns:**
+    *   Training Completion ID
+    *   Employee ID (links to Agency Personnel & Staffing)
+    *   Contractor Employee ID (if applicable, links to Vendor/Contractor Management)
+    *   Training Date
+    *   Training Type (e.g., Opioid Antagonist Admin, APS, Client Service Best Practices, LGBTQI+ DV Services, Housing Specialist, Language Assistance)
+    *   Refresher Training? (Yes/No)
+    *   Next Training Due Date
+    *   Training Provider (Internal/External)
+    *   Training Status (Completed, In Progress)
+    *   Language Interpreted/Translated (for language assistance training)
+    *   Screening Date (for language assistance personnel)
+    *   Screening Result (for language assistance personnel)
+
+**9. Client Complaints & Feedback**
+*   **Quotes:**
+    *   § 21-139.f: "The department shall provide a tracking number to any visitor who initiates a complaint relating to a visit to a job center. Such tracking number shall track the status of a complaint from initiation to disposition."
+    *   § 21-142.2.c: "Beginning on January 31, 2020, the office of constituent services shall submit monthly reports to the commissioner indicating: 1. The number of comments, questions and complaints received; 2. The number of comments, questions and complaints received in which information was provided and the matter resolved; 3. The number of comments, questions and complaints received in which the matter was escalated for resolution, disaggregated by the 20 most frequent categories of inquiries..."
+    *   § 21-146.e.3: "On or before July 31, 2022 and every six months thereafter, the department shall review... all complaints of gender-based harassment or sexual assault made to the department or the department of homeless services against contracted client service providers and any settlements entered into or outcomes reached by such contracted client service providers in response to such complaints..."
+    *   § 21-147.b.7: "To the extent practicable, the total number of complaints the department received regarding domestic violence emergency shelter services provided to residents who identify as LGBTQI+, disaggregated by complaint type;"
+    *   § 21-149.e: "The agency administering the supportive housing program shall receive, investigate and respond to complaints concerning violations of this section at any supportive housing program that is financed with city funds and administered by such agency. All substantiated complaints, responses and violations issued by the agency administering the supportive housing program will be posted on such agency's website..."
+*   **Why:** The agency must track all client complaints, their nature, resolution, and any resulting actions to ensure accountability and service improvement.
+*   **One row represents:** A single complaint or feedback submission from a client.
+*   **Covers:** Complaints related to job centers, general public benefits, gender-based harassment/sexual assault, LGBTQI+ domestic violence shelter services, and supportive housing.
+*   **Columns:**
+    *   Complaint ID
+    *   Client ID (links to Client Demographics)
+    *   Submission Date
+    *   Complaint Source (e.g., Job Center, Constituent Services Office, Online, Phone, DV Shelter)
+    *   Complaint Type (e.g., Service Delay, Staff Conduct, Harassment, Discrimination, Facility Condition, Eligibility Issue)
+    *   Complaint Category (e.g., 20 most frequent categories for constituent services)
+    *   Incident Date/Time
+    *   Location of Incident (e.g., Job Center ID, SNAP Center ID, Shelter ID, Supportive Housing Facility ID) (links to Agency Facilities & Infrastructure)
+    *   Staff ID Involved (if applicable, links to Agency Personnel & Staffing)
+    *   Contracted Provider ID Involved (if applicable, links to Vendor/Contractor Management)
+    *   Complaint Status (e.g., Received, In Review, Resolved, Escalated, Substantiated, Unsubstantiated)
+    *   Resolution Date
+    *   Resolution Details
+    *   Escalated? (Yes/No)
+    *   Referral to Police? (Yes/No)
+    *   Referral to Survivor Assistance Org? (Yes/No)
+    *   Settlement Reached? (Yes/No)
+    *   Penalty Assessed? (Yes/No)
+    *   Penalty Amount
+    *   Violation ID (if linked to a specific violation, links to Supportive Housing Provider Compliance)
+    *   LGBTQI+ Related? (Yes/No)
+
+**10. Job Center & SNAP Center Incidents (Arrests, Summonses, Use of Force)**
+*   **Quotes:**
+    *   § 21-142.1.b: "No later than January 31, 2020... the department shall post on its website and submit... an aggregate report on arrests, summonses, removals, escorts and use of force incidents in job centers and SNAP centers for the preceding quarter."
+*   **Why:** The agency must track all security-related incidents in job and SNAP centers for reporting and oversight.
+*   **One row represents:** A single arrest, summons, removal, escort, or use of force incident.
+*   **Covers:** Incidents involving peace officers or security guards in job centers and SNAP centers.
+*   **Columns:**
+    *   Incident ID
+    *   Incident Date
+    *   Job Center ID / SNAP Center ID (links to Agency Facilities & Infrastructure)
+    *   Incident Type (e.g., Arrest, Summons, Removal, Escort, Use of Force)
+    *   Officer/Guard ID (links to Agency Personnel & Staffing or Vendor/Contractor Management)
+    *   Basis for Encounter (e.g., Conduct, Offense)
+    *   Offense Charged (for arrests/summonses)
+    *   Arrest Type (e.g., Desk Appearance Ticket, Live Arrest)
+    *   Summons Type (Civil/Criminal)
+    *   Removal Type (e.g., Mental Hygiene Law 9.41)
+    *   Use of Force Category (e.g., Hand/Foot Strikes, OC Spray, CEW, Restraining Blanket, Striking with Object, Canine Bite, Deadly Force)
+    *   Injuries to Officer/Guard (Category)
+    *   Injuries to Other Individual (Category)
+    *   Arrest Made During Use of Force? (Yes/No)
+    *   Police Department Called? (Yes/No)
+    *   Police Witnessed Arrest? (Yes/No)
+    *   Police Displayed Weapon? (Yes/No)
+
+**11. Agency Facilities & Infrastructure**
+*   **Quotes:**
+    *   § 21-110: "The commissioner shall have charge of the Potter's Fields, and when the necessity therefor shall arise, shall have power to lay out additional Potter's Fields or other public burial places for the poor and strangers and from time to time enclose and extend the same to make enclosures therein and to build vaults therein, and to provide all necessary labor and for interments therein."
+    *   § 21-114.a: "The commissioner shall have jurisdiction over, and it shall be his or her duty to take charge of all municipal lodging houses belonging to or hereafter acquired or established by the city."
+    *   § 21-115: "The commissioner may establish, in his or her discretion, one or more day nurseries, and may adopt rules and regulations for the free admission thereto of children under ten years of age."
+    *   § 21-116.a: "The commissioner may establish a commissary at camp LaGuardia and a commissary at the Neponsit home for the aged for the use and benefit of the residents and employees thereof."
+    *   § 21-142.4.b: "The department shall designate a sanitary space in every job center and SNAP center for any client with a child in such center where providing such space is practicable and does not compromise the space needs of the department or safety of clients. Such designated space shall include comfortable seating and age-appropriate and educational materials for any child who utilizes such space."
+    *   § 21-155.b.1: "a report regarding the availability and functionality of air conditioning in shelters. Such report shall include... (a) the percentage of shelters that have air conditioning in congregate areas, sleeping areas, or both; (b) the percentage of shelters that have air conditioning provided through a central air system, an installed unit, or both; and (c) the percentage of shelters with a central air system or installed units that did not function for a total period of 72 hours or more during the time period covered by such report."
+*   **Why:** The agency needs to maintain an inventory of its facilities and track their operational status and features.
+*   **One row represents:** A single agency facility or a distinct area within a facility.
+*   **Covers:** Potter's Fields, municipal lodging houses, day nurseries, commissaries, job centers, SNAP centers, and various shelters.
+*   **Columns:**
+    *   Facility ID
+    *   Facility Name
+    *   Facility Type (e.g., Potter's Field, Municipal Lodging House, Day Nursery, Commissary, Job Center, SNAP Center, DV Emergency Shelter, DV Tier II Shelter, HASA Facility, General Shelter)
+    *   Address
+    *   Borough
+    *   Council District
+    *   Community Board
+    *   Zip Code
+    *   Acquisition Date
+    *   Operational Status (e.g., Active, Closed, Under Construction)
+    *   Capacity (e.g., number of beds, children, units)
+    *   Air Conditioning Available (Congregate Areas)? (Yes/No)
+    *   Air Conditioning Available (Sleeping Areas)? (Yes/No)
+    *   Air Conditioning Type (Central Air, Installed Unit, Both)
+    *   Air Conditioning Functioning? (Yes/No)
+    *   AC Outage Duration (hours)
+    *   Child Space Designated? (Yes/No)
+    *   Child Space Features (e.g., seating, educational materials)
+    *   Number of Units (for shelters)
+    *   Unit Type (e.g., Family, Individual, Congregate, SRO)
+    *   Conversion to Permanent Housing Possible? (for Tier II shelters)
+    *   Exempt from Tier I/II Requirements? (Yes/No)
+    *   Date of Last Inspection (for shelters)
+    *   Last Inspection Outcome (for shelters)
+
+**12. Agency Personnel & Staffing**
+*   **Quotes:**
+    *   § 21-116.e: "All appointments to positions in the Neponsit home for the aged commissary shall be made in accordance with the civil service law and rules. The salaries of employees of such commissary shall be fixed by the mayor. Such salaries and all pension contributions required to be made by the city on behalf of such employees shall be paid from the commissary fund."
+    *   § 21-127: "intensive case management with an average ratio which shall not exceed 1 caseworker or supervisor to 25 family cases, and with an overall average ratio for all cases which shall not exceed 1 caseworker or supervisor to 34 cases;"
+    *   § 21-128.j.3: "The number of division staff, by job title, whose duties include providing benefits and services or access to benefits and services pursuant to this section, disaggregated by field office and family versus overall cases; the number of cases at each field office, disaggregated by family versus overall cases; and the ratio of case managers and supervisors to clients at each field office, disaggregated by family versus overall cases;"
+    *   § 21-142.3.b: "The department shall establish a pilot program for the design, development, staffing, implementation and provision of social work services at one job center in each borough."
+    *   § 21-151.c: "No later than January 15, 2024... the department shall submit... an annual report regarding information on housing specialists. Such report shall include... (i) the number of temporary shelters, disaggregated by district and type of shelter; (ii) the number of housing specialists within temporary shelters, disaggregated by district and type of shelter; (iii) the average caseload of housing specialists within each temporary shelter..."
+    *   § 21-195.a.2: "The number of bilingual personnel and the number of interpreter personnel employed by the agency, disaggregated by language translated or interpreted by such personnel;"
+*   **Why:** The agency needs to track its internal workforce, their roles, locations, and caseloads for operational management and reporting.
+*   **One row represents:** A single employee or staff position within the agency.
+*   **Covers:** All agency employees, including caseworkers, supervisors, social workers, housing specialists, bilingual personnel, and interpreter personnel.
+*   **Columns:**
+    *   Employee ID
+    *   Employee Name
+    *   Job Title
+    *   Department/Division
+    *   Field Office ID (links to Agency Facilities & Infrastructure)
+    *   Employment Start Date
+    *   Employment Status (e.g., Active, Leave, Terminated)
+    *   Primary Responsibilities (e.g., Client Service, Case Management, Security, Interpretation)
+    *   Bilingual? (Yes/No)
+    *   Interpreter? (Yes/No)
+    *   Languages Spoken/Interpreted
+    *   Caseload (Number of Clients)
+    *   Caseload Type (Family Cases, Overall Cases)
+    *   Caseworker/Supervisor Ratio
+    *   Housing Specialist? (Yes/No)
+    *   Housing Specialist Caseload
+    *   Social Worker? (Yes/No)
+    *   Salary
+    *   Pension Contributions
+    *   Bond Required? (Yes/No)
+    *   Bond Status (e.g., Active, Expired)
+
+**13. Vendor/Contractor Management**
+*   **Quotes:**
+    *   § 21-106: "Payments shall not be made by the city to any charitable, eleemosynary or reformatory institutions wholly or partly under private control, for the care, support, secular education or maintenance of any destitute, neglected or delinquent child therein, except upon the certificate of the commissioner that such child has been received and is retained by such institution pursuant to the rules and regulations established by the state board of social welfare."
+    *   § 21-119.a: "Each person, corporation, or other entity under contract with the city to provide child care services shall be responsible for the recruitment of appropriate personnel..."
+    *   § 21-119.c: "The requirements of subdivisions a and b of this section shall be incorporated in contracts for child care services entered into by the city, and any violation thereof shall be a material breach of the contract sufficient to cause termination."
+    *   § 21-140.d: "A contractor providing security services under a city contract at any location designated by the department... shall provide the training described in subdivision b of this section to its employees having regular contact with the public at such centers. All new or renewed city contracts for security services at such centers shall contain a provision requiring employees of any security contractor having regular contact with the public at such centers be provided with the training described in subdivision b of this section."
+    *   § 21-146.e.3: "On or before July 31, 2022 and every six months thereafter, the department shall review... all complaints of gender-based harassment or sexual assault made to the department or the department of homeless services against contracted client service providers and any settlements entered into or outcomes reached by such contracted client service providers in response to such complaints..."
+    *   § 21-149.c: "Every provider shall provide to the commissioner of the agency administering the supportive housing program an annual certification executed under penalty of perjury that it has provided tenants with a notice of rights in accordance with subdivision b of this section."
+    *   § 21-149.d: "Any provider that the agency administering the supportive housing program finds does not provide the notice required under the provisions of subdivision b of this section shall be liable for a civil penalty of $250 for each violation with the option to cure the violation within 14 days' notice of the violation."
+    *   § 21-196.b.1: "In all covered contracts entered into or renewed after January 1, 2005, the contractor shall certify that it shall make available language assistance services and maintain and provide access to records as required by this chapter."
+    *   § 21-196.b.2: "Every covered contract must contain a provision in which the contractor acknowledges that the following responsibilities constitute material terms of the contract: (a) To provide language assistance services as required by this chapter; (b) To comply with the recordkeeping requirements set forth in this chapter; (c) To provide the city access to its records for the purpose of audits or investigations to ascertain compliance with the provisions of this section, to the extent permitted by law; and (d) To provide evidence to the city that the contractor is in compliance with the provisions of this section, upon request."
+*   **Why:** The agency must track all contracts with external providers, their services, and compliance with contractual and legal obligations.
+*   **One row represents:** A single contract or agreement with an external service provider.
+*   **Covers:** Charitable institutions, child care service contractors, security service contractors, HASA facility providers, supportive housing providers, and any other agency contractors.
+*   **Columns:**
+    *   Contract ID
+    *   Vendor/Contractor ID
+    *   Vendor/Contractor Name
+    *   Contract Type (e.g., Child Care Services, Security Services, HASA Facility Management, Supportive Housing, Charitable Institution)
+    *   Contract Start Date
+    *   Contract End Date
+    *   Services Provided
+    *   Certification by Commissioner (for child care institutions)
+    *   State Board of Social Welfare Certification (for child care institutions)
+    *   Compliance with Personnel Screening Requirements (for child care contractors)
+    *   Compliance with Training Requirements (for security/child care contractors)
+    *   Material Breach of Contract? (Yes/No)
+    *   Reason for Breach
+    *   Contract Termination Date
+    *   Language Assistance Services Certified? (Yes/No)
+    *   Recordkeeping Compliance Certified? (Yes/No)
+    *   Access to Records for Audit Certified? (Yes/No)
+    *   Evidence of Compliance Provided? (Yes/No)
+    *   Subcontractor ID (if applicable)
+    *   Supportive Housing Notice of Rights Certification (Yes/No)
+    *   Supportive Housing Notice of Rights Violation? (Yes/No)
+    *   Supportive Housing Notice of Rights Penalty Amount
+
+**14. Language Access Service Delivery**
+*   **Quotes:**
+    *   § 21-195.a.1: "The number of limited English proficient individuals served, disaggregated by agency, agency contractor or contractor, agency office, type of language assistance required and primary language;"
+    *   § 21-195.a.3: "Whether primary language determinations are recorded properly;"
+    *   § 21-195.a.4: "Whether documents are translated accurately and disseminated properly."
+*   **Why:** The agency must track the provision of language assistance services to ensure equitable access for limited English proficient individuals.
+*   **One row represents:** An instance where language assistance services were provided to a limited English proficient individual.
+*   **Covers:** All interactions where language assistance services are provided by the agency or its contractors.
+*   **Columns:**
+    *   Language Service Event ID
+    *   Client ID (links to Client Demographics)
+    *   Event Date/Time
+    *   Agency Office ID (links to Agency Facilities & Infrastructure)
+    *   Service Provider Type (Agency, Agency Contractor)
+    *   Service Provider ID (links to Agency Personnel & Staffing or Vendor/Contractor Management)
+    *   Primary Language of Client
+    *   Language Assistance Type (e.g., Interpretation, Translation)
+    *   Interpretation Method (e.g., In-person, Telephone)
+    *   Interpreter ID (links to Agency Personnel & Staffing)
+    *   Document Translated? (Yes/No)
+    *   Document ID (if applicable, links to Client Document Submissions)
+    *   Translation Accuracy Status (e.g., Accurate, Inaccurate)
+    *   Dissemination Status (e.g., Proper, Improper)
+    *   Primary Language Determination Recorded Properly? (Yes/No)
+    *   Wait Time for Assistance (minutes)
+
+**15. Supportive Housing Unit Inventory & Occupancy**
+*   **Quotes:**
+    *   § 21-148.1.b: "No later than January 1, 2026, the commissioner shall post on the department’s website information on vacant units contained within the coordinated assessment and placement system as such term is defined in section 21-148. No later than June 1, 2026, the commissioner shall also post on the department’s website information on vacant units contained within the HASA web system. Such information shall be disaggregated by (i) whether a supportive housing unit is a new supportive housing unit or is already in use as a supportive housing unit, (ii) the agency that holds the contract for supportive housing that governs such unit, and (iii) whether a unit is located in congregate or scatter site housing, including whether such unit is a single room occupancy unit. Such information shall include, at a minimum: 1. The total number of online vacant units; 2. The percentage of all supportive housing units in the city that are online vacant units; 3. The total number of vacant units with referral in process; 4. The total number of online vacant units for which an agency has not referred a client for an interview or that are not in process for referral; 5. The total number of offline units; 6. The total number of vacant units; 7. The average and median number of days between the date a vacant unit became available and the date such unit was occupied, for all vacant units in each quarter; 8. The average and median number of days between the date an agency received a client’s application for supportive housing and the date such client was referred to a unit, in each quarter; and 9. The average and median number of days between the date an agency referred a client to a unit and the date the unit was occupied, in each quarter."
+*   **Why:** The agency must track the availability, status, and occupancy of all supportive housing units.
+*   **One row represents:** A single supportive housing unit.
+*   **Covers:** All supportive housing units, including new units, existing units, congregate, scatter site, and single room occupancy units.
+*   **Columns:**
+    *   Unit ID
+    *   Supportive Housing Facility ID (links to Agency Facilities & Infrastructure)
+    *   Unit Type (e.g., Congregate, Scatter Site, SRO, Individual, Family)
+    *   Unit Status (e.g., Occupied, Online Vacant, Offline, Vacant with Referral in Process)
+    *   New Unit? (Yes/No)
+    *   Contracting Agency (e.g., DSS, DHS, DOHMH)
+    *   Contract Holder ID (links to Vendor/Contractor Management)
+    *   Date Unit Became Vacant
+    *   Date Unit Occupied
+    *   Reason for Offline Status (e.g., Staffing, Turnover, Maintenance, Police Sealing)
+    *   Client Referred for Interview? (Yes/No)
+    *   Date Client Referred
+    *   Client Application Date (links to Client Applications)
+    *   Client Occupancy Date
+    *   Days Vacant to Occupied
+    *   Days Application to Referral
+    *   Days Referral to Occupied
+
+**16. Client Document Submissions**
+*   **Quotes:**
+    *   § 21-153.b: "Document receipts. Within 5 days of submission of a document related to an application for cash assistance... or supplemental nutrition assistance program benefits, the department shall provide a receipt that shall include, at a minimum: 1. The date such document was received; 2. The type of document that was received; and 3. The names of the individuals whose information is contained in such documents."
+    *   § 21-153.c: "Illegible documents. If the department determines that a document submitted as part of an application... is illegible, the department shall notify the applicant that such document is illegible, and inform such applicant that such document must be resubmitted."
+    *   § 21-153.d: "For applications requiring an application confirmation notice pursuant to subdivision a of this section, the department shall permit the applicant to view an electronic copy of each document submitted by the applicant."
+*   **Why:** The agency must track all documents submitted by clients for benefits, their receipt, and legibility.
+*   **One row represents:** A single document submitted by a client.
+*   **Covers:** Documents submitted for cash assistance, emergency assistance, or supplemental nutrition assistance program benefits.
+*   **Columns:**
+    *   Document ID
+    *   Client ID (links to Client Demographics)
+    *   Application ID (links to Client Applications)
+    *   Submission Date
+    *   Document Type
+    *   Individuals Named in Document
+    *   Receipt Provided? (Yes/No)
+    *   Receipt Date
+    *   Legibility Status (Legible, Illegible)
+    *   Date Notified of Illegibility (if applicable)
+    *   Resubmission Required? (Yes/No)
+    *   Electronic Copy Available? (Yes/No)
+
+**17. Emergency Feeding Program Application Distribution**
+*   **Quotes:**
+    *   § 21-131.b (Food Stamp): "Reports regarding distribution of food stamp applications. Beginning January 1, 2006... the commissioner shall submit a report to the speaker of the city council indicating the emergency feeding programs to which it distributed applications in the prior calendar quarter and the number of applications distributed to each emergency feeding program."
+*   **Why:** The agency must track the distribution of food stamp applications to emergency feeding programs.
+*   **One row represents:** A single distribution event of food stamp applications to an emergency feeding program.
+*   **Covers:** City-funded emergency feeding programs (food pantries or soup kitchens).
+*   **Columns:**
+    *   Distribution ID
+    *   Distribution Date
+    *   Emergency Feeding Program ID (links to Vendor/Contractor Management)
+    *   Number of Applications Distributed
+
+**18. Potter's Field Interments**
+*   **Quotes:**
+    *   § 21-110: "The commissioner shall have charge of the Potter's Fields, and when the necessity therefor shall arise, shall have power to lay out additional Potter's Fields or other public burial places for the poor and strangers and from time to time enclose and extend the same to make enclosures therein and to build vaults therein, and to provide all necessary labor and for interments therein."
+    *   § 21-110.2.a: "The department shall establish an office to provide support and, where eligible, financial assistance to survivors, next of kin, legally responsible relatives, friends or other designated entities of deceased indigent or unclaimed persons who require information about, and help facilitating the disposal of, decedent remains through public burial, accessing public burial, a burial allowance or any similar program."
+*   **Why:** The agency must track interments in Potter's Fields and related burial services.
+*   **One row represents:** A single interment or burial service provided.
+*   **Covers:** Interments of deceased indigent or unclaimed persons in Potter's Fields or other public burial places.
+*   **Columns:**
+    *   Interment ID
+    *   Decedent ID (links to Client Demographics, if applicable)
+    *   Interment Date
+    *   Potter's Field ID (links to Agency Facilities & Infrastructure)
+    *   Burial Location Details (e.g., plot number, vault)
+    *   Burial Service Type (e.g., Public Burial, Burial Allowance)
+    *   Financial Assistance Provided? (Yes/No)
+    *   Amount of Burial Allowance
+    *   Next of Kin/Survivor Contacted? (Yes/No)
+    *   Next of Kin/Survivor ID (if applicable, links to Client Demographics)
+
+**Non-Tabular Information:**
+
+*   Rules and regulations (§ 21-103, § 21-111.d, § 21-114.b, § 21-115, § 21-120.1.d, § 21-128.g, § 21-128.h, § 21-197)
+*   Policy and procedures manuals (§ 21-128.g, § 21-128.i, § 21-135.b)
+*   Bill of rights documents (§ 21-128.h, § 21-149.b)
+*   Public campaign materials/information sheets/notices (§ 21-120.b, § 21-120.c, § 21-131.1.b, § 21-131.2.b, § 21-131.3, § 21-132.1.b, § 21-133.b, § 21-138.b, § 21-139.e, § 21-141.1.b, § 21-143, § 21-146.b, § 21-146.d, § 21-150.b, § 21-150.d, § 21-150.e, § 21-153.a, § 21-153.c, § 21-193)
+*   Implementation plans/updates (§ 21-196.c, § 21-196.d)
+*   Contracts and subcontracts (§ 21-117.1, § 21-119.a, § 21-119.c, § 21-140.d, § 21-144.b, § 21-146.a, § 21-190, § 21-196.b)
+*   Legal documents (court orders, family court applications, article 78 proceedings) (§ 21-108.b, § 21-109.a, § 21-128.j.7)
+*   Research documents (medical/scientific research) (§ 21-113)
+*   Job applications (implied by "recruitment of appropriate personnel" § 21-119.a, but not tabular data itself)

@@ -1,0 +1,686 @@
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations (e.g., "rules and regulations adopted pursuant thereto" § 1003.b, "rules and regulations establishing financial need" § 1004.7, "promulgate such reasonable rules and regulations" § 1004-a.6, "commissioner shall promulgate rules and regulations" § 923.b, "regulations that apply to union free school districts" § 1102.11)
+*   Written physician/health care provider permissions and attestations (e.g., "written permission of a physician" § 916.1, § 916-a.1.a, § 916-b.1, "attestation by the physician" § 916.1, § 916-a.1.a, § 916-b.1)
+*   Written parental consent forms (e.g., "written parental consent" § 916.1, § 916-a.1.a, § 916-b.1)
+*   Informational materials (e.g., "information regarding proper procedures to prevent further infestations" § 920.2, "written informational material on the use of an epinephrine device" § 921-a.3, "information on drowning prevention, water safety" § 926.1, "information developed by the commissioner of health" § 923.a)
+*   Studies, investigations, demonstrations, research, and reports (e.g., "making of studies, investigations, demonstrations, research and reports" § 1004.4, "nutrition studies" § 918.4, "annual report" § 1102.4, "other reports as may be required" § 1102.4, "annual reports on the progress of achieving the components of the implementation plan" § 1004-b.3.a)
+*   Website content (e.g., "posted on the department's website" § 923.a, "on the school's website" § 923.a, "published and publicly shared on such school district's website" § 924.b, "publish such information on its website" § 926.2)
+*   Policy documents (e.g., "school district's or board of cooperative educational services' policy" § 916.1, § 916-a.1.a, § 916-b.1, "current nutritional policies of the district" § 918.4, "appropriate policies and procedures for directing their supported employment programs" § 1004.9)
+*   State interagency plans (e.g., "state interagency plan for the implementation of integrated employment opportunities" § 1004-b.2.a)
+*   Audit protocols (e.g., "audit protocol to verify the actual costs" § 1004-b.2.c)
+*   Signs or notices (e.g., "post a sign or notice at the main entrance" § 917-a.6)
+
+---
+
+**Identified Datasets:**
+
+**1. School/Facility Inventory**
+
+**Quotes:**
+*   "on-site in each instructional school facility" (§ 917.1, § 917-a.1, § 921-a.1, § 922.1)
+*   "every public and private school building" (§ 919.1)
+*   "public school facilities" (§ 917.2)
+*   "nonpublic school facilities" (§ 917-a.2)
+*   "each instructional school facility or library" (§ 922.1)
+*   "schools and classes maintained by such vocational education and extension board" (§ 1102.13)
+
+**Why:** Agencies must track all physical locations and their basic attributes for operational management and compliance.
+
+**One row represents:** A single school building, instructional facility, or library.
+
+**Covers:** All public and non-public school buildings, instructional facilities, libraries, and vocational education sites under the agency's purview.
+
+**Columns:**
+*   Facility ID
+*   Facility Name
+*   Facility Type (e.g., Public School, Non-Public School, BOCES, Charter School, Library, VEEB Site)
+*   Address
+*   County
+*   School District ID (if applicable)
+*   Operational Status
+
+**2. Student Enrollment Records**
+
+**Quotes:**
+*   "pupils who have been diagnosed" (§ 916.1, § 916-a.1.a, § 916-b.1)
+*   "students eligible for free meals" (§ 916.5)
+*   "students enrolled in the district" (§ 918.1.c, § 918.2, § 926.1)
+*   "student's participation in interscholastic athletics" (§ 923.a)
+*   "pupils under twenty-one years of age to and from schools and classes maintained by such vocational education and extension board" (§ 1102.13)
+
+**Why:** Tracking individual students is fundamental for all student-centric programs, health management, and compliance.
+
+**One row represents:** A single student's enrollment in a school or program.
+
+**Covers:** All students enrolled in schools or programs under the agency's jurisdiction.
+
+**Columns:**
+*   Student ID
+*   Student Name
+*   Date of Birth
+*   Grade Level
+*   School ID (linked to Dataset 1)
+*   Enrollment Date
+*   Parent/Guardian Name
+*   Parent/Guardian Contact Information
+
+**3. Student Medical Self-Administration Permissions**
+
+**Quotes:**
+*   "allow pupils who have been diagnosed by a physician... with an asthmatic condition or another respiratory disease to carry and use a prescribed inhaler and self-administer inhaled rescue medications... with the written permission of a physician... and written parental consent." (§ 916.1)
+*   "The written permission shall include an attestation by the physician... confirming the following: (a) the pupil is diagnosed with asthma or another respiratory disease...; and (b) that the pupil has demonstrated that he or she can self-administer the prescribed inhaled rescue medication effectively." (§ 916.1)
+*   "The written permission shall also include the name of the prescribed inhaled rescue medication, the dose, the times when the medication is to be taken, the circumstances which may warrant the use of the medication and the length of time for which the inhaler is prescribed." (§ 916.1)
+*   "A record of such consent and permission shall be maintained in the student's cumulative health record." (§ 916.1)
+*   "allow pupils who have been diagnosed by a physician... with an allergy to carry and use a prescribed epinephrine device... with the written permission of a physician... and written parental consent." (§ 916-a.1.a)
+*   "The written permission shall include an attestation by the physician... confirming the following: (i) the pupil's diagnosis of an allergy...; and (ii) that the pupil has demonstrated that such pupil can self-administer the prescribed epinephrine device effectively." (§ 916-a.1.a)
+*   "The written permission shall also include the circumstances which may warrant the use of the epinephrine device." (§ 916-a.1.a)
+*   "A record of such consent and permission shall be maintained in the student's cumulative health record." (§ 916-a.1.a)
+*   "allow pupils who have been diagnosed with diabetes to carry glucagon and carry and use insulin... and/or to carry and use equipment and supplies necessary to check blood glucose levels and ketone levels, as prescribed by a physician... with parental consent and the written permission of a physician..." (§ 916-b.1)
+*   "The written permission shall include an attestation by the physician... confirming the following: (a) the pupil's diagnosis of diabetes...; and (b) that the pupil has demonstrated that he or she can self-administer the prescribed insulin effectively and can self check glucose or ketone levels and can independently follow the treatment orders..." (§ 916-b.1)
+*   "The written permission shall identify prescribed blood glucose tests, ketone tests, insulin and glucagon to be used by the pupil at school and/or during school functions." (§ 916-b.1)
+*   "If insulin or glucagon is prescribed, the written permission shall include the name of the type of insulin, the dose or dose range, the times when the medication is to be taken, the type of insulin delivery system and any other information prescribed by the commissioner in regulation..." (§ 916-b.1)
+*   "A record of such consent and permission shall be maintained in the student's cumulative health record." (§ 916-b.1)
+
+**Why:** Tracking student medical permissions is critical for student health, safety, and legal compliance regarding medication administration.
+
+**One row represents:** A single student's approved permission to self-administer medication or have it held by school staff.
+
+**Covers:** Permissions for students with asthma/respiratory disease, allergies, and diabetes.
+
+**Columns:**
+*   Permission ID
+*   Student ID (linked to Dataset 2)
+*   Condition Type (e.g., Asthma, Allergy, Diabetes)
+*   Medication/Device Name (e.g., Inhaler, Epinephrine Device, Insulin, Glucagon, Glucose Meter)
+*   Prescribed Dose/Range
+*   Prescribed Times/Circumstances for Use
+*   Physician Attestation Confirmed (Yes/No)
+*   Self-Administration Demonstrated (Yes/No)
+*   Parental Consent Received (Yes/No)
+*   Permission Start Date
+*   Permission End Date
+*   Extra Medication/Device Held by Nurse (Yes/No)
+*   Nurse/Staff ID (if held by staff)
+
+**4. School Health Equipment Inventory**
+
+**Quotes:**
+*   "School districts... shall provide and maintain on-site in each instructional school facility automated external defibrillator (AED) equipment... in quantities and types deemed by the commissioner... to be adequate to ensure ready and appropriate access for use during emergencies." (§ 917.1)
+*   "Such automated external defibrillators shall be clearly marked, accessible, and maintained consistent with guidelines..." (§ 917.1)
+*   "Nonpublic schools shall cause such AED to be maintained and tested according to such applicable standards of the manufacturer and any appropriate government agency." (§ 917-a.1)
+*   "The board of education... shall make a nebulizer available on-site in every public and private school building in which full or part time nurse services are provided." (§ 919.1)
+*   "Every nebulizer shall be maintained in working order by the school district or board of cooperative educational services..." (§ 919.1)
+*   "School districts... may provide and maintain on-site in each instructional school facility epinephrine devices in quantities and types deemed by the commissioner... to be adequate to ensure ready and appropriate access for use during emergencies..." (§ 921-a.1)
+*   "School districts... may provide and maintain on-site in each instructional school facility or library, opioid antagonists... in quantities and types deemed by the commissioner... to be adequate to ensure ready and appropriate access for use during emergencies..." (§ 922.1)
+
+**Why:** Tracking critical emergency and health equipment is essential for readiness, maintenance, and compliance.
+
+**One row represents:** A single piece of health equipment located at a facility.
+
+**Covers:** Automated External Defibrillators (AEDs), nebulizers, epinephrine devices, and opioid antagonists.
+
+**Columns:**
+*   Equipment ID
+*   Facility ID (linked to Dataset 1)
+*   Equipment Type (e.g., AED, Nebulizer, Epinephrine Device, Opioid Antagonist)
+*   Manufacturer
+*   Model
+*   Serial Number
+*   Acquisition Date
+*   Last Maintenance Date
+*   Next Scheduled Maintenance Date
+*   Expiration Date (for medications/consumables)
+*   Location within Facility
+*   Quantity (for bulk items like opioid antagonists)
+*   Accessibility Status (e.g., "clearly marked, accessible")
+*   Operational Status (e.g., "maintained in working order")
+
+**5. Emergency Medical Device Usage Incidents**
+
+**Quotes:**
+*   "Every use of an AED on a patient in a nonpublic school shall be immediately reported to the appropriate local emergency medical services system..." (§ 917-a.4)
+*   "Any school district... that has employees trained in accordance with this section shall comply with the requirements of section three thousand three hundred nine of the public health law including, but not limited to, appropriate clinical oversight, record keeping and reporting." (§ 922.2)
+
+**Why:** Tracking emergency device usage is crucial for incident review, reporting, and improving emergency response protocols.
+
+**One row represents:** A single instance of an emergency medical device being used.
+
+**Covers:** Use of Automated External Defibrillators (AEDs) and opioid antagonists.
+
+**Columns:**
+*   Incident ID
+*   Equipment ID (linked to Dataset 4)
+*   Facility ID (linked to Dataset 1)
+*   Date of Use
+*   Time of Use
+*   Patient Type (Student, Staff, Other)
+*   Patient ID (if student/staff, linked to Dataset 2 or Dataset 8)
+*   Reason for Use (e.g., Suspected Cardiac Arrest, Suspected Opioid Overdose)
+*   Administering Staff ID (linked to Dataset 8)
+*   Outcome (e.g., EMS arrived, patient stabilized, no effect)
+*   Reported to EMS (Yes/No)
+*   EMS Report ID
+
+**6. Student Athletic Medical Clearances**
+
+**Quotes:**
+*   "The commissioner shall promulgate rules and regulations requiring that any student displaying signs or symptoms of pending or increased risk of sudden cardiac arrest shall be immediately removed from athletic activities and shall not resume athletic activity until he or she has been evaluated by and received written and signed authorization from a licensed physician. Such authorization shall be kept on file in the pupil's permanent health record." (§ 923.b)
+*   "include such information developed by the department of health... in any permission form or parent or person in parental relation consent form or similar document that may be required for a student's participation in interscholastic athletics" (§ 923.a)
+
+**Why:** Tracking athletic medical clearances is essential for student safety and compliance with health regulations for sports participation.
+
+**One row represents:** A single medical clearance or removal from athletic activity for a student.
+
+**Covers:** Students participating in interscholastic athletics, specifically related to sudden cardiac arrest risk.
+
+**Columns:**
+*   Clearance ID
+*   Student ID (linked to Dataset 2)
+*   Athletic Activity/Team
+*   Date of Symptom Display/Removal from Activity
+*   Reason for Removal (e.g., Suspected Cardiac Arrest Risk)
+*   Date of Physician Evaluation
+*   Physician Name
+*   Physician License Number
+*   Authorization to Resume Activity (Yes/No)
+*   Date of Authorization
+*   Authorization on File (Yes/No)
+*   Information on Cardiac Arrest Risk Provided (Yes/No)
+
+**7. Vocational Rehabilitation Client Cases**
+
+**Quotes:**
+*   "Any handicapped person available for vocational rehabilitation services may apply to the department for advice and assistance regarding his vocational rehabilitation." (§ 1003.a)
+*   "The state may... furnish vocational rehabilitation services to applicants for and beneficiaries of disability benefits under the social security act..." (§ 1003.b)
+*   "To provide vocational rehabilitation services directly or through public or private instrumentalities for handicapped persons... whose vocational rehabilitation the department determines after full investigation may be satisfactorily achieved." (§ 1004.2)
+*   "In the course of its investigation of an individual applicant's vocational rehabilitation potential the department may conduct an extended evaluation program including utilization of such vocational rehabilitation services as it deems necessary." (§ 1004.2)
+*   "Within its discretion, to consider financial need of handicapped individuals for the purposes of determining the extent of their respective participation in the costs of vocational rehabilitation services..." (§ 1004.7)
+*   "The department shall assure that individuals in long-term sheltered employment operated by not-for-profit agencies are periodically reviewed to determine the feasibility of their employment, or training for employment, in integrated work settings and that maximum efforts toward such employment occur, whenever it is determined to be feasible." (§ 1004-a.5)
+*   "Such reports shall include: (i) a current description of individuals served, and services and technical assistance provided; (ii) employment status of persons transitioned from sheltered workshops, special education programs, day treatment centers, and day services programs into integrated employment programs...; (iii) incidence of persons in reverse transition between integrated employment programs... and sheltered workshops...; and (iv) number of persons for whom employment in an integrated work setting has been requested and who are waiting for placement." (§ 1004-b.3.a)
+
+**Why:** Tracking individual client progress, services, and outcomes is central to the vocational rehabilitation mission and reporting.
+
+**One row represents:** A single vocational rehabilitation client's case.
+
+**Covers:** All handicapped persons applying for or receiving vocational rehabilitation services.
+
+**Columns:**
+*   Client ID
+*   Application Date
+*   Application Status (e.g., Submitted, Under Evaluation, Approved, Denied, Active, Closed)
+*   Disability Type (as defined in § 1002.1, § 1002.2)
+*   Substantial Handicap to Employment (Yes/No)
+*   Eligibility Determination Date
+*   Vocational Rehabilitation Objective
+*   Services Provided (e.g., Evaluation, Counseling, Training, Placement, Physical Restoration)
+*   Service Provider ID (if external, linked to Dataset 9)
+*   Financial Need Assessment (Yes/No)
+*   Client Contribution to Costs
+*   Start Date of Services
+*   End Date of Services
+*   Employment Status Post-Rehabilitation (e.g., Gainful Employment, Sheltered Employment, Unemployed)
+*   Employment Start Date
+*   Employment Type (e.g., Paid Competitive Work, Supported Employment, Homemaking)
+*   Wage Information (if applicable)
+*   Review Date (for long-term sheltered employment)
+*   Transition Status (e.g., from sheltered workshop, to integrated employment)
+*   Waiting List Status (Yes/No, Date Added)
+
+**8. Agency Staff Employment Records**
+
+**Quotes:**
+*   "licensed nurse, nurse practitioner, physician assistant, or physician employed by such district or board of cooperative educational services" (§ 916.1, § 916-a.1.a, § 916-b.1)
+*   "at least one staff person who is trained... in the operation and use of an AED." (§ 917.2, § 917-a.2)
+*   "unlicensed school personnel to administer prescribed glucagon or epinephrine devices" (§ 921.1.a)
+*   "any person employed by any such entity... may administer an opioid antagonist... provided that such person shall have been trained..." (§ 922.2)
+*   "The education department shall have the responsibility of and is hereby authorized: 1. To adopt and promulgate such rules and regulations and take such action as may be necessary to carry out the provisions of this article." (§ 1004.1) - *Implies general staff to carry out duties.*
+*   "It shall have full power and authority to employ supervisors and teachers and all other persons necessary to carry on career education and extension work and to determine the salaries to be paid." (§ 1102.3)
+*   "Members of the teaching and supervisory staff shall be appointed by a majority vote of the vocational education and extension board upon recommendation of the director for a probationary period not to exceed three years..." (§ 1102.3)
+*   "On or before the expiration of the probationary period such board... may appoint on tenure those persons who have been found competent, efficient and satisfactory." (§ 1102.3)
+*   "Such persons shall hold their respective positions during good behavior and competent and efficient service and shall not be removed except for any of the following causes, after a hearing..." (§ 1102.3)
+
+**Why:** Managing and tracking all agency staff, their roles, qualifications, and employment status is fundamental for operations and compliance.
+
+**One row represents:** A single employee of the agency or a school/board under its jurisdiction.
+
+**Covers:** All employees, including nurses, teachers, supervisors, and other personnel.
+
+**Columns:**
+*   Employee ID
+*   Employee Name
+*   Job Title/Role
+*   Department/Facility ID (linked to Dataset 1)
+*   Employment Start Date
+*   Employment Status (e.g., Active, Probationary, Tenured, Terminated)
+*   Probationary End Date (if applicable)
+*   Certification/License Type (e.g., Nurse, Teacher, Physician Assistant)
+*   Certification/License Number
+*   Certification/License Expiration Date
+*   Required Training Status (e.g., AED, Glucagon/Epinephrine, Opioid Antagonist)
+*   Last Training Date (linked to Dataset 10)
+*   Next Training Due Date
+*   Disciplinary Action Status (Yes/No, Date)
+
+**9. Service Provider Contracts (Vocational Rehabilitation & Food Service)**
+
+**Quotes:**
+*   "To provide vocational rehabilitation services directly or through public or private instrumentalities for handicapped persons..." (§ 1004.2)
+*   "To contract with not-for-profit organizations for the provision of supported employment services..." (§ 1004.9)
+*   "The commissioner shall ensure that funds provided pursuant to this subdivision are not used for the provision of services that are the responsibility of other state agencies..." (§ 1004.9)
+*   "Services shall be provided at a cost not to exceed that which is necessary and reasonable..." (§ 1004.9)
+*   "The commissioner shall require service providers to develop appropriate policies and procedures for directing their supported employment programs, and to provide such reports as the commissioner deems to be appropriate." (§ 1004.9)
+*   "The department is authorized to contract with such nonprofit organizations for the provision of vocational rehabilitation services which lead to sheltered employment." (§ 1004-a.4)
+*   "All contracts entered into for the two thousand twenty-three--two thousand twenty-four school year, and thereafter, to provide, maintain and operate cafeteria or restaurant service by a private food service management company shall include provisions requiring such private food service management company to disclose ingredients lists and nutritional information to school districts for all meals that such company provides." (§ 924.a)
+*   "The private food service management company shall be required to consolidate nutritional information for any meal that is comprised of separate individual ingredients." (§ 924.a)
+
+**Why:** Tracking contracts with external service providers is essential for managing program delivery, financial oversight, and compliance.
+
+**One row represents:** A single contract with an external service provider.
+
+**Covers:** Contracts for vocational rehabilitation services (including supported employment and sheltered employment) and food service management.
+
+**Columns:**
+*   Contract ID
+*   Provider Organization Name
+*   Provider Organization ID
+*   Contract Type (e.g., Vocational Rehabilitation Services, Supported Employment, Sheltered Employment, Food Service Management)
+*   Contract Start Date
+*   Contract End Date
+*   Total Contract Value
+*   Funding Source
+*   Services to be Provided
+*   Reporting Requirements (Yes/No)
+*   Compliance Status
+*   Nutritional Information Disclosure Required (Yes/No, for food service)
+*   Nutritional Information Received (Yes/No, for food service, linked to Dataset 18)
+
+**10. Staff Emergency Medical Training Records**
+
+**Quotes:**
+*   "ensure the presence of at least one staff person who is trained, pursuant to paragraph (a) of subdivision three of section three thousand-b of the public health law, in the operation and use of an AED." (§ 917.2)
+*   "No person may operate an AED in a nonpublic school facility unless the person has successfully completed a training course in the operation of an AED approved by a nationally-recognized organization..." (§ 917-a.3)
+*   "licensed registered professional nurses... train unlicensed school personnel to administer prescribed glucagon or epinephrine devices in emergency situations..." (§ 921.1.a)
+*   "Training must be provided by a physician or other duly authorized licensed health care professional in a competent manner and must be completed in a form and manner prescribed by the commissioner in regulation." (§ 921.1.a)
+*   "any person employed by any such entity that has elected to participate may administer an opioid antagonist... provided that such person shall have been trained by a program approved under section three thousand three hundred nine of the public health law." (§ 922.2)
+
+**Why:** Tracking staff training for emergency medical devices ensures qualified personnel are available and meets compliance requirements.
+
+**One row represents:** A single staff member's completion of a specific emergency medical training course.
+
+**Covers:** Training for AED operation, glucagon/epinephrine device administration, and opioid antagonist administration.
+
+**Columns:**
+*   Training Record ID
+*   Employee ID (linked to Dataset 8)
+*   Training Type (e.g., AED Operation, Glucagon/Epinephrine Administration, Opioid Antagonist Administration)
+*   Training Date
+*   Training Provider/Organization
+*   Certification Expiration Date (if applicable)
+*   Training Status (e.g., Completed, Certified)
+*   Trainer Name/ID
+
+**11. School Meal Eligibility & Participation**
+
+**Quotes:**
+*   "School districts, charter schools, and non-public schools shall maximize the number of students eligible for free meals by conducting the Direct Certification Matching Process at a minimum of three times per year, designating children as "Other Source Categorically Eligible", as defined by federal regulations, or, for schools not participating in the Community Eligibility Provision or Provision 2, by annually collecting the free and reduced-price meal application." (§ 916.5)
+
+**Why:** Tracking student eligibility for free/reduced meals is crucial for federal reimbursement and ensuring student access to nutrition.
+
+**One row represents:** A single student's eligibility determination for free or reduced-price meals.
+
+**Covers:** All students in school districts, charter schools, and non-public schools.
+
+**Columns:**
+*   Eligibility ID
+*   Student ID (linked to Dataset 2)
+*   School ID (linked to Dataset 1)
+*   Eligibility Status (e.g., Free, Reduced-Price, Paid)
+*   Eligibility Determination Method (e.g., Direct Certification, Application)
+*   Direct Certification Date (if applicable)
+*   Application Date (if applicable)
+*   Eligibility Start Date
+*   Eligibility End Date
+*   Categorically Eligible (Yes/No, if "Other Source")
+*   Community Eligibility Provision (CEP) Participant (Yes/No)
+*   Provision 2 Participant (Yes/No)
+*   Meal Participation Status (e.g., Regularly Participates, Irregularly Participates)
+
+**12. Bedbug Infestation Incidents & Remediation**
+
+**Quotes:**
+*   "In a city school district having a population of one million or more inhabitants, the principal of each public school shall provide immediate notification to parents... disclosing a finding relating to the infestation of bedbugs... in such school..." (§ 920.1)
+*   "The principal shall ensure that the bedbug infestation at the school is properly addressed in the most effective and safe manner." (§ 920.3)
+
+**Why:** Tracking bedbug infestations and remediation efforts is necessary for public health, safety, and operational response.
+
+**One row represents:** A single bedbug infestation incident at a school.
+
+**Covers:** Bedbug infestations in public schools within city school districts of one million or more inhabitants.
+
+**Columns:**
+*   Incident ID
+*   Facility ID (linked to Dataset 1)
+*   Date of Discovery
+*   Location within Facility (e.g., Classroom, Library, Specific Area)
+*   Severity of Infestation
+*   Date of Parent Notification
+*   Scope of Notification (e.g., All students, Affected area only)
+*   Remediation Start Date
+*   Remediation End Date
+*   Remediation Method
+*   Remediation Contractor (if external)
+*   Post-Remediation Inspection Date
+*   Infestation Resolved (Yes/No)
+
+**13. Vocational Rehabilitation Facility & Workshop Inventory**
+
+**Quotes:**
+*   "The establishment of public and other nonprofit rehabilitation facilities for handicapped persons; the establishment of public and other nonprofit workshops for the severely handicapped..." (§ 1002.5.b)
+*   "Establishment of a workshop" or "rehabilitation facility" means: a. In the case of a workshop, the expansion, remodeling, or alteration of existing buildings... and the acquisition of initial equipment... b. In the case of a rehabilitation facility, the expansion, remodeling, or alteration of existing buildings, and initial equipment of such buildings... and initial staffing thereof for a period not exceeding one year." (§ 1002.9)
+*   "Construction" includes construction of new buildings, acquisition of existing buildings, and expansion, remodeling, alteration, and renovation of existing buildings, and initial equipment of such new, newly acquired, expanded, remodeled, altered or renovated buildings;" (§ 1002.10.a)
+*   "To arrange and pay part of the cost of projects leading to the construction of workshops and rehabilitation facilities and the extension and improvement or the establishment of vocational rehabilitation services for handicapped persons, including the furnishing of equipment or the furnishing of funds for the purchase of equipment and supplies, personnel and other necessary and proper expenses in the construction, establishment, improvement, continuation or extension of rehabilitation facilities and workshops operated by public or nonprofit organizations and agencies." (§ 1004.5)
+*   "The department shall maintain a register of such nonprofit organizations which, after inspection of the facilities for sheltered employment provided by them, it deems qualified to meet the needs of such individuals with developmental disabilities, mental illness or a severe physical handicap." (§ 1004-a.3)
+*   "Such inspection shall also determine the eligibility of such organization to receive the funds hereinbefore specified." (§ 1004-a.3)
+
+**Why:** Tracking the inventory, construction, and operational status of vocational rehabilitation facilities and workshops is essential for program delivery and funding.
+
+**One row represents:** A single vocational rehabilitation facility or workshop.
+
+**Covers:** Public and non-profit rehabilitation facilities and workshops for handicapped persons.
+
+**Columns:**
+*   Facility/Workshop ID
+*   Facility/Workshop Name
+*   Facility/Workshop Type (e.g., Rehabilitation Facility, Sheltered Workshop)
+*   Operator Type (Public, Non-Profit)
+*   Address
+*   Establishment Date
+*   Construction Project ID (if applicable)
+*   Initial Equipment Acquisition Date
+*   Initial Staffing Period End Date
+*   Operational Status (e.g., Active, Under Construction, Closed)
+*   Inspection Date (for qualification/eligibility)
+*   Qualification Status (e.g., Qualified, Pending Review)
+*   Funding Eligibility (Yes/No)
+
+**14. County Vocational Education and Extension Board (VEEB) Member Appointments**
+
+**Quotes:**
+*   "The board of supervisors or other governing elective body shall appoint a board which shall be known as "The Vocational Education and Extension Board of the County of .................... " (§ 1101.2)
+*   "Such board shall consist of nine members who shall serve for a period of nine years each except that members first appointed shall be appointed for such terms that the term of one member will expire each year, and their successors shall thereafter each be appointed for a full term of nine years respectively." (§ 1101.2)
+*   "At least three members of this board shall be appointed upon recommendations made by the farm and home bureau associations of the county and at least three members upon recommendations made by the district superintendents of the county." (§ 1101.2)
+*   "Vacancies occurring in such office shall be filled by the board of supervisors or other governing elective body for the unexpired term." (§ 1101.2)
+*   "It shall appoint one of its members as president, one of its members or another qualified school district voter in the county as clerk and another qualified school district voter in the county as treasurer." (§ 1102.9)
+
+**Why:** Tracking VEEB board member appointments and officer roles is essential for governance, accountability, and continuity.
+
+**One row represents:** A single appointment of an individual to a VEEB board or officer position.
+
+**Covers:** Members and officers of County Vocational Education and Extension Boards.
+
+**Columns:**
+*   Appointment ID
+*   VEEB ID (linked to Dataset 1)
+*   Member Name
+*   Appointment Date
+*   Term Start Date
+*   Term End Date
+*   Appointment Type (e.g., Initial, Successor, Vacancy Fill)
+*   Recommended By (e.g., Farm and Home Bureau, District Superintendent, Self)
+*   Officer Role (e.g., Member, President, Clerk, Treasurer)
+*   Officer Appointment Date (if applicable)
+*   Officer Term End Date (if applicable)
+
+**15. County Vocational Education and Extension Board (VEEB) Staff Employment Records**
+
+**Quotes:**
+*   "It shall have full power and authority to employ supervisors and teachers and all other persons necessary to carry on career education and extension work and to determine the salaries to be paid." (§ 1102.3)
+*   "Members of the teaching and supervisory staff shall be appointed by a majority vote of the vocational education and extension board upon recommendation of the director for a probationary period not to exceed three years..." (§ 1102.3)
+*   "Services of members of the teaching and supervisory staff so employed may be discontinued at any time during the probationary period, upon the recommendation of the director, by majority action of such board." (§ 1102.3)
+*   "On or before the expiration of the probationary period such board, upon recommendation of the director, may appoint on tenure those persons who have been found competent, efficient and satisfactory." (§ 1102.3)
+*   "Such persons shall hold their respective positions during good behavior and competent and efficient service and shall not be removed except for any of the following causes, after a hearing, as provided by section three thousand twenty-a of this chapter: (a) insubordination, immoral character or conduct unbecoming a teacher; (b) inefficiency, incompetency, physical or mental disability or neglect of duty." (§ 1102.3)
+
+**Why:** Tracking VEEB employee details, employment status, and tenure is crucial for human resource management and compliance.
+
+**One row represents:** A single employment record for a VEEB staff member.
+
+**Covers:** All supervisors, teachers, and other personnel employed by County Vocational Education and Extension Boards.
+
+**Columns:**
+*   Employee ID
+*   VEEB ID (linked to Dataset 1)
+*   Employee Name
+*   Job Title (e.g., Supervisor, Teacher, Other)
+*   Employment Start Date
+*   Employment Status (e.g., Probationary, Tenured, Discontinued, Terminated)
+*   Probationary Period End Date (if applicable)
+*   Tenure Grant Date (if applicable)
+*   Salary
+*   Recommendation By (e.g., Director)
+*   Disciplinary Action (Yes/No)
+*   Disciplinary Action Date
+*   Reason for Disciplinary Action/Removal
+
+**16. County Vocational Education and Extension Board (VEEB) Program Contracts**
+
+**Quotes:**
+*   "It shall have the authority to make contracts with the school authorities of school districts within the county, or without the county where such contract will result in no additional expense being incurred by such county, for services to be rendered by it to such school districts, and such school authorities shall have the authority to enter into such contracts." (§ 1102.12)
+*   "Payments shall be made by the school districts at least as often as quarterly." (§ 1102.12)
+*   "Any amount so paid to the board by a school district shall not be included in computing the apportionment of state aid to such district." (§ 1102.12)
+*   "It may transport pupils under twenty-one years of age to and from schools and classes maintained by such vocational education and extension board for instruction in career education." (§ 1102.13)
+*   "In providing such transportation, the board may transport pupils residing outside the county who are attending such schools and classes maintained by such board pursuant to subdivision twelve of this section." (§ 1102.13)
+*   "Such motor vehicle or vehicles may be leased to a school district when not needed for such transportation." (§ 1102.14)
+
+**Why:** Tracking contracts for educational services and transportation is vital for program delivery, financial management, and inter-district cooperation.
+
+**One row represents:** A single contract between a VEEB and a school district.
+
+**Covers:** Contracts for career education services and pupil transportation provided by VEEBs to school districts.
+
+**Columns:**
+*   Contract ID
+*   VEEB ID (linked to Dataset 1)
+*   Contracting School District ID
+*   Contract Type (e.g., Career Education Services, Pupil Transportation, Vehicle Lease)
+*   Contract Start Date
+*   Contract End Date
+*   Services Provided
+*   Total Contract Value
+*   Payment Schedule (e.g., Quarterly)
+*   Last Payment Date
+*   Amount Paid
+*   Pupils Transported (Yes/No)
+*   Pupils from Outside County (Yes/No)
+*   Vehicle Leased (Yes/No, linked to Dataset 21)
+
+**17. Department of Social Services - Blind Vocational Rehabilitation Cases**
+
+**Quotes:**
+*   "The board of social services, the department of social services and the New York state commission for the visually handicapped shall retain, and shall continue to exercise, all the powers and duties relating to blind persons conferred on them by the provisions of any other law." (§ 1009.1)
+*   "The department of social services is empowered to perform any and all acts that may be required to be performed by it by any law of the United States in order to obtain funds... for use in the vocational rehabilitation of blind persons..." (§ 1009.2)
+*   "funds made available to the state by the United States to be used for vocational rehabilitation of blind persons shall be accepted and used by the state for such purposes provided the department of social services shall determine to accept and to use the same in accordance with the provisions of any law of the United States." (§ 1009.3.a)
+
+**Why:** Tracking vocational rehabilitation for blind persons is a specific mandate for the Department of Social Services, requiring separate data.
+
+**One row represents:** A single vocational rehabilitation case for a blind person.
+
+**Covers:** Blind persons receiving vocational rehabilitation services through the Department of Social Services.
+
+**Columns:**
+*   Client ID (Blind)
+*   Application Date
+*   Application Status
+*   Disability Type (specifically Blindness/Visual Impairment)
+*   Eligibility Determination Date
+*   Vocational Rehabilitation Objective
+*   Services Provided (e.g., Counseling, Training, Placement, Reader Service)
+*   Service Provider ID (if external, linked to Dataset 9)
+*   Funding Source (e.g., Federal, State)
+*   Start Date of Services
+*   End Date of Services
+*   Employment Status Post-Rehabilitation
+*   Employment Start Date
+
+**18. Food Service Management Company Nutritional Information Submissions**
+
+**Quotes:**
+*   "All contracts entered into for the two thousand twenty-three--two thousand twenty-four school year, and thereafter, to provide, maintain and operate cafeteria or restaurant service by a private food service management company shall include provisions requiring such private food service management company to disclose ingredients lists and nutritional information to school districts for all meals that such company provides." (§ 924.a)
+*   "The private food service management company shall be required to consolidate nutritional information for any meal that is comprised of separate individual ingredients." (§ 924.a)
+*   "All ingredients lists and nutritional information provided to school districts shall be published and publicly shared on such school district's website." (§ 924.b)
+
+**Why:** Tracking the receipt and publication of nutritional information from food service contractors is essential for transparency and compliance.
+
+**One row represents:** A single submission of nutritional information for a meal or ingredient by a food service company.
+
+**Covers:** Nutritional information for all meals provided by private food service management companies under contract.
+
+**Columns:**
+*   Submission ID
+*   Contract ID (linked to Dataset 9)
+*   Food Service Company Name
+*   Meal Name/Ingredient Name
+*   Submission Date
+*   Ingredients List (Text/Link to Document)
+*   Nutritional Information (e.g., Calories, Fat, Protein, Carbs)
+*   Consolidated Meal (Yes/No)
+*   Published on School District Website (Yes/No)
+*   Publication Date
+
+**19. School District Nutrition Advisory Committee Records**
+
+**Quotes:**
+*   "Every school district is hereby authorized and encouraged to establish a child nutrition advisory committee." (§ 918.1.a)
+*   "The district advisory committee is encouraged to meet at least quarterly." (§ 918.1.b)
+*   "The committee is encouraged to include, but not be limited to, a representative of the school board, the food preparation staff, the physical education departments, the school nurse or health staff, a registered dietitian, if available, the faculty of the district, the parent teacher associations in the district, the students enrolled in the district, and the parents or guardians of students enrolled in the district." (§ 918.1.c)
+*   "The district is encouraged to give... written notice to all parents or guardians... of the existence of a school district nutrition advisory committee and supply information as to how such interested parents or guardians may participate..." (§ 918.2)
+*   "The district is encouraged... to give notice... as to the scheduled dates of all meetings of the advisory committee." (§ 918.3)
+*   "Each June, the committee shall report to the board of the local school district regarding the status of the implementation of the district's programs to improve students' nutritional awareness and healthy diet." (§ 918.6)
+
+**Why:** Tracking the establishment, membership, meetings, and reports of nutrition advisory committees supports wellness initiatives and accountability.
+
+**One row represents:** A single meeting or report of a school district nutrition advisory committee.
+
+**Covers:** Activities of child nutrition advisory committees in school districts.
+
+**Columns:**
+*   Event ID
+*   School District ID
+*   Committee Name
+*   Event Type (e.g., Meeting, Annual Report Submission)
+*   Event Date
+*   Meeting Frequency (e.g., Quarterly)
+*   Attendees Count
+*   Member Representation (e.g., School Board, Food Staff, Parents, Students)
+*   Report Submitted (Yes/No)
+*   Report Content Summary (e.g., Recommendations on vending, curriculum)
+
+**20. Water Safety Information Distribution Records**
+
+**Quotes:**
+*   "At the beginning of the two thousand twenty-six--two thousand twenty-seven school year, each school district shall provide, to the parent or guardian of each student enrolled in such school district, information on drowning prevention, water safety, and safe and healthy swimming." (§ 926.1)
+*   "Each school year thereafter such information shall be provided to the parent or guardian of a student upon enrollment in the school district." (§ 926.1)
+*   "If the student is eighteen years of age or older, such information shall be provided to the student." (§ 926.1)
+*   "Such information may be provided electronically or in paper form." (§ 926.1)
+*   "Translation of such information into any of the twelve most common non-English languages... shall be provided upon request by a parent or guardian." (§ 926.1)
+*   "Each school district shall publish such information on its website in a clearly visible and accessible location." (§ 926.2)
+
+**Why:** Tracking the distribution of water safety information ensures compliance with legal requirements for student and parent awareness.
+
+**One row represents:** A single instance of water safety information being provided to a student or parent/guardian.
+
+**Covers:** Distribution of drowning prevention and water safety information to students and their parents/guardians.
+
+**Columns:**
+*   Distribution ID
+*   School District ID
+*   Student ID (linked to Dataset 2)
+*   Recipient Type (e.g., Student, Parent/Guardian)
+*   Distribution Date
+*   Distribution Method (e.g., Electronic, Paper)
+*   Language Provided
+*   Translation Requested (Yes/No)
+*   Website Publication Confirmed (Yes/No)
+*   Website Publication Date
+
+**21. Gifts and Donations Received**
+
+**Quotes:**
+*   "The department is authorized to receive, accept and use gifts and donations for the purpose of this article which may be offered, conditionally or unconditionally..." (§ 1005)
+*   "All money received as gifts or donations shall be paid to the commissioner of taxation and finance... and shall constitute a special fund..." (§ 1005)
+*   "A full report of all such gifts and donations, together with the names of the donors, the amounts contributed by each and all disbursements therefrom shall be submitted annually to the legislature..." (§ 1005)
+*   "the department of social services and its commission for the visually handicapped are empowered to accept gifts for the extension and improvement of non-profit facilities and workshops for the training and rehabilitation of blind persons, and to match the value of such gifts made to such department or commission for such purposes by or on behalf of such non-profit facilities or workshops." (§ 1009.3.b)
+
+**Why:** Tracking gifts and donations is necessary for financial accountability, reporting, and proper fund utilization.
+
+**One row represents:** A single gift or donation received by the department or commission.
+
+**Covers:** All gifts and donations received for vocational rehabilitation programs, including those for blind persons.
+
+**Columns:**
+*   Donation ID
+*   Date Received
+*   Donor Name
+*   Amount Contributed
+*   Donation Type (e.g., Monetary, In-Kind)
+*   Purpose/Condition (e.g., General VR, Blind VR, Facility Improvement)
+*   Recipient Department/Commission (e.g., Education Department, DSS)
+*   Fund Account ID
+*   Matching Funds Applied (Yes/No, for blind VR)
+
+**22. VEEB Financial Account Designations**
+
+**Quotes:**
+*   "It shall appoint one of its members as president, one of its members or another qualified school district voter in the county as clerk and another qualified school district voter in the county as treasurer. All moneys accruing or appropriated to the board shall be paid to the treasurer of the board." (§ 1102.9)
+*   "The treasurer shall furnish a surety bond of a surety company authorized to do business in the state of New York. The form and amount of such bond shall be approved by the board and the cost thereof shall be a charge against the funds of said board." (§ 1102.9)
+*   "It shall designate a bank or banks for the deposit of money. Such designation shall be made of a bank within the county unless no bank exists in the county. It shall notify the treasurer of all bank designations and require him to deposit all money in such designated banks." (§ 1102.10)
+*   "Accruing funds, balances, resources and assets shall become the property of any succeeding agency or, in the event of termination of the program of shared services, such accruing funds, balances, resources and assets shall be prorated among the districts having been served during the last year of operation and the county in proportion to the amount which each paid to the vocational education and extension board." (§ 1102.10)
+*   "All accounting procedures shall be in accordance with regulations that apply to union free school districts." (§ 1102.11)
+
+**Why:** Tracking financial designations, bank accounts, and treasurer bonds is essential for financial control and accountability of VEEBs.
+
+**One row represents:** A single financial designation or bond record for a VEEB.
+
+**Covers:** Bank designations, treasurer surety bonds, and fund allocation for County Vocational Education and Extension Boards.
+
+**Columns:**
+*   Financial Record ID
+*   VEEB ID (linked to Dataset 1)
+*   Record Type (e.g., Bank Designation, Treasurer Bond, Fund Allocation)
+*   Date of Record
+*   Bank Name (if designation)
+*   Account Number (if designation)
+*   Treasurer Name (if bond)
+*   Surety Company (if bond)
+*   Bond Amount (if bond)
+*   Bond Approval Date (if bond)
+*   Fund Allocation Details (if termination, e.g., District ID, Prorated Amount)
+
+**23. VEEB Transportation Vehicle Inventory**
+
+**Quotes:**
+*   "It may purchase and maintain a motor vehicle or vehicles to be used for the transportation of school children under twenty-one years of age to schools and classes maintained by the county vocational education and extension board." (§ 1102.14)
+*   "Such motor vehicle or vehicles may be leased to a school district when not needed for such transportation." (§ 1102.14)
+*   "When such motor vehicle shall be leased as provided in this subdivision, public liability and property damage insurance, fire insurance and compensation insurance of drivers shall be provided" (§ 1102.14)
+
+**Why:** Tracking transportation vehicles is necessary for operational management, maintenance, and insurance compliance.
+
+**One row represents:** A single motor vehicle owned or maintained by a VEEB.
+
+**Covers:** Motor vehicles used for pupil transportation by County Vocational Education and Extension Boards.
+
+**Columns:**
+*   Vehicle ID
+*   VEEB ID (linked to Dataset 1)
+*   Vehicle Type (e.g., Bus, Van)
+*   Make
+*   Model
+*   Year
+*   License Plate Number
+*   Acquisition Date
+*   Last Maintenance Date
+*   Insurance Policy Number (Public Liability, Property Damage, Fire, Compensation)
+*   Insurance Expiration Date
+*   Lease Status (Yes/No)
+*   Lease Contract ID (linked to Dataset 16)

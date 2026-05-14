@@ -1,0 +1,1296 @@
+**Section 1, Mission Summary:**
+
+The agency's mission is to ensure the proper education, safety, and welfare of children and minors, while upholding data privacy and security standards within the educational system. Key programs include regulating child labor through employment certificates, overseeing educational placements for children in foster care, enforcing anti-harassment and anti-discrimination policies in schools, and managing data privacy for student, teacher, and principal information. The agency impacts constituents by safeguarding children's rights to education and safe employment, and protecting their sensitive data.
+
+**Section 2, Data Summary:**
+
+1.  **Minor Registry**
+2.  **Parent/Guardian Registry**
+3.  **Employer Registry**
+4.  **School Registry**
+5.  **School District Registry**
+6.  **Certificating Official Registry**
+7.  **Physician Registry**
+8.  **Social Services District Registry**
+9.  **Voluntary Authorized Agency Registry**
+10. **LEA Point of Contact Registry**
+11. **Third-Party Contractor Registry**
+12. **Department Employee Registry**
+13. **Minor Employment Certificate Applications**
+14. **Minor Employment Certificates & Permits**
+15. **Minor Physical Fitness Certificates**
+16. **Minor Schooling Records**
+17. **Minor Pledge of Employment Records**
+18. **Child Labor & Education Law Violations & Penalties**
+19. **Services for Public Good Program Participation**
+20. **School Census Records**
+21. **Foster Care Child Educational Placements**
+22. **Foster Care Transportation Records**
+23. **School District Interpreter Service Requests**
+24. **Harassment, Bullying, & Discrimination Incident Reports**
+25. **Student Directory Information Release & Access Log**
+26. **Parent/Eligible Student Data Access & Challenge Requests**
+27. **Third-Party Contractor Data Agreements**
+28. **Data Breach Incidents**
+29. **Data Privacy Complaints**
+30. **Data Privacy Enforcement Actions**
+31. **Educational Agency Data Opt-Out Requests**
+32. **School Employee DASA Training Completion**
+33. **School District Report Submissions**
+34. **DASA Grants to School Districts**
+35. **Historical Documentary Heritage Grants & Aid**
+36. **Department Employee Leaves of Absence**
+37. **Department Employee Salary Reductions for Custodial Accounts**
+38. **Department Refunds Issued**
+
+**Section 3, Data Details:**
+
+**1. Minor Registry**
+*   **Open Data Match:**
+    *   "Public Data File Students" (165, 292, 841, 1855, 2177, 2400): 90% match. These likely contain core student/minor demographic information.
+    *   "Student Covid Vaccinations" (194, 245, 1406, 2645, 2761): 70% match. These would link to a minor ID.
+*   **Quotes:**
+    *   "It shall be unlawful... to employ in any trade, business or service a minor who does not present an employment certificate or permit..." (§ 3215.1)
+    *   "A student non-factory employment certificate may be issued to a minor fourteen or fifteen years of age..." (§ 3216.1)
+    *   "Such census shall include all persons between birth and eighteen years of age and in the case of physically or mentally handicapped children between birth and twenty-one years of age, their names, their respective residences by street and number, the day of the month and the year of their birth..." (§ 3241.2)
+    *   "No student shall be subjected to harassment or bullying by employees or students on school property or at a school function..." (§ 12.1)
+*   **Why:** This foundational dataset tracks all minors under the agency's purview for various programs and compliance.
+*   **One row represents:** A single minor.
+*   **Covers:** All minors (children and youth) relevant to the agency's operations, including those seeking employment, in foster care, or enrolled in schools.
+*   **Columns:**
+    *   Minor ID (PK)
+    *   First Name
+    *   Last Name
+    *   Date of Birth
+    *   Gender
+    *   Race/Ethnicity
+    *   Residence Address (Street, Number, City, State, Zip)
+    *   Current Age
+    *   Physically/Mentally Handicapped (Y/N)
+    *   Disability Type (if applicable)
+    *   Illiteracy (Y/N)
+    *   Current School ID (linked to School Registry - 4)
+    *   Current School District ID (linked to School District Registry - 5)
+    *   Foster Care Status (Y/N)
+    *   COVID Vaccination Status
+    *   IEP Status
+
+**2. Parent/Guardian Registry**
+*   **Open Data Match:**
+    *   "Public Data File Parents" (1523, 2207, 2592): 90% match. These likely contain core parent/guardian demographic information.
+    *   "NYC School Survey Parent Data" (751): 70% match. This would link to a parent ID.
+*   **Quotes:**
+    *   "Written consent of the parent or guardian" (§ 3217.2)
+    *   "the names of the persons in parental relation to them" (§ 3241.2)
+    *   "It shall be the duty of persons in parental relation to any person between such ages residing within the limits of any such city to make such reports as the board of education of such city shall require." (§ 3241.4)
+    *   "Parents have the right to have complaints about possible breaches of student data addressed." (§ 2-d.3.b.(5))
+*   **Why:** This foundational dataset tracks individuals in parental relation to minors for consent, reporting, and communication.
+*   **One row represents:** A single parent or guardian.
+*   **Covers:** All parents or guardians associated with minors under the agency's purview.
+*   **Columns:**
+    *   Parent/Guardian ID (PK)
+    *   First Name
+    *   Last Name
+    *   Relationship to Minor (e.g., Mother, Father, Legal Guardian)
+    *   Contact Information (Phone, Email, Address)
+    *   Deaf/Hard of Hearing (Y/N)
+
+**3. Employer Registry**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "An employment certificate shall be kept on file at the place of the minor's employment..." (§ 3216.8)
+    *   "The pledge of employment shall be signed by the initial prospective employer or his authorized representative and shall show his name and place of business..." (§ 3221)
+    *   "A violation of sections thirty-two hundred fifteen, thirty-two hundred twenty-three and thirty-two hundred twenty-four of this article shall be punishable for a first offense by a fine..." (§ 3233)
+*   **Why:** This foundational dataset tracks employers of minors for compliance with child labor laws.
+*   **One row represents:** A single employer.
+*   **Covers:** All employers who employ or intend to employ minors under the agency's jurisdiction.
+*   **Columns:**
+    *   Employer ID (PK)
+    *   Employer Name
+    *   Business Address
+    *   Contact Person
+    *   Contact Phone
+    *   Contact Email
+    *   Temporary Services Employer (Y/N)
+
+**4. School Registry**
+*   **Open Data Match:**
+    *   "School Locations" (99, 473, 836, 1037, 1658, 2025, 2832): 100% match. These are direct listings of schools.
+    *   "School Point Locations" (562, 1382): 95% match. These are likely geographic data for schools.
+    *   "Universal Pre K (UPK) School Locations" (1083): 95% match. Specific type of school location.
+    *   "NYC DOE Public School Location Information" (1361): 95% match.
+*   **Quotes:**
+    *   "the principal of the school the minor attends or last attended" (§ 3222.1)
+    *   "a school in which the child is currently or was previously enrolled shall flag the schooling record of the child..." (§ 3222.4)
+    *   "No student shall be subjected to harassment or bullying by employees or students on school property or at a school function..." (§ 12.1)
+    *   "Each third party contractor that receives student data or teacher or principal data pursuant to a contract or other written agreement with an educational agency shall be required to notify such educational agency of any breach of security..." (§ 2-d.6.a)
+*   **Why:** This foundational dataset tracks all schools under the agency's jurisdiction for educational and regulatory purposes.
+*   **One row represents:** A single school.
+*   **Covers:** All public, nonpublic, and charter schools within the agency's jurisdiction.
+*   **Columns:**
+    *   School ID (PK)
+    *   School Name
+    *   School Type (e.g., Public, Nonpublic, Charter)
+    *   School District ID (linked to School District Registry - 5)
+    *   Address (Street, City, State, Zip)
+    *   Principal/Head of School ID (linked to Department Employee Registry - 12, or a separate School Employee Registry if needed)
+    *   Contact Phone
+    *   Contact Email
+    *   Enrollment Capacity
+    *   Grade Levels Served
+
+**5. School District Registry**
+*   **Open Data Match:** None directly, but many Open Data reports are "by District".
+*   **Quotes:**
+    *   "the superintendent of schools or the district superintendent of schools within their respective jurisdictions" (§ 3215-a.2)
+    *   "The board of education of each city... shall constitute a permanent census board in such city." (§ 3241.1)
+    *   "the social services district, in consultation with the appropriate local educational agency or agencies, shall designate either the school district of origin or the school district of residence..." (§ 3244.2.a)
+    *   "The board of education or trustees of each school district shall ensure that at any meeting or activity which is conducted by the board of education... shall provide interpreter services..." (§ 3230.1)
+    *   "Provide grants, from funds appropriated for such purpose, to local school districts to assist them in implementing the guidelines set forth in this section;" (§ 14.2)
+*   **Why:** This foundational dataset tracks all school districts for administrative, regulatory, and funding purposes.
+*   **One row represents:** A single school district.
+*   **Covers:** All school districts within the agency's jurisdiction.
+*   **Columns:**
+    *   School District ID (PK)
+    *   School District Name
+    *   Superintendent ID (linked to Department Employee Registry - 12, or a separate School Employee Registry if needed)
+    *   Address
+    *   Contact Phone
+    *   Contact Email
+    *   Requires Full-Time Certificate Pledge (Y/N)
+    *   Policy Adopted for Interpreter Services (Y/N)
+
+**6. Certificating Official Registry**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Employment certificates or permits may be revoked for cause by the chancellor in New York city and elsewhere by the superintendent of schools or the district superintendent of schools within their respective jurisdictions, or, by a principal of a nonpublic secondary school for a student attending such school." (§ 3215-a.2)
+    *   "Before issuing an employment certificate the issuing official shall require the minor to submit the following..." (§ 3217.2)
+    *   "The schooling record shall be issued by the principal of the school the minor attends or last attended, or by a teacher deputized by the principal or by a supervising official..." (§ 3222.1)
+*   **Why:** This foundational dataset tracks officials authorized to issue or revoke employment certificates and schooling records.
+*   **One row represents:** A single certificating official.
+*   **Covers:** All individuals authorized to issue or revoke employment certificates, permits, or schooling records.
+*   **Columns:**
+    *   Certificating Official ID (PK)
+    *   First Name
+    *   Last Name
+    *   Title/Role (e.g., Chancellor, Superintendent, Principal, Teacher)
+    *   Affiliated School ID (linked to School Registry - 4, if applicable)
+    *   Affiliated School District ID (linked to School District Registry - 5, if applicable)
+    *   Jurisdiction Description
+
+**7. Physician Registry**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Such certificate shall be issued and such physical examination shall be made, in a city of over three hundred thousand population, by a physician designated by the board of health, and elsewhere by the director of school health services charged with the duty of making physical examinations of all school children or by any physician duly licensed to practice medicine in this state." (§ 3220.1)
+    *   "If the physician authorized to issue certificates of physical fitness shall find that a minor from fourteen to eighteen years of age is not physically sound..." (§ 3220.2)
+*   **Why:** This foundational dataset tracks physicians authorized to conduct physical examinations for employment certificates.
+*   **One row represents:** A single physician.
+*   **Covers:** All physicians authorized to issue physical fitness certificates for minors.
+*   **Columns:**
+    *   Physician ID (PK)
+    *   First Name
+    *   Last Name
+    *   License Number
+    *   Affiliation (e.g., Board of Health, School Health Services, Private Practice)
+    *   Jurisdiction Description
+
+**8. Social Services District Registry**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "the social services district, in consultation with the appropriate local educational agency or agencies, shall designate either the school district of origin or the school district of residence within which the child in foster care shall be entitled to attend..." (§ 3244.2.a)
+    *   "excess allowable transportation costs... shall be shared between the social services district responsible for the foster care costs of the child or youth and the designated school district of attendance equally." (§ 3244.4.c)
+*   **Why:** This foundational dataset tracks social services districts involved in foster care placements and associated educational decisions.
+*   **One row represents:** A single social services district.
+*   **Covers:** All social services districts responsible for children in foster care.
+*   **Columns:**
+    *   Social Services District ID (PK)
+    *   District Name
+    *   Contact Information
+
+**9. Voluntary Authorized Agency Registry**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "a best interest determination made by the applicable social services district or voluntary authorized agency..." (§ 3244.2.a)
+*   **Why:** This foundational dataset tracks voluntary authorized agencies involved in foster care placements.
+*   **One row represents:** A single voluntary authorized agency.
+*   **Covers:** All voluntary authorized agencies involved in foster care placements.
+*   **Columns:**
+    *   Voluntary Authorized Agency ID (PK)
+    *   Agency Name
+    *   Contact Information
+
+**10. LEA Point of Contact Registry**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "each local educational agency... shall designate a local educational agency point of contact for children and youth in foster care." (§ 3244.2.g)
+*   **Why:** This foundational dataset tracks designated points of contact within local educational agencies for foster care children.
+*   **One row represents:** A single LEA point of contact.
+*   **Covers:** All designated LEA points of contact for children and youth in foster care.
+*   **Columns:**
+    *   LEA Point of Contact ID (PK)
+    *   First Name
+    *   Last Name
+    *   Title
+    *   Affiliated School District ID (linked to School District Registry - 5)
+    *   Contact Information
+
+**11. Third-Party Contractor Registry**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Each third party contractor that receives student data or teacher or principal data pursuant to a contract or other written agreement with an educational agency shall be required to notify such educational agency of any breach of security..." (§ 2-d.6.a)
+    *   "Each educational agency that enters into a contract or other written agreement with a third party contractor under which the third party contractor will receive student data or teacher or principal data shall ensure that such contract or agreement includes a data security and privacy plan..." (§ 2-d.5.e)
+*   **Why:** This foundational dataset tracks all third-party contractors handling sensitive educational data.
+*   **One row represents:** A single third-party contractor.
+*   **Covers:** All third-party contractors that enter into agreements with educational agencies to receive student, teacher, or principal data.
+*   **Columns:**
+    *   Third-Party Contractor ID (PK)
+    *   Contractor Name
+    *   Contact Person
+    *   Contact Information (Phone, Email, Address)
+
+**12. Department Employee Registry**
+*   **Open Data Match:**
+    *   "Public Data File Teacher" (1213, 2454, 2958): 80% match. These likely contain teacher demographic information, which could be a subset of department employees.
+    *   "NYC School Survey Teachers" (676): 70% match.
+*   **Quotes:**
+    *   "The commissioner of education shall appoint... such associate and assistant commissioners as he shall deem necessary..." (§ 102)
+    *   "The commissioner of education... shall have power... to appoint all other needed officers and employees and fix their titles, duties and salaries." (§ 104)
+    *   "The commissioner shall appoint a chief privacy officer within the department for a term of three years..." (§ 2-d.2.a)
+*   **Why:** This foundational dataset tracks all employees of the Education Department for HR and organizational management.
+*   **One row represents:** A single employee of the Education Department.
+*   **Covers:** All appointed officers and employees of the Education Department.
+*   **Columns:**
+    *   Employee ID (PK)
+    *   First Name
+    *   Last Name
+    *   Position/Title
+    *   Department/Division/Bureau
+    *   Appointment Date
+    *   Appointing Authority (Commissioner, Regents)
+    *   Salary
+    *   Duties
+    *   Employment Status (Active, Suspended, Removed)
+    *   Suspension Start Date (if applicable)
+    *   Suspension End Date (if applicable)
+    *   Removal Date (if applicable)
+    *   Chief Privacy Officer Term Start Date (if applicable)
+    *   Chief Privacy Officer Term End Date (if applicable)
+    *   Certification/License Type (if applicable, for DASA training)
+
+**13. Minor Employment Certificate Applications**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "An application for an employment certificate shall be made by a minor on a form prescribed by the commissioner of education." (§ 3217.1)
+    *   "Before issuing an employment certificate the issuing official shall require the minor to submit the following: a. Evidence of age; b. Written consent of the parent or guardian; c. A certificate of physical fitness; and d. If the application is for a full-time employment certificate, a schooling record." (§ 3217.2)
+    *   "To obtain a farm work permit a minor shall present to the issuing officer the following: a. Evidence of age; b. Written consent of the parent or guardian; and c. A certificate of physical fitness." (§ 3226.3)
+*   **Why:** The agency tracks the progress and required submissions for each employment certificate or permit application.
+*   **One row represents:** A single application for an employment certificate or permit.
+*   **Covers:** All applications for employment certificates and permits, including initial applications and renewals.
+*   **Columns:**
+    *   Application ID (PK)
+    *   Minor ID (linked to Minor Registry - 1)
+    *   Application Date
+    *   Requested Certificate/Permit Type (e.g., Student Non-Factory, Farm Work)
+    *   Application Status (e.g., Submitted, In Review, Approved, Denied)
+    *   Denial Reason
+    *   Date Evidence of Age Submitted
+    *   Type of Age Evidence Submitted (e.g., Birth Certificate, Passport)
+    *   Parent/Guardian Consent Submitted (Y/N)
+    *   Date Parent/Guardian Consent Submitted
+    *   Physical Fitness Certificate ID (linked to Minor Physical Fitness Certificates - 15, if applicable)
+    *   Schooling Record ID (linked to Minor Schooling Records - 16, if applicable)
+    *   Pledge of Employment ID (linked to Minor Pledge of Employment Records - 17, if applicable)
+    *   Full-Time Certificate Pledge Required (Y/N)
+    *   School District Requiring Pledge (if applicable, linked to School District Registry - 5)
+    *   Issuing Official ID (linked to Certificating Official Registry - 6)
+    *   Date of Issuance Decision
+    *   Issued Certificate/Permit ID (linked to Minor Employment Certificates & Permits - 14)
+
+**14. Minor Employment Certificates & Permits**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "It shall be unlawful... to employ in any trade, business or service a minor who does not present an employment certificate or permit issued in accordance with this article..." (§ 3215.1)
+    *   "Employment certificates or permits may be revoked for cause by the chancellor in New York city and elsewhere by the superintendent of schools or the district superintendent of schools..." (§ 3215-a.2)
+    *   "An employment certificate shall be valid not only for the initial employment but also for subsequent employments in work permitted by the particular type of certificate." (§ 3216.6)
+    *   "An employment certificate shall expire two years from the date of its issuance..." (§ 3216.7)
+    *   "An employment certificate shall be kept on file at the place of the minor's employment and shall be returned to the minor when the employment terminates." (§ 3216.8)
+*   **Why:** To regulate child labor, the agency must track the issuance, status, and details of all employment certificates and permits.
+*   **One row represents:** A single employment certificate or permit issued to a minor.
+*   **Covers:** All types of employment certificates and permits issued to minors, including student non-factory, student general, full-time, limited, special, farm work, street trades, and newspaper carrier permits.
+*   **Columns:**
+    *   Certificate/Permit ID (PK)
+    *   Minor ID (linked to Minor Registry - 1)
+    *   Certificate/Permit Type (e.g., Student Non-Factory, Full-Time, Farm Work, Street Trades, Newspaper Carrier)
+    *   Issuance Date
+    *   Expiration Date
+    *   Issuing Official ID (linked to Certificating Official Registry - 6)
+    *   Issuing Official Jurisdiction
+    *   Current Employer ID (linked to Employer Registry - 3)
+    *   Current Employer Name
+    *   Employment Start Date
+    *   Employment End Date
+    *   Certificate/Permit Status (e.g., Active, Expired, Revoked, Returned, Destroyed)
+    *   Revocation Date
+    *   Revocation Reason
+    *   Academic Performance at Revocation (e.g., number of failed courses)
+    *   Attendance Record at Revocation
+    *   Economic Need at Revocation
+    *   Participation in Cooperative/Work Study/School-to-Work Program at Revocation
+    *   Physical Disability Description (for limited certificates)
+    *   Limited Occupation (for limited certificates)
+    *   Limited Employer (for limited certificates)
+    *   Permanent Disability Flag (for limited certificates)
+    *   Initial Employment (Y/N)
+    *   Subsequent Employment (Y/N)
+    *   Electronic Registration Updated for Subsequent Employer (Y/N, effective May 9, 2027)
+    *   Kept on File at Employment Location (Y/N)
+    *   Returned to Minor (Y/N)
+    *   Destroyed (Y/N, effective May 9, 2027)
+    *   Temporary Services Employer (Y/N)
+    *   Original Certificate ID (if copy for temporary services)
+
+**15. Minor Physical Fitness Certificates**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "A certificate of physical fitness shall be issued to a minor if a thorough physical examination made within twelve months of his or her application for an employment certificate shows that such minor is of sound health..." (§ 3220.1)
+    *   "If the physician authorized to issue certificates of physical fitness shall find that a minor from fourteen to eighteen years of age is not physically sound but that in the physician's opinion the minor may safely engage in certain occupations... the physician shall require a pledge of employment and may issue to the minor a certificate of limited physical fitness..." (§ 3220.2)
+    *   "A record made of the physical examination shall show whether a certificate of physical fitness has been issued or withheld. Such record shall be sent to the certificating official." (§ 3220.3)
+*   **Why:** The agency needs to track the physical fitness determinations for minors applying for employment certificates, especially for limited certificates.
+*   **One row represents:** A single physical fitness certificate issued for a minor.
+*   **Covers:** All physical fitness certificates issued to minors for employment purposes, including those with limited physical fitness.
+*   **Columns:**
+    *   Physical Fitness Certificate ID (PK)
+    *   Minor ID (linked to Minor Registry - 1)
+    *   Examination Date
+    *   Physician ID (linked to Physician Registry - 7)
+    *   Physician Jurisdiction
+    *   Sound Health (Y/N)
+    *   Known Health Problems at Issuance (Y/N)
+    *   Physically Qualified for Lawful Employment (Y/N)
+    *   Limited Physical Fitness (Y/N)
+    *   Physical Disability Description (if limited)
+    *   Permitted Occupations (if limited)
+    *   Permitted Employer (if limited)
+    *   Certificate Expiration Date (for limited, if not permanent)
+    *   Permanent Disability Flag (Y/N, if limited)
+    *   Record Sent to Certificating Official (Y/N)
+    *   Accepted from Another State (Y/N)
+    *   Other State Standards Equivalent (Y/N)
+    *   Related Application ID (linked to Minor Employment Certificate Applications - 13)
+
+**16. Minor Schooling Records**
+*   **Open Data Match:** None directly, but "Schooling Record" is a specific document.
+*   **Quotes:**
+    *   "The schooling record shall be issued by the principal of the school the minor attends or last attended, or by a teacher deputized by the principal or by a supervising official..." (§ 3222.1)
+    *   "On application of the person in parental relation, a schooling record shall be issued promptly to a minor who complies with the following conditions: a. Presents a certificate of physical fitness. ... b. Meets the specified age requirement." (§ 3222.2)
+    *   "Upon notification by the division of criminal justice services that a child has been listed as a missing child, a school in which the child is currently or was previously enrolled shall flag the schooling record of the child..." (§ 3222.4)
+*   **Why:** The agency needs to track schooling records as a required input for certain employment certificates and for managing information about missing children.
+*   **One row represents:** A single schooling record for a minor.
+*   **Covers:** Schooling records for minors, particularly those applying for employment certificates, and includes flags for missing children.
+*   **Columns:**
+    *   Schooling Record ID (PK)
+    *   Minor ID (linked to Minor Registry - 1)
+    *   School ID (linked to School Registry - 4)
+    *   School Name
+    *   Grade/Class Attending or Last Attended
+    *   Issuing Official ID (linked to Certificating Official Registry - 6)
+    *   Issuance Date
+    *   Parent/Guardian Application Date
+    *   Physical Fitness Certificate ID (linked to Minor Physical Fitness Certificates - 15, if presented)
+    *   Age Requirement Met (Y/N)
+    *   Missing Child Flag (Y/N)
+    *   Date Flagged as Missing
+    *   Date Recovered (if applicable)
+    *   Notification to Law Enforcement (Y/N)
+    *   Notification to DCJS (Y/N)
+    *   Request for Flagged Record Date
+    *   Requesting Entity for Flagged Record
+    *   Related Application ID (linked to Minor Employment Certificate Applications - 13)
+
+**17. Minor Pledge of Employment Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The pledge of employment shall be signed by the initial prospective employer or his authorized representative and shall show his name and place of business, the minor's name, the number of days per week and the number of hours per day and per week during which he will be employed, the hours of the beginning and the ending of work, and the nature and type of the employment." (§ 3221)
+*   **Why:** The agency needs to track the specific details of a minor's prospective employment as required for certain employment certificate applications.
+*   **One row represents:** A single pledge of employment.
+*   **Covers:** All pledges of employment submitted as part of an employment certificate application.
+*   **Columns:**
+    *   Pledge ID (PK)
+    *   Minor ID (linked to Minor Registry - 1)
+    *   Employer ID (linked to Employer Registry - 3)
+    *   Employer Name
+    *   Employer Place of Business
+    *   Number of Days Per Week
+    *   Number of Hours Per Day
+    *   Number of Hours Per Week
+    *   Work Start Time
+    *   Work End Time
+    *   Nature of Employment
+    *   Type of Employment
+    *   Pledge Signed Date
+    *   Related Application ID (linked to Minor Employment Certificate Applications - 13)
+
+**18. Child Labor & Education Law Violations & Penalties**
+*   **Open Data Match:** None directly, but "Student Discipline Annual Report" (39, 51, 303, 354, 432, 447, 557, 602, 670, 821, 829, 894, 915, 1025, 1168, 1193, 1200, 1292, 1310, 1718, 1736, 1770, 1822, 1837, 2160, 2175, 2192, 2203, 2331, 2389, 2390, 2462, 2466, 2499, 2501, 2792, 2968) could be related if it includes violations of compulsory education laws. 50% match.
+*   **Quotes:**
+    *   "Except as otherwise provided, a violation of part one of this article shall be punishable for the first offense by a fine not exceeding ten dollars or ten days' imprisonment..." (§ 3233)
+    *   "A violation of sections thirty-two hundred fifteen, thirty-two hundred twenty-three and thirty-two hundred twenty-four of this article shall be punishable for a first offense by a fine of not less than twenty nor more than fifty dollars..." (§ 3233)
+    *   "Any person who knowingly makes a false statement in or in relation to any application made for an employment certificate or permit... is guilty of a misdemeanor and upon conviction shall be punished..." (§ 3233)
+*   **Why:** The agency needs to track all violations of child labor and education laws, including false statements, and the associated penalties.
+*   **One row represents:** A single violation incident.
+*   **Covers:** All violations of Part One of the article, including unlawful employment, employer duties, temporary services, and false statements in applications.
+*   **Columns:**
+    *   Violation ID (PK)
+    *   Date of Violation
+    *   Section Violated (e.g., § 3215, § 3223)
+    *   Offender Type (e.g., Minor, Employer, Parent/Guardian)
+    *   Offender ID (linked to Minor Registry - 1, Employer Registry - 3, or Parent/Guardian Registry - 2)
+    *   Description of Violation
+    *   First Offense (Y/N)
+    *   Fine Amount Imposed
+    *   Imprisonment Days Imposed
+    *   Court Case ID
+    *   Date of Conviction
+    *   False Statement Made (Y/N)
+    *   Related Document ID (e.g., Application ID (13), Certificate/Permit ID (14), Schooling Record ID (16), Physical Fitness Certificate ID (15), Pledge ID (17))
+    *   Status (e.g., Reported, Under Investigation, Adjudicated, Penalty Paid)
+
+**19. Services for Public Good Program Participation**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner of education shall promulgate rules and regulations for the supervision, by school districts, of programs of performing services for the public good by certain infants pursuant to the provisions of sections seven hundred fifty-eight-a and 353.6 of the family court act." (§ 101-a)
+    *   "Such rules and regulations, shall include, but not be limited to, provisions (a) assuring that the conditions of work, including wages, meet the standards therefor prescribed pursuant to the labor law; (b) affording coverage to the child under the workers' compensation law; (c) assuring that the entity receiving such services shall not utilize the same to replace its regular employees; and (d) providing for reports to the family court not less frequently than every six months..." (§ 101-a)
+*   **Why:** Tracking these programs ensures compliance with labor laws, child protection, and reporting requirements to the family court.
+*   **One row represents:** A single child's participation in a "services for the public good" program.
+*   **Covers:** All programs where infants perform services for the public good under school district supervision.
+*   **Columns:**
+    *   Program Participation ID (PK)
+    *   Child ID (linked to Minor Registry - 1)
+    *   School District ID (linked to School District Registry - 5)
+    *   Program Start Date
+    *   Program End Date
+    *   Entity Receiving Services ID (linked to Employer Registry - 3, or a separate entity registry for service recipients)
+    *   Entity Name
+    *   Work Conditions Met (Yes/No)
+    *   Wages Meet Standards (Yes/No)
+    *   Workers' Compensation Coverage (Yes/No)
+    *   Regular Employees Not Replaced (Y/N)
+    *   Family Court Report Due Date
+    *   Family Court Report Submission Date
+    *   Family Court Order (Y/N)
+    *   Family Court Order Details
+    *   Compliance Status (Compliant, Non-Compliant, Under Review)
+
+**20. School Census Records**
+*   **Open Data Match:**
+    *   "Demographic Snapshot Citywide" (259, 1831, 2436): 80% match. These are likely aggregated census data.
+    *   "Demographic Snapshot by District" (642, 1396, 2432, 2956): 80% match.
+    *   "Demographic Snapshot by Borough" (662, 1565, 2860): 80% match.
+    *   "Demographic Snapshot School" (1007, 1437, 1895): 80% match.
+    *   "Demographic Snapshot Pre K For All" (1430): 80% match.
+    *   "Demographic Snapshot K For All" (2682): 80% match.
+    *   "Demographic Data Grades K Special Programs" (37, 1217, 2003, 2438, 2935): 70% match.
+*   **Quotes:**
+    *   "The board of education of each city... shall... cause a census of the children in its city to be taken and to be amended from day to day..." (§ 3241.1)
+    *   "Such census shall include all persons between birth and eighteen years of age and in the case of physically or mentally handicapped children between birth and twenty-one years of age, their names, their respective residences by street and number, the day of the month and the year of their birth, the names of the persons in parental relation to them, such information relating to physical or mental defects, to illiteracy, to employment and to the enforcement of the law relating to child labor and compulsory education as the education department and the board of education of each such city shall require..." (§ 3241.2)
+    *   "The trustees or board of education of every school district may cause a census to be taken of all children between birth and eighteen years of age, including all such facts and information as are required in the census provided for in section thirty-two hundred forty-one of this part." (§ 3242)
+*   **Why:** The agency is legally mandated to conduct and maintain a comprehensive census of children for educational and child labor enforcement purposes.
+*   **One row represents:** A single child's entry in the school census.
+*   **Covers:** All children between birth and eighteen years of age (or twenty-one for physically/mentally handicapped children) residing within the school district or city.
+*   **Columns:**
+    *   Census Record ID (PK)
+    *   Child ID (linked to Minor Registry - 1)
+    *   Child Name
+    *   Date of Birth
+    *   Residence Address (Street, Number, City, State, Zip)
+    *   Parent/Guardian Name (linked to Parent/Guardian Registry - 2)
+    *   Physical/Mental Defects (Y/N)
+    *   Disability Type (if applicable)
+    *   Illiteracy (Y/N)
+    *   Employment Status (Y/N)
+    *   Child Labor Law Enforcement Information
+    *   Compulsory Education Law Enforcement Information
+    *   Census Date
+    *   Census Type (e.g., City, School District)
+    *   Pre-school Student (Y/N)
+    *   Biennial Census Date (for pre-school or 5-18)
+    *   Annual Disability Filing Date (for students with disabilities under 21)
+    *   Report to Commissioner of Education (Y/N)
+    *   Public School Education (Y/N)
+    *   Education Location (if not public school)
+    *   Compulsory School Age Reached (Y/N)
+    *   Date Reached Compulsory School Age
+    *   School Sent To ID (linked to School Registry - 4)
+    *   School Change Date
+    *   New School ID (linked to School Registry - 4)
+    *   Work Change Date
+    *   Residence Change Date
+    *   New Residence Address
+    *   New Resident (Y/N)
+    *   Date Became Resident
+
+**21. Foster Care Child Educational Placements**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "the social services district, in consultation with the appropriate local educational agency or agencies, shall designate either the school district of origin or the school district of residence within which the child in foster care shall be entitled to attend in accordance with a best interest determination made by the applicable social services district or voluntary authorized agency..." (§ 3244.2.a)
+    *   "Upon notification of the designation made by the social services district for a foster care youth, the designated school district of attendance shall immediately: (1) enroll the child or youth in foster care even if the child or youth is unable to produce records normally a requirement for enrollment..." (§ 3244.2.d)
+    *   "treat the child or youth in foster care as a resident for all purposes" (§ 3244.2.d.2)
+*   **Why:** The agency must track the educational placement decisions, enrollment status, and record transfers for children in foster care to ensure their right to education.
+*   **One row represents:** A single educational placement decision and enrollment for a child in foster care.
+*   **Covers:** All children in foster care, their designated school districts, schools of attendance, and enrollment details.
+*   **Columns:**
+    *   Foster Care Placement Record ID (PK)
+    *   Child ID (linked to Minor Registry - 1)
+    *   Foster Care Placement ID (internal ID for the specific foster care placement, if available from Social Services)
+    *   Social Services District ID (linked to Social Services District Registry - 8)
+    *   Voluntary Authorized Agency ID (linked to Voluntary Authorized Agency Registry - 9)
+    *   Best Interest Determination Date
+    *   Designated School District of Attendance ID (linked to School District Registry - 5)
+    *   School of Origin ID (linked to School Registry - 4)
+    *   School District of Origin ID (linked to School District Registry - 5)
+    *   School District of Residence ID (linked to School District Registry - 5)
+    *   Enrollment Date
+    *   Enrollment Status (e.g., Enrolled, Excluded)
+    *   Exclusion Reason (if applicable)
+    *   Records Requested Date
+    *   Records Received Date
+    *   Records Transfer Status (e.g., Pending, Received, Partial)
+    *   Charter School of Origin (Y/N)
+    *   Fiscal Responsibility School District ID (linked to School District Registry - 5)
+    *   Programmatic Responsibility School District ID (linked to School District Registry - 5)
+    *   Placement in Contiguous State (Y/N)
+    *   Moved from One Foster Care Placement to Another (Y/N)
+    *   Terminal Year in Building (Y/N)
+    *   Comparable Services Provided (Y/N)
+    *   LEA Point of Contact ID (linked to LEA Point of Contact Registry - 10)
+
+**22. Foster Care Transportation Records**
+*   **Open Data Match:**
+    *   "School Bus Route Reporting" (48, 389, 665, 812, 1405, 2204): 70% match. These are general bus routes, but could include foster care.
+    *   "Pupil Transportation Report" (317, 1157): 70% match.
+    *   "School Bus Delays Report" (154, 1219, 2375): 60% match.
+*   **Quotes:**
+    *   "Notwithstanding any other provision of law, any child or youth in foster care who requires transportation in order to attend a school of origin designated pursuant to subdivision two of this section, shall be entitled to receive such transportation pursuant to this paragraph." (§ 3244.4.a)
+    *   "The designated school district of attendance shall provide transportation to and from the child's foster care placement location and the school of origin." (§ 3244.4.a)
+    *   "Any cost incurred for such transportation that is allowable up to fifty miles each way... shall be aidable pursuant to subdivision seven of section thirty-six hundred two of this chapter..." (§ 3244.4.a)
+    *   "Excess allowable transportation costs... shall be shared between the social services district responsible for the foster care costs of the child or youth and the designated school district of attendance equally." (§ 3244.4.c)
+*   **Why:** The agency needs to track transportation arrangements, costs, and reimbursement for children in foster care to ensure compliance with legal requirements.
+*   **One row represents:** A single transportation arrangement or event for a foster care child.
+*   **Covers:** All transportation services provided to children in foster care for educational purposes.
+*   **Columns:**
+    *   Transportation Record ID (PK)
+    *   Child ID (linked to Minor Registry - 1)
+    *   Foster Care Placement ID (internal ID for the specific foster care placement, if available from Social Services)
+    *   Designated School District of Attendance ID (linked to School District Registry - 5)
+    *   School of Origin ID (linked to School Registry - 4)
+    *   Transportation Type (e.g., To School of Origin, To Residence School)
+    *   Transportation Provider
+    *   Date of Service
+    *   Cost Incurred
+    *   Allowable Cost
+    *   Aidable Cost
+    *   Excess Cost
+    *   Social Services District Share of Excess Cost
+    *   School District Share of Excess Cost
+    *   Federal Funds Utilized (Y/N)
+    *   Written Agreement for Excess Costs (Y/N)
+    *   Contiguous State Collaboration (Y/N)
+    *   Related Educational Placement ID (linked to Foster Care Child Educational Placements - 21)
+
+**23. School District Interpreter Service Requests**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The board of education or trustees of each school district shall ensure that at any meeting or activity which is conducted by the board of education... and which parents or persons in parental relationship who are deaf or hard of hearing... attend, the board of education or trustees shall provide interpreter services at no charge to such persons, provided a written request therefor is made to the school district within a reasonable time prior to the scheduled meeting or activity." (§ 3230.1)
+    *   "In the event interpreter services are requested, the school district shall appoint an interpreter of the deaf to interpret the proceedings of the meeting or activity." (§ 3230.1)
+    *   "Each board of education or trustees shall adopt a policy which shall establish the time limitation for requesting interpreter services, examples of what constitutes reasonable accommodations and how the regulations of the commissioner promulgated pursuant to this chapter shall be implemented." (§ 3230.2)
+*   **Why:** The agency needs to track requests for interpreter services for deaf/hard of hearing parents to ensure compliance with accessibility requirements.
+*   **One row represents:** A single request for interpreter services for a school meeting or activity.
+*   **Covers:** All requests for interpreter services made by deaf or hard of hearing parents/guardians for school-initiated meetings or activities.
+*   **Columns:**
+    *   Request ID (PK)
+    *   School District ID (linked to School District Registry - 5)
+    *   Meeting/Activity ID (internal identifier for the specific event)
+    *   Child ID (linked to Minor Registry - 1)
+    *   Parent/Guardian ID (linked to Parent/Guardian Registry - 2)
+    *   Parent/Guardian Deaf/Hard of Hearing (Y/N)
+    *   Request Date
+    *   Scheduled Meeting/Activity Date
+    *   Interpreter Services Provided (Y/N)
+    *   Interpreter ID (if provided, linked to a potential Interpreter Registry)
+    *   Interpreter Agency (if applicable)
+    *   Interpreter Unavailable (Y/N)
+    *   Reasonable Accommodation Made (Y/N)
+    *   Accommodation Description (if applicable)
+    *   Policy Adopted by School Board (Y/N)
+    *   Compliance Status (e.g., Met, Not Met, Accommodated)
+
+**24. Harassment, Bullying, & Discrimination Incident Reports**
+*   **Open Data Match:**
+    *   "Bullying Harassment Discrimination Bi Annual Report" (480, 826): 90% match. These are likely aggregated reports of the underlying incidents.
+    *   "Violent and Disruptive Incidents" (2275): 70% match. Harassment/bullying can be disruptive.
+*   **Quotes:**
+    *   "No student shall be subjected to harassment or bullying by employees or students on school property or at a school function; nor shall any student be subjected to discrimination based on a person's actual or perceived race, color, weight, national origin, ethnic group, religion, religious practice, disability, sexual orientation, gender, or sex by school employees or students on school property or at a school function." (§ 12.1)
+    *   "require school employees who witness harassment, bullying or discrimination, or receive an oral or written report... to promptly orally notify the principal... and to file a written report..." (§ 13.1.c)
+    *   "require the principal... to lead or supervise the thorough investigation of all reports of harassment, bullying and discrimination..." (§ 13.1.d)
+    *   "The commissioner shall create a procedure under which material incidents of harassment, bullying and discrimination on school grounds or at a school function are reported to the department at least on an annual basis." (§ 15)
+*   **Why:** Tracking incidents, investigations, and actions is crucial for ensuring student safety and compliance with anti-harassment laws.
+*   **One row represents:** A single reported incident of harassment, bullying, or discrimination.
+*   **Covers:** All reported incidents of harassment, bullying, or discrimination in public and nonpublic schools.
+*   **Columns:**
+    *   Incident ID (PK)
+    *   School ID (linked to School Registry - 4)
+    *   School Type (Public, Nonpublic)
+    *   Report Date
+    *   Reporter Type (Student, Parent, Employee, Other)
+    *   Reporter ID (if employee/student, linked to Minor Registry - 1 or Department Employee Registry - 12)
+    *   Victim Student ID (linked to Minor Registry - 1)
+    *   Alleged Perpetrator Student ID(s) (linked to Minor Registry - 1)
+    *   Alleged Perpetrator Employee ID(s) (linked to Department Employee Registry - 12)
+    *   Incident Type (Harassment, Bullying, Discrimination, Cyberbullying, Retaliation)
+    *   Basis of Incident (Race, Color, Weight, National Origin, Ethnic Group, Religion, Religious Practice, Disability, Sexual Orientation, Gender, Sex, Other)
+    *   Location of Incident (School Property, School Function, Off School Property - Foreseeable Risk)
+    *   Oral Report Date
+    *   Written Report Date
+    *   Employee Witnessing/Receiving Report ID (linked to Department Employee Registry - 12)
+    *   Principal/Superintendent/Designee ID (receiving report, linked to Certificating Official Registry - 6 or Department Employee Registry - 12)
+    *   Investigation Start Date
+    *   Investigation End Date
+    *   Investigation Findings (Verified, Not Verified, Insufficient Evidence)
+    *   Actions Taken (e.g., Intervention, Discipline, Education, Counseling, Law Enforcement Notification)
+    *   Law Enforcement Notified (Y/N)
+    *   Date Law Enforcement Notified
+    *   Law Enforcement Agency
+    *   Outcome for Victim (e.g., hostile environment eliminated, safety ensured)
+    *   Retaliation Reported (Y/N)
+    *   Date of Principal's Report to Superintendent
+    *   Annual Report to Department (Y/N)
+    *   Date Reported to Department
+
+**25. Student Directory Information Release & Access Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "if a trustee, president, principal, or officer of any institution belonging to the University of the State of New York, or a board of education of any public school... permits the release of directory information relating to pupils or permits access to school buildings, school grounds or other school property to persons who inform pupils of educational, occupational or career opportunities, such trustee, president, principal, officer, board or administrator shall provide access to directory information relating to pupils and access to such school property on the same basis for official representatives of the state militia and the armed forces of the United States..." (§ 2-a)
+    *   "access provided to school property or directory information shall not be used for purposes other than informing students of educational, occupational or career opportunities." (§ 2-a)
+*   **Why:** Tracking the release of directory information and access grants ensures equal access and proper use of student data.
+*   **One row represents:** A single instance of directory information release or access granted to school property.
+*   **Covers:** All releases of student directory information and grants of access to school property for educational/career opportunities.
+*   **Columns:**
+    *   Release/Access ID (PK)
+    *   School ID (linked to School Registry - 4)
+    *   Date of Release/Access
+    *   Type of Entity Granted Access (e.g., State Militia, Armed Forces, Other Educational/Occupational Provider)
+    *   Entity Name
+    *   Purpose of Access (e.g., Informing of Educational Opportunities, Career Opportunities)
+    *   Type of Information Released (e.g., Directory Information, Access to Property)
+    *   Specific Data Elements Released (if directory information)
+    *   Duration of Access (if applicable)
+    *   Authorized By (Trustee, President, Principal, Officer, Board, Administrator ID - linked to Certificating Official Registry - 6 or Department Employee Registry - 12)
+    *   Compliance with "Same Basis" Rule (Y/N)
+    *   Use for Commercial Purposes (Y/N, should be No)
+
+**26. Parent/Eligible Student Data Access & Challenge Requests**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Parents shall have the right to inspect and review their child's educational record including any student data stored or maintained by an educational agency." (§ 2-d.4.g)
+    *   "The department shall develop policies for school districts that: (1) provide for annual notification to parents of their right to request student data; (2) ensure security when providing student data to parents, including that only authorized individuals receive such data; and (3) specify a reasonable amount of time in which school districts should respond to such requests." (§ 2-d.4.g)
+    *   "if and how a parent, student, eligible student, teacher or principal may challenge the accuracy of the student data or teacher or principal data that is collected" (§ 2-d.3.c.(4))
+*   **Why:** Tracking requests for student data access ensures compliance with parental rights and timely responses.
+*   **One row represents:** A single request from a parent or eligible student to access or challenge student data.
+*   **Covers:** All requests from parents or eligible students to inspect, review, or challenge the accuracy of their child's educational record or student data.
+*   **Columns:**
+    *   Request ID (PK)
+    *   Request Date
+    *   Student ID (linked to Minor Registry - 1)
+    *   Parent/Eligible Student ID (linked to Parent/Guardian Registry - 2 or Minor Registry - 1 if eligible student)
+    *   Request Type (Access/Review, Challenge Accuracy)
+    *   Description of Data Requested/Challenged
+    *   Educational Agency ID (linked to School Registry - 4 or School District Registry - 5)
+    *   Date of Response
+    *   Response Outcome (e.g., Data Provided, Challenge Accepted, Challenge Denied)
+    *   Reason for Denial (if applicable)
+    *   Security Measures for Data Provision (e.g., Authorized Individual Verification)
+    *   Resolution Date
+
+**27. Third-Party Contractor Data Agreements**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "A parents bill of rights for data privacy and security shall be published on the website of each educational agency and shall be included with every contract an educational agency enters into with a third party contractor where the third party contractor receives student data or teacher or principal data." (§ 2-d.3.a)
+    *   "Such supplemental information shall be developed by the educational agency and shall include: (1) the exclusive purposes for which the student data or teacher or principal data will be used; (2) how the third party contractor will ensure that the subcontractors... will abide by data protection and security requirements; (3) when the agreement expires and what happens to the student data... (4) if and how a parent... may challenge the accuracy... and (5) where the student data... will be stored..." (§ 2-d.3.c)
+    *   "Each educational agency that enters into a contract or other written agreement with a third party contractor... shall ensure that such contract or agreement includes a data security and privacy plan..." (§ 2-d.5.e)
+*   **Why:** Tracking contracts with third-party contractors handling sensitive data is critical for ensuring compliance and data security.
+*   **One row represents:** A single contract or written agreement between an educational agency and a third-party contractor involving student/teacher/principal data.
+*   **Covers:** All contracts where third-party contractors receive student data or teacher/principal data.
+*   **Columns:**
+    *   Contract ID (PK)
+    *   Educational Agency ID (linked to School Registry - 4 or School District Registry - 5)
+    *   Third-Party Contractor ID (linked to Third-Party Contractor Registry - 11)
+    *   Contractor Name
+    *   Contract Start Date
+    *   Contract End Date
+    *   Data Type Received (Student Data, Teacher/Principal Data, Both)
+    *   Exclusive Purposes for Data Use
+    *   Subcontractor Data Sharing Details
+    *   Data Retention/Destruction Upon Expiration
+    *   Data Storage Location
+    *   Security Protections (e.g., Encryption, Firewalls, Password Protection)
+    *   Parents Bill of Rights Included (Y/N)
+    *   Data Security and Privacy Plan Included (Y/N)
+    *   Training Requirement for Contractor Staff (Y/N)
+    *   Compliance with FERPA/IDEA/State Law (Y/N)
+    *   Data Challenge Mechanism Provided (Y/N)
+
+**28. Data Breach Incidents**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Each third party contractor... shall be required to notify such educational agency of any breach of security resulting in an unauthorized release of such data..." (§ 2-d.6.a)
+    *   "The educational agency shall, upon notification by the third party contractor, be required to report to the chief privacy officer any such breach of security and unauthorized release of such data." (§ 2-d.6.a)
+    *   "In the case of an unauthorized release of student data, the educational agency shall notify the parent or eligible student of the unauthorized release of student data..." (§ 2-d.6.b)
+    *   "The chief privacy officer shall report to the commissioner on matters affecting privacy and the security of student, teacher, and principal data." (§ 2-d.2.a)
+*   **Why:** Tracking data breaches is essential for accountability, notification, and enforcing data privacy regulations.
+*   **One row represents:** A single reported data breach incident.
+*   **Covers:** All reported breaches of student data or teacher/principal data.
+*   **Columns:**
+    *   Breach ID (PK)
+    *   Educational Agency ID (linked to School Registry - 4 or School District Registry - 5)
+    *   Third-Party Contractor ID (if applicable, linked to Third-Party Contractor Registry - 11)
+    *   Date of Breach Discovery
+    *   Date of Notification to Educational Agency
+    *   Date of Report to Chief Privacy Officer
+    *   Date of Notification to Affected Individuals (Parents/Students/Teachers/Principals)
+    *   Type of Data Breached (Student Data, Teacher/Principal Data, Both)
+    *   Description of Data Breached (e.g., PII, Biometric Records, APPR data)
+    *   Number of Students Affected
+    *   Number of Teachers Affected
+    *   Number of Principals Affected
+    *   Cause of Breach (e.g., Hacking, Insider Threat, Inadvertent Disclosure, System Error)
+    *   Actions Taken to Mitigate Breach
+    *   Law Enforcement Notified (Y/N)
+    *   Date Law Enforcement Notified
+    *   Law Enforcement Agency
+    *   Reimbursement from Contractor (Y/N)
+    *   Reimbursement Amount
+    *   Status of Breach (Open, Closed, Under Investigation)
+    *   Criminal Conduct Suspected (Y/N)
+
+**29. Data Privacy Complaints**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The functions of the chief privacy officer shall include... assisting the commissioner in establishing a protocol for the submission of complaints of possible breaches of student data or teacher or principal data;" (§ 2-d.2.b.(5))
+    *   "Parents have the right to have complaints about possible breaches of student data addressed." (§ 2-d.3.b.(5))
+    *   "Upon receipt of a complaint or other information indicating that such an improper disclosure by a third party contractor may have occurred, the chief privacy officer shall be authorized to investigate..." (§ 2-d.7.a)
+*   **Why:** Tracking complaints is necessary to address concerns, investigate potential violations, and ensure accountability.
+*   **One row represents:** A single complaint regarding student data or teacher/principal data privacy.
+*   **Covers:** All complaints submitted by parents, students, teachers, principals, or other staff.
+*   **Columns:**
+    *   Complaint ID (PK)
+    *   Date of Complaint Submission
+    *   Complainant Type (Parent, Student, Eligible Student, Teacher, Principal, Staff, Other)
+    *   Complainant Contact Information (Redacted for privacy if necessary)
+    *   Educational Agency ID (linked to School Registry - 4 or School District Registry - 5)
+    *   Alleged Violator (Third-Party Contractor ID (11), Educational Agency Employee ID (12), Other)
+    *   Description of Alleged Violation (e.g., Improper Disclosure, Breach, Inaccurate Data)
+    *   Data Type Involved (Student Data, Teacher/Principal Data, Both)
+    *   Investigation Start Date
+    *   Investigation End Date
+    *   Investigation Findings (Substantiated, Not Substantiated, Under Review)
+    *   Actions Taken (e.g., Corrective Action, Referral to Enforcement, No Action)
+    *   Related Breach ID (if applicable, linked to Data Breach Incidents - 28)
+    *   Related Enforcement Action ID (if applicable, linked to Data Privacy Enforcement Actions - 30)
+    *   Status (Open, Closed, Resolved)
+
+**30. Data Privacy Enforcement Actions**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Each violation of a third party contractor pursuant to paragraph a of this subdivision shall be punishable by a civil penalty of the greater of five thousand dollars or up to ten dollars per student, teacher, and principal whose data was released..." (§ 2-d.6.d)
+    *   "If the chief privacy officer determines that a third party contractor or its assignee... has released any student data or teacher or principal data... the chief privacy officer... shall be authorized to: (1) order that the third party contractor be precluded from accessing student data... (2) order that a third party contractor... be precluded from accessing student data... from any educational agency... (3) order that a third party contractor... shall not be deemed a responsible bidder or offerer... (4) require the third party contractor to provide training..." (§ 2-d.6.e)
+*   **Why:** Tracking enforcement actions is necessary to ensure compliance, deter future violations, and maintain a record of penalties.
+*   **One row represents:** A single enforcement action or penalty issued against a third-party contractor.
+*   **Covers:** All civil penalties, access preclusions, and other orders issued by the Chief Privacy Officer.
+*   **Columns:**
+    *   Enforcement Action ID (PK)
+    *   Third-Party Contractor ID (linked to Third-Party Contractor Registry - 11)
+    *   Educational Agency ID (if specific to one agency, linked to School Registry - 4 or School District Registry - 5)
+    *   Date of Determination
+    *   Violation Type (e.g., Unauthorized Release, Contract Violation)
+    *   Related Breach ID (if applicable, linked to Data Breach Incidents - 28)
+    *   Penalty Type (Civil Penalty, Access Preclusion, Responsible Bidder Preclusion, Training Requirement)
+    *   Civil Penalty Amount
+    *   Preclusion Period (Start Date, End Date)
+    *   Scope of Preclusion (Specific Agency, All Agencies)
+    *   Training Required (Y/N)
+    *   Training Cost Reimbursement (Y/N)
+    *   Determination of Intent (Knowingly, Recklessly, Inadvertent, No Penalty)
+    *   Chief Privacy Officer ID (initiating action, linked to Department Employee Registry - 12)
+    *   Appeal Status (Pending, Upheld, Overturned)
+
+**31. Educational Agency Data Opt-Out Requests**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "An educational agency may opt out of providing personally identifiable information to a SLISP or data dashboard operator for the purpose of creating data dashboards." (§ 2-c.2)
+    *   "An educational agency may at any time request that any personally identifiable information associated with such agency not be shared or provided to a SLISP or data dashboard operator." (§ 2-c.2)
+    *   "The commissioner and the department are hereby prohibited from providing any student information to a SLISP and the commissioner and department shall take actions to immediately ensure that any student information provided to any SLISP shall be deleted from such SLISP and destroyed in a secure manner." (§ 2-c.3)
+*   **Why:** Tracking opt-out requests is necessary to ensure educational agencies' preferences are respected and data sharing is compliant.
+*   **One row represents:** A single opt-out request from an educational agency.
+*   **Covers:** All requests from educational agencies to opt out of providing PII to SLISPs or data dashboard operators.
+*   **Columns:**
+    *   Request ID (PK)
+    *   Educational Agency ID (linked to School Registry - 4 or School District Registry - 5)
+    *   Request Date
+    *   SLISP/Data Dashboard Operator Name (if specified)
+    *   Type of Information (Personally Identifiable Information, Student Information)
+    *   Actions Taken by Department (e.g., Prevent Sharing, Delete Data, Destroy Data)
+    *   Date Actions Completed
+    *   Status (Pending, Completed, Denied)
+    *   Reason for Denial (if applicable)
+
+**32. School Employee DASA Training Completion**
+*   **Open Data Match:** None directly, but "Local Law Training Data" (2118) could be related if it includes DASA training. 50% match.
+*   **Quotes:**
+    *   "Guidelines to be used in school training programs to discourage the development of harassment, bullying and discrimination, and to make school employees aware of the effects of harassment, bullying, cyberbullying and discrimination on students..." (§ 13.2.a-b)
+    *   "requiring that at least one staff member at every school be thoroughly trained to handle human relations in the areas of race, color, weight, national origin, ethnic group, religion, religious practice, disability, sexual orientation, gender, and sex;" (§ 13.3)
+    *   "The commissioner shall prescribe regulations that school professionals applying on or after December thirty-first, two thousand thirteen for a certificate or license... shall... have completed training on the social patterns of harassment, bullying and discrimination..." (§ 14.5)
+*   **Why:** Tracking training completion ensures that school employees and professionals meet required DASA training standards.
+*   **One row represents:** A single instance of a school employee completing a DASA-related training.
+*   **Covers:** All DASA training completed by school employees and professionals.
+*   **Columns:**
+    *   Training Completion ID (PK)
+    *   Employee ID (linked to Department Employee Registry - 12, or a separate School Employee Registry)
+    *   School ID (linked to School Registry - 4)
+    *   Training Date
+    *   Training Type (e.g., Initial DASA, Refresher, Human Relations Specialist)
+    *   Training Provider
+    *   Certification/License Type (if applicable, for § 14.5)
+    *   Training Hours/Credits
+    *   Compliance Status (e.g., Met, Pending, Overdue)
+    *   Next Training Due Date
+
+**33. School District Report Submissions**
+*   **Open Data Match:** None directly, but many Open Data entries are "Reports" or "Annual Reports" which are the *output* of such submissions.
+*   **Quotes:**
+    *   "The commissioner shall be authorized to receive and accept reports, plans, applications and all other information required to be reported by statute or regulation through electronic means." (§ 101-b.1)
+    *   "The commissioner shall accept hard copy non-electronic filings or submissions if the school district is able to demonstrate that complying with electronic submission requirements would create undue hardship for the school district or some other good cause exists that would make electronic submission extremely impractical for the school district." (§ 101-b.1)
+    *   "It shall be the duty of the commissioner to review all existing reports and plans that school districts and boards of cooperative educational services are required to submit..." (§ 101-b.2)
+*   **Why:** Tracking report submissions ensures compliance with reporting requirements and supports efforts for paperwork reduction.
+*   **One row represents:** A single report, plan, or application submitted by a school district or BOCES.
+*   **Covers:** All reports, plans, applications, and other information required to be submitted by school districts and BOCES to the department.
+*   **Columns:**
+    *   Submission ID (PK)
+    *   School District ID / BOCES ID (linked to School District Registry - 5)
+    *   Report/Plan/Application Type
+    *   Submission Date
+    *   Due Date
+    *   Submission Method (Electronic, Hard Copy)
+    *   Hard Copy Exemption Granted (Y/N)
+    *   Reason for Hard Copy Exemption (if applicable)
+    *   Status (Submitted, Overdue, Accepted, Rejected)
+    *   Reviewer ID (linked to Department Employee Registry - 12)
+    *   Review Date
+
+**34. DASA Grants to School Districts**
+*   **Open Data Match:**
+    *   "Annual Sustainability Project Grant" (1548): 50% match. This is a grant, but for a different purpose.
+*   **Quotes:**
+    *   "Provide grants, from funds appropriated for such purpose, to local school districts to assist them in implementing the guidelines set forth in this section;" (§ 14.2)
+*   **Why:** Tracking grants ensures proper allocation of funds and monitoring of grant-funded DASA implementation.
+*   **One row represents:** A single grant awarded to a local school district for DASA implementation.
+*   **Covers:** All grants provided by the commissioner to local school districts for DASA implementation.
+*   **Columns:**
+    *   Grant ID (PK)
+    *   School District ID (linked to School District Registry - 5)
+    *   Grant Amount
+    *   Award Date
+    *   Grant Period Start Date
+    *   Grant Period End Date
+    *   Purpose of Grant (e.g., Training, Policy Development, Program Implementation)
+    *   Reporting Requirements Met (Y/N)
+    *   Final Report Submission Date
+    *   Grant Status (Active, Completed, Closed)
+
+**35. Historical Documentary Heritage Grants & Aid**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Historical documentary heritage grants and aid." (§ 140)
+*   **Why:** Tracking these grants ensures proper allocation of funds and monitoring of grant-funded projects.
+*   **One row represents:** A single grant or aid award for historical documentary heritage.
+*   **Covers:** All grants and aid provided for historical documentary heritage.
+*   **Columns:**
+    *   Grant ID (PK)
+    *   Recipient Organization Name
+    *   Recipient Organization ID (linked to a potential Organization Registry)
+    *   Grant Amount
+    *   Award Date
+    *   Grant Period Start Date
+    *   Grant Period End Date
+    *   Project Description
+    *   Reporting Requirements Met (Y/N)
+    *   Final Report Submission Date
+    *   Grant Status (Active, Completed, Closed)
+
+**36. Department Employee Leaves of Absence**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Leaves of absence to professional members of the department." (§ 113)
+*   **Why:** Tracking leaves of absence is essential for human resources management and operational planning.
+*   **One row represents:** A single leave of absence taken by a professional member of the department.
+*   **Covers:** All leaves of absence for professional members of the Education Department.
+*   **Columns:**
+    *   Leave ID (PK)
+    *   Employee ID (linked to Department Employee Registry - 12)
+    *   Leave Type (e.g., Medical, Family, Personal, Sabbatical)
+    *   Request Date
+    *   Start Date
+    *   End Date
+    *   Approved By (Supervisor ID, linked to Department Employee Registry - 12)
+    *   Approval Date
+    *   Status (Approved, Denied, Pending, Taken)
+    *   Reason for Leave
+
+**37. Department Employee Salary Reductions for Custodial Accounts**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Reduction of salaries for investment in custodial accounts." (§ 114)
+*   **Why:** Tracking salary reductions for custodial accounts is necessary for payroll accuracy and financial compliance.
+*   **One row represents:** A single instance of a salary reduction for investment in a custodial account for a department employee.
+*   **Covers:** All salary reductions for investment in custodial accounts for professional members of the Education Department.
+*   **Columns:**
+    *   Reduction ID (PK)
+    *   Employee ID (linked to Department Employee Registry - 12)
+    *   Effective Date
+    *   Reduction Amount
+    *   Custodial Account Provider
+    *   Account Number (masked/redacted)
+    *   Frequency of Reduction (e.g., Bi-weekly, Monthly)
+    *   Authorization Date
+
+**38. Department Refunds Issued**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Refunds." (§ 110)
+*   **Why:** Tracking refunds is necessary for financial accountability and reconciliation.
+*   **One row represents:** A single refund issued by the department.
+*   **Covers:** All refunds issued by the Education Department.
+*   **Columns:**
+    *   Refund ID (PK)
+    *   Refund Date
+    *   Recipient Name
+    *   Recipient Address
+    *   Amount
+    *   Reason for Refund
+    *   Original Transaction ID (if applicable)
+    *   Department/Program Initiating Refund
+
+**Section 4, Unmatched Open Datasets:**
+
+*   **Attendance Data:**
+    *   Historical Daily Attendance By School (135, 941, 1529, 2226, 2412)
+    *   School End of Year Attendance and Chronic Absenteeism Data (827)
+    *   Monthly Grade Level Attendance By School (1276, 2755)
+    *   Current Year Monthly Attendance (1399)
+    *   Citywide End of Year Attendance and Chronic Absenteeism Data (1443)
+    *   School Attendance and Enrollment Statistics by District (1455)
+    *   Statistical Summary Period Attendance Reporting (PAR) (2582)
+    *   District End of Year Attendance and Chronic Absenteeism Data (2688)
+    *   Daily Attendance (3005)
+    *   City Council Attendance Reports (January, February, March, April, May, June, September, October) (937, 1208, 1242, 1399, 2087, 2210, 2457, 2962)
+    *   Attendance Results (485)
+    *   City Council October Attendance (531)
+    *   School Attendance Statistics (815)
+*   **Class Size & Pupil-Teacher Ratio Data:**
+    *   Class Size Report City K Class Size Distribution (9, 2386)
+    *   Class Size Report Borough Middle And High School (18, 1218, 2139)
+    *   Class Size Report City MSHS (33, 1500)
+    *   Average Class Size K Borough (46, 1228, 1266, 2452)
+    *   Prelim Distribution ClassSize City (50)
+    *   Avg Class Size Borough MSHS (61, 381, 1199)
+    *   Class Size Report MS And HS Average (71)
+    *   Prelim Percentage Class Size District K TH (79)
+    *   Class Size Report District K Class Size Distribution (132, 1278)
+    *   Prelim Avg ClassSize City (355)
+    *   Class Size Pupil to Teacher Ratio (383, 1202, 1810)
+    *   November Avg Class Size School PTR Open Data Portal (70)
+    *   November Pct Class Size District MSHS Open Data Portal (351)
+    *   Prelim Percentage Class Size District MS & HS (318)
+    *   Average Class Size District MSHS (321, 1325)
+    *   Class Size Report (616)
+    *   Class Size Pct Boro MSHS (628)
+    *   Class Size School level Detail (641, 2083, 2791)
+    *   Final Class Size Report Pupil to Teacher Ratio (PTR) (713)
+    *   Class Size Report Detail Summary (728)
+    *   Average Class Size Report School K (776, 880)
+    *   Average Class Size City K (872, 2801)
+    *   Prelim Percentage Class Size Borough MS & HS (873)
+    *   Class Size Pct District K (892)
+    *   Prelim Avg ClassSize District (612)
+    *   Average Class Size School MSHS (929)
+    *   Average Class Size Pilot (936)
+    *   Class Size Pct District MSHS (940)
+    *   Average Class Size District K (950, 1485)
+    *   Average Class Size City (957)
+    *   November Pct Class Size City MSHS Open Data Portal (996)
+    *   Average Class Size City MSHS (1090, 2128)
+    *   Class Size Report Distribution Summary (1137)
+    *   Class Size Report Borough K Class Size Distribution (1204)
+    *   Class Size Report K To Average (1230)
+    *   Class Size Distribution Citywide (595)
+    *   Prelim Percentage Class Size City MS & HS (596)
+    *   November Pct Class Size District K Open Data Portal (610)
+    *   Class Size Distribution by District (1502)
+    *   Final Class Size Report K to Average (1512)
+    *   Prelim Avg ClassSize School (1553)
+    *   Average Class Size by District (1563)
+    *   Prelim Distribution ClassSize District (1678)
+    *   Class Size Report City K Average Class Size (1798)
+    *   Class Size Distribution by Borough (1812)
+    *   Prelim Percentage Class Size Borough K TH (2088)
+    *   Class Size Pct City K (2085)
+    *   Class Size Report City Middle School And High School Core Average Class Size (2707)
+    *   Class Size Report District Middle And High School Class Size Distribution (2804, 2964)
+    *   SCHOOL LEVEL CLASS SIZE REPORT (2263)
+    *   Prelim Avg ClassSize Borough (1486)
+    *   Class Size Report District K Average Class Size (1492)
+    *   November Pct Class Size Borough K Open Data Portal (2678)
+    *   Prelim Percentage Class Size City K TH (2477)
+    *   Prelim Distribution ClassSize Borough (2423)
+*   **School Survey Data:**
+    *   Parent School Survey Data (25)
+    *   NYC School Survey Student Data (32, 101, 101, 2576)
+    *   NYC School Survey (159, 391, 893, 1426, 1441, 2536)
+    *   D School Survey Data (63, 112, 1884)
+    *   NYC School Survey Student (101)
+    *   NYC School Survey Parent Data (751, 1972)
+    *   NYC School Survey General Education (396, 2127, 2547)
+    *   School Survey (499, 644, 1488, 1526, 2073, 2111, 2503, 2665)
+    *   NYC School Survey Teachers (676, 2603)
+    *   NYC Community Schools Survey (138, 2700)
+    *   District School Survey (1871, 2105, 2710)
+    *   GenEd Survey Data (876)
+    *   Community School Survey (2685)
+*   **Demographic Data (General):**
+    *   Diversity Report Pre Kindergarten, K & Grades District, Schools, Special Programs, Diversity Efforts, Admissions Methods (36, 663, 2253)
+    *   Demographic Data Grades K Special Programs (37, 1217, 2003, 2438, 2935)
+    *   Diversity Report (271)
+    *   Demographic Snapshot (340, 993, 1020, 1450, 2925)
+    *   Diversity Report Pre Kindergarten (388, 636, 2081, 2807)
+    *   Demographic Snapshot by District (642, 1396, 2432, 2956)
+    *   Demographic Snapshot by Borough (662, 1565, 2147, 2860)
+    *   Diversity Report K District (1195, 2397)
+    *   Diversity Report Grades K Special Programs (1217, 2003, 2438, 2935)
+    *   Demographic Snapshot Pre K For All (1430)
+    *   K For All Demographic Snapshot (1483, 2682)
+    *   Demographic Data Grades District (1550, 2472)
+    *   Demographic Snapshot Citywide (259, 1527, 1831, 2436)
+    *   Demographic Snapshot School (1007, 1437, 1895)
+    *   Demographic Data Diversity Efforts (2718)
+    *   Demographic Data Admissions Methods (2119, 2411)
+    *   Diversity Report School (2092, 2416)
+    *   Diversity Report District (2419)
+    *   Demographic Data Grades K School (781, 2653)
+    *   Demographic Snapshot K For All (2682)
+    *   Demographic Data In NYC Public Schools Suppressed Pre K, K & Grades (2549)
+    *   PK For All Demographic Snapshot (779)
+*   **School Bus & Transportation Operations:**
+    *   School Bus Route Reporting April _ _ July , December , (48, 389, 665, 812, 1405, 2204)
+    *   Pupil Transportation Report April _ _ July , December , (317, 1157)
+    *   PreK Vendors by Transportation Site (323)
+    *   Midday Trips (336)
+    *   PreK Riders by Transportation Site (385)
+    *   Routes by Transportation Sites (511)
+    *   School Bus Delays Report (154, 1219, 2375)
+    *   April_ _ B_ New York City Office of Pupil Transportation Investigations Reporting (575, 1893)
+    *   Pupil Transportation Count of Employees Bus Company July , December , (615)
+    *   Vehicles (702)
+    *   Drivers and Attendants (712)
+    *   October_ _ _Appendix Delays Reported by School Bus Company Resulting in Failure to Arrive at School (727)
+    *   School Bus Report October_ _ (783)
+    *   Transportation Sites (1726)
+    *   Bus Breakdown and Delays (2620)
+    *   Pupil Transportation Investigations Reporting October_ _ B_ (2396)
+    *   Routes (3008)
+*   **Arts Education Data:**
+    *   Arts Survey Data (40, 311, 376, 2093)
+    *   Arts Reports (42, 200, 1260, 2131, 2702)
+    *   Arts Data Survey (180)
+    *   Annual Arts in School Reports (1223)
+    *   Arts Data Report (882, 1274)
+*   **Physical Education & Health Education Data:**
+    *   Physical Education Licensed PE Teachers (21, 1493)
+    *   Physical Education Instruction District Level (291, 651, 1692, 2431)
+    *   Health Education K Licensed Health Instructors (329, 594, 1248, 2100)
+    *   Physical Education PE Instruction Borough (307, 1226)
+    *   Health Education Report MS ( ) City Council District (350)
+    *   Physical Education PE Space Supplemental Programs (403)
+    *   PE Report (507)
+    *   Local Law Physical Education (1545, 1907)
+    *   Physical Education PE Space Borough Level (645)
+    *   Health Education Report MS ( ) School (2689)
+    *   Health Education Instructor Report (2692)
+    *   Physical Education PE Instruction School Level (1326, 2735)
+    *   Local Law Health Data (High School) (1350)
+    *   Physical Education PE Space (1635, 2326, 2740)
+    *   Physical Education MTI All Star Schools (1522)
+    *   Physical Education Supplemental Programs (897)
+    *   Local Law Health Data (HlV/AIDS Lessons) (925)
+    *   Local Law Health Instructor Community School District (1482)
+    *   Local Law Health Data K Health Instructor District (1910)
+    *   Local Law Health Instructor City Council District (1939)
+    *   Physical Education PE Space School Level (1790)
+    *   Physical Education PE Space Certified PE Teachers (2736)
+    *   Local Law Health Data (Middle School) (2764)
+    *   Local Law Licensed Health Instructor School (2706)
+*   **School Performance & Progress Reports:**
+    *   School Quality Guide Elementary Middle School (160)
+    *   School Progress Report (199, 508, 737, 1627, 1778, 2756)
+    *   School Progress Reports All Schools Multiyear Summary (421, 497, 1121, 1124, 1807, 2266, 2851)
+    *   School Quality Guide High School Transfer (513)
+    *   Transfer High School Progress Report (584, 1932)
+    *   Citywide Progress Report (302, 604, 1793)
+    *   School Progress Report Multi year (666)
+    *   YABC Progress Report (810, 2464)
+    *   School Quality Guide Citywide Distict (1060)
+    *   D Progress Report (1331)
+    *   High School Progress Report (1354)
+    *   School Quality Reports Data (1389)
+    *   D Progress Reports (1497)
+    *   School Quality Guide Early Childhood (1300)
+    *   SQS PK (184)
+    *   SQG EC (1784)
+    *   SQG EMS (1795)
+*   **Admissions & Enrollment Data:**
+    *   Elem MS K (5, 2393)
+    *   Kindergarten Directory Staten Island (8)
+    *   Kindergarten Directory Manhattan (324)
+    *   Kindergarten Directory Bronx (1108)
+    *   Kindergarten Directory Brooklyn (1501)
+    *   Kindergarten Directory Queens (2022)
+    *   Pre Kindergarten Admissions Guide (197)
+    *   DOE Kindergarten Admissions Guide (208, 959, 1304)
+    *   Students, Applications, Admissions & Offers LL (75)
+    *   Fall Admissions LL (308, 1024, 1560, 2032)
+    *   Fall Diversity in Admissions Outcomes MS (337)
+    *   Specialized High Schools Admissions Overall Summary (750)
+    *   Fall Admissions Report LL A Part II (762)
+    *   Selection Criteria for Fall High School Admissions (1173)
+    *   Pre K School Directory (1995)
+    *   Specialized High Schools Admissions Tests Results (1714)
+*   **Test Results & Academic Performance Data:**
+    *   Math Test Results (173, 2840)
+    *   Regents (392)
+    *   SAT (College Board) School Level Results (397, 546)
+    *   To School Level NYC Regents Report For All Variables (771)
+    *   NYC Regents Exam Public (1064, 1013)
+    *   Graduation results for Cohorts to (Classes of to ) (1503, 2590)
+    *   NYC Results On The New York State Math Test With Math Regents Included (1569)
+    *   AP Results (2037)
+    *   AP (College Board) School Level Results (2042)
+    *   Graduation Outcomes Regents based Math ELA APM School Level (2300)
+    *   English Language Arts (ELA) Test Results (2324, 2874)
+*   **Special Education Data:**
+    *   Annual Report on Special Education (281, 406, 1041, 2884)
+    *   Students Receiving Recommended Special Education Programs by Program Type (319, 2110)
+    *   DOE Special Education City Council Report June , (664)
+    *   Special Education Report (819)
+    *   DOE Special Education City Council Report April , (881)
+    *   Bilingual Program List (Final Publication) (855, 2529, 2377)
+    *   Related Service (1777)
+*   **School Operations & Facilities:**
+    *   Local Law Fall Semester Final (47)
+    *   Local Law Bathroom& Non Instructional Space (632, 2169)
+    *   Co Location Report (585, 1263, 1432, 2305)
+    *   Co Location Reporting (912, 1062, 1953, 2146)
+    *   Energy Usage From DOE Buildings (491)
+    *   School Budget Overview (652)
+    *   Fair Student Funding Budget Detail (418, 1366)
+    *   Underutilized Space Report (1639)
+    *   Local Law Spring Semester Final (1641, 2011)
+    *   Local Law Room Detail (2699)
+    *   School Based Expenditure Report (2759)
+    *   School Allocation Memorandum (SAM) (890, 1499, 1797)
+*   **Guidance Counselor & Social Worker Data:**
+    *   Guidance Counselor Report (29, 1471, 1528, 2064, 3002)
+    *   Guidance Counselor Post Secondary Planning (110, 1532, 2091, 2986)
+    *   Guidance Counselor SW&GC Data (905)
+    *   Social Worker Data (917)
+    *   Guidance Counselor Bill Demographic Data (975, 1595)
+    *   Guidance Counselor Report Social Worker (1067, 1537, 2505)
+    *   Guidance Counselor/Social Worker Data Demographic, Post Secondary (2445)
+    *   Guidance Counselor Reporting Guidance Counselor Data (2675)
+    *   Guidance Counselor Reporting Demographic Data (2705)
+    *   Guidance Counselor Data (1849)
+    *   Guidance Counselor Report Guidance Counselor (1780)
+*   **High School & Admissions Directories:**
+    *   DOE High School Performance Directory (183, 2321, 2504)
+    *   DOE High School Directory (544, 1445, 1593, 1955, 1990, 2055, 2180, 2216, 2651, 2781)
+    *   NYC High School Directory (764, 1574, 1588, 2043, 2811)
+    *   DOE Middle School Directory (1008, 1012, 1395, 2220)
+    *   Middle School Virtual Recruitment URLs Posted on MySchools School Year (414)
+    *   High School Virtual Recruitment URLs Posted on MySchools School Year (1029)
+    *   Referral Centers For High School Alternatives (1003)
+*   **Other Specific Programs/Reports:**
+    *   EMS Transport Final Month/Date of Birth/Race/IEP (1, 400, 589, 900, 990, 1738, 1869, 2693, 2747, 2903)
+    *   Local Law Fall Semester Final (47)
+    *   Local Law Meal Periods (335)
+    *   Local Law DL Final (745)
+    *   Local Law TASC Report (1543)
+    *   Local Law Summary (1495)
+    *   Local Law Billy's Law Reporting (1937)
+    *   Billy's Law Reporting Local Law February , (1918)
+    *   Local Law CTE Report (1920)
+    *   Career and Technical Education Report Law (494, 606, 1205, 2833, 2929)
+    *   NYC Community Schools List (178, 405, 2673)
+    *   High School Equivalency (HSE) Diplomas Awarded to NYCHA Residents by Borough – Local Law (209, 1811, 2524)
+    *   School Zones (Elementary School) (227)
+    *   School Zones Map (440)
+    *   School Zones (High School) (1098)
+    *   School Zones (Middle School) (1622)
+    *   FY Local Law Final Report (443, 2596)
+    *   School Safety Report (478, 2135, 2548)
+    *   Co Location Report (585, 1263, 1432, 2305)
+    *   Local Law Public School Athletic League (588, 2012)
+    *   Remote Learning Legislation Device Request (599)
+    *   iZone School List (613, 960)
+    *   Gender and Sexuality Report (627)
+    *   Young Adult Borough Centers (669, 908)
+    *   Preschool Education Report LL (699)
+    *   Learning Preference City Remote Learning as of Jan , (770)
+    *   Borough Enrollment Centers (Additional Ways To Graduate) (1211, 2924)
+    *   School Closure Discharge Reporting (1246, 1252, 2451)
+    *   OACE (Office of Adult and Continuing Education) Sites (1295)
+    *   Students In Temporary Housing (1133, 1858)
+    *   Students in Temporary Housing Citywide Report (1240)
+    *   Students in Temporary Housing School Level Report (1491, 1796, 2883)
+    *   Students in Temporary Housing Additional Sections Report (1773)
+    *   LL Settlement Data (1531)
+    *   Multiple Removals (1557)
+    *   SMH Service Coverage (1630)
+    *   MTI All Star Schools (988)
+    *   Computer Science Report (1280, 2485, 2579)
+    *   NYC Family Guides (2701)
+    *   Suspension Report NYPD Contacts ( ) (2729, 2862)
+    *   COVID DOE Active Testing Locations as of Feb (2679)
+    *   Audited Register Data (2892)
+    *   Child Abuse Liaisons (2506)
+    *   GED Plus Locations (2096)
+    *   Submission MF LL (2099)
+    *   FY NYCDOE OFNS Report to City Council (2112)
+
+**Section 5, Non-tabular Data Summary:**
+
+*   Job applications (general hiring process documents)
+*   Rules and regulations (e.g., commissioner's regulations, labor law provisions, policies for data security, DASA policies)
+*   Receipts (general financial records, not specific program data)
+*   Photos (e.g., for school property access, not tabular)
+*   Research documents (e.g., for paperwork reduction recommendations, DASA studies)
+*   Affidavits of age (physical documents)
+*   Written consent forms from parents/guardians (physical documents)
+*   Full physical examination records (beyond the certificate summary)
+*   Full schooling records (beyond the summary information)
+*   Pledge of employment forms (the physical document)
+*   Policies adopted by school boards (e.g., interpreter services policy)
+*   Written agreements between school districts and social services districts regarding excess transportation costs (physical documents)
+*   Textbooks, library materials, computer technology (inventory, but the text only lists article headings, not specific requirements for tracking these items)
+*   Curriculum documents (e.g., instruction in certain subjects)
+*   Medical and health service records (general health records, not specific program data from this text)
+*   Legal changes and court orders (contextual information, not tabular data)
+*   Annual reports (aggregated data, not raw incident/transaction data)
+*   Model policies and guidelines (documents, not tabular data)
+*   Inventory and understandable description of student, teacher, and principal data elements collected (§ 2-d.4.b) (metadata catalog, not transactional data)

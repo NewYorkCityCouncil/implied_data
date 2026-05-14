@@ -1,0 +1,638 @@
+**Identified Tabular Datasets**
+
+1.  **Birth, Fetal Death, and Death Registrations**
+    *   **Quotes:**
+        *   "Supervise and control the registration of births, fetal deaths and deaths;" (Section 556.c.1)
+        *   "The board of health shall prescribe in the health code the persons who shall be required to keep a registry of birth, fetal deaths, and deaths occurring in the city and file certifications thereof with the department and the form and manner in which such registry shall be kept and certificates filed" (Section 558.c)
+    *   **Why:** The agency must track all vital events to fulfill its core public health and legal mandate.
+    *   **One row represents:** A single registered birth, fetal death, or death event.
+    *   **Covers:** All births, fetal deaths, and deaths occurring within the city's jurisdiction.
+    *   **Columns:**
+        *   Registration ID
+        *   Event Type (Birth, Fetal Death, Death)
+        *   Event Date
+        *   Event Location
+        *   Individual ID (for Births/Deaths)
+        *   Individual Name (First, Middle, Last)
+        *   Parent/Guardian Information (for Births)
+        *   Cause of Death (for Deaths/Fetal Deaths)
+        *   Certifying Physician/Medical Examiner ID
+        *   Date Filed
+        *   Registrar ID
+        *   Status (Registered, Amended)
+        *   [Medical Examiner Death Investigation ID (14)] (if applicable for deaths)
+
+2.  **Medical Examiner Death Investigations**
+    *   **Quotes:**
+        *   "The chief medical examiner shall have such powers and duties as may be provided by law in respect to bodies of person dying from criminal violence, by accident, by suicide, suddenly when in apparent health, when unattended by a physician, in a correctional facility or in any suspicious or unusual manner" (Section 557.f.1)
+        *   "The chief medical examiner shall keep full and complete records in such form as may be provided by law. The chief medical examiner shall promptly deliver to the appropriate district attorney copies of all records relating to every death as to which there is, in the judgment of the medical examiner in charge, any indication of criminality." (Section 557.g)
+    *   **Why:** The agency must track all deaths requiring medical examiner investigation for legal and public safety purposes.
+    *   **One row represents:** A single death investigation case initiated by the Chief Medical Examiner's office.
+    *   **Covers:** All deaths falling under the Chief Medical Examiner's jurisdiction.
+    *   **Columns:**
+        *   Investigation ID
+        *   Deceased Individual ID
+        *   Deceased Name
+        *   Date of Death
+        *   Location of Death
+        *   Circumstance of Death (Criminal Violence, Accident, Suicide, Sudden/Apparent Health, Unattended, Correctional Facility, Suspicious/Unusual)
+        *   Medical Examiner ID
+        *   Date Investigation Opened
+        *   Date Investigation Closed
+        *   Determined Cause of Death
+        *   Determined Manner of Death
+        *   Criminality Indication (Yes/No)
+        *   District Attorney Notified Date
+        *   Status (Open, Closed, Pending)
+        *   [Birth, Fetal Death, and Death Registrations ID (1)]
+
+3.  **Department Permits**
+    *   **Quotes:**
+        *   "The board of health in its discretion may grant, suspend or revoke permits for businesses or other matters in respect to any subject dealt with in the health code and regulated by the department and may prescribe reasonable fees for the issuance of said permits." (Section 561.a)
+        *   "Every application for a permit or a renewal of an existing permit issued by the commissioner pursuant to this section shall provide an opportunity for the applicant to indicate the language in which such applicant would prefer that inspections in connection with such permit be conducted or alternatively for which language interpretation services be provided." (Section 561.b)
+    *   **Why:** The agency must track all permits issued, their status, and associated regulatory actions.
+    *   **One row represents:** A single permit application or a permit's current status.
+    *   **Covers:** All permits issued, suspended, or revoked by the department for regulated businesses and matters.
+    *   **Columns:**
+        *   Permit ID
+        *   Application ID
+        *   Permit Type
+        *   Applicant/Business Name
+        *   Applicant/Business Address
+        *   Application Date
+        *   Issuance Date
+        *   Expiration Date
+        *   Status (Applied, Issued, Active, Suspended, Revoked, Expired)
+        *   Fee Amount
+        *   Fee Payment Date
+        *   Suspension/Revocation Date
+        *   Reason for Suspension/Revocation
+        *   Appeal Filed (Yes/No)
+        *   Appeal Outcome
+        *   Preferred Inspection Language
+        *   [Department Inspections ID (5)] (for inspections related to the permit)
+
+4.  **Health Code Violations and Enforcement Actions**
+    *   **Quotes:**
+        *   "Each inspector or other employee of the department who issues notices of violation shall... have access at the time that a violation is issued to equipment allowing such person: (a) to determine if such violation is a first-time violation of the applicable provision of law, and (b) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued;" (Section 556.a.1)
+        *   "Except as otherwise provided by law, assess any penalty prescribed for a violation of or a failure to comply with any provision of this chapter or any lawful notice, order or regulation pursuant thereto, not exceeding one thousand dollars, which penalty may be assessed after a hearing or an opportunity to be heard." (Section 555.b.2)
+        *   "Any violation of the health code shall be treated and punished as a misdemeanor. The board of health or an administrative tribunal established by the board of health to enforce the provisions of the health code shall have the power to enforce its final decisions and orders imposing pecuniary penalties as if they were money judgments" (Section 558.e)
+        *   "Except in cases where it is otherwise provided by law, every violation, neglect or refusal by any person to comply with any order of the commissioner or the board of health shall be triable by a judge of the New York city criminal court and shall be treated and punished as a misdemeanor." (Section 562)
+    *   **Why:** The agency must track all violations, warnings, penalties, and enforcement actions to ensure public health compliance.
+    *   **One row represents:** A single violation or enforcement action taken.
+    *   **Covers:** All violations of health code, department orders, and associated enforcement actions (warnings, penalties, tribunal decisions).
+    *   **Columns:**
+        *   Violation ID
+        *   [Department Inspections ID (5)] (if originating from an inspection)
+        *   Regulated Entity ID (e.g., [Department Permits ID (3)], [Healthcare Facility Registrations/Licenses ID (8)], [Mental Hygiene Service Provider Registrations/Contracts ID (6)])
+        *   Violation Date
+        *   Violation Type/Code
+        *   Description of Violation
+        *   Issuing Inspector ID
+        *   Is First-Time Violation (Yes/No)
+        *   Action Taken (Warning, Notice of Violation, Penalty Assessment, Order Issued)
+        *   Warning Issued (Yes/No)
+        *   Penalty Amount Assessed
+        *   Hearing Date
+        *   Hearing Outcome
+        *   Administrative Tribunal Decision Date
+        *   Penalty Amount Paid
+        *   Date Paid
+        *   Status (Open, Closed, Appealed, Referred to DA/Court)
+        *   Compliance Date
+        *   Order ID (if related to a specific order)
+
+5.  **Department Inspections**
+    *   **Quotes:**
+        *   "Each inspector or other employee of the department who issues notices of violation shall... have access at the time that a violation is issued to equipment allowing such person: (a) to determine if such violation is a first-time violation of the applicable provision of law, and (b) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued;" (Section 556.a.1)
+        *   "arrange for the visitation, inspection and investigation of all providers of services for the mentally disabled, by the department or otherwise;" (Section 556.c.5)
+        *   "The department of health and mental hygiene shall make unannounced visits of such day care services if such board receives a complaint... Such board shall also prescribe in such code that during the period for which day care services are authorized upon any premises, the department shall whenever possible make at least one unannounced visit of every such premises annually." (Section 558.d)
+        *   "The commissioner and such officers or employees of the department as are designated by him may, at reasonable times, and pursuant to a search warrant when required by law, without fee or hindrance enter, examine and inspect all vessels, premises, grounds, structures, buildings and every part thereof and all underground passages of every sort in the city for compliance with the provisions of law enforced by the department and its rules and regulations" (Section 566)
+    *   **Why:** The agency must track all inspections conducted to ensure compliance with health regulations and identify potential violations.
+    *   **One row represents:** A single inspection event conducted by the department.
+    *   **Covers:** All inspections across various regulated entities and areas (e.g., general health code, mental hygiene providers, day care services, water supply, food/drug businesses, radiation sources, permitted businesses).
+    *   **Columns:**
+        *   Inspection ID
+        *   Inspection Date
+        *   Inspector ID
+        *   Regulated Entity ID (e.g., [Department Permits ID (3)], [Healthcare Facility Registrations/Licenses ID (8)], [Mental Hygiene Service Provider Registrations/Contracts ID (6)], [Department Facilities and Assets ID (16)])
+        *   Entity Type
+        *   Inspection Type (e.g., Routine, Complaint-based, Permit-related, Unannounced Day Care, Water Quality, Food Safety, Radiation Safety)
+        *   Inspection Outcome (e.g., Compliant, Minor Issues, Violation Issued)
+        *   [Health Code Violations and Enforcement Actions ID (4)] (if a violation was issued)
+        *   Notes/Observations
+        *   Follow-up Required (Yes/No)
+        *   Follow-up Date
+
+6.  **Mental Hygiene Service Provider Registrations/Contracts**
+    *   **Quotes:**
+        *   "Provider of services. The term "provider of services" means an individual, association, corporation or public or private agency which provides for the mentally disabled." (Section 550.a)
+        *   "coordinate the fiscal and programmatic administration of contracts awarded by the department for mental health, intellectual and developmental disability, and alcoholism services." (Section 552)
+        *   "establish coordination and cooperation among all providers of services for the mentally disabled" (Section 556.b.5)
+        *   "within the amounts appropriated therefor, enter into contracts for the rendition or operation of services and facilities for the mentally disabled on a per capita basis or otherwise, including contracts executed pursuant to subdivision e of section 41.19 of the mental hygiene law;" (Section 556.d.9)
+        *   "use the services and facilities of public or private voluntary institutions whenever practical, and encourage all providers of services to cooperate with or participate in the program of services for the mentally disabled, whether by contract or otherwise." (Section 556.d.11)
+        *   "Contracts for services and facilities under this chapter may be made with a public or private voluntary hospital, clinic, laboratory, health, welfare or mental hygiene agency or other similar institution, notwithstanding that any member of the board or its subcommittees is an officer or employee of such institution or agency or is a member of the medical or consultant staff thereof." (Section 568.b.1)
+    *   **Why:** The agency must track all registered and contracted providers of mental hygiene services for oversight and funding.
+    *   **One row represents:** A single mental hygiene service provider entity or a contract with such a provider.
+    *   **Covers:** All individuals, associations, corporations, or agencies providing services for the mentally disabled, including their contracts.
+    *   **Columns:**
+        *   Provider ID
+        *   Provider Name
+        *   Provider Type (Individual, Association, Corporation, Public Agency, Private Agency)
+        *   Address
+        *   Contact Information
+        *   Services Provided (e.g., Mental Health, Developmental Disability, Addiction Disorder, Residential, Treatment, Rehabilitation)
+        *   Registration Date
+        *   Registration Status (Active, Inactive, Suspended)
+        *   Contract ID (if applicable)
+        *   Contract Start Date
+        *   Contract End Date
+        *   Funding Mechanism (Per Capita, Fee-for-Service, Grant)
+        *   Total Contract Amount
+        *   Board Member Affiliation (Yes/No)
+        *   [Department Inspections ID (5)] (for inspections of the provider)
+        *   [Mental Hygiene Patient Care Investigations ID (13)] (for investigations related to the provider)
+
+7.  **Mental Hygiene Service Delivery Events**
+    *   **Quotes:**
+        *   "Services for the mentally disabled. The term "services for the mentally disabled" means examination, diagnosis, care, treatment, rehabilitation, training, education, research, preventive services, referral, residential services or domiciliary care of or for the mentally disabled, not specifically limited by any other law." (Section 550.a)
+        *   "promote or provide for programs for the prevention, diagnosis, care, treatment, social and vocational rehabilitation, special education and training of the mentally disabled;" (Section 556.d.5)
+        *   "within the amounts appropriated therefor, execute such programs and maintain such facilities for the mentally disabled as may be authorized under such appropriations;" (Section 556.d.10)
+    *   **Why:** The agency must track the actual delivery of mental hygiene services to individuals to monitor program effectiveness and ensure care.
+    *   **One row represents:** A single instance of a mental hygiene service being provided to an individual.
+    *   **Covers:** All examination, diagnosis, care, treatment, rehabilitation, training, education, research, preventive services, referral, residential services, or domiciliary care provided to mentally disabled individuals.
+    *   **Columns:**
+        *   Service Event ID
+        *   [Mental Hygiene Service Provider Registrations/Contracts ID (6)]
+        *   Patient ID
+        *   Service Date
+        *   Service Type (e.g., Examination, Diagnosis, Therapy Session, Residential Stay, Training, Referral)
+        *   Duration of Service
+        *   Staff Member ID (providing service)
+        *   Outcome of Service (e.g., Improved, Stable, Referred)
+        *   Cost of Service
+        *   Reimbursement Claimed (Yes/No)
+        *   [State Reimbursement Claims ID (18)] (if reimbursement is claimed)
+
+8.  **Healthcare Facility Registrations/Licenses**
+    *   **Quotes:**
+        *   "analyze and monitor hospitals, clinics, nursing homes, and homes for the aged, and analyze, evaluate, supervise and regulate clinical laboratories, blood banks, and related facilities providing medical and health services and services ancillary thereto;" (Section 556.c.4)
+    *   **Why:** The agency must track all healthcare facilities under its jurisdiction for regulatory oversight.
+    *   **One row represents:** A single healthcare facility registered or licensed by the department.
+    *   **Covers:** Hospitals, clinics, nursing homes, homes for the aged, clinical laboratories, blood banks, and related facilities.
+    *   **Columns:**
+        *   Facility ID
+        *   Facility Name
+        *   Facility Type (Hospital, Clinic, Nursing Home, Home for Aged, Clinical Lab, Blood Bank, Other)
+        *   Address
+        *   Contact Information
+        *   Owner/Licensee Name
+        *   Registration/License Number
+        *   Issuance Date
+        *   Expiration Date
+        *   Status (Active, Pending, Suspended, Revoked)
+        *   Capacity (e.g., number of beds, patients)
+        *   [Department Inspections ID (5)] (for inspections of the facility)
+        *   [Healthcare Facility Monitoring & Evaluation Events ID (9)]
+
+9.  **Healthcare Facility Monitoring & Evaluation Events**
+    *   **Quotes:**
+        *   "analyze and monitor hospitals, clinics, nursing homes, and homes for the aged, and analyze, evaluate, supervise and regulate clinical laboratories, blood banks, and related facilities providing medical and health services and services ancillary thereto;" (Section 556.c.4)
+    *   **Why:** The agency must track all monitoring and evaluation activities performed on healthcare facilities to ensure quality and compliance.
+    *   **One row represents:** A single monitoring or evaluation event for a healthcare facility.
+    *   **Covers:** Analysis, monitoring, evaluation, supervision, and regulation activities for hospitals, clinics, nursing homes, homes for the aged, clinical laboratories, blood banks, and related facilities.
+    *   **Columns:**
+        *   Monitoring Event ID
+        *   [Healthcare Facility Registrations/Licenses ID (8)]
+        *   Event Date
+        *   Evaluator ID
+        *   Event Type (Analysis, Monitoring, Evaluation, Supervision, Regulation Review)
+        *   Scope of Review
+        *   Findings/Observations
+        *   Compliance Status
+        *   Recommendations
+        *   Follow-up Required (Yes/No)
+        *   Follow-up Date
+
+10. **Public Health Program Activities**
+    *   **Quotes:**
+        *   "supervise the reporting and control of communicable and chronic diseases and conditions hazardous to life and health" (Section 556.c.2)
+        *   "promote or provide for public education on mental disability and the prevention and control of disease;" (Section 556.d.4)
+        *   "promote or provide for programs for the prevention and control of disease" (Section 556.d.5)
+        *   "promote or provide diagnostic and therapeutic services for maternity and child health, family planning, communicable disease, medical rehabilitation and other diseases and conditions affecting public health;" (Section 556.d.6)
+        *   "promote or provide medical and health services for school children and the ambulant sick and needy persons of the city;" (Section 556.d.7)
+        *   "promote or provide medical and health services for the incarcerated individuals of prisons maintained and operated by the city;" (Section 556.d.8)
+    *   **Why:** The agency must track the implementation and delivery of various public health programs and services.
+    *   **One row represents:** A single activity or service delivery event within a public health program.
+    *   **Covers:** Disease reporting and control, public education, disease prevention programs, diagnostic/therapeutic services (maternity/child health, family planning, communicable disease, medical rehabilitation), school health services, and health services for incarcerated individuals.
+    *   **Columns:**
+        *   Activity ID
+        *   Program Name/Type (e.g., Communicable Disease Control, Maternal Health, School Health, Public Education, Family Planning)
+        *   Activity Date
+        *   Location
+        *   Staff Member ID
+        *   Target Population
+        *   Number of Individuals Served/Reached
+        *   Service Provided (e.g., Vaccination, Screening, Counseling, Educational Session, Treatment)
+        *   Reported Disease (if applicable)
+        *   Outcome/Impact (e.g., Disease Incidence, Vaccination Rate, Knowledge Gain)
+        *   Associated [Department Facilities and Assets ID (16)] (if conducted at a department facility)
+
+11. **Laboratory Examination Results**
+    *   **Quotes:**
+        *   "conduct laboratory examinations for the diagnosis, prevention and control of disease;" (Section 556.d.3)
+    *   **Why:** The agency must track the results of laboratory examinations for disease diagnosis, prevention, and control.
+    *   **One row represents:** A single laboratory examination performed.
+    *   **Covers:** All laboratory examinations conducted by or for the department for diagnosis, prevention, and control of disease.
+    *   **Columns:**
+        *   Examination ID
+        *   Sample ID
+        *   Patient ID (if applicable)
+        *   Collection Date
+        *   Receipt Date
+        *   Analysis Date
+        *   Test Type (e.g., Diagnostic, Surveillance, Environmental)
+        *   Pathogen/Substance Tested
+        *   Result (Positive, Negative, Quantitative Value)
+        *   Reference Range
+        *   Reporting Date
+        *   Ordering Physician/Program ID
+        *   [Public Health Program Activities ID (10)] (if part of a program)
+
+12. **Forensic Testing and Analysis Records**
+    *   **Quotes:**
+        *   "The chief medical examiner may... provide forensic and related testing and analysis... including but not limited to: performing autopsies; performing deoxyribonucleic acid (DNA) testing and other forms of genetic testing and analysis; obtaining samples and exemplars; performing pathology, histology and toxicology testing and analysis; and determining the cause or manner of injuries and/or death." (Section 557.f.3)
+    *   **Why:** The agency must track all forensic tests and analyses performed to support medical examiner investigations.
+    *   **One row represents:** A single forensic test or analysis performed.
+    *   **Covers:** Autopsies, DNA testing, genetic testing, sample/exemplar analysis, pathology, histology, and toxicology testing.
+    *   **Columns:**
+        *   Test ID
+        *   [Medical Examiner Death Investigations ID (2)]
+        *   Sample ID
+        *   Test Type (Autopsy, DNA, Pathology, Toxicology, etc.)
+        *   Date Performed
+        *   Analyst ID
+        *   Results
+        *   Interpretation
+        *   Report Date
+        *   Contributing to Cause/Manner of Death (Yes/No)
+
+13. **Mental Hygiene Patient Care Investigations**
+    *   **Quotes:**
+        *   "conduct such inquiries into services and facilities for the mentally disabled as may be useful in performing the functions of the department, including investigations into individual patient care, and for such purpose the department... shall... have access to otherwise confidential patient records, provided such information is requested pursuant to the functions, powers and duties conferred upon the department by law;" (Section 556.c.6)
+    *   **Why:** The agency must track investigations into individual patient care to ensure quality and address concerns.
+    *   **One row represents:** A single investigation into individual patient care.
+    *   **Covers:** Inquiries and investigations into individual patient care within services and facilities for the mentally disabled.
+    *   **Columns:**
+        *   Investigation ID
+        *   Patient ID
+        *   [Mental Hygiene Service Provider Registrations/Contracts ID (6)]
+        *   Date Initiated
+        *   Reason for Investigation (e.g., Complaint, Incident Report, Routine Review)
+        *   Investigator ID
+        *   Findings
+        *   Recommendations
+        *   Corrective Actions Required
+        *   Date Closed
+        *   Outcome
+
+14. **Early Intervention Service Enrollments**
+    *   **Quotes:**
+        *   "administer the unit responsible for early intervention services pursuant to the public health law;" (Section 556.b.7)
+    *   **Why:** The agency must track enrollments and service provision for early intervention programs.
+    *   **One row represents:** A single child's enrollment in early intervention services.
+    *   **Covers:** All children receiving early intervention services administered by the department.
+    *   **Columns:**
+        *   Enrollment ID
+        *   Child ID
+        *   Child Name
+        *   Date of Birth
+        *   Parent/Guardian Information
+        *   Referral Date
+        *   Eligibility Determination Date
+        *   Enrollment Start Date
+        *   Services Plan (e.g., types of services, frequency)
+        *   Service Provider ID
+        *   Enrollment End Date
+        *   Reason for Exit
+        *   Status (Active, Inactive, Completed)
+
+15. **Cremation Permit Applications**
+    *   **Quotes:**
+        *   "The chief medical examiner shall have such powers and duties as may be provided by law in respect to bodies of person dying... where an application is made pursuant to law for a permit to cremate a body of a person." (Section 557.f.1)
+    *   **Why:** The agency must track applications for cremation permits as part of its oversight of human remains disposal.
+    *   **One row represents:** A single application for a cremation permit.
+    *   **Covers:** All applications for permits to cremate human remains.
+    *   **Columns:**
+        *   Application ID
+        *   Deceased Individual ID
+        *   Deceased Name
+        *   Date of Death
+        *   Applicant Name
+        *   Application Date
+        *   Medical Examiner Review Date
+        *   Permit Status (Approved, Denied, Pending)
+        *   Approval/Denial Date
+        *   Reason for Denial
+        *   [Medical Examiner Death Investigations ID (2)] (if applicable)
+
+16. **Department Facilities and Assets**
+    *   **Quotes:**
+        *   "maintain an office in each borough and maintain, furnish and operate in each borough office health centers and health stations or other facilities which may be required from time to time for the preservation of health or the care of the sick;" (Section 556.a.2)
+        *   "Maintain and operate public health centers and clinics as shall be established in the department;" (Section 556.d.1)
+        *   "The board of health, during the prevalence of an epidemic or in the presence of great and imminent peril to the public health and when in the board's judgment it is necessary to do so, may take possession of any buildings in the city for temporary hospitals and shall pay a just compensation for any private property so taken. Such temporary hospitals shall be under the control of the commissioner." (Section 560)
+        *   "Each inspector or other employee of the department who issues notices of violation shall... have access at the time that a violation is issued to equipment allowing such person: (a) to determine if such violation is a first-time violation of the applicable provision of law, and (b) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued;" (Section 556.a.1)
+    *   **Why:** The agency needs to manage its physical infrastructure and equipment to deliver services effectively.
+    *   **One row represents:** A single department facility (office, health center, station) or a significant asset (e.g., inspector equipment).
+    *   **Covers:** All department-owned or operated facilities, temporary hospitals, and key operational equipment.
+    *   **Columns:**
+        *   Asset ID
+        *   Asset Name/Description
+        *   Asset Type (Borough Office, Health Center, Health Station, Clinic, Temporary Hospital, Equipment)
+        *   Location/Address
+        *   Acquisition Date
+        *   Current Status (Operational, Under Maintenance, Decommissioned, Temporary)
+        *   Department/Division Responsible
+        *   Maintenance Schedule
+        *   Last Maintenance Date
+        *   Condition Rating
+        *   For Temporary Hospitals: Start Date, End Date, Private Property Compensation Amount
+
+17. **Financial Transactions and Appropriations**
+    *   **Quotes:**
+        *   "Appropriations to the department for mental health, intellectual and developmental disability, and alcoholism services shall be set forth in the expense budget in separate and distinct units of appropriation." (Section 551.a)
+        *   "receive and expend funds made available for public health purposes pursuant to law;" (Section 556.a.4)
+        *   "receive and expend funds made available for the purposes of providing mental health, intellectual and developmental disability and alcoholism and substance abuse related services;" (Section 556.b.6)
+        *   "No grant, gift, devise, legacy or bequest made to the city or to the department for work to be done within the jurisdiction of the department shall be accepted, and no work or research paid for from private sources shall be carried on under the jurisdiction of the department except with the approval of the commissioner." (Section 567)
+        *   "No expenditure shall be incurred in the exercise of such extraordinary power, however, unless provision is made therefor in the budget or unless such expenditures are financed pursuant to sections one hundred seven or section 29.00 of the local finance law." (Section 563)
+    *   **Why:** The agency must track all financial inflows and outflows to ensure accountability and compliance with budget mandates.
+    *   **One row represents:** A single financial transaction (appropriation, expenditure, receipt of funds).
+    *   **Covers:** All appropriations, expenditures, and receipt of funds (public and private) for all department activities.
+    *   **Columns:**
+        *   Transaction ID
+        *   Transaction Date
+        *   Transaction Type (Appropriation, Expenditure, Grant Received, Gift Received, Reimbursement)
+        *   Amount
+        *   Source/Destination of Funds
+        *   Appropriation Unit (e.g., Mental Health, Public Health Services)
+        *   Program/Project ID (e.g., [Agency Plans and Programs ID (18)])
+        *   Approval Date (for private funds)
+        *   Related Contract ID (e.g., [Mental Hygiene Service Provider Registrations/Contracts ID (6)])
+        *   [State Reimbursement Claims ID (18)] (if related to state reimbursement)
+
+18. **State Reimbursement Claims**
+    *   **Quotes:**
+        *   "the department may act as a "local agency" to conduct substance abuse programs and seek reimbursement therefore pursuant to provisions of the mental hygiene law relating to funding for substance abuse services" (Section 550.b)
+        *   "submit all materials required by the mental hygiene law for purposes of state reimbursement;" (Section 556.e.2)
+    *   **Why:** The agency must track all claims submitted for state reimbursement to ensure proper funding and compliance.
+    *   **One row represents:** A single claim submitted for state reimbursement.
+    *   **Covers:** All claims for state reimbursement for substance abuse programs and other services as required by mental hygiene law.
+    *   **Columns:**
+        *   Claim ID
+        *   Submission Date
+        *   Claim Period
+        *   Program Type (e.g., Substance Abuse, Mental Health, IDD)
+        *   Total Amount Claimed
+        *   Approved Amount
+        *   Reimbursement Received Date
+        *   Status (Submitted, Approved, Denied, Paid)
+        *   Supporting Documentation Reference
+        *   [Mental Hygiene Service Delivery Events ID (7)] (for services included in the claim)
+        *   [Financial Transactions and Appropriations ID (17)] (for the received reimbursement)
+
+19. **Agency Plans and Programs**
+    *   **Quotes:**
+        *   "Prepare and submit to appropriate governmental authorities short term, intermediate and long range plans and programs designed to meet the said needs of the city, including the needs for construction and operation of medical and health care facilities, and establish priorities among them" (Section 555.a.1)
+        *   "Develop and submit to the mayor and council a program for the delivery of services for the mentally disabled, including construction and operation of facilities;" (Section 556.b.1)
+        *   "determine the needs of the mentally disabled in the city, which determination shall include the review and evaluation of all mental hygiene services and facilities within the department's jurisdiction;" (Section 556.b.2)
+        *   "engage in short-range, intermediate-range and long-range mental hygiene planning that reflects the entire array of city needs in the areas of mental health, intellectual and developmental disabilities and alcoholism and substance abuse services within the department's jurisdiction;" (Section 556.b.3)
+        *   "implement and administer an inclusive citywide planning process for the delivery of services for people with mental disabilities; and design and incorporate within that planning process, consistent with applicable law, standards and procedures for community participation and communication with the commissioner at the borough and local community level;" (Section 556.b.4)
+        *   "in accordance with section five hundred fifty-five of this chapter, determine the public health needs of the city and prepare plans and programs addressing such needs." (Section 556.b.8)
+    *   **Why:** The agency must track its strategic plans and programs to ensure alignment with city needs and departmental objectives.
+    *   **One row represents:** A single plan or program initiative.
+    *   **Covers:** Short-term, intermediate, and long-range plans and programs for medical/health care facilities, mental hygiene services, and general public health needs.
+    *   **Columns:**
+        *   Plan/Program ID
+        *   Plan/Program Name
+        *   Type (e.g., Strategic Plan, Program Initiative, Needs Assessment)
+        *   Focus Area (e.g., Mental Health, Public Health, Facility Development)
+        *   Start Date
+        *   End Date
+        *   Lead Department/Division
+        *   Status (Planning, Active, Completed, Archived)
+        *   Key Objectives
+        *   Community Participation Activities (e.g., Public Meetings, Surveys)
+        *   [Public Hearings ID (20)] (if public hearings were held for the plan/program)
+
+20. **Public Hearings**
+    *   **Quotes:**
+        *   "The commissioner shall not approve any construction, addition or modification contrary to the health systems agency without first holding a public hearing." (Section 555.a.1)
+        *   "Prior to the sale, closing, abandonment of a city hospital or transfer of a city hospital to any other hospital or facility, hold a public hearing with reference to such proposed sale, closing, abandonment or transfer; publish notice of such public hearing in the City Record and in such daily newspaper or newspapers published in the city of New York as shall be selected by the commissioner, such publication to take place not less than ten days nor more than thirty days prior to the date fixed for the hearing; and adjourn such hearing from time to time, if necessary, in order to allow persons interested to attend or express their views;" (Section 556.e.1)
+    *   **Why:** The agency must track all public hearings conducted for transparency and public input on significant decisions.
+    *   **One row represents:** A single public hearing event.
+    *   **Covers:** Public hearings related to medical/health care facility construction/modification, and city hospital sales/closings/transfers.
+    *   **Columns:**
+        *   Hearing ID
+        *   Hearing Date
+        *   Topic (e.g., Facility Construction, Hospital Sale)
+        *   Related Entity ID (e.g., Facility ID, Hospital ID)
+        *   Location
+        *   Notice Publication Date
+        *   Number of Attendees
+        *   Summary of Public Input
+        *   Decision Context (e.g., [Agency Plans and Programs ID (19)], Facility Application ID)
+        *   Outcome/Impact on Decision
+
+21. **Department Staffing and Qualifications**
+    *   **Quotes:**
+        *   "The commissioner shall be a doctor of medicine and: (1) hold a degree of master of public health or a degree of master of business administration with concentration in the health field or a degree of master of public administration with concentration in the health field or the equivalent... and have had at least five years' experience in college or university public health teaching, or (2) have had at least five years' experience in public health administration." (Section 551.b)
+        *   "The commissioner may appoint deputy commissioners, one of whom shall have the same qualifications as the commissioner. There shall be at least two executive deputy commissioners, one of whom shall have the qualifications established pursuant to the mental hygiene law for a director of community services of a local governmental unit" (Section 552)
+        *   "The commissioner shall designate employees of the department as may be necessary to the service of the board including an employee designated by him to serve as the secretary of the board." (Section 553.c)
+        *   "The chief medical examiner may appoint and remove such deputy chief medical examiners, medical examiners, medical investigators, lay medical investigators, scientific experts and other officers and employees as may be provided for in the budget. The deputy chief medical examiners and medical examiners shall possess the same basic qualifications as the chief medical examiner." (Section 557.c)
+    *   **Why:** The agency must track the qualifications and appointments of key staff to ensure compliance with legal requirements.
+    *   **One row represents:** A single staff member's appointment or qualification record.
+    *   **Covers:** Commissioner, Deputy Commissioners, Executive Deputy Commissioners, Board Secretary, Chief Medical Examiner, Deputy Medical Examiners, Medical Examiners, Medical Investigators, and other key personnel.
+    *   **Columns:**
+        *   Employee ID
+        *   Employee Name
+        *   Position Title
+        *   Appointment Date
+        *   Qualifications Met (e.g., MD, MPH, Years Experience, Certifications)
+        *   Qualification Details (e.g., Degree, Institution, Field of Study)
+        *   Required Qualifications for Position
+        *   Status (Active, Vacant)
+        *   Department/Division
+        *   [Board and Committee Member Appointments ID (22)] (if also a board member)
+
+22. **Board and Committee Member Appointments**
+    *   **Quotes:**
+        *   "There shall be in the department a board of health, the chairperson of which shall be the commissioner. In addition to the chairperson, the board shall consist of ten members, five of whom shall be doctors of medicine... The other five members need not be physicians. However, non-physician members shall hold at least a masters degree... and shall have at least ten years experience... One member of the board shall be the chairperson of the mental hygiene advisory board" (Section 553.a)
+        *   "The nine members other than the chairperson and the member who shall be the chairperson of the mental hygiene advisory board shall serve without compensation and shall be appointed by the mayor, each for a term of six years, commencing at the expiration of the terms of the present incumbents. In case of a vacancy the mayor shall appoint a member to serve for the unexpired term." (Section 553.b)
+        *   "A member of the board of health other than the chairman may be removed by the mayor on proof of official misconduct or of negligence in official duties or of conduct in any manner connected with his official duties which tends to discredit his office, or of mental or physical inability to perform his duties" (Section 554)
+        *   "There shall be a mental hygiene advisory board which shall be advisory to the commissioner and the deputy commissioner for mental hygiene services... The board and its subcommittees shall be constituted and their appointive members appointed and removed in the manner prescribed for a community services board by the provisions of the mental hygiene law." (Section 568.a.1)
+        *   "provide for membership on such state or federally authorized committees as may be appropriate to the discharge of the department's functions, powers and duties;" (Section 556.e.3)
+        *   "If any matter arises before the board or any of its subcommittees directly involving a public or private voluntary hospital... of which any member of the board or such subcommittee is an officer, employee or on the medical or consultant staff thereof, that member shall participate in the deliberations... only insofar as to provide any information requested... and that member shall not participate further in the deliberations..." (Section 568.b.2)
+    *   **Why:** The agency must track all board and committee members, their qualifications, terms, and potential conflicts of interest.
+    *   **One row represents:** A single appointment of an individual to a board or committee.
+    *   **Covers:** Members of the Board of Health, Mental Hygiene Advisory Board (and subcommittees), and other state/federally authorized committees.
+    *   **Columns:**
+        *   Appointment ID
+        *   Member ID
+        *   Member Name
+        *   Board/Committee Name (e.g., Board of Health, Mental Hygiene Advisory Board)
+        *   Appointment Date
+        *   Term Start Date
+        *   Term End Date
+        *   Appointment Status (Active, Expired, Vacant, Removed)
+        *   Qualifications Met (e.g., MD, Years Experience, Degree)
+        *   Affiliation with Contracted Provider (Yes/No)
+        *   Recusal Events (Count)
+        *   Reason for Removal (if applicable)
+        *   [Department Staffing and Qualifications ID (21)] (if also a department employee)
+
+23. **Inter-Agency Agreements**
+    *   **Quotes:**
+        *   "arrange, with the approval of the mayor, for the rendition of services and operation of facilities by other agencies of the city;" (Section 556.a.5)
+    *   **Why:** The agency must track agreements with other city agencies for services and facility operations.
+    *   **One row represents:** A single agreement with another city agency.
+    *   **Covers:** All agreements for services and facility operations rendered by other city agencies.
+    *   **Columns:**
+        *   Agreement ID
+        *   Partner Agency Name
+        *   Agreement Type (e.g., Service Rendition, Facility Operation)
+        *   Description of Services/Facilities
+        *   Start Date
+        *   End Date
+        *   Approval Date (Mayor's)
+        *   Financial Terms
+        *   Status (Active, Expired, Terminated)
+        *   Performance Metrics
+
+24. **Legal Proceedings**
+    *   **Quotes:**
+        *   "The department may sue and be sued in and by the proper name of "Department of Health and Mental Hygiene of the City of New York"" (Section 564)
+        *   "Compel the attendance of witnesses, administer oaths and compel the production of books, papers and documents in any matter or proceeding before the commissioner." (Section 555.b.1)
+        *   "The chief medical examiner or his or her designee shall have power to require the attendance and take testimony under oath of such persons as he or she may deem necessary and to require the production of books, accounts, papers and other evidence relative to any matter within the jurisdiction of the office." (Section 557.e)
+    *   **Why:** The agency must track all legal actions and proceedings it is involved in for risk management and compliance.
+    *   **One row represents:** A single legal proceeding or investigation event.
+    *   **Covers:** All lawsuits, administrative proceedings, and formal investigations where the department or commissioner has powers to compel testimony/documents.
+    *   **Columns:**
+        *   Case ID
+        *   Case Type (Lawsuit, Administrative Hearing, Investigation)
+        *   Parties Involved (Plaintiff, Defendant, Subject)
+        *   Date Initiated
+        *   Status (Open, Closed, Appealed)
+        *   Outcome/Decision
+        *   Date Closed
+        *   Legal Counsel Assigned
+        *   Witnesses Compelled (Count)
+        *   Documents Produced (Count)
+        *   Related [Health Code Violations and Enforcement Actions ID (4)] (if applicable)
+        *   Related [Medical Examiner Death Investigations ID (2)] (if applicable)
+
+25. **Vital Record Certificate Amendments**
+    *   **Quotes:**
+        *   "it shall provide for the recording of births which have not been recorded in accordance with law, for the change or alteration of any birth, fetal death or death certificate upon proof satisfactory, to the commissioner" (Section 558.c)
+    *   **Why:** The agency must track all requests and approvals for amendments to vital records.
+    *   **One row represents:** A single request for a change or alteration to a vital record certificate.
+    *   **Covers:** All requests for amendments to birth, fetal death, and death certificates.
+    *   **Columns:**
+        *   Amendment Request ID
+        *   [Birth, Fetal Death, and Death Registrations ID (1)]
+        *   Certificate Type (Birth, Fetal Death, Death)
+        *   Request Date
+        *   Applicant Name
+        *   Field(s) to be Amended
+        *   Reason for Amendment
+        *   Proof Submitted (Yes/No)
+        *   Commissioner Decision Date
+        *   Decision (Approved, Denied)
+        *   Date Certificate Amended (if approved)
+
+26. **Vital Record Transcript Requests**
+    *   **Quotes:**
+        *   "it shall provide for... the examination and issuance of transcripts of such certificates and for fees to be charged therefor." (Section 558.c)
+    *   **Why:** The agency must track requests for vital record transcripts and associated fees.
+    *   **One row represents:** A single request for a vital record transcript.
+    *   **Covers:** All requests for transcripts of birth, fetal death, and death certificates.
+    *   **Columns:**
+        *   Request ID
+        *   [Birth, Fetal Death, and Death Registrations ID (1)]
+        *   Certificate Type (Birth, Fetal Death, Death)
+        *   Request Date
+        *   Applicant Name
+        *   Purpose of Transcript
+        *   Fee Charged
+        *   Fee Paid Date
+        *   Transcript Issued Date
+        *   Status (Requested, Issued, Cancelled)
+
+27. **Diagnostic, Preventive, and Therapeutic Product Distribution**
+    *   **Quotes:**
+        *   "produce, standardize and distribute certain diagnostic, preventive and therapeutic products" (Section 556.d.3)
+    *   **Why:** The agency must track the production and distribution of health products for public health initiatives.
+    *   **One row represents:** A single batch or shipment of a diagnostic, preventive, or therapeutic product.
+    *   **Covers:** All diagnostic, preventive, and therapeutic products produced, standardized, and distributed by the department.
+    *   **Columns:**
+        *   Distribution ID
+        *   Product Name
+        *   Product Type (Diagnostic, Preventive, Therapeutic)
+        *   Batch Number
+        *   Production Date
+        *   Distribution Date
+        *   Quantity Distributed
+        *   Recipient Entity (e.g., [Department Facilities and Assets ID (16)], [Public Health Program Activities ID (10)])
+        *   Cost of Production
+        *   Expiration Date
+
+28. **Medical Audit and Research Data Submissions**
+    *   **Quotes:**
+        *   "engage in or promote health research for the purpose of improving the quality of medical and health care; in conducting such research, the department shall have the authority to conduct medical audits, to receive reports on forms prepared or prescribed by the department; such information when received by the department shall be kept confidential and used solely for the purpose of medical or scientific research or the improvement of the quality of medical care;" (Section 556.d.2)
+        *   "The chief medical examiner may, to the extent permitted by law, provide forensic and related testing and analysis, and ancillary services, in furtherance of investigations concerning persons both alive and deceased, including but not limited to: performing autopsies; performing deoxyribonucleic acid (DNA) testing and other forms of genetic testing and analysis; obtaining samples and exemplars; performing pathology, histology and toxicology testing and analysis; and determining the cause or manner of injuries and/or death." (Section 557.f.3)
+        *   "Notwithstanding any inconsistent provision of this section and in addition to any other powers and duties, the chief medical examiner may engage in health research in conjunction with the department consistent with paragraph two of subdivision d of section five hundred fifty six of this chapter." (Section 557.f.4)
+    *   **Why:** The agency must track medical audit and research data submissions to improve healthcare quality and conduct scientific research.
+    *   **One row represents:** A single submission of structured data for a medical audit or research project.
+    *   **Covers:** Reports received on prescribed forms for medical audits and health research, including data from CME's research.
+    *   **Columns:**
+        *   Submission ID
+        *   Research/Audit Project ID
+        *   Submission Date
+        *   Data Provider ID (e.g., [Healthcare Facility Registrations/Licenses ID (8)], [Mental Hygiene Service Provider Registrations/Contracts ID (6)])
+        *   Data Type (e.g., Patient Outcomes, Service Utilization, Quality Metrics)
+        *   Period Covered by Data
+        *   Confidentiality Status
+        *   Purpose (Medical Research, Quality Improvement)
+        *   Analyst ID
+
+29. **Unclaimed/Unidentified Human Remains Management**
+    *   **Quotes:**
+        *   "The chief medical examiner shall perform the functions of the city mortuary and related functions, including the removal, transportation and disposal of unclaimed or unidentified human remains and the remains of those individuals who have died outside of a medical institution." (Section 557.f.2)
+    *   **Why:** The agency must track the management of unclaimed or unidentified human remains for public service and dignity.
+    *   **One row represents:** A single instance of managing unclaimed or unidentified human remains.
+    *   **Covers:** Removal, transportation, and disposal of unclaimed or unidentified human remains.
+    *   **Columns:**
+        *   Remains ID
+        *   Date Found/Received
+        *   Location Found
+        *   Status (Unidentified, Unclaimed, Identified, Claimed, Disposed)
+        *   Date of Identification (if applicable)
+        *   Date Claimed (if applicable)
+        *   Claimant Information
+        *   Disposal Method (e.g., Burial, Cremation)
+        *   Disposal Date
+        *   [Medical Examiner Death Investigations ID (2)] (if applicable)
+
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations (e.g., Health Code text, specific rules for providers)
+*   Receipts (individual transaction records are tabular, but the physical receipts are not)
+*   Photos
+*   Research documents (the *results* of research might be tabular, but the full documents are not)
+*   Budget messages (textual explanations)
+*   Public hearing notices (the *event* is tabular, the notice itself is not)
+*   State reimbursement materials (the *submission* is tabular, the detailed materials themselves are not)
+*   Books, papers, and documents compelled in investigations (evidence)
+*   Detailed plans and programs (the *tracking* of them is tabular, the full content is not)
+*   Individual patient records (while elements are extracted for tabular datasets, the full, unstructured record is not tabular)
+*   Medical and immunization information (if in scanned document format, not structured data)

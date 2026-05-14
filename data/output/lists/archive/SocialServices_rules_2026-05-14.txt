@@ -1,0 +1,182 @@
+**1. Child Immunization Information**
+
+**Quotes:**
+ - § 21-120.1.b.7 "assisting in the collection and review of medical and immunization information which is required to be maintained for all children for which the provider is providing subsidized child care and the monitoring of those medical and immunization requirements;"
+
+**Why:** Explicitly required to be collected and maintained for child health and program compliance.
+
+**One row represents:** A child immunization record.
+
+**Covers:** Immunizations for children receiving subsidized child care.
+
+**Columns:**
+ - Child Care Provider ID (links to Dataset 2)
+ - Child ID
+ - Child Name
+ - Immunizations received
+ - Immunizations needed
+
+**2. Child Care Provider Home Inspections**
+
+**Quotes:**
+ - § 21-120.1.b.2 "inspecting a child care provider's home within thirty days of the placement of the first child receiving subsidized child care with that child care provider for the purpose of determining that such child care provider meets the requirements of section three hundred ninety of the social services law, the regulations promulgated thereunder, and any plan approved pursuant to section three hundred ninety of the social services law, and that the child care provider is capable of providing safe and suitable care to children which is supportive of their physical, intellectual, emotional and social well-being."
+ - § 21-120.1.b.3 "arranging for a visit to a child care provider's home by a parent prior to the placement of such parent's child receiving subsidized child care with that child care provider for the purpose of determining that such child care provider is capable of providing safe and suitable care which is supportive of that child's physical, intellectual, emotional and social well-being;"
+ - § 21-120.1.b.4 "inspecting the operation of every home where subsidized child care is provided no less than five times each year, which shall be in addition to and separate and distinct from any visits performed pursuant to paragraph (3) of this subdivision or mandated by the United States department of agriculture pursuant to the child and adult care food program, for the purpose of ensuring that child care is provided in accordance with the requirements of all applicable laws, regulations and rules"
+ - § 21-120.1.b.5 "inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months in which a child care provider is providing subsidized child care and at least one additional time during the next six months, which shall be in addition to and separate and distinct from any visits and inspections required by paragraphs (2), (3) and (4) of this subdivision"
+ - § 21-120.1.b.6 "in addition to and separate and distinct from those visits and inspections required by paragraphs (3) and (4) of this subdivision, inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months after the provider has had eligibility to provide subsidized child care restored subsequent to the effective date of this paragraph or has been adjudicated to have violated any provision of any applicable law, regulation or rule"
+
+**Why:** To ensure inspections are conducted and child care providers meet safety and suitability requirements.
+
+**One row represents:** An inspection of a child care provider's home.
+
+**Covers:** Initial, parent, annual, first six months, and additional inspections for subsidized child care providers.
+
+**Columns:**
+ - Child Care Provider ID (links to Dataset 1)
+ - Inspection Type: Initial, Parent, Annual, First Six Months, Additional, Post-Violation
+ - Initial Child Placement Date
+ - Exempted via providing care prior to the effective date of this section?
+ - Exempted via receiving payment for such care exclusively through child care certificates?
+ - Exempted via United States department of agriculture child and adult care food program?
+ - Inspection Date
+ - Inspector ID
+ - Inspector Organization
+ - Inspection Outcome/Findings
+ - Violation Adjudicated (for Post-Violation inspections)
+
+**3. Pet Shop Permits and Applications**
+
+**Quotes:**
+ - § 17-373.a "An application for a permit required pursuant to section 17-372 of this title or for the renewal of such a permit shall be made and submitted on forms furnished by the department."
+ - § 17-373.e "The commissioner shall not issue or renew a permit unless department records show there are no finally determined uncorrected violations or unpaid outstanding fines, penalties or forfeitures imposed by any court, administrative tribunal established within the office of administrative trials and hearings or administrative tribunal established in accordance with the administrative code or the charter, which are due and payable by the applicant or the permittee."
+ - § 17-373.f "The commissioner shall not issue a new permit or renewal of an existing permit to any person listed on the animal abuse registry created pursuant to chapter sixteen of this title."
+ - § 17-373.g "The commissioner shall not issue a new permit to any entity based on a sale or change of ownership of a permitted business or activity regulated by laws or rules enforced by the department, where department or other records show any finally determined uncorrected violations or unpaid fines and penalties, unless the applicant submits proof satisfactory to the department that the transfer of the business was the result of an arm's length transaction."
+
+**Why:** To administer and track pet shop permits, ensuring compliance with legal requirements and eligibility.
+
+**One row represents:** An application for a pet shop permit.
+
+**Covers:** New, renewal, and transfer applications for pet shop permits.
+
+**Columns:**
+ - Application ID
+ - Application type: Initial, Renewal, or Transfer
+ - Application status: Submitted, In Review, Active, Expired, Rejected
+ - Shop ID
+ - Applicant type (sole proprietorship, partnership, corporation, limited liability company)
+ - Applicant name
+ - Applicant age
+ - Applicant gender
+ - Applicant residence address
+ - Applicant business address
+ - Applicant telephone number
+ - Applicant email address
+ - Did application provide proof of current workers' compensation and disability benefits insurance coverage?
+ - Any uncorrected violations/unpaid outstanding fines, penalties or forfeitures by individual or org?
+ - Names of all officers/members of the partnership, limited liability company, group, or corporation
+ - Listed on animal abuse registry?
+ - Proof of arm's length transaction provided (for transfers)?
+ - Permit Issue Date
+ - Permit Expiration Date
+
+**4. Senior Center Staff Training Attendance**
+
+**Quotes:**
+ - § 21-203.a "The commissioner shall develop a program to train senior service providers in the detection and reporting of elder abuse."
+ - § 21-203.b "The commissioner shall require that employees of senior centers and employees of entities that contract with the department to provide services to senior citizens, be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years, if such employee has or is expected to have significant and direct person to person contact with senior citizens."
+
+**Why:** To ensure individual employees comply with mandatory elder abuse detection and reporting training requirements.
+
+**One row represents:** An elder abuse detection training event attended by senior center staff.
+
+**Covers:** Attendance at mandatory elder abuse detection trainings for senior center employees.
+
+**Columns:**
+ - Senior Center ID (links to Dataset 5)
+ - Employee ID
+ - Employee Name
+ - Training Type: Initial, Refresher
+ - Date of Training
+ - Training ID (links to Dataset 5)
+ - Date Next Training Required By
+ - In Compliance?
+
+**5. Senior Center Staff and Public Training Events**
+
+**Quotes:**
+ - § 21-203.a "The commissioner shall develop a program to train senior service providers in the detection and reporting of elder abuse. Such program shall also include training on the counseling of elder abuse victims."
+ - § 21-203.b "The commissioner shall require that employees of senior centers and employees of entities that contract with the department to provide services to senior citizens, be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years, if such employee has or is expected to have significant and direct person to person contact with senior citizens."
+ - § 21-203.c "The commissioner shall require senior centers to hold at least two educational sessions per year during which guests and members of the senior center will receive counseling regarding elder abuse prevention and awareness and be instructed on how to detect and report instances of elder abuse."
+
+**Why:** To track the scheduling and execution of mandatory staff and public elder abuse training sessions.
+
+**One row represents:** A training event held by a senior center.
+
+**Covers:** Mandatory senior center employee elder abuse detection trainings and public elder abuse prevention sessions.
+
+**Columns:**
+ - Training ID
+ - Senior Center ID (links to Dataset 4)
+ - Senior Center Name
+ - Event Date
+ - Event Time
+ - Session Leader ID
+ - Session Leader Name
+ - Training Type (Staff Training, Public Session)
+ - Attendance Count (Total)
+ - Staff Attendance Count (for Staff Training type)
+ - Member/Guest Attendance Count (for Public Session type)
+
+**6. Public Health Center Inventory Orders**
+
+**Quotes:**
+ - § Section 556.d.1 "Maintain and operate public health centers and clinics as shall be established in the department;"
+ - § Section 556.d.3 "produce, standardize and distribute certain diagnostic, preventive and therapeutic products and conduct laboratory examinations for the diagnosis, prevention and control of disease;"
+ - § Section 556.d.6 "promote or provide diagnostic and therapeutic services for maternity and child health, family planning, communicable disease, medical rehabilitation and other diseases and conditions affecting public health;"
+
+**Why:** To manage the procurement and stock of consumable supplies essential for public health center operations.
+
+**One row represents:** An order for a specific consumable inventory item.
+
+**Covers:** All orders for consumable stock across all Public Health Centers.
+
+**Columns:**
+ - Order ID
+ - Order Date
+ - Item ID
+ - Item Name
+ - Quantity Ordered
+ - Unit Cost
+ - Total Cost
+ - Center ID (links to Dataset 7)
+ - Center Name
+ - Supplier ID
+ - Delivery Date
+ - Received Quantity
+
+**7. Public Health Center Capital Tracking**
+
+**Quotes:**
+ - § Section 556.d.1 "Maintain and operate public health centers and clinics as shall be established in the department;"
+ - § Section 556.d.3 "produce, standardize and distribute certain diagnostic, preventive and therapeutic products and conduct laboratory examinations for the diagnosis, prevention and control of disease;"
+
+**Why:** To track capital investments and equipment necessary for operating public health centers and laboratories.
+
+**One row represents:** A capital asset or piece of equipment acquired for a public health center.
+
+**Covers:** All capital investments and equipment across all Public Health Centers.
+
+**Columns:**
+ - Asset ID
+ - Item Name
+ - Purchase Date
+ - Purchase Cost
+ - Center ID (links to Dataset 6)
+ - Center Name
+ - Manufacturer
+ - Model Number
+ - Serial Number
+ - Warranty Expiration Date
+ - Last Maintenance Date
+ - Expected Necessary Replacement Date
+ - Asset Status (e.g., Active, In Repair, Retired)

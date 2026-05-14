@@ -1,0 +1,1007 @@
+**1. School Fire Inspection Reports (K-12)**
+
+**Quotes:**
+*   "It shall be the duty of the school authorities in general charge of the operation of any public or private school to cause the buildings of such school containing classroom, dormitory, laboratory, physical education, dining or recreational facilities for student use to be inspected at least annually for fire hazards which might endanger the lives of students, teachers and employees therein." (§ 807-a.1)
+*   "The annual fire inspection shall be made prior to the first day of December of every school year and the report thereof shall be filed by the school authorities in the places required by subdivision five of this section no later than the sixteenth day of December of every such year." (§ 807-a.2)
+*   "The authority making the inspection shall file the report thereof with the school authorities no later than the first day of December." (§ 807-a.3.c)
+*   "The state fire administrator shall prescribe the form of the fire inspection report and the commissioner shall furnish a supply of such form to school authorities annually, either by mail or electronically." (§ 807-a.4)
+*   "The report of any fire inspection shall be filed in the office of the school authorities and with the commissioner." (§ 807-a.5.a)
+*   "If the report shows any alleged deficiencies, the school authorities shall provide the details of such deficiencies and the proposed actions to be taken to correct such deficiencies to the local government that administers and enforces the uniform fire prevention and building code for the municipality in which the building is located." (§ 807-a.5.e)
+*   "The commissioner shall review the reports of inspection filed pursuant to this section and may make recommendations to the school authorities with respect to any problems relating to school fire safety noted in such reports." (§ 807-a.6.a)
+
+**Why:** To ensure schools comply with annual fire inspection mandates and to track findings for safety oversight.
+
+**One row represents:** A single fire inspection report for a school building.
+
+**Covers:** Annual fire inspections for K-12 public and private school buildings (excluding NYC, Buffalo, Rochester, Syracuse, Yonkers).
+
+**Columns:**
+*   Inspection Report ID
+*   School ID
+*   School Name
+*   Building ID
+*   Inspection Date
+*   Inspection Year
+*   Inspection Authority Type (e.g., Fire Department, Certified Inspector, County Fire Coordinator)
+*   Inspector Name/ID
+*   Report Filing Date (with school authorities)
+*   Report Filing Date (with commissioner)
+*   Overall Inspection Outcome (e.g., Pass, Deficiencies Found)
+*   Number of Deficiencies Found
+*   Recommendations Made by Commissioner? (Yes/No)
+*   **Linked to Dataset 2 (School Fire Inspection Violation Tracking (K-12))**
+
+**2. School Fire Inspection Violation Tracking (K-12)**
+
+**Quotes:**
+*   "If the report shows any alleged deficiencies, the school authorities shall provide the details of such deficiencies and the proposed actions to be taken to correct such deficiencies to the local government that administers and enforces the uniform fire prevention and building code for the municipality in which the building is located." (§ 807-a.5.e)
+*   "The commissioner shall require a re-inspection of school buildings where a report of inspection identified violations until it is demonstrated to the satisfaction of the commissioner that said violations have been corrected." (§ 807-a.6.a)
+*   "In the event that a public school fails to correct violations following a re-inspection, the commissioner may deny an annual certificate of occupancy to such school building." (§ 807-a.6.a)
+*   "If a private school either refuses access for an inspection pursuant to this paragraph, or does not correct violations identified in such report in a timely manner, the commissioner shall immediately notify, in writing, the local government who issues the certificate of occupancy for the school of their failure to file a fire safety report." (§ 807-a.6.b)
+
+**Why:** To track specific fire safety deficiencies identified during inspections and monitor their correction.
+
+**One row represents:** A single fire safety violation identified during an inspection.
+
+**Covers:** All fire safety violations identified in K-12 public and private school fire inspection reports.
+
+**Columns:**
+*   Violation ID
+*   **Inspection Report ID (Linked to Dataset 1)**
+*   School ID
+*   Building ID
+*   Violation Description
+*   Date Identified
+*   Proposed Corrective Action
+*   Date Corrective Action Reported
+*   Re-inspection Date
+*   Violation Status (e.g., Open, Corrected, Uncorrected)
+*   Date Commissioner Notified Local Government (for private schools)
+*   **Linked to Dataset 22 (School Certificate of Occupancy Status (K-12 Public))**
+
+**3. School Emergency Drill Records (K-12)**
+
+**Quotes:**
+*   "It shall be the duty of the principal or other person in charge of every public or private school or educational institution within the state, other than colleges or universities, to instruct and train the pupils by means of drills, so that they may in a sudden emergency be able to respond appropriately in the shortest possible time and without confusion or panic." (§ 807.1)
+*   "Such drills shall be held at least twelve times in each school year, eight of which required drills shall be held between September first and December thirty-first of each such year." (§ 807.1)
+*   "Eight of all such drills shall be evacuation drills, four of which shall be through use of the fire escapes on buildings where fire escapes are provided or through the use of identified secondary means of egress." (§ 807.1)
+*   "Four of all such required drills shall be lock-down drills." (§ 807.1)
+*   "Drills shall be conducted at different times of the school day." (§ 807.1)
+*   "Pupils shall be instructed in the procedure to be followed in the event that a fire occurs during the lunch period or assembly, provided however, that such additional instruction may be waived where a drill is held during the regular school lunch period or assembly." (§ 807.1)
+*   "Four additional drills shall be held in each school year during the hours after sunset and before sunrise in school buildings in which students are provided with sleeping accommodations." (§ 807.1)
+*   "At least two additional drills shall be held during summer school in buildings where summer school is conducted, and one of such drills shall be held during the first week of summer school." (§ 807.1)
+*   "In the case of after-school programs, events or performances which are conducted within a school building and which include persons who do not regularly attend classes in such school building, the principal or other person in charge of the building shall require the teacher or person in charge of such after-school program, event or performance to notify persons in attendance at the beginning of each such program, event or performance, of the procedures to be followed in the event of an emergency so that they may be able to respond in a timely, orderly manner." (§ 807.1-a)
+
+**Why:** To track compliance with mandatory emergency drill requirements for K-12 schools.
+
+**One row represents:** A single emergency drill conducted at a school.
+
+**Covers:** All fire and emergency drills conducted in K-12 public and private schools.
+
+**Columns:**
+*   Drill ID
+*   School ID
+*   School Name
+*   Building ID
+*   Drill Date
+*   Drill Time (e.g., during school day, lunch, assembly, after-hours)
+*   Drill Type (e.g., Evacuation, Lock-down, After-hours, Summer School)
+*   Egress Method Used (for evacuation drills, e.g., primary, fire escape, secondary)
+*   Number of Participants (estimated)
+*   Duration of Drill (minutes)
+*   Person in Charge of Drill
+*   Notes/Observations
+
+**4. College Fire Inspection Reports**
+
+**Quotes:**
+*   "It shall be the duty of the college authorities in general charge of the operation of any public or independent college to cause the buildings under the jurisdiction of such college containing classroom, dormitory, fraternities, sororities, laboratory, physical education, dining or recreational facilities for student use to be inspected at least annually for fire hazards which might endanger the lives of students, teachers and employees therein." (§ 807-b.1)
+*   "Inspections of all public and independent college buildings, with the exception of those within a city having a population of one million or more, shall be conducted by the state office of fire prevention and control or a designee of the state fire administrator." (§ 807-b.1)
+*   "An inspection report shall be produced by the inspecting agency for each building inspected." (§ 807-b.1)
+*   "The annual fire inspection for public and independent colleges shall be made when the college is in session." (§ 807-b.2)
+*   "The state fire administrator shall prescribe the format of the fire inspection report." (§ 807-b.4)
+*   "Within ninety days of completing such inspection, the office of fire prevention and control or its designee shall file a copy of the report with the office of the college authorities and with the commissioner." (§ 807-b.5)
+*   "The office of fire prevention and control or its designee shall make recommendations to the college authorities with respect to any problems relating to building fire safety noted in such reports." (§ 807-b.6)
+
+**Why:** To ensure colleges comply with annual fire inspection mandates and to track findings for safety oversight.
+
+**One row represents:** A single fire inspection report for a college building.
+
+**Covers:** Annual fire inspections for public and independent college buildings (excluding those in cities with population 1M+).
+
+**Columns:**
+*   Inspection Report ID
+*   College ID
+*   College Name
+*   Building ID
+*   Inspection Date
+*   Inspection Year
+*   Inspecting Agency (e.g., OFPC, OFPC Designee)
+*   Inspector Name/ID
+*   Report Filing Date (with college authorities)
+*   Report Filing Date (with commissioner)
+*   Overall Inspection Outcome (e.g., Pass, Deficiencies Found)
+*   Number of Deficiencies Found
+*   Recommendations Made? (Yes/No)
+*   **Linked to Dataset 5 (College Fire Inspection Violation Tracking)**
+
+**5. College Fire Inspection Violation Tracking**
+
+**Quotes:**
+*   "In the event violations of applicable codes, rules and regulations pertaining to fire safety are found during inspections, the office of fire prevention and control is authorized to take appropriate actions to ensure that violations are promptly remedied." (§ 807-b.3)
+*   "The commissioner may impose a fine of up to five hundred dollars per day upon any public or independent college which fails to remedy, to the satisfaction of the office of fire prevention and control, any violation noted in a report within thirty days of receiving a copy of such report." (§ 807-b.6)
+
+**Why:** To track specific fire safety deficiencies identified during college inspections and monitor their correction, including fines.
+
+**One row represents:** A single fire safety violation identified during a college inspection.
+
+**Covers:** All fire safety violations identified in public and independent college fire inspection reports.
+
+**Columns:**
+*   Violation ID
+*   **Inspection Report ID (Linked to Dataset 4)**
+*   College ID
+*   Building ID
+*   Violation Description
+*   Date Identified
+*   Date College Received Report
+*   Date Corrective Action Due (30 days from report receipt)
+*   Date Corrective Action Reported
+*   Violation Status (e.g., Open, Remedied, Unremedied)
+*   Fine Imposed? (Yes/No)
+*   Fine Amount
+*   Fine Start Date
+*   Fine End Date
+*   Total Fine Amount
+
+**6. College Emergency Drill Records**
+
+**Quotes:**
+*   "It shall be the duty of the person in charge of every public or private college or university within the state, to instruct and train the students by means of drills, so that they may in a sudden emergency be able to leave the college or university building in the shortest possible time and without confusion or panic." (§ 807.3)
+*   "Such drills shall be held at least three times in each year, one of which required drills shall be held between September first and December first of each such year." (§ 807.3)
+*   "In buildings where summer sessions are conducted, one of such required drills shall be held during the first week of such summer session." (§ 807.3)
+*   "At least one of such required drills shall be through use of the fire escapes on buildings where fire escapes are provided." (§ 807.3)
+*   "At least one additional drill shall be held in each year during the hours after sunset and before sunrise in college or university buildings in which students are provided with sleeping accommodations." (§ 807.3)
+
+**Why:** To track compliance with mandatory emergency drill requirements for colleges and universities.
+
+**One row represents:** A single emergency drill conducted at a college or university.
+
+**Covers:** All fire and emergency drills conducted in public and private colleges and universities.
+
+**Columns:**
+*   Drill ID
+*   College ID
+*   College Name
+*   Building ID
+*   Drill Date
+*   Drill Time (e.g., during session, summer session, after-hours)
+*   Drill Type (e.g., Evacuation, After-hours, Summer Session)
+*   Egress Method Used (for evacuation drills, e.g., primary, fire escape)
+*   Number of Participants (estimated)
+*   Duration of Drill (minutes)
+*   Person in Charge of Drill
+*   Notes/Observations
+
+**7. School Curriculum Compliance Records (Instructional Mandates)**
+
+**Quotes:**
+*   "The regents of The University of the State of New York shall prescribe courses of instruction in patriotism, citizenship, civic education and values, our shared history of diversity, the role of religious tolerance in this country, and human rights issues, with particular attention to the study of the inhumanity of genocide, slavery (including the freedom trail and underground railroad), the Holocaust, and the mass starvation in Ireland from 1845 to 1850, to be maintained and followed in all the schools of the state." (§ 801.1)
+*   "The boards of education and trustees of the several cities and school districts of the state shall require instruction to be given in such courses, by the teachers employed in the schools therein. All pupils attending such schools, over the age of eight years, shall attend upon such instruction." (§ 801.1)
+*   "Similar courses of instruction shall be prescribed and maintained in private schools in the state, and all pupils in such schools over eight years of age shall attend upon such courses." (§ 801.1)
+*   "The regents shall prescribe courses of instruction in the history, meaning, significance and effect of the provisions of the constitution of the United States, the amendments thereto, the declaration of independence, the constitution of the state of New York and the amendments thereto, to be maintained and followed in all of the schools of the state." (§ 801.2)
+*   "The commissioner shall be responsible for the enforcement of such section and shall cause to be inspected and supervise the instruction to be given in such subjects." (§ 801.3)
+*   "The regents shall ensure that the course of instruction in grades kindergarten through twelve includes a component on civility, citizenship and character education." (§ 801-a)
+*   "It shall be the duty of the commissioner to prepare, for the use of the public schools of the state, a program providing for a salute to the flag and a daily pledge of allegiance to the flag, and instruction in its correct use and display..." (§ 802.1)
+*   "Every school and teacher or instructor shall utilize a sample or facsimile ballot... when providing instruction in the electoral process..." (§ 802-a)
+*   "All pupils above the age of eight years in all elementary and secondary schools, shall receive as part of the prescribed courses of instruction therein such physical education..." (§ 803.1)
+*   "All pupils in grades K-8 in all public schools in the state shall receive instruction designed to prevent the abduction of children." (§ 803-a.1)
+*   "All pupils in grades K-8 in all public schools in the state shall receive instruction designed to prevent child sexual exploitation and child sexual abuse." (§ 803-b.1)
+*   "All schools shall ensure that their health education programs recognize the multiple dimensions of health by including mental health..." (§ 804.1)
+*   "All schools shall include, as an integral part of health education, instruction so as to discourage the misuse and abuse of alcohol, tobacco and other drugs..." (§ 804.2)
+*   "Instruction regarding methods of prevention and detection of certain cancers... shall be an integral part of a required health education course at the senior high school level..." (§ 804.5)
+*   "The regents of The University of the State of New York shall prescribe courses of instruction in highway safety and traffic regulation which shall include bicycle safety, to be maintained and followed in all the schools of the state." (§ 806.1)
+*   "The commissioner is hereby directed to provide and prescribe a course of instruction in fire and arson prevention, injury prevention and life safety education..." (§ 808.1)
+*   "The officer, board or commission authorized or required to prescribe courses of instruction shall cause instruction to be given in every elementary school... in the humane treatment and protection of animals..." (§ 809.1)
+
+**Why:** To track whether schools are implementing all mandated instructional courses and components as required by law.
+
+**One row represents:** A school's compliance status for a specific instructional mandate in a given school year.
+
+**Covers:** All public and private schools' adherence to state-mandated curriculum requirements across various subjects.
+
+**Columns:**
+*   School ID
+*   School Year
+*   Mandate Type (e.g., Patriotism/Citizenship, Civility/Character, Flag, Elections, PE, Child Abduction Prevention, Child Sexual Exploitation Prevention, Mental Health, Alcohol/Drugs/Tobacco, Cancer Prevention, Highway Safety, Fire/Arson Prevention, Humane Treatment of Animals)
+*   Compliance Status (e.g., Compliant, Non-Compliant, Partially Compliant)
+*   Date of Compliance Determination
+*   Method of Verification (e.g., Self-Report, Inspection, Curriculum Review)
+*   Notes on Non-Compliance/Corrective Actions
+*   **Linked to Dataset 8 (School Inspection Records (Instructional Compliance))**
+
+**8. School Inspection Records (Instructional Compliance)**
+
+**Quotes:**
+*   "The commissioner shall be responsible for the enforcement of such section and shall cause to be inspected and supervise the instruction to be given in such subjects." (§ 801.3)
+*   "The commissioner of education shall be responsible for the enforcement of such section and shall cause to be inspected and supervise the instruction to be given in such subjects." (§ 806.2)
+
+**Why:** To track inspections conducted by the commissioner to ensure schools are providing mandated instruction.
+
+**One row represents:** A single inspection conducted by the commissioner or designee for instructional compliance.
+
+**Covers:** Inspections of public and private schools regarding their adherence to prescribed courses of instruction.
+
+**Columns:**
+*   Inspection ID
+*   School ID
+*   School Name
+*   Inspection Date
+*   Inspector ID
+*   Instructional Mandate Inspected (e.g., Patriotism/Citizenship, Highway Safety)
+*   Findings (e.g., Compliant, Deficiencies Noted)
+*   Recommendations Made
+*   Follow-up Required? (Yes/No)
+*   **Linked to Dataset 7 (School Curriculum Compliance Records (Instructional Mandates))**
+
+**9. School District Apportionment Claims (Instructional Technology)**
+
+**Quotes:**
+*   "a school district shall be eligible for an apportionment under the provisions of this section for approved expenses for (i) the purchase or lease of micro and/or mini computer equipment or terminals for instructional purposes or (ii) technology equipment, as defined in paragraph c of subdivision two of this section, used for instructional purposes, or (iii) for the repair of such equipment and training and staff development for instructional purposes as provided hereinafter, or (iv) for expenses incurred on or after July first, two thousand eleven, any items of expenditure that are eligible for an apportionment pursuant to sections seven hundred one, seven hundred eleven and/or seven hundred fifty-one of this title, where such items are designated by the school district as eligible for aid pursuant to this section, provided, however, that if aided pursuant to this section, such expenses shall not be aidable pursuant to any other section of law." (§ 753.1)
+*   "Such aid shall be provided pursuant to a plan developed by the district which demonstrates to the satisfaction of the commissioner that the instructional computer hardware needs of the district's public school students have been adequately met and that the school district has provided for the loan of instructional computer hardware to students legally attending nonpublic schools pursuant to section seven hundred fifty-four of this article." (§ 753.1)
+*   "The apportionment shall equal the lesser of such approved expense in the base year or, the product of (i) the technology factor, (ii) the sum of the public school district enrollment and the nonpublic school enrollment in the base year as defined in subparagraphs two and three of paragraph n of subdivision one of section thirty-six hundred two of this chapter, and (iii) the building aid ratio, as defined in subdivision four of section thirty-six hundred two of this chapter." (§ 753.1)
+*   "For aid payable in the two thousand seven--two thousand eight school year and thereafter, the technology factor shall be twenty-four dollars and twenty cents." (§ 753.1)
+*   "A school district may use up to twenty percent of the product of (i) the technology factor, (ii) the sum of the public school district enrollment and the nonpublic school enrollment in the base year as defined in subparagraphs two and three of paragraph n of subdivision one of section thirty-six hundred two of this chapter, and (iii) the building aid ratio for the repair of instructional computer hardware and technology equipment and training and staff development for instructional purposes pursuant to a plan submitted to the commissioner." (§ 753.1)
+*   "The apportionment provided for in this section shall be paid at such times as may be determined by the commissioner and approved by the director of the budget, during the school year in which the expenditures are reported to the department prior to such apportionment, but not earlier than the school year after the school year in which expenses are incurred." (§ 753.4)
+
+**Why:** To track school district applications for instructional technology aid and the calculation/disbursement of funds.
+
+**One row represents:** A single claim or application for instructional technology apportionment by a school district for a specific school year.
+
+**Covers:** All school district claims for state aid related to instructional computer hardware and technology equipment.
+
+**Columns:**
+*   Claim ID
+*   School District ID
+*   School Year (Base Year for calculation)
+*   Application Date
+*   Plan Submitted? (Yes/No)
+*   Commissioner's Approval Status (Plan)
+*   Approved Expenses Claimed
+*   Public School Enrollment (Base Year) **(Linked to Dataset 29)**
+*   Nonpublic School Enrollment (Base Year) **(Linked to Dataset 29)**
+*   Building Aid Ratio (Base Year) **(Linked to Dataset 30)**
+*   Calculated Apportionment Amount
+*   Approved Apportionment Amount
+*   Date Apportionment Paid
+*   Amount Paid
+*   Percentage of Apportionment Used for Repair/Training/Staff Development
+*   **Linked to Dataset 12 (School District Technology Expenses (Instructional))**
+
+**10. Instructional Technology Loan Requests (Nonpublic Schools)**
+
+**Quotes:**
+*   "school authorities... shall have the power and duty... to loan, upon request of an individual or a group of individual pupils, to all pupils legally attending nonpublic elementary or secondary schools located in the school district, instructional computer hardware..." (§ 754.1)
+*   "School authorities shall adopt regulations specifying the date by which requests for the purchase and loan of instructional computer hardware must be received by the district." (§ 754.3)
+*   "school authorities... shall have the power and duty... to loan, upon request of an individual or a group of individual pupils, to all pupils legally attending nonpublic elementary or secondary schools located in the school district, smart schools classroom technology..." (§ 755.1)
+*   "School authorities shall adopt regulations specifying the date by which requests for the purchase and loan of smart schools classroom technology must be received by the district." (§ 755.3)
+
+**Why:** To track requests from nonpublic school students for instructional technology loans, ensuring equitable distribution.
+
+**One row represents:** A single request for instructional technology by a nonpublic school student.
+
+**Covers:** Requests for instructional computer hardware and smart schools classroom technology from students attending nonpublic schools.
+
+**Columns:**
+*   Request ID
+*   Student ID
+*   Student Name
+*   Nonpublic School ID
+*   Nonpublic School Name
+*   School District ID (where nonpublic school is located)
+*   Request Date
+*   Technology Type Requested (e.g., Instructional Computer Hardware, Smart Schools Classroom Technology)
+*   Item Requested (specific model/type if applicable)
+*   Quantity Requested
+*   Request Status (e.g., Submitted, Approved, Denied, Fulfilled)
+*   Reason for Denial (if applicable)
+*   Explanation for Late Request (if applicable)
+*   **Linked to Dataset 11 (Instructional Technology Loan Records (Nonpublic Schools))**
+
+**11. Instructional Technology Loan Records (Nonpublic Schools)**
+
+**Quotes:**
+*   "Such instructional computer hardware is to be loaned free to such children, commencing with the two thousand seven--two thousand eight school year, subject to such rules and regulations as are or may be prescribed by the board of regents and such school authorities." (§ 754.1)
+*   "No school district shall be required to loan instructional computer hardware in excess of the instructional computer hardware acquired by such district pursuant to section seven hundred fifty-three of this article." (§ 754.2)
+*   "Such instructional computer hardware shall be loaned on an equitable basis to children attending nonpublic schools in the district in the current year..." (§ 754.2)
+*   "Such smart schools classroom technology is to be loaned free to such children, commencing with the two thousand fourteen--two thousand fifteen school year, subject to such rules and regulations as are or may be prescribed by the board of regents and such school authorities." (§ 755.1)
+*   "No school district shall be required to loan smart schools classroom technology in excess of the smart schools classroom technology acquired by such district pursuant to subdivision sixteen of section thirty-six hundred forty-one of this chapter." (§ 755.2)
+*   "Such smart schools classroom technology shall be loaned on an equitable basis to children attending nonpublic schools in the district in the current year..." (§ 755.2)
+*   "no school district may loan smart schools classroom technology in an aggregate amount greater than two hundred fifty dollars multiplied by the nonpublic school enrollment in the base year..." (§ 755.2)
+
+**Why:** To track the actual loaning of instructional technology to nonpublic school students, ensuring compliance with equitable distribution and quantity limits.
+
+**One row represents:** A single loan of instructional technology to a nonpublic school student.
+
+**Covers:** All loans of instructional computer hardware and smart schools classroom technology to students attending nonpublic schools.
+
+**Columns:**
+*   Loan ID
+*   **Request ID (Linked to Dataset 10)**
+*   Student ID
+*   Nonpublic School ID
+*   School District ID (making the loan)
+*   Technology Type (e.g., Instructional Computer Hardware, Smart Schools Classroom Technology)
+*   Item ID (of the specific piece of equipment loaned) **(Linked to Dataset 12)**
+*   Loan Date
+*   Expected Return Date
+*   Actual Return Date
+*   Condition at Loan
+*   Condition at Return
+*   Loan Status (e.g., Active, Returned, Overdue, Lost/Damaged)
+*   Equitable Basis Justification
+*   Loan Value (for Smart Schools cap calculation)
+*   **Nonpublic School Enrollment (Base Year) (Linked to Dataset 29)** (for Smart Schools cap calculation)
+
+**12. School District Instructional Technology Inventory**
+
+**Quotes:**
+*   "a school district shall be eligible for an apportionment under the provisions of this section for approved expenses for (i) the purchase or lease of micro and/or mini computer equipment or terminals for instructional purposes or (ii) technology equipment, as defined in paragraph c of subdivision two of this section, used for instructional purposes..." (§ 753.1)
+*   "No school district shall be required to loan instructional computer hardware in excess of the instructional computer hardware acquired by such district pursuant to section seven hundred fifty-three of this article." (§ 754.2)
+*   "No school district shall be required to loan smart schools classroom technology in excess of the smart schools classroom technology acquired by such district pursuant to subdivision sixteen of section thirty-six hundred forty-one of this chapter." (§ 755.2)
+*   "Technology equipment", for the purposes of this article, shall mean equipment with a useful life used in conjunction with or in support of educational programs including but not limited to video, solar energy, robotic, satellite, laser and such other equipment as the commissioner shall approve provided that expenses for the purchase or lease of such equipment shall not be eligible for aid under any other provisions of this chapter." (§ 753.2.c)
+
+**Why:** To track all instructional technology equipment acquired by school districts, especially that which is eligible for state aid and loan to nonpublic schools.
+
+**One row represents:** A single piece of instructional technology equipment.
+
+**Covers:** All instructional computer hardware and technology equipment owned or leased by school districts, particularly those acquired with state aid.
+
+**Columns:**
+*   Item ID
+*   School District ID
+*   Equipment Type (e.g., Microcomputer, Mini-computer, Terminal, Video Equipment, Solar Energy Equipment, Robotic Equipment, Satellite Equipment, Laser Equipment, Smart Classroom Technology)
+*   Manufacturer
+*   Model
+*   Serial Number
+*   Acquisition Date
+*   Acquisition Cost
+*   Funding Source (e.g., §753 Apportionment, §3641(16) Apportionment, Local Funds, Federal Funds)
+*   Useful Life (years)
+*   Current Status (e.g., In Use, In Repair, Available for Loan, Retired)
+*   Location (e.g., Public School ID, Nonpublic School ID, Storage)
+*   **Linked to Dataset 11 (Instructional Technology Loan Records (Nonpublic Schools))**
+
+**13. School District Technology Expenses (Instructional)**
+
+**Quotes:**
+*   "a school district shall be eligible for an apportionment under the provisions of this section for approved expenses for (i) the purchase or lease of micro and/or mini computer equipment or terminals for instructional purposes or (ii) technology equipment... or (iii) for the repair of such equipment and training and staff development for instructional purposes..." (§ 753.1)
+*   "The apportionment shall equal the lesser of such approved expense in the base year..." (§ 753.1)
+*   "A school district may use up to twenty percent of the product of (i) the technology factor, (ii) the sum of the public school district enrollment and the nonpublic school enrollment in the base year... and (iii) the building aid ratio for the repair of instructional computer hardware and technology equipment and training and staff development for instructional purposes pursuant to a plan submitted to the commissioner." (§ 753.1)
+*   "Expenses aided pursuant to this section shall not be eligible for aid pursuant to any other provision of this chapter." (§ 753.5)
+
+**Why:** To track school district expenditures on instructional technology and related services for state aid calculation and compliance.
+
+**One row represents:** A single approved expense item incurred by a school district.
+
+**Covers:** All approved expenses for instructional computer hardware, technology equipment, repair, training, and staff development eligible for apportionment under §753.
+
+**Columns:**
+*   Expense ID
+*   School District ID
+*   School Year (when expense incurred)
+*   Expense Date
+*   Expense Type (e.g., Purchase, Lease, Repair, Training, Staff Development)
+*   Item/Service Description
+*   Vendor
+*   Amount
+*   Approved for Apportionment? (Yes/No)
+*   Amount Approved for Apportionment
+*   Designated for §753 Aid? (Yes/No)
+*   Used for 20% Repair/Training/Staff Development Cap? (Yes/No)
+*   **Linked to Dataset 9 (School District Apportionment Claims (Instructional Technology))**
+
+**14. Teacher Certification Records (Specialized Instruction)**
+
+**Quotes:**
+*   "The board of education or trustees of every school district regularly employing twenty or more teachers shall employ a teacher or teachers qualified and duly licensed under the regulations of the regents to give such instruction; in every other district of the state, they shall require such instruction to be given by the teacher or teachers regularly employed to give instruction in other subjects or by a teacher or teachers qualified and duly licensed under the regulations of the regents." (§ 803.2 - Physical Education)
+*   "Such instruction shall be taught by the regular classroom teachers or by teachers certified to teach health education." (§ 804.3 - Elementary Health Education)
+*   "Any such course shall be taught by teachers holding a certificate to teach health." (§ 804.4 - Secondary Health Education)
+*   "Instruction regarding child development and parental skills and responsibility... shall be taught by teachers certified to teach home economics or health education." (§ 804-b.2)
+*   "In addition to the requirement that all teachers of health education shall be certified to teach health, persons instructing pupils in cardiopulmonary resuscitation shall possess valid certification by an agency offering such certification in the performance of cardiopulmonary resuscitation and in its instruction." (§ 804-c.1)
+*   "In addition to the requirement that all teachers of health education shall be certified to teach health, persons instructing pupils in the correct use of automated external defibrillators shall possess valid certification by a nationally recognized organization or the state emergency medical services council offering certification in the operation of an automated external defibrillator and in its instruction." (§ 804-d)
+
+**Why:** To track the certification status of teachers required to deliver specialized instruction, ensuring compliance with qualification mandates.
+
+**One row represents:** A single certification held by a teacher for a specific instructional area.
+
+**Covers:** Certifications for teachers of physical education, health education, home economics, CPR, and AED instruction.
+
+**Columns:**
+*   Teacher ID
+*   Teacher Name
+*   Certification Type (e.g., Physical Education, Health Education, Home Economics, CPR Instructor, AED Instructor)
+*   Certifying Body (for CPR/AED)
+*   Certification Number
+*   Issue Date
+*   Expiration Date
+*   Certification Status (e.g., Active, Expired, Revoked)
+*   School District ID (where teacher is employed)
+*   School ID (where teacher is employed)
+*   **Linked to Dataset 16 (Instructor Certification Records (CPR/AED/Driver Ed))**
+
+**15. Teacher Training Records (Mandated Programs)**
+
+**Quotes:**
+*   "A school district may use up to twenty percent of the product of (i) the technology factor, (ii) the sum of the public school district enrollment and the nonpublic school enrollment in the base year... and (iii) the building aid ratio for the repair of instructional computer hardware and technology equipment and training and staff development for instructional purposes pursuant to a plan submitted to the commissioner." (§ 753.1)
+*   "The commissioner, shall provide technical assistance to assist in the development of curricula for such courses of study which shall be age appropriate and developed according to the needs and abilities of pupils at successive grade levels in order to provide awareness skills, information, self-confidence and support to aid in the prevention of child abduction." (§ 803-a.2)
+*   "The board of education or trustees of every school district shall provide appropriate training and curriculum materials for the regular teachers who provide such instruction." (§ 803-a.4 - Child Abduction Prevention)
+*   "All pre-service training programs in the state for elementary teachers shall include adequate preparation regarding the instruction in alcohol, tobacco, and other drugs set forth herein, and no teacher shall be licensed except upon satisfactory demonstration of the competencies included in the institutional proposals approved by the department." (§ 804.8)
+*   "provision of inservice training and materials for elementary level school teachers in comprehensive health education;" (§ 804-a.2.a.i.B)
+*   "Regional training centers for the purpose of developing materials and providing training programs to meet the needs of teachers statewide in the implementation of comprehensive school health education programs at the elementary level will be established." (§ 804-a.2.b)
+
+**Why:** To track mandated teacher training for specific programs and ensure compliance with professional development requirements.
+
+**One row represents:** A single instance of a teacher completing a required training program.
+
+**Covers:** Training for instructional technology, child abduction prevention, alcohol/tobacco/drug education, and comprehensive health education.
+
+**Columns:**
+*   Training Event ID
+*   Teacher ID
+*   Teacher Name
+*   School District ID
+*   School ID
+*   Training Program Type (e.g., Instructional Technology, Child Abduction Prevention, Alcohol/Drugs/Tobacco Education, Comprehensive Health Education)
+*   Training Date
+*   Training Provider/Organizer
+*   Hours of Training
+*   Completion Status (e.g., Completed, In Progress)
+*   **Linked to Dataset 23 (Grant Awards (Comprehensive Health Education Demonstration Program))** (if training is grant-funded)
+
+**16. School Course Offerings (Voluntary/Specialized)**
+
+**Quotes:**
+*   "the board of education of any school district may offer during school hours a junior reserve officer training program in conjunction with the United States Department of Defense to those students in grades nine through twelve who are at least fourteen years of age provided that enrollment and participation in such program is voluntary on the part of the student and written consent of a parent or guardian is submitted by such student and further provided, that the conduct of instruction on or the presence within any school of any type of current or future weaponry as part of such program is prohibited." (§ 802.3)
+*   "Notwithstanding any other provision of law, all school districts providing instruction in driver education shall include in such instruction: (a) a driver safety component with an emphasis on the effects of alcohol and drug use, (b) instruction in motorcycle safety awareness." (§ 806-a.1)
+*   "Instructions regarding cardiopulmonary resuscitation may be offered for voluntary admission as a part of the health education curriculum in all senior high schools." (§ 804-c.1)
+*   "Instructions regarding the correct use of an automated external defibrillator shall be included as a part of the health education curriculum in all senior high schools when cardiopulmonary resuscitation instruction is being provided as authorized by section eight hundred four-c of this article." (§ 804-d)
+
+**Why:** To track which schools offer specific voluntary or specialized courses that have associated regulations or requirements.
+
+**One row represents:** A specific course offered by a school in a given school year.
+
+**Covers:** Junior Reserve Officer Training (JROTC), Driver Education, Cardiopulmonary Resuscitation (CPR) instruction, and Automated External Defibrillator (AED) instruction.
+
+**Columns:**
+*   Course Offering ID
+*   School ID
+*   School Year
+*   Course Name (e.g., JROTC, Driver Education, CPR Instruction, AED Instruction)
+*   Course Type (e.g., Voluntary, Specialized)
+*   Grades Offered
+*   Instructor ID **(Linked to Dataset 17)**
+*   Enrollment Count
+*   Compliance with specific course requirements (e.g., no weaponry for JROTC, alcohol/drug component for Driver Ed)
+*   **Linked to Dataset 18 (JROTC Program Enrollment Records)**
+*   **Linked to Dataset 19 (Supervised Driving Experience Certifications)**
+
+**17. Instructor Certification Records (CPR/AED/Driver Ed)**
+
+**Quotes:**
+*   "In addition to the requirement that all teachers of health education shall be certified to teach health, persons instructing pupils in cardiopulmonary resuscitation shall possess valid certification by an agency offering such certification in the performance of cardiopulmonary resuscitation and in its instruction." (§ 804-c.1)
+*   "In addition to the requirement that all teachers of health education shall be certified to teach health, persons instructing pupils in the correct use of automated external defibrillators shall possess valid certification by a nationally recognized organization or the state emergency medical services council offering certification in the operation of an automated external defibrillator and in its instruction." (§ 804-d)
+*   "The commissioner, upon approval by the commissioner of motor vehicles, shall establish a curriculum for the alcohol and drug education component which shall include but not be limited to: instruction describing the hazards of driving while impaired or intoxicated; the penalties for alcohol related motor vehicle violations including sanctions set forth in the penal law that apply to homicides and assaults arising out of the operation of a motor vehicle while intoxicated and those sanctions set forth in the vehicle and traffic law relating to driving while intoxicated; and the medical, biological and physiological effects of the consumption of alcohol and their impact on the operation of a motor vehicle." (§ 806-a.1) (Implies need for qualified driver education instructors)
+
+**Why:** To track the specific certifications required for instructors of CPR, AED, and Driver Education courses.
+
+**One row represents:** A single certification held by an instructor for a specific course.
+
+**Covers:** Certifications for instructors of CPR, AED, and Driver Education.
+
+**Columns:**
+*   Instructor ID
+*   Instructor Name
+*   Certification Type (e.g., CPR Instructor, AED Instructor, Driver Education Instructor)
+*   Certifying Body (e.g., American Heart Association, American Red Cross, State EMS Council, DMV-approved)
+*   Certification Number
+*   Issue Date
+*   Expiration Date
+*   Certification Status (e.g., Active, Expired)
+*   School District ID (where instructor is employed)
+*   School ID (where instructor is employed)
+*   **Linked to Dataset 14 (Teacher Certification Records (Specialized Instruction))** (if also a certified teacher)
+
+**18. JROTC Program Enrollment Records**
+
+**Quotes:**
+*   "the board of education of any school district may offer during school hours a junior reserve officer training program in conjunction with the United States Department of Defense to those students in grades nine through twelve who are at least fourteen years of age provided that enrollment and participation in such program is voluntary on the part of the student and written consent of a parent or guardian is submitted by such student and further provided, that the conduct of instruction on or the presence within any school of any type of current or future weaponry as part of such program is prohibited." (§ 802.3)
+
+**Why:** To track student enrollment in JROTC programs and ensure compliance with age, consent, and voluntary participation requirements.
+
+**One row represents:** A single student's enrollment in a JROTC program for a specific school year.
+
+**Covers:** Students enrolled in Junior Reserve Officer Training (JROTC) programs.
+
+**Columns:**
+*   Enrollment ID
+*   Student ID
+*   Student Name
+*   School ID
+*   School Year
+*   JROTC Program Name
+*   Student Age at Enrollment
+*   Parent/Guardian Consent Received? (Yes/No)
+*   Consent Date
+*   Voluntary Participation Confirmed? (Yes/No)
+*   **Linked to Dataset 16 (School Course Offerings (Voluntary/Specialized))**
+
+**19. Supervised Driving Experience Certifications**
+
+**Quotes:**
+*   "The commissioner, upon approval of the commissioner of motor vehicles, shall establish by regulation a certification process by driver education courses of the amount of time a holder of a class DJ or class MJ learner's permit has spent operating a motor vehicle while under the immediate supervision of a driver education teacher." (§ 806-a.2)
+*   "A certificate issued pursuant to this subdivision shall be deemed to be proof of all or a portion of the supervised driving experience required under certification pursuant to paragraph (d) of subdivision two of section five hundred two of the vehicle and traffic law." (§ 806-a.2)
+
+**Why:** To track certifications issued by driver education courses for supervised driving experience, which are required for learner's permits.
+
+**One row represents:** A single certification of supervised driving experience issued to a student.
+
+**Covers:** Certifications for supervised driving experience for Class DJ or Class MJ learner's permit holders.
+
+**Columns:**
+*   Certification ID
+*   Student ID
+*   Student Name
+*   School ID (offering driver education)
+*   Driver Education Course ID **(Linked to Dataset 16)**
+*   Learner's Permit Type (DJ, MJ)
+*   Total Supervised Driving Hours Certified
+*   Certification Issue Date
+*   Driver Education Teacher ID **(Linked to Dataset 17)**
+*   **Linked to Dataset 16 (School Course Offerings (Voluntary/Specialized))**
+
+**20. School Building Fire Safety Feature Inventory**
+
+**Quotes:**
+*   "In all public and private school buildings having a central annunciator panel or fire alarm cabinet which displays a visual signal identifying any heat detector, smoke detector, or manually operated fire alarm box within the building which has been activated, there shall be provided as a part of or immediately adjacent to such panel or cabinet a chart or plan showing the specific location within the building of each such device." (§ 807-d.1)
+*   "In the case of school buildings and additions to existing school buildings, the construction of which is commenced after September first, nineteen hundred seventy-three, any such panel or cabinet and such chart or plan within such building or addition shall be so located that the same may be read without entering the building." (§ 807-d.2)
+
+**Why:** To track the presence and accessibility of critical fire safety features like annunciator panels and location charts in school buildings.
+
+**One row represents:** A specific fire safety feature within a school building.
+
+**Covers:** Central annunciator panels, fire alarm cabinets, and associated location charts/plans in public and private school buildings.
+
+**Columns:**
+*   Feature ID
+*   School ID
+*   Building ID
+*   Feature Type (e.g., Annunciator Panel, Fire Alarm Cabinet, Location Chart/Plan)
+*   Location within Building
+*   Displays Visual Signal? (Yes/No)
+*   Chart/Plan Present? (Yes/No)
+*   Chart/Plan Accuracy Verified? (Yes/No)
+*   Readable Without Entering Building? (Yes/No - for post-1973 construction)
+*   Date of Last Verification
+
+**21. School Fire Alarm Interconnection Agreements**
+
+**Quotes:**
+*   "The school authorities designated in subdivision eight of section eight hundred seven-a of this article in charge of the operation of any public school or of any private school designated in subdivision nine of such section, located in an area within which a fire department or fire company is responsible for fire protection and within which there is no electrically or electronically operated fire alarm reporting system provided for public use may cause the internal fire alarm, fire detection, or fire extinguishing system of each building in which is contained classroom, dormitory, laboratory, physical education, dining or recreational facilities for student use to be interconnected with the fire alarm reporting location or system which is provided for such fire department or fire company to receive alarms from the public so that upon activation of such internal fire alarm, fire detection, or fire extinguishing system a signal will be automatically transmitted to such fire alarm reporting location or system." (§ 807-c.1)
+*   "School authorities and the governing body having jurisdiction of any fire department or fire company are hereby authorized, by agreement between them, to apportion the costs of installing and maintaining any such interconnection, and such costs are hereby deemed appropriate expenditures from the funds of such school authorities and governing bodies." (§ 807-c.2)
+
+**Why:** To track agreements between school authorities and fire departments for the interconnection of fire alarm systems.
+
+**One row represents:** A single agreement for fire alarm system interconnection.
+
+**Covers:** Agreements for interconnecting school fire alarm systems with local fire department reporting systems.
+
+**Columns:**
+*   Agreement ID
+*   School ID
+*   Fire Department/Company ID
+*   Agreement Date
+*   Building ID (covered by agreement)
+*   System Type Interconnected (e.g., Fire Alarm, Fire Detection, Fire Extinguishing)
+*   Interconnection Status (e.g., Active, Planned, Terminated)
+*   Installation Cost
+*   Maintenance Cost (Annual)
+*   Cost Apportionment Details
+*   **Linked to Dataset 1 (School Fire Inspection Reports (K-12))** (for school context)
+
+**22. School Certificate of Occupancy Status (K-12 Public)**
+
+**Quotes:**
+*   "In the event that a public school fails to correct violations following a re-inspection, the commissioner may deny an annual certificate of occupancy to such school building." (§ 807-a.6.a)
+
+**Why:** To track the annual certificate of occupancy status for public school buildings, especially in relation to fire safety compliance.
+
+**One row represents:** The certificate of occupancy status for a public school building for a specific year.
+
+**Covers:** Annual certificates of occupancy for K-12 public school buildings.
+
+**Columns:**
+*   Certificate ID
+*   School ID
+*   Building ID
+*   School Year
+*   Certificate Status (e.g., Issued, Denied, Pending)
+*   Issue Date
+*   Denial Date (if applicable)
+*   Reason for Denial (if applicable, e.g., Uncorrected Fire Violations)
+*   **Linked to Dataset 2 (School Fire Inspection Violation Tracking (K-12))**
+
+**23. Grant Applications (Comprehensive Health Education Demonstration Program)**
+
+**Quotes:**
+*   "Within the amounts appropriated, the commissioner is hereby authorized to establish a demonstration program and to distribute state funds to local school districts, boards of cooperative educational services and in certain instances community school districts, for the development, implementation, evaluation, validation, demonstration and replication of exemplary comprehensive health education programs..." (§ 804-a.1)
+*   "Such grants shall include the development, implementation, and evaluation of a comprehensive health education program..." (§ 804-a.2.a.i)
+*   "Grants will be awarded to local school districts or boards of cooperative educational services for the replication of nationally or state-validated exemplary health education programs." (§ 804-a.2.d)
+
+**Why:** To track applications submitted by school districts and BOCES for comprehensive health education demonstration grants.
+
+**One row represents:** A single grant application for the Comprehensive School Health Education Demonstration Program.
+
+**Covers:** Applications for developer grants and replication grants under the Comprehensive School Health Education Demonstration Program.
+
+**Columns:**
+*   Application ID
+*   Applicant ID (School District ID or BOCES ID)
+*   Applicant Name
+*   Application Date
+*   Grant Type (e.g., Developer Grant, Replication Grant)
+*   Project Title
+*   Requested Amount
+*   Application Status (e.g., Submitted, Under Review, Approved, Denied)
+*   Reason for Denial (if applicable)
+*   **Linked to Dataset 24 (Grant Awards (Comprehensive Health Education Demonstration Program))**
+
+**24. Grant Awards (Comprehensive Health Education Demonstration Program)**
+
+**Quotes:**
+*   "Within the amounts appropriated, the commissioner is hereby authorized to establish a demonstration program and to distribute state funds to local school districts, boards of cooperative educational services and in certain instances community school districts, for the development, implementation, evaluation, validation, demonstration and replication of exemplary comprehensive health education programs..." (§ 804-a.1)
+*   "Such grants shall include the development, implementation, and evaluation of a comprehensive health education program including such activities as: (A) coordination of health instruction with other available programs in the school and the community related to health education; (B) provision of inservice training and materials for elementary level school teachers in comprehensive health education; (C) development and implementation of evaluation procedures to measure students' knowledge, skills, behaviors, and attitudes prior to and after project implementation; and (D) development and implementation of a mechanism for project maintenance and long-range programming." (§ 804-a.2.a.i)
+*   "Upon successful completion of the above activities and the availability of funds, such grant recipients will assist other local educational agencies with replication." (§ 804-a.2.a.ii)
+*   "Grants will be awarded to local school districts or boards of cooperative educational services for the replication of nationally or state-validated exemplary health education programs." (§ 804-a.2.d)
+
+**Why:** To track the awarding of grants for comprehensive health education programs and monitor their implementation and outcomes.
+
+**One row represents:** A single grant awarded under the Comprehensive School Health Education Demonstration Program.
+
+**Covers:** All grants awarded for comprehensive health education programs, including developer and replication grants.
+
+**Columns:**
+*   Grant ID
+*   **Application ID (Linked to Dataset 23)**
+*   Recipient ID (School District ID or BOCES ID)
+*   Recipient Name
+*   Award Date
+*   Award Amount
+*   Grant Type (e.g., Developer Grant, Replication Grant)
+*   Project Start Date
+*   Project End Date
+*   Project Status (e.g., Active, Completed, Closed)
+*   Evaluation Required? (Yes/No)
+*   **Linked to Dataset 25 (Program Evaluation Records (Comprehensive Health Education Demonstration Program))**
+*   **Linked to Dataset 15 (Teacher Training Records (Mandated Programs))** (for inservice training component)
+
+**25. Program Evaluation Records (Comprehensive Health Education Demonstration Program)**
+
+**Quotes:**
+*   "Such grants shall include the development, implementation, and evaluation of a comprehensive health education program including such activities as: ... (C) development and implementation of evaluation procedures to measure students' knowledge, skills, behaviors, and attitudes prior to and after project implementation;" (§ 804-a.2.a.i.C)
+
+**Why:** To track the evaluation data and outcomes of comprehensive health education demonstration programs.
+
+**One row represents:** A single evaluation data point or summary for a grant-funded program.
+
+**Covers:** Evaluation data collected for comprehensive health education programs funded by demonstration grants.
+
+**Columns:**
+*   Evaluation ID
+*   **Grant ID (Linked to Dataset 24)**
+*   Recipient ID
+*   Evaluation Date
+*   Evaluation Type (e.g., Baseline, Post-Implementation)
+*   Metric (e.g., Student Knowledge Score, Student Skill Level, Student Behavior Change, Student Attitude)
+*   Measurement Value
+*   Number of Students Evaluated
+*   Evaluation Methodology
+*   Summary Findings
+*   Recommendations from Evaluation
+
+**26. Advisory Committee Member Roster (AANHPI History)**
+
+**Quotes:**
+*   "The commissioner shall establish an Asian American, Native Hawaiians and Pacific Islander (AANHPI) history advisory committee." (§ 805.1)
+*   "The committee shall be comprised of four members, to be appointed as follows: (i) one member appointed by the governor; (ii) one member appointed by the temporary president of the senate; (iii) one member appointed by the speaker of the assembly; and (iv) one member appointed by the commissioner." (§ 805.2.a)
+*   "All members appointed to the committee shall be experts in Asian American, Native Hawaiians and/or Pacific Islander studies and/or have a background in educational instruction and/or educational administration." (§ 805.2.b)
+*   "All members of the committee shall be appointed within ninety days of the effective date of this section." (§ 805.2.c)
+*   "Vacancies in the membership of the committee shall be filled in the same manner provided for original appointments." (§ 805.3)
+*   "Committee members shall receive no compensation for their services, but shall be allowed their actual and necessary expenses incurred in the performance of their duties." (§ 805.7)
+
+**Why:** To track the composition and appointment details of the AANHPI History Advisory Committee.
+
+**One row represents:** A single member of the AANHPI History Advisory Committee.
+
+**Covers:** All appointed members of the Asian American, Native Hawaiians and Pacific Islander History Advisory Committee.
+
+**Columns:**
+*   Member ID
+*   Member Name
+*   Appointing Authority (e.g., Governor, Senate President, Assembly Speaker, Commissioner)
+*   Appointment Date
+*   Term Start Date
+*   Term End Date (or "Repealed Date" if applicable)
+*   Expertise Area (e.g., AANHPI Studies, Educational Instruction, Educational Administration)
+*   Vacancy Reason (if applicable)
+*   **Linked to Dataset 28 (Committee Expense Reimbursement Records (AANHPI History))**
+
+**27. Advisory Committee Meeting Records (AANHPI History)**
+
+**Quotes:**
+*   "The committee shall meet no less than four times per year." (§ 805.4)
+
+**Why:** To track the meetings of the AANHPI History Advisory Committee, ensuring compliance with meeting frequency.
+
+**One row represents:** A single meeting of the AANHPI History Advisory Committee.
+
+**Covers:** All official meetings of the Asian American, Native Hawaiians and Pacific Islander History Advisory Committee.
+
+**Columns:**
+*   Meeting ID
+*   Meeting Date
+*   Meeting Time
+*   Location
+*   Attendance Count
+*   Quorum Met? (Yes/No)
+*   Key Topics Discussed
+*   Decisions Made
+*   **Linked to Dataset 26 (Advisory Committee Member Roster (AANHPI History))** (for attendance)
+
+**28. Committee Expense Reimbursement Records (AANHPI History)**
+
+**Quotes:**
+*   "Committee members shall receive no compensation for their services, but shall be allowed their actual and necessary expenses incurred in the performance of their duties." (§ 805.7)
+
+**Why:** To track the reimbursement of expenses for AANHPI History Advisory Committee members.
+
+**One row represents:** A single expense reimbursement claim by a committee member.
+
+**Covers:** All actual and necessary expenses incurred by AANHPI History Advisory Committee members.
+
+**Columns:**
+*   Reimbursement ID
+*   **Member ID (Linked to Dataset 26)**
+*   Claim Date
+*   Expense Date
+*   Expense Type (e.g., Travel, Accommodation, Meals)
+*   Amount Claimed
+*   Amount Approved
+*   Payment Date
+*   Description of Expense
+*   Associated Meeting ID (if applicable) **(Linked to Dataset 27)**
+
+**29. School District Enrollment Data**
+
+**Quotes:**
+*   "the sum of the public school district enrollment and the nonpublic school enrollment in the base year as defined in subparagraphs two and three of paragraph n of subdivision one of section thirty-six hundred two of this chapter" (§ 753.1)
+*   "the sum of the public school district enrollment and the nonpublic school enrollment in the base year as defined in subparagraphs two and three of paragraph n of subdivision one of section thirty-six hundred two of this chapter" (§ 753.1)
+*   "no school district may loan smart schools classroom technology in an aggregate amount greater than two hundred fifty dollars multiplied by the nonpublic school enrollment in the base year, at time of enactment, as defined in subparagraph three of paragraph n of subdivision one of section thirty-six hundred two of this chapter." (§ 755.2)
+
+**Why:** To collect and maintain enrollment figures for public and nonpublic schools, essential for calculating state aid apportionments and loan limits.
+
+**One row represents:** The enrollment figures for a specific school district in a given school year.
+
+**Covers:** Public school district enrollment and nonpublic school enrollment within each school district.
+
+**Columns:**
+*   School District ID
+*   School Year
+*   Public School Enrollment (Total)
+*   Nonpublic School Enrollment (Total within district)
+*   Source of Data
+*   Date Data Collected
+*   **Linked to Dataset 9 (School District Apportionment Claims (Instructional Technology))**
+*   **Linked to Dataset 11 (Instructional Technology Loan Records (Nonpublic Schools))**
+
+**30. School District Building Aid Ratios**
+
+**Quotes:**
+*   "the building aid ratio, as defined in subdivision four of section thirty-six hundred two of this chapter." (§ 753.1)
+*   "the building aid ratio, as defined in subdivision four of section thirty-six hundred two of this chapter." (§ 753.1)
+
+**Why:** To collect and maintain building aid ratios for school districts, essential for calculating state aid apportionments.
+
+**One row represents:** The building aid ratio for a specific school district in a given school year.
+
+**Covers:** Building aid ratios for all eligible school districts.
+
+**Columns:**
+*   School District ID
+*   School Year
+*   Building Aid Ratio
+*   Source of Data
+*   Date Data Collected
+*   **Linked to Dataset 9 (School District Apportionment Claims (Instructional Technology))**
+
+**31. Local Advisory Council Records (Curriculum Development)**
+
+**Quotes:**
+*   "For purposes of developing such courses of study, the board of education or trustees of every school district may establish local advisory councils or utilize the school-based shared decision making and planning committee established pursuant to regulations of the commissioner to make recommendations concerning the content and implementation of such courses." (§ 803-a.3 - Child Abduction Prevention)
+*   "Such advisory councils shall consist of, but not be limited to, parents, school trustees and board members, appropriate school personnel, business and community representatives, and law enforcement personnel having experience in the prevention of child abduction." (§ 803-a.3)
+
+**Why:** To track the establishment and composition of local advisory councils involved in curriculum development for child abduction prevention.
+
+**One row represents:** A single local advisory council established by a school district.
+
+**Covers:** Local advisory councils or committees making recommendations for child abduction prevention courses.
+
+**Columns:**
+*   Council ID
+*   School District ID
+*   Council Name
+*   Establishment Date
+*   Purpose (e.g., Child Abduction Prevention Curriculum)
+*   Number of Members
+*   Member Composition (e.g., Parents, School Trustees, Law Enforcement)
+*   Last Meeting Date
+*   Recommendations Submitted? (Yes/No)
+*   **Linked to Dataset 7 (School Curriculum Compliance Records (Instructional Mandates))**
+
+**32. Pre-service Teacher Training Program Approvals (Health Education)**
+
+**Quotes:**
+*   "All pre-service training programs in the state for elementary teachers shall include adequate preparation regarding the instruction in alcohol, tobacco, and other drugs set forth herein, and no teacher shall be licensed except upon satisfactory demonstration of the competencies included in the institutional proposals approved by the department." (§ 804.8)
+
+**Why:** To track the approval status of pre-service teacher training programs that include mandated health education components.
+
+**One row represents:** A single pre-service teacher training program approved by the department.
+
+**Covers:** Pre-service training programs for elementary teachers that include instruction on alcohol, tobacco, and other drugs.
+
+**Columns:**
+*   Program ID
+*   Institution Name
+*   Program Name
+*   Approval Date
+*   Approval Status (e.g., Approved, Pending, Revoked)
+*   Competencies Covered (e.g., Alcohol/Drugs/Tobacco Instruction)
+*   Last Review Date
+*   **Linked to Dataset 15 (Teacher Training Records (Mandated Programs))**
+
+**33. Curriculum Adoption Records (Health Education)**
+
+**Quotes:**
+*   "school districts shall utilize either the curriculum for health education instruction regarding alcohol, tobacco and other drugs prescribed by the commissioner or a course approved by the commissioner in accordance with criteria established by the commissioner." (§ 804.6.a)
+
+**Why:** To track which health education curriculum (prescribed or approved) each school district has adopted for alcohol, tobacco, and drug instruction.
+
+**One row represents:** A school district's adoption of a specific health education curriculum.
+
+**Covers:** School districts' adoption of health education curricula for alcohol, tobacco, and other drugs.
+
+**Columns:**
+*   Adoption ID
+*   School District ID
+*   School Year
+*   Curriculum Type (e.g., Commissioner Prescribed, Commissioner Approved)
+*   Curriculum Name/Version
+*   Adoption Date
+*   Approval Date (if Commissioner Approved)
+*   **Linked to Dataset 7 (School Curriculum Compliance Records (Instructional Mandates))**
+
+**34. Curriculum Material Distribution Records**
+
+**Quotes:**
+*   "The regents shall make available to all elementary schools in the state suitable curriculum materials to aid in the instruction of pupils in grades kindergarten through six in the understanding and acceptance of children with disabilities as defined in section forty-four hundred one of this chapter." (§ 801.5)
+*   "The commissioner shall make available an interpersonal violence prevention education package for grades kindergarten through twelve, which package may consist of student pamphlets, parent pamphlets, videotapes and other informative materials to be distributed to school districts, and shall encourage the use of such material as part of the health or other related curricula or programs." (§ 804.6.b)
+*   "School authorities shall provide the needed facilities, time, and place for the instruction set forth herein and shall provide learning aids and curriculum resource materials which contribute to effective teaching methods and learning in health education regarding alcohol, tobacco, and other drugs." (§ 804.7)
+*   "The board of education or trustees of every school district shall provide appropriate training and curriculum materials for the regular teachers who provide such instruction." (§ 803-a.4)
+*   "School authorities that choose to offer such course shall provide the needed facilities, time and place for the instruction set forth herein and shall provide learning aids and curriculum resource materials to support such course of study." (§ 804-c.3)
+
+**Why:** To track the distribution of mandated or recommended curriculum materials and learning aids to schools.
+
+**One row represents:** A single distribution event of curriculum materials or learning aids to a school.
+
+**Covers:** Distribution of curriculum materials for disability awareness, interpersonal violence prevention, child abduction prevention, health education, CPR, and AED.
+
+**Columns:**
+*   Distribution ID
+*   Distribution Date
+*   Material Type (e.g., Disability Awareness, Violence Prevention Package, Child Abduction Prevention, Health Education, CPR, AED)
+*   Material Description/Title
+*   Recipient Type (e.g., School District, Elementary School, Senior High School)
+*   Recipient ID
+*   Quantity Distributed
+*   Method of Distribution (e.g., Mail, Electronic, Regional Center)
+*   **Linked to Dataset 7 (School Curriculum Compliance Records (Instructional Mandates))**
+
+**35. Shared Teacher Agreements (Physical Education)**
+
+**Quotes:**
+*   "The boards of education or trustees of two or more contiguous districts in the same supervisory district, however, may join in the employment of a teacher qualified and duly licensed under the regulations of the regents to give such instruction; and the salary of such teacher and the expenses incurred on account of such instruction shall be apportioned by the district superintendent among such districts according to the assessed valuation thereof, and as so apportioned shall be a charge upon each of such districts." (§ 803.3)
+
+**Why:** To track agreements between contiguous school districts for sharing qualified physical education teachers.
+
+**One row represents:** A single agreement between school districts for sharing a physical education teacher.
+
+**Covers:** Agreements for shared employment of physical education teachers.
+
+**Columns:**
+*   Agreement ID
+*   Agreement Date
+*   Supervisory District ID
+*   Lead School District ID
+*   Participating School District IDs (list)
+*   Teacher ID **(Linked to Dataset 14)**
+*   Teacher Name
+*   Apportionment Method
+*   Salary Apportionment Details
+*   Expense Apportionment Details
+*   Agreement Status (e.g., Active, Expired)
+
+**36. Committee Recommendation Submissions (AANHPI History)**
+
+**Quotes:**
+*   "The committee shall provide recommendations on the following: (a) high-quality K-12 curricular and instructional resources on AANHPI history; and (b) strategies for strengthening and deepening public K-12 education programs in the areas of AANHPI history, including analysis of the survey referenced in section two of the chapter of the laws of two thousand twenty-five that added this section." (§ 805.5)
+*   "The committee shall submit their recommendations to the commissioner no later than two years after the effective date of this section and be disbanded thereafter." (§ 805.6)
+
+**Why:** To track the submission of recommendations by the AANHPI History Advisory Committee to the commissioner.
+
+**One row represents:** A single submission of recommendations by the AANHPI History Advisory Committee.
+
+**Covers:** Recommendations provided by the AANHPI History Advisory Committee.
+
+**Columns:**
+*   Submission ID
+*   Submission Date
+*   Commissioner Receipt Date
+*   Recommendation Type (e.g., Curricular Resources, Program Strategies)
+*   Summary of Recommendations
+*   Status (e.g., Received, Under Review, Implemented)
+*   **Linked to Dataset 27 (Advisory Committee Meeting Records (AANHPI History))** (if recommendations were finalized at a meeting)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications (for committee members, etc.)
+*   Rules and regulations (prescribed by Regents, Commissioner, e.g., for loan programs, curriculum, teacher qualifications)
+*   Receipts (for expenses, though expense *records* are tabular)
+*   Photos, research documents, other text/image information (e.g., curriculum materials themselves, plans submitted by districts for aid, advisory council recommendations *documents*, evaluation reports, JROTC program details from DoD).
+*   Sample/facsimile ballots (provided by board of elections).
+*   Manuals or handbooks prepared for the guidance of teachers.
+*   Interpersonal violence prevention education package (student pamphlets, parent pamphlets, videotapes).
+*   Curriculum for alcohol and drug education (prescribed by commissioner).
+*   Curriculum for child development and parental skills (promulgated by commissioner).
+*   Curriculum for CPR instruction (prescribed by commissioner).
+*   Curriculum for fire and arson prevention (prescribed by commissioner).
+*   Curriculum for humane treatment of animals (prescribed by officer/board/commission).
+*   Curriculum for highway safety and traffic regulation (prescribed by Regents).
+*   Curriculum for child abduction prevention (developed with technical assistance from commissioner).
+*   Curriculum for child sexual exploitation and abuse prevention (defined by commissioner).
+*   Curriculum for patriotism, citizenship, civic education, values, diversity, human rights, historic documents (prescribed by Regents).
+*   Curriculum for civility, citizenship and character education (ensured by Regents).
+*   Program for flag salute, pledge, instruction (prepared by commissioner).
+*   Program for physical education (determined by Regents).
+*   Curriculum for prevention and detection of certain cancers.
+*   Curriculum for AANHPI history (recommended by committee).
+*   Plans developed by districts demonstrating instructional computer hardware needs and loan provisions.
+*   Written consent of a parent or guardian for JROTC enrollment.
+*   Written explanation for refusal of fire inspection by local authority.
+*   Public notice of fire inspection report filing (text of notice).
+*   Proof of publication or posting of fire inspection notice.
+*   Details of deficiencies and proposed actions for fire inspection (narrative).
+*   Reports from OFPC to college authorities (narrative reports).
+*   Agreements for fire alarm interconnection (text of agreement).
+*   Chart or plan showing specific location of fire alarm devices within a building.
+*   Regulations adopted by school authorities for loan request dates.
+*   Regulations promulgated by commissioner for health education courses.
+*   Rules adopted by Regents for physical education.
+*   Rules adopted by Regents for patriotism/citizenship/highway safety instruction.
+*   Rules and regulations prescribed by the board of regents and school authorities for technology loans.
+*   Local laws for county fire coordinator powers and duties.
+*   Certificate of incorporation of fire corporations.
+*   Criteria established by commissioner for approved health education courses.
+*   Recommendations to the board of regents relating to modernization of health instruction.
+*   Survey referenced in §805.5.b.
