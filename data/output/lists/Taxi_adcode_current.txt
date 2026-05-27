@@ -1,0 +1,1242 @@
+**1. Licenses Issued**
+
+**Quotes:**
+- § 19-502.e: ""Vehicle license" means taxicab license, coach license, wheelchair accessible van license or for-hire vehicle license issued by the commission."
+- § 19-502.d: ""Driver's license" means a license for a driver issued by the commission."
+- § 19-502.h: ""Medallion" means the metal plate issued by the commission for displaying the license number of a licensed taxicab on the outside of the vehicle."
+- § 19-504.a.1: "A taxi-cab, coach, wheelchair accessible van, commuter van or for-hire vehicle shall operate within the city of New York only if the owner shall first have obtained from the commission a taxicab, coach, wheelchair accessible van, commuter van or for-hire vehicle license for such vehicle and only while such license is in full force and effect."
+- § 19-504.a.1: "Vehicle licenses shall be issued for a term of not less than one nor more than two years and shall expire on the date set forth on the license unless sooner suspended or revoked by the commission."
+- § 19-504.d-1.4: "A taxicab license shall be valid for a period of 2 years, upon the expiration of which a taxicab licensee may submit an application for renewal."
+- § 19-504.n: "Every commuter van license shall be issued on the condition that the applicant is in compliance with the registration and insurance requirements set forth in section 19-504.3 of this chapter and any rules promulgated pursuant thereto during the time that such license is in effect."
+- § 19-504.p: "A commuter van license shall not be transferable or assignable."
+- § 19-504.r: "Notwithstanding any contrary provision of law, there shall be no more than 735 licenses for commuter vans."
+- § 19-505.a: "No person shall drive any motor vehicle for hire which is regulated by the provisions of this chapter without first obtaining from the commission: (i) a taxicab or universal driver's license... (ii) a coach driver's license... (iii) a for-hire vehicle or universal driver's license... (iv) a wheelchair accessible van driver's license... (v) a commuter van driver's license."
+- § 19-505.f: "Upon satisfactory fulfillment of the applicable requirements, there shall be issued to the applicant a driver's license which shall be in such form as the commission may direct."
+- § 19-505.g: "Original driver's licenses and renewals thereof shall be valid for a period of not less than one year nor more than three years."
+- § 19-505.o: "Every commuter van driver's license shall be issued on the condition that the applicant possesses a commercial driver's license and complies with article nineteen-A of the vehicle and traffic law... during the time that such commuter van driver's license is in effect."
+- § 19-509.a: "It shall be unlawful for any person to engage in the business of manufacturing, selling, repairing and adjusting or calibrating taximeters or taximeter equipment for use upon any licensed vehicle in the city unless he or she shall secure a license therefor from the commission..."
+- § 19-509.a: "Such licenses shall be issued for a period not exceeding one year and shall expire on the thirty-first day of March following the date of issue."
+- § 19-511.a: "The commission shall require licenses for the operation of two-way radio or other communications systems used for dispatching or conveying information to drivers of licensed vehicles... and shall require licenses for base stations..."
+- § 19-511.e: "A licensed base station shall at all times have no fewer than ten affiliated vehicles..."
+- § 19-512.a: "Any taxicab license issued pursuant to this chapter and any renewals thereof, shall be transferable to a transferee who has demonstrated to the satisfaction of the commission that he is qualified to assume the duties and obligations of a taxicab owner."
+- § 19-518.a: "No for-hire vehicle license shall be transferred or assigned, nor shall such vehicle license be used in affiliation with any garage or business location other than the location stated in such license."
+- § 19-518.b: "Any base station license or ownership interest in the licensee may be transferred to a proposed transferee who has demonstrated to the satisfaction of the commission the qualifications to assume the duties and obligations of a base station owner..."
+- § 19-525.a: "No vehicle licensed pursuant to the provisions of this chapter shall carry any advertising on the exterior of such vehicle... unless the owner thereof shall first have obtained from the commission a permit to carry such exterior advertising."
+- § 19-525.b: "Such permits shall be issued as of September first, and shall expire on August thirty-first next succeeding unless sooner surrendered, suspended, revoked or terminated."
+- § 19-525.g: "No permit issued under this section shall be transferred or assigned."
+- § 19-525.1.c: "It shall be unlawful for any person to provide or supply an approved electronic tablet for use in a for-hire vehicle unless such person secures a license therefor from the commission."
+- § 19-527.b: "no person shall engage in the business or occupation of... a taxicab broker without first obtaining a license therefor from the commission."
+- § 19-527.b: "Such licenses shall be issued as of January first and shall expire on December thirty-first next succeeding, unless sooner suspended or revoked by the commission."
+- § 19-530.a: "It shall be unlawful to act as an agent without first obtaining a license therefor from the commission."
+- § 19-530.a: "Such licenses shall be issued for a period not to exceed one year and shall expire on December thirty-first of the year in which it was issued, unless sooner suspended or revoked by the commission."
+- § 19-548.a: "It is unlawful for a high-volume for-hire service to operate unless licensed to do so by the commission."
+- § 19-548.b: "A license to operate as a high-volume for-hire service is valid for a period of two years..."
+
+**Why:** The agency's core mission is to license vehicles, drivers, and related businesses, requiring a comprehensive record of all active licenses.
+
+**One row represents:** A single license issued by the commission.
+
+**Covers:** All types of licenses issued by the commission, including vehicle licenses (taxicab, coach, wheelchair accessible van, for-hire vehicle, commuter van, HAIL vehicle), driver licenses (taxicab/universal, coach, for-hire/universal, wheelchair accessible van, commuter van), and business licenses (taximeter business, communications system, base station, taxicab broker, agent, interior advertising company, high-volume for-hire service, exterior advertising permit).
+
+**Columns:**
+- License ID (Primary Key)
+- License Type (e.g., Taxicab Vehicle, FHV Driver, Base Station, Taximeter Business, Exterior Advertising Permit)
+- Licensee ID (links to **License Applications (2)**, **Licensee Bonds (21)**, **Taxicab Licensee Financial Disclosures (7)**)
+- Licensee Name/Entity Name
+- Vehicle ID (if applicable, links to **Vehicle Equipment and Compliance Records (12)**, **Vehicle Inspections (4)**, **Vehicle Crash Incidents (8)**, **Vehicle Seizures and Forfeitures (13)**)
+- Medallion Number (if applicable)
+- Issue Date
+- Expiration Date
+- Current Status (Active, Suspended, Revoked, Expired)
+- Suspension Start Date
+- Suspension End Date
+- Revocation Date
+- Reason for Suspension/Revocation (links to **Enforcement Actions and Violations (3)**)
+- Transferable (Yes/No)
+- Transfer Fee Paid
+- Original License ID (for renewals/transfers)
+- Associated Base Station ID (if applicable, links to **Service Authorizations (9)**)
+- Associated Commuter Van Service ID (if applicable, links to **Service Authorizations (9)**)
+- Number of Affiliated Vehicles (for base stations)
+- Off-Street Parking Compliance (for base stations)
+- Commuter Van License Limit Exceeded (Yes/No, for commuter vans)
+- Is Wheelchair Accessible Vehicle (Yes/No)
+- Is Clean Air Vehicle (Yes/No)
+- Is Hybrid Electric Vehicle (Yes/No)
+- Is Electric Vehicle (Yes/No)
+- Retirement Period Extension (Years)
+- Driver ID (if applicable, links to **Driver Licenses (5)**, **Driver Training Completions (11)**, **Driver Points and Sanctions (14)**)
+- Driver Name (if applicable)
+- Commercial Driver's License (CDL) Status (for commuter van drivers)
+- Article 19-A VTL Compliance (for commuter van drivers)
+- Sex Trafficking Awareness Program Completion Date (for drivers)
+- Cyclist Awareness Decal Display (Yes/No)
+- Personal Injury Insurance Coverage Amount
+
+**2. License Applications**
+
+**Quotes:**
+- § 19-504.d: "Applications for vehicle licenses shall be filed with the commission upon forms which shall be provided by the commission. The date and time of the receipt of each application shall be noted by the commission."
+- § 19-504.d-1: "An application for a taxicab license and for the renewal thereof shall be filed with the commission and shall be in such form as the commission shall prescribe."
+- § 19-504.d-1.1: "In addition to any other information required by the commission, each applicant and renewal applicant shall provide: (a) Fingerprints unless the applicant has previously submitted fingerprints to the commission; (b) Proof of payment of all penalties, fines, fees, taxes and surcharges... (c) The applicant's current mailing address, business address where applicable, and an email address... (d) The applicant's social security number."
+- § 19-504.d-1.2: "In addition to other information required by this section, each applicant that is a business entity shall also provide proof of active status with the department of state and the following information: (a) An applicant that is a sole proprietorship shall provide a copy of the certificate... (b) An applicant that is a partnership shall provide a copy of the certificate... (c) An applicant that is a corporation shall provide a certified copy of its certificate of incorporation, a list of all officers and shareholders and a certified copy of the minutes... (d) An applicant that is a limited liability company shall provide a copy of its articles of organization and a list containing the name of each member and the percentage of such company owned by each member."
+- § 19-504.d-1.3: "Before issuing a taxicab license or the renewal thereof, the commission shall investigate and make an assessment of the good character, honesty, and integrity of each applicant."
+- § 19-504.l: "Prior to the issuance of a commuter van license, the applicant shall be fingerprinted for the purpose of securing criminal history records from the state division of criminal justice services."
+- § 19-504.m: "The commission shall approve or disapprove an application for a commuter van license within one hundred and eighty days after the completed application is filed."
+- § 19-504.2.d: "An application for an authorization to operate a commuter van service or for renewal thereof shall be made to the commission in the form and manner prescribed by the commission."
+- § 19-504.2.e.2: "the application for authorization to operate a commuter van service shall set forth the geographic area proposed to be served by the applicant and the maximum number of vehicles to be operated and the capacity of each such vehicle..."
+- § 19-504.2.f.1: "The commission... shall approve or disapprove such application for authorization to operate a commuter van service within one hundred eighty days after the date a completed application has been filed."
+- § 19-505.c: "Applications for driver's licenses must be filed as directed by the commission, and must be accompanied by the required license fee. Such application shall be on a form provided by the commission and contain such information as the commission deems reasonably necessary."
+- § 19-505.b: "Each applicant for a license... must: 1. Hold a New York state chauffeur's license. 2. Be nineteen years of age or over. 3. Be of sound physical condition... 4. Be fingerprinted. 5. Be of good moral character. 6. Not be addicted to the use of drugs or intoxicating liquors."
+- § 19-505.d: "Each applicant for a driver's license... shall be examined as to such applicant’s physical condition by a duly licensed physician... each such applicant shall also be examined by the commission as to such applicant’s knowledge of the city, as well as city and state laws governing the idling of engines..."
+- § 19-505.e: "Each applicant for a driver's license must file with his or her application two recent photos..."
+- § 19-505.m: "the commission shall not issue a commuter van driver's license to an applicant unless the applicant: (1) has been fingerprinted... (2) satisfies the commission that such applicant is fit and able to drive... (3) possesses a commercial driver's license... (4) has met the qualifications set forth in article nineteen-A of the vehicle and traffic law..."
+- § 19-505.n: "The commission shall approve or disapprove an application for the issuance of a commuter van driver's license within one hundred eighty days after the completed application is filed."
+- § 19-511.d.1: "No license for a new base station shall be issued unless the applicant demonstrates to the satisfaction of the commission that the applicant will comply with the off-street parking requirements... and the commission finds that the operation of a base station by the applicant at the proposed location would meet such other criteria as may be established by the commission."
+- § 19-511.d.3: "In its review of an application for a license to operate a new base station and in its review of an application to renew a base station license the commission shall also consider the possible adverse effect of such base station on the quality of life in the vicinity of the base station including, but not limited to, traffic congestion, sidewalk congestion and noise."
+- § 19-518.b: "All such transfers and any changes in corporate offices or directors must be approved by the commission in order to be effective. The commission shall establish by rule the factors to be considered for approval of a proposed transferee, officer or director which shall include, but not be limited to, the criminal history of the proposed transferee and of the transferee's officers, shareholders, directors and partners, if any, or the proposed officers or directors, in a manner consistent with article twenty-three-A of the correction law, any relevant information maintained in the records of the department of more vehicles or the commission, and transferee's financial stability."
+- § 19-527.d: "Applications for taxicab broker licenses and for the renewal thereof shall be filed with the commission in such form and containing such detail as the commission shall prescribe."
+- § 19-527.d.1: "In addition to any other information required by the commission, each applicant and renewal applicant shall provide: (a) Fingerprints... (b) Proof of payment of all penalties, fines, and fees owed... (c) The applicant's current mailing address, business address... and an email address... (d) The applicant's social security number."
+- § 19-527.d.2: "each applicant that is a business entity shall provide proof of active status with the department of state and the following information: (a) An applicant that is a sole proprietor shall provide a copy of the certificate... (b) An applicant that is a partnership shall provide a copy of the certificate... (c) An applicant that is a corporation shall provide a certified copy of its certificate of incorporation, a list of all officers and shareholders and a certified copy of the minutes... (d) An applicant that is a limited liability company shall provide a copy of its articles of organization and a list containing the names of each member and the percentage of such company owned by each such member."
+- § 19-527.d.3: "Before issuing a taxicab broker license or the renewal thereof, the commission shall investigate and assess the good character, honesty, and integrity of each applicant."
+- § 19-530.d: "An application for a license required by subdivision a of this section and for the renewal thereof shall be filed with the commission and shall be in such form as the commission shall prescribe."
+- § 19-530.d.1: "In addition to any other information required by the commission, each applicant and renewal applicant shall provide: (a) Fingerprints... (b) Proof of payment of all penalties, fines and fees owed... (c) The applicant's current mailing address, business address... and an email address... (d) The applicant's social security number."
+- § 19-530.d.2: "each applicant that is a business entity shall provide proof of active status with the department of state and the following information: (a) An applicant that is a sole proprietor shall provide a copy of the certificate... (b) An applicant that is a partnership shall provide a copy of the certificate... (c) An applicant that is a corporation shall provide a certified copy of its certificate of incorporation, a list of all officers and shareholders and a certified copy of the minutes... (d) An applicant that is a limited liability company, shall provide a copy of its articles of organization and a list containing the names of each member and the percentage of such company owned by each such member."
+- § 19-530.d.3: "Before issuing a taxicab agent license or the renewal thereof, the commission shall investigate and make an assessment of the good character, honesty, and integrity of each applicant."
+- § 19-548.c: "A license for a high-volume for-hire service may be issued, or renewed... if the applicant: 1. Submits a business plan... 2. Complies with any requirement established by the commission to assess the impact of the operation of a high-volume for-hire service on the environment... 3. (a) Provides a description of all deductions... and affirms that... it will not charge or deduct... (b) Files its rates of fare with the commission; and 4. Provides trip and revenue data..."
+
+**Why:** The agency must track all applications for licenses and authorizations to manage the licensing process and ensure compliance with eligibility criteria.
+
+**One row represents:** A single application for a license or authorization.
+
+**Covers:** All applications for new licenses, renewals, and transfers for vehicles, drivers, commuter van services, taximeter businesses, communications systems, base stations, taxicab brokers, agents, interior advertising companies, and high-volume for-hire services.
+
+**Columns:**
+- Application ID (Primary Key)
+- License Type Applied For (e.g., Taxicab Vehicle, FHV Driver, Base Station, Commuter Van Service)
+- Application Type (Initial, Renewal, Transfer)
+- Applicant ID (links to **Licenses Issued (1)**, **Licensee Bonds (21)**, **Taxicab Licensee Financial Disclosures (7)**)
+- Applicant Name/Entity Name
+- Application Submission Date
+- Application Status (Submitted, In Review, Approved, Denied, Withdrawn)
+- Approval/Denial Date
+- Denial Reason (e.g., Lacks good character, Unpaid fines, Failed inspection, Incomplete information)
+- Processing Time (days)
+- Applicant Type (Sole Proprietorship, Partnership, Corporation, LLC)
+- Applicant Mailing Address
+- Applicant Business Address
+- Applicant Email Address
+- Applicant Social Security Number (if individual)
+- Fingerprints Submitted (Yes/No)
+- Proof of Payment of Fines/Fees/Taxes (Yes/No)
+- NY State Chauffeur's License (for drivers)
+- Age (for drivers)
+- Physical Condition Assessment (Pass/Fail/Notes)
+- Knowledge Exam (Pass/Fail/Notes)
+- Photos Submitted (Yes/No, for drivers)
+- Commercial Driver's License (CDL) (for commuter van drivers)
+- Article 19-A VTL Qualifications (for commuter van drivers)
+- Proposed Geographic Area (for commuter van services)
+- Maximum Number of Vehicles Proposed (for commuter van services)
+- Vehicle Capacity (for commuter van services)
+- Public Convenience and Necessity Determination (Approved/Denied, for commuter van services)
+- Public Comments Received (Yes/No, for commuter van services)
+- Off-Street Parking Plan Submitted (for base stations)
+- Criminal History Check Result (Pass/Fail/Notes)
+- Civil/Administrative Action Liability (Yes/No/Details)
+- Prior Business Entity Conduct (Yes/No/Details)
+- Business Plan Submitted (for high-volume for-hire services)
+- Environmental Impact Assessment Submitted (for high-volume for-hire services)
+- Deductions/Charges Description Submitted (for high-volume for-hire services)
+- Rates of Fare Filed (for high-volume for-hire services)
+- Trip and Revenue Data Submitted (for high-volume for-hire services)
+- Transferor ID (if transfer application)
+- Transferee ID (if transfer application)
+- Arm's Length Transaction Proof (Yes/No, for business transfers)
+- Relationship to Prior Owner (Yes/No, for business transfers)
+
+**3. Enforcement Actions and Violations**
+
+**Quotes:**
+- § 19-506.a: "the commission may impose reasonable fines and/or suspend or revoke any license issued by the commission where the holder has failed to comply with or has willfully or knowingly violated any of the provisions of this chapter or a rule or regulation of the commission after adjudication of such violation..."
+- § 19-506.b.1: "Any person who shall permit another to operate or who shall knowingly operate or offer to operate for hire any vehicle as a taxicab, coach, wheelchair accessible van, commuter van, HAIL vehicle or for-hire vehicle in the city, without first having obtained or knowing that another has obtained a license for such vehicle... shall be guilty of a violation..."
+- § 19-506.b.2: "Any person who shall permit another to operate or who shall knowingly operate or offer to operate for hire any vehicle licensed as a taxicab, coach, wheelchair accessible van, HAIL vehicle or for-hire vehicle in the city in a manner that is beyond the scope of the activities permitted by such vehicle's license shall be guilty of a violation..."
+- § 19-506.c.1: "No person shall operate or permit to be operated any vehicle bearing the words "hack," "taxi," "taxicab," "cab," "coach," "for hire vehicle," "livery," "limousine," "commuter van service," "van service," "commuter van," "van" or other designation of similar import unless the vehicle is licensed as a taxicab, coach, for-hire vehicle, or commuter van, as appropriate, and the driver has an appropriate driver's license..."
+- § 19-506.c.2: "Any person required to obtain a license under this chapter shall conspicuously state in all print and broadcast advertising... the vehicle license number and that the activity is licensed by the commission..."
+- § 19-506.d: "Any person, other than a person holding a driver's license issued pursuant to section 19-505 and a New York state class A, B, C or E license, neither of which is revoked or suspended, who drives or operates for hire a licensed vehicle in the city except a commuter van, shall be guilty of a violation..."
+- § 19-506.e.1: "any person who shall violate such provisions shall, for the first violation, be liable for a civil penalty of one thousand five hundred dollars, and for the second violation committed within a thirty six month period, for a civil penalty of two thousand dollars."
+- § 19-506.e.3: "A proceeding to impose a civil penalty... shall be commenced by the service of a notice of violation returnable before the commission or an administrative tribunal of the commission."
+- § 19-506.i.1: "any person who violates any provision of this chapter or any rule promulgated hereunder applicable to commuter van services, commuter vans or drivers of commuter vans shall be subject to a civil penalty in an amount to be prescribed by the commission by rule for specific violations which amount shall be one thousand dollars for a first violation and twenty-five hundred dollars for a second and subsequent violation committed within two years of a first violation."
+- § 19-506.k.i: "A violation of this subdivision shall be punishable by a fine of five hundred dollars for the first violation... A violation of this subdivision shall result in revocation of the driver's license... when such violation is committed by a driver who has previously been convicted of two violations of this section within the immediately preceding one hundred twenty months." (HAIL vehicle street hail in prohibited area)
+- § 19-506.l: "Unlawful fleeing a New York city taxi and limousine enforcement officer or police officer... is a misdemeanor punishable by a fine of not less than seven hundred fifty dollars nor more than one thousand dollars, or by imprisonment of not more than ninety days or by both such fine and imprisonment."
+- § 19-506.n: "A person who holds a commuter van license must not allow such commuter van to be operated by a driver who does not hold a commuter van driver's license... A violation of this subdivision shall result in a civil penalty of $500 and suspension of the commuter van license..."
+- § 19-507.a.1: "No driver of a taxicab shall seek to ascertain, without justifiable grounds, the destination of a passenger before such passenger shall be seated in the vehicle."
+- § 19-507.a.2: "No driver of a taxicab shall refuse, without justifiable grounds, to take any passenger or prospective passenger to any destination within the city."
+- § 19-507.a.3: "No driver of a vehicle the fares of which are set by the commission or successor agency shall charge or attempt to charge a fare above the fare set by the commission or successor agency."
+- § 19-507.a.4: "No driver of a for-hire vehicle, other than a driver operating a for-hire vehicle with a valid HAIL license, shall accept passengers unless the passengers have engaged the use of the for-hire vehicle on the basis of telephone contract or prearrangement."
+- § 19-507.b.1.a: "Any driver who has been found to have violated a provision of paragraph 1, 2, or 3 of subdivision a of this section... shall be fined not less than $200 nor more than $500 for the first offense."
+- § 19-507.b.2: "the commission shall revoke the driver's license of any person found to have violated paragraph three of subdivision a of this section by charging or attempting to charge a fare of ten dollars or more above the approved rate of fare for taxicabs."
+- § 19-507.b.3: "Any driver or vehicle owner... or base station licensee who facilitates sex trafficking with a vehicle shall be liable for a civil penalty of ten thousand dollars, and the commission shall revoke the license of such driver, the license of the vehicle... and the license of the base station licensee..."
+- § 19-507.d.1: "Each owner shall make a reasonable good faith effort... to deter the commission of violations of paragraphs one, two and three of subdivision a of this section by drivers of taxicabs for which such owner holds a vehicle license."
+- § 19-507.f: "The commission may suspend or revoke the license of any person whom it determines has obtained a license by fraud or false representation, or willful misstatement or omission of a material fact."
+- § 19-507.1.b: "Any taxicab or for-hire vehicle driver who has been found guilty of violations such that a total of six or more points but fewer than ten points have been assessed... shall have his or her commission-issued driver's license suspended for up to thirty days."
+- § 19-507.1.c: "Any taxicab or for-hire vehicle driver who has been found guilty of violations such that a total of ten or more points have been assessed... shall have his or her commission-issued driver's license revoked."
+- § 19-507.1.g: "Any violation issued to a taxicab driver or owner for meter-tampering shall be served on the licensee by personal delivery or by certified and regular mail within five calendar days of its issuance."
+- § 19-508.c.3: "Any person found to have violated the provisions of this subdivision shall be liable for a fine of one hundred seventy-five dollars for each such violation and in addition thereto the license for such vehicle shall be suspended until the defective condition is corrected." (Trouble light)
+- § 19-512.1.a: "The commission or successor agency may, for good cause shown relating to a direct and substantial threat to the public health or safety and prior to giving notice and an opportunity for a hearing, suspend a taxicab, for-hire vehicle license or a HAIL license..."
+- § 19-514.e: "The commission may suspend the license of any owner violating the provisions hereof." (Emblem use)
+- § 19-516.a: "The commission or successor agency may establish such disciplinary actions as it deems appropriate for failure to abide by the provisions of this chapter." (For-hire vehicle acceptance of passengers)
+- § 19-516.b: "No commuter van service and no person who owns, operates or drives a commuter van, shall provide, permit or authorize the provision of transportation service to a passenger unless such service to a passenger is on the basis of a telephone contract or other prearrangement."
+- § 19-525.f: "the commission may revoke any individual permit or the permits of any one medallion ownership corporation... if advertising showed in the exterior display is offensive to public morals..."
+- § 19-528.b.1: "to impose fines upon any person in violation of subdivision a of this section of one hundred dollars per violation per day for each and every day during which such person violates such subdivision." (Unlicensed activity)
+- § 19-529.c: "The owner of any licensed vehicle found to be in violation of subdivision a or b hereof shall be fined not less than one hundred nor more than two hundred fifty dollars." (Seat/shoulder belts)
+- § 19-529.1.a: "No commuter van service and no person who owns, operates or drives a commuter van shall solicit, pick up or discharge passengers... (1) outside of the geographical area... or (2) at stops of, or along a route which is traveled upon by a bus line..."
+- § 19-545.d: "Any black car base or luxury limousine base, or dispatch service provider operating on behalf of such a base, that has been found to have violated any provision of this section shall be subject to a civil penalty of not less than $250 nor more than $500 for each offense..." (Fare quotes)
+- § 19-546.c: "Any entity that has been found to have violated subdivisions a or b of this section shall be subject to a civil penalty of $1,000 for each offense." (Information security)
+- § 19-547.b: "Any for-hire vehicle base, or dispatch service provider operating on behalf of such a base, that has been found to have violated any provision of this section shall be subject to a civil penalty of not less than $250 nor more than $500 for each offense." (Gratuity)
+- § 19-548.d: "The penalty for operating a high-volume for-hire service without a valid license issued by the commission is $10,000 for each day such operation takes place..."
+- § 19-550.e: "The commission shall establish penalties to be imposed on a high-volume for-hire service for the failure of such service to meet any vehicle utilization standards established pursuant to this section."
+- § 19-550.f: "A high-volume for-hire service shall not deduct any payment owed to any driver for a trip dispatched by such service for the payment of any penalties imposed by the commission pursuant to subdivision e of this section."
+- § 19-552.c: "Any high-volume for-hire service that violates this section is liable for a civil penalty of not less than $250 nor more than $500 for each offense." (Risk of loss on trip payments)
+- § 19-557.d (cyclist decal): "The commission shall promulgate rules establishing the penalty for violation of subdivision b of this section."
+
+**Why:** Tracking all violations and enforcement actions is crucial for regulatory oversight, public safety, and ensuring compliance across all licensed entities.
+
+**One row represents:** A single violation or enforcement action taken by the commission.
+
+**Covers:** All violations of chapter provisions or commission rules, including unlicensed operation, operating beyond scope, advertising violations, driver conduct violations (destination, refusal, overcharge, illegal hails, sex trafficking facilitation), meter tampering, equipment defects, non-compliance with vehicle standards, commuter van specific prohibitions, fare quote violations, information security breaches, gratuity issues, vehicle utilization standard failures, and other regulatory infractions.
+
+**Columns:**
+- Violation ID (Primary Key)
+- Notice of Violation (NOV) Number
+- Date of Violation
+- Date NOV Issued
+- Issuing Officer/Agent ID
+- Licensee ID (links to **Licenses Issued (1)**, **License Applications (2)**, **Taxicab Licensee Financial Disclosures (7)**)
+- Licensee Type (Driver, Vehicle Owner, Base Station, Commuter Van Service, Taximeter Business, Broker, Agent, HVFH Service, Interior Advertising Company)
+- Vehicle ID (if applicable, links to **Vehicle Equipment and Compliance Records (12)**, **Vehicle Inspections (4)**, **Vehicle Crash Incidents (8)**, **Vehicle Seizures and Forfeitures (13)**)
+- Driver ID (if applicable, links to **Driver Licenses (5)**, **Driver Training Completions (11)**, **Driver Points and Sanctions (14)**)
+- Violation Type/Code
+- Description of Violation
+- Adjudication Date
+- Adjudication Outcome (Guilty, Not Guilty, Dismissed, Default)
+- Penalty Imposed (Fine, Suspension, Revocation, Seizure, Order to Discontinue, Premises Sealed)
+- Fine Amount
+- Fine Paid (Yes/No)
+- Date Fine Paid
+- Suspension Start Date
+- Suspension End Date
+- Revocation Date
+- License ID Affected (links to **Licenses Issued (1)**)
+- Number of Prior Violations (for recidivism tracking)
+- Location of Violation (Borough, Precinct, Specific Address)
+- Related Crash ID (if applicable, links to **Vehicle Crash Incidents (8)**)
+- Affirmative Defense Claimed (Yes/No)
+- Affirmative Defense Accepted (Yes/No)
+- Meter Tampering (Yes/No)
+- Sex Trafficking Facilitation (Yes/No)
+- Unlawful Fleeing (Yes/No)
+- HAIL Vehicle Street Hail Violation (Yes/No)
+- Unlicensed Operation (Yes/No)
+- Operating Beyond Scope (Yes/No)
+- Advertising Violation (Yes/No)
+- Commuter Van Geographic Area Violation (Yes/No)
+- Commuter Van Bus Route Violation (Yes/No)
+- Commuter Van Unlicensed Driver (Yes/No)
+- Trouble Light Defect (Yes/No)
+- Seatbelt/Shoulder Belt Violation (Yes/No)
+- Fare Quote Violation (Yes/No)
+- Information Security Policy Violation (Yes/No)
+- Gratuity Payment Violation (Yes/No)
+- HVFH Unlicensed Operation (Yes/No)
+- HVFH Vehicle Utilization Standard Violation (Yes/No)
+- HVFH Driver Payment Deduction Violation (Yes/No)
+- HVFH Risk of Loss Violation (Yes/No)
+- Cyclist Awareness Decal Violation (Yes/No)
+
+**4. Vehicle Inspections**
+
+**Quotes:**
+- § 19-504.f: "All taxicabs now or hereafter licensed pursuant to the provisions of this chapter shall be inspected at an inspection facility operated by the commission at least once every four months, in accordance with a procedure to be established by the commission."
+- § 19-504.f: "All other vehicles now or hereafter licensed pursuant to the provisions of this chapter other than commuter vans shall be inspected at official inspection stations licensed by the commissioner of motor vehicles... at least once every four months..."
+- § 19-504.f: "All commuter vans now or hereafter licensed pursuant to the provisions of this chapter shall be inspected and shall meet safety standards as provided in paragraph two of subdivision a of section 19-504.3 of this chapter."
+- § 19-504.f: "If any taxicab fails to pass its inspection for any reason relating to the requirements established by the New York state department of motor vehicles, it shall be reinspected."
+- § 19-504.f: "The fee payable to the commission for each inspection and each reinspection required for the issuance of a certificate of inspection for a taxicab... shall not exceed ninety dollars for the first inspection and fifty dollars for each reinspection."
+- § 19-504.f: "The commission or any other agency authorized by law may conduct on-street inspections of vehicles licensed pursuant to the provisions of this chapter."
+- § 19-504.f: "The date of the inspection of a taxicab and the signature of the persons making the inspection shall be recorded upon the rate card in the space provided therefor."
+- § 19-504.f: "An owner shall be ordered by the commission to repair or replace his or her licensed vehicle where it appears that it no longer meets the reasonable standards for safe operation prescribed by the commission."
+- § 19-504.3.a.2: "No commuter van shall be used... unless such vehicle (a) is inspected by the state department of transportation... (b) prominently displays the name of the holder of the authorization and certificate evidencing an inspection, and (c) meets the vehicle safety standards prescribed by rule or regulation of the state commissioner of transportation..."
+- § 19-507.1.g: "having all of such owner's taxicabs inspected by a licensed meter shop once every commission inspection cycle." (Meter tampering due diligence)
+- § 19-529.d: "At each inspection of a licensed taxicab or for-hire vehicle made pursuant to subdivision f of section 19-504 of this chapter, failure to comply with subdivision a or b hereof shall be evidence that such vehicle fails to meet reasonable standards for safe operation and shall constitute cause for the suspension of said vehicle license by the commission." (Seat/shoulder belts)
+- § 19-535.b.3: "The commission may modify the extended retirement period... for any taxicab where such vehicle does not pass two of the inspections, not including reinspections, conducted at the commission's inspection facility pursuant to section 19-504 of this chapter in the twelve-month period immediately preceding the time at which such vehicle would otherwise be required to be retired..."
+- § 19-554.b: "The tribunal shall dismiss a violation issued to a driver or an owner of a vehicle for failing to personally inspect and reasonably determine the good working order of the lights of such vehicle..."
+
+**Why:** Regular vehicle inspections are a primary mechanism for ensuring public safety and compliance with vehicle standards.
+
+**One row represents:** A single inspection event for a licensed vehicle.
+
+**Covers:** All scheduled and unscheduled inspections (including reinspections and on-street inspections) for taxicabs, coaches, wheelchair accessible vans, for-hire vehicles, and commuter vans.
+
+**Columns:**
+- Inspection ID (Primary Key)
+- Vehicle ID (links to **Licenses Issued (1)**, **Vehicle Equipment and Compliance Records (12)**, **Vehicle Crash Incidents (8)**, **Vehicle Seizures and Forfeitures (13)**)
+- Vehicle License ID (links to **Licenses Issued (1)**)
+- Vehicle Type (Taxicab, Coach, WAV, FHV, Commuter Van)
+- Inspection Date
+- Inspection Type (Scheduled, Reinspection, On-Street, DOT Commuter Van, Meter Shop)
+- Inspection Facility ID (if applicable)
+- Inspector ID
+- Inspection Result (Pass, Fail)
+- Reason for Failure (e.g., Defective trouble light, Seatbelt issue, Emission standards, Safety standards, Meter tampering)
+- Repair Order Issued (Yes/No)
+- Repair Order Compliance Date
+- Reinspection Required (Yes/No)
+- Reinspection Date
+- Fee Charged
+- Fee Paid (Yes/No)
+- Certificate of Inspection Issued (Yes/No)
+- Rate Card Signature (Yes/No, for taxicabs)
+- DOT Inspection Certificate Displayed (for commuter vans)
+- Vehicle Safety Standards Met (for commuter vans)
+- Number of Failed Inspections in 12-month period (for retirement extension calculation)
+- Lights Inspection Result (Pass/Fail)
+- Lights Correction Proof Submitted (Yes/No)
+- Lights Correction Dismissal Recommended (Yes/No)
+
+**5. Driver Licenses**
+
+**Quotes:**
+- § 19-502.c: ""Driver" means a person licensed hereunder to drive a licensed vehicle in the city."
+- § 19-502.d: ""Driver's license" means a license for a driver issued by the commission."
+- § 19-505.a: "No person shall drive any motor vehicle for hire which is regulated by the provisions of this chapter without first obtaining from the commission: (i) a taxicab or universal driver's license... (ii) a coach driver's license... (iii) a for-hire vehicle or universal driver's license... (iv) a wheelchair accessible van driver's license... (v) a commuter van driver's license."
+- § 19-505.a: "The commission shall not issue taxicab driver's licenses or for-hire vehicle driver's licenses. Each taxicab driver's license and for-hire vehicle driver's license issued and in effect, including any such license which is suspended, shall be deemed a universal driver's license."
+- § 19-505.f: "Upon satisfactory fulfillment of the applicable requirements, there shall be issued to the applicant a driver's license which shall be in such form as the commission may direct."
+- § 19-505.g: "Original driver's licenses and renewals thereof shall be valid for a period of not less than one year nor more than three years."
+- § 19-505.h: "The commission may renew a driver's license provided the driver shall have made application on the prescribed form during the period which the commission shall designate, and the commission may require the same standards and tests as are applicable for original applications."
+- § 19-505.i: "The commission may revoke any driver's license for nonuse, in the event it shall determine that the driver has not worked at least twenty-five days as a licensed driver in the calendar year preceding the calendar year in which such determination is made..."
+- § 19-505.l: "The commission may, after a hearing, suspend or revoke any driver's license for failure to comply with any provision of this chapter applicable to licensed drivers or for failure to comply with the commission's rules and regulations."
+- § 19-505.o: "suspension or revocation of such commercial driver's license pursuant to the vehicle and traffic law or noncompliance with article nineteen-A of the vehicle and traffic law shall render the commuter van driver's license suspended on and after the date of the suspension or revocation of such commercial driver's license or noncompliance with such article nineteen-A and during the period of such suspension revocation or noncompliance..."
+- § 19-505.q: "Completion of such program shall be a requirement for initial licensure and subsequent license renewal for such drivers..." (Sex trafficking awareness)
+- § 19-505.r: "Any procedures established by the commission to determine the ability of an applicant for a universal driver's license to speak and understand English shall not include a written examination."
+
+**Why:** The agency must maintain a complete record of all licensed drivers, their qualifications, and their current license status to ensure public safety and regulatory compliance.
+
+**One row represents:** A single driver's license issued by the commission.
+
+**Covers:** All types of driver licenses issued, including universal driver's licenses (for taxicabs and for-hire vehicles), coach driver's licenses, wheelchair accessible van driver's licenses, and commuter van driver's licenses.
+
+**Columns:**
+- Driver ID (Primary Key)
+- Driver License ID (links to **Licenses Issued (1)**)
+- Driver Name
+- Driver License Type (Universal, Coach, WAV, Commuter Van)
+- Issue Date
+- Expiration Date
+- Current Status (Active, Suspended, Revoked, Expired)
+- Suspension Start Date
+- Suspension End Date
+- Revocation Date
+- Reason for Suspension/Revocation (links to **Enforcement Actions and Violations (3)**)
+- NY State Chauffeur's License Number
+- NY State Chauffeur's License Status (Active, Suspended, Revoked)
+- Date of Birth
+- Age
+- Physical Condition (Pass/Fail)
+- Eyesight (Good/Impaired)
+- Medical Conditions (Epilepsy, Vertigo, Heart Trouble, Other)
+- Fingerprints on File (Yes/No)
+- Moral Character Assessment (Pass/Fail/Notes)
+- Drug/Alcohol Addiction (Yes/No)
+- Knowledge of City Exam (Pass/Fail)
+- Idling Laws Knowledge Exam (Pass/Fail)
+- Driver Photo on File (Yes/No)
+- Commercial Driver's License (CDL) Number (for commuter van drivers)
+- CDL Status (for commuter van drivers)
+- Article 19-A VTL Compliance (Yes/No, for commuter van drivers)
+- Sex Trafficking Awareness Program Completion Date (links to **Driver Training Completions (11)**)
+- Certification of Program Completion/Review (Yes/No)
+- English Speaking/Understanding Ability (Assessed/Not Assessed)
+- Days Worked as Licensed Driver (Previous Calendar Year)
+- Nonuse Reason (Illness, Other)
+- Points Assessed (Commission-issued license, NYS DMV) (links to **Driver Points and Sanctions (14)**)
+- HAIL License Holder (Yes/No)
+- Facilitates Sex Trafficking Conviction (Yes/No)
+- Unlawful Fleeing Conviction (Yes/No)
+
+**6. For-Hire Vehicle Trip Records (High-Volume Services)**
+
+**Quotes:**
+- § 19-548.c.4: "Provides trip and revenue data that includes: (a) For each trip dispatched by a black car base, luxury limousine base or livery base station: (1) the driver license number issued by the commission; (2) the license number, issued by the commission, of the vehicle that fulfilled the trip request and the base or base station with which such vehicle is affiliated; (3) the location from which each passenger is picked up and subsequently dropped off; (4) the total number of passengers picked up and dropped off from the location referenced in subparagraph (3); (5) the date and time such passenger is picked up; (6) the date and time such passenger is dropped off; (7) the total trip mileage; (8) the date and time such trip request was made by a passenger; (9) the itemized fare for each trip including the amount of the fare, any toll, surcharge, commission rate, other deduction and any gratuity and a breakdown of the amount such passenger paid for the trip; and (10) the payment that each driver received for each trip or the hourly rate paid; (b) The total amount of time a vehicle is connected to the electronic platform of a high-volume for-hire service each day; (c) The amount of time spent each day by each vehicle transporting passengers for hire, as well as the time spent each day by such vehicle on the way to a passenger, and time spent by such vehicle between trips but not on the way to a passenger; and (d) Other information as required by the commission."
+- § 19-550.d: "For each trip a high-volume for-hire service offers or otherwise facilitates through one or more black car base, luxury limousine base or livery base station, the commission may require the following data be provided: 1. For each trip dispatched by such base or base station: (a) the driver license number issued by the commission; (b) the license number, issued by the commission, of the vehicle that fulfilled the trip request and the base or base station with which such vehicle is affiliated; (c) the location from which each passenger is picked up and subsequently dropped off; (d) the total number of passengers picked up and dropped off from the location referenced in subparagraph (c); (e) the date and time such passenger is picked up; (f) the date and time such passenger is dropped off; (g) the total trip mileage; (h) the date and time such trip request was made by a passenger; (i) the itemized fare for each trip including the amount of the fare, any toll, surcharge, commission rate, other deduction and any gratuity and a breakdown of the amount such passenger paid for the trip; and (j) the payment that each driver received for each trip or the hourly rate paid; 2. The total amount of time a vehicle is connected to the electronic platform of a high-volume for-hire service each day; 3. The amount of time spent each day by each vehicle transporting passengers for hire, as well as the time spent each day by such vehicle on the way to a passenger, and time spent by such vehicle between trips but not on the way to a passenger; and 4. Any additional information required by the commission..."
+
+**Why:** This data is explicitly required for high-volume for-hire services to monitor vehicle utilization, driver income, traffic impact, and compliance with fare and payment regulations.
+
+**One row represents:** A single trip dispatched by a high-volume for-hire service.
+
+**Covers:** All trips dispatched by high-volume for-hire services, including black car bases, luxury limousine bases, and livery base stations.
+
+**Columns:**
+- Trip ID (Primary Key)
+- HVFH Service License ID (links to **Licenses Issued (1)**)
+- Base/Base Station ID (links to **Service Authorizations (9)**)
+- Driver License Number (links to **Driver Licenses (5)**)
+- Vehicle License Number (links to **Licenses Issued (1)**)
+- Vehicle ID (links to **Vehicle Equipment and Compliance Records (12)**, **Vehicle Inspections (4)**, **Vehicle Crash Incidents (8)**, **Vehicle Seizures and Forfeitures (13)**)
+- Passenger Pick-up Location (latitude, longitude, or address)
+- Passenger Drop-off Location (latitude, longitude, or address)
+- Total Number of Passengers
+- Pick-up Date and Time
+- Drop-off Date and Time
+- Total Trip Mileage
+- Trip Request Date and Time
+- Itemized Fare Amount
+- Toll Amount
+- Surcharge Amount
+- Commission Rate/Deduction Amount
+- Gratuity Amount
+- Total Passenger Payment
+- Driver Payment for Trip
+- Hourly Rate Paid (if applicable)
+- Vehicle Connected Time (daily, for HVFH service)
+- Time Transporting Passengers (daily, for HVFH service)
+- Time En Route to Passenger (daily, for HVFH service)
+- Time Between Trips (daily, for HVFH service)
+- Payment Transaction Status (Success/Fail)
+- Payment Transaction Failure Handled (Yes/No)
+
+**7. Taxicab Licensee Financial Disclosures**
+
+**Quotes:**
+- § 19-555.a.6: "The office shall monitor and evaluate the financial stability of the taxicab industry. In conducting such monitoring and evaluation, the office shall consider, at a minimum: ... The annual financial disclosures from each person who has any interest in any taxicab license;"
+- § 19-555.a.7: "Income and expenses associated with operating a taxicab."
+- § 19-556.a: "Each natural person who is a taxicab license owner, agent, member of a partnership owning one or more taxicab licenses, or shareholder, director or officer of any corporation owning one or more taxicab license shall annually complete and file with the commission a financial disclosure statement, executed under oath, on a form provided by the commission or in such format and manner as otherwise specified by the commission."
+- § 19-556.a.1: "Each taxicab license in which such natural person has a financial interest;"
+- § 19-556.a.2: "Whether such financial interest reflects the interest of an owner, agent, member of a partnership, shareholder, director, or officer;"
+- § 19-556.a.3: "Any other licenses issued by the commission that are held by such natural person and any other licenses issued by the commission in which such natural person has an interest;"
+- § 19-556.a.4: "Such natural person's gross income from taxicab operations in the prior calendar year;"
+- § 19-556.a.5: "Such natural person's gross expenses related to taxicab operations in the prior calendar year;"
+- § 19-556.a.6: "The total amount of taxicab liability insurance premiums paid by such natural person in the prior calendar year, and where such natural person is a member of a partnership owning one or more taxicab licenses, or shareholder, director or officer of any corporation owning one or more taxicab license, the total amount of taxicab liability insurance premiums paid by such partnership or corporation;"
+- § 19-556.a.7: "The outstanding balances of all loans secured by taxicab licenses in which such natural person has an interest as of December 31 of the prior calendar year;"
+- § 19-556.a.8: "The number of taxicab licenses in which such natural person has an interest that serve as collateral for a secured loan;"
+- § 19-556.a.9: "The number of taxicab licenses in which such natural person has an interest that do not serve as collateral for a secured loan;"
+- § 19-556.a.10: "Any other interests such natural person has in any taxi, livery, or for-hire vehicle business, whether or not licensed by the commission;"
+- § 19-556.a.11: "Any other information the commission determines is relevant to such natural person's finances."
+
+**Why:** Annual financial disclosures are mandated to monitor the financial stability of the taxicab industry and identify potential market issues.
+
+**One row represents:** An annual financial disclosure statement filed by a natural person with an interest in a taxicab license.
+
+**Covers:** Financial information from taxicab license owners, agents, partners, shareholders, directors, and officers.
+
+**Columns:**
+- Disclosure ID (Primary Key)
+- Natural Person ID (links to **Licenses Issued (1)**, **License Applications (2)**)
+- Filing Year
+- Filing Date
+- Taxicab License ID (links to **Licenses Issued (1)**)
+- Financial Interest Type (Owner, Agent, Partner, Shareholder, Director, Officer)
+- Gross Income from Taxicab Operations (Prior Calendar Year)
+- Gross Expenses from Taxicab Operations (Prior Calendar Year)
+- Total Taxicab Liability Insurance Premiums Paid (Prior Calendar Year)
+- Outstanding Loan Balance Secured by Taxicab License (as of Dec 31)
+- Number of Taxicab Licenses as Collateral
+- Number of Taxicab Licenses Not as Collateral
+- Other Commission Licenses Held (List/IDs)
+- Other Taxi/Livery/FHV Business Interests (Description)
+- Bankruptcy Proceedings (Yes/No)
+- Loan Terms (e.g., No down payment, Interest-only, Confession of judgment)
+- Market Manipulation/Speculation/Collusion Indication (Yes/No)
+- Statement Executed Under Oath (Yes/No)
+
+**8. Vehicle Crash Incidents**
+
+**Quotes:**
+- § 19-540.a: "Following any crash involving a driver licensed by the commission while operating a vehicle licensed by the commission where critical injury or death resulted to one or more persons, the commission shall, upon notification of such crash, review the results of the police department's investigation at or before the conclusion of such department's investigation."
+- § 19-540.a: "The commission shall further review the fitness of such driver to operate a vehicle licensed by the commission and take any enforcement action that it determines appropriate..."
+- § 19-540.a: "The commission may summarily suspend the commission issued license of such driver while any fitness review or enforcement action is pending..."
+- § 19-540.a: "For purposes of this section, "critical injury" shall mean any injury determined to be critical by the emergency medical service personnel responding to any such incident."
+- § 19-541: "Where a driver licensed by the commission has been issued a summons for or charged with one or more traffic related violations or crimes in a crash in which any person has suffered critical injury or death, the license issued to such driver by the commission may be summarily suspended... and, upon conviction... such license shall be revoked."
+- § 19-542: "On or before February 1, 2015 and quarterly thereafter, the commission shall for the prior quarter provide a report to the council and shall post on its website, the number of crashes involving a vehicle licensed by the commission."
+- § 19-542: "Such report shall disaggregate such crashes by the type of commission licensed vehicle and by whether critical injury or death resulted from such crashes."
+- § 19-542: "The commission shall also maintain within its records the number of crashes each licensed driver has been involved in while operating a commission licensed vehicle."
+
+**Why:** Tracking crash incidents, especially those with critical injuries or fatalities, is essential for driver fitness review, public safety, and reporting requirements.
+
+**One row represents:** A single crash incident involving a commission-licensed vehicle.
+
+**Covers:** All crashes involving commission-licensed vehicles, disaggregated by vehicle type and injury severity.
+
+**Columns:**
+- Crash ID (Primary Key)
+- Incident Date
+- Incident Time
+- Location (Address, Intersection, Lat/Long)
+- Police Department Investigation ID
+- Driver ID (links to **Driver Licenses (5)**, **Driver Points and Sanctions (14)**)
+- Driver License ID (links to **Licenses Issued (1)**)
+- Vehicle ID (links to **Licenses Issued (1)**, **Vehicle Equipment and Compliance Records (12)**, **Vehicle Inspections (4)**, **Vehicle Seizures and Forfeitures (13)**)
+- Vehicle License ID (links to **Licenses Issued (1)**)
+- Vehicle Type (Taxicab, FHV, Commuter Van, WAV, Coach, HAIL)
+- Number of Persons Injured
+- Number of Critical Injuries
+- Number of Fatalities
+- EMS Critical Injury Determination (Yes/No)
+- Driver Issued Summons/Charged (Yes/No)
+- Traffic Related Violations/Crimes Charged (List)
+- Driver Convicted (Yes/No)
+- Conviction Cause of Injury/Death (Yes/No)
+- Commission Fitness Review Initiated (Yes/No)
+- Commission Fitness Review Outcome (e.g., No Action, Suspension, Revocation)
+- Summary Suspension Issued (Yes/No)
+- Summary Suspension Start Date
+- Summary Suspension End Date
+- Enforcement Action Taken (Yes/No, links to **Enforcement Actions and Violations (3)**)
+- Date of Enforcement Action
+- Driver Crash Involvement Count (for this driver)
+
+**9. Service Authorizations**
+
+**Quotes:**
+- § 19-504.a.1: "No commuter van shall be operated within the city of New York unless it is operated as part of a current, valid authorization to operate a commuter van service duly issued by the commission pursuant to section 19-504.2 of this chapter."
+- § 19-504.2.a: "No person shall operate a commuter van service wholly within the boundaries of the city or partly within the city if the partial operation consists of the pick up and discharge of passengers wholly within the city without first obtaining authorization from the commission."
+- § 19-504.2.e.1: "The commission shall not issue an authorization to operate a commuter van service unless the commissioner of transportation determines that the service proposed will be required by the present or future public convenience and necessity."
+- § 19-504.2.e.3: "Any determination by the commissioner that a service proposed will be required by the present or future public convenience and necessity shall specify the geographic area where service is authorized and the number of commuter vans authorized to be used in providing such service."
+- § 19-504.2.g: "An authorization to operate a commuter van service shall be issued for a term of not less than one nor more than two years and shall expire on the date set forth in such authorization unless sooner suspended or revoked by the commission."
+- § 19-504.2.h: "An authorization to operate a commuter van service shall not be assignable or transferable, unless otherwise provided by the commission."
+- § 19-504.2.k: "Not more than three days after issuing an authorization to operate a commuter van service, the commission shall post on its website the geographic area where such service is authorized and the number of commuter vans authorized to be used in providing such service."
+- § 19-511.a: "The commission shall require licenses for the operation of two-way radio or other communications systems used for dispatching or conveying information to drivers of licensed vehicles... and shall require licenses for base stations..."
+- § 19-548.a: "It is unlawful for a high-volume for-hire service to operate unless licensed to do so by the commission."
+
+**Why:** The agency authorizes specific services (commuter van, base station, high-volume for-hire) and must track the details of these authorizations for regulatory and operational purposes.
+
+**One row represents:** A single authorization to operate a specific service.
+
+**Covers:** Authorizations for commuter van services, base stations (including communications systems), and high-volume for-hire services.
+
+**Columns:**
+- Authorization ID (Primary Key)
+- Licensee ID (links to **Licenses Issued (1)**, **License Applications (2)**, **Licensee Bonds (21)**, **Taxicab Licensee Financial Disclosures (7)**)
+- Licensee Name/Entity Name
+- Authorization Type (Commuter Van Service, Base Station, High-Volume For-Hire Service)
+- Issue Date
+- Expiration Date
+- Current Status (Active, Suspended, Revoked, Expired)
+- Suspension Start Date
+- Suspension End Date
+- Revocation Date
+- Reason for Suspension/Revocation (links to **Enforcement Actions and Violations (3)**)
+- Transferable (Yes/No)
+- Geographic Area Authorized
+- Number of Commuter Vans Authorized
+- Public Convenience and Necessity Determination Date
+- DOT Determination Date (for commuter vans)
+- ADA Compliance Certified (Yes/No, for commuter van services)
+- Omnibus Transportation Testing Act Compliance Certified (Yes/No, for commuter van services)
+- Number of Affiliated Vehicles (for base stations)
+- Off-Street Parking Requirements Met (Yes/No, for base stations)
+- Off-Street Parking Waiver Granted (Yes/No, for base stations)
+- Business Plan Submitted (for HVFH services)
+- Environmental Impact Assessment Submitted (for HVFH services)
+- Deductions/Charges Description Submitted (for HVFH services)
+- Rates of Fare Filed (for HVFH services)
+- Trip and Revenue Data Submitted (for HVFH services)
+- Number of Trips Dispatched (Previous Calendar Year, for HVFH services)
+- Estimated Daily Trips (for HVFH services)
+- Projected For-Hire Vehicles Needed (for HVFH services)
+- Average Trips Per Vehicle Anticipated (for HVFH services)
+- Geographic Areas Intended to Serve (for HVFH services)
+
+**10. License Fees and Payments**
+
+**Quotes:**
+- § 19-504.b: "The license fee for each taxi-cab and coach shall be five hundred fifty dollars annually. The license fee for each wheelchair accessible van and each for-hire vehicle shall be two hundred seventy-five dollars annually. If a license is granted for a period other than one year, the fee shall be prorated accordingly."
+- § 19-504.b: "There shall be an additional fee of twenty-five dollars for late filing of a wheelchair accessible van or for-hire vehicle license renewal application where such filing is permitted by the commission."
+- § 19-504.b: "Notwithstanding the foregoing, the license fee authorized by this subdivision shall be waived for any for-hire vehicle license that shall be used with a wheelchair accessible vehicle..."
+- § 19-504.c: "In the event of the loss, mutilation or destruction of any medallion or vehicle license issued hereunder, the owner may file such statement and proof of the facts as the commission may require, with a fee of twenty-five dollars... and the commission shall issue a duplicate or substitute medallion or license."
+- § 19-504.f: "The fee payable to the commission for each inspection and each reinspection required for the issuance of a certificate of inspection for a taxicab... shall not exceed ninety dollars for the first inspection and fifty dollars for each reinspection."
+- § 19-504.h: "A medallion or license may be transferred from one vehicle to another, subject to the approval of the commission and upon payment of such fee as the commission shall require, but not to exceed fifty dollars."
+- § 19-504.j: "The commission may charge a fee not to exceed ten dollars for each replacement medallion."
+- § 19-504.k: "The commission may charge a fee not to exceed twenty-five dollars per vehicle for the replacement of license plates issued by the New York state department of motor vehicles."
+- § 19-504.o: "The annual license fee for each commuter van license shall be two hundred seventy-five dollars."
+- § 19-504.2.i: "In the event of the loss, mutilation or destruction of any authorization to operate a commuter van service the owner shall file such statement and proof of the facts as the commission may require, with a fee not to exceed twenty-five dollars for each authorization..."
+- § 19-505.j: "Fees shall be paid by each applicant for a driver's license, as determined by the commission, but not to exceed the following: For each original one-year license $84.00. For renewal of a one year period $84.00."
+- § 19-505.j: "An additional fee not exceeding twenty-five dollars shall be paid for each license issued to replace a lost or mutilated license. There shall be an additional fee of twenty-five dollars for late filing of a license renewal application where such late filing is permitted by the commission."
+- § 19-509.a: "The fee for the issuance of each such license shall be five hundred dollars per annum for each place of business licensed provided, however, that upon the issuance of a license for a period of six months or less, the fee shall be one-half the annual fee fixed by the commission." (Taximeter business)
+- § 19-511.a: "upon payment of reasonable license fees of not more than five hundred dollars a year. There shall be an additional fee of twenty-five dollars for late filing of a license renewal application where such filing is permitted by the commission." (Base station)
+- § 19-512.c: "The commission may charge a fee of one hundred sixty dollars for its administrative expenses in connection with the transfer (i) of an owner's interest in a taxicab license... or (ii) of the stock in a corporation which is an owner of a taxicab license..."
+- § 19-513: "a temporary, nontransferable, nonrenewable license issued to such purchaser or vendee for a period not exceeding one year upon the payment of a fee of not exceeding one hundred dollars therefor." (Repossession)
+- § 19-518.e: "The commission may by rule establish a fee in connection with an application to transfer a base station license or an ownership interest in a base station licensee."
+- § 19-525.c: "The fee for the issuance of such permit shall not exceed fifty dollars annually. If the permit so issued is surrendered to the commission by the permittee within six months of its date of issuance, one-half of the fee paid shall be refunded to the permittee." (Exterior advertising)
+- § 19-525.1.c: "The fee for the issuance of such license shall be $500 a year." (Interior advertising company)
+- § 19-527.c: "The license fee shall be five hundred dollars for a license and five hundred dollars for each subsequent renewal thereof. If a license is granted for a period of six months or less the fee shall be one-half of the annual fee." (Taxicab broker)
+- § 19-530.b: "The fee for such a license or a renewal of such a license shall be five hundred dollars. However, if a license is granted for a period of six months or less, the fee shall be two hundred fifty dollars." (Agent)
+- § 19-548.b: "A license to operate as a high-volume for-hire service is valid for a period of two years and the biennial fee for such license shall be set by the commission."
+
+**Why:** The agency collects various fees for licenses, renewals, transfers, and services, requiring detailed tracking for financial management and compliance.
+
+**One row represents:** A single fee transaction or payment.
+
+**Covers:** All fees related to vehicle licenses, driver licenses, service authorizations, business licenses, permits, inspections, transfers, and duplicates.
+
+**Columns:**
+- Payment ID (Primary Key)
+- Transaction Date
+- Licensee ID (links to **Licenses Issued (1)**, **License Applications (2)**, **Taxicab Licensee Financial Disclosures (7)**)
+- License ID (if applicable, links to **Licenses Issued (1)**)
+- Application ID (if applicable, links to **License Applications (2)**)
+- Fee Type (e.g., Initial License, Renewal, Transfer, Duplicate, Late Filing, Inspection, License Plate Replacement)
+- Amount Due
+- Amount Paid
+- Payment Date
+- Payment Method
+- Waived (Yes/No)
+- Waiver Reason (e.g., Wheelchair Accessible Vehicle)
+- Refund Issued (Yes/No)
+- Refund Amount
+- Refund Date
+- Related Inspection ID (if applicable, links to **Vehicle Inspections (4)**)
+
+**11. Driver Training Completions**
+
+**Quotes:**
+- § 19-505.q: "the commission shall develop and commence a program to notify drivers of all vehicles licensed by the commission that facilitating sex trafficking with a vehicle is illegal... Completion of such program shall be a requirement for initial licensure and subsequent license renewal for such drivers..."
+- § 19-507.1.a.1: "Any taxicab or for-hire vehicle driver may attend a remedial or refresher course approved by the commission or a motor vehicle accident prevention course approved by the New York state department of motor vehicles. Upon presentation to the commission of proof of satisfactory completion of a commission-approved remedial or refresher course by such driver, three points shall be deducted from the number of points assessed under the persistent violators program against his or her commission-issued driver's license..."
+- § 19-507.1.a.2: "Upon presentation to the commission of proof of satisfactory completion of a motor vehicle accident prevention course approved by the New York state department of motor vehicles, three points shall be deducted from the number of points accrued under the persistent violator program..."
+- § 19-507.d.1: "Each owner shall make a reasonable good faith effort, by a driver education program or other affirmative measures, to deter the commission of violations of paragraphs one, two and three of subdivision a of this section by drivers of taxicabs for which such owner holds a vehicle license."
+
+**Why:** Tracking driver training completion is necessary to ensure compliance with mandatory training requirements and to administer point deductions for voluntary remedial courses.
+
+**One row represents:** A single instance of a driver completing a training program or course.
+
+**Covers:** Mandatory sex trafficking awareness training, voluntary remedial/refresher courses, and motor vehicle accident prevention courses.
+
+**Columns:**
+- Training Completion ID (Primary Key)
+- Driver ID (links to **Driver Licenses (5)**, **Driver Points and Sanctions (14)**)
+- Driver License ID (links to **Licenses Issued (1)**)
+- Training Program Name (e.g., Sex Trafficking Awareness, Remedial Course, Accident Prevention Course)
+- Completion Date
+- Course Provider (e.g., Commission, NYS DMV Approved)
+- Proof of Completion Submitted (Yes/No)
+- Point Deduction Applied (Yes/No, for remedial courses)
+- Points Deducted (Number)
+- Eligibility for Next Point Deduction (Date)
+- Mandatory Training (Yes/No)
+- Renewal Requirement Met (Yes/No)
+- Owner Driver Education Program (Yes/No, if part of owner's program)
+
+**12. Vehicle Equipment and Compliance Records**
+
+**Quotes:**
+- § 19-508.a: "All taxicabs shall be equipped with meters, and the equipment which shall store or transmit for storage fare data, including, but not limited to, the rate of fare and the times or locations such rate of fares were in effect, pick up and drop-off information and any other data as required by the commission."
+- § 19-508.b: "The commission may permit or require the installation of radio or other equipment of specified types in licensed vehicles, except that the commission shall require that all wheelchair accessible vans contain two-way radios where the owner employs a dispatcher, a number of portable or fixed seat belts equal to the maximum capacity of the van, safety ties sufficient to secure any wheelchair or wheelchairs which the van may at any given time be transporting and such other special equipment as the commission shall determine is necessary to insure the safe transportation of physically handicapped persons."
+- § 19-508.c.2: "Every for-hire vehicle or taxicab placed into operation shall carry a minimum of two spare trouble light devices of a type approved by the commission."
+- § 19-514.a: "The exterior of all taxicabs shall be painted yellow or any shade thereof."
+- § 19-514.b: "The name of the corporate owner shall be printed on both rear doors or on both front doors of each taxicab in such a manner as shall be prescribed by the commission."
+- § 19-514.c: "The commission may grant to any taxicab owner or association of taxicab owners, upon proper application therefor, the exclusive right to use one or more distinctive emblems or other identifying designs to be displayed on the vehicles of such applicant."
+- § 19-514.f: "Each taxicab license shall be represented by a metal medallion which shall bear the license number and be affixed to the outside of the licensed taxicab."
+- § 19-514.g: "Any vehicle for hire except those licensed under the provisions of this chapter shall not bear the colors yellow, orange, or gold, or, in combination of yellow-white, orange-white, gold-white, green-white, blue-white or any other combination of the above said colors or color scheme or striping in said colors."
+- § 19-514.h: "Any accessible taxicab or for-hire vehicle licensed by the commission shall display the international wheelchair insignia or other insignia approved by the commission that identifies such vehicle as an accessible vehicle, in a minimum of two prominent locations on such vehicle's exterior."
+- § 19-514.i: "Any clean air vehicle licensed by the commission shall display the words "CLEAN AIR VEHICLE" or such other term or symbol approved by the commission that identifies such vehicle as a clean air vehicle in a minimum of two prominent locations on such vehicle's exterior."
+- § 19-515.a: "For-hire vehicles may be painted any color approved by the commission, other than the colors reserved for medallion taxis."
+- § 19-515.b: "For-hire vehicles shall have the name of the owner or operator displayed on the outside or inside of the vehicle in such form as shall be prescribed by the commission..."
+- § 19-515.b.1: "All for-hire vehicles must at all times carry in the glove compartment and produce upon demand... The for-hire vehicle license."
+- § 19-515.b.2: "The driver's commission-issued driver's license."
+- § 19-515.b.3: "Evidence of current liability insurance or financial responsibility."
+- § 19-519.b: "all motor vehicles licensed under the provisions of this chapter, which are manufactured in the model years nineteen hundred seventy-two or later, shall be equipped with an engine designed to operate on non-leaded gasoline."
+- § 19-519.c: "all motor vehicles manufactured in model years prior to nineteen hundred seventy... shall be equipped with such emission control devices or otherwise comply with the standards governing levels of emissions for carbon monoxide, hydrocarbons and oxides of nitrogen..."
+- § 19-519.d: "all motor vehicles manufactured in model years nineteen hundred seventy-one and thereafter... shall be equipped with such emission control devices or otherwise comply with the standards governing levels of emissions for particulates, carbon monoxide, hydrocarbons and oxides of nitrogen established by the commission..."
+- § 19-529.a: "Beginning with the 1991 model year, for each seating position, every taxicab and for-hire vehicle shall be equipped with seat belts and, for every outside passenger position, shall be equipped with shoulder belts."
+- § 19-529.b: "All seat and shoulder belts required by this section or by any provision of state or federal law shall be clearly visible, accessible and shall be maintained in good working order."
+- § 19-529.4.a: "Commuter vans shall have the name of the vehicle owner, the name of the person holding the authorization pursuant to which such vehicle is operating and evidence of such authorization displayed on the outside and inside of the vehicle in such form as shall be prescribed by the commission."
+- § 19-529.4.b: "Commuter vans shall display a sticker on at least the front, back and sides of such vehicles containing a unique emblem in such form as shall be prescribed by the commission."
+- § 19-529.4.c: "Commuter vans may be painted any color approved by the commission, other than the colors reserved for medallion taxis."
+- § 19-529.4.d: "All commuter vans shall at all times carry inside the vehicle and the operator shall produce upon demand... 1. the commuter van license; 2. the driver's commuter van driver's license; 3. the authorization to operate a commuter van service... and 4. the vehicle registration and evidence of current liability insurance."
+- § 19-536.b: "The commission shall develop and provide information to each owner of a clean air vehicle, which shall be made available for viewing in each such vehicle in a manner that is clearly apparent to a passenger located in the back seat of such vehicle..."
+- § 19-537.b: "Every owner of a taxicab, livery or commuter van shall post passengers' bill of rights in at least one conspicuous location in the rear passenger compartment of such taxicab, livery or commuter van in a form and location to be prescribed by commission rule."
+- § 19-538.a: ""accessible to people with vision impairments" shall mean any taxicab that is equipped with instructions for contacting the commission in Braille and large-print text on the same side and in the same passenger compartment in each taxicab. If such taxicab has payment technology installed, such technology should be in the same passenger compartment in each taxicab, and should also provide a payment option, with the fare audibly announced and with audio instruction, to permit visually impaired passengers to pay unassisted..."
+- § 19-543: "every owner of a taxicab, for-hire vehicle, commuter van, or wheelchair accessible van shall post in at least one conspicuous place in the rear passenger compartment of such vehicle a sign stating the following: "ATTENTION: Assaulting A Driver Is Punishable By Up to Twenty-Five Years in Prison" and shall ensure that such sign remains displayed in such vehicle."
+- § 19-557.b (cyclist decal): "Every owner of a taxicab or for-hire vehicle shall prominently display cyclist awareness decals on the inside of the rear passenger doors."
+
+**Why:** The agency mandates specific equipment, markings, and documents for licensed vehicles, requiring detailed records to ensure compliance and safety.
+
+**One row represents:** A specific piece of equipment, marking, or document requirement for a licensed vehicle.
+
+**Covers:** All equipment (meters, radios, seatbelts, trouble lights, accessible features), exterior/interior markings (color schemes, owner names, emblems, medallions, accessible insignia, clean air vehicle labels, commuter van stickers), and required in-vehicle documents (licenses, insurance, registration, rate cards, passenger bills of rights, assault warning signs, cyclist awareness decals).
+
+**Columns:**
+- Vehicle ID (links to **Licenses Issued (1)**, **Vehicle Inspections (4)**, **Vehicle Crash Incidents (8)**, **Vehicle Seizures and Forfeitures (13)**)
+- Vehicle License ID (links to **Licenses Issued (1)**)
+- Equipment/Feature Type (e.g., Taximeter, Two-Way Radio, Seatbelt, Trouble Light, Wheelchair Lift, Color Scheme, Owner Name Display, Medallion, Accessible Insignia, Clean Air Label, Commuter Van Sticker, Passenger Bill of Rights, Assault Warning Sign, Cyclist Decal)
+- Status (Installed, Functional, Displayed, Carried, Compliant, Non-Compliant)
+- Last Inspection Date (links to **Vehicle Inspections (4)**)
+- Compliance Date
+- Non-Compliance Reason
+- Repair/Replacement Date
+- Model Year
+- Engine Type (Non-leaded, Emission Control Device)
+- Lead Content Compliance (Yes/No)
+- Emission Standards Met (Yes/No)
+- Horn Use Compliance (Yes/No)
+- Number of Seatbelts
+- Number of Shoulder Belts
+- Wheelchair Accessible (Yes/No)
+- Hydraulic Lift/Ramps (Yes/No)
+- Safety Ties (Yes/No)
+- Two-Way Radio (Yes/No, for WAVs)
+- Braille/Large-Print Instructions (Yes/No, for taxicabs)
+- Audio Payment Option (Yes/No, for taxicabs)
+- Clean Air Vehicle Type (Level 1, Level 2, Hybrid Electric, CNG, Electric)
+- Air Pollution Score (EPA)
+- Estimated CO2 Emissions (DOE)
+- Owner Name Displayed (Yes/No)
+- Emblem Used (Yes/No)
+- Emblem ID
+- Medallion Affixed (Yes/No)
+- Medallion Replacement Date
+- Commuter Van Sticker Displayed (Yes/No)
+- Commuter Van Sticker ID
+- Vehicle Registration Carried (Yes/No)
+- Liability Insurance Carried (Yes/No)
+- Rate Card Carried (Yes/No)
+- Passenger Bill of Rights Posted (Yes/No)
+- Assault Warning Sign Posted (Yes/No)
+- Cyclist Awareness Decal Displayed (Yes/No)
+- Interior Advertising Tablet Installed (Yes/No)
+- Interior Advertising Tablet Brand/Affiliation
+- Interior Advertising Software Approved (Yes/No)
+
+**13. Vehicle Seizures and Forfeitures**
+
+**Quotes:**
+- § 19-506.h.1: "Any officer or employee of the commission designated by the chairperson of the commission and any police officer may seize any vehicle which he or she has probable cause to believe is operated or offered to be operated without a vehicle license in violation of paragraph one of subdivision b of this section or without an appropriate vehicle license for such operation in violation of paragraph two of subdivision b or of subdivision c or subdivision k of this section."
+- § 19-506.h.1: "Unless the charge of violating subdivision b, c or k of this section is dismissed, no vehicle seized pursuant to this subdivision shall be released until all fees for removal and storage and the applicable fine or civil penalty have been paid or a bond has been posted..."
+- § 19-506.h.2: "if the owner is convicted in the criminal court of, or found liable in accordance with subdivision e of this section for, a violation of paragraphs one or two of subdivision b or of subdivision c or subdivision k of this section two or more times... the interest of such owner in any vehicle used in the commission of any such second or subsequent violation shall be subject to forfeiture upon notice and judicial determination."
+- § 19-506.h.3: "the city agency having custody of a vehicle after judicial determination of forfeiture, shall... sell such forfeited vehicle at public sale."
+- § 19-506.h.6: "The provisions of this subdivision shall not apply to the seizure and forfeiture of commuter vans which shall be governed by sections 19-529.2 and 19-529.3 of this chapter."
+- § 19-528.b.3: "to order that such premises from which such activity is occurring be sealed, provided that such premises are primarily used for such activity."
+- § 19-528.h: "If such owner or such other person does not reclaim such contents within ninety days of the premises having been sealed, such contents shall be subject to forfeiture upon notice and judicial determination..."
+- § 19-529.2.a: "A police officer or agent of the commission may... seize a vehicle which such police officer or agent of the commission has reasonable cause to believe is being operated as a commuter van service by or on behalf of a person who is not operating pursuant to a current, valid authorization or operating as a commuter van without a commuter van license as required by this chapter."
+- § 19-529.2.b: "Within one business day after the seizure of a vehicle... notice of such seizure and a copy of the notice of violation shall be mailed to the owner of such vehicle..."
+- § 19-529.2.c: "A hearing to adjudicate the violation underlying the seizure shall be held... within five business days after the date of the seizure."
+- § 19-529.2.d: "An owner shall be eligible to obtain release of the vehicle prior to such hearing if such owner has not previously been found liable... for operating a vehicle as a commuter van service without a current, valid authorization or operating a commuter van without a commuter van license..."
+- § 19-529.2.e: "Where the commission... shall find that the vehicle has been operated as a commuter van... the commission shall release such vehicle to an owner upon payment of the applicable civil penalties and all reasonable removal and storage costs; or... may commence a forfeiture action..."
+- § 19-529.2.f: "If an owner or representative of such owner has not sought to reclaim a seized vehicle within thirty days after mailing of notice... such vehicle shall be deemed by the commission to be abandoned."
+- § 19-529.3.a: "a vehicle seized pursuant to section 19-529.2 of this chapter... shall be subject to forfeiture to the city... if the owner of such vehicle has been found liable at least two times in an administrative or court proceeding for operating a commuter van... without a current, valid authorization or operating a commuter van without a commuter van license..."
+
+**Why:** Tracking vehicle seizures and forfeitures is essential for enforcing licensing requirements, deterring illegal operations, and managing impounded property.
+
+**One row represents:** A single vehicle seizure or forfeiture event.
+
+**Covers:** Seizures of unlicensed vehicles, vehicles operating beyond scope, and commuter vans operating without authorization or license, including subsequent forfeiture proceedings. Also includes sealing of premises and forfeiture of contents for unlicensed activities.
+
+**Columns:**
+- Seizure ID (Primary Key)
+- Vehicle ID (links to **Licenses Issued (1)**, **Vehicle Equipment and Compliance Records (12)**, **Vehicle Inspections (4)**, **Vehicle Crash Incidents (8)**)
+- Vehicle License ID (if applicable, links to **Licenses Issued (1)**)
+- Owner ID (links to **Licenses Issued (1)**, **License Applications (2)**, **Taxicab Licensee Financial Disclosures (7)**)
+- Date of Seizure
+- Time of Seizure
+- Seizing Officer/Agent ID
+- Location of Seizure
+- Underlying Violation ID (links to **Enforcement Actions and Violations (3)**)
+- Notice of Seizure Mailed (Yes/No)
+- Notice Mail Date
+- Hearing Date
+- Hearing Outcome (Violation Sustained, Charge Not Sustained)
+- Release Eligibility (Yes/No)
+- Bond Posted for Release (Yes/No)
+- Bond Amount
+- Release Date (Pre-hearing)
+- Release Date (Post-adjudication)
+- Removal Costs
+- Storage Costs
+- Penalties Paid for Release (Yes/No)
+- Forfeiture Action Commenced (Yes/No)
+- Forfeiture Date (Judicial Determination)
+- Forfeiture Reason (e.g., Repeat Offender, Abandoned)
+- Vehicle Disposition (Retained by City, Sold at Public Sale)
+- Sale Date
+- Sale Proceeds
+- Net Proceeds
+- Claim for Interest Asserted (Yes/No)
+- Claim Outcome
+- Premises Sealed (Yes/No, for unlicensed activity)
+- Premises Unsealed Date
+- Contents Forfeited (Yes/No, for sealed premises)
+- Contents Sale Date
+- Contents Sale Proceeds
+
+**14. Driver Points and Sanctions**
+
+**Quotes:**
+- § 19-507.1.a.1: "Upon presentation to the commission of proof of satisfactory completion of a commission-approved remedial or refresher course by such driver, three points shall be deducted from the number of points assessed under the persistent violators program against his or her commission-issued driver's license..."
+- § 19-507.1.a.2: "Upon presentation to the commission of proof of satisfactory completion of a motor vehicle accident prevention course approved by the New York state department of motor vehicles, three points shall be deducted from the number of points accrued under the persistent violator program for points assessed by the New York state department of motor vehicles or an equivalent licensing agency of the driver's state of residence against the driver's license issued to such taxicab or for-hire vehicle driver by such department or agency..."
+- § 19-507.1.b: "Any taxicab or for-hire vehicle driver who has been found guilty of violations such that a total of six or more points but fewer than ten points have been assessed by the commission against his or her commission-issued driver's license or by the New York state department of motor vehicles... within any fifteen-month period and whose license has not been revoked shall have his or her commission-issued driver's license suspended for up to thirty days."
+- § 19-507.1.c: "Any taxicab or for-hire vehicle driver who has been found guilty of violations such that a total of ten or more points have been assessed by the commission against his or her commission-issued driver's license or by the New York state department of motor vehicles... within any fifteen-month period shall have his or her commission-issued driver's license revoked."
+- § 19-507.1.d: "For the purposes of assessing points against the license of a taxicab or for-hire vehicle driver, where a taxicab or for-hire vehicle driver has been found guilty of multiple violations arising from a single enforcement action by an authorized enforcement agent, such driver shall be deemed guilty of the single violation having the highest point assessment."
+- § 19-507.1.e: "A taxicab or for-hire vehicle driver shall not be subject to an assessment of points against his or her commission-issued driver's license or the imposition of duplicate penalties where the same act is a violation under provisions of law other than commission rules and where such violations duplicate each other or are substantively the same and any such driver may be issued only one summons or notice of violation for such violation."
+
+**Why:** The persistent violators program requires tracking points assessed against drivers' licenses to determine eligibility for suspensions or revocations.
+
+**One row represents:** A single point assessment or deduction event for a driver.
+
+**Covers:** Points assessed for violations against commission-issued driver licenses and points from NYS DMV or equivalent agency licenses, as well as point deductions for remedial courses.
+
+**Columns:**
+- Point Event ID (Primary Key)
+- Driver ID (links to **Driver Licenses (5)**)
+- Driver License ID (links to **Licenses Issued (1)**)
+- Date of Event
+- Event Type (Point Assessment, Point Deduction)
+- Source of Points (Commission, NYS DMV, Other State Agency)
+- Points Added/Deducted
+- Violation ID (if point assessment, links to **Enforcement Actions and Violations (3)**)
+- Training Completion ID (if point deduction, links to **Driver Training Completions (11)**)
+- Total Points (Commission-issued license)
+- Total Points (NYS DMV/Other)
+- Total Combined Points
+- 15-Month Period Start Date
+- 15-Month Period End Date
+- Suspension Triggered (Yes/No)
+- Suspension Start Date
+- Suspension End Date
+- Revocation Triggered (Yes/No)
+- Revocation Date
+- Highest Point Assessment from Single Enforcement Action (if multiple violations)
+- Duplicate Penalty Avoided (Yes/No)
+
+**15. Base Station Facility Records**
+
+**Quotes:**
+- § 19-511.b: "The operator of a base station shall provide and utilize lawful off-street facilities for the parking and storage of the licensed for-hire vehicles that are to be dispatched from that base station equal to not less than one parking space for every two such vehicles or fraction thereof."
+- § 19-511.b: "The commission shall establish by rule criteria for off-street parking which shall include, but not be limited to, the maximum permissible distance between the base station and such off-street parking facilities and the proximity of such off-street parking facilities and the proximity of such off-street parking facilities to residences and community facilities as defined in the zoning resolution of the city of New York."
+- § 19-511.c: "a license for a base station which was valid on the effective date of this section shall only be renewed upon the condition that within two years of such renewal the licensee shall provide off-street parking facilities as required by subdivision b of this section."
+- § 19-511.d.3: "In its review of an application for a license to operate a new base station and in its review of an application to renew a base station license the commission shall also consider the possible adverse effect of such base station on the quality of life in the vicinity of the base station including, but not limited to, traffic congestion, sidewalk congestion and noise."
+- § 19-511.d.4: "No base station license shall be renewed where it has been determined after an administrative proceeding that the applicant has failed to comply with the off-street parking requirements set forth in subdivision b of this section or as they may have been modified pursuant to subdivision h of this section."
+- § 19-511.h: "the commission may reduce the number of required off-street parking spaces or may waive such requirement in its entirety where the commission determines that sufficient lawful off-street parking facilities do not exist within the maximum permissible distance from the base station or an applicant demonstrates to the satisfaction of the commission that complying with the off-street parking requirements set forth in such subdivisions would impose an economic hardship upon the applicant..."
+- § 19-517: "The commission may require that a notice be posted at the main entrance of each garage housing for-hire vehicles reciting the number of such vehicles, their license numbers and such other information as the commission may designate."
+- § 19-530.k: "Any agent acting on behalf of an owner who leases or otherwise dispatches one or more taxicabs for return at the end of a shift shall maintain business premises in a location zoned for the operation of such business with: (i) sufficient off-street space at or near its business premises to store the lesser of 25 vehicles or the following: fifty percent of the taxicabs leased on a daily or shift basis, plus five percent of the taxicabs leased for longer than one day; (ii) sufficient office space to conduct business, where all records required by the commission, including trip sheets and driver records are kept; (iii) regular business hours, including the hours of 9:00 a.m. through 5:00 p.m. on every weekday other than legal holidays; and (iv) a business address and telephone number on file with the commission."
+
+**Why:** Base stations and agents have specific physical premises and operational requirements that must be tracked for compliance, public impact, and service quality.
+
+**One row represents:** A record of a base station's or agent's physical premises and its compliance with facility requirements.
+
+**Covers:** Off-street parking facilities, business premises, office space, and operational hours for base stations and agents.
+
+**Columns:**
+- Facility ID (Primary Key)
+- Licensee ID (links to **Licenses Issued (1)**, **Service Authorizations (9)**)
+- Licensee Type (Base Station, Agent)
+- Facility Address
+- Zoning Compliance (Yes/No)
+- Number of Required Parking Spaces
+- Number of Provided Parking Spaces
+- Parking Facility Distance from Base Station
+- Proximity to Residences/Community Facilities (Notes)
+- Off-Street Parking Waiver Granted (Yes/No)
+- Waiver Reason
+- Waiver Determination Date
+- Compliance with Off-Street Parking (Yes/No)
+- Compliance Date
+- Adverse Effect on Quality of Life (Notes)
+- Traffic Congestion Impact (Notes)
+- Sidewalk Congestion Impact (Notes)
+- Noise Impact (Notes)
+- Office Space Sufficiency (Yes/No)
+- Records Kept On-Site (Yes/No)
+- Business Hours (e.g., Mon-Fri 9am-5pm)
+- Business Address on File (Yes/No)
+- Telephone Number on File (Yes/No)
+- For-Hire Vehicle Garage Notice Posted (Yes/No)
+- Taxicab Garage Notice Posted (Yes/No)
+
+**16. Leasing and Rental Agreements**
+
+**Quotes:**
+- § 19-553.a: "The commission shall promulgate consumer protection and disclosure rules regarding leasing, rental, lease-to-own, and conditional purchase arrangements to obtain a for-hire vehicle for use with a license issued by the commission."
+- § 19-553.a.1: "A requirement that financial arrangements be in writing and signed by the lessor and lessee, with a copy provided to the lessee upon execution and upon lessee request;"
+- § 19-553.a.2: "Requiring that all terms must be written in clear and unambiguous language;"
+- § 19-553.a.3: "A requirement that the terms of the arrangement include: (a) The beginning and end date of the arrangement; (b) All costs and fees that may be charged under the arrangement, with costs for additional services such as insurance and licensing clearly indicated; and (c) An explanation of the conditions that will result in the imposition of any cost or fee;"
+- § 19-553.a.4: "A requirement that if the arrangement includes charges for licensing the vehicle with the commission, the arrangement must provide an itemized explanation of the costs associated with such licensing, to include the amount of any fee imposed by the commission;"
+- § 19-553.a.5: "Requiring that arrangements provide notice of appropriate mechanisms for reporting complaints regarding overcharges."
+- § 19-553.b: "The commission may deny an application for a license for a vehicle subject to a leasing, rental, lease-to-own or conditional purchase arrangement if such leasing, rental, lease-to-own or conditional purchase arrangement does not comply with the rules of the commission."
+
+**Why:** The agency regulates leasing and rental agreements for for-hire vehicles to protect consumers and ensure transparency, requiring tracking of agreement details.
+
+**One row represents:** A single leasing, rental, lease-to-own, or conditional purchase agreement for a for-hire vehicle.
+
+**Covers:** All financial arrangements for obtaining a for-hire vehicle for use with a commission license.
+
+**Columns:**
+- Agreement ID (Primary Key)
+- Vehicle ID (links to **Licenses Issued (1)**)
+- Lessor ID (links to **Licenses Issued (1)**)
+- Lessee ID (links to **Driver Licenses (5)**)
+- Agreement Type (Leasing, Rental, Lease-to-Own, Conditional Purchase)
+- Execution Date
+- Start Date
+- End Date
+- Written Agreement (Yes/No)
+- Signed by Both Parties (Yes/No)
+- Copy Provided to Lessee (Yes/No)
+- Clear Language (Yes/No, based on review)
+- All Costs/Fees Indicated (Yes/No)
+- Itemized Licensing Costs (Yes/No)
+- Conditions for Fees Explained (Yes/No)
+- Complaint Mechanism Notice Provided (Yes/No)
+- Compliance with Commission Rules (Yes/No)
+- License Application Denied Due to Non-Compliance (Yes/No)
+- Denial Date
+- Denial Reason
+
+**17. Information Security Policies and Breaches**
+
+**Quotes:**
+- § 19-502.aa: ""Breach of the security of the system" has the same meaning as in paragraph c of subdivision 1 of section 899-aa of the general business law."
+- § 19-502.bb: ""Personal information" has the same meaning as in paragraph a of subdivision 1 of section 899-aa of the general business law and includes such information pertaining to passengers and drivers."
+- § 19-502.cc: ""Passenger geolocation information" means information concerning the location of a wireless communication device that... could be used to determine or infer information regarding the present, prospective, or historical location of an individual."
+- § 19-546.a: "All entities licensed by the commission, or authorized by the commission to provide services regulated by the commission, that collect or maintain passenger personal information or passenger geolocation information shall file with the commission an information security and use of personal information policy."
+- § 19-546.a.i: "a statement of internal access policies relating to passenger and driver personal information for employees, contractors, and third party access, if applicable;"
+- § 19-546.a.ii: "a statement that... personal information will only be collected and used with such passenger's affirmative express consent and that such personal information will not be used, shared, or disclosed, except for lawful purposes;"
+- § 19-546.a.iii: "procedures for notifying the commission and affected parties of any breach of the security of the system, pursuant to section 899-aa of the general business law;"
+- § 19-546.a.iv: "a statement that any credit, debit, or prepaid card information collected by the entity or a credit, debit, or prepaid card services provider is processed by the entity or such provider in compliance with applicable payment card industry standards;"
+- § 19-546.a.v: "a statement of the entity's policies regarding the use of passenger geolocation information, which must include, at a minimum, a prohibition on the use, monitoring, or disclosure of trip information... without such passenger's affirmative express consent;"
+- § 19-546.b: "Any entity that files an information security and use of personal information policy pursuant to subdivision a of this section shall comply with the terms of such policy."
+- § 19-546.d: "Every recipient of a license obtained pursuant to this chapter who is required to make a notification pursuant to subdivision 2 or 3 of section 899-aa of the general business law shall promptly submit a copy of such notification to the commission."
+
+**Why:** The agency requires licensees to file and comply with information security policies and report data breaches, necessitating tracking of these policies and incidents.
+
+**One row represents:** A single information security policy filing or a reported data breach incident.
+
+**Covers:** Information security and use of personal information policies filed by licensed entities, and notifications of security breaches.
+
+**Columns:**
+- Record ID (Primary Key)
+- Licensee ID (links to **Licenses Issued (1)**)
+- Licensee Name/Entity Name
+- Record Type (Policy Filing, Breach Notification)
+- Date of Filing/Notification
+- Policy Version (if policy filing)
+- Internal Access Policies Statement (Yes/No)
+- Personal Information Consent/Use Statement (Yes/No)
+- Breach Notification Procedures Statement (Yes/No)
+- Payment Card Industry Standards Compliance Statement (Yes/No)
+- Passenger Geolocation Information Policy Statement (Yes/No)
+- Other Required Provisions (Yes/No)
+- Policy Compliance Status (Compliant, Non-Compliant)
+- Breach Incident Date (if breach notification)
+- Breach Description
+- Personal Information Affected (Yes/No)
+- Passenger Geolocation Information Affected (Yes/No)
+- Number of Affected Parties
+- Notification to Affected Parties Date
+- Notification to Commission Date
+- GBL 899-aa Compliance (Yes/No)
+- Enforcement Action Taken (Yes/No, links to **Enforcement Actions and Violations (3)**)
+
+**18. Electric Vehicle Fleet Data**
+
+**Quotes:**
+- § 19-550.g: "The commission shall no later than December 31, 2020 and annually thereafter submit to the council and the mayor a report on the effects of vehicle utilization standards, the regulation of the number of licenses issued to for-hire vehicles authorized by subdivision b of this section, and the use of electric vehicles. Such report shall include at least the following information: 1. The total number of licensed for-hire vehicles that are electric vehicles; 2. A target for the total number of licensed for-hire vehicles that will be electric vehicles by the due date of the next annual report and an estimate of the number of publicly available electric vehicle charging stations that would be necessary to support those electric vehicles; 3. The number and location of publicly available electric vehicle charging stations installed in the year preceding the submission of such report, disaggregated by charging level and borough; 4. The total number of for-hire vehicle licenses issued by the commission for electric vehicles in the year preceding the submission of such report, including the number of such vehicle licenses issued for wheelchair accessible electric vehicles, if any; 5. The number of licensed for-hire vehicles that have converted from internal combustion engines to electric vehicles in the year preceding the submission of such report; 6. The estimated costs of an electric vehicle compared to the costs of an internal combustion engine vehicle, such as vehicle acquisition, rental costs, fuel, and maintenance; 7. Whether existing and projected charging capacity meets or is expected to meet the demand for existing and projected electric for-hire vehicles, including an analysis of trends in the utilization of existing chargers, based on information available to the commission; 8. Recommended locations for additional electric vehicle charging stations based on the residences and trip patterns of for-hire vehicle drivers; 9. An update on the city’s progress towards a complete transition of all licensed for-hire vehicles to electric or wheelchair accessible vehicles, and on any agreements or commitments between the commission and private entities to facilitate such transition; and 10. Changes, if any, in incentives to encourage the adoption of electric for-hire vehicles."
+
+**Why:** The agency is mandated to report annually on electric vehicle adoption and charging infrastructure, requiring detailed data on EV fleets and charging stations.
+
+**One row represents:** A snapshot of electric vehicle data or a record of a charging station.
+
+**Covers:** Licensed electric for-hire vehicles, conversions, charging stations, and related cost/demand estimates.
+
+**Columns:**
+- Data Snapshot Date (Primary Key for fleet data)
+- Vehicle ID (Primary Key for charging station data, links to **Licenses Issued (1)**)
+- Vehicle License ID (links to **Licenses Issued (1)**)
+- Vehicle Type (e.g., Taxicab, FHV)
+- Is Electric Vehicle (Yes/No)
+- Is Wheelchair Accessible Electric Vehicle (Yes/No)
+- Conversion from ICE (Yes/No)
+- Conversion Date
+- Estimated EV Acquisition Cost
+- Estimated EV Rental Cost
+- Estimated EV Fuel Cost
+- Estimated EV Maintenance Cost
+- Estimated ICE Acquisition Cost (for comparison)
+- Estimated ICE Rental Cost (for comparison)
+- Estimated ICE Fuel Cost (for comparison)
+- Estimated ICE Maintenance Cost (for comparison)
+- Charging Station ID (Primary Key for charging station data)
+- Charging Station Location (Address, Lat/Long)
+- Charging Level (e.g., Level 2, DC Fast Charger)
+- Charging Station Installation Date
+- Charging Station Utilization Rate
+- Recommended Location (Yes/No)
+- Recommended Location Reason (e.g., Driver Residence, Trip Pattern)
+- Incentive Changes (Description)
+- Private Entity Agreements (Description)
+
+**19. Exterior Advertising Permits**
+
+**Quotes:**
+- § 19-525.a: "No vehicle licensed pursuant to the provisions of this chapter shall carry any advertising on the exterior of such vehicle, including its roof and trunk, unless the owner thereof shall first have obtained from the commission a permit to carry such exterior advertising."
+- § 19-525.b: "Such permits shall be issued as of September first, and shall expire on August thirty-first next succeeding unless sooner surrendered, suspended, revoked or terminated."
+- § 19-525.c: "The fee for the issuance of such permit shall not exceed fifty dollars annually. If the permit so issued is surrendered to the commission by the permittee within six months of its date of issuance, one-half of the fee paid shall be refunded to the permittee."
+- § 19-525.d: "Applications for such permits shall be filed with the commission upon forms which shall be provided by the commission."
+- § 19-525.f: "the commission may revoke any individual permit or the permits of any one medallion ownership corporation... if advertising showed in the exterior display is offensive to public morals, and is not removed from public display within a period of fifteen days upon specific request for such action from the taxi and limousine commission."
+- § 19-525.g: "No permit issued under this section shall be transferred or assigned."
+
+**Why:** The agency regulates exterior advertising on licensed vehicles, requiring permits and tracking compliance with content and display rules.
+
+**One row represents:** A single exterior advertising permit issued for a vehicle.
+
+**Covers:** Permits for exterior advertising on any licensed vehicle.
+
+**Columns:**
+- Permit ID (Primary Key)
+- Vehicle ID (links to **Licenses Issued (1)**)
+- Vehicle License ID (links to **Licenses Issued (1)**)
+- Owner ID (links to **Licenses Issued (1)**)
+- Application Date (links to **License Applications (2)**)
+- Issue Date
+- Expiration Date
+- Current Status (Active, Surrendered, Suspended, Revoked, Terminated)
+- Suspension Start Date
+- Suspension End Date
+- Revocation Date
+- Reason for Suspension/Revocation (e.g., Offensive Content, Non-removal) (links to **Enforcement Actions and Violations (3)**)
+- Fee Paid (links to **License Fees and Payments (10)**)
+- Refund Issued (Yes/No)
+- Refund Amount
+- Advertising Type/Size (Description)
+- Advertising Content (Description/Notes)
+- Offensive to Public Morals (Yes/No)
+- Removal Request Date
+- Removal Compliance Date
+- Transferable (No)
+
+**20. Interior Advertising Company Records**
+
+**Quotes:**
+- § 19-525.1.a: ""Approved electronic tablet." The term “approved electronic tablet” means a third-party device... that is approved by the commission, attached to the interior of a for-hire vehicle, capable of broadcasting electronic media to a passenger... and capable of being turned on and off, muted, or having its volume adjusted by such passenger..."
+- § 19-525.1.a: ""Approved software." The term “approved software” means any software running on an approved electronic tablet, approved by the commission, for the purpose of broadcasting electronic media to a passenger of a for-hire vehicle..."
+- § 19-525.1.b: "No high-volume for-hire service or other service regulated by the commission may discriminate against a driver based on whether the driver chooses to operate a vehicle with an approved electronic tablet, or based on the brand or affiliation of the approved electronic tablet if a driver chooses to use an approved electronic tablet, or based on the approved software running on such approved electronic tablet..."
+- § 19-525.1.c: "It shall be unlawful for any person to provide or supply an approved electronic tablet for use in a for-hire vehicle unless such person secures a license therefor from the commission. The fee for the issuance of such license shall be $500 a year. Any person licensed under this section shall provide the commission with any and all information required by the rules and regulations promulgated pursuant to this section, including but not limited to the information required under section 19-546."
+- § 19-525.1.d: "Any interior advertising company licensed pursuant to subdivision c of this section shall compensate drivers of a for-hire vehicle with an approved electronic tablet with a minimum of 25 percent of the gross revenue generated by such tablet in their vehicle."
+- § 19-525.1.d: "In the case of a for-hire vehicle with more than 1 driver, each driver operating such vehicle shall receive a pro rata share of such revenue, based on the share of hours the driver operated the vehicle."
+
+**Why:** The agency licenses interior advertising companies and regulates their operations, including driver compensation, requiring tracking of these entities and their compliance.
+
+**One row represents:** A single interior advertising company license or a record of an approved electronic tablet/software.
+
+**Covers:** Licenses for interior advertising companies, approved electronic tablets, approved software, and driver compensation from interior advertising.
+
+**Columns:**
+- Company ID (Primary Key)
+- Company License ID (links to **Licenses Issued (1)**)
+- Company Name
+- Issue Date
+- Expiration Date
+- Current Status (Active, Suspended, Revoked, Expired)
+- Fee Paid (links to **License Fees and Payments (10)**)
+- Approved Electronic Tablet Brand/Model
+- Approved Software Name/Version
+- Tablet Approval Date
+- Software Approval Date
+- Driver Compensation Policy (Description)
+- Minimum Compensation Rate (e.g., 25%)
+- Gross Revenue Generated by Tablet (per vehicle, per period)
+- Driver Share of Revenue (per vehicle, per period)
+- Driver ID (links to **Driver Licenses (5)**)
+- Vehicle ID (links to **Licenses Issued (1)**)
+- Driver Hours Operated (for pro-rata share calculation)
+- Discrimination Against Drivers (Yes/No)
+- Information Security Policy Filed (Yes/No, links to **Information Security Policies and Breaches (17)**)
+- Information Security Policy Compliance (Yes/No)
+
+**21. Licensee Bonds**
+
+**Quotes:**
+- § 19-511.f: "Prior to the issuance of a license for a base station or the renewal of a valid base station license, the applicant shall provide to the commission a bond in the amount of five thousand dollars with one or more sureties to be approved by the commission. Such bond shall be for the benefit of the city and shall be conditioned upon the licensee complying with the requirement that the licensee dispatch only vehicles which are currently licensed by the commission and which have a current New York city commercial use motor vehicle tax stamp and upon the payment by the licensee of all civil penalties imposed pursuant to any provision of this chapter."
+- § 19-518.b: "Any base station license or ownership interest in the licensee may be transferred... provided that either the transferor or transferee shall have filed a bond to cover all the outstanding tort liabilities of the transferor arising out of the operation of a base station and the for-hire vehicles owned by the transferor which is in excess of the amount covered by any bond or insurance policy in effect pursuant to the vehicle and traffic law, and all outstanding fines, penalties and other liabilities which the transferor owes to the commission shall have been satisfied."
+- § 19-527.e: "Before such license is issued, an applicant shall deposit with the commission, a bond in the penal sum of fifty thousand dollars containing one or more sureties to be approved by the commission. Such bond shall be payable to the city and shall be conditioned that the person applying for the license will comply with the provisions of this section and any rules or regulations of the commission; and shall pay all fines imposed by the commission... and all judgements awarding from damages occasioned to any person by reason of any misrepresentation, fraud or deceit, or any unlawful act or omission of such licensee, his or her agents or employees..." (Taxicab broker)
+- § 19-530.e: "Before such license is issued, an applicant shall deposit with the commission a bond, the amount of which shall be determined by rule of the commission, containing one or more sureties to be approved by the commission. Such bond shall be payable to the city and shall be conditioned on the licensee complying with the provisions of this section and any applicable rules of the commission; payment of all civil penalties imposed... and payment of all judgments or settlements arising from damages occasioned to any person by reason of any misrepresentation, fraud or deceit, or any unlawful act or omission of such licensee or an employee, officer, director, partner, owner of more than ten percent of the outstanding stock of the licensee or the chief executive officer of such licensee while such individual is acting on behalf of such licensee, or any other violation of this section." (Agent)
+
+**Why:** Bonds are required for certain licensees to ensure compliance and provide financial security against liabilities, necessitating tracking of bond details.
+
+**One row represents:** A single bond deposited by a licensee.
+
+**Covers:** Bonds required for base stations, taxicab brokers, and agents.
+
+**Columns:**
+- Bond ID (Primary Key)
+- Licensee ID (links to **Licenses Issued (1)**, **License Applications (2)**, **Taxicab Licensee Financial Disclosures (7)**)
+- Licensee Type (Base Station, Taxicab Broker, Agent)
+- Bond Amount
+- Surety Name
+- Approval Date
+- Expiration Date
+- Status (Active, Expired, Claimed)
+- Claim Date
+- Claim Amount
+- Claim Reason (e.g., Unpaid Penalties, Tort Liabilities, Fraud)
+- Bond Condition Compliance (Yes/No)
+- Related License Transfer ID (if applicable, for base station transfers)
+- Outstanding Tort Liabilities Covered (Yes/No)
+- Outstanding Fines/Penalties Covered (Yes/No)
+
+**22. Commuter Van Service Area Designations**
+
+**Quotes:**
+- § 19-504.2.e.2: "the application for authorization to operate a commuter van service shall set forth the geographic area proposed to be served by the applicant and the maximum number of vehicles to be operated and the capacity of each such vehicle..."
+- § 19-504.2.e.3: "Any determination by the commissioner that a service proposed will be required by the present or future public convenience and necessity shall specify the geographic area where service is authorized and the number of commuter vans authorized to be used in providing such service."
+- § 19-504.2.k: "Not more than three days after issuing an authorization to operate a commuter van service, the commission shall post on its website the geographic area where such service is authorized and the number of commuter vans authorized to be used in providing such service."
+- § 19-529.1.a.1: "No commuter van service and no person who owns, operates or drives a commuter van shall solicit, pick up or discharge passengers... outside of the geographical area set forth in the authorization to operate a commuter van service..."
+- § 19-529.7.11: "Such report shall include... a discussion of how commuter van service areas are selected;"
+
+**Why:** Commuter van services are authorized for specific geographic areas, requiring tracking of these designations for enforcement and operational planning.
+
+**One row represents:** A single authorized geographic service area for a commuter van service.
+
+**Covers:** Geographic areas authorized for commuter van services.
+
+**Columns:**
+- Service Area ID (Primary Key)
+- Commuter Van Service Authorization ID (links to **Service Authorizations (9)**)
+- Geographic Area Description (e.g., specific neighborhoods, boundaries)
+- Start Date of Authorization
+- End Date of Authorization
+- Number of Commuter Vans Authorized for Area
+- Public Convenience and Necessity Determination Date
+- DOT Determination Date
+- Violation of Geographic Area (Yes/No, links to **Enforcement Actions and Violations (3)**)
+- Bus Route Restrictions (Yes/No)
+- Bus Route Restriction Details (e.g., Manhattan south of Chambers Street exemption)
+
+**23. Public Awareness Campaign Activities**
+
+**Quotes:**
+- § 19-506.g: "The commission shall undertake a public awareness campaign advising the public to patronize only licensed taxicabs and for-hire vehicles and, when selecting a taxicab or for-hire vehicle from an advertisement, to look for the commission license number in any such advertisement."
+- § 19-534.b.3: "an education campaign regarding clean air and accessible vehicles that provides taxicab and for-hire vehicle owners and prospective owners with information regarding the availability, costs and savings, and benefits of such vehicles for such owners."
+- § 19-534.d: "The commission shall conduct or participate in at least one informational workshop regarding clean air and accessible vehicles in each of the two calendar years following the development and approval of the plan pursuant to subdivision b of this section."
+- § 19-551.b: "The commission, in consultation with the department of consumer and worker protection and any other agencies designated by the mayor, shall engage in outreach and education efforts that are intended to inform individuals who are considering whether to enter into purchase, rental, lease or loan agreements for the purpose of obtaining vehicles for use as for-hire vehicles, and individuals who are considering whether to purchase, refinance or lease a taxicab license, about the costs and benefits of entering into such arrangements and transactions."
+
+**Why:** The agency is mandated to conduct public awareness and education campaigns, requiring tracking of these activities to demonstrate compliance and effectiveness.
+
+**One row represents:** A single public awareness campaign activity or event.
+
+**Covers:** Campaigns advising the public to use licensed vehicles, education on clean air/accessible vehicles, and financial education for drivers/owners.
+
+**Columns:**
+- Campaign Activity ID (Primary Key)
+- Campaign Name (e.g., "Patronize Licensed Vehicles," "Clean Air/Accessible Vehicle Education," "Driver Financial Education")
+- Activity Type (e.g., Advertisement, Workshop, Website Update, Material Distribution)
+- Date of Activity
+- Description of Activity
+- Target Audience (Public, Owners, Drivers, Prospective Owners)
+- Medium (Print, Broadcast, Website, Workshop, Direct Mail)
+- Materials Used (Description)
+- Languages Provided (for financial education)
+- Location (for workshops)
+- Attendance Count (for workshops)
+- Partner Agencies (e.g., DCWP, SBS)
+- Compliance with Mandate (Yes/No)
+
+**24. Advisory Board Meeting Records**
+
+**Quotes:**
+- § 19-520.a: "There shall be an advisory board whose members shall be appointed for two-year terms by the mayor and the speaker of the council to enable the commission to be kept aware of current views of all segments of the industries regulated by the commission and of the public and to be available to the commission to provide the expertise of its members for the better administration of the commission and service to the public."
+- § 19-520.b: "The advisory board shall consist of twenty-four members, including each chairperson of the transportation, consumer affairs, and finance committees of the council or such chairpersons' designees, as well as one member of each of the following groups: (1) a taxicab medallion owner... (2) a taxicab medallion owner who is required by law to drive... (3) an individual who acts as an agent... (4) an individual who represents an institution which lends money... (5) a taxicab driver who does not own a taxicab medallion and leases a taxicab... (6) a taxicab driver who does not own a taxicab medallion but owns his or her own taxicab or leases a taxicab... (7) an advocate for the disability community; (8) an advocate for taxicab passengers; (9) an advocate for passengers of for-hire vehicles; (10) a commuter van service driver or operator; (11) an operator of a black car base; (12) an operator of a luxury limousine base; (13) a driver of a black car vehicle; (14) a driver of a luxury limousine vehicle; (15) a driver of a for-hire vehicle other than a luxury limousine or black car; (16) an operator of a paratransit base; (17) a driver of a wheelchair accessible taxicab or for-hire vehicle; (18) a holder of a HAIL vehicle permit... (19) an advocate for the environment; (20) an operator of a base station that has a permit... (21) an operator of a base station that does not have a permit..."
+- § 19-520.c: "The board shall meet no less often than every three months beginning after the complete board is initially appointed."
+- § 19-520.d: "Not more than thirty days following any meeting of the advisory board held pursuant to this section, the commission shall provide to the council and to all board members a written summary of such meeting, including but not limited to any recommendations made by such advisory board."
+
+**Why:** The agency is required to maintain an advisory board and hold regular meetings, necessitating tracking of meeting details, attendance, and recommendations.
+
+**One row represents:** A single meeting of the advisory board.
+
+**Covers:** All advisory board meetings, including attendance, topics discussed, and recommendations made.
+
+**Columns:**
+- Meeting ID (Primary Key)
+- Meeting Date
+- Meeting Time
+- Meeting Location
+- Meeting Type (e.g., Regular, Special)
+- Agenda Topics (List)
+- Attendees (List of Member IDs/Names)
+- Quorum Met (Yes/No)
+- Recommendations Made (Yes/No)
+- Summary Provided to Council (Yes/No)
+- Summary Provision Date
+- Summary Content (Description of recommendations)
+- Follow-up Actions (Description)
+
+---
+
+**Non-Tabular Information:**
+
+This category includes information that is typically stored as documents, images, or unstructured text, rather than in a structured, row-and-column format suitable for a relational database. While these items are important for the agency's operations, they are not "datasets" in the requested sense.
+
+*   **Rules and Regulations:**
+    *   § 19-503.a: "The commission shall promulgate such rules and regulations as are necessary to exercise the authority conferred upon it by the charter and to implement the provisions of this chapter."
+    *   § 19-503.1.a: "The commission shall have the authority to promulgate rules and regulations which classify for-hire vehicles..."
+    *   § 19-505.k: "Every driver who has obtained a license pursuant to this section shall comply with the rules and regulations promulgated by the commission for drivers..."
+    *   § 19-509.b: "the commission may establish such rules and regulations in respect to the taximeter business as may be reasonable..."
+    *   § 19-525.e: "The commission shall promulgate such rules and regulations as are necessary to carry out the provisions of this section, including but not limited to the type and size of any advertising matter."
+    *   § 19-537.f: "The content of such statement shall be prescribed by commission rule." (Passengers' bills of rights)
+    *   § 19-553.a: "The commission shall promulgate consumer protection and disclosure rules regarding leasing, rental, lease-to-own, and conditional purchase arrangements..."
+*   **Job Applications:** Implied by the need for staff to run the agency.
+*   **Receipts:** Implied by fee payments, but the detailed payment records are captured in `License Fees and Payments`.
+*   **Photos:**
+    *   § 19-505.e: "Each applicant for a driver's license must file with his or her application two recent photos..."
+    *   § 19-514.d: "Such applications must include colored sketches of the proposed color schemes of the emblems or designs..."
+*   **Research Documents:**
+    *   § 556.d.2: "engage in or promote health research for the purpose of improving the quality of medical and health care; in conducting such research, the department shall have the authority to conduct medical audits, to receive reports on forms prepared or prescribed by the department; such information when received by the department shall be kept confidential and used solely for the purpose of medical or scientific research or the improvement of the quality of medical care;"
+*   **Public Support Statements:**
+    *   § 19-504.2.e.3: "The commissioner of transportation may request that the applicant provide any additional information relevant to such determination; provided, however, that public support statements shall not be required."
+*   **Council Resolutions/Local Laws:**
+    *   § 19-504.2.f.2: "Within twenty days of such submission the council may adopt a resolution by majority vote of all council members to review that determination."
+    *   § 19-504.2.f.3: "Within thirty days of the adoption of the council of a resolution pursuant to this subdivision, the council, may act by local law to approve or disapprove the determination of the commission."
+    *   § 19-511.1: "Within ninety days of the first stated meeting following receipt of such determination and its accompanying materials, the council may approve or disapprove such determination by local law, after having adopted a resolution to review that determination."
+*   **Written Summaries of Advisory Board Meetings:**
+    *   § 19-520.d: "Not more than thirty days following any meeting of the advisory board held pursuant to this section, the commission shall provide to the council and to all board members a written summary of such meeting, including but not limited to any recommendations made by such advisory board."
+*   **Public Awareness Campaign Materials:**
+    *   § 19-506.g: "The commission shall undertake a public awareness campaign advising the public to patronize only licensed taxicabs and for-hire vehicles..."
+    *   § 19-534.b.3: "an education campaign regarding clean air and accessible vehicles that provides taxicab and for-hire vehicle owners and prospective owners with information..."
+*   **Driver Education Program Materials:**
+    *   § 19-507.d.1: "Each owner shall make a reasonable good faith effort, by a driver education program or other affirmative measures, to deter the commission of violations..."
+*   **Clean Air/Accessible Vehicle Plan Documents:**
+    *   § 19-534.b: "the commission shall develop and approve a plan to significantly increase the number of clean air and accessible vehicles in New York city."
+*   **Financial Education Materials:**
+    *   § 19-551.b: "The commission... shall engage in outreach and education efforts that are intended to inform individuals who are considering whether to enter into purchase, rental, lease or loan agreements..."
+*   **Business Plans for High-Volume For-Hire Services:**
+    *   § 19-548.c.1: "Submits a business plan that includes: (a) The number of trips arranged or dispatched... (b) A projection of the number of for-hire vehicles needed... (c) The geographic areas... (d) Any other information the commission deems important..."
+*   **Impact Assessments for High-Volume For-Hire Services:**
+    *   § 19-548.c.2: "Complies with any requirement established by the commission to assess the impact of the operation of a high-volume for-hire service on the environment, including... (a) traffic congestion; (b) local transportation... (c) noise;"
+*   **Study Results (Vehicle Utilization, Driver Income, Congestion, etc.):**
+    *   § 19-550.a: "The commission, in conjunction with the department of transportation, shall study (i) income drivers derive... (ii) traffic congestion... (iii) the extent to which various categories of vehicles for hire contribute to such congestion, (iv) traffic safety, (v) vehicle utilization rates, (vi) access to services in different geographic areas... (vii) the number of hours that drivers have made themselves available... (viii) driver income and well-being, and (ix) such other topics..."
+*   **Information Security and Use of Personal Information Policies:**
+    *   § 19-546.a: "All entities licensed by the commission... shall file with the commission an information security and use of personal information policy."
+*   **Statements of Correction for Vehicle Lights Violations:**
+    *   § 19-554.c: "The following constitute proof of correction... 1. A statement of correction from an official inspection station... 2. A statement of correction from an automobile repair shop... 3. A statement of correction from a person administering a fleet... 4. A signed statement of any police officer... 5. Evidence acceptable to the commission from any person that such person made the correction together with proof of purchase of any equipment needed to make such correction."
+*   **Affirmations of Correction for Vehicle Lights Violations:**
+    *   § 19-554.b: "such driver or owner provides to the commission... an affirmation under penalty of perjury that such correction was made..."
+*   **Written Requests for Hearing Recordings:**
+    *   § 19-506.1.d: "If, for the purposes of appealing a decision, a respondent requests a copy of the hearing recording, such recording shall be produced to such respondent within thirty days..."
+*   **Notices of Default:**
+    *   § 19-506.1.e: "After mailing a notice of default to a respondent, the commission shall prepare a record containing the name of the person who mailed such notice, and the date, time and method used to mail such notice."
+*   **Written Statements of Reasons for Off-Street Parking Waivers:**
+    *   § 19-511.h: "A determination to waive or reduce the off-street parking requirements shall be made in writing, shall contain a detailed statement of the reasons why such determination was made..."
+*   **Written Determination for Base Station Licenses:**
+    *   § 19-511.i: "The determination by the commission to approve an application for a license to operate a new base station or for the renewal of a license to operate a base station shall be made in writing and shall be accompanied by copies of the data, information and other materials relied upon by the commission in making that determination."
+*   **Written Permission for Base Station License Transfer from Judgment Creditors:**
+    *   § 19-518.d: "A transfer may also be permitted without filing a bond... provided that all the judgment creditors of a licensee file written permission for such a transfer with the commission..."
+*   **Written Lease Agreements (Meter Tampering Warnings):**
+    *   § 19-507.1.h.2: "including in any written lease agreement provisions containing the warnings against violation of meter tampering rules"
+*   **Trip Cards (Meter Tampering Warnings):**
+    *   § 19-507.1.h.3: "stamping warnings about the illegality of meter tampering on the trip cards issued to all drivers of an owner's taxicabs"
+*   **Passenger Bills of Rights (Physical Signs):**
+    *   § 19-537.b: "Every owner of a taxicab, livery or commuter van shall post passengers' bill of rights in at least one conspicuous location in the rear passenger compartment of such taxicab, livery or commuter van..."
+*   **Braille/Large-Print Instructions for Vision Impaired Accessibility:**
+    *   § 19-538.a: "any taxicab that is equipped with instructions for contacting the commission in Braille and large-print text..."
+*   **Signs Re: Assaulting Drivers (Physical Signs):**
+    *   § 19-543: "every owner of a taxicab, for-hire vehicle, commuter van, or wheelchair accessible van shall post in at least one conspicuous place in the rear passenger compartment of such vehicle a sign stating the following: "ATTENTION: Assaulting A Driver Is Punishable By Up to Twenty-Five Years in Prison""
+*   **Cyclist Awareness Decals (Physical Signs):**
+    *   § 19-557.b (cyclist decal): "Every owner of a taxicab or for-hire vehicle shall prominently display cyclist awareness decals on the inside of the rear passenger doors."

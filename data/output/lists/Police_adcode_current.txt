@@ -1,0 +1,1481 @@
+**Data Systems for Program Implementation**
+
+**1. Agency Vision and Objectives:**
+The Police Department's vision is to ensure public safety and order through law enforcement, crime prevention, and emergency response. Key objectives include:
+*   Effective civil and criminal enforcement of laws and regulations.
+*   Efficient and timely response to 911 emergency calls and incidents.
+*   Prevention of crime and delinquency, particularly among minors.
+*   Maintenance of department facilities and equipment.
+*   Accountable and disciplined police force.
+*   Compliance with legal and reporting requirements, including those related to bias-based profiling, use of force, property management, and inter-agency cooperation.
+*   Promotion of community relations and public trust.
+*   Specialized services for victims of domestic violence, sexual crimes, and human trafficking.
+*   Safe and secure school environments.
+
+**What counts as a win:**
+*   Reduced crime rates (major felonies, specific offenses).
+*   Improved 911 response times.
+*   High clearance rates for serious crimes.
+*   Effective management of personnel, including appropriate discipline and training.
+*   Accurate and transparent reporting of police activities and data.
+*   Successful recovery and disposition of seized property.
+*   Minimized instances of bias-based profiling and excessive force.
+*   Effective support for vulnerable populations (minors, domestic violence victims, individuals with autism spectrum disorder).
+*   Full compliance with all legal and reporting mandates.
+
+**How to know it's a win:**
+Success is measured through the various reports mandated by the text (e.g., 911 operational time analysis, crime status reports, use of force reports, property clerk reports, personnel deployment reports, domestic violence/hate crime statistics, school activity reports, traffic data, investigative encounter reports). These reports provide quantitative metrics and qualitative insights into departmental performance, compliance, and impact on the community.
+
+**2. Agency Capacities:**
+*   **Human Resources:** A large police force with various ranks (Captains, Lieutenants, Sergeants, Police Officers, Surgeons, Veterinarian), specialized roles (Detectives, Juvenile Bureau members, Superintendent of Buildings, Property Clerk), and civilian staff (School Crossing Guards, Traffic and Parking Enforcement employees, Special Patrolmen, Auxiliary Police, School Safety Agents). Extensive training programs are mandated.
+*   **Technical Resources:** 911 emergency assistance system, state and federal databases (e-JusticeNY), body-worn cameras, centralized electronic system for parking permits, surveillance technology (including facial recognition), internal tracking systems for officer activity and data sharing.
+*   **Financial Resources:** Appropriations for contingent expenses, salaries, equipment (horses, automotive equipment, uniforms, badges, opioid antagonists, AEDs), pension funds, workers' compensation, rewards, and funding for various programs and services.
+*   **Physical Resources:** Precincts, station houses, substations, department buildings, vehicles, boats, firearms, communication systems (radio).
+
+**3. Agency Obligations (Overhead):**
+*   **Personnel Management:** Recruitment, appointment, promotion, salary administration, pension contributions, workers' compensation, discipline, suspension, termination, re-hearings, managing resignations and leaves, ensuring certifications (e.g., CPR/AED).
+*   **Facilities Management:** Establishing and maintaining precincts, station houses, substations, providing accommodations for detainees (especially women), managing department buildings and mechanical forces.
+*   **Equipment Management:** Procurement, maintenance, and tracking of uniforms, badges, official identification cards, vehicles, boats, horses, firearms, opioid antagonists, AEDs, body-worn cameras, and other surveillance technology.
+*   **Financial Management:** Budgeting, managing contingent expenses, processing payroll, administering pension funds, handling rewards, managing seized property funds, tracking overtime spending.
+*   **Legal & Regulatory Compliance:** Enforcing civil and criminal laws, executing warrants, complying with health code enforcement, environmental compliance, adhering to bias-based profiling prohibitions, implementing consent search guidelines, child-sensitive arrest policies, DNA collection consent rules, radio communication policies, and internal disciplinary matrix.
+*   **Reporting & Transparency:** Quarterly and annual reports to the City Council, Mayor, Public Advocate, state officials, and public website postings on a wide range of activities (crime statistics, 911 response, personnel deployment, use of force, property seizures, traffic data, school activity, domestic violence, hate crimes, immigration detainers, marijuana enforcement, opioid antagonist use, surveillance technology, investigative encounters, youth programs).
+*   **Inter-agency Coordination:** Cooperating with the Department of Health and Mental Hygiene, Board of Education, Human Resources Administration, Department of Social Services, Department of Transportation, District Attorneys, Civilian Complaint Review Board, Office of Children and Family Services, Office of Nightlife, Commissioner of Investigation, and MTA.
+*   **Training & Development:** Developing and delivering training programs for recruits and existing staff on various topics including elder abuse, harassment/sexual assault sensitivity, special victims investigations, child-sensitive arrests, autism spectrum disorder safety, and identity theft.
+*   **Public Services:** Administering voluntary fingerprinting programs for school children, providing information on reduced fare programs, and developing youth programs.
+
+---
+
+**Identified Datasets**
+
+**1. Arrest Records**
+**Quotes:**
+*   "Criminal enforcement. The term "criminal enforcement" means the charging of a misdemeanor or violation." (§ 14-101)
+*   "Every arrest made by any member of the force shall be made known immediately to the superior on duty in the precinct wherein the arrest was made, by the person making the same. It shall be the duty of such superior, to make written return of such arrest within twenty-four hours, according to the rules and regulations of the department, with the name of the party arrested, the alleged offense, the time and place of arrest, and the place of detention." (§ 14-130.a)
+*   "Each member of the force, under the penalty of ten days' fine, or dismissal from the force, at the discretion of the commissioner, immediately upon an arrest, shall convey in person the offender before the nearest sitting judge of the criminal court, that he or she may be dealt with according to law." (§ 14-130.b)
+*   "A crime status report. Such report shall include the total number of crime complaints (categorized by class of crime, indicating whether the crime is a misdemeanor or felony) for each patrol precinct, including a subset of housing bureau and transit bureau complaints within each precinct; arrests (categorized by class of crime, indicating whether the arrest is for a misdemeanor or felony) for each patrol precinct, housing police service area, transit district, street crime unit and narcotics division" (§ 14-150.a.2)
+*   "The number of suspects arrested or issued a criminal or civil summons as indicated on each stop, question and frisk report for each patrol precinct, housing police service area, transit district, street crime unit and narcotics division; a breakdown by race and gender of the suspects arrested or issued a criminal or civil summons as indicated on each stop, question and frisk report" (§ 14-150.a.3)
+*   "The total number of criminal complaints and arrests, categorized by class of crime, for violent felony offenses... where the conduct occurs on subway lines and bus routes" (§ 14-150.d)
+*   "The total number of domestic violence offenders, disaggregated by precinct" (§ 14-150.e.2.c)
+*   "The total number of chronic offenders, disaggregated by precinct" (§ 14-150.e.2.d)
+*   "the number of individuals arrested and/or issued a criminal summons by school safety agents or police officers assigned to the school safety division of the department" (§ 14-152.b.1)
+*   "in those cases where arrests were made or criminal summonses were issued: (i) the charges (including penal law section or other section of law), and (ii) whether the charge was a felony, misdemeanor or violation" (§ 14-152.b.2)
+*   "The data provided pursuant to paragraphs one and two of subdivision b, such report shall include: (i) the charges (including applicable section of law); (ii) whether the incident occurred in connection with metal detector or magnetometer scanning; and (iii) whether department personnel used force and the type of force used." (§ 14-152.c)
+*   "The data provided pursuant to paragraphs one through three of subdivision b shall, for each such paragraph, where practicable based upon the manner in which the applicable records are maintained, be disaggregated by race/ethnicity, year of birth, gender, and, where the individual is a student, whether the individual is receiving special education services and whether the individual is an English Language Learner, provided that such disaggregated data reported pursuant to this subdivision shall not be reported for each school building but rather shall be reported by patrol precinct." (§ 14-152.d)
+*   "The number of complaints and arrests classified as a hate crime disaggregated by: (a) race, sex, and age of the arrestee; and (b) type of animus towards a targeted group" (§ 14-161.a.11)
+*   "arrests (not including voided arrests)" (§ 14-171.a)
+*   "The total number of arrests under subdivision 3 of section 165.15 of the penal law that occurred in a New York city transit authority station in total and disaggregated by the (a) transit bureau district; (b) New York city transit authority station; (c) race, sex and age group of the arrestee, including but not limited to disaggregation of arrestees under the age of 18; and (d) whether the arrestee was issued a desk appearance ticket or was the subject of a live arrest." (§ 14-172.a.1)
+*   "the number of arrests" (§ 14-175.a.1)
+*   "The number of arrests, criminal summonses, and civil summonses in which the person arrested or summonsed was recording police activities" (§ 14-189.e)
+*   "arrests and summonses for violations of sections 240.20, 195.05 and 205.30 of the penal law" (§ 14-190.a.vi)
+*   "the total number of arrests made in connection with a vehicle stop, roadblock stop, or checkpoint stop" (§ 14-191.a.4)
+*   "the total number of arrests made and the top offenses charged" (§ 14-191.a.8)
+*   "the number of arrests made as a result of responses by the department to complaints of animal cruelty." (§ 14-182.b.2)
+*   "data on all criminal complaints and arrests. Such data shall include a listing of each criminal complaint received on or after January 1, 2007, and for each such complaint the following information: ... If an arrest occurs, the location of such arrest and the age range, race, and gender of each arrestee." (§ 14-199.a.11)
+**Why:** Tracking individual arrests is fundamental for law enforcement operations, accountability, and mandated reporting on crime, demographics, and specific incidents.
+**One row represents:** A single arrest event.
+**Covers:** All arrests made by department personnel, including those related to crime complaints, stop-question-frisks, school incidents, domestic violence, hate crimes, subway fare evasion, marijuana possession, vehicle stops, and animal cruelty.
+**Columns:**
+*   Arrest ID (Unique identifier for each arrest)
+*   Incident ID (Links to **911 Call/Incident Log (2)**, **Crime Complaint Records (3)**, **Investigative Encounter Log (10)**, **Vehicle Stop Log (11)**)
+*   Arresting Officer ID (Links to **Employee Roster (13)**)
+*   Arresting Officer Rank
+*   Arrest Date
+*   Arrest Time
+*   Arrest Location (Precinct, Borough, Housing Police Service Area, Transit District, specific address/intersection, latitude/longitude)
+*   Alleged Offense (Penal Law section, description)
+*   Offense Type (Felony, Misdemeanor, Violation)
+*   Was Desk Appearance Ticket (DAT) issued? (Yes/No)
+*   If DAT, DAT ID (Links to **Desk Appearance Ticket Records (5)**)
+*   Arrestee ID (Links to **Person Demographics (12)**)
+*   Arrestee Race/Ethnicity
+*   Arrestee Gender
+*   Arrestee Age/Age Range
+*   Was arrestee a student? (Yes/No)
+*   If student, receiving special education services? (Yes/No)
+*   If student, English Language Learner? (Yes/No)
+*   Was force used during arrest? (Yes/No)
+*   If force used, Use of Force Incident ID (Links to **Use of Force Incidents (6)**)
+*   Was arrest related to metal detector/magnetometer scanning? (Yes/No)
+*   Was arrest for subway fare evasion? (Yes/No)
+*   If subway fare evasion, Transit Authority Station
+*   Was arrest for marijuana possession? (Yes/No)
+*   Was arrest for animal cruelty? (Yes/No)
+*   Was person recording police activities? (Yes/No)
+*   If hate crime, Type of Animus (Anti-Black, Anti-Caucasian, etc.)
+*   Disposition (e.g., Conviction, Dismissal, Pending)
+*   Date of Disposition
+*   Voided Arrest (Yes/No)
+*   Reason for Voided Arrest
+
+**2. 911 Call/Incident Log**
+**Quotes:**
+*   "Call" shall mean a telephone call to the 911 emergency assistance system." (§ 14-149.a.i)
+*   "Incident" shall mean an event which results in the response of a police unit as a result of a call to the 911 emergency assistance system, regardless of the number of calls made with respect to such incident." (§ 14-149.a.ii)
+*   "Dispatch time" shall mean the interval of time between the time the information received by the 911 telephone operator is entered into the 911 emergency assistance system and the assignment of a police unit to the scene of the incident." (§ 14-149.a.iv)
+*   "Travel time" shall mean the interval of time between the assignment of a police unit and the arrival of the first police unit at the scene of the incident." (§ 14-149.a.v)
+*   "Response time" shall mean the sum of dispatch time and travel time." (§ 14-149.a.vi)
+*   "Disposition" shall mean a police unit's report to the 911 emergency assistance system on its response to an assignment that has resulted from a call or incident." (§ 14-149.a.vii)
+*   "The aggregate number of calls on a citywide and borough-wide basis." (§ 14-149.b.1)
+*   "The aggregate number of incidents." (§ 14-149.b.2)
+*   "The aggregate number of incidents where the dispatcher has received a disposition from a police unit." (§ 14-149.b.3)
+*   "The aggregate number of incidents involving a report of a crime in progress." (§ 14-149.b.4)
+*   "The aggregate number of incidents involving a report of a crime in progress resulting in the dispatch of a police unit where the dispatcher received confirmation of a police unit's arrival at the scene of the incident." (§ 14-149.b.5)
+*   "The average dispatch time, travel time and response time for all police units responding to incidents involving a report of a crime in progress." (§ 14-149.b.6)
+*   "The aggregate number of incidents involving a report of a crime in progress in each of the following categories: (i) those for which response time was no greater than ten minutes; (ii) those for which response time was greater than ten minutes but no more than twenty minutes; (iii) those for which response time was greater than twenty minutes but no more than thirty minutes; (iv) those for which response time was greater than thirty minutes but no more than one hour; and (v) those for which response time was greater than one hour." (§ 14-149.b.7)
+*   "The data contained in the 911 operational time analysis report required by paragraphs two through seven of subdivision b of this section shall be provided on a citywide, borough-wide, precinct-by-precinct and tour-by-tour basis." (§ 14-149.c)
+*   "domestic violence radio runs for each patrol precinct" (§ 14-150.a.2)
+*   "average response time for critical and serious crimes in progress for each patrol precinct." (§ 14-150.a.2)
+*   "the number of domestic violence radio runs" (§ 14-161.a.1)
+*   "the number and percentage of domestic incident reports prepared for all crimes determined by the police department to be related to domestic violence that involved intimate partners." (§ 14-161.a.10)
+*   "the number, in total and disaggregated by type of nuisance, of: (a) actions filed, disaggregated by precinct; and (b) 311, 911, and other complaints of nuisances of the type alleged in such actions, disaggregated by precinct." (§ 14-166.b.6)
+*   "Except when necessary to prevent an imminent and substantial risk of physical injury to any person, school safety personnel or a precinct officer shall not respond to a student in emotional crisis unless responding to a 911 call" (§ 14-197.b)
+*   "School safety personnel or a precinct officer responding to a student in emotional crisis as the result of a 911 dispatch or a request to intervene from a person other than the principal of the school or a member of the crisis intervention team of the school shall: Notify the principal of such school if such principal is not aware of the incident" (§ 14-197.d.1)
+**Why:** Detailed tracking of 911 calls and incidents is crucial for measuring emergency response effectiveness and fulfilling reporting obligations.
+**One row represents:** A single 911 call or an incident generated from one or more 911 calls.
+**Covers:** All calls to the 911 system and the resulting incidents and police responses.
+**Columns:**
+*   911 Call ID (Unique identifier for each call)
+*   Incident ID (Unique identifier for each incident, links to **Arrest Records (1)**, **Summons Records (4)**, **Use of Force Incidents (6)**, **Crime Complaint Records (3)**, **Investigative Encounter Log (10)**, **Vehicle Stop Log (11)**)
+*   Call Date
+*   Call Time
+*   Call Type (e.g., Crime in Progress, Domestic Violence, Nuisance, Student in Emotional Crisis)
+*   Call Location (Borough, Precinct, specific address/intersection)
+*   911 Operator ID (Links to **Employee Roster (13)**)
+*   Information Entered into System Date/Time
+*   Police Unit Assigned (Yes/No)
+*   If Assigned, Police Unit ID (e.g., Radio Motor Patrol Unit ID)
+*   Police Unit Dispatch Time
+*   Police Unit Arrival Time (First unit)
+*   Response Time (Calculated: Dispatch Time + Travel Time)
+*   Police Unit Disposition (e.g., Arrest, Summons, Resolved, False Alarm)
+*   Disposition Date/Time
+*   Is Crime in Progress? (Yes/No)
+*   Is Domestic Violence related? (Yes/No)
+*   Is Nuisance related? (Yes/No)
+*   Is Student in Emotional Crisis related? (Yes/No)
+*   If Student in Emotional Crisis, was principal notified? (Yes/No)
+*   If Student in Emotional Crisis, was Crisis Intervention Team contacted? (Yes/No)
+*   If Student in Emotional Crisis, were de-escalation techniques used by school staff? (Yes/No)
+*   If Student in Emotional Crisis, was parent/guardian contacted? (Yes/No)
+*   If Student in Emotional Crisis, does student have disability/medical condition? (Yes/No)
+*   If Student in Emotional Crisis, was EMS requested? (Yes/No)
+*   If Student in Emotional Crisis, who requested EMS? (School staff/Police)
+*   If Student in Emotional Crisis, did parent/guardian object to medical services? (Yes/No)
+*   If Student in Emotional Crisis, did student/other person suffer physical injury? (Yes/No)
+*   If Student in Emotional Crisis, was mental health professional available onsite? (Yes/No)
+
+**3. Crime Complaint Records**
+**Quotes:**
+*   "A crime status report. Such report shall include the total number of crime complaints (categorized by class of crime, indicating whether the crime is a misdemeanor or felony) for each patrol precinct, including a subset of housing bureau and transit bureau complaints within each precinct" (§ 14-150.a.2)
+*   "Such report shall also include the total number of complaints of all sex offenses as defined in article 130 of the New York state penal law, in total and disaggregated by the following offenses: rape as defined in sections 130.25, 130.30, and 130.35; criminal sexual act as defined in sections 130.40, 130.45, and 130.50; misdemeanor sex offenses as defined in sections 130.20, 130.52, 130.55, and 130.60; sexual abuse as defined in sections 130.65, 130.65-a, 130.66, 130.67, and 130.70; course of sexual conduct against a child as defined in sections 130.75 and 130.80; and predatory sexual assault as defined in sections 130.95 and 130.96. Such report shall also include the total number of major felony crime complaints for all properties under the jurisdiction of the department of parks and recreation." (§ 14-150.a.2)
+*   "a summary of complaints of violent felony crime for each patrol precinct, with a breakdown by race and gender of the suspect as identified by the victim." (§ 14-150.a.3)
+*   "The total number of criminal complaints and arrests, categorized by class of crime, for violent felony offenses... where the conduct occurs on subway lines and bus routes" (§ 14-150.d)
+*   "The total number of domestic violence complaints, disaggregated by precinct" (§ 14-150.e.2.a)
+*   "The total number of chronic domestic violence complaints, disaggregated by borough" (§ 14-150.e.2.b)
+*   "the number of reported murders related to domestic violence" (§ 14-161.a.2)
+*   "the number of reported rapes related to domestic violence" (§ 14-161.a.3)
+*   "the number of reported felonious assaults related to domestic violence" (§ 14-161.a.4)
+*   "the number of reported hate crimes" (§ 14-161.a.5)
+*   "the number of reported murders determined by the police department to be hate crimes" (§ 14-161.a.6)
+*   "the number of reported felonious assaults determined by the police department to be hate crimes" (§ 14-161.a.7)
+*   "the number of reported complaints and murders determined by the police department to be related to domestic violence that were reported to have taken place on the property of the New York city housing authority, shall be reported in total and disaggregated by precinct and public housing development" (§ 14-161.a.8)
+*   "the percentage of reported felony crimes determined by the police department to be related to domestic violence" (§ 14-161.a.9)
+*   "The number of complaints and arrests classified as a hate crime disaggregated by: (a) race, sex, and age of the arrestee; and (b) type of animus towards a targeted group" (§ 14-161.a.11)
+*   "The total number of major felonies reported within each such priority area, disaggregated by the type of crime committed." (§ 14-162.b)
+*   "The number of complaints recorded in connection with traffic-related incidents during the prior year that involved at least one vehicle and resulted in property damage, personal injury, or death and where the driver of a vehicle involved in such incident left the scene of such incident without reporting" (§ 14-153.d.1)
+*   "The total number of criminal complaints and arrests, categorized by class of crime, for violent felony offenses as defined in section 70.02 of the penal law, assault and related offenses as defined in article one hundred twenty of the penal law, sex offenses as defined in article one hundred thirty of the penal law, disorderly conduct as defined in section 240.20 of the penal law, harassment as defined in section 240.25 and 240.26 of the penal law, aggravated harassment as defined in section 240.30 and 240.31 of the penal law, and offenses against public sensibilities as defined in article two hundred forty-five of the penal law, where the conduct occurs on subway lines and bus routes operated by the New York city transit authority or the Staten Island rapid transit operating authority, specifying where such criminal conduct has occurred by police precinct, including specific subway line, subway transit division, and bus route operated by the New York city transit authority or the Staten Island rapid transit operating authority." (§ 14-150.d)
+*   "the number of complaint reports the department receives alleging an act of animal cruelty" (§ 14-182.b.1)
+*   "data on all criminal complaints and arrests. Such data shall include a listing of each criminal complaint received on or after January 1, 2007, and for each such complaint the following information: 1. A randomly generated unique identification number; 2. The precinct in which the incident occurred; 3. The date and time at which the incident occurred; 4. A description of the incident and classification of any relevant offenses, including but not limited to: (i) a reference to all alleged violations of law that occurred; and (ii) whether the highest alleged offense was a felony, misdemeanor, or violation; 5. The date on which the incident was reported to police; 6. The suspect’s perceived race, gender, and age range; 7. The victim’s perceived race, gender, and age range, where known; 8. The location where the incident occurred, including latitude and longitude if available, but in all cases at least as specific as the nearest intersection; 9. Whether the complaint resulted in an arrest, or otherwise has been resolved by the department; 10. The date on which any arrest or departmental resolution of a complaint occurred" (§ 14-199.a)
+**Why:** Tracking individual crime complaints is essential for understanding crime patterns, allocating resources, and fulfilling extensive reporting requirements.
+**One row represents:** A single criminal complaint received by the department.
+**Covers:** All criminal complaints, including major felonies, sex offenses, domestic violence, hate crimes, traffic-related incidents, and animal cruelty.
+**Columns:**
+*   Complaint ID (Unique identifier for each complaint)
+*   Incident ID (Links to **911 Call/Incident Log (2)**, **Arrest Records (1)**, **Summons Records (4)**, **Use of Force Incidents (6)**, **Investigative Encounter Log (10)**, **Vehicle Stop Log (11)**)
+*   Complaint Date
+*   Complaint Time
+*   Date Incident Occurred
+*   Time Incident Occurred
+*   Reporting Officer ID (Links to **Employee Roster (13)**)
+*   Complaint Location (Precinct, Borough, Housing Bureau, Transit Bureau, Parks & Recreation property, Subway line/station, Bus route, specific address/intersection, latitude/longitude)
+*   Alleged Offense (Penal Law section, description)
+*   Offense Type (Felony, Misdemeanor, Violation)
+*   Is Major Felony? (Yes/No)
+*   Is Sex Offense (Article 130)? (Yes/No)
+*   Is Domestic Violence related? (Yes/No)
+*   Is Chronic Domestic Violence Case? (Yes/No)
+*   Is Hate Crime? (Yes/No)
+*   If Hate Crime, Type of Animus (Anti-Black, Anti-Caucasian, etc.)
+*   Is Traffic-related? (Yes/No)
+*   If Traffic-related, did driver leave scene? (Yes/No)
+*   Is Animal Cruelty? (Yes/No)
+*   Suspect Perceived Race/Ethnicity (from victim/officer)
+*   Suspect Perceived Gender (from victim/officer)
+*   Suspect Perceived Age Range (from victim/officer)
+*   Victim Perceived Race/Ethnicity (where known)
+*   Victim Perceived Gender (where known)
+*   Victim Perceived Age Range (where known)
+*   Complaint Status (e.g., Open, Closed, Arrest Made, Unresolved)
+*   Date of Resolution
+*   Resolution Type (e.g., Arrest, Summons, No Action)
+*   Was complaint related to NYCHA property? (Yes/No)
+*   If NYCHA, Public Housing Development
+*   Victim Type (Employee of authority, Passenger, Other non-employee) (for subway/bus incidents)
+
+**4. Summons Records**
+**Quotes:**
+*   "Civil enforcement. The term "civil enforcement" means the issuance of a civil summons." (§ 14-101)
+*   "Civil summons. The term "civil summons" means a civil notice of violation." (§ 14-101)
+*   "Criminal summons. The term "criminal summons" means an appearance ticket issued by the department pursuant to article 150 of the criminal procedure law that is an accusatory instrument pursuant to article 100 of the criminal procedural law, and returnable to the criminal court." (§ 14-101)
+*   "summons activity (categorized by type of summons, indicating whether the summons is a parking violation, moving violation, environmental control board notice of violation, or criminal summons) for each patrol precinct, housing police service area and transit district" (§ 14-150.a.2)
+*   "The number of suspects arrested or issued a criminal or civil summons as indicated on each stop, question and frisk report" (§ 14-150.a.3)
+*   "the number of individuals arrested and/or issued a criminal summons by school safety agents or police officers assigned to the school safety division of the department" (§ 14-152.b.1)
+*   "the number of individuals issued a civil summons by school safety agents or police officers assigned to the school safety division of the department" (§ 14-152.b.3)
+*   "in those cases where arrests were made or criminal summonses were issued: (i) the charges (including penal law section or other section of law), and (ii) whether the charge was a felony, misdemeanor or violation" (§ 14-152.b.2)
+*   "The data provided pursuant to paragraphs one and two of subdivision b, such report shall include: (i) the charges (including applicable section of law); (ii) whether the incident occurred in connection with metal detector or magnetometer scanning; and (iii) whether department personnel used force and the type of force used." (§ 14-152.c)
+*   "The data provided pursuant to paragraphs one through three of subdivision b shall, for each such paragraph, where practicable based upon the manner in which the applicable records are maintained, be disaggregated by race/ethnicity, year of birth, gender, and, where the individual is a student, whether the individual is receiving special education services and whether the individual is an English Language Learner, provided that such disaggregated data reported pursuant to this subdivision shall not be reported for each school building but rather shall be reported by patrol precinct." (§ 14-152.d)
+*   "The number of criminal summonses issued" (§ 14-157.a.1)
+*   "The number of civil summonses issued" (§ 14-157.a.2)
+*   "Where applicable, for criminal summonses, the criteria applied pursuant to subdivision b of section 14-155 of this chapter in making the determination to issue such summonses." (§ 14-157.a.3)
+*   "The information required pursuant to subdivision a of this section shall be listed in total and disaggregated by: 1. offense; 2. race; 3. gender; 4. age; 5. the borough in which the summons was issued; and 6. the patrol precinct, housing police service area, and transit district in which the summons was issued." (§ 14-157.b)
+*   "The total number of summonses returnable to the transit adjudication bureau issued for subway fare evasion as defined in section 1050.4 of title 21 of the New York codes, rules and regulations in total and disaggregated by (a) transit bureau district; (b) the New York city transit authority station; and (c) race, sex and age group of the violator, including but not limited to disaggregation of violators under the age of 18." (§ 14-172.a.2)
+*   "The department shall, on a monthly basis, transmit to the human resources administration/department of social services the name and address of any natural person issued a summons for fare evasion during the preceding quarter." (§ 14-172.1.b)
+*   "the number of criminal summonses issued." (§ 14-175.a.2)
+*   "The number of arrests, criminal summonses, and civil summonses in which the person arrested or summonsed was recording police activities" (§ 14-189.e)
+*   "arrests and summonses for violations of sections 240.20, 195.05 and 205.30 of the penal law" (§ 14-190.a.vi)
+*   "the total number of summonses issued in connection with a vehicle stop, roadblock stop, or checkpoint stop" (§ 14-191.a.3)
+*   "the total number of summonses issued, disaggregated by whether civil or criminal offenses were charged" (§ 14-191.a.7)
+*   "Whether a criminal or civil summons was issued to the member of the public involved in the investigative encounter" (§ 14-196.c.4)
+**Why:** Tracking individual summonses is essential for enforcement, accountability, and mandated reporting on various violations and demographics.
+**One row represents:** A single summons issued.
+**Covers:** All civil and criminal summonses issued by department personnel, including those related to stop-question-frisks, school incidents, traffic violations, subway fare evasion, marijuana possession, vehicle stops, and investigative encounters.
+**Columns:**
+*   Summons ID (Unique identifier for each summons)
+*   Incident ID (Links to **911 Call/Incident Log (2)**, **Crime Complaint Records (3)**, **Investigative Encounter Log (10)**, **Vehicle Stop Log (11)**)
+*   Issuing Officer ID (Links to **Employee Roster (13)**)
+*   Issuing Officer Rank
+*   Summons Date
+*   Summons Time
+*   Summons Location (Precinct, Borough, Housing Police Service Area, Transit District, specific address/intersection)
+*   Summons Type (Criminal, Civil, Parking Violation, Moving Violation, ECB Notice of Violation)
+*   Offense Charged (Penal Law section, description)
+*   Offense Type (Felony, Misdemeanor, Violation, Infraction)
+*   Violator ID (Links to **Person Demographics (12)**)
+*   Violator Race/Ethnicity
+*   Violator Gender
+*   Violator Age/Age Range
+*   Was violator a student? (Yes/No)
+*   If student, receiving special education services? (Yes/No)
+*   If student, English Language Learner? (Yes/No)
+*   Was force used during summons issuance? (Yes/No)
+*   If force used, Use of Force Incident ID (Links to **Use of Force Incidents (6)**)
+*   Was summons related to metal detector/magnetometer scanning? (Yes/No)
+*   Was summons for subway fare evasion? (Yes/No)
+*   If subway fare evasion, Transit Authority Station
+*   Was summons for marijuana possession? (Yes/No)
+*   Was person recording police activities? (Yes/No)
+*   Criteria applied for criminal summons (if applicable, per § 14-155.b)
+*   Returnable to (e.g., Criminal Court, Transit Adjudication Bureau, ECB)
+*   Violator Address (for fare evasion summonses, transmitted to HRA/DSS)
+
+**5. Desk Appearance Ticket Records**
+**Quotes:**
+*   "Desk appearance ticket. The term "desk appearance ticket" means an appearance ticket issued by the department pursuant to article 150 of the criminal procedure law that is not an accusatory instrument pursuant to article 100 of the criminal procedure law." (§ 14-101)
+*   "This report shall include the guidelines used by the department to determine when desk appearance tickets are used in lieu of a custodial arrest pursuant to subdivision 1 of section 140.20 of the penal law. This report shall also include, for any offense for which a desk appearance ticket may be issued by state law and for which either more than 500 desk appearance tickets were issued or for which more than 500 arrests were made pursuant to subdivision 1 of section 140.20 of the penal law, the rate of the use of arrests and desk appearance tickets for each such offense. This report shall also include the number of desk appearance tickets issued, in total and disaggregated as follows: 1. the patrol precinct, housing police service area and transit district in which such desk appearance ticket was issued; 2. the borough in which such desk appearance ticket was issued; 3. race; 4. gender; 5. age; and 6. offense charged." (§ 14-156.a)
+*   "whether the arrestee was issued a desk appearance ticket or was the subject of a live arrest." (§ 14-172.a.1.d)
+*   "Arrestee. The term "arrestee" means any person under custodial arrest by the department, other than a person whose arrest results in the issuance of a summons or desk appearance ticket." (§ 14-163.a)
+**Why:** Tracking DATs is necessary for reporting on enforcement methods, ensuring compliance with guidelines, and analyzing demographic data.
+**One row represents:** A single Desk Appearance Ticket issued.
+**Covers:** All Desk Appearance Tickets issued by department personnel.
+**Columns:**
+*   DAT ID (Unique identifier for each DAT)
+*   Arrest ID (Links to **Arrest Records (1)**)
+*   Issuing Officer ID (Links to **Employee Roster (13)**)
+*   Issuing Officer Rank
+*   DAT Date
+*   DAT Time
+*   DAT Location (Precinct, Borough, Housing Police Service Area, Transit District)
+*   Offense Charged (Penal Law section, description)
+*   Offense Type (Felony, Misdemeanor, Violation)
+*   Arrestee ID (Links to **Person Demographics (12)**)
+*   Arrestee Race
+*   Arrestee Gender
+*   Arrestee Age
+*   Guidelines applied for DAT issuance (per § 14-156.a)
+
+**6. Use of Force Incidents**
+**Quotes:**
+*   "Use of force incident. The term "use of force incident" means any instance where a member of the department, while taking police action, responds to an incident or condition and takes action in a manner intended to have an immediate effect on the body of another person, and consists of the following categories: (i) the use of hand strikes, foot strikes, forcible take-downs or the wrestling of the subject to the ground; (ii) the discharge of oleoresin capsicum spray; (iii) the deployment of a conducted electrical weapon; (iv) the use of a mesh restraining blanket to secure an individual; (v) the intentional striking of a person with any object, including a baton or other equipment; (vi) a police canine bite; and (vii) the use of physical force that is readily capable of causing death or serious physical injury, including the discharge of a firearm." (§ 14-158.a)
+*   "Excessive force. The term "excessive force" means force that has been found by the department to be, considering the totality of the circumstances in which it is used, greater than that which a reasonable officer, in the same situation, would use under the circumstances that existed and were known to the officer at the time such force was used." (§ 14-158.a)
+*   "The number of use of force incidents, in total and disaggregated by: (a) the category of use of force incident; (b) the precinct or other departmental unit to which the officer who used such force was assigned; and (c) whether or not the officer was on duty at the time of the use of force." (§ 14-158.b.1)
+*   "The number of injuries to an officer or civilian resulting from a police and civilian interaction involving a use of force incident, in total and disaggregated by the following categories: (a) physical injury, such as minor swelling, contusion, laceration, abrasion or complaint of substantial contracted pain; (b) substantial physical injury, such as a significant contusion or laceration that requires sutures or any injury that requires treatment at a hospital emergency room; and (c) serious physical injury, such as a broken or fractured bone, gunshot wound, heart attack, stroke, or any injury requiring hospital admission. Such injuries shall also be disaggregated by the precinct or other departmental unit to which the officer who used such force was assigned, whether such officer was on duty at the time the injury was sustained, whether the injury was sustained by an officer or civilian, and, if known, whether the injury was caused by an officer or civilian." (§ 14-158.b.2)
+*   "Such report shall also include the number of incidents involving the use of excessive force for the previous calendar year, in total and disaggregated by: 1. the category of use of force incident, where applicable, and whether the use of excessive force involved the drawing or displaying of a firearm in a manner determined to be excessive force; 2. the precinct or other departmental unit to which the officer who used such excessive force was assigned; 3. whether or not such officer was on duty at the time of the use of excessive force; and 4. if available, dispositions of departmental charges brought against officers for the use of excessive force." (§ 14-158.c)
+*   "The department shall post on its website within 30 days of the beginning of each quarter a report of the number of use of force incidents for the prior quarter disaggregated by basis for encounter." (§ 14-159.b)
+*   "use of force incidents and incidents of excessive force, as those terms are defined in section 14-158" (§ 14-190.a.v)
+*   "the total number of use of force incidents, as defined in section 14-158, that occurred in connection with a vehicle stop, a roadblock or checkpoint." (§ 14-191.a.11)
+*   "Whether a use of force incident involving such member of the public occurred during such encounter" (§ 14-196.c.5)
+**Why:** Tracking use of force incidents is critical for accountability, transparency, and compliance with reporting on officer conduct and public safety.
+**One row represents:** A single use of force incident.
+**Covers:** All instances where department members use force, including excessive force, during police action.
+**Columns:**
+*   Use of Force Incident ID (Unique identifier)
+*   Incident ID (Links to **911 Call/Incident Log (2)**, **Crime Complaint Records (3)**, **Arrest Records (1)**, **Summons Records (4)**, **Investigative Encounter Log (10)**, **Vehicle Stop Log (11)**)
+*   Date of Incident
+*   Time of Incident
+*   Location of Incident (Precinct, Departmental Unit)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Officer On-Duty (Yes/No)
+*   Category of Force Used (e.g., Hand strikes, OC spray, CEW, Baton, Canine bite, Firearm discharge)
+*   Was Firearm Discharged? (Yes/No) (Links to **Firearms Discharge Incidents (7)**)
+*   Was Excessive Force? (Yes/No, determined by department)
+*   If Excessive Force, involved drawing/displaying firearm? (Yes/No)
+*   Basis for Encounter (e.g., Arrest, Summons, Stop-Question-Frisk, Vehicle Stop, Investigative Encounter)
+*   Civilian Injury Type (None, Physical, Substantial Physical, Serious Physical)
+*   Officer Injury Type (None, Physical, Substantial Physical, Serious Physical)
+*   Injury Caused By (Officer, Civilian, Unknown)
+*   Departmental Charges for Excessive Force (Yes/No)
+*   Disposition of Departmental Charges (e.g., Substantiated, Unsubstantiated)
+*   Date of Disposition
+
+**7. Firearms Discharge Incidents**
+**Quotes:**
+*   "firearms incident" means any incident during which one or more New York city police officers discharge any firearm, or when a firearm belonging to a New York city police officer is discharged by any person, except for a discharge during an authorized training session, or while lawfully engaged in target practice or hunting, or at a firearms safety station within a department facility" (§ 14-150.b.8.a)
+*   "intentional firearms discharge" means a firearms discharge in which an officer intentionally discharges a firearm, which may include firearms discharges that are determined to be legally justified but outside department guidelines" (§ 14-150.b.8.e)
+*   "adversarial conflict" means an incident in which an officer acts in defense of self or another during an adversarial conflict with a subject and does not include an animal attack or situations in which an officer only intentionally discharges a firearm to summon assistance" (§ 14-150.b.8.f)
+*   "unintentional firearms discharge" means a firearms discharge in which an officer discharges a firearm without intent, regardless of the circumstance, commonly known as an accidental discharge" (§ 14-150.b.8.g)
+*   "unauthorized use of a firearm" means a firearms discharge that is considered unauthorized and is not listed as an intentional firearms discharge, is being discharged without proper legal justification, and includes instances when an unauthorized person discharges an officer's firearm" (§ 14-150.b.8.h)
+*   "The number of firearms incidents disaggregated by (i) day of week; (ii) tour; (iii) borough; (iv) month; (v) precinct; (vi) number of incidents that occurred outside New York city; and (vii) on-duty or off-duty status of officer." (§ 14-150.b.1)
+*   "The total number of firearms incidents for the year of the report and the year preceding the report, as well as the percentage change between the two years, and disaggregated by (i) intentional discharge – adversarial conflict; (ii) intentional discharge – animal attack; (iii) unintentional discharge; and (iv) unlawful use of firearm." (§ 14-150.b.2)
+*   "For all firearms incidents for the year of the report and the year preceding the report, both the raw number for each year and the percentage change between the two years, for each of the following categories (i) the total number of officers firing; (ii) the total number of shots fired; (iii) the total number of officers shot and injured by a subject; (iv) the total number of officers shot and killed by a subject; (v) the total number of subjects shot and injured by an officer; and (vi) the total number of subjects shot and killed by an officer." (§ 14-150.b.3)
+*   "The number of intentional firearms incidents disaggregated by incidents in which (i) a subject used or threatened the use of a firearm; (ii) a subject used or threatened the use of a cutting instrument; (iii) a subject used or threatened the use of a blunt object; (iv) a subject used or threatened the use of overwhelming physical force; (v) an officer perceived a threat of other deadly physical force; (vi) a dog attack was involved; and (vii) an attack by an animal other than a dog was involved." (§ 14-150.b.4)
+*   "The number of firearms incidents disaggregated by (i) unintentional discharge during adversarial conflict; (ii) unintentional discharge while handling a firearm; (iii) suicide; (iv) unlawful intentional discharge; and (v) unauthorized person discharging officer's firearm." (§ 14-150.b.5)
+*   "For each firearms incident determined to fall within the category of Intentional Discharge – Adversarial Conflict: (i) an indication of whether or not a firearm was fired by a subject; (ii) an indication of whether the subject used or threatened the use of a firearm, subject used or threatened the use of a cutting instrument, subject used or threatened the use of a blunt object, subject used or threatened the use of overwhelming physical force, or an officer perceived threat of other deadly physical force; (iii) whether or not the weapon possessed or used by a subject or subjects is known, and if known, the type of weapon used or possessed by the subject; (iv) the total number of officers who fired; (v) the total number of shots fired by officers; (vi) the number of shots fired per officer; (vii) the objective completion rate of the incident; (viii) the number of subjects; and (ix) for each subject, the age, race and gender of the subject." (§ 14-150.b.6)
+*   "A synopsis of each firearms incident resulting in the death of either a subject or an officer." (§ 14-150.b.7)
+**Why:** Detailed tracking of firearm discharges is crucial for accountability, training evaluation, and mandated annual reporting on incidents and outcomes.
+**One row represents:** A single firearms discharge incident.
+**Covers:** All instances where a firearm is discharged by an officer or a firearm belonging to an officer is discharged by any person, excluding authorized training/practice.
+**Columns:**
+*   Firearms Incident ID (Unique identifier)
+*   Use of Force Incident ID (Links to **Use of Force Incidents (6)**)
+*   Date of Incident
+*   Time of Incident
+*   Day of Week
+*   Tour (Shift)
+*   Location (Borough, Precinct, Outside NYC)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Officer On-Duty (Yes/No)
+*   Discharge Type (Intentional - Adversarial Conflict, Intentional - Animal Attack, Unintentional, Unlawful Use)
+*   Number of Officers Firing
+*   Total Shots Fired by Officers
+*   Subject ID (Links to **Person Demographics (12)**)
+*   Subject Age
+*   Subject Race
+*   Subject Gender
+*   Subject Used/Threatened Firearm (Yes/No)
+*   Subject Used/Threatened Cutting Instrument (Yes/No)
+*   Subject Used/Threatened Blunt Object (Yes/No)
+*   Subject Used/Threatened Overwhelming Physical Force (Yes/No)
+*   Officer Perceived Threat of Other Deadly Physical Force (Yes/No)
+*   Dog Attack Involved (Yes/No)
+*   Other Animal Attack Involved (Yes/No)
+*   Subject Weapon Type (if known)
+*   Officer Shot/Injured by Subject (Yes/No)
+*   Officer Shot/Killed by Subject (Yes/No)
+*   Subject Shot/Injured by Officer (Yes/No)
+*   Subject Shot/Killed by Officer (Yes/No)
+*   Objective Completion Rate of Incident
+*   Unintentional Discharge Type (During adversarial conflict, While handling firearm, Suicide, Unlawful intentional discharge, Unauthorized person discharging officer's firearm)
+*   Unauthorized Person Discharging Officer's Firearm (Yes/No)
+*   Synopsis (for incidents resulting in death)
+
+**8. Property Clerk Records**
+**Quotes:**
+*   "The commissioner shall employ a property clerk who shall take charge of all property and money hereinafter described." (§ 14-140.a.1)
+*   "All such property and money shall be described and registered by the property clerk in a record kept for that purpose, which shall contain a description of such property or money, the name and address of the owner or claimant if ascertained, the date and place where obtained or found, the name and address of the person from whom taken or obtained, with the general circumstances, the name of the officer by whom recovered or obtained, the date when received by the property clerk, the names and addresses of all claimants thereto, and any final disposition of such property or money." (§ 14-140.a.2)
+*   "Custody of property and money. All property or money taken from the person or possession of a prisoner, all property or money suspected of having been unlawfully obtained or stolen or embezzled or of being the proceeds of crime or derived through crime or derived through the conversion of unlawfully acquired property or money or derived through the use or sale of property prohibited by law from being held, used or sold, all property or money suspected of having been used as a means of committing crime or employed in aid or furtherance of crime or held, used or sold in violation of law, all money or property suspected of being the proceeds of or derived through bookmaking, policy, common gambling, keeping a gambling place or device, or any other form of illegal gambling activity and all property or money employed in or in connection with or in furtherance of any such gambling activity, all property or money taken by the police as evidence in a criminal investigation or proceeding, all property or money taken from or surrendered by a pawnbroker on suspicion of being the proceeds of crime or of having been unlawfully obtained, held or used by the person who deposited the same with the pawnbroker, all property or money which is lost or abandoned, all property or money left uncared for upon a public street, public building or public place, all property or money taken from the possession of a person appearing to be insane, intoxicated or otherwise incapable of taking care of himself or herself, that shall come into the custody of any member of the police force or criminal court, and all property or money of incarcerated individuals of any city hospital, prison or institution except the property found on deceased persons that shall remain unclaimed in its custody for a period of one month, shall be given, as soon as practicable, into the custody of and kept by the property clerk except that vehicles suspected of being stolen or abandoned and evidence vehicles as defined in subdivision b of section 20-495 of the code may be taken into custody in the manner provided for in subdivision b of section 20-519 of the code." (§ 14-140.b)
+*   "Return of property and money to person accused." (§ 14-140.c)
+*   "Disputed ownership. If any claim to the ownership of such property or money shall be made on oath before the judge, by or in behalf of any other persons than the person arrested, and such accused person shall be held for trial or examination, such property or money shall remain in the custody of the property clerk until the discharge or conviction of the person accused and until lawfully disposed of." (§ 14-140.d)
+*   "Disposition of property and money." (§ 14-140.e)
+*   "Perishable property may be sold as soon as practicable on the best terms available and the proceeds of such sale shall be disposed of as in this section provided." (§ 14-140.e.3)
+*   "Preservation of property. Where the property consists of furs or other valuable property that may be subject to deterioration or damage if stored by the property clerk, the property clerk in his or her discretion may store such property with a private concern having special facilities for such storage, and the cost thereof shall be a lien upon such property to be paid by the owner thereof prior to the recovery of such property." (§ 14-140.h)
+*   "Removal and storage charges for motor vehicles and boats." (§ 14-140.i)
+*   "Property and money desired to be produced in criminal court." (§ 14-140.j)
+*   "Seized property. The term "seized property" means property over which the property clerk of the department has obtained custody pursuant to section 14-140, the ownership of which has not been adjudicated, that is held for safekeeping, as arrest evidence, for forfeiture or as investigatory evidence." (§ 14-169.a)
+*   "Retained property. The term "retained property" means: (i) property other than U.S. currency that the department has obtained an ownership interest in; or (ii) U.S. currency that the department has obtained an ownership interest in that has been transferred to the general fund of the city, pursuant to section 14-140 either because the ownership interest in such U.S. currency has been waived or forfeited, or because such U.S. currency remains unclaimed after the applicable legal period for claiming such U.S. currency has expired." (§ 14-169.a)
+*   "Report. On or before July 1, 2019, the department shall post on the department's website a report providing data on seized property and retained property pursuant to this section for the preceding six months. Beginning on March 1, 2020 and every March 1 thereafter, the department shall post on the department's website an annual report providing data on seized property and retained property pursuant to this section for the preceding calendar year, which shall include the following: 1. The total amount of seized property in the form of U.S. currency, disaggregated by: (a) The dollar amount of such U.S. currency classified and held for safekeeping, disaggregated by the borough, police precinct and month in which such property was vouchered, noting the dollar amount returned to claimants; (b) The dollar amount of such U.S. currency classified and held as arrest evidence, disaggregated by the borough, police precinct and month in which such property was vouchered, noting the dollar amount returned to claimants; (c) The dollar amount of such U.S. currency held for forfeiture, disaggregated by the borough, police precinct and month that such property was vouchered, noting the dollar amount returned to claimants; (d) The dollar amount of such U.S. currency held as investigatory evidence, disaggregated by the borough, police precinct and month that such property was vouchered, noting the dollar amount returned to claimants; (e) The dollar amount of such U.S. currency that has become property retained by the department after a settlement agreement entered into between the department and claimants for such currency; (f) The dollar amount of such U.S. currency that has become property retained by the department after a judgment in a civil forfeiture proceeding; (g) The dollar amount of such U.S. currency returned by the department to the claimant following a dismissal, judgment, or settlement in a civil forfeiture proceeding pursuant to section 14-140; and (h) The dollar amount of such currency that has become retained property because no person retrieved such currency; 2. The total number of seized property items in the form of registered motor vehicles, disaggregated by: (a) The number of such vehicles classified and held for safekeeping, disaggregated by the borough, police precinct and the month that such property was vouchered, and the number of such vehicles returned to claimants; (b) The number of such vehicles classified and held as arrest evidence, disaggregated by the borough, police precinct and month that such property was vouchered, and the number of such vehicles returned to claimants; (c) The number of such vehicles classified and held for forfeiture, disaggregated by the borough, police precinct and month that such property was vouchered, and the number of such vehicles returned to claimants; (d) The number of such vehicles classified and held as investigatory evidence, disaggregated by the borough, police precinct and month that such property was vouchered, and the number of such vehicles returned to claimants; (e) The number of such vehicles that have become property retained by the department after a settlement or judgment in a civil forfeiture proceeding; (f) The number of such vehicles that have become property retained by the department because no person retrieved such vehicle within the applicable legal period; (g) The revenue generated by liquidation of such vehicles that have become retained property, the number of such vehicles liquidated and the entity contracted to liquidate such vehicles on behalf of the department; and (h) The number of such vehicles that were returned by the department to vehicle claimants following a dismissal, judgment, or settlement in a civil forfeiture proceeding pursuant to section 14-140; 3. The number of the following other items of seized property: (a) Cellular telephones, disaggregated by the borough, police precinct and month that such property was vouchered, and further disaggregated by the number of such telephones returned to the claimant or their designee; (b) Clothing items, disaggregated by the borough, police precinct and month that such property was vouchered, and further disaggregated by the number of clothing items returned to the claimant or their designee; (c) Wallets, disaggregated by the borough, police precinct and month that such property was vouchered, and further disaggregated by the number of wallets returned to the claimant or their designee; (d) Sets of keys, disaggregated by the borough, police precinct and month that such property was vouchered, and further disaggregated by the number of sets of keys returned to the claimant or their designee; (e) Identification documents, disaggregated by the borough, police precinct and month that such property was vouchered, and further disaggregated by the number of identification documents returned to the claimant or their designee; and (f) Non-perishable peddler property items, as designated by the property clerk, that are not illegal contraband, disaggregated by the borough, police precinct and month that such property was vouchered, and further disaggregated by the number of peddler property items returned to the claimant or their designee; 4. For the property specified in paragraphs 1, 2 and 3 of this section that is returned during the reporting period, and to the extent such information is available, further disaggregation by: (a) The number of claimants or their designees who retrieved their property within six months of its seizure; (b) The number of claimants or their designees who retrieved their property between six months and up to one year of its seizure; (c) The number of claimants or their designees who retrieved their property between one year and up to two years of its seizure; (d) The number of claimants or their designees who retrieved their property between two years and up to three years of its seizure; and (e) The number of claimants or their designees who retrieved their property three years or more after its seizure; 5. The revenue generated by liquidation of retained property, other than registered motor vehicles and U.S. currency, and the entity contracted to liquidate such property on behalf of the department; 6. The amount of U.S. currency obtained by the department through disbursement from the district attorney pursuant to state forfeiture laws; and 7. The amount of U.S. currency obtained by the department through disbursement from the department of justice pursuant to federal forfeiture laws." (§ 14-169.b)
+**Why:** Comprehensive tracking of all property and money in the property clerk's custody is legally mandated for accountability, disposition, and financial reporting.
+**One row represents:** A single item or amount of money taken into custody by the property clerk.
+**Covers:** All property and money seized, found, or otherwise coming into police custody, including currency, vehicles, cellular phones, clothing, wallets, keys, identification documents, and peddler property.
+**Columns:**
+*   Property ID (Unique identifier for each item/amount)
+*   Voucher ID (Unique identifier for the vouchering event)
+*   Date Received by Property Clerk
+*   Time Received by Property Clerk
+*   Officer ID (By whom recovered/obtained, links to **Employee Roster (13)**)
+*   Date Obtained/Found
+*   Place Obtained/Found (Precinct, Borough, specific address)
+*   Description of Property/Money
+*   Property Type (e.g., US Currency, Registered Motor Vehicle, Cellular Telephone, Clothing, Wallet, Keys, ID Document, Peddler Property, Firearm, Narcotics, Gambling Apparatus, Perishable)
+*   Value (for currency, estimated for other items)
+*   Reason for Custody (e.g., Taken from prisoner, Suspected unlawfully obtained, Proceeds of crime, Evidence, Lost/Abandoned, Uncared for, From insane/intoxicated person, Unclaimed from institution)
+*   Classification (Safekeeping, Arrest Evidence, Forfeiture, Investigatory Evidence)
+*   Owner/Claimant Name (if ascertained)
+*   Owner/Claimant Address (if ascertained)
+*   All Claimants (Names and Addresses)
+*   Person from whom taken/obtained (Name and Address)
+*   Criminal Case ID (if applicable, links to **Arrest Records (1)**, **Crime Complaint Records (3)**)
+*   Court Order for Return (Yes/No)
+*   Date of Court Order
+*   Disputed Ownership (Yes/No)
+*   Final Disposition (e.g., Returned to owner, Sold at auction, Destroyed, Converted to City use, Transferred to General Fund, Forfeited)
+*   Date of Final Disposition
+*   Returned to Claimant (Yes/No)
+*   Date Returned to Claimant
+*   Time to Retrieval (e.g., <6 months, 6-12 months, 1-2 years, 2-3 years, >3 years)
+*   Storage Location (e.g., Property Clerk facility, Private concern for furs)
+*   Storage Charges Incurred (Yes/No)
+*   Storage Charge Amount
+*   Removal Charge Amount (for vehicles/boats)
+*   Lien on Property (Yes/No)
+*   Revenue from Sale/Liquidation
+*   Entity Contracted for Liquidation
+*   Forfeiture Proceeds from DA (US Currency Amount)
+*   Forfeiture Proceeds from DOJ (US Currency Amount)
+
+**9. Traffic Incidents and Enforcement Log**
+**Quotes:**
+*   "The department shall publish on its website the following traffic-related data: (1) the number of moving violation summonses issued, disaggregated by type of summons; (2) the number of traffic crashes, disaggregated by (i) the type of vehicle or vehicles involved and (ii) the number of motorists and/or injured passengers, bicyclists and pedestrians involved; and (3) the number of traffic-related fatalities and injuries disaggregated by (i) the number of motorists and/or injured passengers, bicyclists and pedestrians involved; and (ii) the apparent human contributing factor or factors involved in the crash, including, but not limited to alcohol, driver inattention/distraction, speeding, failure to yield and use of cell phones or other mobile devices." (§ 14-153.a)
+*   "The data required pursuant to subdivision a of this section shall be published on the department's website for the whole city and disaggregated by borough and police precinct, and shall be searchable by intersection, except for the data required under paragraph one of subdivision a, which shall be disaggregated by borough and police precinct only. Such data shall be updated at least once every month." (§ 14-153.b)
+*   "For the quarter beginning July first, two thousand fifteen and quarterly thereafter, the department shall provide a report, in writing, to the speaker of the council regarding: (1) the number of traffic-related incidents during the prior quarter that involved at least one vehicle and resulted in critical injury and where the driver of a vehicle involved in such incident left the scene of such incident without reporting, in violation of section six hundred of the vehicle and traffic law; (2) the number of such incidents the department closed during the prior quarter resulting in an arrest being made for violation of such section of the vehicle and traffic law; (3) the number of such incidents the department closed during the prior quarter without an arrest being made for violation of such provision of the vehicle and traffic law; and (4) the number of notices of violation issued pursuant to section 19-191 as a result of such incidents. The data in such report shall be disaggregated by precinct and the cross streets of the incident and the department shall also publish such data on the department's website. Additionally, the department shall provide to the speaker of the council in writing a brief description of what steps were taken to investigate each such incident, noting the cross streets of the incident. For purposes of this subdivision, "critical injury" shall mean any injury determined to be critical by the emergency medical service personnel responding to any such incident." (§ 14-153.c)
+*   "No later than July 1, 2016, and annually thereafter by May 1, the department shall provide to the speaker of the council and post on the department's website a report regarding: (1) the number of complaints recorded in connection with traffic-related incidents during the prior year that involved at least one vehicle and resulted in property damage, personal injury, or death and where the driver of a vehicle involved in such incident left the scene of such incident without reporting, in violation of section six hundred of the vehicle and traffic law; and (2) the number of such incidents resulting in personal injury or death that the department closed during the prior year resulting in an arrest being made for violation of such section of the vehicle and traffic law." (§ 14-153.d)
+*   "Collision report. The term "collision report" means the report prepared by an employee of the department relating to the facts of an automobile collision pursuant to section 603 of the vehicle and traffic law." (§ 14-167.a)
+*   "A collision report shall be made available online to an interested party through a single web portal located on the department's website." (§ 14-167.b)
+*   "the total number of vehicle stops conducted by officers, disaggregated by the justification for the stop, which shall include the type of offense observed, if any, and whether such offense is an infraction, violation, misdemeanor, or felony" (§ 14-191.a.1)
+*   "the total number of vehicles stopped by officers at roadblocks or checkpoints except those established due to an emergency, such as a crime scene, fire, building collapse or damage caused by extreme weather conditions or other natural disaster events" (§ 14-191.a.2)
+*   "the total number of summonses issued in connection with a vehicle stop, roadblock stop, or checkpoint stop" (§ 14-191.a.3)
+*   "the total number of arrests made in connection with a vehicle stop, roadblock stop, or checkpoint stop" (§ 14-191.a.4)
+*   "the total number of vehicle stops, roadblock stops, and checkpoint stops" (§ 14-191.a.5)
+*   "the total number of vehicles stopped that were vehicles licensed by the taxi and limousine commission, were cars or sports utility vehicles, and were trucks or buses, motorcycles, or bicycles" (§ 14-191.a.6)
+*   "the total number of summonses issued, disaggregated by whether civil or criminal offenses were charged" (§ 14-191.a.7)
+*   "the total number of arrests made and the top offenses charged" (§ 14-191.a.8)
+*   "the total number of vehicles seized as the result of a vehicle stop, a roadblock or checkpoint" (§ 14-191.a.9)
+*   "the total number of searches of vehicles, disaggregated by whether consent was provided for such searches" (§ 14-191.a.10)
+*   "the total number of use of force incidents, as defined in section 14-158, that occurred in connection with a vehicle stop, a roadblock or checkpoint." (§ 14-191.a.11)
+*   "The information required by subdivision a of this section shall be disaggregated by precinct and the apparent race/ethnicity, gender and age of the driver." (§ 14-191.b)
+**Why:** Tracking traffic incidents, enforcement actions, and collisions is essential for public safety, resource allocation, and extensive reporting requirements.
+**One row represents:** A single traffic incident (crash, stop, roadblock, checkpoint) or a moving violation summons.
+**Covers:** All traffic crashes, moving violation summonses, vehicle stops, roadblock/checkpoint stops, and related arrests, seizures, and use of force.
+**Columns:**
+*   Traffic Incident ID (Unique identifier)
+*   Incident Type (Crash, Vehicle Stop, Roadblock Stop, Checkpoint Stop, Moving Violation Summons)
+*   Date of Incident
+*   Time of Incident
+*   Location (Borough, Precinct, Intersection, Cross Streets)
+*   Reporting Officer ID (Links to **Employee Roster (13)**)
+*   Number of Vehicles Involved
+*   Vehicle Type(s) Involved (e.g., Car, SUV, Truck, Bus, Motorcycle, Bicycle, TLC licensed)
+*   Number of Motorists/Injured Passengers Involved
+*   Number of Bicyclists Involved
+*   Number of Pedestrians Involved
+*   Number of Fatalities
+*   Number of Injuries
+*   Injury Severity (Critical, Serious, Physical, Property Damage)
+*   Apparent Human Contributing Factor(s) (e.g., Alcohol, Driver Inattention/Distraction, Speeding, Failure to Yield, Cell Phone Use)
+*   Driver ID (Links to **Person Demographics (12)**)
+*   Driver Race/Ethnicity
+*   Driver Gender
+*   Driver Age
+*   Did Driver Leave Scene? (Yes/No, per VTL § 600)
+*   Was Arrest Made? (Yes/No) (Links to **Arrest Records (1)**)
+*   Was Summons Issued? (Yes/No) (Links to **Summons Records (4)**)
+*   Summons Type (Moving Violation, Criminal, Civil)
+*   Number of Notices of Violation (per § 19-191)
+*   Incident Status (Open, Closed, Arrest Made, No Arrest)
+*   Date Closed
+*   Justification for Vehicle Stop (Type of offense observed, Infraction, Violation, Misdemeanor, Felony)
+*   Was Vehicle Seized? (Yes/No) (Links to **Property Clerk Records (8)**)
+*   Was Vehicle Search Conducted? (Yes/No)
+*   Was Consent Provided for Search? (Yes/No)
+*   Was Use of Force Incident? (Yes/No) (Links to **Use of Force Incidents (6)**)
+*   Collision Report ID (Unique identifier for collision reports)
+*   Collision Report Available Online (Yes/No)
+
+**10. Investigative Encounter Log**
+**Quotes:**
+*   "Investigative encounter. The term “investigative encounter” means an interaction between a member of the department and a member of the public for a law enforcement or investigative purpose. The term does not include a casual conversation or interaction between a member of the department and a member of the public unless such conversation or interaction is based on or, in the course of such conversation or interaction, an officer develops: an objective credible reason to approach; a founded suspicion that such member of the public has engaged in or will engage in criminal activity; a reasonable suspicion that such member of the public has committed, is committing, or is about to commit a crime; or a reasonable cause to believe that an offense is being or has been committed." (§ 14-196.a)
+*   "Level I encounter. The term “level I encounter” means an investigative encounter in which a member of the department requests information from a member of the public based on an objective credible reason for such encounter, and need not necessarily require any suspicion of criminal activity." (§ 14-196.a)
+*   "Level II encounter. The term “level II encounter” means an investigative encounter in which a member of the department requests information from a member of the public based on a founded suspicion that such member of the public has engaged in or will engage in criminal activity, and during which a reasonable person would feel free to leave." (§ 14-196.a)
+*   "Level III encounter. The term “level III encounter” means an investigative encounter in which a member of the department requests information from a member of the public based on a reasonable suspicion that such member of the public has committed, is committing, or is about to commit a crime, and during which a reasonable person would not feel free to leave." (§ 14-196.a)
+*   "Within 30 days of the quarter ending September 30, 2024, and thereafter within 30 days of the end of each quarter, the department shall submit to the mayor, the public advocate and the speaker of the council and post on its website a report for the previous quarter regarding investigative encounters conducted by the department. Such report shall include, but need not be limited to, the following: 1. The total number of level I encounters; 2. The total number of level II encounters; 3. The total number of level III encounters." (§ 14-196.b)
+*   "The information required pursuant to subdivision b of this section shall be disaggregated by the precinct in which such encounter occurred, and further disaggregated by each of the following: 1. The apparent race/ethnicity, gender, and age of the member of the public involved in the investigative encounter; 2. The reason for the investigative encounter, including the conduct or offense or other circumstances that formed the basis for the investigative encounter; 3. Whether the investigative encounter was based on observations made by a member of the department, a response to a dispatch from a police radio, information provided by a witness, or on another basis; 4. Whether a criminal or civil summons was issued to the member of the public involved in the investigative encounter, or whether an arrest of such person was made; 5. Whether a use of force incident involving such member of the public occurred during such encounter; and 6. Whether a level III encounter with such member of the public began as a level I or level II encounter, and whether a level II encounter with such member of the public began as a level I encounter." (§ 14-196.c)
+**Why:** Tracking investigative encounters is crucial for transparency, accountability, and mandated reporting on police-public interactions and potential bias.
+**One row represents:** A single investigative encounter between a department member and a member of the public.
+**Covers:** All Level I, Level II, and Level III investigative encounters.
+**Columns:**
+*   Encounter ID (Unique identifier)
+*   Date of Encounter
+*   Time of Encounter
+*   Location (Precinct)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Public Member ID (Links to **Person Demographics (12)**)
+*   Public Member Apparent Race/Ethnicity
+*   Public Member Apparent Gender
+*   Public Member Apparent Age
+*   Encounter Level (Level I, Level II, Level III)
+*   Reason for Encounter (Conduct, Offense, Other circumstances)
+*   Basis for Encounter (Officer observation, 911 dispatch, Witness information, Other)
+*   Resulted in Criminal Summons? (Yes/No) (Links to **Summons Records (4)**)
+*   Resulted in Civil Summons? (Yes/No) (Links to **Summons Records (4)**)
+*   Resulted in Arrest? (Yes/No) (Links to **Arrest Records (1)**)
+*   Was Use of Force Incident? (Yes/No) (Links to **Use of Force Incidents (6)**)
+*   Did Level III begin as Level I? (Yes/No)
+*   Did Level III begin as Level II? (Yes/No)
+*   Did Level II begin as Level I? (Yes/No)
+
+**11. Vehicle Stop Log**
+**Quotes:**
+*   "the total number of vehicle stops conducted by officers, disaggregated by the justification for the stop, which shall include the type of offense observed, if any, and whether such offense is an infraction, violation, misdemeanor, or felony" (§ 14-191.a.1)
+*   "the total number of vehicles stopped by officers at roadblocks or checkpoints except those established due to an emergency, such as a crime scene, fire, building collapse or damage caused by extreme weather conditions or other natural disaster events" (§ 14-191.a.2)
+*   "the total number of summonses issued in connection with a vehicle stop, roadblock stop, or checkpoint stop" (§ 14-191.a.3)
+*   "the total number of arrests made in connection with a vehicle stop, roadblock stop, or checkpoint stop" (§ 14-191.a.4)
+*   "the total number of vehicle stops, roadblock stops, and checkpoint stops" (§ 14-191.a.5)
+*   "the total number of vehicles stopped that were vehicles licensed by the taxi and limousine commission, were cars or sports utility vehicles, and were trucks or buses, motorcycles, or bicycles" (§ 14-191.a.6)
+*   "the total number of summonses issued, disaggregated by whether civil or criminal offenses were charged" (§ 14-191.a.7)
+*   "the total number of arrests made and the top offenses charged" (§ 14-191.a.8)
+*   "the total number of vehicles seized as the result of a vehicle stop, a roadblock or checkpoint" (§ 14-191.a.9)
+*   "the total number of searches of vehicles, disaggregated by whether consent was provided for such searches" (§ 14-191.a.10)
+*   "the total number of use of force incidents, as defined in section 14-158, that occurred in connection with a vehicle stop, a roadblock or checkpoint." (§ 14-191.a.11)
+*   "The information required by subdivision a of this section shall be disaggregated by precinct and the apparent race/ethnicity, gender and age of the driver." (§ 14-191.b)
+**Why:** Tracking vehicle stops, roadblocks, and checkpoints is crucial for transparency, accountability, and mandated reporting on enforcement activities and demographics.
+**One row represents:** A single vehicle stop, roadblock stop, or checkpoint stop.
+**Covers:** All vehicle stops, roadblock stops, and checkpoint stops conducted by officers.
+**Columns:**
+*   Vehicle Stop ID (Unique identifier)
+*   Date of Stop
+*   Time of Stop
+*   Location (Precinct)
+*   Stopping Officer ID (Links to **Employee Roster (13)**)
+*   Stop Type (Vehicle Stop, Roadblock Stop, Checkpoint Stop)
+*   Justification for Stop (Type of offense observed, Infraction, Violation, Misdemeanor, Felony)
+*   Vehicle Type (TLC licensed, Car/SUV, Truck/Bus, Motorcycle, Bicycle)
+*   Driver ID (Links to **Person Demographics (12)**)
+*   Driver Apparent Race/Ethnicity
+*   Driver Apparent Gender
+*   Driver Apparent Age
+*   Resulted in Summons? (Yes/No) (Links to **Summons Records (4)**)
+*   Summons Type (Civil, Criminal)
+*   Resulted in Arrest? (Yes/No) (Links to **Arrest Records (1)**)
+*   Top Offenses Charged (if arrest)
+*   Was Vehicle Seized? (Yes/No) (Links to **Property Clerk Records (8)**)
+*   Was Vehicle Search Conducted? (Yes/No)
+*   Was Consent Provided for Search? (Yes/No)
+*   Was Use of Force Incident? (Yes/No) (Links to **Use of Force Incidents (6)**)
+
+**12. Person Demographics**
+**Quotes:**
+*   "The number of suspects arrested or issued a criminal or civil summons as indicated on each stop, question and frisk report for each patrol precinct, housing police service area, transit district, street crime unit and narcotics division; a breakdown by race and gender of the suspects arrested or issued a criminal or civil summons as indicated on each stop, question and frisk report" (§ 14-150.a.3)
+*   "a summary of complaints of violent felony crime for each patrol precinct, with a breakdown by race and gender of the suspect as identified by the victim." (§ 14-150.a.3)
+*   "For each firearms incident determined to fall within the category of Intentional Discharge – Adversarial Conflict: ... for each subject, the age, race and gender of the subject." (§ 14-150.b.6.ix)
+*   "The data provided pursuant to paragraphs one through three of subdivision b shall, for each such paragraph, where practicable based upon the manner in which the applicable records are maintained, be disaggregated by race/ethnicity, year of birth, gender, and, where the individual is a student, whether the individual is receiving special education services and whether the individual is an English Language Learner" (§ 14-152.d)
+*   "race; gender; age; and offense charged." (§ 14-156.a.3-6)
+*   "offense; race; gender; age; the borough in which the summons was issued; and the patrol precinct, housing police service area, and transit district in which the summons was issued." (§ 14-157.b)
+*   "The number of complaints and arrests classified as a hate crime disaggregated by: (a) race, sex, and age of the arrestee" (§ 14-161.a.11)
+*   "the (a) transit bureau district; (b) New York city transit authority station; (c) race, sex and age group of the arrestee, including but not limited to disaggregation of arrestees under the age of 18" (§ 14-172.a.1.c)
+*   "race, sex and age group of the violator, including but not limited to disaggregation of violators under the age of 18." (§ 14-172.a.2.c)
+*   "the apparent race/ethnicity, gender, and age of the person from whom consent to search was sought" (§ 14-173.e.1.a)
+*   "offense; race; gender; age, disaggregated by year for the age of 20 and under, and by age group as follows: 21 to 24 years old, 25 to 34 years old, 35 to 65 years old, and over 65" (§ 14-175.b.2-4)
+*   "the apparent race, ethnicity, gender, and age of the person arrested or summonsed." (§ 14-189.e)
+*   "the apparent race/ethnicity, gender and age of the driver." (§ 14-191.b)
+*   "The suspect’s perceived race, gender, and age range; The victim’s perceived race, gender, and age range, where known; ... If an arrest occurs, the location of such arrest and the age range, race, and gender of each arrestee." (§ 14-199.a.6-7, 11)
+*   "Any reporting of age ranges required by subdivision a of this section shall be in the following increments: under the age of 18, 18 - 25, 26 - 35, 36 - 40, 41 - 60, or over 60." (§ 14-199.b)
+*   "No member of the department or other law enforcement officer shall collect a DNA sample from a minor in connection with an investigation of an alleged criminal offense without first obtaining the written consent of such minor’s parent, legal guardian or attorney" (§ 14-199.1.b)
+*   "The apparent race/ethnicity, gender, and age of the member of the public involved in the investigative encounter" (§ 14-196.c.1)
+**Why:** Demographics are consistently required for reporting across various enforcement actions, ensuring transparency and identifying potential disparities.
+**One row represents:** A unique individual involved in a police interaction (arrestee, violator, subject, victim, driver, person stopped).
+**Covers:** Demographic information for individuals involved in arrests, summonses, stop-question-frisks, firearms incidents, school incidents, hate crimes, consent searches, marijuana enforcement, recording police activities, vehicle stops, and investigative encounters.
+**Columns:**
+*   Person ID (Unique identifier for each individual)
+*   Race/Ethnicity (Apparent/Perceived)
+*   Gender (Apparent/Perceived)
+*   Age (Exact or Age Range: Under 18, 18-25, 26-35, 36-40, 41-60, Over 60)
+*   Year of Birth (if available)
+*   Is Minor? (Yes/No)
+*   Is Student? (Yes/No)
+*   If Student, Receiving Special Education Services? (Yes/No)
+*   If Student, English Language Learner? (Yes/No)
+*   Housing Status (e.g., Fixed Residence, No Fixed Residence, Publicly Assisted Housing, Shelter System, Homelessness) (for bias-based profiling context)
+*   Immigration/Citizenship Status (for bias-based profiling context)
+*   Disability Status (for bias-based profiling context)
+*   Limited English Proficiency (Yes/No)
+*   Parent/Legal Guardian ID (Links to **Person Demographics (12)**) (for minors)
+*   Attorney ID (Links to **External Stakeholder Roster (26)**) (for minors)
+*   DNA Sample Collected (Yes/No)
+*   DNA Sample Consent Obtained (Yes/No)
+*   DNA Sample Consent Type (Parent, Legal Guardian, Attorney, Court Order, Search Warrant)
+*   DNA Sample Consent Date
+
+**13. Employee Roster**
+**Quotes:**
+*   "the police force in the police department, shall consist of the following ranks of members, to wit: 1. Captains of police... 2. Lieutenants of police... 3. Sergeants... 4. Surgeons of police... 5. A veterinarian; 6. Police officers" (§ 14-102)
+*   "The commissioner shall organize and maintain a bureau for detective purposes to be known as the detective bureau and shall, from time to time, detail to service in said bureau as many members of the force as the commissioner may deem necessary and may at any time revoke any such detail." (§ 14-103.a)
+*   "Of the members of the force so detailed the commissioner may designate: 1. police officers not exceeding two hundred eighty in number, as detectives of the first grade... 2. a certain number of police officers, as detectives of the second grade... and a certain number of police officers as detectives of the third grade" (§ 14-103.b)
+*   "The commissioner may designate lieutenants as commanders of detective squads, and sergeants as supervisors of detective squads" (§ 14-103.c)
+*   "Any member of the force detailed to such bureau while so detailed shall retain his or her rank in the force and shall be eligible for promotion the same as if serving in the uniformed force, and the time during which he or she serves in such bureau shall count for all purposes as if served in his or her rank or grade in the uniformed force." (§ 14-103.d)
+*   "There shall be a bureau in the department organized and maintained for the prevention of crime and delinquency among minors... Any member of the force assigned to such juvenile bureau shall retain his or her rank and pay in the force" (§ 14-104)
+*   "There shall be an officer to be known as superintendent of buildings, to be selected from among the members of the uniformed force by the commissioner." (§ 14-105.a)
+*   "The commissioner, upon an emergency or apprehension of riot... may appoint as many special patrolmen without pay from among the citizens as he or she may deem desirable." (§ 14-106.a)
+*   "The commissioner, whenever expedient, may on the application of any person or persons, corporation or corporations... appoint and swear any number of special patrolmen to do special duty at any place in the city" (§ 14-106.c)
+*   "The commissioner, upon the application of the head of any agency, public authority exercising jurisdiction within the city, or state agency, may appoint and swear any number of officers or employees of such agency or authority to do special duty at any place in the city, on behalf of such agency." (§ 14-106.e)
+*   "Only persons shall be appointed or reappointed to membership in the police force or continue to hold membership therein, who are citizens of the United States and who have never been convicted of a felony, and who can read and write understandably the English language." (§ 14-109.a)
+*   "Only persons shall be appointed police officers who shall be at the date of the filing of an application for civil service examination less than thirty-five years of age" (§ 14-109.a)
+*   "Persons who are appointed as police trainees, after examination in accordance with the civil service law and the rules of the commissioner of citywide administrative services and who have satisfactorily completed service as such trainees, may likewise be appointed as police officers without further written examination" (§ 14-109.a)
+*   "Preliminary to a permanent appointment as police officer there shall be a period of probation for such time as is fixed by the civil service rules" (§ 14-109.b)
+*   "Every member of the force shall have issued to him or her by the department, a proper warrant of appointment, signed by the commissioner and chief clerk or first deputy clerk of the department or of the commissioner, which warrant shall contain the date of appointment and rank." (§ 14-110.a)
+*   "Each member of the force shall, before entering upon the duties of his or her office, take an oath of office and subscribe the same before any officer of the department who is empowered to administer an oath." (§ 14-110.b)
+*   "Any member of the police force in the department who prior to his or her appointment or employment as such, has served or shall have served, as a member of the uniformed force of the fire department" (§ 14-112.a)
+*   "Promotions of officers and members of the force shall be made by the commissioner... on the basis of seniority, meritorious service and superior capacity, as shown by competitive examination" (§ 14-114.a)
+*   "Sergeants shall be selected from among police officers of the first grade. Lieutenants shall be selected from among sergeants who shall have served at least one year continuously as such. Captains shall be selected from among lieutenants who shall have served at least one year as lieutenants." (§ 14-114.b)
+*   "the commissioner may employ persons to be known as school crossing guards" (§ 14-118.a)
+*   "the commissioner may employ persons who shall not be police officers to engage in the performance of duties involving the enforcement of laws and regulations relating to (1) the parking of vehicles and (2) the regulating, directing, controlling and restricting of the movement of vehicular and pedestrian traffic" (§ 14-118.2.a)
+*   "A member of the force in the rank of police officer, other than an officer who is detailed or designated as a detective or who holds the position of sergeant or any position of higher rank in such force, shall be entitled pursuant to this section to the full amount of his or her regular salary for the period of any incapacity due to illness or injury incurred in the performance and discharge of duty as a member of the force, as determined by the department." (§ 14-122.1.a)
+*   "No member of the police force in the department, except surgeons of police, a roentgenologist and a veterinarian, who is or hereafter attains the age of sixty-three years shall continue to serve as a member of such force but shall be retired" (§ 14-124)
+*   "A member of the force, under penalty of forfeiting the salary which may be due such member, shall not withdraw or resign, except by permission of the commissioner." (§ 14-126.a)
+*   "Absence, without leave, of any member of the force for five consecutive days shall be deemed and held to be a resignation" (§ 14-126.b)
+*   "Leave of absence, other than for sickness, exceeding thirty days in any one year shall be granted or allowed to any member of the force, only upon the condition that such member shall waive and release not less than one-half of all salary and claim thereto during such absence." (§ 14-126.c)
+*   "The three platoon system shall not apply to or govern the hours or tours of duty of sergeants or police officers of the city of New York, who may from time to time be detailed or assigned to what is known and designated as the traffic squad" (§ 14-128)
+*   "member of the auxiliary police" shall mean and include only a volunteer who is a duly enrolled member in good standing of the auxiliary police" (§ 14-147.a)
+*   "Duly enrolled members in good standing of the auxiliary police, upon successful completion of training, shall receive an initial allowance not to exceed two hundred fifty dollars towards the initial purchase of uniforms and accessories for same, including care and maintenance." (§ 14-148.b)
+*   "A report detailing the number of uniformed personnel and civilian personnel assigned to each and every patrol borough and operational bureau performing an enforcement function within the police department, including, but not limited to, each patrol precinct, housing police service area, transit district and patrol borough street crime unit, as well as the narcotics division, fugitive enforcement division and the special operations division including its subdivisions, but shall not include internal investigative commands and shall not include undercover officers assigned to any command. Such report shall also include, for each school operated by the department of education to which school safety agents are assigned, the number of school safety agents, averaged for the quarter, assigned to each of those schools." (§ 14-150.a.1)
+*   "officer" means a uniformed member of the department, at any rank" (§ 14-150.b.8.d)
+*   "The department shall submit to the council on a quarterly basis a report of complaints against school safety agents from the preceding quarter." (§ 14-152.f)
+*   "The number of positions that are civilianizable, including a listing of each such position by job title, and the number of such positions that were civilianized." (§ 14-150.f.2)
+*   "the total number of uniformed officers assigned to a patrol precinct, transit district, or police service area in the past calendar year, disaggregated by: (a) the total number trained in cardiopulmonary resuscitation; (b) the total number of officers newly trained in cardiopulmonary resuscitation in the past calendar year; (c) the total number of officers re-trained in cardiopulmonary resuscitation in the past calendar year" (§ 14-165.c.1)
+*   "the total number of school safety agents, disaggregated by: (a) the total number trained in cardiopulmonary resuscitation; (b) the total number of school safety agents newly trained in cardiopulmonary resuscitation in the past calendar year; and (c) the total number of school safety agents re-trained in cardiopulmonary resuscitation in the past calendar year." (§ 14-165.c.2)
+*   "officer" has the same meaning as defined under section 14-174." (§ 14-176.a)
+*   "The number of special victims investigators, in total and disaggregated by borough, unit, and rank including detective grade." (§ 14-179.b.3)
+*   "The number of members of the service during the previous calendar year that: (i) participated in such program, (ii) failed to demonstrate proficiency required pursuant to subdivision c of this section on their first attempt, disaggregated by subject matter, and (iii) successfully demonstrated proficiency on all subject matters required pursuant to subdivision c of this section." (§ 14-180.d)
+*   "An officer's shield number or rank designation shall be visible at all times while such officer is in uniform and performing any activity under the color of law." (§ 14-187.a)
+*   "The department shall maintain a centralized system that is used to record, track, review and evaluate officer activity and to identify officers who may be in need of enhanced training, monitoring or reassignment." (§ 14-190.a)
+*   "The number of school safety personnel who received such training; and The number of school safety personnel who successfully demonstrated proficiency on the subject matter contained in such training." (§ 14-197.i.1-2)
+*   "The department shall provide training on responding to and investigating reports of suspected identity theft to: 1. Any department recruit, as part of such recruit’s academy training; and 2. Any uniformed member of the department who did not receive such training as part of such member’s academy training." (§ 14-198.b)
+**Why:** A comprehensive employee roster is essential for managing personnel, tracking assignments, qualifications, and fulfilling numerous reporting and operational requirements.
+**One row represents:** A single employee (uniformed or civilian) of the department.
+**Covers:** All members of the police force (officers, detectives, sergeants, lieutenants, captains, surgeons, veterinarian), police trainees, special patrolmen, school crossing guards, traffic and parking enforcement employees, auxiliary police, and school safety agents.
+**Columns:**
+*   Employee ID (Unique identifier)
+*   First Name
+*   Last Name
+*   Date of Birth
+*   Gender
+*   Race/Ethnicity
+*   Citizenship Status (US Citizen Yes/No)
+*   Felony Conviction (Yes/No)
+*   Read/Write English (Yes/No)
+*   Date of Appointment
+*   Rank
+*   Current Assignment/Bureau/Unit (e.g., Patrol, Detective Bureau, Juvenile Bureau, Superintendent of Buildings, School Safety Division, Traffic Squad, Narcotics Division, Fugitive Enforcement Division, Special Operations Division, Housing Police Service Area, Transit District, Street Crime Unit)
+*   Assignment Start Date
+*   Assignment End Date
+*   Is Undercover Officer? (Yes/No)
+*   Is Civilian Personnel? (Yes/No)
+*   Employee Type (e.g., Police Officer, Detective Grade 1/2/3, Sergeant, Lieutenant, Captain, Surgeon, Veterinarian, Police Trainee, Special Patrolman, School Crossing Guard, Traffic Enforcement Agent, Auxiliary Police, School Safety Agent)
+*   Salary
+*   Date of Last Promotion
+*   Years of Uniformed Service
+*   Prior Fire Department Service (Yes/No)
+*   If Prior FD Service, FD Service Start Date
+*   If Prior FD Service, FD Service End Date
+*   Probationary Period Start Date
+*   Probationary Period End Date
+*   Permanent Appointment Date
+*   Oath of Office Date
+*   Warrant of Appointment Issued (Yes/No)
+*   Shield Number
+*   Badge Number
+*   On-Duty Status (Current)
+*   Retirement Eligibility Age (e.g., 63, 65)
+*   Creditable City Service Years (for retirement)
+*   Social Security Program Participant (Yes/No)
+*   Date of Retirement/Termination
+*   Reason for Retirement/Termination (e.g., Age, Resignation, Dismissal)
+*   Dismissed from other police force due to misconduct (Yes/No)
+*   Resigned from other police force while under misconduct investigation (Yes/No)
+*   Eligible for Pension Fund (Yes/No)
+*   Pension Fund Enrollment Date
+*   Pension Plan Type
+*   Pension Benefit Calculation Factors (e.g., highest grade of pay, years in rank)
+*   Overtime Spending (Current Quarter)
+*   Overtime Hours (Current Quarter)
+*   CPR Trained (Yes/No)
+*   CPR Training Date
+*   AED Trained (Yes/No)
+*   AED Training Date
+*   Harassment/Sexual Assault Sensitivity Training Date
+*   Special Victims Training Program Completion Date
+*   Special Victims Training Proficiency Demonstrated (Yes/No)
+*   Child-Sensitive Arrest Training Date
+*   Autism Spectrum Disorder Safety Training Date
+*   Identity Theft Training Date
+*   Number of CCRB Substantiated Cases (Last 3 years) (Links to **Officer Activity Tracking (14)**)
+*   Subject to Internal Affairs Investigation resulting in suspension (Last 5 years) (Links to **Officer Activity Tracking (14)**)
+*   Found by department to have used excessive force (Last 3 years) (Links to **Officer Activity Tracking (14)**)
+*   Arrested for on-duty/job-related actions (Last 10 years) (Links to **Officer Activity Tracking (14)**)
+*   Civilianizable Position (Yes/No)
+*   Civilianized (Yes/No)
+
+**14. Officer Activity Tracking (Early Intervention System)**
+**Quotes:**
+*   "The department shall maintain a centralized system that is used to record, track, review and evaluate officer activity and to identify officers who may be in need of enhanced training, monitoring or reassignment. Such system shall collect and utilize, at a minimum, the following: (i) information reported pursuant to section 7-114; (ii) complaints received and initiated by, and results of investigations based on such complaints conducted by the civilian complaint review board; (iii) complaints received and results of investigations conducted by the department, including but not limited to investigations conducted by the internal affairs bureau, and any disposition resulting from any such investigation; (iv) complaints received pursuant to section 804 of the charter; (v) use of force incidents and incidents of excessive force, as those terms are defined in section 14-158; (vi) arrests and summonses for violations of sections 240.20, 195.05 and 205.30 of the penal law; (vii) judicial or departmental determinations that detentions of individuals were not legally justified; (viii) criminal arrests or investigations of an officer, to the extent known to the department; (ix) judicial determinations that an officer's testimony is not credible; (x) vehicle pursuits and collisions involving department equipment; (xi) violations of the department's patrol guide; (xii) disciplinary actions and ongoing disciplinary proceedings; (xiii) non-disciplinary corrective actions; and (xiv) results of investigations conducted by the civilian complaint review board pursuant to section 441 of the charter." (§ 14-190.a)
+*   "By January 31 of each year, the department shall post on its website and submit to the mayor and the speaker of the council a report on the department's use of the early intervention system during the previous year, including, but not limited to (i) any additional information, other than the information required to be included in such system by subdivision a of this section, that is collected and utilized through such system; (ii) the process for identifying, through such system, officers who may be in need of enhanced training or monitoring; (iii) the interventions utilized by the department with such officers; (iv) procedures and systems for ongoing monitoring of such officers to ensure improvement; and (v) any information required to be included in such system by subdivision a of this section that the department believes should be eliminated and the reasons why." (§ 14-190.b)
+*   "the total number and percentage of active duty officers who: a. have had two or more cases substantiated by the civilian complaint review board in the last three calendar years; b. were subject to an internal affairs investigation that resulted in the officer's suspension from employment within the last five calendar years; c. have been found by the department to have used excessive force, as such term is defined in subdivision a of section 14-158, in the last three calendar years, where such information is available pursuant to subdivision c of such section; or d. have been arrested as a result of actions taken while on duty or related to an officer's job function, in the last ten calendar years, provided that nothing in this subdivision shall require the reporting of records that have been sealed." (§ 14-160)
+**Why:** This system is explicitly mandated to track officer activity for early intervention, identifying officers needing training, monitoring, or reassignment.
+**One row represents:** A single recorded activity, complaint, or incident related to an officer's performance.
+**Covers:** All data points collected for the Early Intervention System, including CCRB complaints, internal investigations, use of force, specific arrests/summonses, judicial determinations, vehicle incidents, patrol guide violations, and disciplinary actions.
+**Columns:**
+*   Officer Activity ID (Unique identifier)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Date of Activity/Incident
+*   Activity/Incident Type (e.g., CCRB Complaint, Internal Investigation, Use of Force, Arrest, Summons, Judicial Determination, Vehicle Pursuit, Collision, Patrol Guide Violation, Disciplinary Action, Corrective Action)
+*   Related Incident ID (Links to **Use of Force Incidents (6)**, **Arrest Records (1)**, **Summons Records (4)**, **Vehicle Stop Log (11)**, **Collision Reports (9)**)
+*   Complaint ID (if applicable, links to **Civilian Complaint Review Board Complaints (15)**, **Internal Affairs Investigations (16)**)
+*   Outcome/Disposition (e.g., Substantiated, Unsubstantiated, Not Credible, Legally Justified, Violation Found)
+*   Date of Outcome/Disposition
+*   Intervention Taken (e.g., Enhanced Training, Monitoring, Reassignment, Suspension, Termination, Reduction of Salary)
+*   Intervention Start Date
+*   Intervention End Date
+*   Ongoing Monitoring (Yes/No)
+*   Officer Arrested (Yes/No)
+*   Officer Arrest Details (Offense, Date, Outcome)
+*   Officer Testimony Not Credible (Yes/No)
+*   Detention Not Legally Justified (Yes/No)
+*   Patrol Guide Violation (Yes/No)
+*   Patrol Guide Section Violated
+
+**15. Civilian Complaint Review Board (CCRB) Complaints**
+**Quotes:**
+*   "complaints received and initiated by, and results of investigations based on such complaints conducted by the civilian complaint review board" (§ 14-190.a.ii)
+*   "results of investigations conducted by the civilian complaint review board pursuant to section 441 of the charter." (§ 14-190.a.xiv)
+*   "have had two or more cases substantiated by the civilian complaint review board in the last three calendar years" (§ 14-160.a)
+**Why:** Tracking CCRB complaints and their outcomes is essential for officer accountability and the Early Intervention System.
+**One row represents:** A single complaint filed with or initiated by the CCRB against an officer.
+**Covers:** All complaints handled by the Civilian Complaint Review Board.
+**Columns:**
+*   CCRB Complaint ID (Unique identifier)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Complaint Date
+*   Complaint Type (e.g., Excessive Force, Abuse of Authority, Discourtesy, Offensive Language)
+*   Complainant ID (Links to **Person Demographics (12)**)
+*   Investigation Start Date
+*   Investigation End Date
+*   Investigation Outcome (e.g., Substantiated, Unsubstantiated, Exonerated, Unfounded)
+*   Date of Outcome
+*   Disciplinary Recommendation (if substantiated)
+*   Departmental Action Taken (Links to **Officer Activity Tracking (14)**)
+
+**16. Internal Affairs Investigations**
+**Quotes:**
+*   "complaints received and results of investigations conducted by the department, including but not limited to investigations conducted by the internal affairs bureau, and any disposition resulting from any such investigation" (§ 14-190.a.iii)
+*   "were subject to an internal affairs investigation that resulted in the officer's suspension from employment within the last five calendar years" (§ 14-160.b)
+*   "Operators of the 311 system shall inform any caller seeking to make a complaint against a school safety agent that the complaint will be electronically transferred to the internal affairs bureau of the New York city police department." (§ 14-152.g)
+**Why:** Tracking internal investigations is crucial for departmental accountability and the Early Intervention System.
+**One row represents:** A single internal investigation initiated by the department.
+**Covers:** All investigations conducted by the Internal Affairs Bureau or other departmental units into officer misconduct.
+**Columns:**
+*   Investigation ID (Unique identifier)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Complaint Date (if initiated by complaint)
+*   Complaint Source (e.g., 311, Internal, Supervisor)
+*   Complaint Type (e.g., Misconduct, Violation of Rules, Neglect of Duty, Criminal Offense, Immoral Conduct, Conduct Unbecoming)
+*   Investigation Start Date
+*   Investigation End Date
+*   Investigation Outcome (e.g., Substantiated, Unsubstantiated, Exonerated, Unfounded)
+*   Date of Outcome
+*   Disciplinary Action Taken (e.g., Reprimand, Forfeiture of Pay, Suspension, Dismissal, Probation) (Links to **Officer Activity Tracking (14)**)
+*   Disciplinary Action Start Date
+*   Disciplinary Action End Date
+*   Salary Forfeited Amount
+*   Suspension Without Pay (Yes/No)
+*   Probation Period (Start Date, End Date)
+
+**17. Disciplinary Actions**
+**Quotes:**
+*   "The commissioner shall have power, in his or her discretion, on conviction by the commissioner, or by any court or officer of competent jurisdiction, of a member of the force of any criminal offense, or neglect of duty, violation of rules, or neglect or disobedience of orders, or absence without leave, or any conduct injurious to the public peace or welfare, or immoral conduct or conduct unbecoming an officer, or any breach of discipline, to punish the offending party by reprimand, forfeiting and withholding pay for a specified time, suspension, without pay during such suspension, or by dismissal from the force; but no more than thirty days' salary shall be forfeited or deducted for any offense. All such forfeitures shall be paid forthwith into the police pension fund." (§ 14-115.a)
+*   "Members of the force, except as elsewhere provided herein, shall be fined, reprimanded, removed, suspended or dismissed from the force only on written charges made or preferred against them, after such charges have been examined, heard and investigated by the commissioner or one of his or her deputies upon such reasonable notice to the member or members charged, and in such manner or procedure, practice, examination and investigation as such commissioner may, by rules and regulations, from time to time prescribe." (§ 14-115.b)
+*   "The commissioner is also authorized and empowered in his or her discretion, to deduct and withhold salary from any member or members of the force, for or on account of absence for any cause without leave, lost time, sickness or other disability, physical or mental; provided, however, that the salary so deducted and withheld shall not, except in case of absence without leave, exceed one-half thereof for the period of such absence; and provided, further, that not more than one-half pay for three days shall be deducted on account of absence caused by sickness." (§ 14-115.c)
+*   "Upon having found a member of the force guilty of the charges preferred against him or her, either upon such member's plea of guilty or after trial, the commissioner or the deputy examining, hearing and investigating the charges, in his or her discretion, may suspend judgment and place the member of the force so found guilty upon probation, for a period not exceeding one year; and the commissioner may impose punishment at any time during such period." (§ 14-115.d)
+*   "The commissioner shall have power to suspend, without pay, pending the trial of charges, any member of the force. If any member so suspended shall not be convicted by the commissioner of the charges so preferred, he or she shall be entitled to full pay from the date of suspension, notwithstanding such charges and suspension." (§ 14-123)
+*   "internal disciplinary matrix... sets forth an advisory schedule of violations, penalties, and mitigating and aggravating circumstances" (§ 14-186.a)
+*   "the number and percentage of instances within the preceding calendar year in which the commissioner imposed a discipline penalty that is different from the disciplinary matrix penalty." (§ 14-186.d)
+*   "disciplinary actions and ongoing disciplinary proceedings" (§ 14-190.a.xii)
+*   "non-disciplinary corrective actions" (§ 14-190.a.xiii)
+**Why:** Tracking disciplinary actions is a core operational and legal requirement for maintaining force discipline and accountability.
+**One row represents:** A single disciplinary action or corrective action taken against an employee.
+**Covers:** All reprimands, pay forfeitures, suspensions, dismissals, probations, and non-disciplinary corrective actions.
+**Columns:**
+*   Disciplinary Action ID (Unique identifier)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Date of Action
+*   Action Type (Reprimand, Pay Forfeiture, Suspension, Dismissal, Probation, Non-Disciplinary Corrective Action)
+*   Reason for Action (e.g., Criminal Offense, Neglect of Duty, Violation of Rules, Disobedience of Orders, Absence Without Leave, Conduct Unbecoming, Sickness, Lost Time, Disability)
+*   Charge ID (Links to **Internal Affairs Investigations (16)**, **Civilian Complaint Review Board Complaints (15)**)
+*   Salary Forfeited Amount
+*   Pay Withheld Amount
+*   Suspension Start Date
+*   Suspension End Date
+*   Suspension With Pay (Yes/No)
+*   Probation Start Date
+*   Probation End Date
+*   Was action different from Disciplinary Matrix? (Yes/No)
+*   If different, Reason for Deviation from Matrix
+*   Status (Ongoing, Completed)
+
+**18. Employee Leave and Absence Records**
+**Quotes:**
+*   "The commissioner is also authorized and empowered in his or her discretion, to deduct and withhold salary from any member or members of the force, for or on account of absence for any cause without leave, lost time, sickness or other disability, physical or mental; provided, however, that the salary so deducted and withheld shall not, except in case of absence without leave, exceed one-half thereof for the period of such absence; and provided, further, that not more than one-half pay for three days shall be deducted on account of absence caused by sickness." (§ 14-115.c)
+*   "Absence, without leave, of any member of the force for five consecutive days shall be deemed and held to be a resignation, and the member so absent shall, at the expiration of such period cease to be a member of the force and be dismissed therefrom without notice." (§ 14-126.b)
+*   "Leave of absence, other than for sickness, exceeding thirty days in any one year shall be granted or allowed to any member of the force, only upon the condition that such member shall waive and release not less than one-half of all salary and claim thereto during such absence." (§ 14-126.c)
+*   "A member of the force in the rank of police officer... shall be entitled... to the full amount of his or her regular salary for the period of any incapacity due to illness or injury incurred in the performance and discharge of duty as a member of the force, as determined by the department." (§ 14-122.1.a)
+*   "A member of the force who is detailed or designated as a detective or who holds the position of sergeant or any position of higher rank... shall be entitled... to the full amount of his or her regular salary for the period of any incapacity due to illness or injury incurred in the performance and discharge of duty as a member of the force, as determined by the department, only in the event that a collective bargaining agreement granting such entitlement pursuant to this section has been made by the city and the certified employee organization representing such member." (§ 14-122.1.b)
+*   "incapacity" shall mean the inability to perform full, limited, or restricted duty." (§ 14-122.1.f)
+**Why:** Tracking employee leave and absence is necessary for payroll, compliance with regulations, and managing personnel availability.
+**One row represents:** A single period of leave or absence for an employee.
+**Covers:** All types of employee absences, including sick leave, absence without leave, and disability-related incapacity.
+**Columns:**
+*   Leave ID (Unique identifier)
+*   Employee ID (Links to **Employee Roster (13)**)
+*   Leave Start Date
+*   Leave End Date
+*   Leave Type (Sickness, Disability, Absence Without Leave, Other Authorized Leave)
+*   Is Incapacity Due to Line of Duty Injury/Illness? (Yes/No)
+*   If Line of Duty, Rank at Time of Incapacity
+*   If Line of Duty, Covered by Collective Bargaining Agreement? (Yes/No)
+*   Salary Withheld (Yes/No)
+*   Amount of Salary Withheld
+*   Full Pay Received (Yes/No)
+*   Was Leave > 30 days in a year? (Yes/No)
+*   If > 30 days, was salary waived? (Yes/No)
+*   Was Absence Without Leave > 5 consecutive days? (Yes/No)
+*   Resulting Action (e.g., Salary Deduction, Dismissal, Full Pay)
+
+**19. Department Facilities and Equipment Inventory**
+**Quotes:**
+*   "The commissioner shall, from time to time, with the approval of the mayor, within the appropriation provided therefor, establish, provide and furnish stations and station houses, or substations and substation houses, at least one to each precinct, for the accommodation thereat of members of the force, and as places of temporary detention for persons arrested and property taken within the precinct." (§ 14-129.a)
+*   "the commissioner shall provide written notice with supporting documentation at least forty-five days prior to the permanent closing, removal or relocation of any permanent station, station house, substation or substation house to the council members, community boards and borough presidents whose districts are served by such facility and the chairperson of the council's public safety committee." (§ 14-129.a)
+*   "A sufficient sum of money shall be appropriated annually for the purpose of furnishing horses, automotive equipment and apparatus connected therewith, and the maintenance thereof" (§ 14-129.b)
+*   "The commissioner shall designate one or more station houses for the detention and confinement of women under arrest in the city. The commissioner shall provide sufficient accommodations for women held under arrest, keep them separate and apart from the cells, corridors and apartments provided for males under arrest, and so arrange each station house that no communication can be had between men and women therein confined, except with the consent of the officer in command of such station house. Officers or employees other than female staff assigned to this detail, shall be admitted to the corridors or cells of the women prisoners only with the consent of the officer in command of such station house. In every station house to which female members of the force or other female staff are detailed, toilet accommodations shall be provided for female staff, which accommodations shall be wholly separate and apart from the toilet accommodations provided for prisoners, or for male personnel attached to such station house." (§ 14-131)
+*   "In any precinct or precincts, comprising waters of the harbor, the commissioner may use and procure, through the department of citywide administrative services, such boats as shall be deemed necessary." (§ 14-133)
+*   "Whenever any horses used in the department shall have become unfit for use therein, the commissioner, instead of causing such horses to be sold at auction, may transfer such horses to the custody of the American Society for the Prevention of Cruelty to Animals" (§ 14-139)
+*   "The number of opioid antagonists the department has available for use in reversing the effects of a heroin or opioid overdose, disaggregated by patrol borough" (§ 14-176.b.1)
+*   "the total number of uniformed officers assigned to a patrol precinct, transit district, or police service area in the past calendar year, disaggregated by: (a) the total number trained in cardiopulmonary resuscitation; (b) the total number of officers newly trained in cardiopulmonary resuscitation in the past calendar year; (c) the total number of officers re-trained in cardiopulmonary resuscitation in the past calendar year; and 2. the total number of school safety agents, disaggregated by: (a) the total number of school safety agents trained in cardiopulmonary resuscitation; (b) the total number of school safety agents newly trained in cardiopulmonary resuscitation in the past calendar year; and (c) the total number of school safety agents re-trained in cardiopulmonary resuscitation in the past calendar year." (§ 14-165.c, d)
+*   "The department shall create a centralized electronic system to track all city-issued parking permits and to record all summonses issued by the department in connection with the improper use of city-issued parking permits. Such system shall allow the department to verify in real time the validity of city-issued parking permits." (§ 14-183.1.b)
+*   "Surveillance technology. The term "surveillance technology" means equipment, software, or systems capable of, or used or designed for, collecting, retaining, processing, or sharing audio, video, location, thermal, biometric, or similar information, that is operated by or at the direction of the department." (§ 14-188.a)
+*   "an itemized list of all surveillance technologies used by the department, including specifications of the functionality of each such technology, the types of data collected by each such technology, and which department unit maintains control of information collected by each such technology" (§ 14-188.j.1)
+*   "a description of the department’s use of facial recognition technologies" (§ 14-188.1.a.1)
+*   "body-worn camera” means a video recording device that can be attached or affixed to a person’s body, apparel, or clothing." (§ 14-194.a)
+**Why:** Tracking department facilities and equipment is essential for operational readiness, resource management, and compliance with maintenance and deployment requirements.
+**One row represents:** A single department facility or a specific piece of equipment.
+**Covers:** All department buildings (station houses, substations), vehicles, boats, horses, opioid antagonists, AEDs, body-worn cameras, and surveillance technology.
+**Columns:**
+*   Asset ID (Unique identifier)
+*   Asset Type (Facility, Vehicle, Boat, Horse, Opioid Antagonist, AED, Body-Worn Camera, Surveillance Technology)
+*   Asset Name/Model
+*   Location (Precinct, Borough, specific address/building ID)
+*   Status (Active, In Maintenance, Retired, Disposed)
+*   Acquisition Date
+*   Last Maintenance Date
+*   Next Scheduled Maintenance Date
+*   Condition
+*   For Facilities:
+    *   Facility Type (Station House, Substation, Detention Facility)
+    *   Capacity (e.g., number of cells, beds)
+    *   Accommodations for Women (Yes/No)
+    *   Separate Male/Female Areas (Yes/No)
+    *   Female Staff Toilet Accommodations (Yes/No)
+    *   Permanent Closing/Removal/Relocation Notice Date
+    *   Permanent Closing/Removal/Relocation Effective Date
+*   For Vehicles/Boats:
+    *   License Plate Number
+    *   Make
+    *   Model
+    *   Year
+    *   Assigned Unit/Bureau
+    *   Fuel Type
+    *   Maintenance Records (Links to **Maintenance Records (20)**)
+*   For Horses:
+    *   Health Status
+    *   Disposition (e.g., Transferred to ASPCA, Sold)
+    *   Proceeds from Sale/Use (if applicable)
+*   For Opioid Antagonists:
+    *   Expiration Date
+    *   Quantity Available
+    *   Assigned Borough
+*   For AEDs:
+    *   Last Inspection Date
+    *   Battery Expiration Date
+    *   Pad Expiration Date
+*   For Body-Worn Cameras:
+    *   Serial Number
+    *   Assigned Officer ID (Links to **Employee Roster (13)**)
+    *   Firmware Version
+    *   Last Calibration Date
+*   For Surveillance Technology:
+    *   Manufacturer
+    *   Product Name
+    *   Functionality Description
+    *   Data Types Collected (Audio, Video, Location, Thermal, Biometric, etc.)
+    *   Controlling Department Unit
+    *   Access Rules/Guidelines
+    *   Prohibitions/Restrictions on Use
+    *   Court Authorization Required (Yes/No)
+    *   Type of Court Authorization
+    *   Safeguards/Security Measures (e.g., Encryption, Access Control)
+    *   Data Retention Policy
+    *   Data Access Policy (Public)
+    *   External Entities with Access (Names, Type of Data, Safeguards/Restrictions) (Links to **External Stakeholder Roster (26)**)
+    *   Training Required for Use/Access (Yes/No)
+    *   Internal Audit/Oversight Mechanisms
+    *   Health and Safety Effects (Tests/Reports)
+    *   Known Physical Safety Hazards
+    *   Potentially Disparate Impacts on Protected Groups
+    *   Acquisition Date
+    *   Discontinuation Date
+    *   Enhancements Acquired (Description, Date)
+    *   New Uses (Description, Date)
+    *   Direct Access by Government Agencies (Agency Name, Extent of Data, Dates of Access)
+
+**20. Maintenance Records**
+**Quotes:**
+*   "Such superintendent, under the direction of the commissioner, shall have supervision over the maintenance of all department buildings, and supervision over the mechanical force of the police department." (§ 14-105.b)
+*   "A sufficient sum of money shall be appropriated annually for the purpose of furnishing horses, automotive equipment and apparatus connected therewith, and the maintenance thereof" (§ 14-129.b)
+**Why:** Tracking maintenance activities is crucial for ensuring operational readiness, safety, and proper functioning of department assets.
+**One row represents:** A single maintenance event performed on a department asset.
+**Covers:** Maintenance performed on department buildings, automotive equipment, and other apparatus.
+**Columns:**
+*   Maintenance ID (Unique identifier)
+*   Asset ID (Links to **Department Facilities and Equipment Inventory (19)**)
+*   Maintenance Date
+*   Maintenance Type (e.g., Routine, Repair, Emergency, Inspection)
+*   Description of Work Performed
+*   Parts Used
+*   Cost of Maintenance
+*   Performed By (Internal Mechanical Force, External Vendor)
+*   Mechanical Force Employee ID (if internal, links to **Employee Roster (13)**)
+*   Vendor Name (if external, links to **Vendor Records (27)**)
+*   Next Scheduled Maintenance Date
+
+**21. Parking Permit Records**
+**Quotes:**
+*   "The department may issue parking permits to city, state, or federal law enforcement agencies that indicate permission to park in certain areas during certain times has been granted." (§ 14-183.a)
+*   "Such permits shall be valid for no more than one year unless suspended or revoked." (§ 14-183.b)
+*   "Except for department fleet vehicles, an application for a parking permit or renewal thereof shall include, but need not be limited to, the following information: (a) the name of the applicant; (b) the license plate number of the vehicle or vehicles to be associated with such permit; and (c) a statement articulating the justification for the permit need." (§ 14-183.c.1)
+*   "Upon the approval of an application, the department shall issue a parking permit to the applicant that may only be used in the vehicle identified on such application." (§ 14-183.c.2)
+*   "Parking permits shall not be transferrable to another person or vehicle." (§ 14-183.c.3)
+*   "Whenever any information provided on such an application has changed, the permittee shall notify the department within 10 days of such change." (§ 14-183.c.4)
+*   "A parking permit may be a physical permit or a programmable feature associated with a license plate number. Such permit issued to a city shall contain the name of the agency. Such permit issued to an agency of the United States shall indicate that such permit is issued for federal law enforcement purposes. Such permit issued to an agency of the state of New York shall indicate that such permit is issued for state law enforcement purposes. All parking permits shall contain at least the expiration date of the permit and a unique identifier or other technology designed to allow the city to detect valid permits." (§ 14-183.d)
+*   "Parking with a permit shall be permitted in areas specified on or programmed into the permit, and may allow for parking in some or all of the following areas: (a) at parking meters; (b) in truck loading and unloading zones; (c) in "no standing/parking" except "authorized vehicles" or "authorized vehicle" only, when such permit authorizes such use; and (d) in "no parking" areas." (§ 14-183.e.1)
+*   "Parking with a permit shall not permitted in the following areas: (a) "no standing" areas; (b) "no stopping" areas; (c) fire hydrants; (d) bus stops; (e) areas where such parking would constitute double parking; (f) driveways; (g) bridges and highways; (h) carsharing parking spaces; and (i) any other location as designated by the commissioner, taking into consideration traffic rules promulgated by the department of transportation after the effective date of this law." (§ 14-183.e.2)
+*   "Any violation of subdivision c of this section involving a material false statement or material fact concealed in connection with an application for a parking permit or renewal thereof shall upon conviction thereof be punishable by a civil penalty of not less than $250 nor more than $1,000." (§ 14-183.g)
+*   "No later than January 31, 2021, the department shall post information online regarding the issuance of city-issued parking permits, including, but not limited to, the number of applications submitted and the number of such permits issued in the previous year. Such information shall be updated annually." (§ 14-183.h)
+*   "Individuals holding permits issued pursuant to this section shall be subject to the rules of the department of transportation relating to the issuance of separate parking violations for the misuse or fraudulent use of city-issued parking permits" (§ 14-183.i)
+*   "The department shall create a centralized electronic system to track all city-issued parking permits and to record all summonses issued by the department in connection with the improper use of city-issued parking permits. Such system shall allow the department to verify in real time the validity of city-issued parking permits." (§ 14-183.1.b)
+*   "The department of transportation and the department of education, if authority to issue city-issued parking permits is delegated pursuant to section 19-162.3, shall provide the department with information about city-issued parking permits to be included in the electronic system, including but not limited to the vehicle or vehicles and the permissible and non-permissible locations and uses associated with such permit." (§ 14-183.1.c)
+*   "The department shall report each month on summonses issued for misuse of a city-issued parking permit to the city agency whose employee was issued the permit for which the summons was issued. Such city agencies shall also have the ability to access such information on an as-needed basis." (§ 14-183.1.d)
+**Why:** Tracking parking permits is essential for issuance, enforcement, and compliance with regulations regarding their use and misuse.
+**One row represents:** A single city-issued parking permit.
+**Covers:** All parking permits issued by the department to city, state, or federal law enforcement agencies.
+**Columns:**
+*   Permit ID (Unique identifier)
+*   Application ID (Links to **Parking Permit Applications (22)**)
+*   Permit Type (Physical, Programmable Feature)
+*   Issuing Agency (Police Department, DOT, DOE)
+*   Recipient Agency (City, State, Federal Law Enforcement)
+*   Recipient Agency Name
+*   Applicant Name
+*   License Plate Number
+*   Vehicle ID (Links to **Department Facilities and Equipment Inventory (19)** if fleet vehicle)
+*   Justification for Permit Need
+*   Issue Date
+*   Expiration Date
+*   Status (Active, Suspended, Revoked)
+*   Permitted Parking Areas (e.g., Parking Meters, Truck Loading Zones, No Standing/Parking - Authorized Vehicles, No Parking)
+*   Prohibited Parking Areas (e.g., No Standing, No Stopping, Fire Hydrants, Bus Stops, Double Parking, Driveways, Bridges/Highways, Carsharing Spaces)
+*   Misuse/Fraudulent Use Summonses Issued (Yes/No)
+*   Summons ID (Links to **Summons Records (4)**)
+*   Date of Misuse Summons
+*   Civil Penalty Imposed (Yes/No)
+*   Civil Penalty Amount
+
+**22. Parking Permit Applications**
+**Quotes:**
+*   "an application for a parking permit or renewal thereof shall include, but need not be limited to, the following information: (a) the name of the applicant; (b) the license plate number of the vehicle or vehicles to be associated with such permit; and (c) a statement articulating the justification for the permit need." (§ 14-183.c.1)
+*   "Upon the approval of an application, the department shall issue a parking permit to the applicant that may only be used in the vehicle identified on such application." (§ 14-183.c.2)
+*   "Whenever any information provided on such an application has changed, the permittee shall notify the department within 10 days of such change." (§ 14-183.c.4)
+*   "Any violation of subdivision c of this section involving a material false statement or material fact concealed in connection with an application for a parking permit or renewal thereof shall upon conviction thereof be punishable by a civil penalty of not less than $250 nor more than $1,000." (§ 14-183.g)
+*   "the number of applications submitted and the number of such permits issued in the previous year." (§ 14-183.h)
+**Why:** Tracking parking permit applications is necessary for processing, approval, and compliance with application requirements.
+**One row represents:** A single application for a parking permit or renewal.
+**Covers:** All applications for new or renewed city-issued parking permits.
+**Columns:**
+*   Application ID (Unique identifier)
+*   Application Date
+*   Application Type (New, Renewal)
+*   Applicant Name
+*   Applicant Agency
+*   License Plate Number(s)
+*   Justification for Permit Need
+*   Application Status (Submitted, In Review, Approved, Denied)
+*   Date of Status Change
+*   Permit ID (Links to **Parking Permit Records (21)** if approved)
+*   Material False Statement/Concealed Fact (Yes/No)
+*   Civil Penalty Imposed (Yes/No)
+*   Civil Penalty Amount
+
+**23. Training Records**
+**Quotes:**
+*   "The commissioner shall organize and maintain a bureau for detective purposes... and shall, from time to time, detail to service in said bureau as many members of the force as the commissioner may deem necessary" (§ 14-103.a) (Implies training for detective duties)
+*   "There shall be a bureau in the department organized and maintained for the prevention of crime and delinquency among minors" (§ 14-104.a) (Implies training for juvenile bureau duties)
+*   "The commissioner shall, in cooperation with the board of education, local school boards and private schools, institute a program to train persons designated by the appropriate school authority to administer the voluntary fingerprinting of New York city public and private school students" (§ 14-118.1.a)
+*   "A report on overtime spending that shall include: ... training" (§ 14-150.a.4.a)
+*   "All academy, in-service, roll-call and other specialized department training materials and amendments thereto distributed to cadets, recruits, officers and other employees of the department" (§ 14-150.f.1)
+*   "The department shall identify when cardiopulmonary resuscitation and automated external defibrillation training is appropriate and provide all relevant staff such training and re-training. The curriculum of such training and re-training shall, where practicable, be consistent with standards developed by a nationally recognized organization or association." (§ 14-165.b)
+*   "the total number of uniformed officers assigned to a patrol precinct, transit district, or police service area in the past calendar year, disaggregated by: (a) the total number trained in cardiopulmonary resuscitation; (b) the total number of officers newly trained in cardiopulmonary resuscitation in the past calendar year; (c) the total number of officers re-trained in cardiopulmonary resuscitation in the past calendar year" (§ 14-165.c.1)
+*   "the total number of school safety agents, disaggregated by: (a) the total number trained in cardiopulmonary resuscitation; (b) the total number of school safety agents newly trained in cardiopulmonary resuscitation in the past calendar year; and (c) the total number of school safety agents re-trained in cardiopulmonary resuscitation in the past calendar year." (§ 14-165.c.2)
+*   "All new department recruits shall receive in person sensitivity training for responding to survivors of harassment and sexual assault as part of their academy training." (§ 14-177.b.1)
+*   "All uniformed members of the department whose responsibilities include routinely interacting with victims of crime, shall receive interactive training, on a biennial basis, to assist them in responding to survivors of harassment and sexual assault." (§ 14-177.b.2)
+*   "The department, after considering information from outside experts, shall develop and implement a victim-centered special victims training program designed to develop skills related to the investigation of sexual crimes and the specific needs of victims of sexual crimes." (§ 14-180.b)
+*   "All newly assigned special victims investigators shall complete the special victims training program defined in subdivision b of this section and demonstrate proficiency in subject matters covered by such program prior to engaging with victims of sexual crimes" (§ 14-180.c)
+*   "Any special victims investigators assigned to the special victims division as of the effective date of the local law that added this section must demonstrate proficiency in subject matters covered by such program within one year of such date." (§ 14-180.c)
+*   "On January 30, 2020, and every January 30 thereafter, the department shall post on its website a report indicating the training components of the special victims training program defined in subdivision b of this section including the instructors, purpose, length, and format of each training component, the specific reasons for eliminating or replacing any training component, and the number of members of the service during the previous calendar year that: (i) participated in such program, (ii) failed to demonstrate proficiency required pursuant to subdivision c of this section on their first attempt, disaggregated by subject matter, and (iii) successfully demonstrated proficiency on all subject matters required pursuant to subdivision c of this section." (§ 14-180.d)
+*   "The department shall ensure that police officers whose duties include routine daily interaction with the public receive training in accordance with subdivision b of this section within one year of the date this law takes effect. Such training shall be developed with input from an outside entity with expertise in child and youth development." (§ 14-181.c)
+*   "The department shall provide a victim-centered, trauma-informed questioning training program designed to develop skills for the response to and investigation of incidents involving domestic violence, sexual crimes, or human trafficking." (§ 14-192.b.1)
+*   "All new department recruits shall receive at least three hours of training related to domestic violence, sexual crimes, and human trafficking." (§ 14-192.b.3)
+*   "All uniformed members of the department whose responsibilities include routinely interacting with victims of crime, shall receive training on incidents involving domestic violence, sexual crimes, or human trafficking, on a biennial basis." (§ 14-192.b.4)
+*   "The department shall train police recruits, as part of their police academy training, in recognizing and responding to individuals with autism spectrum disorder." (§ 14-193.b.1)
+*   "The department shall, on a biennial basis, train all uniformed members of the department in recognizing and responding to individuals with autism spectrum disorder." (§ 14-193.b.2)
+*   "The department shall provide training on responding to and investigating reports of suspected identity theft to: 1. Any department recruit, as part of such recruit’s academy training; and 2. Any uniformed member of the department who did not receive such training as part of such member’s academy training." (§ 14-198.b)
+**Why:** Tracking all mandatory and specialized training for employees is essential for compliance, skill development, and reporting.
+**One row represents:** A single training session attended by an employee.
+**Covers:** All training programs for recruits and existing staff, including specialized training for detectives, juvenile bureau, school fingerprinting, CPR/AED, harassment/sexual assault sensitivity, special victims, child-sensitive arrests, domestic violence, sexual crimes, human trafficking, autism spectrum disorder, and identity theft.
+**Columns:**
+*   Training Session ID (Unique identifier)
+*   Employee ID (Links to **Employee Roster (13)**)
+*   Training Date
+*   Training Type (e.g., Academy, In-service, Roll-call, Specialized, Refresher)
+*   Training Program Name (e.g., CPR, AED, Harassment/Sexual Assault Sensitivity, Special Victims, Child-Sensitive Arrest, Autism Spectrum Disorder, Identity Theft, Voluntary Fingerprinting)
+*   Training Component (if part of a larger program)
+*   Instructor ID (Links to **Employee Roster (13)** or **External Stakeholder Roster (26)**)
+*   Training Length (Hours)
+*   Format (e.g., In-person, Interactive, Online)
+*   Proficiency Demonstrated (Yes/No)
+*   If No, Subject Matter Failed
+*   Overtime Hours for Training
+*   Next Required Training Date (if recurring)
+*   Is Recruit Training? (Yes/No)
+*   Is Ongoing Training? (Yes/No)
+*   Was External Expert Consulted? (Yes/No)
+*   External Expert Name (Links to **External Stakeholder Roster (26)**)
+
+**24. Civil Immigration Detainer Records**
+**Quotes:**
+*   "Civil immigration detainer. The term "civil immigration detainer" means a detainer issued pursuant to 8 CFR § 287.7 or any similar federal request for detention of a person suspected of violating civil immigration law." (§ 14-154.a.1)
+*   "Judicial warrant. The term "judicial warrant" means a warrant based on probable cause and issued by a judge appointed pursuant to article III of the United States constitution or a federal magistrate judge appointed pursuant to 28 U.S.C. § 631, that authorizes federal immigration authorities to take into custody the person who is the subject of such warrant." (§ 14-154.a.4)
+*   "Terrorist screening database. The term "terrorist screening database" shall mean the United States terrorist watch list or any similar or successor list maintained by the United States." (§ 14-154.a.5)
+*   "Violent or serious crime" shall mean: i. a felony defined in any of the following sections of the penal law: ... ii. a hate crime as defined in section 485.05 of the penal law, provided such hate crime constitutes a felony; iii. a felony attempt, felony conspiracy, or felony criminal solicitation to commit any crime specified in subparagraph (i) of this paragraph, or a felony criminal facilitation of such specified crime; iv. any felony set forth in section 600 of the vehicle and traffic law; or v. any crime codified by the legislature subsequent to the enactment of this section that the department of correction, in consultation with the department, by rule determines to be a felony involving violence, force, firearms, terrorism, or endangerment or abuse of vulnerable persons, or any crime for which a change made by the legislature requires amendment of the crimes specified in this paragraph." (§ 14-154.a.6)
+*   "The department may only honor a civil immigration detainer by holding a person beyond the time when such person would otherwise be released from the department's custody... if: i. federal immigration authorities present the department with a judicial warrant... and ii. a search... indicates... that such person: A. has been convicted of a violent or serious crime, or B. is identified as a possible match in the terrorist screening database." (§ 14-154.b.1)
+*   "Notwithstanding paragraph one of this subdivision, the department may honor a civil immigration detainer by holding an person for up to forty-eight hours... if a search... indicates... that such person: A. has been convicted of a violent or serious crime and has illegally re-entered the country after a previous removal or return, or B. is identified as a possible match in the terrorist screening database" (§ 14-154.b.2)
+*   "Reporting. No later than September 1, 2018, and no later than September 1 of each year thereafter, the department shall post a report on the department website that includes the following information for the preceding twelve month period ending June 30: 1. the number of civil immigration detainers received from federal immigration authorities; 2. the number of persons held pursuant to civil immigration detainers beyond the time when such person would otherwise be released from the department's custody; 3. the number of persons transferred to the custody of federal immigration authorities pursuant to civil immigration detainers; 4. the number of persons for whom civil immigration detainers were not honored pursuant to subdivision b of this section; and 5. the number of requests from federal immigration authorities for such person's incarceration status, release dates, court appearance dates, or any other information related to such person in the department's custody, and the number of responses honoring such requests by the department, disaggregated by: i. the number of responses to federal immigration authorities concerning a person with no convictions for a violent or serious crime, disaggregated by the number of such responses that included incarceration status, release dates, court appearance dates, or other types of information, and whether the department facilitated the transfer of such persons to the custody of federal immigration authorities; ii. the number of responses to federal immigration authorities where the person had at least one conviction for a violent or serious crime, disaggregated by the number of such responses that included incarceration status, release dates, court appearance dates, or other types of information, and whether the department facilitated the transfer of such persons to the custody of federal immigration authorities; and iii. the number of responses to federal immigration authorities concerning a person with no convictions for a violent or serious crime who was identified as a possible match in the terrorist screening database, disaggregated by the number of such responses that included incarceration status, release dates, court appearance dates, or other types of information, and whether the department facilitated the transfer of such persons to the custody of federal immigration authorities." (§ 14-154.f)
+**Why:** Tracking civil immigration detainers and related actions is legally mandated for compliance with specific holding and notification policies.
+**One row represents:** A single civil immigration detainer received by the department.
+**Covers:** All civil immigration detainers received from federal immigration authorities and the department's response.
+**Columns:**
+*   Detainer ID (Unique identifier)
+*   Arrestee ID (Links to **Person Demographics (12)**)
+*   Date Detainer Received
+*   Federal Immigration Authority
+*   Was Judicial Warrant Presented? (Yes/No)
+*   Date Judicial Warrant Presented
+*   Was Arrestee Convicted of Violent/Serious Crime? (Yes/No)
+*   If Convicted, Date of Last Violent/Serious Crime Conviction
+*   If Convicted, Incarceration Period for Violent/Serious Crime
+*   Was Arrestee Identified as Terrorist Screening Database Match? (Yes/No)
+*   Was Arrestee Illegally Re-entered after Removal/Return? (Yes/No)
+*   Was Detainer Honored? (Yes/No)
+*   If Honored, Held Beyond Release Time (Yes/No)
+*   If Held, Duration of Hold (Hours)
+*   If Honored, Transferred to Federal Immigration Authorities (Yes/No)
+*   Date of Transfer
+*   Reason Detainer Not Honored (if applicable)
+*   Federal Immigration Authority Request Type (e.g., Incarceration Status, Release Date, Court Appearance Date, Other Information)
+*   Date of Request
+*   Was Request Honored? (Yes/No)
+*   Information Provided in Response (e.g., Incarceration Status, Release Date, Court Appearance Date, Other)
+*   Facilitated Transfer to Federal Immigration Authorities (Yes/No)
+
+**25. Medical Treatment Records (Arrestee)**
+**Quotes:**
+*   "Arrestee. The term "arrestee" means any person under custodial arrest by the department, other than a person whose arrest results in the issuance of a summons or desk appearance ticket." (§ 14-163.a)
+*   "Health care provider. The term "health care provider" means any person licensed or certified under federal or New York state law to provide medical services, including but not limited to doctors, nurses and emergency personnel." (§ 14-163.a)
+*   "Whenever an arrestee is treated by a health care provider while in the custody of the department, the department shall create a report. Such report shall include a brief description of the arrestee's medical condition, to the extent known by the department, the arrestee's name and other identifying information regarding that arrestee, including but not limited to the arrestee's New York state identification number and date of birth, when available, and identity of the health care provider. Such report shall be transmitted to the department of health and mental hygiene or its designee whenever an arrestee is taken into the custody of the department of correction." (§ 14-163.b)
+**Why:** Tracking medical treatment for arrestees is legally required for their well-being and for inter-agency information transfer.
+**One row represents:** A single instance of medical treatment provided to an arrestee.
+**Covers:** All medical treatments provided to arrestees while in department custody.
+**Columns:**
+*   Medical Treatment ID (Unique identifier)
+*   Arrest ID (Links to **Arrest Records (1)**)
+*   Arrestee ID (Links to **Person Demographics (12)**)
+*   Arrestee Name
+*   Arrestee Date of Birth
+*   Arrestee NYS Identification Number (if available)
+*   Date of Treatment
+*   Time of Treatment
+*   Health Care Provider Name
+*   Health Care Provider Type (e.g., Doctor, Nurse, EMS)
+*   Brief Description of Medical Condition (to extent known)
+*   Transmitted to DOHMH/DOC (Yes/No)
+*   Date of Transmission
+
+**26. External Stakeholder Roster**
+**Quotes:**
+*   "The commissioner, upon the application of the head of any agency, public authority exercising jurisdiction within the city, or state agency, may appoint and swear any number of officers or employees of such agency or authority to do special duty at any place in the city, on behalf of such agency." (§ 14-106.e)
+*   "It shall be the duty of the department, and of its officers and members of the force, as the commissioner shall direct, to promptly advise the department of health and mental hygiene of all threatened danger to human life and health, and of all matters thought to demand its attention, and to regularly report to the department of health and mental hygiene all violations of its rules and ordinances, and of the health laws, and all useful sanitary information." (§ 14-119.a)
+*   "The commissioner, upon the requisition of the department of health and mental hygiene, shall detail suitable officers to the service of such department of health and mental hygiene for the purpose of the enforcement of the provisions of the health code, and of the acts relating to multiple dwellings." (§ 14-120)
+*   "The commissioner, instead of causing such horses to be sold at auction, may transfer such horses to the custody of the American Society for the Prevention of Cruelty to Animals, provided such society is willing to accept the custody thereof" (§ 14-139)
+*   "The department shall, on a monthly basis, transmit to the human resources administration/department of social services the name and address of any natural person issued a summons for fare evasion during the preceding quarter." (§ 14-172.1.b)
+*   "The department shall conduct quarterly random audits of the case management system to ensure the security of such system. Such audit shall include a review of all individuals outside of the special victims division who have accessed special victims division case files during the previous quarter. The department shall report the results of the audit to the council within 60 days of the end of each quarter." (§ 14-178.c)
+*   "The department shall ensure that police officers whose duties include routine daily interaction with the public receive training in accordance with subdivision b of this section within one year of the date this law takes effect. Such training shall be developed with input from an outside entity with expertise in child and youth development." (§ 14-181.c)
+*   "Permitting an arrested caregiver a reasonable opportunity... to make alternate arrangements for the care of a child... and to provide the department or a partner organization with contact information of a preferred alternate caregiver." (§ 14-181.b.8)
+*   "When an alternate caregiver is unable to arrive at the scene of arrest within a reasonable amount of time, making a referral to a partner organization or bringing the child to the borough's child advocacy center." (§ 14-181.b.9)
+*   "After an arrest and prior to arraignment in a criminal court, offering to make a referral to a partner organization that could provide appropriate services to the child and, with the caregiver's consent, making such referral." (§ 14-181.b.12)
+*   "The department may issue parking permits to city, state, or federal law enforcement agencies" (§ 14-183.a)
+*   "The department of transportation and the department of education... shall provide the department with information about city-issued parking permits" (§ 14-183.1.c)
+*   "Before an establishment becomes the subject of a multi-agency response to community hotspots operation... the department shall provide written notice to such an establishment... Such notice shall include contact information for the office of nightlife" (§ 14-185.a)
+*   "names of all entities outside the department, including local government entities, state government entities, federal government entities, or private entities, that have access to the information and data collected by such surveillance technology" (§ 14-188.a.6)
+*   "The department shall develop a policy regarding the circumstances under which any local, state, or federal government agency has access to data collected by the department using surveillance technology." (§ 14-188.h)
+*   "Such policy shall identify the local, state or federal government agencies that the department knows participate in any task force that has access to such data" (§ 14-188.h.2)
+*   "The department shall conduct an annual audit of its use of facial recognition technology. Such audit shall be documented and provided to the department of investigation" (§ 14-188.1.c)
+*   "Within 10 business days of receipt of a request for body-worn camera footage by the commissioner of investigation and unless prohibited by law, the department shall provide such requested body-worn camera footage to such commissioner." (§ 14-194.b)
+*   "The department shall submit to the mayor and the speaker of the council a report on donations received from covered donors during the reporting period ending in the prior calendar year." (§ 14-195.b)
+*   "Crisis intervention team. The term “crisis intervention team” means school staff trained in the use of de-escalation techniques who respond to behavioral crises or other crises within schools pursuant to chancellor’s regulation A-411 or any successor regulation or provision." (§ 14-197.a)
+*   "The curriculum for the training required by subdivision b of this section shall be periodically reviewed and, when appropriate, modified in consultation with independent clinicians and service providers with expertise on autism spectrum disorder." (§ 14-193.d)
+*   "The commissioner shall, in consultation with the chancellor of the city school district of the city of New York, provide the department of education the materials developed in accordance with subdivision a of this section." (§ 14-199.3.b.1)
+**Why:** Tracking external entities and individuals the department interacts with is crucial for inter-agency cooperation, referrals, and compliance with data sharing and reporting.
+**One row represents:** A single external agency, organization, or individual with whom the department has a formal or mandated interaction.
+**Covers:** City agencies (DOHMH, HRA/DSS, DOT, DOE, ACS, DHS, Office to End Domestic and Gender-Based Violence, DYCD, DOB, HPD, FDNY, NYCHA, Office of Nightlife, Office of Criminal Justice, Commissioner of Investigation), state agencies, federal agencies (ICE, CBP), public authorities (MTA), non-profit organizations (ASPCA, partner organizations for child care, domestic violence/sexual assault/human trafficking service providers, child advocacy centers, autism spectrum disorder experts), and covered donors.
+**Columns:**
+*   External Entity ID (Unique identifier)
+*   Entity Name
+*   Entity Type (City Agency, State Agency, Federal Agency, Public Authority, Non-Profit, Private Company, Individual Expert, Covered Donor)
+*   Contact Person Name
+*   Contact Email
+*   Contact Phone
+*   Relationship Type (e.g., Data Sharing Partner, Referral Partner, Training Consultant, Permit Recipient, Property Custodian, Funding Source)
+*   Date Relationship Established
+*   Date Relationship Ended
+*   Data Shared With Entity (Yes/No)
+*   Types of Data Shared
+*   Access to Surveillance Technology Data (Yes/No)
+*   Extent of Access
+*   Safeguards/Restrictions on Data Use
+*   Participates in Task Force (Yes/No)
+*   If Task Force, Task Force Name
+*   Receives Parking Permits (Yes/No)
+*   Provides Parking Permit Info (Yes/No)
+*   Receives Multi-Agency Hotspot Notice (Yes/No)
+*   Provides Training Input (Yes/No)
+*   Receives Fare Evasion Summons Data (Yes/No)
+*   Receives Arrestee Medical Reports (Yes/No)
+*   Receives Special Victims Case File Access (Yes/No)
+*   Is Covered Donor? (Yes/No)
+*   Aggregate Donation Value (if Covered Donor)
+*   Capital Projects Supported (if Covered Donor)
+*   Programs/Initiatives Supported (if Covered Donor)
+*   Youth Program Partner (Yes/No)
+
+**27. Vendor Records**
+**Quotes:**
+*   "Where the property consists of furs or other valuable property that may be subject to deterioration or damage if stored by the property clerk, the property clerk in his or her discretion may store such property with a private concern having special facilities for such storage, and the cost thereof shall be a lien upon such property to be paid by the owner thereof prior to the recovery of such property." (§ 14-140.h)
+*   "The revenue generated by liquidation of such vehicles that have become retained property, the number of such vehicles liquidated and the entity contracted to liquidate such vehicles on behalf of the department" (§ 14-169.b.2.g)
+*   "The revenue generated by liquidation of retained property, other than registered motor vehicles and U.S. currency, and the entity contracted to liquidate such property on behalf of the department" (§ 14-169.b.5)
+*   "within the amounts appropriated therefor, enter into contracts for the rendition or operation of services and facilities for the mentally disabled on a per capita basis or otherwise" (§ 556.d.9)
+*   "use the services and facilities of public or private voluntary institutions whenever practical, and encourage all providers of services to cooperate with or participate in the program of services for the mentally disabled, whether by contract or otherwise." (§ 556.d.11)
+**Why:** Tracking vendors is necessary for managing contracts, payments, and ensuring proper service delivery for various departmental needs.
+**One row represents:** A single vendor or private concern contracted by the department.
+**Covers:** Private concerns for property storage, entities contracted for property liquidation, and service providers for mentally disabled individuals.
+**Columns:**
+*   Vendor ID (Unique identifier)
+*   Vendor Name
+*   Contact Person
+*   Contact Information (Address, Phone, Email)
+*   Services Provided (e.g., Property Storage, Property Liquidation, Mental Health Services)
+*   Contract Start Date
+*   Contract End Date
+*   Contract Value
+*   Payment Terms
+*   Performance Metrics
+*   Associated Property ID (Links to **Property Clerk Records (8)**)
+
+**28. Consent Search Records**
+**Quotes:**
+*   "An officer who seeks consent to conduct a search that is subject to the guidance developed and provided pursuant to subdivision a shall: 1. Create a video record of the information communicated pursuant to such guidance and such person's response to such information when such officer is equipped with a body-worn camera issued by the department; and 2. Document the time, location, and date of any such request for consent to search; whether consent was sought to search a person, including to collect a forensic sample to be used to test a person’s DNA, vehicle, home, or property; whether such consent was sought from a person with limited English proficiency, and whether the officer utilized interpretation services and, if so, the type of interpretation services utilized, including but not limited to the use of language line services, a certified interpreter pursuant to the language initiative program, or other interpretation service authorized pursuant to the department’s language access plan; and the apparent race/ethnicity, gender, and age of the person from whom consent to search was sought, and such officer’s name, precinct, and shield number." (§ 14-173.b)
+*   "Where an officer has created a video record pursuant to subdivision b, such officer shall offer the person who is the subject of the search information on obtaining a copy of such record. Upon receiving a request from such person for a copy of such record, the department shall acknowledge receipt of such request within five days of receiving such request. Such acknowledgment shall include a date by which the department will provide such record or the basis for the denial of such request, provided that such date shall not be longer than 90 days from the date of receipt of such request. If the department is unable to provide such copy or denial to such person within 90 days due to extenuating circumstances, it shall provide such record or denial within 30 days of such 90 days and provide the basis of such circumstances." (§ 14-173.c)
+*   "Commencing within 30 days of the end of the quarter beginning on July 1, 2024, and within 30 days of the end of every quarter thereafter, the department shall post on its website a report of data collected from the preceding quarter pursuant to paragraph 2 of subdivision b, including, but not limited to: 1. The total number of consent searches conducted during the preceding quarter, disaggregated by the: (a) Apparent race/ethnicity, gender, and age of the person from whom consent to search was sought; and (b) Precinct where each search occurred; 2. The total number of requests by an officer for consent to search where such consent was denied during the preceding quarter, disaggregated by the: (a) Apparent race/ethnicity, gender, and age of the person from whom consent to search was sought; (b) Precinct where each request to search was made; 3. The information required by subparagraph (b) of paragraph 1 of this subdivision, further disaggregated by: (a) The apparent race/ethnicity, gender, and age of the person from whom consent to search was sought; (b) Whether consent was sought to search a person, vehicle, home or property or to collect a forensic sample to be used to test a person’s DNA; (c) Whether the person from whom consent to search was sought was a person with limited English proficiency; and (d) Whether the officer utilized interpretation services to obtain consent, further disaggregated by the type of interpretation service utilized; and 4. The information required by subparagraph (b) of paragraph 2 of this subdivision, further disaggregated by: (a) The apparent race/ethnicity, gender, and age of the person from whom consent to search was sought; (b) Whether consent was sought to search a person, vehicle, home or property or to collect a forensic sample to be used to test a person’s DNA; (c) Whether the person from whom consent to search was sought was a person with limited English proficiency; and (d) Whether the officer utilized interpretation services to obtain consent, further disaggregated by the type of interpretation service utilized." (§ 14-173.e)
+*   "If body worn cameras are not provided by the department to officers engaged in a patrol function... the department shall (i) develop and implement a procedure to obtain objective proof of voluntary, knowing, and intelligent consent to search by documenting the information communicated by an officer... in writing and by offering such person to sign a statement confirming such consent, or by documenting such information through audio, through video and audio, or by other methods, excluding fingerprinting" (§ 14-173.h.1)
+**Why:** Tracking consent searches is mandated for transparency, accountability, and reporting on police interactions, especially concerning demographics and language access.
+**One row represents:** A single request for consent to search.
+**Covers:** All requests for consent to search a person, vehicle, home, or property, or to collect a forensic DNA sample.
+**Columns:**
+*   Consent Search ID (Unique identifier)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Officer Name
+*   Officer Shield Number
+*   Officer Precinct
+*   Date of Request
+*   Time of Request
+*   Location of Request (Precinct)
+*   Person ID (Links to **Person Demographics (12)**)
+*   Person Apparent Race/Ethnicity
+*   Person Apparent Gender
+*   Person Apparent Age
+*   Consent Sought For (Person, Vehicle, Home, Property, Forensic DNA Sample)
+*   Consent Provided (Yes/No)
+*   If Consent Provided, Search Conducted (Yes/No)
+*   If Consent Denied, Search Conducted (Yes/No)
+*   Person with Limited English Proficiency (Yes/No)
+*   Interpretation Services Utilized (Yes/No)
+*   Type of Interpretation Service (e.g., Bilingual Officer, Telephonic, Certified Interpreter)
+*   Video Record Created (Yes/No)
+*   Body-Worn Camera ID (Links to **Department Facilities and Equipment Inventory (19)**)
+*   Written Consent Obtained (Yes/No)
+*   Audio Record Created (Yes/No)
+*   Request for Video Record Copy (Yes/No)
+*   Date of Video Record Copy Request
+*   Video Record Copy Provided (Yes/No)
+*   Date Video Record Copy Provided/Denied
+*   Reason for Denial/Delay
+
+**29. Special Victims Case Records**
+**Quotes:**
+*   "Case management system. The term "case management system" means a digital and searchable means of tracking and monitoring investigations of the special victims division." (§ 14-178.a)
+*   "Identifying information. The term "identifying information" means any information that directly or indirectly identifies the victim of a crime." (§ 14-178.a)
+*   "Special victims division. The term "special victims division" means any division, unit, or other entity within the department that primarily investigates the violation of article 130 of the penal law." (§ 14-178.a)
+*   "The special victims division shall utilize a secure case management system capable of restricting access to identifying information to individuals who require such access in furtherance of their official functions. Such system shall be capable of creating a record in every instance a member of the department accesses a special victims division case." (§ 14-178.b)
+*   "The department shall conduct quarterly random audits of the case management system to ensure the security of such system. Such audit shall include a review of all individuals outside of the special victims division who have accessed special victims division case files during the previous quarter. The department shall report the results of the audit to the council within 60 days of the end of each quarter." (§ 14-178.c)
+*   "The number of cases referred to the special victims division in total and disaggregated by case type and unit, and also disaggregated by borough and further disaggregated by unit and further disaggregated by case type." (§ 14-179.b.2)
+*   "The average number of cases assigned to each special victims investigator, in total and disaggregated by case type, and disaggregated by borough and further disaggregated by unit and further disaggregated by case type." (§ 14-179.b.4)
+**Why:** A secure case management system is mandated for tracking and monitoring special victims investigations, ensuring data security and reporting on caseloads.
+**One row represents:** A single case investigated by the Special Victims Division.
+**Covers:** All cases referred to and investigated by the Special Victims Division, primarily involving Article 130 penal law violations (sexual crimes).
+**Columns:**
+*   Case ID (Unique identifier)
+*   Complaint ID (Links to **Crime Complaint Records (3)**)
+*   Date Referred to SVD
+*   SVD Unit Assigned
+*   Case Type (Felony unknown victim, Felony known victim, Misdemeanor unknown victim, Misdemeanor known victim)
+*   Borough
+*   Assigned Investigator ID (Links to **Employee Roster (13)**)
+*   Case Status (Open, Closed, Arrest Made, No Arrest, etc.)
+*   Date Case Closed
+*   Access Log (User ID, Date/Time of Access, Purpose of Access)
+*   Victim ID (Links to **Person Demographics (12)**)
+*   Victim Identifying Information (Restricted Access)
+
+**30. Child Care Arrangements (Arrested Caregiver)**
+**Quotes:**
+*   "Providing an arrested caregiver the opportunity to speak with a child who is present, prior to such caregiver being transported to a police facility. If such an opportunity is not practicable, having a police officer explain to such child, using age appropriate language, that that such child did nothing wrong and that the child will be safe and cared for." (§ 14-181.b.5)
+*   "Providing objects that provide comfort to the child of an arrested caregiver, such as toys, clothing, blankets, photographs, or food." (§ 14-181.b.6)
+*   "Ascertaining any medical, behavioral, or psychological conditions or required treatments of the child of an arrested caregiver and securing any required medication for such child." (§ 14-181.b.7)
+*   "Permitting an arrested caregiver a reasonable opportunity, including providing access to telephone numbers stored in a mobile telephone or other location, to make alternate arrangements for the care of a child, including a child who is not present at the scene of the arrest, and to provide the department or a partner organization with contact information of a preferred alternate caregiver." (§ 14-181.b.8)
+*   "When an alternate caregiver is unable to arrive at the scene of arrest within a reasonable amount of time, making a referral to a partner organization or bringing the child to the borough's child advocacy center. If no alternate caregiver is identified or the identified caregiver does not arrive in a reasonable amount of time, or if the child advocacy center or partner organization is unavailable, notifying the New York state central register of the office of children and family services and notifying the administration for children's services borough field office or the administration for children's services' emergency children's services program or its equivalent." (§ 14-181.b.9)
+*   "Not notifying the administration for children's services and the state central register of the office of children and family services unless required by law." (§ 14-181.b.10)
+*   "After arrest and prior to arraignment in a criminal court, affording arrested caregivers adequate opportunities to make phone calls to check on the status and well-being of a child." (§ 14-181.b.11)
+*   "After an arrest and prior to arraignment in a criminal court, offering to make a referral to a partner organization that could provide appropriate services to the child and, with the caregiver's consent, making such referral." (§ 14-181.b.12)
+*   "Reporting. Within 30 days of January 1, 2020, January 1, 2021, and January 1, 2022, the department shall submit to the speaker of the council and post on its website a report on the number of instances requiring a referral to a partner organization or transportation of the child to a child advocacy center pursuant to paragraph 9 of subdivision b of this section." (§ 14-181.d)
+**Why:** Tracking child care arrangements for arrested caregivers is mandated to minimize trauma to children and ensure their well-being.
+**One row represents:** A single instance of an arrested caregiver having a child present or requiring child care arrangements.
+**Covers:** All arrests of caregivers where a child is present or child care arrangements are needed.
+**Columns:**
+*   Child Care Arrangement ID (Unique identifier)
+*   Arrest ID (Links to **Arrest Records (1)**)
+*   Caregiver ID (Links to **Person Demographics (12)**)
+*   Child ID (Links to **Person Demographics (12)**)
+*   Child Present at Arrest (Yes/No)
+*   Officer ID (Links to **Employee Roster (13)**)
+*   Date of Arrangement
+*   Time of Arrangement
+*   Firearm/Weapon Displayed in Child's Sight (Yes/No)
+*   Caregiver Handcuffed/Questioned Out of Child's Sight/Hearing (Yes/No)
+*   Force Used to Separate Child (Yes/No)
+*   Caregiver Spoke with Child (Yes/No)
+*   Officer Explained Situation to Child (Yes/No)
+*   Comfort Objects Provided (Yes/No)
+*   Child Medical/Behavioral/Psychological Conditions Ascertained (Yes/No)
+*   Required Medication Secured (Yes/No)
+*   Opportunity for Alternate Arrangements Provided (Yes/No)
+*   Preferred Alternate Caregiver Contact Info Provided (Yes/No)
+*   Alternate Caregiver Name
+*   Alternate Caregiver Contact Info
+*   Referral to Partner Organization (Yes/No)
+*   Partner Organization Name (Links to **External Stakeholder Roster (26)**)
+*   Transportation to Child Advocacy Center (Yes/No)
+*   Child Advocacy Center Name
+*   Notification to NYS Central Register OCFS (Yes/No)
+*   Notification to ACS (Yes/No)
+*   Caregiver Phone Calls to Check on Child (Yes/No)
+*   Referral to Partner Organization for Services (Yes/No)
+*   Caregiver Consent for Referral (Yes/No)
+
+**31. Youth Program Participation**
+**Quotes:**
+*   "The commissioner shall develop informational materials regarding youth programming offered by the department." (§ 14-199.3.a.1)
+*   "Materials developed by the commissioner shall include information regarding the times and dates at which a program is offered, when and how a person may sign up for such program, and where more information about such program may be found." (§ 14-199.3.a.2)
+*   "The commissioner shall provide council members with information about youth programming sponsored by precincts located within each council member’s district upon request. Such information shall be provided based on the frequency that the relevant youth programming is offered and allow for sufficient time for a person to enroll in such youth programming." (§ 14-199.3.b.2)
+*   "The commissioner shall post information about citywide youth programs created by the department on the department’s website. The commissioner shall review and update information on the department’s website as necessary to ensure that all youth program offerings are captured on the department’s website." (§ 14-199.3.c)
+**Why:** Tracking youth program offerings and participation is necessary for outreach, program management, and reporting to council members.
+**One row represents:** A single instance of a youth participating in a department-sponsored program.
+**Covers:** All youth programs offered by the department.
+**Columns:**
+*   Participation ID (Unique identifier)
+*   Youth ID (Links to **Person Demographics (12)**)
+*   Program ID (Links to **Youth Program Offerings (32)**)
+*   Enrollment Date
+*   Completion Date
+*   Attendance Records (e.g., per session)
+*   Precinct of Youth Residence
+*   Council Member District of Youth Residence
+
+**32. Youth Program Offerings**
+**Quotes:**
+*   "The commissioner shall develop informational materials regarding youth programming offered by the department." (§ 14-199.3.a.1)
+*   "Materials developed by the commissioner shall include information regarding the times and dates at which a program is offered, when and how a person may sign up for such program, and where more information about such program may be found." (§ 14-199.3.a.2)
+*   "The commissioner shall provide council members with information about youth programming sponsored by precincts located within each council member’s district upon request. Such information shall be provided based on the frequency that the relevant youth programming is offered and allow for sufficient time for a person to enroll in such youth programming." (§ 14-199.3.b.2)
+*   "The commissioner shall post information about citywide youth programs created by the department on the department’s website. The commissioner shall review and update information on the department’s website as necessary to ensure that all youth program offerings are captured on the department’s website." (§ 14-199.3.c)
+**Why:** Tracking youth program offerings is necessary for public information, outreach, and program management.
+**One row represents:** A single youth program offered by the department.
+**Covers:** All youth programs offered by the department.
+**Columns:**
+*   Program ID (Unique identifier)
+*   Program Name
+*   Program Description
+*   Program Start Date
+*   Program End Date
+*   Frequency (e.g., Weekly, Monthly, Seasonal)
+*   Days of Week Offered
+*   Times Offered
+*   Location (Precinct, Facility ID)
+*   Target Age Group
+*   Enrollment Capacity
+*   Enrollment Status (Open, Closed)
+*   Sign-up Method
+*   Contact Information for More Info
+*   Materials Available (Yes/No)
+*   Materials Languages (English, Designated Citywide Languages)
+*   Last Update Date (for website info)
+
+**Non-Tabular Information:**
+
+*   **Rules and Regulations:**
+    *   Department rules and regulations (§ 14-106.b, § 14-106.c, § 14-106.e, § 14-115.b, § 14-130.a, § 14-138)
+    *   Rules and regulations of the department of parks and recreation (§ 14-101)
+    *   Health code and health laws (§ 14-119.a, § 14-120)
+    *   Civil service rules (§ 14-109.b)
+    *   Rules governing school crossing guards (§ 14-118.c)
+    *   Patrol guide and amendments (§ 14-164)
+    *   Guidelines for civil vs. criminal enforcement (§ 14-155.b)
+    *   Guidelines for desk appearance tickets (§ 14-156.a)
+    *   Policy for summons vs. criminal summons for subway fare evasion (§ 14-172.b)
+    *   Guidance for consent searches (§ 14-173.a)
+    *   Plan for officer business cards (§ 14-174.d)
+    *   Child-sensitive arrest guidance (§ 14-181.b)
+    *   Internal disciplinary matrix (§ 14-186.a)
+    *   Surveillance technology impact and use policies (§ 14-188.a)
+    *   Facial recognition policy (§ 14-188.1.a)
+    *   Radio encryption policy (§ 14-199.2.b)
+    *   Department policies on responding to and investigating identity theft complaints (§ 14-198.c.3)
+*   **Legal Documents/Records:**
+    *   Warrants of arrest and bench warrants (§ 14-106.f)
+    *   Subpoenas, orders, mandates, process and forms of proceedings (§ 14-137.a)
+    *   Affidavits and depositions (§ 14-137.b, § 14-140.a.3)
+    *   Minutes of the commissioner, orders, resolutions (§ 14-138)
+    *   Judicial warrants for immigration detainers (§ 14-154.b.1.i)
+    *   Written consent for DNA sample collection from minors (§ 14-199.1.b)
+*   **Reports/Documents for Public/Council/Mayor:**
+    *   911 operational time analysis report (§ 14-149.b)
+    *   Crime status report (§ 14-150.a.2)
+    *   Stop, Question and Frisk Report Worksheet and successor forms (§ 14-150.a.3)
+    *   Overtime spending report (§ 14-150.a.4)
+    *   Firearms seizure report (§ 14-150.a.5)
+    *   Firearms discharge report (§ 14-150.b)
+    *   Report on uniformed and civilian personnel assignments (§ 14-150.a.1)
+    *   Report on criminal complaints and arrests on subway/bus routes (§ 14-150.d)
+    *   Domestic violence factors report (§ 14-150.e)
+    *   Academy, in-service, roll-call, and other specialized training materials (§ 14-150.f.1)
+    *   Report on civilianizable positions (§ 14-150.f.2)
+    *   School activity report (arrests, summonses, non-criminal incidents, metal detector use, contraband seized, complaints against school safety agents) (§ 14-152)
+    *   Traffic data reports (§ 14-153)
+    *   Civil immigration detainer report (§ 14-154.f)
+    *   Desk appearance ticket report (§ 14-156)
+    *   Summons report (§ 14-157)
+    *   Use of force incident report (§ 14-158)
+    *   Use of force encounter report (§ 14-159)
+    *   Officer deployment report (§ 14-160)
+    *   Online reporting of domestic violence and hate crime statistics (§ 14-161)
+    *   Priority area report (§ 14-162.b)
+    *   Support service agencies report on services in priority areas (§ 14-162.c)
+    *   Coordinated multi-agency plan for social services in priority areas (§ 14-162.d)
+    *   Medical treatment report for arrestees (§ 14-163.b)
+    *   Patrol guide (published online) (§ 14-164)
+    *   Cardiopulmonary resuscitation report (§ 14-165.c)
+    *   Automated external defibrillator report (§ 14-165.d)
+    *   Nuisance abatement actions report (§ 14-166.b)
+    *   Collision reports (§ 14-167)
+    *   Seized property data reports (§ 14-169)
+    *   Index crime clearance report (§ 14-171.b)
+    *   Online reporting of arrests and summonses for subway fare evasion (§ 14-172.a)
+    *   Marijuana enforcement report (§ 14-175)
+    *   Opioid antagonist report (§ 14-176.b)
+    *   Special victims case management system audit results (§ 14-178.c)
+    *   Special victims division staffing report (§ 14-179.b)
+    *   Special victims division training report (§ 14-180.d)
+    *   Report on instances requiring referral to partner organization/child advocacy center (§ 14-181.d)
+    *   Animal cruelty complaints data (§ 14-182.b)
+    *   Parking permits issued information (§ 14-183.h)
+    *   Multi-agency response to community hotspots notice (§ 14-185.a)
+    *   Disciplinary matrix and modifications (§ 14-186.a, § 14-186.c)
+    *   Report on disciplinary matrix penalty deviations (§ 14-186.d)
+    *   Surveillance technology impact and use policy proposals and final policies (§ 14-188.b, § 14-188.c, § 14-188.f)
+    *   Facial recognition policy and annual audit (§ 14-188.1)
+    *   Report on arrests/summonses while recording police activities (§ 14-189.e)
+    *   Early intervention system report (§ 14-190.b)
+    *   Vehicle encounter reports (§ 14-191)
+    *   Domestic violence, sexual crimes, and human trafficking training report (§ 14-192.c)
+    *   Report on school safety personnel training for students in emotional crisis (§ 14-197.i)
+    *   Information about identity theft (posted on website) (§ 14-198.a)
+    *   Annual report on the use of large donations (§ 14-195.b)
+    *   Investigative encounters report (§ 14-196.b)
+    *   Youth programming informational materials (§ 14-199.3.a)
+*   **Agreements/Contracts:**
+    *   Agreements for special patrolmen waiving claims against city (§ 14-106.c)
+    *   Collective bargaining agreements for line of duty pay (§ 14-122.1.b)
+    *   Contracts for services and facilities for the mentally disabled (§ 556.d.9)
+    *   Contracts with entities for surveillance technology access and retention policies (§ 14-188.j.2, § 14-188.k)
+*   **Other:**
+    *   Job applications (implied by § 14-109.a)
+    *   Civil service examination records (implied by § 14-109.a)
+    *   Medical examination records (implied by § 14-109.a)
+    *   Pension fund records (implied by § 14-111.c, § 14-111.d, § 14-112, § 14-113, § 14-114.c, § 14-114.d, § 14-118.b, § 14-118.2.b, § 14-124, § 14-147.b, § 14-148.c)
+    *   Records of property loss by members of force (§ 14-135)
+    *   Records of rewards tendered to members of force (§ 14-136.a)
+    *   Records of rewards offered to informers (§ 14-136.b)
+    *   Records of moneys collected for vehicle/boat removal/storage (§ 14-140.i.6)
+    *   Records necessary to rectify erroneous criminal records related to voided arrests (§ 14-170)
+    *   Video records of consent searches (§ 14-173.b.1)
+    *   Documentation of image modifications for facial recognition technology (§ 14-188.1.b)
+    *   Internal tracking system for external data sharing of surveillance technology data (§ 14-188.g)
+    *   Policy on intergovernmental data sharing for surveillance technology (§ 14-188.h)
+    *   Review of physical safety hazards of surveillance technologies (§ 14-188.i)
+    *   Body-worn camera footage (§ 14-194)
+    *   Records of donations from covered donors (§ 14-195)
+    *   Crisis intervention plans for schools (§ 14-197.c.2, § 14-197.d.3)
+    *   Informational materials on reduced fare program (§ 14-172.1.c)
+    *   Radio communication policy proposal and public comments (§ 14-199.2.c, § 14-199.2.d)
+    *   Youth program materials (§ 14-199.3.a)

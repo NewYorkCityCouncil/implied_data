@@ -1,0 +1,456 @@
+**1. Fire & Emergency Incidents**
+
+**Quotes:**
+- "The department shall have sole and exclusive power and authority to extinguish fires at any place within the jurisdiction of the city and shall have power and authority to extinguish fires upon any vessel in the port of New York or upon any dock, wharf, pier, warehouse or other structure bordering upon or adjacent to such port." (Section 487.b)
+- "The investigation of the cause, circumstances and origin of fires and the suppression of arson." (Section 488.2)
+- "The prevention of fires or danger to life or property therefrom" (Section 488.3)
+
+**Why:** To track all fire suppression, investigation, and prevention activities, which are core agency missions.
+
+**One row represents:** A single fire or emergency incident requiring department response.
+
+**Covers:** All fire suppression, fire investigation, arson suppression, and fire prevention responses.
+
+**Columns:**
+- Incident ID
+- Incident Type (e.g., Structure Fire, Vehicle Fire, Brush Fire, Arson Investigation, Prevention Response)
+- Incident Date and Time
+- Incident Location (Address, Vessel Name/ID, Dock/Pier ID, Coordinates)
+- Reporting Party Information
+- Initial Call Details
+- Response Units (linked to Dataset 8: Fire Department Equipment Inventory, Dataset 6: Employee Roster & Assignments)
+- Arrival Date and Time
+- Incident Controlled Date and Time
+- Incident Clear Date and Time
+- Casualties (Injuries, Fatalities)
+- Property Damage Estimate
+- Cause of Fire (if determined)
+- Arson Suspected (Yes/No)
+- Investigation Status
+- Investigator(s) (linked to Dataset 6: Employee Roster & Assignments)
+- Referral to other departments (Yes/No, linked to Dataset 15: Inter-Agency Referrals)
+- Notes/Summary
+
+**2. EMS & Ambulance Service Incidents**
+
+**Quotes:**
+- "The department shall have the power and authority to provide general ambulance services, emergency medical services and other response services necessary to preserve public health, safety and welfare, and to perform any functions relating to the provision of such services." (Section 487.f)
+
+**Why:** To track all emergency medical and ambulance service responses, a key public safety function.
+
+**One row represents:** A single emergency medical service or ambulance response incident.
+
+**Covers:** All general ambulance services, emergency medical services, and other public health/safety response services provided by the department.
+
+**Columns:**
+- EMS Incident ID
+- Incident Type (e.g., Medical Emergency, Trauma, Transport)
+- Incident Date and Time
+- Incident Location (Address, Coordinates)
+- Patient Information (Anonymized ID, Age, Gender, Chief Complaint)
+- Reporting Party Information
+- Initial Call Details
+- Response Units (linked to Dataset 8: Fire Department Equipment Inventory, Dataset 6: Employee Roster & Assignments)
+- Arrival Date and Time
+- Patient Contact Date and Time
+- Transport Destination (Hospital Name/ID)
+- Transport Arrival Date and Time
+- Patient Disposition
+- Responding Personnel (linked to Dataset 6: Employee Roster & Assignments)
+- Notes/Summary
+
+**3. Fire Safety Inspections**
+
+**Quotes:**
+- "Cause any building, structure, tunnel, enclosure, vessel, place or premises to be inspected for fire hazards by any officer or employee of the department designated for such purpose." (Section 490.a.1)
+- "Inspect and test any automatic or other fire alarm system or fire extinguishing equipment." (Section 490.a.2)
+- "The commissioner and his deputies and such other officers or employees of the department as are authorized by the commissioner may without fee or hindrance enter and inspect all vessels, premises, grounds, structures, buildings and every part thereof and all underground passages of every sort in the city or in the port of New York for compliance with the provisions of law or rules and regulations enforced by the department." (Section 492)
+
+**Why:** To track all mandated inspections for fire hazards and fire safety equipment, crucial for prevention and enforcement.
+
+**One row represents:** A single inspection event conducted by the department.
+
+**Covers:** All inspections for fire hazards, fire alarm systems, and fire extinguishing equipment in various locations.
+
+**Columns:**
+- Inspection ID
+- Inspection Date and Time
+- Inspection Type (e.g., Fire Hazard, Fire Alarm System Test, Fire Extinguishing Equipment Test, Compliance Check)
+- Inspected Entity Type (e.g., Building, Vessel, Premises, Tunnel, Structure)
+- Inspected Entity ID (linked to Dataset 7: Fire Department Facility Inventory, Dataset 10: Vessel Removal Orders, or external property IDs)
+- Inspected Entity Address/Location
+- Inspector(s) (linked to Dataset 6: Employee Roster & Assignments)
+- Inspection Outcome (e.g., Compliant, Non-Compliant, Violation Issued)
+- Findings/Observations
+- Violations Identified (linked to Dataset 4: Fire Code Violations & Enforcement Actions)
+- Right of Entry Refused (Yes/No)
+- Refusal Details (if applicable)
+- Referral to other departments (Yes/No, linked to Dataset 15: Inter-Agency Referrals)
+- Next Scheduled Inspection Date
+
+**4. Fire Code Violations & Enforcement Actions**
+
+**Quotes:**
+- "The commissioner shall have the power and it shall be his duty to enforce all laws and the rules and regulations of the board of standards and appeals in respect to: 1. The manufacture, storage, sale, transportation or use of combustibles, chemicals, explosives, inflammable or other dangerous substances, articles, compounds or mixtures. 2. The investigation of the cause, circumstances and origin of fires and the suppression of arson. 3. The prevention of fires or danger to life or property therefrom" (Section 488)
+- "To order in writing the remedying of any condition in violation of any rule or regulation or any provision of law which he is empowered to enforce." (Section 491.a.1)
+- "To cause any order of the commissioner which is not complied with within the time fixed in the order for such compliance to be enforced and to take proceedings for the enforcement thereof as may be provided by law." (Section 491.a.2)
+
+**Why:** To track all identified violations of fire safety laws and regulations, and the subsequent enforcement actions taken.
+
+**One row represents:** A single violation identified or an enforcement action taken.
+
+**Covers:** All violations of fire laws and regulations, orders issued to remedy conditions, and enforcement proceedings for non-compliance.
+
+**Columns:**
+- Violation ID
+- Inspection ID (linked to Dataset 3: Fire Safety Inspections, if applicable)
+- Incident ID (linked to Dataset 1: Fire & Emergency Incidents, if applicable)
+- Date of Violation Identification
+- Location of Violation (Address, Entity ID)
+- Responsible Party/Entity
+- Specific Law/Regulation Violated
+- Description of Violation
+- Order Issued (Yes/No)
+- Order Issue Date
+- Compliance Deadline
+- Compliance Status (e.g., Complied, Non-Compliant, In Progress)
+- Enforcement Action Taken (e.g., Warning, Fine, Legal Action, Referral)
+- Enforcement Action Date
+- Enforcement Officer (linked to Dataset 6: Employee Roster & Assignments)
+- Fine Amount (if applicable)
+- Resolution Date
+- Notes
+
+**5. Dangerous Substance Container Approvals**
+
+**Quotes:**
+- "The commissioner shall have sole and exclusive jurisdiction over the approval of the installation of all containers for combustibles, chemicals, explosives, inflammables or other dangerous substances, articles, compounds or mixtures, except storage tanks and auxiliary storage tanks for oil-burning equipment and except where the location of the container may affect the structural condition of the building, in which case the commissioner shall not give his approval without the approval of the commissioner of buildings. The commissioner shall certify his approval of all installations of containers in buildings except storage tanks and auxiliary storage tanks for oil-burning equipment to the commissioner of buildings." (Section 487.d)
+- "The commissioner shall have the power and it shall be his duty to enforce all laws and the rules and regulations of the board of standards and appeals in respect to: 1. The manufacture, storage, sale, transportation or use of combustibles, chemicals, explosives, inflammable or other dangerous substances, articles, compounds or mixtures." (Section 488.1)
+
+**Why:** To track the approval process for dangerous substance containers, a specific regulatory responsibility.
+
+**One row represents:** A single application or approval for the installation of a dangerous substance container.
+
+**Covers:** All applications and approvals for the installation of containers for dangerous substances, excluding oil-burning equipment tanks.
+
+**Columns:**
+- Approval ID
+- Application Date
+- Applicant/Owner Information
+- Installation Location (Address, Building ID)
+- Container Type
+- Substance Type (e.g., Combustible, Chemical, Explosive, Flammable)
+- Capacity of Container
+- Approval Status (e.g., Pending, Approved, Denied)
+- Approval Date
+- Approving Officer (linked to Dataset 6: Employee Roster & Assignments)
+- Buildings Commissioner Approval Required (Yes/No)
+- Buildings Commissioner Approval Status (if required)
+- Certification to Buildings Commissioner Date (if applicable)
+- Expiration Date of Approval (if applicable)
+- Notes
+
+**6. Employee Roster & Assignments**
+
+**Quotes:**
+- "The mayor may designate the chief of the fire department to serve as commissioner" (Section 482)
+- "The commissioner may appoint three deputies" (Section 483)
+- "The commissioner may designate a clerk or chief of a bureau" (Section 484)
+- "The commissioner shall be the treasurer of the department" (Section 486)
+- "appointment or promotion, detail or dismissal of any member of the uniformed force" (Section 483)
+- "A chief of the fire department shall not serve in any other capacity to the department during his term of office of chief." (Section 494)
+
+**Why:** To manage all personnel, their roles, appointments, and compliance with service restrictions.
+
+**One row represents:** A single employee of the fire department.
+
+**Covers:** All uniformed and civilian employees, their appointments, roles, and assignments within the department.
+
+**Columns:**
+- Employee ID
+- First Name
+- Last Name
+- Rank/Title
+- Department/Bureau
+- Appointment Date
+- Current Assignment/Role
+- Is Commissioner (Yes/No)
+- Is Chief (Yes/No)
+- Is Deputy (Yes/No)
+- Is Treasurer (Yes/No)
+- Is Clerk/Chief of Bureau (Yes/No)
+- Pension Rights Status (for Chief)
+- Civil Service Status (for Chief)
+- Employment Status (Active, Retired, Dismissed)
+- Date of Last Promotion
+- Date of Last Detail
+- Date of Dismissal (if applicable)
+- Compliance with Section 494 (Chief's other capacity restriction)
+- Contact Information
+
+**7. Fire Department Facility Inventory**
+
+**Quotes:**
+- "The commissioner shall have sole and exclusive power and perform all duties for the government, discipline, management, maintenance and direction of the fire department and the premises and property in the custody thereof" (Section 487.a)
+- "prior to the permanent closing of any firehouse or the permanent removal or relocation of any fire fighting unit" (Section 487.a)
+
+**Why:** To manage and track all physical premises and properties under the department's custody.
+
+**One row represents:** A single facility (e.g., firehouse, administrative building, training center) owned or managed by the department.
+
+**Covers:** All buildings, land, and fixed structures under the Fire Department's control.
+
+**Columns:**
+- Facility ID
+- Facility Name
+- Facility Type (e.g., Firehouse, HQ, Training Center, EMS Station, Warehouse)
+- Address
+- Borough/District
+- Acquisition Date
+- Current Status (Operational, Under Maintenance, Closed, Relocated)
+- Square Footage
+- Number of Units Housed (e.g., Engine Companies, Ladder Companies, EMS Units)
+- Last Inspection Date (linked to Dataset 3: Fire Safety Inspections)
+- Last Maintenance Date (linked to Dataset 14: Asset Maintenance Records)
+- Notes
+
+**8. Fire Department Equipment Inventory**
+
+**Quotes:**
+- "The commissioner shall have sole and exclusive power and perform all duties for the government, discipline, management, maintenance and direction of the fire department and the premises and property in the custody thereof" (Section 487.a)
+- "permanent removal or relocation of any fire fighting unit" (Section 487.a)
+
+**Why:** To manage and track all movable property and equipment essential for department operations.
+
+**One row represents:** A single piece of equipment or a vehicle.
+
+**Covers:** All firefighting apparatus, EMS vehicles, specialized tools, IT equipment, and other movable assets.
+
+**Columns:**
+- Equipment ID
+- Equipment Type (e.g., Engine, Ladder, Ambulance, Command Vehicle, SCBA, Thermal Camera)
+- Make
+- Model
+- Serial Number
+- Acquisition Date
+- Current Location (e.g., Facility ID - linked to Dataset 7: Fire Department Facility Inventory, or Unit ID)
+- Current Status (Operational, In Repair, Out of Service)
+- Last Maintenance Date (linked to Dataset 14: Asset Maintenance Records)
+- Last Inspection Date
+- Assigned Unit/Company (if applicable)
+- Notes
+
+**9. Fire Department Facility & Unit Status Changes**
+
+**Quotes:**
+- "the commissioner shall provide written notice with supporting documentation at least forty-five days prior to the permanent closing of any firehouse or the permanent removal or relocation of any fire fighting unit to the council members, community boards and borough presidents whose districts are served by such facility or unit and the chairperson of the council's public safety committee." (Section 487.a)
+- "For purposes of this section, the term "permanent" shall mean a time period in excess of six months." (Section 487.a)
+- "In the event that the permanent closing of any firehouse or the permanent removal or relocation of any firefighting unit does not occur within four months of the date of the written notice, the commissioner shall issue another written notice with supporting documentation prior to such permanent removal or relocation." (Section 487.a)
+- "The four months during which the written notice is effective shall be tolled for any period in which a restraining order or injunction prohibiting the closing of such noticed facility or unit shall be in effect." (Section 487.a)
+
+**Why:** To track all legally mandated notifications and actions related to permanent changes in fire department facilities or units.
+
+**One row represents:** A single event of a proposed or actual permanent change to a firehouse or firefighting unit.
+
+**Covers:** All permanent closings, removals, or relocations of firehouses or firefighting units.
+
+**Columns:**
+- Change Event ID
+- Facility ID (linked to Dataset 7: Fire Department Facility Inventory)
+- Unit ID (linked to Dataset 8: Fire Department Equipment Inventory, if a specific unit)
+- Change Type (e.g., Permanent Closing, Permanent Removal, Permanent Relocation)
+- Proposed Effective Date
+- Initial Notice Date
+- Notice Recipients (Council Members, Community Boards, Borough Presidents, Public Safety Committee Chair)
+- Supporting Documentation Provided (Yes/No)
+- Actual Effective Date (if occurred)
+- Did not occur within 4 months of notice (Yes/No)
+- Second Notice Issued (Yes/No, Date)
+- Restraining Order/Injunction in Effect (Yes/No)
+- Tolling Period Start Date
+- Tolling Period End Date
+- Final Status (e.g., Completed, Cancelled, Delayed)
+- Notes
+
+**10. Vessel Removal Orders**
+
+**Quotes:**
+- "The commissioner shall have power to cause any vessel moored to or anchored near any dock or pier in the city to be removed to and secured at such place in the harbor as shall be designated by the commissioner, provided that such vessel shall be on fire or in danger of catching fire or may be, by reason of its condition or the nature of its cargo, a fire menace to shipping, to property or to the water front of the city." (Section 487.c)
+
+**Why:** To track all orders issued for the removal of vessels posing a fire hazard.
+
+**One row represents:** A single order issued for the removal of a vessel.
+
+**Covers:** All instances where the commissioner orders a vessel to be removed due to fire risk.
+
+**Columns:**
+- Order ID
+- Order Date
+- Vessel Name/ID
+- Vessel Location (Dock/Pier ID, Coordinates)
+- Reason for Removal (e.g., On Fire, Danger of Catching Fire, Fire Menace due to Condition, Fire Menace due to Cargo)
+- Designated Secure Place in Harbor
+- Order Issued By (linked to Dataset 6: Employee Roster & Assignments)
+- Compliance Status (e.g., Complied, Non-Compliant)
+- Removal Date
+- Enforcement Action (if non-compliant)
+- Notes
+
+**11. Fire Alarm & Signal Station Inventory**
+
+**Quotes:**
+- "The commissioner shall have the sole and exclusive power from time to time to designate and fix the location of all fire alarm telegraph, signal and alarm stations in the city, and shall have access to and control of the same for the purpose of the department." (Section 487.e)
+
+**Why:** To track the location and status of all fire alarm and signal stations under the department's control.
+
+**One row represents:** A single fire alarm telegraph, signal, or alarm station.
+
+**Covers:** All fire alarm telegraph, signal, and alarm stations designated and controlled by the department.
+
+**Columns:**
+- Station ID
+- Station Type (e.g., Fire Alarm Box, Signal Station)
+- Location (Address, Coordinates)
+- Installation Date
+- Last Inspection Date (linked to Dataset 3: Fire Safety Inspections)
+- Last Maintenance Date (linked to Dataset 14: Asset Maintenance Records)
+- Operational Status (Active, Inactive, Under Repair)
+- Designation Date
+- Notes
+
+**12. Aviation Operation Permits & Incidents**
+
+**Quotes:**
+- "The department shall have the power and authority to regulate helicopter landings and takeoffs at or from locations other than airports, heliports, helistops, seaplane bases or other facilities approved by the commissioner of small business services, helicopter external load lift operations, and hot air balloon operations." (Section 487.g)
+
+**Why:** To track permits issued for regulated aviation activities and any related incidents.
+
+**One row represents:** A single permit for an aviation operation or an incident related to such operations.
+
+**Covers:** Permits for helicopter landings/takeoffs (non-airport), external load lift operations, and hot air balloon operations, and any incidents involving these activities.
+
+**Columns:**
+- Permit/Incident ID
+- Type (Permit, Incident)
+- Operation Type (e.g., Helicopter Landing/Takeoff, External Load Lift, Hot Air Balloon)
+- Applicant/Operator Information (for permits)
+- Location of Operation/Incident (Address, Coordinates)
+- Date and Time of Operation/Incident
+- Permit Status (e.g., Applied, Approved, Denied, Expired)
+- Permit Expiration Date
+- Approving Officer (linked to Dataset 6: Employee Roster & Assignments)
+- Incident Description (for incidents)
+- Casualties/Damage (for incidents)
+- Enforcement Action (for incidents/violations)
+- Notes
+
+**13. Employee Training & Certification Records**
+
+**Quotes:**
+- "The commissioner shall have sole and exclusive power and perform all duties for the government, discipline, management, maintenance and direction of the fire department" (Section 487.a)
+- *Implied by the need for a disciplined and managed force, and the general prompt instruction about "ensuring specialists are up to date on required certifications."*
+
+**Why:** To track all training and certifications for employees, ensuring they meet required qualifications and maintain readiness.
+
+**One row represents:** A single training course completed or a certification obtained by an employee.
+
+**Covers:** All mandatory and specialized training, as well as professional certifications for all department employees.
+
+**Columns:**
+- Training Record ID
+- Employee ID (linked to Dataset 6: Employee Roster & Assignments)
+- Training/Certification Name
+- Training Provider
+- Date Completed/Certified
+- Expiration Date (if applicable)
+- Certification Number (if applicable)
+- Training Type (e.g., Fire Suppression, EMS, HazMat, Arson Investigation, Leadership, IT)
+- Result (e.g., Pass, Fail, Completed)
+- Notes
+
+**14. Asset Maintenance Records**
+
+**Quotes:**
+- "The commissioner shall have sole and exclusive power and perform all duties for the government, discipline, management, maintenance and direction of the fire department and the premises and property in the custody thereof" (Section 487.a)
+
+**Why:** To track all maintenance activities performed on department facilities and equipment, ensuring operational readiness and longevity.
+
+**One row represents:** A single maintenance event for a facility or piece of equipment.
+
+**Covers:** All scheduled and unscheduled maintenance, repairs, and servicing for department facilities and equipment.
+
+**Columns:**
+- Maintenance ID
+- Asset Type (Facility, Equipment)
+- Asset ID (linked to Dataset 7: Fire Department Facility Inventory or Dataset 8: Fire Department Equipment Inventory)
+- Maintenance Date
+- Maintenance Type (e.g., Routine, Repair, Emergency, Inspection)
+- Description of Work Performed
+- Parts Used
+- Cost of Maintenance
+- Performed By (Internal Staff - linked to Dataset 6: Employee Roster & Assignments, or External Vendor)
+- Next Scheduled Maintenance Date
+- Notes
+
+**15. Inter-Agency Referrals**
+
+**Quotes:**
+- "Whenever in any investigation or inspection carried on by the department a condition is found which in the opinion of the commissioner should be referred to any other department, he shall promptly make such reference in writing." (Section 490.b)
+
+**Why:** To track all instances where the department refers conditions to other agencies for appropriate action.
+
+**One row represents:** A single referral made to another department.
+
+**Covers:** All referrals made by the Fire Department to other city agencies regarding conditions found during investigations or inspections.
+
+**Columns:**
+- Referral ID
+- Date of Referral
+- Originating Activity (e.g., Inspection ID - linked to Dataset 3: Fire Safety Inspections, Incident ID - linked to Dataset 1: Fire & Emergency Incidents)
+- Referring Officer (linked to Dataset 6: Employee Roster & Assignments)
+- Referred To Department/Agency
+- Description of Condition Referred
+- Reason for Referral
+- Referral Status (e.g., Sent, Acknowledged, Action Taken)
+- Date of Follow-up (if any)
+- Notes
+
+**16. Department Financial Transactions**
+
+**Quotes:**
+- "The commissioner shall be the treasurer of the department and shall file in the office of the comptroller a bond for the faithful performance of his duties as such treasurer." (Section 486)
+- "The commissioner shall have sole and exclusive power and perform all duties for the government, discipline, management, maintenance and direction of the fire department" (Section 487.a)
+
+**Why:** To track all financial inflows and outflows, essential for managing the department's budget and resources.
+
+**One row represents:** A single financial transaction (e.g., expenditure, revenue, payroll entry).
+
+**Covers:** All financial transactions related to the department's operations, including expenditures, revenues, and payroll.
+
+**Columns:**
+- Transaction ID
+- Transaction Date
+- Transaction Type (e.g., Expense, Revenue, Payroll, Transfer)
+- Account Code
+- Description
+- Amount
+- Vendor/Payee (if applicable)
+- Funding Source (if applicable)
+- Approving Authority (linked to Dataset 6: Employee Roster & Assignments)
+- Related Project/Program (if applicable)
+- Notes
+
+---
+
+**Non-Tabular Information:**
+
+*   **Job Applications:** (Example given in instructions)
+*   **Rules and Regulations:** (Example given in instructions, Section 489)
+*   **Receipts:** (Example given in instructions)
+*   **Written Instruments/Designations:** (Sections 482, 483, 484) - These are formal documents, not tabular data. The *event* of designation is captured in Dataset 6.
+*   **Commissioner's Seal:** (Section 485) - A physical or digital emblem, not tabular data.
+*   **Treasurer's Bond:** (Section 486) - A legal document, not tabular data.
+*   **Supporting Documentation for Facility/Unit Changes:** (Section 487.a) - These are likely reports, analyses, or other documents.
+*   **Restraining Orders or Injunctions:** (Section 487.a) - Legal documents.
+*   **Health Code/Building Code Provisions:** (Section 488) - External legal texts.
+*   **Photos, Research Documents:** (Example given in instructions)

@@ -1,0 +1,351 @@
+**1. Small Business Legal Service Cases**
+
+**Quotes:**
+*   "Subject to appropriation, the commissioner shall provide, at no cost to a covered small business tenant, out-of-court legal assistance and may provide, at no cost to a covered small business tenant, in-court legal representation." (§ 22-1006.b.1)
+*   "The number of small businesses that received such legal services in the previous fiscal year, disaggregated by the following characteristics of such businesses: (a) Borough and postal code; (b) Number of persons employed by business; (c) Net income of business; and (d) Type of business as categorized by section 121.201 of subpart A of part 121 of title 13 of the code of federal regulations;" (§ 22-1006.c.1)
+*   "A description of the aggregate performance outcomes of designated organizations, information on the geographic areas for which such organizations provided legal services, and identification of the types of covered legal matters handled by designated organizations." (§ 22-1006.c.2)
+*   "Covered legal matter. The term "covered legal matter" means a legal matter related to a commercial lease, including but not limited to drafting and negotiation of lease terms, terminating a lease, and addressing other lease-related issues." (§ 22-1006.a)
+*   "Covered proceeding. The term "covered proceeding" means any proceeding in any court of competent jurisdiction against a covered small business tenant to: (i) Evict such tenant... (ii) Terminate such tenancy; or (iii) Establish a breach of the terms of such tenant's commercial lease." (§ 22-1006.a)
+*   "Covered small business tenant. The term "covered small business tenant" means a business that is: (i) A lessee or sublessee in a commercial tenancy located in the city; (ii) Small, in accordance with the size standards set forth in section 121.201 of title 13 of the code of federal regulations; (iii) Not a franchisee... and (iv) Owned and operated by one or more persons, all of whom are income-eligible individuals." (§ 22-1006.a)
+
+**Why:** To fulfill the mandate of providing legal services and reporting on their provision and outcomes, individual cases must be tracked.
+
+**One row represents:** A single instance of legal assistance or representation provided to a covered small business tenant.
+
+**Covers:** All legal services (out-of-court assistance and in-court representation) provided to eligible small businesses.
+
+**Columns:**
+*   Legal Service Case ID
+*   Small Business ID
+*   Small Business Name
+*   Small Business Address (Street, **Borough**, **Postal Code**)
+*   Number of Persons Employed by Business
+*   Net Income of Business
+*   Type of Business (e.g., NAICS code from 13 CFR 121.201)
+*   Is Business a Franchisee? (Yes/No)
+*   Are Owners Income-Eligible? (Yes/No)
+*   Legal Service Type (Out-of-Court Assistance, In-Court Representation)
+*   Covered Legal Matter Type (e.g., Lease Drafting, Lease Negotiation, Lease Termination, Eviction Proceeding, Breach of Lease Proceeding)
+*   Date Service Initiated
+*   Date Service Concluded
+*   Designated Organization ID (linked to Dataset 8)
+*   Outcome of Service (e.g., Lease renegotiated, Eviction avoided, Case dismissed, Ongoing)
+*   Geographic Area of Service Provision (as reported by designated organization)
+
+**2. Workforce1 Registrant Activities and Outcomes**
+
+**Quotes:**
+*   "workforce1 career center” means a program established by the department to provide job assistance and training opportunities to adults seeking employment." (§ 22-1007.a)
+*   "Such report shall include a list of all workforce1 career centers in the city and for each such center, during the prior fiscal year: (i) the number of new registrants; (ii) the number of registrants who obtained employment utilizing the services of such center; and (iii) the number of registrants who received job training, disaggregated by industry." (§ 22-1007.b)
+
+**Why:** To report on the performance of Workforce1 career centers, individual registrant activities and their employment outcomes must be tracked.
+
+**One row represents:** A specific activity or outcome for a Workforce1 career center registrant.
+
+**Covers:** All new registrations, job placements, and training received by individuals at Workforce1 career centers.
+
+**Columns:**
+*   Registrant ID
+*   Workforce1 Career Center ID (linked to Dataset 9)
+*   Registration Date
+*   Activity Type (e.g., New Registration, Job Training, Employment Obtained)
+*   Activity Date
+*   Job Training Industry (if Activity Type is Job Training)
+*   Employment Start Date (if Activity Type is Employment Obtained)
+*   Employment Industry (if Activity Type is Employment Obtained)
+*   Employment Status (e.g., Employed, Unemployed, In Training)
+
+**3. Training and Education Events**
+
+**Quotes:**
+*   "The department shall provide business services including training and education to small businesses regarding the following subjects: 1. Business operations... 2. Marketing... 3. Compliance obligations... 4. Such other training and education as the commissioner may deem appropriate." (§ 22-1003.a)
+*   "The total number of business services including training and education offered disaggregated by borough and whether such training and education was offered in multiple languages;" (§ 22-1003.c.1)
+*   "A general description of each business services including training and education offered;" (§ 22-1003.c.2)
+*   "The department shall coordinate with any other agency to develop and deliver services to educate small businesses within each borough regarding regulatory requirements." (§ 22-1008.a)
+*   "The total number of services offered regarding regulatory requirements, disaggregated by borough;" (§ 22-1008.c.1)
+*   "The primary sector or industry of businesses to which the services were provided pursuant to subdivision a of this section, if practicable;" (§ 22-1008.c.2)
+*   "Any other agency with which the department coordinated to develop and deliver such services;" (§ 22-1008.c.3)
+*   "A list and short description of the services offered and the languages in which each such service was offered." (§ 22-1008.c.4)
+
+**Why:** To fulfill the mandate of providing training and education and reporting on its offerings, each event must be tracked.
+
+**One row represents:** A single training or education event offered by the department.
+
+**Covers:** All business services, training, and education events, including those focused on regulatory requirements.
+
+**Columns:**
+*   Event ID
+*   Event Date
+*   Event Time
+*   Event Location (Address, **Borough**)
+*   Event Title
+*   Event Description (short text)
+*   Training Subject Category (e.g., Business Operations, Marketing, Compliance Obligations, Regulatory Requirements)
+*   Languages Offered (e.g., English, Spanish, Chinese)
+*   Primary Sector/Industry Targeted (if applicable)
+*   Coordinating Agency (if applicable)
+*   Delivery Method (e.g., In-person, Online, Hybrid)
+*   Instructor/Facilitator Name
+
+**4. Training and Education Event Participants**
+
+**Quotes:**
+*   "The total number of people who participated in each business services including training and education disaggregated by borough." (§ 22-1003.c.3)
+
+**Why:** To report on the reach and impact of training and education, individual participation in each event must be tracked.
+
+**One row represents:** A single participant's attendance at a training or education event.
+
+**Covers:** All individuals who participated in any business service, training, or education event.
+
+**Columns:**
+*   Participation ID
+*   Event ID (linked to Dataset 3)
+*   Participant ID (if tracked, or anonymized unique identifier)
+*   Participant Borough (self-reported or inferred)
+*   Participation Status (e.g., Attended, Registered but No-Show)
+
+**5. Storefront Business Survey Responses (Assessment)**
+
+**Quotes:**
+*   "The department shall commence a storefront business assessment in at least twenty community districts in the city. As part of such assessment, the department shall distribute to and collect from storefront business owners in the district, a survey that shall include, but not be limited to, the following requests for information: 1. the business owners' demographic information; 2. the business owners' access to, and the accessibility of, information made publicly available by the department and other agencies to support storefront businesses; 3. business entity type and whether each storefront business is part of a franchise or chain; 4. number of owners and number of employees of each storefront business; and 5. number of years each storefront business has been located at its current location." (§ 22-1004.b)
+*   "make the results of such assessment including all disaggregated non-identifying survey data, available on its website." (§ 22-1004.c)
+
+**Why:** To conduct the mandated storefront business assessment, individual survey responses from business owners must be collected and maintained.
+
+**One row represents:** A single completed survey response from a storefront business owner.
+
+**Covers:** Survey data collected from storefront business owners as part of the triennial assessment.
+
+**Columns:**
+*   Survey Response ID
+*   Assessment Cycle (e.g., 2019, 2022)
+*   Community District ID (where storefront is located)
+*   Storefront Business ID (unique identifier for the business)
+*   Business Owner Demographic Information (e.g., age range, gender, ethnicity - anonymized)
+*   Access to Department Information (e.g., rating scale, comments)
+*   Access to Other Agency Information (e.g., rating scale, comments)
+*   Business Entity Type (e.g., Sole Proprietorship, LLC, Corporation)
+*   Is Business Part of a Franchise or Chain? (Yes/No)
+*   Number of Owners
+*   Number of Employees
+*   Years at Current Location
+*   Survey Completion Date
+
+**6. Storefront Business Properties (Citywide Report Data)**
+
+**Quotes:**
+*   "The department, in consultation with the departments of city planning and finance, shall produce a report containing information related to storefront businesses citywide, which shall be disaggregated by community district, and include but need not be limited to the following factors: (i) the number of storefront businesses; (ii) the types of economic activity being conducted at such storefronts; (iii) data relating to numbers of employees at such storefronts; (iv) data relating to annual sales and sales tax data at such storefronts; (v) the number of vacant storefront businesses; and (vi) demographics." (§ 22-1004.d)
+*   "Storefront business. The term "storefront business" means a "ground floor commercial premises" as such term is defined in § 11-3001." (§ 22-1004.a)
+
+**Why:** To produce the mandated citywide report on storefront businesses, detailed data on individual storefront properties and their associated businesses must be compiled.
+
+**One row represents:** A single storefront business property or a business operating within one.
+
+**Covers:** Citywide data on storefront businesses, including occupied and vacant properties, compiled from various city agencies.
+
+**Columns:**
+*   Storefront Property ID (unique identifier for the physical premises)
+*   Property Address (Street, **Community District ID**, **Borough**)
+*   Occupancy Status (Occupied, Vacant)
+*   Business ID (if occupied, linked to other business data if available)
+*   Business Name (if occupied)
+*   Type of Economic Activity (e.g., Retail, Restaurant, Service)
+*   Number of Employees (if occupied)
+*   Annual Sales Data (if available, e.g., from Department of Finance)
+*   Sales Tax Data (if available, e.g., from Department of Finance)
+*   Business Demographics (e.g., owner demographics, if available and anonymized)
+*   Physical Condition (Interior, Exterior - if assessed)
+*   Built Environment Characteristics (e.g., zoning, pedestrian traffic - if assessed)
+*   Data Source (e.g., City Planning, Finance, SBS Survey)
+*   Data Collection Date
+
+**7. Local CDFI Directory**
+
+**Quotes:**
+*   "Guidance on selecting a lender, including information about local CDFIs, which shall include, but need not be limited to, a directory of local CDFIs, and for each such local CDFI, a description of services provided by such local CDFI, the neighborhood or area of the city in which such local CDFI operates or provides services, and the types of loans offered by such local CDFI;" (§ 22-1002.a.4.a)
+*   "Local CDFI. The term “local CDFI” means a financial institution that: (i) is certified as a community development financial institution by the federal department of the treasury; (ii) is authorized to do business in the state of New York; (iii) provides services to persons or businesses in the city; and (iv) has agreed to provide the department with information relating to services it provides, in order to be included on the department’s website" (§ 22-1001)
+
+**Why:** To provide mandated guidance on selecting lenders and maintain a public directory of local CDFIs, their information must be tracked.
+
+**One row represents:** A single local Community Development Financial Institution (CDFI).
+
+**Covers:** All local CDFIs that meet the definition and have agreed to provide information to the department for inclusion in the directory.
+
+**Columns:**
+*   CDFI ID
+*   CDFI Name
+*   Federal Treasury Certification Status (Certified/Not Certified)
+*   New York State Authorization Status (Authorized/Not Authorized)
+*   Description of Services Provided
+*   Neighborhoods/Areas of Operation
+*   Types of Loans Offered
+*   Contact Information (e.g., Website, Phone)
+*   Date Information Last Updated
+*   Agreement to Provide Information (Yes/No)
+
+**8. Designated Legal Service Organizations**
+
+**Quotes:**
+*   "Designated organization. The term "designated organization" means a person or entity licensed to provide legal services in New York and designated by the commissioner pursuant to this section, provided, however, that the commissioner may give preference to not-for-profit organizations when designating an organization pursuant to this section." (§ 22-1006.a)
+*   "A description of the aggregate performance outcomes of designated organizations, information on the geographic areas for which such organizations provided legal services, and identification of the types of covered legal matters handled by designated organizations." (§ 22-1006.c.2)
+
+**Why:** To manage the provision of legal services, the department must track information about the organizations designated to provide these services.
+
+**One row represents:** A single designated legal service organization.
+
+**Covers:** All organizations designated by the commissioner to provide small business legal services.
+
+**Columns:**
+*   Designated Organization ID
+*   Organization Name
+*   License Status (Licensed in NY: Yes/No)
+*   Not-for-Profit Status (Yes/No)
+*   Date of Designation
+*   Contract Start Date
+*   Contract End Date
+*   Geographic Areas Served
+*   Types of Legal Matters Handled (e.g., Commercial Lease, Eviction, Breach)
+*   Performance Metrics (e.g., Number of cases, Success rate, Client satisfaction - aggregated)
+
+**9. Workforce1 Career Centers**
+
+**Quotes:**
+*   "Such report shall include a list of all workforce1 career centers in the city" (§ 22-1007.b)
+*   "workforce1 career center” means a program established by the department to provide job assistance and training opportunities to adults seeking employment." (§ 22-1007.a)
+
+**Why:** To report on the performance of Workforce1 career centers, a master list of the centers themselves is required.
+
+**One row represents:** A single Workforce1 career center.
+
+**Covers:** All Workforce1 career centers operated or overseen by the department.
+
+**Columns:**
+*   Workforce1 Career Center ID
+*   Center Name
+*   Center Address (Street, **Borough**)
+*   Contact Information (Phone, Email, Website)
+*   Date Established
+*   Status (e.g., Active, Closed)
+*   Primary Services Offered (e.g., Job Placement, Training, Resume Assistance)
+
+**10. Portal Feedback/Complaints**
+
+**Quotes:**
+*   "Such report shall also include the number of questions or complaints the department received about the portal during the preceding calendar year, and the average time taken to respond to such questions or complaints;" (§ 22-1002.a.3.c)
+
+**Why:** To report on portal feedback and response times, individual questions or complaints about the portal must be tracked.
+
+**One row represents:** A single question or complaint received by the department regarding the online portal.
+
+**Covers:** All questions and complaints received by the department concerning the online business portal.
+
+**Columns:**
+*   Complaint/Question ID
+*   Date Received
+*   Source (e.g., Phone, Email, Portal Form)
+*   Contact Information (if provided, e.g., Email, Phone)
+*   Complaint/Question Type (e.g., Technical Issue, Content Error, Feature Request, General Inquiry)
+*   Description of Issue
+*   Date Assigned to Staff
+*   Staff Member ID (who responded)
+*   Date of Response
+*   Response Time (in hours/days)
+*   Resolution Status (e.g., Resolved, Pending, Escalated)
+
+**11. Small Business Survey Responses (Portal Effectiveness)**
+
+**Quotes:**
+*   "Such review shall include a survey of small businesses." (§ 22-1002.b.2)
+
+**Why:** To review the effectiveness of the portal, individual survey responses from small businesses must be collected and maintained.
+
+**One row represents:** A single completed survey response from a small business regarding the portal's effectiveness.
+
+**Covers:** Survey data collected from small businesses to assess the online portal's effectiveness.
+
+**Columns:**
+*   Survey Response ID
+*   Review Cycle (e.g., 2025, 2028)
+*   Small Business ID (unique identifier for the business, if tracked)
+*   Business Type (e.g., Microbusiness, Small Business)
+*   Survey Question 1 Response (e.g., rating of ease of use)
+*   Survey Question 2 Response (e.g., rating of helpfulness)
+*   Survey Question X Response (all survey questions)
+*   Comments/Feedback (text field)
+*   Survey Completion Date
+
+**12. Legal and Rule Change Notifications**
+
+**Quotes:**
+*   "Within 30 days after the effective date of a change to a law or rule referenced in the guide or portal described in subdivision a of this section, the agency having primary jurisdiction over such law or rule shall inform the department of such change." (§ 22-1002.b)
+*   "Within 30 days of being informed of such change, the department shall update the guide accordingly." (§ 22-1002.b.1)
+
+**Why:** To ensure the online guide and portal are kept up-to-date with legal and rule changes, the notifications and subsequent updates must be tracked.
+
+**One row represents:** A single notification of a change to a law or rule received by the department.
+
+**Covers:** All notifications of changes to laws or rules that are referenced in the online guide or portal.
+
+**Columns:**
+*   Notification ID
+*   Date Notification Received
+*   Notifying Agency
+*   Law/Rule Citation
+*   Description of Change
+*   Effective Date of Change
+*   Date Guide/Portal Update Initiated
+*   Date Guide/Portal Update Completed
+*   Update Status (e.g., Completed, In Progress, Pending)
+
+**13. Portal Updates Log**
+
+**Quotes:**
+*   "Such report shall also include the number of questions or complaints the department received about the portal during the preceding calendar year, and the average time taken to respond to such questions or complaints;" (§ 22-1002.a.3.c)
+*   "report on any updates to the portal implemented during the preceding calendar year." (§ 22-1002.a.3.c)
+
+**Why:** To report on updates implemented to the online portal, each update event must be tracked.
+
+**One row represents:** A single update or modification implemented on the online business portal.
+
+**Covers:** All updates, modifications, or new features implemented on the online business portal.
+
+**Columns:**
+*   Update ID
+*   Date Implemented
+*   Description of Update
+*   Type of Update (e.g., Feature Enhancement, Bug Fix, Content Update, Language Addition)
+*   Associated Project/Initiative (if applicable)
+*   Staff Member/Team Responsible
+
+**14. Community Based Organization (CBO) Engagement (Storefront Assessment)**
+
+**Quotes:**
+*   "Such assessment shall include input by at least one community based organization serving the district's storefront business community, or if no organization is available, a record of outreach to at least three organizations requesting their participation." (§ 22-1004.b)
+
+**Why:** To ensure community input for storefront business assessments and track outreach efforts, CBO engagement must be recorded.
+
+**One row represents:** A single interaction or outreach attempt with a Community Based Organization for a storefront assessment.
+
+**Covers:** All engagement activities with CBOs related to the storefront business assessments.
+
+**Columns:**
+*   Engagement ID
+*   Assessment Cycle (e.g., 2019, 2022)
+*   Community District ID
+*   CBO Name
+*   Contact Person
+*   Date of Outreach/Interaction
+*   Type of Interaction (e.g., Initial Contact, Meeting, Input Session)
+*   Participation Status (e.g., Participated, Declined, No Response)
+*   Notes/Summary of Input
+
+---
+
+**Non-Tabular Information:**
+
+*   **Accounting, recordkeeping and bookkeeping resources:** These are tools and content provided by the department, not tabular data. (§ 22-1002.a.1)
+*   **Searchable and interactive guide to city laws and rules:** This is a resource containing legal text, rules, and descriptions, not tabular data. (§ 22-1002.a.2)
+*   **Information on loans and grants (guidance on selecting a lender, specialized services by banks, typical fees/interest rates, advantages/disadvantages of multiple banks, FDIC insurance coverage):** This is informational content and guidance, not tabular data. (§ 22-1002.a.4.b-e)
+*   **Rules for in-court legal representation:** These are policy documents or regulations to be promulgated, not tabular data. (§ 22-1006.d)
+*   **Criteria for selection of community districts for storefront assessments:** This is a methodology or policy document, not tabular data. (§ 22-1004.c)

@@ -1,0 +1,474 @@
+**1. Driver/Chauffeur Licenses**
+
+**Quotes:**
+*   "standards for driver safety" (Section 2300)
+*   "set standards and criteria for the licensing of vehicles, drivers and chauffeurs, owners and operators engaged in such services" (Section 2300)
+*   "The issuance, revocation, suspension of licenses for drivers, chauffeurs, owners or operators of vehicles, other than licenses issued pursuant to state law, and for taxicab brokers and the establishment of qualifying standards required for such licensees." (Section 2303.b.5)
+*   "Compile and report statistics relating to driver demographics, disaggregated by ethnicity or race, gender, disability and other categories as appropriate" (Section 2305.c.1)
+
+**Why:** To regulate individuals operating for-hire vehicles, the agency must track their licenses and associated information.
+
+**One row represents:** A single driver or chauffeur license.
+
+**Covers:** All licenses issued, revoked, or suspended for drivers and chauffeurs.
+
+**Columns:**
+*   License ID
+*   Driver/Chauffeur Name
+*   License Type (e.g., Taxi, Limousine, Commuter Van)
+*   License Status (Active, Suspended, Revoked, Expired)
+*   Issue Date
+*   Expiration Date
+*   Date of Last Renewal
+*   Driver Demographics (Ethnicity/Race, Gender, Disability Status, other categories)
+*   Qualifying Standards Met (e.g., background check status, driving record check)
+*   Associated **Owner/Operator License ID** (Dataset 7)
+*   Associated **Vehicle License ID** (Dataset 2)
+
+**2. Vehicle Licenses**
+
+**Quotes:**
+*   "set standards and criteria for the licensing of vehicles, drivers and chauffeurs, owners and operators engaged in such services" (Section 2300)
+*   "The revocation and suspension of licenses for vehicles, other than licenses issued pursuant to state law, provided, however, that taxicab licenses represented by medallions heretofore issued shall in all respects remain valid in accordance with their terms and transferable according to law." (Section 2303.b.3)
+*   "Taxicab licenses represented by medallions which have heretofore been surrendered are hereby revoked. Additional taxicab licenses may be issued from time to time only upon the enactment of a local law providing therefor. Any nontransferable licenses shall be deemed revoked upon the surrender by or death of the holder thereof." (Section 2303.b.4)
+
+**Why:** To regulate vehicles used for for-hire services, the agency must track their licenses and medallion status.
+
+**One row represents:** A single vehicle license or medallion.
+
+**Covers:** All licenses issued, revoked, or suspended for taxis, limousines, wheelchair accessible vans, and commuter vans, including medallion status.
+
+**Columns:**
+*   Vehicle License ID (or Medallion ID)
+*   Vehicle Identification Number (VIN)
+*   License Type (e.g., Taxi Medallion, Livery, Black Car, Commuter Van)
+*   License Status (Active, Suspended, Revoked, Expired, Surrendered)
+*   Issue Date
+*   Expiration Date
+*   Date of Last Renewal
+*   Vehicle Make
+*   Vehicle Model
+*   Vehicle Year
+*   Vehicle Type (e.g., Sedan, SUV, Wheelchair Accessible)
+*   Associated **Owner/Operator License ID** (Dataset 7)
+*   Associated **Insurance Policy ID** (Dataset 10)
+
+**3. Enforcement Actions**
+
+**Quotes:**
+*   "enforcement actions undertaken by the commission, whether the enforcement action was dismissed or settled, or if a penalty was imposed by the commission on the subject of the enforcement action." (Section 2302.a)
+*   "The information regarding enforcement actions shall include, but not be limited to, enforcement actions relating to illegal street hails, unlicensed vehicles, overcharging, and toll lane infractions." (Section 2302.a)
+*   "Enforcement actions shall be further disaggregated by the subject matter of the action and geographic location." (Section 2302.a)
+*   "charges of violations of the provisions of the administrative code and rules promulgated thereunder shall be adjudicated by the administrative tribunal established by the commission" (Section 2303.a)
+*   "The commission shall create an administrative tribunal to adjudicate charges of violation" (Section 2303.c.1)
+*   "The commission shall have the power to enforce its tribunal's decisions and orders imposing civil penalties, not to exceed ten thousand dollars for each respondent, for violations relating to unlicensed vehicles for hire and unlicensed drivers of vehicles for hire and for violations relating to the operation of commuter van services without authorization and the operation of unlicensed commuter vans and unlicensed drivers of commuter vans" (Section 2303.c.1)
+*   "Any such decision or order of the commission's administrative tribunal imposing a civil penalty... shall constitute a judgment rendered by the commission" (Section 2303.c.1)
+*   "Before a judgment based upon a default may be so entered the commission or administrative tribunal shall have first notified the respondent by first class mail" (Section 2303.c.1)
+*   "the notice of violation shall have been served in the same manner as is prescribed for service of process" (Section 2303.c.2)
+
+**Why:** To track all violations, adjudications, penalties, and license actions, which are critical for public safety and mandated reporting.
+
+**One row represents:** A single enforcement action (e.g., a violation notice, a tribunal adjudication, a license suspension/revocation).
+
+**Covers:** All stages of enforcement, from initial violation notice to final judgment and penalty imposition, including license revocations/suspensions.
+
+**Columns:**
+*   Enforcement Action ID
+*   Date of Violation
+*   Date of Notice of Violation
+*   Violation Type (e.g., Illegal Street Hail, Unlicensed Vehicle, Overcharging, Toll Lane Infraction, Unlicensed Driver, Service Refusal)
+*   Subject of Action (Person/Entity)
+*   Subject **License ID** (can link to Dataset 1, 2, 7, or 8)
+*   Subject License Type
+*   Geographic Location of Violation (e.g., Borough, Coordinates)
+*   Enforcement Officer ID
+*   Date of Tribunal Adjudication
+*   Adjudication Outcome (Dismissed, Settled, Penalty Imposed, License Action)
+*   Penalty Amount (if applicable)
+*   Judgment Entry Date (if applicable)
+*   License Action Taken (Suspension, Revocation, etc.)
+*   Duration of License Action (if applicable)
+*   Date Notice of Default Mailed (if applicable)
+*   Date Notice of Violation Served
+*   Method of Service (e.g., First Class Mail, Personal Service)
+*   Associated **Complaint ID** (Dataset 4, if initiated by a complaint)
+
+**4. Public Complaints Log**
+
+**Quotes:**
+*   "annual report... contain information regarding complaints received by the commission from the public, including, but not limited to, complaints of overcharging" (Section 2302.a)
+*   "Complaint information shall be disaggregated by the type of license held by the person or entity who is the subject of the complaint or action and the month during which the complaint was received" (Section 2302.a)
+*   "Complaint information shall be further disaggregated to the extent practicable by the subject matter of the complaint." (Section 2302.a)
+*   "disaggregated complaint and enforcement information shall be posted on the commission's website updated no less than monthly." (Section 2302.a)
+*   "Compile and report statistics relating to discrimination against passengers or prospective passengers on the basis of ethnicity or race, gender, disability and other categories as appropriate" (Section 2305.c.2)
+*   "Examine and address issues related to discrimination in the taxi and for-hire vehicle industry, including but not limited to refusals by drivers to provide service to passengers or prospective passengers on the basis of ethnicity or race, disability, gender, sexual orientation or destination" (Section 2305.c.3)
+*   "Provide one or more mechanisms by which passengers and prospective passengers can submit complaints of discrimination directly to the commission, and ensure such complaints are processed by the appropriate authorities" (Section 2305.c.8)
+
+**Why:** To track all public complaints, especially those related to discrimination and overcharging, for mandated reporting and operational improvement.
+
+**One row represents:** A single complaint received from the public.
+
+**Covers:** All complaints received by the commission, including general service complaints, overcharging, and discrimination.
+
+**Columns:**
+*   Complaint ID
+*   Date Received
+*   Complaint Type (e.g., Overcharging, Service Refusal, Discrimination, Driver Conduct, Vehicle Condition)
+*   Subject Matter of Complaint (detailed description)
+*   Complainant Information (anonymized for public reporting, but available internally)
+*   Subject of Complaint (Driver, Vehicle, Owner/Operator)
+*   Subject **License ID** (can link to Dataset 1, 2, 7)
+*   Subject License Type
+*   Geographic Location of Incident (if applicable)
+*   Discrimination Basis (if applicable: Ethnicity/Race, Gender, Disability, Sexual Orientation, Destination, Other)
+*   Complaint Status (Received, Under Review, Investigated, Resolved, Referred to Enforcement)
+*   Date of Resolution
+*   Resolution Details
+*   Associated **Enforcement Action ID** (Dataset 3, if escalated)
+
+**5. Vehicle Inspections**
+
+**Quotes:**
+*   "standards for equipment safety and design; standards for noise and air pollution control" (Section 2300)
+*   "quarterly report... average wait time to secure a vehicle inspection at the commission's assigned inspection facility... number of instances when the wait for an inspection exceeds four weeks. All information shall be disaggregated by vehicle type." (Section 2302.b)
+*   "Requirements of standards of safety, and design, comfort, convenience, noise and air pollution control and efficiency in the operation of vehicles and auxiliary equipment." (Section 2303.b.6)
+
+**Why:** To ensure vehicle safety, design, and environmental compliance, and to track inspection facility performance for quarterly reporting.
+
+**One row represents:** A single vehicle inspection event.
+
+**Covers:** All inspections conducted on licensed vehicles, including safety, design, noise, and air pollution checks.
+
+**Columns:**
+*   Inspection ID
+*   **Vehicle License ID** (Dataset 2)
+*   Vehicle Type
+*   Inspection Date
+*   Inspection Facility ID
+*   Inspection Start Time
+*   Inspection End Time
+*   Wait Time for Inspection (calculated from appointment time/arrival to start time)
+*   Inspector ID
+*   Inspection Outcome (Pass, Fail, Conditional Pass)
+*   Deficiencies Found (e.g., Safety, Design, Noise, Air Pollution, Equipment)
+*   Required Repairs/Actions
+*   Re-inspection Date (if applicable)
+*   Date of Next Scheduled Inspection
+
+**6. Trip Data**
+
+**Quotes:**
+*   "In determining the rates of fare, the commission may consider all facts which in its judgment have a bearing on a proper determination, with due regard among other things to the time and distance of travel, to the character of the service provided, to the gross revenues derived from operation, to the net return derived from operation, to the expenses of operation including the income of drivers or operators, to the return upon capital actually expended and the necessity of making reservations out of income for surplus and contingencies, to the number of passengers transported, to the effect of fares upon the public and in relation to the fares for other forms of public transportation, and to the fares and practices with respect to similar services in other cities of the United States." (Section 2304.c)
+
+**Why:** To gather granular data on operations, essential for setting and revising fare rates and understanding industry economics.
+
+**One row represents:** A single for-hire trip or fare transaction.
+
+**Covers:** All trips conducted by licensed vehicles, capturing details necessary for financial and operational analysis.
+
+**Columns:**
+*   Trip ID
+*   **Vehicle License ID** (Dataset 2)
+*   **Driver/Chauffeur License ID** (Dataset 1)
+*   Trip Start Time
+*   Trip End Time
+*   Pickup Location (e.g., Coordinates, Borough)
+*   Drop-off Location (e.g., Coordinates, Borough)
+*   Distance Traveled (miles)
+*   Waiting Time (minutes)
+*   Number of Passengers
+*   Fare Charged (excluding tolls/trunks)
+*   Trunk Charge (if applicable)
+*   Tolls Charged (if applicable)
+*   Total Revenue for Trip
+*   Payment Method
+*   Service Type (e.g., Taxi, Limousine, Commuter Van, Wheelchair Accessible)
+
+**7. Owner/Operator Licenses**
+
+**Quotes:**
+*   "set standards and criteria for the licensing of vehicles, drivers and chauffeurs, owners and operators engaged in such services" (Section 2300)
+*   "The issuance, revocation, suspension of licenses for drivers, chauffeurs, owners or operators of vehicles, other than licenses issued pursuant to state law, and for taxicab brokers and the establishment of qualifying standards required for such licensees." (Section 2303.b.5)
+
+**Why:** To regulate the business entities that own and operate for-hire vehicles, ensuring they meet established standards.
+
+**One row represents:** A single owner or operator license.
+
+**Covers:** All licenses issued, revoked, or suspended for individuals or entities owning/operating for-hire vehicles.
+
+**Columns:**
+*   Owner/Operator License ID
+*   Owner/Operator Name (Individual or Business Name)
+*   Business Type (e.g., Individual, Corporation, Partnership)
+*   Contact Information (Address, Phone, Email)
+*   License Status (Active, Suspended, Revoked, Expired)
+*   Issue Date
+*   Expiration Date
+*   Date of Last Renewal
+*   Qualifying Standards Met (e.g., financial responsibility, business registration)
+*   Associated **Vehicle License IDs** (Dataset 2, multiple possible)
+*   Associated **Driver/Chauffeur License IDs** (Dataset 1, multiple possible)
+*   Associated **Insurance Policy ID** (Dataset 10)
+
+**8. Taxicab Broker Licenses**
+
+**Quotes:**
+*   "The issuance, revocation, suspension of licenses for drivers, chauffeurs, owners or operators of vehicles, other than licenses issued pursuant to state law, and for taxicab brokers and the establishment of qualifying standards required for such licensees." (Section 2303.b.5)
+
+**Why:** To regulate individuals or entities involved in brokering taxicab licenses/medallions.
+
+**One row represents:** A single taxicab broker license.
+
+**Covers:** All licenses issued, revoked, or suspended for taxicab brokers.
+
+**Columns:**
+*   Broker License ID
+*   Broker Name (Individual or Business Name)
+*   Contact Information (Address, Phone, Email)
+*   License Status (Active, Suspended, Revoked, Expired)
+*   Issue Date
+*   Expiration Date
+*   Date of Last Renewal
+*   Qualifying Standards Met (e.g., background check, financial standing)
+*   Details of brokered transactions (if tracked by TLC, otherwise implied by other datasets)
+
+**9. Fare Rate Schedules**
+
+**Quotes:**
+*   "establish certain rates" (Section 2300)
+*   "The amount to be charged and collected for the hire of a taxicab for one or more passengers within the city of New York shall be the total of the following items: For the first one-fifth mile or fraction thereof, or the first one minute of waiting time or fraction thereof, or the combination thereof, sixty cents. For each additional one-fifth mile or fraction thereof, or seventy-two seconds of waiting time or fraction thereof, or the combination thereof, ten cents. Fifty cents for each trunk. All bridge and tunnel and ferry tolls." (Section 2304.a)
+*   "the commission shall prescribe, revise and otherwise regulate reasonable rates of fare which may be charged and collected for each type of service rendered." (Section 2304.b)
+*   "No determination by the commission changing the rates of fare shall be made except after a public hearing before the commission, at which evidence shall be taken." (Section 2304.d)
+
+**Why:** To maintain a historical record of all legally prescribed and revised fare rates for different services.
+
+**One row represents:** A specific fare rate component for a given service type and effective period.
+
+**Covers:** All current and historical fare rate structures for various for-hire services.
+
+**Columns:**
+*   Rate Schedule ID
+*   Service Type (e.g., Taxi, Limousine, Commuter Van, Wheelchair Accessible)
+*   Effective Date
+*   End Date (if superseded)
+*   Rate Component Type (e.g., Initial Meter Drop, Per Mile, Per Minute Wait, Trunk Fee, Toll Policy)
+*   Rate Value (e.g., $0.60, $0.10, $0.50)
+*   Unit (e.g., 1/5 mile, 72 seconds, per trunk)
+*   Associated **Public Hearing ID** (Dataset 13, if changed via hearing)
+
+**10. Insurance Policies**
+
+**Quotes:**
+*   "standards of insurance and minimum coverage" (Section 2300)
+*   "Requirements for the maintenance of financial responsibility, insurance and minimum coverage." (Section 2303.b.7)
+
+**Why:** To ensure all licensed vehicles and operators maintain the required financial responsibility and insurance coverage.
+
+**One row represents:** A single insurance policy covering a licensed entity or vehicle.
+
+**Covers:** All insurance policies submitted and approved for licensed vehicles, drivers, and owners/operators.
+
+**Columns:**
+*   Insurance Policy ID
+*   Policy Holder Type (Vehicle, Driver, Owner/Operator)
+*   Policy Holder **License ID** (can link to Dataset 1, 2, or 7)
+*   Insurance Provider Name
+*   Policy Number
+*   Coverage Start Date
+*   Coverage End Date
+*   Minimum Coverage Met (Yes/No)
+*   Financial Responsibility Verified (Yes/No)
+*   Date of Verification
+
+**11. Licensee Financial Reports**
+
+**Quotes:**
+*   "The establishment of, and the requirement of adherence to, uniform system of accounts, with the right of the commission to inspect books and records and to require the submission of such reports as the commission may determine." (Section 2303.b.8)
+*   "In determining the rates of fare, the commission may consider all facts... to the gross revenues derived from operation, to the net return derived from operation, to the expenses of operation including the income of drivers or operators, to the return upon capital actually expended and the necessity of making reservations out of income for surplus and contingencies" (Section 2304.c)
+
+**Why:** To collect financial data from licensees, crucial for rate-setting and industry oversight.
+
+**One row represents:** A single financial report submitted by a licensee for a specific reporting period.
+
+**Covers:** Financial reports submitted by owners/operators, providing data on revenues, expenses, and capital.
+
+**Columns:**
+*   Report ID
+*   **Owner/Operator License ID** (Dataset 7)
+*   Reporting Period (Start Date, End Date)
+*   Date Submitted
+*   Gross Revenues from Operation
+*   Net Return from Operation
+*   Total Expenses of Operation
+*   Driver/Operator Income (aggregated or average)
+*   Return Upon Capital Expended
+*   Reservations for Surplus and Contingencies
+*   Number of Passengers Transported (aggregated for period)
+*   Report Status (Received, Reviewed, Accepted)
+
+**12. Driver Training Attendance**
+
+**Quotes:**
+*   "Develop and implement trainings for drivers that promote cultural sensitivity towards passengers and prospective passengers and educate drivers about discriminatory treatment in the taxi and for-hire vehicle industry. Such trainings shall be conducted by persons with experience. Such trainings shall include best practices on how drivers can meet the needs of passengers with disabilities, including but not limited to caring for mobility devices, communicating with persons who are hearing impaired and alerting passengers with visual impairments awaiting a ride once the vehicle has arrived" (Section 2305.c.5)
+*   "report containing... information on the programs and resources described in paragraphs 4, 5, 6, 7 and 8 of subdivision c of this section, including statistics on how many people utilized these programs and resources." (Section 2305.d)
+
+**Why:** To track individual driver participation in mandatory and optional cultural sensitivity and disability awareness trainings.
+
+**One row represents:** A single driver's attendance at a training event.
+
+**Covers:** All drivers attending cultural sensitivity, discrimination, and disability awareness trainings.
+
+**Columns:**
+*   Attendance ID
+*   **Driver/Chauffeur License ID** (Dataset 1)
+*   **Training Event ID** (Dataset 13)
+*   Date of Attendance
+*   Completion Status (Completed, Partial)
+*   Score/Evaluation (if applicable)
+
+**13. Driver Training Events**
+
+**Quotes:**
+*   "Develop and implement trainings for drivers that promote cultural sensitivity towards passengers and prospective passengers and educate drivers about discriminatory treatment in the taxi and for-hire vehicle industry. Such trainings shall be conducted by persons with experience. Such trainings shall include best practices on how drivers can meet the needs of passengers with disabilities, including but not limited to caring for mobility devices, communicating with persons who are hearing impaired and alerting passengers with visual impairments awaiting a ride once the vehicle has arrived" (Section 2305.c.5)
+*   "Assess the feasibility of driver-to-driver mentorship and cultural awareness programs which the commission may implement as warranted" (Section 2305.c.6)
+*   "report containing... information on the programs and resources described in paragraphs 4, 5, 6, 7 and 8 of subdivision c of this section, including statistics on how many people utilized these programs and resources." (Section 2305.d)
+
+**Why:** To track the schedule, content, and reach of cultural sensitivity, discrimination, and disability awareness training programs.
+
+**One row represents:** A single training event or session.
+
+**Covers:** All cultural sensitivity, discrimination, and disability awareness training events offered to drivers.
+
+**Columns:**
+*   Training Event ID
+*   Training Title/Topic
+*   Training Date
+*   Training Start Time
+*   Training End Time
+*   Location/Platform (e.g., Online, Facility Name)
+*   Instructor Name/ID
+*   Training Type (e.g., Cultural Sensitivity, Disability Awareness, Mentorship Program)
+*   Total Attendees (count, derived from Dataset 12)
+*   Program/Resource Description (for reporting)
+
+**14. Public Hearings**
+
+**Quotes:**
+*   "No determination by the commission changing the rates of fare shall be made except after a public hearing before the commission, at which evidence shall be taken." (Section 2304.d)
+*   "At any public hearing involving a change in the rates of fare, the burden of proof to show that existing rates are not reasonable shall be upon such segment of the business or industry affected by this chapter as is involved in the change in rates." (Section 2304.e)
+*   "The costs reasonably attributable to a public hearing involving a change in the rates of fare, including the expenses of the commission and the compensation of its officers, agents and employees, shall be charged to and paid by such segment of the business or industry affected by this chapter as is involved in the change in rates." (Section 2304.f)
+
+**Why:** To track all public hearings, especially those for fare changes, including their costs and outcomes.
+
+**One row represents:** A single public hearing event.
+
+**Covers:** All public hearings conducted by the commission, particularly those related to fare rate changes.
+
+**Columns:**
+*   Public Hearing ID
+*   Hearing Date
+*   Hearing Topic (e.g., Fare Rate Change, Policy Review)
+*   Purpose of Hearing
+*   Outcome/Decision (e.g., Rate Change Approved, Policy Adopted)
+*   Associated **Fare Rate Schedule ID** (Dataset 9, if applicable)
+*   Total Hearing Costs
+*   Industry Segment Charged
+*   Amount Billed to Industry
+*   Amount Paid by Industry
+*   Date of Payment
+
+**15. Pilot Program Approvals**
+
+**Quotes:**
+*   "development and effectuation of a broad public policy of transportation affected by this chapter as it relates to forms of public transportation in the city, including innovation and experimentation in relation to type and design of equipment, modes of service and manner of operation, which for limited purposes and limited periods of time may depart from the requirements otherwise established for licensed vehicles pursuant to this chapter." (Section 2303.b.9)
+*   "No resolution of approval of a pilot program shall be approved by the commission unless such resolution is posted in a prominent location on the commission's website and electronically transmitted to each member of the commission at least three calendar days, exclusive of Sundays, prior to the commission's vote to approve or reject such resolution of approval" (Section 2303.d)
+
+**Why:** To track the approval and details of innovative pilot programs that may temporarily deviate from standard regulations.
+
+**One row represents:** A single approved pilot program.
+
+**Covers:** All pilot programs approved by the commission for innovation and experimentation.
+
+**Columns:**
+*   Pilot Program ID
+*   Program Name
+*   Approval Date
+*   Start Date
+*   End Date
+*   Program Description
+*   Areas of Regulatory Departure
+*   Resolution Posting Date (on website)
+*   Electronic Transmission Date (to commission members)
+*   Commission Vote Outcome
+*   Evaluation Criteria
+*   Evaluation Results (summary or link to detailed report)
+
+**16. Commission Member Roster**
+
+**Quotes:**
+*   "The commission shall consist of nine members to be appointed by the mayor with the advice and consent of the city council" (Section 2301.a)
+*   "Such members shall be appointed for terms of seven years." (Section 2301.b)
+*   "Vacancies other than by expiration of a term shall be filled for the unexpired term." (Section 2301.b)
+*   "The mayor may remove any such member for cause, upon stated charges." (Section 2301.b)
+*   "The mayor shall designate one member of the commission to act as the chairman and chief executive officer." (Section 2301.c)
+
+**Why:** To maintain an official record of all commission members, their appointments, terms, and roles.
+
+**One row represents:** A single appointment term for a commission member.
+
+**Covers:** All individuals appointed to the commission, including their roles and term details.
+
+**Columns:**
+*   Member ID
+*   Member Name
+*   Appointment Date
+*   Term Start Date
+*   Term End Date (original)
+*   Actual Term End Date (if different)
+*   Borough of Residence (for council-recommended members)
+*   Role (Member, Chairman)
+*   Appointment Type (Initial, Vacancy Fill)
+*   Reason for Departure (if applicable: Term Expiration, Resignation, Removal)
+*   Date of Removal (if applicable)
+*   Stated Charges for Removal (if applicable)
+
+**17. Grant Applications/Awards Tracking**
+
+**Quotes:**
+*   "Assistance to the business and industry of public transportation affected by this chapter in aid of the continuation, development and improvement of service and the safety and convenience of the public, including assistance in securing federal and state grants." (Section 2303.b.10)
+
+**Why:** To track efforts and outcomes related to securing federal and state grants for the industry.
+
+**One row represents:** A single grant application or award related to the industry.
+
+**Covers:** All federal and state grant applications submitted or awarded to the TLC or the industry it supports.
+
+**Columns:**
+*   Grant ID
+*   Grant Program Name
+*   Funding Source (Federal, State)
+*   Application Date
+*   Applicant (TLC or Industry Entity)
+*   Grant Amount Requested
+*   Grant Amount Awarded
+*   Award Date
+*   Grant Status (Applied, Awarded, Rejected, Completed)
+*   Purpose of Grant
+*   Reporting Requirements Met (Yes/No)
+
+---
+
+**Non-Tabular Information:**
+
+This information is mentioned in the charter but is not typically maintained in a tabular, measurement-level format.
+
+*   **Rules and Regulations:** "The formulation, promulgation and effectuation of rules and regulations reasonably designed to carry out the purposes, terms and provisions of this chapter." (Section 2303.b.11)
+*   **Administrative Code Provisions:** "charges of violations of the provisions of the administrative code and rules promulgated thereunder" (Section 2303.a)
+*   **Public Records of Commission Proceedings:** "All proceedings of the commission and all documents and records in its possession shall be public records" (Section 2302.a)
+*   **Public Awareness Campaign Materials:** "Expand public awareness regarding service refusals by drivers through means such as, but not limited to, running a public awareness campaign and conducting outreach to community groups" (Section 2305.c.7)
+*   **Public Hearing Evidence/Testimony:** "No determination by the commission changing the rates of fare shall be made except after a public hearing before the commission, at which evidence shall be taken." (Section 2304.d)
+*   **Pilot Program Resolutions:** "No resolution of approval of a pilot program shall be approved by the commission unless such resolution is posted in a prominent location on the commission's website and electronically transmitted to each member of the commission" (Section 2303.d)
+*   **Training Curricula/Materials:** "Develop and implement trainings for drivers that promote cultural sensitivity" (Section 2305.c.5)
+*   **Research Documents/Findings:** "Examine and address issues related to discrimination in the taxi and for-hire vehicle industry" (Section 2305.c.3)
+*   **Annual and Quarterly Reports:** "make an annual report to the city council" (Section 2302.a), "make a quarterly report to the city council" (Section 2302.b), "the director shall post on the commission's website and submit to the mayor and the speaker of the council a report" (Section 2305.d)
+*   **Website Content:** "disaggregated complaint and enforcement information shall be posted on the commission's website updated no less than monthly." (Section 2302.a), "resolution is posted in a prominent location on the commission's website" (Section 2303.d), "the director shall post on the commission's website" (Section 2305.d)

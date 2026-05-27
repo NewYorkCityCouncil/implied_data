@@ -1,0 +1,815 @@
+**1. Fire Incident & Emergency Response Records**
+
+**Quotes:**
+*   "A fire bureau in the charge of the chief of the department which shall have charge of the extinguishment of fires and the necessary and incidental protection of life and property in connection therewith." (§ 15-101.b.1)
+*   "The department shall track the duration of time between a report to a 911 operator to which fire units or ambulances are required to respond and the time when the first fire unit, which shall include ladders and engines only, or the first ambulance unit, arrives on scene in the following categories: (1) Average response time to structural fires; (2) Average response time to non-structural fires; (3) Average response time to non-fire emergencies; (4) Average response time to medical emergencies by ambulance units, in total and disaggregated by segment; (5) Average response time to medical emergencies by fire units, in total and disaggregated by segment; (6) Percentage of response time to Advanced Life Support medical emergencies by Advanced Life support ambulances, in total and disaggregated by segment, in the following categories: (i) less than 6 minutes, (ii) between 6 and 10 minutes, (iii) between 10 and 20 minutes, and (iv) more than 20 minutes; and (7) Percentage of response time to structural and non-structural fires by fire units in the following categories: (i) less than 5 minutes, (ii) between 5 and 10 minutes, (iii) between 10 and 20 minutes, and (iv) more than 20 minutes." (§ 15-129.b)
+*   "The department shall submit a monthly and yearly report to the council and to the mayor that it shall also post on its website, detailing the citywide response times for each category required herein, disaggregated by borough, community district, and division. Each such report shall include the department's most current definitions of all relevant segments." (§ 15-129.c)
+*   "For purposes of this section, the following terms have the following meanings: Advanced life support unit. The term "advanced life support unit" means an advanced life support ambulance or first responder unit. Division. The term "division" means any division as defined by the department. Life threatening medical emergency. The term "life threatening medical emergency" means any emergency categorized by the department as a life threatening medical emergency." (§ 15-129.d)
+*   "Whether a smoke detector or alarm was found at the location of any fire in which there was a civilian fire fatality or life-threatening injury during the preceding calendar year. For each fire in which there was a civilian fire fatality or life-threatening injury where a smoke detector or alarm was found, such report shall indicate the technology used by such smoke detector or alarm and whether such smoke detector or alarm was operational, provided that such information can be ascertained. Such report may also include any other information relevant in determining the role of smoke detectors or alarms in any fire in which there was a civilian fire fatality or life-threatening injury." (§ 15-131.a.1)
+*   "Whether a fire sprinkler was found at the location of any fire greater than a first alarm fire during the preceding calendar year. For each fire greater than a first alarm fire in which a fire sprinkler was found, such report shall indicate whether such sprinkler was operational and activated during such incident, provided that it is possible for the department to obtain such information. For purposes of this subdivision, "first alarm fire" means a fire to which the fire department deploys three or fewer fire engines." (§ 15-131.a.2)
+*   "The department shall ascertain from the office of the chief medical examiner the cause of death for any civilian fire fatality, as defined by such office. The report required by subdivision a of this section shall be disaggregated by each type of such cause." (§ 15-131.b)
+*   "An agency designated by the mayor shall notify a council member when an all hands fire occurs within the district of such council member. Such notification shall be sent via electronic mail within 3 hours of the fire department deploying its personnel to the scene of such incident, and shall include: 1. The date and time of such fire; 2. The address of such fire; and 3. Details of the fire department’s emergency response to such fire, including but not limited to, the initial and highest alarm level of such fire." (§ 15-150.b)
+*   "The fire commissioner shall distribute the guide developed pursuant to subdivision a of this section to residents displaced by a residential fire or otherwise affected by such fire through the use of a quick response code posted on department vehicles responding to the scene of such fire, and any other manner the fire commissioner determines practicable and effective." (§ 15-151.c)
+
+**Why:** Tracking every emergency response is fundamental to the agency's mission and required for performance reporting.
+**One row represents:** A single emergency incident to which the department responds.
+**Covers:** All fire, non-fire, and medical emergency incidents responded to by the department.
+**Columns:**
+*   Incident ID
+*   911 Report Timestamp
+*   Incident Type (e.g., Structural Fire, Non-Structural Fire, Non-Fire Emergency, Medical Emergency - ALS, Medical Emergency - BLS)
+*   Incident Location (Address, Borough, Community District, Division)
+*   First Unit Dispatched Timestamp
+*   First Fire Unit Arrival Timestamp
+*   First Ambulance Unit Arrival Timestamp
+*   Responding Fire Units (list of **Fire Department Asset ID**s from Dataset 10)
+*   Responding Ambulance Units (list of **EMS Unit ID**s from Dataset 18)
+*   Initial Alarm Level
+*   Highest Alarm Level
+*   Civilian Fatalities (Count)
+*   Civilian Life-Threatening Injuries (Count)
+*   Smoke Detector/Alarm Found (Yes/No)
+*   Smoke Detector/Alarm Technology
+*   Smoke Detector/Alarm Operational (Yes/No)
+*   Fire Sprinkler Found (Yes/No)
+*   Fire Sprinkler Operational (Yes/No)
+*   Fire Sprinkler Activated (Yes/No)
+*   Cause of Civilian Fatality (from Medical Examiner)
+*   All Hands Fire (Yes/No)
+*   Council Member Notified (Yes/No)
+*   Notification Timestamp
+*   Residential Fire Emergency Response Guide Distributed (Yes/No)
+*   **Building ID** (from Dataset 14, if applicable)
+
+**2. Fire Prevention & Safety Inspection Records**
+
+**Quotes:**
+*   "Such bureau shall perform the duties and exercise the powers of the commissioner in relation to (1) combustibles, chemicals, explosives, flammables, or other dangerous substances, articles, compounds or mixtures, (2) the prevention of fires or danger to life or property therefrom, excluding provisions relating to structural conditions and (3) protection against fire and panic, obstruction of aisles, passageways and means of egress, standees, fire protection and fire extinguishing appliances, and fire prevention in licensed places of assembly." (§ 15-101.b.1)
+*   "The commissioner shall have the power to enter in person or by his or her duly authorized employees, the buildings or premises which are provided, upon the application of the owners or agents thereof, or which are directed by the commissioner to be provided, with the means of communicating alarms of fire directly to the department, for the purpose of maintaining, repairing, examining or installing the same." (§ 15-127.b.2)
+*   "any member of the uniformed force or authorized representative of the department may enter any of such buildings, at any time, for the purpose of inspecting such apparatus or appliances." (§ 15-127.c.1)
+*   "The department shall inspect all fire hydrants maintained by the department of environmental protection at least twice per calendar year, the first inspection occurring by June 30 and the second inspection occurring by December 31." (§ 15-134.a)
+*   "The department shall review and audit records of fire safety violations provided to it by the department of housing preservation and development pursuant to section 27-2046.5. The results of this audit shall be used to inform the department's building inspection program." (§ 15-141.a)
+*   "Upon finding that a violation of any law, the enforcement of which is charged upon the department, exists in any vessel, premises, ground, structure, building, or underground passage, the commissioner, the chief fire marshal, or such other member of the department designated by such commissioner, may issue a printed or written order directing the owner or occupant to alter, remedy, or remove such violation in such manner and in such reasonable time as is stated therein." (§ 15-223)
+
+**Why:** Regular inspections are critical for fire prevention, safety, and compliance with legal requirements.
+**One row represents:** A single inspection event conducted by the department.
+**Covers:** All fire prevention, safety, and compliance inspections of buildings, premises, vessels, and fire hydrants.
+**Columns:**
+*   Inspection ID
+*   **Building/Premises ID** (from Dataset 14)
+*   **Fire Hydrant ID** (from Dataset 11, if applicable)
+*   Inspection Date
+*   Inspector **Employee ID** (from Dataset 5)
+*   Inspection Type (e.g., Combustibles, Fire Alarm System, Means of Egress, Fire Drill, Fire Hydrant, General Fire Safety)
+*   Inspection Outcome (e.g., Compliant, Violation Found, Needs Follow-up)
+*   Details of Findings
+*   Reference to **Violation ID** (from Dataset 3, if a violation was issued)
+*   Date of next scheduled inspection
+
+**3. Violation & Enforcement Action Records**
+
+**Quotes:**
+*   "In the performance of their official duties, the uniformed and civilian members of the bureau of fire prevention shall have the powers and perform the duties of peace officers, but their power to make arrests and serve process in criminal actions shall be restricted to cases arising under laws relating to (1) the manufacture, storage, sale, transportation or use of combustibles, chemicals, explosives, flammables or other dangerous substances, articles, compounds or mixtures and the control of fire hazards, (2) the prevention of fires or danger to life or property therefrom, excluding provisions relating to structural conditions and (3) fire perils." (§ 15-101.b.1)
+*   "It shall be a misdemeanor, punishable by imprisonment for a period of not less than sixty days, for a person not enrolled or employed, or appointed by the department, to wear the whole or any part of the uniform or insignia prescribed to be worn by the rules or regulations of the department, or to do any act as firefighter not duly authorized by the commissioner, or to interfere with the property or apparatus of the department in any manner unless by the authority of the commissioner." (§ 15-120.b)
+*   "It shall be unlawful for any person in any way to obstruct the operations of the department in connection with any such fire, or to disobey any lawful command of the officers of such department in charge at the scene of such fire, or of the police in cooperating with them." (§ 15-125)
+*   "It shall be unlawful for any person to experiment or tamper with such system for any purpose whatever, or to have or possess any key thereof, without the authority of the commissioner. It shall be unlawful for any person to post, paint, impress, or in any way affix to any pole connected with the fire alarm telegraph, or any box, wire or other appliance connected therewith, any placard, sign, broadside, notice, or announcement of any kind; or to cut, mutilate, alter, mar, deface, cover, obstruct or interfere with the same in any manner whatsoever; or to paint, or cause to be painted, the poles of any other telegraph, or any other poles on the lines thereof, in a color or colors similar to those of poles upon which are fire alarm boxes, or in imitation thereof; or to consent, allow, or be privy to any of such things done for him or her or upon his or her behalf." (§ 15-126.a)
+*   "It shall be unlawful for any kite to be flown, raised, or put in any street adjacent to the lines of such telegraph, or to be allowed to become entangled with the wires or apparatus thereof." (§ 15-126.b)
+*   "Any person who shall violate, or refuse, or neglect to comply with this provision shall, upon conviction thereof, be punished by a fine of not more than five hundred dollars, or by imprisonment not exceeding six months, or by both; and any such person shall, also, for each offense, be subject to the payment of a penalty in the sum of two hundred fifty dollars, to be recovered in a civil action brought in the name of the commissioner." (§ 15-127.b.1)
+*   "The department shall require owners of multiple dwellings to post a notice in conspicuous locations indicating that those escaping a fire should close all doors behind them." (§ 15-135)
+*   "The department shall review and audit records of fire safety violations provided to it by the department of housing preservation and development pursuant to section 27-2046.5. The results of this audit shall be used to inform the department's building inspection program." (§ 15-141.a)
+*   "It shall be unlawful to obstruct the entrance to or exit from any fire station." (§ 15-202)
+*   "It shall be unlawful for any person in or upon any vehicle to refuse the right of way, or in any way obstruct any fire apparatus, or any apparatus of the insurance patrol, or any of such officers while in the performance of duty." (§ 15-203)
+*   "It shall be unlawful for any person to use or possess a motor vehicle which is designed, designated, painted, colored or provided with insignia to have the appearance or take on the form of the apparatus and vehicles of the department or fire patrol, excepting emergency vehicles of public service corporations or companies doing construction or excavation work under franchises, without an authorization in writing issued by the commissioner, in his or her discretion, and in accordance with such regulations as he or she may prescribe." (§ 15-204)
+*   "It shall be unlawful in any manner to obstruct the use of any fire hydrant, or to throw or pile, or allow any snow or ice or other material or thing to be thrown or piled (i) upon a fire hydrant, (ii) within two feet of a fire hydrant or (iii) within a fire hydrant street area. All material or things found obstructing any fire hydrant may be forthwith removed by the officers or employees of the department, at the risk, cost and expense, of the owner, lessee or tenant of the premises fronting such hydrant." (§ 15-205.b.1)
+*   "No newsstand may be located within ten feet from either side of a fire hydrant, except that this prohibition shall not apply to any newsstand which was first licensed by the department of consumer and worker protection before August 1, 1979, where the person who held the license for such newsstand on August 1, 1991 continues to be the licensee for such newsstand; provided, however, that where a newsstand which was first licensed before August 1, 1979 is reconstructed in its entirety or in substantial part, which reconstruction was commenced on or after August 1, 1991, such newsstand shall be subject to such prohibition." (§ 15-205.b.2)
+*   "All snow and ice accumulating within a space identified in paragraph 1 of subdivision b of this section shall be removed by the owner, lessee or tenant of the premises fronting such space within four hours after the snow ceases to fall, except that (i) such owner, lessee or tenant shall not be required to remove snow and ice from the fire hydrant street area or from the property of such owner, lessee or tenant and (ii) the time between 9:00 p.m. and 7:00 a.m. shall not be included in the aforementioned period of four hours." (§ 15-205.c)
+*   "It shall be unlawful for the operator of any vehicle to drive over or across any hose in use, or about to be used, or while lying in the street after being used by the department." (§ 15-206)
+*   "It shall be unlawful for any person to disobey the lawful orders of a department official, fire officer or firefighter or to offer resistance or interfere with the lawful activities of said officials and members while engaged in the performance of fire fighting duties or to commit any act likely to prevent a fire from being extinguished." (§ 15-208)
+*   "Any person who shall wilfully or designedly give, raise, create or continue a false alarm of fire, or who shall wilfully tamper, meddle or interfere with any station or signal box of any fire alarm telegraph system, or any auxiliary fire appliance, or who shall wilfully break, injure, deface or remove any such box or station, or who shall wilfully break, injure, deface or remove any of the wires, poles or other supports and appliances connected with or forming a part of any fire alarm telegraph system, shall be punished by imprisonment not exceeding one year or a fine not exceeding ten thousand dollars, or both, for each offense." (§ 15-214.a)
+*   "Any person aiding or abetting or assisting in the commission of any of the acts described in subdivision a of this section, shall be punished by imprisonment not exceeding one year or a fine not exceeding ten thousand dollars, or both, for each offense." (§ 15-214.b)
+*   "It shall be unlawful for any person to tamper with a system of automatic sprinklers in any building or occupancy by damaging such a system or otherwise preventing it from properly functioning." (§ 15-215.a)
+*   "It shall be unlawful for any person to tamper with a system of automatic sprinklers in any building or occupancy by causing such a system to activate or otherwise release its fire extinguishing agent when there is no fire condition or other public safety consideration requiring such activation or release." (§ 15-215.b)
+*   "Any person who shall violate or fail to comply with any laws, rules, or regulations enforceable by the department, unless a different penalty is specifically provided, shall be guilty of a violation and upon conviction thereof shall be punished by a fine of not more than five thousand dollars for each offense. Such person shall also be subject to the payment of a civil penalty of not more than five thousand dollars which may be recovered in a civil action brought in the name of the commissioner." (§ 15-216.a)
+*   "Any person who shall knowingly violate or fail to comply with any laws, rules, or regulations enforceable by the department, unless a different penalty is specifically provided, shall be guilty of a misdemeanor and, upon conviction thereof, shall be punished by a fine of not more than ten thousand dollars or imprisonment for not more than six months or both for each offense. Such person shall also be liable for a civil penalty of not more than ten thousand dollars which may be recovered in a civil action brought in the name of the commissioner." (§ 15-216.b)
+*   "The commissioner is authorized and empowered to receive and collect all license fees mentioned in this title and chapter four of title twenty-seven of the code, and may sue for, and shall have the exclusive right of recovery of any and all fees, fines and penalties imposed hereunder, together with costs." (§ 15-217)
+*   "The violation, or supposed violation, of any of the provisions of this title or chapter four of title twenty-seven of the code." (§ 15-218.3)
+*   "Any person who shall knowingly make a false statement or who shall knowingly falsify or allow to be falsified any certificate, form, signed statement, application, report or certification of the correction of a violation required under the provisions of any laws, rules, or regulations enforceable by the department, shall be punished by a fine of not less than one thousand dollars nor more than five thousand dollars or by imprisonment not to exceed six months, or both for each such offense." (§ 15-220.1.a)
+*   "Such person shall also be liable for a civil penalty of not less than one thousand dollars nor more than five thousand dollars which may be recovered in a proceeding before the environmental control board. In any such proceeding which relates to a false statement in a certification filed pursuant to section 15-230, if an inspection made within six months after the filing of the certification finds a condition constituting a violation which is the same as the condition described in the notice of violation with respect to which such certification was filed, there shall be a rebuttable presumption that the condition described in such notice of violation continued and is the same condition found in the inspection." (§ 15-220.1.b)
+*   "Upon finding that a violation of any law, the enforcement of which is charged upon the department, exists in any vessel, premises, ground, structure, building, or underground passage, the commissioner, the chief fire marshal, or such other member of the department designated by such commissioner, may issue a printed or written order directing the owner or occupant to alter, remedy, or remove such violation in such manner and in such reasonable time as is stated therein." (§ 15-223)
+*   "Any person who shall violate or fail to comply with an order issued by the commissioner, except an order issued pursuant to section 15-230, shall be guilty of a violation and, upon conviction thereof, shall be punished by a fine not to exceed five thousand dollars. Such person shall also be subject to the payment of a civil penalty of not more than five thousand dollars to be recovered in a civil action brought in the name of the commissioner or in a proceeding before the environmental control board." (§ 15-223.1.a)
+*   "Any person who shall knowingly violate or fail to comply with any order of the commissioner, except an order issued pursuant to section 15-230, shall be guilty of a misdemeanor and upon conviction thereof shall be punished by a fine of not more than ten thousand dollars or imprisonment for not more than six months or both for each offense. Such person shall also be subject to a civil penalty of not more than ten thousand dollars to be recovered in a civil action brought in the name of the commissioner or in a proceeding before the environmental control board." (§ 15-223.1.b)
+*   "Orders of the department or of the commissioner shall be addressed to the owner or owners, lessees or occupants of the building, structure, enclosure, vessel, place or premises affected thereby. It shall be unnecessary to designate such owner or owners, lessees or occupants, by name in any such order, but the premises shall be designated in the address, so that the same may be readily identified. Service of any such order may be made by delivery of a copy thereof to the owner or any one of several owners, to a lessee or any one of several lessees, or to any person of suitable age and discretion in charge or apparently in charge of the premises, or if no person be found in charge of the premises then by affixing a copy of such order prominently upon the premises." (§ 15-224)
+*   "In case any order of the department or of the commissioner shall be served upon or given to any lessee or person in possession or charge of the building, structure, enclosure, vessel, place or premises therein described, it shall be the duty of such person to give immediate notice to the owner or agent of such building, structure, enclosure, vessel, place or premises named in the order, if the same shall be known to such person personally, and such owner or agent shall be within the limits of the city, and his or her residence known to such person; and if such owner or agent be not within the city, then by depositing a copy of such order in any post office in the city, properly enclosed and addressed to such owner or agent, at his or her then place of residence, if known, and with the postage prepaid. In case any such lessee or person in possession or charge shall neglect to give such notice as herein provided, he or she shall be personally liable to the owner or owners of such building or premises for all damages he, she or they shall sustain by reason of such neglect." (§ 15-225)
+*   "In case an order is not complied with within the time set forth therein, the commissioner may execute and enforce such order with employees and equipment of the department, or by the employment of such other agencies as the commissioner may direct. Nothing contained in this section, however, shall be held to authorize the commissioner to alter the construction of any building, structure, or vessel, or to supply any structural deficiency in the fire alarm, fire extinguishing, or fire escape equipment thereof. The party offending shall pay the expense of enforcing such order and, in addition thereto, shall forfeit and pay to the department the sum of fifty dollars. Where the order relates to the storage of explosive or combustible compounds or mixtures, the party offending shall pay an additional penalty of twenty-five dollars plus five dollars for each day's neglect or refusal to comply with such order." (§ 15-226)
+*   "Any building, structure, enclosure, vessel, place or premises perilous to life or property in case of fire therein or adjacent thereto, by reason of the nature or condition of its contents, its use, the overcrowding of persons therein, defects in its construction, or deficiencies in fire alarm, fire extinguishing or fire escape equipment, or by reason of any condition in violation of law, or order of the commissioner, is a public nuisance within the meaning of the code and the penal law. The commissioner is empowered to abate any such public nuisance." (§ 15-227.a)
+*   "In case any order to remedy a condition imminently perilous to life or property issued by the commissioner or the department is not complied with, or the commissioner certifies in writing that an emergency exists requiring such action, he or she may order and immediately cause any building or structure or part thereof (i) to be vacated; and, also, if the commissioner determines such action is necessary to the preservation of life and safety, (ii) to be sealed, secured and closed; provided, however, that the commissioner shall not order sealed, secured, and closed any dwelling unit or other space lawfully used for residential purposes. Upon the issuance of an order to seal, secure and close, no person shall have access to such premises except as authorized by the commissioner. For the purpose of this section, "sealed, secured and closed" shall mean the use of any means available to render the building, structure or part thereof inaccessible, including but not limited to the use of a padlock or cinder blocks." (§ 15-227.b)
+*   "All orders issued pursuant to this section shall be posted upon the premises. Immediately upon the posting of an order upon the premises, officers and employees of the police department, the department, and other authorized officers and employees of the city shall immediately act upon and enforce such order. The police department shall provide all reasonable assistance to the department and other authorized officers and employees necessary to carry out the provisions of this section. If an order issued pursuant to this section is not complied with within the time designated therein, the commissioner, in addition to or in lieu of any other remedy or power, may apply to the supreme court, at a special term thereof, without notice, for an order directing him or her to vacate and/or seal, secure and close such building or premises or so much thereof as he or she may deem necessary, and prohibiting and enjoining all persons from using or occupying the same for any purpose until such measures are taken as may be required by such order." (§ 15-227.c)
+*   "Any order to seal, secure and close issued pursuant to item (ii) of subdivision b of this section shall contain notice of the opportunity for a hearing with respect to such order, to determine if the order was properly issued in accordance with the provisions of this section. Such hearing shall be conducted by the commissioner, or in the commissioner's discretion, by the office of administrative trials and hearings or the environmental control board. If the matter is referred to such office or board, the hearing officer shall submit his or her findings of fact and a recommended decision to the commissioner. The hearing shall be held within three business days after the receipt of the written request of an owner, lessor, lessee or mortgagee for such hearing and the commissioner shall render a decision within three business days after such hearing is concluded." (§ 15-227.d.i)
+*   "Any order issued pursuant to this section shall be served in accordance with section 15-224 of the code and, in addition, shall be mailed to the record owner of such premises and any record mortgagee of such premises at the address for such person as set forth in the recorded instrument and to the person designated as owner or agent of the building or designated to receive real property tax or water bills for the building at the address for such person contained in one of the files compiled by the department of finance for the purpose of the assessment or collection of real property taxes and water charges or in the file compiled by the department of finance from real property transfer forms filed with the city register upon the sale or transfer of real property. A copy shall also be filed with the county clerk of the county in which such premises are located. Such filing shall be notice of the order to any subsequent owner and such owner shall be subject to such order." (§ 15-227.d.ii)
+*   "An order issued pursuant to this section shall not be rescinded unless the owner, lessor, lessee or mortgagee seeking such rescission provides assurance, in a form satisfactory to the commissioner, that the conditions which caused the issuance of such order have been corrected and will not reoccur. If such order is rescinded, upon the request of the owner, lessor, lessee or mortgagee, the commissioner shall provide a certified copy of such rescission, which may be filed with the county clerk of the county in which such premises are located." (§ 15-227.e)
+*   "Any person who violates the provisions of an order to vacate issued pursuant to section 15-227 of this code shall be liable for a civil penalty of not more than twenty-five thousand dollars and an additional civil penalty of not more than one thousand dollars for each day the violation continues." (§ 15-227.1.a)
+*   "Except as authorized by the commissioner, any person who removes or causes to be removed the seal from any premises sealed in accordance with an order of the commissioner or his or her designee shall be guilty of a misdemeanor punishable by imprisonment for no more than one year or a fine not to exceed fifty thousand dollars, or both such fine and imprisonment. Such person shall also be subject to a civil penalty not to exceed fifty thousand dollars." (§ 15-227.1.b)
+*   "Any person who makes a material false statement in any document submitted pursuant to subdivision c of this section which statement he or she knows or has reason to know will be relied upon by the commissioner in determining whether he or she will allow access to the premises shall be liable for a civil penalty of not more than fifty thousand dollars." (§ 15-227.1.d)
+*   "Notwithstanding any other law, rule, or regulation, any person, corporation, partnership, association or any other legal entity who permits a building, structure or part thereof to be unlawfully occupied or used in contravention of an order of the commissioner pursuant to section 15-227, or who negligently fails to prevent or prohibit such unlawful occupancy or use, shall be liable for a civil penalty of not more than one million dollars, if any other person suffers serious physical injury, as defined in section ten of the penal law, or death in the building, structure or part thereof subject to such order, as a result of such unlawful occupancy or use." (§ 15-227.1.e)
+*   "The expenses attending the execution of any and all orders duly made by the department shall respectively be a several and joint personal charge against each of the owners or part owners, and each of the lessees and occupants of the building, structure, vessel, enclosure, place or premises to which such order relates, and in respect to which such expenses were incurred; and also against every person or body who was by law or contract bound to do that in regard to such building, structure, vessel, enclosure, place or premises which such order requires. Such expenses shall also be a lien on all rent and compensation due, or to grow due, for the use of any building, structure, vessel, enclosure, place or premises, or any part thereof, to which such order relates, and in respect to which such expenses were incurred." (§ 15-228)
+*   "In addition to or as an alternative to any of the remedies and penalties provided in any laws, rules, or regulations enforceable by the department, any person who shall violate or fail to comply with any such laws, rules, or regulations shall, except as otherwise specifically provided in subdivision c of section 15-230, be liable for a civil penalty which may be recovered in a proceeding before the environmental control board." (§ 15-229.a)
+*   "whenever the commissioner serves a notice of violation such notice shall include an order which requires the respondent to correct the condition constituting the violation and to file a certification with the department that the condition has been corrected. Such order shall require that the condition be corrected within thirty days from the date that the order is issued and that certification of the correction of the condition shall be filed with the department in a manner and form and within such further period of time as shall be established by rule or regulation of the department." (§ 15-230.a)
+*   "If the board finds, upon good cause shown, that the respondent cannot correct the violation within the period specified in subdivision a, it may, with the concurrence of the commissioner, postpone the period for compliance with such order upon such terms and conditions and for such period of time as shall be appropriate under the circumstances." (§ 15-230.b)
+*   "For violations which are subject to the penalties for a first violation as set forth in section 15-229, if the respondent complies with the order issued pursuant to subdivision a of this section within the time set forth in such subdivision there shall be no civil penalty for such first violation. Such violation may however serve as a predicate for purposes of the multiple offense schedule set forth in section 15-229." (§ 15-230.c)
+*   "In any proceeding before the environmental control board, if the board finds that the commissioner has failed to prove the violation charged it shall notify the commissioner and the order requiring the respondent to correct the condition constituting the violation shall be deemed to be revoked." (§ 15-230.d)
+*   "Any person who shall fail to comply with an order of the commissioner issued pursuant to subdivision a of section 15-230 within the time specified in such subdivision or within such further period of time as may be provided by the environmental control board pursuant to subdivision b of section 15-230 shall, in addition to the penalties which may be imposed for the violation pursuant to section 15-229, be liable for a civil penalty of not more than five thousand dollars for each violation for which there has been a failure to comply with such order." (§ 15-231.a)
+*   "For the purposes of this section, if the environmental control board finds that a respondent has knowingly made false statements relating to the correction of a violation in a certification filed pursuant to section 15-230, such certification as to correction shall be null and void and the penalties set forth in this section may be imposed as if such false certification had not been filed with and accepted by the department." (§ 15-231.b)
+
+**Why:** Tracking violations, orders, and enforcement actions is essential for regulatory compliance and public safety.
+**One row represents:** A single violation identified or an enforcement action taken.
+**Covers:** All violations of laws, rules, or regulations enforceable by the department, including orders to remedy, vacate, seal, secure, and close, and associated penalties.
+**Columns:**
+*   Violation ID
+*   Violation Date
+*   Violation Type/Code
+*   Description of Violation
+*   **Building/Premises ID** (from Dataset 14, if applicable)
+*   **Fire Hydrant ID** (from Dataset 11, if applicable)
+*   Responsible Party (Owner/Lessee/Occupant Name, Contact Info)
+*   Issuing Officer **Employee ID** (from Dataset 5)
+*   **Inspection ID** (from Dataset 2, if applicable)
+*   Order Issued (Yes/No)
+*   Order Type (e.g., Remedy, Vacate, Seal, Secure, Close)
+*   Order Issue Date
+*   Compliance Due Date
+*   Order Service Method
+*   Order Service Date
+*   Owner Notified by Lessee (Yes/No, Date)
+*   Compliance Status (e.g., Complied, Not Complied, Postponed, Rescinded)
+*   Date of Compliance/Non-Compliance
+*   Certification of Correction Filed (Yes/No)
+*   Certification Filing Date
+*   False Certification (Yes/No)
+*   Penalty Assessed (Yes/No)
+*   Penalty Type (e.g., Civil, Criminal, Forfeiture)
+*   Penalty Amount
+*   Penalty Status (e.g., Paid, Outstanding, Compromised)
+*   Date Penalty Paid/Resolved
+*   Enforcement Action Taken (e.g., Department executed order, Court action)
+*   Enforcement Expense Amount
+*   Lien Placed (Yes/No)
+*   Hearing Requested (Yes/No)
+*   Hearing Date
+*   Hearing Outcome
+*   Rescission Date
+*   Access to Premises Granted (Yes/No)
+*   Access Affirmation Details
+*   False Statement in Access Affirmation (Yes/No)
+*   Serious Injury/Death due to Unlawful Occupancy (Yes/No)
+*   Number of Injuries/Deaths
+*   **Incident ID** (from Dataset 1, if related to an emergency response)
+*   **EEO Complaint ID** (from Dataset 13, if related to a false statement in an EEO context)
+
+**4. Fire Investigation Records (Arson/Criminal Carelessness)**
+
+**Quotes:**
+*   "The commissioner, the chief and deputy chief fire marshals, the assistant fire marshals, and such other employees of the department designated by the commissioner, shall investigate, examine and inquire into the following matters: 1. The origin, detail and management of fires in the city, particularly of supposed cases of arson, incendiarism, or fires due to criminal carelessness." (§ 15-218.1)
+*   "The commissioner, in and about any investigation authorized by section 15-218 of this title, and touching any matter connected therewith, may subpoena and compel the attendance of any person or persons, and the production of any books, papers, archives or documents in his, her or their possession or control, which, in the judgment of the commissioner or of the chief or deputy chief fire marshal, is connected with and necessary to such investigation." (§ 15-219.a.1)
+*   "A fire marshal shall have the power to issue a notice in the nature of a subpoena, in such form and subscribed in such manner as the commissioner shall prescribe, to compel the attendance of any person as a witness before such fire marshal, to testify in relation to any matter enumerated in section 15-218 of this title." (§ 15-219.b.1)
+*   "The chief fire marshal, or other person conducting such investigation shall take the testimony, under oath, of all persons supposed to be cognizant of any fact, or to have means of knowledge, in relation to the subject of the investigation, and shall cause the same to be reduced to writing and verified. All such testimony, together with the report of the investigating officer setting forth his or her opinions and conclusions in respect to the matter, shall be transmitted to the commissioner. A copy of such testimony and report may be furnished, in the discretion of the commissioner, to the police department, to the district attorney of the county in which a crime is believed to have occurred, to the New York board of fire underwriters, to the owners of the property involved, and to other persons interested in the subject matter of the investigation. In all cases of supposed arson, incendiarism, or fires due to criminal carelessness, the commissioner, or officer authorized by the commissioner, shall promptly seek the cooperation of such police department and district attorney, and shall report to such attorney, without delay, all evidence, with the addresses of probable witnesses." (§ 15-220.b)
+*   "It shall be the duty of the chief and deputy chief fire marshals, the assistant fire marshals, or other employees authorized by the commissioner to conduct investigations, whenever they shall be of the opinion that there is sufficient evidence to charge any person with the crime of arson or attempted arson, to arrest or cause such person to be arrested and charged with such offense." (§ 15-221)
+*   "The city hereby offers a reward of not more than one thousand dollars per conviction to any person or persons giving information leading to the detection, arrest and conviction of any person or persons guilty of arson, attempted arson or conspiracy to commit arson, or felony murder arising in connection with arson." (§ 15-233.a)
+*   "the commissioner, in his or her discretion, shall determine the amount payable and certify to the comptroller the name of the person or persons to whom the reward shall be made payable and the amount to be paid." (§ 15-233.e)
+
+**Why:** Investigating fire origins, especially criminal ones, is a core responsibility requiring detailed tracking.
+**One row represents:** A single fire investigation.
+**Covers:** All investigations into the origin, detail, and management of fires, particularly suspected arson, incendiarism, or criminal carelessness.
+**Columns:**
+*   Investigation ID
+*   **Incident ID** (from Dataset 1)
+*   Investigation Start Date
+*   Investigation End Date
+*   Lead Investigator **Employee ID** (from Dataset 5)
+*   Investigation Type (e.g., Arson, Incendiarism, Criminal Carelessness, Undetermined)
+*   Suspected Cause of Fire
+*   Evidence Collected (Description, Date)
+*   Witnesses Interviewed (List of Witness IDs)
+*   Subpoenas Issued (List of Subpoena IDs)
+*   Arrest Made (Yes/No)
+*   Arrest Date
+*   Arrested Person Name
+*   Charges Filed
+*   Referral to Police Department (Yes/No, Date)
+*   Referral to District Attorney (Yes/No, Date)
+*   Conviction Achieved (Yes/No)
+*   Conviction Date
+*   **Reward Claim ID** (from Dataset 22, if applicable)
+
+**5. Employee Records**
+
+**Quotes:**
+*   "To qualify for membership in the department a person shall be: 1. A citizen of the United States. 2. Able understandingly to read and write the English language. 3. Shall have passed his or her eighteenth birthday but not his or her twenty-ninth birthday on the date of the filing of his or her application for civil service examination. No person who qualifies under this requirement shall be disqualified from membership in the department because of having passed his or her twenty-ninth birthday subsequent to the filing of his or her application. However no person shall be appointed unless he or she shall have attained his or her twenty-first birthday." (§ 15-103.a)
+*   "A conviction of a felony shall disqualify all persons from membership in the department." (§ 15-103.b)
+*   "the chief of department shall not be required to be selected by competitive examination. The chief of department shall be in the exempt class of the classified service, and shall be selected from among persons holding the title of deputy chief (fire)." (§ 15-103.1)
+*   "Preliminary to a permanent appointment as firefighter there shall be a period of probation for such time as is fixed by the civil service rules, and no person shall receive a permanent appointment who has not served the required probationary period. The service during probation shall be deemed to be service in the uniformed force if succeeded by a permanent appointment, and as such shall be included and counted in determining eligibility for advancement, promotion, retirement and pension." (§ 15-104)
+*   "Each member of the uniformed force shall take an oath of office and subscribe the same before an officer of the department empowered to administer an oath." (§ 15-105)
+*   "Every member of the uniformed force shall have issued to him or her a warrant of appointment signed by the commissioner." (§ 15-106)
+*   "Members of the uniformed force, upon appointment, shall be assigned to the fourth grade; after one year of service in the fourth grade they shall be advanced to the third grade; after one year of service in the third grade, they shall be advanced to the second grade; after one year of service in the second grade, they shall be advanced to the first grade; and they shall in each instance receive the annual pay or compensation of the grade to which they belong." (§ 15-107)
+*   "Promotions of officers and members of the force shall be made by the commissioner on the basis of seniority, meritorious service in the department and superior capacity as shown by competitive examination. Individual acts of personal bravery may be treated as an element of meritorious service in such examination, the relative rating therefor to be fixed by the commissioner of citywide administrative services. The fire commissioner shall transmit to the commissioner of citywide administrative services in advance of such examination the complete record of each candidate for promotion." (§ 15-110)
+*   "Any member of the uniformed force of the fire department, who immediately prior to his or her appointment or employment as such, has served or shall have served as a member of the police force of the police department, shall have the time served by such member in such police department counted as service in the fire department in determining his or her retirement and pension in such department as herein or otherwise provided, upon condition that he or she shall contribute to the appropriate fire department pension fund a sum equal to the amount which he or she would have been required to contribute had the time served in the police department been served in the fire department." (§ 15-111.a.1)
+*   "Any member of the uniformed force of the fire department, who immediately prior to his or her appointment or employment as such, has served or shall have served as a member of the uniformed transit police force or a member of the uniformed housing police force shall have the time served by such member in such force counted as service in the fire department in determining: (a) his or her eligibility to compete in a promotional examination; (b) his or her seniority credit for the purpose of grading a promotional examination; and (c) his or her seniority credit for the purpose of determining eligibility for transfers within the uniformed force of the fire department." (§ 15-111.1)
+*   "Any member of the department who shall withdraw or resign without the permission of the commissioner shall be subject to the forfeiture of salary due to such member. Unexplained absence, without leave, of any member of the uniformed force, for five days, shall be deemed and held to be a resignation by such member, and accepted as such." (§ 15-114)
+*   "Except as otherwise provided in subdivision c of this section no member of the uniformed force of the department except medical officers, who is or hereafter attains the age of sixty-five years shall continue to serve as a member of such force but shall be retired and placed on the pension rolls of the department, provided however, that any member who is not eligible for retirement at age sixty-five, shall continue to serve as a member only until such time as such member becomes eligible for such pension retirement." (§ 15-121.a)
+*   "Notwithstanding the provisions of subdivision a of this section or of any other section of law, any member who shall not have completed thirty-five years of creditable city service within the meaning of subdivision h of section 13-304 of the code, prior to attaining the age of sixty-five years may continue to serve as a member until he or she shall have completed such thirty-five years of creditable city service, provided that he or she is capable of performing duty acceptable to the commissioner. This section does not apply to chaplains or medical officers. This section shall apply only to members who are in the department on the first day of December, nineteen hundred seventy-one." (§ 15-121.b)
+*   "Any member whose retirement has become mandatory under the provisions of subdivision a of this section may, upon approval of the commissioner, request of the board of estimate that he or she be continued as a member of the uniformed force for a period not exceeding two years. The board, where advantageous to the public service, may grant such request for a period not exceeding two years. At the termination of such additional period of service, such board may in like manner permit such member to continue in the public service for successive periods each not exceeding two years. In no event shall a member be continued in public service upon attaining the age of seventy-five years." (§ 15-121.c)
+*   "The total number of applicants for the 2012 open-competitive firefighter civil service examination and promotion to firefighter civil service examination, and the number of applicants who: (a) Took the computer-based portion of such examination; (b) Achieved a passing score on the computer-based portion of such examination; (c) Were invited to take the physical portion of such examination; (d) Took or began to take the physical portion of such examination; (e) Passed the physical portion of such examination; (f) Were invited to participate in the department's 1.5 mile pre-appointment run testing or substitute cardio-pulmonary testing; (g) Were not offered appointment to the probationary firefighter school based on the results of the pre-appointment 1.5 mile run or substitute cardio-pulmonary testing; (h) Were offered appointment to each probationary firefighter school class that commenced prior to the effective date of the local law that added this section; (i) Accepted appointment to each class identified in subparagraph (h) of this paragraph; (j) Participated in the final 1.5 mile run or substitute cardio-pulmonary testing prior to graduating from the probationary firefighter school; (k) Failed to graduate from the probationary firefighter school based on the results of the final 1.5 mile run or substitute cardio-pulmonary testing; (l) Failed to graduate from each class identified in subparagraph (h) of this paragraph on the grounds that they could not adequately complete the functional skills training or any successor physical training or testing; (m) Graduated from each class identified in subparagraph (h) of this paragraph; and (n) Did not graduate from each class identified in subparagraph (h) of this paragraph." (§ 15-130.a.1)
+*   "The data provided pursuant to paragraph one of this subdivision shall be disaggregated by gender and by race or ethnicity." (§ 15-130.a.2)
+*   "The number of employees assigned to each fire company and special operations unit, disaggregated by: (i) gender and (ii) race or ethnicity. Such reporting shall include information on employees on detail, desk or modified assignment, or medical leave." (§ 15-145.a.1)
+
+**Why:** Comprehensive employee data is essential for managing personnel, promotions, payroll, and legal compliance.
+**One row represents:** A single employee of the department.
+**Covers:** All uniformed and civilian employees, from application through separation.
+**Columns:**
+*   **Employee ID**
+*   First Name
+*   Last Name
+*   Date of Birth
+*   Gender
+*   Race/Ethnicity
+*   Citizenship Status
+*   English Literacy (Yes/No)
+*   Felony Conviction (Yes/No)
+*   Application Date
+*   Appointment Date
+*   Appointment Type (e.g., Firefighter, EMS, Civilian, Chief of Department)
+*   Probationary Start Date
+*   Probationary End Date
+*   Permanent Appointment Date
+*   Oath of Office Date
+*   Warrant of Appointment Date
+*   Current Grade (e.g., 4th, 3rd, 2nd, 1st)
+*   Date of Last Grade Advancement
+*   Current Salary
+*   Prior Service Type (e.g., Police, Transit Police, Housing Police, None)
+*   Prior Service Start Date
+*   Prior Service End Date
+*   Prior Service Pension Fund Contributions Made (Yes/No)
+*   Seniority Credit (Years)
+*   Current Assignment (e.g., Fire Company, Special Operations Unit, Bureau of Fire Operations, Bureau of EMS, Civilian Position, Detail, Desk, Modified, Medical Leave)
+*   **Fire Company ID** (from Dataset 10, if applicable)
+*   **EMS Station ID** (from Dataset 18, if applicable)
+*   Retirement Eligibility Age
+*   Mandatory Retirement Date
+*   Retirement Extension Request Date
+*   Retirement Extension Approval Date
+*   Retirement Extension End Date
+*   Separation Date
+*   Separation Type (e.g., Resignation, Dismissal, Retirement)
+*   Forfeiture of Salary (Yes/No)
+*   **Recruitment Application ID** (from Dataset 12)
+
+**6. Employee Time & Attendance Records**
+
+**Quotes:**
+*   "Each member of the uniformed force shall be paid full pay or compensation during absence from duty caused by injury or sickness, except as otherwise provided by law." (§ 15-108)
+*   "A member or officer of the force shall be entitled pursuant to this section to the full amount of his or her regular salary for the period of any incapacity due to illness or injury incurred in the performance and discharge of duty as a member or officer of the force, as determined by the department." (§ 15-108.1.a)
+*   "The commissioner shall divide the deputy chiefs, battalion chiefs, captains, lieutenants, engineers and firefighters, marine engineers and pilots in boats of the department into platoons, and such divisions shall be fully completed and the provisions hereof fully effectuated. None of such platoons, or any member thereof, shall be assigned to more than one tour of duty in any twenty-four consecutive hours. The commissioner shall install a two platoon system. The two platoon system shall consist of not more than two tours of duty of not more than nine hours each, to be followed by a rest period of at least forty-eight hours for all members. After such rest period there shall be not more than two tours of duty of not more than fifteen hours to be followed by a rest period for all members of at least seventy-two hours which shall continue in such sequence so that not more than six nine-hour tours of duty and six fifteen-hour tours of duty shall be worked in any twenty-five consecutive calendar days, except, in the event of conflagrations, riots or other similar emergencies or for the necessary time consumed in changing tours of duty, in which events such platoons or members thereof shall be continued on duty for such hours as may be necessary." (§ 15-112.a)
+*   "Unexplained absence, without leave, of any member of the uniformed force, for five days, shall be deemed and held to be a resignation by such member, and accepted as such." (§ 15-114)
+
+**Why:** Tracking employee time, attendance, and leave is crucial for payroll, scheduling, and operational management.
+**One row represents:** A single tour of duty, leave period, or absence event for an employee.
+**Covers:** All uniformed force members' working hours, leave, and absences.
+**Columns:**
+*   Time Record ID
+*   **Employee ID** (from Dataset 5)
+*   Date
+*   Shift Start Time
+*   Shift End Time
+*   Total Hours Worked
+*   Overtime Hours
+*   Leave Type (e.g., Sick Leave, Injury Leave, Furlough, Absence Without Leave)
+*   Leave Start Date
+*   Leave End Date
+*   Injury/Sickness Related to Line of Duty (Yes/No)
+*   Department Determination of Line of Duty (Yes/No)
+*   Emergency Duty (Yes/No, if exceeding regular hours due to emergency)
+*   Payroll Period
+*   Pay Rate Applied
+
+**7. Employee Disciplinary Action Records**
+
+**Quotes:**
+*   "Nothing in this section shall be construed to affect the rights, powers and duties of the commissioner pursuant to any other provision of law, including, but not limited to, the right to discipline a member or officer of the force by termination, reduction of salary, or any other appropriate measure; the power to terminate an appointee who has not completed his or her probationary term; and the power to apply for ordinary or accident disability retirement for a member or officer of the force." (§ 15-108.1.b)
+*   "The commissioner shall have power, in his or her discretion on conviction of a member of the force of any legal offense or neglect of duty, or violation of rules, or neglect or disobedience of orders or incapacity, or absence without leave, or any conduct injurious to the public peace or welfare, or immoral conduct, or conduct unbecoming an officer or member, or other breach of discipline, to punish the offending party by reprimand, forfeiture and withholding of pay for a specified time, or dismissal from the force; but not more than ten days' pay shall be forfeited and withheld for any offense." (§ 15-113)
+*   "Officers and members of the uniformed force shall be removable only after written charges shall have been preferred against them, and after the charges shall have been publicly examined into, upon such reasonable notice of not less than forty-eight hours to the person charged, and in such manner of examination as the rules and regulations of the commissioner may prescribe." (§ 15-113)
+*   "Upon written application to the mayor by the person aggrieved, setting forth the reasons for demanding such rehearing, the commissioner may rehear the charges upon which a member or a probationary member of the uniformed force has been dismissed, or reduced from the rank theretofore held by him or her." (§ 15-115.a)
+*   "If the commissioner shall determine that such member has been illegally or unjustly dismissed or reduced, the commissioner may reinstate such member or restore such member to the rank from which he or she was reduced, as the case may be, and allow such member the whole of his or her time since such dismissal to be applied on his or her time of service in the department, or the commissioner may grant such other or further relief as he or she may determine to be just, or may affirm the dismissal or reduction, as he or she may determine from the evidence." (§ 15-115.c)
+*   "If the applicant be a probationary member of the department, the commissioner may allow such probationary member the time already served as a probationary member to count as time served, but shall not allow the time between the date of his or her dismissal and restoration to count as service in the department." (§ 15-115.d)
+*   "Of the EEO complaints provided pursuant to paragraph 7 of this subdivision, the number of EEO complaints that resulted in corrective action taken by the department, further disaggregated by the form of corrective action, including but not limited to: formal reprimand, fine, loss of pay or benefits, transfer, suspension, demotion, and termination" (§ 15-146.c.8)
+
+**Why:** Tracking disciplinary actions is crucial for accountability, due process, and managing employee conduct.
+**One row represents:** A single disciplinary action or related event (e.g., charge, punishment, rehearing).
+**Covers:** All disciplinary actions, charges, investigations, and related appeals/rehearings for department employees.
+**Columns:**
+*   Disciplinary Action ID
+*   **Employee ID** (from Dataset 5)
+*   Date of Incident
+*   Allegation Type (e.g., Legal Offense, Neglect of Duty, Rule Violation, Disobedience of Orders, Incapacity, Absence Without Leave, Immoral Conduct, Unbecoming Conduct, Breach of Discipline)
+*   Date Charges Preferred
+*   Notice of Charges Date
+*   Hearing Date
+*   Hearing Officer **Employee ID** (from Dataset 5)
+*   Decision Date
+*   Decision Approved by Commissioner (Yes/No, Date)
+*   Punishment Type (e.g., Reprimand, Pay Forfeiture, Suspension, Demotion, Dismissal, Termination)
+*   Pay Forfeiture Amount/Duration
+*   Rehearing Application Date
+*   Mayor's Consent for Rehearing (Yes/No, Date)
+*   Rehearing Outcome (e.g., Reinstated, Reduced Rank, Dismissal Affirmed)
+*   Reinstatement Date
+*   Time Counted for Service (Yes/No, for probationary members)
+*   **EEO Complaint ID** (from Dataset 13, if applicable)
+
+**8. Employee Training Records**
+
+**Quotes:**
+*   "In the performance of their duties, all officers and members of the uniformed force, other than the chief marshal, deputy chief fire marshals, supervising fire marshals and fire marshals, shall have the powers and perform the duties of peace officers, but their power to make arrests and to serve process in criminal actions shall be restricted to cases arising under laws relating to fires and the extinguishment thereof, and to fire perils." (§ 15-116)
+*   "In the performance of their duties, the chief fire marshal, deputy chief fire marshals, supervising fire marshals and fire marshals shall have all the powers and perform all the duties of police officers in the state." (§ 15-117)
+*   "providing relevant training to staff at such dwellings" (§ 15-132.a)
+*   "The number of emergency medical technicians and other first responders employed by the department that are trained to administer opioid antagonists, disaggregated by borough and division" (§ 15-136.c.2)
+*   "The department, in consultation with the department of citywide administrative services, shall develop and implement a plan for providing ongoing training and education to all employees regarding diversity and inclusion. Such plan shall include, but not be limited to: 1. Providing annual training for employees regarding the department's anti-discrimination and anti-harassment policies; 2. Providing annual training for employees regarding diversity and inclusion, which shall include, but not be limited to, instruction on: (a) cultural sensitivity, (b) conscious and unconscious biases in relation to race, ethnicity, gender and sexual identity, and (c) positive attitudes regarding departmental diversity and inclusion; 3. Providing employees in supervisory roles with training on promoting inclusion within the workplace, and identifying and remedying workplace discrimination and harassment, including through mediation and restorative practices; 4. Providing assessments to demonstrate the successful proficiency of all trained employees on the subject matters contained in the trainings; 5. Providing additional and targeted interactive training to firehouses, as the department deems necessary, including but not limited to firehouses where one or more employee was found in violation of the city's equal employment opportunity policy or human rights law, or the department's anti-discrimination and anti-harassment policies on two or more occasions during the prior year" (§ 15-143.a)
+*   "The department shall develop de-escalation and self-defense training for employees of the department within the bureau of emergency medical services who provide emergency medical services. Such training shall be designed to address the unique characteristics and operations of emergency medical services, with a particular focus on violent situations in the context of patient care. Such training shall include, but need not be limited to, recognition and understanding of mental illness and distress, effective communication skills, conflict de-escalation techniques, and self-defense techniques. The department shall offer such training no less frequently than once every third calendar year." (§ 15-149)
+
+**Why:** Tracking employee training is essential for maintaining required skills, certifications, and compliance with training mandates.
+**One row represents:** A single instance of an employee attending a training session.
+**Covers:** All mandatory and offered training for department employees, including peace officer/police officer powers, opioid antagonist administration, diversity/inclusion, anti-discrimination/harassment, and de-escalation/self-defense.
+**Columns:**
+*   Training Attendance ID
+*   **Employee ID** (from Dataset 5)
+*   Training Course Name
+*   Training Date
+*   Training Duration (Hours)
+*   Training Provider
+*   Training Type (e.g., Peace Officer, Police Officer, Opioid Antagonist, Diversity & Inclusion, Anti-Discrimination, Supervisory, De-escalation, Self-Defense)
+*   Certification/Proficiency Achieved (Yes/No)
+*   Assessment Score (if applicable)
+*   Next Required Training Date (if recurring)
+*   **Firehouse ID** (from Dataset 10, if targeted training)
+*   **EEO Complaint ID** (from Dataset 13, if targeted training due to violations)
+
+**9. EMS Patient Care Records (Opioid Antagonist Administration)**
+
+**Quotes:**
+*   "Beginning with the calendar quarter starting on January 1, 2019, the commissioner shall submit to the speaker of the council and the department of health and mental hygiene, within 25 days of the end of each quarter and post to the department's website five days thereafter, a report compromised of de-identified patient information relating to the administration of opioid antagonists." (§ 15-136.b)
+*   "Such report shall include: ... 3. The number of instances in the quarter that an emergency medical technician or other first responder employed by the department administered an opioid antagonist to a patient, disaggregated by borough, division, and by method of administration, such as syringe injection or nasal atomizer; and 4. The number, expressed in both absolute terms and as a percentage of all administrations, of instances in which the patient responded to the administration of an opioid antagonist." (§ 15-136.c.3, § 15-136.c.4)
+
+**Why:** Tracking opioid antagonist administration is required for public health reporting and evaluating intervention effectiveness.
+**One row represents:** A single instance of an opioid antagonist being administered to a patient.
+**Covers:** De-identified patient information related to opioid antagonist administration by EMS personnel.
+**Columns:**
+*   Administration ID
+*   Administration Date
+*   Administration Time
+*   Administering EMS Provider **Employee ID** (from Dataset 5)
+*   **EMS Unit ID** (from Dataset 18)
+*   Incident Location (Borough, Division)
+*   Method of Administration (e.g., Syringe Injection, Nasal Atomizer)
+*   Patient Response (e.g., Responded, No Response, Unknown)
+*   Opioid Antagonist Type (e.g., Naloxone, Narcan)
+*   Quantity Administered
+*   **Incident ID** (from Dataset 1)
+
+**10. Fire Department Asset Inventory**
+
+**Quotes:**
+*   "Any real property and any apparatus, equipment or other personal property owned or used by such volunteer forces which may be deemed useful or necessary for the use of the department, upon the extension of the paid system to the borough of Staten Island, shall be purchased by the department of general services upon the recommendation of the commissioner at the reasonable value thereof." (§ 15-102.a)
+*   "The city, in its discretion, may appropriate such sum of money as it may deem necessary for the purchase of apparatus for the use of the several volunteer companies in the borough of Staten Island, and for the maintenance of the fire alarm system in such borough." (§ 15-102.b)
+*   "It shall be the duty of the commissioner to make suitable regulations under which the officers and members of the department shall be required to wear an appropriate uniform and badge by which the authority and relations of the officers and members in such department may be known." (§ 15-120.a)
+*   "The commissioner is authorized and empowered to extend the department's fire alarm telegraph system whenever in his or her judgment it shall be deemed desirable, by the purchase, lease or license of the whole or a part or parts of the appliance, apparatus, equipment, patents, licenses, franchises, rights, contracts or other property of any kind, of any fire alarm telegraph or fire alarm signal company doing business in the city, at a price to be agreed upon with the persons or corporation owning the same, and every such corporation is hereby authorized to sell, lease or license the same to the city." (§ 15-127.a.2)
+*   "The fire alarm apparatus and all other appliances placed or kept within any of such buildings for the purpose of preventing or extinguishing fires, or for affording means of escape therefrom in case of fire, shall be kept at all times in good working order and proper condition for immediate use, and any member of the uniformed force or authorized representative of the department may enter any of such buildings, at any time, for the purpose of inspecting such apparatus or appliances." (§ 15-127.c.1)
+*   "The total number of emergency medical services units within each emergency medical services station" (§ 15-137.c.3)
+*   "No later than June 30, 2024, the department shall complete a survey of each firehouse to determine the permanent upgrades that would facilitate use by a mixed gender workforce." (§ 15-142.a)
+*   "The commissioner shall provide body armor to all employees of the department within the bureau of emergency medical services who provide emergency medical services. Such body armor shall be of the type that the commissioner determines would be most suitable for the protection of such employees, and shall meet ballistic and stab resistance standards of the national institute of justice or any successor standards." (§ 15-148.a)
+
+**Why:** Maintaining an inventory of all department assets is crucial for operations, maintenance, and resource allocation.
+**One row represents:** A single physical asset owned or managed by the department.
+**Covers:** All real property (firehouses, EMS stations), apparatus (fire engines, ladders, ambulances), equipment (uniforms, badges, fire alarm system components, body armor), and other property.
+**Columns:**
+*   **Asset ID**
+*   Asset Type (e.g., Firehouse, EMS Station, Fire Engine, Ladder Truck, Ambulance, Uniform, Badge, Fire Alarm Box, Body Armor, Equipment)
+*   Asset Name/Model
+*   Acquisition Date
+*   Acquisition Cost
+*   Current Location (e.g., **Firehouse ID**, **EMS Station ID** from Dataset 18)
+*   Status (e.g., Operational, In Maintenance, Retired, Issued)
+*   Last Maintenance Date
+*   Next Scheduled Maintenance Date
+*   Assigned To **Employee ID** (from Dataset 5, for personal equipment like uniforms, badges, body armor)
+*   Condition (e.g., Good, Fair, Poor)
+*   Upgrade Needs (for firehouses, e.g., Mixed Gender Workforce Upgrades)
+*   **Fire Alarm System ID** (from Dataset 15, if applicable)
+*   **Body Armor ID** (from Dataset 19, if applicable)
+
+**11. Fire Hydrant Inventory & Status**
+
+**Quotes:**
+*   "The department shall inspect all fire hydrants maintained by the department of environmental protection at least twice per calendar year, the first inspection occurring by June 30 and the second inspection occurring by December 31." (§ 15-134.a)
+*   "By March 1 of each year, the department of environmental protection shall post on its website the following information: 1. The total number of fire hydrants subject to inspection pursuant to paragraph a of this section, aggregated citywide and disaggregated by borough and council district; 2. The total number of fire hydrant inspections conducted pursuant to paragraph a of this section during the prior calendar year, aggregated citywide and disaggregated by borough and council district; 3. The total number of fire hydrants found to be inoperable through inspection during the prior calendar year; 4. The total number of fire hydrants categorized as priority by the fire department found to be inoperable through inspection during the prior calendar year; and 5. The total number of fire hydrants categorized as priority by the fire department that were found inoperable during the inspection to be conducted by June 30 and the total number of such hydrants that were not made operable by December 31, disaggregated by borough and council district." (§ 15-134.b)
+*   "For the purposes of this section, the term "fire hydrant street area" means, with respect to a fire hydrant, any space that is located: 1. In a street; and 2. Between the center of such street and a line that (i) is 20 feet in length, (ii) has such hydrant at its center point and (iii) runs parallel to the curb nearest such hydrant." (§ 15-205.a)
+*   "It shall be unlawful in any manner to obstruct the use of any fire hydrant, or to throw or pile, or allow any snow or ice or other material or thing to be thrown or piled (i) upon a fire hydrant, (ii) within two feet of a fire hydrant or (iii) within a fire hydrant street area." (§ 15-205.b.1)
+
+**Why:** Tracking fire hydrant locations and operational status is critical for fire suppression and public safety.
+**One row represents:** A single fire hydrant.
+**Covers:** All fire hydrants maintained by the Department of Environmental Protection and inspected by the Fire Department.
+**Columns:**
+*   **Fire Hydrant ID**
+*   Location (Address, Latitude, Longitude, Borough, Council District)
+*   Installation Date
+*   Last Inspection Date (**Inspection ID** from Dataset 2)
+*   Operational Status (e.g., Operable, Inoperable, Under Repair)
+*   Date of Status Change
+*   Priority Hydrant (Yes/No)
+*   Obstruction Status (e.g., Clear, Obstructed by Snow/Ice, Obstructed by Other Material)
+*   Last Obstruction Clearance Date
+*   **Violation ID** (from Dataset 3, if obstruction violation issued)
+
+**12. Recruitment & Examination Records**
+
+**Quotes:**
+*   "The total number of applicants for the 2012 open-competitive firefighter civil service examination and promotion to firefighter civil service examination, and the number of applicants who: (a) Took the computer-based portion of such examination; (b) Achieved a passing score on the computer-based portion of such examination; (c) Were invited to take the physical portion of such examination; (d) Took or began to take the physical portion of such examination; (e) Passed the physical portion of such examination; (f) Were invited to participate in the department's 1.5 mile pre-appointment run testing or substitute cardio-pulmonary testing; (g) Were not offered appointment to the probationary firefighter school based on the results of the pre-appointment 1.5 mile run or substitute cardio-pulmonary testing; (h) Were offered appointment to each probationary firefighter school class that commenced prior to the effective date of the local law that added this section; (i) Accepted appointment to each class identified in subparagraph (h) of this paragraph; (j) Participated in the final 1.5 mile run or substitute cardio-pulmonary testing prior to graduating from the probationary firefighter school; (k) Failed to graduate from the probationary firefighter school based on the results of the final 1.5 mile run or substitute cardio-pulmonary testing; (l) Failed to graduate from each class identified in subparagraph (h) of this paragraph on the grounds that they could not adequately complete the functional skills training or any successor physical training or testing; (m) Graduated from each class identified in subparagraph (h) of this paragraph; and (n) Did not graduate from each class identified in subparagraph (h) of this paragraph." (§ 15-130.a.1)
+*   "The data provided pursuant to paragraph one of this subdivision shall be disaggregated by gender and by race or ethnicity." (§ 15-130.a.2)
+*   "The number of applicants for each open-competitive firefighter civil service examination and promotion to firefighter civil service examination administered on or after the effective date of the local law that added this section, and the number of applicants who: (a) Took the computer-based portion of such examination; (b) Achieved a passing score on the computer-based portion of such examination; (c) Were invited to take the physical portion of such examination; (d) Took or began to take the physical portion of such examination; (e) Passed the physical portion of such examination; (f) Were invited to participate in the department's 1.5 mile pre-appointment run testing or substitute cardio-pulmonary testing; (g) Were not offered appointment to the probationary firefighter school based on the results of the pre-appointment 1.5 mile run or substitute cardio-pulmonary testing; (h) Were offered appointment to each probationary firefighter school class that commenced after the effective date of the local law that added this section; (i) Accepted appointment to each probationary firefighter school class identified in subparagraph (h) of this paragraph; (j) Participated in the final 1.5 mile run or substitute cardio-pulmonary testing prior to graduating from the probationary firefighter school; (k) Failed to graduate from the probationary firefighter school based on the results of the final 1.5 mile run or substitute cardio-pulmonary testing; (l) Failed to graduate from each class identified in subparagraph (h) of this paragraph on the grounds that they could not adequately complete the functional skills training or any successor physical training or testing; (m) Graduated from each class identified in subparagraph (h) of this paragraph; and (n) Did not graduate from each class identified in subparagraph (h) of this paragraph." (§ 15-130.b.1)
+*   "The data provided pursuant to paragraph one of this subdivision shall be reported in total and disaggregated by gender and by race or ethnicity." (§ 15-130.b.2)
+*   "The department, in consultation with the department of citywide administrative services, shall develop and implement a plan regarding the recruitment and retention of firefighters. Such plan shall address the recruitment and retention of individuals from populations that are underrepresented within the rank of firefighter." (§ 15-144.a)
+*   "The number of recruitment events that department employees attended or held on behalf of the department;" (§ 15-144.b.3)
+*   "The number of recruitment contacts made with prospective firefighters at any such recruitment events described in paragraph 3 of this subdivision;" (§ 15-144.b.4)
+*   "The number of individuals who participated in department programming offered to support individuals in preparing for the fire academy and the candidate physical ability test, disaggregated by program offered and by the percentage of individuals who self-identify as members of populations that are underrepresented within the rank of firefighter;" (§ 15-144.b.5)
+*   "The percentage of probationary firefighters within the fire academy who participated in mentorship programming, disaggregated by the percentage of individuals who self-identify as members of populations that are underrepresented within the rank of firefighter." (§ 15-144.b.6)
+
+**Why:** Tracking recruitment and examination data is vital for workforce planning, diversity initiatives, and reporting.
+**One row represents:** A single applicant's progress through a specific examination or probationary school class.
+**Covers:** All applicants for firefighter civil service examinations and probationary firefighter school, including their demographic information and performance at various stages.
+**Columns:**
+*   **Recruitment Application ID**
+*   Applicant **Employee ID** (from Dataset 5, once appointed)
+*   Examination Cycle (e.g., 2012, 2015)
+*   Examination Type (e.g., Open-Competitive, Promotion)
+*   Applicant Gender
+*   Applicant Race/Ethnicity
+*   Computer-Based Exam Taken (Yes/No)
+*   Computer-Based Exam Score (Pass/Fail)
+*   Physical Exam Invited (Yes/No)
+*   Physical Exam Taken (Yes/No)
+*   Physical Exam Score (Pass/Fail)
+*   Pre-Appointment Run Test Invited (Yes/No)
+*   Pre-Appointment Run Test Result (Pass/Fail)
+*   Probationary School Class Offered (Yes/No)
+*   Probationary School Class Accepted (Yes/No)
+*   Probationary School Class Start Date
+*   Probationary School Class End Date
+*   Final Run Test Participated (Yes/No)
+*   Final Run Test Result (Pass/Fail)
+*   Functional Skills Training Completion (Yes/No)
+*   Graduated from Probationary School (Yes/No)
+*   Reason for Not Graduating (if applicable)
+*   Recruitment Event Attended (Yes/No)
+*   Recruitment Contact Made (Yes/No)
+*   Prep Program Participated (Yes/No)
+*   Mentorship Program Participated (Yes/No)
+
+**13. EEO Complaint Records**
+
+**Quotes:**
+*   "Providing additional and targeted interactive training to firehouses, as the department deems necessary, including but not limited to firehouses where one or more employee was found in violation of the city's equal employment opportunity policy or human rights law, or the department's anti-discrimination and anti-harassment policies on two or more occasions during the prior year" (§ 15-143.a.5)
+*   "EEO complaint. The term "EEO complaint" means a complaint filed with the equal employment opportunity office of the department regarding a potential violation of the city's equal employment opportunity policy." (§ 15-146.a)
+*   "No later than 30 days after the end of each fiscal year, the department shall submit to the mayor and the speaker of the council, and post on the department's website, a report regarding EEO complaints." (§ 15-146.b)
+*   "Such report shall contain the following information: 1. The number of EEO complaints filed during the previous fiscal year; 2. The number of EEO complaints resolved during the previous fiscal year; 3. Of the EEO complaints provided pursuant to paragraph 2 of this subdivision, the average time elapsed between the filing and resolution of such complaints; 4. Of the EEO complaints provided pursuant to paragraph 2 of this subdivision, the number of EEO complaints withdrawn prior to a final determination; 5. Of the EEO complaints provided pursuant to paragraph 2 of this subdivision, the number of EEO complaints resolved through mediation; 6. Of the EEO complaints provided pursuant to paragraph 2 of this subdivision, the number of EEO complaints not substantiated, further disaggregated by reason the complaint was not substantiated, including but not limited to: (a) a determination that there was insufficient evidence to establish that the alleged conduct occurred; (b) a determination that the conduct subject to the complaint occurred but did not violate the city's equal employment opportunity policy; or (c) a determination that conduct subject to complaint occurred and violated the city's equal employment opportunity policy but the identity of the offending party was unable to be ascertained; 7. Of the EEO complaints provided pursuant to paragraph 2 of this subdivision, the number of EEO complaints substantiated; 8. Of the EEO complaints provided pursuant to paragraph 7 of this subdivision, the number of EEO complaints that resulted in corrective action taken by the department, further disaggregated by the form of corrective action, including but not limited to: formal reprimand, fine, loss of pay or benefits, transfer, suspension, demotion, and termination; and 9. Staffing information of the department's equal employment opportunity office, disaggregated by job title, further disaggregated by budgeted and actual headcount." (§ 15-146.c)
+*   "All information on EEO complaints reported pursuant to subdivision c of this section shall be disaggregated by whether an employee subject to such complaint served in the department's bureau of fire operations, bureau of emergency medical services, or in another civilian position; further disaggregated by the type of misconduct alleged to have occurred, including but not limited to, harassment, bullying, or sexual misconduct." (§ 15-146.d)
+
+**Why:** Tracking EEO complaints is essential for promoting a fair workplace, addressing misconduct, and fulfilling reporting requirements.
+**One row represents:** A single EEO complaint filed with the department.
+**Covers:** All EEO complaints, their investigation, resolution, and any resulting corrective actions.
+**Columns:**
+*   **EEO Complaint ID**
+*   Filing Date
+*   Complainant **Employee ID** (from Dataset 5)
+*   Subject **Employee ID** (from Dataset 5, if identified)
+*   Alleged Misconduct Type (e.g., Harassment, Bullying, Sexual Misconduct, Discrimination)
+*   Subject's Bureau/Position (e.g., Fire Operations, EMS, Civilian)
+*   Complaint Status (e.g., Filed, In Review, Withdrawn, Resolved)
+*   Resolution Date
+*   Time to Resolution (Days)
+*   Resolved Through Mediation (Yes/No)
+*   Substantiated (Yes/No)
+*   Reason Not Substantiated (if applicable, e.g., Insufficient Evidence, No Policy Violation, Offending Party Unidentified)
+*   Corrective Action Taken (Yes/No)
+*   Corrective Action Type (e.g., Formal Reprimand, Fine, Loss of Pay/Benefits, Transfer, Suspension, Demotion, Termination)
+*   **Disciplinary Action ID** (from Dataset 7, if applicable)
+*   **Firehouse ID** (from Dataset 10, if complaint originated in a firehouse)
+
+**14. Building & Premises Records (FDNY Regulated)**
+
+**Quotes:**
+*   "The owners and proprietors of all multiple dwellings, factories, office buildings, warehouses, stores and offices, theatres and music halls, and the authorities or persons having charge of all hospitals and asylums, and of the public schools and other public buildings, churches and other places where large numbers of persons are congregated for purposes of worship, instruction or amusement, and of all piers, bulkheads, wharves, pier sheds, bulkhead sheds or other waterfront structures, shall provide such means of communicating alarms of fire to the department as the commissioner may prescribe." (§ 15-127.b.1)
+*   "In every hotel, lodging house, public or private hospital or asylum, department store, and public school, there shall be placed and provided, when required by the commissioner, an adequate and reliable electrical or other interior alarm system, to be approved by the commissioner, by means of which alarms of fire or other danger may be instantly communicated to every portion of the building." (§ 15-127.c.1)
+*   "In every building used or occupied as a hotel, lodging house or public or private hospital or asylum, there shall be employed by the owner or proprietor, or other person having the charge or management thereof, one or more building attendants, whose exclusive duty it shall be to visit every portion of such building at regular and frequent intervals, under rules and regulations to be established by the commissioner, for the purpose of detecting fire, or other sources of danger, and giving timely warning thereof to the inmates of the building. There shall be provided a clock or other device, to be approved by the commissioner, by means of which the movements of such building attendant may be recorded. The commissioner may, however, in his or her discretion, accept an automatic fire alarm system in lieu of such building attendants and time detectors." (§ 15-127.c.2)
+*   "In any of the buildings referred to in paragraphs one and two of this subdivision, there shall be posted such cards as the commissioner shall direct upon which shall be printed a diagram showing the exits, halls, stairways, elevators and fire escapes of the building, and, in the halls and passageways, such signs as the commissioner shall direct shall be posted indicating the location of the stairs and fire escapes." (§ 15-127.c.3)
+*   "The commissioner, in cases where provision is not otherwise made by law, is empowered in his or her discretion to require and compel the regular and periodical performance of a fire drill, including instruction and practice in the use of means of exit, alarm systems, and fire prevention or extinguishing methods and equipment, in all buildings, structures, enclosures, vessels, places and premises where numbers of persons work, live or congregate, except multiple dwellings." (§ 15-128)
+*   "The department shall make a good faith effort to directly contact owners and occupants of R-2 multiple dwellings to ensure that appropriate fire safety procedures, resources, and educational materials are in place." (§ 15-132.a)
+*   "The department shall require owners of multiple dwellings to post a notice in conspicuous locations indicating that those escaping a fire should close all doors behind them." (§ 15-135)
+*   "By March 1, 2019, the department, in consultation with the office of emergency management and the mayor's office for people with disabilities, and in conjunction with fire code emergency preparedness requirements for apartment buildings, shall develop a planning checklist to be provided to residents in group R-2 occupancies, including individuals with disabilities or limited mobility, to assist in the development of individualized emergency evacuation plans." (§ 15-140)
+*   "The department shall review and audit records of fire safety violations provided to it by the department of housing preservation and development pursuant to section 27-2046.5. The results of this audit shall be used to inform the department's building inspection program." (§ 15-141.a)
+*   "Upon finding that a violation of any law, the enforcement of which is charged upon the department, exists in any vessel, premises, ground, structure, building, or underground passage, the commissioner, the chief fire marshal, or such other member of the department designated by such commissioner, may issue a printed or written order directing the owner or occupant to alter, remedy, or remove such violation in such manner and in such reasonable time as is stated therein." (§ 15-223)
+*   "Orders of the department or of the commissioner shall be addressed to the owner or owners, lessees or occupants of the building, structure, enclosure, vessel, place or premises affected thereby." (§ 15-224)
+*   "Any building, structure, enclosure, vessel, place or premises perilous to life or property in case of fire therein or adjacent thereto, by reason of the nature or condition of its contents, its use, the overcrowding of persons therein, defects in its construction, or deficiencies in fire alarm, fire extinguishing or fire escape equipment, or by reason of any condition in violation of law, or order of the commissioner, is a public nuisance within the meaning of the code and the penal law. The commissioner is empowered to abate any such public nuisance." (§ 15-227.a)
+*   "In case any order to remedy a condition imminently perilous to life or property issued by the commissioner or the department is not complied with, or the commissioner certifies in writing that an emergency exists requiring such action, he or she may order and immediately cause any building or structure or part thereof (i) to be vacated; and, also, if the commissioner determines such action is necessary to the preservation of life and safety, (ii) to be sealed, secured and closed; provided, however, that the commissioner shall not order sealed, secured, and closed any dwelling unit or other space lawfully used for residential purposes." (§ 15-227.b)
+*   "Any order issued pursuant to this section shall be served in accordance with section 15-224 of the code and, in addition, shall be mailed to the record owner of such premises and any record mortgagee of such premises at the address for such person as set forth in the recorded instrument and to the person designated as owner or agent of the building or designated to receive real property tax or water bills for the building at the address for such person contained in one of the files compiled by the department of finance for the purpose of the assessment or collection of real property taxes and water charges or in the file compiled by the department of finance from real property transfer forms filed with the city register upon the sale or transfer of real property. A copy shall also be filed with the county clerk of the county in which such premises are located. Such filing shall be notice of the order to any subsequent owner and such owner shall be subject to such order." (§ 15-227.d.ii)
+*   "An order issued pursuant to this section shall not be rescinded unless the owner, lessor, lessee or mortgagee seeking such rescission provides assurance, in a form satisfactory to the commissioner, that the conditions which caused the issuance of such order have been corrected and will not reoccur." (§ 15-227.e)
+*   "Any person who makes a material false statement in any document submitted pursuant to subdivision c of this section which statement he or she knows or has reason to know will be relied upon by the commissioner in determining whether he or she will allow access to the premises shall be liable for a civil penalty of not more than fifty thousand dollars." (§ 15-227.1.d)
+*   "Notwithstanding any other law, rule, or regulation, any person, corporation, partnership, association or any other legal entity who permits a building, structure or part thereof to be unlawfully occupied or used in contravention of an order of the commissioner pursuant to section 15-227, or who negligently fails to prevent or prohibit such unlawful occupancy or use, shall be liable for a civil penalty of not more than one million dollars, if any other person suffers serious physical injury, as defined in section ten of the penal law, or death in the building, structure or part thereof subject to such order, as a result of such unlawful occupancy or use." (§ 15-227.1.e)
+*   "The expenses attending the execution of any and all orders duly made by the department shall respectively be a several and joint personal charge against each of the owners or part owners, and each of the lessees and occupants of the building, structure, vessel, enclosure, place or premises to which such order relates, and in respect to which such expenses were incurred; and also against every person or body who was by law or contract bound to do that in regard to such building, structure, vessel, enclosure, place or premises which such order requires." (§ 15-228)
+
+**Why:** A master list of regulated buildings and premises is necessary for inspections, enforcement, and outreach.
+**One row represents:** A single building, structure, vessel, or premises regulated by the department.
+**Covers:** All multiple dwellings, factories, office buildings, warehouses, stores, offices, theaters, music halls, hospitals, asylums, public schools, public buildings, churches, piers, bulkheads, wharves, pier sheds, bulkhead sheds, other waterfront structures, and R-2 occupancies.
+**Columns:**
+*   **Building/Premises ID**
+*   Address
+*   Building Type/Occupancy Classification (e.g., Multiple Dwelling, Factory, Hotel, R-2 Occupancy)
+*   Owner Name
+*   Owner Contact Information
+*   Lessee Name (if applicable)
+*   Lessee Contact Information (if applicable)
+*   Fire Alarm System Required (Yes/No)
+*   Interior Alarm System Required (Yes/No)
+*   Building Attendants Required (Yes/No)
+*   Automatic Fire Alarm System in Lieu of Attendants (Yes/No)
+*   Exit Diagrams Posted (Yes/No)
+*   Fire Drills Required (Yes/No)
+*   Fire Safety Notice Posted (Closed Doors) (Yes/No)
+*   Emergency Evacuation Checklist Provided (Yes/No)
+*   Last HPD Fire Safety Violation Audit Date
+*   Current Vacate Order (Yes/No)
+*   Current Seal/Secure/Close Order (Yes/No)
+*   Date of Last Order
+*   Order Filed with County Clerk (Yes/No, Date)
+*   Date of Last Rescission
+*   Date of Last Closing Report to Council/Community Board
+*   Date of Last Reopening Report to Council/Community Board
+
+**15. Fire Alarm System Component Inventory**
+
+**Quotes:**
+*   "The fire alarm telegraph system shall be operated or used only by the commissioner, or the officers and employees of the department charged with its operation or maintenance or authorized to use it for instruction or drill. Any person, however, may freely operate the same to communicate actual alarms of fire. It shall be unlawful for any person to experiment or tamper with such system for any purpose whatever, or to have or possess any key thereof, without the authority of the commissioner. It shall be unlawful for any person to post, paint, impress, or in any way affix to any pole connected with the fire alarm telegraph, or any box, wire or other appliance connected therewith, any placard, sign, broadside, notice, or announcement of any kind; or to cut, mutilate, alter, mar, deface, cover, obstruct or interfere with the same in any manner whatsoever; or to paint, or cause to be painted, the poles of any other telegraph, or any other poles on the lines thereof, in a color or colors similar to those of poles upon which are fire alarm boxes, or in imitation thereof; or to consent, allow, or be privy to any of such things done for him or her or upon his or her behalf." (§ 15-126.a)
+*   "The commissioner is authorized and empowered to extend the department's fire alarm telegraph system whenever in his or her judgment it shall be deemed desirable, by the purchase, lease or license of the whole or a part or parts of the appliance, apparatus, equipment, patents, licenses, franchises, rights, contracts or other property of any kind, of any fire alarm telegraph or fire alarm signal company doing business in the city, at a price to be agreed upon with the persons or corporation owning the same, and every such corporation is hereby authorized to sell, lease or license the same to the city." (§ 15-127.a.2)
+*   "The commissioner shall have the power to enter in person or by his or her duly authorized employees, the buildings or premises which are provided, upon the application of the owners or agents thereof, or which are directed by the commissioner to be provided, with the means of communicating alarms of fire directly to the department, for the purpose of maintaining, repairing, examining or installing the same." (§ 15-127.b.2)
+*   "The fire alarm apparatus and all other appliances placed or kept within any of such buildings for the purpose of preventing or extinguishing fires, or for affording means of escape therefrom in case of fire, shall be kept at all times in good working order and proper condition for immediate use, and any member of the uniformed force or authorized representative of the department may enter any of such buildings, at any time, for the purpose of inspecting such apparatus or appliances." (§ 15-127.c.1)
+*   "The department shall make all components of applications for fire alarm plan examinations available for online submission." (§ 15-139.a)
+
+**Why:** Managing the fire alarm system and its components is critical for emergency communication and response.
+**One row represents:** A single component of the fire alarm telegraph system or an auxiliary fire alarm system.
+**Covers:** All fire alarm boxes, wires, poles, appliances, and other equipment forming part of the city's fire alarm telegraph system or connected auxiliary systems.
+**Columns:**
+*   **Fire Alarm System ID**
+*   Component Type (e.g., Fire Alarm Box, Pole, Wire, Auxiliary System, Interior Alarm System)
+*   Location (Address, Latitude, Longitude)
+*   Installation Date
+*   Manufacturer
+*   Model Number
+*   Ownership (City, Private Company)
+*   Connection to City System (Yes/No)
+*   Last Maintenance Date
+*   Next Scheduled Maintenance Date
+*   Operational Status (e.g., Functional, Damaged, Inoperable)
+*   **Building/Premises ID** (from Dataset 14, if an interior or auxiliary system)
+*   **Violation ID** (from Dataset 3, if tampering or obstruction occurred)
+*   **Financial Transaction ID** (from Dataset 17, for compensation/charges)
+
+**16. Outreach & Education Activity Records**
+
+**Quotes:**
+*   "The department shall make a good faith effort to directly contact owners and occupants of R-2 multiple dwellings to ensure that appropriate fire safety procedures, resources, and educational materials are in place. These efforts shall include, where appropriate, (i) ensuring compliance with fire code section 401.6 and applicable department rules relating to owners providing notice to occupants of fire safety measures, (ii) providing fire safety and fire prevention educational materials, (iii) providing relevant training to staff at such dwellings, and (iv) providing educational materials and conducting outreach relating to the safe operation of electric space heaters in residential settings. Any written materials disseminated by the department pertaining to fire safety education shall be made available in the top ten languages most commonly spoken within the city as determined by the department of city planning." (§ 15-132.a)
+*   "Beginning January 31, 2019 and annually thereafter, the department shall electronically submit to the mayor and the speaker of the council and post on its website a report describing the activities taken pursuant to this section during the previous calendar year." (§ 15-132.b)
+*   "The department, in consultation with the department of education, shall develop and implement a plan for educating both children and parents about fire safety and prevention. Such plan shall include but need not be limited to public service announcements, outreach in public and non-public schools about common fire dangers for children and preventative measures to be taken by parents." (§ 15-133.a)
+*   "Beginning January 31, 2019 and annually thereafter, the department shall electronically submit to the mayor and the speaker of the council and post on its website a report describing the activities taken pursuant to this section during the previous calendar year." (§ 15-133.b)
+*   "By March 1, 2019, the department, in consultation with the office of emergency management and the mayor's office for people with disabilities, and in conjunction with fire code emergency preparedness requirements for apartment buildings, shall develop a planning checklist to be provided to residents in group R-2 occupancies, including individuals with disabilities or limited mobility, to assist in the development of individualized emergency evacuation plans. Such checklist shall inform residents about the availability of evacuation assistance devices and other means of evacuation, and outline recommended measures that individuals with disabilities or limited mobility can proactively take to prepare to safely evacuate a building in case of emergency, such as identifying neighbors who can provide assistance in an emergency. Such checklist shall be made available on the department's website and included in the emergency preparedness guides required by the fire code to be distributed to the residents of such buildings." (§ 15-140)
+*   "The department, in consultation with the department of consumer and worker protection, shall develop an informational campaign to educate the public on the fire risks posed by powered mobility devices and safety measures that mitigate such risks. Such campaign shall address both commercial and personal use of powered mobility devices and include, but not be limited to, guidance on: (i) purchasing mobility devices and battery equipment that meet established fire safety standards; (ii) maintenance and care information for powered mobility devices and lithium-ion batteries; and (iii) storage and charging precautions for powered mobility devices and lithium-ion batteries. Such campaign shall include, but not be limited to, the use of print, online and social media advertisements, public service announcements, and public forums." (§ 15-147.b)
+*   "The fire commissioner shall distribute the guide developed pursuant to subdivision a of this section to residents displaced by a residential fire or otherwise affected by such fire through the use of a quick response code posted on department vehicles responding to the scene of such fire, and any other manner the fire commissioner determines practicable and effective." (§ 15-151.c)
+
+**Why:** Tracking outreach and education activities is necessary for fulfilling public safety mandates and reporting on efforts.
+**One row represents:** A single outreach event, educational session, or distribution of materials.
+**Covers:** All residential (R-2 multiple dwellings), youth, powered mobility device, and general fire safety education and outreach activities.
+**Columns:**
+*   Outreach Activity ID
+*   Activity Date
+*   Activity Type (e.g., Residential Outreach, Youth Education, School Outreach, Public Forum, Material Distribution, PSA Campaign)
+*   Target Audience (e.g., R-2 Owners/Occupants, Children, Parents, General Public, Powered Mobility Device Users)
+*   Location/Channel (e.g., School Name, Community Center, Website, Social Media, Print Ad, Fire Incident Scene)
+*   Materials Distributed (e.g., Fire Safety Guide, Evacuation Checklist, Space Heater Safety Info, Powered Mobility Device Safety Info)
+*   Languages Used (for written materials)
+*   Number of Participants/Recipients
+*   Staff Involved (List of **Employee ID**s from Dataset 5)
+*   **Building/Premises ID** (from Dataset 14, if targeting specific buildings)
+*   **Incident ID** (from Dataset 1, if distribution at fire scene)
+
+**17. Financial Transaction Records (Fines, Fees, Reimbursements)**
+
+**Quotes:**
+*   "there shall be paid on the first day of June in each year to the treasurers of such volunteer fire companies, by the comptroller, the following sums: To the treasurer of an engine company or chemical engine company twelve hundred dollars, to the treasurer of a hook and ladder company ten hundred dollars, to the treasurer of a hose company, eight hundred dollars, and to the treasurer of a patrol company, eight hundred dollars." (§ 15-102.b)
+*   "Any member of the uniformed force of the fire department, who immediately prior to his or her appointment or employment as such, has served or shall have served as a member of the police force of the police department, shall have the time served by such member in such police department counted as service in the fire department in determining his or her retirement and pension in such department as herein or otherwise provided, upon condition that he or she shall contribute to the appropriate fire department pension fund a sum equal to the amount which he or she would have been required to contribute had the time served in the police department been served in the fire department." (§ 15-111.a.1)
+*   "Any member of the department who shall withdraw or resign without the permission of the commissioner shall be subject to the forfeiture of salary due to such member." (§ 15-114)
+*   "Whenever any member of the uniformed force of the department, while in the actual performance of his or her duty, shall lose or have destroyed any of his or her personal belongings, and shall present satisfactory proof thereof to the commissioner, such member shall be reimbursed to the extent of the loss sustained, at the expense of the city." (§ 15-119)
+*   "All persons engaged in the maintenance and operation of auxiliary fire alarm telegraph systems from which rent, profit or compensation is derived, and which are connected with the fire alarm telegraph system maintained by the city, or who, for the benefit of their patrons, are permitted to make any use whatsoever of the service of such fire alarm telegraph system shall pay such reasonable compensation to the city for such privilege and for such period of time as shall be fixed by the board of estimate on the recommendation of the commissioner." (§ 15-127.a.1)
+*   "The commissioner is authorized to fix and collect reasonable charges for the maintenance and equipment of such special fire alarm service thus provided, and such moneys when collected by the commissioner shall be paid into the general fund." (§ 15-127.b.2)
+*   "Any person who shall violate or fail to comply with any laws, rules, or regulations enforceable by the department, unless a different penalty is specifically provided, shall be guilty of a violation and upon conviction thereof shall be punished by a fine of not more than five thousand dollars for each offense. Such person shall also be subject to the payment of a civil penalty of not more than five thousand dollars which may be recovered in a civil action brought in the name of the commissioner." (§ 15-216.a)
+*   "Any person who shall knowingly violate or fail to comply with any laws, rules, or regulations enforceable by the department, unless a different penalty is specifically provided, shall be guilty of a misdemeanor and, upon conviction thereof, shall be punished by a fine of not more than ten thousand dollars or imprisonment for not more than six months or both for each offense. Such person shall also be liable for a civil penalty of not more than ten thousand dollars which may be recovered in a civil action brought in the name of the commissioner." (§ 15-216.b)
+*   "The commissioner, in his or her discretion, may pay a portion of a fine or penalty when collected, not to exceed one-half thereof, to any person giving information of any such violation." (§ 15-216.c)
+*   "The commissioner is authorized and empowered to receive and collect all license fees mentioned in this title and chapter four of title twenty-seven of the code, and may sue for, and shall have the exclusive right of recovery of any and all fees, fines and penalties imposed hereunder, together with costs." (§ 15-217)
+*   "The commissioner and the corporation counsel shall pay all license fees, fines and penalties received by them pursuant to any of the provisions of this title and chapter four of title twenty-seven of the code into the general fund of the city established pursuant to section one hundred nine of the charter." (§ 15-217)
+*   "Any person or persons who fail to attend and testify as required by any subpoena issued under the authority of this section shall be liable to a penalty in the sum of fifty dollars." (§ 15-219.c)
+*   "Any person who shall knowingly make a false statement or who shall knowingly falsify or allow to be falsified any certificate, form, signed statement, application, report or certification of the correction of a violation required under the provisions of any laws, rules, or regulations enforceable by the department, shall be punished by a fine of not less than one thousand dollars nor more than five thousand dollars or by imprisonment not to exceed six months, or both for each such offense." (§ 15-220.1.a)
+*   "Such person shall also be liable for a civil penalty of not less than one thousand dollars nor more than five thousand dollars which may be recovered in a proceeding before the environmental control board." (§ 15-220.1.b)
+*   "Any person who shall violate or fail to comply with an order issued by the commissioner, except an order issued pursuant to section 15-230, shall be guilty of a violation and, upon conviction thereof, shall be punished by a fine not to exceed five thousand dollars. Such person shall also be subject to the payment of a civil penalty of not more than five thousand dollars to be recovered in a civil action brought in the name of the commissioner or in a proceeding before the environmental control board." (§ 15-223.1.a)
+*   "Any person who shall knowingly violate or fail to comply with any order of the commissioner, except an order issued pursuant to section 15-230, shall be guilty of a misdemeanor and upon conviction thereof shall be punished by a fine of not more than ten thousand dollars or imprisonment for not more than six months or both for each offense. Such person shall also be subject to a civil penalty of not more than ten thousand dollars to be recovered in a civil action brought in the name of the commissioner or in a proceeding before the environmental control board." (§ 15-223.1.b)
+*   "The party offending shall pay the expense of enforcing such order and, in addition thereto, shall forfeit and pay to the department the sum of fifty dollars. Where the order relates to the storage of explosive or combustible compounds or mixtures, the party offending shall pay an additional penalty of twenty-five dollars plus five dollars for each day's neglect or refusal to comply with such order." (§ 15-226)
+*   "The expenses attending the execution of any and all orders duly made by the department shall respectively be a several and joint personal charge against each of the owners or part owners, and each of the lessees and occupants of the building, structure, vessel, enclosure, place or premises to which such order relates, and in respect to which such expenses were incurred; and also against every person or body who was by law or contract bound to do that in regard to such building, structure, vessel, enclosure, place or premises which such order requires. Such expenses shall also be a lien on all rent and compensation due, or to grow due, for the use of any building, structure, vessel, enclosure, place or premises, or any part thereof, to which such order relates, and in respect to which such expenses were incurred." (§ 15-228)
+*   "Any person who violates the provisions of an order to vacate issued pursuant to section 15-227 of this code shall be liable for a civil penalty of not more than twenty-five thousand dollars and an additional civil penalty of not more than one thousand dollars for each day the violation continues." (§ 15-227.1.a)
+*   "Except as authorized by the commissioner, any person who removes or causes to be removed the seal from any premises sealed in accordance with an order of the commissioner or his or her designee shall be guilty of a misdemeanor punishable by imprisonment for no more than one year or a fine not to exceed fifty thousand dollars, or both such fine and imprisonment. Such person shall also be subject to a civil penalty not to exceed fifty thousand dollars." (§ 15-227.1.b)
+*   "Any person who makes a material false statement in any document submitted pursuant to subdivision c of this section which statement he or she knows or has reason to know will be relied upon by the commissioner in determining whether he or she will allow access to the premises shall be liable for a civil penalty of not more than fifty thousand dollars." (§ 15-227.1.d)
+*   "Notwithstanding any other law, rule, or regulation, any person, corporation, partnership, association or any other legal entity who permits a building, structure or part thereof to be unlawfully occupied or used in contravention of an order of the commissioner pursuant to section 15-227, or who negligently fails to prevent or prohibit such unlawful occupancy or use, shall be liable for a civil penalty of not more than one million dollars, if any other person suffers serious physical injury, as defined in section ten of the penal law, or death in the building, structure or part thereof subject to such order, as a result of such unlawful occupancy or use." (§ 15-227.1.e)
+*   "Any person who shall fail to comply with an order of the commissioner issued pursuant to subdivision a of section 15-230 within the time specified in such subdivision or within such further period of time as may be provided by the environmental control board pursuant to subdivision b of section 15-230 shall, in addition to the penalties which may be imposed for the violation pursuant to section 15-229, be liable for a civil penalty of not more than five thousand dollars for each violation for which there has been a failure to comply with such order." (§ 15-231.a)
+*   "The city hereby offers a reward of not more than one thousand dollars per conviction to any person or persons giving information leading to the detection, arrest and conviction of any person or persons guilty of arson, attempted arson or conspiracy to commit arson, or felony murder arising in connection with arson." (§ 15-233.a)
+*   "The commissioner, in his or her discretion, shall determine the amount payable and certify to the comptroller the name of the person or persons to whom the reward shall be made payable and the amount to be paid." (§ 15-233.e)
+*   "The comptroller shall pay such reward as a claim against the city from the funds appropriated therefor by warrant to the person or persons named in such certification." (§ 15-233.f)
+
+**Why:** Tracking all financial transactions, including payments, collections, and reimbursements, is essential for financial accountability.
+**One row represents:** A single financial transaction (payment, collection, reimbursement, forfeiture).
+**Covers:** All payments to volunteer companies, pension fund contributions, salary forfeitures, employee reimbursements, auxiliary fire alarm system compensation/charges, fines, penalties, enforcement expenses, and arson rewards.
+**Columns:**
+*   **Financial Transaction ID**
+*   Transaction Date
+*   Transaction Type (e.g., Payment to Volunteer Co., Pension Contribution, Salary Forfeiture, Employee Reimbursement, Auxiliary System Charge, Fine Collection, Penalty Collection, Enforcement Expense, Arson Reward Payment)
+*   Amount
+*   Payer/Recipient Name
+*   Payer/Recipient Type (e.g., Volunteer Company, Employee, Property Owner, Auxiliary System Company, Informant)
+*   **Employee ID** (from Dataset 5, if employee-related)
+*   **Volunteer Company ID** (from Dataset 10, if applicable)
+*   **Violation ID** (from Dataset 3, if fine/penalty related)
+*   **Fire Alarm System ID** (from Dataset 15, if auxiliary system charge)
+*   **Arson Reward Claim ID** (from Dataset 22, if reward payment)
+*   Fund (e.g., General Fund, Pension Fund)
+*   Status (e.g., Paid, Collected, Outstanding)
+
+**18. EMS Station & Unit Inventory**
+
+**Quotes:**
+*   "Emergency medical services division. The term "emergency medical services division" means a collection of several emergency medical services stations, provided that if a division extends to two or more boroughs, the department shall report the information set forth below separately for each such borough." (§ 15-137.a)
+*   "Emergency medical services station. The term "emergency medical services station" means a location that houses ambulances, or other emergency vehicles, and emergency medical services staff." (§ 15-137.a)
+*   "Emergency medical services unit. The term "emergency medical services unit" means an individual ambulance or other emergency vehicle staffed by department personnel." (§ 15-137.a)
+*   "No later than January 1, 2019, and at the beginning of each subsequent quarter, the department shall submit to the council a report on emergency medical services divisions and stations." (§ 15-137.b)
+*   "Such report shall include, but need not be limited to, the following information: 1. The assigned number of each emergency medical services division and the general geographic area each such division covers; 2. The assigned number of each emergency medical services station within each emergency medical services division, the geographic area each such emergency medical services station covers, including any formal and commonly known names and the area in square miles, and the number of department personnel assigned to each such emergency medical services station; 3. The total number of emergency medical services units within each emergency medical services station; 4. The total number of designated emergency medical services supervising officers for each emergency medical services station within each emergency medical services division; and 5. For each emergency medical services division, the ratio of emergency medical services supervising officers to emergency medical services stations within each such division." (§ 15-137.c)
+
+**Why:** Tracking EMS stations and units is essential for resource deployment, staffing, and operational reporting.
+**One row represents:** A single EMS station or an individual EMS unit (ambulance/vehicle).
+**Covers:** All EMS divisions, stations, and units.
+**Columns:**
+*   **EMS Station ID** / **EMS Unit ID**
+*   Type (e.g., EMS Station, Ambulance, Emergency Vehicle)
+*   Assigned Number
+*   Formal Name
+*   Commonly Known Name
+*   Geographic Area Covered (Description, Square Miles)
+*   Borough
+*   **EMS Division ID**
+*   Number of Department Personnel Assigned (for stations)
+*   Number of EMS Supervising Officers (for stations)
+*   **Asset ID** (from Dataset 10, if a physical vehicle)
+*   Operational Status (e.g., Active, Inactive, In Maintenance)
+
+**19. Body Armor Inventory & Issuance**
+
+**Quotes:**
+*   "The commissioner shall provide body armor to all employees of the department within the bureau of emergency medical services who provide emergency medical services. Such body armor shall be of the type that the commissioner determines would be most suitable for the protection of such employees, and shall meet ballistic and stab resistance standards of the national institute of justice or any successor standards." (§ 15-148.a)
+*   "No employee of the department shall be permitted to retain or use the body armor provided pursuant to subdivision a of this section after leaving the employment of the department or moving to a position that does not involve the provision of emergency medical services." (§ 15-148.b)
+
+**Why:** Tracking body armor issuance and return is necessary for employee safety and asset management.
+**One row represents:** A single piece of body armor.
+**Covers:** All body armor provided to EMS employees.
+**Columns:**
+*   **Body Armor ID**
+*   Type (e.g., Vest, Plate Carrier)
+*   Ballistic Standard Met
+*   Stab Resistance Standard Met
+*   Issuance Date
+*   Issued To **Employee ID** (from Dataset 5)
+*   Return Date
+*   Reason for Return (e.g., Left Employment, Moved Position)
+*   Condition on Return
+*   Status (e.g., Issued, In Storage, Retired)
+*   **Asset ID** (from Dataset 10)
+
+**20. Rezoning Impact Assessment Records**
+
+**Quotes:**
+*   "No later than February 1 of each year, the department, in consultation with the department of city planning, shall submit to the council a report, as set forth in subdivision c of this section, stating the potential impact of certain rezonings that occurred during the previous fiscal year on the services the department provides, in terms of fire protection and emergency medical services, in areas for which certain rezonings were approved in the previous fiscal year." (§ 15-138.b)
+*   "Such report shall consider rezonings for which the department provided input in the city environmental quality review process and shall include for such rezonings, but need not be limited to, the following information: 1. The rezoned area, including the borough, formal and commonly known names of the area, major streets and avenues covered by the rezoning and the total area in square miles covered by the rezoning; 2. For each such rezoned area, a brief description of the type of rezoning that took place, including any substantial change in zoning district classification; and 3. For each such rezoned area, the potential impact of such rezoning on the services the department provides, as provided by the department in the city environmental quality review process, in terms of fire protection personnel and staffing, equipment, vehicles and stations, where applicable, with a separate category including information on the impact of such rezoning on the services the department provides in terms of emergency medical services personnel and staffing, equipment, vehicles and station locations, where applicable." (§ 15-138.c)
+
+**Why:** Tracking rezoning impacts is necessary for long-term planning and resource allocation for fire and EMS services.
+**One row represents:** A single rezoning project for which the department provided input.
+**Covers:** All rezoning projects where the department assessed potential impacts on fire protection and EMS services.
+**Columns:**
+*   Rezoning Project ID
+*   Fiscal Year of Approval
+*   Rezoned Area Name (Formal, Commonly Known)
+*   Borough
+*   Major Streets/Avenues Covered
+*   Total Area (Square Miles)
+*   Type of Rezoning (Description, Zoning District Change)
+*   FDNY CEQR Input Date
+*   Assessed Impact on Fire Protection Personnel/Staffing
+*   Assessed Impact on Fire Protection Equipment/Vehicles
+*   Assessed Impact on Fire Protection Stations
+*   Assessed Impact on EMS Personnel/Staffing
+*   Assessed Impact on EMS Equipment/Vehicles
+*   Assessed Impact on EMS Station Locations
+
+**21. Mutual Aid Agreements**
+
+**Quotes:**
+*   "Subject to the limitations contained in subdivision b of this section, the commissioner is hereby empowered to enter into a mutual aid agreement with the fire commissioner of the city of Mount Vernon. Such agreement shall authorize the dispatching of fire fighting equipment from the city of New York to the city of Mount Vernon when so requested by the commissioner of the city of Mount Vernon." (§ 15-123.a)
+
+**Why:** Tracking mutual aid agreements is necessary for inter-agency cooperation and resource sharing.
+**One row represents:** A single mutual aid agreement.
+**Covers:** All mutual aid agreements entered into by the department.
+**Columns:**
+*   Agreement ID
+*   Partner Agency/Jurisdiction (e.g., City of Mount Vernon)
+*   Agreement Date
+*   Scope of Agreement (e.g., Specific geographic area, types of emergencies)
+*   Limitations (e.g., Specific equipment types)
+*   Expiration Date
+*   Status (e.g., Active, Expired)
+*   Last Review Date
+
+**22. Arson Reward Claim Records**
+
+**Quotes:**
+*   "The city hereby offers a reward of not more than one thousand dollars per conviction to any person or persons giving information leading to the detection, arrest and conviction of any person or persons guilty of arson, attempted arson or conspiracy to commit arson, or felony murder arising in connection with arson." (§ 15-233.a)
+*   "The offer made herein subject to and limited by availability of funds appropriated therefore and shall be paid only if no other reward is paid by the city for information leading to detections, arrests and convictions arising from the same incident of arson, attempted arson, conspiracy to commit arson or felony murder arising from arson." (§ 15-233.b)
+*   "The commissioner, in his or her discretion, shall determine the amount payable and certify to the comptroller the name of the person or persons to whom the reward shall be made payable and the amount to be paid. If a reward is to be made payable to more than one person for the same information, the certification may specify that payment is to be made jointly to the persons so named." (§ 15-233.e)
+*   "The comptroller shall pay such reward as a claim against the city from the funds appropriated therefor by warrant to the person or persons named in such certification." (§ 15-233.f)
+*   "The offer made by this section shall not be available: (1) to any person employed by or having auxiliary status or other membership in any police or fire department or other law enforcement agency in the state; or (2) to any person who has obtained the information directly or indirectly from a member of any police or fire department or other law enforcement agency in the state." (§ 15-233.g)
+
+**Why:** Tracking arson reward claims is necessary for administering the reward program and ensuring eligibility.
+**One row represents:** A single claim for an arson reward.
+**Covers:** All claims for rewards related to arson, attempted arson, conspiracy to commit arson, or felony murder arising from arson.
+**Columns:**
+*   **Arson Reward Claim ID**
+*   Claim Date
+*   Claimant Name
+*   Claimant Contact Information
+*   **Investigation ID** (from Dataset 4, if linked to an investigation)
+*   Related Conviction (Yes/No)
+*   Conviction Date
+*   Claimant Eligibility Verified (Yes/No)
+*   Reason for Ineligibility (if applicable, e.g., Law Enforcement Employee)
+*   Reward Amount Determined
+*   Commissioner Certification Date
+*   Payment Status (e.g., Paid, Denied, Pending)
+*   Payment Date
+*   **Financial Transaction ID** (from Dataset 17, if paid)
+
+**23. Council Member Notification Preferences**
+
+**Quotes:**
+*   "A process shall be established whereby any council member can opt out of the notification required by this section." (§ 15-150.c)
+
+**Why:** Tracking council member preferences for notifications is necessary for compliance with reporting requirements.
+**One row represents:** A single council member's notification preference.
+**Covers:** Notification preferences for "all hands fire" incidents for all council members.
+**Columns:**
+*   Council Member ID
+*   Council Member Name
+*   District Number
+*   Opt-Out of Notification (Yes/No)
+*   Last Preference Update Date
+
+---
+
+**Non-Tabular Information:**
+
+*   Rules and regulations (§ 15-113, § 15-120.a, § 15-143.a, § 15-144.a)
+*   Job applications (§ 15-103.a.3)
+*   Warrants of appointment (§ 15-106)
+*   Oaths of office (§ 15-105)
+*   Diagrams of means of exit (§ 15-127.c.3)
+*   Emergency preparedness guides (§ 15-140)
+*   Informational campaign materials (§ 15-147.b)
+*   Residential fire emergency response guide (§ 15-151.a, § 15-151.b)
+*   Testimony and investigation reports (text/documents) (§ 15-220.b)
+*   Subpoenas (§ 15-219.a.2, § 15-219.b.1)
+*   Notices of violation (document) (§ 15-230.a)
+*   Certifications of correction (document) (§ 15-230.a)
+*   Recruitment campaign advertisements (§ 15-144.a.2)
+*   Preparatory materials for firefighter applicants (§ 15-130.c.3)
+*   Consent forms (Mayor's consent for rehearing) (§ 15-115.a)
+*   Waiver forms (back pay waiver) (§ 15-115.a, § 15-115.e)
+*   Affirmations for premises access (§ 15-227.1.c)
+*   Construction plans for firehouse upgrades (§ 15-142.c)
+*   Fire safety notices for R-2 dwellings (§ 15-135)
+*   Planning checklist for limited mobility evacuation (§ 15-140)

@@ -1,0 +1,396 @@
+**Data Systems Plan for the Department of Citywide Administrative Services (DCAS)**
+
+As an operations expert, I have meticulously analyzed the provided charter to identify the critical tabular datasets required for the Department of Citywide Administrative Services (DCAS) to fulfill its legal obligations and effectively manage its diverse operations. The datasets are structured by workflow and department, ensuring accuracy, security, and utility for management decision-making and oversight.
+
+---
+
+**Tabular Datasets**
+
+1.  **Employee Records (Citywide)**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The commissioner shall be responsible for citywide personnel matters" (Section 811)
+        *   "The personnel policies and practices of the city government, in furtherance of this charter, the civil service law and rules and other applicable law, shall: (1) preserve and promote merit and fitness in city employment, (2) ensure that appointments and promotions in city service are made, and that wages are set, without regard to political affiliation, and without unlawful discrimination based on sex, race, color, religion, religious observance, national origin, disability, age, marital status, citizenship status or sexual orientation; and promote and support the efficient and effective delivery of services to the public." (Section 812.a)
+        *   "To keep records regarding candidates for appointment to the civil service and officers and employees in the civil service" (Section 814.a.9)
+        *   "The commissioner shall submit a quarterly report to the mayor, the council, the civil service commission and the equal employment practices commission. Such report shall specify, by agency and by title, including temporary titles: (1) the number of provisional employees at the end of the second month of the quarter; (2) the length of time such provisional employees have served in their positions; and (3) the actions taken by the city to reduce the number of such provisional employees and the length of their service in such positions." (Section 814.e)
+        *   "The commissioner, acting through the office, shall have the power to: (1) Compile and report on statistics relating to hiring, salary, and promotion for all city agencies disaggregated by race, gender, civil service classification, and other categories as appropriate, and make such reports publicly available online on an annual basis." (Section 814.1.c.1)
+        *   "Such report shall include, but not be limited to, an analysis of the city government workforce and applicants for such employment by agency, title and classification except where a civil service exam was the basis of appointment; statistics relating to hiring, salary and promotion for all city agencies disaggregated by race, gender, and civil service classification and other categories as appropriate; a description of each agency's employment practices, policies and programs; an analysis of the effectiveness of the city's efforts to provide fair and effective affirmative employment practices to ensure equal employment opportunity for minority group members and women who are employed by, or who seek employment with, city agencies; an analysis of employee response rates to efforts to collect demographic information over time, and whether changes in the racial and ethnic classification categories used to collect demographic information have had an impact on employee response rates; a review of racial and ethnic classification categories used to collect demographic information and recommendations for how to improve the use of such categories to reflect the city government workforce; and such legislative, programmatic and budgetary recommendations for the development, implementation or improvement of such activities as the commissioner deems appropriate." (Section 814.1.c.10)
+        *   "To maintain personnel records" (Section 815.a.17)
+        *   "No later than September 30, 2023, and by each September 30 thereafter, the head of each city agency shall publish and submit to the mayor, the speaker of the council, the department of citywide administrative services, and the equal employment practices commission a report that contains the following information: (1) Number of new full-time and part-time employees retained by such agency; (2) Number of employees promoted at such agency, their level of promotion, old and new titles, and their change in pay; (3) Number of employees terminated by such agency and their pay at the time of termination; (4) Number of employees that left such agency and the pay received by such employees; and (5) Aggregated data showing the frequency of full-time, part-time, and seasonal employees retained by such agency, EEO-4 job group, pay band, race, ethnicity, gender, and any factors that affect the pay of such employees." (Section 815.l)
+    *   **Why:** Essential for managing citywide personnel, payroll, EEO reporting, and comprehensive workforce analysis.
+    *   **One row represents:** A single city employee.
+    *   **Covers:** All current and past city employees, including full-time, part-time, seasonal, provisional, interns, independent contractors, and volunteers.
+    *   **Columns:** Employee ID, Agency ID (2), Employee Name, Date of Birth, Gender, Race, Ethnicity, National Origin, Religion, Disability Status, Age, Marital Status, Citizenship Status, Sexual Orientation, Political Affiliation, Hire Date, Termination Date, Reason for Termination, Current Employment Status (Active, Terminated, Leave), Employee Type (Full-time, Part-time, Seasonal, Provisional, Intern, Independent Contractor, Volunteer), Civil Service Class (Competitive, Non-competitive, Exempt, Labor), Civil Service Title ID (3) (Current), Old Civil Service Title ID (3) (for promotions), Managerial Assignment Level (if applicable), EEO-4 Job Group, Pay Band, Current Salary, Pay Change (for promotions), Last Performance Evaluation Date, Probationary Period End Date, Collective Bargaining Unit, Union Membership Status, Provisional Appointment Date, Length of Provisional Service, Provisional Status Compliance Review Date, Provisional Status Compliance Outcome.
+
+2.  **Agency Information**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The commissioner shall be responsible for citywide personnel matters, as set forth in this chapter, and shall have all the powers and duties of a municipal civil service commission provided in the civil service law or in any other statute or local law other than such powers and duties as are by this chapter assigned to the mayor, the city civil service commission or the heads of the city agencies" (Section 811)
+        *   "The commissioner shall submit a quarterly report to the mayor, the council, the civil service commission and the equal employment practices commission. Such report shall specify, by agency and by title, including temporary titles: (1) the number of provisional employees at the end of the second month of the quarter; (2) the length of time such provisional employees have served in their positions; and (3) the actions taken by the city to reduce the number of such provisional employees and the length of their service in such positions." (Section 814.e)
+        *   "The commissioner, acting through the office, shall have the power to: (1) Compile and report on statistics relating to hiring, salary, and promotion for all city agencies disaggregated by race, gender, civil service classification, and other categories as appropriate, and make such reports publicly available online on an annual basis." (Section 814.1.c.1)
+        *   "The head of each city agency shall quarterly publish and submit to the mayor, council, department of citywide administrative services, and the equal employment practices commission a report on the agency's efforts during the previous quarter to implement the plan adopted pursuant to paragraph nineteen of subdivision a of section eight hundred fifteen." (Section 815.i)
+        *   "No later than September 30, 2023, and by each September 30 thereafter, the head of each city agency shall publish and submit to the mayor, the speaker of the council, the department of citywide administrative services, and the equal employment practices commission a report that contains the following information: (1) Number of new full-time and part-time employees retained by such agency; (2) Number of employees promoted at such agency, their level of promotion, old and new titles, and their change in pay; (3) Number of employees terminated by such agency and their pay at the time of termination; (4) Number of employees that left such agency and the pay received by such employees; and (5) Aggregated data showing the frequency of full-time, part-time, and seasonal employees retained by such agency, EEO-4 job group, pay band, race, ethnicity, gender, and any factors that affect the pay of such employees." (Section 815.l)
+    *   **Why:** Necessary to categorize and report on personnel data by agency and manage inter-agency functions.
+    *   **One row represents:** A single city agency.
+    *   **Covers:** All city agencies.
+    *   **Columns:** Agency ID, Agency Name, Agency Head Employee ID (1), Agency Head Name, Department ID (if applicable), Contact Information, Personnel Management Plan Approval Date, Personnel Management Plan Status, Affirmative Employment Plan Approval Date, Affirmative Employment Plan Status.
+
+3.  **Civil Service Positions and Classifications**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To make studies in regard to the grading and classifying of positions in the civil service, establish criteria and guidelines for allocating positions to an existing class of positions, and grade and establish classes of positions" (Section 814.a.2)
+        *   "The commission, on its own initiative, or upon request of the mayor, council, or commissioner, shall have the power and duty to conduct reviews, studies, or analyses of the administration of personnel in the city, including the classification of titles by the commissioner." (Section 813.e)
+        *   "To participate with the department of citywide administrative services in job analyses for the classification of positions" (Section 815.a.2)
+        *   "To allocate individual positions to existing civil service titles" (Section 815.a.3)
+        *   "To allocate individual managerial or executive positions to managerial assignment levels" (Section 815.a.4)
+        *   "Before any new position in the city service shall be created, the agency head shall furnish the commissioner of finance with a certificate stating the title of the class of positions to which the position is to be allocated. If the position is to be allocated to a new class of positions, the agency head shall request of the commissioner, and the commissioner shall furnish to the agency head and the commissioner of finance, a certificate stating the appropriate civil service title for the proposed position, the range of salary of comparable civil service positions and a statement of the class specifications and line of promotion into which such new position will be placed and any such new position shall be created only with the title approved by the commissioner" (Section 815.e)
+        *   "A single managerial class of positions for each occupational series within the service with assignment levels within each such class" (Section 816.b.5)
+    *   **Why:** Fundamental for structuring the civil service, ensuring fair grading, and managing new positions.
+    *   **One row represents:** A unique civil service position title or class.
+    *   **Covers:** All civil service positions across all city agencies.
+    *   **Columns:** Civil Service Title ID, Civil Service Title, Civil Service Class, Grade, Salary Range (Min), Salary Range (Max), Class Specifications, Line of Promotion, Managerial Assignment Level (if applicable), Occupational Series (for management service), Creation Date, Abolition Date, Modification Date, Criteria for Allocation, Minimum Qualifications.
+
+4.  **Civil Service Examinations**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To schedule and conduct examinations for positions in the civil service" (Section 814.a.3)
+        *   "To establish, promulgate and certify eligible lists in the manner provided in the civil service law, and the rules of the commissioner" (Section 814.a.4)
+        *   "To assist the commissioner in the planning and preparation of open competitive examinations" (Section 815.a.6)
+        *   "To schedule and conduct tests other than written tests for promotion to competitive class positions" (Section 815.a.7)
+        *   "To determine whether to hold an open competitive or promotion examination to fill positions in the civil service subject to disapproval of the commissioner within 30 days" (Section 815.a.8)
+        *   "A city-wide qualifying test for entry into the service" (Section 816.b.3)
+        *   "Assessments of capacity and potential to perform managerial duties as part of competitive tests for entry into the service and assignments within the service" (Section 816.b.4)
+        *   "The commissioner shall, unless otherwise provided by law, have power, upon request of any person charged with the duty of issuing licenses or permits, to conduct, under rules and regulations to be established by the commissioner, examinations and tests to determine the qualifications of persons applying for such licenses or permits. The commissioner shall certify to the person having power to issue the license or permit the result of any such examination or test." (Section 820)
+    *   **Why:** Essential for merit-based hiring and promotions, and for licensing.
+    *   **One row represents:** A single civil service examination event or a license/permit test.
+    *   **Covers:** All civil service examinations (open competitive, promotion, qualifying, managerial assessments) and license/permit tests.
+    *   **Columns:** Exam ID, Civil Service Title ID (3), Exam Type (Open Competitive, Promotion, Qualifying, Managerial Assessment, License/Permit), Exam Date, Application Deadline, Exam Location, Exam Administrator Employee ID (1), Number of Applicants, Number of Candidates Tested, Number of Candidates Passed, Pass Score, Certification Date, Eligible List ID (5), License/Permit Type (for Section 820 exams), Requesting Agency ID (2) (for Section 820 exams), Certification of Results Date (for Section 820 exams).
+
+5.  **Eligible Lists**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To establish, promulgate and certify eligible lists in the manner provided in the civil service law, and the rules of the commissioner" (Section 814.a.4)
+        *   "To determine the appropriateness of eligible lists for the filing of vacancies in the manner provided in the civil service law and the rules of the commissioner" (Section 814.a.5)
+        *   "To administer and certify eligible lists for classes of positions unique to the agency" (Section 815.a.11)
+        *   "To make appointments to competitive positions from eligible lists pursuant to subsection 1 of section 61 of the state civil service law, which authority shall not be abridged or modified by local law or in any other manner" (Section 815.a.12)
+    *   **Why:** Crucial for tracking qualified candidates and ensuring proper appointments.
+    *   **One row represents:** A single eligible list entry for a candidate.
+    *   **Covers:** All candidates on eligible lists for civil service positions.
+    *   **Columns:** Eligible List ID, Exam ID (4), Candidate Employee ID (1), Civil Service Title ID (3), Rank on List, Score, Certification Date, Expiration Date, Status (Active, Expired, Appointed), Appointment Date, Appointing Agency ID (2), Position ID (reference to a specific instance of a position, not a title).
+
+6.  **Applicant Investigations and Reviews**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To investigate applicants for positions in the civil service; to review their qualifications, and to revoke or rescind any certification or appointment by reason of the disqualification of the applicant or appointee under the provisions of the civil service law, and the rules of the commissioner or any other law" (Section 814.a.6)
+        *   "To review any appointment of persons as provisional employees within sixty days after appointment to assure compliance with this chapter, the civil service law, and any rule or regulation issued pursuant to this charter or civil service law" (Section 814.a.7)
+        *   "To review and evaluate qualifications of candidates for positions in the civil service" (Section 815.a.5)
+    *   **Why:** Ensures only qualified and compliant individuals are appointed to city service.
+    *   **One row represents:** A single investigation or qualification review for an applicant or appointee.
+    *   **Covers:** All investigations and reviews for civil service applicants and provisional employees.
+    *   **Columns:** Investigation ID, Applicant/Employee ID (1), Civil Service Title ID (3), Investigation Type (Background Check, Qualification Review, Provisional Appointment Compliance), Investigation Date, Investigator Employee ID (1), Findings, Outcome (Qualified, Disqualified, Revoked, Rescinded, Compliant, Non-Compliant), Date of Outcome, Reason for Outcome, Appeal Status (if applicable).
+
+7.  **Payroll Certifications**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To certify payrolls in accordance with the provisions of the civil service law and the rules of the commissioner" (Section 814.a.8)
+        *   "The head of each agency shall certify on each payroll that all personnel actions and transactions of the agency conform with the provisions of the civil service law and this chapter, the rules of the commissioner and other applicable law." (Section 815.d)
+        *   "No officer of the city whose duty is to sign or countersign warrants shall draw, sign or issue, or authorize the drawing, signing or issuing of any warrant on the commissioner of finance or other disbursing officer of the city for payment of salary to any person in its service whose appointment or retention has not been in accordance with the civil service law and the valid rules in force thereunder." (Section 819)
+    *   **Why:** Ensures employees are paid correctly and legally, preventing unauthorized compensation.
+    *   **One row represents:** A single payroll certification event.
+    *   **Covers:** All payroll certifications for city employees.
+    *   **Columns:** Payroll Certification ID, Payroll Period Start Date, Payroll Period End Date, Agency ID (2), Certifying Officer Employee ID (1), Certification Date, Total Amount Certified, Number of Employees Certified, Compliance Status (Compliant, Non-Compliant), Notes on Non-Compliance.
+
+8.  **Position Actions**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To develop and recommend to the mayor standard rules governing working conditions, vacations and leaves of absence; and career, salary and wage plans providing for the creation, abolition and modification of positions and grades and fixing salaries of persons paid from the city treasury, subject to the provisions of this charter, the civil service law, other applicable statutes and collective bargaining agreements" (Section 814.a.10)
+        *   "To allocate individual positions to existing civil service titles" (Section 815.a.3)
+        *   "To allocate individual managerial or executive positions to managerial assignment levels" (Section 815.a.4)
+        *   "Notification prior to each action or decision of an agency pursuant to this chapter which changes the status of an individual employee, a position, or a class of positions shall be provided to the commissioner." (Section 815.d)
+        *   "Before any new position in the city service shall be created, the agency head shall furnish the commissioner of finance with a certificate stating the title of the class of positions to which the position is to be allocated. If the position is to be allocated to a new class of positions, the agency head shall request of the commissioner, and the commissioner shall furnish to the agency head and the commissioner of finance, a certificate stating the appropriate civil service title for the proposed position, the range of salary of comparable civil service positions and a statement of the class specifications and line of promotion into which such new position will be placed and any such new position shall be created only with the title approved by the commissioner" (Section 815.e)
+    *   **Why:** Tracks the lifecycle of positions within the city government, ensuring proper classification and resource allocation.
+    *   **One row represents:** A single action (creation, abolition, modification, allocation) related to a position.
+    *   **Covers:** All changes to civil service positions.
+    *   **Columns:** Position Action ID, Position ID (unique identifier for each instance of a position), Civil Service Title ID (3), Agency ID (2), Action Type (Create, Abolish, Modify, Allocate), Action Date, Effective Date, Initiating Agency ID (2), Approving Commissioner Employee ID (1), Old Value (for modifications), New Value (for modifications), Justification, Notification Date to Commissioner, Certificate of Allocation Date (for new positions).
+
+9.  **Employee Training and Development Programs**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To administer the city-wide safety incentive, training and development, and other such personnel programs of the city." (Section 814.a.11)
+        *   "Develop policies and best practices to ensure that adequate support, training and mentorship is made available to underrepresented city employees to assist with career advancement in the civil service." (Section 814.1.c.7)
+        *   "Develop recruitment, hiring, and career advancement procedures that address unconscious biases and systemic barriers to achieve greater diversity in the recruitment and career advancement of city employees, and provide trainings for city agency employees responsible for recruitment, discretionary hiring, and career advancement." (Section 814.1.c.8)
+        *   "Train city agencies on how to review and evaluate whether job postings and recruitment materials for civil service positions reflect unconscious bias that could discourage a diverse pool of applicants from applying, and how to amend such postings and materials accordingly, if applicable." (Section 814.1.c.9)
+        *   "To plan and administer employee incentive and recognition programs" (Section 815.a.9)
+        *   "To conduct training and development programs to improve the skills, performance and career opportunities of employees" (Section 815.a.14)
+        *   "diversity and inclusion training" (Section 815.a.19)
+        *   "To offer career counseling to employees of the city civil service." (Section 815.a.21)
+        *   "The head of each agency, in consultation with the department, shall ensure that each employee of such agency receives anti-sexual harassment interactive training annually." (Section 815.1.b)
+        *   "The department of citywide administrative services shall maintain a record of all trainings required pursuant to this section for at least three years." (Section 815.1.d.1)
+        *   "The head of each agency, in consultation with the department, shall ensure that each employee of such agency receives age discrimination training biennially." (Section 815.2.b)
+        *   "Each agency, in consultation with the department, shall ensure that each of its employees completes such training at least once per year." (Section 815.3.d)
+        *   "Management intern programs, and, (11) Training and career development programs." (Section 816.b.10, 816.b.11)
+    *   **Why:** Tracks mandatory and developmental training for compliance, employee growth, and addressing biases.
+    *   **One row represents:** A single training program or career development event.
+    *   **Covers:** All city-wide and agency-specific training, development, and counseling programs.
+    *   **Columns:** Training ID, Training Name, Training Type (e.g., Safety, Diversity & Inclusion, Anti-Sexual Harassment, Age Discrimination, Anti-Racism, Career Development, Management Intern, Recruitment Bias), Description, Date Offered, Duration, Instructor Employee ID (1), Agency ID (2) (if agency-specific), DCAS Approved (for alternative trainings), Compliance Requirement (e.g., Annual, Biennial, Triennial), Employee ID (1) (for individual counseling/internship), Completion Status, Completion Date, Next Due Date.
+
+10. **Employee Performance Evaluations**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To establish and administer performance evaluation programs to be used during the probationary period and for promotions, assignments, incentives and training" (Section 815.a.13)
+        *   "Performance evaluations for members of the service to be used for assignments, incentive awards, probationary period review, and disciplinary action" (Section 816.b.8)
+    *   **Why:** Supports promotions, assignments, incentives, probationary reviews, and disciplinary actions.
+    *   **One row represents:** A single performance evaluation for an employee.
+    *   **Covers:** All performance evaluations for city employees, including probationary reviews.
+    *   **Columns:** Evaluation ID, Employee ID (1), Evaluator Employee ID (1), Evaluation Date, Performance Period Start, Performance Period End, Evaluation Type (Probationary, Annual, Promotion, Incentive), Overall Rating, Key Performance Indicators (KPIs), Strengths, Areas for Improvement, Development Plan, Recommendation for Promotion/Assignment/Incentive, Acknowledged by Employee.
+
+11. **Employee Appeals and Grievances**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The civil service commission shall have the power to hear and determine appeals by any person aggrieved by any action or determination of the commissioner made pursuant to paragraphs three, four, five, six, seven and eight of subdivision a or paragraph five of subdivision b of section eight hundred fourteen of this chapter and may affirm, modify, or reverse such action or determination." (Section 813.d)
+        *   "The commission shall also have the powers and responsibilities of a municipal civil service commission under section seventy-six of the state civil service law." (Section 813.d)
+        *   "To hear and determine appeals by any person aggrieved by any action or determination of the head of an agency made pursuant to paragraphs three, five, seven and eleven of subdivision a of section eight hundred fifteen, subject to review by the civil service commission as provided in subdivision c of section eight hundred thirteen" (Section 814.b.5)
+    *   **Why:** Tracks formal challenges to personnel decisions, ensuring due process and legal compliance.
+    *   **One row represents:** A single appeal or grievance filed.
+    *   **Covers:** Appeals against actions by the Commissioner (DCAS) or agency heads related to personnel matters.
+    *   **Columns:** Appeal ID, Employee ID (1), Filing Date, Action Appealed (e.g., Exam Result, Eligible List Certification, Provisional Appointment Review, Agency Allocation, Agency Qualification Review, Agency Non-Written Test, Agency Eligible List Admin), Agency/Commissioner Action ID (reference to relevant action dataset), Appealing Body (CSC, Commissioner), Hearing Date, Decision Date, Decision Outcome (Affirm, Modify, Reverse), Reason for Decision, Further Review/Appeal Status.
+
+12. **Affirmative Employment Plans and Evaluations**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "Establish and enforce uniform procedures and standards to be utilized by city agencies in establishing measures, programs and plans to ensure a fair and effective affirmative employment plan for equal employment opportunities for minority group members and women who are employed by, or who seek employment with, city agencies." (Section 814.1.c.2)
+        *   "Ensure accountability by evaluating each city agency in accordance with the procedures and standards set by the office pursuant to paragraph 1 of this subdivision. The office shall ensure that each evaluation shall include, but not be limited to, the following: (i) a determination for each city agency of whether such agency is compliant with such procedures and standards; (ii) an analysis of whether and how such procedures and standards should be expanded or modified for the next annual reporting period, with a view towards improving upon prior benchmarks; and (iii) any other information the office deems relevant." (Section 814.1.c.4)
+        *   "To establish measures and programs to ensure a fair and effective affirmative employment plan to provide equal employment opportunity for minority group members and women who are employed by, or who seek employment with, the agency and, in accordance with the uniform procedures and standards established by the department of citywide administrative services for this purpose, to adopt and implement an annual plan to accomplish this objective. Such plan shall include the following information: an analysis of the agency’s compensation data and measures to address pay disparity and occupational segregation, developed both within the agency and as a result of consultation with prospective applicants and external stakeholders, in the most recent fiscal year; diversity and inclusion training; and schedule and workplace accommodations and access to facilities, including access for individuals with disabilities, gender appropriate bathrooms, and lactation rooms." (Section 815.a.19)
+        *   "The head of each city agency shall quarterly publish and submit to the mayor, council, department of citywide administrative services, and the equal employment practices commission a report on the agency's efforts during the previous quarter to implement the plan adopted pursuant to paragraph nineteen of subdivision a of section eight hundred fifteen." (Section 815.i)
+    *   **Why:** Tracks agency compliance with EEO requirements and the effectiveness of affirmative action initiatives.
+    *   **One row represents:** A single agency's affirmative employment plan or an evaluation of that plan.
+    *   **Covers:** Annual affirmative employment plans submitted by agencies and DCAS evaluations of these plans.
+    *   **Columns:** Plan/Evaluation ID, Agency ID (2), Fiscal Year, Plan Submission Date, DCAS Review Date, DCAS Approval Status, Evaluation Date, Evaluator Employee ID (1), Compliance Status (Compliant, Non-Compliant), Findings, Recommendations, Compensation Data Analysis Summary, Pay Disparity Measures, Occupational Segregation Measures, Diversity & Inclusion Training Programs (list of Training IDs (9)), Workplace Accommodations Provided, Access for Individuals with Disabilities, Gender-Appropriate Bathrooms, Lactation Rooms, Quarterly Report Submission Dates.
+
+13. **Real Property Inventory**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The acquisition, disposition and management by the city of real property other than housing" (Section 811)
+        *   "To purchase, lease condemn or otherwise acquire real property for the city, subject to the approval of the mayor, and to sell, lease, exchange or otherwise dispose of real property of the city, subject to the requirements of section three hundred eighty-four and subject to review and approval either pursuant to section one hundred ninety-five, if applicable, or pursuant to sections one hundred ninety-seven-c and one hundred ninety-seven-d." (Section 824.a)
+        *   "To assign and reallocate to city agencies space and real property owned or leased by the city, to establish comprehensive and continuing programs and standards for utilization of space owned or leased by the city and to conduct surveys of space utilization" (Section 824.b)
+        *   "To manage all real property of the city not used for public purposes, including real property acquired for a public purpose and not being currently utilized for such purpose, except wharf property or other real property under the jurisdiction of the department of small business services, the department of housing preservation and development, the New York city transit authority, and the New York city housing authority by virtue of an authorization granted by the mayor pursuant to the provisions of subdivision three of section one hundred twenty-five of the public housing law, or except as otherwise provided by law, real property under the jurisdiction of the triborough bridge and tunnel authority; provided, that the commissioner shall be responsible for the management, leasing or permitting of any parcels of wharf property and water front property as provided in any designation made by the commissioner of small business services pursuant to paragraph b of subdivision two of section thirteen hundred one of this charter" (Section 824.c)
+        *   "To keep, maintain and annually update a master list of leases wherein the city or its agencies is a tenant. Such master list shall contain at least the following information: name and address of lessor, location wherein lease property is situated, base rent, square footage, escalation provisions, and any other information which the department deems necessary and appropriate." (Section 824.f)
+    *   **Why:** Essential for managing the city's real estate portfolio, tracking utilization, and fulfilling reporting requirements.
+    *   **One row represents:** A single parcel of real property or a leased space.
+    *   **Covers:** All real property owned, leased, or managed by the city (excluding specific exceptions).
+    *   **Columns:** Property ID, Address, Borough, Block, Lot, Property Type (Owned, Leased), Acquisition Date, Disposition Date, Current Status (Active, Surplus, Disposed), Current Use, Occupying Agency ID (2), Square Footage, Lease ID (14) (if leased), Lessor Name, Lessor Address, Base Rent, Escalation Provisions, Public Hearing Date (for acquisition/disposition), Approval Status (Mayor, ULURP), Managing Agent Vendor/Contractor ID (19) (if applicable), Utilization Standards Compliance, Last Survey Date.
+
+14. **Real Property Leases (City as Tenant)**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To purchase, lease condemn or otherwise acquire real property for the city, subject to the approval of the mayor" (Section 824.a)
+        *   "In the case of a lease in which the city is to be the tenant, the notice for the hearing required in this subdivision shall include a statement of the location and proposed use of the premises, and the term and annual rent of the proposed lease." (Section 824.a)
+        *   "To keep, maintain and annually update a master list of leases wherein the city or its agencies is a tenant. Such master list shall contain at least the following information: name and address of lessor, location wherein lease property is situated, base rent, square footage, escalation provisions, and any other information which the department deems necessary and appropriate." (Section 824.f)
+    *   **Why:** Explicitly required to maintain a master list of city leases for transparency and management.
+    *   **One row represents:** A single lease agreement where the city is the tenant.
+    *   **Covers:** All leases where the city or its agencies are tenants.
+    *   **Columns:** Lease ID, Property ID (13), Lessor Name, Lessor Address, Lease Start Date, Lease End Date, Term (Years), Annual Rent, Base Rent, Square Footage, Escalation Provisions, Proposed Use, Public Hearing Date, Approval Status, Occupying Agency ID (2).
+
+15. **Real Property Transactions**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The acquisition, disposition and management by the city of real property other than housing" (Section 811)
+        *   "To purchase, lease condemn or otherwise acquire real property for the city, subject to the approval of the mayor, and to sell, lease, exchange or otherwise dispose of real property of the city, subject to the requirements of section three hundred eighty-four and subject to review and approval either pursuant to section one hundred ninety-five, if applicable, or pursuant to sections one hundred ninety-seven-c and one hundred ninety-7-d. No such purchase, lease, condemnation or other acquisition shall be authorized until a public hearing has been held with respect to such acquisition after the publishing of notice in the City Record at least ten days but not more than thirty days in advance of such hearing; provided, however, that in the case of an acquisition by purchase or condemnation, no such hearing shall be required if a public hearing is held with respect to such purchase or condemnation pursuant to any other requirement of law. In the case of a lease in which the city is to be the tenant, the notice for the hearing required in this subdivision shall include a statement of the location and proposed use of the premises, and the term and annual rent of the proposed lease. Before submitting an application pursuant to section one hundred ninety-seven-c for an acquisition or a disposition pursuant to this section, the commissioner shall take into consideration the criteria for location of city facilities established pursuant to section two hundred three. If two years, not including time spent in litigation, have elapsed between (1) the final approval of a disposition or acquisition pursuant to section one hundred ninety-seven-c and section one hundred ninety-seven-d and (2) execution of an agreement in connection with such disposition or acquisition, a public hearing shall be held on the proposed acquisition or disposition after the publishing of notice in the City Record at least forty-five days in advance of such hearing" (Section 824.a)
+        *   "To exercise and perform such other powers and duties as may be prescribed by law or delegated to the commissioner in relation to the acquisition, disposition, management, site selection, assignment, demolition or other treatment of real property of the city" (Section 824.d)
+    *   **Why:** Tracks all legal and procedural steps for acquiring and disposing of city real property.
+    *   **One row represents:** A single real property acquisition or disposition transaction.
+    *   **Covers:** All purchases, leases, condemnations, sales, exchanges, or other dispositions of city real property.
+    *   **Columns:** Transaction ID, Property ID (13), Transaction Type (Purchase, Lease, Condemnation, Sale, Exchange, Other Disposition), Transaction Date, Initiating Agency ID (2), Mayor Approval Date, Public Hearing Date, City Record Notice Date, ULURP Review Status, Final Approval Date, Agreement Execution Date, Litigation Status, Consideration Amount, Buyer/Seller/Lessor/Lessee Name, Site Selection Criteria Considered.
+
+16. **Public Buildings and Facilities Inventory**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The commissioner shall in addition have the power to perform all the functions and operations of the city of New York relating to the maintenance and care of public buildings and facilities" (Section 811)
+        *   "With respect to public buildings and facilities, the commissioner shall have the following powers and duties: (a) to manage, alter, repair, operate, maintain and clean buildings, facilities and offices leased or occupied for public use by more than one city agency whose management, alteration, repair, operation, maintenance or cleaning is paid for in whole or in part from the city treasury, and as directed by the mayor, to perform services in space occupied for public use by a single city agency" (Section 822.a)
+    *   **Why:** Essential for managing, maintaining, and operating public buildings and facilities.
+    *   **One row represents:** A single public building or facility.
+    *   **Covers:** All public buildings, facilities, and offices managed by DCAS.
+    *   **Columns:** Building/Facility ID, Property ID (13), Building Name, Address, Type of Facility (e.g., Office, Multi-agency, Single-agency), Occupying Agency IDs (2), Square Footage, Management Responsibility (DCAS, Other), Last Maintenance Date, Last Cleaning Date, Condition Assessment, Lease ID (14) (if leased).
+
+17. **Building Maintenance Records**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To manage, alter, repair, operate, maintain and clean buildings, facilities and offices leased or occupied for public use by more than one city agency whose management, alteration, repair, operation, maintenance or cleaning is paid for in whole or in part from the city treasury, and as directed by the mayor, to perform services in space occupied for public use by a single city agency" (Section 822.a)
+    *   **Why:** Tracks all repairs and alterations to ensure proper upkeep and compliance for public buildings.
+    *   **One row represents:** A single maintenance or alteration event.
+    *   **Covers:** All maintenance, alteration, and repair activities for public buildings and facilities.
+    *   **Columns:** Maintenance ID, Building/Facility ID (16), Date of Request, Date of Work, Work Order ID, Description of Work, Type of Work (e.g., Repair, Alteration, HVAC, Plumbing, Electrical), Contractor Vendor/Contractor ID (19) (if external), Internal Staff Employee ID (1), Cost, Status (Scheduled, In Progress, Completed), Inspection Date (post-maintenance), Inspection Outcome.
+
+18. **Building Cleaning Records**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To manage, alter, repair, operate, maintain and clean buildings, facilities and offices leased or occupied for public use by more than one city agency whose management, alteration, repair, operation, maintenance or cleaning is paid for in whole or in part from the city treasury, and as directed by the mayor, to perform services in space occupied for public use by a single city agency" (Section 822.a)
+    *   **Why:** Tracks cleaning schedules and completion for public buildings to ensure hygiene and operational standards.
+    *   **One row represents:** A single cleaning event.
+    *   **Covers:** All cleaning activities for public buildings and facilities.
+    *   **Columns:** Cleaning ID, Building/Facility ID (16), Date of Cleaning, Cleaning Crew Employee ID (1), Type of Cleaning (e.g., Daily, Weekly, Deep Clean), Area Cleaned, Supervisor Employee ID (1), Inspection Date (post-cleaning), Inspection Outcome.
+
+19. **Procurement Transactions**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The procurement of goods and other personal property; the disposition of surplus property; the provision to city agencies of services other than personal services" (Section 811)
+        *   "With respect to the procurement and disposal of goods and other personal property and the procurement of services other than personal services, the commissioner shall have the following powers and duties: (a) to purchase, inspect, store and distribute all goods, supplies, materials, equipment and other personal property required by any city agency, except as otherwise provided by law, or by any office of any county wholly included in the city for which supplies, materials or equipment are required, payment for which is made from the city treasury" (Section 823.a)
+        *   "To procure, supply and manage contractual services other than personal or professional services for the use of city agencies" (Section 823.d)
+        *   "To promulgate rules governing the purchase, payment, storage, and delivery of goods, supplies, materials and equipment by agencies of the city and the disposal of surplus and obsolete materials, and to supervise their enforcement" (Section 823.e)
+    *   **Why:** Tracks all purchases and service contracts for city agencies, ensuring compliance and financial oversight.
+    *   **One row represents:** A single procurement transaction (purchase order or service contract).
+    *   **Covers:** All purchases of goods, supplies, materials, equipment, and non-personal/professional contractual services.
+    *   **Columns:** Procurement ID, Purchase Order Number, Contract Number, Item/Service Description, Quantity, Unit Price, Total Cost, Vendor/Contractor ID (28), Procurement Date, Delivery Date, Receiving Agency ID (2), Payment Status, Inspection Status, Compliance with Specifications (22), Contract Type (Goods, Supplies, Equipment, Contractual Service).
+
+20. **Inventory and Storehouse Management**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To establish and maintain one or more city storehouses, operating therein a modern system of stores control, to supply the estimated current needs of the agencies for which the commissioner is authorized to purchase. All purchases other than such purchases for stock for estimated needs and all deliveries from such stock shall be upon justified requisitions. The commissioner shall also oversee the establishment of efficient and economical systems of stores control in other city agencies and review the operations of such storehouses to assure their efficient and economical management" (Section 823.b)
+        *   "To receive all surplus and obsolete personal property not required by any agency for which the commissioner has the power to make purchases and all such agencies shall surrender such property to the commissioner who shall dispose thereof pursuant to rules promulgated by him or her governing its redistribution, exchange, transfer, sale or other disposition" (Section 823.c)
+    *   **Why:** Manages the flow of goods, from acquisition to distribution or disposal, ensuring efficient resource utilization.
+    *   **One row represents:** A single inventory item in a storehouse or a movement of an item.
+    *   **Covers:** All goods, supplies, materials, and equipment in city storehouses and agency storehouses.
+    *   **Columns:** Inventory Item ID, Commodity ID (22), Storehouse ID, Location in Storehouse, Quantity On Hand, Unit of Measure, Last Stock Update Date, Reorder Point, Purchase Order ID (19), Requisition ID, Delivery Date, Agency ID (2) (for agency storehouses), Surplus Status, Disposal Date, Disposal Method.
+
+21. **Surplus Property Disposition**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The disposition of surplus property" (Section 811)
+        *   "To receive all surplus and obsolete personal property not required by any agency for which the commissioner has the power to make purchases and all such agencies shall surrender such property to the commissioner who shall dispose thereof pursuant to rules promulgated by him or her governing its redistribution, exchange, transfer, sale or other disposition" (Section 823.c)
+        *   "To promulgate rules governing the purchase, payment, storage, and delivery of goods, supplies, materials and equipment by agencies of the city and the disposal of surplus and obsolete materials, and to supervise their enforcement" (Section 823.e)
+    *   **Why:** Tracks the proper and compliant disposal of city assets, ensuring accountability and maximizing value.
+    *   **One row represents:** A single disposition event for surplus property.
+    *   **Covers:** All surplus and obsolete personal property disposed of by DCAS.
+    *   **Columns:** Disposal ID, Inventory Item ID (20), Commodity ID (22), Original Agency ID (2), Date Declared Surplus, Date of Disposition, Disposal Method (Redistribution, Exchange, Transfer, Sale, Scrap), Recipient/Buyer, Revenue Generated, Compliance with Rules.
+
+22. **Commodity Standards and Specifications**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To classify all goods, supplies, materials and equipment; to adopt as standards the minimum number of qualities, sizes and types of commodities consistent with efficient operation and life cycle costs; and to promulgate and enforce written specifications for all such standard commodities." (Section 823.f)
+    *   **Why:** Ensures standardization and quality control for procured goods, promoting efficiency and cost-effectiveness.
+    *   **One row represents:** A single standard commodity classification or specification.
+    *   **Covers:** All classified goods, supplies, materials, and equipment.
+    *   **Columns:** Commodity ID, Commodity Name, Classification, Standard Quality, Standard Size, Standard Type, Written Specification Details, Life Cycle Cost Analysis, Effective Date of Specification, Revision Date.
+
+23. **Automotive Fleet Inventory**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The provision of automotive, communication, energy, and data processing services." (Section 811)
+        *   "The commissioner shall acquire by purchase, lease or otherwise, vehicles and other automotive equipment for the use of city agencies; manage, maintain, store and operate a fleet of motor vehicles; assign fleets to agencies in accordance with the direction of the mayor and ensure the effective operation of all shops, yards, garages, fuel depots and other facilities required for the maintenance of fleets operated by agencies; and ensure the maintenance of records for all city-owned vehicles." (Section 827)
+    *   **Why:** Essential for managing, maintaining, and tracking the city's vehicle fleet.
+    *   **One row represents:** A single city-owned vehicle or piece of automotive equipment.
+    *   **Covers:** All vehicles and automotive equipment acquired, managed, and maintained by DCAS.
+    *   **Columns:** Vehicle ID, Make, Model, Year, VIN, License Plate, Acquisition Date, Acquisition Method (Purchase, Lease), Current Agency ID (2), Assignment Date, Fuel Type, Odometer Reading, Maintenance Schedule, Last Maintenance Date, Current Status (In Service, Out of Service, Retired), Disposal Date, Disposal Method.
+
+24. **Automotive Maintenance Records**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "Manage, maintain, store and operate a fleet of motor vehicles" (Section 827)
+        *   "Ensure the effective operation of all shops, yards, garages, fuel depots and other facilities required for the maintenance of fleets operated by agencies" (Section 827)
+        *   "Ensure the maintenance of records for all city-owned vehicles." (Section 827)
+    *   **Why:** Tracks vehicle upkeep for safety, longevity, and operational readiness of the city fleet.
+    *   **One row represents:** A single maintenance or repair event for a city vehicle.
+    *   **Covers:** All maintenance and repair activities for city-owned vehicles.
+    *   **Columns:** Automotive Maintenance ID, Vehicle ID (23), Date of Request, Date of Work, Work Order ID, Description of Work, Type of Work (e.g., Oil Change, Tire Rotation, Engine Repair), Shop ID, Mechanic Employee ID (1), Parts Used (list of Commodity IDs (22)), Cost, Status (Scheduled, In Progress, Completed), Odometer Reading at Service.
+
+25. **Automotive Fuel Transactions**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "Ensure the effective operation of all shops, yards, garages, fuel depots and other facilities required for the maintenance of fleets operated by agencies" (Section 827)
+        *   "Ensure the maintenance of records for all city-owned vehicles." (Section 827)
+    *   **Why:** Tracks fuel usage for cost control and operational efficiency of the city fleet.
+    *   **One row represents:** A single fuel transaction for a city vehicle.
+    *   **Covers:** All fuel dispensed at city fuel depots or purchased for city vehicles.
+    *   **Columns:** Fuel Transaction ID, Vehicle ID (23), Date of Transaction, Fuel Depot ID, Fuel Type, Quantity (Gallons/Liters), Cost, Driver Employee ID (1), Odometer Reading at Refuel.
+
+26. **Communication Services Inventory**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The provision of automotive, communication, energy, and data processing services." (Section 811)
+        *   "WNYC Communications Group: to maintain, operate and administer in conformance with all federal, state and local laws and to use the facilities of such group to assist any agency which shall require and use such service and also for the instruction, enlightenment, entertainment, recreation and welfare of the inhabitants of the city by the broadcast of any matters which are deemed appropriate and necessary for the public interest and advantage and to connect such facilities with any broadcasting station to unite in the broadcasting of such matters and activities" (Section 825.a)
+    *   **Why:** Manages communication infrastructure and services for city agencies and public broadcasting.
+    *   **One row represents:** A single communication asset or service contract.
+    *   **Covers:** All communication assets (e.g., radios, network equipment, broadcast facilities) and service contracts.
+    *   **Columns:** Communication Asset ID, Asset Type (e.g., Radio, Network Device, Broadcast Transmitter, Service Contract), Description, Location, Acquisition Date, Vendor/Contractor ID (28), Service Provider, Contract Start Date, Contract End Date, Maintenance Schedule, Last Maintenance Date, Status, Assigned Agency ID (2), Usage Logs (list of Usage Log IDs).
+
+27. **Energy Services Contracts**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The provision of automotive, communication, energy, and data processing services." (Section 811)
+        *   "Gas and electricity: to have charge and control of furnishing the city or any part thereof, by contract or otherwise, with gas, electricity, steam, hot water or other energy source, except such functions as are exercised by the public utility service of the city." (Section 825.b)
+    *   **Why:** Manages energy procurement for city operations, ensuring reliable and cost-effective utility services.
+    *   **One row represents:** A single energy service contract.
+    *   **Covers:** All contracts for gas, electricity, steam, hot water, or other energy sources for city use.
+    *   **Columns:** Energy Contract ID, Service Type (Gas, Electricity, Steam, Hot Water, Other), Provider Name, Contract Start Date, Contract End Date, Contract Terms, Cost Structure, Usage Data (list of Usage Data IDs), Serviced Building/Facility IDs (16), Serviced Agency IDs (2).
+
+28. **Vendor/Contractor Records**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To employ, when in the commissioner's opinion such services are necessary or desirable, qualified consultants in private practice to aid the commissioner in carrying out his or her duties and responsibilities with respect to public buildings or facilities; such consulting or advisory services shall be performed under the supervision of the commissioner" (Section 822.b)
+        *   "To employ, where desirable, managing agents to manage city properties and collect rents therefrom and pay bills" (Section 824.e)
+        *   "The head of each city agency shall require each employment agency, or authorized representative of workers with which it has a collective bargaining or other agreement or understanding and which is involved in the performance of recruitment and retention with the agency to furnish a written statement that such employment agency, labor union or representative shall not discriminate against employees or applicants for employment pursuant to federal, state or local law and that such union or representative will cooperate in the implementation of the agency's obligations pursuant to this chapter." (Section 815.k)
+    *   **Why:** Tracks external entities providing services to the agency, ensuring compliance and performance.
+    *   **One row represents:** A single vendor, consultant, or managing agent.
+    *   **Covers:** All external entities contracted by DCAS for services.
+    *   **Columns:** Vendor/Contractor ID, Name, Contact Person, Address, Phone, Email, Type of Service (e.g., Consultant, Managing Agent, Employment Agency, Labor Union, Procurement Vendor), Contract Start Date, Contract End Date, Contract Value, Performance Rating, Non-Discrimination Statement Received Date.
+
+29. **Data Processing Services Requests**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The provision of automotive, communication, energy, and data processing services." (Section 811)
+        *   "The commissioner shall provide data processing support, programming, and computer systems analysis services for city agencies when necessary or desirable, in accordance with executive orders promulgated by the mayor." (Section 826)
+    *   **Why:** Tracks requests and provision of IT services to city agencies, ensuring efficient support.
+    *   **One row represents:** A single request for data processing services.
+    *   **Covers:** All requests for data processing support, programming, and computer systems analysis services.
+    *   **Columns:** Service Request ID, Requesting Agency ID (2), Request Date, Service Type (Support, Programming, Systems Analysis), Description of Request, Assigned Staff Employee ID (1), Start Date, Completion Date, Status, Resolution, Hours Expended.
+
+30. **Commodity and Construction Material Testing Records**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "To exercise and perform such other powers and duties as may be prescribed by law or delegated to him or her in relation to laboratory testing of commodities and construction materials." (Section 822.c)
+    *   **Why:** Ensures quality and compliance of materials used in city projects and operations.
+    *   **One row represents:** A single laboratory test performed on a commodity or construction material.
+    *   **Covers:** All laboratory tests conducted on commodities and construction materials.
+    *   **Columns:** Test ID, Material Type, Commodity Name, Batch Number, Test Date, Lab ID, Tester Employee ID (1), Test Parameters, Test Results, Pass/Fail Status, Compliance Standard, Project ID (if applicable).
+
+31. **Investigation Records (Commissioner's Power)**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "The commissioner shall have the power to make investigations concerning all matters touching the enforcement and effect of the provisions of the civil service law insofar as it applies to the city and the rules and regulations prescribed thereunder, or concerning the actions of any examiner or subordinate of the department, or of any officer or employee of the city or of any county within the city, in respect to the execution of the civil service law; and in the course of such investigations the commissioner shall have the power to administer oaths, to compel the attendance of witnesses, and to examine such persons as deemed necessary." (Section 818)
+    *   **Why:** Tracks investigations into civil service compliance and employee conduct, ensuring accountability.
+    *   **One row represents:** A single investigation conducted by the commissioner.
+    *   **Covers:** Investigations into civil service law enforcement and actions of city personnel.
+    *   **Columns:** Investigation ID, Investigation Date, Subject (Employee ID (1), Department, Examiner, Subordinate), Allegation, Investigator Employee ID (1), Witnesses Interviewed, Oaths Administered, Findings, Outcome, Date of Outcome, Related Appeal ID (11).
+
+32. **Designations to Exempt Positions**
+    *   **OpenData Match:** N/A
+    *   **Quotes:**
+        *   "Notwithstanding any provision in this charter to the contrary, the mayor or head of an agency may designate any officer or employee occupying a position in the competitive class of the civil service to serve in a position in the exempt class, and in such case, the officer or employee so designated shall thereupon enter upon and exercise all the powers and duties and receive the salary of such exempt position, and shall retain all the rights, privileges and status of such officer or employee's position in the competitive class." (Section 821.a)
+        *   "Such designation shall be in writing and shall be filed and remain of record in the office of such agency, in the office of the commissioner and in the office of the mayor and shall remain in force until revoked by the mayor or head of such agency, as the case may be." (Section 821.c)
+        *   "Upon the termination of the officer or employee's services in such exempt position, except by dismissal for cause in the manner provided in section seventy-five of the civil service law, such officer or employee shall immediately and without further application return to the position in the competitive class with the status, rights, privileges and salary enjoyed immediately prior to the designation to the position in the exempt class." (Section 821.e)
+    *   **Why:** Tracks temporary assignments to exempt positions and ensures proper return to the competitive class.
+    *   **One row represents:** A single designation of an employee to an exempt position.
+    *   **Covers:** All competitive class employees designated to serve in exempt positions.
+    *   **Columns:** Designation ID, Employee ID (1), Original Competitive Civil Service Title ID (3), Exempt Position Title, Designation Date, Designating Authority (Mayor, Agency Head), Agency ID (2), Filing Date (Agency, Commissioner, Mayor), Revocation Date, Reason for Revocation, Return Date to Competitive Position, Dismissal for Cause (Yes/No).
+
+---
+
+**Non-Tabular Information**
+
+The following information is mentioned in the charter but is typically maintained in document, text, or image format, rather than as structured tabular data:
+
+*   Job applications (the full application documents)
+*   Rules and regulations (the text of the rules and regulations)
+*   Receipts (individual transaction documents, though data from them would be extracted into tabular datasets)
+*   Research documents (e.g., studies, analyses)
+*   Photos and other image-based information
+*   Collective bargaining agreements (the text of the agreements)
+*   Agency plans and programs (the full text of the plans, e.g., personnel management plans, affirmative employment plans)
+*   Public hearing notices (the text of the notices published in the City Record)
+*   Executive orders (the text of the orders promulgated by the mayor)
+*   Training materials (the content of the training programs)
+*   Recruitment materials, advertisements, solicitations (the content of these communications)
+*   Written statements from employment agencies or labor unions regarding non-discrimination (the documents themselves)
+*   Certificates of allocation for new positions (the physical or digital document itself)
+*   Certificates of appointment compliance (the physical or digital document itself)
+*   Legal changes (the text of new laws or amendments)

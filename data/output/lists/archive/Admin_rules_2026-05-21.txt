@@ -1,0 +1,1658 @@
+**Identified Tabular Datasets**
+
+**1. Employee Roster**
+
+**Quotes:**
+- § 11-01(e)(3) "Each submission must include the candidate's name, Social Security number, complete new address, the title of the examination and the examination number, and place on the eligible list, if applicable. For promotion examinations, include the name of the city agency by which the candidate is employed."
+- § 11-01(g) "Persons who have not reached their eighteenth birthday shall obtain employment certificates as required by law before appointment."
+- § 11-01(h) "any person who enters City service on or after September 1, 1986 shall be a resident of the City within 90 days after the date he or she enters City service and shall thereafter maintain city residence as a condition of employment."
+- § 11-01(i) "Candidates must be able to understand and be understood in English."
+- Rule VII, Section I, 7.1.1 "The department of citywide administrative services shall maintain an official roster of the classified service, setting forth in detail the employment listing of each employee and each change of status from the time the employee enters service until separation therefrom."
+- Rule VII, Section I, 7.1.2(a) "Each officer or employee in the classified service shall, upon appointment or promotion, notify the agency head of his or her address. Such officer or employee shall likewise inform the agency head of any change of address during the period of employment."
+- Rule VII, Section II, 7.2.3 "no person receiving remuneration from employment in a position in the classified service shall be eligible to receive remuneration for employment in any additional position or positions in the civil service of the city or in the civil service of any other governmental agency or jurisdiction unless the agency head or heads concerned shall certify that such additional employment or employments are not in violation of any law, rule or regulation and that such additional employment or employments are not incompatible with the position held by such person."
+
+**Why:** A central record of all employees is fundamental for personnel management, payroll, and compliance with employment laws.
+
+**One row represents:** A single employee in the classified service.
+
+**Covers:** All employees in the classified service of the City of New York.
+
+**Columns:**
+- Employee ID
+- Employee Name
+- Social Security Number
+- Current Address
+- Date of Birth
+- Age (at appointment)
+- Citizenship Status
+- Residency Status (City resident, date achieved)
+- English Language Proficiency (Y/N, if qualifying test given)
+- Agency ID (current)
+- Position Title (current)
+- Employment Status (Active, Leave, Separated)
+- Date of Original Appointment
+- Date of Current Appointment/Promotion
+- Employment Certificate Status (for minors)
+- Additional Employment (Y/N)
+- Additional Employment Details (Agency, Position, Certification of Compatibility)
+- Date of Separation (if applicable)
+- Reason for Separation (if applicable)
+
+**2. Civil Service Examinations**
+
+**Quotes:**
+- § 11-01(a)(1) "These regulations shall be applicable to all examinations conducted by the New York City Department of Citywide Administrative Services for positions in the competitive, non-competitive and labor classes."
+- § 11-01(d)(1) "The tentative date of the first assembled test in an examination is stated in the Notice of Examination. The official test date will be given in the admission card sent to the applicant."
+- Rule IV, Section I, 4.1.1(a) "The commissioner of citywide administrative services shall conduct examinations for such positions as may be necessary to anticipate the needs of the city service."
+- Rule IV, Section I, 4.1.1(b) "The head of an examining agency shall conduct non-written promotion examinations for such positions in the agency as may be necessary to anticipate the needs of the agency."
+- Rule IV, Section I, 4.1.2 "The department of citywide administrative services shall maintain the general schedule of all examinations for positions in the city service."
+- Rule IV, Section I, 4.1.4(a) "A job analysis shall be conducted for each examination."
+- Rule IV, Section I, 4.1.7 "The tests comprising an examination and the relative weight given to each shall be fixed prior to each examination by the assistant commissioner for examinations or in the examining agency's examination plan subject to the approval of the commissioner of citywide administrative services."
+- Rule IV, Section I, 4.1.9(a) "In advance of an examination, the commissioner of citywide administrative services shall prepare and publish an announcement setting forth the title of the position, the minimum qualifications required, the tests of the examination, and such other information as the commissioner of citywide administrative services may deem necessary."
+- Rule IV, Section I, 4.1.12 "Eligibility may be limited to one sex where the duties of the position involve the institutional or other custody or care of persons of the same sex, or visitation, inspection or work of any kind the nature of which constitutes a bona fide occupational qualification requiring sex selection."
+- Rule IV, Section IV, 4.4.9(a) "candidates must attain a final examination rating of not less than seventy percent in an examination in order to be placed upon an eligible list for certification and appointment."
+- Rule IV, Section VI, 4.6.1(c) "The list thus reported shall be officially established only by order of the commissioner of citywide administrative services. The date prescribed in such order shall be the date of such establishment."
+- Rule IV, Section VI, 4.6.6(a) "The duration of either an open competitive or promotion eligible list shall be not less than one nor more than four years from the date of establishment."
+
+**Why:** Tracking examination details is crucial for administering fair and compliant civil service hiring and promotion processes.
+
+**One row represents:** A single civil service examination.
+
+**Covers:** All competitive, non-competitive, and labor class examinations conducted by DCAS or examining agencies.
+
+**Columns:**
+- Examination ID
+- Examination Title
+- Examination Number
+- Examination Type (Open Competitive, Promotion, Non-Competitive, Labor Class)
+- Administering Agency (DCAS or Examining Agency ID)
+- Tentative Test Date
+- Official Test Date
+- Application Filing Period Start Date
+- Application Filing Period End Date
+- Minimum Qualifications Required
+- Tests Comprising Examination
+- Weight of Each Test/Subject
+- Passing Rating Required
+- Sex Limitation (if any, with justification)
+- Job Analysis ID
+- Announcement Publication Date
+- Eligible List Establishment Date (if applicable, links to **3. Eligible Lists**)
+- Eligible List Duration (years)
+- Extension of Eligible List Duration (Y/N, new expiration date)
+
+**3. Eligible Lists**
+
+**Quotes:**
+- § 11-01(e)(2) "A candidate in an examination whose address changes after mailing of the notice of results and during the life of an eligible list upon which the candidate's name appears shall promptly notify the Certification Section of the Department of Citywide Administrative Services in writing"
+- Rule IV, Section VI, 4.6.1(b) "The results of each examination shall be reported by the assistant commissioner for civil service administration or by the head of the examining agency, as the case may be, to the commissioner of citywide administrative services and the names of the candidates passing such examination shall be listed in the order of their respective final examination ratings."
+- Rule IV, Section VI, 4.6.1(c) "The list thus reported shall be officially established only by order of the commissioner of citywide administrative services. The date prescribed in such order shall be the date of such establishment."
+- Rule IV, Section VI, 4.6.2 "An eligible list may be established subject to the conduct of such medical, physical, or other appropriate non-competitive qualifying tests, investigations and conditions as may be deemed appropriate by the commissioner of citywide administrative services."
+- Rule IV, Section VI, 4.6.4 "the commissioner of citywide administrative services, upon the establishment of an eligible list, shall notify each candidate of the candidate's ratings and, if the candidate has received a passing final examination rating, of the numerical place on such list."
+- Rule IV, Section VI, 4.6.6(a) "The duration of either an open competitive or promotion eligible list shall be not less than one nor more than four years from the date of establishment."
+- Rule IV, Section VI, 4.6.6(b) "Unless otherwise provided, an eligible list which has been in existence for one year or more shall terminate upon the establishment of an appropriate subsequent like list for the same title."
+- Rule IV, Section VII, 4.7.1(c) "Appointment or promotion from an established eligible list to a position in the competitive class shall be made by the selection of one of the three persons certified by the commissioner of citywide administrative services or the head of the certifying agency, as the case may be, as standing highest on such established list who are qualified and willing to accept such appointment or promotion."
+- Rule IV, Section VII, 4.7.2(a) "When an eligible list has been in existence for less than one year and contains the names of less than three eligibles willing to accept appointment, and a new list for the same position or group of positions is established, the names of the eligibles remaining on the old list shall have preference in certification over the new list until such old list is one year old."
+- Rule IV, Section VII, 4.7.12 "The commissioner of citywide administrative services may establish continuing eligible lists for such classes of positions where the needs of the service require."
+
+**Why:** Managing eligible candidates for positions is a core function of civil service, requiring detailed tracking of their status and ranking.
+
+**One row represents:** A candidate's entry on an eligible list for a specific examination.
+
+**Covers:** All candidates who have passed civil service examinations and are placed on eligible lists.
+
+**Columns:**
+- Eligible List ID
+- Examination ID (links to **2. Civil Service Examinations**)
+- Candidate ID (links to **4. Applicant Records**)
+- Final Examination Rating
+- Rank on List
+- Veteran Status (Y/N, Disabled Veteran Y/N)
+- Additional Veteran Credits Applied (Y/N)
+- Date Placed on List
+- Eligibility Start Date
+- Eligibility End Date
+- Current Status on List (Active, Certified, Appointed, Declined, Withheld, Removed)
+- Number of Certifications Charged
+- Number of Restorations to List
+- Special Conditions for Eligibility (e.g., medical, physical, investigation)
+- Date of Last Status Change
+- Reason for Last Status Change
+
+**4. Applicant Records**
+
+**Quotes:**
+- § 11-01(b)(1) "Completed application forms and required fee must be submitted in a manner specified by the Notice of Examination for the specific position for which the applicant is applying."
+- § 11-01(b)(3) "A late application in a promotion examination shall be accepted if submitted by the employing agency personnel office as early as practicable prior to the day of the first test thereof if such late application includes a signed statement from his or her personnel officer that he or she was absent from employment because of vacation, sick leave, military duty, or other reason acceptable to the Department of Citywide Administrative Services, for a period of not less than one-half of the application period."
+- § 11-01(c)(1) "An application fee, as required in the Notice of Examination, must be paid at the time of submitting the application for any civil service appointment and for any application for appointment without competitive examination including provisional and labor class appointments and transfers."
+- § 11-01(c)(2) "An application fee is not required of a New York City resident receiving public assistance... To have the fee waived, such applicant must submit a photocopy of a current Medicaid identification card."
+- § 11-01(c)(6)(ii) "To request the Veteran Exam Fee Waiver, an applicant must submit a photocopy of his or her U.S. Armed Forces separation papers (DD214 long form)"
+- § 11-01(e)(1) "A candidate in an examination whose address changes after s/he submits the application but prior to mailing of the notice of results, must promptly notify the Examining Service Division of the Department of Citywide Administrative Services in writing"
+- § 11-01(f)(1) "Any citizenship requirement will be set forth in the Notice of Examination. When citizenship is not required, non-citizens must be able to establish at the time of appointment and throughout the period of their employment that they are legally permitted to work in the United States."
+- § 11-01(j)(1) "Any applicant who is disabled to the extent that he or she requires special accommodations to take an examination shall submit a written request for such accommodations, together with proof of disability"
+- § 11-01(k)(1) "An applicant who is unable, for any of the reasons listed below, to take the regular examination as scheduled may be given a special examination upon written request."
+- § 11-01(l)(1) "To be credited, the education and experience must be of the nature, duration and quality described in the notice of examination and must have occurred during the prescribed period of time."
+- § 11-01(s)(1) "All applicants must be of satisfactory character and reputation and must meet all requirements set forth in the Notice of Examination for the position for which they are applying."
+- Rule IV, Section II, 4.2.1(b) "An applicant shall state upon the prescribed form such information as is required including the applicant's background, experience and qualification for the position sought and merit and fitness for the public service."
+- Rule IV, Section II, 4.2.5 "An application found to be defective shall be suspended. Where an application is found to be incomplete or defective or not accompanied by the proper fee, if any, such application shall not be accepted unless the defect or omission has been corrected by the applicant and returned within seven days from the date of notification to the applicant of the required corrections."
+- Rule IV, Section III, 4.3.1(a) "The commissioner of citywide administrative services, upon investigation of applicants for positions in the civil service or review of their qualifications, may refuse to examine an applicant or after examination refuse to certify or refuse to permit the certification of an eligible for reasons and in the manner prescribed by law or these rules."
+- Rule IV, Section III, 4.3.2(a) "An applicant or eligible must possess the established minimum requirements and qualifications for admission to an examination or for appointment to a position."
+- Rule IV, Section III, 4.3.2(b) "Satisfactory character and reputation shall be deemed a part of the established minimum requirements and qualifications for admission to an examination or for appointment to a position."
+- Rule IV, Section V, 4.5.1(a) "A veteran or disabled veteran who elects to claim additional credit as provided in the civil service law, shall so notify the commissioner of citywide administrative services and establish by appropriate documentary evidence eligibility for such additional credit."
+
+**Why:** Comprehensive tracking of applicant information is essential for eligibility determination, examination administration, and compliance with anti-discrimination laws.
+
+**One row represents:** A single application submitted by an individual for a civil service examination.
+
+**Covers:** All applications for civil service examinations.
+
+**Columns:**
+- Application ID
+- Examination ID (links to **2. Civil Service Examinations**)
+- Applicant ID (unique identifier for the individual)
+- Applicant Name
+- Social Security Number
+- Date of Application Submission
+- Application Status (Submitted, Incomplete, Accepted, Rejected, Late)
+- Reason for Rejection/Late Acceptance
+- Current Address
+- Contact Information (phone, email)
+- Date of Birth
+- Citizenship Status
+- Residency Status
+- Education Details (Institution, Degree, Major, Dates)
+- Experience Details (Employer, Position, Dates, Duties)
+- Disability Status (Y/N)
+- Special Accommodation Request (Y/N, type requested, type granted)
+- Veteran Status (Y/N, Disabled Veteran Y/N)
+- Fee Paid (Y/N, Amount)
+- Fee Waiver Reason (Public Assistance, Veteran, Compelling Circumstances)
+- Fee Refund Requested (Y/N, Reason, Date)
+- Character/Reputation Status (Satisfactory, Under Investigation, Disqualified)
+- Background Check Status (Completed, Pending, Issues Found)
+- Fingerprint Status (Completed, Pending)
+- Medical/Physical Exam Status (Completed, Pending, Failed)
+- Date of Last Update
+
+**5. Employee Personnel Action Records**
+
+**Quotes:**
+- Rule III, Section I, 3.1.4 "Appointments to positions in the exempt class may be made without examination; but the agency head shall in each case submit to the department of citywide administrative services, in such form as it shall prescribe, a certificate which shall include: (a) the title of the position; (b) the full name and residence of the appointee; (c) the place of the appointee's residence for five years immediately preceding appointment; (d) the appointee's previous appointments to and periods of service, if any, in the public service; (e) the appointee's qualifications for the office or position to be filled."
+- Rule III, Section II, 3.2.7 "If such reports are disapproved in whole or in part by the commissioner of citywide administrative services, the employees therein disapproved shall have their appointments terminated."
+- Rule III, Section III, 3.3.2 "Upon the termination of an employment in the labor class, the agency head shall certify to the department of citywide administrative services the reasons therefor."
+- Rule III, Section IV, 3.4.4 "Whenever a position in the exempt, non-competitive or labor class is reclassified into the competitive class, the permanent incumbent of such position, if there be any at the time of such reclassification, shall continue to hold the position with all the rights and status of a competitive employee."
+- Rule V, Section I, 5.1.1 "No person shall be appointed, promoted or employed under any title not appropriate to the duties to be performed and, except upon assignment by proper authority during the continuance of a temporary emergency situation, no person shall be assigned to perform the duties of any position unless duly appointed, promoted, transferred or reinstated to such position in accordance with the law and rules prescribed therefor."
+- Rule V, Section I, 5.1.2(a) "Upon appointment or promotion an eligible shall be fingerprinted and shall execute in the presence of the agency head or representative the prescribed identification form."
+- Rule V, Section II, 5.2.1(a) "Every appointment and promotion to a position in the competitive or labor class shall be for a probationary period of one year unless otherwise set forth in the terms and conditions of the certification for appointment or promotion as determined by the commissioner of citywide administrative services."
+- Rule V, Section II, 5.2.7(a) "At the end of the probationary term, the agency head may terminate the employment of any unsatisfactory probationer by notice to such probationer and to the commissioner of citywide administrative services."
+- Rule V, Section III, 5.3.1(a) "Except as otherwise provided, promotion examinations and promotions shall be governed by the rules relating to original appointments."
+- Rule V, Section IV, 5.4.1(a) "A temporary appointment for a period not exceeding three months, where the need therefor is important and urgent, may be made without regard to existing eligible lists."
+- Rule V, Section V, 5.5.1(a) "if such nominee shall be certified by the commissioner of citywide administrative services as qualified after such non-competitive examination, the nominee may be appointed provisionally to fill such vacancy until a selection and appointment can be made after competitive examination"
+- Rule V, Section VI, 5.6.1 "All positions in the competitive class, where the nature of the service is such that it is not continuous throughout the year, but recurs in each successive calendar year, may be designated by the commissioner of citywide administrative services as seasonal positions and appointments thereto shall be designated as seasonal appointments."
+- Rule V, Section VII, 5.7.1(a) "The commissioner of citywide administrative services may authorize a temporary appointment, without examination, when the person appointed will render professional, scientific, technical or other expert services: (1) on an occasional basis; or (2) on a full-time or regular part-time basis in a temporary position established to conduct a special study or project for a period not exceeding eighteen months."
+- Rule V, Section VIII, 5.8.1 "The commissioner of citywide administrative services may require that permanent appointments to designated positions in the competitive class shall be conditioned upon the satisfactory completion of a period of service as a trainee or aide in an appropriate lower, trainee or aide position in such class and/or, where required, the completion of specified formal courses of training."
+- Rule VI, Section I, 6.1.3 "Every transfer, other than a functional transfer, shall require the consent, in writing, of the proposed transferee and of the respective heads of the agencies concerned therewith and the approval of the commissioner of citywide administrative services."
+- Rule VI, Section II, 6.2.1(a) "An employee who has completed a probationary term in a permanent position in the competitive or labor class, and who has resigned or retired therefrom may be reinstated with the approval of the commissioner of citywide administrative services to: (1) the position from which the employee has resigned or retired, if vacant, or to any similar vacant position in the agency in which the employee was employed; or (2) to a position in another agency to which the employee would have been eligible for transfer."
+- Rule VI, Section III, 6.3.1 "No permanent competitive class employee shall be demoted unless such employee consents thereto in writing."
+- Rule VI, Section IV, 6.4.1 "Where a person has been removed from a position for cause, a copy of the reasons therefor together with a copy of the proceedings thereon shall be transmitted to the department of citywide administrative services."
+- Rule VI, Section IV, 6.4.3(a) "When an employee is absent without leave and fails to communicate with the department in which employed in the manner prescribed by that department for a period of twenty consecutive work days, such absence shall be deemed to constitute a resignation effective on the date of its commencement unless the appointing officer, at the discretion of that officer, accepts an explanation for such unauthorized absence."
+- Rule VI, Section V, 6.5.1 "The suspension or demotion of competitive class employees upon the abolition or reduction of positions shall be governed by the provisions of section eighty of the civil service law."
+- Rule VII, Section II, 7.2.2 "Notification prior to each action or decision of an agency pursuant to Chapter 35 of the Charter which changes the status of an individual employee, a position or a class of positions shall be provided by the agency to the commissioner of citywide administrative services."
+
+**Why:** Tracking all changes in employee status is critical for maintaining accurate personnel records, ensuring compliance, and managing the workforce.
+
+**One row represents:** A single personnel action (appointment, promotion, transfer, demotion, reinstatement, termination, etc.).
+
+**Covers:** All personnel actions affecting employees in the classified service.
+
+**Columns:**
+- Personnel Action ID
+- Employee ID (links to **1. Employee Roster**)
+- Action Type (Appointment, Promotion, Transfer, Demotion, Reinstatement, Termination, Resignation, Suspension, Leave of Absence, etc.)
+- Action Date
+- Effective Date of Action
+- Old Agency ID (if applicable)
+- Old Position Title (if applicable)
+- New Agency ID (if applicable)
+- New Position Title (if applicable)
+- Position ID (links to **6. Position Classification Records**)
+- Appointment Type (Permanent, Provisional, Temporary, Seasonal, Exceptional, Trainee/Aide)
+- Probationary Period Start Date (if applicable)
+- Probationary Period End Date (if applicable)
+- Probationary Period Waived (Y/N, Date)
+- Probationary Period Extended (Y/N, New End Date)
+- Reason for Action (e.g., unsatisfactory performance, abolition of position, voluntary, disciplinary)
+- Eligible List ID (for appointments/promotions from lists, links to **3. Eligible Lists**)
+- Certification ID (for appointments/promotions from lists)
+- Consent Obtained (Y/N, for transfers/demotions)
+- Commissioner Approval (Y/N)
+- Fingerprinted (Y/N)
+- Oath Taken (Y/N)
+- Identification Form Executed (Y/N)
+- Disciplinary Action Details (if applicable, links to **7. Employee Hearing Records**)
+- Leave of Absence Type (if applicable)
+- Leave Start Date
+- Leave End Date
+- Return to Duty Date (if applicable)
+
+**6. Position Classification Records**
+
+**Quotes:**
+- Rule I, Definitions, "Class of Positions: Class of positions means a group of positions substantially similar with respect to duties, responsibilities, qualifications and examination requirements to the extent that the same title may be used to designate such positions and the same salary grade may be equally applied thereto."
+- Rule I, Definitions, "Jurisdictional Classification: Jurisdictional classification is the assignment of positions in the classified service to the exempt, non-competitive, labor or competitive classes."
+- Rule I, Definitions, "Position Classification: Position classification is a grouping together under common or descriptive titles of positions that are substantially similar in the essential character and scope of their duties and responsibilities and in the qualification requirements thereof."
+- Rule I, Definitions, "Position Reclassification: Position reclassification is the reassignment of a position or positions from one class of positions to a different class of positions."
+- Rule I, Definitions, "Salary Grade Allocation: Salary grade allocation is the assignment of a class of positions to one of the salary grades set forth in the classification rules."
+- Rule I, Definitions, "Salary Grade Reallocation: Salary grade reallocation is the reassignment of a class of positions from one salary grade to another salary grade."
+- Rule III, Section I, 3.1.3 "Not more than one appointment shall be made to or under the title of any office or position placed in the exempt class unless a different number is specifically prescribed in the classification rules. No office or position shall be deemed to be in the exempt class unless it is specifically named in such class in the rules."
+- Rule III, Section II, 3.2.3(a) "Not more than one appointment shall be made to or under the title of any office or position placed in the non-competitive class, unless a different or unlimited number is specifically prescribed in the classification rules. No office or position shall be deemed to be in the non-competitive class unless it is specifically named in such class in the rules."
+- Rule III, Section II, 3.2.3(b) "The commissioner of citywide administrative services shall designate among positions in the non-competitive class those positions which are confidential or require the performance of functions influencing policy."
+- Rule III, Section II, 3.2.10(a) "The commissioner of citywide administrative services may determine a prescribed number of positions, not to exceed the maximum set by state law, with limited duties which can be performed by physically or mentally disabled persons who are found qualified, in the manner prescribed by law, to perform such duties."
+- Rule VII, Section III, 7.3.1(a) "The commissioner of citywide administrative services shall, in accordance with the law and rules, duly classify and reclassify positions in the city service and shall prescribe regulations and procedures therefor."
+- Rule VII, Section III, 7.3.2(a) "Any new or existing positions which are allocated by an agency to a title of an existing class of positions shall be appropriate to the duties and responsibilities of such title and conform to the class specifications therefor."
+- Rule VII, Section III, 7.3.3(a) "If a new position is to be allocated by an agency to a new class of positions, the agency head shall request of the commissioner of citywide administrative services, and the commissioner of citywide administrative services shall furnish to the agency head and the commissioner of finance, a certificate stating: (1) the appropriate civil service title for the proposed position; (2) the range of salary of comparable civil service positions; (3) a statement of required class specifications and line of promotion, if any, into which such new position shall be placed."
+- Rule X, Section I, 10.1.2 "The titles and number of positions authorized for each title in the exempt class subject to this rule are set forth in the "classification and compensation schedules of the classified service," schedule E."
+- Rule XI, Section II, 11.2.1 "The commissioner of citywide administrative services shall, in the manner provided by law, duly classify and reclassify positions which are now or which may hereafter be made subject to the classification and compensation plan."
+
+**Why:** Maintaining a clear classification and compensation structure for all positions is essential for fair employment practices and organizational structure.
+
+**One row represents:** A single position title or class of positions within the civil service.
+
+**Covers:** All classified positions in the City of New York.
+
+**Columns:**
+- Position ID (unique identifier for a specific position instance)
+- Position Title
+- Class of Positions ID (links to **6. Position Classification Records** for class details)
+- Jurisdictional Class (Exempt, Non-Competitive, Labor, Competitive)
+- Salary Grade ID (links to **6. Position Classification Records** for salary grade details)
+- Minimum Salary
+- Maximum Salary
+- Class Specifications (description of duties, responsibilities, qualifications)
+- Line of Promotion (if any)
+- Number of Authorized Positions (for Exempt/Non-Competitive)
+- Confidential (Y/N, for Non-Competitive)
+- Policy Influencing (Y/N, for Non-Competitive)
+- Designated for Disabled Persons (Y/N, number of positions)
+- Date of Classification/Allocation
+- Date of Last Reclassification/Reallocation
+- Reason for Reclassification/Reallocation
+- Agency ID (owning agency)
+
+**7. Employee Hearing Records**
+
+**Quotes:**
+- § 11-03(a) "adjudications held pursuant to Section 210.2(g) of the Civil Service Law Article 14 ("The Taylor Law") to determine whether an employee has violated the Taylor Law shall be conducted by the Department or a designee of the Commissioner of Citywide Administrative Services."
+- § 11-03(b) "Disciplinary hearings and disability hearings conducted pursuant to Civil Service Law §§ 72 and 75 shall be conducted by OATH."
+- § 11-04(b) "All persons who are entitled to a Taylor Law Hearing shall receive a notice that shall contain the following provisions: (1) a statement of the legal and jurisdictional authority for a hearing; (2) a statement of the pertinent legal and regulatory sections at issue; (3) a statement of the employee's right to object to a determination of a Taylor Law violation; (4) a statement of the nature of the proceeding and the particular matter to be adjudicated; (5) a statement of the date(s) a Taylor Law violation was committed; (6) a statement of potential penalties that may be assessed; (7) a statement that the employee is entitled to representation by counsel or a union representative."
+- § 11-04(d) "Where a hearing is required pursuant to § 210.2(g) of the New York Civil Service Law, the employee shall receive further notice of the time and place of the hearing."
+- § 11-04(e)(4) "The hearing shall be transcribed or recorded. Upon request, a copy of the transcript or record, or any part thereof. shall be made available and a copy shall be provided at reasonable cost."
+- § 11-04(g) "In all hearings conducted by the Department or a designee of the Commissioner of Citywide Administrative Services, the Hearing Officer shall make findings of fact and determine whether the employee has established that he or she did not violate Section 210 of the New York Civil Service Law. These findings and the determination shall be in writing and delivered to the Commissioner of Citywide Administrative Services within a reasonable time following the conclusion of the hearing."
+
+**Why:** Tracking employee hearings is legally mandated for due process, accountability, and record-keeping of disciplinary or Taylor Law violations.
+
+**One row represents:** A single employee hearing or adjudication.
+
+**Covers:** Taylor Law hearings, disciplinary hearings, and disability hearings.
+
+**Columns:**
+- Hearing ID
+- Employee ID (links to **1. Employee Roster**)
+- Hearing Type (Taylor Law, Disciplinary, Disability)
+- Date of Notice to Employee
+- Date(s) of Alleged Violation (if applicable)
+- Legal/Regulatory Sections at Issue
+- Potential Penalties Stated
+- Employee Representation (Y/N, Representative Name/Type)
+- Hearing Officer ID
+- Hearing Start Date
+- Hearing End Date
+- Hearing Location
+- Transcript/Recording Available (Y/N)
+- Findings of Fact
+- Conclusions of Law
+- Recommended Decision
+- Proposed Penalty
+- Commissioner's Final Decision (Adopted, Rejected, Modified)
+- Date of Commissioner's Decision
+- Employee Notified Date
+- Appeal Filed (Y/N, Date, Outcome)
+
+**8. Property/Facility Inventory**
+
+**Quotes:**
+- § 1-01(a) "Apply to all property under the control of the Division of Facilities Management and Construction Services."
+- § 1-02 Definitions, "Property. "Property" is any real estate which is owned, leased or operated by the City of New York or any agency thereof, which is under the control of the Division of Facilities Management and Construction Services."
+- § 1-04 "Preservation of Property. While on or about the property, no person shall: (e) Destroy or damage any structure or remove any part thereof. (f) Destroy, damage or remove any property found on or within any structure. (g) Interfere with the operation of any utility system servicing the property."
+- § 13-01 "These rules shall be applicable to all film and photography shoots and related activities conducted on properties and within facilities under the jurisdiction of, and with permission from, the Department of Citywide Administrative Services"
+- § 13-02(b) "Court properties or facilities. "Court properties or facilities" shall mean the interiors and exteriors of buildings under the jurisdiction of the New York State Unified Court System that are managed by DCAS, and shall include the property adjacent to such buildings that is under the jurisdiction of DCAS."
+- Rule VI, Section V, 6.5.2(d)(4) "division of facilities management and construction services"
+
+**Why:** Managing and preserving all properties and facilities under DCAS control requires a comprehensive inventory of these assets.
+
+**One row represents:** A single property or facility under DCAS control.
+
+**Covers:** All real estate, buildings, and facilities owned, leased, or operated by the City of New York under DCAS control.
+
+**Columns:**
+- Property ID
+- Property Name/Address
+- Property Type (e.g., Office Building, Court Facility, Cemetery, Vacant Land)
+- Ownership Status (Owned, Leased, Operated)
+- Controlling Division (e.g., Division of Facilities Management and Construction Services, Division of Real Estate Services)
+- Occupant Agency ID (if applicable)
+- Square Footage/Area
+- Number of Buildings/Structures
+- Utility Systems Present
+- Landmark Status (Y/N)
+- Structural Conditions Notes
+- Last Inspection Date (links to **9. Property/Facility Inspection & Maintenance Records**)
+- Last Maintenance Date (links to **9. Property/Facility Inspection & Maintenance Records**)
+- Current Status (Operational, Under Repair, Vacant)
+- Notes on Special Use (e.g., Film Location, Public Access Restrictions)
+
+**9. Property/Facility Inspection & Maintenance Records**
+
+**Quotes:**
+- § 1-04 "Preservation of Property. While on or about the property, no person shall: (e) Destroy or damage any structure or remove any part thereof. (f) Destroy, damage or remove any property found on or within any structure. (g) Interfere with the operation of any utility system servicing the property."
+- § 13-04(b)(1) "Structural conditions, landmark status issues, equipment specifics, weight, load and other similar considerations."
+- § 13-08(a) "A permittee is responsible for cleaning and restoring the properties and facilities under the jurisdiction of DCAS after the rigging, shooting and/ or holding. The cost of any DCAS employee time incurred due to a permittee failing to clean and/or restore such properties and facilities following the rigging, shooting and/or holding shall be borne by the permittee and reimbursed to DCAS."
+- § 13-08(b) "Any fixtures, furniture, books, doors, windows, walls, and other structures and/or objects shall be returned to their original position and/or restored to their original condition by the permittee during the de-rigging, unless the permittee has obtained prior approval from the Commissioner or his or her designee. The permittee shall immediately remove any props used during the production from properties and facilities under the jurisdiction of DCAS. The permittee shall reimburse DCAS for any property and facility damage arising from such production activities."
+
+**Why:** Regular inspections and maintenance are essential to preserve city property, ensure safety, and track damage and repairs.
+
+**One row represents:** A single inspection or maintenance activity performed on a property or facility.
+
+**Covers:** All inspections, maintenance, cleaning, and restoration activities for properties and facilities under DCAS control.
+
+**Columns:**
+- Activity ID
+- Property ID (links to **8. Property/Facility Inventory**)
+- Activity Type (Inspection, Routine Maintenance, Repair, Cleaning, Restoration)
+- Activity Date
+- Inspector/Technician ID (links to **1. Employee Roster**)
+- Description of Work Performed/Findings
+- Condition Before Activity
+- Condition After Activity
+- Damage Noted (Y/N)
+- Damage Description
+- Repair Cost
+- Responsible Party for Damage/Repair (e.g., DCAS, Permittee, External Contractor)
+- Reimbursement Status (if applicable, links to **20. Film Production Cost Reimbursement Records**)
+- Follow-up Required (Y/N)
+- Follow-up Date
+- Utility System Affected (if applicable)
+- Structural Issues Noted (Y/N)
+- Equipment Affected (if applicable)
+- Notes
+
+**10. Fee Transaction Log (General)**
+
+**Quotes:**
+- § 3-01(a) "The fees charged by the Division of Real Property fall into the following categories: (I) Lease application fee charged for the processing of lease applications. (II) Title closing mortgage fees for preparation and processing of various documents used in connection with the auctioning and sale of real property by DRP. (III) Test boring license fees. (IV) Carnarsie cemetery fees for a certificate of burial right, perpetual care, annual care, foundation charges, interment and other services. (V) Redemption of properties taken In Rem – management Fees."
+- § 3-01(b) "All fees, unless otherwise specifically provided, shall be paid by certified cashier's check or postal order payable to the order of the Division of Real Property."
+- § 11-01(c)(1) "An application fee, as required in the Notice of Examination, must be paid at the time of submitting the application for any civil service appointment and for any application for appointment without competitive examination including provisional and labor class appointments and transfers."
+- § 11-01(c)(4) "An applicant who was unable to take or complete an examination may apply for refund of the application fee by submitting a written request therefor to the Fiscal Division of the Department of Citywide Administrative Services within 30 days of the date of the first test in the examination at which he or she was unable to appear"
+- § 11-01(s)(2) "A fee of $50 is required of each candidate to cover the cost of fingerprint processing. Payment shall be submitted to the appointing agency at the time of fingerprinting and shall be in the form of a Travelers Express, American Express or postal money order payable to the "New York State Division of Criminal Justice Services." Cash will not be accepted."
+- § 11-01(u) "Fees for special services furnished upon request shall be as follows: (1) duplicate result cards – $l per card (2) breakdown of rating on examination – $5 per copy (3) photocopies – $l per page (4) play-back of audio recordings – $5 per play-back (5) play-back of video recordings – $10 per play-back (6) other – as may be provided"
+- § 13-05(b) "A non-refundable fee of $3,200.00 shall accompany any application submitted to MOFTB for a Required Permit. Such fee shall be in the form of a certified bank check or money order, payable to the New York City Department of Finance."
+- § 16-02(d) "The Department will donate Surplus Equipment to Eligible Organizations for Beneficial Use at no cost except for any reasonable shipping and handling fees."
+- Rule IV, Section II, 4.2.3 "Filing fees shall be accepted by the department of citywide administrative services for all examinations including those conducted by an examining agency. The amounts of such fees and the terms and conditions for receipt and acceptance and any waivers shall be set forth in the regulations."
+
+**Why:** Tracking all fees collected and refunded is essential for financial accountability, revenue management, and compliance with fee schedules.
+
+**One row represents:** A single fee payment or refund transaction.
+
+**Covers:** All fees related to real property, cemetery services, civil service examinations, special services, film permits, and surplus equipment donations.
+
+**Columns:**
+- Transaction ID
+- Date of Transaction
+- Fee Type (e.g., Lease Application, Title Closing, Test Boring License, Burial Right, Perpetual Care, Annual Care, Interment, Foundation, Exam Application, Fingerprint Processing, Duplicate Result Card, Film Permit, Shipping/Handling)
+- Amount Paid
+- Amount Refunded (if applicable)
+- Payment Method (Certified Check, Postal Order, Money Order, etc.)
+- Payer Name/Organization
+- Associated ID (e.g., Lease Application ID, Property ID, Cemetery Plot ID, Applicant ID, Film Permit ID, Eligible Organization ID)
+- Status (Paid, Refunded, Waived)
+- Reason for Waiver/Refund (if applicable)
+- Receiving Division/Department
+
+**11. Cemetery Plot/Grave Inventory**
+
+**Quotes:**
+- § 3-01(a)(IV) "Carnarsie cemetery fees for a certificate of burial right, perpetual care, annual care, foundation charges, interment and other services."
+- § 7-01 Definitions, "Burial Grounds. The term "Burial Grounds" means any burial ground which formerly was the public property of any town, village or city consolidated into and now a part of the City of New York."
+- § 7-01 Definitions, "Cemetery. The term "Cemetery" means the Canarsie Cemetery (Block 8038, Lot 1; Block 8038, Lot 10; Block 8039, Lot 1; Block 8041, Lot 1; and Block 8041, Lot 2: Borough of Brooklyn), a former town Burial Ground within the meaning of § 100.01 of these Rules and Regulations."
+- § 7-01 Definitions, "Grave. The term "Grave" means a space of ground (approximately three feet by nine feet) in the Cemetery used or intended to be used for the burial of human remains."
+- § 7-01 Definitions, "Plot. The term "Plot" means a lot, plot, plat or part thereof or a grave in the Cemetery."
+- § 7-01 Definitions, "Park Area. The term "Park Area" means a landscaped area and includes Sections 3, 4, 5, 11 and 12 of the cemetery."
+- § 7-01 Definitions, "Traditional Area. The term "Traditional Area" means Sections A, B, C, 1, 6, 7, 8, 9, 10 and 14 of the Cemetery."
+- § 7-01 Definitions, "Urn Gardens. The term "Urn Gardens" means that portion of the cemetery set aside for the burial of cremated remains."
+- § 7-03(n) "No more than two interments shall be permitted in each grave in the traditional area and no more than three interments shall be permitted in each grave in the park area."
+- § 7-04(h) "In the event annual care charges have not been paid for five successive years, any empty graves or plots for which these charges remain unpaid shall be deemed abandoned, all rights therein shall be deemed terminated, and burial rights therein may be granted by the cemetery to others."
+
+**Why:** A detailed inventory of all cemetery plots and graves is essential for managing burial rights, interments, and maintenance.
+
+**One row represents:** A single grave or plot within the Canarsie Cemetery.
+
+**Covers:** All graves, plots, and urn garden spaces within the Canarsie Cemetery.
+
+**Columns:**
+- Plot/Grave ID
+- Cemetery Section
+- Block Number
+- Lot Number
+- Grave Number (if applicable)
+- Plot Type (Traditional Area, Park Area, Urn Garden)
+- Dimensions (e.g., 3x9 feet for graves, 2x2 feet for urn plots)
+- Maximum Interments Allowed
+- Number of Current Interments
+- Burial Right ID (links to **12. Burial Right Certificates**)
+- Plot Holder ID (links to **13. Plot Holder Records**)
+- Perpetual Care Status (Y/N)
+- Annual Care Status (Y/N)
+- Last Annual Care Payment Date
+- Annual Care Arrearages (Y/N, Amount)
+- Abandoned Status (Y/N, Date)
+- Memorial/Mausoleum Present (Y/N, links to **15. Memorial/Mausoleum Permits & Records**)
+- Foundation Present (Y/N)
+- Landscaping/Decorations Approved (Y/N, details)
+- Notes
+
+**12. Burial Right Certificates**
+
+**Quotes:**
+- § 3-01(a)(IV) "Carnarsie cemetery fees for a certificate of burial right, perpetual care, annual care, foundation charges, interment and other services."
+- § 7-01 Definitions, "Burial Right. The term "Burial Right" means only the privilege of interment or entombment in the cemetery. It does not convey an ownership of land or other interest in the grave, or plot to which it refers."
+- § 7-01 Definitions, "Certificate of Burial Right. The term "Certificate of Burial Right" means a document granting only the privilege of interment and entombment as defined above and not to be construed as a deed to the land itself."
+- § 7-02(c) "Burial rights do not vest until a fully executed certificate of burial right is issued to the applicant."
+- § 7-02(d) "The purchase after January 19, 1949 of burial rights includes perpetual care."
+- § 7-07(a) "In the event of the death of the owner of a burial right any and all privileges (rights) of the plot holder shall pass to the plot holder's family as set forth in the following sections."
+- § 7-08(a) "No burial right may be sold, transferred, exchanged, or otherwise disposed of without the written consent of the Commissioner on the cemetery's official transfer of right of burial form."
+- § 7-08(e) "No sale, transfer, exchange, or other disposition of a burial right in a plot covered by annual care will be permitted unless the transferee purchases a perpetual care contract for the plot."
+
+**Why:** Tracking the issuance and status of burial right certificates is essential for legal compliance and managing cemetery services.
+
+**One row represents:** A single certificate of burial right.
+
+**Covers:** All certificates of burial right issued for Canarsie Cemetery.
+
+**Columns:**
+- Burial Right ID
+- Certificate Number
+- Plot/Grave ID (links to **11. Cemetery Plot/Grave Inventory**)
+- Plot Holder ID (Current, links to **13. Plot Holder Records**)
+- Date of Issuance
+- Original Purchase Price
+- Perpetual Care Included (Y/N, if purchased after Jan 19, 1949)
+- Perpetual Care Fee Paid (if applicable)
+- Annual Care Contract (Y/N)
+- Transferable (Y/N)
+- Date of Last Transfer/Inheritance (links to **14. Burial Right Transfer/Inheritance Records**)
+- Status (Active, Terminated, Abandoned)
+- Termination Date (if applicable)
+- Reason for Termination
+
+**13. Plot Holder Records**
+
+**Quotes:**
+- § 7-01 Definitions, "Plot Holder. The term "Plot Holder" means any person having a burial right in a plot in the cemetery."
+- § 7-02(a) "All persons wishing to purchase burial rights in the cemetery must execute applications provided for that purpose."
+- § 7-02(e) "It shall be the obligation of the plot holder to notify the cemetery of any change in his/her post office address."
+- § 7-03(a) "Interment privileges can be received only from the plot holders, and no persons can be recognized as plot holders unless their names appear as such upon the records of the cemetery."
+- § 7-07(f) "Any person acquiring the privileges (rights) of a plot holder by inheritance must also accept any and all liabilities associated with the plot, including, in the case of a plot covered by annual care, any arrearages and all future annual care charges."
+- § 7-07(g) "it shall be the obligation of the supervising spouse or surviving domestic partner and/or heirs to claim ownership of a burial right upon the death of a plot holder. In the event that the commissioner is not notified in writing of a claim to a burial right within five years of the death of the plot holder, such burial right shall terminate with respect to any empty grave covered by the deceased plot holder's certificate of burial."
+
+**Why:** Maintaining accurate records of plot holders is essential for managing burial rights, communications, and financial obligations.
+
+**One row represents:** A single individual or entity holding a burial right.
+
+**Covers:** All individuals or entities that are current or past plot holders in Canarsie Cemetery.
+
+**Columns:**
+- Plot Holder ID
+- Plot Holder Name
+- Contact Address
+- Phone Number
+- Email Address
+- Date of Birth (if individual)
+- Date of Death (if applicable)
+- Relationship to Original Purchaser (if inherited/transferred)
+- Burial Right ID (links to **12. Burial Right Certificates**)
+- Plot/Grave ID (links to **11. Cemetery Plot/Grave Inventory**)
+- Perpetual Care Payment Status
+- Annual Care Payment Status
+- Outstanding Charges (Y/N, Amount)
+- Date of Last Address Change
+- Date of Last Contact
+- Date of Claim of Ownership (if inherited)
+- Notes
+
+**14. Burial Right Transfer/Inheritance Records**
+
+**Quotes:**
+- § 7-07(a) "In the event of the death of the owner of a burial right any and all privileges (rights) of the plot holder shall pass to the plot holder's family as set forth in the following sections."
+- § 7-07(h) "Any person(s) claiming inheritance of a burial right must furnish the Commissioner a copy of the will of the deceased plot holder duly certified by the court in which the will was admitted to probate. In the event that the deceased plot holder left no will, the claimant(s) must furnish to the Commissioner a notarized affidavit from the executor of the decedent's estate stating that the claimant(s) is (are) the beneficiary(ies) of the burial right or other proof of inheritance satisfactory to the Commissioner in his sole discretion."
+- § 7-08(a) "No burial right may be sold, transferred, exchanged, or otherwise disposed of without the written consent of the Commissioner on the cemetery's official transfer of right of burial form."
+- § 7-08(b) "No burial right with respect to a grave in which an interment has been made may be sold, transferred, exchanged, or otherwise disposed of, except to a family member."
+- § 7-08(c) "If a plot holder wishes to sell, transfer, exchange or otherwise dispose of to a person other than a family member a burial right with respect to an empty grave, the cemetery may, at the option of the Commissioner, repurchase the burial right for the price originally paid by the plot holder, less any outstanding charges due the cemetery by the plot holder."
+- § 7-08(d) "No burial right may be sold, transferred, exchanged or otherwise disposed of so long as there are any outstanding charges due the cemetery by the plot holder with respect to the burial right in question or any other burial right held by the plot holder."
+
+**Why:** Tracking changes in burial right ownership is legally required for proper administration and to ensure compliance with transfer rules.
+
+**One row represents:** A single transfer or inheritance event of a burial right.
+
+**Covers:** All transfers, sales, exchanges, or inheritances of burial rights.
+
+**Columns:**
+- Transfer/Inheritance ID
+- Burial Right ID (links to **12. Burial Right Certificates**)
+- Plot/Grave ID (links to **11. Cemetery Plot/Grave Inventory**)
+- Date of Event
+- Event Type (Sale, Transfer, Exchange, Inheritance)
+- Previous Plot Holder ID (links to **13. Plot Holder Records**)
+- New Plot Holder ID (links to **13. Plot Holder Records**)
+- Relationship to Previous Holder (if applicable)
+- Commissioner Consent (Y/N, Date)
+- Written Authorization (Y/N)
+- Proof of Inheritance (Will, Affidavit, Other)
+- Sale Price (if applicable)
+- Repurchase by Cemetery (Y/N, Price)
+- Outstanding Charges at Time of Transfer (Y/N, Amount)
+- Perpetual Care Contract Purchased by Transferee (Y/N, if applicable)
+- Notes
+
+**15. Memorial/Mausoleum Permits & Records**
+
+**Quotes:**
+- § 3-01(a)(IV) "Carnarsie cemetery fees for a certificate of burial right, perpetual care, annual care, foundation charges, interment and other services."
+- § 7-01 Definitions, "Memorial. The term "Memorial" means a monument, marker, tombstone, tablet, headstone or private mausoleum or tomb for family or individual use."
+- § 7-05(a) "No memorial shall be placed on any plot except by the plot holder or his/her authorized representative."
+- § 7-05(b) "Designs, plans and specifications for proposed memorials, or other improvements must be submitted on written application, signed by the plot holder. Written approval of the Commissioner is required before work can be begun. The foundation work is to be done at the expense of the plot holder or his/her representatives, heirs or assignees. Foundations shall be of concrete."
+- § 7-05(d) "All memorials are to be constructed of natural stone. No artificial stone of any description is permitted."
+- § 7-05(e) "Should any memorial become unsightly, dilapidated or a menace to visitors, the superintendent of the cemetery shall have the right, at the expense of the plot holder, either to correct the condition or to remove the memorial, if after due notice to the plot holder, sent by registered mail, the plot holder fails to take proper steps to remedy the conditions, within a reasonable time, not exceeding thirty days."
+- § 7-05(h) "No memorials are allowed in the park area and urn gardens, except for markers flush with the ground."
+- § 7-06(a) "No mausoleum shall be constructed without prior written approval of the Commissioner. No such approval shall be granted until satisfactory design plans and construction contracts have been submitted to the Commissioner."
+- § 7-06(c) "The plot holder must provide for perpetual care and maintenance of a mausoleum by payment to the cemetery of fifteen percent of the total cost of the structure within thirty days of completion of construction."
+- § 7-06(e) "Care and maintenance of mausoleums shall include cleaning the interiors and stained glass; cleaning and oiling bronze work unless otherwise requested; repainting and cleaning the exterior stone where and when necessary; and repairing damage caused by wear and tear."
+
+**Why:** Permitting and tracking memorials and mausoleums ensures compliance with cemetery rules, structural integrity, and aesthetic standards.
+
+**One row represents:** A single memorial or mausoleum.
+
+**Covers:** All memorials, monuments, markers, and mausoleums within Canarsie Cemetery.
+
+**Columns:**
+- Memorial/Mausoleum ID
+- Plot/Grave ID (links to **11. Cemetery Plot/Grave Inventory**)
+- Plot Holder ID (links to **13. Plot Holder Records**)
+- Type (Memorial, Mausoleum)
+- Application Date
+- Design Plans Submitted (Y/N)
+- Construction Contract Submitted (Y/N, for mausoleums)
+- Commissioner Approval (Y/N, Date)
+- Foundation Type (Concrete, Other)
+- Foundation Depth (for mausoleums)
+- Material (Natural Stone, Other)
+- Dimensions (Width, Height, Thickness)
+- Inscription Details
+- Location Restrictions Met (e.g., Park Area, Urn Gardens)
+- Perpetual Care Payment for Mausoleum (Y/N, Amount, Date)
+- Condition (Good, Unsightly, Dilapidated, Menace)
+- Last Inspection Date
+- Maintenance Required (Y/N, Description)
+- Removal/Correction Action Taken (Y/N, Date, Cost)
+- Notes
+
+**16. Interment/Disinterment Records**
+
+**Quotes:**
+- § 3-01(a)(IV) "Carnarsie cemetery fees for a certificate of burial right, perpetual care, annual care, foundation charges, interment and other services."
+- § 7-01 Definitions, "Interment. The term "Interment" means the permanent disposition of the remains of a deceased person by entombment or burial."
+- § 7-03(b) "The Commissioner reserves the right to refuse Interments in any Plot and to refuse to open any burial space for any purpose, except by court order or on written application by the plot holder or by the person designated to represent the plot holder."
+- § 7-03(c) "All Interments, disinterments or removals, including all openings and closings of Graves shall be made only by cemetery personnel."
+- § 7-03(f) "The right is reserved by the Commissioner to insist upon at least 48 hours notice prior to any interment, and to at least one week's notice prior to any disinterment or removal."
+- § 7-03(h) "The cemetery shall in no way be liable for any delay in the interment of a body where a protest to the interment has been made, or where the Rules and Regulations have not been complied with"
+- § 7-03(k) "No interment shall be permitted in any plot so long as there are any outstanding charges due the cemetery with respect to that plot or any other plot head by the plot holder."
+- § 7-03(l) "There shall be no interments on weekends and legal holidays."
+- § 7-03(m) "No interments shall be begun after 3:30 p.m."
+- § 7-03(o) "No disinterment or removal shall be allowed except for a good reason and with the written permission of the Commissioner, the written authorization of the plot holder and nearest of kin, and all permits required by law."
+
+**Why:** Tracking all interments and disinterments is legally required for accurate cemetery records, public health, and family rights.
+
+**One row represents:** A single interment, disinterment, or removal event.
+
+**Covers:** All interments, disinterments, and removals of human remains in Canarsie Cemetery.
+
+**Columns:**
+- Event ID
+- Plot/Grave ID (links to **11. Cemetery Plot/Grave Inventory**)
+- Deceased Name
+- Date of Death
+- Date of Interment/Disinterment
+- Event Type (Interment, Disinterment, Removal)
+- Remains Type (Casket, Cremated)
+- Cemetery Personnel ID (performing service, links to **1. Employee Roster**)
+- Plot Holder ID (requesting, links to **13. Plot Holder Records**)
+- Written Application (Y/N)
+- Court Order (Y/N, if applicable)
+- Notice Period Met (Y/N)
+- Outstanding Charges (Y/N, if applicable)
+- Weekend/Holiday (Y/N)
+- Time Constraint Met (Y/N, for interments after 3:30 p.m.)
+- Commissioner Permission (Y/N, for disinterments)
+- Nearest of Kin Authorization (Y/N, for disinterments)
+- Legal Permits Obtained (Y/N, for disinterments)
+- Protest Filed (Y/N, Date, Resolution)
+- Delay in Interment (Y/N, Reason)
+- Damage to Casket/Urn During Removal (Y/N)
+- Notes
+
+**17. Nonpublic School Records**
+
+**Quotes:**
+- § 14-01 Definitions, "Qualifying Nonpublic School. The term “Qualifying Nonpublic School” means any nonprofit elementary or secondary school in the city that (a) is other than (1) a school of the city school district of the city of New York, or (2) a school that shares space with a school of the city school district of the city of New York, (b) is providing instruction in accordance with the education law, (c) has been assigned a Basic Educational Data System (BEDS) code by the New York state department of education, or a similar successor identifier, and (d) is serving students in any combination of grades pre-kindergarten through twelve."
+- § 14-03(a) "Any nonpublic school in the City of New York (hereinafter “school”) that seeks to participate in the Reimbursement Program must first create an account with PASSPort and complete the HHS Accelerator Prequalification."
+- § 14-03(b)(i) "a school may access the application to participate in the Reimbursement Program. The application will be on a form prescribed by the Department and will be accessed through PASSPort."
+- § 14-03(b)(ii) "To participate in the Reimbursement Program a school must be a Qualifying Nonpublic School pursuant to Administrative Code § 10-172(a) and must enroll at least 150 students. The Department will verify all enrollment information with the New York State Education Department as reported by the school on the prior year’s Basic Educational Data Systems (“BEDS”) or Student Information Repository System (“SIRS”) Nonpublic and Public Schools Report for the current school year for which the qualified nonpublic school is seeking reimbursement. A separate application is required from each school instructional site with its own individual BEDS code."
+- § 14-03(c) "A complete application for the Reimbursement Program must include: (i) an organizational chart... (ii) the school’s BEDS form for the prior year... (iii) a workscope document... (iv) proof of the School’s non-profit, non-public status... (v) IRS 501(c)(3) Determination Letter... (vi) Attachment B... (vii) a certification from the School stating that the School does not use funding from the City of New York pursuant to subparagraph (5) of paragraph (e) of subdivision (3) of section 2853 of the Education Law for the provision of security services during the same school year that the School receives reimbursements from the NPS Program."
+- § 14-04 "If the Department notifies a school that it qualifies to participate in the Reimbursement Program, the Department shall also provide a Memorandum of Understanding (“MOU”) regarding the school’s participation in the Reimbursement Program. Each school must enter into a MOU with the City of New York, acting by and through the Department, before the school may receive funds through the Reimbursement Program."
+- § 14-07(a)(iv) "A school that operates at more than one address under a single BEDS code will be eligible for reimbursement for the allowable costs of a security guard at each such address, provided that student enrollment at each such address satisfies the minimum student enrollment requirements of 150 students as set forth in subdivision (a) of 55 RCNY § 14-07, and provided that the location does not share space with a school of the city school district of the city of New York."
+
+**Why:** Tracking nonpublic schools and their eligibility for the security guard reimbursement program is essential for program administration and compliance.
+
+**One row represents:** A single nonpublic school instructional site.
+
+**Covers:** All nonpublic schools applying for or participating in the Security Guard Reimbursement Program.
+
+**Columns:**
+- School ID (unique identifier for instructional site)
+- School Name
+- BEDS Code
+- School Address
+- Non-Profit Status (Y/N, proof provided)
+- IRS 501(c)(3) Status (Y/N, letter provided)
+- Student Enrollment (prior year BEDS/SIRS)
+- Number of Students (current year, verified)
+- Minimum Enrollment Met (Y/N)
+- Grades Served (Pre-K to 12)
+- Shares Space with City School District (Y/N)
+- Eligible for Rental Assistance (Y/N)
+- Uses Rental Assistance for Security Services (Y/N)
+- PASSPort Account Created (Y/N)
+- HHS Accelerator Prequalification Completed (Y/N)
+- Application Date (for Reimbursement Program)
+- Application Status (Submitted, Approved, Denied, Revoked)
+- Reason for Denial/Revocation
+- MOU Status (Issued, Returned, Executed, Forfeited)
+- MOU Return Deadline
+- School Security Administrator Name
+- School Security Administrator Contact
+- Number of Security Guards Reimbursed (links to **19. Security Guard Records**)
+- Date of Last Update
+
+**18. Security Guard Company Records**
+
+**Quotes:**
+- § 14-01 Definitions, "Security Guard Company. The term “Security Guard Company” means any person, firm, or corporation that is licensed to provide security services in the city pursuant to Article 7-A of the New York State General Business Law."
+- § 14-02(a) "Pursuant to Administrative Code § 10-172(d), the Department will seek to develop a Qualified Provider List of Security Guard Companies. A Security Guard Company that seeks inclusion on the Qualified Provider List must apply by completing an application on a form prescribed by the Department and must satisfy all provisions of this section."
+- § 14-02(b) "A Security Guard Company that seeks inclusion on the Qualified Provider List must meet the following requirements: (i) be fully licensed pursuant to Article 7-A of the New York State General Business Law... (iii) demonstrate a minimum of two (2) years prior experience as a Security Guard Company; (iv) demonstrate that it has exercised due diligence and has conducted a background investigation, including a criminal history check, to verify the credentials of each Security Guard that it employs... (v) ensure that each of its Security Guards holds a valid registration card... (vi) be incorporated, a limited liability company, a person or firm... (vii) be enrolled in the Procurement and Sourcing Solutions Portal ("PASSPort"); and (viii) the Security Guard Company must demonstrate that each of its guards have undergone training as set forth in 55 RCNY § 14-06(a)."
+- § 14-02(e) "The Qualified Provider List shall be comprised of responsible Security Guard Companies only. A Security Guard Company must affirmatively demonstrate its responsibility."
+- § 14-02(g) "At least once every two years, each Security Guard Company on the Qualified Provider List must affirm that there has been no change in the information included in its original application. In the event that there has been a change in the information submitted on its application before two years has elapsed, the Security Guard Company must immediately submit such changed information to the Department."
+- § 14-05(c) "Upon retention by the school of a Security Guard Company from the Qualified Provider List or a Security Guard Company licensed pursuant to Article 7-A of the General Business Law, the Security Guard Company must maintain throughout the term of its agreement with the school commercial general liability ("CGL") insurance, which shall: (i) be issued by a company that may lawfully issue the CGL policy... (iii) provide coverage of at least one million dollars ($1,000,000) per occurrence and two million dollars ($2,000,000) aggregate; (v) name the school and the City of New York as an Additional Insured"
+- § 14-05(c)(3) "A Security Guard Company shall maintain workers' compensation insurance, disability benefits insurance and employer's liability insurance in accordance with the laws of the State of New York"
+
+**Why:** Maintaining a qualified provider list and tracking company compliance is essential for the integrity and effectiveness of the security guard reimbursement program.
+
+**One row represents:** A single security guard company.
+
+**Covers:** All security guard companies applying for or included on the Qualified Provider List.
+
+**Columns:**
+- Company ID
+- Company Name
+- Business Type (Corporation, LLC, Person, Firm)
+- NYS General Business Law License Number
+- License Status (Active, Suspended, Revoked)
+- License Expiration Date
+- Years of Experience
+- PASSPort Enrollment Status (Y/N)
+- Application Date (for Qualified Provider List)
+- Qualified Provider List Status (Pending, Approved, Denied, Removed)
+- Reason for Denial/Removal
+- Date of Last Responsibility Determination
+- Responsibility Factors (Financial Resources, Technical Qualifications, Experience, Performance Record, Business Integrity)
+- CGL Insurance Policy Number
+- CGL Insurance Expiration Date
+- CGL Coverage Limits (Per Occurrence, Aggregate)
+- CGL Additional Insured (School, City of NY)
+- Workers' Compensation Insurance Proof (Y/N, Form Type)
+- Disability Benefits Insurance Proof (Y/N, Form Type)
+- Employer's Liability Insurance Proof (Y/N)
+- Date of Last Affirmation of No Change/Update
+- Notes
+
+**19. Security Guard Records**
+
+**Quotes:**
+- § 14-02(b)(iv) "demonstrate that it has exercised due diligence and has conducted a background investigation, including a criminal history check, to verify the credentials of each Security Guard that it employs"
+- § 14-02(b)(v) "ensure that each of its Security Guards holds a valid registration card, which has not expired or been revoked or suspended, pursuant to Article 7-A of the General Business Law"
+- § 14-05(e)(i) "furnish distinctive, appropriate, and complete uniforms to each Security Guard assigned to such school. All Security Guards must report for duty wearing a complete uniform"
+- § 14-05(e)(ii) "ensure that each Security Guard assigned to the school has satisfactorily completed training programs in compliance with Section 89-n of Article 7-A of the General Business Law and 55 RCNY § 14-06"
+- § 14-05(e)(iii) "ensure that each Security Guard assigned to the school has no physical conditions that would hamper the performance of assigned duties"
+- § 14-05(e)(v) "ensure that each Security Guard assigned to the school wears and displays a Company-issued identification card and New York State Guard License prominently while on duty"
+- § 14-05(e)(vi) "ensure that each Security Guard assigned to the school has the ability to understand, speak, write and be understood in English"
+- § 14-05(e)(vii) "furnish communication systems and accessories for use at each school."
+- § 14-06(a) "Security Guard Companies must ensure that all Security Guards receive training pursuant to the Article 7-A, Section 89-n of the General Business Law. Consistent with such requirements, a Security Guard must receive: (i) On-the-Job Training: A minimum of 16 hours of training... (ii) Refresher Training: During each year that a Security Guard takes part in the Reimbursement Program, such Security Guard must complete at a minimum an eight hour annual in-service training course."
+- § 14-06(b) "Security Guard Companies must maintain current records for each Security Guard regarding the training that such guard has completed. The school may request a copy of such records at any time."
+- § 14-08(b) "Each school must submit all records supporting its reimbursement claims through the Invoice Submission Portal including, but not limited to, certified payroll records, invoices, and time sheets, which include the name, address, and unique employee identification number of each Security Guard."
+
+**Why:** Tracking individual security guards, their qualifications, and training is essential for ensuring program quality, safety, and compliance.
+
+**One row represents:** A single security guard employed by a Security Guard Company.
+
+**Covers:** All security guards providing services under the Nonpublic School Security Guard Reimbursement Program.
+
+**Columns:**
+- Security Guard ID (unique employee identification number)
+- Security Guard Name
+- Employing Company ID (links to **18. Security Guard Company Records**)
+- NYS Guard Registration Card Number
+- Registration Card Status (Valid, Expired, Revoked, Suspended)
+- Registration Card Expiration Date
+- Background Investigation Completed (Y/N, Date)
+- Criminal History Check Completed (Y/N, Date)
+- On-the-Job Training Hours Completed
+- Last Refresher Training Date
+- Next Refresher Training Due Date
+- Physical Condition Assessment (Y/N, Fit for Duty)
+- English Language Proficiency (Y/N)
+- Uniform Provided (Y/N)
+- Company-Issued ID Card (Y/N)
+- Communication Device Provided (Y/N, Type)
+- Assigned School ID (current, links to **17. Nonpublic School Records**)
+- Date of Assignment to School
+- Date of Removal from School (if applicable)
+- Notes on Misconduct (if reported)
+
+**20. Security Service Reimbursement Claims**
+
+**Quotes:**
+- § 14-01 Definitions, "Reimbursement Period. The term “Reimbursement Period” means a twenty-four (24) month period that commences on July 1 of each fiscal year, during which a Qualifying Nonpublic School must submit its invoices for the respective fiscal year. Invoices submitted after the Reimbursement Period has passed shall not be reimbursed."
+- § 14-07(b) "The Department shall reimburse for Security Services only if each Security Guard is paid on an hourly basis no less than the prevailing wage and supplements in the City for unarmed guards as determined by the Comptroller of the City of New York pursuant to New York State Labor Law § 234."
+- § 14-07(c) "The Department shall reimburse for Security Services provided during school-related instruction or school-related events. School-related events shall not include private functions or activities that are not primarily directed to students. Schools are required to maintain records containing a description of school-related events for which reimbursement is requested."
+- § 14-07(d) "The Department shall reimburse for overtime costs for Security Services provided during school-related instruction and school-related events that do not exceed fifteen percent of the non-overtime wages of Security Guards reimbursed to the school during any given quarter."
+- § 14-07(e) "Each Security Guard Company may charge Reasonable Costs to each school for administrative expenses. The Department shall reimburse the school for such costs."
+- § 14-07(f) "The Department shall provide reimbursements on a quarterly basis after receiving satisfactory proof from the school of compliance with the requirements set forth in these Rules. Satisfactory proof must be submitted through the Invoice Submission Portal, and must include, but shall not be limited to, certified invoices, payroll records, timesheets and, when applicable, an annual report of incidents as required by 55 RCNY § 14-05(f). Invoices must be submitted to the Department during the Reimbursement Period for the respective fiscal year. All invoices must be signed by an authorized signatory, or their successor, identified in the application submitted by each school."
+- § 14-08(a) "Each school must retain all records supporting its reimbursement claims for seven (7) years. Such records include, but not are not limited to, invoices, payroll records, timesheets, and work assignment data from Security Guard Companies and annual reports of incidents as required by 55 RCNY § 14-05(f)."
+- § 14-08(b) "Each school must submit all records supporting its reimbursement claims through the Invoice Submission Portal including, but not limited to, certified payroll records, invoices, and time sheets, which include the name, address, and unique employee identification number of each Security Guard."
+
+**Why:** Tracking reimbursement claims and associated documentation is critical for financial oversight, program compliance, and auditing.
+
+**One row represents:** A single reimbursement claim for security services provided by a security guard for a specific period.
+
+**Covers:** All reimbursement claims submitted by nonpublic schools for security services.
+
+**Columns:**
+- Claim ID
+- School ID (links to **17. Nonpublic School Records**)
+- Security Guard ID (links to **19. Security Guard Records**)
+- Security Guard Company ID (links to **18. Security Guard Company Records**)
+- Fiscal Year
+- Quarter
+- Service Start Date
+- Service End Date
+- Total Hours Worked (non-overtime)
+- Hourly Wage Paid
+- Prevailing Wage Met (Y/N)
+- Total Non-Overtime Wages Claimed
+- Overtime Hours Worked
+- Overtime Wages Claimed
+- Overtime Cap Met (Y/N)
+- Administrative Expenses Claimed (Reasonable Costs)
+- Total Reimbursement Amount Claimed
+- Invoice Submission Date
+- Invoice Status (Submitted, Approved, Denied, Paid)
+- Payment Date
+- Payment Amount
+- Supporting Documentation Submitted (Certified Invoices, Payroll Records, Timesheets, Incident Reports)
+- Authorized Signatory (Y/N)
+- School-Related Event Description (if applicable)
+- Audit Status (Y/N, Date, Findings)
+- Recoupment Action (Y/N, Amount, Date)
+- Notes
+
+**21. School Security Incident Reports**
+
+**Quotes:**
+- § 14-05(f)(i) "Each Security Guard assigned to the school must document criminal activity and other significant incidents related to public safety that occur while the Security Guard is on duty. Each school is responsible for maintaining such documentation and for promptly reporting criminal activity to the New York City Police Department and other significant incidents related to public safety to any other government agency, where appropriate."
+- § 14-05(f)(ii) "The School Security Administrator must submit an annual report to the Department that summarizes all criminal activity and other significant incidents related to public safety that are documented by its Security Guards."
+- § 14-08(a) "Each school must retain all records supporting its reimbursement claims for seven (7) years. Such records include, but not are not limited to, invoices, payroll records, timesheets, and work assignment data from Security Guard Companies and annual reports of incidents as required by 55 RCNY § 14-05(f)."
+
+**Why:** Tracking security incidents is crucial for assessing school safety, program effectiveness, and fulfilling reporting requirements.
+
+**One row represents:** A single criminal activity or significant public safety incident documented by a security guard.
+
+**Covers:** All criminal activity and significant public safety incidents occurring at nonpublic schools participating in the reimbursement program.
+
+**Columns:**
+- Incident ID
+- School ID (links to **17. Nonpublic School Records**)
+- Date of Incident
+- Time of Incident
+- Security Guard ID (documenting, links to **19. Security Guard Records**)
+- Incident Type (Criminal Activity, Public Safety Incident)
+- Description of Incident
+- Location on Campus
+- Individuals Involved (names, roles)
+- NYPD Reported (Y/N, Date, Report Number)
+- Other Agency Reported (Y/N, Agency, Date)
+- School Security Administrator Notified (Y/N, Date)
+- Annual Report Included (Y/N, Fiscal Year)
+- Outcome/Resolution
+- Notes
+
+**22. Vehicle Inventory (City Fleet & Contracted)**
+
+**Quotes:**
+- § 1-04(b) "Abandon a vehicle."
+- § 1-11(a) "A person driving a vehicle upon the property shall operate it in a safe manner and comply with posted traffic signs and directions given by authorized individuals."
+- § 1-11(b)(1) "Park without a permit."
+- § 1-11(b)(2) "Park in any area reserved for city vehicles or authorized individuals."
+- § 15-01 Definitions, "City Fleet. The term "City Fleet" means vehicles owned by Agencies of the City or leased for periods of over one (1) year."
+- § 15-01 Definitions, "City Contracted Vehicle. The term "City Contracted Vehicle" means any Large Vehicle that is utilized within the City on a weekly or more frequent basis to fulfill requirements material to the scope of a Contract."
+- § 15-01 Definitions, "Large Vehicle. The term "Large Vehicle" means a motor vehicle with a manufacturer's gross vehicle weight rating exceeding 10,000 pounds. Such term does not include street sweepers, fire engines, car carriers, off-road construction vehicles, or any specialized vehicles or vehicle types on which Side Guard installation is deemed impractical by the Department in accordance with Administrative Code § 6-141(c)."
+- § 15-02(a) "all Large Vehicles in the City Fleet must be equipped with Side Guards by the Effective Date and all City Contracted Vehicles performing work under a Contract are required to be equipped with Side Guards by the Effective Date or in compliance with the Phase-In Period"
+- § 15-03(a)(3) "Contractors must provide a list of vehicles that require retrofits to be performed, as well as an affidavit stating that any add-on fees for Side Guard installations will only be included for trucks not previously equipped with Side Guards under any City contract or otherwise previously fitted and equipped with operational Side Guards."
+- § 15-03(c)(2)(iii) "one or more photographs of both sides of each Large Vehicle used in the performance of the Contract by the Contractor and any Subcontractor that is retrofitted with safety enhancing equipment as required by these rules. The photographs must also show the Large Vehicle's license plate number with the safety enhancing equipment fitted on the vehicle"
+- § 15-03(e) "DCAS is authorized to request and perform the physical inspection of any Large Vehicle used in the performance by an Agency, Contractor or Subcontractor, in order to ensure compliance with contract provisions required by this chapter, in accordance with applicable law."
+
+**Why:** Tracking all City-owned and contracted vehicles, especially large vehicles, is necessary for managing fleet operations, safety, and compliance with side guard regulations.
+
+**One row represents:** A single vehicle.
+
+**Covers:** All vehicles in the City Fleet and City Contracted Vehicles.
+
+**Columns:**
+- Vehicle ID
+- License Plate Number
+- Vehicle Type (e.g., Sedan, Truck, Bus, Specialized)
+- Manufacturer
+- Model
+- Year
+- Gross Vehicle Weight Rating (GVWR)
+- Large Vehicle (Y/N, if GVWR > 10,000 lbs)
+- Exempted from Large Vehicle Definition (Y/N, Reason)
+- Ownership Status (City Owned, Leased, Contracted)
+- Owning/Operating Agency ID (if City Fleet)
+- Contractor ID (if City Contracted, links to **23. Procurement Contracts (General)**)
+- Subcontractor ID (if applicable)
+- Side Guard Status (Installed, Not Installed, Exempted)
+- Side Guard Type (NYC Volpe Standard, Other Approved)
+- Side Guard Installation Date
+- Side Guard Exemption ID (links to **24. Vehicle Side Guard Exemption Requests**)
+- Last Inspection Date (links to **25. Vehicle Inspection Records**)
+- Last Compliance Report Date (links to **26. Vehicle Side Guard Compliance Records**)
+- Notes
+
+**23. Procurement Contracts (General)**
+
+**Quotes:**
+- § 5-01(a)(1) "The prior approval of the Comptroller is not required on a sale of personal property where such sale is to the highest responsible bidder at public auction or after receipt of sealed bids after advertisement in at least ten successive issues of The City Record."
+- § 5-01(a)(4) "Personal property may be given to a vendor in part payment on a contract at public letting to furnish new personal property at the lowest net price."
+- § 6-01 Definitions, "Contract. "Contract" means a procurement by DMSS to purchase goods, the total value of which is in excess of $10,000 (or such other amount as the Procurement Policy Board Rules may hereafter establish as the ceiling below which the procurement is treated as a small purchase)."
+- § 6-01 Definitions, "Company #1" includes the company which seeks to enter a contract with a City agency, and is determining whether it is qualified to sign the City's anti-apartheid rider"
+- § 8-01 "A mechanism authorized by the Recycling Law to achieve the goal of purchasing products made from secondary materials is the authority to award a contract pursuant to a "price preference.""
+- § 8-02 Definitions, "Contract. "Contract" means a procurement by DMSS to purchase goods, the total value of which is in excess of $10,000"
+- § 15-01 Definitions, "Contract. The term "Contract" means any contract awarded by the City and registered with the New York City Comptroller after the Effective Date and whose cost is to be paid from funds belonging to or administered by the City, where such contract has an estimate value of $2,000,000 or more."
+- § 15-01 Definitions, "Contractor. The term "Contractor" means any entity that enters into a contract with the City."
+- § 15-01 Definitions, "Subcontractor. The term "Subcontractor" means any entity that enters into a subcontract to perform work on behalf of a Contractor which enters into City contract registered with the City."
+- § 15-03(a) "All City Agency Contracts involving City Contracted Vehicles must contain specifications reflecting the requirements set forth in this chapter, including the submission of compliance plans and reports described in subdivision (c) of this section, which specifications will be reviewable by DCAS."
+- § 15-03(a)(1) "Contracts may include additional charges by the Contractor for the installation of Side Guards at a price not to exceed $3,000.00 per vehicle unless otherwise approved by DCAS, in its sole discretion."
+- § 15-03(a)(2) "Contractors shall ensure that the Subcontractors have access to funding to add Side Guards to City Contracted Vehicles used in City Agency Contracts. Contractors shall reimburse Subcontractors for the costs of any Side Guards installed on vehicles which are required to comply with these rules."
+
+**Why:** Tracking all City contracts is essential for financial management, compliance with procurement rules, and oversight of contractor performance.
+
+**One row represents:** A single contract awarded by the City.
+
+**Covers:** All contracts awarded by the City, including those for goods, services, and those involving City Contracted Vehicles.
+
+**Columns:**
+- Contract ID
+- Contract Number
+- Contract Type (Goods, Services, Construction, etc.)
+- Awarding Agency ID
+- Contractor Name
+- Contractor ID (unique identifier for contractor entity)
+- Subcontractor Name (if applicable)
+- Subcontractor ID (unique identifier for subcontractor entity)
+- Contract Value
+- Start Date
+- End Date
+- Comptroller Registration Date
+- Anti-Apartheid Rider Signed (Y/N)
+- OEM Agreement (Y/N, details)
+- Secondary Material Preference (Y/N)
+- Secondary Material Content Standard (if applicable)
+- Side Guard Requirement (Y/N, if applicable)
+- Side Guard Installation Cost (if applicable)
+- Notice to Proceed Date (if applicable)
+- Last Payment Date
+- Contract Status (Active, Completed, Terminated)
+- Performance Record (Satisfactory, Unsatisfactory)
+- Notes
+
+**24. Vehicle Side Guard Exemption Requests**
+
+**Quotes:**
+- § 15-02(b)(2) "The Large Vehicle cannot maintain a Side Guard due to the design or operations of the vehicle, subject to the Contractor's application to DCAS for, and the grant of, an exemption from these rules."
+- § 15-04(a) "City Agencies and Contractors (including on behalf of any of its Subcontractors using Large Vehicles in the performance of the Contract) may submit an application, on a form available on DCAS' website, to the Chief Fleet Management Officer for an annual exemption from the requirements of these Rules if they have determined that compliance is impractical; or it will disrupt provision of public safety or public health services; or there are limitations in the capacity of vendors to supply Side Guards; or because the vehicle cannot maintain a Side Guard due to the design or operations of such vehicle."
+- § 15-04(b) "Contractors (including on behalf of any of its Subcontractors using Large Vehicles in the performance of the Contract) may also submit requests for an exemption from the timeframes of the installation schedule set forth in 55 RCNY § 15-03 based on a claim of undue financial hardship."
+- § 15-04(c) "Exemptions may be available if one or more of the following circumstances exist and there is sufficient evidence or proof provided with respect to such circumstances: (1) Supply chain disruption; (2) Delays in the commencement of work or payments which are not caused by the fault of the Contractor; (3) If removing the vehicle from service would have a material effect on the contractor's ability to perform work under the Contract; (4) Natural or man-made emergencies... (5) Any other circumstance"
+- § 15-04(d) "The application for an exemption must include all of the following information and statements, to be verified in an affidavit accompanying the application: (1) A list of all Large Vehicles that the applicant owns, leases or otherwise controls to conduct the applicant's business; and (2) A statement, accompanied by supporting documents, and if applicable, financial statements, that retrofitting the applicant's Large Vehicles in order to comply with these rules is impractical; or would disrupt provision of public safety or public health services; or would cause the applicant to suffer an undue financial hardship."
+- § 15-04(e) "The Chief Fleet Management Officer will evaluate an exemption request and make a determination within 90 days of receipt whether to approve or deny such request."
+- § 15-04(f) "An annual exemption granted pursuant to this section will expire one year from the date it has been granted, except for exemptions granted pursuant to 55 RCNY § 15-02(b)(2). Exemptions granted pursuant to such paragraph will remain applicable as long as the specific vehicle(s) are in operation by the Agency or, as to a Contractor or Subcontractor, the life of the Contract with the City."
+- § 15-04(g) "The Chief Fleet Management Officer may renew an exemption for additional one-year periods"
+
+**Why:** Tracking exemption requests and their outcomes is essential for managing compliance with side guard regulations and ensuring fair application of rules.
+
+**One row represents:** A single request for a side guard exemption for a vehicle.
+
+**Covers:** All applications for exemptions from side guard requirements for City Fleet and City Contracted Vehicles.
+
+**Columns:**
+- Exemption Request ID
+- Vehicle ID (links to **22. Vehicle Inventory**)
+- Requesting Entity Type (Agency, Contractor, Subcontractor)
+- Requesting Entity ID (links to **23. Procurement Contracts (General)** for contractors/subcontractors)
+- Application Date
+- Exemption Type (Annual, Design/Operation, Financial Hardship, Public Safety/Health, Supply Chain, Delay, Material Effect, Emergency, Other)
+- Justification Provided
+- Supporting Documents Submitted (Y/N, details)
+- Chief Fleet Management Officer Decision (Approved, Denied)
+- Decision Date
+- Exemption Start Date
+- Exemption End Date
+- Renewal Request (Y/N, Date)
+- Renewal Decision (Approved, Denied)
+- Appeal Filed (Y/N, Date, Outcome)
+- Notes
+
+**25. Vehicle Inspection Records**
+
+**Quotes:**
+- § 15-03(e) "DCAS is authorized to request and perform the physical inspection of any Large Vehicle used in the performance by an Agency, Contractor or Subcontractor, in order to ensure compliance with contract provisions required by this chapter, in accordance with applicable law."
+
+**Why:** Regular inspections of vehicles are necessary to ensure compliance with side guard regulations and overall vehicle safety.
+
+**One row represents:** A single physical inspection of a vehicle for side guard compliance.
+
+**Covers:** All physical inspections of City Fleet and City Contracted Vehicles for side guard compliance.
+
+**Columns:**
+- Inspection ID
+- Vehicle ID (links to **22. Vehicle Inventory**)
+- Inspection Date
+- Inspector ID (links to **1. Employee Roster**)
+- Side Guard Present (Y/N)
+- Side Guard Type (NYC Volpe Standard, Other Approved)
+- Side Guard Condition (Good, Minor Damage, Major Damage, Missing)
+- Compliance Status (Compliant, Non-Compliant)
+- Violation Noted (Y/N, links to **27. Vehicle Side Guard Violation Records**)
+- Corrective Action Required
+- Follow-up Inspection Date
+- Notes
+
+**26. Vehicle Side Guard Compliance Records**
+
+**Quotes:**
+- § 15-03(c)(1) "A written compliance plan within fourteen (14) days following the Notice to Proceed or the placing of the first order under the Contract, as applicable."
+- § 15-03(c)(2) "A report that includes the following information, submitted six (6) months following the Notice to Proceed or the placing of the first order under the Contract, as applicable, or when requested by the Chief Fleet Management Officer: (i) the number of Large Vehicles used in the performance of the Contract by the Contractor and any Subcontractor; (ii) the number of Large Vehicles used in the performance of the Contract by the Contractor and any Subcontractor that are retrofitted with safety enhancing equipment as required by these rules; (iii) one or more photographs of both sides of each Large Vehicle used in the performance of the Contract by the Contractor and any Subcontractor that is retrofitted with safety enhancing equipment as required by these rules. The photographs must also show the Large Vehicle's license plate number with the safety enhancing equipment fitted on the vehicle; and (iv) a certification that the Contractor and any Subcontractor under the Contract have complied with the requirements of these rules."
+- § 15-03(c)(3) "The Chief Fleet Management Officer will review written compliance plans and reports to confirm that the Agency or Contractor (including its Subcontractor) meets the requirements of these rules."
+- § 15-03(d)(1) "Contractors and their Subcontractors must keep records of their Compliance Plans and Reports for a period of six (6) years from the date of the Notice to Proceed, or from the payment of the last invoice pursuant to their Contract with the City, whichever occurs later."
+
+**Why:** Tracking compliance plans and reports is essential for monitoring adherence to side guard installation schedules and requirements.
+
+**One row represents:** A single compliance plan or report submitted by an agency or contractor.
+
+**Covers:** All compliance plans and reports related to side guard installation for City Fleet and City Contracted Vehicles.
+
+**Columns:**
+- Report ID
+- Contract ID (links to **23. Procurement Contracts (General)**)
+- Submitting Entity Type (Agency, Contractor)
+- Submitting Entity ID (links to **23. Procurement Contracts (General)** for contractors)
+- Submission Date
+- Report Type (Compliance Plan, 6-Month Report, Ad-hoc Request)
+- Number of Large Vehicles in Contract
+- Number of Large Vehicles Retrofitted
+- Number of Large Vehicles Exempted (links to **24. Vehicle Side Guard Exemption Requests**)
+- Certification of Compliance (Y/N)
+- Reviewing Officer ID (links to **1. Employee Roster**)
+- Review Date
+- Compliance Status (Approved, Non-Compliant, Pending Review)
+- Notes
+
+**27. Vehicle Side Guard Violation Records**
+
+**Quotes:**
+- § 15-05(a) "A Contractor may be assessed up to $4,000 for each City Contracted Vehicle, including those vehicles used on behalf of the Contractor by its Subcontractor(s), that are found to be out of compliance with the requirements of these rules."
+- § 15-05(b) "any person who knowingly makes a false statement of material fact to any City Agency with respect to the financial condition of the Contractor submitted in connection with a request for an exemption from compliance with these Rules may be fined not less than $100 nor more than $1,000 for each such false statement and the person on whose behalf such false, deceptive or fraudulent representation was made, shall thenceforth be disqualified from bidding on any contracts for the City."
+- § 15-05(d) "A Contractor shall be responsible and liable for the actions or omissions of its subcontractor(s), and for any assessments imposed upon such subcontractor(s) pursuant to these rules."
+
+**Why:** Tracking violations and associated penalties is necessary for enforcing side guard regulations and ensuring accountability.
+
+**One row represents:** A single violation of side guard requirements.
+
+**Covers:** All violations related to side guard installation and compliance for City Contracted Vehicles.
+
+**Columns:**
+- Violation ID
+- Vehicle ID (links to **22. Vehicle Inventory**)
+- Contract ID (links to **23. Procurement Contracts (General)**)
+- Contractor ID (links to **23. Procurement Contracts (General)**)
+- Subcontractor ID (if applicable)
+- Date of Violation
+- Violation Type (Non-compliance with Side Guard, False Statement in Exemption Request)
+- Description of Violation
+- Enforcement Officer ID (links to **1. Employee Roster**)
+- Penalty Assessed (Amount)
+- Fine Amount (if applicable)
+- Payment Status (Paid, Outstanding)
+- Date Paid
+- Disqualification from Bidding (Y/N, Date)
+- Appeal Filed (Y/N, Date, Outcome)
+- Notes
+
+**28. Surplus Equipment Inventory**
+
+**Quotes:**
+- § 5-01(a) "Personal property may be disposed of by the Division of Municipal Supplies by public or private sale or as otherwise authorized by law or regulation."
+- § 5-01(a)(6) "Personal property may be transferred between the various City agencies by order of the Commissioner."
+- § 5-01(a)(7) "All materials, supplies and equipment which the Commissioner considers of no sale value or use to the City may be destroyed or otherwise disposed of in the most advantageous manner under the direction of the Commissioner."
+- § 16-01 Definitions, "Computer. The term “Computer” means a desktop computing device, a laptop, or other portable computing device, containing a central processing unit and any peripheral components that are connected to the central processing unit such that they may reasonably be viewed functionally as a single unit, including, but not limited to, motherboards, RAM, hard drives, or other storage devices, video or sound cards, and computer cases."
+- § 16-01 Definitions, "Equipment. The term “Equipment” means a Computer and its associated peripheral components, and other electronic devices that operate with or can be operated by a Computer, including but not limited to floppy disk drives, CD drives, USB drives, printers, modems, networking devices, scanners, monitors, and the cables or wiring required to connect a Computer with the computer equipment."
+- § 16-01 Definitions, "Surplus. The term “Surplus” means equipment that is no longer in use, and not needed for use, by any agency."
+- § 16-02(a)(i) "The Department will notify the public of its intent to donate Surplus Equipment through: 1. the Public Surplus online platform; 2. the existing network of Salvage Offices across the City; 3. the DCAS Connect Surplus webpage; and 4. The City Record."
+- § 16-02(e)(iii) "Agencies must confirm that the Surplus Equipment they seek to donate is in a condition suitable for donation and state in its Certification of Compliance whether the Surplus Equipment is fully functioning or if it is in need of repair or restoration. If repair or restoration is needed, agencies must state what component(s) requires repair or restoration."
+- § 16-02(e)(iv) "Computers missing one or more of the following components are ineligible for donation under this rule: 1. Central Processing Unit (CPU); 2. Motherboard; 3. RAM; 4. Hard drive or other storage device; 5. Video or sound card; or 6. Computer case (where applicable)."
+- § 16-03(a) "The Department may auction or dispose of Surplus Equipment if no Eligible Organization has submitted a specific plan for the Beneficial Use of such Surplus Equipment over the course of one (1) year from the date of the Department’s notification"
+
+**Why:** Tracking surplus equipment is necessary for managing its disposition, including donation, sale, or destruction, in compliance with regulations.
+
+**One row represents:** A single piece of surplus equipment.
+
+**Covers:** All surplus personal property and equipment, particularly computers and peripherals, managed by DCAS.
+
+**Columns:**
+- Equipment ID
+- Item Name
+- Item Type (Computer, Printer, Monitor, Scanner, etc.)
+- Manufacturer
+- Model
+- Serial Number
+- Original Owning Agency ID
+- Date Declared Surplus
+- Condition (Fully Functioning, Needs Repair/Restoration, No Sale Value)
+- Missing Components (if applicable)
+- Current Location/Storage
+- Date of Notification for Donation
+- Donation Application ID (links to **29. Surplus Equipment Donation Applications**)
+- Disposition Method (Donated, Sold, Transferred, Destroyed, Auctioned)
+- Disposition Date
+- Donation ID (links to **30. Surplus Equipment Donation Records**)
+- Sale Price (if applicable)
+- Transferring Agency ID (if applicable)
+- Reason for Non-Donation (if applicable)
+- Notes
+
+**29. Surplus Equipment Donation Applications**
+
+**Quotes:**
+- § 16-02(b)(i) "Eligible Organizations must submit to the Department a specific plan for the Beneficial Use of Surplus Equipment within fourteen (14) days of the Department notification described in subdivision (a) of this section. Eligible Organizations must use the form provided by the Department for the specific plan."
+- § 16-02(b)(iii) "The specific plan must include, but need not be limited to: 1. A description of the organization... 2. A description of the Surplus Equipment requested... 3. The intended use of the Surplus Equipment... 4. A written statement indicating why the donation of equipment to the organization will facilitate the organization’s services to the public for low or no cost. 5. Whether the Eligible Organization has previously received Surplus Equipment donations."
+- § 16-02(c)(i) "If only one Eligible Organization submits a specific plan for the Beneficial Use of Surplus Equipment, such Eligible Organization will receive the Surplus Equipment if it has demonstrated that it intends to use such equipment for a predominantly public purpose in which any private benefit is merely incidental."
+- § 16-02(c)(ii) "If multiple Eligible Organizations submit a specific plan for the Beneficial Use of Surplus Equipment, the Department will take into consideration the following factors in determining priority: 1. Whether the Beneficial Use of such equipment facilitates services to the public for low or no cost; 2. Whether the Beneficial Use of such equipment will serve communities that are under-serviced or have difficulty receiving services; 3. In the event that an Eligible Organization has previously received a donation of Surplus Equipment, whether such organization has utilized such equipment to fulfill the Beneficial Use for which it was donated; 4. Whether an Eligible Organization has a greater need for a donation of Surplus Equipment due to its limited size as compared to other Eligible Organizations; and 5. Any other factor that the Department deems relevant."
+- § 16-02(c)(iii) "The order of priority for which Eligible Organizations receive the Surplus Equipment will be determined as follows: 1. Public schools and libraries will receive first priority."
+
+**Why:** Tracking applications for surplus equipment donations is necessary for evaluating eligibility, prioritizing recipients, and ensuring beneficial public use.
+
+**One row represents:** A single application (specific plan) submitted by an eligible organization for surplus equipment.
+
+**Covers:** All applications from Eligible Organizations for surplus equipment donations.
+
+**Columns:**
+- Application ID
+- Eligible Organization ID (links to **31. Eligible Organization Records**)
+- Application Date
+- Equipment ID Requested (links to **28. Surplus Equipment Inventory**)
+- Organization Type (Public School, Public Library, Other Public/Private Educational, Not-for-Profit serving disabled/seniors/low-income)
+- Community Served Type
+- Estimated People Served Yearly
+- Location(s) for Use
+- Number of Staff at Location
+- Intended Primary Purpose of Use
+- When/Where/How Equipment Will Be Used
+- Statement on Public Service/Low Cost (Y/N)
+- Previously Received Donations (Y/N)
+- Previous Donation Details (Equipment, Date, Utilization)
+- Repair/Restoration Training Intent (Y/N)
+- Application Status (Submitted, Under Review, Approved, Denied)
+- Priority Ranking (if multiple applicants)
+- Reason for Priority/Denial
+- Decision Date
+- Notes
+
+**30. Surplus Equipment Donation Records**
+
+**Quotes:**
+- § 16-02(d) "The Department will donate Surplus Equipment to Eligible Organizations for Beneficial Use at no cost except for any reasonable shipping and handling fees. Eligible Organizations are responsible for transporting the Surplus Equipment from the Department or agencies."
+- § 16-02(e)(ii) "The Department will notify New York City agencies of the requirements under this rule and will require a Certification of Compliance from any donating agency. Donating agencies must complete the Certification of Compliance provided by the Department."
+- § 16-04(b)(iv) "Itemized lists of Surplus Equipment offered for donation, including whether the equipment was in need of repair or restoration, donated, auctioned, or disposed. If auctioned or disposed, a record as to why the Surplus Equipment was not donated."
+
+**Why:** Tracking actual donations is necessary for accountability, compliance with donation rules, and demonstrating public benefit.
+
+**One row represents:** A single donation of a piece of surplus equipment to an eligible organization.
+
+**Covers:** All donations of surplus equipment made by DCAS.
+
+**Columns:**
+- Donation ID
+- Equipment ID (links to **28. Surplus Equipment Inventory**)
+- Eligible Organization ID (links to **31. Eligible Organization Records**)
+- Application ID (links to **29. Surplus Equipment Donation Applications**)
+- Donation Date
+- Donating Agency ID
+- Certification of Compliance from Donating Agency (Y/N)
+- Equipment Condition at Donation (Fully Functioning, Needs Repair/Restoration)
+- Repair/Restoration Component(s) (if applicable)
+- Shipping/Handling Fees Charged (Y/N, Amount)
+- Transport Responsibility (Eligible Organization, DCAS)
+- Date of Receipt by Organization
+- Follow-up on Beneficial Use (Y/N, Date)
+- Notes
+
+**31. Eligible Organization Records (for Surplus Equipment)**
+
+**Quotes:**
+- § 16-01 Definitions, "Eligible Organization. The term “Eligible Organization” means a public school, public library, other public or private educational institution, and a not-for-profit institution serving persons with disabilities, senior citizens, or low-income individuals."
+- § 16-02(b)(iii)(1) "A description of the organization, including: A. Whether the organization is a public school or public library; B. Whether the organization is a public or private educational institution other than a public school or public library; C. Whether the organization is a not-for-profit institution serving persons with disabilities, senior citizens, or low-income individuals; D. The type of community the organization serves; E. An estimate of the number of people the organization serves yearly; F. The location(s) which will utilize the Surplus Equipment; G. All locations operated by the organization; and H. The number of staff at the location to be served."
+
+**Why:** Maintaining records of eligible organizations is necessary for managing the surplus equipment donation program and verifying recipient eligibility.
+
+**One row represents:** A single eligible organization.
+
+**Covers:** All organizations that are eligible to receive surplus equipment donations.
+
+**Columns:**
+- Eligible Organization ID
+- Organization Name
+- Organization Type (Public School, Public Library, Other Educational, Not-for-Profit)
+- Not-for-Profit Focus (Persons with Disabilities, Senior Citizens, Low-Income Individuals, General)
+- Primary Contact Name
+- Contact Email
+- Contact Phone
+- Main Address
+- All Operated Locations
+- Type of Community Served
+- Estimated People Served Yearly
+- Number of Staff
+- Date of Eligibility Verification
+- Previous Donation History (Y/N, details)
+- Notes
+
+**32. City Hall Activity Permits**
+
+**Quotes:**
+- § 10-01 "These procedures apply to press conferences, demonstrations, picketing, speechmaking, vigils and like forms of expressive conduct by participants or onlookers ("covered activities") on the steps, sidewalk and plaza area fronting City Hall."
+- § 10-03 "Covered activities shall be conducted in accordance with these requirements and under the terms of permits issued by the Police Department pursuant to 55 RCNY § 10-06 below."
+- § 10-03 "A maximum of 300 persons in total shall be permitted on the City Hall steps, sidewalk and plaza fronting City Hall for a three-hour time period in an area selected by the Police Department which reasonably accommodates groups of 300 or less. Groups of over 300 persons or who seek to hold a covered activity that exceeds three hours in duration shall be directed to obtain a permit for the use of City Hall Park or other comparable area in accordance with the rules of the Department of Parks and Recreation."
+- § 10-06(a) "Applicants shall submit fully executed permit applications in a form prescribed by the Police Department to a designated office or division of the Police Department, which will process applications in the order they are received."
+- § 10-06(b) "Applications shall be granted or denied within 10 business days of the Police Department's receipt of the application."
+- § 10-06(c) "Permits may be denied on the following grounds: (i) A permit has previously been granted to another applicant for a covered activity for the date and time requested. (ii) It reasonably appears that the covered activity will present a clear and present danger to the public safety, good order or health. (iii) The application proposes activities which would be in violation of law or regulation. (iv) An event enumerated in 55 RCNY § 10-02 was previously calendared for the same date and time. (v) The Police Department determines that the proposed covered activity conflicts with security needs anticipated for the time and place of the proposed activity."
+- § 10-06(d)(iv) "Permits shall extend for a period of not more than three hours."
+- § 10-06(e) "Permits may be revoked prior to the scheduled covered activity under the following circumstances: (i) unanticipated security needs or other exigent circumstances; or (ii) information comes to the attention of the Police Department which indicates that the proposed activity reasonably presents a clear and present danger to the public safety, good order or health."
+- § 10-07 "During the conduct of covered activities, a permit may be revoked by the ranking on-site New York City police officer if the covered activity or other circumstances (i) present a clear and present danger to the public safety, good order or health; (ii) interfere with ingress to or egress from City Hall or otherwise violate the terms and conditions contained in the permit; or (iii) result in bodily harm to any individual, damage to property, or imminent breach of the peace such that good order cannot otherwise be maintained."
+- § 10-10 "All permits issued shall include the conditions set forth above."
+
+**Why:** Managing permits for activities at City Hall is essential for public order, safety, and ensuring fair access to public spaces.
+
+**One row represents:** A single permit application for a covered activity at City Hall.
+
+**Covers:** All applications and permits for press conferences, demonstrations, picketing, speechmaking, and vigils at City Hall.
+
+**Columns:**
+- Permit ID
+- Application Date
+- Applicant Name/Organization
+- Contact Information
+- Proposed Activity Date
+- Proposed Activity Time (Start, End)
+- Proposed Activity Type (Press Conference, Demonstration, Picketing, Speechmaking, Vigil)
+- Expected Number of Participants
+- Location Requested (Steps, Sidewalk, Plaza)
+- Application Status (Submitted, Granted, Denied, Revoked)
+- Date of Decision
+- Reason for Denial/Revocation
+- Alternative Location/Time Offered (Y/N, Details)
+- Permit Duration (hours)
+- Conditions of Permit
+- On-site Police Officer ID (if revoked during activity)
+- Incident Report ID (if revoked due to incident, links to **33. City Hall Incident Reports**)
+- Notes
+
+**33. City Hall Incident Reports**
+
+**Quotes:**
+- § 1-04 "While on or about the property, no person shall: (a) Dump, litter or throw any refuse, dirt or rubbish. (b) Abandon a vehicle. (c) Throw or project a stone or other missile. (d) Climb upon the roof of any building or enter any area which is posted as being closed to the public. (e) Destroy or damage any structure or remove any part thereof. (f) Destroy, damage or remove any property found on or within any structure. (g) Interfere with the operation of any utility system servicing the property. (h) Injure, mutilate, deface, alter, change, displace, remove or destroy any posted sign or notice."
+- § 1-05 "Persons on or about the property shall comply with official signs and obey directions given by authorized individuals."
+- § 1-06 "With the exception of those activities conducted by the Off-Track Betting Corporation, the operation of, or participation in, unauthorized lotteries, pools or games for money or something of value on or about the property is prohibited."
+- § 1-07(a) "No person may enter upon property while his ability to function has been impaired by alcohol, drugs or any other substance."
+- § 1-07(b) "No person shall bring upon or use while on the property any substance capable of impairing normal human functioning."
+- § 1-08 "The soliciting of alms, subscriptions, contributions, commercial soliciting and vending of all kinds without the prior written approval of the Commissioner or his/her designee, and the collecting of private debts in or on the property is prohibited."
+- § 1-09(a) "No person shall distribute any material such as pamphlets, handbills and flyers on the property unless the prior written approval of the Deputy Commissioner or head of the occupant agency has been obtained."
+- § 1-09(b) "No person shall place or cause to be placed upon or affixed to the property any words, characters, illustrations or devices as a notice of, or reference to any matter or event."
+- § 1-10 "Unless otherwise authorized, no person shall bring any animal, except properly harnessed seeing-eye dogs, onto the property."
+- § 1-11(b) "A person driving a vehicle upon the property shall not: (1) Park without a permit. (2) Park in any area reserved for city vehicles or authorized individuals. (3) Block entrances, driveways, walks, ramps, platforms or hydrants."
+- § 1-12 "Unless otherwise ordered by law or regulation, no person shall carry any gun, firearm, explosives or deadly or dangerous weapon upon the property."
+- § 1-13 "Any disorderly conduct or conduct on the property which creates loud and unusual noise or which obstructs the usual use of entrances, foyers, corridors, offices, elevators, stairways and parking lots or which otherwise tends to impede or disturb the public employees in the performance of their duties, or which impedes or disturbs the general public from obtaining the administrative services provided on the property, is prohibited."
+- § 1-14(a) "Except for those holding permits from the Executive Director of the Office of Economic Development and members of the press who hold working press identification cards, no person shall take photographs or moving pictures within any structure located on the property."
+- § 10-05 "Disorderly conduct or conduct which obstructs the usual use of City Hall entrances, foyers, and the parking area, which otherwise impedes public employees in the performance of their official duties, vehicular and pedestrian traffic around City Hall, or the general public from obtaining government services or attending proceedings at City Hall is prohibited. Conduct shall not be permitted which (a) reasonably presents a clear and present danger to the public safety, good order or health; (b) interferes with ingress to or egress from City Hall; or (c) may result in bodily harm to any individual, damage to property, or imminent breach of the peace such that good order cannot otherwise be maintained."
+
+**Why:** Tracking incidents and violations at City Hall and other properties is essential for maintaining safety, order, and enforcing rules.
+
+**One row represents:** A single incident or violation occurring on City property.
+
+**Covers:** All incidents of prohibited conduct, disturbances, and violations of rules on properties under DCAS control, especially City Hall.
+
+**Columns:**
+- Incident ID
+- Property ID (links to **8. Property/Facility Inventory**)
+- Date of Incident
+- Time of Incident
+- Incident Type (e.g., Littering, Vandalism, Unauthorized Parking, Disorderly Conduct, Soliciting, Weapons, Alcohol/Drugs, Unauthorized Photography)
+- Description of Incident
+- Location on Property
+- Individuals Involved (names, contact info if known)
+- Authorized Individual ID (reporting, links to **1. Employee Roster**)
+- Police Notified (Y/N, Report Number)
+- Arrests Made (Y/N, Number)
+- Property Damage (Y/N, Description, Estimated Cost)
+- Permit ID (if related to permitted activity, links to **32. City Hall Activity Permits**)
+- Action Taken (e.g., Warning, Expulsion, Ban, Arrest)
+- Notes
+
+**34. Film/Photography Permits**
+
+**Quotes:**
+- § 13-01 "These rules shall be applicable to all film and photography shoots and related activities conducted on properties and within facilities under the jurisdiction of, and with permission from, the Department of Citywide Administrative Services that shall be authorized by a permit issued by the Mayor's Office of Film, Theatre and Broadcasting."
+- § 13-02(h) "Permittee. "Permittee" shall mean the holder of a Required Permit issued by the Mayor's Office of Film, Theatre and Broadcasting in accordance with 43 RCNY § 9-01 of the MOFTB Film Permit Rules."
+- § 13-03(a) "Prior to conducting any scouting related activities on properties or within facilities under the jurisdiction of DCAS, a scouting permit shall be obtained from MOFTB."
+- § 13-04(a) "The following forms and documents, which are required for DCAS review and approval prior to obtaining a Required Permit from MOFTB, shall be submitted to the DCAS Film Office no later than four (4) business days prior to the date on which the prepping or rigging for film and/or photography shoots is sought to commence: (1) Completed "Properties and Facilities Under DCAS Jurisdiction Activity Approval Form" signed by the applicant; (2) DCAS "Letter of Intent" signed by the applicant; (3) "Prohibited Conduct" Memorandum signed by the applicant; (4) Accurate and updated information concerning an applicant's forwarding postal address and, if available, an e-mail address, telephone number and facsimile number for purposes of receiving reimbursement notification from DCAS; and (5) Any other documents, including, but not limited to, equipment specifications and architectural renderings, that may be required by the DCAS Film Office."
+- § 13-04(f) "Where the DCAS Film Office has approved an application, it shall notify MOFTB about such approval. DCAS shall also notify the applicant that they can proceed by submitting the documentation to MOFTB necessary for obtaining a Required Permit."
+- § 13-05(a) "A Required Permit shall be applied for and issued in accordance with the provisions of 43 RCNY § 9-02 of the MOFTB Film Permit Rules after the requisite DCAS documentation has been completed by the applicant and reviewed by DCAS; production issues have been resolved with DCAS; and DCAS approval has been received."
+- § 13-06(a) "Prior to the commencement of prepping or rigging for film and/or photography shoots on properties or within facilities under the jurisdiction of DCAS, a permittee shall provide to the DCAS Film Office a copy of insurance documentation and a copy of the Required Permit in order to obtain final DCAS authorization for such production."
+- § 13-06(c) "A permittee who has been authorized by DCAS to conduct film shoot and/ or photography shoot activities on properties or within facilities under the jurisdiction of DCAS, and has obtained a Required Permit from MOFTB, shall maintain, during the entire course of its operations, a liability insurance policy with a limit of not less than one million dollars ($1,000,000) per occurrence. Such policy shall name the City of New York as an additional insured"
+
+**Why:** Tracking film and photography permits is essential for managing access to city properties, ensuring safety, and financial accountability.
+
+**One row represents:** A single film or photography permit application or issued permit.
+
+**Covers:** All scouting permits and required permits for filming and photography on DCAS-controlled properties.
+
+**Columns:**
+- Permit ID
+- Permit Type (Scouting, Required)
+- MOFTB Permit Number
+- Applicant Name/Company
+- Applicant Contact Information (Address, Email, Phone, Fax)
+- Proposed Activity (Filming, Photography, Rigging/De-rigging, Holding)
+- Proposed Property ID (links to **8. Property/Facility Inventory**)
+- Proposed Dates (Start, End)
+- DCAS Activity Approval Form Submitted (Y/N)
+- DCAS Letter of Intent Submitted (Y/N)
+- Prohibited Conduct Memo Signed (Y/N)
+- Equipment Specifications Submitted (Y/N)
+- Architectural Renderings Submitted (Y/N)
+- Structural Conditions Reviewed (Y/N)
+- Special Effects/Weapons/Animals Approved (Y/N)
+- Security Meeting Required (Y/N, Date)
+- DCAS Approval Status (Pending, Approved, Denied)
+- Date of DCAS Approval/Denial
+- Insurance Documentation Provided (Y/N)
+- Liability Insurance Policy Number
+- Liability Insurance Limits
+- City of NY as Additional Insured (Y/N)
+- Student Permit (Y/N, School, Proof of Attendance)
+- Permit Status (Issued, Denied, Revoked)
+- Date of Permit Issuance/Denial/Revocation
+- Reason for Denial/Revocation
+- Notes
+
+**35. Film Production Cost Reimbursement Records**
+
+**Quotes:**
+- § 13-07(b) "DCAS shall provide security personnel to protect City property under its jurisdiction during production activities at non-court properties and facilities, the cost of which shall be reimbursed by the permittee."
+- § 13-07(g) "In addition to the fee referenced in 55 RCNY § 13-05 and any other costs identified in 55 RCNY § 13-08, a permittee requesting use of properties and facilities under the jurisdiction of DCAS for twenty-eight (28) days or longer shall be required to enter into an agreement providing for the payment of renting or leasing such space in an amount not to exceed $5,000.00 per month, in accordance with Administrative Code § 4-203(b)."
+- § 13-08(a) "A permittee is responsible for cleaning and restoring the properties and facilities under the jurisdiction of DCAS after the rigging, shooting and/ or holding. The cost of any DCAS employee time incurred due to a permittee failing to clean and/or restore such properties and facilities following the rigging, shooting and/or holding shall be borne by the permittee and reimbursed to DCAS."
+- § 13-08(b) "The permittee shall reimburse DCAS for any property and facility damage arising from such production activities."
+- § 13-08(c) "At the conclusion of all film and photography shoots, the permittee shall reimburse DCAS for all production related costs including, but not limited to, DCAS personnel costs contemplated by 55 RCNY § 13-04(d) and subdivision (a) of this section, and reimbursement for any property or facility damage in accordance with subdivision (b) of this section. If the permittee cancels any of its production related activities twenty-four (24) hours or less prior to the scheduled commencement of such activities on properties or within facilities under the jurisdiction of DCAS, the permittee may be subject to the reimbursement of costs for DCAS personnel assigned to staff such production."
+
+**Why:** Tracking all reimbursable costs associated with film productions is essential for financial accountability and recovering expenses.
+
+**One row represents:** A single reimbursable cost incurred by DCAS related to a film/photography production.
+
+**Covers:** All costs incurred by DCAS for security, cleaning, restoration, property damage, and personnel time related to film/photography productions.
+
+**Columns:**
+- Reimbursement Item ID
+- Permit ID (links to **34. Film/Photography Permits**)
+- Property ID (links to **8. Property/Facility Inventory**)
+- Date Cost Incurred
+- Cost Type (Security Personnel, Cleaning, Restoration, Property Damage, DCAS Personnel Time, Rental/Lease Fee, Cancellation Fee)
+- Description of Cost
+- Amount Incurred
+- Amount Billed to Permittee
+- Date Billed
+- Amount Reimbursed
+- Date Reimbursed
+- Payment Status (Outstanding, Paid)
+- Notes
+
+**36. Production Staff Access Records (Film/Photography)**
+
+**Quotes:**
+- § 13-07(c) "All individuals affiliated with the permittee and the production shall be required to present a valid, government-issued photo identification card to receive security clearance to have access to properties and facilities under the jurisdiction of DCAS where the production and related activities are taking place."
+- § 13-07(d) "All individuals affiliated with the permittee and the production shall wear a laminated identification card on non-court properties and within non-court facilities under the jurisdiction of DCAS. The identification cards shall be similar in form and include the name of the production. Failure to display such identification cards at all times may lead to ejection from such properties and facilities."
+
+**Why:** Tracking access for production staff is necessary for security, safety, and managing who is on city property during filming.
+
+**One row represents:** A single instance of a production staff member gaining security clearance/access to a DCAS property.
+
+**Covers:** All individuals affiliated with film/photography productions requiring access to DCAS-controlled properties.
+
+**Columns:**
+- Access Log ID
+- Permit ID (links to **34. Film/Photography Permits**)
+- Property ID (links to **8. Property/Facility Inventory**)
+- Individual Name
+- Affiliation (Cast, Crew, Other)
+- Government ID Type
+- Government ID Number
+- Security Clearance Granted (Y/N)
+- Date of Access
+- Time of Entry
+- Time of Exit
+- Production ID Card Issued (Y/N)
+- Production ID Card Displayed (Y/N)
+- Ejection from Property (Y/N, Reason, Date)
+- Notes
+
+**37. Charitable Organization Records**
+
+**Quotes:**
+- § 12-01 Definitions, "Charitable non-profit organization. "Charitable non-profit organization" shall mean a private non-profit organization performing charitable services for human health and welfare or recreation, eligible for approval as a coordinating agency, or for membership in the combined Municipal Campaign in accordance with the provisions of these rules."
+- § 12-01 Definitions, "Coordinating agency. "Coordinating agency" shall mean a federated community campaign, as defined in section 93-b of the General Municipal Law, which is approved by the Commissioner of Citywide Administrative Services pursuant to 55 RCNY § 12-05 to serve as the agent for the Combined Municipal Campaign."
+- § 12-03 "To be eligible as a constituent organization of the coordinating agency or as a participating organization in the Combined Municipal Campaign, a charitable non-profit organization must meet and maintain the following requirements: (a) It shall be (1) a private, non-profit corporation, association, or organization, (2) incorporated or authorized to do business in New York, or a member of a federation of charitable organizations which is authorized to do business in New York, and (3) organized to render voluntary charitable services for human health and welfare or recreation. (b) It shall be and remain registered with the Secretary of State; in compliance with the requirements and provisions of article 7-A of the Executive Law of New York; and a tax exempt organization under the terms of Section 501 (c)(3) of the U.S. Internal Revenue Code. (c) It shall operate without discrimination... (d) As its principal purpose, function and activity, it shall carry out a bona fide program of charitable services"
+- § 12-05(c) "The application shall contain a detailed statement and furnish documentation evidencing the organization's compliance with all conditions of eligibility as a coordinating agency and shall provide the following: (1) corporate or registered business name and address of the organization; name, titles and addresses of its directors or principals and executive officers; registration number obtained upon registration pursuant to Article 7-A of the Executive Law; (2) concise description of the organization's structure, origin, and history of its activities in the City; financial statements for its two immediately preceding years of operation, showing contributions and other revenues received, administrative and overhead expenses, costs of operations and other significant financial data; a specification of the extent its operations have been carried out by volunteers' services; (3) statement of its plan and program for performing charitable services within the City over the next three-year period, with particular description of projected benefits to employees' communities of residence; (4) copies of charter or certificate of incorporation, bylaws, latest external audit by a certified public accountant and letter from the Internal Revenue Service certifying tax exempt status pursuant to Section 501(c)(3) of the Internal Revenue Code; (5) a listing, by corporate or registered business name, address, and name of the authorized principal representative, of each constituent charitable non-profit organization included in the coordinating agency; the applicant shall certify that it has examined and established compliance by all of its constituent organizations with the conditions and requirements of eligibility specified in 55 RCNY § 12-03."
+- § 12-07(a) "A charitable non-profit organization seeking participation in the Combined Municipal Campaign shall make written application therefor to the Commissioner, who shall forward such application to the coordinating agency."
+
+**Why:** Tracking charitable organizations and their eligibility is essential for administering the Combined Municipal Campaign and ensuring compliance.
+
+**One row represents:** A single charitable non-profit organization.
+
+**Covers:** All charitable non-profit organizations applying for or participating in the Combined Municipal Campaign.
+
+**Columns:**
+- Organization ID
+- Organization Name
+- Business Address
+- Contact Person Name
+- Contact Person Title
+- Contact Person Address
+- Secretary of State Registration Number
+- NY Executive Law Article 7-A Compliance (Y/N)
+- IRS 501(c)(3) Status (Y/N, Date of Letter)
+- Non-Discrimination Compliance (Y/N)
+- Principal Purpose/Activity
+- Application Date (for CMC participation)
+- Application Status (Pending, Approved, Denied, Withdrawn)
+- Reason for Denial
+- Role in Campaign (Coordinating Agency, Participating Organization, Constituent Member)
+- Financial Statements Submitted (Y/N)
+- Last External Audit Date
+- Program Plan Submitted (Y/N)
+- Date of Last Eligibility Review
+- Notes
+
+**38. Combined Municipal Campaign Records**
+
+**Quotes:**
+- § 12-01 Definitions, "Combined municipal campaign. "Combined municipal campaign" shall mean the joint campaign of the coordinating agency with one or more other charitable non-profit organizations, based on their written agreement, approved by the Commissioner of Citywide Administrative Services pursuant to 55 RCNY § 12-06, for the joint conduct and sharing in the result of annual solicitation campaign."
+- § 12-06(a) "For the purposes of conducting a joint annual solicitation campaign and sharing in the contributions of municipal employees obtained therefrom, the coordinating agency shall contract with all other organizations approved pursuant to 55 RCNY §§ 12-07 and 12-08 to form a Combined Municipal Campaign."
+- § 12-06(b) "Such contract shall be subject to approval by the Commissioner of Citywide Administrative Services and shall: (1) identify each charitable non-profit organization participating with the coordinating agency by corporate or business name and address, and name its authorized representative; (2) provide an annual budget of the campaign and specify the allocation among the coordinating agency and participating organizations of administrative expenses including publicity, central receipt, accounting and distribution of contributions, and loss of anticipated income to the campaign due to withdrawal of consent to contribution, termination of employment, or other discontinuation of payroll deduction; (3) state the method of calculation of the share of total contributions to be received respectively by the coordinating agency and each participating organization, and the manner of payment to them; (4) inform participants that the administrative expenses of the campaign shall be divided equally among each participating agency; for this purpose each participating constituent member of a federation of charitable non-profit organizations shall be counted as a separate participating agency. (5) Contain such other terms and conditions as may be required by the Commissioner."
+- § 12-06(c) "The coordinating agency shall be the recipient in the first instance of all contributions made by employees to the campaign, including both contributions collected through payroll deductions and those made by check. The coordinating agency shall act in a fiduciary capacity with respect to its receipt and distribution of the contributions in accordance with the terms of the Combined Municipal Campaign contract."
+- § 12-06(e) "The coordinating agency shall submit a report to the Commissioner at the end of each calendar year and at such other times as the Commissioner may request, stating the total amount of contributions collected through the Combined Municipal Campaign, the amount received by each participating agency, and such other information as the Director may request."
+
+**Why:** Tracking the details and outcomes of the Combined Municipal Campaign is essential for financial transparency and program oversight.
+
+**One row represents:** A single annual Combined Municipal Campaign.
+
+**Covers:** All annual solicitation campaigns for municipal employees.
+
+**Columns:**
+- Campaign ID
+- Campaign Year
+- Coordinating Agency ID (links to **37. Charitable Organization Records**)
+- Commissioner Approval Date
+- Campaign Contract Approval Date
+- Participating Organization IDs (list, links to **37. Charitable Organization Records**)
+- Annual Budget
+- Administrative Expense Allocation Method
+- Contribution Distribution Method
+- Total Contributions Collected
+- Total Contributions Distributed
+- Total Administrative Expenses
+- Date of Annual Report Submission
+- Notes
+
+**39. Employee Charitable Contribution Records**
+
+**Quotes:**
+- § 12-09(a) "Contributions by employees to any charitable non-profit organization shall be purely voluntary."
+- § 12-09(c) "An employee who wishes to make a charitable contribution through the Combined Municipal Campaign shall do so by completing and signing the form furnished by the Director. The employee shall indicate on the form whether the contribution is to be given to a particular organization participating in the Combined Municipal Campaign, or to the Combined Municipal Campaign itself for distribution to all participating organizations in the manner set forth in this section. Contributions may be made by submitting a single check made out to the order of the Combined Municipal Campaign, or by consenting to payroll deduction of a specified amount per pay period."
+- § 12-09(d) "Employees shall be allowed to withdraw their consent to payroll deduction for contribution to charitable non-profit organizations at any time, upon written notice to the Commissioner."
+- § 12-09(f) "When an employee's paycheck is refunded by the employee's agency to the Department of Finance, any charitable contribution deducted for the period covered by such paycheck shall be returned to the City by the coordinating agency, or recovered by the City from the Combined Municipal Campaign by deduction from subsequent payments."
+
+**Why:** Tracking employee contributions is necessary for accurate payroll deductions, distribution of funds, and compliance with employee consent.
+
+**One row represents:** A single charitable contribution made by an employee.
+
+**Covers:** All charitable contributions made by municipal employees through the Combined Municipal Campaign.
+
+**Columns:**
+- Contribution ID
+- Employee ID (links to **1. Employee Roster**)
+- Campaign ID (links to **38. Combined Municipal Campaign Records**)
+- Contribution Date
+- Contribution Type (Payroll Deduction, Check)
+- Designated Organization ID (if specified, links to **37. Charitable Organization Records**)
+- Amount
+- Payroll Deduction Start Date (if applicable)
+- Payroll Deduction End Date (if applicable)
+- Consent Withdrawal Date (if applicable)
+- Refunded Paycheck (Y/N, Date)
+- Amount Recovered by City (if applicable)
+- Notes
+
+**40. Asset Disposition Records (Personal Property)**
+
+**Quotes:**
+- § 5-01(a) "Personal property may be disposed of by the Division of Municipal Supplies by public or private sale or as otherwise authorized by law or regulation."
+- § 5-01(a)(1) "The prior approval of the Comptroller is not required on a sale of personal property where such sale is to the highest responsible bidder at public auction or after receipt of sealed bids after advertisement in at least ten successive issues of The City Record."
+- § 5-01(a)(2) "If the estimated sales value of the personal property is $5,000 or less, the Division of Municipal Supply Services may make requests for offers, if possible, to at least three persons, firms or corporations separately engaged in the regular business of selling and buying materials of the class offered. All bids from other bidders shall be duly considered in making an award. Award of such informal sale, if any, must be made to the highest responsible bidder. However, no such award shall be valid without the prior approval of the comptroller. The total amount of such informal sales of the same class of materials shall not exceed $5,000 within a thirty-day period."
+- § 5-01(a)(3) "When no bid or acceptable bid is received on an advertised sale, the Commissioner may waive the advertising requirements in an informal re-bid. Such sale on an informal re-bid shall be made only with the approval of the Comptroller."
+- § 5-01(a)(5) "Personal property may be sold at private sale without public notice, at no less than the value fixed by the Division of Municipal Supplies subject to the approval of the Comptroller."
+- § 5-01(a)(7) "All materials, supplies and equipment which the Commissioner considers of no sale value or use to the City may be destroyed or otherwise disposed of in the most advantageous manner under the direction of the Commissioner."
+- § 5-01(a)(8) "property classified by the commissioner as "memorabilia" may be disposed of in the best interests of the city by public, private, wholesale or retail sale under the direction of the commissioner without the prior approval of the comptroller."
+- § 5-01(a)(9) "property classified as a "product" by the commissioner, in conjunction with the commissioner or head of another agency or office, may be disposed of, as the commissioner deems appropriate, by that individual agency."
+- § 16-03(a) "The Department may auction or dispose of Surplus Equipment if no Eligible Organization has submitted a specific plan for the Beneficial Use of such Surplus Equipment over the course of one (1) year from the date of the Department’s notification"
+
+**Why:** Tracking the disposition of city-owned personal property is essential for financial accountability, preventing waste, and legal compliance.
+
+**One row represents:** A single disposition event for a piece of personal property.
+
+**Covers:** All sales, transfers, destruction, or other dispositions of city-owned personal property.
+
+**Columns:**
+- Disposition ID
+- Equipment ID (links to **28. Surplus Equipment Inventory**)
+- Date of Disposition
+- Disposition Method (Public Auction, Sealed Bids, Informal Sale, Private Sale, Trade-in, Transfer, Destruction, Donation)
+- Buyer Name/Agency (if sold/transferred)
+- Sale Price (if sold)
+- Estimated Sales Value (for informal sales)
+- Comptroller Approval (Y/N, if required)
+- Advertisement in City Record (Y/N, Dates)
+- Number of Bids Received (for sales)
+- Highest Bidder (Y/N)
+- Reason for Informal Re-bid (if applicable)
+- Memorabilia Classification (Y/N, if applicable)
+- Product Classification (Y/N, if applicable)
+- Cost of Production (for products)
+- Fair Market Rates Considered (for products)
+- Certificate of No Acceptable Bid (Y/N)
+- Notes
+
+**41. Procurement Contracts (Secondary Materials)**
+
+**Quotes:**
+- § 8-01 "New York City's Recycling Law... encourages the use of "secondary materials" in the manufacture of products purchased by DMSS for use by various city agencies and departments. A mechanism authorized by the Recycling Law to achieve the goal of purchasing products made from secondary materials is the authority to award a contract pursuant to a "price preference.""
+- § 8-02 Definitions, "Aggregate product purchase. "Aggregate product purchase" shall mean a procurement of products by DMSS which consists of a group or groups of products which are related to each other in one of the following ways: (1) The products are manufactured by a single manufacturer and are purchased in the form of a price list which is a listing of items and their prices; (2) The products are contained in a published catalog which is offered to DMSS at prices listed in the catalog or at a discount therefrom; or (3) The products have been combined in a class for award to a single vendor based upon fiscal, operational or pricing advantages."
+- § 8-02 Definitions, "Minimum amount of secondary material. "Minimum amount of secondary material" means the secondary material content level established by these Rules as the minimum percentage required for a product to potentially qualify for a price preference in accordance with Administrative Code § 16-322."
+- § 8-03(a) "on a contract let by DMSS for the purchase of a product, a bidder shall be eligible for the price preference set forth in § 16-322 of the Administrative Code for such product only if such bidder offers to supply such product manufactured with the minimum content of secondary material specified in these Rules."
+- § 8-03(b) "DMSS shall utilize the minimum content standards for secondary materials contained in the tables in subdivision (g) of this section to determine eligibility for the price preference"
+- § 8-03(c) "Except as provided by § 16-322, notwithstanding any other provision of this section, the minimum content standard for the following products shall be zero: (1) any product which DMSS purchases by means of an aggregate product purchase, except where such aggregate product purchase consists solely of products that are substantially manufactured from the same material, and for which the same minimum content standard applies or identical numerical minimum content standards apply; (2) any product that is not substantially manufactured from a single material; and (3) metal products."
+- § 8-03(d) "DMSS may restrict bids solely to products composed of specified minimum secondary material content levels. If the minimum secondary material content level specified by DMSS for such a bid is less than the minimum secondary material content standard for such product set forth in these Rules, a bidder may be eligible for a price preference if such bidder offers to provide such product with a level of secondary material content that is equal to or greater than the minimum content standard specified in these Rules."
+- § 8-04(a) "To be eligible for a price preference, bidders must submit with their bids a written certification of the secondary material and post-consumer material content of such product."
+- § 8-04(b) "In the event that a bidder offers a product which at the time of bid submission is authorized by DEC, pursuant to 6 NYCRR Part 368 et seq., to use the New York State "Recycled" emblem in connection with the sale of such product in New York State, then such product shall be deemed to meet the standards for minimum secondary material content pursuant to these Rules, and the bidder, in lieu of the certification required by 55 RCNY § 8-04(a) above, may submit with its bid a copy of the DEC letter to the manufacturer authorizing the use of the "Recycled" emblem in connection with the sale of the particular product."
+- § 8-05(c) "Requests for bids for aggregate product purchases and multi-material products will require that vendors identify products which are made wholly or partially with secondary materials. As appropriate, based upon considerations which include the amount of secondary material content and the volume of purchases by the City, such products may be separately bid or bid as a recycled product purchase or as a market stimulus bid."
+
+**Why:** Tracking contracts for products containing secondary materials is essential for promoting recycling and complying with environmental procurement policies.
+
+**One row represents:** A single procurement contract for products containing secondary materials.
+
+**Covers:** All DMSS contracts for products where secondary material content is a factor for price preference or bid restriction.
+
+**Columns:**
+- Contract ID (links to **23. Procurement Contracts (General)**)
+- Product Name
+- Product Category (e.g., Paper, Building Insulation, Lubricating Oils, Plastics, Glass, Rubber, Solvents)
+- Minimum Secondary Material Content Standard (as per rules/USEPA/DEC)
+- Bidder ID (links to **23. Procurement Contracts (General)** for contractor details)
+- Bidder Offered Secondary Material Content (%)
+- Bidder Offered Post-Consumer Material Content (%)
+- Secondary Material Content Certified (Y/N)
+- DEC Recycled Emblem Authorization (Y/N, Date, Letter ID)
+- Price Preference Eligibility (Y/N)
+- Aggregate Product Purchase (Y/N)
+- Multi-Material Product (Y/N)
+- Metal Product (Y/N)
+- Market Stimulus Bid (Y/N)
+- Packaging Incidental (Y/N)
+- Notes
+
+**42. Cemetery Visitor Log**
+
+**Quotes:**
+- § 7-01 Definitions, "Visitor. The term "Visitor" means any person who may enter the former town burial grounds or cemetery grounds and includes plot holders and workers of all kinds."
+- § 7-09(a) "All persons disturbing the quiet and good order of the cemetery by noise or other improper conduct will be compelled instantly to leave the grounds. cemetery personnel will exclude from cemetery grounds any persons it deems improper and will disperse any improper assemblages in the cemetery."
+- § 7-09(b) "The cemetery gates will be open seven days a week from 8:30 a.m. to 4:00 p.m."
+- § 7-09(c) "No children under the age of 18 will be admitted unless accompanied by an adult."
+- § 7-09(d) "No truck, cart or business wagon will be allowed to enter the gates, unless on business."
+- § 7-09(e) "Admittance will not be granted to persons on bicycles."
+- § 7-09(i) "Motor vehicles shall be admitted only on permit from the cemetery office. The speed limit for vehicles within the cemetery grounds is fifteen miles per hour. Vehicles shall not park or come to a full stop in front of any open grave unless they are in attendance at a funeral."
+- § 7-09(j) "Dogs brought into the cemetery must be kept on leash."
+- § 7-09(k) "No firearms or guns of any kind shall be brought into the cemetery except with the express permission of the superintendent."
+
+**Why:** Tracking cemetery visitors and their activities is necessary for security, enforcing rules, and managing access.
+
+**One row represents:** A single entry/exit or notable event involving a visitor at the cemetery.
+
+**Covers:** All visitors, vehicles, and incidents related to access and conduct within the Canarsie Cemetery.
+
+**Columns:**
+- Visit Log ID
+- Date of Visit
+- Time of Entry
+- Time of Exit
+- Visitor Type (General Public, Plot Holder, Worker, Funeral Attendee)
+- Visitor Name (if recorded)
+- Vehicle Present (Y/N)
+- Vehicle Permit (Y/N, Permit Number)
+- Vehicle Speed Limit Violation (Y/N)
+- Bicycle Entry (Y/N)
+- Animal Present (Y/N, Leashed Y/N)
+- Firearms Present (Y/N, Superintendent Permission Y/N)
+- Incident Noted (Y/N, Description, links to **33. City Hall Incident Reports** for general incidents)
+- Action Taken (e.g., Warning, Ejection)
+- Notes
+
+**43. Signage Inventory (Property Management)**
+
+**Quotes:**
+- § 1-04(d) "Climb upon the roof of any building or enter any area which is posted as being closed to the public."
+- § 1-04(h) "Injure, mutilate, deface, alter, change, displace, remove or destroy any posted sign or notice."
+- § 1-05 "Persons on or about the property shall comply with official signs and obey directions given by authorized individuals."
+- § 1-11(a) "A person driving a vehicle upon the property shall operate it in a safe manner and comply with posted traffic signs and directions given by authorized individuals."
+
+**Why:** Tracking all posted signs and notices is necessary for property management, public safety, and enforcing rules.
+
+**One row represents:** A single sign or notice posted on City property.
+
+**Covers:** All official signs and notices posted on properties under DCAS control.
+
+**Columns:**
+- Sign ID
+- Property ID (links to **8. Property/Facility Inventory**)
+- Location on Property
+- Sign Type (e.g., Traffic, Restricted Access, Rules & Regulations, Directional)
+- Content of Sign
+- Date Posted
+- Last Inspection Date
+- Condition (Good, Damaged, Defaced, Missing)
+- Maintenance/Replacement Required (Y/N)
+- Date of Maintenance/Replacement
+- Notes
+
+**Non-Tabular Information (Examples):**
+
+*   Job application forms (the *data* from applications is tabular, but the forms themselves are not)
+*   Rules and Regulations documents (the text provided is an example)
+*   Receipts (individual transaction records, but the *transactions* are tabular)
+*   Photographs (e.g., of vehicles with side guards, or film scouting locations)
+*   Research documents (e.g., job analyses, external audits)
+*   Legal documents (e.g., wills, affidavits, court orders, certificates of incorporation, IRS determination letters, insurance policies, MOUs, contracts themselves)
+*   Notices of Examination (the *information* from these notices is tabular, but the notices themselves are documents)
+*   Written requests (e.g., for special accommodations, fee refunds, special examinations, appeals, exemptions)
+*   Transcripts or recordings of hearings
+*   Organizational charts
+*   Workscope documents (daily schedules, school closures)
+*   DEC letters authorizing "Recycled" emblem use
+*   Public announcements (e.g., for surplus equipment donation, examination schedules)
+*   Bylaws
+*   Design plans and construction contracts for memorials/mausoleums
+*   Written statements from religious leaders
+*   Military separation papers (DD214)
+*   Medical records/audiograms
+*   Written protests against key answers
+*   Affidavits for exemption requests
+*   Memoranda (e.g., Prohibited Conduct Memorandum)
+*   Architectural renderings
+*   Equipment specifications
+*   Sworn statements from licensed insurance brokers/agents
+*   C-105.2 Certificate of Workers' Compensation Insurance
+*   U-26.3 – State Insurance Fund Certificate of Workers' Compensation Insurance
+*   Request for WC/DB Exemption (Form CE-200)
+*   Certification of Compliance from donating agencies (for surplus equipment)

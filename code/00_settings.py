@@ -18,10 +18,11 @@ genai.configure(api_key=gemini_key)
 # prep + settings
 #-----------------------------------------------------------------------------------
 
-dept = "Finance"
+dept = "Transportation"
 
 dept_options = ["Health", "Parks", "Probation", "Fire", "Emergency", "moRemediation", "Finance", 
-]
+                "SocialServices", "SmallBusiness", "Taxi", "Police", "Environmental", "DCAS", 
+                "Transportation"]
 
 
 #-----------------------------------------------------------------------------------

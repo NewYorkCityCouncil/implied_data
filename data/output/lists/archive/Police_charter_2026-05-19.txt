@@ -1,0 +1,373 @@
+**Tabular Datasets**
+
+**1. Incident Reports**
+
+**Quotes:**
+- § 435.a "preserve the public peace, prevent crime, detect and arrest offenders, suppress riots, mobs and insurrections, disperse unlawful or dangerous assemblages and assemblages which obstruct the free passage of public streets, sidewalks, parks and places; protect the rights of persons and property, guard the public health, preserve order at elections and all public meetings and assemblages; enforce and prevent the violation of all laws and ordinances in force in the city"
+
+**Why:** To fulfill core duties of crime prevention, public peace, and law enforcement, the agency must track reported incidents.
+
+**One row represents:** A single reported incident.
+
+**Covers:** All reported crimes, public disturbances, and other incidents requiring police response.
+
+**Columns:**
+- Incident ID
+- Date/Time of Incident
+- Location
+- Incident Type (e.g., crime, riot, public disturbance, property damage, health concern, election order)
+- Description
+- Reporting Officer ID (linked to Dataset 7)
+- Status
+- Associated Arrest ID (linked to Dataset 2)
+
+**2. Arrest Records**
+
+**Quotes:**
+- § 435.a "detect and arrest offenders"
+- § 435.a "arrest all street mendicants and beggars"
+- § 435.a "arrest all persons guilty of violating any law or ordinance for the suppression or punishment of crimes or offenses."
+
+**Why:** To fulfill the duty of detecting and arresting offenders, the agency must track all arrests made.
+
+**One row represents:** A single arrest event.
+
+**Covers:** All arrests made by the police department.
+
+**Columns:**
+- Arrest ID
+- Incident ID (linked to Dataset 1)
+- Date/Time of Arrest
+- Arrestee ID
+- Arrestee Name
+- Charges
+- Arresting Officer ID (linked to Dataset 7)
+- Location of Arrest
+- Disposition
+- Court Case ID (linked to Dataset 9)
+
+**3. Traffic Citations and Violations**
+
+**Quotes:**
+- § 435.a "regulate, direct, control and restrict the movement of vehicular and pedestrian traffic for the facilitation of traffic and the convenience of the public as well as the proper protection of human life and health"
+- § 435.b "The provisions of law and the rules and regulations of the commissioner of transportation relating to regulating, directing, controlling and restricting the parking of vehicles and the movement and conduct of vehicular and pedestrian traffic... may also be enforced by an employee of the police department."
+
+**Why:** To fulfill the duty of regulating and enforcing traffic laws, the agency must track all citations issued.
+
+**One row represents:** A single traffic citation or violation.
+
+**Covers:** All vehicular and pedestrian traffic violations enforced by the department.
+
+**Columns:**
+- Citation ID
+- Date/Time of Violation
+- Location
+- Violation Type
+- Vehicle Information
+- Driver Information
+- Issuing Officer ID (linked to Dataset 7)
+- Fine Amount
+- Payment Status
+- Court Date
+
+**4. Licensed Business Inspections**
+
+**Quotes:**
+- § 435.a "inspect and observe all places of public amusement, all places of business having excise or other licenses to carry on any business"
+
+**Why:** To fulfill the duty of inspecting licensed businesses and public amusements, the agency must track these inspections.
+
+**One row represents:** A single inspection of a licensed business or public amusement place.
+
+**Covers:** Inspections of places of public amusement and businesses with excise or other licenses.
+
+**Columns:**
+- Inspection ID
+- Business ID
+- Business Name
+- License Type
+- Inspection Date
+- Inspector ID (linked to Dataset 7)
+- Findings
+- Violations Noted
+- Compliance Status
+- Follow-up Date
+
+**5. Trade Business Inspections**
+
+**Quotes:**
+- § 436 "The commissioner shall possess powers of general supervision and inspection over all licensed or unlicensed pawnbrokers, vendors, junkshop keepers, junk boatmen, cartmen, dealers in second-hand merchandise and auctioneers within the city; and in connection with the performance of any police duties he shall have power to examine such persons, their clerks and employees and their books, business premises, and any articles of merchandise in their possession."
+
+**Why:** To fulfill the duty of supervising and inspecting specific trades, the agency must track these inspections.
+
+**One row represents:** A single inspection of a trade business.
+
+**Covers:** Inspections of pawnbrokers, vendors, junkshop keepers, junk boatmen, cartmen, dealers in second-hand merchandise, and auctioneers.
+
+**Columns:**
+- Inspection ID
+- Business ID
+- Business Name
+- Business Type (e.g., pawnbroker, vendor)
+- License Status (licensed/unlicensed)
+- Inspection Date
+- Inspector ID (linked to Dataset 7)
+- Findings
+- Violations Noted
+- Compliance Status
+- Follow-up Date
+- Associated Enforcement Action ID (linked to Dataset 6)
+
+**6. Trade Business Enforcement Actions**
+
+**Quotes:**
+- § 436 "A refusal or neglect to comply in any respect with the provisions of this section on the part of any pawnbroker, vendor, junkshop keeper, junk boatman, cartman, dealer in second-hand merchandise or auctioneer, or any clerk or employee of any thereof shall be triable by a judge of the criminal court and punishable by not more than thirty days' imprisonment, or by a fine of not more than fifty dollars, or both."
+
+**Why:** To enforce compliance with trade regulations, the agency must track all resulting enforcement actions.
+
+**One row represents:** A single enforcement action against a trade business or its employee.
+
+**Covers:** Enforcement actions resulting from non-compliance during trade business supervision.
+
+**Columns:**
+- Enforcement Action ID
+- Business ID (linked to Dataset 5)
+- Employee Name (if applicable)
+- Date of Action
+- Violation Description
+- Court Case ID (linked to Dataset 9)
+- Outcome (e.g., fine, imprisonment)
+- Fine Amount
+- Payment Status
+
+**7. Employee Personnel Records**
+
+**Quotes:**
+- § 431.a "There shall be a police department the head of which shall be the police commissioner who shall be appointed by the mayor and shall, unless sooner removed, hold office for a term of five years."
+- § 431.c "Whenever a vacancy shall occur in the office of police commissioner, a police commissioner shall be appointed by the mayor within ten days thereafter."
+- § 432 "The commissioner shall have the power to appoint and at pleasure remove seven deputies, one to be known as first deputy commissioner."
+- § 434.a "The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department, and of the police force of the department."
+- *Implied from prompt:* "managing payroll", "ensuring specialists are up to date on required certifications"
+
+**Why:** To manage its workforce, including appointments, roles, payroll, and certifications, the agency needs comprehensive personnel records.
+
+**One row represents:** A single employee's record.
+
+**Covers:** All police department employees, including the commissioner and deputies.
+
+**Columns:**
+- Employee ID
+- Name
+- Rank
+- Position
+- Appointment Date
+- Removal Date
+- Term Start/End (for Commissioner)
+- Deputy Role
+- Payroll Information
+- Certification Type
+- Certification Date
+- Next Certification Due Date
+- Compliance Status
+
+**8. Internal Disciplinary Actions**
+
+**Quotes:**
+- § 434.a "The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department, and of the police force of the department."
+
+**Why:** To maintain discipline and accountability within the department, the agency must track all disciplinary actions.
+
+**One row represents:** A single disciplinary action.
+
+**Covers:** All disciplinary actions against department members.
+
+**Columns:**
+- Action ID
+- Employee ID (linked to Dataset 7)
+- Date of Incident
+- Date of Action
+- Type of Infraction
+- Outcome
+- Sanction
+- Appeal Status
+
+**9. Court Liaison Activity Log**
+
+**Quotes:**
+- § 437 "The commissioner is empowered to cause some intelligent and experienced person connected with the department to attend any courts in the city in cases where there is need of assistance, who shall, to such extent as shall be permitted by the rules of the court, aid in proceedings pending in such courts."
+
+**Why:** To ensure proper support for court proceedings, the agency must track department personnel's court attendance.
+
+**One row represents:** A single instance of a department member attending court.
+
+**Covers:** All court appearances by department personnel for assistance in proceedings.
+
+**Columns:**
+- Court Activity ID
+- Employee ID (linked to Dataset 7)
+- Date of Appearance
+- Court Name
+- Case ID
+- Purpose of Attendance
+- Outcome/Notes
+
+**10. Nuisance Abatement Actions**
+
+**Quotes:**
+- § 435.a "remove all nuisances in the public streets, parks and places"
+
+**Why:** To fulfill the duty of removing public nuisances, the agency must track all abatement actions.
+
+**One row represents:** A single action taken to remove a nuisance.
+
+**Covers:** All actions taken by the department to remove nuisances.
+
+**Columns:**
+- Nuisance Action ID
+- Date/Time Reported
+- Location
+- Nuisance Type
+- Date/Time Abated
+- Officer ID (linked to Dataset 7)
+- Method of Abatement
+- Cost (if applicable)
+
+**11. Fire Incident Attendance Log**
+
+**Quotes:**
+- § 435.a "provide proper police attendance at fires"
+
+**Why:** To fulfill the duty of providing police attendance at fires, the agency must track these responses.
+
+**One row represents:** A single instance of police attendance at a fire.
+
+**Covers:** All instances where police personnel attend fires.
+
+**Columns:**
+- Fire Attendance ID
+- Fire Incident ID
+- Date/Time of Fire
+- Location
+- Responding Officer ID (linked to Dataset 7)
+- Role/Actions Taken
+- Duration of Attendance
+
+**12. Communication Infrastructure Inventory**
+
+**Quotes:**
+- § 438 "The commissioner shall have power to erect, operate, supply and maintain, subject to the general laws of the state, all such lines of telegraph and telephones and other means of communication as for the purposes and business of the police the commissioner shall deem necessary. The commissioner may provide all instruments, fixtures, property and materials for the purpose above mentioned and control the same."
+
+**Why:** To effectively manage and maintain essential communication systems, the agency must track its infrastructure assets.
+
+**One row represents:** A single piece of communication equipment or infrastructure component.
+
+**Covers:** All communication lines, instruments, fixtures, property, and materials owned/operated by the department.
+
+**Columns:**
+- Asset ID
+- Asset Type (e.g., telephone line, radio, computer, server)
+- Location
+- Acquisition Date
+- Maintenance Schedule
+- Status
+- Associated Contract ID (linked to Dataset 13)
+
+**13. Agency Contracts**
+
+**Quotes:**
+- *Implied from prompt:* "keeping software contracts"
+- § 438 "The commissioner shall have power to erect, operate, supply and maintain... all such lines of telegraph and telephones and other means of communication... The commissioner may provide all instruments, fixtures, property and materials..." (implies procurement/contracts)
+
+**Why:** To manage financial and operational obligations, the agency must track all contracts with external vendors.
+
+**One row represents:** A single contract.
+
+**Covers:** All contracts entered into by the agency (e.g., software, communication infrastructure, facility maintenance).
+
+**Columns:**
+- Contract ID
+- Vendor Name
+- Contract Type
+- Start Date
+- End Date
+- Value
+- Description
+- Department Owner
+
+**14. Facility Maintenance Records**
+
+**Quotes:**
+- *Implied from prompt:* "Building repair"
+
+**Why:** To ensure proper upkeep and functionality of its facilities, the agency must track all maintenance and repair activities.
+
+**One row represents:** A single maintenance or repair event.
+
+**Covers:** All maintenance and repair activities for agency facilities.
+
+**Columns:**
+- Work Order ID
+- Facility ID
+- Location
+- Date Requested
+- Date Completed
+- Description of Work
+- Cost
+- Vendor ID (if external)
+- Status
+
+**15. Uniform Issuance and Inventory**
+
+**Quotes:**
+- *Implied from prompt:* "uniform provision"
+
+**Why:** To manage the provision and inventory of uniforms for its staff, the agency must track uniform issuance.
+
+**One row represents:** A single uniform item issued or an inventory transaction.
+
+**Covers:** All uniform items managed and issued by the department.
+
+**Columns:**
+- Item ID
+- Uniform Type
+- Size
+- Quantity
+- Date Issued
+- Employee ID (linked to Dataset 7)
+- Return Date
+- Current Inventory Level
+
+**16. Environmental Compliance Records**
+
+**Quotes:**
+- *Implied from prompt:* "environmental compliance"
+
+**Why:** To ensure adherence to environmental regulations, the agency must track its compliance activities and status.
+
+**One row represents:** A single environmental compliance event or record.
+
+**Covers:** All records related to the agency's environmental compliance.
+
+**Columns:**
+- Compliance Record ID
+- Date
+- Regulation/Standard
+- Compliance Status
+- Action Taken
+- Inspection Date
+- Outcome
+
+---
+
+**Non-Tabular Information**
+
+The following information is likely not maintained in a tabular format as per the instructions:
+
+*   Job applications (unless tracking status, which is covered by personnel records)
+*   Rules and regulations (departmental, traffic, state laws, ordinances)
+*   Receipts
+*   Photos (e.g., crime scene photos)
+*   Research documents
+*   Legal changes (e.g., new laws, court rulings)
+*   Mayor/Governor judgments for commissioner removal
+*   Editor's notes and related unconsolidated provisions

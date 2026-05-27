@@ -13,19 +13,17 @@ prompt_schemas = open("data/input/prompt_schemas.txt").read()
 
 
 #-----------------------------------------------------------------------------------
-# combine state level calls
+# combining - state has two level, all others one
 #-----------------------------------------------------------------------------------
 
 if dept == "Education": 
+    start = time.time()
     response = pull_gemini_statedb(dept) #, date_str = "2026-05-07")
+    print(f"{time_elapsed(start)} to finish first pass combination.")
     response = pull_gemini_statedb(dept, chunk_size = 500000, #, date_str = "2026-05-07"
                                    input_str = "statecomb1", output_str = "statecomb2")
-
-
-#-----------------------------------------------------------------------------------
-# combine all files
-#-----------------------------------------------------------------------------------
-
-start = time.time()
-response = pull_gemini_db(dept, state_data = (dept == "Education"))
-print(f"{time_elapsed(start)} to finish combining the datasets from all documents.")
+    print(f"{time_elapsed(start)} to finish combining of datasets from all documents.")
+else: 
+    start = time.time()
+    response = pull_gemini_db(dept, state_data = (dept == "Education"))
+    print(f"{time_elapsed(start)} to finish combining the datasets from all documents.")

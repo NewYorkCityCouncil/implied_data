@@ -1,0 +1,354 @@
+**1. Water Infrastructure Assets**
+
+**Quotes:**
+*   "The commissioner shall have charge and control of: (a) All structures and property connected with the supply and distribution of water for public use not owned by private corporations, including all fire and drinking hydrants and all water meters;" Section 1403.a.(1)(a)
+*   "Furnishing the water supply and maintaining its quality, and of the investigation for and the construction of all works necessary to deliver the proper and required quality of water with ample reserve for contingencies and future demands;" Section 1403.a.(1)(b)
+
+**Why:** To manage and maintain the city's water supply infrastructure, the agency must track all related assets.
+
+**One row represents:** A single piece of water infrastructure or property.
+
+**Covers:** All structures, property, fire hydrants, drinking hydrants, water meters, and other works connected with the public water supply and distribution.
+
+**Columns:**
+*   Water Infrastructure Asset ID
+*   Asset Type (e.g., Fire Hydrant, Drinking Hydrant, Water Meter, Pumping Station, Reservoir, Water Main, Treatment Plant, Valve)
+*   Location (Address, GIS Coordinates)
+*   Installation Date
+*   Manufacturer/Model
+*   Capacity/Size (e.g., pipe diameter, meter flow rate)
+*   Status (e.g., Active, Inactive, Under Repair)
+*   Last Maintenance Date (links to Dataset 3: Maintenance Activities)
+*   Last Inspection Date (links to Dataset 4: Environmental Inspections and Monitoring Events)
+*   Ownership (City, Private Corporation)
+*   Associated Water Supply System ID
+
+**2. Sewer and Drainage Infrastructure Assets**
+
+**Quotes:**
+*   "The commissioner shall have charge and control over the location, construction, alteration, repair, maintenance and operation of all sewers including intercepting sewers and sewage disposal plants, and of all matters in the several boroughs relating to public sewers and drainage, and shall initiate and make all plans for drainage and shall have charge of all public and private sewers in accordance with such plans; and shall have charge of the management, care and maintenance of sewer and drainage systems therein." Section 1403.b.(1)
+
+**Why:** To manage and maintain the city's sewage and drainage systems, the agency must track all related assets.
+
+**One row represents:** A single piece of sewer or drainage infrastructure.
+
+**Covers:** All public sewers, intercepting sewers, sewage disposal plants, and drainage system components.
+
+**Columns:**
+*   Sewer/Drainage Asset ID
+*   Asset Type (e.g., Public Sewer, Intercepting Sewer, Sewage Disposal Plant, Storm Drain, Manhole, Pump Station)
+*   Location (Address, GIS Coordinates)
+*   Installation Date
+*   Capacity/Size (e.g., pipe diameter, plant treatment capacity)
+*   Status (e.g., Active, Inactive, Under Repair)
+*   Last Maintenance Date (links to Dataset 3: Maintenance Activities)
+*   Last Inspection Date (links to Dataset 4: Environmental Inspections and Monitoring Events)
+*   Associated Drainage Plan ID
+
+**3. Maintenance Activities**
+
+**Quotes:**
+*   "The commissioner shall have charge and control over the location, construction, alteration, repair, maintenance and operation of all sewers including intercepting sewers and sewage disposal plants, and of all matters in the several boroughs relating to public sewers and drainage, and shall initiate and make all plans for drainage and shall have charge of all public and private sewers in accordance with such plans; and shall have charge of the management, care and maintenance of sewer and drainage systems therein." Section 1403.b.(1)
+*   "Furnishing the water supply and maintaining its quality, and of the investigation for and the construction of all works necessary to deliver the proper and required quality of water with ample reserve for contingencies and future demands;" Section 1403.a.(1)(b)
+
+**Why:** To ensure proper functioning and longevity of infrastructure, the agency must track all maintenance and repair work.
+
+**One row represents:** A single maintenance or repair activity performed on an asset.
+
+**Covers:** All construction, alteration, repair, maintenance, and operational activities for water, sewer, and drainage infrastructure.
+
+**Columns:**
+*   Maintenance Activity ID
+*   Asset ID (links to Dataset 1: Water Infrastructure Assets or Dataset 2: Sewer and Drainage Infrastructure Assets)
+*   Asset Type
+*   Activity Type (e.g., Repair, Routine Maintenance, Alteration, Construction, Cleaning, Inspection Follow-up)
+*   Description of Work Performed
+*   Start Date
+*   Completion Date
+*   Work Order ID
+*   Crew/Contractor Responsible
+*   Cost of Activity
+*   Materials Used
+*   Outcome/Status (e.g., Completed, Pending, Deferred)
+
+**4. Environmental Inspections and Monitoring Events**
+
+**Quotes:**
+*   "The commissioner shall examine into the sources of water supply of any private companies supplying the city or any portion thereof or its inhabitants with water to see that the same is wholesome and the supply is adequate, to establish such rules and regulations in respect thereof as are reasonable and necessary for the convenience of the public and to exercise superintendence, regulation and control in respect to the supply of water by such water companies." Section 1403.a.(2)
+*   "With regard to community private sewage disposal systems, the commissioner shall have the authority to perform inspections, and to issue notices of violation for violations of any provision of the New York city health code relating to private sewage disposal..." Section 1403.b.(1)
+*   "The commissioner shall have the power to administer and enforce provisions of law, rules and regulations relating to the management and control of discharges and runoff from public and private property, including but not limited to stormwater discharges; regulate and control discharges into water within and about the city of New York of harmful or objectionable substances, contaminants and pollutants that may have an adverse impact on waters of the state; enforce all laws, rules and regulations with respect to discharges described in this paragraph; make such investigations and studies as may be desirable for the purpose of such enforcement and of controlling and eliminating pollution of waters within and about the city of New York;" Section 1403.b-1.(1)
+*   "The commissioner shall regulate and control the emission into the open air of harmful or objectionable substances, including, but not limited to, smoke, soot, dust, fumes, flyash, gas vapors, odors and any products of combustion or incomplete combustion resulting from the use of fuel burning equipment or from the heating of fuels or refuse. The commissioner shall enforce all laws, rules and regulations with respect to such emissions and shall make such investigations and studies as may be desirable for the purpose of such enforcement and of controlling and eliminating air pollution..." Section 1403.c.
+*   "The commissioner shall enforce all laws, rules and regulations to eliminate noise pollution. The commissioner shall make investigations and studies to develop permissible sound levels and to correct problems related to noise control..." Section 1403.d.
+
+**Why:** To fulfill responsibilities for water quality, sewage, and pollution control, the agency must track all inspections and monitoring activities.
+
+**One row represents:** A single inspection or monitoring event.
+
+**Covers:** Inspections of private water companies, private sewage disposal systems (community and non-community), monitoring of water discharges/runoff, air emissions, and noise levels.
+
+**Columns:**
+*   Inspection/Monitoring Event ID
+*   Date of Event
+*   Time of Event
+*   Inspector ID (links to Dataset 10: Employee Certifications and Training)
+*   Inspection Type (e.g., Water Quality, Private Water Company, Private Sewage System, Community Private Sewage System, Stormwater Discharge, Air Emission, Noise Level)
+*   Location (Address, GIS Coordinates)
+*   Regulated Entity ID (e.g., Private Water Company ID, Private Sewage System Permit ID (links to Dataset 5: Private Sewage Disposal System Permits), Facility ID)
+*   Parameters Measured (e.g., pollutant levels, sound levels, flow rates)
+*   Measurement Results/Observations
+*   Compliance Status (e.g., In Compliance, Violation Found, Warning Issued)
+*   Reference to Violation ID (links to Dataset 6: Notices of Violation and Enforcement Actions)
+*   Equipment Used (links to Dataset 11: Departmental Equipment Inventory)
+
+**5. Private Sewage Disposal System Permits**
+
+**Quotes:**
+*   "In addition, the commissioner shall have the authority to supervise and adopt rules regarding private sewage disposal systems, other than community private sewage disposal systems, and to prescribe civil penalties for the violation of such rules of no more than ten thousand dollars per violation, and, except as otherwise provided in section six hundred forty-three of this charter, to issue permits pursuant to such rules for the construction and maintenance of such private sewage disposal systems." Section 1403.b.(1)
+
+**Why:** To regulate private sewage disposal systems, the agency must track all permits issued for their construction and maintenance.
+
+**One row represents:** A single permit for a private sewage disposal system.
+
+**Covers:** Permits for the construction and maintenance of private sewage disposal systems (excluding community systems).
+
+**Columns:**
+*   Permit ID
+*   Application Date
+*   Permit Issue Date
+*   Permit Expiration Date
+*   Permit Status (e.g., Active, Expired, Revoked, Under Review)
+*   Property Address (Location of system)
+*   Property Owner Name
+*   Property Owner Contact Information
+*   System Type (e.g., Septic Tank, Leaching Field)
+*   Design Capacity
+*   Last Inspection Date (links to Dataset 4: Environmental Inspections and Monitoring Events)
+*   Associated Violation ID (links to Dataset 6: Notices of Violation and Enforcement Actions)
+
+**6. Notices of Violation and Enforcement Actions**
+
+**Quotes:**
+*   "Each inspector or other employee of the department who issues notices of violation shall, for provisions of law that are enforced exclusively by the department, have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." Section 1403
+*   "With regard to community private sewage disposal systems, the commissioner shall have the authority to perform inspections, and to issue notices of violation for violations of any provision of the New York city health code relating to private sewage disposal..." Section 1403.b.(1)
+*   "The commissioner may adopt regulations requiring the discharge of sewage, refuse, factory waste and trade waste into the public sewers of the city, or regulating, restricting or prohibiting the use of public sewers for the discharge therein of any material or substance and may prescribe civil penalties for the violation thereof." Section 1403.b.(2)
+*   "The commissioner shall have the power to administer and enforce provisions of law, rules and regulations relating to the management and control of discharges and runoff from public and private property, including but not limited to stormwater discharges; regulate and control discharges into water within and about the city of New York of harmful or objectionable substances, contaminants and pollutants that may have an adverse impact on waters of the state; enforce all laws, rules and regulations with respect to discharges described in this paragraph;" Section 1403.b-1.(1)
+*   "The commissioner shall regulate and control the emission into the open air of harmful or objectionable substances... The commissioner shall enforce all laws, rules and regulations with respect to such emissions..." Section 1403.c.
+*   "The commissioner shall enforce all laws, rules and regulations to eliminate noise pollution." Section 1403.d.
+
+**Why:** To enforce environmental laws and regulations, the agency must track all violations, warnings, and associated enforcement actions.
+
+**One row represents:** A single notice of violation or warning issued.
+
+**Covers:** Violations related to water use, private sewage disposal, discharge regulations, air emissions, and noise pollution.
+
+**Columns:**
+*   Violation ID
+*   Date of Violation
+*   Time of Violation
+*   Issuing Inspector ID (links to Dataset 10: Employee Certifications and Training)
+*   Location of Violation (Address, GIS Coordinates)
+*   Regulated Entity ID (e.g., Property Owner ID, Facility ID, Private Water Company ID)
+*   Violation Type (e.g., Water Use Restriction, Private Sewage System, Illegal Discharge, Air Emission, Noise Pollution)
+*   Specific Law/Rule Violated
+*   Description of Violation
+*   Is this a first-time violation? (Yes/No)
+*   Was a warning issued? (Yes/No)
+*   Warning Details (if applicable)
+*   Penalty Imposed (if applicable)
+*   Payment Status
+*   Correction Required (Yes/No)
+*   Correction Due Date
+*   Correction Verified Date
+*   Associated Inspection ID (links to Dataset 4: Environmental Inspections and Monitoring Events)
+
+**7. Hazardous Substance Inventory**
+
+**Quotes:**
+*   "The commissioner shall have the power to collect, compile and manage information concerning the amount, location and nature of hazardous substances present in the city. This information shall be made available to city personnel responsible for responding to emergencies involving hazardous substances and the public." Section 1403.i.
+
+**Why:** To inform emergency responders and the public, the agency must collect and manage information on hazardous substances.
+
+**One row represents:** A record of a specific hazardous substance at a particular location.
+
+**Covers:** Information concerning the amount, location, and nature of hazardous substances present in the city.
+
+**Columns:**
+*   Hazardous Substance Record ID
+*   Substance Name
+*   CAS Number (Chemical Abstracts Service Registry Number)
+*   Amount Present (e.g., quantity, concentration)
+*   Unit of Measurement
+*   Location (Address, GIS Coordinates)
+*   Facility/Property Owner ID
+*   Nature/Properties of Substance (e.g., flammability, toxicity)
+*   Date Information Collected/Updated
+*   Source of Information
+
+**8. Hazardous Substance Emergency Response Incidents**
+
+**Quotes:**
+*   "The commissioner shall be authorized to respond to emergencies caused by releases or threatened releases of hazardous substances and to collect and manage information concerning the amount, location and nature of hazardous substances." Section 1403
+*   "The commissioner shall have the power to respond to emergencies caused by releases or threatened releases of hazardous substances into the environment. The commissioner may (1) implement any response measures deemed to be necessary to protect the public health or welfare or the environment from a release or threat of release, (2) order responsible persons to undertake response measures, and (3) recover the costs of response measures incurred by the department from the responsible persons." Section 1403.h.
+
+**Why:** To manage and track responses to hazardous substance emergencies, the agency must record incidents, actions, and cost recovery.
+
+**One row represents:** A single hazardous substance release or threatened release incident.
+
+**Covers:** All emergencies caused by releases or threatened releases of hazardous substances, including response measures and cost recovery efforts.
+
+**Columns:**
+*   Incident ID
+*   Date of Incident
+*   Time of Incident
+*   Location (Address, GIS Coordinates)
+*   Type of Incident (e.g., Release, Threatened Release)
+*   Hazardous Substance Involved (links to Dataset 7: Hazardous Substance Inventory)
+*   Amount Released (if applicable)
+*   Impacted Environment (e.g., Air, Water, Soil)
+*   Public Health/Welfare Impact Assessment
+*   Response Measures Implemented (e.g., Containment, Cleanup, Evacuation)
+*   Response Start Date
+*   Response End Date
+*   Responsible Person(s) Identified
+*   Order to Undertake Response Measures Issued (Yes/No)
+*   Cost of Departmental Response
+*   Cost Recovery Status (e.g., Pending, Recovered, Waived)
+*   Date of Cost Recovery Action
+
+**9. Environmental Review and Remediation Cases**
+
+**Quotes:**
+*   "The commissioner shall review and comment upon the environmental consequences of any activity requiring the approval of any agency of the city where such activity may have a significant impact on the physical aspects of the environment of the city..." Section 1403.e.
+*   "There shall be an office of environmental remediation within the department. The office shall be headed by the director of the office of environmental remediation... The office shall exercise such powers and duties as the director shall determine, including, but not limited to, the power and duty to administer the E-Designation program, as defined in section 11-15 of the zoning resolution of the city of New York." Section 1404
+
+**Why:** To manage environmental impact reviews and remediation programs, the agency must track all related cases and activities.
+
+**One row represents:** A single environmental review or remediation case.
+
+**Covers:** Review of environmental consequences for city-approved activities and administration of the E-Designation program.
+
+**Columns:**
+*   Case ID
+*   Case Type (e.g., Environmental Impact Review, E-Designation Remediation)
+*   Project/Activity Name
+*   Applicant/Developer Name
+*   Location (Address, GIS Coordinates)
+*   Date Submitted
+*   Review Start Date
+*   Review End Date
+*   Environmental Impact Assessment Findings
+*   Commissioner's Comments/Recommendations
+*   Final Decision/Approval Status
+*   Remediation Plan ID (for E-Designation)
+*   Remediation Status (e.g., Approved, In Progress, Completed)
+*   Associated City Agency Approval ID
+
+**10. Employee Certifications and Training**
+
+**Quotes:**
+*   "Each inspector or other employee of the department who issues notices of violation shall, for provisions of law that are enforced exclusively by the department, have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." Section 1403
+
+**Why:** To ensure employees, especially inspectors, are qualified and compliant with operational requirements, the agency must track their certifications and training.
+
+**One row represents:** A single certification or training record for an employee.
+
+**Covers:** All certifications and training records for departmental employees, particularly those issuing violations or requiring specialized skills.
+
+**Columns:**
+*   Employee ID
+*   Employee Name
+*   Job Title
+*   Certification/Training Name
+*   Issuing Body
+*   Date Issued
+*   Expiration Date
+*   Status (e.g., Active, Expired, In Progress)
+*   Required for Role (Yes/No)
+*   Date of Last Refresher Training
+
+**11. Departmental Equipment Inventory**
+
+**Quotes:**
+*   "Each inspector or other employee of the department who issues notices of violation shall, for provisions of law that are enforced exclusively by the department, have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." Section 1403
+
+**Why:** To ensure inspectors and other staff have necessary tools, the agency must track all departmental equipment.
+
+**One row represents:** A single piece of departmental equipment.
+
+**Covers:** All equipment used by department employees, especially inspectors, for their duties.
+
+**Columns:**
+*   Equipment ID
+*   Equipment Type (e.g., Violation Issuance Device, Monitoring Device, Vehicle, Safety Gear)
+*   Manufacturer
+*   Model Number
+*   Serial Number
+*   Acquisition Date
+*   Current User/Assigned Employee ID (links to Dataset 10: Employee Certifications and Training)
+*   Location (e.g., Office, Vehicle)
+*   Calibration Date
+*   Next Calibration Due Date
+*   Maintenance History (links to Dataset 3: Maintenance Activities - if applicable for internal equipment maintenance)
+*   Status (e.g., Operational, In Repair, Retired)
+
+**12. Witness Testimony Records**
+
+**Quotes:**
+*   "The commissioner shall have the power to compel the attendance of witnesses and to take such witnesses' testimony under oath." Section 1403.b-1.(1) (also applies to 1403.c and 1403.d)
+
+**Why:** To support investigations and enforcement actions, the agency must track instances where witness testimony is compelled and recorded.
+
+**One row represents:** A single instance of compelled witness testimony.
+
+**Covers:** Records of witnesses whose attendance was compelled and whose testimony was taken under oath for investigations related to water pollution, air pollution, and noise pollution.
+
+**Columns:**
+*   Testimony Record ID
+*   Investigation ID (links to relevant enforcement/incident cases)
+*   Witness Name
+*   Witness Contact Information
+*   Date of Testimony
+*   Location of Testimony
+*   Testimony Type (e.g., Sworn Statement, Deposition)
+*   Investigator ID (links to Dataset 10: Employee Certifications and Training)
+*   Summary of Testimony (or reference to full transcript/recording)
+*   Related Violation ID (links to Dataset 6: Notices of Violation and Enforcement Actions)
+
+**13. Energy Conservation and Alternative Fuels Projects**
+
+**Quotes:**
+*   "The commissioner shall study, establish, organize, promote, coordinate and carry out policies, activities, projects and programs designed to encourage fuel and energy conservation, alternate sources of fuel and energy and encourage, stimulate and foster others to participate in such projects, programs and activities." Section 1403.g.
+
+**Why:** To manage and track initiatives related to energy policy and conservation, the agency must record projects and programs.
+
+**One row represents:** A single energy conservation or alternative fuels project or program.
+
+**Covers:** All projects and programs established, organized, promoted, or carried out by the department related to energy conservation and alternative fuels.
+
+**Columns:**
+*   Project ID
+*   Project Name
+*   Project Type (e.g., Energy Conservation Program, Alternative Fuel Initiative, Research Project)
+*   Description
+*   Start Date
+*   End Date
+*   Lead Department/Division
+*   Partners/Collaborators
+*   Funding Source
+*   Budget Allocated
+*   Actual Expenditure
+*   Key Performance Indicators (KPIs)
+*   Project Status (e.g., Planning, Active, Completed, On Hold)
+*   Outcome/Results Summary
+
+---
+
+**Non-Tabular Information:**
+
+*   **Rules and Regulations:** The actual text of rules and regulations governing water use, sewage discharge, private sewage systems, air emissions, and noise pollution. (Section 1403.a.(1)(c), 1403.a.(2), 1403.b.(1), 1403.b.(2), 1403.b-1.(1), 1403.c, 1403.d)
+*   **Investigation and Study Documents:** Detailed reports, research papers, and findings from investigations and studies on water supply, pollution control, air pollution, noise control, fuel supply/demand, and alternative energy sources. (Section 1403.a.(1)(b), 1403.a.(2), 1403.b-1.(1), 1403.c, 1403.d, 1403.e, 1403.g)
+*   **Environmental Impact Statements/Reports:** Comprehensive documents detailing the environmental consequences of activities requiring city approval. (Section 1403.e)
+*   **Borough Commissioner Reports/Consultation Records:** Internal communications, meeting minutes, or summary documents from borough commissioners to the commissioner of environmental protection and consultations with borough presidents and community boards. (Section 1405.a)
+*   **Legal Documents:** Court orders, administrative tribunal decisions, and other legal instruments related to enforcement actions or cost recovery. (Section 1403.h.(3))
+*   **Emergency Response Plans:** Detailed plans for responding to releases or threatened releases of hazardous substances. (Section 1403.h)
+*   **Energy Policy Documents:** Formulated energy policies for the city. (Section 1403.g)
