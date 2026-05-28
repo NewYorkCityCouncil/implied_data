@@ -18,11 +18,11 @@ genai.configure(api_key=gemini_key)
 # prep + settings
 #-----------------------------------------------------------------------------------
 
-dept = "Transportation"
+dept = "OCMH"
 
 dept_options = ["Health", "Parks", "Probation", "Fire", "Emergency", "moRemediation", "Finance", 
                 "SocialServices", "SmallBusiness", "Taxi", "Police", "Environmental", "DCAS", 
-                "Transportation"]
+                "Transportation", "HPD", "Operations", "Design", "DYCD", "OCMH"]
 
 
 #-----------------------------------------------------------------------------------
@@ -119,20 +119,24 @@ def pull_gemini_state(base_path, file_list, chunk_size=35000):
         
         print(f"Done. Saved to {out_name}")
 
+def save_file(to_save, dept, doc_type):
+    # save out the one to use
+    file_save = "data/output/lists/"+dept+"_"+doc_type+"_current.txt" 
+    with open(file_save, "w") as file:
+        file.write(to_save)
+
+    # save out the archive
+    file_save = "data/output/lists/archive/"+dept+"_"+doc_type+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
+    with open(file_save, "w") as file:
+        file.write(to_save)
+    return
+
 def pull_gemini_ops(dept, level_gov, doc_type):
 
     file_type = "data/input/" + level_gov + "/" + dept + "_" + doc_type + ".txt"
-
     f_exists = os.path.exists(file_type)
     if not f_exists: 
-        print(f"{doc_type} file does not exist - saving dummy file for the {dept} {doc_type}")
-        file_save = "data/output/lists/"+dept+"_"+doc_type+"_current.txt" 
-        with open(file_save, "w") as file:
-            file.write("NA")
-        file_save = "data/output/lists/archive/"+dept+"_"+doc_type+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
-        with open(file_save, "w") as file:
-            file.write("NA")
-        return
+        save_file("NA", dept, doc_type)
 
     file = open(file_type).read()
 
@@ -149,12 +153,7 @@ def pull_gemini_ops(dept, level_gov, doc_type):
                                    system_message = prompt_persona_ops, 
                                    user_message = prompt)
     
-    file_save = "data/output/lists/"+dept+"_"+doc_type+"_current.txt" 
-    with open(file_save, "w") as file:
-        file.write(response)
-    file_save = "data/output/lists/archive/"+dept+"_"+doc_type+"_"+datetime.today().strftime('%Y-%m-%d')+".txt" 
-    with open(file_save, "w") as file:
-        file.write(response)
+    save_file(response, dept, doc_type)
 
     return response
 

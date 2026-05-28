@@ -1,0 +1,204 @@
+**1. Mental Health Service Providers**
+
+**Quotes:**
+- "The office shall maintain on its website access to a publicly accessible, searchable online database of mental health services that are provided by any relevant agencies and relevant organizations in the city, to the extent such agencies or organizations provide the city with information about mental health services they offer." (§ 3-191.a)
+- "such database information includes, but is not limited to, the following information for each relevant agency and relevant organization: 1. Address, office hours, and contact information; 3. Payment information, including types of insurance accepted;" (§ 3-191.a.1, 3-191.a.3)
+
+**Why:** The agency needs to track details of organizations providing mental health services to populate its public database.
+
+**One row represents:** A single relevant agency or relevant organization providing mental health services.
+
+**Covers:** All relevant agencies and organizations that provide mental health services and submit their information to the city.
+
+**Columns:**
+- Provider ID
+- Provider Name
+- Provider Type (e.g., Relevant Agency, Relevant Organization)
+- Address
+- Office Hours
+- Contact Phone Number
+- Contact Email Address
+- Website URL
+- Payment Information Accepted (e.g., Types of Insurance Accepted, Sliding Scale, Free)
+- Last Data Update Date
+- Data Source
+
+---
+
+**2. Mental Health Services Offered**
+
+**Quotes:**
+- "The office shall maintain on its website access to a publicly accessible, searchable online database of mental health services that are provided by any relevant agencies and relevant organizations in the city, to the extent such agencies or organizations provide the city with information about mental health services they offer." (§ 3-191.a)
+- "The office shall indicate on its website that such database is searchable by program focus category, which may include but need not be limited to caregivers, immigrants, undocumented individuals, refugees, asylees, justice-involved individuals, LGBTQI+ individuals, homebound individuals, and children and adolescents." (§ 3-191.a)
+- "The office shall indicate on its website that such database is searchable by service subcategories, which may include but need not be limited to crisis, housing, inpatient care, legal, outpatient care, and substance use services." (§ 3-191.a)
+- "such database information includes, but is not limited to, the following information for each relevant agency and relevant organization: ... 2. Mental health services provided; 4. The languages in which services are provided; 5. Whether such services are provided in person or remotely; 6. Whether such services are provided via peers; and 7. Whether such services are accessible to persons with disabilities." (§ 3-191.a.2, 3-191.a.4-7)
+
+**Why:** The agency must track specific details for each mental health service to populate its public, searchable database.
+
+**One row represents:** A specific mental health service offered by a provider.
+
+**Covers:** All mental health services provided by relevant agencies and organizations in the city, as reported to the Office.
+
+**Columns:**
+- Service ID
+- Provider ID (Links to Dataset 1: Mental Health Service Providers)
+- Service Name/Description
+- Service Subcategory (e.g., Crisis, Housing, Inpatient Care, Legal, Outpatient Care, Substance Use Services)
+- Program Focus Categories (e.g., Caregivers, Immigrants, LGBTQI+, Homebound, Children and Adolescents, Justice-Involved, Undocumented Individuals, Refugees, Asylees)
+- Languages Services Provided In (e.g., English, Spanish, Designated Citywide Languages)
+- Service Delivery Method (e.g., In-person, Remote, Hybrid)
+- Services Provided Via Peers (Boolean: Yes/No)
+- Accessible to Persons with Disabilities (Boolean: Yes/No)
+- Last Data Update Date
+- Data Source
+
+---
+
+**3. Mental Health Emergency Call Responses**
+
+**Quotes:**
+- "No later than June 1, 2027, and every 6 months thereafter, the director of the office, in coordination with the police commissioner, commissioner of information technology and telecommunications, fire commissioner, commissioner of health and mental hygiene, and any other relevant agency head, and in consultation with the New York city health and hospitals corporation, shall submit to the mayor and the speaker of the council, and post to the office’s website, a report regarding mental health emergency calls received during the 6 month period ending 30 days before such report is due." (§ 3-196.b.1)
+- "Such report shall include, but need not be limited to, the following, to the extent such information is maintained by the relevant agencies: (a) The total number of mental health emergency calls, disaggregated by the 911 emergency assistance program dispatch code; (b) The total number of mental health emergency calls identified as eligible for B-HEARD; (c) The total number of mental health emergency calls identified as eligible for B-HEARD where B-HEARD is dispatched in response to such emergencies; (d) The total number of mental health emergency calls responded to by entities other than B-HEARD, disaggregated by type of entity responding, including, but not limited to, law enforcement and emergency medical services; (e) The average response time between the mental health emergency call and arrival on scene for each type of entity identified pursuant to subparagraph (d) of this paragraph; (f) The number of mental health emergency calls in response to which additional responding units were requested, disaggregated by type of entity of additional responder requested; (g) The number of mental health emergency calls in response to which assistance was accepted, disaggregated by type of assistance, including, but not limited to, on-site treatment, transport to a hospital, or referral to a community-based organization; (h) The number of mental health emergency calls in response to which assistance was refused, disaggregated by outcome, including, but not limited to, involuntary removal, arrest, issuance of a summons, or the person being left at the scene; (i) The number of mental health emergency calls for which the response involved a use of force incident; (j) Aggregated demographic information about the subjects of the mental health emergency calls, including their age in ranges to be determined by the fire department and police department, race, ethnicity, disability status, and whether they were experiencing homelessness, to the extent such information is obtainable; and (k) The aggregate locations reported in mental health emergency calls disaggregated by: (i) patrol precinct, as specified by the police department, (ii) emergency medical services zone, as specified by the fire department, and (iii) borough." (§ 3-196.b.1.a-k)
+- "No information that is required to be reported pursuant to paragraph 1 of this subdivision shall be reported in a manner that would violate any applicable provision of federal, state, or local law relating to the privacy of information." (§ 3-196.b.3)
+
+**Why:** The agency is legally mandated to report detailed statistics on mental health emergency calls, requiring incident-level data from 911 systems.
+
+**One row represents:** A single mental health emergency call and its response.
+
+**Covers:** All 911 calls classified as mental health emergencies, and the subsequent response actions.
+
+**Columns:**
+- Call Response ID
+- 911 Call ID
+- Call Date
+- Call Time
+- 911 Dispatch Code
+- Call Location Address
+- Call Location Borough
+- Call Location Patrol Precinct
+- Call Location EMS Zone
+- Eligible for B-HEARD Dispatch (Boolean: Yes/No)
+- B-HEARD Dispatched (Boolean: Yes/No)
+- Primary Responding Entity Type (e.g., B-HEARD, Law Enforcement, EMS)
+- Primary Responding Entity ID
+- On-Scene Arrival Time
+- Response Time (Calculated: On-Scene Arrival Time - Call Time)
+- Additional Responding Units Requested (Boolean: Yes/No)
+- Type of Additional Responder Requested
+- Assistance Accepted (Boolean: Yes/No)
+- Type of Assistance Accepted (e.g., On-site Treatment, Transport to Hospital, Referral to Community-Based Organization)
+- Assistance Refused (Boolean: Yes/No)
+- Outcome if Assistance Refused (e.g., Involuntary Removal, Arrest, Summons Issued, Person Left at Scene)
+- Involuntary Removal Incident ID (Links to Dataset 4: Involuntary Mental Health Removals, if applicable)
+- Use of Force Incident (Boolean: Yes/No)
+- Subject Age Range
+- Subject Race
+- Subject Ethnicity
+- Subject Disability Status (Boolean: Yes/No)
+- Subject Homelessness Status (Boolean: Yes/No)
+- Data Source Agency
+- Last Data Update Date
+
+---
+
+**4. Involuntary Mental Health Removals**
+
+**Quotes:**
+- "On or before January 1, 2025, and annually thereafter, the office, in coordination with the police department, the fire department, the department of health and mental hygiene, and other relevant agencies, shall provide to the speaker of the council and post on its website a report regarding involuntary removals conducted during the preceding calendar year." (§ 3-194.b)
+- "The report must include, to the extent such information is obtainable, but need not be limited to: 1. The number of involuntary removals conducted pursuant to subdivision (a) of section 9.41 of the mental hygiene law; 2. The number of involuntary removals conducted pursuant to subdivision (a) of section 9.58 of the mental hygiene law; 3. The number of 911 calls that resulted in the involuntary removal or transportation of an individual; 4. Information, in the aggregate, regarding the zip codes from which individuals subject to involuntary removal were removed, including whether an individual was removed from a private dwelling or a public space, such as a park or the public transportation system, or temporary emergency housing; 5. Demographic information, in the aggregate, of individuals subject to involuntary removal, including age, race, ethnicity, disability status, and whether such individuals were experiencing homelessness; and 6. Information, in the aggregate, regarding whether individuals subject to involuntary removal were transported, and, where available, were admitted, to a hospital, and if so, the names and addresses of each hospital to which such individuals were transported or admitted." (§ 3-194.b.1-6)
+- "No information that is otherwise required to be reported pursuant to this section shall be reported in a manner that would violate any applicable provision of federal, state, or local law relating to the privacy of individuals subject to involuntary removal or information related to such removal; interfere with law enforcement investigations; or otherwise conflict with the interests of law enforcement." (§ 3-194.c)
+
+**Why:** The agency is legally required to report on involuntary removals, necessitating incident-level data collection from multiple agencies.
+
+**One row represents:** A single involuntary removal incident.
+
+**Covers:** All involuntary removals conducted under MHL 9.41(a) or 9.58(a) within the city.
+
+**Columns:**
+- Removal Incident ID
+- Date of Removal
+- Time of Removal
+- MHL Section Invoked (e.g., 9.41(a), 9.58(a))
+- Originated from 911 Call (Boolean: Yes/No)
+- 911 Call ID (Links to Dataset 3: Mental Health Emergency Call Responses, if applicable)
+- Removal Location Type (e.g., Private Dwelling, Public Space, Temporary Emergency Housing)
+- Removal Location Zip Code
+- Subject Age Range
+- Subject Race
+- Subject Ethnicity
+- Subject Disability Status (Boolean: Yes/No)
+- Subject Homelessness Status (Boolean: Yes/No)
+- Transported to Hospital (Boolean: Yes/No)
+- Admitted to Hospital (Boolean: Yes/No)
+- Hospital Name (if transported/admitted)
+- Hospital Address (if transported/admitted)
+- Primary Responding Agency (e.g., NYPD, FDNY, DOHMH)
+- Data Source Agency
+- Data Obtainability Status (e.g., Complete, Partial, Omitted)
+- Omission Reason (if applicable)
+
+---
+
+**5. Mental Health Outreach Activities**
+
+**Quotes:**
+- "The office shall coordinate with relevant agencies and relevant organizations to support the city’s efforts to coordinate, facilitate, or conduct culturally appropriate outreach in the designated citywide languages regarding mental health resources, including access to the online database described in section 3-191." (§ 3-192.a)
+- "The office, or another agency designated by the mayor, shall conduct outreach and education activities to raise awareness about city resources for addressing mental health challenges faced by parents." (§ 3-192.b)
+
+**Why:** The agency is mandated to conduct and coordinate outreach, requiring tracking of these activities for compliance and effectiveness.
+
+**One row represents:** A single outreach event or activity.
+
+**Covers:** All culturally appropriate outreach activities regarding mental health resources, including those for parents.
+
+**Columns:**
+- Outreach Activity ID
+- Activity Date
+- Activity Type (e.g., Community Event, Digital Campaign, Material Distribution, Workshop)
+- Target Audience (e.g., General Public, Parents, Immigrant Community, LGBTQI+ Community)
+- Topic(s) Covered (e.g., General Mental Health Resources, Perinatal Mood and Anxiety Disorders, Accessing Online Database)
+- Languages Used in Outreach
+- Location Type (e.g., Community Center, Online Platform, Public Space)
+- Location Details (e.g., Address, URL)
+- Partnering Agencies/Organizations (List of names or IDs, if linked to Dataset 1: Mental Health Service Providers)
+- Materials Distributed (Boolean: Yes/No)
+- Estimated Reach/Attendance Count
+- Office Staff Involved
+- Notes/Key Outcomes
+
+---
+
+**6. Violent and Traumatic Incident Notifications**
+
+**Quotes:**
+- "Upon receiving notice of a violent or traumatic incident from the police department as required pursuant to section 14-119.1, the office, and any additional mayoral office or agency designated by the mayor, shall conduct outreach to the local community in which such violent or traumatic incident occurred regarding the availability of mental health resources." (§ 3-195.b)
+
+**Why:** The agency needs to track incidents that trigger mandatory community mental health outreach.
+
+**One row represents:** A single violent or traumatic incident notification received by the Office.
+
+**Covers:** All violent or traumatic incidents for which the Office receives notice from the police department and conducts outreach.
+
+**Columns:**
+- Incident Notification ID
+- Police Department Incident ID
+- Date of Violent/Traumatic Incident
+- Time of Violent/Traumatic Incident
+- Incident Location (Address, Borough, Community District)
+- Date Notice Received by Office
+- Outreach Conducted (Boolean: Yes/No)
+- Outreach Activity ID (Links to Dataset 5: Mental Health Outreach Activities, if outreach was conducted)
+- Designated Mayoral Office/Agency for Outreach (if applicable, other than the Office)
+- Notes
+
+---
+
+**Non-Tabular Information:**
+
+- Rules and regulations (e.g., Mental Hygiene Law sections 9.41, 9.58, 14-158, 14-119.1, 23-1101, 20-m)
+- Data dictionary for reports (§ 3-196.b.2)
+- Explanations for omitted information in reports (§ 3-194.d)
+- Outreach and education materials (§ 3-192.b)
+- Applicable federal, state, or local privacy laws (§ 3-194.c, § 3-196.b.3)
+- Information that would interfere with law enforcement investigations (§ 3-194.c)
+- New York City Charter sections (e.g., 20-m)
