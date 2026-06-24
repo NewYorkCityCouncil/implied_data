@@ -1,0 +1,567 @@
+<instructions>
+I have created a list of datasets that agencies likely have data on. That is formatted for data analysts, and meant to give a good sense of schema and connectivity. I'd like to reformat the information to be useful to a policy analyst. The important information is extremely high level in this case. 
+</instructions>
+
+<examples>
+Here's an example of how the input will look: 
+
+"**Section 1, Mission Summary:**
+
+The agency's mission is to develop and implement strategies, policies, and partnerships to close mental health care gaps, promote crisis prevention, and increase access and equity in mental health services across the city. They are required to run key programs including monitoring mental health care gaps, developing interagency policies, forming strategic partnerships, disseminating public resources, offering training, maintaining a public database of mental health services, and reporting on mental health emergency calls and involuntary removals. The agency impacts constituents by enhancing mental health literacy, promoting access to care, reducing disparities, and improving crisis response for New Yorkers.
+
+**Section 2, Data Summary:**
+
+1.  **Mental Health Services Offered**
+2.  **Agencies and Organizations**
+3.  **Mental Health Emergency Call Responses**
+4.  **Involuntary Mental Health Removals**
+5.  **Outreach and Dissemination Activities**
+6.  **Violent and Traumatic Incident Notifications**
+7.  **Agency Strategies and Proposals**
+8.  **Interagency Policies and Practices**
+9.  **Strategic Partnerships**
+10. **Training Programs and Events**
+11. **External Data Sources and Agreements**
+12. **Annual Report Research Activities**
+13. **Office Budgetary Transactions**
+14. **Mental Health Council Meetings & Membership**
+    *   Mental Health Council Meetings
+    *   Mental Health Council Membership
+15. **Employee Records**
+16. **Office Assets**
+
+**Section 3, Data Details:**
+
+**1. Mental Health Services Offered**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "The office shall maintain on its website access to a publicly accessible, searchable online database of mental health services that are provided by any relevant agencies and relevant organizations in the city, to the extent such agencies or organizations provide the city with information about mental health services they offer." (§ 3-191.a) (Administrative Code)
+    *   "The office shall indicate on its website that such database is searchable by program focus category, which may include but need not be limited to caregivers, immigrants, undocumented individuals, refugees, asylees, justice-involved individuals, LGBTQI+ individuals, homebound individuals, and children and adolescents." (§ 3-191.a) (Administrative Code)
+    *   "The office shall indicate on its website that such database is searchable by service subcategories, which may include but need not be limited to crisis, housing, inpatient care, legal, outpatient care, and substance use services." (§ 3-191.a) (Administrative Code)
+    *   "such database information includes, but is not limited to, the following information for each relevant agency and relevant organization: ... 2. Mental health services provided; 4. The languages in which services are provided; 5. Whether such services are provided in person or remotely; 6. Whether such services are provided via peers; and 7. Whether such services are accessible to persons with disabilities." (§ 3-191.a.2, 3-191.a.4-7) (Administrative Code)
+*   **Why:** To track specific details for each mental health service to populate the public, searchable database.
+*   **One row represents:** A specific mental health service offered by a provider.
+*   **Covers:** All mental health services provided by relevant agencies and organizations in the city, as reported to the Office.
+*   **Columns:**
+    *   Service ID (PK)
+    *   Provider ID (FK to Dataset 2: Agencies and Organizations)
+    *   Service Name/Description
+    *   Service Subcategory (e.g., Crisis, Housing, Inpatient Care, Legal, Outpatient Care, Substance Use Services)
+    *   Program Focus Categories (e.g., Caregivers, Immigrants, LGBTQI+, Homebound, Children and Adolescents, Justice-Involved, Undocumented Individuals, Refugees, Asylees)
+    *   Languages Services Provided In (e.g., English, Spanish, Designated Citywide Languages)
+    *   Service Delivery Method (e.g., In-person, Remote, Hybrid)
+    *   Services Provided Via Peers (Boolean: Yes/No)
+    *   Accessible to Persons with Disabilities (Boolean: Yes/No)
+    *   Last Data Update Date
+    *   Data Source
+
+**2. Agencies and Organizations**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Request and receive the assistance of any other agency or office the director deems necessary to further efforts to:" (c.1) (Charter)
+    *   "coordinate with the commissioner of health and mental hygiene, or their designee; and any other agency or office the director deems necessary" (d) (Charter)
+    *   "delegees of any office or agency the director determines the participation of which would aid such office's efforts." (e.3) (Charter)
+    *   "The office shall maintain on its website access to a publicly accessible, searchable online database of mental health services that are provided by any relevant agencies and relevant organizations in the city, to the extent such agencies or organizations provide the city with information about mental health services they offer." (§ 3-191.a) (Administrative Code)
+    *   "such database information includes, but is not limited to, the following information for each relevant agency and relevant organization: 1. Address, office hours, and contact information; 3. Payment information, including types of insurance accepted;" (§ 3-191.a.1, 3-191.a.3) (Administrative Code)
+*   **Why:** To manage a comprehensive directory of all external entities the agency collaborates with and those providing mental health services.
+*   **One row represents:** A single agency or organization.
+*   **Covers:** All city agencies, state agencies, community partners, and other organizations that the OCMH collaborates with or that provide mental health services.
+*   **Columns:**
+    *   Agency/Organization ID (PK)
+    *   Name
+    *   Type (e.g., City Department, State Office, Community Organization, Healthcare Provider, Academic Institution)
+    *   Primary Contact Name
+    *   Primary Contact Title
+    *   Contact Email
+    *   Contact Phone Number
+    *   Address
+    *   Website URL
+    *   Is Service Provider (Boolean: Yes/No)
+    *   Provider Type (e.g., Relevant Agency, Relevant Organization)
+    *   Office Hours (for service providers)
+    *   Payment Information Accepted (e.g., Types of Insurance Accepted, Sliding Scale, Free) (for service providers)
+    *   Last Data Update Date (for service providers)
+    *   Date Added to Directory
+
+**3. Mental Health Emergency Call Responses**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "No later than June 1, 2027, and every 6 months thereafter, the director of the office... shall submit to the mayor and the speaker of the council, and post to the office’s website, a report regarding mental health emergency calls received during the 6 month period ending 30 days before such report is due." (§ 3-196.b.1) (Administrative Code)
+    *   "Such report shall include, but need not be limited to, the following, to the extent such information is maintained by the relevant agencies: (a) The total number of mental health emergency calls, disaggregated by the 911 emergency assistance program dispatch code; (b) The total number of mental health emergency calls identified as eligible for B-HEARD; (c) The total number of mental health emergency calls identified as eligible for B-HEARD where B-HEARD is dispatched in response to such emergencies; (d) The total number of mental health emergency calls responded to by entities other than B-HEARD, disaggregated by type of entity responding... (e) The average response time... (f) The number of mental health emergency calls in response to which additional responding units were requested... (g) The number of mental health emergency calls in response to which assistance was accepted... (h) The number of mental health emergency calls in response to which assistance was refused... (i) The number of mental health emergency calls for which the response involved a use of force incident; (j) Aggregated demographic information about the subjects... (k) The aggregate locations reported..." (§ 3-196.b.1.a-k) (Administrative Code)
+    *   "No information that is required to be reported pursuant to paragraph 1 of this subdivision shall be reported in a manner that would violate any applicable provision of federal, state, or local law relating to the privacy of information." (§ 3-196.b.3) (Administrative Code)
+*   **Why:** The agency is legally mandated to report detailed statistics on mental health emergency calls, requiring incident-level data from 911 systems.
+*   **One row represents:** A single mental health emergency call and its response.
+*   **Covers:** All 911 calls classified as mental health emergencies, and the subsequent response actions.
+*   **Columns:**
+    *   Call Response ID (PK)
+    *   911 Call ID
+    *   Call Date
+    *   Call Time
+    *   911 Dispatch Code
+    *   Call Location Address
+    *   Call Location Borough
+    *   Call Location Patrol Precinct
+    *   Call Location EMS Zone
+    *   Eligible for B-HEARD Dispatch (Boolean: Yes/No)
+    *   B-HEARD Dispatched (Boolean: Yes/No)
+    *   Primary Responding Entity Type (e.g., B-HEARD, Law Enforcement, EMS)
+    *   Primary Responding Entity ID (FK to Dataset 2: Agencies and Organizations)
+    *   On-Scene Arrival Time
+    *   Response Time (Calculated: On-Scene Arrival Time - Call Time)
+    *   Additional Responding Units Requested (Boolean: Yes/No)
+    *   Type of Additional Responder Requested
+    *   Assistance Accepted (Boolean: Yes/No)
+    *   Type of Assistance Accepted (e.g., On-site Treatment, Transport to Hospital, Referral to Community-Based Organization)
+    *   Assistance Refused (Boolean: Yes/No)
+    *   Outcome if Assistance Refused (e.g., Involuntary Removal, Arrest, Summons Issued, Person Left at Scene)
+    *   Involuntary Removal Incident ID (FK to Dataset 4: Involuntary Mental Health Removals, if applicable)
+    *   Use of Force Incident (Boolean: Yes/No)
+    *   Subject Age Range
+    *   Subject Race
+    *   Subject Ethnicity
+    *   Subject Disability Status (Boolean: Yes/No)
+    *   Subject Homelessness Status (Boolean: Yes/No)
+    *   Data Source Agency (FK to Dataset 2: Agencies and Organizations)
+    *   Last Data Update Date
+
+**4. Involuntary Mental Health Removals**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "On or before January 1, 2025, and annually thereafter, the office... shall provide to the speaker of the council and post on its website a report regarding involuntary removals conducted during the preceding calendar year." (§ 3-194.b) (Administrative Code)
+    *   "The report must include, to the extent such information is obtainable, but need not be limited to: 1. The number of involuntary removals conducted pursuant to subdivision (a) of section 9.41 of the mental hygiene law; 2. The number of involuntary removals conducted pursuant to subdivision (a) of section 9.58 of the mental hygiene law; 3. The number of 911 calls that resulted in the involuntary removal or transportation of an individual; 4. Information, in the aggregate, regarding the zip codes from which individuals subject to involuntary removal were removed, including whether an individual was removed from a private dwelling or a public space... 5. Demographic information, in the aggregate, of individuals subject to involuntary removal, including age, race, ethnicity, disability status, and whether such individuals were experiencing homelessness; and 6. Information, in the aggregate, regarding whether individuals subject to involuntary removal were transported, and, where available, were admitted, to a hospital..." (§ 3-194.b.1-6) (Administrative Code)
+    *   "No information that is otherwise required to be reported pursuant to this section shall be reported in a manner that would violate any applicable provision of federal, state, or local law relating to the privacy of individuals subject to involuntary removal or information related to such removal; interfere with law enforcement investigations; or otherwise conflict with the interests of law enforcement." (§ 3-194.c) (Administrative Code)
+*   **Why:** The agency is legally required to report on involuntary removals, necessitating incident-level data collection from multiple agencies.
+*   **One row represents:** A single involuntary removal incident.
+*   **Covers:** All involuntary removals conducted under MHL 9.41(a) or 9.58(a) within the city.
+*   **Columns:**
+    *   Removal Incident ID (PK)
+    *   Date of Removal
+    *   Time of Removal
+    *   MHL Section Invoked (e.g., 9.41(a), 9.58(a))
+    *   Originated from 911 Call (Boolean: Yes/No)
+    *   911 Call ID (FK to Dataset 3: Mental Health Emergency Call Responses, if applicable)
+    *   Removal Location Type (e.g., Private Dwelling, Public Space, Temporary Emergency Housing)
+    *   Removal Location Zip Code
+    *   Subject Age Range
+    *   Subject Race
+    *   Subject Ethnicity
+    *   Subject Disability Status (Boolean: Yes/No)
+    *   Subject Homelessness Status (Boolean: Yes/No)
+    *   Transported to Hospital (Boolean: Yes/No)
+    *   Admitted to Hospital (Boolean: Yes/No)
+    *   Hospital Name (if transported/admitted)
+    *   Hospital Address (if transported/admitted)
+    *   Primary Responding Agency (FK to Dataset 2: Agencies and Organizations)
+    *   Data Source Agency (FK to Dataset 2: Agencies and Organizations)
+    *   Data Obtainability Status (e.g., Complete, Partial, Omitted)
+    *   Omission Reason (if applicable)
+
+**5. Outreach and Dissemination Activities**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Disseminating resources to enhance mental health literacy, promote access to mental health care, and promote equity in access to treatment." (c.4.b) (Charter)
+    *   "Recommend strategies for such office to educate the public about mental health and available resources." (e.1.e) (Charter)
+    *   "The office shall coordinate with relevant agencies and relevant organizations to support the city’s efforts to coordinate, facilitate, or conduct culturally appropriate outreach in the designated citywide languages regarding mental health resources, including access to the online database described in section 3-191." (§ 3-192.a) (Administrative Code)
+    *   "The office, or another agency designated by the mayor, shall conduct outreach and education activities to raise awareness about city resources for addressing mental health challenges faced by parents." (§ 3-192.b) (Administrative Code)
+*   **Why:** To track all public education, resource dissemination, and culturally appropriate outreach efforts undertaken or coordinated by the agency.
+*   **One row represents:** A single public resource dissemination event or outreach activity.
+*   **Covers:** All public-facing activities aimed at enhancing mental health literacy, promoting access to care, educating about available resources, and culturally appropriate outreach.
+*   **Columns:**
+    *   Activity ID (PK)
+    *   Name/Description
+    *   Date/Period of Activity
+    *   Activity Type (e.g., Workshop, Public Forum, Social Media Campaign, Brochure Distribution, Website Update, Community Event, Digital Campaign, Material Distribution)
+    *   Target Audience (e.g., General Public, Parents, Immigrant Community, LGBTQI+ Community, Children and Adolescents)
+    *   Topic(s) Covered (e.g., General Mental Health Resources, Perinatal Mood and Anxiety Disorders, Accessing Online Database)
+    *   Resources Disseminated (e.g., Brochure Title, Website URL, Campaign Hashtag)
+    *   Languages Used in Outreach
+    *   Location Type (e.g., Online, Venue Name, Community Center, Public Space)
+    *   Location Details (e.g., Address, URL)
+    *   Estimated Reach/Attendance Count
+    *   Lead Staff ID (FK to Dataset 15: Employee Records)
+    *   Office Staff Involved (FK to Dataset 15: Employee Records)
+    *   Partnering Agencies/Organizations (List of IDs, FK to Dataset 2: Agencies and Organizations)
+    *   Materials Distributed (Boolean: Yes/No)
+    *   Related Strategy ID (FK to Dataset 7: Agency Strategies and Proposals)
+    *   Notes/Key Outcomes
+
+**6. Violent and Traumatic Incident Notifications**
+*   **Open Data Match:** "Incident Engagement Tracker" (dataset) - 75% match 
+*   **Quotes:**
+    *   "Upon receiving notice of a violent or traumatic incident from the police department as required pursuant to section 14-119.1, the office, and any additional mayoral office or agency designated by the mayor, shall conduct outreach to the local community in which such violent or traumatic incident occurred regarding the availability of mental health resources." (§ 3-195.b) (Administrative Code)
+*   **Why:** The agency needs to track incidents that trigger mandatory community mental health outreach for compliance and coordination.
+*   **One row represents:** A single violent or traumatic incident notification received by the Office.
+*   **Covers:** All violent or traumatic incidents for which the Office receives notice from the police department and conducts outreach.
+*   **Columns:**
+    *   Incident Notification ID (PK)
+    *   Police Department Incident ID
+    *   Date of Violent/Traumatic Incident
+    *   Time of Violent/Traumatic Incident
+    *   Incident Location (Address, Borough, Community District)
+    *   Date Notice Received by Office
+    *   Outreach Conducted (Boolean: Yes/No)
+    *   Outreach Activity ID (FK to Dataset 5: Outreach and Dissemination Activities, if outreach was conducted)
+    *   Designated Mayoral Office/Agency for Outreach (if applicable, FK to Dataset 2: Agencies and Organizations)
+    *   Notes
+
+**7. Agency Strategies and Proposals**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Develop and support the implementation of strategies to close gaps in mental health care identified by the office established pursuant to this section by: (a) Monitoring the implementation of such proposals;" (c.2) (Charter)
+    *   "Effectively and equitably promote mental health crisis prevention, intervention and stabilization practices;" (c.3.a) (Charter)
+    *   "Promote mental health screening;" (c.3.b) (Charter)
+    *   "Facilitate referrals to mental health care;" (c.3.c) (Charter)
+    *   "Offer training;" (c.3.d) (Charter)
+    *   "Implement other strategies to promote mental health." (c.3.e) (Charter)
+    *   "Developing and implementing strategic partnerships with other agencies and entities to increase access to mental health care;" (c.4.a) (Charter)
+    *   "Disseminating resources to enhance mental health literacy, promote access to mental health care, and promote equity in access to treatment." (c.4.b) (Charter)
+*   **Why:** To track the lifecycle, progress, and outcomes of each strategy and proposal developed and implemented by the agency.
+*   **One row represents:** A single strategy or proposal developed or supported by the agency.
+*   **Covers:** All strategies and proposals aimed at reducing substance misuse, promoting access to mental health treatment, promoting equity, reducing disparities, preventing crises, and closing care gaps.
+*   **Columns:**
+    *   Strategy ID (PK)
+    *   Strategy Name
+    *   Description
+    *   Objective (e.g., Reduce Substance Misuse, Promote Access, Reduce Disparity, Crisis Prevention)
+    *   Start Date
+    *   Planned End Date
+    *   Actual End Date
+    *   Status (e.g., Planned, In Progress, Implemented, Completed, On Hold, Canceled)
+    *   Lead Department/Team
+    *   Related Interagency Policy ID (FK to Dataset 8: Interagency Policies and Practices)
+    *   Related Partnership ID (FK to Dataset 9: Strategic Partnerships)
+    *   Monitoring Notes
+    *   Key Performance Indicators (KPIs)
+    *   Outcome Summary
+
+**8. Interagency Policies and Practices**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Develop interagency policies and practices to promote mental health." (c.3) (Charter)
+    *   "Such policies and practices shall include coordination with other agencies to: (a) Effectively and equitably promote mental health crisis prevention, intervention and stabilization practices; (b) Promote mental health screening; (c) Facilitate referrals to mental health care; (d) Offer training; and (e) Implement other strategies to promote mental health." (c.3.a-e) (Charter)
+    *   "In performing their duties, the director shall coordinate with the commissioner of health and mental hygiene, or their designee; and any other agency or office the director deems necessary to further the duties of the office established pursuant to this section." (d) (Charter)
+*   **Why:** To track the development, implementation, and coordination of interagency policies and practices across city agencies.
+*   **One row represents:** A single interagency policy or practice.
+*   **Covers:** All policies and practices developed or coordinated by the OCMH with other agencies to promote mental health, crisis prevention, screening, referrals, and training.
+*   **Columns:**
+    *   Policy ID (PK)
+    *   Policy Name
+    *   Description
+    *   Development Start Date
+    *   Approval Date
+    *   Implementation Date
+    *   Status (e.g., Draft, Approved, Implemented, Under Review)
+    *   Lead Agency (FK to Dataset 2: Agencies and Organizations)
+    *   Participating Agencies (List of IDs, FK to Dataset 2: Agencies and Organizations)
+    *   Related Strategy ID (FK to Dataset 7: Agency Strategies and Proposals)
+    *   Policy Document Link
+    *   Monitoring Plan
+
+**9. Strategic Partnerships**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Developing and implementing strategic partnerships with other agencies and entities to increase access to mental health care;" (c.4.a) (Charter)
+    *   "Identify methods for such office to support other stakeholders working to provide effective, high quality mental health and care;" (e.1.d) (Charter)
+*   **Why:** To track the details, objectives, and status of each strategic partnership formed to increase access to mental health care.
+*   **One row represents:** A single strategic partnership.
+*   **Covers:** All formal and informal strategic partnerships with other agencies, community organizations, mental health providers, and other entities.
+*   **Columns:**
+    *   Partnership ID (PK)
+    *   Partnership Name
+    *   Description
+    *   Partner Entity Name (FK to Dataset 2: Agencies and Organizations)
+    *   Partner Type (e.g., City Agency, Community Organization, Healthcare Provider, Academic Institution)
+    *   Start Date
+    *   End Date
+    *   Status (e.g., Active, Inactive, Under Negotiation, Completed)
+    *   Primary Objective(s)
+    *   Key Contact at Partner Entity
+    *   Internal Lead Staff ID (FK to Dataset 15: Employee Records)
+    *   Related Strategy ID (FK to Dataset 7: Agency Strategies and Proposals)
+    *   Agreement Document Link
+
+**10. Training Programs and Events**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Offer training;" (c.3.d) (Charter)
+*   **Why:** To track all training programs and events offered or coordinated by the agency.
+*   **One row represents:** A single training program or event.
+*   **Covers:** All training sessions provided or facilitated by the OCMH, including those related to crisis prevention, screening, referrals, and other mental health promotion strategies.
+*   **Columns:**
+    *   Training ID (PK)
+    *   Training Name
+    *   Description
+    *   Date
+    *   Time
+    *   Location (e.g., Online, Venue Name)
+    *   Trainer(s) Name/Affiliation
+    *   Target Audience (e.g., Agency Staff, Community Partners, Public)
+    *   Number of Attendees
+    *   Training Type (e.g., Crisis Prevention, Screening, Referral Facilitation, Mental Health Literacy)
+    *   Related Policy ID (FK to Dataset 8: Interagency Policies and Practices)
+    *   Related Strategy ID (FK to Dataset 7: Agency Strategies and Proposals)
+
+**11. External Data Sources and Agreements**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Request and receive the assistance of any other agency or office the director deems necessary to further efforts to:" (c.1) (Charter)
+    *   "Providing data and budgetary information of such programs on such office's website." (c.2.b) (Charter)
+    *   "In performing their duties, the director shall coordinate with the commissioner of health and mental hygiene, or their designee; and any other agency or office the director deems necessary to further the duties of the office established pursuant to this section." (d) (Charter)
+    *   "To identify such gaps, such office may review existing data and research, conduct research as needed, and interview agency staff, community partners, mental health providers and other relevant experts." (g) (Charter)
+*   **Why:** To manage and track all external data sources and agreements essential for the agency's analytical, monitoring, and reporting functions.
+*   **One row represents:** A single external data source or a data sharing agreement.
+*   **Covers:** All data sources from other agencies, community partners, or research entities that the OCMH uses for its operations, monitoring, and reporting.
+*   **Columns:**
+    *   Data Source ID (PK)
+    *   Data Source Name
+    *   Description of Data Content
+    *   Providing Agency/Entity Name (FK to Dataset 2: Agencies and Organizations)
+    *   Data Type (e.g., Mental Health Emergencies, Service Utilization, Budgetary, Demographics)
+    *   Data Format (e.g., CSV, API, Report)
+    *   Frequency of Data Update/Receipt
+    *   Data Sharing Agreement Status (e.g., Active, Expired, Under Negotiation)
+    *   Agreement Start Date
+    *   Agreement End Date
+    *   Data Steward Contact at Providing Agency
+    *   Internal Data Steward Contact (FK to Dataset 15: Employee Records)
+    *   Purpose of Use
+    *   Date of Last Data Receipt
+
+**12. Annual Report Research Activities**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "No later than January 31 of each year, the office of community mental health shall submit to the mayor and speaker of the council, and post to such office's website, a report identifying critical gaps in mental health care that are preventing New Yorkers with mental health needs from accessing and staying connected to care." (g) (Charter)
+    *   "To identify such gaps, such office may review existing data and research, conduct research as needed, and interview agency staff, community partners, mental health providers and other relevant experts." (g) (Charter)
+*   **Why:** To track the specific activities undertaken each year to gather information and identify gaps for the mandatory annual report.
+*   **One row represents:** A single research activity or engagement conducted for the annual report.
+*   **Covers:** All data reviews, research projects, interviews, and consultations performed to inform the annual report on mental health care gaps.
+*   **Columns:**
+    *   Activity ID (PK)
+    *   Report Year
+    *   Activity Type (e.g., Data Review, Research Project, Interview, Community Consultation)
+    *   Description of Activity
+    *   Start Date
+    *   End Date
+    *   Lead Staff ID (FK to Dataset 15: Employee Records)
+    *   Participating Staff IDs (List of IDs, FK to Dataset 15: Employee Records)
+    *   External Participants (e.g., Community Partner Name, Expert Title)
+    *   Data Sources Reviewed (List of IDs, FK to Dataset 11: External Data Sources and Agreements)
+    *   Key Findings/Insights
+    *   Status (e.g., Completed, In Progress)
+
+**13. Office Budgetary Transactions**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Providing data and budgetary information of such programs on such office's website." (c.2.b) (Charter)
+*   **Why:** To track the agency's financial allocations and expenditures for transparency, reporting, and internal management.
+*   **One row represents:** A single budgetary transaction or allocation.
+*   **Covers:** All financial transactions related to the operation of the Office of Community Mental Health and its programs.
+*   **Columns:**
+    *   Transaction ID (PK)
+    *   Date
+    *   Description
+    *   Category (e.g., Personnel, Program Expenses, Operations, Contracts)
+    *   Amount
+    *   Fund Source
+    *   Program/Strategy ID (FK to Dataset 7: Agency Strategies and Proposals)
+    *   Department/Team
+    *   Fiscal Year
+    *   Posted to Website (Yes/No)
+    *   Website Post Date
+
+**14. Mental Health Council Meetings & Membership**
+
+**14a. Mental Health Council Meetings**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "There shall be established a mental health council to advise the office of community mental health on issues relating to mental health and mental health care and facilitate coordination and cooperation among city agencies." (e.1) (Charter)
+    *   "The mental health council shall be convened by the director at least twice each year, and at any other time the director determines." (e.2) (Charter)
+*   **Why:** To ensure compliance with meeting frequency requirements and to document the proceedings and outcomes of council meetings.
+*   **One row represents:** A single Mental Health Council meeting.
+*   **Covers:** All official meetings of the Mental Health Council.
+*   **Columns:**
+    *   Meeting ID (PK)
+    *   Date
+    *   Time
+    *   Location (e.g., Virtual, Physical Address)
+    *   Convening Director (FK to Dataset 15: Employee Records)
+    *   Meeting Type (e.g., Regular, Special)
+    *   Agenda Topics
+    *   Key Decisions/Recommendations Summary
+    *   Action Items
+    *   Next Meeting Date
+    *   Attendance List (List of IDs, FK to Dataset 14b: Mental Health Council Membership and Dataset 15: Employee Records)
+
+**14b. Mental Health Council Membership**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "The mental health council shall consist of delegees of any office or agency the director determines the participation of which would aid such office's efforts." (e.3) (Charter)
+*   **Why:** To maintain an accurate record of who serves on the Mental Health Council, their affiliations, and their terms.
+*   **One row represents:** A single appointment of a member to the Mental Health Council.
+*   **Covers:** All individuals appointed as delegees to the Mental Health Council.
+*   **Columns:**
+    *   Membership ID (PK)
+    *   Council Member Name
+    *   Representing Agency/Office (FK to Dataset 2: Agencies and Organizations)
+    *   Appointment Date
+    *   End Date (if applicable)
+    *   Role (e.g., Delegee, Chair)
+    *   Contact Information (Email, Phone)
+    *   Status (e.g., Active, Inactive)
+
+**15. Employee Records**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   "Such office shall be headed by a director, who shall be appointed by the mayor or by the head of such other agency or office." (b) (Charter)
+    *   Implied by the existence of an "office" and "staff" (g). (Charter)
+*   **Why:** To manage human resources, track staff assignments, and ensure proper administration of the agency's workforce.
+*   **One row represents:** A single employee of the Office of Community Mental Health.
+*   **Covers:** All staff members employed by the Office of Community Mental Health.
+*   **Columns:**
+    *   Employee ID (PK)
+    *   First Name
+    *   Last Name
+    *   Job Title
+    *   Department/Team
+    *   Start Date
+    *   End Date (if applicable)
+    *   Contact Email
+    *   Contact Phone Number
+    *   Supervisor ID (FK to Dataset 15: Employee Records)
+    *   Required Certifications (if any)
+    *   Certification Expiration Date
+
+**16. Office Assets**
+*   **Open Data Match:** N/A (Open Data list not provided)
+*   **Quotes:**
+    *   Implied by the establishment and operation of an "office." (b) (Charter)
+*   **Why:** To manage the physical and digital assets necessary for the agency's operations.
+*   **One row represents:** A single asset owned or managed by the agency.
+*   **Covers:** All tangible and intangible assets (e.g., computers, software licenses, office furniture, vehicles) used by the Office of Community Mental Health.
+*   **Columns:**
+    *   Asset ID (PK)
+    *   Asset Name
+    *   Asset Type (e.g., Laptop, Software License, Desk, Printer)
+    *   Manufacturer
+    *   Model
+    *   Serial Number
+    *   Purchase Date
+    *   Purchase Cost
+    *   Current Location
+    *   Assigned To Employee ID (FK to Dataset 15: Employee Records)
+    *   Maintenance Schedule
+    *   Last Maintenance Date
+    *   Status (e.g., In Use, In Storage, Disposed, Under Repair)
+
+**Section 4, Unmatched Open Datasets:**
+
+The list of Open Data datasets was not provided in the prompt. Therefore, this section cannot be completed.
+
+**Section 5, Non-tabular Data Summary:**
+
+The agency likely maintains various non-tabular information essential for its operations and compliance, including:
+*   Job applications (Charter)
+*   Rules and regulations (e.g., "chapter 22 of the charter, article 41 of the mental hygiene law or other applicable law" - f) (Charter)
+*   Receipts and invoices (individual documents, not summarized in a tabular format) (Charter)
+*   Photos or other image-based information (Charter)
+*   Research documents (the full text of research papers or reports) (Charter)
+*   The annual report itself (g) (Charter)
+*   Website content (c.2.b) (Charter)
+*   Recommendations from the Mental Health Council (e.1) (Charter)
+*   Legal changes (Charter)
+*   Meeting minutes (textual records of discussions) (Charter)
+*   Rules and regulations (e.g., Mental Hygiene Law sections 9.41, 9.58, 14-158, 14-119.1, 23-1101, 20-m) (Administrative Code)
+*   Data dictionary for reports (§ 3-196.b.2) (Administrative Code)
+*   Explanations for omitted information in reports (§ 3-194.d) (Administrative Code)
+*   Outreach and education materials (§ 3-192.b) (Administrative Code)
+*   Applicable federal, state, or local privacy laws (§ 3-194.c, § 3-196.b.3) (Administrative Code)
+*   Information that would interfere with law enforcement investigations (§ 3-194.c) (Administrative Code)
+*   New York City Charter sections (e.g., 20-m) (Administrative Code)"
+
+
+I would like you to reformat the information. I would like the sections to be:
+- "Implied Data Summary", which would list the datasets. 
+- "Compliant Datasets", which would give more detail about the datasets that have an Open Data match. These should only be datasets where there is at least one Open Data set that matches at 95% or higher. 
+- "Non-compliant Datasets", which would give more detail about the datasets that have no Open Data match or have a low match percentage. If there is no open data, do not include a bullet for that dataset about open data. Only include an open data bullet if there is a matching open data set, but it is below the 95% threshold. Mention the name and the match percentage in that case. 
+
+Here is how the above example would be reformatted: 
+
+"# Compliant Implied Data Summary:  
+
+1) Violent and Traumatic Incident Notifications 
+
+# Non-compliant Implied Data Summary:  
+2) Mental Health Services Database 
+3) Agencies and Organizations Database 
+4) Mental Health Emergency Call Responses 
+5) Involuntary Mental Health Removals 
+6) Outreach and Dissemination Activities 
+7) Training Programs and Events 
+8) Mental Health Council Membership 
+9) Mental Health Council Meetings 
+
+# Compliant Datasets: 
+
+1. **Violent and Traumatic Incident Notifications**
+- **Open Data match:** "Incident Engagement Tracker" (dataset) - 95% match  
+- **One row represents:** A single violent or traumatic incident notification received by the Office. 
+- **Covers:** All violent or traumatic incidents for which the Office receives notice from the police department and conducts outreach. 
+- **How it’s implied:** The Adcode requires OCMH to conduct outreach to communities following violent or traumatic incidents, so they must be tracking this.  
+	- (Admin. Code § 3-195.b) – Provide outreach to affected communities regarding available mental health resources following violent or traumatic incidents reported by the Police Department. 
+
+ 
+# Non-compliant Datasets: 
+
+2. **Mental Health Services Database**
+- **One row represents:** A specific mental health service offered by a provider. 
+- **Covers:** All mental health services provided by relevant agencies and organizations in the city, as reported to the Office. 
+- **How it’s implied:** A required public database means they must have this data. 
+	 - Through § 3-191.a, OCMH is required to maintain a publicly accessible, searchable online database of city mental health services that allow users to search services by target populations, service categories (e.g., crisis, housing, legal, outpatient, substance use) and includes service descriptions, languages offered, delivery method, peer support availability, and disability accessibility information. 
+
+3. **Agencies and Organizations Database**
+- **One row represents:** A single agency or organization. 
+- **Covers:** All city agencies, state agencies, community partners, and other organizations that the OCMH collaborates with or that provide mental health services. 
+- **How it’s implied:** The Charter requires OCMH to coordinate with other Agencies, so they must have this data, at least for the organizations they are working with. 
+	- Through Charter c.1, d and e.3, OCMH is required to coordinate with “other agencies and offices as needed to support the office's work”. Through Admin. Code § 3-191.a.1, 3, OCMH is required to provide “addresses, office hours, contact information, and accepted payment/insurance information for service providers.” 
+
+ 
+4. **Mental Health Emergency Call Responses**
+- **One row represents:** A single mental health emergency call and its response. 
+- **Covers:** All 911 calls classified as mental health emergencies, and response actions. 
+- **How it’s implied:** Reporting requirements in the Adcode mean they must have this data. 
+	 - Through several reporting requirements (under § 3-196.b) requiring a report on mental health emergency calls every six months, including call volume, dispatch information, B-HEARD involvement, responding entities, response times, assistance outcomes, use-of-force incidents, demographic data and location information. 
+
+ 
+5. **Involuntary Mental Health Removals**
+- **One row represents:** A single involuntary removal incident. 
+- **Covers:** All involuntary removals conducted under MHL 9.41(a) or 9.58(a) within the city. 
+- **How it’s implied:** Reporting requirements in the Adcode mean they must have this data. 
+	- Through several reporting requirements (under § 3-194.b) requiring an annual report on involuntary mental health removals conducted during the previous calendar year. Data should include number of involuntary removals by legal authority and the number of 911 calls resulting in an involuntary removal, demographic information (such as age, race, ethnicity, disability status, and homelessness status), information on transportation to hospitals and, where available, hospital admissions. 
+
+ 
+6. **Outreach and Dissemination Activities** 
+- **One row represents:** A single public resource dissemination event or outreach activity. 
+- **Covers:** All public-facing activities aimed at enhancing mental health literacy, promoting access to care, educating about available resources, and culturally appropriate outreach. 
+- **How it’s implied:** The Adcode + Charter require OCMH to conduct outreach, so they are likely tracking the events and methods through which they are conducting outreach.  
+	- Requirements are based on Admin. Code § 3-192.b (requires OCMH to conduct outreach and educational activities to raise awareness of city mental health resources available to parents), Charter c.4.b (requires disseminating information to improve mental health literacy), Charter e.1.e (requires recommending strategies to educate about mental health and available resources).  
+
+
+7. **Training Programs and Events**
+- **One row represents:** A single training program or event. 
+- **Covers:** All training sessions provided or facilitated by the OCMH, including those related to crisis prevention, screening, referrals, and other mental health promotion strategies. 
+- **How it’s implied:** The Adcode requires OCMH to offer training (Charter c.3.d), and they must be tracking the events they run.  
+ 
+
+8. **Mental Health Council Membership** 
+- **One row represents:** A single appointment of a member to the Mental Health Council. 
+- **Covers:** All individuals appointed as delegees to the Mental Health Council. 
+- **How it’s implied:** The Charter requires OCMH to create a council to advise on coordination across city agencies (Charter e.1) that can consist of delegees of any office (Charter e.3), so they must be tracking who they appoint. 
+
+
+9. **Mental Health Council Meetings**
+- **One row represents:** A single Mental Health Council meeting. 
+- **Covers:** All official meetings of the Mental Health Council. 
+- **How it’s implied:** The Charter requires OCMH to create a council to advise on coordination across city agencies (Charter e.1) that must convene at least twice a year (Charter e.2), and they must be tracking the meetings they run."
+</examples>
+
+

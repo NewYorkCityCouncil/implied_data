@@ -1,0 +1,658 @@
+**Data Systems for Agency Legal Requirements**
+
+**1. Test Catalog**
+
+*   **Quotes:**
+    *   "a report relating to each test administered and disclosed pursuant to section three hundred forty-two of this article" (§ 341.4.a)
+    *   "each question used in calculating the subject's raw score on each test form administered" (§ 341.5.a)
+    *   "Disclosure of test contents." (§ 342)
+    *   "the dates of each test administered by the test agency during the testing year" (§ 342.9.a)
+*   **Why:** To manage and track all standardized tests the agency is responsible for administering and reporting on.
+*   **One row represents:** A specific standardized test offered by the agency.
+*   **Covers:** All standardized tests administered by the test agency.
+*   **Columns:**
+    *   Test ID
+    *   Test Name
+    *   Test Type (e.g., SAT, GRE General Test, MCAT, TOEFL, SAT Subject Test)
+    *   Sponsoring Agency/Manufacturer
+    *   Description of Test Purpose (from § 343.1.a)
+
+**2. Test Administration Schedule**
+
+*   **Quotes:**
+    *   "a report relating to each test administered and disclosed pursuant to section three hundred forty-two of this article by the test agency in New York between July first, nineteen hundred eighty-eight and July first, nineteen hundred eighty-nine." (§ 341.4.a)
+    *   "the test agency shall designate the dates upon which test forms to be filed with the commissioner will be used." (§ 342.3.b)
+    *   "The test agency shall inform potential test subjects of these dates." (§ 342.3.b)
+    *   "the dates of each test administered by the test agency during the testing year" (§ 342.9.a)
+    *   "the total number of test subjects who took the test at each administration" (§ 342.9.b)
+    *   "Any test agency offering one or more nondisclosed administrations pursuant to this subdivision shall provide to test subjects, in a clear and conspicuous manner in its registration materials, notice of which test administrations will or will not be disclosed." (§ 342.10.f)
+    *   "When regular test administrations are given on days of religious observance... special administrations shall be offered" (§ 342-a.1)
+*   **Why:** To manage and track all scheduled test administrations, including disclosure status and special accommodations.
+*   **One row represents:** A single scheduled test administration event.
+*   **Covers:** All regular and special test administrations conducted by the agency in New York.
+*   **Columns:**
+    *   Test Administration ID
+    *   Test ID (links to Dataset 1)
+    *   Administration Date
+    *   Administration Type (Regular, Special, Makeup, Sabbath Observer, Other Special-Purpose)
+    *   Location
+    *   Test Form ID (links to Dataset 5)
+    *   Disclosure Status (Disclosed, Non-Disclosed)
+    *   Number of Test Subjects (for this administration)
+    *   Special Administration Reason (if applicable, e.g., religious observance)
+
+**3. Test Subject Performance Records**
+
+*   **Quotes:**
+    *   "test agencies shall ask each test subject to report on the test answer sheet, test registration form, or other appropriate means all of the following information: a. The test subject's race or ethnicity... b. The test subject's gender... c. The test subject's linguistic background" (§ 341.2)
+    *   "Each such test report shall show by race or ethnicity, linguistic background and gender, the mean-scaled scores of test subjects, the standard deviation of scaled scores, and the distribution of scaled scores." (§ 341.4.b)
+    *   "a statement of the raw score used to calculate the scores reported to the test subject." (§ 342.2.c)
+    *   "The score of any test subject shall not be released or disclosed by the test agency... unless specifically authorized by the test subject." (§ 344)
+*   **Why:** To record individual test subject demographic information and their overall performance on each test administration.
+*   **One row represents:** A single test subject's overall performance on a specific test administration.
+*   **Covers:** All test subjects who take a standardized test administered by the agency.
+*   **Columns:**
+    *   Test Subject ID
+    *   Test Administration ID (links to Dataset 2)
+    *   Test ID (links to Dataset 1)
+    *   Test Form ID (links to Dataset 5)
+    *   Race or Ethnicity
+    *   Gender
+    *   Linguistic Background (English dominant household: Yes/No/Declined)
+    *   Raw Score
+    *   Scaled Score
+    *   Date Score Reported
+    *   Score Release Authorization (Yes/No)
+
+**4. Test Subject Question Responses**
+
+*   **Quotes:**
+    *   "Each such item report shall show for each question used in calculating the test subject's raw score, the item's content area specification, and where disclosed pursuant to section three hundred forty-two of this article, information identifying the text of the item, and the correct answer-rates and R-biserial correlations for all test subjects, combined and separately by race, ethnicity, gender or linguistic background as reported under subdivision two of this section." (§ 341.5.b)
+    *   "Correct answer-rates shall be calculated by dividing the number of correct answers for a question used in calculating the subject's raw score on all test forms administered and disclosed pursuant to section three hundred forty-two of this article... by the number of test subjects to whom those test forms were administered." (§ 341.5.b)
+    *   "R-biserial correlations shall be calculated by correlating performance on a question used in calculating the subject's raw score on each test form administered... with performance on the tests as shown by total scores." (§ 341.5.b)
+    *   "a copy of the test subject's answer sheet, or answer record where there is no answer sheet" (§ 342.2.b)
+*   **Why:** To store the raw, incident-level data of each test subject's response to individual questions, necessary for detailed item analysis and reporting.
+*   **One row represents:** A single test subject's response to a specific question on a test.
+*   **Covers:** All individual question responses from test subjects on administered tests.
+*   **Columns:**
+    *   Test Subject ID (links to Dataset 3)
+    *   Test Administration ID (links to Dataset 2)
+    *   Test Item ID (links to Dataset 5)
+    *   Response Provided (e.g., A, B, C, D, or text for open-ended)
+    *   Is Correct (Yes/No)
+
+**5. Test Item Details**
+
+*   **Quotes:**
+    *   "an item report relating to each question used in calculating the subject's raw score on each test form administered" (§ 341.5.a)
+    *   "Each such item report shall show for each question used in calculating the test subject's raw score, the item's content area specification, and where disclosed pursuant to section three hundred forty-two of this article, information identifying the text of the item, and the correct answer-rates and R-biserial correlations" (§ 341.5.b)
+    *   "Content area specification shall be reported for each exam to indicate area of knowledge, skill or ability that an item purports to measure" (§ 341.5.b)
+    *   "a copy of all test questions used in calculating the test subject's raw score; b. the corresponding acceptable answers to those questions" (§ 342.1.a, b)
+*   **Why:** To maintain a master record of all test questions, their content, and correct answers for analysis and disclosure.
+*   **One row represents:** A specific question (item) used in a test.
+*   **Covers:** All test questions used in calculating test subjects' raw scores across all test forms.
+*   **Columns:**
+    *   Test Item ID
+    *   Test ID (links to Dataset 1)
+    *   Test Form ID (links to Dataset 6)
+    *   Content Area Specification
+    *   Item Text (reference to document storage)
+    *   Correct Answer
+    *   Item Type (e.g., multiple choice, essay, fill-in-the-blank)
+
+**6. Test Item Performance Metrics**
+
+*   **Quotes:**
+    *   "Each such item report shall show for each question used in calculating the test subject's raw score, the item's content area specification, and where disclosed pursuant to section three hundred forty-two of this article, information identifying the text of the item, and the correct answer-rates and R-biserial correlations for all test subjects, combined and separately by race, ethnicity, gender or linguistic background as reported under subdivision two of this section." (§ 341.5.b)
+    *   "Such item report shall also calculate the correct answer rates and R-biserial correlations comparing performance by gender and language dominance, within race and ethnic subgroups, including language dominance by the total gender group." (§ 341.5.b)
+    *   "The test report will also include data showing measures of differential item functioning on individual questions that take into account differences in overall test performance. Data will be provided for test items which contribute to the candidate scores and for which differential item data are available. Differential item functioning data shall be reported for comparative purposes between the following pairs of groups: (Black-White), (Hispanic-White), (American Indian-White), (Asian-White), (Other-White) and (Male-Female)." (§ 341.5.d)
+*   **Why:** To store the calculated performance metrics for each test item, broken down by demographic groups, as required for reporting.
+*   **One row represents:** Performance metrics for a single test item for a specific demographic group comparison.
+*   **Covers:** Item performance data for all test questions, including overall and demographic-specific rates and correlations.
+*   **Columns:**
+    *   Test Item ID (links to Dataset 5)
+    *   Test Form ID (links to Dataset 6)
+    *   Demographic Group (e.g., "Overall", "Black", "White", "Male", "Female", "Black-White Comparison", "Male-Female Comparison")
+    *   Correct Answer Rate
+    *   R-biserial Correlation
+    *   Differential Item Functioning (DIF) Value (if applicable)
+    *   DIF Group 1 (e.g., Black)
+    *   DIF Group 2 (e.g., White)
+
+**7. Test Content Filings**
+
+*   **Quotes:**
+    *   "Within thirty days after the results of any standardized test are released, the test agency shall file or cause to be filed with the commissioner: a. a copy of all test questions used in calculating the test subject's raw score; b. the corresponding acceptable answers to those questions; and c. all rules for converting raw scores into those scores reported to the test subject together with an explanation of such rules." (§ 342.1)
+    *   "Within three years after the administration in New York of a standardized test form not required to be disclosed under subdivision three of this section the test agency shall file the test form and the corresponding acceptable answers with the commissioner." (§ 342.4)
+    *   "Subdivisions one, two, three, and four of this section shall not apply to the GRE Advanced Tests. With respect to such tests, the test agency shall file with the commissioner the following: a. a copy of all test questions... b. the corresponding acceptable answers; and c. all rules for converting raw scores..." (§ 342.5)
+    *   "Subdivisions one, two, three, four, five and six of this section shall not apply to the Medical College Admission Test. With respect to that test, the test agency shall file with the commissioner once every four years the following: a. a copy of all test questions... b. the corresponding acceptable answers; and c. all rules for converting raw scores..." (§ 342.5-a)
+    *   "Subdivisions one, two, three, four, five, five-a and six of this section shall not apply to SAT Subject Tests. With respect to such tests, the test agency shall maintain on file with the commissioner a complete sample test, reflecting tests currently in use, of each type of SAT Subject Test to be administered in New York and provide to the test subject the opportunity to secure a copy of a representative complete sample test of a Subject Test." (§ 342.5-b)
+    *   "if a test agency has administered a standardized test to less than two thousand test subjects in New York annually, the test agency shall file with the commissioner at least once every three years: a. a copy of all test questions... b. the corresponding acceptable answers with the commissioner; and c. all rules for converting raw scores..." (§ 342.6)
+    *   "Documents submitted to the commissioner pursuant to this section shall be public records" (§ 342.7)
+    *   "a test agency which administered a computerized standardized test in test year nineteen hundred ninety-four shall file with the commissioner: a. no later than September first, nineteen hundred ninety-six the test item pool used for an operational test administered as of December first, nineteen hundred ninety-four, and the corresponding acceptable answers." (§ 342.11)
+*   **Why:** To track all test forms and associated content (questions, answers, scoring rules) filed with the commissioner as legally required.
+*   **One row represents:** A specific test form's content filed with the commissioner.
+*   **Covers:** All test forms and their associated content that are legally required to be filed with the commissioner.
+*   **Columns:**
+    *   Filing ID
+    *   Test ID (links to Dataset 1)
+    *   Test Form ID
+    *   Filing Date
+    *   Administration Date(s) Covered
+    *   Commissioner Filing Status (e.g., Submitted, Approved)
+    *   Questions Document Reference (link to document storage)
+    *   Acceptable Answers Document Reference (link to document storage)
+    *   Scoring Rules Document Reference (link to document storage)
+    *   Disclosure Exemption Status (e.g., 5% rule, specific test exemptions)
+    *   Filing Frequency Requirement (e.g., 30 days after results, 3 years, 4 years, 5 years, 8 years)
+
+**8. Test Subject Disclosure Requests**
+
+*   **Quotes:**
+    *   "Within ninety days after filing a standardized test pursuant to subdivision one of this section and for a period of not less than ninety days after the offer is made, the test agency shall provide to the test subject the opportunity to secure: a. a copy of the test questions used to calculate the test subject's raw score; b. a copy of the test subject's answer sheet, or answer record where there is no answer sheet, together with a copy of the correct answer sheet to the same test with questions used to calculate the test subject's raw score so marked; and c. a statement of the raw score used to calculate the scores reported to the test subject." (§ 342.2)
+    *   "The agency may charge a nominal fee for providing such information, not to exceed the direct cost thereof." (§ 342.2)
+    *   "a test agency shall permit a test subject to elect in writing this opportunity both at the time the test subject registers to take a test and at the time the test agency reports test scores to the test subject" (§ 342.2)
+    *   "how the test subject may obtain the information required to be dislcosed under section three hundred forty-two of this article." (§ 343.1.f)
+*   **Why:** To track requests from test subjects for copies of their test materials and ensure timely provision.
+*   **One row represents:** A request by a test subject for their test materials.
+*   **Covers:** All requests from test subjects for disclosure of their test questions, answer sheets, and raw scores.
+*   **Columns:**
+    *   Request ID
+    *   Test Subject ID (links to Dataset 3)
+    *   Test Administration ID (links to Dataset 2)
+    *   Request Date
+    *   Materials Requested (e.g., Questions, Answer Sheet, Raw Score Statement)
+    *   Fee Charged
+    *   Fee Paid
+    *   Date Materials Provided
+    *   Method of Election (Registration, Score Report)
+
+**9. Test Score Authenticity Investigations**
+
+*   **Quotes:**
+    *   "Each test agency shall ensure due process protection of test subjects whose scores are being questioned for suspected inauthenticity or irregularity in test administration." (§ 344-b)
+    *   "When a test agency is presented with information which renders the test subject's test score suspect... the test agency is responsible for reviewing the information and determining if withholding the test subject's score is warranted." (§ 344-b.1)
+    *   "If the test agency determines that withholding the test subject's score is warranted, the test agency shall give the test subject written notice of the test agency's decision." (§ 344-b.2)
+    *   "The notice to the test subject shall include all of the following: (a) a complete summary of the information submitted... (b) a complete summary of the pertinent facts... (c) a statement of the test subject's right to receive... details... (d) the policies and procedures... (e) the potential consequences... (f) a summary of the information that may be submitted... (g) a statement informing the test subject that the opportunity to respond... for not more than fifteen working days" (§ 344-b.3)
+    *   "After the time period... has expired, the test agency shall review all of the evidence and shall make a good faith effort to render a decision... within fifteen working days and notify the test subject immediately." (§ 344-b.4)
+    *   "When the test agency determines that substantial evidence exists to support cancellation or invalidation of a test score, the test agency shall provide the test subject with a choice of the following options: (a) cancellation of the test scores in question, with full refund of all test fees; (b) an opportunity to take the test again privately and without charge; or (c) an opportunity to seek arbitration or judicial review of the matter." (§ 344-b.5)
+    *   "The test subject shall have thirty days following receipt of the notice by registered mail to respond" (§ 344-b.6)
+    *   "If the test subject responds... the test agency shall review the contents of the response and comply with one of the following: (a) If the test subject requests cancellation... full refund... (b) If the test subject requests an opportunity to take the test again... the test agency shall make appropriate accommodations... If the score on the retest is higher, the higher score shall be reported." (§ 344-b.7)
+    *   "The test agency shall not release confidential information to any authorized test score recipients regarding a test subject under pending investigation, unless authorized to do so by the test subject." (§ 344-b.8)
+    *   "The test agency shall immediately release the test score... where substantial evidence does not exist to render the inauthenticity or irregularity of the test score." (§ 344-b.9)
+*   **Why:** To track all investigations into suspected inauthenticity or irregularity of test scores, ensuring due process and proper resolution.
+*   **One row represents:** An investigation into a test subject's score authenticity.
+*   **Covers:** All instances where a test subject's score is questioned for authenticity or irregularity.
+*   **Columns:**
+    *   Investigation ID
+    *   Test Subject ID (links to Dataset 3)
+    *   Test Administration ID (links to Dataset 2)
+    *   Date Information Received
+    *   Reason for Suspicion (e.g., collusion, cheating, irregular administration, statistical data)
+    *   Date Decision to Withhold Score
+    *   Notice Sent Date (via registered mail)
+    *   Test Subject Response Deadline
+    *   Test Subject Response Date
+    *   Final Decision Date
+    *   Decision Outcome (e.g., Score Validated, Score Canceled, Retest Offered, Arbitration/Judicial Review)
+    *   Option Chosen by Subject (if applicable: Cancellation, Retest, Arbitration/Judicial Review)
+    *   Refund Amount (if applicable)
+    *   Retest Administration ID (if applicable, links to Dataset 2)
+    *   Retest Score (if applicable)
+    *   Score Release Status (Released, Withheld)
+
+**10. Test Question Challenge Log**
+
+*   **Quotes:**
+    *   "Within sixty days of the receipt of correspondence from a test subject, their representative, or a user institution challenging or questioning the keying, scoring, wording, or any aspect of a test question or questions used to calculate test subjects' raw scores... the test agency shall place such correspondence in a separately maintained file." (§ 342.8.a)
+    *   "Within thirty days of the test agency's sending out a response... the test agency shall place on file a copy of any of the test agency's written responses to such correspondence clarifying, explaining or defending the test question or questions." (§ 342.8.b)
+    *   "Test subjects and any other individual shall be able to gain access to such file by submitting a written request to the test agency." (§ 342.8.c)
+    *   "procedures for reviewing challenges by test subjects, their representatives or user institutions to the keying, scoring, wording or any aspect of a test question or questions used to calculate test subjects' raw scores" (§ 343.1.d)
+*   **Why:** To track all challenges to test questions and the agency's responses, ensuring transparency and accountability.
+*   **One row represents:** A challenge to a test question.
+*   **Covers:** All challenges received regarding test questions and the agency's official responses.
+*   **Columns:**
+    *   Challenge ID
+    *   Test Item ID (links to Dataset 5)
+    *   Test Administration ID (links to Dataset 2)
+    *   Challenger Type (Test Subject, Representative, User Institution)
+    *   Challenger ID (if authorized for identification)
+    *   Date of Challenge Correspondence Receipt
+    *   Nature of Challenge (e.g., keying error, scoring issue, wording ambiguity)
+    *   Date of Agency Response Sent
+    *   Agency Response Document Reference (link to document storage)
+    *   Resolution/Outcome of Challenge
+
+**11. Test Agency Annual Financial Report**
+
+*   **Quotes:**
+    *   "Each test agency shall report the following information to the commissioner annually: a. the dates of each test administered by the test agency during the testing year; b. the total number of test subjects who took the test at each administration; c. the total amount of fees received from test subjects by the test agency for the test for that testing year; and d. those expenses which are directly attributable to the test and those expenses which are indirectly attributable to the test. The test agency shall also list expenses indirectly attributable to all activities of the test agency, including expenses not identifiable as attributable to a test." (§ 342.9)
+*   **Why:** To fulfill the annual financial reporting requirements to the commissioner.
+*   **One row represents:** An annual financial report for a specific test.
+*   **Covers:** Annual financial data for each standardized test administered by the agency.
+*   **Columns:**
+    *   Reporting Year
+    *   Test ID (links to Dataset 1)
+    *   Total Test Subjects (annual sum for this test)
+    *   Total Fees Received (annual sum for this test)
+    *   Direct Expenses Attributable to Test
+    *   Indirect Expenses Attributable to Test
+    *   Indirect Expenses Attributable to All Agency Activities (agency-wide, not test-specific)
+
+**12. Agency Violation Records**
+
+*   **Quotes:**
+    *   "Any test agency which violates any section of this article shall be liable for a civil penalty of not more than one thousand dollars for each violation." (§ 347)
+*   **Why:** To track instances where the test agency has violated legal requirements and the associated penalties.
+*   **One row represents:** A recorded violation by a test agency.
+*   **Covers:** All violations of the article committed by the test agency.
+*   **Columns:**
+    *   Violation ID
+    *   Test Agency ID
+    *   Date of Violation
+    *   Section Violated
+    *   Description of Violation
+    *   Penalty Imposed (e.g., fine amount)
+    *   Date Penalty Paid
+    *   Resolution Status
+
+**13. School District Student Enrollment**
+
+*   **Quotes:**
+    *   "to all children residing in such district who are enrolled in a public school... and to all children residing in such district who are enrolled in a nonpublic school." (§ 701.3)
+    *   "Enrollment shall be as defined in subdivision one of section thirty-six hundred two of this chapter." (§ 701.3)
+    *   "the number of children residing in such district and so enrolled in the base year" (§ 701.4)
+    *   "the sum of the enrollments in grades kindergarten through twelve in the base year calculated pursuant to subparagraphs four, five, and six of paragraph n of subdivision one of section thirty-six hundred two of this chapter." (§ 701.6)
+    *   "the sum of the public school district enrollment and the nonpublic school enrollment in the base year as defined in subparagraphs two and three of paragraph n of subdivision one of section thirty-six hundred two of this chapter." (§ 711.3)
+    *   "the sum of public school district enrollment, nonpublic school enrollment, and additional public enrollment as defined in subparagraphs two, three, and six of paragraph n of subdivision one of section thirty-six hundred two of this chapter." (§ 711.4)
+    *   "the sum of the public school district enrollment and the nonpublic school enrollment in the base year as defined in subparagraphs two and three of paragraph n of subdivision one of section thirty-six hundred two of this chapter." (§ 751.3)
+    *   "the sum of public school district enrollment, nonpublic school enrollment, and additional public enrollment as defined in subparagraphs two, three, and six of paragraph n of subdivision one of section thirty-six hundred two of this chapter." (§ 751.4)
+*   **Why:** To track student enrollment figures, which are critical for calculating state aid and determining resource allocation for textbooks, library materials, and software.
+*   **One row represents:** Annual enrollment figures for a school district for a specific school year.
+*   **Covers:** All public and nonpublic school enrollment within each school district.
+*   **Columns:**
+    *   School District ID
+    *   School Year
+    *   Public School Enrollment (K-12)
+    *   Nonpublic School Enrollment (K-12)
+    *   Additional Public Enrollment (if applicable)
+    *   Total Enrollment (sum of above)
+
+**14. School District Textbook Designations**
+
+*   **Quotes:**
+    *   "boards of education... shall designate text-books to be used in the schools under their charge." (§ 701.1)
+    *   "A text-book, for the purposes of this section shall mean: (i) any book, or a book substitute... and (ii) for expenses incurred after July first, nineteen hundred ninety-nine, any courseware or other content-based instructional materials in an electronic format... (iii) For expenses incurred on or after July first, two thousand eleven, a text-book shall also mean items of expenditure that are eligible for an apportionment pursuant to sections seven hundred eleven, seven hundred fifty-one and/or seven hundred fifty-three of this title" (§ 701.2)
+    *   "When a text-book shall have been designated for use in a school district or city... it shall not be lawful to supersede such text-book by any other book within a period of five years from the time of such designation, except upon a three-fourths vote of the board of education" (§ 702.1)
+*   **Why:** To track the official designation of textbooks by school districts, including compliance with the five-year rule for changes.
+*   **One row represents:** A textbook designated for use by a school district.
+*   **Covers:** All textbooks, courseware, and electronic instructional materials designated for use in schools.
+*   **Columns:**
+    *   Designation ID
+    *   School District ID
+    *   Textbook ID
+    *   Textbook Title
+    *   Author
+    *   Publisher
+    *   ISBN/Identifier
+    *   Material Type (Book, Courseware, Electronic Format, Other)
+    *   Designation Date
+    *   Effective Start Date
+    *   Superseded (Yes/No)
+    *   Supersession Date (if applicable)
+    *   Supersession Vote (if applicable, e.g., 3/4 vote)
+    *   Superseded By Designation ID (links to another row in this dataset, if applicable)
+
+**15. School District Textbook Purchases**
+
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to purchase and to loan upon individual request, textbooks" (§ 701.3)
+    *   "No school district shall be required to purchase or otherwise acquire textbooks, the cost of which shall exceed an amount equal to the apportionment pursuant to subdivision six of this section plus a minimum lottery grant" (§ 701.4)
+    *   "The commissioner... shall apportion to each school district an amount equal to the cost of the textbooks purchased and loaned by the district pursuant to this section in the base year" (§ 701.6)
+*   **Why:** To track the acquisition of textbooks by school districts, essential for aid calculations and inventory management.
+*   **One row represents:** A purchase of a specific textbook by a school district.
+*   **Covers:** All purchases of textbooks by school districts.
+*   **Columns:**
+    *   Purchase ID
+    *   School District ID
+    *   Textbook ID (links to Dataset 14)
+    *   Purchase Date
+    *   Quantity Purchased
+    *   Unit Cost
+    *   Total Cost
+    *   Vendor ID
+
+**16. School District Textbook Loans**
+
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to purchase and to loan upon individual request, textbooks, to all children residing in such district who are enrolled in a public school... and to all children residing in such district who are enrolled in a nonpublic school." (§ 701.3)
+    *   "Textbooks loaned to children enrolled in said nonpublic schools shall be textbooks which are designated for use in any public schools of the state or are approved by any boards of education, trustees or other school authorities." (§ 701.3)
+    *   "Such textbooks are to be loaned free to such children subject to such rules and regulations as are or may be prescribed by the board of regents and such boards of education, trustees or other school authorities." (§ 701.3)
+    *   "no school district shall be required to loan textbooks in excess of the textbooks owned or acquired by such district; provided, however that all textbooks owned or acquired by such district shall be loaned to children residing in the district and so enrolled in public and nonpublic schools on an equitable basis." (§ 701.4)
+    *   "a board of education may adopt regulations specifying the date by which requests for the purchase and loan of textbooks must be received by the district." (§ 701.8)
+*   **Why:** To track the distribution of textbooks to students, ensuring equitable access and compliance with loan policies.
+*   **One row represents:** A loan of a specific textbook to a student.
+*   **Covers:** All textbook loans made by school districts to students.
+*   **Columns:**
+    *   Loan ID
+    *   School District ID
+    *   Textbook ID (links to Dataset 14)
+    *   Student ID
+    *   Student Enrollment Type (Public School, Nonpublic School)
+    *   Request Date
+    *   Loan Date
+    *   Return Date
+    *   Condition on Return
+    *   Loan Status (Active, Returned, Overdue, Lost)
+
+**17. Seditious Textbook Complaints & Disapprovals**
+
+*   **Quotes:**
+    *   "No text-book in any subject used in the public schools in this state shall contain any matter or statements of any kind which are seditious in character, disloyal to the United States or favorable to the cause of any foreign country with which the United States may be at war." (§ 704)
+    *   "Any person may present a written complaint to such commission that a text-book... contains matter or statements in violation of this section, specifying such matter or statements in detail." (§ 704)
+    *   "If the commission determine that the text-book against which complaint is made contains any such matter or statements, it shall issue a certificate disapproving the use of such text-book in the public schools of this state, together with a statement of the reasons for its disapproval, specifying the matter found unlawful." (§ 704)
+    *   "after the receipt of such certificate the use of a text-book so disapproved shall be discontinued in such school district." (§ 704)
+    *   "Any contract hereafter made by any such board of education or other school authorities for the purchase of a text-book in any of such subjects, which has been so disapproved, shall be void." (§ 704)
+*   **Why:** To track complaints regarding seditious or disloyal content in textbooks and the commission's determinations and disapprovals.
+*   **One row represents:** A complaint regarding a textbook's content or a commission's disapproval.
+*   **Covers:** All complaints received about textbook content and all official disapprovals issued by the commission.
+*   **Columns:**
+    *   Complaint/Disapproval ID
+    *   Textbook ID (links to Dataset 14)
+    *   Complainant Name (if provided)
+    *   Complaint Date
+    *   Details of Complaint
+    *   Commission Review Date
+    *   Commission Decision (Approved, Disapproved)
+    *   Disapproval Certificate Date (if disapproved)
+    *   Reasons for Disapproval
+    *   Affected School Districts (list of IDs)
+
+**18. School District Library Material Designations**
+
+*   **Quotes:**
+    *   "boards of education... shall designate school library materials to be used in the schools in the district." (§ 711.1)
+    *   "School library materials, for the purposes of this article shall mean digital materials, audio/visual materials and printed materials that may or may not require magnification which meet all of the following criteria: (1) materials which are catalogued and processed as part of the school library or media center for use by elementary and/or secondary school children and teachers; (2) materials which with reasonable care and use may be expected to last more than one year; and (3) materials which would not be eligible for aid pursuant to sections seven hundred one and seven hundred fifty-one of this title." (§ 711.2)
+*   **Why:** To track the official designation of school library materials by school districts.
+*   **One row represents:** A school library material designated for use by a school district.
+*   **Covers:** All digital, audio/visual, and printed materials designated as school library materials.
+*   **Columns:**
+    *   Designation ID
+    *   School District ID
+    *   Library Material ID
+    *   Material Title
+    *   Author/Creator
+    *   Publisher
+    *   ISBN/Identifier (if applicable)
+    *   Material Type (Digital, Audio/Visual, Printed)
+    *   Designation Date
+    *   Effective Start Date
+    *   Catalogued as Library Material (Yes/No)
+    *   Expected Lifespan > 1 Year (Yes/No)
+
+**19. School District Library Material Purchases**
+
+*   **Quotes:**
+    *   "No school district shall be required to purchase or otherwise acquire school library materials, the cost of which shall exceed an amount equal to the library materials factor multiplied by the sum of the public school district enrollment and the nonpublic school enrollment" (§ 711.3)
+    *   "the commissioner... shall apportion to each school district an amount equal to the cost of the school library materials purchased by the district pursuant to this section in the base year" (§ 711.4)
+*   **Why:** To track the acquisition of school library materials by school districts, essential for aid calculations and inventory management.
+*   **One row represents:** A purchase of a specific library material by a school district.
+*   **Covers:** All purchases of school library materials by school districts.
+*   **Columns:**
+    *   Purchase ID
+    *   School District ID
+    *   Library Material ID (links to Dataset 18)
+    *   Purchase Date
+    *   Quantity Purchased
+    *   Unit Cost
+    *   Total Cost
+    *   Vendor ID
+
+**20. School District Library Material Loans**
+
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to loan upon request of an individual or a group of individual pupils... school library materials." (§ 712.1)
+    *   "School library materials loaned to such pupils attending private schools shall be school library materials which are designated for use in any public elementary or secondary schools of the state or are approved by any board of education, trustees or other school authorities." (§ 712.1)
+    *   "Such school library materials are to be loaned free to such children subject to such rules and regulations as are or may be prescribed by the board of regents and such boards of education, trustees or other school authorities." (§ 712.1)
+    *   "No school district shall be required to loan school library materials in excess of the school library materials owned or acquired by such district pursuant to section seven hundred eleven of this article. Such school library materials shall be loaned on an equitable basis to children defined in subdivision three of section seven hundred eleven of this article attending in the current year." (§ 712.2)
+*   **Why:** To track the distribution of school library materials to students, ensuring equitable access and compliance with loan policies.
+*   **One row represents:** A loan of a specific library material to a student.
+*   **Covers:** All school library material loans made by school districts to students.
+*   **Columns:**
+    *   Loan ID
+    *   School District ID
+    *   Library Material ID (links to Dataset 18)
+    *   Student ID
+    *   Student Enrollment Type (Public School, Nonpublic School)
+    *   Request Date
+    *   Loan Date
+    *   Return Date
+    *   Condition on Return
+    *   Loan Status (Active, Returned, Overdue, Lost)
+
+**21. School District Software Designations**
+
+*   **Quotes:**
+    *   "boards of education... shall designate software programs to be used in conjunction with computers of the school district." (§ 751.1)
+    *   "A software program, for the purposes of this article shall mean (a) a computer program which a pupil is required to use as a learning aid in a particular class in the school the pupil legally attends, or (b) for expenses incurred after July first, two thousand nine, any content-based instructional materials in an electronic format that are aligned with state standards which are accessed or delivered through the internet based on a subscription model." (§ 751.2)
+*   **Why:** To track the official designation of software programs by school districts.
+*   **One row represents:** A software program designated for use by a school district.
+*   **Covers:** All software programs and electronic instructional materials designated for use in schools.
+*   **Columns:**
+    *   Designation ID
+    *   School District ID
+    *   Software ID
+    *   Software Title
+    *   Publisher
+    *   Version
+    *   License Type (e.g., perpetual, subscription)
+    *   Designation Date
+    *   Effective Start Date
+    *   Required Learning Aid (Yes/No)
+    *   Content-Based Instructional Material (Yes/No)
+
+**22. School District Software Purchases**
+
+*   **Quotes:**
+    *   "No school district shall be required to purchase or otherwise acquire software programs, the cost of which shall exceed an amount equal to the software factor multiplied by the sum of the public school district enrollment and the nonpublic school enrollment" (§ 751.3)
+    *   "The commissioner... shall apportion to each school district an amount equal to the cost of the software programs purchased by the district pursuant to this section in the base year" (§ 751.4)
+*   **Why:** To track the acquisition of software programs by school districts, essential for aid calculations and license management.
+*   **One row represents:** A purchase of a specific software program by a school district.
+*   **Covers:** All purchases of software programs by school districts.
+*   **Columns:**
+    *   Purchase ID
+    *   School District ID
+    *   Software ID (links to Dataset 21)
+    *   Purchase Date
+    *   Quantity/Licenses Purchased
+    *   Unit Cost
+    *   Total Cost
+    *   Vendor ID
+
+**23. School District Software Loans**
+
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to loan upon request of an individual or a group of individual pupils... software programs." (§ 752.1)
+    *   "Software programs loaned to such pupils attending private schools shall be software programs which are designated for use in any public elementary or secondary schools of the state or are approved by any board of education, trustees or other school authorities." (§ 752.1)
+    *   "Such software programs are to be loaned free to such children subject to such rules and regulations as are or may be prescribed by the board of regents and such boards of education, trustees or other school authorities." (§ 752.1)
+    *   "No school district shall be required to loan software programs in excess of the software programs owned or acquired by such district" (§ 752.2)
+*   **Why:** To track the distribution of software programs to students, ensuring equitable access and compliance with loan policies.
+*   **One row represents:** A loan of a specific software program to a student.
+*   **Covers:** All software program loans made by school districts to students.
+*   **Columns:**
+    *   Loan ID
+    *   School District ID
+    *   Software ID (links to Dataset 21)
+    *   Student ID
+    *   Student Enrollment Type (Public School, Nonpublic School)
+    *   Request Date
+    *   Loan Date
+    *   Return Date
+    *   Condition on Return
+    *   Loan Status (Active, Returned, Overdue, Lost)
+
+**24. College Course Catalog**
+
+*   **Quotes:**
+    *   "Instructional material or materials" means textbooks and other materials written and published by commercial publishers primarily for use by students in postsecondary instruction that are required or essential to a student's success in a course of study in which a student with a disability is enrolled. The determination of which materials are "required or essential to student success" shall be made by the instructor of the course." (§ 715.1.b)
+    *   "Certifies that the commercially published printed instructional material is for use by the student in connection with a course in which he or she is registered or enrolled at the college." (§ 715.2.c)
+    *   "Textbook" means any textbook that is adopted for a course, as determined by the faculty member or members or entity charged with choosing that textbook." (§ 720.4)
+    *   "adopter" means any faculty member or academic department at institutions of higher learning responsible for considering and choosing textbooks and/or supplemental materials to be utilized in connection with the accredited courses taught at institutions of higher education." (§ 720.6)
+*   **Why:** To maintain a master list of courses offered by institutions of higher education, essential for tracking textbook adoptions and instructional material requests.
+*   **One row represents:** A course offered by a college.
+*   **Covers:** All courses offered by institutions of higher education.
+*   **Columns:**
+    *   Course ID
+    *   College ID
+    *   Course Name
+    *   Department
+    *   Instructor ID
+    *   Academic Year/Term
+
+**25. College Student Records**
+
+*   **Quotes:**
+    *   "Certifies that the electronic version of the commercially published printed instructional materials will be used by a student with a disability." (§ 715.2.a)
+    *   "Certifies that the student has a disability that prevents him or her from using standard commercially published instructional materials." (§ 715.2.b)
+    *   "Certifies that the commercially published printed instructional material is for use by the student in connection with a course in which he or she is registered or enrolled at the college." (§ 715.2.c)
+*   **Why:** To track student enrollment and disability status at colleges, necessary for fulfilling instructional material requests for disabled students.
+*   **One row represents:** A student enrolled in a college.
+*   **Covers:** All students enrolled in institutions of higher education.
+*   **Columns:**
+    *   Student ID
+    *   College ID
+    *   Enrollment Date
+    *   Disability Status (Yes/No)
+    *   Disability Type (if provided)
+
+**26. College Textbook Adoption Orders**
+
+*   **Quotes:**
+    *   "Textbooks shall be sold in the same manner as ordered by such faculty member or entity in charge of selecting textbooks for courses." (§ 722)
+    *   "Each institution of higher education shall institute policies that encourage faculty members or the entity in charge of textbook adoptions to place their orders with sufficient lead-time to enable the university, or contract-managed, bookstore to confirm the availability of the requested materials and, when appropriate, the availability of used textbooks or alternate digital formats." (§ 723)
+*   **Why:** To track faculty and department decisions on textbooks for courses, ensuring timely ordering and availability.
+*   **One row represents:** A textbook adoption order placed by a faculty member or department for a specific course.
+*   **Covers:** All textbook adoption orders made by faculty or academic departments at institutions of higher education.
+*   **Columns:**
+    *   Adoption Order ID
+    *   College ID
+    *   Course ID (links to Dataset 24)
+    *   Faculty Member ID (or Department ID)
+    *   Textbook ID
+    *   Textbook Title
+    *   Author
+    *   ISBN
+    *   Edition
+    *   Required/Recommended
+    *   Bundled/Unbundled (as ordered)
+    *   Supplemental Materials Included (if bundled)
+    *   Quantity Ordered
+    *   Order Date
+    *   Lead Time Provided (days)
+    *   Bookstore Confirmation Date
+    *   Availability of Used Textbooks (Yes/No)
+    *   Availability of Alternate Digital Formats (Yes/No)
+
+**27. Publisher Textbook Price Quotes**
+
+*   **Quotes:**
+    *   "To ensure pricing transparency, all publishers of college textbooks shall, on request, make readily available to prospective adopters of their products who are members of the faculties or purchasing entities of institutions of higher education the price at which the publisher would make the products available to the college bookstore that would offer the products to students." (§ 721.1)
+    *   "For purposes of this section, the term "products" means all versions of a textbook or set of textbooks, except custom textbooks or special editions of textbooks, available in the subject area for which a prospective adopter is teaching a course, including supplemental materials, both when sold together or separately from a textbook." (§ 721.2)
+    *   "In the event such product is unavailable as ordered, the bookstore, faculty, and relevant publisher shall work together to provide the best possible substitute that most closely matches the requested item or items, and the publisher shall make available the price of such substitute or substitutes readily available." (§ 722)
+*   **Why:** To track price quotes provided by publishers to colleges, ensuring pricing transparency for textbook adoptions.
+*   **One row represents:** A price quote provided by a publisher for a specific textbook product.
+*   **Covers:** All price quotes provided by publishers to prospective adopters at institutions of higher education.
+*   **Columns:**
+    *   Quote ID
+    *   Publisher ID
+    *   Textbook ID
+    *   Textbook Title
+    *   Author
+    *   ISBN
+    *   Product Version (e.g., Hardcover, Paperback, Digital, Bundled, Unbundled)
+    *   Price to College Bookstore
+    *   Date of Quote
+    *   Adopter ID (Faculty Member ID or Department ID)
+    *   Institution ID (College ID)
+    *   Substitute Product (Yes/No, if applicable)
+    *   Substitute Product ID (if applicable)
+
+**28. College Disability Instructional Material Requests**
+
+*   **Quotes:**
+    *   "An individual, firm, partnership or corporation that publishes or manufactures commercially published printed instructional materials for students attending college shall provide for purchase by students with disabilities such printed instructional material in an electronic format mutually agreed upon by the commercial publisher or manufacturer and the commissioner." (§ 715.2)
+    *   "These commercially published printed instructional materials must be converted to an electronic format using the most updated software technology available to the public at that time." (§ 715.2)
+    *   "The computer files or electronic versions of the commercially published printed instructional material shall be available to students with disabilities at a cost comparable to the printed version of such commercially published material and in a timely manner, upon receipt of a written request that does all of the following: (a) Certifies that the electronic version... will be used by a student with a disability. (b) Certifies that the student has a disability... (c) Certifies that the commercially published printed instructional material is for use by the student in connection with a course... (d) Is signed by the coordinator of services for students with disabilities at the college or by the campus or college official responsible for monitoring compliance with the Americans with Disabilities Act of 1990" (§ 715.2.a-d)
+    *   "An individual, firm, partnership or corporation specified in subdivision two of this section may also require that... the request shall include a statement signed by the student agreeing to both of the following: (a) He or she will use the electronic copy... solely for his or her own educational purposes. (b) He or she will not copy or duplicate the commercially published printed instructional material or electronic copy for use by others consistent with the requirements of the copyright revision act of 1976" (§ 715.3)
+    *   "An individual, firm, partnership or corporation that, for commercial purposes, publishes or manufactures nonprinted instructional materials for students attending college shall provide computer files or other electronic versions of such nonprinted instructional materials for use by students attending such college subject to the same conditions set forth in subdivisions two and three of this section for printed instructional materials, when technology is available to convert these nonprinted instructional materials" (§ 715.5)
+*   **Why:** To track requests from students with disabilities for instructional materials in electronic formats and ensure compliance with accessibility requirements.
+*   **One row represents:** A request for instructional materials in an electronic format for a student with a disability.
+*   **Covers:** All requests for accessible instructional materials made by or on behalf of students with disabilities at colleges.
+*   **Columns:**
+    *   Request ID
+    *   College ID
+    *   Student ID (links to Dataset 25)
+    *   Course ID (links to Dataset 24)
+    *   Material ID (e.g., ISBN for textbook)
+    *   Material Title
+    *   Author
+    *   Publisher
+    *   Material Type (Printed, Nonprinted)
+    *   Requested Electronic Format
+    *   Request Date
+    *   Certification of Disability (Yes/No)
+    *   Certification of Course Use (Yes/No)
+    *   Coordinator/Official Signature Date
+    *   Student Agreement to Use (Yes/No)
+    *   Student Agreement to Not Copy (Yes/No)
+    *   Date Material Provided
+    *   Cost to Student
+    *   Timeliness of Provision (e.g., within X days)
+
+**29. Faculty Textbook-Related Compensation & Materials**
+
+*   **Quotes:**
+    *   "No employee at an institution of higher education shall demand or receive any payment, loan, advance, goods, or deposit of money, present or promised, for adopting specific course materials required for coursework or instruction; with the exception that the employee may receive: 1. sample copies, instructor's copies, or instructional material, that are not to be sold; 2. royalties or other compensation from sales of textbooks that include such instructor's own writing or work; 3. honoraria for academic peer review of course materials; or 4. training in the use of course materials and learning technologies." (§ 724)
+*   **Why:** To track permitted forms of compensation and materials received by faculty related to textbook adoptions, ensuring compliance with ethical guidelines.
+*   **One row represents:** A record of a faculty member receiving a permitted item or compensation related to textbook adoption.
+*   **Covers:** All instances where faculty members receive sample materials, royalties, honoraria, or training related to course materials.
+*   **Columns:**
+    *   Record ID
+    *   Faculty Member ID
+    *   College ID
+    *   Item Type (Sample Copy, Royalty, Honorarium, Training)
+    *   Description of Item/Compensation
+    *   Textbook ID (if applicable, links to Dataset 26)
+    *   Date Received
+    *   Value (if applicable)
+    *   Source (e.g., Publisher, Institution)
+
+---
+
+**Non-Tabular Information:**
+
+*   **Test Registration Forms:** While containing data, the form itself is a document. The data is extracted into tabular datasets (e.g., Test Subject Performance Records).
+*   **Test Answer Sheets/Records:** Raw input documents for test subject responses. The data is extracted into tabular datasets (e.g., Test Subject Question Responses).
+*   **Rules for Converting Raw Scores:** Policy documents explaining scoring methodology.
+*   **Explanation of Scoring Rules:** Explanatory documents for test subjects.
+*   **Test Reports (Aggregated):** Reports showing mean-scaled scores, standard deviations, and score distributions by demographic groups (§ 341.4.b). These are outputs derived from tabular data, not the raw tabular data itself.
+*   **Item Reports (Aggregated):** Reports showing correct answer-rates, R-biserial correlations, and differential item functioning data (§ 341.5.b, d). These are outputs derived from tabular data.
+*   **Documentation of Differential Item Functioning Calculation Methods:** Explanatory documents for the methodology used (§ 341.5.d).
+*   **Copies of Test Questions:** The actual text/images of test questions (§ 342.1.a).
+*   **Corresponding Acceptable Answers:** The actual answers for test questions (§ 342.1.b).
+*   **Test Subject's Answer Sheet/Record:** The physical or digital record of a test subject's responses (§ 342.2.b).
+*   **Correct Answer Sheet:** The master answer key for a test (§ 342.2.b).
+*   **Test Registration Form (for disclosure election):** A specific form for subjects to elect disclosure (§ 342.2).
+*   **Correspondence Challenging Test Questions:** The actual letters/emails from test subjects or institutions (§ 342.8.a).
+*   **Test Agency's Written Responses to Challenges:** The actual letters/emails from the agency (§ 342.8.b).
+*   **Information Provided with Registration Form or Score Report:** Statements on test purposes, score interpretation, reporting methods, agency promises, privacy policies, retention policies, disclosure access, test section descriptions, accommodations for disabled subjects, administration procedures, score use recommendations, additional information sources, test subject rights, and fairness procedures (§ 343.1). These are informational documents.
+*   **Study on Effects of Pretesting:** A research document (§ 344-a).
+*   **Written Notice of Score Withholding:** The formal letter sent to a test subject whose score is suspect (§ 344-b.2, 3).
+*   **Commissioner's Regulations:** Regulations promulgated to implement the article (§ 345).
+*   **Computerized Test Review Process Report:** A report detailing the implementation of the review process for computerized tests (§ 346).
+*   **Advisory Committee Study Design:** A document outlining the plan for data analysis (§ 346-a.3).
+*   **Advisory Committee Reports to State Legislature:** Findings and recommendations documents (§ 346-a.5).
+*   **Textbook Catalogs/Bulletins (College):** Informational documents for applicants (§ 343.4).
+*   **Sample Test Forms (SAT Subject Tests):** Representative test documents (§ 342.5-b).
+*   **Updated Information (SAT Subject Tests):** Descriptions and sample items for new/changed tests (§ 342.5-b).
+*   **Guidelines (Instructional Materials for Disabled Students):** Information, training, technical guidance, and best practices documents (§ 715.1.h).

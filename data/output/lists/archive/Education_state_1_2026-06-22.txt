@@ -1,0 +1,450 @@
+**Data Systems for Education Department Legal Requirements**
+
+**1. Harassment, Bullying, and Discrimination Incident Reports**
+
+**Quotes:**
+*   § 12.1 "No student shall be subjected to harassment or bullying by employees or students on school property or at a school function; nor shall any student be subjected to discrimination based on a person's actual or perceived race, color, weight, national origin, ethnic group, religion, religious practice, disability, sexual orientation, gender, or sex by school employees or students on school property or at a school function."
+*   § 13.1.b "enable students and parents to make an oral or written report of harassment, bullying or discrimination to teachers, administrators and other school personnel that the school district deems appropriate"
+*   § 13.1.c "require school employees who witness harassment, bullying or discrimination, or receive an oral or written report of harassment, bullying or discrimination, to promptly orally notify the principal, superintendent or the principal's or superintendent's designee not later than one school day after such school employee witnesses or receives a report of harassment, bullying or discrimination, and to file a written report with the principal, superintendent or the principal or superintendent's designee not later than two school days after making such oral report"
+*   § 13.1.d "require the principal, superintendent or the principal's or superintendent's designee to lead or supervise the thorough investigation of all reports of harassment, bullying and discrimination, and to ensure that such investigation is completed promptly after receipt of any written reports made under this section"
+*   § 13.1.e "require the school, when an investigation reveals any such verified harassment, bullying or discrimination, to take prompt actions reasonably calculated to end the harassment, bullying or discrimination, eliminate any hostile environment, create a more positive school culture and climate, prevent recurrence of the behavior, and ensure the safety of the student or students against whom such harassment, bullying or discrimination was directed."
+*   § 13.1.f "prohibit retaliation against any individual who, in good faith, reports, or assists in the investigation of, harassment, bullying or discrimination"
+*   § 13.1.h "require the principal to make a regular report on data and trends related to harassment, bullying and discrimination to the superintendent"
+*   § 13.1.i "require the principal, superintendent or the principal's or superintendent's designee, to notify promptly the appropriate local law enforcement agency when such principal, superintendent or the principal's or superintendent's designee, believes that any harassment, bullying or discrimination constitutes criminal conduct"
+*   § 15 "The commissioner shall create a procedure under which material incidents of harassment, bullying and discrimination on school grounds or at a school function are reported to the department at least on an annual basis. Such procedure shall provide that such reports shall, wherever possible, also delineate the specific nature of such incidents of harassment, bullying and discrimination, provided that the commissioner may comply with the requirements of this section through use of the existing uniform violent incident reporting system."
+*   § 21.1 "No student shall be subjected to harassment or bullying, including cyberbullying, by other students on school property or at a school function."
+*   § 21.3 "School employees who witness bullying or harassment, or receive an oral or written report of bullying or harassment, shall promptly notify the principal or head of school or the principal's or head of school's designee, orally not later than one school day after such school employee witnesses or receives a report of bullying and harassment, and must file a written report with the principal or head of school's designee not later than two school days after making the initial oral report."
+*   § 21.4 "Upon a report of bullying, harassment, or retaliation, the principal or head of school, or the principal or head of school's designee, must investigate promptly, communicate their findings with the victim and take immediate steps and appropriate follow-up action reasonably calculated to ensure that such conduct has stopped and ensure the safety of the student or students including retaliation against any individual who in good faith reports such bullying or assists in the investigation."
+
+**Why:** Tracking incidents, investigations, and actions is essential for compliance, reporting, and ensuring a safe school environment.
+**One row represents:** A single reported incident of harassment, bullying, or discrimination.
+**Covers:** All reported incidents of harassment, bullying, or discrimination in public and nonpublic schools, including investigations and actions taken.
+**Columns:**
+*   Incident ID
+*   School ID (Public or Nonpublic)
+*   School Type (Public, Nonpublic)
+*   Reporting Date
+*   Report Type (Oral, Written)
+*   Reporter Type (Student, Parent, Employee, Other)
+*   Reporter ID (if employee/student)
+*   Witnessed by Employee? (Yes/No)
+*   Incident Location (School Property, School Function, Off School Property)
+*   Incident Type (Harassment, Bullying, Discrimination, Cyberbullying)
+*   Basis of Incident (Race, Color, Weight, National Origin, Ethnic Group, Religion, Religious Practice, Disability, Sexual Orientation, Gender, Sex, Other)
+*   Description of Incident
+*   Student Victim ID(s)
+*   Student Perpetrator ID(s)
+*   Employee Perpetrator ID(s)
+*   Principal/Superintendent Designee Notified Date (Oral)
+*   Principal/Superintendent Designee Notified Date (Written)
+*   Investigation Start Date
+*   Investigation End Date
+*   Investigation Findings (Verified, Not Verified, Undetermined)
+*   Actions Taken (e.g., Intervention, Discipline, Education, Counseling, Policy Review)
+*   Date Actions Completed
+*   Hostile Environment Eliminated? (Yes/No)
+*   Recurrence Prevented? (Yes/No)
+*   Student Safety Ensured? (Yes/No)
+*   Law Enforcement Notified? (Yes/No)
+*   Law Enforcement Notification Date
+*   Retaliation Reported? (Yes/No)
+*   Retaliation Incident ID (if applicable, links to another row in this dataset)
+*   Commissioner Report Status (Reported Annually, Included in Uniform Violent Incident Reporting System)
+
+**2. Educational Agency Third-Party Data Contracts**
+
+**Quotes:**
+*   § 2-c.1.c "Shared learning infrastructure service provider" or "SLISP" shall mean any entity that collects, stores, organizes, or aggregates student information and contracts with or enters into an agreement with the department for the purposes of providing student information to a data dashboard operator for use in a data dashboard."
+*   § 2-c.1.e ""Data dashboard operator" shall mean any third party contractor owning or operating a data dashboard that contracts or otherwise enters into an agreement to utilize data and information from a SLISP."
+*   § 2-d.1.k ""Third party contractor" shall mean any person or entity, other than an educational agency, that receives student data or teacher or principal data from an educational agency pursuant to a contract or other written agreement for purposes of providing services to such educational agency, including but not limited to data management or storage services, conducting studies for or on behalf of such educational agency, or audit or evaluation of publicly funded programs."
+*   § 2-d.3.a "A parents bill of rights for data privacy and security shall be published on the website of each educational agency and shall be included with every contract an educational agency enters into with a third party contractor where the third party contractor receives student data or teacher or principal data."
+*   § 2-d.5.e "Each educational agency that enters into a contract or other written agreement with a third party contractor under which the third party contractor will receive student data or teacher or principal data shall ensure that such contract or agreement includes a data security and privacy plan that outlines how all state, federal, and local data security and privacy contract requirements will be implemented over the life of the contract, consistent with the educational agency's policy on data security and privacy."
+
+**Why:** Tracking contracts with third-party vendors handling sensitive student/teacher/principal data is crucial for oversight and compliance.
+**One row represents:** A single contract or written agreement between an educational agency and a third-party contractor.
+**Covers:** All contracts where third-party contractors receive student data or teacher/principal data from an educational agency.
+**Columns:**
+*   Contract ID
+*   Educational Agency ID
+*   Educational Agency Name
+*   Third-Party Contractor ID
+*   Third-Party Contractor Name
+*   Contract Start Date
+*   Contract End Date
+*   Data Type Involved (Student Data, Teacher/Principal Data, Both)
+*   Purpose of Data Use (e.g., Data Management, Storage, Studies, Audit, Evaluation)
+*   Parents Bill of Rights Included? (Yes/No)
+*   Data Security and Privacy Plan Included? (Yes/No)
+*   Subcontractor Data Sharing Permitted? (Yes/No)
+*   Subcontractor Data Protection Requirements Met? (Yes/No)
+*   Data Storage Location (e.g., On-premise, Cloud, Specific Region)
+*   Data Encryption Status (In motion, At rest)
+*   Data Destruction Upon Expiration (Yes/No)
+*   Accuracy Challenge Mechanism Provided? (Yes/No)
+*   Contract Status (Active, Expired, Terminated)
+*   SLISP/Data Dashboard Operator (Yes/No)
+
+**3. Data Security Incidents and Complaints**
+
+**Quotes:**
+*   § 2-d.2.b.(2) "assisting the commissioner in handling instances of data breaches as well as assisting the commissioner in due process proceedings regarding any alleged breaches of student data or teacher or principal data"
+*   § 2-d.2.b.(5) "assisting the commissioner in establishing a protocol for the submission of complaints of possible breaches of student data or teacher or principal data"
+*   § 2-d.2.b.(7) "issuing an annual report on data privacy and security activities and progress, the number and disposition of reported breaches, if any, and a summary of any complaint submitted pursuant to subparagraph five of this paragraph."
+*   § 2-d.3.b.(5) "Parents have the right to have complaints about possible breaches of student data addressed. Complaints should be directed to (insert phone number, email and mailing address here)."
+*   § 2-d.6.a "Each third party contractor that receives student data or teacher or principal data pursuant to a contract or other written agreement with an educational agency shall be required to notify such educational agency of any breach of security resulting in an unauthorized release of such data by the third party contractor or its assignees... The educational agency shall, upon notification by the third party contractor, be required to report to the chief privacy officer any such breach of security and unauthorized release of such data. The chief privacy officer shall, upon belief that such breach and unauthorized release constitutes criminal conduct, report such breach and unauthorized release to law enforcement in the most expedient way possible and without unreasonable delay."
+*   § 2-d.6.b "In the case of an unauthorized release of student data, the educational agency shall notify the parent or eligible student of the unauthorized release of student data that includes personally identifiable information from the student records of such student in the most expedient way possible and without unreasonable delay. In the case of an unauthorized release of teacher or principal data, the educational agency shall notify each affected teacher or principal of the unauthorized release of data that includes personally identifiable information from the teacher or principal's annual professional performance review in the most expedient way possible and without unreasonable delay."
+*   § 2-d.7.a "Upon receipt of a complaint or other information indicating that such an improper disclosure by a third party contractor may have occurred, the chief privacy officer shall be authorized to investigate, visit, examine and inspect the third party contractor's facilities and records and obtain documentation from, or require the testimony of, any party relating to the alleged improper disclosure of student data or teacher or principal data."
+
+**Why:** Tracking data breaches, unauthorized releases, and complaints is critical for incident response, reporting, and enforcement actions.
+**One row represents:** A single data security incident (breach or unauthorized release) or a complaint regarding improper disclosure.
+**Covers:** All reported data breaches, unauthorized releases, and complaints concerning student data or teacher/principal data.
+**Columns:**
+*   Incident/Complaint ID
+*   Type (Breach, Unauthorized Release, Complaint)
+*   Reporting Date
+*   Educational Agency ID
+*   Third-Party Contractor ID (if applicable, links to Dataset 2)
+*   Data Type Involved (Student Data, Teacher/Principal Data, Both)
+*   Description of Incident/Complaint
+*   Date of Incident/Discovery
+*   Number of Affected Students
+*   Number of Affected Teachers/Principals
+*   Personally Identifiable Information Released? (Yes/No)
+*   Notification to Educational Agency Date (if by contractor)
+*   Notification to Chief Privacy Officer Date
+*   Notification to Law Enforcement Date (if applicable)
+*   Notification to Parents/Eligible Students Date (if applicable)
+*   Notification to Teachers/Principals Date (if applicable)
+*   Cost of Notification (if by contractor)
+*   Investigation Status (Open, Closed)
+*   Investigation Findings (e.g., Verified, Not Verified, Inadvertent, Reckless, Knowing)
+*   Resolution/Disposition
+*   Sanction Imposed (Yes/No, links to Dataset 7)
+*   Criminal Conduct Reported? (Yes/No)
+
+**4. Data Privacy Requests**
+
+**Quotes:**
+*   § 2-d.2.b.(4) "formulating a procedure within the department whereby parents, students, teachers, superintendents, school board members, principals, and other persons or entities the chief privacy officer determines is appropriate, may request information pertaining to student data or teacher or principal data in a timely and efficient manner"
+*   § 2-d.3.b.(2) "Parents have the right to inspect and review the complete contents of their child's education record"
+*   § 2-d.3.c.(4) "if and how a parent, student, eligible student, teacher or principal may challenge the accuracy of the student data or teacher or principal data that is collected"
+*   § 2-d.4.g "Parents shall have the right to inspect and review their child's educational record including any student data stored or maintained by an educational agency. The department shall develop policies for school districts that: (1) provide for annual notification to parents of their right to request student data; (2) ensure security when providing student data to parents, including that only authorized individuals receive such data; and (3) specify a reasonable amount of time in which school districts should respond to such requests."
+*   § 2-c.2 "An educational agency may opt out of providing personally identifiable information to a SLISP or data dashboard operator for the purpose of creating data dashboards. An educational agency may at any time request that any personally identifiable information associated with such agency not be shared or provided to a SLISP or data dashboard operator. Such request shall be made to the department and upon receipt of such request, the department shall take all actions necessary to prevent and prohibit the sharing or providing of such information to any SLISP or data dashboard operator and that upon receipt of such request, the department shall take actions to immediately ensure that any personally identifiable information provided to any SLISP or data dashboard operator is deleted from such SLISP or operator and destroyed in a secure manner."
+*   § 2-c.3 "The commissioner and the department are hereby prohibited from providing any student information to a SLISP and the commissioner and department shall take actions to immediately ensure that any student information provided to any SLISP shall be deleted from such SLISP and destroyed in a secure manner."
+
+**Why:** Tracking requests from parents, students, teachers, and educational agencies regarding data access, accuracy, and sharing is legally mandated.
+**One row represents:** A single request related to data privacy.
+**Covers:** All requests from parents, eligible students, teachers, principals, or educational agencies concerning student data or teacher/principal data.
+**Columns:**
+*   Request ID
+*   Request Date
+*   Requestor Type (Parent, Eligible Student, Teacher, Principal, Educational Agency)
+*   Requestor ID (if applicable)
+*   Educational Agency ID (if applicable)
+*   Data Type Involved (Student Data, Teacher/Principal Data, Both)
+*   Request Type (Inspect Record, Challenge Accuracy, Opt-Out of SLISP/Dashboard, Delete Data from SLISP/Dashboard, Other)
+*   Description of Request
+*   Target Data Element(s) (if applicable)
+*   Response Due Date
+*   Response Date
+*   Response Outcome (e.g., Granted, Denied, Data Corrected, Data Deleted, Opt-Out Implemented)
+*   Reason for Denial (if applicable)
+*   Security Measures for Data Provision (e.g., Authorized Individual Verification)
+
+**5. Professional Certification Training Records**
+
+**Quotes:**
+*   § 14.5 "The commissioner shall prescribe regulations that school professionals applying on or after December thirty-first, two thousand thirteen for a certificate or license, including but not limited to a certificate or license valid for service as a classroom teacher, school counselor, school psychologist, school social worker, school administrator or supervisor or superintendent of schools shall, in addition to all other certification or licensing requirements, have completed training on the social patterns of harassment, bullying and discrimination, as defined in section eleven of this article, including but not limited to those acts based on a person's actual or perceived race, color, weight, national origin, ethnic group, religion, religious practice, disability, sexual orientation, gender or sex, the identification and mitigation of harassment, bullying and discrimination, and strategies for effectively addressing problems of exclusion, bias and aggression in educational settings."
+
+**Why:** Tracking the completion of mandatory DASA-related training for school professionals is a legal requirement for certification.
+**One row represents:** A single instance of a school professional completing a required training.
+**Covers:** All school professionals (classroom teachers, school counselors, school psychologists, school social workers, school administrators/supervisors, superintendents) completing DASA-related training for certification or licensure.
+**Columns:**
+*   Training Completion ID
+*   Professional ID
+*   Professional Name
+*   Certificate/License Type
+*   Training Date
+*   Training Provider
+*   Training Course Name/ID
+*   Training Content Covered (e.g., Harassment, Bullying, Discrimination, Cyberbullying, Exclusion, Bias, Aggression)
+*   Certification/Licensure Application Date
+*   Compliance Status (Met, Not Met)
+
+**6. Educational Agency Data Policy Compliance**
+
+**Quotes:**
+*   § 2-d.5.c "Following promulgation of regulations by the commissioner pursuant to paragraph a of this subdivision each educational agency shall ensure that it has a policy on data security and privacy in place that is consistent with applicable state and federal laws and applied to student data and, where applicable, to teacher or principal data. Such policy shall be published on the educational agency's website, if it exists, and notice of such policy shall be provided to all officers and employees of the educational agency."
+*   § 2-d.5.d "Each educational agency shall ensure that it has in place provisions in its contracts with third party contractors or in separate data sharing and confidentiality agreements that require that confidentiality of the shared student data or teacher or principal data be maintained in accordance with federal and state law and the educational agency's policy on data security and privacy."
+*   § 13.1.k "require each school, at least once during each school year, to provide all school employees, students and parents with a written or electronic copy of the school district's policies created pursuant to this section, or a plain-language summary thereof, including notification of the process by which students, parents and school employees may report harassment, bullying and discrimination. This subdivision shall not be construed to require additional distribution of such policies and guidelines if they are otherwise distributed to school employees, students and parents"
+*   § 13.1.l "maintain current versions of the school district's policies created pursuant to this section on the school district's internet website, if one exists"
+*   § 21.2 "Every school, subject to this section, shall adopt a written in plain-language and age-appropriate anti-bullying and harassment policy, which must be published on the school's website or internal parent/student portal and shared annually with employees, parents, and students."
+
+**Why:** Tracking whether educational agencies have and properly disseminate required data privacy and DASA policies is essential for compliance and oversight.
+**One row represents:** The compliance status of a specific educational agency regarding a required policy.
+**Covers:** All educational agencies' compliance with data security/privacy policies and DASA/anti-bullying policies.
+**Columns:**
+*   Educational Agency ID
+*   Educational Agency Name
+*   Policy Type (Data Security & Privacy, DASA/Anti-Bullying)
+*   Policy Status (In Place, Draft, Not In Place)
+*   Policy Adoption Date
+*   Website Publication Status (Published, Not Published)
+*   Website URL (if published)
+*   Annual Distribution to Employees Status (Completed, Pending)
+*   Annual Distribution to Students Status (Completed, Pending)
+*   Annual Distribution to Parents Status (Completed, Pending)
+*   Date of Last Distribution
+*   Notice to Officers/Employees Provided? (Yes/No)
+*   Contractual Provisions for Third-Party Data Confidentiality? (Yes/No)
+*   Compliance Officer/Contact
+
+**7. Third-Party Contractor Sanctions**
+
+**Quotes:**
+*   § 2-d.6.d "Each violation of a third party contractor pursuant to paragraph a of this subdivision shall be punishable by a civil penalty of the greater of five thousand dollars or up to ten dollars per student, teacher, and principal whose data was released, provided that the latter amount shall not exceed the maximum penalty under paragraph (a) of subdivision six of section eight hundred ninety-nine-aa of the general business law."
+*   § 2-d.6.e "If the chief privacy officer determines that a third party contractor or its assignee, in violation of applicable state or federal law... has released any student data or teacher or principal data... the chief privacy officer, after affording the third party contractor with notice and an opportunity to be heard, shall be authorized to: (1) order that the third party contractor be precluded from accessing student data or teacher or principal data... for a fixed period of up to five years; and/or (2) order that a third party contractor or assignee who knowingly or recklessly allowed for the unauthorized release of student data or teacher or principal data be precluded from accessing student data or teacher or principal data from any educational agency in the state for a fixed period of up to five years; and/or (3) order that a third party contractor or assignee who knowingly or recklessly allowed for the unauthorized release of student data or teacher or principal data shall not be deemed a responsible bidder or offerer on any contract with an educational agency... for a fixed period of up to five years; and/or (4) require the third party contractor to provide training at the contractor's expense...; and/or (5) if it is determined that the unauthorized release... was inadvertent and done without intent, knowledge, recklessness or gross negligence, the commissioner may determine that no penalty be issued upon the third party contractor."
+*   § 2-d.7.b "Except as provided under paragraph d of subdivision six of this section, each violation of any provision of this section by a third party contractor or its assignee shall be punishable by a civil penalty of up to one thousand dollars; a second violation by the same third party contractor involving the same student data or teacher or principal data shall be punishable by a civil penalty of up to five thousand dollars; any subsequent violation by the same third party contractor involving the same student date or teacher or principal data shall be punishable by a civil penalty of up to ten thousand dollars."
+
+**Why:** Tracking sanctions imposed on third-party contractors for data privacy violations is necessary for enforcement and accountability.
+**One row represents:** A single sanction or penalty imposed on a third-party contractor.
+**Covers:** All civil penalties, access preclusions, debarments, and training requirements imposed on third-party contractors.
+**Columns:**
+*   Sanction ID
+*   Third-Party Contractor ID (links to Dataset 2)
+*   Third-Party Contractor Name
+*   Related Incident/Complaint ID (links to Dataset 3)
+*   Date of Determination
+*   Violation Type (e.g., Unauthorized Release, Failure to Notify, Policy Violation)
+*   Determination (e.g., Knowing, Reckless, Inadvertent, Gross Negligence)
+*   Sanction Type (Civil Penalty, Access Preclusion, Statewide Access Preclusion, Debarment, Training Requirement, No Penalty)
+*   Penalty Amount (if civil penalty)
+*   Preclusion Start Date (if access preclusion)
+*   Preclusion End Date (if access preclusion)
+*   Scope of Preclusion (Specific Agency, Statewide)
+*   Debarment Start Date (if debarment)
+*   Debarment End Date (if debarment)
+*   Training Required? (Yes/No)
+*   Training Completion Status (if required)
+*   Appeal Status (e.g., Pending, Upheld, Overturned)
+
+**8. Third-Party Contractor Employee Training Records**
+
+**Quotes:**
+*   § 2-d.5.e "Each educational agency that enters into a contract or other written agreement with a third party contractor under which the third party contractor will receive student data or teacher or principal data shall ensure that such contract or agreement includes a data security and privacy plan that outlines how all state, federal, and local data security and privacy contract requirements will be implemented over the life of the contract, consistent with the educational agency's policy on data security and privacy. Such plan shall include, but shall not be limited to, a signed copy of the parents bill of rights for data privacy and security, and a requirement that any officers or employees of the third party contractor and its assignees who have access to student data or teacher or principal data have received or will receive training on the federal and state law governing confidentiality of such data prior to receiving access."
+*   § 2-d.6.e.(4) "require the third party contractor to provide training at the contractor's expense on the federal and state law governing confidentiality of student data and/or teacher or principal data and the provisions of this section to all its officers and employees with access to such data, prior to being permitted to receive subsequent access to such data from the educational agency from which the contractor obtained the data that was improperly disclosed or from any educational agency"
+
+**Why:** Tracking mandatory training for third-party contractor employees handling sensitive data is a contractual and legal requirement.
+**One row represents:** A single instance of a third-party contractor employee completing required data privacy and security training.
+**Covers:** All officers and employees of third-party contractors and their assignees who have access to student data or teacher/principal data.
+**Columns:**
+*   Training Record ID
+*   Third-Party Contractor ID (links to Dataset 2)
+*   Employee ID (Contractor's internal ID)
+*   Employee Name
+*   Training Date
+*   Training Provider
+*   Training Content (e.g., Federal/State Privacy Laws, Contractual Obligations, Agency Policy)
+*   Access Granted Date (to data)
+*   Training Status (Completed, Required, Overdue)
+*   Mandated by Sanction? (Yes/No, links to Dataset 7)
+
+**9. Education Department Employee Records**
+
+**Quotes:**
+*   § 102 "The commissioner of education shall appoint, subject to the approval of the regents, such associate and assistant commissioners as he shall deem necessary for the proper organization and general classification of the work of the department, and assign to such associate and assistant commissioners the work which shall be under their respective supervision."
+*   § 104 "The commissioner of education, subject to the approval of the regents, shall have power, in conformity with their rules, to appoint all other needed officers and employees and fix their titles, duties and salaries."
+
+**Why:** Managing department staff requires tracking basic employee information, appointments, and roles.
+**One row represents:** A single employee of the Education Department.
+**Covers:** All appointed officers and employees of the Education Department.
+**Columns:**
+*   Employee ID
+*   Employee Name
+*   Position/Title
+*   Appointment Date
+*   Department/Division/Bureau
+*   Supervisor ID (links to another row in this dataset)
+*   Salary
+*   Employment Status (Active, Leave, Terminated)
+*   Contact Information (Email, Phone)
+*   Associate/Assistant Commissioner (Yes/No)
+*   Regents Approval Date (if applicable)
+
+**10. Employee Disciplinary Actions**
+
+**Quotes:**
+*   § 105 "With the approval of the regents, the commissioner of education may, at his pleasure, remove from office any assistant commissioner, or other appointive officer or employee; and, when the regents are not in session, the commissioner may, during his pleasure, suspend, without salary, any such officer or employee, but not longer than till the adjournment of the succeeding meeting of the regents."
+
+**Why:** Tracking removals and suspensions of department employees is necessary for HR and legal compliance.
+**One row represents:** A single disciplinary action taken against an Education Department employee.
+**Covers:** All removals and suspensions of Education Department employees.
+**Columns:**
+*   Action ID
+*   Employee ID (links to Dataset 9)
+*   Employee Name
+*   Action Type (Removal, Suspension)
+*   Action Date
+*   Reason for Action
+*   Regents Approval Date (if applicable)
+*   Suspension Start Date (if suspension)
+*   Suspension End Date (if suspension)
+*   Salary Impact (e.g., Without Salary)
+*   Outcome (e.g., Final, Appealed)
+
+**11. Optional Retirement Program Participant Records**
+
+**Quotes:**
+*   § 180. Definitions.
+*   § 181. Education department optional retirement program established.
+*   § 182. Rates of contribution.
+*   § 183. Election.
+*   § 184. Survivor's benefits.
+*   § 185. Social security.
+*   § 186. State not liable for payment of benefits.
+*   § 187. Inconsistent provisions of other acts superseded.
+
+**Why:** Managing the optional retirement program requires tracking participant enrollment, contributions, and benefit elections.
+**One row represents:** A single participant in the Education Department Optional Retirement Program.
+**Covers:** All employees participating in the Education Department Optional Retirement Program.
+**Columns:**
+*   Participant ID
+*   Employee ID (links to Dataset 9)
+*   Enrollment Date
+*   Contribution Rate
+*   Contribution Amount (per period)
+*   Retirement Plan Vendor
+*   Survivor's Benefit Election (Yes/No)
+*   Designated Beneficiary(ies)
+*   Social Security Status
+*   Program Status (Active, Retired, Terminated)
+*   Last Contribution Date
+
+**12. Public Good Service Program Placements (Infants)**
+
+**Quotes:**
+*   § 101-a "The commissioner of education shall promulgate rules and regulations for the supervision, by school districts, of programs of performing services for the public good by certain infants pursuant to the provisions of sections seven hundred fifty-eight-a and 353.6 of the family court act. Such rules and regulations, shall include, but not be limited to, provisions (a) assuring that the conditions of work, including wages, meet the standards therefor prescribed pursuant to the labor law; (b) affording coverage to the child under the workers' compensation law; (c) assuring that the entity receiving such services shall not utilize the same to replace its regular employees; and (d) providing for reports to the family court not less frequently than every six months, unless the family court orders otherwise."
+
+**Why:** Supervising public good service programs for infants requires tracking placements, compliance with labor laws, and reporting to family court.
+**One row represents:** A single placement of an infant in a public good service program.
+**Covers:** All infants placed in public good service programs supervised by school districts.
+**Columns:**
+*   Placement ID
+*   Infant ID
+*   School District ID
+*   Program Start Date
+*   Program End Date
+*   Service Entity Name
+*   Service Entity ID
+*   Work Conditions Meet Labor Law Standards? (Yes/No)
+*   Workers' Compensation Coverage Provided? (Yes/No)
+*   Regular Employees Replaced? (Yes/No)
+*   Family Court Report Due Date
+*   Family Court Report Submission Date
+*   Family Court Order (if different reporting frequency)
+*   Program Status (Active, Completed, Terminated)
+
+**13. Grant Awards**
+
+**Quotes:**
+*   § 14.2 "Provide grants, from funds appropriated for such purpose, to local school districts to assist them in implementing the guidelines set forth in this section" (referring to DASA)
+*   § 140. Historical documentary heritage grants and aid.
+
+**Why:** Managing grant programs requires tracking applications, awards, recipients, and funding details.
+**One row represents:** A single grant award.
+**Covers:** All grants awarded by the Education Department, including DASA implementation grants and Historical Documentary Heritage grants.
+**Columns:**
+*   Grant ID
+*   Grant Program Type (e.g., DASA Implementation, Historical Documentary Heritage)
+*   Application ID (if applicable)
+*   Recipient Type (e.g., Local School District, Other Entity)
+*   Recipient ID
+*   Recipient Name
+*   Award Date
+*   Award Amount
+*   Grant Period Start Date
+*   Grant Period End Date
+*   Purpose of Grant
+*   Reporting Requirements Met? (Yes/No)
+*   Grant Status (Active, Completed, Closed)
+
+**14. Refund Transactions**
+
+**Quotes:**
+*   § 110. Refunds.
+
+**Why:** Tracking refunds is a basic financial operation for the department.
+**One row represents:** A single refund transaction.
+**Covers:** All refunds issued by the Education Department.
+**Columns:**
+*   Refund ID
+*   Transaction Date
+*   Original Payment ID (if applicable)
+*   Refund Amount
+*   Reason for Refund
+*   Recipient Name
+*   Recipient Address
+*   Payment Method (e.g., Check, Electronic Transfer)
+*   Status (Processed, Pending)
+
+**15. Electronic Submission Tracking**
+
+**Quotes:**
+*   § 101-b.1 "The commissioner shall be authorized to receive and accept reports, plans, applications and all other information required to be reported by statute or regulation through electronic means. The commissioner shall accept hard copy non-electronic filings or submissions if the school district is able to demonstrate that complying with electronic submission requirements would create undue hardship for the school district or some other good cause exists that would make electronic submission extremely impractical for the school district."
+
+**Why:** Tracking the receipt of electronic and hard copy submissions, and managing hardship exemptions, is necessary for administrative efficiency.
+**One row represents:** A single report, plan, application, or other information submission.
+**Covers:** All reports, plans, applications, and other information submitted to the Commissioner by school districts and BOCES.
+**Columns:**
+*   Submission ID
+*   Submission Date
+*   Submitting Entity ID (e.g., School District ID)
+*   Submitting Entity Name
+*   Submission Type (Report, Plan, Application, Other)
+*   Specific Document Name/Type
+*   Submission Method (Electronic, Hard Copy)
+*   Hardship Exemption Requested? (Yes/No)
+*   Hardship Exemption Approved? (Yes/No)
+*   Reason for Hardship Exemption (if applicable)
+*   Received By Department (Yes/No)
+*   Processing Status (Received, In Review, Completed)
+
+**16. School Access & Directory Information Release Approvals**
+
+**Quotes:**
+*   § 2-a "Notwithstanding any other provision of law to the contrary, if a trustee, president, principal, or officer of any institution belonging to the University of the State of New York, or a board of education of any public school, in any city, union free, common or central school district or the administrator of any non-public school of secondary education receiving state funds permits the release of directory information relating to pupils or permits access to school buildings, school grounds or other school property to persons who inform pupils of educational, occupational or career opportunities, such trustee, president, principal, officer, board or administrator shall provide access to directory information relating to pupils and access to such school property on the same basis for official representatives of the state militia and the armed forces of the United States for the purpose of informing pupils of educational, occupational or career opportunities within the state militia or armed forces of the United States."
+
+**Why:** Tracking approvals for releasing directory information and granting school access ensures equitable treatment for military recruiters.
+**One row represents:** A single approval or denial for releasing directory information or granting school access.
+**Covers:** All instances where schools permit or deny release of directory information or access to school property for informing pupils of opportunities.
+**Columns:**
+*   Approval ID
+*   School ID
+*   School Name
+*   School Type (Public, Non-Public Secondary, University Institution)
+*   Date of Request
+*   Requesting Entity Type (e.g., State Militia, Armed Forces, Other Educational/Occupational)
+*   Requesting Entity Name
+*   Request Type (Directory Information Release, School Property Access)
+*   Purpose of Request (e.g., Informing of Opportunities)
+*   Approval Status (Approved, Denied)
+*   Approval Date
+*   Denial Reason (if denied)
+*   Conditions of Access/Release (if approved)
+*   Equitable Access Provided? (Yes/No)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications (implied by "appoint all other needed officers and employees")
+*   Rules and regulations (e.g., commissioner's regulations, model policies)
+*   Parents Bill of Rights for Data Privacy and Security (the published document)
+*   Educational agency data security and privacy policies (the policy documents themselves)
+*   Inventory and understandable description of student, teacher, and principal data elements (the public document)
+*   School district codes of conduct (mentioned as containing DASA policy)
+*   Guidance and educational materials (e.g., for cyberbullying)
+*   Annual reports (e.g., Chief Privacy Officer's report, Commissioner's DASA report)
+*   Research documents/studies (e.g., "department may conduct research or undertake studies to determine compliance")
+*   Contracts (the actual legal documents, though tracking them is tabular)
+*   School district demonstration of undue hardship for electronic submission (the justification document)

@@ -1,0 +1,92 @@
+Here are the identified tabular datasets, ordered by importance, along with their descriptions and columns:
+
+---
+
+**1. Incarcerated Individual Custody & Movement Log**
+
+**Quotes:**
+- "The commissioner of correction may designate any institution or part thereof under the jurisdiction of the commissioner for the safekeeping of persons committed to the department of correction." (§ 9-101)
+- "Officers charged with the transportation of persons committed to the department of correction shall deliver them to the institution or part thereof as may be directed by the commissioner." (§ 9-101)
+- "The commissioner of correction shall have power to transfer prisoners from any prison or correctional institution under his or her control to any other prison or correctional institution under the jurisdiction of the department." (§ 9-104)
+- "The commissioner of correction shall have authority concerning the care and custody of witnesses in criminal proceedings committed to the institutions under the commissioner's charge." (§ 9-105)
+- "Upon the recommendation of the district attorney, the commissioner of correction may transfer such witnesses from one institution under the commissioner's charge to another such institution." (§ 9-105)
+- "The chief officer of any institution under the charge of the commissioner of correction shall report once in each week to the commissioner of correction. Such report shall set forth: 1. The number of persons who have been received, discharged or transferred. 3. The number remaining in the institution under the charge of such chief officer." (§ 9-120)
+- "The commissioner of correction shall keep and preserve a proper record of all persons who shall come under the commissioner's care or custody, and of the disposition of each, with full particulars as to the name, age, sex, color, nativity and religious faith, together with a statement of the cause and length of detention." (§ 9-121)
+**Why:** To manage the core function of custody, the agency must track every individual's location, status, and movement within its system.
+**One row represents:** A custody event (admission, transfer, release) for an incarcerated individual.
+**Covers:** All admissions, transfers, and releases of persons under the department's care or custody.
+**Columns:**
+- Event ID
+- Incarcerated Individual ID (links to Incarcerated Individual Demographics)
+- Event Type (Admission, Transfer In, Transfer Out, Release)
+- Event Date/Time
+- Originating Institution ID (if transfer/release, links to Facility Inventory)
+- Destination Institution ID (if admission/transfer, links to Facility Inventory)
+- Reason for Transfer/Release (e.g., court, medical, program, end of sentence)
+- Custody Status (e.g., committed, witness, civil prisoner)
+- Legal Authority for Custody (e.g., commitment order, DA recommendation)
+- Officer ID (responsible for transportation/transfer, links to Staff Roster & Assignments)
+
+---
+
+**2. Incarcerated Individual Demographics & Detention Details**
+
+**Quotes:**
+- "The commissioner of correction shall keep and preserve a proper record of all persons who shall come under the commissioner's care or custody, and of the disposition of each, with full particulars as to the name, age, sex, color, nativity and religious faith, together with a statement of the cause and length of detention." (§ 9-121)
+- "Adolescent. The term "adolescent" means an incarcerated individual 16 or 17 years of age." (§ 9-130.a)
+- "Adult. The term "adult" means an incarcerated individual 22 years of age or older." (§ 9-130.a)
+- "Young adult. The term "young adult" means an incarcerated individual 18 to 21 years of age." (§ 9-130.a)
+- "Age, in years, disaggregated as follows: 16-17, 18-21, 22-25, 26-29, 30-39, 40-49, 50-59, 60-69, 70 or older." (§ 9-137.a.1)
+- "Gender, including a separate category for those incarcerated individuals housed in any transgender housing unit." (§ 9-137.a.2)
+- "Race of incarcerated individuals, categorized as follows: African-American, Hispanic, Asian, white, or any other race." (§ 9-137.a.3)
+- "The borough in which the incarcerated individual was arrested." (§ 9-137.a.4)
+- "Educational background as self-reported by incarcerated individuals after admission to the custody of the department, categorized as follows based on the highest level of education achieved: no high school diploma or general education diploma, a general education diploma, a high school diploma, some college but no degree, an associate's degree, a bachelor's degree, or a post-collegiate degree." (§ 9-137.a.5)
+- "The number of incarcerated individuals identified by the department as a member of a security risk group, as defined by the department." (§ 9-137.a.6)
+- "The total number of persons in the custody of the department" (§ 9-165.b.1)
+- "The total and average numbers of persons in the Special Consideration Unit, or any other housing unit dedicated to the housing of transgender, gender non-binary, or intersex persons" (§ 9-165.b.2)
+- "The number and percentage of persons in the custody of the department who have identified themselves to the department, or have been identified by another person or agency on their behalf, as having a gender identity different from the sex assigned to the person at birth, or that were assigned an "X" gender marker or an intersex identification at birth; This data shall be further disaggregated by self-described gender identity including, but not limited to, transgender, gender non-conforming, non-binary, or intersex" (§ 9-165.b.3)
+- "The number of individuals who were identified through screening as being at risk of dyslexia disaggregated by race, gender, zip code of last known address, and age as follows: 18-21, 22-25, 26-29, 30-39, 40-49, 50-59, 60-69, 70 or older" (§ 9-166.f.4)
+**Why:** To fulfill legal record-keeping requirements and provide foundational demographic data for all incarcerated individuals.
+**One row represents:** A single incarcerated individual.
+**Covers:** All persons under the department's care or custody, from admission to disposition.
+**Columns:**
+- Incarcerated Individual ID (Unique Identifier)
+- Name
+- Date of Birth
+- Age (at admission)
+- Sex (Assigned at Birth)
+- Gender Identity (Self-reported, e.g., Transgender, Gender Non-Conforming, Non-Binary, Intersex)
+- Race (African-American, Hispanic, Asian, White, Other)
+- Nativity
+- Religious Faith
+- Cause of Detention (e.g., Felony, Misdemeanor, Local Law Violation, Witness, Civil Process)
+- Length of Detention (Start Date, End Date)
+- Arrest Borough
+- Educational Background (Highest Level Achieved)
+- Security Risk Group (Yes/No, Group Type)
+- Mental Health Treatment Level (links to Incarcerated Individual Medical Treatment & Services)
+- Dyslexia Risk Status (At Risk, Not At Risk)
+- Last Known Address Zip Code
+
+---
+
+**3. Incarcerated Individual Incidents (Violence, Self-Harm, Use of Force)**
+
+**Quotes:**
+- "Assault. The term "assault" means any action taken with intent to cause physical injury to another person." (§ 9-130.a)
+- "Serious injury. The term "serious injury" means a physical injury that (i) creates a substantial risk of death or disfigurement; (ii) is a loss or impairment of a bodily organ; (iii) is a fracture or break to a bone other than fingers and toes; or (iv) is an injury defined as serious by a physician." (§ 9-130.a)
+- "Sexual abuse. The term "sexual abuse" has the same meaning as set forth in 28 CFR § 115.6, or successor regulation, promulgated pursuant to the federal prison rape elimination act of 2003." (§ 9-130.a)
+- "Use of force A. The term "use of force A" means a use of force by staff on an incarcerated individual resulting in an injury that requires medical treatment beyond the prescription of over-the-counter analgesics or the administration of minor first aid..." (§ 9-130.a)
+- "Use of force B. The term "use of force B" means a use of force by staff on an incarcerated individual which does not require hospitalization or medical treatment beyond the prescription of over-the-counter analgesics or the administration of minor first aid..." (§ 9-130.a)
+- "Use of force C. The term "use of force C" means a use of force by staff on an incarcerated individual resulting in no injury to staff or incarcerated individual..." (§ 9-130.a)
+- "fight infractions written against incarcerated individuals" (§ 9-130.b.1)
+- "assaults on incarcerated individuals by incarcerated individuals involving stabbings, shootings or slashings" (§ 9-130.b.2)
+- "assaults on incarcerated individuals by incarcerated individuals in which an incarcerated individual suffered a serious injury, excluding assaults involving stabbings, shootings or slashings" (§ 9-130.b.3)
+- "actual incidents of use of force A" (§ 9-130.b.4)
+- "actual incidents of use of force B" (§ 9-130.b.5)
+- "actual incidents of use of force C" (§ 9-130.b.6)
+- "assaults on staff by incarcerated individuals in which staff suffered serious injury." (§ 9-130.b.7)
+- "assaults on incarcerated individuals by incarcerated individuals involving stabbings" (§ 9-130.c.3)
+- "assaults on incarcerated individuals by incarcerated individuals involving shootings" (§ 9-130.c.4)
+- "assaults on incarcerated individuals by incarcerated individuals involving slashings" (§ 9-130.c.5)
+- "total number of assaults on incarcerated individuals by incarcerated individuals involving stabbings, shootings or slashings" (§ 9-130.c.6)

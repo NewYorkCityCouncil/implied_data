@@ -1,0 +1,591 @@
+**Identified Tabular Datasets**
+
+**1. Residential Property Inventory**
+
+**Quotes:**
+- "all functions of the city relating to the rehabilitation, maintenance, alteration and improvement of residential buildings and privately owned housing" Section 1802.1
+- "the execution of emergency repairs to and the sealing, removal and demolition of buildings, structures and privately-owned housing" Section 1802.1
+- "enforcement of those provisions of the multiple dwelling law or any other law, rule or regulation which relate to the maintenance, use, occupancy, safety or sanitary condition of any building or portion thereof which is occupied, arranged or intended to be occupied as a home, residence or dwelling place" Section 1802.1
+- "manage and superintend all real property acquired by the city for, or devoted to, housing or urban renewal purposes" Section 1802.6(c)
+- "manage and superintend all residential real property of the city not used for public purposes" Section 1802.6(k)
+- "exercise such other powers and duties as may be prescribed by law in relation to the management, demolition or sealing or other treatment of residential real property of the city" Section 1802.6(l)
+- "enforce the provisions of the zoning resolution related to eligibility requirements with respect to the development, acquisition, rehabilitation, preservation, sale or rental of affordable housing administered by the department pursuant to such resolution" Section 1802.6(n)
+- "enter and inspect any building, structure, enclosure, premises or any part thereof" Section 1803.2
+- "Project boundary. The term "project boundary" means the perimeter of an urban renewal area." Section 1806.1
+- "Urban renewal site. The term "urban renewal site" means a tract of land that is designated for acquisition for one or more particular land uses and identified as a redevelopment parcel pursuant to an urban renewal plan." Section 1806.1
+- "The department shall post on such website the following information or links to such information about each such urban renewal area, to the extent that such information is available in department or city records: (d) The project boundary of such urban renewal area; (e) The designated urban renewal sites within the project boundary of such urban renewal area and the permitted uses of such designated urban renewal sites pursuant to such urban renewal plan;" Section 1806.3
+- "homeowner” means a natural person who utilizes a building within the city as a primary residence by being: (i) the shareholder in a cooperative corporation that entitles such owner to occupancy of a dwelling unit in such building; (ii) the owner of a residential condominium unit in such building; or (iii) the owner of such building containing a residence within the city, provided such building has between 1 and 4 dwelling units." Section 1807.a
+
+**Why:** The agency's core mission revolves around residential properties, requiring a comprehensive inventory for all related activities.
+
+**One row represents:** A single residential building or property unit within the city.
+
+**Covers:** All residential buildings and properties relevant to the department's functions, including privately owned, city-owned, and those within urban renewal areas.
+
+**Columns:**
+- Property ID (Unique Identifier)
+- Address (Street, City, State, Zip)
+- Borough
+- Community District
+- Property Type (e.g., Multi-family, Single-family, Condo, Co-op)
+- Number of Dwelling Units
+- Ownership Type (Private, City-owned, Publicly-aided)
+- Current Occupancy Status
+- Zoning District
+- Year Built
+- Last Major Renovation Date
+- Status (e.g., Active, Demolished, Sealed)
+- Urban Renewal Area ID (linked to Dataset 7)
+- Urban Renewal Site ID (linked to Dataset 9)
+- Homeowner Advocate Eligibility (Yes/No)
+
+**2. Property Inspection Records**
+
+**Quotes:**
+- "the enforcement of those provisions of the multiple dwelling law or any other law, rule or regulation which relate to the maintenance, use, occupancy, safety or sanitary condition of any building or portion thereof which is occupied, arranged or intended to be occupied as a home, residence or dwelling place" Section 1802.1
+- "Housing maintenance inspectors shall have such qualifications as shall be prescribed by the department of citywide administrative services after consultation with the commissioner." Section 1803.1
+- "The commissioner or any inspector or any officer of the department authorized in writing by the commissioner or the commissioner's delegate may, in accordance with law, for the purpose of performing their respective official duties, enter and inspect any building, structure, enclosure, premises or any part thereof, or anything therein or attached thereto" Section 1803.2
+
+**Why:** Tracking all inspections is fundamental for enforcing housing laws and ensuring property compliance and safety.
+
+**One row represents:** A single inspection event conducted by the department.
+
+**Covers:** All types of inspections performed on residential properties, including maintenance, safety, sanitary, and compliance checks.
+
+**Columns:**
+- Inspection ID (Unique Identifier)
+- Property ID (linked to Dataset 1)
+- Inspection Date
+- Inspector ID (linked to Dataset 21)
+- Inspection Type (e.g., Routine Maintenance, Complaint-based, Emergency, Compliance)
+- Inspection Outcome (e.g., Passed, Failed, Violations Found, Further Action Required)
+- Notes/Summary of Findings
+- Date of Next Scheduled Inspection (if applicable)
+
+**3. Property Violation Records**
+
+**Quotes:**
+- "the enforcement of those provisions of the multiple dwelling law or any other law, rule or regulation which relate to the maintenance, use, occupancy, safety or sanitary condition of any building or portion thereof which is occupied, arranged or intended to be occupied as a home, residence or dwelling place" Section 1802.1
+
+**Why:** Detailed tracking of violations is essential for enforcement actions, compliance monitoring, and reporting.
+
+**One row represents:** A single violation identified on a property.
+
+**Covers:** All violations issued against residential properties based on inspections or other enforcement activities.
+
+**Columns:**
+- Violation ID (Unique Identifier)
+- Property ID (linked to Dataset 1)
+- Inspection ID (linked to Dataset 2)
+- Date Issued
+- Violation Type/Code
+- Description of Violation
+- Severity Level
+- Required Correction Action
+- Due Date for Correction
+- Status (e.g., Open, Corrected, Appealed, Closed)
+- Fines Imposed
+- Fines Paid Date
+- Enforcement Action Taken (e.g., Warning, Fine, Legal Action)
+
+**4. Housing Loan/Financial Assistance Applications**
+
+**Quotes:**
+- "the making of rehabilitation loans pursuant to article eight ("municipal loans"), article eight-a ("mini-loans") and article fifteen ("participation loans") of the private housing finance law" Section 1802.1
+- "administer programs designed to encourage the rehabilitation and preservation of existing housing" Section 1802.6(a)
+- "represent the city in carrying out the provisions of the private housing finance law including, but not limited to, article two (relating to limited-profit housing companies), article five (relating to redevelopment companies), article eight, article eight-a, article eleven (relating to housing development fund companies) and article fifteen" Section 1802.6(d)
+- "establish and administer programs designed to encourage the rehabilitation and preservation of existing housing" Section 1802.6(a)
+- "The sole purpose of the fund established pursuant to subdivision one of this section shall be to fund affordable housing" Section 1805.3
+
+**Why:** Tracking applications for various housing loans and financial assistance programs is critical for program administration and eligibility determination.
+
+**One row represents:** A single application for a housing loan or financial assistance.
+
+**Covers:** Applications for municipal loans, mini-loans, participation loans, and other financial assistance programs for housing rehabilitation, preservation, or development.
+
+**Columns:**
+- Application ID (Unique Identifier)
+- Property ID (linked to Dataset 1)
+- Applicant Name/Organization
+- Application Date
+- Loan/Program Type (e.g., Municipal Loan, Mini-Loan, Participation Loan, HDF Company, Trust Fund)
+- Requested Amount
+- Application Status (e.g., Submitted, Under Review, Approved, Denied, Withdrawn)
+- Approval Date (if approved)
+- Denial Reason (if denied)
+- Eligibility Criteria Met (Yes/No)
+- Associated Project ID (linked to Dataset 12)
+
+**5. Housing Loan/Financial Assistance Disbursements**
+
+**Quotes:**
+- "the making of rehabilitation loans pursuant to article eight ("municipal loans"), article eight-a ("mini-loans") and article fifteen ("participation loans") of the private housing finance law" Section 1802.1
+- "represent the city in carrying out the provisions of the private housing finance law including, but not limited to, article two (relating to limited-profit housing companies), article five (relating to redevelopment companies), article eight, article eight-a, article eleven (relating to housing development fund companies) and article fifteen" Section 1802.6(d)
+- "Payments from such fund shall be subject to the following requirements" Section 1805.4
+
+**Why:** Tracking the actual disbursement of funds is essential for financial accountability and program implementation.
+
+**One row represents:** A single disbursement of funds for a housing loan or financial assistance.
+
+**Covers:** All financial disbursements made under various housing loan and assistance programs, including trust fund payments.
+
+**Columns:**
+- Disbursement ID (Unique Identifier)
+- Application ID (linked to Dataset 4)
+- Property ID (linked to Dataset 1)
+- Disbursement Date
+- Amount Disbursed
+- Loan/Program Type
+- Recipient Name/Organization
+- Purpose of Disbursement
+- Funding Source (e.g., Municipal Funds, Trust Fund)
+- Project ID (linked to Dataset 12)
+
+**6. Real Property Transaction Records**
+
+**Quotes:**
+- "the execution of emergency repairs to and the sealing, removal and demolition of buildings, structures and privately-owned housing" Section 1802.1
+- "manage and superintend all real property acquired by the city for, or devoted to, housing or urban renewal purposes" Section 1802.6(c)
+- "acquiring, leasing or disposing of real property pursuant to said law and establishing the disposition price of real property in an urban renewal area" Section 1802.6(e)
+- "acquire real property, pursuant to the federal housing and community development act of nineteen hundred seventy-four, on behalf of other city agencies" Section 1802.6(i)
+- "sell, lease, exchange or otherwise dispose of residential real property of the city" Section 1802.6(j)
+- "No purchase, lease, condemnation or other acquisition of real property by the department shall be authorized until (1) a public hearing has been held with respect to the acquisition... and (2) the department shall have received the approval of the mayor" Section 1804
+
+**Why:** Tracking all property acquisitions and dispositions is crucial for managing the city's real estate portfolio and ensuring legal compliance.
+
+**One row represents:** A single real property transaction (acquisition, sale, lease, exchange, condemnation, demolition).
+
+**Covers:** All transactions involving real property by the department, including acquisitions, sales, leases, exchanges, condemnations, and demolitions.
+
+**Columns:**
+- Transaction ID (Unique Identifier)
+- Property ID (linked to Dataset 1)
+- Transaction Date
+- Transaction Type (e.g., Acquisition, Sale, Lease, Exchange, Condemnation, Demolition)
+- Parties Involved (Buyer/Seller/Lessee/Lessor)
+- Transaction Price/Value
+- Public Hearing Date
+- Mayoral Approval Date
+- Urban Renewal Area ID (if applicable, linked to Dataset 7)
+- Purpose of Acquisition/Disposition
+
+**7. Urban Renewal Area Definitions**
+
+**Quotes:**
+- "slum clearance, slum prevention and urban renewal; neighborhood conservation; prevention and rehabilitation of blighted, substandard, deteriorated or unsanitary areas" Section 1802.3
+- "represent the city in carrying out the provisions of article fifteen of the general municipal law ("urban renewal law")" Section 1802.6(e)
+- "Urban renewal area. The term "urban renewal area" has the same meaning ascribed to such term in section 502 of the general municipal law." Section 1806.1
+- "The department shall post on such website the following information or links to such information about each such urban renewal area, to the extent that such information is available in department or city records: (a) The name of such urban renewal area; (d) The project boundary of such urban renewal area;" Section 1806.3
+- "Maps displaying the project boundaries of all currently and formerly designated urban renewal areas in the city of New York" Section 1806.5(a)
+- "A list, organized by borough, of all such urban renewal areas" Section 1806.5(c)
+
+**Why:** Defining and tracking urban renewal areas is foundational for all related planning, development, and reporting activities.
+
+**One row represents:** A single designated urban renewal area.
+
+**Covers:** All currently and formerly designated urban renewal areas within the city.
+
+**Columns:**
+- Urban Renewal Area ID (Unique Identifier)
+- Urban Renewal Area Name
+- Borough
+- Project Boundary Description (e.g., GIS coordinates, textual description)
+- Designation Date
+- Status (e.g., Active, Formerly Designated, Expired)
+- Link to Illustrative Map (if applicable)
+
+**8. Urban Renewal Plan Status & Amendments**
+
+**Quotes:**
+- "Urban renewal plan. The term "urban renewal plan" has the same meaning ascribed to such term in section 502 of the general municipal law." Section 1806.1
+- "Not less than one year before the expiration date of any urban renewal plan... the department... shall provide written notice of the expiration date of such urban renewal plan" Section 1806.2
+- "Such written notice shall include any restrictions on use, density or design contained in such expiring urban renewal plan, the status of any pending application to change any applicable large-scale special permit, the status of any pending application to amend such urban renewal plan, including any pending application to extend the duration of such urban renewal plan with respect to any unsold parcels of real property, the department of city planning application number of such pending application" Section 1806.2
+- "The department shall post on such website the following information or links to such information about each such urban renewal area, to the extent that such information is available in department or city records: (b) The history of approvals of the applicable urban renewal plan and all amendments thereto; (f) Whether such urban renewal plan is currently in effect or has expired and, if currently in effect, the expiration date of such urban renewal plan; (g) With respect to any urban renewal plan currently in effect, the status of any pending application to amend such urban renewal plan, including any pending application to extend the duration of such urban renewal plan with respect to any unsold parcels of real property, and the department of city planning application number of such pending application" Section 1806.3
+- "For each such urban renewal area, the expiration date of the final version of the applicable urban renewal plan" Section 1806.5(e)
+- "The land use restrictions imposed pursuant to such urban renewal plans" Section 1806.5(f)
+
+**Why:** Tracking the lifecycle, amendments, and expiration of urban renewal plans is essential for legal compliance and public information.
+
+**One row represents:** A specific urban renewal plan or an amendment to a plan.
+
+**Covers:** The history, current status, and all amendments for each urban renewal plan.
+
+**Columns:**
+- Urban Renewal Plan ID (Unique Identifier)
+- Urban Renewal Area ID (linked to Dataset 7)
+- Plan Version (e.g., Initial, Amendment 1, Final)
+- Approval Date
+- Effective Date
+- Expiration Date
+- Status (e.g., In Effect, Expired, Superseded)
+- Key Restrictions (Use, Density, Design)
+- Pending Amendment Application Number (if applicable)
+- Pending Extension Application Number (if applicable)
+- Department of City Planning Application Number
+
+**9. Urban Renewal Site Details**
+
+**Quotes:**
+- "Urban renewal site. The term "urban renewal site" means a tract of land that is designated for acquisition for one or more particular land uses and identified as a redevelopment parcel pursuant to an urban renewal plan." Section 1806.1
+- "The department shall post on such website the following information or links to such information about each such urban renewal area, to the extent that such information is available in department or city records: (e) The designated urban renewal sites within the project boundary of such urban renewal area and the permitted uses of such designated urban renewal sites pursuant to such urban renewal plan;" Section 1806.3
+
+**Why:** Detailed information on individual sites within urban renewal areas is necessary for managing redevelopment and land use.
+
+**One row represents:** A single designated urban renewal site.
+
+**Covers:** All designated urban renewal sites within urban renewal areas, including their permitted uses and current status.
+
+**Columns:**
+- Urban Renewal Site ID (Unique Identifier)
+- Urban Renewal Area ID (linked to Dataset 7)
+- Urban Renewal Plan ID (linked to Dataset 8)
+- Property ID (linked to Dataset 1)
+- Site Description/Parcel Number
+- Permitted Uses (as per plan)
+- Current Status (e.g., Undeveloped, Under Development, Redeveloped, Unsold)
+- Acquisition Date (if applicable, linked to Dataset 6)
+- Disposition Date (if applicable, linked to Dataset 6)
+
+**10. Affordable Housing Trust Fund Project Funding**
+
+**Quotes:**
+- "the commissioner shall be authorized to establish or cause to be established an affordable housing trust fund." Section 1805.1
+- "The sole purpose of the fund established pursuant to subdivision one of this section shall be to fund affordable housing" Section 1805.3
+- "Priority shall be given first to projects in the ten sub-borough areas... with the highest percentage of households below the poverty line" Section 1805.4(a)
+- "Priority shall be given to projects that will create affordable housing for persons of low income" Section 1805.4(b)
+- "Priority shall be given to projects in which the developer agrees to maintain the affordability of the housing significantly beyond the period of the governmental assistance." Section 1805.4(c)
+- "Payments from such fund shall be made in accordance with subsidy guidelines, including, but not limited to, guidelines concerning the maximum amount of subsidy per dwelling unit and per project" Section 1805.4(d)
+- "no project may receive a subsidy in excess of twenty million dollars." Section 1805.4(d)
+- "the commissioner shall report to the council on the payments from the fund. Such report shall include a description of each project funded, including location, number of units, affordability requirements, status of the project and amount of funding for each project." Section 1805.5
+
+**Why:** Tracking projects funded by the Affordable Housing Trust Fund is essential for compliance with funding priorities and reporting requirements.
+
+**One row represents:** A single project receiving funding from the Affordable Housing Trust Fund.
+
+**Covers:** All projects that receive funding from the Affordable Housing Trust Fund.
+
+**Columns:**
+- Project ID (Unique Identifier)
+- Property ID (linked to Dataset 1)
+- Funding Application ID (linked to Dataset 4)
+- Project Name
+- Location (Address, Sub-borough Area)
+- Number of Dwelling Units
+- Affordability Requirements (e.g., Income Tiers, Duration)
+- Project Status (e.g., Planning, Under Construction, Completed)
+- Total Funding Amount from Trust Fund
+- Date of First Payment (linked to Dataset 5)
+- Developer Name
+- Poverty Line Priority Met (Yes/No)
+- Low Income Priority Met (Yes/No)
+- Extended Affordability Agreement (Yes/No)
+- Subsidy Guideline Compliance (Yes/No)
+- Total Subsidy per Dwelling Unit
+- Total Project Subsidy
+
+**11. Tax Exemption/Abatement Applications & Approvals**
+
+**Quotes:**
+- "administer laws authorizing tax exemption or tax abatement, or both, including, but not limited to, section 11-243 of the administrative code of the city of New York and section four hundred twenty-one of the real property tax law, which are in aid of the construction, rehabilitation, alteration or improvement of residential buildings and structures and the elimination of substandard conditions therein, process applications for such exemption or abatement or both, and coordinate the activities of officers and agencies of the city relating thereto" Section 1802.6(b)
+
+**Why:** Tracking applications and approvals for tax exemptions/abatements is necessary for administering these incentive programs.
+
+**One row represents:** A single application for a tax exemption or abatement.
+
+**Covers:** All applications for tax exemption or abatement programs administered by the department.
+
+**Columns:**
+- Application ID (Unique Identifier)
+- Property ID (linked to Dataset 1)
+- Applicant Name/Organization
+- Application Date
+- Program Type (e.g., 11-243, 421-a)
+- Purpose (e.g., Construction, Rehabilitation, Alteration, Improvement, Substandard Condition Elimination)
+- Application Status (e.g., Submitted, Under Review, Approved, Denied)
+- Approval Date (if approved)
+- Exemption/Abatement Start Date
+- Exemption/Abatement End Date
+- Estimated Tax Benefit Amount
+- Denial Reason (if denied)
+
+**12. Housing Program Participation Records**
+
+**Quotes:**
+- "establish and administer programs designed to encourage the rehabilitation and preservation of existing housing" Section 1802.6(a)
+- "represent the city in carrying out the provisions of the private housing finance law including, but not limited to, article two (relating to limited-profit housing companies), article five (relating to redevelopment companies), article eight, article eight-a, article eleven (relating to housing development fund companies) and article fifteen" Section 1802.6(d)
+- "enforce the provisions of the zoning resolution related to eligibility requirements with respect to the development, acquisition, rehabilitation, preservation, sale or rental of affordable housing administered by the department pursuant to such resolution" Section 1802.6(n)
+
+**Why:** Tracking participation in various housing programs is essential for program management, compliance, and reporting on outcomes.
+
+**One row represents:** A single property's or project's enrollment or participation in a specific housing program.
+
+**Covers:** All properties and projects participating in rehabilitation, preservation, limited-profit housing, redevelopment, housing development fund, and affordable housing programs.
+
+**Columns:**
+- Program Participation ID (Unique Identifier)
+- Property ID (linked to Dataset 1)
+- Project ID (if applicable, linked to Dataset 10)
+- Program Name/Type
+- Enrollment Date
+- Program Status (e.g., Active, Completed, Withdrawn)
+- Compliance Status (e.g., In Compliance, Non-Compliant)
+- Key Program Requirements (e.g., Affordability, Maintenance Standards)
+- Program End Date
+
+**13. Tenant Relocation Case Management**
+
+**Quotes:**
+- "such functions and duties as may be prescribed by law with respect to the relocation of tenants of real property" Section 1802.2
+
+**Why:** Managing tenant relocation cases is a direct service responsibility requiring detailed tracking of each case.
+
+**One row represents:** A single tenant relocation case.
+
+**Covers:** All cases where the department is involved in the relocation of tenants from real property.
+
+**Columns:**
+- Relocation Case ID (Unique Identifier)
+- Property ID (Source Property, linked to Dataset 1)
+- Tenant Name
+- Household Size
+- Reason for Relocation
+- Relocation Start Date
+- Assistance Provided (e.g., Financial Aid, Housing Search, Counseling)
+- New Address (if applicable)
+- Relocation Completion Date
+- Case Status (e.g., Open, Closed, Pending)
+- Total Assistance Cost
+
+**14. Public Housing Tenant Applications**
+
+**Quotes:**
+- "the selection of tenants for publicly owned or publicly aided housing in the city" Section 1802.2
+
+**Why:** Tracking applications for publicly owned or publicly aided housing is necessary for managing tenant selection processes.
+
+**One row represents:** A single application for publicly owned or publicly aided housing.
+
+**Covers:** All applications received for tenancy in publicly owned or publicly aided housing.
+
+**Columns:**
+- Application ID (Unique Identifier)
+- Applicant Name
+- Application Date
+- Household Size
+- Income Level
+- Eligibility Status (e.g., Eligible, Ineligible, Pending Review)
+- Preferred Housing Type/Location
+- Placement Status (e.g., Placed, Waiting List, Denied)
+- Placement Date (if placed)
+- Property ID (if placed, linked to Dataset 1)
+- Denial Reason (if denied)
+
+**15. City Residential Property Management Activities**
+
+**Quotes:**
+- "manage and superintend all real property acquired by the city for, or devoted to, housing or urban renewal purposes" Section 1802.6(c)
+- "manage and superintend all residential real property of the city not used for public purposes" Section 1802.6(k)
+- "exercise such other powers and duties as may be prescribed by law in relation to the management, demolition or sealing or other treatment of residential real property of the city" Section 1802.6(l)
+- "employ professional community and other personnel to manage residential real property of the city" Section 1802.6(m)
+
+**Why:** Tracking management activities for city-owned residential properties is crucial for operational efficiency and accountability.
+
+**One row represents:** A single management activity performed on a city-owned residential property.
+
+**Covers:** All management activities for city-owned residential properties, including maintenance, repairs, tenant relations, and operational tasks.
+
+**Columns:**
+- Activity ID (Unique Identifier)
+- Property ID (linked to Dataset 1)
+- Activity Date
+- Activity Type (e.g., Routine Maintenance, Repair, Tenant Issue Resolution, Lease Management)
+- Description of Activity
+- Personnel Involved (linked to Dataset 21)
+- Cost of Activity
+- Outcome/Resolution
+- Status (e.g., Open, Completed)
+
+**16. Project/Loan Charges & Payments**
+
+**Quotes:**
+- "require the payment of charges in consideration for the financing, regulation, supervision and audit of municipally-aided projects and loan programs administered by the commissioner, which charges shall be paid into the treasury of the city and shall be paid and deposited in the general fund of the city" Section 1802.6(g)
+
+**Why:** Tracking charges levied and payments received is essential for financial management and revenue collection.
+
+**One row represents:** A single charge levied or payment received for a municipally-aided project or loan program.
+
+**Covers:** All charges and payments related to the financing, regulation, supervision, and audit of municipally-aided projects and loan programs.
+
+**Columns:**
+- Charge/Payment ID (Unique Identifier)
+- Project ID (linked to Dataset 12) or Loan ID (linked to Dataset 4)
+- Property ID (linked to Dataset 1)
+- Date of Charge/Payment
+- Type (e.g., Financing Charge, Supervision Fee, Audit Fee, Payment Received)
+- Amount
+- Payer/Recipient
+- Status (e.g., Outstanding, Paid, Waived)
+- Due Date (for charges)
+- Deposit Date (for payments)
+
+**17. Homeowner Advocate Inquiry Log**
+
+**Quotes:**
+- "Receiving comments, questions, and concerns from homeowners related to city services" Section 1807.b.1
+- "The number of inquiries received by the office of the homeowner advocate, including complaints received from 311, further disaggregated by complaint type and frequency" Section 1807.c.1
+- "A summary of actions taken for each inquiry type" Section 1807.c.2
+
+**Why:** Tracking homeowner inquiries and complaints is necessary for providing advocacy services and reporting on service delivery.
+
+**One row represents:** A single inquiry, comment, question, or concern received from a homeowner.
+
+**Covers:** All inquiries received by the Office of the Homeowner Advocate, including those from 311.
+
+**Columns:**
+- Inquiry ID (Unique Identifier)
+- Inquiry Date
+- Homeowner ID (if available)
+- Property ID (linked to Dataset 1)
+- Inquiry Type (e.g., Complaint, Question, Comment, Concern)
+- Source (e.g., Direct, 311)
+- Description of Inquiry
+- Status (e.g., Open, Resolved, Referred)
+- Resolution Date
+- Actions Taken (Summary)
+- Community District (if available)
+
+**18. Homeowner Advocate Referral Log**
+
+**Quotes:**
+- "Referring homeowners to the appropriate state or federal agency and, where needed, facilitating communication or serving as a liaison between the homeowner and such agency" Section 1807.b.2
+- "Serving as a liaison between homeowners and the department, referring homeowners to other city agencies" Section 1807.b.3
+- "referring homeowners and their heirs to community based organizations, legal services organizations, and other organizations" Section 1807.b.4
+
+**Why:** Tracking referrals made by the Homeowner Advocate is essential for monitoring assistance provided and identifying service gaps.
+
+**One row represents:** A single referral made by the Office of the Homeowner Advocate.
+
+**Covers:** All referrals made to state, federal, city agencies, or community-based organizations.
+
+**Columns:**
+- Referral ID (Unique Identifier)
+- Inquiry ID (linked to Dataset 17)
+- Referral Date
+- Homeowner ID (if available)
+- Property ID (linked to Dataset 1)
+- Referred To Agency/Organization
+- Agency/Organization Type (e.g., State, Federal, City, Non-profit)
+- Reason for Referral
+- Referral Outcome (e.g., Contact Made, Service Initiated)
+- Follow-up Date
+
+**19. Homeowner Advocate Training Events**
+
+**Quotes:**
+- "Making trainings available to homeowners on topics such as finance related to real property ownership, property management, rental housing, lead paint, mortgage relief, and foreclosure prevention" Section 1807.b.5
+
+**Why:** Tracking training events offered to homeowners is necessary for program management and reporting on outreach efforts.
+
+**One row represents:** A single training event made available to homeowners.
+
+**Covers:** All training events organized or facilitated by the Office of the Homeowner Advocate.
+
+**Columns:**
+- Training Event ID (Unique Identifier)
+- Event Date
+- Event Time
+- Topic(s) Covered
+- Location/Platform
+- Instructor/Facilitator
+- Number of Attendees
+- Feedback Received (Summary)
+
+**20. Urban Renewal Notice Distribution Log**
+
+**Quotes:**
+- "Not less than one year before the expiration date of any urban renewal plan... the department, in coordination with the department of city planning, shall provide written notice of the expiration date of such urban renewal plan to the speaker of the council, each borough president, council member, and community board whose district includes any real property within the project boundary of the affected urban renewal area" Section 1806.2
+
+**Why:** Tracking the distribution of required notices for urban renewal plan expirations is essential for legal compliance and transparency.
+
+**One row represents:** A single instance of a notice being sent to a specific recipient.
+
+**Covers:** All written notices provided regarding the expiration of urban renewal plans.
+
+**Columns:**
+- Notice ID (Unique Identifier)
+- Urban Renewal Plan ID (linked to Dataset 8)
+- Urban Renewal Area ID (linked to Dataset 7)
+- Notice Date
+- Recipient Type (e.g., Speaker of the Council, Borough President, Council Member, Community Board)
+- Recipient Name/Office
+- Delivery Method
+- Confirmation of Receipt (Yes/No)
+- Content Summary (e.g., Expiration Date, Restrictions, Application Status)
+
+**21. Employee Records**
+
+**Quotes:**
+- "The commissioner may appoint not more than five deputy commissioners" Section 1801
+- "employ professional community and other personnel to manage residential real property of the city" Section 1802.6(m)
+- "Housing maintenance inspectors shall have such qualifications as shall be prescribed by the department of citywide administrative services after consultation with the commissioner." Section 1803.1
+- "The commissioner or any inspector or any officer of the department authorized in writing by the commissioner or the commissioner's delegate may, in accordance with law, for the purpose of performing their respective official duties, enter and inspect any building" Section 1803.2
+
+**Why:** Managing a large staff requires tracking employee information for payroll, assignments, qualifications, and operational roles.
+
+**One row represents:** A single employee of the department.
+
+**Covers:** All employees of the Department of Housing Preservation and Development.
+
+**Columns:**
+- Employee ID (Unique Identifier)
+- First Name
+- Last Name
+- Job Title
+- Department/Division
+- Hire Date
+- Employment Status (e.g., Active, Leave, Terminated)
+- Certifications/Qualifications (e.g., Housing Maintenance Inspector, Professional Licenses)
+- Supervisor ID (linked to Employee Records)
+- Contact Information
+
+**22. Departmental Asset Inventory**
+
+**Quotes:**
+- "The commissioner or any inspector or any officer of the department authorized in writing by the commissioner or the commissioner's delegate may, in accordance with law, for the purpose of performing their respective official duties, enter and inspect any building, structure, enclosure, premises or any part thereof, or anything therein or attached thereto" Section 1803.2 (Implies need for tools, vehicles, equipment for inspectors)
+- "employ professional community and other personnel to manage residential real property of the city" Section 1802.6(m) (Implies need for office equipment, vehicles, etc.)
+
+**Why:** Operating a large agency requires tracking its physical assets for maintenance, allocation, and financial management.
+
+**One row represents:** A single physical asset owned or managed by the department.
+
+**Covers:** All physical assets used by the department for its operations, such as vehicles, inspection equipment, office furniture, and IT equipment.
+
+**Columns:**
+- Asset ID (Unique Identifier)
+- Asset Name/Description
+- Asset Type (e.g., Vehicle, Inspection Tool, Computer, Office Furniture)
+- Acquisition Date
+- Purchase Price
+- Current Location/Assigned To (Employee ID, linked to Dataset 21, or Department)
+- Condition
+- Maintenance Schedule
+- Last Maintenance Date
+- Disposal Date (if applicable)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications (implied by Section 1802.6(m), 1803.1)
+*   Rules and regulations (e.g., Multiple Dwelling Law, Zoning Resolution, Private Housing Finance Law, General Municipal Law, Public Housing Law, Administrative Code, Departmental Rules) (Section 1802.1, 1802.6(b), 1802.6(d), 1802.6(e), 1802.6(f), 1802.6(n), 1803.1, 1805.4(b))
+*   Receipts (implied by financial transactions like loans, charges, acquisitions)
+*   Public hearing notices (Section 1802.6(j), 1804)
+*   Mayoral approvals (Section 1802.6(j), 1804, 1805.4(e))
+*   Urban renewal plans and all amendments (downloadable copies) (Section 1806.3(c), 1806.4(e))
+*   Explanatory guide to researching urban renewal restrictions (Section 1806.3)
+*   Links to external resources (e.g., city's online zoning and land use maps, automated city register information system, land use and CEQR application tracking system, zola.planninglabs.nyc) (Section 1806.3, 1806.6)
+*   Illustrative map of the city indicating urban renewal areas (Section 1806.3, 1806.4(a), 1806.5(b))
+*   Public awareness campaigns about homeowner rights and responsibilities (Section 1807.b.6)
+*   Annual report from the Office of the Homeowner Advocate (summary of actions, recommendations) (Section 1807.c)
+*   Website list of names, websites, and contact information of existing not-for-profit organizations providing low-cost or free services to homeowners (Section 1807.b.7)
+*   Training materials for homeowners (Section 1807.b.5)

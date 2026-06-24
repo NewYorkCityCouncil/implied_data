@@ -18,9 +18,9 @@ prompt_schemas = open("data/input/prompt_schemas.txt").read()
 
 if dept == "Education": 
     start = time.time()
-    response = pull_gemini_statedb(dept) #, date_str = "2026-05-07")
+    response = pull_gemini_statedb(dept) 
     print(f"{time_elapsed(start)} to finish first pass combination.")
-    response = pull_gemini_statedb(dept, chunk_size = 500000, #, date_str = "2026-05-07"
+    response = pull_gemini_statedb(dept, chunk_size = 500000, 
                                    input_str = "statecomb1", output_str = "statecomb2")
     print(f"{time_elapsed(start)} to finish combining of datasets from all documents.")
 else: 

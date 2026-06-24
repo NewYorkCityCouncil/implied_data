@@ -1,0 +1,982 @@
+**Section 1, Mission Summary:**
+
+The agency's mission is to manage and enhance New York City's technology and telecommunications infrastructure, services, and data, ensuring efficient operations, public access to information, and robust privacy and security for all city agencies and constituents. They are required to run programs encompassing telecommunications franchise administration, citywide IT and telecom infrastructure provision and maintenance, 311 citizen service management, public data transparency initiatives, and comprehensive data privacy and security enforcement. The agency impacts constituents by providing essential public services, ensuring access to city information, protecting private data, and facilitating a connected and responsive urban environment.
+
+**Section 2, Data Summary:**
+
+1.  **Regulated Entity Registry**
+2.  **Employee Roster & Designations**
+3.  **IT & Telecommunications Asset Inventory**
+4.  **Public Pay Telephone Installation Inventory**
+5.  **Microtrenching Conduit Inventory**
+6.  **Open Space Inventory**
+7.  **IT Software Licenses & Subscriptions**
+8.  **Public Data Set Inventory & Compliance**
+9.  **Wheelchair Repair Provider Directory**
+10. **Telecommunications Franchises & Revocable Consents**
+11. **Enforcement Actions & Violations**
+12. **Public Pay Telephone Permit Applications**
+13. **Public Pay Telephone Permits**
+14. **PPT Building Owner/Lessee Consents**
+15. **PPT Permit Application Review Comments**
+16. **Public Pay Telephone Nuisance Determinations**
+17. **Public Pay Telephone Removal & Disposal Actions**
+18. **Public Pay Telephone City Operations & Lease Records**
+19. **Microtrenching Project Submissions & Notifications**
+20. **Microtrenching Excess Capacity Certifications**
+21. **Microtrenching Excess Capacity Requests & Responses**
+22. **Microtrenching Excess Capacity Occupancy Events**
+23. **Microtrenching Conduit Removal & Disposal Orders**
+24. **Cable TV Electricity Resale Arrangements**
+25. **Cable TV Electricity Notice Events**
+26. **Cable TV Direct Billing Plan Approvals**
+27. **Security Incident Log**
+28. **Security Incident Individual Notifications**
+29. **Identifying Information Access & Disclosure Events**
+30. **Identifying Information Third-Party Agreements**
+31. **Identifying Information Privacy Complaints**
+32. **Information Access Control Audits**
+33. **Electronic Equipment Disposal Records**
+34. **Website Feature Compliance Audits**
+35. **Online Interactive Map Status (DEP)**
+36. **Agency Privacy Policy & Practice Profile**
+37. **311 Citizen Service Requests**
+38. **Permitted Street Closures**
+39. **Parking Regulations**
+40. **Crime Incidents (Received from NYPD)**
+41. **Municipal Channel Programming Schedule**
+42. **Cultural Program Events**
+43. **Public Data Set Requests & Feedback**
+44. **FOIL Requests for Data**
+45. **Web Portal Usage Analytics**
+46. **Online Payment System Failure Log**
+47. **IT Procurement & Contracts**
+48. **IT & Telecommunications Asset Maintenance Records**
+49. **Public Pay Telephone Maintenance Inspections**
+50. **Microtrenching Conduit Maintenance & Outage Events**
+51. **Microtrenching Audits & Investigations**
+52. **Microtrenching Compliance Complaints**
+53. **Inter-Entity Network Connections**
+54. **Agency Telecommunications Service Requests**
+55. **Citywide IT & Telecommunications Projects & Strategy**
+56. **Emergency Communications System Directives & Requests**
+57. **Disaster Recovery Telecommunications Drills & Incidents**
+58. **Agency Meeting Records**
+59. **Employee Time Records**
+60. **Employee Certifications & Training**
+61. **Facilities Maintenance Records**
+62. **Environmental Compliance Records**
+63. **Uniform Issuance & Inventory**
+
+**Section 3, Data Details:**
+
+**1. Regulated Entity Registry**
+*   **Open Data Match:** Maybe, "Directory Of NYC Cable Providers" (1112) - 60% match. This dataset focuses on cable providers, which is a subset of the broader regulated entities.
+*   **Quotes:**
+    *   "Owner" means the holder of a current telecommunications franchise pursuant to Section 1072(c) of the Charter, that proposes to install or has installed conduit. A franchise is not "current" if the term of the franchise agreement has expired and the franchise is in holdover status. (§ 1-01(g))
+    *   "Telecommunications franchisee" means the holder of a current franchise pursuant to Section 1072(c) of the Charter, or of a revocable consent from the City of New York for installation of telecommunications equipment above, below or on any of the streets within the City. A franchise is not "current" if the term of the franchise agreement has expired and the franchise is in holdover status. (§ 1-01(h))
+    *   "Cable television company" shall mean any person, firm, partnership, or corporation which provides one-way transmission to subscribers of video programming or other programming services. (§ 4-01)
+    *   This chapter applies to all cable television companies authorized by New York City by means of a franchise or other municipal authorization to construct, operate, maintain, or manage a cable television system in New York City. (§ 4-02(a))
+    *   "Owner" shall mean a natural person or business entity that owns, leases, or is otherwise responsible for the installation, operation and maintenance of a public pay telephone. (§ 6-01)
+    *   unless the applicant possesses a franchise to install, maintain and operate public pay telephones on, over and under the streets and other inalienable property of the City; (§ 6-31(b)(1))
+*   **Why:** To centrally track all legal entities regulated by the department across various telecommunications and public pay telephone programs.
+*   **One row represents:** A single legal entity (company or individual) regulated by the Department.
+*   **Covers:** All telecommunications franchisees, microtrenching owners, cable television companies, and public pay telephone owners.
+*   **Columns:** Entity ID (PK), Entity Name, Entity Type, Business Address, Contact Person Name, Contact Person Title, Contact Email, Contact Phone Number, Franchise Agreement Number, Franchise Status, Is Telecommunications Franchisee? (Boolean), Is Microtrenching Owner? (Boolean), Is Cable Television Company? (Boolean), Is Public Pay Telephone Owner? (Boolean), Date Franchise Granted, Date Franchise Expires.
+
+**2. Employee Roster & Designations**
+*   **Open Data Match:** "Open Data Coordinators (ODCs)" (546) - 70% match. This dataset lists ODCs, which is a specific designation for employees.
+*   **Quotes:**
+    *   "The commissioner shall designate an employee to serve as the chief geospatial information officer." (Section 1076)
+    *   "The commissioner may appoint four deputies, one of whom may be designated the first deputy commissioner." (Section 1071)
+    *   "The head of each agency shall designate an employee of such agency to serve as the open data coordinator for such agency. Such coordinator shall be responsible for ensuring that such agency complies with the requirements of this chapter and for receiving and responding to feedback from the public regarding such agency's public data sets." (§ 23-507)
+*   **Why:** To track all department employees and their official roles, titles, and specific designations for internal management.
+*   **One row represents:** A single employee within the department.
+*   **Covers:** All employees of the Department of Information Technology and Telecommunications.
+*   **Columns:** Employee ID (PK), Name, Title, Department, Start Date, End Date (if applicable), Designated Roles (e.g., Chief Geospatial Information Officer, First Deputy Commissioner, Open Data Coordinator), Contact Information.
+
+**3. IT & Telecommunications Asset Inventory**
+*   **Open Data Match:** "LinkNYC Kiosk Locations" (535) - 60% match. This is a specific type of telecom asset. "LinkNYC Kiosk Status" (1187) - 60% match.
+*   **Quotes:**
+    *   "to provide to city agencies such land-based and wireless voice, data, video or other communications facilities, and technical assistance or other assistance with respect to such facilities, as they may require for the effective discharge of their responsibilities;" (Section 1072.f)
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+*   **Why:** To manage and maintain all land-based, wireless, and computer hardware assets provided to city agencies.
+*   **One row represents:** A single piece of IT or telecommunications infrastructure or computer hardware.
+*   **Covers:** All land-based and wireless voice, data, video, and other communication facilities, and all computer hardware assets managed by DoITT for city agencies.
+*   **Columns:** Asset ID (PK), Asset Type (e.g., Fiber Optic Cable, Wireless Access Point, Router, Desktop, Laptop, Server), Manufacturer, Model, Serial Number, Installation Date, Purchase Date (linked to **47. IT Procurement & Contracts**), Warranty Expiration Date, Location (Address, GPS Coordinates, Agency ID, Department, User), Status (Active, Inactive, Under Maintenance, Decommissioned, In Repair), Maintenance Schedule, Last Maintenance Date (linked to **48. IT & Telecommunications Asset Maintenance Records**), Agency Using (Agency ID).
+
+**4. Public Pay Telephone Installation Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   A "Public Pay Telephone Installation" shall mean an installation, including the telephone, pedestal and housing of such telephone, with one or more public pay telephones on a pedestal, one or more public pay telephones in an in-line configuration, or a public pay telephone attached to another structure. (§ 6-01)
+    *   A public pay telephone shall comply with the requirements set forth in this subchapter provided, however, that the provisions of subdivision (d), subparagraphs (i), (ii), (vii), (viii) and (x) through (xxiv) of paragraph (e) (2), and subdivisions (f) through (n) of 67 RCNY § 6-41 shall not apply to a public pay telephone permitted pursuant to this chapter that was previously licensed pursuant to former § 19-131 or 19-128 of the Code. (§ 6-40)
+    *   Each public pay telephone location, single or multiple, shall have a sign in a form prescribed by the Commissioner... Such sign shall: (a) be of dimensions no less than 2" by 5"; (b) include Americans with Disabilities Act ("ADA") symbols... (c) be in compliance with requirements of the ADA; (d) clearly and legibly identify the owner... (e) clearly and legibly identify the New York State Public Service Commission certified Operator Service Provider... (f) contain the following statement: "To register a complaint with the City of New York, call 311."; and, (g) clearly and legibly identify the public pay telephone using the PPT identification number issued by the Department. (§ 6-42)
+    *   A franchisee shall comply with the provisions of the Americans with Disabilities Act and the regulations promulgated thereunder... (§ 6-44)
+    *   A public pay telephone shall be sited, installed, operated and maintained in compliance with all applicable provisions of Federal, State and local law... (§ 6-45(b))
+*   **Why:** To track the location, characteristics, and compliance of each public pay telephone installation for public safety and regulatory adherence.
+*   **One row represents:** A single public pay telephone installation.
+*   **Covers:** All permitted public pay telephone installations within the City.
+*   **Columns:** PPT Installation ID (PK), Permit ID (linked to **13. Public Pay Telephone Permits**), Owner Entity ID (linked to **1. Regulated Entity Registry**), Installation Location (Street Address, Cross Street, Borough, Zip Code), Geographic Coordinates (Latitude, Longitude), Installation Type, Number of Telephones at Installation, Footprint Dimensions, Installation Date, Exempt from certain §6-41 provisions? (Boolean), Sidewalk Clearance (feet), Obstructs Curb Cuts/Crosswalks? (Boolean), Interferes with Fire Escape/Egress? (Boolean), Prevents Cellar Door Opening? (Boolean), Affects Underground Vault/Sewer Integrity? (Boolean), Distance to Traffic Sign (feet), Distance to Traffic Light (feet), Distance to Wheelchair Lift Ramp (feet), Distance to Subway Entrance (feet), Distance to Fire Hydrant (feet), Distance to Standpipe/Sprinkler/Siamese Connection/Wall Hydrant (feet), Distance to Subway Grate/Utility Hole Cover/Transformer Vault (feet), Distance to Sidewalk Cafe (feet), Distance to Bus Stop Zone (feet), Distance to Newsstand (feet), Distance to Public Pay Toilet (feet), Distance to Curbline Bench (feet), Distance to Driveway (feet), Distance to Canopy (feet), Distance to Curbline Mailbox (feet), Distance to Street Light Base (feet), Distance to Parking Meter (feet), Distance to Fire Box (feet), Distance to Curbline News Rack (feet), Distance to Curbline Newsbox (feet), Distance to Tree (feet), Distance to Grating (if building line) (feet), Distance to Signpole (feet), Distance to Curbline Tree Pit/Planter (feet), Distance to Pedestal Structure (feet), Distance to Bicycle Rack (feet), Distance to Other Sidewalk Encumbrance (feet), Distance to Nearest Other PPT Installation (feet), Located in Historic District? (Boolean), Compliant with Landmarks Preservation Commission rules? (Boolean), Installed on Paved Surface? (Boolean), Sign Dimensions, ADA Symbols Present? (Boolean), Owner Identified on Sign? (Boolean), Operator Service Provider Identified on Sign? (Boolean), 311 Complaint Statement Present on Sign? (Boolean), PPT Identification Number on Sign, Wiring Type, Overhead Wiring Height (feet), Last Paint Date, ADA Compliant? (Boolean).
+
+**5. Microtrenching Conduit Inventory**
+*   **Open Data Match:** "ECS Conduit Data" (2889) - 80% match. This dataset likely tracks conduit data, which aligns with microtrenching conduit.
+*   **Quotes:**
+    *   "Conduit" means equipment installed by means of microtrenching to house fiber-optic cabling in multiple enclosed pathways or pipes. (§ 1-01(a))
+    *   "Duct" means one enclosed pathway or pipe within a conduit. (§ 1-01(c))
+    *   "Excess capacity" means ducts within a conduit that may not be used by the owner or for the owner's business. Each excess capacity duct must be no smaller than the largest duct within the conduit that is reserved for use by the owner, but in any event each excess capacity duct must have the capacity to house at least 96 strands of fiber-optic cable. (§ 1-01(d))
+    *   New microtrenching will not be permitted where sufficient excess capacity is available in existing microtrenching. (§ 1-02(a))
+    *   An owner must install conduit in a way that will readily permit another owner to add length to the microtrenching by connecting its own conduit to the first owner's conduit. Where an owner connects its own conduit to another owner's previously installed conduit, the owner must install conduit that has the same number of pathways or pipes as the previous owner's conduit. (§ 1-02(b))
+    *   Microtrenching will be permitted only for: a. fiber-optic service to properties within the following zoning districts... b. fiber-optic service to telecommunications structures or equipment within the boundaries of streets regardless of zoning. (§ 1-02(c))
+    *   A map showing the street location of the conduit including the side of the street the conduit is on, the beginning and ending points of the conduit, the number of ducts in the conduit, and the number of ducts of excess capacity in the conduit. The map must accurately reflect the addresses of buildings that are passed by the conduit. (§ 1-02(f)(b))
+    *   On a low density residential block, all conduit must have excess capacity of at least four ducts. (§ 1-03(b))
+    *   In any other location, all conduit must have excess capacity of at least six ducts. (§ 1-03(c))
+    *   the owner must retain title to the conduit and must maintain the conduit in working order and good repair, and in compliance with the rules of this chapter. (§ 1-04)
+    *   An owner may transfer ownership of conduit to another entity that would be an "owner"... A transfer may not be made effective before the submission to the Department of the contract or other document effectuating the transfer. (§ 1-08(b))
+*   **Why:** To track all installed microtrenching conduits, their characteristics, and ownership to manage excess capacity and ensure compliance.
+*   **One row represents:** A segment of microtrenching conduit installed by an owner.
+*   **Covers:** All microtrenching conduits installed under the Department's regulations.
+*   **Columns:** Conduit Segment ID (PK), Owner Entity ID (linked to **1. Regulated Entity Registry**), Installation Date, Street Location (Street Name, Side of Street, Borough, Zip Code), Geographic Start Coordinates (Latitude, Longitude), Geographic End Coordinates (Latitude, Longitude), Length of Conduit Segment (feet), Total Number of Ducts in Conduit, Number of Ducts Reserved for Owner Use, Number of Excess Capacity Ducts, Minimum Excess Capacity Ducts Required, Is on Low Density Residential Block? (Boolean), Zoning District(s) Served, Floor Area Ratio, Addresses of Buildings Passed by Conduit, Conduit Material/Equipment Type, Connection Capability (Boolean), Current Status, Date of Last Maintenance Check, Date of Last Repair, Date of Last Service Outage, Date of Ownership Transfer, New Owner Entity ID (linked to **1. Regulated Entity Registry**).
+
+**6. Open Space Inventory**
+*   **Open Data Match:** "NYC Planimetric Database: Open Space (Other)" (709) - 90% match. "NYC Planimetric Database: Open Space (Parks)" (2509) - 90% match.
+*   **Quotes:**
+    *   "Open space. The term "open space" means a roadway space, park space, or another public outdoor location, including but not limited to a pedestrian plaza or public parking lot, that is made available by the office for use by art and cultural institutions for outdoor performances or as a rehearsal space." (§ 23-804.a)
+    *   "The office shall, in consultation with any other relevant agency or office... create a website that: 1. Provides information about open space; 2. Facilitates the use of open space by art and cultural institutions; 3. Allows users to search for open space, by location and on a map;" (§ 23-804.b)
+*   **Why:** To provide information about available open spaces for art and cultural institutions and facilitate their use.
+*   **One row represents:** A single designated open space.
+*   **Covers:** Roadway spaces, park spaces, pedestrian plazas, public parking lots, and other public outdoor locations made available for use by art and cultural institutions.
+*   **Columns:** Open Space ID (PK), Open Space Name, Open Space Type, Location (Address, Coordinates), Managing Agency ID, Availability Status, Capacity, Amenities, Searchable on Website (Boolean), Map Location Data.
+
+**7. IT Software Licenses & Subscriptions**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+*   **Why:** To manage and track all software licenses and subscriptions for city agencies to ensure compliance and cost-effectiveness.
+*   **One row represents:** A single software license or subscription.
+*   **Covers:** All software licenses and subscriptions managed by DoITT for city agencies.
+*   **Columns:** License ID (PK), Software Name, Vendor, License Type, Number of Licenses, Purchase Date (linked to **47. IT Procurement & Contracts**), Expiration Date, Cost, Agencies Using (Agency IDs), Compliance Status, Renewal Date.
+
+**8. Public Data Set Inventory & Compliance**
+*   **Open Data Match:** "NYC Open Data Release Tracker" (1102) - 90% match. "Local Law 251 of 2017: Published Data Asset Inventory" (1115) - 90% match.
+*   **Quotes:**
+    *   "Data" means final versions of statistical or factual information (1) in alphanumeric form reflected in a list, table, graph, chart or other non-narrative form, that can be digitally transmitted or processed; and (2) regularly created or maintained by or on behalf of and owned by an agency that records a measurement, transaction, or determination related to the mission of an agency." (§ 23-501.b)
+    *   "Within one year of the effective date of this chapter and thereafter, the public data sets that agencies make available on the Internet shall be accessible through a single web portal that is linked to nyc.gov or any successor website maintained by, or on behalf of, the city of New York. If an agency cannot make all such public data sets available on the single web portal pursuant to this subdivision, the agency shall report to the department and to the council which public data set or sets that it is unable to make available, the reasons why it cannot do so and the date by which the agency expects that such public data set or sets will be available on the single web portal." (§ 23-502.a)
+    *   "Such public data sets shall be made available in accordance with technical standards published by the department pursuant to section 23-505 of this chapter and shall be in a format that permits automated processing and shall make use of appropriate technology to notify the public of all updates." (§ 23-502.b)
+    *   "Such public data sets shall be updated as often as is necessary to preserve the integrity and usefulness of the data sets to the extent that the agency regularly maintains or updates the public data set... If there is a public data set for which such update schedule regularly cannot be met, the agency that maintains such public data set shall report to the department the reasons why it cannot meet such update schedule and the date by which the agency expects that it will be able to meet such schedule, and such information shall be disclosed in the compliance plan prepared pursuant to section 23-506." (§ 23-502.c)
+    *   "Each agency shall disclose in the update to such compliance plan the total number, since the last update, of such agency's freedom of information law responses that included the release of data, the total number of such responses determined to consist of or include a public data set that had not yet been included on the single web portal and the name of such public data set, where applicable, and the total number of such responses that resulted in voluntarily disclosed information being made accessible through the single web portal." (§ 23-502.f)
+    *   "Each data set on the single web portal shall include a plain language data dictionary... The most recent upload date and generation date for each data set shall be included directly on the single web portal." (§ 23-505.c)
+    *   "The manual described in subdivision a of this section shall include a technical standard requiring every public data set containing address information to utilize a standard field layout and presentation of address information and include corresponding community district and geospatial reference data. If there is a public data set for which an agency cannot utilize such standard field layout and presentation of address information, such agency shall report to the department and to the council the reasons why it cannot, and the date by which the agency expects that it will be able to utilize such standard field layout and presentation of address information, and such information shall be disclosed in the compliance plan prepared pursuant to section 23-506." (§ 23-505.d)
+    *   "The plan shall include a summary description of public data sets under the control of each agency on or after the effective date of this chapter, and shall prioritize such public data sets for inclusion on the single web portal on or before December 31, 2018 in accordance with the standards promulgated by the department pursuant to section 23-505 and shall create a timeline for their inclusion on the single web portal." (§ 23-506.a)
+    *   "Such update shall include the specific measures undertaken to make public data sets available on the single web portal since the immediately preceding update, specific measures that will be undertaken prior to the next update, an update to the list of public data sets, if necessary, any changes to the prioritization of public data sets and an update to the timeline for the inclusion of data sets on the single web portal, if necessary." (§ 23-506.c)
+    *   "the department shall provide, and update in real-time, the following information on each data set classified as a public data set on or after March 7, 2012: (1) Each scheduled publication date; (2) If such data set has been published, the date of such publication, the date of the most recent update to such data set, and the current location of the data set; (3) Status of compliance with subdivision c of section 23-502 of this chapter; (4) Status of compliance with subdivision c and subdivision d of section 23-505 of this chapter; (5) Whether the data set is automated; and (6) Whether the data set feasibly can be automated." (§ 23-509)
+*   **Why:** To manage and track the status, metadata, and compliance of all public data sets for accessibility, transparency, and reporting.
+*   **One row represents:** A single public data set.
+*   **Covers:** All public data sets under the control of city agencies.
+*   **Columns:** Data Set ID (PK), Agency ID (Owning/Maintaining Agency), Data Set Name, Description, Scheduled Publication Date, Actual Publication Date (on web portal), Current Location/URL of Data Set, Most Recent Update Date (on web portal), Most Recent Generation Date (of data), Automated Updates (Boolean), Feasibly Automated (Boolean), Compliance with Update Schedule (Boolean), Reason for Non-Compliance with Update Schedule, Expected Date of Compliance with Update Schedule, Technical Standards Compliance (Boolean), Data Dictionary Available (Boolean), Data Dictionary Link/Location, Address Information Standard Layout Compliance (Boolean), Reason for Non-Compliance with Address Layout, Expected Date of Compliance with Address Layout, Geospatial Reference Data Included (Boolean), Accessible via Single Web Portal (Boolean), Reason for Not Being on Web Portal, Expected Date of Web Portal Availability, Prioritization Criteria, Timeline for Inclusion on Web Portal, FOIL Request Triggered Inclusion (Boolean), FOIL Request ID (linked to **44. FOIL Requests for Data**), Voluntarily Disclosed (Boolean).
+
+**9. Wheelchair Repair Provider Directory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The office shall post on its website a list of wheelchair repair providers that operate in the city... The office shall update such list no less than once each year. Where practicable, such list shall include the following information for each wheelchair repair provider: 1. Name; 2. Address; 3. Email address; 4. Phone number; 5. Website domain name; 6. Hours of operation; 7. Insurance providers accepted, if any; and 8. Forms of payment accepted." (§ 23-807.b)
+*   **Why:** To provide a publicly accessible, annually updated list of wheelchair repair providers with essential contact and service information.
+*   **One row represents:** A single wheelchair repair provider.
+*   **Covers:** Wheelchair repair providers operating in the city.
+*   **Columns:** Provider ID (PK), Provider Name, Address, Email Address, Phone Number, Website Domain Name, Hours of Operation, Insurance Providers Accepted (List/Text), Forms of Payment Accepted (List/Text), Last Update Date, Source of Information.
+
+**10. Telecommunications Franchises & Revocable Consents**
+*   **Open Data Match:** "Cable Franchise Areas" (1896) - 70% match. This is a map of areas, not the agreements themselves.
+*   **Quotes:**
+    *   "to administer all franchises and revocable consents relating to telecommunications pursuant to the provisions of chapter fourteen, including, without limitation, proposing authorizing resolutions for telecommunications franchises, developing and issuing requests for proposals or other solicitations of proposals for telecommunications franchises, selecting telecommunications franchisees, reviewing and approving petitions for revocable consents relating to telecommunications, negotiating the terms of contracts or other agreements relating to telecommunications franchises and revocable consents, and enforcing the terms and conditions of such agreements;" (Section 1072.c)
+*   **Why:** To administer, track, and enforce telecommunications agreements, the agency needs to maintain detailed records of each franchise and consent.
+*   **One row represents:** A single telecommunications franchise or revocable consent agreement.
+*   **Covers:** All active, pending, and historical telecommunications franchises and revocable consents.
+*   **Columns:** Agreement ID (PK), Agreement Type (Franchise, Revocable Consent), Franchisee/Permittee Name, Legal Entity ID (linked to **1. Regulated Entity Registry**), Application Date, Approval Date, Start Date, End Date, Status (Active, Expired, Revoked, Pending), Terms and Conditions Summary, Enforcement Actions (linked to **11. Enforcement Actions & Violations**), Related RFP ID, Resolution ID, Geographic Scope, Fees/Payments.
+
+**11. Enforcement Actions & Violations**
+*   **Open Data Match:** "Cable Complaints" (296) - 60% match. This is a specific type of complaint, not general enforcement actions.
+*   **Quotes:**
+    *   "to administer all franchises and revocable consents relating to telecommunications pursuant to the provisions of chapter fourteen, including, without limitation, proposing authorizing resolutions for telecommunications franchises, developing and issuing requests for proposals or other solicitations of proposals for telecommunications franchises, selecting telecommunications franchisees, reviewing and approving petitions for revocable consents relating to telecommunications, negotiating the terms of contracts or other agreements relating to telecommunications franchises and revocable consents, and enforcing the terms and conditions of such agreements;" (Section 1072.c)
+    *   In the event of a violation of the rules of this chapter, the Department may initiate proceedings before the Office of Administrative Trials and Hearings (OATH) to seek the imposition of penalties on an owner, including fines or revocation or other limitation of the owner's right to engage in microtrenching. (§ 1-07(c))
+    *   Penalties include fines no less than $100 and no more than $25,000 per violation, termination of the owner's right to engage in additional microtrenching, and revocation of the owner's right to own microtrenching. (§ 1-07(c)(b))
+    *   Violations include the following. (Descriptions are for informational purposes only; the text of the rule itself determines the scope and meaning of the rule.) (§ 1-07(c)(c))
+    *   an owner who maintains or operates a public pay telephone without a permit issued pursuant to this chapter shall be guilty of a misdemeanor... (§ 6-02(a))
+    *   an owner who fails on two occasions within any three month period to provide phone service... or who fails to provide coinless twenty-four hour 911 service... shall be in violation... and shall be liable for a civil penalty of not more than two thousand five hundred dollars ($2,500) for each violation... (§ 6-02(b)(1))
+    *   violation of any provision of this chapter shall be punishable by a civil penalty of not more than one thousand dollars ($1,000) for each such violation... (§ 6-02(c))
+    *   An owner who is liable for a civil penalty... shall also be liable in the amount of the expense... incurred by the city in the rendering inoperable, removal, storage and/or disposal of the public pay telephone and the performance of related repair and restoration work. (§ 6-02(d))
+    *   If the Commissioner reasonably believes that an owner... has violated any provision... the Commissioner may... suspend review of all applications for the issuance of permits filed by such owner. (§ 6-02(f))
+    *   The Commissioner may take such action pursuant to this section that he or she deems necessary and appropriate where: (1) there is reasonable cause to believe that an owner... has violated the provisions... or any of the terms or conditions contained in the permit... (2) a public pay telephone unreasonably interferes with the use of a street... or constitutes a danger to life or property or a public nuisance; (3) a knowing material omission or false statement has been made... (4) an owner... has failed to pay any fines or penalties... (§ 6-36(a))
+    *   In addition to any civil or criminal penalties provided by law, the Commissioner may take one or more of the following actions... (1) Revocation of permit and removal of telephone. (§ 6-36(b))
+*   **Why:** To track all alleged and determined violations, associated enforcement actions, and penalties across all regulated programs to ensure accountability and compliance.
+*   **One row represents:** A single violation incident or enforcement action initiated by the Department.
+*   **Covers:** All enforcement activities for telecommunications franchises and revocable consents, microtrenching rules, cable TV electricity usage rules, and public pay telephone rules.
+*   **Columns:** Enforcement Action ID (PK), Agreement ID (linked to **10. Telecommunications Franchises & Revocable Consents**), Owner Entity ID (linked to **1. Regulated Entity Registry**), Program Area (Telecommunications Franchises, Microtrenching, Cable TV Electricity, Public Pay Telephones), Related Asset ID (e.g., Conduit Segment ID (linked to **5. Microtrenching Conduit Inventory**), PPT Installation ID (linked to **4. Public Pay Telephone Installation Inventory**)), Rule Violated, Violation Description, Date of Alleged Violation, Date Violation Discovered/Reported, Complaint ID (linked to **52. Microtrenching Compliance Complaints**), Inspection ID (linked to **49. Public Pay Telephone Maintenance Inspections** or **51. Microtrenching Audits & Investigations**), Nuisance Determination ID (linked to **16. Public Pay Telephone Nuisance Determinations**), Enforcement Action Type, Date Enforcement Action Initiated, OATH Case Number, Environmental Control Board Case Number, Violation Status, Date of Adjudication/Correction, Final Determination, Penalty Imposed, Date Penalty Imposed, Fine Payment Status, Date Fine Paid, City Costs Incurred, City Costs Payment Status, Date City Costs Paid, Permit Review Suspended? (Boolean), Date Permit Review Suspension Started, Date Permit Review Suspension Ended.
+
+**12. Public Pay Telephone Permit Applications**
+*   **Open Data Match:** "LinkNYC New Site Permit Applications" (2798) - 70% match. This is for a specific type of telecom asset, but the concept of permit applications is the same.
+*   **Quotes:**
+    *   An application for a permit required pursuant to section 17-372 of this title or for the renewal of such a permit shall be made and submitted on forms furnished by the department. (§ 17-373(a) - *This is a general permit application quote, but the principle applies to PPTs*)
+    *   No permit for a public pay telephone shall be issued or renewed pursuant to this subchapter without the written consent of the owner of an affected building or other private property... (§ 6-34(a))
+    *   The Department will accept and review applications for proposed locations of installations other than those recommended by the Department. (§ 6-32(b))
+    *   The Commissioner shall review any comments received from agencies, Borough Presidents, Council Members, Community Boards, and other members of the public prior to making a determination regarding such permits. (§ 6-35(b)(1))
+    *   Upon approval of a location, a notice to proceed shall be granted to the franchisee. (§ 6-35(b)(2))
+    *   Prior to the issuance of a permit for a new installation, franchisee must submit the permit fee of three hundred ninety-five dollars ($395). (§ 6-32(a))
+    *   A permit shall not be issued: (1) unless the applicant possesses a franchise... (2) unless the applicant has... obtained the consent of the owner or commercial lessee... (3) where a public pay telephone will unreasonably interfere with the use of a street by the public or where it will unreasonably interfere with the use of the abutting property. (§ 6-31(b))
+*   **Why:** To track submission details, review progress, and associated documentation for public pay telephone permit applications.
+*   **One row represents:** A single application for a public pay telephone permit.
+*   **Covers:** All applications for new, renewal, transfer, or reinstallation of public pay telephone permits.
+*   **Columns:** Application ID (PK), Owner Entity ID (linked to **1. Regulated Entity Registry**), Application Type, Application Submission Date, Proposed PPT Installation Location, Proposed Geographic Coordinates, Proposed Number of Telephones at Installation, Proposed Installation Type, Permit Fee Payment Status, Building Owner/Commercial Lessee Consent Submitted? (Boolean), Consent ID (linked to **14. PPT Building Owner/Lessee Consents**), DOT Notification Date, Borough President Notification Date, Council Member Notification Date, Community Board Notification Date, Review Comments ID (linked to **15. PPT Permit Application Review Comments**), Landmarks Preservation Commission Compliance Required? (Boolean), Landmarks Preservation Commission Approval Status, Application Status, Date of Status Change, Reason for Denial, Notice to Proceed Granted? (Boolean), Notice to Proceed Date, Franchise Status at Application.
+
+**13. Public Pay Telephone Permits**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   No public pay telephone shall be installed, operated or maintained on, over or under any street or other inalienable property of the City... unless the owner of the public pay telephone has received a permit... (§ 6-30(a))
+    *   A permit shall include such terms and conditions for the operation of a public pay telephone as the Commissioner deems necessary to protect the public safety and to safeguard the interests of the City... (§ 6-30(b))
+    *   A permit issued pursuant to this subchapter is valid only for the public pay telephone installation at the location for which such permit was issued and may not be transferred to a person other than the owner to whom such permit was issued without the written approval of the Commissioner. (§ 6-30(c))
+    *   A permit issued pursuant to this chapter may be transferred to an owner other than the owner to whom the permit was issued, provided that such transfer has the written approval of the Commissioner... (§ 6-31(c))
+    *   A permit for a public pay telephone shall continue in effect... for the term of the franchise held by the owner of such telephone... (§ 6-33(a))
+    *   The Commissioner may terminate a permit and require the removal of a public pay phone upon a determination that (i) the public pay telephone unreasonably interferes with... or constitutes a public nuisance; or (ii) that removal... is required in connection with a street widening or other capital project. (§ 6-33(b)(1))
+    *   Where such permission is granted, the permittee shall not be required to obtain a new permit for the public pay telephone and the permit previously issued for such public pay telephone shall continue in effect. (§ 6-33(b)(3)(ii))
+    *   A three hundred ninety five dollars ($395) fee will be required prior to the issuance of a new permit and shall be nonrefundable. (§ 6-48)
+*   **Why:** To track the status, terms, and associated fees of permits issued for public pay telephone installations to ensure legal operation.
+*   **One row represents:** A single permit issued for a public pay telephone installation.
+*   **Covers:** All permits issued, renewed, or transferred for public pay telephone installations.
+*   **Columns:** Permit ID (PK), PPT Installation ID (linked to **4. Public Pay Telephone Installation Inventory**), Owner Entity ID (linked to **1. Regulated Entity Registry**), Application ID (linked to **12. Public Pay Telephone Permit Applications**), Permit Issue Date, Permit Expiration Date, Permit Status, Permit Type, Permit Fee Paid (Amount), Permit Fee Payment Date, Permit Terms and Conditions, Date of Last Transfer, Previous Owner Entity ID (linked to **1. Regulated Entity Registry**), Reason for Termination/Revocation, Date of Termination/Revocation, Required Removal Date.
+
+**14. PPT Building Owner/Lessee Consents**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   No permit for a public pay telephone shall be issued or renewed pursuant to this subchapter without the written consent of the owner of an affected building or other private property where the installation of such public pay telephone requires the opening, drilling or other physical alteration of a building facade or other private property or the affixing of such telephone to a building facade or other private property. Such consent shall be provided to DoITT in either of the following two forms: (1) a photocopy of an effective and binding written agreement signed by the building owner... (2) an alternative consent form to be prescribed by the Commissioner. (§ 6-34(a))
+    *   Where the installation of a public pay telephone... requires access through an existing conduit or other opening on a building facade or other private property, or such installation is to be made within six feet of a building line, no permit shall be issued or renewed without the written consent of either the building owner or the commercial lessee. (§ 6-34(b)(1))
+    *   If the consent is from the commercial lessee... there shall also be required a certification by the commercial lessee certifying that the building owner has authorized the commercial lessee to grant such consent and the commercial lessee has provided the building owner (or its authorized agent) with written notification (by certified mail) of such granting of consent... (§ 6-34(b)(1)(ii))
+    *   Within thirty (30) days of receipt by a building owner of a commercial lessee's consent... a building owner or an authorized agent of an owner may object to the installation of a public pay telephone... (§ 6-34(b)(2))
+*   **Why:** To track and review consents from building owners or commercial lessees for public pay telephone installations, which are required for permit issuance.
+*   **One row represents:** A single consent document or objection related to a public pay telephone installation.
+*   **Covers:** All building owner/commercial lessee consents and objections submitted for public pay telephone permit applications.
+*   **Columns:** Consent ID (PK), Application ID (linked to **12. Public Pay Telephone Permit Applications**), PPT Installation ID (linked to **4. Public Pay Telephone Installation Inventory**), Consent Type, Consent Submission Date, Consenting Party Name, Consenting Party Type, Building Address, Nature of Consent, Commercial Lessee Certification Submitted? (Boolean), Proof of Notification to Building Owner Submitted? (Boolean), Building Owner Objection Received? (Boolean), Date Objection Received, Objecting Party Name, Objection Reason, Applicant Response to Objection, Consent Status, Date of Status Change.
+
+**15. PPT Permit Application Review Comments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   The Department shall notify the Department of Transportation or any successor of such agency, on a periodic basis of the location of public pay telephones for which permits are being sought. The Department of Transportation may review such locations and, within thirty (30) business days of such notification, submit comments to the Commissioner in regard to any such telephone or telephones. (§ 6-35(a)(1))
+    *   The Department shall also, on a periodic basis, notify the pertinent Borough Presidents, Council Members and Community Boards of the opportunity to review proposed locations. A Borough President, Council Member, or Community Board may review any such application and, within thirty business days of such notification, submit comments in writing to the Commissioner in regard to such application. (§ 6-35(a)(2))
+    *   The Commissioner shall review any comments received from agencies, Borough Presidents, Council Members, Community Boards, and other members of the public prior to making a determination regarding such permits. (§ 6-35(b)(1))
+*   **Why:** To track comments received from various governmental and public entities during the public pay telephone permit application process.
+*   **One row represents:** A single comment or set of comments received from an external entity regarding a public pay telephone permit application.
+*   **Covers:** All comments submitted by DOT, Borough Presidents, Council Members, Community Boards, and other public members on PPT permit applications.
+*   **Columns:** Review Comments ID (PK), Application ID (linked to **12. Public Pay Telephone Permit Applications**), Commenting Entity Type, Commenting Entity Name, Date of Notification to Entity, Date Comments Received, Comments Summary/Content, Impact on Permit Decision, Commissioner's Response to Objection.
+
+**16. Public Pay Telephone Nuisance Determinations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Public Nuisance" shall mean a public pay telephone which the Commissioner has reasonable cause to believe is used on a regular basis in furtherance of unlawful activity. (§ 6-01)
+    *   The Commissioner may determine that a public pay telephone constitutes a public nuisance when a written complaint is made, including, but not limited to a complaint by the Community Board in the Community District in which such telephone is located stating that such public pay telephone constitutes a public nuisance, as so defined. The complaint must also be verified by the police precinct in which such telephone is located. (§ 6-37)
+    *   Notwithstanding any other provision of this section the Commissioner may, upon determination that a public pay telephone constitutes a public nuisance, notify the permittee of such determination and order that such telephone be removed within five (5) business days. (§ 6-36(d))
+*   **Why:** To track formal determinations of public nuisance for public pay telephones, which triggers specific removal procedures.
+*   **One row represents:** A single determination by the Commissioner that a public pay telephone constitutes a public nuisance.
+*   **Covers:** All instances where a public pay telephone is formally determined to be a public nuisance.
+*   **Columns:** Nuisance Determination ID (PK), PPT Installation ID (linked to **4. Public Pay Telephone Installation Inventory**), Owner Entity ID (linked to **1. Regulated Entity Registry**), Date of Complaint, Complainant Type, Police Precinct Verification Date, Date of Commissioner's Determination, Reason for Determination, Determination Status, Date of Status Change, Notification Date to Permittee, Required Removal Date, Removal Action ID (linked to **17. Public Pay Telephone Removal & Disposal Actions**).
+
+**17. Public Pay Telephone Removal & Disposal Actions**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   The Commissioner may terminate a permit and require the removal of a public pay phone upon a determination that (i) the public pay telephone unreasonably interferes with or, as a result of changed conditions, will unreasonably interfere with the use of a street by the public or constitutes a public nuisance; or (ii) that removal of the public pay telephone is required in connection with a street widening or other capital project. (§ 6-33(b)(1))
+    *   In the event that the permittee fails to remove the public pay telephone by the date specified by the Commissioner, the Commissioner may remove or cause the removal of the public pay telephones and have repair and restoration work performed at the expense of the permittee, who shall be liable in a civil action for the amount expended by the City. (§ 6-33(b)(2))
+    *   The Commissioner may revoke a permit, and upon such revocation, may further order the removal of the public pay telephone for which such permit has been issued. In the event the permittee fails to remove the public pay telephone and to perform related repair and restoration work within the time period specified by such order, the Commissioner may remove or cause the removal of the public pay telephone and have repair and restoration work performed at the expense of the former permittee, who shall be liable for the amount expended by the City. (§ 6-36(b)(1))
+    *   Notwithstanding any other provision of this section, if the Commissioner determines that an imminent threat to life or property exists, the Commissioner may remove or cause the removal of a public pay telephone and have repair and restoration work performed at the expense of the owner, without affording the owner an opportunity to be heard prior to such removal. (§ 6-36(e)(1))
+    *   Any public pay telephones not removed by a permittee in compliance with an order of the Commissioner pursuant to this chapter shall be subject to removal pursuant to § 23-408 of the Code... (§ 6-39(a))
+    *   Any telephone removed pursuant to this chapter that is not claimed by its owner within thirty (30) days of removal shall be deemed abandoned... All abandoned public pay telephones may be sold at public auction... or such abandoned telephones may be used or converted for use by the Department or by another City agency. (§ 6-39(b))
+    *   A public pay telephone shall be released to the owner upon payment of the costs of removal, repair and restoration work, storage, and any fees for any administrative expense or expense of additional inspections incurred by the Department as a result of the violation... (§ 6-39(b))
+*   **Why:** To track actions taken by the Department or owners regarding the removal or disposal of public pay telephones.
+*   **One row represents:** A single action taken by the Department or an owner regarding the removal or disposal of a public pay telephone.
+*   **Covers:** All instances of public pay telephone removal, disposal, or transfer of ownership to the City.
+*   **Columns:** Removal Action ID (PK), PPT Installation ID (linked to **4. Public Pay Telephone Installation Inventory**), Owner Entity ID (linked to **1. Regulated Entity Registry**), Removal Action Type, Date Removal Ordered, Date Removal Executed, Removed By, Reason for Removal, Permit ID (linked to **13. Public Pay Telephone Permits**), Nuisance Determination ID (linked to **16. Public Pay Telephone Nuisance Determinations**), City Costs for Removal/Repair/Storage (Amount), City Costs Payment Status, Date City Costs Paid, Disposal Method, Date of Disposal, Proceeds from Sale, City Operations/Lease ID (linked to **18. Public Pay Telephone City Operations & Lease Records**).
+
+**18. Public Pay Telephone City Operations & Lease Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   If pursuant to any provision of this chapter, a public pay telephone, or group of public pay telephones, becomes subject to removal by the Department, and if the location of such payphone or group of payphones is consistent with the requirements of Subchapter D of this chapter, then the Department shall have the authority to, in lieu of removal of such payphone or payphones, operate (directly or through a designee) such payphone or payphones for the account of the City and/or make such payphone or payphones available for purchase or lease from the City by holders of public pay telephone franchises granted by the City. (§ 6-47)
+    *   The Department, or its designee, purchaser or lessee, shall be authorized to make any necessary or convenient modifications to such payphone or payphones to secure the service provided from such payphone or payphones and the revenues generated from such payphone or payphones. (§ 6-47)
+*   **Why:** To track instances where the City takes over operation or leases public pay telephones that would otherwise be removed.
+*   **One row represents:** A single instance of the City taking over operation or leasing a public pay telephone.
+*   **Covers:** All public pay telephones that are operated by the City or leased by the City to another franchisee.
+*   **Columns:** City Operations/Lease ID (PK), PPT Installation ID (linked to **4. Public Pay Telephone Installation Inventory**), Original Owner Entity ID (linked to **1. Regulated Entity Registry**), Date City Assumed Control, Reason for City Control, Operation Type, Designee/Lessee Entity ID (linked to **1. Regulated Entity Registry**), Lease Agreement Details, Revenue Generated, Modifications Made, Current Status, Date Status Changed.
+
+**19. Microtrenching Project Submissions & Notifications**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   Before applying for a permit for microtrenching from the Department of Transportation the owner must submit the following documents to the Department: a. Proof of security. b. Indemnification. (§ 1-02(d))
+    *   After obtaining a permit for microtrenching from the Department of Transportation, but before beginning mictrotrenching construction, the owner must notify the Department of the intended dates of the start and completion of microtrenching construction. Notification must be made on a form and in a format prescribed by the Department. (§ 1-02(e))
+    *   Promptly after completion of microtrenching construction, and at most within 40 calendar days after the Department of Transportation issued the permit for microtrenching, the owner must file a document with the Department, in a format to be prescribed by the Department, containing the following information: a. An "as-built" drawing of the conduit installed. b. A map showing the street location of the conduit including the side of the street the conduit is on, the beginning and ending points of the conduit, the number of ducts in the conduit, and the number of ducts of excess capacity in the conduit. The map must accurately reflect the addresses of buildings that are passed by the conduit. (§ 1-02(f))
+*   **Why:** To track various documents and notifications submitted by owners throughout the microtrenching project lifecycle.
+*   **One row represents:** A single submission or notification related to a microtrenching project.
+*   **Covers:** Proof of security, indemnification agreements, construction start/completion notifications, and as-built drawings/maps.
+*   **Columns:** Submission ID (PK), Owner Entity ID (linked to **1. Regulated Entity Registry**), Conduit Segment ID (linked to **5. Microtrenching Conduit Inventory**), Submission Type, Submission Date, DOT Permit Number, Intended Construction Start Date, Intended Construction Completion Date, Actual Construction Start Date, Actual Construction Completion Date, As-Built Drawing Submitted? (Boolean), As-Built Map Submitted? (Boolean), Map Data Captured in Conduit Inventory? (Boolean), Security Coverage Extended? (Boolean), Indemnification Agreement Executed? (Boolean), Submission Status, Reviewer Name/ID, Review Date.
+
+**20. Microtrenching Excess Capacity Certifications**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   Before applying to the Department of Transportation for such a permit, the owner must obtain a certification from the Department that no excess capacity is available in the location the owner proposes for microtrenching. The owner must submit that certification to the Department of Transportation as part of the owner's application for a permit. (§ 1-02(a))
+*   **Why:** To track requests for and issuance of excess capacity certifications, a prerequisite for DOT permits.
+*   **One row represents:** A single request for and issuance of an excess capacity certification.
+*   **Covers:** All requests from owners for certification of no available excess capacity.
+*   **Columns:** Certification ID (PK), Owner Entity ID (linked to **1. Regulated Entity Registry**), Request Date, Proposed Microtrenching Location, Department's Determination, Date of Determination, Certification Issue Date, Certification Expiration Date, Reason for Determination, Reviewer Name/ID.
+
+**21. Microtrenching Excess Capacity Requests & Responses**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   A City request to use excess capacity may be submitted to the owner only by the Department. (§ 1-05(d))
+    *   A telecommunications franchisee's request to use excess capacity must be submitted by the telecommunications franchisee to the owner. The telecommunications franchisee must submit a copy of the request to the Department simultaneously with submission of the request to the owner. (§ 1-05(e))
+    *   The owner must respond to a request to use excess capacity within fifteen business days of the owner's receipt of the request. The owner's response must either approve or deny the request, and if the owner denies the request the owner must state the reasons for the denial. If the request is a City request, the owner must submit its response to the Department. If the request is by a telecommunications franchisee, the owner must submit its response to the telecommunications franchisee and simultaneously submit a copy of its response to the Department. (§ 1-05(f))
+    *   The owner must make excess capacity available to telecommunications franchisees on a first-come, first-served basis. (§ 1-05(g))
+    *   The owner must make excess capacity available to a telecommunications franchisee no later than 45 calendar days of the owner's receipt of the telecommunications franchisee's request, unless the owner denies the request... (§ 1-05(h))
+    *   If a telecommunications franchisee does not complete the installation of fiber-optic cable within 45 calendar days after the owner makes excess capacity available... the owner may deem any portion of the excess capacity that the telecommunications franchisee did not occupy by that time to be available... (§ 1-05(i))
+*   **Why:** To track all requests for excess capacity (from City or franchisees) and the owners' responses to ensure fair and timely access.
+*   **One row represents:** A single request for excess capacity in a microtrenching conduit.
+*   **Covers:** All requests for excess capacity and the corresponding responses from conduit owners.
+*   **Columns:** Request ID (PK), Conduit Segment ID (linked to **5. Microtrenching Conduit Inventory**), Requesting Entity Type, Requesting Entity ID (linked to **1. Regulated Entity Registry** or City Agency ID), Conduit Owner Entity ID (linked to **1. Regulated Entity Registry**), Date Request Submitted to Owner, Date Request Copy Submitted to Department, Requested Ducts, Requested Length, Requested Start Point, Requested End Point, Owner Response Date, Owner Response Status, Reason for Denial, Date Owner Response Copy Submitted to Department, First-Come, First-Served Order (Timestamp of request), Date Excess Capacity Made Available, Deadline for Installation Completion, Installation Completed by Deadline? (Boolean), Portion Occupied by Deadline.
+
+**22. Microtrenching Excess Capacity Occupancy Events**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   No later than ten business days after the end of each calendar quarter, the owner must submit a report to the Department, in a format to be prescribed by the Department, stating: a. The name of each telecommunications franchisee that took occupancy of excess capacity during the previous quarter, and, for each such telecommunications franchisee, the location of the beginning and ending points of each length of duct the telecommunications franchisee occupied; and b. The name of each telecommunications franchisee that vacated excess capacity during the previous quarter, and, for each such telecommunications franchisee, the location of the beginning and ending points of each length of duct the telecommunications franchisee vacated. (§ 1-05(k))
+*   **Why:** To track individual events of excess capacity occupancy and vacation reported by conduit owners.
+*   **One row represents:** A single reported occupancy or vacation event of an excess capacity duct.
+*   **Covers:** All occupancy and vacation events of excess capacity ducts in microtrenching conduits.
+*   **Columns:** Report Entry ID (PK), Report Submission ID (if reports are tracked as entities), Conduit Owner Entity ID (linked to **1. Regulated Entity Registry**), Reporting Quarter, Report Submission Date, Event Type (Occupancy, Vacation), Telecommunications Franchisee Entity ID (linked to **1. Regulated Entity Registry**), Conduit Segment ID (linked to **5. Microtrenching Conduit Inventory**), Occupied/Vacated Duct Number, Occupied/Vacated Length, Beginning Point of Occupancy/Vacation, Ending Point of Occupancy/Vacation, Date of Occupancy/Vacation.
+
+**23. Microtrenching Conduit Removal & Disposal Orders**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   If an owner no longer intends to maintain conduit in working order and good repair, the owner must either remove the conduit at its own expense, or, at the Department's option, transfer the conduit to another owner, or otherwise dispose of the conduit as directed by the Department. (§ 1-06(a))
+    *   If an owner's telecommunications franchise or microtrenching permit is terminated or revoked, or if an owner's right to own microtrenching is revoked, the owner must either remove the conduit at its own expense, transfer the conduit to another owner, or otherwise dispose of the conduit as directed by the Department. (§ 1-06(b))
+    *   If the Department determines that microtrenching is unsuitable or unsafe, either entirely or under specified conditions, the owner must remove the conduit and fiber-optic cable at the owner's expense, or, at the Department's option, transfer title to the conduit and fiber-optic cable to the City without fee or cost. (§ 1-06(c))
+    *   if any court or other tribunal of competent jurisdiction invalidates any of those provisions, this chapter will be invalidated in its entirety and microtrenching will not be permitted, and owners must remove or otherwise dispose of all conduit as directed by the Department. (§ 1-08(e))
+*   **Why:** To track orders and actions related to the removal or disposal of microtrenching conduits under various circumstances.
+*   **One row represents:** A single order or action related to the removal or disposal of a microtrenching conduit.
+*   **Covers:** All instances where the Department directs or approves the removal, transfer, or disposal of microtrenching conduits.
+*   **Columns:** Removal Order ID (PK), Conduit Segment ID (linked to **5. Microtrenching Conduit Inventory**), Owner Entity ID (linked to **1. Regulated Entity Registry**), Order Date, Required Action, Reason for Order, Required Completion Date, Actual Completion Date, Action Performed By, Disposal Method, New Owner Entity ID (linked to **1. Regulated Entity Registry**), Transfer to City (Boolean), City Costs Incurred, City Costs Payment Status.
+
+**24. Cable TV Electricity Resale Arrangements**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   To the extent allowable by applicable law and tariff, a cable television company may enter into a resale arrangement for use of electricity to operate equipment situated on premises not owned, operated or leased by the cable television company only upon prior written approval of the affected premises owner or authorized agent. (§ 4-03(b))
+    *   The cable television company shall submit to the Department quarterly reports with respect to any resale arrangement for use of electricity to operate equipment situated on premises not owned, operated or leased by the cable television company in a form and containing such information as the Commissioner may reasonably specify. (§ 4-04(e))
+*   **Why:** To track individual electricity resale arrangements by cable television companies for compliance monitoring.
+*   **One row represents:** A single reported electricity resale arrangement.
+*   **Covers:** All electricity resale arrangements by cable television companies.
+*   **Columns:** Report Entry ID (PK), Report Submission ID (if reports are tracked as entities), Cable TV Company Entity ID (linked to **1. Regulated Entity Registry**), Reporting Quarter, Report Submission Date, Premises Address, Premises Owner/Authorized Agent Name, Date of Premises Owner/Agent Approval, Resale Arrangement Start Date, Resale Arrangement End Date, Electricity Usage.
+
+**25. Cable TV Electricity Notice Events**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   The cable television company shall give each premises owner or authorized agent not less than fifteen (15) days written notice of its intention to locate equipment upon any premises not owned, operated or leased by the cable television company which may require the use of electricity. (§ 4-04(a))
+    *   The cable television company shall contact the utility providing the electricity and arrange for direct billing for the use of electricity on premises not owned, operated or leased by the cable television company not less than fifteen (15) days prior to the installation of said equipment. (§ 4-04(b))
+    *   The cable television company shall notify each affected premises owner or authorized agent when it has completed arrangements for direct billing when the utility providing electricity and the start date for such electricity usage. (§ 4-04(c))
+    *   The cable television company shall submit to the Department summary quarterly reports containing information on each notice sent out pursuant to the requirements of subparagraphs a, b, and c of this section in a form and containing such information as the Commissioner may reasonably specify. (§ 4-04(f))
+*   **Why:** To track individual notices sent by cable television companies regarding electricity usage arrangements.
+*   **One row represents:** A single reported notice sent by a cable television company.
+*   **Covers:** All notices sent by cable television companies to premises owners/agents and utilities regarding electricity usage.
+*   **Columns:** Report Entry ID (PK), Report Submission ID (if reports are tracked as entities), Cable TV Company Entity ID (linked to **1. Regulated Entity Registry**), Reporting Quarter, Report Submission Date, Notice Type, Date Notice Sent, Recipient Type, Recipient Name, Premises Address, Utility Company Name, Direct Billing Start Date.
+
+**26. Cable TV Direct Billing Plan Approvals**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   For electricity usage to operate equipment owned by the cable television company already situated on premises owned, operated or leased by an entity other than the cable television company as of the effective date of this rule, the cable television company shall contact the utility providing the electricity and arrange for direct billing for the use of electricity to operate such equipment on such premises. The cable television company shall submit a plan for the implementation of the requirements of this chapter for such electricity usage within thirty (30) days of the effective date of this chapter. Such plan shall be subject to the approval of the Commissioner. (§ 4-04(d))
+*   **Why:** To track plans submitted by cable television companies for implementing direct billing for existing electricity usage and the Department's approval decisions.
+*   **One row represents:** A single plan submitted by a cable television company for direct billing and the Department's approval decision.
+*   **Covers:** All plans submitted by cable television companies for direct billing arrangements for existing equipment.
+*   **Columns:** Plan Approval ID (PK), Cable TV Company Entity ID (linked to **1. Regulated Entity Registry**), Plan Submission Date, Plan Description, Commissioner's Review Date, Approval Status, Date of Approval Decision, Reason for Denial/Conditions.
+
+**27. Security Incident Log**
+*   **Open Data Match:** "Algorithmic Tools Compliance Report" (568) - 30% match. This is a report, not an incident log.
+*   **Quotes:**
+    *   "to ensure security for data and other information handled by this department;" (Section 1072.n)
+    *   "Any city agency that owns, leases, or licenses data that includes private information shall promptly disclose to the chief privacy officer, office of cyber command and department of information technology and telecommunications any breach of security following discovery by a supervisor or manager, or following notification to a supervisor or manager, of such breach if such private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person." (§ 10-502.a)
+    *   "Any city agency that owns, leases, or licenses data that includes private information shall disclose, in accordance with the procedures set forth in subdivisions d, e and f of this section, any breach of security following discovery by a supervisor or manager, or following notification to a supervisor or manager, of such breach to any individual whose private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person." (§ 10-502.b)
+    *   "Any city agency that maintains but does not own, lease, or license data that includes private information shall disclose any breach of security following discovery by a supervisor or manager, or following notification to a supervisor or manager, of such breach to the owner, lessor or licensor of the data if the private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person." (§ 10-502.c)
+    *   "Notice to affected individuals under this section is not required if the exposure of private information was an inadvertent disclosure by persons authorized to access private information, and the agency reasonably determines, in accordance with the protocols established pursuant to subdivision i of this section, that such exposure will not likely result in misuse of such information, or financial, personal, or reputational harm to the affected individuals. Such a determination must be documented in writing and maintained for at least five years." (§ 10-502.g)
+    *   "The office of cyber command, in consultation with the chief privacy officer and the department of information technology and telecommunications, shall issue protocols for agency coordination and recordkeeping for any breach of security and any incident that is not a breach of security but involves the good faith or inadvertent access, acquisition, disclosure, or use of any private information by an employee or agent of an agency for the legitimate purposes of the agency." (§ 10-502.i)
+*   **Why:** To track and manage all data security incidents affecting information handled by the department and city agencies for compliance and risk management.
+*   **One row represents:** A single data security incident (breach or inadvertent disclosure).
+*   **Covers:** All security breaches, unauthorized access attempts, or other data security events, including inadvertent disclosures of private information by any city agency.
+*   **Columns:** Incident ID (PK), Date/Time Detected, Date/Time Occurred, Incident Type (e.g., Unauthorized Access, Data Breach, Malware, Inadvertent Disclosure), Discovery Date, Notification Date to Supervisor/Manager, Agency ID (Owner of data), Agency ID (Maintaining data, if different), Data Owner/Lessor/Licensor (if agency only maintains data), Description of Incident, Type of Private Information Involved, Encryption Status of Data, Reasonably Believed Accessed/Acquired/Disclosed/Used by Unauthorized Person (Boolean), Was it an inadvertent disclosure by authorized personnel? (Boolean), Determination of Likelihood of Misuse/Harm (for inadvertent disclosures), Determination Document ID, Determination Document Retention End Date, Law Enforcement/Investigative Needs (Boolean), Date of Disclosure to CPO, Cyber Command, DoITT, Date of Disclosure to Data Owner/Lessor/Licensor, Number of Affected Individuals (estimated), Consumer Reporting Agency Notification Required (Boolean), Date of Notification to Consumer Reporting Agencies, Compliance with State/Other Law Notification (Boolean), State/Other Law Notification Details, Incident Status, Related Protocols Followed, Systems Affected (linked to **3. IT & Telecommunications Asset Inventory**, **7. IT Software Licenses & Subscriptions**), Data Affected, Severity, Resolution Status, Resolution Date, Actions Taken, Reporting Agency/Department.
+
+**28. Security Incident Individual Notifications**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Any city agency that owns, leases, or licenses data that includes private information shall disclose, in accordance with the procedures set forth in subdivisions d, e and f of this section, any breach of security following discovery by a supervisor or manager, or following notification to a supervisor or manager, of such breach to any individual whose private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person." (§ 10-502.b)
+    *   "Disclosures required by subdivision b of this section shall be made to each affected individual by at least one of the following means: 1. Written notice; or 2. Telephonic notification, provided that a log of each such notification is maintained by the agency that notifies the affected individuals; or 3. Electronic notification, provided that the affected individual has expressly consented to receiving such notification in electronic form and a log of each such notification is maintained by the agency that notifies affected individuals in such form;" (§ 10-502.d)
+    *   "Should disclosure pursuant to paragraph one, two or three of subdivision d be impracticable or inappropriate given the circumstances of the breach and the identity of the victim, such disclosure shall be made by a mechanism that is reasonably targeted to the individual in a manner that does not further compromise the integrity of the private information." (§ 10-502.e)
+*   **Why:** To log all notifications made to affected individuals following a security incident, ensuring compliance with notification methods and record-keeping.
+*   **One row represents:** A single notification attempt to an affected individual for a specific security incident.
+*   **Covers:** All notifications to individuals whose private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person.
+*   **Columns:** Notification ID (PK), Incident ID (linked to **27. Security Incident Log**), Affected Individual ID (or anonymized identifier), Notification Method, Notification Date, Notification Content Summary, Log Entry Date, Electronic Notification Consent (Boolean), Reason for Impracticable/Targeted Method, Further Compromise Risk.
+
+**29. Identifying Information Access & Disclosure Events**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Absent exigent circumstances, no employee shall collect identifying information without the written approval of the privacy officer of such employee's agency." (§ 23-1202.b.1)
+    *   "the privacy officer of an employee's agency may approve in advance certain routine collections of identifying information;" (§ 23-1202.b.2.a)
+    *   "the chief privacy officer may approve in advance a collection of identifying information not otherwise authorized by paragraph 1 of this subdivision upon the determination that such collection is in the best interests of the city;" (§ 23-1202.b.2.b)
+    *   "Absent exigent circumstances, no employee shall disclose identifying information to any party outside such employee's agency, including an employee of another city agency, without the written approval of the privacy officer of such agency." (§ 23-1202.c.1)
+    *   "the privacy officer of an employee's agency may approve in advance certain routine disclosures of identifying information;" (§ 23-1202.c.2.a)
+    *   "the chief privacy officer may approve in advance a disclosure to another city agency or agencies not otherwise authorized by paragraph 1 of this subdivision upon the determination that such disclosure is in the best interests of the city;" (§ 23-1202.c.2.b)
+    *   "Any request for identifying information or a proposal for the unsolicited disclosure of identifying information by an employee that does not concern a routine disclosure shall be sent to the privacy officer of such employee's agency as soon as practicable." (§ 23-1202.c.3)
+    *   "If an individual's identifying information is disclosed in violation of this chapter, the privacy officer of such employee's agency that becomes aware of such disclosure shall notify the chief privacy officer as soon as practicable and, if such disclosure is one described in policies and protocols issued pursuant to subdivision 6 of section 23-1203, the agency responsible for the disclosure shall make reasonable efforts to notify such individual in writing of the identifying information disclosed and to whom it was disclosed as soon as practicable;" (§ 23-1202.c.4)
+    *   "The chief privacy officer shall submit a quarterly report containing an anonymized compilation or summary of such disclosures to the speaker of the council and shall make such report available online." (§ 23-1202.c.4)
+    *   "In the event identifying information is collected or disclosed under exigent circumstances, information about such collection or request and disclosure, along with an explanation of why such exigent circumstances existed, shall be sent to the chief privacy officer as soon as practicable after such collection or disclosure." (§ 23-1202.d.1)
+    *   "The chief privacy officer shall submit a quarterly report containing an anonymized compilation or summary of such disclosures to the speaker of the council and make such report available online." (§ 23-1202.d.2)
+    *   "Each city agency shall require contractors that obtain identifying information, whether directly or through subcontractors, to apply the requirements of subdivisions b, c, d, and e of this section and any applicable policies and protocols adopted pursuant to this chapter;" (§ 23-1202.g)
+*   **Why:** To meticulously track all instances of collection, disclosure, and unauthorized disclosure of identifying information, including approvals and exigent circumstances.
+*   **One row represents:** A single event of identifying information collection, disclosure, or unauthorized disclosure.
+*   **Covers:** All collections, disclosures, and unauthorized disclosures of identifying information by employees, contractors, and subcontractors.
+*   **Columns:** Event ID (PK), Event Type, Timestamp of Event, Agency ID (Performing/Responsible Agency), Employee ID / Contractor ID / Subcontractor ID (Initiating/Responsible Party), Individual ID (to whom information pertains, anonymized if necessary), Type of Identifying Information, Purpose/Mission Furthered, Required by Law/Treaty (Boolean), Privacy Officer Approval Required (Boolean), Privacy Officer Approval Date, Privacy Officer ID (Approving Officer), Chief Privacy Officer Approval Required (Boolean), Chief Privacy Officer Approval Date, Chief Privacy Officer ID (Approving Officer), Routine Collection/Disclosure (Boolean), Exigent Circumstances (Boolean), Explanation of Exigent Circumstances, Recipient Type, Recipient Agency ID / Third Party Name, Individual Consent (Boolean), Violation of Chapter (Boolean), Notification to CPO (Boolean), Notification to Affected Individual (Boolean), Notification Date to Affected Individual, Law Enforcement/Welfare Exemption (Boolean), Related Agreement ID (linked to **30. Identifying Information Third-Party Agreements**).
+
+**30. Identifying Information Third-Party Agreements**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "require any city agency disclosing identifying information to a third party when such a disclosure is not classified as routine pursuant to section 23-1202 to enter into an agreement ensuring that the anticipated use and any potential future use of such information by such third party occurs only in a manner consistent with this chapter unless: (i) such disclosure is made under exigent circumstances, or (ii) such an agreement would not further the purposes of this chapter due to the absence of circumstances in which such disclosure would unduly compromise an important privacy interest." (§ 23-1203.3)
+    *   "describe disclosures of identifying information to third parties when such a disclosure is classified as routine pursuant to section 23-1202 for which, because of the nature or extent of such disclosures or because of the nature of the relationship between the city agency and third party, such disclosing agency is required to enter into an agreement with such third party requiring that the anticipated use and any potential future use of such information by such third party occurs only in a manner consistent with this chapter;" (§ 23-1203.4)
+    *   "use of agreements regarding the anticipated use and any potential future use of identifying information disclosed;" (§ 23-1205.a.1.d)
+*   **Why:** To track agreements with third parties for the disclosure of identifying information, ensuring consistent use and compliance with privacy regulations.
+*   **One row represents:** A single agreement with a third party for identifying information disclosure.
+*   **Covers:** Agreements for non-routine and certain routine disclosures of identifying information to third parties.
+*   **Columns:** Agreement ID (PK), Agency ID (Disclosing Agency), Third Party Name, Agreement Date, Agreement Type, Description of Identifying Information Disclosed, Anticipated Use of Information, Future Use Restrictions, Compliance with Chapter Ensured (Boolean), Exigent Circumstances (Boolean), Reason Agreement Not Required, Standard Contract Provisions Used (Boolean), Contract Document ID.
+
+**31. Identifying Information Privacy Complaints**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "establish a mechanism for accepting and investigating complaints for violations of this chapter." (§ 23-1203.9)
+*   **Why:** To track and investigate complaints regarding violations of identifying information policies, ensuring accountability and resolution.
+*   **One row represents:** A single complaint received regarding identifying information.
+*   **Covers:** All complaints for violations of Chapter 12.
+*   **Columns:** Complaint ID (PK), Complaint Date, Complainant (Anonymized), Description of Alleged Violation, Agency ID (Alleged Violating Agency), Employee ID / Contractor ID / Subcontractor ID (Alleged Violating Party), Investigation Start Date, Investigation End Date, Investigation Outcome, Remedial Actions Taken, Notification to Complainant Date.
+
+**32. Information Access Control Audits**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to institute procedures to assure restrictions of access to information to the appropriate individuals, where such restrictions is required by law;" (Section 1072.o)
+*   **Why:** To audit and ensure compliance with legal restrictions on information access.
+*   **One row represents:** A single audit event for information access controls.
+*   **Covers:** Regular audits of access permissions and logs for restricted information.
+*   **Columns:** Audit ID (PK), Audit Date, System/Information System Audited (linked to **3. IT & Telecommunications Asset Inventory**, **7. IT Software Licenses & Subscriptions**), Auditor (Staff ID) (linked to **2. Employee Roster & Designations**), Findings, Compliance Status, Remediation Actions, Follow-up Date.
+
+**33. Electronic Equipment Disposal Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Any agency that disposes of electronic equipment that contains a hard disk drive, solid state drive or similar device capable of storing information while powered off, including but not limited to printers, copiers and computers, shall ensure, before its disposal, the erasure of all information contained therein, either through degaussing, physical destruction of the drive, a data wiping that includes at least two full overwrites or another erasure method specified by the department of information technology and telecommunications after consultation with all relevant agencies." (§ 10-504.a)
+    *   "Each agency shall require any third party who disposes of electronic equipment on its behalf to provide the agency a written certification that the disposal complies with the requirements set forth in this section and shall forward such certification to the department of information technology and telecommunications. Every two years each agency that has disposed of electronic equipment itself shall submit a statement to the department of information technology and telecommunications certifying that its disposal of such electronic equipment complies with the requirements set forth in this section." (§ 10-504.b)
+    *   "For the purposes of this section, the term "dispose" includes a transfer of electronic equipment from one agency to another when such equipment has stored information that is confidential or sensitive in nature and is not relevant to the work of the agency receiving such equipment." (§ 10-504.c)
+*   **Why:** To track the secure disposal of electronic equipment containing information, ensuring data erasure and certification compliance.
+*   **One row represents:** A single piece of electronic equipment disposed of.
+*   **Covers:** All electronic equipment with storage capabilities disposed of by the agency or a third party on its behalf.
+*   **Columns:** Equipment ID (PK), Agency ID (Disposing Agency), Disposal Date, Equipment Type, Storage Device Type, Information Confidential/Sensitive (Boolean), Erasure Method Used, Third-Party Disposer (Boolean), Third-Party Disposer Name, Third-Party Certification Received (Boolean), Third-Party Certification Date, Internal Disposal Statement Submitted (Boolean), Internal Disposal Statement Submission Date, Receiving Agency ID.
+
+**34. Website Feature Compliance Audits**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Every website maintained by or on behalf of the city or a city agency shall include a translation feature for viewing the text of that website, wherever practicable, in languages other than English." (§ 23-801)
+    *   "The mayor or the mayor's designee shall adopt a protocol for websites maintained by or on behalf of the city or a city agency relating to website accessibility for persons with disabilities." (§ 23-802.a)
+    *   "No later than July 1, 2017, and every two years thereafter, the mayor or the mayor's designee shall submit to the council a written report that documents the compliance of websites maintained by or on behalf of the city or a city agency with the protocol adopted pursuant to subdivision a of this section." (§ 23-802.b)
+    *   "Every website maintained by or on behalf of the city or a city agency shall encrypt all exchanges and transfers between a web server, maintained by or on behalf of the city or a city agency, and a web browser: (i) of hypertext; or (ii) of electronic information, and require web browsers to request such encrypted exchange or transfer at all times for such websites, provided that such encryption shall not be required if such exchanges or transfers are conducted in a manner that provides at least an equivalent level of confidentiality, data integrity and authentication." (§ 23-805)
+*   **Why:** To track the compliance of city websites with mandated translation, accessibility, and encryption standards for public service and legal requirements.
+*   **One row represents:** An audit finding or status update for a specific website feature.
+*   **Covers:** All city websites and their compliance with translation, accessibility, and encryption requirements.
+*   **Columns:** Audit ID (PK), Website URL, Agency ID (Owning Agency), Audit Date, Feature Type, Compliance Status, Standard Used, Description of Non-Compliance/Issue, Remediation Plan, Remediation Due Date, Remediation Completion Date, Report Submission Date.
+
+**35. Online Interactive Map Status (DEP)**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The department of environmental protection shall provide to the public, at no charge, on the city's website, an online interactive map pursuant to section 24-309.1. All information required by section 24-309.1 shall be available on the city's website on or before June 1, 2019 and updated, at minimum, in June of each year. The mayor shall ensure that agencies provide such department with assistance and information as it requires to compile and update the interactive map." (§ 23-803)
+*   **Why:** To track the availability, content, and update schedule of the Department of Environmental Protection's online interactive map.
+*   **One row represents:** An update or status check for the online interactive map.
+*   **Covers:** The online interactive map provided by the Department of Environmental Protection.
+*   **Columns:** Map ID (PK), Map Name, Agency ID (DEP), Required Availability Date, Actual Availability Date, Required Update Frequency, Last Update Date, Next Scheduled Update Date, Compliance Status, Assistance/Information Provided by Other Agencies (Boolean), Assisting Agency IDs.
+
+**36. Agency Privacy Policy & Practice Profile**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Each city agency, acting in accordance with the policies and protocols of the chief privacy officer, may issue additional agency-specific guidance in furtherance of this chapter, including the policies and protocols promulgated pursuant to section 23-1203." (§ 23-1202.f)
+    *   "require the privacy officer of each city agency to issue guidance to city agency employees, contractors and subcontractors regarding such agency's collection, retention, and disclosure of identifying information;" (§ 23-1203.2)
+    *   "require the privacy officer of each city agency to arrange for dissemination of information to agency employees, contractors, and subcontractors and develop a plan for compliance with this chapter and any policies and protocols developed under this chapter;" (§ 23-1203.8)
+    *   "No later than July 31, 2018, and every two years thereafter by July 31, each city agency shall provide a report regarding the collection, retention, and disclosure of identifying information by such agency and any contractors or subcontractors utilized by such agency. Each such report shall include: 1. information concerning identifying information collected, retained, and disclosed, including: (a) the types of identifying information collected, retained, and disclosed... (b) the types of collections and disclosures classified as routine and any collections or disclosures approved by the chief privacy officer; (c) current policies regarding collection, retention, and disclosure... (d) use of agreements regarding the anticipated use and any potential future use of identifying information disclosed; (e) types of entities requesting the disclosure of identifying information or proposals for disclosures of identifying information... (f) the reasons why any collection and retention of identifying information furthers the purposes or mission of such agency; 2. the impact of any privacy policies and protocols issued by the chief privacy officer... 3. consideration and implementation... of alternative policies that minimize the collection, retention, and disclosure of identifying information... 4. policies on access to identifying information by employees, contractors, and subcontractors..." (§ 23-1205.a)
+*   **Why:** To track each agency's specific policies, guidance, and practices related to identifying information, as required for biennial reporting and committee review.
+*   **One row represents:** A snapshot of an agency's privacy policies and practices at a specific reporting period.
+*   **Covers:** Each city agency's policies and practices regarding the collection, retention, and disclosure of identifying information.
+*   **Columns:** Report ID (PK), Agency ID, Reporting Period, Report Submission Date, Types of Identifying Information Collected (List/Text), Types of Identifying Information Retained (List/Text), Types of Identifying Information Disclosed (List/Text), Routine Collection Classifications (List/Text), Routine Disclosure Classifications (List/Text), CPO Approved Collections (List/Text), CPO Approved Disclosures (List/Text), Policy on Requests for Disclosures (Description/Link), Policy on Proposals for Disclosures (Description/Link), Policy on Exigent Circumstances Classification (Description/Link), Policy on Routine Classification (Description/Link), Divisions/Categories of Employees Making Disclosures (List/Text), Use of Third-Party Agreements (Description/Link to **30. Identifying Information Third-Party Agreements** practices), Types of Entities Requesting Disclosure, Reasons for Disclosure to Entities, Reasons for Collection/Retention, Impact of CPO Policies/Protocols (Description), Alternative Policies Implemented (Description), Policies on Employee/Contractor/Subcontractor Access (Description/Link), Privacy Officer ID (linked to **2. Employee Roster & Designations**), Guidance Issued (Boolean), Guidance Document ID, Compliance Plan Developed (Boolean), Compliance Plan Document ID.
+
+**37. 311 Citizen Service Requests**
+*   **Open Data Match:** "311 Service Requests from 2010 to 2019" (1732) - 95% match. "311 Service Requests from 2020 to Present" (2323) - 95% match. "311 Call Center Inquiry" (449) - 90% match. "311 Service Requests for 2004" (44), "311 Service Requests for 2005" (1969), "311 Service Requests for 2006" (2236), "311 Service Requests for 2007" (1565), "311 Service Requests for 2008" (715), "311 Service Requests for 2009" (1697) - 95% match.
+*   **Quotes:**
+    *   "Within seven business days from the end of each month, the department shall submit in electronic format to each community board a list setting forth all requests for service that were identified to have occurred in the respective community district received by the 311 citizen service center during the immediately preceding month, as well as all unresolved requests for service from prior months. Such report shall include, but not be limited to, the following information for each request for service: (1) the request for service category; (2) the agency or agencies to which the request for service was directed; and, (3) the current status of the request for service, where such information can be directly accessed by the 311 citizen service system." (Section 1075.d)
+*   **Why:** To track and report on all citizen service requests received by the 311 center, including their status and agency assignments.
+*   **One row represents:** A single 311 citizen service request.
+*   **Covers:** All requests for service and directory assistance calls received by the 311 citizen service center.
+*   **Columns:** Service Request ID (PK), Call Date/Time, Request Type, Request Category, Community District, Geographic Location (if applicable), Agency Directed To (Agency ID), Current Status, Resolution Date (if applicable), Caller Information (anonymized if necessary).
+
+**38. Permitted Street Closures**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to provide to the public at no charge on the city's website an interactive map, updated as often as practicable and necessary but not less than once per week, displaying the following: 1. Permitted and approved street closures that do not allow for the passage of vehicular traffic on that street, including but not limited to closures for special events, crane operations and other construction work, film shoots and paving operations; and 2. Parking regulations. The information related to paragraph (1) of this subdivision shall be searchable and sortable by time, date and borough, except that street closures for crane operations, construction work and paving operations shall have the notation "subject to closure" during times where closure has been permitted and approved but where such closure may or may not occur on a particular day. All information required by this subdivision shall be available on the city's website as soon as practicable but in no case less than one week prior to any such closure or change, except closures which were applied for or planned less than one week prior to any such closure or change, which shall be available on such interactive map within seventy-two hours of the permit and approval of such closure. Where a permitted and approved street closure is due to a special event, the sponsor of the event with appropriate contact information shall be provided as part of such interactive map. For the purposes of this subdivision, special event shall mean any street fair, block party or festival on a public street(s) where such activity may interfere with or obstruct the normal use by vehicular traffic of such street(s);" (Section 1072.q)
+*   **Why:** To collect, maintain, and publish required information on all permitted and approved street closures for public access.
+*   **One row represents:** A single permitted or approved street closure event.
+*   **Covers:** All street closures for special events, construction, crane operations, film shoots, and paving operations.
+*   **Columns:** Closure ID (PK), Street Name, Cross Streets/Segment Description, Borough, Start Date, End Date, Start Time, End Time, Closure Type, Permit Status, Vehicular Traffic Allowed (Yes/No), "Subject to Closure" Notation (Yes/No), Special Event Sponsor Name, Special Event Sponsor Contact Info, Permit Application Date, Permit Approval Date, Last Update Date (for map).
+
+**39. Parking Regulations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to provide to the public at no charge on the city's website an interactive map, updated as often as practicable and necessary but not less than once per week, displaying the following: 1. Permitted and approved street closures that do not allow for the passage of vehicular traffic on that street, including but not limited to closures for special events, crane operations and other construction work, film shoots and paving operations; and 2. Parking regulations." (Section 1072.q)
+*   **Why:** To collect, maintain, and publish required information on all parking regulations for public access.
+*   **One row represents:** A specific parking regulation applicable to a street segment or area.
+*   **Covers:** All parking regulations across the city.
+*   **Columns:** Regulation ID (PK), Street Name, Cross Streets/Segment Description, Borough, Regulation Type, Days of Week, Start Time, End Time, Effective Date, Last Update Date (for map).
+
+**40. Crime Incidents (Received from NYPD)**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to provide to the public, at no charge on the city's website, an interactive crime map that, for each segment of a street bounded by one or more intersections and/or a terminus, shall visually display the aggregate monthly, yearly and year-to-date totals for the current and the most recent prior calendar years for each class of crime that is reported to the New York city police department, or for which an arrest was made, including crimes that occurred in parks and subway stations. Such map shall be searchable by address, zip code, and patrol precinct. All information required by this subdivision shall be available on the city's website as soon as practicable but in no case more than one month after a crime complaint has been filed. The mayor shall ensure that all agencies provide the department with such assistance and information as the department requires to compile and update the interactive crime map." (Section 1072.r)
+*   **Why:** To receive, process, and aggregate incident-level crime data from NYPD for the interactive crime map.
+*   **One row represents:** A single crime incident reported to NYPD or resulting in an arrest.
+*   **Covers:** All crime incidents reported to NYPD or where an arrest was made, including those in parks and subway stations.
+*   **Columns:** Incident ID (PK), Crime Class, Report Date, Incident Date/Time, Location (Street Segment, Intersection, Address, Zip Code, Patrol Precinct, GPS Coordinates), Arrest Made (Yes/No), Park/Subway Station Indicator, Reporting Agency (NYPD).
+
+**41. Municipal Channel Programming Schedule**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to ensure that priority is given on at least one municipal channel to the cable casting of the public proceedings of the council and its committees, the city planning commission and other state and city agencies;" (Section 1072.e)
+*   **Why:** To ensure compliance with public proceedings cable casting requirements and manage channel content.
+*   **One row represents:** A scheduled broadcast event on a municipal channel.
+*   **Covers:** All public proceedings broadcast on municipal channels.
+*   **Columns:** Broadcast ID (PK), Event Name, Originating Agency, Date, Start Time, End Time, Channel, Priority Status, Recording Archival Location.
+
+**42. Cultural Program Events**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The office shall... create a website that: ... 4. Allows users to search for information about outdoor programs offered by art and cultural institutions that are coordinated by the office. Such website may also provide information about other events hosted by art and cultural institutions and outdoor events held on private property, to the extent such information is provided to the office for inclusion on such website." (§ 23-804.b)
+*   **Why:** To track outdoor programs offered by art and cultural institutions, especially those coordinated by the office, for public information and coordination.
+*   **One row represents:** A single outdoor program event.
+*   **Covers:** Outdoor performances or rehearsals by art and cultural institutions coordinated by the Mayor's Office of Citywide Event Coordination and Management, and other events provided for inclusion.
+*   **Columns:** Program Event ID (PK), Program Name, Art/Cultural Institution Name, Open Space ID (linked to **6. Open Space Inventory**), Event Date, Event Start Time, Event End Time, Program Type, Description, Searchable on Website (Boolean), Other Events Hosted (Boolean), Private Property Event (Boolean).
+
+**43. Public Data Set Requests & Feedback**
+*   **Open Data Match:** "NYC Open Data Help Desk: Public Dataset Requests" (2246) - 90% match.
+*   **Quotes:**
+    *   "The department shall implement an on-line forum to solicit feedback from the public and to encourage public discussion on open data policies and public data set availability on the web portal." (§ 23-503.c)
+    *   "Requests received via the on-line forum for inclusion of particular public data sets shall be considered by agencies in making determinations as to priority for public data set inclusion on the single web portal pursuant to paragraph 5 of subdivision b of section 23-506. The department shall provide an initial response to each such request within two weeks of receipt. The agency to which the department refers the request shall post its final determination as to the request on the single web portal within two months of receipt." (§ 23-503.d)
+*   **Why:** To manage public input on open data policies and specific data set requests, ensuring timely responses and agency determinations.
+*   **One row represents:** A single request or piece of feedback from the public regarding open data.
+*   **Covers:** All requests for public data sets and feedback submitted through the online forum.
+*   **Columns:** Request/Feedback ID (PK), Submission Date, Requester/Submitter (Anonymized, if necessary), Type, Requested Data Set Name/Description, Referred Agency ID, Department Initial Response Date, Department Initial Response Content, Agency Final Determination Date, Agency Final Determination Content, Considered for Prioritization (Boolean), Included in Compliance Plan (Boolean).
+
+**44. FOIL Requests for Data**
+*   **Open Data Match:** "NYC Open Data Plan: FOIL Datasets" (1928) - 80% match. "NYC Open Data Plan: FOIL Metrics" (273) - 70% match.
+*   **Quotes:**
+    *   "Agencies shall review responses to freedom of information law requests that include the release of data to determine if such responses consist of or include public data sets that have not yet been included on the single web portal or the inclusion of which on the single web portal is not provided for in the compliance plan prepared pursuant to section 23-506. Each agency shall disclose in the update to such compliance plan the total number, since the last update, of such agency's freedom of information law responses that included the release of data, the total number of such responses determined to consist of or include a public data set that had not yet been included on the single web portal and the name of such public data set, where applicable, and the total number of such responses that resulted in voluntarily disclosed information being made accessible through the single web portal." (§ 23-502.f)
+*   **Why:** To track Freedom of Information Law requests that involve the release of data, specifically to identify potential new public data sets for the open data portal.
+*   **One row represents:** A single FOIL request that included the release of data.
+*   **Covers:** All FOIL requests where data was released, specifically to identify potential new public data sets.
+*   **Columns:** FOIL Request ID (PK), Agency ID (Responding Agency), Request Date, Response Date, Data Released (Boolean), Description of Data Released, Determined to be a Public Data Set (Boolean), Public Data Set ID (linked to **8. Public Data Set Inventory & Compliance**), Previously on Web Portal (Boolean), Resulted in Voluntary Disclosure on Web Portal (Boolean).
+
+**45. Web Portal Usage Analytics**
+*   **Open Data Match:** "NYC.gov Web Analytics" (2259) - 90% match. "NYC Open Data Dataset Analytics" (268) - 90% match.
+*   **Quotes:**
+    *   "The department shall collect, analyze and publish data on how users interact with the portal established pursuant to section 23-502. Such data shall include, but need not be limited to, number of page views, number of unique users and the location from which a user accesses such portal. Location shall not refer to any user's internet protocol address and it shall not include the user's personally identifying information." (§ 23-508)
+*   **Why:** To collect and analyze user interaction data with the public data web portal to improve service delivery and fulfill reporting requirements.
+*   **One row represents:** A single user interaction event (e.g., page view, unique user session).
+*   **Covers:** User interactions with the single web portal for public data sets.
+*   **Columns:** Event ID (PK), Timestamp, User Session ID (Anonymized), Event Type, Page URL, Data Set ID (linked to **8. Public Data Set Inventory & Compliance**), Location (General, non-identifying), Browser/Device Information (Anonymized).
+
+**46. Online Payment System Failure Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Electronic system failure. The term "electronic system failure" means a malfunction, or unauthorized denial of service, in an electronic system that makes it impossible for one or more persons to make payments to a city agency." (§ 23-806.a)
+    *   "In the event that an electronic system failure disables, for 24 hours or more, an electronic system used by persons to make payments to an agency, such affected agency shall establish a 48-hour grace period after such system is restored, during which no late payment fees or interest will be incurred for any payment due in the time period during which such electronic system failure disabled such system, provided that if only certain persons owing payments to such affected agency are unable to make such payments due to an electronic system failure, such affected agency shall allow such persons to file claims to forgive late payment fees and interest accrued during such electronic system failure." (§ 23-806.b)
+    *   "When an agency is required to establish a 48-hour grace period pursuant to this section, the agency head shall have the discretion to extend such grace period to a period not exceeding seven days;" (§ 23-806.c)
+*   **Why:** To track electronic system failures that impact online payments and the implementation of grace periods, ensuring fair treatment for affected users.
+*   **One row represents:** A single electronic system failure event.
+*   **Covers:** Malfunctions or unauthorized denial of service in electronic systems used for payments to city agencies.
+*   **Columns:** System Failure ID (PK), Affected Agency ID, Electronic System Name/Description, Failure Start Timestamp, Failure End Timestamp, Duration of Failure (hours), Payment System Disabled (Boolean), Grace Period Established (Boolean), Grace Period Start Date, Grace Period End Date, Grace Period Extension (Boolean), Extended Grace Period End Date, Reason for Extension, Number of Persons Affected, Claims for Forgiveness Filed (Boolean), Number of Claims for Forgiveness.
+
+**47. IT Procurement & Contracts**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+*   **Why:** To track all purchases and contracts for IT hardware, software, and services.
+*   **One row represents:** A single procurement transaction or contract.
+*   **Covers:** All procurement activities for IT goods and services.
+*   **Columns:** Procurement ID (PK), Contract ID, Item/Service Description, Vendor, Purchase Date, Contract Start Date, Contract End Date, Total Cost, Payment Schedule, Status, Related Asset IDs (linked to **3. IT & Telecommunications Asset Inventory**, **7. IT Software Licenses & Subscriptions**).
+
+**48. IT & Telecommunications Asset Maintenance Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to provide to city agencies such land-based and wireless voice, data, video or other communications facilities, and technical assistance or other assistance with respect to such facilities, as they may require for the effective discharge of their responsibilities;" (Section 1072.f)
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+*   **Why:** To track all maintenance activities performed on citywide telecommunications infrastructure and IT hardware.
+*   **One row represents:** A single maintenance event for a piece of IT or telecommunications infrastructure.
+*   **Covers:** All scheduled and unscheduled maintenance activities for telecommunications facilities and IT hardware.
+*   **Columns:** Maintenance ID (PK), Asset ID (linked to **3. IT & Telecommunications Asset Inventory**), Maintenance Date, Maintenance Type, Description of Work, Performed By (Staff ID (linked to **2. Employee Roster & Designations**)/Vendor), Outcome, Cost.
+
+**49. Public Pay Telephone Maintenance Inspections**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   An owner who fails on two occasions within any three month period to provide phone service from a public pay telephone for any period of time exceeding twenty-four continuous hours or who fails to provide coinless twenty-four hour 911 service from such public pay telephone in compliance with the provisions of subdivision (a) or subdivision (b) of 67 RCNY § 6-05, as the case may be, shall be in violation... (§ 6-02(b)(1))
+    *   An owner who fails on at least two occasions, each such occasion lasting for a duration of forty-eight (48) hours, or on one occasion that lasts for a duration of seventy-two (72) hours to maintain a public pay telephone in compliance with the provisions of subdivision (c) of 67 RCNY § 6-05 shall be in violation... (§ 6-02(b)(2))
+    *   § 6-05 Maintenance of Public Pay Telephones. (a) Coinless 911 service. (b) Telephone service. (c) Cleanliness. (d) Safety.
+    *   A notice of violation may be issued for a violation of a provision of subdivision (a) of this section when inspections on two occasions within a period no shorter than twenty-four hours have disclosed a violation of such provision. (§ 6-05(e)(1))
+    *   A notice of violation may be issued for violation of subdivision (b) of this section where inspections have disclosed that telephone service was unavailable on two occasions, each such occasion lasting for a duration of at least twenty-four (24) hours, within a period of ninety (90) calendar days. (§ 6-05(e)(2))
+    *   A notice of violation for violation of a provision of subdivision (c) of this section may be issued where inspections disclose violation of such subdivision continuing at least forty-eight (48) hours on two separate occasions within a period of ninety (90) calendar days or a violation lasting at least seventy-two (72) hours on one occasion. (§ 6-05(e)(3))
+    *   A notice of violation for a violation of a provision of subdivision (d) of this section may be issued where two inspections at least seventy-two (72) hours apart disclose that a displaced public pay telephone has not been restored to its original position or that an installation or portion of an installation has been broken in place, fractured, detached or is otherwise unsafe and has not been repaired or made safe. (§ 6-05(e)(4))
+    *   Every public pay telephone installation... shall be maintained in a condition of good repair. All painted surfaces must receive a fresh coat of paint at least once a year. (§ 6-43(c)(1))
+    *   Broken or missing lights, broken or unattached or missing advertising panels or other components... shall all be repaired or replaced... within seventy-two hours... (§ 6-43(c)(2))
+    *   Dangling or protruding wires... shall be repaired within forty-eight (48) hours... (§ 6-43(c)(3))
+    *   The pedestal(s)... shall be kept free of holes or missing or unattached plates... and upon notice of non-compliance... shall be repaired within forty-eight (48) hours. (§ 6-43(c)(4))
+    *   any dangerous condition shall be fixed as soon as possible but no later than twenty-four hours. (§ 6-43(c)(5))
+    *   A public pay telephone shall be maintained such that upon proper payment, a call can be completed. (§ 6-43(d))
+*   **Why:** To track regular inspections of public pay telephones to ensure they meet operational, cleanliness, and safety standards.
+*   **One row represents:** A single inspection of a public pay telephone installation.
+*   **Covers:** All inspections performed by the Department on public pay telephone installations.
+*   **Columns:** Inspection ID (PK), PPT Installation ID (linked to **4. Public Pay Telephone Installation Inventory**), Inspection Date, Inspector Name/ID (linked to **2. Employee Roster & Designations**), Inspection Type, Coinless 911 Service Status, Dial Tone Present? (Boolean), Clear/Audible Transmission/Reception? (Boolean), Keyboard/Handset Working? (Boolean), Operator Service Access (Working, Not Working), Payment Acceptance (Working, Not Working), Call Completion (Working, Not Working), Coin Return Mechanism (Working, Not Working), Free WiFi Service (Working, Not Working), Free Domestic Telephone Service (Working, Not Working), Free of Offensive Odors? (Boolean), Free of Litter/Debris/Damage? (Boolean), Free of Stickers/Graffiti? (Boolean), Clean Condition (Grime/Rust)? (Boolean), Lettering/Signage Clean/Legible? (Boolean), Painted Surfaces Condition, Displaced from Original Configuration? (Boolean), Made Safe within 24 hours (if displaced)? (Boolean), Restored/Removed within 72 hours (if displaced)? (Boolean), Broken/Fractured/Detached Components? (Boolean), Made Safe within 24 hours (if broken)? (Boolean), Repaired within 72 hours (if broken)? (Boolean), Broken/Missing Lights? (Boolean), Broken/Missing Advertising Panels? (Boolean), Dangling/Protruding Wires? (Boolean), Pedestal Holes/Missing Plates/Brackets? (Boolean), Dangerous Condition Identified? (Boolean), Description of Dangerous Condition, ADA Compliance Check (Pass/Fail), Overall Inspection Outcome, Violation ID (linked to **11. Enforcement Actions & Violations**).
+
+**50. Microtrenching Conduit Maintenance & Outage Events**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   No later than January 20 of each year, the owner must submit a report to the Department, in a format to be prescribed by the Department, stating the location of each conduit repair and service outage that occurred in the owner's microtrenching during the previous year. (§ 1-05(l))
+    *   Failure to report to the Department as required. (§ 1-07(c)(c)(viii))
+*   **Why:** To track individual conduit repair and service outage events reported by microtrenching owners.
+*   **One row represents:** A single reported conduit repair or service outage event.
+*   **Covers:** All conduit repair and service outage events in microtrenching infrastructure.
+*   **Columns:** Report Entry ID (PK), Report Submission ID (if reports are tracked as entities), Conduit Owner Entity ID (linked to **1. Regulated Entity Registry**), Reporting Year, Report Submission Date, Event Type (Repair, Service Outage), Conduit Segment ID (linked to **5. Microtrenching Conduit Inventory**), Location of Event, Date of Event Start, Date of Event End, Duration of Outage (hours), Description of Repair/Outage, Cause of Outage.
+
+**51. Microtrenching Audits & Investigations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   The Department may audit or otherwise investigate or review an owner's use of microtrenching and compliance with the rules of this chapter. The owner and any telecommunications franchisee that uses or has applied to use the owner's excess capacity must cooperate with the Department in the conduct of such an audit, investigation or review, and must cooperate with any other governmental entity lawfully authorized to conduct such an audit, investigation or review. The owner must provide access to individuals, documents, records and information as may be reasonable and appropriate to such audit, investigation or review. (§ 1-07(b))
+    *   Failure to cooperate with an audit, investigation or review. (§ 1-07(c)(c)(x))
+*   **Why:** To track audits and investigations conducted to proactively ensure microtrenching owners comply with regulations.
+*   **One row represents:** A single audit or investigation conducted by the Department.
+*   **Covers:** All audits, investigations, or reviews of microtrenching owners and franchisees.
+*   **Columns:** Audit/Investigation ID (PK), Owner Entity ID (linked to **1. Regulated Entity Registry**), Audit/Investigation Start Date, Audit/Investigation End Date, Auditor/Investigator Name/ID (linked to **2. Employee Roster & Designations**), Scope of Audit/Investigation, Documents/Records Reviewed, Individuals Interviewed, Cooperation Level, Findings, Violation ID (linked to **11. Enforcement Actions & Violations**), Audit/Investigation Status, Date Status Changed.
+
+**52. Microtrenching Compliance Complaints**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   Telecommunications franchisees may submit complaints about owners' compliance with the rules of this chapter to the Department. (§ 1-07(a))
+*   **Why:** To track complaints received regarding microtrenching compliance, which serve as input for investigations and enforcement.
+*   **One row represents:** A single complaint submitted regarding microtrenching compliance.
+*   **Covers:** All complaints received by the Department from telecommunications franchisees about microtrenching owners.
+*   **Columns:** Complaint ID (PK), Complaint Submission Date, Complainant Entity ID (linked to **1. Regulated Entity Registry**), Owner Entity ID (linked to **1. Regulated Entity Registry**), Conduit Segment ID (linked to **5. Microtrenching Conduit Inventory**), Complaint Description, Rule(s) Allegedly Violated, Complaint Status, Date Status Changed, Audit/Investigation ID (linked to **51. Microtrenching Audits & Investigations**), Violation ID (linked to **11. Enforcement Actions & Violations**), Resolution Details.
+
+**53. Inter-Entity Network Connections**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to simplify access to shared information, reduce communication costs and provide access to multiple computer systems by connecting computers and terminals of various city agencies, and of other public entities requesting such connection where such provision to such other entities would in the judgment of the commissioner be in the city's interests;" (Section 1072.l)
+*   **Why:** To track network connections provided to city agencies and other public entities.
+*   **One row represents:** A single network connection provided to an agency or entity.
+*   **Covers:** All network connections facilitating shared information access and system interoperability.
+*   **Columns:** Connection ID (PK), Connected Entity Type, Entity ID (Agency ID or linked to **1. Regulated Entity Registry**), Connection Type, Start Date, End Date (if temporary), Bandwidth, Cost, Commissioner Approval Date (for non-city entities), Status.
+
+**54. Agency Telecommunications Service Requests**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to provide to city agencies such land-based and wireless voice, data, video or other communications facilities, and technical assistance or other assistance with respect to such facilities, as they may require for the effective discharge of their responsibilities;" (Section 1072.f)
+    *   "to provide agencies using or proposing to use the services of this department with technical assistance in determining feasibility and resource requirements;" (Section 1072.k)
+*   **Why:** To manage and fulfill requests from city agencies for telecommunications facilities and technical assistance.
+*   **One row represents:** A single service request from a city agency.
+*   **Covers:** All requests for telecommunications facilities, technical assistance, or other related support from city agencies.
+*   **Columns:** Request ID (PK), Requesting Agency ID, Request Date, Service Type, Description of Need, Status, Resolution Date, Assigned Staff ID (linked to **2. Employee Roster & Designations**), Related Asset ID (linked to **3. IT & Telecommunications Asset Inventory**).
+
+**55. Citywide IT & Telecommunications Projects & Strategy**
+*   **Open Data Match:** "Strategic Plan Progress Report" (1861) - 70% match.
+*   **Quotes:**
+    *   "to develop municipal uses of cable television and coordinate interagency uses of cable television and other telecommunications;" (Section 1072.d)
+    *   "to participate in developing, maintaining and implementing a long-range computer systems strategy, data communications strategy, spatial data interoperability strategy for the city of New York and plan for the use of geospatial information systems by city agencies;" (Section 1072.g)
+    *   "to provide assistance to agencies in meeting their data processing and data communications objectives;" (Section 1072.j)
+*   **Why:** To track the development and implementation of citywide IT strategies and interagency telecommunications projects.
+*   **One row represents:** A specific strategic initiative or project related to citywide IT or interagency telecommunications.
+*   **Covers:** Projects and initiatives for long-range computer systems, data communications, spatial data interoperability, GIS planning, municipal cable TV use, and interagency telecommunications coordination.
+*   **Columns:** Project ID (PK), Project Name, Strategy Area (e.g., Computer Systems, Data Comms, Spatial Data Interoperability, GIS, Cable TV, Wireless), Lead Department, Participating Agencies, Start Date, End Date, Status, Key Milestones, Budget, Telecommunications Type (for coordination projects), Resources Allocated, Coordination Meeting Dates (linked to **58. Agency Meeting Records**).
+
+**56. Emergency Communications System Directives & Requests**
+*   **Open Data Match:** "Alerts" (1887) - 40% match. This is a general alert system, not specific directives.
+*   **Quotes:**
+    *   "With respect to emergency communications systems and emergency communications facilities administered by another agency, the department shall exercise its powers and duties only as the mayor shall direct pursuant to subdivision p of section 1072 of this chapter, or at the request of such agency." (Section 1073)
+*   **Why:** To track mayoral directives and agency requests regarding emergency communications systems.
+*   **One row represents:** A single mayoral directive or agency request concerning emergency communications systems.
+*   **Covers:** All formal communications regarding DoITT's involvement with other agencies' emergency communication systems.
+*   **Columns:** Directive/Request ID (PK), Date, Originator (Mayor's Office, Agency ID), Subject Agency ID, Description of Directive/Request, DoITT Action Taken, Status.
+
+**57. Disaster Recovery Telecommunications Drills & Incidents**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to plan and provide telecommunications coordination in support of disaster recovery;" (Section 1072.m)
+*   **Why:** To track disaster recovery drills and actual incidents related to telecommunications.
+*   **One row represents:** A single disaster recovery drill or actual incident.
+*   **Covers:** All telecommunications-related disaster recovery exercises and real-world events.
+*   **Columns:** Event ID (PK), Event Type, Date, Start Time, End Time, Description of Scenario/Incident, Agencies Involved, Telecommunications Systems Affected (linked to **3. IT & Telecommunications Asset Inventory**), Outcome, Lessons Learned, Recovery Time Objective (RTO) Met? (Boolean), Recovery Point Objective (RPO) Met? (Boolean).
+
+**58. Agency Meeting Records**
+*   **Open Data Match:** "NYC Open Data Plan: Civic Engagement Activities (Historical)" (1262) - 70% match. This is a broader category, but includes meetings.
+*   **Quotes:**
+    *   "including convening, under the direction of the chief geospatial information officer, annual interagency meetings of agency personnel responsible for supervising the collection, management or use of geospatial data and, when appropriate, other geospatial experts, to enable citywide coordination and collaboration in areas including application development, data sharing and data interoperability;" (Section 1072.h)
+    *   "The department shall convene a quarterly meeting of representatives from each of the community boards within the city to discuss the content and format of the reports required to be prepared pursuant to this chapter." (Section 1075.e)
+*   **Why:** To track various interagency and community board meetings for coordination, collaboration, and reporting discussions.
+*   **One row represents:** A single interagency or community board meeting.
+*   **Covers:** All annual interagency geospatial data coordination meetings and quarterly 311 community board meetings.
+*   **Columns:** Meeting ID (PK), Date, Location, Meeting Type (e.g., Geospatial Coordination, 311 Community Board), Chief Geospatial Information Officer (Staff ID) (linked to **2. Employee Roster & Designations**), Attending Agency IDs, Attending Community Board IDs, Attendee Names/Titles, Key Discussion Points, Action Items, Follow-up Date.
+
+**59. Employee Time Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   (Implied by general agency operations and "employee timecards" from prompt instructions)
+*   **Why:** To track employee work hours for payroll, project billing, and compliance.
+*   **One row represents:** A single employee's time entry for a specific period or task.
+*   **Covers:** All employee work hours, leave, and project allocations.
+*   **Columns:** Time Record ID (PK), Employee ID (linked to **2. Employee Roster & Designations**), Date, Start Time, End Time, Hours Worked, Project ID (linked to **55. Citywide IT & Telecommunications Projects & Strategy**), Leave Type (if applicable), Approval Status, Approver ID (linked to **2. Employee Roster & Designations**).
+
+**60. Employee Certifications & Training**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   (Implied by general agency operations and "ensuring specialists are up to date on required certifications" from prompt instructions)
+*   **Why:** To track employee professional certifications and training for compliance and skill management.
+*   **One row represents:** A single certification or training record for an employee.
+*   **Covers:** All professional certifications, licenses, and mandatory training for DoITT staff.
+*   **Columns:** Certification ID (PK), Employee ID (linked to **2. Employee Roster & Designations**), Certification Name, Issuing Body, Date Issued, Expiration Date, Status, Training Course Name, Completion Date.
+
+**61. Facilities Maintenance Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   (Implied by general agency operations and "Building repair" from prompt instructions)
+*   **Why:** To track maintenance and repair activities for department facilities.
+*   **One row represents:** A single maintenance or repair event for a department facility.
+*   **Covers:** All maintenance and repair activities for DoITT-occupied buildings and spaces.
+*   **Columns:** Maintenance ID (PK), Facility ID, Location, Date, Description of Work, Type of Work, Vendor/Staff Performed By (linked to **2. Employee Roster & Designations**), Cost, Status.
+
+**62. Environmental Compliance Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   (Implied by general agency operations and "environmental compliance" from prompt instructions)
+*   **Why:** To track compliance with environmental regulations, especially for IT equipment disposal and data center operations.
+*   **One row represents:** A single environmental compliance event or record.
+*   **Covers:** Records related to hazardous waste disposal (e-waste), energy consumption, and other environmental impacts.
+*   **Columns:** Compliance Record ID (PK), Date, Regulation/Standard, Activity, Description, Outcome, Compliance Status, Vendor (if applicable), Certification.
+
+**63. Uniform Issuance & Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   (Implied by general agency operations and "uniform provision" from prompt instructions)
+*   **Why:** To track the issuance and inventory of uniforms for employees, if applicable.
+*   **One row represents:** A single uniform item issued or in inventory.
+*   **Covers:** All uniforms provided to DoITT employees.
+*   **Columns:** Item ID (PK), Uniform Type, Size, Employee ID (if issued) (linked to **2. Employee Roster & Designations**), Date Issued, Return Date, Condition, Inventory Status.
+
+**Section 4, Unmatched Open Datasets:**
+
+*   **Orthoimagery & LiDAR Data:**
+    *   2014 Orthoimagery Bronx
+    *   2012 Orthoimagery Staten Island
+    *   2002 Bronx, Brooklyn, Queens Orthoimagery Tile Index
+    *   2010 Orthoimagery Queens - 1 of 2
+    *   2008 Orthoimagery Bronx
+    *   2010 Orthoimagery Manhattan
+    *   2010 Orthoimagery Queens - 2 of 2
+    *   2006 Orthoimagery Manhattan
+    *   2004 Orthoimagery Brooklyn
+    *   2008 Orthoimagery Staten Island
+    *   2002 Orthoimagery Brooklyn
+    *   2006 Orthoimagery Staten Island
+    *   2014 Orthoimagery Manhattan
+    *   2001 Staten Island Orthoimagery Tile Index
+    *   2010 Orthos Tile Index
+    *   2006 Orthoimagery Tile Index
+    *   2012 Orthoimagery Tile Index
+    *   2002 Orthoimagery Queens
+    *   2006 Ortho Tile Index
+    *   2014 Orthoimagery Queens - 2 of 2
+    *   2008 Orthoimagery Brooklyn
+    *   2004 Ortho Tile Index
+    *   2014 Orthoimagery Staten Island - 2 of 2
+    *   2014 Orthoimagery Queens - 1 of 2
+    *   2004 Orthoimagery Queens
+    *   2001 Orthoimagery Manhattan
+    *   2001 Staten Island Orthoimagery
+    *   2004 Orthoimagery Tile Index
+    *   2006 Orthoimagery Bronx
+    *   2006_ortho_tile_index
+    *   2010 Orthoimagery Brooklyn - 1 of 2
+    *   2002 Orthoimagery Bronx
+    *   2016 Orthoimagery Bronx
+    *   2012 Orthoimagery Manhattan
+    *   2006 Orthoimagery Brooklyn
+    *   2004 Orthoimagery Staten Island
+    *   2014 Orthoimagery Staten Island - 1 of 2
+    *   2016 Orthoimagery Tile Index
+    *   2016 Orthoimagery Staten Island
+    *   2018 Orthoimagery Staten Island
+    *   2010 Orthoimagery Staten Island
+    *   2012 Orthoimagery Bronx
+    *   2016 Orthoimagery Brooklyn
+    *   2018 Orthoimagery Bronx
+    *   2010 Orthoimagery Brooklyn - 2 of 2
+    *   2008 Orthos Tile Index
+    *   2018 Orthoimagery Queens
+    *   2016 Orthoimagery Manhattan
+    *   2014 Orthoimagery Brooklyn
+    *   2012 Orthoimagery Queens
+    *   2004 Orthoimagery Manhattan
+    *   2001 Manhattan Orthoimagery Tile Index
+    *   2006 Orthoimagery Queens
+    *   2018 Orthoimagery Manhattan
+    *   2016 Orthoimagery Queens
+    *   NYC Orthoimagery Tile Index
+    *   Topobathymetric LiDAR Data (2017)
+    *   1 foot Digital Elevation Model (DEM) Integer Raster
+    *   1 foot Digital Elevation Model (DEM)
+    *   3-D Building Model
+    *   Imagery and Map Services
+
+*   **Planimetric & Geospatial Features (General Infrastructure):**
+    *   NYC Planimetric Database: Boardwalk (map & dataset)
+    *   NYC Planimetric Database: Roadbed (map & dataset)
+    *   NYC Planimetric Database: Cooling Towers (map & dataset)
+    *   NYC Planimetric Database: Hydrography Structures (map & dataset)
+    *   NYC Planimetric Database: Pavement Edge (map & dataset)
+    *   NYC Planimetric Database: Parking Lot (map & dataset)
+    *   NYC Planimetric Database: Curbs (map & dataset)
+    *   NYC Planimetric Database: Shoreline (map & dataset)
+    *   NYC Planimetric Database: Hydrography (map & dataset)
+    *   NYC Planimetric Database: Railroad Line (map & dataset)
+    *   NYC Planimetric Database: Median (map & dataset)
+    *   NYC Planimetric Database: Swimming Pools (map & dataset)
+    *   NYC Planimetric Database: Elevation Points (map & dataset)
+    *   NYC Planimetric Database: Miscellaneous Structures (map & dataset)
+    *   NYC Planimetric Database: Railroad Structure (map & dataset)
+    *   NYC Planimetric Database: Sidewalk (map & dataset)
+    *   NYC Planimetric Database: Transportation Structures (map & dataset)
+    *   NYC Planimetric Database: Retaining Wall (map & dataset)
+    *   NYC Planimetric Database: Public Plazas (map & dataset)
+    *   Tidally Coordinated Shoreline
+    *   Pedestrian Zone Shapefile (Tabular & Map)
+    *   Centerline (map & dataset)
+    *   Sidewalk Centerline
+    *   AddressPoint (map & dataset)
+    *   BUILDING (map & dataset)
+    *   BUILDING_P (map & dataset)
+    *   BUILDING_HISTORIC (map & dataset)
+    *   BUILDING_HISTORIC_P (map & dataset)
+    *   SIDEWALK_LINE
+
+*   **Broadband & Internet Access (General Citywide Data):**
+    *   Broadband Adoption and Infrastructure by Congressional District
+    *   Broadband Adoption and Infrastructure by Zip Code
+    *   Internet Master Plan: Broadband Choice and Speed by Census Block
+    *   Internet Master Plan: Adoption and Infrastructure Data by Neighborhood
+    *   Broadband Adoption and Infrastructure by State Assembly District
+    *   Universal Solicitation of Broadband Target Neighborhoods (Map & dataset)
+    *   Internet Master Plan: Broadband Adoption and Infrastructure by Community District
+    *   Internet Access by Select Demographics in New York City - 2016
+    *   Internet Service Providers (ISPs) Offering Commercial Broadband in New York City - Dec 2016
+    *   Internet Service Providers (ISPs) Offering Residential Broadband in New York City - Dec 2016
+    *   Percentage of Households with 0-5 Internet Service Providers (ISPs) in New York City by NTA - Dec 2016
+    *   Internet Master Plan: Home Broadband and Mobile Broadband Adoption by PUMA
+    *   Broadband Adoption and Infrastructure by State Senate District
+    *   Internet Master Plan: Broadband Adoption & Demographic Citywide
+    *   Broadband Adoption Basic Indicators
+    *   Universal Solicitation for Broadband Asset Dataset
+
+*   **LinkNYC Specific Data:**
+    *   LinkNYC_OpenData_9_6_2016_SP83
+    *   LinkNYC Kiosk Status (Archived)
+    *   LinkNYC Kiosk Status (Historical)
+    *   LinkNYC Weekly Usage (Updated)
+    *   LinkNYC Usage Statistics (Historical Data)
+    *   LinkNYC Locations Shapefile
+
+*   **Other Citywide Data/Reports:**
+    *   Queens Air Quality Sensor Pilot (February - November 2024)
+    *   MUSEUM
+    *   Post Office (map & dataset)
+    *   Hi- Caps
+    *   Botanical Gardens
+    *   Dataset Removals
+    *   CommonPlace (map & dataset)
+    *   NEW_JERSEY_TRANSIT_STATION
+    *   CSCL_PlowNYC
+    *   NYC Agencies and Governance Organizations
+    *   Local Law 8 of 2020 Report – Monthly Complaints of Illegal Parking of Vehicles Operated on Behalf of the City
+    *   Local Law 8 of 2020 – Complaints of Illegal Parking of Vehicles Operated on Behalf of the City
+    *   Local Law 18 Pay and Demographics Report - Agency Report Table
+    *   NYC Wi-Fi Hotspot Locations
+    *   Wi-Fi in Public Space (Open Space)
+    *   Public Wi-Fi in Pedestrian Corridors and Public Computer Centers
+    *   Public Wi-Fi Systems NYC
+    *   Big Apple Connect (BAC) Enrollment Statistics
+    *   311 Web Content - Services
+    *   311 Service Level Agreements
+    *   311 Interpreter Wait Time
+    *   311 Resolution Satisfaction Survey
+    *   311 Customer Satisfaction Survey
+    *   .nyc Domain Registrations
+    *   .nyc Domain Registrations by Zip Code (Historical)
+    *   Citywide Public Computer Centers
+    *   Automations Dashboard
+    *   NYC Open Data Plan: Website Data
+    *   NYC Open Data Plan: Removals
+    *   NYC Open Data Plan: Future Releases
+    *   NYC Open Data Plan: Mayor's Management Report (MMR) Indicators
+    *   Public feedback on 311 request/complaint types
+    *   Tree Canopy Change (2010 - 2017)
+    *   ZIP Code Tabulation Areas
+
+**Section 5, Non-tabular Data Summary:**
+
+*   Job applications
+*   Rules and regulations (e.g., Chapter 14 provisions, Administrative Code Appendix A, New York City Zoning Resolution, Landmarks Preservation Commission rules, National Electrical Safety Code, Americans with Disabilities Act and regulations, Federal, State, and local laws/regulations, Executive Order No. 22 of 1995, New York State Public Service Commission rules and regulations, Utility service tariffs)
+*   Receipts
+*   Photos
+*   Research documents
+*   Long-range telecommunications strategy documents
+*   Information technology and telecommunications policies
+*   Authorizing resolutions for telecommunications franchises
+*   Requests for proposals (RFPs) or other solicitations of proposals for telecommunications franchises
+*   Terms of contracts or other agreements relating to telecommunications franchises and revocable consents
+*   Long-range computer systems strategy documents
+*   Data communications strategy documents
+*   Spatial data interoperability strategy documents
+*   Plans for the use of geospatial information systems
+*   Disaster recovery plans
+*   Data security policies and procedures
+*   Procedures for access restrictions
+*   Content and format of 311 reports (discussion points, not the reports themselves)
+*   Protocols for Breach Coordination and Recordkeeping
+*   Written Documentation of Inadvertent Disclosure Determinations
+*   Technical Standards Manual for Public Data Sets
+*   Open Data Legal Policy
+*   Agency Compliance Plan for Public Data Sets
+*   Website Accessibility Protocol
+*   Written Certifications from Third-Party Electronic Equipment Disposers
+*   Biennial Statements Certifying Agency Electronic Equipment Disposal Compliance
+*   Agency-Specific Guidance for Identifying Information
+*   Standard Contract Provisions for Identifying Information Protection
+*   Quarterly Reports on Anonymized Compilation/Summary of Identifying Information Disclosures
+*   Biennial City Agency Reports on Identifying Information Collection, Retention, and Disclosure
+*   Committee Recommendations on Identifying Information Policies and Procedures
+*   Plans for Compliance with Identifying Information Chapter
+*   As-built drawings (microtrenching)
+*   Maps showing street location of conduit
+*   Indemnification agreements
+*   Proof of security (bond, insurance, letter of credit)
+*   Contracts or other documents effectuating conduit ownership transfer
+*   Written approval of premises owner/authorized agent for electricity resale
+*   Written notices sent by cable television companies
+*   Plans for direct billing implementation
+*   Written consent of building owner/commercial lessee for PPT installation
+*   Commercial lessee certification
+*   Proof of mailing of notification to building owner
+*   Written objections from building owners
+*   Written comments from DOT, Borough Presidents, Council Members, Community Boards, public
+*   Written objections to permit conditions
+*   Written responses to Commissioner's proposed actions (PPT permit revocation/removal)
+*   Written complaints regarding public nuisance PPTs
+*   Police precinct verification of public nuisance complaints
+*   Franchise agreements

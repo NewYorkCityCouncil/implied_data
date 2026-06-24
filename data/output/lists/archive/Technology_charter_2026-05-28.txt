@@ -1,0 +1,691 @@
+**Identified Tabular Datasets**
+
+1.  **Telecommunications Franchises and Revocable Consents**
+
+    **Quotes:**
+    *   "to administer all franchises and revocable consents relating to telecommunications pursuant to the provisions of chapter fourteen, including, without limitation, proposing authorizing resolutions for telecommunications franchises, developing and issuing requests for proposals or other solicitations of proposals for telecommunications franchises, selecting telecommunications franchisees, reviewing and approving petitions for revocable consents relating to telecommunications, negotiating the terms of contracts or other agreements relating to telecommunications franchises and revocable consents, and enforcing the terms and conditions of such agreements;" (Section 1072.c)
+
+    **Why:** To administer, track, and enforce telecommunications agreements, the agency needs to maintain detailed records of each franchise and consent.
+
+    **One row represents:** A single telecommunications franchise or revocable consent agreement.
+
+    **Covers:** All active, pending, and historical telecommunications franchises and revocable consents.
+
+    **Columns:**
+    *   Agreement ID
+    *   Agreement Type (Franchise, Revocable Consent)
+    *   Franchisee/Permittee Name
+    *   Legal Entity ID
+    *   Application Date
+    *   Approval Date
+    *   Start Date
+    *   End Date
+    *   Status (Active, Expired, Revoked, Pending)
+    *   Terms and Conditions Summary
+    *   Enforcement Actions (linked to Dataset 11)
+    *   Related RFP ID
+    *   Resolution ID
+    *   Geographic Scope
+    *   Fees/Payments
+
+2.  **Citywide Telecommunications Infrastructure Inventory**
+
+    **Quotes:**
+    *   "to provide to city agencies such land-based and wireless voice, data, video or other communications facilities, and technical assistance or other assistance with respect to such facilities, as they may require for the effective discharge of their responsibilities;" (Section 1072.f)
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+
+    **Why:** To manage and maintain all land-based and wireless communications facilities provided to city agencies.
+
+    **One row represents:** A single piece of telecommunications infrastructure or facility.
+
+    **Covers:** All land-based and wireless voice, data, video, and other communication facilities managed by DoITT.
+
+    **Columns:**
+    *   Asset ID
+    *   Asset Type (e.g., Fiber Optic Cable, Wireless Access Point, Router, PBX)
+    *   Location (Address, GPS Coordinates)
+    *   Installation Date
+    *   Manufacturer
+    *   Model
+    *   Serial Number
+    *   Status (Active, Inactive, Under Maintenance)
+    *   Agency Using (Agency ID)
+    *   Maintenance Schedule
+    *   Last Maintenance Date (linked to Dataset 12)
+    *   Warranty Expiration Date
+
+3.  **Citywide IT Hardware Inventory**
+
+    **Quotes:**
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+
+    **Why:** To manage and maintain all computer hardware purchased and provided to city agencies.
+
+    **One row represents:** A single piece of computer hardware.
+
+    **Covers:** All computer hardware assets managed by DoITT for city agencies.
+
+    **Columns:**
+    *   Asset ID
+    *   Asset Type (e.g., Desktop, Laptop, Server, Network Device)
+    *   Manufacturer
+    *   Model
+    *   Serial Number
+    *   Purchase Date (linked to Dataset 5)
+    *   Warranty Expiration Date
+    *   Location (Agency ID, Department, User)
+    *   Status (Active, Decommissioned, In Repair)
+    *   Last Maintenance Date (linked to Dataset 13)
+
+4.  **Citywide IT Software Licenses and Subscriptions**
+
+    **Quotes:**
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+
+    **Why:** To manage and track all software licenses and subscriptions for city agencies.
+
+    **One row represents:** A single software license or subscription.
+
+    **Covers:** All software licenses and subscriptions managed by DoITT for city agencies.
+
+    **Columns:**
+    *   License ID
+    *   Software Name
+    *   Vendor
+    *   License Type (e.g., Perpetual, Subscription)
+    *   Number of Licenses
+    *   Purchase Date (linked to Dataset 5)
+    *   Expiration Date
+    *   Cost
+    *   Agencies Using (Agency IDs)
+    *   Compliance Status
+    *   Renewal Date
+
+5.  **IT Procurement and Contracts**
+
+    **Quotes:**
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+
+    **Why:** To track all purchases and contracts for IT hardware, software, and services.
+
+    **One row represents:** A single procurement transaction or contract.
+
+    **Covers:** All procurement activities for IT goods and services.
+
+    **Columns:**
+    *   Procurement ID
+    *   Contract ID
+    *   Item/Service Description
+    *   Vendor
+    *   Purchase Date
+    *   Contract Start Date
+    *   Contract End Date
+    *   Total Cost
+    *   Payment Schedule
+    *   Status
+    *   Related Asset IDs (links to Dataset 3, 4)
+
+6.  **311 Citizen Service Requests**
+
+    **Quotes:**
+    *   "Within seven business days from the end of each month, the department shall submit in electronic format to each community board a list setting forth all requests for service that were identified to have occurred in the respective community district received by the 311 citizen service center during the immediately preceding month, as well as all unresolved requests for service from prior months. Such report shall include, but not be limited to, the following information for each request for service: (1) the request for service category; (2) the agency or agencies to which the request for service was directed; and, (3) the current status of the request for service, where such information can be directly accessed by the 311 citizen service system." (Section 1075.d)
+
+    **Why:** To track and report on all citizen service requests received by the 311 center, including their status and agency assignments.
+
+    **One row represents:** A single 311 citizen service request.
+
+    **Covers:** All requests for service and directory assistance calls received by the 311 citizen service center.
+
+    **Columns:**
+    *   Service Request ID
+    *   Call Date/Time
+    *   Request Type (Request for Service, Directory Assistance)
+    *   Request Category
+    *   Community District
+    *   Geographic Location (if applicable)
+    *   Agency Directed To (Agency ID)
+    *   Current Status
+    *   Resolution Date (if applicable)
+    *   Caller Information (anonymized if necessary)
+
+7.  **Permitted Street Closures**
+
+    **Quotes:**
+    *   "to provide to the public at no charge on the city's website an interactive map, updated as often as practicable and necessary but not less than once per week, displaying the following: 1. Permitted and approved street closures that do not allow for the passage of vehicular traffic on that street, including but not limited to closures for special events, crane operations and other construction work, film shoots and paving operations; and 2. Parking regulations. The information related to paragraph (1) of this subdivision shall be searchable and sortable by time, date and borough, except that street closures for crane operations, construction work and paving operations shall have the notation "subject to closure" during times where closure has been permitted and approved but where such closure may or may not occur on a particular day. All information required by this subdivision shall be available on the city's website as soon as practicable but in no case less than one week prior to any such closure or change, except closures which were applied for or planned less than one week prior to any such closure or change, which shall be available on such interactive map within seventy-two hours of the permit and approval of such closure. Where a permitted and approved street closure is due to a special event, the sponsor of the event with appropriate contact information shall be provided as part of such interactive map. For the purposes of this subdivision, special event shall mean any street fair, block party or festival on a public street(s) where such activity may interfere with or obstruct the normal use by vehicular traffic of such street(s);" (Section 1072.q)
+
+    **Why:** To collect, maintain, and publish required information on all permitted and approved street closures for public access.
+
+    **One row represents:** A single permitted or approved street closure event.
+
+    **Covers:** All street closures for special events, construction, crane operations, film shoots, and paving operations.
+
+    **Columns:**
+    *   Closure ID
+    *   Street Name
+    *   Cross Streets/Segment Description
+    *   Borough
+    *   Start Date
+    *   End Date
+    *   Start Time
+    *   End Time
+    *   Closure Type (Special Event, Crane, Construction, Film Shoot, Paving)
+    *   Permit Status (Permitted, Approved)
+    *   Vehicular Traffic Allowed (Yes/No)
+    *   "Subject to Closure" Notation (Yes/No)
+    *   Special Event Sponsor Name
+    *   Special Event Sponsor Contact Info
+    *   Permit Application Date
+    *   Permit Approval Date
+    *   Last Update Date (for map)
+
+8.  **Parking Regulations**
+
+    **Quotes:**
+    *   "to provide to the public at no charge on the city's website an interactive map, updated as often as practicable and necessary but not less than once per week, displaying the following: 1. Permitted and approved street closures that do not allow for the passage of vehicular traffic on that street, including but not limited to closures for special events, crane operations and other construction work, film shoots and paving operations; and 2. Parking regulations." (Section 1072.q)
+
+    **Why:** To collect, maintain, and publish required information on all parking regulations for public access.
+
+    **One row represents:** A specific parking regulation applicable to a street segment or area.
+
+    **Covers:** All parking regulations across the city.
+
+    **Columns:**
+    *   Regulation ID
+    *   Street Name
+    *   Cross Streets/Segment Description
+    *   Borough
+    *   Regulation Type (e.g., No Parking, Metered, Alternate Side, Loading Zone)
+    *   Days of Week
+    *   Start Time
+    *   End Time
+    *   Effective Date
+    *   Last Update Date (for map)
+
+9.  **Crime Incidents (Received from NYPD)**
+
+    **Quotes:**
+    *   "to provide to the public, at no charge on the city's website, an interactive crime map that, for each segment of a street bounded by one or more intersections and/or a terminus, shall visually display the aggregate monthly, yearly and year-to-date totals for the current and the most recent prior calendar years for each class of crime that is reported to the New York city police department, or for which an arrest was made, including crimes that occurred in parks and subway stations. Such map shall be searchable by address, zip code, and patrol precinct. All information required by this subdivision shall be available on the city's website as soon as practicable but in no case more than one month after a crime complaint has been filed. The mayor shall ensure that all agencies provide the department with such assistance and information as the department requires to compile and update the interactive crime map." (Section 1072.r)
+
+    **Why:** To receive, process, and aggregate incident-level crime data from NYPD for the interactive crime map.
+
+    **One row represents:** A single crime incident reported to NYPD or resulting in an arrest.
+
+    **Covers:** All crime incidents reported to NYPD or where an arrest was made, including those in parks and subway stations.
+
+    **Columns:**
+    *   Incident ID
+    *   Crime Class
+    *   Report Date
+    *   Incident Date/Time
+    *   Location (Street Segment, Intersection, Address, Zip Code, Patrol Precinct, GPS Coordinates)
+    *   Arrest Made (Yes/No)
+    *   Park/Subway Station Indicator
+    *   Reporting Agency (NYPD)
+
+10. **Agency Telecommunications Service Requests**
+
+    **Quotes:**
+    *   "to provide to city agencies such land-based and wireless voice, data, video or other communications facilities, and technical assistance or other assistance with respect to such facilities, as they may require for the effective discharge of their responsibilities;" (Section 1072.f)
+    *   "to provide agencies using or proposing to use the services of this department with technical assistance in determining feasibility and resource requirements;" (Section 1072.k)
+
+    **Why:** To manage and fulfill requests from city agencies for telecommunications facilities and technical assistance.
+
+    **One row represents:** A single service request from a city agency.
+
+    **Covers:** All requests for telecommunications facilities, technical assistance, or other related support from city agencies.
+
+    **Columns:**
+    *   Request ID
+    *   Requesting Agency ID
+    *   Request Date
+    *   Service Type (e.g., Voice, Data, Video, Wireless, Technical Assistance)
+    *   Description of Need
+    *   Status (Open, In Progress, Resolved, Closed)
+    *   Resolution Date
+    *   Assigned Staff ID (linked to Dataset 22)
+    *   Related Asset ID (links to Dataset 2, 3)
+
+11. **Telecommunications Franchise and Consent Enforcement Actions**
+
+    **Quotes:**
+    *   "to administer all franchises and revocable consents relating to telecommunications pursuant to the provisions of chapter fourteen, including, without limitation, proposing authorizing resolutions for telecommunications franchises, developing and issuing requests for proposals or other solicitations of proposals for telecommunications franchises, selecting telecommunications franchisees, reviewing and approving petitions for revocable consents relating to telecommunications, negotiating the terms of contracts or other agreements relating to telecommunications franchises and revocable consents, and enforcing the terms and conditions of such agreements;" (Section 1072.c)
+
+    **Why:** To enforce agreement terms, the agency must track all violations, complaints, and subsequent enforcement actions taken against franchisees/permittees.
+
+    **One row represents:** A single enforcement action or violation event related to a telecommunications agreement.
+
+    **Covers:** All enforcement activities for telecommunications franchises and revocable consents.
+
+    **Columns:**
+    *   Enforcement Action ID
+    *   Agreement ID (links to Dataset 1)
+    *   Violation Date
+    *   Violation Type
+    *   Description of Violation
+    *   Complaint ID (if applicable)
+    *   Enforcement Action Taken (e.g., Warning, Fine, Revocation)
+    *   Date of Action
+    *   Outcome
+    *   Fine Amount
+    *   Payment Status
+
+12. **Telecommunications Infrastructure Maintenance Records**
+
+    **Quotes:**
+    *   "to provide to city agencies such land-based and wireless voice, data, video or other communications facilities, and technical assistance or other assistance with respect to such facilities, as they may require for the effective discharge of their responsibilities;" (Section 1072.f)
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+
+    **Why:** To track all maintenance activities performed on citywide telecommunications infrastructure.
+
+    **One row represents:** A single maintenance event for a piece of telecommunications infrastructure.
+
+    **Covers:** All scheduled and unscheduled maintenance activities for telecommunications facilities.
+
+    **Columns:**
+    *   Maintenance ID
+    *   Asset ID (links to Dataset 2)
+    *   Maintenance Date
+    *   Maintenance Type (Scheduled, Emergency, Repair)
+    *   Description of Work
+    *   Performed By (Staff ID/Vendor)
+    *   Outcome
+    *   Cost
+
+13. **IT Hardware Maintenance Records**
+
+    **Quotes:**
+    *   "to provide appropriate, reliable, cost-effective and responsive computer and data communications services to agencies that require such services by purchasing and maintaining hardware, software and such other goods and services as may be necessary to effectively discharge the powers and duties of the department;" (Section 1072.i)
+
+    **Why:** To track all maintenance activities performed on citywide IT hardware.
+
+    **One row represents:** A single maintenance event for a piece of IT hardware.
+
+    **Covers:** All scheduled and unscheduled maintenance activities for IT hardware.
+
+    **Columns:**
+    *   Maintenance ID
+    *   Asset ID (links to Dataset 3)
+    *   Maintenance Date
+    *   Maintenance Type (Scheduled, Emergency, Repair)
+    *   Description of Work
+    *   Performed By (Staff ID/Vendor)
+    *   Outcome
+    *   Cost
+
+14. **Data Security Incidents**
+
+    **Quotes:**
+    *   "to ensure security for data and other information handled by this department;" (Section 1072.n)
+
+    **Why:** To track and manage all data security incidents affecting information handled by the department.
+
+    **One row represents:** A single data security incident.
+
+    **Covers:** All security breaches, unauthorized access attempts, or other data security events.
+
+    **Columns:**
+    *   Incident ID
+    *   Date/Time Detected
+    *   Date/Time Occurred
+    *   Type of Incident (e.g., Unauthorized Access, Data Breach, Malware)
+    *   Systems Affected (linked to Dataset 2, 3, 4)
+    *   Data Affected
+    *   Severity
+    *   Resolution Status
+    *   Resolution Date
+    *   Actions Taken
+    *   Reporting Agency/Department
+
+15. **Inter-Entity Network Connections**
+
+    **Quotes:**
+    *   "to simplify access to shared information, reduce communication costs and provide access to multiple computer systems by connecting computers and terminals of various city agencies, and of other public entities requesting such connection where such provision to such other entities would in the judgment of the commissioner be in the city's interests;" (Section 1072.l)
+
+    **Why:** To track network connections provided to city agencies and other public entities.
+
+    **One row represents:** A single network connection provided to an agency or entity.
+
+    **Covers:** All network connections facilitating shared information access and system interoperability.
+
+    **Columns:**
+    *   Connection ID
+    *   Connected Entity Type (City Agency, Other Public Entity)
+    *   Entity ID
+    *   Connection Type (e.g., VPN, Direct Link)
+    *   Start Date
+    *   End Date (if temporary)
+    *   Bandwidth
+    *   Cost
+    *   Commissioner Approval Date (for non-city entities)
+    *   Status
+
+16. **Interagency Telecommunications Coordination and Projects**
+
+    **Quotes:**
+    *   "to develop municipal uses of cable television and coordinate interagency uses of cable television and other telecommunications;" (Section 1072.d)
+
+    **Why:** To coordinate and track municipal and interagency telecommunications projects and resource allocation.
+
+    **One row represents:** A specific interagency telecommunications project or coordination effort.
+
+    **Covers:** All projects and coordination activities related to municipal cable TV use and interagency telecommunications.
+
+    **Columns:**
+    *   Project ID
+    *   Project Name
+    *   Lead Agency ID
+    *   Participating Agency IDs
+    *   Project Start Date
+    *   Project End Date
+    *   Status
+    *   Telecommunications Type (e.g., Cable TV, Wireless, Data)
+    *   Resources Allocated
+    *   Coordination Meeting Dates
+
+17. **Citywide IT Strategy and Project Tracking**
+
+    **Quotes:**
+    *   "to participate in developing, maintaining and implementing a long-range computer systems strategy, data communications strategy, spatial data interoperability strategy for the city of New York and plan for the use of geospatial information systems by city agencies;" (Section 1072.g)
+    *   "to provide assistance to agencies in meeting their data processing and data communications objectives;" (Section 1072.j)
+
+    **Why:** To track the development and implementation of citywide IT strategies, including computer systems, data communications, and geospatial interoperability.
+
+    **One row represents:** A specific strategic initiative or project related to citywide IT.
+
+    **Covers:** Projects and initiatives for long-range computer systems, data communications, spatial data interoperability, and GIS planning.
+
+    **Columns:**
+    *   Project ID
+    *   Project Name
+    *   Strategy Area (e.g., Computer Systems, Data Comms, Spatial Data Interoperability, GIS)
+    *   Lead Department
+    *   Participating Agencies
+    *   Start Date
+    *   End Date
+    *   Status
+    *   Key Milestones
+    *   Budget
+
+18. **Municipal Channel Programming Schedule**
+
+    **Quotes:**
+    *   "to ensure that priority is given on at least one municipal channel to the cable casting of the public proceedings of the council and its committees, the city planning commission and other state and city agencies;" (Section 1072.e)
+
+    **Why:** To ensure compliance with public proceedings cable casting requirements and manage channel content.
+
+    **One row represents:** A scheduled broadcast event on a municipal channel.
+
+    **Covers:** All public proceedings broadcast on municipal channels.
+
+    **Columns:**
+    *   Broadcast ID
+    *   Event Name
+    *   Originating Agency
+    *   Date
+    *   Start Time
+    *   End Time
+    *   Channel
+    *   Priority Status
+    *   Recording Archival Location
+
+19. **Emergency Communications System Directives and Requests**
+
+    **Quotes:**
+    *   "With respect to emergency communications systems and emergency communications facilities administered by another agency, the department shall exercise its powers and duties only as the mayor shall direct pursuant to subdivision p of section 1072 of this chapter, or at the request of such agency." (Section 1073)
+
+    **Why:** To track mayoral directives and agency requests regarding emergency communications systems.
+
+    **One row represents:** A single mayoral directive or agency request concerning emergency communications systems.
+
+    **Covers:** All formal communications regarding DoITT's involvement with other agencies' emergency communication systems.
+
+    **Columns:**
+    *   Directive/Request ID
+    *   Date
+    *   Originator (Mayor's Office, Agency ID)
+    *   Subject Agency ID
+    *   Description of Directive/Request
+    *   DoITT Action Taken
+    *   Status
+
+20. **Disaster Recovery Telecommunications Drills and Incidents**
+
+    **Quotes:**
+    *   "to plan and provide telecommunications coordination in support of disaster recovery;" (Section 1072.m)
+
+    **Why:** To track disaster recovery drills and actual incidents related to telecommunications.
+
+    **One row represents:** A single disaster recovery drill or actual incident.
+
+    **Covers:** All telecommunications-related disaster recovery exercises and real-world events.
+
+    **Columns:**
+    *   Event ID
+    *   Event Type (Drill, Actual Incident)
+    *   Date
+    *   Start Time
+    *   End Time
+    *   Description of Scenario/Incident
+    *   Agencies Involved
+    *   Telecommunications Systems Affected (linked to Dataset 2, 3)
+    *   Outcome
+    *   Lessons Learned
+    *   Recovery Time Objective (RTO) Met?
+    *   Recovery Point Objective (RPO) Met?
+
+21. **Information Access Control Audits**
+
+    **Quotes:**
+    *   "to institute procedures to assure restrictions of access to information to the appropriate individuals, where such restrictions is required by law;" (Section 1072.o)
+
+    **Why:** To audit and ensure compliance with legal restrictions on information access.
+
+    **One row represents:** A single audit event for information access controls.
+
+    **Covers:** Regular audits of access permissions and logs for restricted information.
+
+    **Columns:**
+    *   Audit ID
+    *   Audit Date
+    *   System/Information System Audited (linked to Dataset 2, 3, 4)
+    *   Auditor (Staff ID) (linked to Dataset 22)
+    *   Findings
+    *   Compliance Status
+    *   Remediation Actions
+    *   Follow-up Date
+
+22. **Employee Roster and Designations**
+
+    **Quotes:**
+    *   "The commissioner shall designate an employee to serve as the chief geospatial information officer." (Section 1076)
+    *   "The commissioner may appoint four deputies, one of whom may be designated the first deputy commissioner." (Section 1071)
+
+    **Why:** To track employees and their official designations, such as the Chief Geospatial Information Officer.
+
+    **One row represents:** A single employee within the department.
+
+    **Covers:** All employees of the Department of Information Technology and Telecommunications.
+
+    **Columns:**
+    *   Employee ID
+    *   Name
+    *   Title
+    *   Department
+    *   Start Date
+    *   End Date (if applicable)
+    *   Designated Roles (e.g., Chief Geospatial Information Officer, First Deputy Commissioner)
+    *   Contact Information
+
+23. **Employee Time Records**
+
+    **Quotes:**
+    *   (Implied by general agency operations and "employee timecards" from prompt instructions)
+
+    **Why:** To track employee work hours for payroll, project billing, and compliance.
+
+    **One row represents:** A single employee's time entry for a specific period or task.
+
+    **Covers:** All employee work hours, leave, and project allocations.
+
+    **Columns:**
+    *   Time Record ID
+    *   Employee ID (links to Dataset 22)
+    *   Date
+    *   Start Time
+    *   End Time
+    *   Hours Worked
+    *   Project ID (if applicable, links to Dataset 16, 17)
+    *   Leave Type (if applicable)
+    *   Approval Status
+    *   Approver ID (links to Dataset 22)
+
+24. **Employee Certifications and Training**
+
+    **Quotes:**
+    *   (Implied by general agency operations and "ensuring specialists are up to date on required certifications" from prompt instructions)
+
+    **Why:** To track employee professional certifications and training for compliance and skill management.
+
+    **One row represents:** A single certification or training record for an employee.
+
+    **Covers:** All professional certifications, licenses, and mandatory training for DoITT staff.
+
+    **Columns:**
+    *   Certification ID
+    *   Employee ID (links to Dataset 22)
+    *   Certification Name
+    *   Issuing Body
+    *   Date Issued
+    *   Expiration Date
+    *   Status (Current, Expired)
+    *   Training Course Name
+    *   Completion Date
+
+25. **Interagency Geospatial Data Coordination Meetings**
+
+    **Quotes:**
+    *   "including convening, under the direction of the chief geospatial information officer, annual interagency meetings of agency personnel responsible for supervising the collection, management or use of geospatial data and, when appropriate, other geospatial experts, to enable citywide coordination and collaboration in areas including application development, data sharing and data interoperability;" (Section 1072.h)
+
+    **Why:** To track annual interagency meetings for geospatial data coordination and collaboration.
+
+    **One row represents:** A single interagency geospatial data coordination meeting.
+
+    **Covers:** All annual interagency meetings convened by the Chief Geospatial Information Officer.
+
+    **Columns:**
+    *   Meeting ID
+    *   Date
+    *   Location
+    *   Chief Geospatial Information Officer (Staff ID) (links to Dataset 22)
+    *   Attending Agency IDs
+    *   Attendee Names/Titles
+    *   Key Discussion Points
+    *   Action Items
+    *   Follow-up Date
+
+26. **311 Community Board Quarterly Meetings**
+
+    **Quotes:**
+    *   "The department shall convene a quarterly meeting of representatives from each of the community boards within the city to discuss the content and format of the reports required to be prepared pursuant to this chapter." (Section 1075.e)
+
+    **Why:** To track quarterly meetings with community board representatives regarding 311 reports.
+
+    **One row represents:** A single quarterly meeting with community board representatives.
+
+    **Covers:** All quarterly meetings convened by DoITT with community board representatives.
+
+    **Columns:**
+    *   Meeting ID
+    *   Date
+    *   Location
+    *   Attending Community Board IDs
+    *   Attendee Names/Titles
+    *   Key Discussion Points
+    *   Action Items
+    *   Follow-up Date
+
+27. **Facilities Maintenance Records**
+
+    **Quotes:**
+    *   (Implied by general agency operations and "Building repair" from prompt instructions)
+
+    **Why:** To track maintenance and repair activities for department facilities.
+
+    **One row represents:** A single maintenance or repair event for a department facility.
+
+    **Covers:** All maintenance and repair activities for DoITT-occupied buildings and spaces.
+
+    **Columns:**
+    *   Maintenance ID
+    *   Facility ID
+    *   Location
+    *   Date
+    *   Description of Work
+    *   Type of Work (e.g., Repair, Routine Maintenance, Upgrade)
+    *   Vendor/Staff Performed By (linked to Dataset 22)
+    *   Cost
+    *   Status
+
+28. **Environmental Compliance Records**
+
+    **Quotes:**
+    *   (Implied by general agency operations and "environmental compliance" from prompt instructions)
+
+    **Why:** To track compliance with environmental regulations, especially for IT equipment disposal and data center operations.
+
+    **One row represents:** A single environmental compliance event or record.
+
+    **Covers:** Records related to hazardous waste disposal (e-waste), energy consumption, and other environmental impacts.
+
+    **Columns:**
+    *   Compliance Record ID
+    *   Date
+    *   Regulation/Standard
+    *   Activity (e.g., E-waste Disposal, Energy Audit)
+    *   Description
+    *   Outcome
+    *   Compliance Status
+    *   Vendor (if applicable)
+    *   Certification
+
+29. **Uniform Issuance and Inventory**
+
+    **Quotes:**
+    *   (Implied by general agency operations and "uniform provision" from prompt instructions)
+
+    **Why:** To track the issuance and inventory of uniforms for employees, if applicable.
+
+    **One row represents:** A single uniform item issued or in inventory.
+
+    **Covers:** All uniforms provided to DoITT employees.
+
+    **Columns:**
+    *   Item ID
+    *   Uniform Type
+    *   Size
+    *   Employee ID (if issued) (linked to Dataset 22)
+    *   Date Issued
+    *   Return Date
+    *   Condition
+    *   Inventory Status
+
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations (e.g., Chapter 14 provisions, Administrative Code Appendix A)
+*   Receipts
+*   Photos
+*   Research documents
+*   Long-range telecommunications strategy documents
+*   Information technology and telecommunications policies
+*   Authorizing resolutions for telecommunications franchises
+*   Requests for proposals (RFPs) or other solicitations of proposals for telecommunications franchises
+*   Terms of contracts or other agreements relating to telecommunications franchises and revocable consents
+*   Long-range computer systems strategy documents
+*   Data communications strategy documents
+*   Spatial data interoperability strategy documents
+*   Plans for the use of geospatial information systems
+*   Disaster recovery plans
+*   Data security policies and procedures
+*   Procedures for access restrictions
+*   Content and format of 311 reports (discussion points, not the reports themselves)

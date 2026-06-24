@@ -1,0 +1,811 @@
+**1. Employee Records and Personnel Actions**
+
+*   **Quotes:**
+    *   "The commissioner, from time to time, shall prescribe distinctive uniforms, badges and insignia to be worn and displayed by members of the uniformed force and prescribe and enforce penalties for the failure of any member of such force to wear and exhibit the same while engaged in the performance of his or her duties." (§ 16-103)
+    *   "Any person registered or eligible to appointment as a driver, or as a sweeper, may be employed temporarily at any time as an extra driver or sweeper to replace a driver or sweeper who is suspended or temporarily absent from duty for any cause." (§ 16-105)
+    *   "The commissioner, in his or her discretion, shall have power to punish any member of the uniformed force who has been guilty of: 1. any legal or criminal offense, 2. neglect of duty, 3. violation of rules, 4. neglect or disobedience of orders, 5. incapacity, 6. absence without leave, 7. conduct injurious to the public peace or welfare, 8. immoral conduct, or 9. any breach of discipline, by forfeiting or withholding pay for a specified time, not exceeding thirty days; by suspension, without pay during such suspension, for a period not exceeding thirty days; or by dismissal from the force." (§ 16-106.a)
+    *   "A member of the department shall be dismissed only after he or she has been informed of the cause of the proposed dismissal and has been allowed an opportunity of making an explanation." (§ 16-106.c)
+    *   "When and as soon as a member of the uniformed force has been fined, suspended or dismissed, the true cause for such fine, suspension or dismissal shall be entered in writing in a book to be kept for that purpose by the commissioner." (§ 16-106.e)
+    *   "A leave of absence to any member of the uniformed force shall not exceed twenty days in any one year, in addition to any vacation period, except upon condition that such member shall waive or release not less than one-half of all salary, pay or compensation and claim thereto, or any part thereof, during such absence." (§ 16-107.a)
+    *   "Absence without leave of any member of the uniformed force for five consecutive days shall be deemed and held to be a resignation, and at the expiration of such period the member so absent shall cease to be a member of such force and may be dismissed therefrom without notice." (§ 16-107.b)
+    *   "Each person employed in the sanitation service classification of the classified civil service shall be paid full pay or compensation during absence from duty caused by injury or sickness, except as otherwise provided by law, and subject to such rules and regulations as may be adopted by the commissioner." (§ 16-108)
+    *   "A member of the uniformed force of the department of sanitation shall be entitled pursuant to this section to the full amount of his or her regular salary for the period of any incapacity due to illness or injury incurred in the performance and discharge of duty as a member of the uniformed force, as determined by the department." (§ 16-108.1.a)
+    *   "Each person employed in the sanitation service classification of the classified civil service on October tenth, nineteen hundred sixty-two who, prior to April eighteenth, nineteen hundred sixty-two, incurred an injury or illness, and who was or is absent from duty in such employment on or after April eighteenth, nineteen hundred sixty-two, as a result of such injury or illness incurred prior to such date, shall be entitled to receive as pay or salary during such absence or absences, an amount equal to the difference between (a) the total of all payments and awards to such employee under the workers' compensation law by reason of such injury or illness... and (b) the amount which such employee would have received in full pay or compensation for absences from such duty..." (§ 16-109)
+    *   "The commissioner shall divide the city into a suitable number of districts, each of which shall be under the charge of a district superintendent or supervisory officer who shall be directly responsible to the commissioner for the cleanliness of his or her district. Each of such districts shall be subdivided by such commissioner into sections in charge of foremen or subordinate supervisory officers responsible to such district superintendent or supervisory officer, as well as to the commissioner, for the cleanliness of his or her section." (§ 16-111)
+    *   "The commissioner shall designate and identify the following: (i) the borough chief or chiefs who will be responsible for the implementation of the applicable borough-specific snow plan; (ii) department personnel who will report to the office of emergency management on a city-wide basis during snow events and who will be directly responsible for communicating with such office and the department; and (iii) personnel from the department's customer service and government relations offices who will communicate on a borough-by-borough basis with council members, community boards and the borough presidents in order to provide, receive and respond to information from such elected officials and community boards regarding snow event conditions." (§ 16-124.1.b.5)
+    *   "In case of a snowfall or other emergency, the commissioner may employ and hire temporarily as many persons, vehicles, machinery and equipment as shall be rendered necessary by such emergency..." (§ 16-126.a)
+    *   "All such employees shall be employed directly by the department and not through contractors or other persons..." (§ 16-126.b)
+    *   "The services of any person employed, and of vehicles, machinery and equipment hired pursuant to this section, shall be paid for in full and directly by the department, at such times as may be prescribed by the commissioner." (§ 16-126.c)
+*   **Why:** The agency must track all employees, their assignments, attendance, disciplinary actions, and compensation to manage its workforce and comply with labor laws.
+*   **One row represents:** A specific personnel action, event, or record for an employee.
+*   **Covers:** All DSNY employees, including uniformed forces, temporary hires, and those involved in snow operations.
+*   **Columns:**
+    *   **Employee ID**
+    *   Employee Name
+    *   Employee Rank/Title
+    *   Uniformed Force Member (Yes/No)
+    *   Personnel Action Type (e.g., Hire, Termination, Suspension, Leave, Injury, Promotion, Assignment)
+    *   Action Date
+    *   Action Start Date
+    *   Action End Date
+    *   Reason for Action (e.g., Legal Offense, Neglect of Duty, Illness, Injury, Leave Request, Temporary Assignment)
+    *   Disciplinary Outcome (e.g., Forfeited Pay, Suspended Without Pay, Dismissal, Fine Amount)
+    *   Pay Adjustment Amount
+    *   Leave Type (e.g., Annual, Sick, Line of Duty)
+    *   Injury/Illness Date
+    *   Line of Duty Injury (Yes/No)
+    *   Workers' Compensation Claim ID
+    *   District/Section Assigned (for supervisory/sweeper roles)
+    *   Snow Operations Role (e.g., Borough Chief, OEM Liaison, Customer Service)
+    *   Temporary Hire (Yes/No)
+    *   Temporary Hire Duration (days)
+    *   Payment Amount (for temporary hires)
+    *   Payment Date (for temporary hires)
+    *   Status (e.g., Active, Suspended, On Leave, Terminated)
+    *   Notes/Explanation (for disciplinary actions, dismissals)
+
+**2. Violation Notices and Enforcement Actions**
+
+*   **Quotes:**
+    *   "The commissioner, in his or her discretion, shall have power to punish any member of the uniformed force who has been guilty of: 1. any legal or criminal offense, 2. neglect of duty, 3. violation of rules, 4. neglect or disobedience of orders, 5. incapacity, 6. absence without leave, 7. conduct injurious to the public peace or welfare, 8. immoral conduct, or 9. any breach of discipline, by forfeiting or withholding pay for a specified time, not exceeding thirty days; by suspension, without pay during such suspension, for a period not exceeding thirty days; or by dismissal from the force." (§ 16-106.a)
+    *   "Any person violating the provisions of this section shall be liable for a civil penalty in the following amounts..." (§ 16-118.9)
+    *   "In the instance where a notice of violation is issued for breach of the provisions of this section and sets forth thereon civil penalties only, such process shall be returnable to the office of administrative trials and hearings pursuant to section 1049-a of the charter." (§ 16-118.10)
+    *   "Any person who violates the provisions of this section while engaged in commercial activities shall be liable to arrest and upon conviction thereof shall be deemed guilty of a misdemeanor and shall be punished by a fine of $4,000 for the first offense and $9,000 for any subsequent offense or by imprisonment not to exceed 90 days or by both such fine and imprisonment." (§ 16-119.b)
+    *   "Any person who violates the provisions of subdivision a of this section shall also be liable for a civil penalty of $4,000 for the first offense, $9,000 for the second offense within any eighteen-month period and $18,000 for each subsequent offense within any eighteen-month period." (§ 16-119.c.1)
+    *   "Any person violating the provisions of this section, except subdivision e, shall be liable for a civil penalty of $50 for the first violation, $100 for a second violation within any twelve-month period, and $200 for a third or subsequent violation within any twelve-month period." (§ 16-120.f)
+    *   "Any person who violates any provisions of this section other than subdivision d shall be guilty of a violation and, upon conviction thereof, shall be punished by a fine not to exceed five thousand dollars per day of violation, or by imprisonment for a term of not more than fifteen days, or by both such fine and imprisonment." (§ 16-120.1.i.2.i)
+    *   "Any person who violates the requirements of this section shall be liable for a civil penalty of two hundred fifty dollars for the first offense, five hundred dollars for the second offense committed within any twelve-month period and one thousand dollars for the third and any subsequent offense committed within any twelve-month period." (§ 16-120.2.d)
+    *   "Any person who shall violate any provision of this section, upon conviction thereof, shall be punished by a fine of not less than one hundred dollars nor more than five hundred dollars or imprisonment for ninety days or both." (§ 16-121.b)
+    *   "Any person convicted of a violation of the provisions of subdivision b or c of this section shall be punished by a fine of not less than fifty dollars nor more than two hundred fifty dollars, imprisonment for not more than ten days, or both." (§ 16-122.d)
+    *   "Any person violating the provisions of subdivisions (a) or (b) of this section shall be liable and responsible for a civil penalty of not less than ten dollars nor more than one hundred fifty dollars for the first violation..." (§ 16-123.h)
+    *   "Any person convicted of a violation of any of the provisions of this section shall be punished by a fine of not less than fifty dollars nor more than two hundred fifty dollars, imprisonment for not more than ten days, or both." (§ 16-127.d)
+    *   "The commissioner shall issue a notice of violation returnable to the environmental control board to any person violating a provision of this chapter or any regulation promulgated by the commissioner pursuant to this chapter." (§ 16-206.a)
+    *   "Each violation, whether committed on the same or a subsequent date, shall be deemed a separate violation and be punishable by a penalty." (§ 16-206.c)
+    *   "Any person who violates this chapter, except section 16-306.1 of this chapter, subdivision g of section 16-308 of this chapter, section 16-310.1 of this chapter or section 16-329 of this chapter, or any rule promulgated pursuant thereto, shall be liable for a civil penalty recoverable in a civil action brought in the name of the commissioner or in a proceeding returnable before the environmental control board..." (§ 16-324.a)
+    *   "Any producer/event manager, or any sponsor when there is no producer/event manager, who violates subdivision a or b of section 16-327 of this subchapter shall be liable for a civil penalty of one hundred dollars for each such violation..." (§ 16-328)
+    *   "Any person who violates this section or any rule promulgated pursuant thereto shall be liable for a civil penalty recoverable in a civil action brought in the name of the commissioner, the commissioner of health and mental hygiene or the commissioner of consumer and worker protection, or in a proceeding before the office of administrative trials and hearings..." (§ 16-401.h)
+    *   "Any food service establishment, third-party food delivery service, or third-party courier service that violates this section or any rule promulgated pursuant thereto shall be liable for a civil penalty recoverable in a civil action brought in the name of the commissioner or the commissioner of consumer and worker protection..." (§ 16-402.f)
+    *   "Any sports venue that violates this section or any rule promulgated pursuant thereto shall be liable for a civil penalty recoverable in a civil action brought in the name of the commissioner or in a proceeding before the office of administrative trials and hearings..." (§ 16-403.c)
+    *   "Any person who violates the provisions of subdivision a of section 16-426 of this chapter shall be liable for a civil penalty of one hundred dollars for each violation." (§ 16-427.b)
+    *   "Any person who violates paragraph one of subdivision a of section 16-461 of this chapter shall be liable for (i) a criminal fine of five hundred dollars or imprisonment not to exceed forty-eight hours, or both, or (ii) a civil penalty of five hundred dollars for the first offense..." (§ 16-464.a.1)
+    *   "Any person who violates section 16-471 of this chapter shall be liable for a civil penalty recoverable in a proceeding before the environmental control board of one thousand dollars for each such violation." (§ 16-476.a)
+    *   "Any original equipment manufacturer or agent of such manufacturer who violates section 16-483 of this chapter shall be liable for a civil penalty of five hundred dollars for each violation." (§ 16-484.b)
+*   **Why:** The agency is legally mandated to issue notices of violation and track enforcement actions, including penalties, across a wide range of sanitation and waste management regulations.
+*   **One row represents:** A single notice of violation or enforcement action issued by the agency.
+*   **Covers:** All violations of Title 16 and related rules, including littering, dumping, waste receptacle compliance, commercial waste rules, recycling non-compliance, medical waste, e-waste, single-use items, unlawful removal/receipt of recyclables, and facility permit violations.
+*   **Columns:**
+    *   Violation ID
+    *   **Enforcement Officer ID**
+    *   Issuing Department/Agency
+    *   Violation Date
+    *   Violation Time
+    *   Violation Location (Address, GPS coordinates if available)
+    *   Violation Type (e.g., Littering, Illegal Dumping, Improper Waste Set-out, Recycling Non-Compliance, Unpermitted Facility Operation, Unlawful Recyclable Removal, EPS Ban, Plastic Straw Rule)
+    *   Specific Code Section Violated
+    *   Respondent Type (e.g., Individual, Property Owner, Business, Manufacturer, Private Carter, Facility Operator)
+    *   Respondent Name/Organization
+    *   Respondent Address
+    *   Property ID (if applicable, e.g., **Building ID**, **Facility ID**)
+    *   Vehicle ID (if applicable, e.g., **Impounded Vehicle ID**)
+    *   Description of Violation
+    *   First Violation (Yes/No)
+    *   Previous Violations Count (within 12/18-month period)
+    *   Penalty Imposed (Amount, Imprisonment, Forfeiture)
+    *   Penalty Status (e.g., Paid, Outstanding, Appealed, Waived)
+    *   Hearing Date
+    *   Hearing Outcome
+    *   Correction Action Required (Yes/No)
+    *   Correction Deadline
+    *   Corrective Action Request (CAR) Issued (Yes/No)
+    *   CAR Protested (Yes/No)
+    *   CAR Resolution
+    *   Notes
+
+**3. Waste Collection and Disposal Service Records**
+
+*   **Quotes:**
+    *   "The department is hereby charged with the duty of causing the removal of dead animals, night soil and offal from the thickly populated districts daily, and as often as may be necessary elsewhere, and of keeping the city clean from all matter of nuisance of a similar kind." (§ 16-113)
+    *   "The commissioner may charge for the collection and disposal of ashes, street sweepings, garbage, refuse, rubbish, dead animals, night soil and offal, and all wastes, including trade waste from business, industrial, manufacturing, or other establishments conducted for profit, at rates established by the council by local law, upon recommendation of the commissioner, and on such terms and conditions as the commissioner shall prescribe and subject to rules of the department governing such collection and disposal." (§ 16-114)
+    *   "The commissioner is authorized to collect the following annual fees for the collection and disposal of solid waste generated by home occupations, medical offices/group medical centers, and other residential offices, located within buildings which receive department collection and disposal service..." (§ 16-114.1.b)
+    *   "The department shall not require any residential building to set out residential refuse in a stationary on-street container, except pursuant to rules that meet the requirements of subdivision c of this section." (§ 16-114.2.b)
+    *   "The commissioner may require any person desiring to use some or all of the incinerators or other plants under his or her control to set apart for his or her use, for the disposal of manure, swill, ashes, street sweepings, bones, garbage, night soil, offal, fats, hides, hoofs or other refuse parts of slaughtered animals, refuse, rubbish, bodies of dead animals or any other offensive or noxious material, paper stock, or trade waste, to pay for the disposal of the same at rates established by the council by local law..." (§ 16-129)
+    *   "The commissioner is authorized to collect fees for the disposal of yard waste and organic waste at department compost facilities." (§ 16-129.1)
+    *   "The commissioner may assign to persons who collect or dispose of solid waste a solid waste recovery and management facility or facilities at which such persons shall deliver such waste. The commissioner may assign days and hours when such persons shall use such facilities, and may limit or prohibit collection truck traffic on particular streets or limit such traffic to certain hours of the day." (§ 16-201.b)
+    *   "The rates for use of facilities provided by or for the department shall be fixed by the board of estimate upon the recommendation of the commissioner, who shall require persons assigned to such facilities to pay such rates." (§ 16-203.a)
+    *   "Each person assigned to a facility or facilities shall submit to the commissioner an annual report on such date as the commissioner shall determine, in a form established by the commissioner, which provides information required by the commissioner to plan, develop, maintain and operate facilities and provide waste management services. Such information shall include but not be limited to daily solid waste volumes and general composition or character of wastes by each vehicle route to and from facilities." (§ 16-204)
+    *   "The commissioner shall provide for the source separation, collection and composting of yard waste, unless the generator otherwise provides for recycling or storage for composting or mulching." (§ 16-308.b)
+    *   "The department shall establish a mandatory citywide curbside organics collection program for the diversion of organic waste in accordance with this section." (§ 16-308.1.a)
+    *   "The department shall establish an online application for a person to request the collection of organic waste from a community garden by the department in accordance with this section." (§ 16-308.3.b)
+    *   "The commissioner shall establish and implement a curbside collection system for Christmas trees during a minimum of two weeks in January of each year and provide for the composting or recycling of the Christmas trees the department collects or receives for disposal." (§ 16-309)
+    *   "The department shall provide a program for the recovery of refrigerants from appliances that are set out for department collection in the city of New York." (§ 16-482.a)
+*   **Why:** The agency's core mission involves collecting and disposing of various waste streams, requiring detailed tracking of services provided, volumes, and associated billing.
+*   **One row represents:** A single instance of waste collection, disposal, or service provided by the department or its contractors.
+*   **Covers:** All types of waste collected (general refuse, recyclables, organic waste, yard waste, dead animals, night soil, offal, Christmas trees, refrigerant-containing appliances) and disposal facility usage.
+*   **Columns:**
+    *   Collection/Service ID
+    *   Collection Date
+    *   Collection Time
+    *   **Vehicle ID**
+    *   **Route ID**
+    *   Collection Location (Address, GPS coordinates)
+    *   Generator Type (e.g., Residential, Commercial, Home Occupation, City Agency, School, Community Garden)
+    *   **Property ID** (if applicable)
+    *   Waste Type (e.g., Refuse, Mixed Recyclables, Paper, Metal/Glass/Plastic, Organic Waste, Yard Waste, Dead Animal, Night Soil, Offal, Christmas Tree, Refrigerant-Containing Appliance)
+    *   Weight (tons/lbs)
+    *   Volume (cubic yards/bags)
+    *   Number of Containers
+    *   Disposal Facility Used (**Facility ID**)
+    *   Disposal Cost/Fee Charged
+    *   Billing Account ID
+    *   Payment Status
+    *   Special Service (e.g., Refrigerant Recovery, Dead Animal Removal)
+    *   Notes
+
+**4. Permits and Registrations (Facilities & Transporters)**
+
+*   **Quotes:**
+    *   "It shall be unlawful for any person or public agency other than the department to conduct, operate or use any pier or part thereof, or any piece or parcel of land or land under water within the city as a dump or as a non-putrescible solid waste transfer station or putrescible solid waste transfer station, or for a fill material operation without having first obtained for each pier or part thereof, or for each piece or parcel of land or of land under water, in addition to any other permit required by law, a permit from the commissioner..." (§ 16-130.b)
+    *   "The commissioner shall issue permits to such persons or public agencies engaged in use of piers or lands or lands under water within the city as dumps, non-putrescible solid waste transfer stations or putrescible solid waste transfer stations." (§ 16-131.c)
+    *   "The commissioner shall collect an annual fee of seven thousand dollars for each permit for any such pier or part thereof, or for each piece or parcel of land or land under water used as a dump or as a non-putrescible solid waste transfer station, and an annual fee of thirteen thousand dollars for each permit for any such pier or part thereof, or for each piece or parcel of land or land under water used as a putrescible solid waste transfer station. The commissioner shall collect an annual registration fee of seven thousand dollars for an intermodal solid waste container facility." (§ 16-131.c)
+    *   "The commissioner shall issue permits every six months to persons or public agencies engaged in use of piers or lands or lands under water for fill material operations." (§ 16-131.d)
+    *   "The commissioner shall be responsible for the issuance, renewal, suspension and revocation of permits required by section 16-130 of this chapter." (§ 16-131.1)
+    *   "The commissioner, consistent with article twenty-three-A of the correction law, may refuse to issue or renew a permit required by section 16-130 of this chapter, or may, after notice and the opportunity to be heard, suspend or revoke such a permit when the applicant for such permit or such permittee has been denied a license required by section 16-505 of this code to operate a business for the collection, removal or disposal of trade waste or has had such a license revoked for the reason that such applicant or licensee has been found to lack good character, honesty and integrity by the trade waste commission pursuant to the provisions of title sixteen-A of this code." (§ 16-131.1.a)
+    *   "The commissioner may, after consideration of the results of such investigation, refuse for the reasons set forth in section 16-509 of this code to issue a permit required by section 16-130 of this chapter and, after notice and opportunity to be heard, may revoke or suspend any such permit upon a finding that the applicant or the permittee lacks good character, honesty and integrity." (§ 16-131.1.c)
+    *   "The commissioners of sanitation and consumer and worker protection, and the chairperson of the business integrity commission, shall be authorized to adopt rules providing for the licensing or registration, supervision and inspection of the operation and activities relating to the purchase and sale, acceptance and storage of recyclable material, including but not limited to scrap metal facilities located within the city of New York." (§ 16-463.a.1)
+    *   "On or after January 1, 2014, no person shall, while using a motor vehicle, accept, receive, transfer from one motor vehicle to another motor vehicle, or otherwise collect recyclable containers in bulk from more than two persons on private property in the city of New York without registering with the department pursuant to the provisions set forth in this section." (§ 16-472.a)
+    *   "Any application for registration or for renewal of a registration submitted to the department shall include the following: i. name and address of each such person and owner of such motor vehicle used for acceptance of recyclable containers in bulk; and ii. the location, including the street address or nearest street address of the property, and tax block and lot number or numbers if more than one lot, or other information identifying specifically where such motor vehicle will accept recyclable containers in bulk and the name of the owner of such property and a signed certification from such owner approving the use of such property for the purpose of in bulk container acceptance." (§ 16-472.a.i-ii)
+    *   "Prior to issuing a registration pursuant to this section, the department shall confirm that any location where a motor vehicle proposes to collect recyclable containers in bulk as specified pursuant to paragraph ii of subdivision a of this section is zoned for such use." (§ 16-472.c)
+    *   "Any registration issued by the department pursuant to this section shall expire one year from its issuance, and may be renewed thereafter." (§ 16-472.e)
+    *   "The department shall be authorized to promulgate such rules as are necessary to implement the provisions of this chapter, including but not limited to rules relating to reporting by original equipment manufacturers and registration with the department by such manufacturers, which registration may require the submission of information related to such manufacturers' refrigerant recovery programs, if any, and establishing penalties for violations of such rules." (§ 16-485)
+*   **Why:** The agency is responsible for issuing, renewing, suspending, and revoking permits and registrations for various waste management facilities and activities to ensure compliance and public safety.
+*   **One row represents:** A single permit or registration application, or an active permit/registration.
+*   **Covers:** Permits for dumps, non-putrescible solid waste transfer stations, putrescible solid waste transfer stations, fill material operations, intermodal solid waste container facilities, scrap metal facilities, and registrations for bulk recyclable container collectors and OEM refrigerant recovery programs.
+*   **Columns:**
+    *   Permit/Registration ID
+    *   Application ID (if applicable)
+    *   Permit/Registration Type (e.g., Dump, Putrescible Transfer Station, Fill Material Operation, Scrap Metal Facility, Bulk Recyclable Collector, OEM Refrigerant Recovery)
+    *   Applicant Name/Organization
+    *   Applicant Address
+    *   Applicant Contact Information
+    *   **Facility ID** (if applicable)
+    *   Facility/Operation Location (Address, GPS coordinates)
+    *   Permit/Registration Status (e.g., Applied, Issued, Active, Suspended, Revoked, Expired)
+    *   Issue Date
+    *   Expiration Date
+    *   Renewal Date
+    *   Annual Fee Amount
+    *   Fee Payment Status
+    *   Permitted Capacity (tons/day, cubic yards/6 months)
+    *   Material Types Permitted
+    *   Hours of Operation Permitted
+    *   Special Conditions/Exemptions
+    *   Reason for Suspension/Revocation (if applicable)
+    *   Background Check Status
+    *   Zoning Verification Status (for bulk collectors)
+    *   Property Owner Approval (for bulk collectors)
+    *   OEM Program Type (Own, Shared, DSNY)
+    *   Notes
+
+**5. Facility Operational Data (Waste Management)**
+
+*   **Quotes:**
+    *   "The commissioner shall have power to adopt rules: 1. controlling and providing for supervision over the conduct, operation, and use by persons or public agencies of all piers or lands or lands under water used as dumps, non-putrescible solid waste transfer stations or putrescible solid waste transfer stations, or for fill material operations; 2. requiring applicants and permittees to disclose to the department information determined by the commissioner to be necessary for the department to fulfill its duties under this title. Such information may include but need not be limited to financial statements, and any annual or quarterly report required to be filed with the state department of environmental conservation pursuant to regulations promulgated by such department to regulate solid waste management facilities; 3. requiring permittees to maintain records determined by the commissioner to be necessary for the department to fulfill its duties under this chapter and to protect the public health and safety. Such records shall include, without limitation, a log of the names of prospective customers denied the use of such dump, transfer station, or fill material operation." (§ 16-131.a)
+    *   "The commissioner shall determine the average daily amount of solid waste transported by barge for the three years preceding October 1, 2019, or the operational date, whichever is later, by each putrescible solid waste transfer station within a designated community district." (§ 16-498.2.b)
+    *   "A putrescible solid waste transfer station may reserve up to 20 percent of its permitted capacity exclusively for source separated organic waste to be recycled." (§ 16-498.2.c)
+    *   "The commissioner shall determine the average daily amount of metal, glass, plastic, paper and corrugated cardboard recycled for the three years preceding October 1, 2019, or the operational date, whichever is later, by each transfer station within a designated community district." (§ 16-498.2.d)
+    *   "The commissioner shall determine the average daily amount of construction and demolition debris recycled for the three years preceding October 1, 2019, or the operational date, whichever is later, by each non-putrescible solid waste transfer station within a designated community district." (§ 16-498.2.e)
+    *   "After a reduction in permitted capacity required by section 16-498.1 in a designated community district, each non-putrescible solid waste transfer station within such community district shall have a total quarterly capacity equal to the permitted capacity allocated to such transfer station multiplied by 78. The amount of non-putrescible waste that may be delivered to a non-putrescible transfer station on any single day may not exceed such transfer station's daily permitted capacity prior to the reductions required by this section." (§ 16-498.2.f)
+    *   "On exempted days occurring after the date that reductions under this section are implemented for a designated community district, a putrescible solid waste transfer station in such designated community district may process waste in an amount equivalent to such transfer station's permitted capacity prior to the reductions required by this section." (§ 16-498.1.c)
+    *   "No later than 120 days after the end of each quarter year, the commissioner shall notify the mayor and the speaker of the council if the amount of waste delivered to permitted solid waste transfer stations located within any community district is in excess of 90 percent of the total permitted capacity for such transfer stations." (§ 16-498.6)
+*   **Why:** The agency needs to monitor the actual waste intake, processing, and output of permitted facilities to ensure compliance with capacity limits, waste type restrictions, and operational rules.
+*   **One row represents:** A daily or per-transaction record of waste received, processed, or shipped by a permitted facility.
+*   **Covers:** All permitted dumps, transfer stations (putrescible, non-putrescible, intermodal), and fill material operations.
+*   **Columns:**
+    *   Record Date
+    *   **Facility ID**
+    *   **Permit/Registration ID** (from Dataset 4)
+    *   Waste Inflow Type (e.g., Received, Processed, Shipped Out)
+    *   Waste Type (e.g., Putrescible, Non-Putrescible, Organic, Metal, Glass, Plastic, Paper, C&D Debris, Fill Material)
+    *   Source of Waste (e.g., DSNY, Private Carter, Self-Haul)
+    *   Weight (tons)
+    *   Volume (cubic yards)
+    *   Vehicle Count (inflow/outflow)
+    *   Destination (e.g., Landfill, Incinerator, Recycling Facility, Barge, Rail)
+    *   Barge Transported (Yes/No, Weight)
+    *   Rail Transported (Yes/No, Weight)
+    *   Organic Waste Recycled (Yes/No, Weight)
+    *   Other Recyclables Recycled (Yes/No, Weight)
+    *   C&D Debris Recycled (Yes/No, Weight)
+    *   Daily Permitted Capacity (for that day)
+    *   Exempted Day (Yes/No)
+    *   Notes (e.g., operational issues, denied customers)
+
+**6. Recycling Program Performance and Collection Data**
+
+*   **Quotes:**
+    *   "The following recycling percentage goals are established for the recycling of department-managed solid waste: i. by July first, two thousand eleven, sixteen percent of department-managed solid waste; ii. by July first, two thousand thirteen, nineteen percent of department-managed solid waste; iii. by July first, two thousand fourteen, twenty-one percent of department-managed solid waste; iv. by July first, two thousand sixteen, twenty-four percent of department-managed solid waste; v. by July first, two thousand eighteen, twenty-seven percent of department-managed solid waste; vi. by July first, two thousand nineteen, thirty percent of department-managed solid waste; and vii. by July first, two thousand twenty, thirty-three percent of department-managed solid waste." (§ 16-305.a.1)
+    *   "In addition, the following recycling goals are established for curbside and containerized waste collected by the department: i. By July first, two thousand eleven, sixteen percent of curbside and containerized waste collected by the department..." (§ 16-305.a.2)
+    *   "The commissioner shall adopt and implement rules designating at least six recyclable materials, including plastics to the extent required in subdivision c of this section and yard waste to the extent required in section 16-308 of this chapter and organic waste to the extent required in section 16-308.1 of this chapter, contained in department-managed solid waste and requiring households to source separate such designated materials." (§ 16-305.b)
+    *   "In calculating the extent to which the department has met the recycling percentage goals set forth in paragraph one of subdivision a of this section, the department shall include in its calculations all curbside and institutional recycling it collects, including materials collected from households, schools, not-for-profit institutions and city agencies, and all recyclable materials collected as part of the public space recycling program pursuant to section 16-310 of this chapter, and may include yard waste collected pursuant to section 16-308 of this chapter and any other material collected for composting pursuant to this chapter, Christmas trees collected pursuant to section 16-309 of this chapter, clothing and textiles donated or collected pursuant to section 16-310.1 of this chapter, household hazardous waste diverted pursuant to section 16-310.3 of this chapter, rechargeable batteries collected pursuant to chapter four of this title, beverage containers returned within the city pursuant to title ten of article twenty-seven of the environmental conservation law, electronic waste collected within the city or otherwise diverted from the city's waste stream, including such waste collected or diverted pursuant to title twenty-six of article twenty-seven of the environmental conservation law, and plastic bags collected within the city or otherwise diverted from the city's waste stream, including such plastic bags collected or diverted pursuant to title twenty seven of article twenty seven of the environmental conservation law." (§ 16-305.h.1)
+    *   "All data used to make calculations pursuant to paragraphs one and two of this subdivision shall be made available on the department's website in raw form disaggregated by material type and using a non-proprietary format on a monthly basis, or, if such data is not generated by the department, within one month from the date that the department receives reports of such information." (§ 16-305.h.5)
+    *   "The department shall expand its public space recycling program by increasing the number of public space recycling receptacles for the collection of recyclable materials including, but not limited to, metal, glass, plastic and paper designated as recyclable materials by the commissioner, to a cumulative total of at least five hundred public space recycling receptacles within three years of the effective date of this section, and to a cumulative total of at least one thousand public space recycling receptacles within ten years of the effective date of this section..." (§ 16-310.a)
+    *   "The department shall report the total number of public space recycling receptacles added during the relevant reporting year, and the locations in which they were placed." (§ 16-310.d)
+    *   "No publicly accessible textile drop-off bin placed pursuant to this section shall be placed on city property or property maintained by the city, or on a public sidewalk or roadway, unless otherwise authorized by the city. No publicly accessible textile drop-off bin shall be placed on private property without the written permission of the property owner or the property owner's authorized agent. The owner or other person responsible for each such bin shall report at least every three months to the department the amount of textiles collected in such bin by weight." (§ 16-310.1.b)
+    *   "The department shall report by weight the amount of textiles collected in publicly accessible textile drop-off bins located on city property or property maintained by the city, through public textile reuse and recycling sites pursuant to subdivision a of this section and in publicly accessible textile drop-off bins maintained on private property." (§ 16-310.1.c)
+    *   "No later than December 31, 2024, the department shall ensure that at least two community recycling centers are established and operational in each borough." (§ 16-310.3.a)
+    *   "No later than September 30, 2023, and annually thereafter, the department shall host no less than one community recycling event in each community district." (§ 16-310.3.b)
+    *   "The department shall report annually on the operation of community recycling centers and community recycling events required pursuant to this section. Such report shall include, but need not be limited to, the following information, disaggregated by community recycling center and community recycling event, where feasible: 1. The number of individuals utilizing such centers and events; 2. The material collected at each such center and event, disaggregated by material type; 3. The number of full-time and part-time staff persons working at each such center and event; 4. Where each type of material collected is sent; and 5. A description of the education programs offered to the public." (§ 16-310.3.f)
+    *   "No later than July first, two thousand eleven, the commissioner shall establish a citywide program for the diversion of household hazardous waste from department-managed solid waste which shall include, but need not be limited to, at least one annual drop-off collection event at one or more designated sites in each borough." (§ 16-316.3.a)
+    *   "The department shall report annually the total amount of household hazardous waste diverted by the program established pursuant to subdivision a of this section. Such report shall specify each category of material and the amount of such material collected at each collection event or site established pursuant to subdivision a of this section." (§ 16-316.3.b)
+    *   "The department shall be allowed to apply the amount of covered electronic equipment and orphan waste collected by manufacturers pursuant to this chapter towards achieving its recycling goals." (§ 16-430)
+*   **Why:** The agency has specific recycling goals and programs for various materials, requiring detailed tracking of collection, diversion, and program activities to measure performance.
+*   **One row represents:** A single collection event, drop-off, or measurement of recyclable material.
+*   **Covers:** All department-managed recycling (curbside, institutional, public space, yard waste, organic waste, Christmas trees, textiles, household hazardous waste, e-waste, beverage containers, plastic bags) and community recycling programs.
+*   **Columns:**
+    *   Collection/Event ID
+    *   Collection Date
+    *   Collection Location (Address, **Public Space Receptacle ID**, **Community Recycling Center ID**, **Organic Waste Drop-off Site ID**, **Textile Drop-off Bin ID**)
+    *   Collection Type (e.g., Curbside, Institutional, Public Space, Drop-off Event, Community Garden, Christmas Tree, HHW, Textile Bin)
+    *   Material Type (e.g., Mixed Recyclables, Paper, Metal, Glass, Plastic, Organic Waste, Yard Waste, Textiles, HHW, E-Waste)
+    *   Weight (tons/lbs)
+    *   Volume (cubic yards)
+    *   Number of Items/Containers (if applicable)
+    *   Generator Type (e.g., Household, School, City Agency, Not-for-Profit, Commercial, Public)
+    *   **Property ID** (if applicable)
+    *   Sanitation District
+    *   Community District
+    *   Number of Participants/Users (for drop-off events/centers)
+    *   Staff Count (for drop-off events/centers)
+    *   Processing Facility Used (**Facility ID**)
+    *   End Use (e.g., Composted, Recycled, Reused)
+    *   Source of Data (e.g., DSNY Collection, Manufacturer Report, Community Partner Report)
+    *   Notes
+
+**7. Snow Removal Operations and Resource Management**
+
+*   **Quotes:**
+    *   "The commissioner, immediately after every snowfall or the formation of ice on the streets, shall forthwith cause the removal of the same, and shall keep all streets clean and free from obstruction." (§ 16-124)
+    *   "Beginning on November fifteenth, 2011, and on every November fifteenth thereafter, the commissioner shall submit to the council and make available to the public on the city's website a snow plowing and removal plan for each borough that shall include, but not be limited to, the following: (1) The address of each department garage and other department facility within the borough identified by district or section and the number of uniformed department employees assigned to each such garage or facility for purposes of addressing snow conditions; (2) An inventory by district of department-owned snow management equipment and resources and a city-wide inventory of other city-owned snow management equipment and resources that could, if available, be used during a snow event, as determined by city officials and the agency, office, agencies or offices responsible for the deployment of such city-owned snow management equipment and resources; (3) (i) Definitions of each of the priority designation categories, including criteria for making such designations and any changes to the previous year's priority designation category and the reasons for such changes; and (ii) a link to a website on which a map of each community district with the priority designation categories for each street in such district is viewable; (4) How the department plans to address the following types of tasks during a snow event: (i) plowing and/or removal of snow and ice from streets within each borough; (ii) plowing and/or removal of snow and ice from curb cuts and pedestrian medians at intersections on primary streets; (iii) plowing and/or removal of snow and ice from crosswalks, sidewalks adjacent to parks and bus stops; and (iv) dispersal of salt, sand or other material applied to roads in icy or snowy conditions..." (§ 16-124.1.b)
+    *   "The commissioner may cause or authorize snow and ice to be dumped into the waters of the port of New York, between the piers near the inshore ends." (§ 16-125)
+    *   "In case of a snowfall or other emergency, the commissioner may employ and hire temporarily as many persons, vehicles, machinery and equipment as shall be rendered necessary by such emergency, forthwith reporting, in the case of a snowfall, the number of such persons, vehicles, machinery and equipment and in the case of any other emergency such action with the full particulars thereof to the mayor, but in the case of a snowfall no such person, vehicles, machinery or equipment shall be so hired or employed for a longer period than seven days and in the case of any other emergency for a longer period than three days." (§ 16-126.a)
+    *   "All such employees shall be employed directly by the department and not through contractors or other persons, unless the commissioner shall determine that this requirement must for proper action in a particular instance be dispensed with." (§ 16-126.b)
+    *   "The services of any person employed, and of vehicles, machinery and equipment hired pursuant to this section, shall be paid for in full and directly by the department, at such times as may be prescribed by the commissioner." (§ 16-126.c)
+    *   "In all emergency work performed by laborers in the removal of snow where workers are engaged by the hour or day by a contractor employed for the purpose, such work shall be paid for directly to those individuals employed on it, in the currency of the United States and not by check or ticket." (§ 16-126.d)
+*   **Why:** The agency is responsible for city-wide snow and ice removal, requiring detailed planning, resource allocation, and tracking of operations and costs.
+*   **One row represents:** A single snow removal operation, resource deployment, or temporary hire event.
+*   **Covers:** All DSNY snow and ice removal activities, including plowing, salting, equipment deployment, temporary staffing, and authorized dumping.
+*   **Columns:**
+    *   Snow Event ID
+    *   Operation Date
+    *   Operation Start Time
+    *   Operation End Time
+    *   Borough
+    *   Sanitation District
+    *   Street/Route ID
+    *   Street Priority Designation (e.g., Primary, Secondary)
+    *   Activity Type (e.g., Plowing, Salting, Curb Cut Clearing, Bus Stop Clearing, Crosswalk Clearing)
+    *   **Vehicle ID** (DSNY or Hired)
+    *   **Equipment ID** (DSNY or Hired)
+    *   **Employee ID** (DSNY or Temporary)
+    *   Temporary Personnel Count
+    *   Hired Vehicle/Equipment Count
+    *   Material Used (e.g., Salt, Sand, Quantity)
+    *   Snow Depth (inches)
+    *   Ice Formation (Yes/No)
+    *   Area Covered (miles/square feet)
+    *   Completion Status
+    *   Dumping Authorization ID (if snow dumped)
+    *   Contractor Name (if applicable for temporary labor)
+    *   Payment Amount (for temporary labor/equipment)
+    *   Payment Date
+    *   Notes/Challenges
+
+**8. Impounded Property and Forfeiture Records**
+
+*   **Quotes:**
+    *   "Any dump truck or other vehicle that has been used or is being used to violate the provisions of this section shall be impounded by the department and shall not be released until either all removal charges and storage fees and the applicable fine have been paid or a bond has been posted in an amount satisfactory to the commissioner or as otherwise provided in paragraph (2) of this subdivision." (§ 16-119.e.1)
+    *   "In addition to any other penalties provided in this section, the interest of an owner as defined in subdivision c of this section in any vehicle impounded pursuant to paragraph (1) of this subdivision shall be subject to forfeiture upon notice and judicial determination thereof if such owner (i) has been convicted of or found liable for a violation of this section in a civil or criminal proceeding or in a proceeding before the environmental control board two or more times, both of which violations were committed within an eighteen month period or (ii) has been convicted of or found liable for a violation of this section in a civil or criminal proceeding or in a proceeding before the environmental control board if the material unlawfully dumped is a material identified as a hazardous waste or an acute hazardous waste in regulations promulgated pursuant to section 27-0903 of the environmental conservation law." (§ 16-119.e.2)
+    *   "The commissioner shall remove or cause to be removed any vehicle, box, barrel, bale of merchandise, or other movable property or article or thing whatsoever found upon any street, in accordance with regulations adopted by the commissioner." (§ 16-128.a.1)
+    *   "Within 72 hours of the department making such identification or receiving such report, remove or cause to be removed such vehicle from such street, provided that such vehicle is an abandoned vehicle described by subdivision 2 of section 1224 of the vehicle and traffic law and the vehicle identification number of such vehicle is not ascertainable by such department." (§ 16-128.a.2.b)
+    *   "The commissioner shall adopt rules relating to: 1. The leasing of yards for storage of property removed under the authority of this section; 2. Notification to the owner of the property removed, if such owner is ascertainable, that the property is being held by the commissioner; 3. Redemption, by the owner, of the property removed; 4. Reimbursement, by the owner, of the expenses of removal incurred by the commissioner; 5. The sale, by the commissioner, of the property held by the commissioner; 6. The keeping of records and accounts, the transmission of such records to the comptroller, and the transmission of funds collected to the commissioner of finance..." (§ 16-128.c)
+    *   "Any equipment, vehicles or other personal property that has been used or is being used to violate the provisions of section 16-130, 16-131, 16-131.2 or 16-131.3 of this chapter or article one hundred fifty-seven of the New York city health code may be impounded by the department pending forfeiture pursuant to the provisions of this section." (§ 16-131.4.a)
+    *   "In addition to any other penalties provided in this section, the interest of an owner in any equipment, vehicles or other personal property impounded pursuant to subdivision a of this section shall be subject to forfeiture upon notice and judicial determination thereof if such owner either (i) has not obtained a permit required by section 16-130 of this chapter and has been convicted of or found liable for a violation of section 16-130, 16-131, 16-131.2, or 16-131.3 of this chapter, or article one hundred fifty-seven of the New York city health code, in a civil or criminal judicial proceeding or in a proceeding before an agency of competent jurisdiction, (ii) has been convicted of or found liable for a violation of one of such sections, or such article, two or more times, in a civil or criminal judicial proceeding or in a proceeding before such agency, both of which violations were committed within an eighteen month period, or (iii) has been convicted of or found liable for a violation of one of such sections or such article in a civil or criminal judicial proceeding or in a proceeding before such agency where such violation involved the unlawful handling, processing, transportation, disposal or storage of a material identified as a hazardous waste or an acute hazardous waste in regulations promulgated pursuant to section 27-0903 of the environmental conservation law." (§ 16-131.4.c)
+    *   "Any motor vehicle that has been used or is being used to commit a violation of subdivision a, b or c of section 16-461 of this chapter may be impounded by the department and shall not be released until either all storage fees and the applicable fines and penalties have been paid or a bond has been posted in an amount satisfactory to the commissioner." (§ 16-464.d.3)
+    *   "Any motor vehicle that has been used or is being used to collect recyclable containers in bulk in violation of section 16-471 of this chapter or without registering with the department in violation of section 16-472 of this chapter may be impounded by the department and shall not be released until either all storage fees and the applicable fine have been paid or a bond has been posted in an amount satisfactory to the commissioner." (§ 16-476.d)
+*   **Why:** The agency impounds vehicles and other property for various violations, requiring detailed tracking of impoundment, storage, redemption, and forfeiture processes.
+*   **One row represents:** A single impounded vehicle or piece of property.
+*   **Covers:** All vehicles (dump trucks, motor vehicles) and movable property impounded due to illegal dumping, abandoned property, facility violations, or unlawful recyclable collection.
+*   **Columns:**
+    *   Impoundment ID
+    *   Impoundment Date
+    *   Impoundment Location (GPS coordinates)
+    *   **Violation ID** (from Dataset 2)
+    *   Property Type (e.g., Vehicle, Equipment, Movable Property)
+    *   Property Description (Make, Model, VIN for vehicles)
+    *   Owner Name (if ascertainable)
+    *   Owner Contact Information
+    *   Storage Yard Location
+    *   Storage Start Date
+    *   Storage End Date
+    *   Removal Charges
+    *   Storage Fees
+    *   Fines/Penalties Due
+    *   Total Amount Due
+    *   Payment Status
+    *   Redemption Date
+    *   Redeemed By
+    *   Forfeiture Initiated (Yes/No)
+    *   Forfeiture Date
+    *   Forfeiture Reason (e.g., Repeat Offender, Hazardous Waste)
+    *   Sale Date (if forfeited and sold)
+    *   Sale Price
+    *   Proceeds Transmitted to Finance (Yes/No)
+    *   Notes
+
+**9. Street Cleaning Operations and Performance**
+
+*   **Quotes:**
+    *   "The commissioner shall divide the city into a suitable number of districts, each of which shall be under the charge of a district superintendent or supervisory officer who shall be directly responsible to the commissioner for the cleanliness of his or her district. Each of such districts shall be subdivided by such commissioner into sections in charge of foremen or subordinate supervisory officers responsible to such district superintendent or supervisory officer, as well as to the commissioner, for the cleanliness of his or her section." (§ 16-111)
+    *   "For purposes of this section, "qualifying district" shall mean a sanitation district, or any portion of such district, where each side of the street is scheduled to receive department street cleaning on more than one day each week, and where such sanitation district achieves a cleanliness acceptability rating under the mayor's office of operations scorecard program that is equal to or greater than an average score of ninety percent for the two consecutive fiscal years prior to a community board's request pursuant to subdivision b of this section." (§ 16-111.1.a)
+    *   "Upon written request by the community board for the community district within which a qualifying district is located, the department shall reduce the weekly scheduled frequency of street cleaning by one day for such qualifying district." (§ 16-111.1.b)
+    *   "In qualifying districts where, pursuant to subdivision b of this section, the department has reduced street cleaning or a community board has requested such a reduction, the department shall have the option to resume or maintain the original street cleaning schedule if the sanitation district receives an average score of less than ninety percent under the mayor's office of operations scorecard program for any period of three consecutive months, or if the average score for such sanitation district falls below ninety percent over a period of two consecutive fiscal years." (§ 16-111.1.d)
+    *   "The commissioner shall require that all street sweepers be equipped with GPS technology and that such technology is in operation during street cleaning." (§ 16-111.2.b)
+    *   "Not later than December 31, 2023, the commissioner, in consultation with the department of information technology and telecommunications and the department of transportation, shall publish and maintain a page on the department's website that allows the public to track the progress of street sweepers in servicing blocks with scheduled street cleaning regulations, using data from GPS devices installed on such sweepers. Such GPS data shall be preserved and publicly available on a city website." (§ 16-111.2.c)
+    *   "Not later than June 30, 2024, and every six months thereafter for two years, the commissioner shall submit a report on street cleaning, using data from GPS devices installed on street sweepers, to the mayor and the speaker of the council and post such report on the department's website. Such report shall include, but not be limited to: 1. The number of routes a street sweeper was scheduled to service in such sanitation district in accordance with posted street cleaning regulations; 2. The percentage of routes completed by a street sweeper in such district; and 3. Any explanation as to why routes in such district were not completed as scheduled, if applicable." (§ 16-111.2.d)
+    *   "Whenever the commissioner of environmental protection shall determine that there is a sufficient supply of water for the purpose, such commissioner may permit the commissioner to use as much water as may be necessary for the flushing or washing of the public streets." (§ 16-112)
+*   **Why:** The agency is responsible for street cleanliness, requiring tracking of cleaning schedules, operations, equipment, and performance metrics.
+*   **One row represents:** A single street cleaning activity or a segment of a street sweeper's route.
+*   **Covers:** All DSNY street cleaning operations, including sweeping, flushing, and special cleaning activities.
+*   **Columns:**
+    *   Cleaning Activity ID
+    *   Activity Date
+    *   Activity Start Time
+    *   Activity End Time
+    *   **Vehicle ID** (Street Sweeper)
+    *   **Employee ID** (Driver/Operator)
+    *   Sanitation District
+    *   Street Segment ID/Block ID
+    *   Street Name
+    *   GPS Data (Start/End Coordinates, Path)
+    *   Scheduled Route (Yes/No)
+    *   Scheduled Cleaning Frequency (e.g., Daily, Weekly, Alternate Days)
+    *   Cleaning Type (e.g., Mechanical Sweeping, Flushing, Manual Sweeping)
+    *   Completion Status (e.g., Completed, Partially Completed, Not Completed)
+    *   Reason for Non-Completion (if applicable)
+    *   Cleanliness Score (from Mayor's Office of Operations Scorecard)
+    *   Water Usage (gallons, for flushing)
+    *   Community Board Request for Reduction (Yes/No)
+    *   Cleaning Schedule Adjusted (Yes/No, New Frequency)
+    *   Notes
+
+**10. Building/Property Compliance Records (Waste & Recycling)**
+
+*   **Quotes:**
+    *   "Every owner, lessee, tenant, occupant or person in charge of any building or premises shall keep and cause to be kept the sidewalk, flagging and curbstone abutting said building or premises free from obstruction and nuisances of every kind, and shall keep said sidewalks, flagging, curbstones, and air shafts, areaways, backyards, courts and alleys free from garbage, refuse, rubbish, litter, debris and other offensive material." (§ 16-118.2.a)
+    *   "Every owner, lessee, tenant or person in charge of any vacant lot shall keep and cause to be kept the sidewalk, flagging and curbstone abutting said vacant lot free from obstruction and nuisances of every kind, and shall keep said sidewalks, flagging and curbstones free from garbage, refuse, rubbish, litter, debris and other offensive material." (§ 16-118.2.b)
+    *   "The owner, lessee, agent, occupant or other person who manages or controls a building or dwelling shall provide and maintain in accordance with this section separate receptacles for the deposit of incinerator residue and ashes; refuse, and liquid waste; provided, however, that an owner, lessee, agent, occupant or other person who manages or controls a residential building that sets out residential refuse in a stationary on-street container pursuant to rules promulgated pursuant to section 16-114.2 of this chapter shall provide and maintain such separate receptacles in accordance with such rules and, where any such rule is inconsistent with subdivision a, b, c or d of this section, comply with such rule." (§ 16-120.a.1)
+    *   "Where the conditions precedent and requirements set forth in subparagraphs (b) and (c) of this paragraph are satisfied and apply, respectively, the receptacles used to meet the requirements set forth in paragraph 1 of this subdivision shall be of a material or design approved by the department, department of health and mental hygiene and department of housing preservation and development to minimize rodent access and harborage." (§ 16-120.a.2.a)
+    *   "Incinerator residue, ashes, refuse and liquid waste shall be stored in the building or dwelling or at the rear of the building or dwelling as may be required by the department of health and mental hygiene or the department of housing preservation and development until time for removal and kept in tightly covered metal receptacles or containers made of other materials of a type and grade acceptable to the department, the department of health and mental hygiene, and the department of housing preservation and development." (§ 16-120.c.1)
+    *   "After the contents have been removed by the department or other collection agency any receptacles remaining shall be removed from the front of the building or dwelling before 9:00 p.m. on the day of collection, or if such collection occurs after 4:00 p.m., then before 9:00 a.m. on the day following collection." (§ 16-120.c.1)
+    *   "Newspapers, wrapping paper or other light refuse or rubbish which is likely to be blown or scattered about the streets shall be securely bundled, tied or packed before being placed for collection." (§ 16-120.d)
+    *   "Every owner, lessee, tenant, occupant, or other person, having charge of any building or lot of ground in the city, abutting upon any street where the sidewalk is paved, shall, within four hours after the snow ceases to fall, or after the deposit of any dirt or other material upon such sidewalk, remove the snow or ice, dirt, or other material from the sidewalk and gutter..." (§ 16-123.a)
+    *   "In case the snow and ice on the sidewalk shall be frozen so hard that it cannot be removed without injury to the pavement, the owner, lessee, tenant, occupant or other person having charge of any building or lot of ground as aforesaid, may, within the time specified in the preceding subdivision, cause the sidewalk abutting on such premises to be strewed with ashes, sand, sawdust, or some similar suitable material, and shall, as soon thereafter as the weather shall permit, thoroughly clean such sidewalks." (§ 16-123.b)
+    *   "In all cases where the sidewalk or roadway of a street shall be incumbered or obstructed by the caving in or falling off of any earth, rocks or rubbish, or anything whatever, from any lot adjoining such sidewalk or roadway, the owner or occupant of such lot, or the agent of such owner or occupant, shall cause such earth, rocks, rubbish or other thing to be removed and cleaned from such sidewalk or roadway, within three days after a written or printed notice shall have been served by the commissioner or a duly designated representative, on such owner, personally..." (§ 16-127.a)
+    *   "Where the department provides solid waste collection services to a building containing at least four and no more than eight dwelling units, the commissioner shall adopt and implement rules requiring the owner, net lessee or person in charge of such building to: 1. provide for the residents, where practicable, a designated area and, where appropriate, containers in which to store the source separated or other designated recyclable materials to be collected by the department; and 2. inform all residents of the requirements of this chapter and the rules promulgated pursuant thereto by, at a minimum, posting instructions on source separation in or near the designated recycling area and making available to each resident at the inception of a lease, where applicable, a department-issued guide to recycling..." (§ 16-305.e)
+    *   "Where the department provides solid waste collection services to a building containing nine or more dwelling units, the commissioner shall adopt and implement rules requiring the owner, net lessee or person in charge of such building to: 1. provide for the residents a designated area and, where appropriate, containers in which to store the source separated or other designated recyclable materials to be collected by the department; 2. inform all residents of the requirements of this chapter and the rules promulgated pursuant thereto by, at a minimum, posting instructions on source separation in or near the designated recycling area... and 3. remove non-designated materials from the containers of designated source separated recyclable materials before such containers are placed at the curbside for collection and ensure that the designated materials are placed at the curbside in the manner prescribed by the department." (§ 16-305.f)
+    *   "The commissioner shall adopt and implement rules for any building containing four or more dwelling units in which the amount of designated materials placed out for collection is significantly less than what can reasonably be expected from such building. These rules shall require residential generators, including tenants, owners, net lessees or persons in charge of such building to use transparent bags or such other means of disposal the commissioner deems appropriate to dispose of solid waste other than the designated recyclable materials." (§ 16-305.g)
+    *   "Each designated covered establishment shall: ... ii. post a sign, which shall be in addition to any other sign required to be posted pursuant to this code, that states clearly and legibly the trade or business name, address, and telephone number of, and the day and time of pickup by, the private carter that collects the covered establishment's organic waste..." (§ 16-306.1.c.1.ii)
+    *   "Each designated covered establishment shall: ... iii. provide separate bins for the disposal of organic waste in any area where such organic waste is generated and disposed of; and iv. post instructions on the proper separation of organic waste where such instructions will be visible to persons who are disposing of organic waste..." (§ 16-306.1.c.1.iii-iv)
+    *   "Any covered establishment that arranges for the collection by a private carter of its organic waste pursuant to this subdivision shall not commingle such organic waste with other designated and non-designated recyclable material or solid waste, and shall place such organic waste out for collection by a private carter in a container or containers that (i) has a lid and a latch that keeps the lid closed and is resistant to tampering by rodents or other wildlife, (ii) has the capacity that meets the disposal needs of the covered establishment and its private carter, (iii) is compatible with the private carter's hauling collection practices, and (iv) is closed and latched at the time it is placed out for collection." (§ 16-306.1.c.2)
+    *   "No person engaged in a business that generates yard waste shall leave such yard waste for collection by the department, or disperse such yard waste in or about the curb or street. Any person engaged in a business that generates yard waste shall be required to collect and dispose of such yard waste at a permitted composting facility..." (§ 16-308.g)
+    *   "No person residing in a district where the department provides residential yard waste composting collection pursuant to subdivision b of this section shall dispose of grass clippings as regular waste for collection by the department during the period of time when the department conducts such composting collection." (§ 16-308.i)
+    *   "A residential building owner who violates this section shall be liable for a civil penalty as set forth in section 16-324, except that prior to April 1, 2025, a residential building owner who violates this section shall be issued a written warning that a violation has been observed..." (§ 16-308.1.g)
+    *   "No food service establishment in the city shall provide to any person any single-use beverage stirrer or single-use beverage splash stick made of plastic." (§ 16-401.b)
+    *   "No food service establishment in the city shall provide to any person a single-use plastic beverage straw that is not compostable except upon request." (§ 16-401.c.1)
+    *   "All food service establishments that have one or more self-serve stations shall display a sign at each such station that states: "Plastic straws available upon request."" (§ 16-401.c.3)
+    *   "No food service establishment shall provide eating utensils, condiment packets, napkins, or extra eating containers to a take-away customer, whether directly to such customer or through a third-party courier service or third-party food delivery service, unless such customer requests eating utensils, condiment packets, napkins, or extra eating containers." (§ 16-402.b)
+    *   "If expanded polystyrene single service articles are not designated as a recyclable material pursuant to subdivision b of this section, then, on and after July first, two thousand fifteen, no food service establishment, mobile food commissary, or store shall possess, sell, or offer for use single service articles that consist of expanded polystyrene..." (§ 16-329.c)
+    *   "If expanded polystyrene single service articles are not designated as a recyclable material pursuant to subdivision b of this section, then, on and after July first, two thousand fifteen, no manufacturer or store shall sell or offer for sale polystyrene loose fill packaging in the city." (§ 16-329.d)
+*   **Why:** The agency enforces numerous regulations on property owners and businesses regarding waste management, cleanliness, and material use, requiring tracking of compliance inspections.
+*   **One row represents:** A single inspection or compliance check of a building or property.
+*   **Covers:** Compliance with sidewalk cleanliness, waste receptacle provision/maintenance, waste set-out rules, snow/ice removal, obstruction removal, recycling source separation, organic waste management, single-use item restrictions, and EPS bans.
+*   **Columns:**
+    *   Inspection ID
+    *   Inspection Date
+    *   Inspection Time
+    *   **Inspector ID**
+    *   **Property ID** (Address, Lot, Block)
+    *   Property Type (e.g., Residential, Commercial, Vacant Lot, School, City Agency, Food Service Establishment, Sports Venue)
+    *   Owner/Lessee/Occupant Name
+    *   Owner/Lessee/Occupant Contact
+    *   Compliance Area (e.g., Sidewalk Cleanliness, Waste Receptacles, Waste Set-out, Recycling, Organic Waste, Snow Removal, Obstruction, Single-Use Items, EPS)
+    *   Specific Rule Checked
+    *   Compliance Status (e.g., Compliant, Non-Compliant, Warning Issued)
+    *   Violation Observed (Yes/No)
+    *   **Violation ID** (from Dataset 2, if issued)
+    *   Rodent-Proof Receptacles Required (Yes/No, for § 16-120.a.2.a)
+    *   Rodent-Proof Receptacles Present (Yes/No)
+    *   Recycling Area/Containers Present (Yes/No, for § 16-305.e/f)
+    *   Recycling Instructions Posted (Yes/No)
+    *   Non-Designated Materials in Recycling (Yes/No, for § 16-305.f.3)
+    *   Transparent Bags Used (Yes/No, for § 16-305.g)
+    *   Organic Waste Bins Present (Yes/No, for § 16-306.1.c.1.iii)
+    *   Organic Waste Instructions Posted (Yes/No)
+    *   EPS Items Found (Yes/No, for § 16-329)
+    *   Plastic Stirrers/Splash Sticks Found (Yes/No, for § 16-401.b)
+    *   Plastic Straws Offered Without Request (Yes/No, for § 16-401.c.1)
+    *   Plastic Straw Signage Present (Yes/No, for § 16-401.c.3)
+    *   Eating Utensils/Condiments Offered Without Request (Yes/No, for § 16-402.b)
+    *   Reusable Beverage Container Policy Compliant (Yes/No, for § 16-403)
+    *   Notes/Observations
+
+**11. Electronic Waste Management (Manufacturer & DSNY)**
+
+*   **Quotes:**
+    *   "Beginning July first, two thousand nine or one hundred eighty days after a manufacturer's electronic waste management plan is approved by the department, whichever date is later, such manufacturer must accept for collection, handling and recycling or reuse covered electronic equipment that is offered for return by any person in the city, and has been assembled, manufactured, or imported by such manufacturer, or has been sold under such manufacturer's brand name." (§ 16-422.a)
+    *   "Beginning July first, two thousand nine or one hundred eighty days after a manufacturer's electronic waste management plan is approved by the department, whichever date is later, such manufacturer must accept for collection, handling and recycling or reuse on a one-to-one basis with the purchase of the same type of covered electronic equipment other than orphan waste that is offered for return by any person in the city, and has been assembled, manufactured or imported by persons other than such manufacturer, or has been sold under the brand name of a person other than such manufacturer." (§ 16-422.b)
+    *   "Beginning July first, two thousand nine or one hundred eighty days after a manufacturer's electronic waste management plan is approved by the department, whichever date is later, and ending on June thirtieth, two thousand eleven, such manufacturer must accept for collection, handling, and recycling or reuse orphan waste that is offered for return by any person in the city on a one-to-one basis with the purchase of the same type of product by such person." (§ 16-422.c)
+    *   "Beginning July first, two thousand eleven, each manufacturer must accept for collection, handling, and recycling or reuse orphan waste of the same type sold by such manufacturer in the city that is offered for return by any person in the city." (§ 16-422.d)
+    *   "No later than September first, two thousand eight, a manufacturer shall submit to the department an electronic waste management plan for the collection, handling, and recycling or reuse of covered electronic equipment and orphan waste." (§ 16-423.a)
+    *   "A manufacturer's submission of an electronic waste management plan pursuant to subdivision a of this section shall be accompanied by a fee of one thousand five hundred dollars. A manufacturer's submission of an annual report pursuant to subdivision a of section 16-428 of this chapter shall be accompanied by a fee of one thousand two hundred fifty dollars." (§ 16-423.b)
+    *   "An electronic waste management plan shall include, at a minimum: 1. details for the collection, handling, and recycling or reuse of covered electronic equipment and orphan waste as required by this chapter, including but not limited to the methods by which a person can return to the manufacturer such covered electronic equipment and orphan waste. Such methods shall be convenient for residents of the city; 2. how the manufacturer will inform residents and businesses of the city about the manufacturer's plan for the collection, handling, and recycling or reuse of covered electronic equipment and orphan waste, which shall include an internet website and a toll-free telephone number; 3. information on the manufacturer's plan for the disposition of covered electronic equipment and orphan waste, including any plan for the recycling or reuse of such covered electronic equipment and orphan waste." (§ 16-423.d.1-3)
+    *   "A manufacturer shall demonstrate whether, pursuant to its electronic waste management plan, it is collecting for recycling or reuse at least its share of covered electronic equipment. Such manufacturer's share of covered electronic equipment is determined by applying the following minimum collection standard percentage by the average annual sales of the manufacturer's covered electronic equipment in the city, reported by weight, during the previous three calendar years; by July 1, 2012, the minimum collection standard is twenty-five percent; by July 1, 2015, the minimum collection standard is forty-five percent; by July 1, 2018, the minimum collection standard is sixty-five percent." (§ 16-424.a)
+    *   "For purposes of calculating achievement of the minimum collection standard specified in paragraph a of this subdivision, a manufacturer may count the collection of a single item of covered electronic equipment as twice its weight when that item is donated free of charge for reuse to the New York city department of education, or to any not-for-profit corporation..." (§ 16-424.b)
+    *   "Beginning July first, two thousand nine or one hundred eighty days after a manufacturer's electronic waste management plan is approved by the department, whichever date is later, such manufacturer may not sell or otherwise distribute for sale in the city covered electronic equipment unless such equipment has a label that identifies such manufacturer." (§ 16-425.a)
+    *   "Beginning July first, two thousand nine or one hundred eighty days after a manufacturer's electronic waste management plan is approved by the department, whichever date is later, such manufacturer shall provide at the point of sale information on how a person can return covered electronic equipment pursuant to such manufacturer's electronic waste management plan." (§ 16-425.b)
+    *   "Beginning July first, two thousand ten, no person shall dispose of covered electronic equipment as solid waste in the city." (§ 16-426.a)
+    *   "Beginning July first, two thousand nine, no manufacturer shall dispose of covered electronic equipment as solid waste in the city." (§ 16-426.b)
+    *   "On or before July first, two thousand nine, and annually on or before July first thereafter, a manufacturer that offers any covered electronic equipment for sale in the city shall submit an annual report to the department that includes the following information for the prior calendar year: 1. any approved modification to the manufacturer's electronic waste management plan; 2. sales data for the manufacturer's covered electronic equipment sold in the city; 3. the quantity of covered electronic equipment collected for recycling or reuse in this city, expressed both in terms of the total weight of such covered electronic equipment and as a percentage of the average annual sales of the manufacturer's covered electronic equipment in the city, reported by weight, during the previous three calendar years, and categorized by the type of covered electronic equipment collected pursuant to such manufacturer's electronic waste management plan, and further categorized, to the extent possible, by the quantity of such covered electronic equipment collected from individuals and government entities; 4. the weight of orphan waste collected, categorized by the type of covered electronic equipment collected, pursuant to such manufacturer's electronic waste management plan; 5. information on the manufacturer's compliance with the performance standards established in section 16-424 of this chapter; 6. information on the end markets and electronic recyclers utilized by the manufacturer, including details on the methods of collection, handling and recycling or reuse of covered electronic equipment used by electronic recyclers, details on any disassembly or physical recovery operation to be used, the locations of any such operations, and details on the manufacturer's compliance with applicable laws and regulations relating to the disposition, recycling and reuse of covered electronic equipment and orphan waste; 7. examples of how the manufacturer has informed residents and businesses of the city about the manufacturer's plan for the collection, handling and recycling or reuse of covered electronic equipment and orphan waste; 8. the number of visits to the internet website and calls to the toll-free telephone numbers established by the manufacturer's electronic waste management plan; and 9. any other information required by department rules." (§ 16-428.a)
+*   **Why:** The agency regulates electronic waste management, requiring manufacturers to submit plans, meet collection targets, and report on their activities, and tracks DSNY's own e-waste collection.
+*   **One row represents:** A single electronic waste collection event, a manufacturer's annual sales record, or a specific e-waste item collected.
+*   **Covers:** Manufacturer e-waste management plans, collection activities, sales data, performance against targets, and DSNY's e-waste collection.
+*   **Columns:**
+    *   E-Waste Collection ID
+    *   Collection Date
+    *   Manufacturer Name
+    *   **Manufacturer ID**
+    *   Collection Method (e.g., Drop-off, Mail-back, Retailer Take-back)
+    *   E-Waste Type (e.g., Computer, Monitor, TV, Keyboard, Printer, Portable Music Player)
+    *   Brand Name
+    *   Weight (lbs)
+    *   Source (e.g., Individual, Business, Government Entity, Orphan Waste)
+    *   Donated for Reuse (Yes/No)
+    *   Recipient of Donation (if applicable, e.g., DOE, Not-for-Profit)
+    *   Data Destruction Method Used
+    *   End Market/Electronic Recycler Used
+    *   Recycling/Reuse Method
+    *   Compliance with Laws/Regulations (Yes/No)
+    *   Manufacturer Annual Sales (Weight, for performance calculation)
+    *   Collection Performance Percentage
+    *   Performance Standard Met (Yes/No)
+    *   **E-Waste Plan ID** (from Dataset 4)
+    *   Plan Modification Date
+    *   Outreach Activity (e.g., Website Visits, Call Volume)
+    *   **Violation ID** (from Dataset 2, if applicable)
+    *   Notes
+
+**12. Organic Waste Management (Commercial & Residential)**
+
+*   **Quotes:**
+    *   "The commissioner shall, on a regular basis and no less than annually, evaluate the capacity of all facilities within the designated area and the cost of processing organic waste by composting, aerobic or anaerobic digestion, or any other method of processing organic waste that the department approves by rule. If the commissioner determines that there is sufficient capacity and that the cost of processing organic waste consistent with this section is competitive with the cost of disposing of organic waste by landfill or incineration, he or she shall designate by rule all covered establishments or a subset of covered establishments, based on any criteria, among such covered establishments, that generate a quantity of organic waste that would not exceed the evaluated capacity." (§ 16-306.1.b)
+    *   "Each designated covered establishment shall: i. either (A) ensure collection by a private carter of all organic waste generated by such establishment for purposes of composting, aerobic or anaerobic digestion, or any other method of processing organic waste that the department approves by rule, (B) transport its own organic waste to a facility that provides for composting, aerobic or anaerobic digestion, or any other method of processing organic waste that the department approves by rule, provided that the covered establishment first obtains a registration issued by the business integrity commission pursuant to subdivision b of section 16-505 of this code, or (C) provide for on-site in vessel composting, aerobic or anaerobic digestion, or any other method of processing organic waste that the department approves by rule for some or all of the organic waste it generates on its premises, provided that it arranges for the collection or transport of the remainder of such organic waste, if any, in accordance with clause (A) or (B) of this subparagraph;" (§ 16-306.1.c.1.i)
+    *   "Any private carter that collects source separated organic waste shall either: 1. deliver collected organic waste to a transfer station that has represented that it will deliver such organic waste to a facility for purposes of composting, aerobic or anaerobic digestion, or any other method of processing organic waste that the department approves by rule; or 2. deliver such organic waste directly to a facility for purposes of composting, aerobic or anaerobic digestion, or any other method of processing organic waste that the department approves by rule." (§ 16-306.1.d)
+    *   "Any transfer station that receives source separated organic waste pursuant to this section shall deliver or have delivered such organic waste directly to a facility that accepts organic waste for purposes of composting, aerobic or anaerobic digestion, or any other method of processing organic waste that the department approves by rule." (§ 16-306.1.e)
+    *   "Any person who owns or operates two or fewer food service establishments may request, and the commissioner shall grant, a waiver of the requirements of this section if: (1) no single food service establishment has a floor area of at least seven thousand square feet; (2) the food service establishment or establishments are individually franchised outlets of a parent business covered by paragraph five of the definition of "covered establishment" set forth in subdivision a of this section; and (3) the owner or operator establishes that such food service establishment or establishments do not receive private carting services through a general carting agreement between a parent business and a private carter." (§ 16-306.1.h)
+    *   "The department shall establish a mandatory citywide curbside organics collection program for the diversion of organic waste in accordance with this section." (§ 16-308.1.a)
+    *   "The department shall develop, submit to the mayor and speaker of the council, and post on the department’s website a curbside organics collection implementation plan. Such plan shall include information related to, at minimum: ... 3. How the department will distribute necessary materials, including rodent-proof organics collection bins, at no cost to residential building owners, and a timeline for such distribution." (§ 16-308.1.b.3)
+    *   "The department shall report by weight the total amount of organic waste diverted pursuant to this section during the previous year, disaggregated by sanitation district." (§ 16-308.1.d)
+    *   "No later than April 1, 2024, the department, in consultation with community partners, shall ensure that no less than 30 organic waste drop off sites are established and operational throughout the city, provided that no less than three such sites are established in each borough." (§ 16-308.2.b)
+    *   "The department shall post on its website information about each organic waste drop off site established pursuant to this section. Such information shall include each such site’s address, contact information, hours of operation and services provided." (§ 16-308.2.e)
+    *   "The department shall report annually on the operation of organic waste drop off sites. Such report shall include, at a minimum, the following information, disaggregated by organic waste drop off site where feasible: 1. The total amount of material collected at such site; 2. The number of individuals who used such site during the reporting period; 3. The number of full-time and part-time staff members working at such site, if any; and 4. Where the organic waste collected at such site was processed following collection." (§ 16-308.2.g)
+    *   "On and after August 15, 2025, the department shall provide for collection of organic waste from any community garden that has submitted an online application pursuant to this section." (§ 16-308.3.c)
+*   **Why:** The agency manages citywide organic waste collection, processing, and diversion programs for both commercial and residential sectors, requiring detailed tracking of participation, volumes, and facility usage.
+*   **One row represents:** A single organic waste collection event, a commercial establishment's compliance status, or a drop-off site's operational record.
+*   **Covers:** Commercial organic waste collection and processing, residential curbside organics collection, organic waste drop-off sites, and community garden organics collection.
+*   **Columns:**
+    *   Organic Waste Event ID
+    *   Event Date
+    *   Event Type (e.g., Commercial Collection, Curbside Residential Collection, Drop-off Site, Community Garden Collection)
+    *   **Property ID** (for commercial/residential/community garden)
+    *   **Covered Establishment ID** (for commercial)
+    *   **Organic Waste Drop-off Site ID** (for drop-off sites)
+    *   Sanitation District
+    *   Community District
+    *   Organic Waste Weight (tons/lbs)
+    *   Organic Waste Volume (cubic yards/bags)
+    *   Collection Method (e.g., DSNY, Private Carter, Self-Transport, On-site Processing)
+    *   **Private Carter ID** (if applicable)
+    *   Processing Facility Used (**Facility ID**)
+    *   End Use (e.g., Composted, Anaerobic Digestion)
+    *   Compliance Status (for commercial establishments)
+    *   Waiver Granted (Yes/No, for commercial)
+    *   Waiver Expiration Date
+    *   Rodent-Proof Bins Distributed (Yes/No, for residential)
+    *   Number of Users (for drop-off sites)
+    *   Staff Count (for drop-off sites)
+    *   Notes
+
+**13. Special Waste Collection and Disposal Records (Asbestos, Medical Waste)**
+
+*   **Quotes:**
+    *   "Waste containing asbestos shall not be presented for transport, storage or disposal unless at the site of generation such waste is: ... (3) quantitatively documented on a form approved by the commissioner, expressed by either volume, weight or container (bag); (4) kept separate from any other waste." (§ 16-117.1.b.3-4)
+    *   "Waste which contains asbestos shall not be stored unless prior authorization, in such form and manner as the commissioner may prescribe by regulation, is received from the department." (§ 16-117.1.c)
+    *   "Whenever waste containing asbestos is stored prior to disposal such waste shall be inspected not less than once in every twenty-four hour period so as to ensure that there are no visible emissions of asbestos dust into the air." (§ 16-117.1.d)
+    *   "Waste containing asbestos shall be disposed of in the City only at sites approved by the commissioner; (2) in cases of asbestos disposed of in City approved disposal sites, the Department of Sanitation shall indicate on the appropriate form, the quantity of asbestos received, expressed either by volume, weight or container (bag). A copy of this form shall be forwarded to the Department of Environmental Protection." (§ 16-117.1.e)
+    *   "It shall be unlawful for any person to store, treat, transport or dispose of or to cause to be stored, treated, transported or disposed of any regulated medical waste or other medical waste except in the manner prescribed in the public health law, the environmental conservation law, or any rules or regulations promulgated pursuant thereto and the New York city health code and any regulations of the city department of health and the city department of sanitation." (§ 16-120.1.a)
+    *   "No solid waste of any person required to be licensed by the city or state to provide health, medical, pharmaceutical or laboratory services shall be collected or received by the department for disposal unless such person has executed a certification that to the best of his or her knowledge or belief such waste does not contain any material for which such disposal is unlawful." (§ 16-120.1.c)
+    *   "Any person who generates any quantity of regulated medical waste shall file with the commissioner a copy of any annual reports or additional reports required to be submitted by such person to the commissioner of environmental conservation pursuant to paragraph d of subdivision one of section 27-1510 of the environmental conservation law or paragraph (d) of subdivision two of section 1389-bb of the public health law. Such reports shall be filed with the commissioner within fifteen days of submission to the commissioner of environmental conservation." (§ 16-120.1.e)
+    *   "Any person who generates regulated medical waste or other medical waste shall file with the department a "solid waste removal plan." Such plan shall include at a minimum: 1. the name, address and telephone number of the person or facility generating such waste; 2. the name, address, telephone number and permit number(s) of the transporter of such waste; 3. the name, address and telephone number of the disposal site(s) for such waste; 4. an estimate of the quantity of such waste produced and disposed of monthly; and 5. any other information required by regulation of the commissioner or the commissioner of health and mental hygiene." (§ 16-120.1.f)
+    *   "The commissioner of sanitation or health and mental hygiene or an authorized agent of such commissioner may enter upon public or private property for the purpose of conducting inspections or investigations necessary for the exercise of the powers or the performance of the duties of such commissioners pursuant to this section, including the inspection of documents or records relating to the storage, treatment, transportation or disposal of regulated medical waste or other medical waste required to be maintained by local, state or federal law..." (§ 16-120.1.g)
+    *   "The commissioner, with the written approval of the commissioner of health and mental hygiene, shall be authorized to order in writing that premises on which activity in violation of this section is occurring be closed if the commissioner finds that continuing activity on such premises would result in generation, storage or disposal of regulated medical waste or other medical waste in a manner posing an imminent threat to the public health or safety..." (§ 16-120.1.h.1)
+    *   "The commissioner shall suspend the use of the city's solid waste disposal system by any person licensed by the city or state to provide health, medical, pharmaceutical or laboratory services upon whom a notice of violation of this section has been served pending a hearing on and a finding as to liability for the violation." (§ 16-120.1.k)
+*   **Why:** The agency strictly regulates and tracks the handling of hazardous and medical waste due to significant public health and environmental risks.
+*   **One row represents:** A single manifest entry for asbestos waste, a medical waste generator's certification, or a medical waste removal plan.
+*   **Covers:** Asbestos waste (transport, storage, disposal) and regulated medical waste/other medical waste (storage, treatment, transport, disposal, generator plans, certifications).
+*   **Columns:**
+    *   Waste Shipment/Plan ID
+    *   Waste Type (e.g., Asbestos, Regulated Medical Waste, Other Medical Waste)
+    *   Generator Name/Facility
+    *   Generator Address
+    *   Generator Contact
+    *   Date of Generation/Shipment
+    *   Quantity (Volume, Weight, Container Count)
+    *   Container Type/Labeling Compliance (for asbestos)
+    *   Storage Location
+    *   Storage Authorization ID (for asbestos)
+    *   Storage Inspection Date (for asbestos)
+    *   Transporter Name/Permit Number
+    *   Disposal Site Name/Address
+    *   Disposal Site Approval (Yes/No)
+    *   DSNY Disposal System Used (Yes/No)
+    *   Generator Certification (Yes/No, for DSNY collection)
+    *   DEC Annual Report Filed (Yes/No, Date)
+    *   Solid Waste Removal Plan Filed (Yes/No, Date)
+    *   Plan Components (Transporter, Disposal Site, Monthly Quantity Estimate)
+    *   Inspection Date (for medical waste facilities)
+    *   Inspection Outcome
+    *   Closure Order Issued (Yes/No, Date)
+    *   Disposal System Suspension (Yes/No, Start Date, End Date)
+    *   **Violation ID** (from Dataset 2, if applicable)
+    *   Notes
+
+**14. Public Outreach and Education Program Activity**
+
+*   **Quotes:**
+    *   "The department shall develop an outreach and education program to educate residents, building owners, and staff of residential buildings on the curbside organics collection program established pursuant to this section. Materials used for such outreach and education program shall be available in all designated citywide languages, as defined in section 23-1101, and any additional languages as determined by the department in consultation with local community organizations." (§ 16-308.1.e)
+    *   "The department, in consultation with any agency or office designated by the mayor, shall develop an education and outreach program to inform residents about the organic waste drop off sites and community scale composting facilities established pursuant to this section." (§ 16-308.2.f)
+    *   "The department shall provide instruction and materials for residential building owners, net lessees or persons in charge of such buildings, and their employees and residents, in order to improve compliance with the provisions of this chapter." (§ 16-311.a)
+    *   "The commissioner shall establish a recycling education program that shall include recycling instructional workshops, training curricula and other relevant materials for residential building owners, net lessees or persons in charge of such buildings, and their employees and residents, including an internet-based recycling tutorial." (§ 16-311.b)
+    *   "The commissioner shall compile relevant recycling, reuse and composting information, including material available on the department's website, to create and make available a guide to the city's residential recycling program." (§ 16-315.b)
+    *   "The department shall develop and implement an educational program, in conjunction with the department of education, private schools, labor organizations, businesses, neighborhood organizations, community boards, and other interested and affected parties, and using flyers, print and electronic advertising, public events, promotional activities, public service announcements, and such other techniques as the commissioner determines to be useful, to assure the greatest possible level of compliance with the provisions of this chapter." (§ 16-315.c)
+    *   "In consultation with other city agencies, the department shall conduct outreach and education about the requirements of this section. Such outreach and education shall be offered in multiple languages and shall employ best practices for accessibility for people with disabilities." (§ 16-401.f)
+    *   "In consultation with other city agencies, the department shall conduct outreach and education about the requirements of this section." (§ 16-402.e)
+*   **Why:** The agency is required to conduct extensive outreach and education to promote compliance with waste management and recycling regulations.
+*   **One row represents:** A single outreach event, training session, or distribution of educational materials.
+*   **Covers:** All DSNY-led or supported public outreach and education programs related to recycling, organic waste, single-use items, and general waste management.
+*   **Columns:**
+    *   Outreach Event ID
+    *   Event Date
+    *   Event Type (e.g., Workshop, Training, Public Event, Material Distribution, PSA Campaign)
+    *   Program Area (e.g., Curbside Organics, General Recycling, HHW, Single-Use Items, EPS)
+    *   Location (Address, Community District)
+    *   Target Audience (e.g., Residents, Building Owners, Employees, Businesses, Schools)
+    *   Materials Distributed (e.g., Recycling Guide, Flyers, Bins)
+    *   Language(s) Used
+    *   Attendance Count
+    *   Partner Organizations
+    *   Cost of Event/Activity
+    *   Notes
+
+**15. Advisory Board Membership and Activities**
+
+*   **Quotes:**
+    *   "Within six months of the effective date of this chapter, each borough shall establish a citizens' solid waste advisory board (the "citizens' board"), consisting of no fewer than twenty members who for the first term shall be comprised of the members of the borough's citizens' advisory committee on resource recovery and other persons appointed jointly by the borough president and the council members elected from the council districts included in any part of the borough." (§ 16-317)
+    *   "Members shall serve for a term of two years without compensation and shall designate one member to serve as chairperson and one as vice-chairperson." (§ 16-317)
+    *   "Each citizens' board shall also annually advise its borough president and the department with respect to the development, promotion and operation of the recycling program in its borough and pursuant to this function shall formulate and recommend: 1. annual recycling goals equal to or greater than those set forth in section 16-305 of this chapter and the methods proposed to achieve such goals; 2. means to encourage community participation in the recycling program; and 3. means to promote the recycling program and educate the public with regard to the program." (§ 16-318.a)
+    *   "There shall be a citywide recycling advisory board (the "citywide board") consisting of at least one representative from each citizens' board, five members appointed by the council, and five members appointed by the mayor." (§ 16-319)
+    *   "The citywide board shall meet at least four times a year to discuss citywide recycling issues, including but not limited to budgetary issues. The citywide board shall annually review the department's recycling program and make recommendations to the mayor and the council concerning improvements to and changes in the program." (§ 16-320)
+    *   "Whenever a person, other than a public servant, appointed to any advisory board created pursuant to this subchapter, engages in any business dealings with the department, or engages in business dealings with any other agency that relate to processing or disposal of solid waste or of waste described in paragraph three of the definition of solid waste in section 16-303 of this chapter or to recycling, or has an interest in a firm that is engaged in such business dealings with the department or with such other agency, such person shall, prior to appointment, disclose the nature of such business dealings to the commissioner and to the body or officer appointing such person, and, after appointment, disclose the nature of such business dealings to the commissioner and to all other members of such board; provided that such person need not disclose the amount of such business dealings." (§ 16-321.a)
+*   **Why:** The agency is required to establish and interact with advisory boards, necessitating tracking of membership, roles, and recommendations.
+*   **One row represents:** A single member's appointment to an advisory board, or a specific meeting/recommendation.
+*   **Covers:** Citizens' solid waste advisory boards and the citywide recycling advisory board.
+*   **Columns:**
+    *   Board Member ID
+    *   Board Name (e.g., Borough Citizens' Board, Citywide Board)
+    *   Borough (for citizens' boards)
+    *   Member Name
+    *   Appointing Authority (e.g., Borough President, Council, Mayor)
+    *   Representing Organization/Sector (e.g., Community Board, Recycling Industry, Environmental Org)
+    *   Appointment Date
+    *   Term Start Date
+    *   Term End Date
+    *   Role (e.g., Member, Chairperson, Vice-Chairperson)
+    *   Disclosure Statement Filed (Yes/No)
+    *   Business Dealings Declared (Yes/No)
+    *   Meeting Date
+    *   Meeting Type (e.g., Regular, Public Hearing)
+    *   Recommendations Made (Summary/Link to Document)
+    *   Notes
+
+**16. DSNY Asset Inventory (Vehicles, Equipment, Facilities, Signs, Containers)**
+
+*   **Quotes:**
+    *   "The commissioner, from time to time, shall prescribe distinctive uniforms, badges and insignia to be worn and displayed by members of the uniformed force and prescribe and enforce penalties for the failure of any member of such force to wear and exhibit the same while engaged in the performance of his or her duties." (§ 16-103)
+    *   "The commissioner shall require that all street sweepers be equipped with GPS technology and that such technology is in operation during street cleaning." (§ 16-111.2.b)
+    *   "The commissioner shall post a sign in any area where the commissioner deems appropriate because of instances of illegal dumping. Such sign shall state the penalties for illegal dumping and the reward provisions therein." (§ 16-119.h)
+    *   "The owner, lessee, agent, occupant or other person who manages or controls a building or dwelling shall provide and maintain in accordance with this section separate receptacles for the deposit of incinerator residue and ashes; refuse, and liquid waste..." (§ 16-120.a.1)
+    *   "The department may waive the requirements set forth in subparagraph (a) of this paragraph for a building or dwelling if the owner of record or managing agent of such building or dwelling demonstrates to the satisfaction of the department that compliance with such provisions would (i) create an undue burden on such owner of record or managing agent or (ii) create a public safety hazard because the sidewalk on which a receptacle is placed would be substantially obstructed by such receptacle during the time it is set out for purposes of removal of waste material." (§ 16-120.a.2.d)
+    *   "All multiple dwellings erected after May twentieth, nineteen hundred sixty-eight that are four or more stories in height and occupied by twelve or more dwelling units, or that are "class B" multiple dwellings as defined by the multiple dwelling law shall be provided with a refuse compacting system constructed in conformity with all applicable laws and rules." (§ 16-120.2.b)
+    *   "Beginning on November fifteenth, 2011, and on every November fifteenth thereafter, the commissioner shall submit to the council and make available to the public on the city's website a snow plowing and removal plan for each borough that shall include, but not be limited to, the following: ... (2) An inventory by district of department-owned snow management equipment and resources and a city-wide inventory of other city-owned snow management equipment and resources that could, if available, be used during a snow event, as determined by city officials and the agency, office, agencies or offices responsible for the deployment of such city-owned snow management equipment and resources..." (§ 16-124.1.b.2)
+    *   "The commissioner may employ and hire temporarily as many persons, vehicles, machinery and equipment as shall be rendered necessary by such emergency..." (§ 16-126.a)
+    *   "The commissioner shall have the power, subject to the approval of the board of estimate, to lease, rent or otherwise grant advertising space to any person on any basket, container or receptacle placed in a public place by the department or its authorized agent for the public disposal of litter and to collect rentals, fees, charges or accept any other consideration for the lease, rental or other grant of such advertising space." (§ 16-132)
+    *   "The department shall expand its public space recycling program by increasing the number of public space recycling receptacles for the collection of recyclable materials including, but not limited to, metal, glass, plastic and paper designated as recyclable materials by the commissioner, to a cumulative total of at least five hundred public space recycling receptacles within three years of the effective date of this section, and to a cumulative total of at least one thousand public space recycling receptacles within ten years of the effective date of this section, at public locations in the city..." (§ 16-310.a)
+    *   "The department shall establish a citywide textile reuse and recycling program that shall, at a minimum, provide for the recovery of textiles by placing department-approved publicly accessible textile drop-off bins at appropriate locations on city property or property maintained by the city and organizing public textile reuse and recycling sites throughout the city that provide convenient drop-off locations for all city residents." (§ 16-310.1.a)
+    *   "No later than December 31, 2024, the department shall ensure that at least two community recycling centers are established and operational in each borough." (§ 16-310.3.a)
+    *   "The department shall distribute necessary materials, including rodent-proof organics collection bins, at no cost to residential building owners, and a timeline for such distribution." (§ 16-308.1.b.3)
+*   **Why:** The agency owns and manages a vast array of physical assets (vehicles, equipment, facilities, signs, containers) essential for its operations, requiring detailed inventory tracking.
+*   **One row represents:** A single DSNY-owned or managed asset.
+*   **Covers:** All DSNY vehicles (street sweepers, collection trucks, snow plows), equipment (snow management, compacting systems), facilities (garages, transfer stations, compost facilities, recycling centers), public signs (illegal dumping, plastic straw rules), and public/residential containers (litter baskets, recycling receptacles, textile bins, organics bins).
+*   **Columns:**
+    *   Asset ID
+    *   Asset Type (e.g., Vehicle, Equipment, Facility, Sign, Container)
+    *   Asset Subtype (e.g., Street Sweeper, Snow Plow, Compacting System, Transfer Station, Litter Basket, Recycling Receptacle, Organics Bin, Textile Bin, Illegal Dumping Sign)
+    *   Make/Model (for vehicles/equipment)
+    *   Serial Number (for equipment)
+    *   GPS Enabled (Yes/No, for vehicles)
+    *   Location (Address, GPS coordinates, **Sanitation District**, **Community District**)
+    *   Installation Date
+    *   Last Maintenance Date
+    *   Status (e.g., Operational, In Repair, Retired)
+    *   Capacity (for containers/facilities)
+    *   Rodent-Proof (Yes/No, for containers)
+    *   Advertising Space Leased (Yes/No, for litter baskets)
+    *   Lease/Contract ID (for advertising space)
+    *   Assigned To (e.g., Specific Route, Facility, Department)
+    *   Notes
+
+**17. Reward Program Payouts**
+
+*   **Quotes:**
+    *   "Where a notice of violation, appearance ticket or summons is issued for a violation of subdivision a of this section based upon a sworn statement by one or more individuals and where the commissioner determines, in the exercise of his or her discretion, that such sworn statement, either alone or in conjunction with testimony at a civil or criminal proceeding or in a proceeding before the environmental control board, results in the conviction of or the imposition of a civil penalty upon any person for a violation of subdivision a of this section, the commissioner shall offer as a reward to such individual or individuals an amount that, in the aggregate, is equal to: (i) fifty percent of any fine or civil penalty collected; or (ii) five hundred dollars when a conviction is obtained, but no fine or civil penalty is imposed." (§ 16-119.f.1)
+    *   "The commissioner shall promulgate and implement regulations providing that where an individual furnishes information that, in the opinion of the commissioner, results in a conviction or the imposition of a fine or civil penalty for a violation of any provision of this section, the commissioner shall offer as a reward to said individual, out of unexpended appropriations therefor: i. fifty percent of any fine or penalty collected; or ii. five hundred dollars when a prison sentence but no fine or civil penalty is imposed." (§ 16-120.1.j)
+    *   "The commissioner shall establish a program to allow individuals to submit a sworn statement affirming the observation of a violation of section 16-461 of this chapter and, where the commissioner deems it appropriate, allow for a reward for any such sworn statement. Where a notice of violation or summons is issued for a violation of section 16-461 of this chapter based upon a sworn statement by one or more individuals and where the commissioner determines, in the exercise of his or her discretion, that such sworn statement, either alone or in conjunction with the testimony of the person submitting such sworn statement at a civil or criminal proceeding or in a proceeding before the environmental control board, contributes to the imposition of a civil or criminal penalty upon any person for a violation of section 16-461 of this chapter, the commissioner shall offer as a reward to such individual or individuals an amount that, in the aggregate, is equal to fifty percent of any civil or criminal penalty collected." (§ 16-462)
+*   **Why:** The agency offers rewards for information leading to convictions or penalties for certain violations, requiring tracking of claims and payouts.
+*   **One row represents:** A single reward payout for information provided.
+*   **Covers:** Rewards for illegal dumping, medical waste violations, and unlawful removal of recyclables.
+*   **Columns:**
+    *   Reward ID
+    *   Payout Date
+    *   Informant Name/ID
+    *   **Violation ID** (from Dataset 2)
+    *   Violation Type (e.g., Illegal Dumping, Medical Waste, Unlawful Recyclable Removal)
+    *   Conviction/Penalty Date
+    *   Fine/Penalty Collected Amount
+    *   Reward Calculation Basis (e.g., 50% of fine, fixed amount)
+    *   Reward Amount Paid
+    *   Sworn Statement Received (Yes/No)
+    *   Testimony Provided (Yes/No)
+    *   Notes
+
+**18. Waiver and Exemption Applications/Decisions**
+
+*   **Quotes:**
+    *   "The department may waive the requirements set forth in subparagraph (a) of this paragraph for a building or dwelling if the owner of record or managing agent of such building or dwelling demonstrates to the satisfaction of the department that compliance with such provisions would (i) create an undue burden on such owner of record or managing agent or (ii) create a public safety hazard because the sidewalk on which a receptacle is placed would be substantially obstructed by such receptacle during the time it is set out for purposes of removal of waste material." (§ 16-120.a.2.d)
+    *   "Such board may grant variances from a regulation or modify assignments or rates of the commissioner involving the transportation, storage, processing or disposal of solid waste when such board finds that such regulation or order would impose unreasonable economic hardship." (§ 16-205.a)
+    *   "Exemptions from formal variance request procedures may be made for day-to-day operational hardships such as equipment failure. The commissioner may grant temporary facility and time assignment variances to persons who report such hardships to the commissioner. Proof of hardship must be submitted to the commissioner within the time frame set by the commissioner." (§ 16-205.b)
+    *   "The commissioner, upon the recommendation of the solid waste management board and upon the approval of the board of estimate, may exempt that portion of privately collected solid waste from all or some provisions of any regulations for such period of time as is necessary and appropriate up to forty years, if the regulation of that solid waste will materially and adversely interfere with the development, financing or operation of any resource recovery facility owned or operated or being developed privately." (§ 16-207.a)
+    *   "Any person who owns or operates two or fewer food service establishments may request, and the commissioner shall grant, a waiver of the requirements of this section if: (1) no single food service establishment has a floor area of at least seven thousand square feet; (2) the food service establishment or establishments are individually franchised outlets of a parent business covered by paragraph five of the definition of "covered establishment" set forth in subdivision a of this section; and (3) the owner or operator establishes that such food service establishment or establishments do not receive private carting services through a general carting agreement between a parent business and a private carter." (§ 16-306.1.h)
+    *   "Any not-for-profit corporation, regardless of its income, and any food service establishment, mobile food commissary, or store that had a gross income under five hundred thousand dollars per location on their annual income tax filing for the most recent tax year and is not part of a chain food service establishment or a chain store may request from the commissioner of small business services, in a manner and form established by such commissioner, a financial hardship waiver of the requirements of this section." (§ 16-329.e)
+    *   "The commissioner may grant an annual waiver, in whole or in part, from the minimum collection standards set forth in subdivision a of this section where a manufacturer who has an approved electronic waste management plan has demonstrated to the commissioner's satisfaction that such minimum collection standards could not be met despite the best efforts of the manufacturer because the manufacturer has substantially increased the amount of covered electronic equipment sold within the city over the three-year period during which compliance with subdivision a of this section is to be measured and it was not practicable to meet the applicable minimum collection standard." (§ 16-424.c)
+    *   "The commissioner may waive the reductions to permitted capacity and the limits to total quarterly capacity required by this chapter for the duration of any emergency." (§ 16-498.3.a)
+    *   "After the reductions in permitted capacity required by section 16-498.1 have been implemented at a transfer station in a designated community district, the commissioner may, on a one-time basis, increase the permitted capacity of any such transfer station that seeks a modification to its permit solely to increase the amount of organic waste or metal, glass, plastic, paper or corrugated cardboard that is separated for recycling, provided that such increase shall be no greater than 20 percent of the transfer station's then-existing permitted capacity." (§ 16-498.3.b)
+*   **Why:** The agency provides mechanisms for waivers, variances, and exemptions from certain regulations, requiring tracking of applications, reasons, and decisions.
+*   **One row represents:** A single application for a waiver, variance, or exemption.
+*   **Covers:** Waivers for rodent-proof receptacles, solid waste management variances (economic/operational hardship), exemptions for private resource recovery facilities, organic waste waivers for small businesses, EPS ban financial hardship waivers, e-waste performance waivers, and transfer station capacity waivers/increases.
+*   **Columns:**
+    *   Waiver/Exemption ID
+    *   Application Date
+    *   Applicant Name/Organization
+    *   Applicant Contact Information
+    *   **Property ID** (if applicable)
+    *   **Facility ID** (if applicable)
+    *   Regulation Section Waived/Exempted
+    *   Reason for Request (e.g., Undue Burden, Public Safety Hazard, Economic Hardship, Operational Hardship, Increased Sales, Emergency)
+    *   Supporting Documentation Provided (Yes/No)
+    *   Application Status (e.g., Submitted, Under Review, Approved, Denied)
+    *   Decision Date
+    *   Decision Maker (e.g., Commissioner, Solid Waste Management Board)
+    *   Waiver/Exemption Start Date
+    *   Waiver/Exemption End Date
+    *   Conditions of Waiver/Exemption
+    *   Notes
+
+**19. Food Donation Portal Activity**
+
+*   **Quotes:**
+    *   "Within eighteen months after the effective date of the local law that added this section, the department or another agency or office designated by the mayor, shall, in conjunction with the department of information technology and telecommunications, create or modify and maintain a web portal that will allow prospective food donors and recipients, including but not limited to restaurants, grocery stores, produce markets, dining facilities and food rescue organizations, to post notifications concerning the availability of food, including food that would otherwise go to waste, and to arrange for the transportation or retrieval of such food." (§ 16-497)
+    *   "Such portal shall, at a minimum, allow (i) a prospective food donor to describe the type and amount of food available, including any information necessary to keep the food safe for human consumption, such as refrigeration requirements, as well as other information necessary to facilitate its donation, (ii) a prospective food recipient to specify the type and amount of food donations it will accept and the areas of the city from which it will accept donations and to receive prompt notification concerning the availability of food satisfying such specifications, and (iii) a prospective food donor and a prospective food recipient to communicate directly through a messaging system within such portal." (§ 16-497)
+*   **Why:** The agency is mandated to create and maintain a food donation web portal, requiring tracking of listings, arrangements, and user interactions.
+*   **One row represents:** A single food donation listing or a food donation arrangement made through the portal.
+*   **Covers:** All activities on the food donation web portal.
+*   **Columns:**
+    *   Listing ID
+    *   Listing Date
+    *   Donor Name/Organization
+    *   Donor Contact Information
+    *   Donor Type (e.g., Restaurant, Grocery Store, Dining Facility)
+    *   Food Type (e.g., Prepared Meals, Produce, Packaged Goods)
+    *   Food Amount (Weight/Volume/Units)
+    *   Refrigeration Requirements (Yes/No)
+    *   Expiration Date
+    *   Pickup Location
+    *   Recipient Name/Organization
+    *   Recipient Type (e.g., Food Rescue Org, Pantry)
+    *   Arrangement Date
+    *   Pickup/Delivery Date
+    *   Status (e.g., Available, Arranged, Completed, Expired)
+    *   Communication Log (Yes/No)
+    *   Notes
+
+**20. Waste Characterization Study Data**
+
+*   **Quotes:**
+    *   "The commissioner shall complete follow-up studies to the studies performed in 2005 regarding the characteristics of the city’s residential and institutional waste streams for department-managed solid waste on or before January 31, 2012, and on or before January 31, 2018. The results of each such study and an analysis of those results shall be submitted to the council and the mayor within 60 days of their completion." (§ 16-316.1.a)
+    *   "On or before January 31, 2024, the commissioner shall complete a detailed, comprehensive citywide multi-season study of the city’s residential and institutional waste streams for the purpose of determining the composition of the waste stream characterized by type of material. The results of such study and an analysis of those results shall be submitted to the council and the mayor within 60 days of its completion." (§ 16-316.1.b)
+    *   "No later than January 31, 2028, in addition to the studies required by subdivisions a and b of this section, the commissioner shall conduct a detailed, comprehensive citywide multi-season study of the department-managed residential and institutional waste streams for the purpose of determining the composition of such waste streams characterized by type of material." (§ 16-316.1.c.1)
+    *   "No later than January 31, 2032, the commissioner shall conduct a study of the composition of the commercial waste stream in the city, including construction and demolition debris, to the extent that information about such composition is readily available to the department." (§ 16-316.1.c.2)
+    *   "The department, as part of the waste characterization study required pursuant to subdivision b of section 16-316.1, shall, where practicable, assess the amount of single-use items in the waste stream and the change in such amount from any previous studies. The department shall include such information in such study submitted to the council and the mayor." (§ 16-402.g)
+*   **Why:** The agency is mandated to conduct periodic waste characterization studies to understand the composition of the waste stream and inform policy decisions.
+*   **One row represents:** A single sample of waste analyzed during a waste characterization study.
+*   **Covers:** Residential, institutional, and commercial waste streams, including single-use items and construction and demolition debris.
+*   **Columns:**
+    *   Sample ID
+    *   Study Date
+    *   Sampling Location (e.g., Sanitation District, Facility)
+    *   Waste Stream Type (e.g., Residential, Institutional, Commercial, C&D)
+    *   Season of Sample
+    *   Total Sample Weight (lbs)
+    *   Material Category (e.g., Paper, Plastic, Glass, Metal, Organic, Textiles, Single-Use Items, C&D Debris)
+    *   Material Subtype (e.g., Newspaper, PET Bottle, Food Scraps, Expanded Polystyrene)
+    *   Weight of Material Subtype in Sample (lbs)
+    *   Percentage of Material Subtype in Sample
+    *   Notes
+
+**21. Displaced Transfer Station Employee List**
+
+*   **Quotes:**
+    *   "The commissioner shall maintain a list containing the names and contact addresses or telephone numbers of persons formerly employed by a transfer station in a designated community district whose employment ended as a result of the a reduction in permitted capacity required pursuant to section 16-498.1." (§ 16-498.7)
+    *   "The addition or deletion of information on such list relating to a person on such list shall be made only upon the request of such person." (§ 16-498.7)
+    *   "A copy of such list shall be made available upon request by an owner or operator of a transfer facility and shall be sent to all transfer stations on an annual basis." (§ 16-498.7)
+*   **Why:** The agency is required to maintain a list of employees displaced by transfer station capacity reductions to assist with re-employment.
+*   **One row represents:** A single displaced employee from a transfer station.
+*   **Covers:** Employees displaced due to transfer station capacity reductions in designated community districts.
+*   **Columns:**
+    *   Employee ID (internal to this list, not DSNY employee ID)
+    *   Employee Name
+    *   Contact Address
+    *   Contact Telephone Number
+    *   Former Transfer Station Name
+    *   Former Transfer Station **Facility ID**
+    *   Community District of Former Transfer Station
+    *   Date Employment Ended
+    *   Reason for Displacement (Capacity Reduction)
+    *   Date Added to List
+    *   Date Removed from List (if requested)
+    *   Notes
+
+---
+**Non-Tabular Information (Examples from the text)**
+
+*   **Rules and Regulations:** The entire text itself is a collection of rules and regulations. The agency promulgates and amends these, but they are not tabular data. (e.g., § 16-117, § 16-131, § 16-208, § 16-323, § 16-432, § 16-477, § 16-485)
+*   **Reports (Aggregated):** Many sections mention reports (e.g., annual reports, preliminary reports, studies). While these reports *contain* data, they are typically aggregated summaries or analyses, not the raw, incident-level tabular data requested. (e.g., § 16-111.2.d, § 16-118.1.d, § 16-134.c, § 16-204, § 16-305.h, § 16-306.c, § 16-307.c, § 16-307.2.d, § 16-307.3.d, § 16-308.h, § 16-308.1.d, § 16-308.2.g, § 16-310.d, § 16-310.1.c, § 16-310.3.f, § 16-316.1, § 16-316.3.b/c, § 16-316.4.b/c, § 16-316.5, § 16-428, § 16-473, § 16-498.5)
+*   **Plans/Strategies:** Documents outlining how the agency will achieve goals or implement programs. (e.g., § 16-120.1.f, § 16-124.1.b, § 16-140, § 16-306.1.b, § 16-307.b, § 16-307.1.b, § 16-307.2.b, § 16-307.3.b, § 16-308.1.b, § 16-315.b, § 16-316.5.a, § 16-423.d)
+*   **Memoranda of Understanding (MOU):** Agreements between agencies. (e.g., § 16-114.2.d)
+*   **Legal Opinions/Determinations:** (e.g., § 16-112, § 16-116.c)
+*   **Public Notices/Information:** Content of signs, website information, guides. (e.g., § 16-111.2.c, § 16-119.h, § 16-315.a, § 16-425.c)
+*   **Research Documents/Studies:** The output of a study, not the raw data. (e.g., § 16-316, § 16-316.1, § 16-316.3.c)
+*   **Job Applications:** While employee data is tabular, the application itself is typically a document.
+*   **Receipts:** Transactional data is tabular, but the physical receipt is a document.
+*   **Photos/Images:** (e.g., for signs, uniforms)
+*   **Contracts:** While contract *details* might be tabular (e.g., **Commercial Waste Collection Service Agreements**), the full contract document is not. (e.g., § 16-134.b)
+*   **Community Board Resolutions:** (e.g., § 16-120.c.4)

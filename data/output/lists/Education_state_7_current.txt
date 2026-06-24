@@ -1,0 +1,574 @@
+**1. Child Abuse Incident & Case Management**
+
+**Quotes:**
+*   "In any case where an oral or written allegation is made to a teacher, school nurse, school guidance counselor, school psychologist, school social worker, school administrator, school board member or other school personnel required to hold a teaching or administrative license or certificate, as well as a licensed and registered physical therapist, licensed and registered occupational therapist, licensed and registered speech-language pathologist, teacher aide or school resource officer, that a child has been subjected to child abuse by an employee or volunteer in an educational setting, such person shall upon receipt of such allegation: (a) promptly complete a written report of such allegation including the full name of the child alleged to be abused; the name of the child's parent; the identity of the person making the allegation and their relationship to the alleged child victim; the name of the employee or volunteer against whom the allegation was made; and a listing of the specific allegations of child abuse in an educational setting. Such written report shall be upon a form as prescribed in section eleven hundred thirty-two of this article. (b) except where the school administrator is the person receiving such oral or written allegation, promptly personally deliver a copy of such written report to the school administrator of the school in which the child abuse allegedly occurred." (§ 1126.1)
+*   "In any case where an oral or written allegation is made to a school bus driver employed by a school or a person or entity that contracts with a school to provide transportation services to children that a child has been subjected to child abuse by an employee or volunteer in an educational setting, such driver shall upon receipt of such allegation, promptly report or cause a report to be made to his or her supervisor employed by such school or contracting person or entity." (§ 1126.1-a.i)
+*   "In any case where an oral or written report or allegation is made to a supervisor who is employed by a school or a person or entity that contracts with a school to provide transportation services to children from a person employed by the school or the contracted person or entity, that a child in such school has been subjected to child abuse by an employee or volunteer in an educational setting, such supervisor shall upon receipt of such allegation promptly complete a written report of such allegation including the full name of the child alleged to be abused; the name of the child's parent or guardian; the identity of the person making the allegation and their relationship to the alleged child victim; the name of the employee or volunteer against whom the allegation was made; and a listing of the specific allegations of child abuse in an educational setting. Such written report shall be upon a form as prescribed in section eleven hundred thirty-two of this article, and shall be personally delivered to the school district superintendent employed by the school district where the child abuse occurred or, for a school other than a school district or public school, the school administrator employed by the school where the child abuse occurred." (§ 1126.1-a.ii)
+*   "In any case where it is alleged that a child was abused by an employee or volunteer of a school other than a school within the school district of the child's attendance, the report of such allegations shall be promptly forwarded to the superintendent of schools of the school district of the child's attendance and the school district where the abuse allegedly occurred, whereupon both school superintendents shall comply with sections eleven hundred twenty-eight and eleven hundred twenty-eight-a of this article." (§ 1126.2)
+*   "Upon receipt of a written report described in paragraph (a) of subdivision one or subdivision one-a of section eleven hundred twenty-six of this article alleging that a child has been abused in an educational setting, a school administrator or superintendent shall where there is a reasonable suspicion to believe that an act of child abuse has occurred: 1. Where the subject child has made the allegation: (a) promptly notify the parent of such child that an allegation of child abuse in an educational setting has been made regarding such child and promptly provide the parent with a written statement prepared pursuant to regulations of the commissioner setting forth parental rights, responsibilities and procedures under this article; (b) where a school administrator receives a written report, promptly provide a copy of such report to the superintendent; and (c) promptly forward such report to appropriate law enforcement authorities. In no event shall reporting to law enforcement be delayed by reason of an inability to contact the superintendent." (§ 1128.1)
+*   "Where a superintendent of schools or, in a school other than a school district or public school, the school administrator forwards to law enforcement a report as described in paragraph (a) of subdivision one or subdivision one-a of section eleven hundred twenty-six of this article, he or she shall refer such report to the commissioner where the employee or volunteer alleged to have committed an act of child abuse as defined in this article holds a certification or license issued by the department." (§ 1128-a.1)
+*   "A report which is made pursuant to this article and does not, after investigation, result in a criminal conviction shall be expunged from any record which may be kept by a school or school district with respect to the subject of such a report after a period of five years from the date of the making of such report or at such earlier time as such school, or school district, as the case may be, determines." (§ 1128-a.2)
+*   "Where a criminal investigation of an allegation of child abuse by an employee or volunteer is undertaken in response to a report forwarded by a school administrator or superintendent to law enforcement authorities pursuant to section eleven hundred twenty-eight of this article, and where law enforcement authorities have provided such report to the district attorney and have requested assistance, as soon as practicable, it shall be the responsibility of the district attorney to notify the superintendent of schools of the district where the acts of child abuse allegedly occurred and of the school district where the child is attending, if different, of an indictment or the filing of an accusatory instrument against the employee or volunteer against whom an allegation of child abuse in an educational setting was made. The district attorney shall notify the superintendent of schools of the district where the acts of child abuse allegedly occurred and of the school district, if different, where the child is attending of the disposition of the criminal case against such employee or volunteer or the suspension or termination of the criminal investigation of such employee or volunteer." (§ 1130)
+*   "In the event that a licensed or certified school employee against whom an allegation of child abuse in an educational setting has been made, is convicted of any crime involving child abuse in an educational setting, the district attorney shall provide notice thereof to the commissioner and the superintendent of schools of the district or, in a school other than a school district or public school, the school administrator where the acts of child abuse occurred and to the school where the child is attending, if different." (§ 1131.1)
+*   "Upon receiving notice of a conviction from a district attorney pursuant to subdivision one of this section, the commissioner shall, without delay, proceed to determine whether the individual possesses good moral character, in accordance with the regulations of the commissioner governing such a determination." (§ 1131.2)
+*   "An employee or volunteer who has adverse action taken against him or her by virtue of or in connection with any report made pursuant to this article shall be entitled to receive a copy of such report and respond to the allegations of child abuse made therein." (§ 1131.4)
+*   "Where a person employed by a school is required to report an incident of child abuse in an educational setting to the vulnerable persons' central register pursuant to article eleven of the social services law or the statewide central register of child abuse and maltreatment pursuant to article six of the social services law and he or she reports such incident thereto, such person shall have been deemed to have complied with the reporting requirements of this article." (§ 1134)
+
+**Why:** This data is critical for tracking, investigating, and managing all child abuse allegations and ensuring legal compliance.
+**One row represents:** A single allegation of child abuse in an educational setting.
+**Covers:** All child abuse allegations, their investigation, reporting, and outcomes within educational settings.
+**Columns:**
+*   Allegation ID
+*   Date of Allegation
+*   School ID
+*   School District ID
+*   Child ID
+*   Child Name
+*   Child's Parent/Guardian Name
+*   Allegator ID
+*   Allegator Name
+*   Allegator Relationship to Child
+*   Alleged Perpetrator ID (links to **5. Employee Records & Certifications**)
+*   Alleged Perpetrator Name
+*   Alleged Perpetrator Role (Employee/Volunteer)
+*   Specific Allegations Description
+*   Date Report Completed
+*   Date Report Delivered to Administrator
+*   Date Report Delivered to Superintendent
+*   Date Parent Notified
+*   Date Parental Rights Statement Provided
+*   Date Forwarded to Law Enforcement
+*   Law Enforcement Agency Notified
+*   Date Referred to Commissioner (if applicable)
+*   Commissioner Referral Reason (e.g., certified employee)
+*   Criminal Investigation Status (e.g., Indictment, Accusatory Instrument Filed, Investigation Suspended/Terminated, Conviction)
+*   Date of Criminal Case Status Notification
+*   Criminal Case Disposition
+*   Date of Conviction Notification
+*   Commissioner's Character Determination Outcome
+*   Date of Character Determination
+*   Adverse Action Taken Against Employee/Volunteer? (Yes/No)
+*   Date Adverse Action Taken
+*   Date Report Expunged (if applicable)
+*   Date Reported to Vulnerable Persons' Central Register
+*   Date Reported to Statewide Central Register of Child Abuse and Maltreatment
+
+**2. Employee Child Abuse Training Compliance**
+
+**Quotes:**
+*   "The commissioner shall promulgate rules and regulations for training necessary for the implementation of this article provided all employees specifically described in section eleven hundred twenty-six of this article shall be required to complete training pursuant to such rules and regulations. Such training shall include, at a minimum, information regarding the physical and behavioral indicators of child abuse and maltreatment and the statutory reporting requirements set out in sections four hundred thirteen, four hundred fourteen, four hundred fifteen, four hundred sixteen, four hundred seventeen, four hundred eighteen, four hundred nineteen and four hundred twenty of the social services law, including but not limited to, when and how a report must be made, what other actions the reporter is mandated or authorized to take, the legal protections afforded reporters, and the consequences for failing to report." (§ 1132.2)
+*   "All persons employed on or after July first, two thousand nineteen by a school, other than a school district or public school, in titles equivalent to a teacher or administrator as defined in the regulations of the commissioner, and any school bus driver employed by a school or any person or entity that contracts with a school to provide transportation services to children shall be required to complete two hours of coursework or training regarding the identification and reporting of child abuse and maltreatment. The coursework or training shall be obtained from an institution or provider that has been approved by the department to provide such coursework or training. The coursework or training shall include information regarding the physical and behavioral indicators of child abuse and maltreatment and the statutory reporting requirements set out in sections four hundred thirteen through four hundred twenty of the social services law, including but not limited to, when and how a report must be made, what other actions the reporter is mandated or authorized to take, the legal protections afforded reporters, and the consequences for failing to report. Each employee in such titles shall provide the school administrator of the school with documentation showing that he or she completed the required training. In addition, each school bus driver shall provide such school or contracting person or entity with documentation showing that he or she completed the required training. The department shall be authorized to request such records on a periodic basis and may publish a list of any persons or schools who are not in compliance with this subdivision on its website." (§ 1132.3)
+
+**Why:** This data tracks mandatory training completion for employees to ensure compliance with child abuse reporting requirements.
+**One row represents:** A single instance of an employee completing a required child abuse training.
+**Covers:** All employees required to complete child abuse identification and reporting training.
+**Columns:**
+*   Employee ID (links to **5. Employee Records & Certifications**)
+*   Employee Name
+*   Employee Role/Title
+*   School ID
+*   Training Date
+*   Training Provider
+*   Training Hours
+*   Training Type (e.g., Initial, Refresher)
+*   Compliance Status (e.g., Compliant, Non-Compliant)
+*   Date Documentation Provided
+*   Date Next Training Due
+
+**3. Student Attendance Records**
+
+**Quotes:**
+*   "A person over five and under twenty-one years of age who has not received a high school diploma is entitled to attend the public schools maintained in the district in which such person resides without the payment of tuition." (§ 3202.1)
+*   "No pupil over the compulsory attendance age in his or her school district shall be dropped from enrollment unless he or she has been absent twenty consecutive school days and the following procedure is complied with: The principal or superintendent shall schedule and notify, in writing and at the last known address, both the student and the person in parental relation to the student of an informal conference. At the conference the principal or superintendent shall determine both the reasons for the pupil's absence and whether reasonable changes in the pupil's educational program would encourage and facilitate his or her re-entry or continuance of study." (§ 3202.1-a)
+*   "Attendance of minors upon full time day instruction." (§ 3205)
+*   "Attendance of minors upon part time instruction." (§ 3206)
+*   "Attendance upon evening instruction." (§ 3207)
+*   "Amount and character of required attendance." (§ 3210)
+*   "Records of attendance upon instruction." (§ 3211)
+
+**Why:** This data is fundamental for tracking student presence, ensuring compulsory education compliance, and managing enrollment status.
+**One row represents:** A student's attendance record for a specific school day or instructional period.
+**Covers:** All students subject to compulsory education, including full-time, part-time, and evening instruction.
+**Columns:**
+*   Student ID (links to **6. Student Enrollment & Academic Records**)
+*   School ID
+*   Date
+*   Attendance Status (e.g., Present, Absent, Tardy, Excused Absence, Unexcused Absence)
+*   Instruction Type (e.g., Full-time Day, Part-time, Evening)
+*   Reason for Absence (if known)
+*   Consecutive Absent Days Count
+*   Enrollment Status (e.g., Enrolled, Dropped, Re-enrolled)
+*   Date of Enrollment Status Change
+*   Informal Conference Held (Yes/No)
+*   Date of Informal Conference
+*   Parent/Guardian Notified of Absence (Yes/No)
+*   Date Parent/Guardian Notified
+
+**4. Child Employment Permit Records**
+
+**Quotes:**
+*   "Employment certificates." (§ 3216)
+*   "Procedure for issuance of employment certificates." (§ 3217)
+*   "Evidence of age." (§ 3218)
+*   "Consent of parent or guardian." (§ 3219)
+*   "Certificate of physical fitness." (§ 3220)
+*   "Pledge of employment." (§ 3221)
+*   "Schooling record." (§ 3222)
+*   "Special employment certificate." (§ 3225)
+*   "Farm work permits." (§ 3226)
+*   "Street trades." (§ 3227)
+*   "Newspaper carrier." (§ 3228)
+
+**Why:** This data tracks the application, issuance, and supporting documentation for all types of child employment permits.
+**One row represents:** A single application for a child employment permit.
+**Covers:** General employment certificates, special employment certificates, farm work permits, street trade permits, and newspaper carrier permits.
+**Columns:**
+*   Permit Application ID
+*   Permit Type (e.g., General Employment, Special Employment, Farm Work, Street Trade, Newspaper Carrier)
+*   Application Date
+*   Student ID (links to **6. Student Enrollment & Academic Records**)
+*   Student Name
+*   Student Date of Birth
+*   Age Verified (Yes/No)
+*   Parent/Guardian Consent Received (Yes/No)
+*   Date Parent/Guardian Consent Received
+*   Physical Fitness Certificate Received (Yes/No)
+*   Date Physical Fitness Certificate Issued
+*   Pledge of Employment Received (Yes/No)
+*   Employer Name (from Pledge of Employment)
+*   Employer Address (from Pledge of Employment)
+*   Schooling Record Verified (Yes/No)
+*   Application Status (e.g., Submitted, Under Review, Approved, Denied)
+*   Date of Determination
+*   Permit Issue Date
+*   Permit Expiration Date
+*   Reason for Denial (if applicable)
+
+**5. Employee Records & Certifications**
+
+**Quotes:**
+*   "The qualifications of the teachers, directors, assistants and supervisors employed by a vocational education and extension board must conform to the regulations of the regents of the university and the commissioner of education." (§ 1103)
+*   "The commissioner of education in the annual apportionment of public moneys shall apportion therefrom to each county maintaining approved vocational education and extension work, a quota amounting to one-half of the salary paid each teacher, director, assistant, and supervisor, but not to exceed ten thousand five hundred dollars on account of the employment of such teacher, director, assistant or supervisor." (§ 1104.1)
+*   "To employ a director of special education, who shall be the executive officer and secretary of the commission, and upon the recommendation of such director to employ directors, supervisors and teachers and all other persons necessary to carry on such special education projects as it may establish, and to determine the salaries to be paid." (§ 1111.6)
+*   "The qualifications of the teachers, directors, assistants and supervisors employed by the county commission for special education must conform to the regulations of the regents of the university and the commissioner of education." (§ 1112)
+*   "be staffed by persons experienced in assisting persons with disabilities" (§ 1121.1.a.ii)
+*   "General certification provisions." (§ 3215-a)
+
+**Why:** This data tracks all agency employees, their roles, salaries, and required certifications to ensure qualified staffing and proper compensation.
+**One row represents:** A single employee of the agency.
+**Covers:** All teachers, directors, assistants, supervisors, attendance officers, SCIL staff, and other personnel across all agency departments.
+**Columns:**
+*   Employee ID
+*   Employee Name
+*   Employee Role/Title
+*   Department/Program
+*   Date of Hire
+*   Employment Status (e.g., Active, Leave, Terminated)
+*   Salary
+*   Certification/License Type
+*   Certification/License Number
+*   Certification/License Issuing Authority
+*   Certification/License Issue Date
+*   Certification/License Expiration Date
+*   Certification/License Status (e.g., Current, Expired, Pending Renewal)
+*   State Aid Eligibility (Yes/No)
+*   State Aid Amount Claimed (links to **8. State Aid & Tuition Reimbursement Claims**)
+*   Required Training Status (e.g., Child Abuse Training, Attendant Care Training)
+
+**6. Student Enrollment & Academic Records**
+
+**Quotes:**
+*   "A person over five and under twenty-one years of age who has not received a high school diploma is entitled to attend the public schools maintained in the district in which such person resides without the payment of tuition." (§ 3202.1)
+*   "A veteran of any age who shall have served as a member of the armed forces of the United States and who (a) shall have been discharged therefrom under conditions other than dishonorable, or (b) has a qualifying condition, as defined in section one of the veterans' services law, and has received a discharge other than bad conduct or dishonorable from such service, or (c) is a discharged LGBT veteran, as defined in section one of the veterans' services law, and has received a discharge other than bad conduct or dishonorable from such service, may attend any of the public schools of the state upon conditions prescribed by the board of education, and such veterans shall be included in the pupil count for state aid purposes." (§ 3202.1)
+*   "A nonveteran under twenty-one years of age who has received a high school diploma shall be permitted to attend classes in the schools of the district in which such person resides or in a school of a board of cooperative educational services upon payment of tuition under such terms and conditions as shall be established in regulations promulgated by the commissioner; provided, however, that a school district may waive the payment of tuition for such nonveteran, but in any case such a nonveteran who has received a high school diploma shall not be counted for any state aid purposes." (§ 3202.1)
+*   "Nonresidents of a district, if otherwise competent, may be admitted into the school or schools of a district or city, upon the consent of the trustees or the board of education, upon terms prescribed by such trustees or board." (§ 3202.2)
+*   "Screening of new entrants." (§ 3208)
+*   "Reports of reading tests." (§ 3211-a)
+*   "Definition of persons in parental relation and their duties; duties of certain other persons." (§ 3212)
+*   "Records of telephone numbers." (§ 3212-a)
+
+**Why:** This data tracks student demographics, enrollment status, residency, academic performance, and contact information for operational and funding purposes.
+**One row represents:** A single student enrolled or seeking enrollment in an agency program or school.
+**Covers:** All students, including residents, non-residents, veterans, post-diploma non-veterans, and new entrants.
+**Columns:**
+*   Student ID
+*   Student Name
+*   Date of Birth
+*   Age
+*   Gender
+*   School ID
+*   Enrollment Date
+*   Enrollment Status (e.g., Active, Withdrawn, Graduated)
+*   Residency Status (e.g., Resident, Non-Resident, Foster Care, DD Facility, Homeless)
+*   District of Residence ID
+*   High School Diploma Received (Yes/No)
+*   Veteran Status (Yes/No)
+*   Parent/Guardian Name
+*   Parent/Guardian Relationship
+*   Parent/Guardian Address
+*   Parent/Guardian Phone Number
+*   Parent/Guardian Email
+*   New Entrant Screening Date
+*   New Entrant Screening Results
+*   Reading Test Date
+*   Reading Test Score
+*   Reading Test Grade Level
+*   Tuition Required (Yes/No)
+*   Tuition Amount (links to **8. State Aid & Tuition Reimbursement Claims**)
+
+**7. SCIL Client & Service Delivery Records**
+
+**Quotes:**
+*   "A service center for independent living shall be a community based non-residential program designed to promote independent living for persons with disabilities." (§ 1121.1)
+*   "provide services designed to meet the needs of persons with disabilities, including such services as assisting persons with disabilities to obtain housing, employment referral, transportation referral, attendant care, independent living skills, peer counseling, advocacy services, job training, health care, homemaker services, and other such services as approved by the commissioner" (§ 1121.1.a.iii)
+*   "serve persons with disabilities." (§ 1121.1.a.v)
+*   "Such service centers shall make maximum use of existing resources available to persons with disabilities and shall not duplicate any existing services or programs, to the extent that such services or programs are available through other state sources to meet the needs of persons with disabilities. Such centers shall however provide necessary information and referral to assist a person with a disability in obtaining such services and coordinate where possible the delivery of such services to persons with disabilities." (§ 1121.3)
+
+**Why:** This data tracks the individuals served by SCILs and the specific independent living services they receive.
+**One row represents:** A single service provided to a SCIL client.
+**Covers:** All persons with disabilities receiving services from Service Centers for Independent Living.
+**Columns:**
+*   Service ID
+*   SCIL ID (links to **16. Agency Governance & Administrative Decisions**)
+*   Client ID
+*   Client Name
+*   Client Disability Type
+*   Service Date
+*   Service Type (e.g., Housing Assistance, Employment Referral, Transportation Referral, Attendant Care, Independent Living Skills, Peer Counseling, Advocacy, Job Training, Health Care, Homemaker Services, Information & Referral, Service Coordination)
+*   Service Provider/Staff ID (links to **5. Employee Records & Certifications**)
+*   Service Outcome/Status
+*   Referral Made (Yes/No)
+*   Referred To Agency/Resource
+*   Service Coordinated (Yes/No)
+*   Duplication Check Performed (Yes/No)
+*   Existing Resource Utilized (Yes/No)
+
+**8. State Aid & Tuition Reimbursement Claims**
+
+**Quotes:**
+*   "The commissioner of education in the annual apportionment of public moneys shall apportion therefrom to each county maintaining approved vocational education and extension work, a quota amounting to one-half of the salary paid each teacher, director, assistant, and supervisor, but not to exceed ten thousand five hundred dollars on account of the employment of such teacher, director, assistant or supervisor." (§ 1104.1)
+*   "aid payable to county vocational education and extension boards in the spring of nineteen hundred ninety shall be reduced by an amount equal to the amount that would have been paid pursuant to section five hundred twenty-one of this chapter to the New York state teachers' retirement system on behalf of such board." (§ 1104.2)
+*   "In a county which has a vocational education and extension board which furnishes transportation to pupils pursuant to subdivision thirteen of section eleven hundred two of this chapter, such vocational education and extension board shall receive a transportation quota which shall be one-half of the cost of the transportation of pupils under twenty-one years of age to schools and classes maintained by such vocational education and extension board." (§ 1106.2)
+*   "The commissioner of education in the annual apportionment of public moneys shall apportion therefrom to such county the quotas provided in section eleven hundred four of this chapter." (§ 1113)
+*   "The school authorities of a district or city must deduct from the tuition of a nonresident pupil, whose parent or guardian owns property in such district or city and pays a tax thereon for the support of the schools maintained in such district or city, the amount of such tax." (§ 3202.3)
+*   "Except as provided in subdivision five of this section, the cost of instruction of children in foster care shall be borne by the school district of origin." (§ 3202.4.b)
+*   "For the purposes of this subdivision, tuition shall be fixed in an amount which represents the additional operating cost to the designated school district of attendance resulting from the attendance of a child for whom tuition is required, computed in accordance with a formula established by the commissioner of education." (§ 3202.4.d)
+*   "Where the designated school district of attendance for a child or youth in foster care that receives program support from a child care institution affiliated with a special act school district... contracts for the instruction of such pupil... such board shall submit a claim to the commissioner for current year reimbursement of costs incurred for such pupil. The commissioner shall pay such claim... and shall be reimbursed by the school district identified as the pupil's school district of origin... The commissioner shall deduct the amount of such claim from moneys otherwise due the school district of origin." (§ 3202.4.e)
+*   "If within ninety days from the entry of an order or judgment of a court of competent jurisdiction or the receipt of a decision of the commissioner pursuant to section three hundred ten of this chapter, determining the responsibility of a school district to pay tuition for a pupil... such school district has not made payment to the designated school district of attendance, the school district entitled to such payment may make application to the commissioner to receive a sum in the amount of such tuition from the apportionment of public money payable to the school district required to pay such tuition." (§ 3202.4.g)
+*   "The department is authorized to reimburse each school district furnishing educational services to such children for the direct cost of such services in accordance with regulations promulgated by the commissioner and approved by the director of the budget." (§ 3202.5.a)
+*   "The school district in which the child resided at the time the department of mental hygiene assumed responsibility for the support and maintenance of such child shall reimburse the education department for its expenditure on behalf of such child in an amount equal to the school district basic contribution..." (§ 3202.5.b)
+*   "The department is authorized to reimburse each school district furnishing educational services to children residing in schools for individuals with developmental disabilities operated by the office for people with developmental disabilities for the direct cost of such services..." (§ 3202.5.c.1)
+*   "The school district in which each such child resided at the time the office for people with developmental disabilities assumed responsibility for the support and maintenance of such child shall reimburse the department for its expenditures on behalf of such child, in an amount equal to the school district basic contribution..." (§ 3202.5.c.2)
+*   "The education department shall reimburse the school district in which such intermediate care facility is located for the full cost of all services, which shall, notwithstanding any inconsistent provision of law, include transportation services provided pursuant to a contract authorized by this paragraph." (§ 3202.5.d.4)
+*   "The school district in which the child resided at the time of placement in such intermediate care facility shall reimburse the education department for its expenditure on behalf of such child in an amount equal to the school district's basic contribution..." (§ 3202.5.d.5)
+
+**Why:** This data tracks all claims for state aid and tuition reimbursements, ensuring proper funding and financial accountability.
+**One row represents:** A single claim for state aid or tuition reimbursement.
+**Covers:** State aid for vocational education, transportation quotas, and tuition reimbursements for foster care and developmental disability students.
+**Columns:**
+*   Claim ID
+*   Claim Date
+*   Claiming Agency/District ID
+*   Claim Type (e.g., VE&EB Teacher Salary, VE&EB Transportation, Special Ed Teacher Salary, Foster Care Tuition, DD Student Tuition)
+*   Fiscal Year
+*   Amount Claimed
+*   Amount Approved
+*   Amount Paid
+*   Payment Date
+*   Employee ID (if salary-based, links to **5. Employee Records & Certifications**)
+*   Student ID (if tuition/transportation-based, links to **6. Student Enrollment & Academic Records**)
+*   District of Origin ID (for foster care/DD students)
+*   Tuition Calculation Formula Used
+*   Property Tax Deduction Applied (Yes/No)
+*   Property Tax Amount Deducted
+*   Reimbursement Status (e.g., Pending, Approved, Denied, Paid)
+*   Appeal Status (if applicable, links to **16. Agency Governance & Administrative Decisions**)
+
+**9. Agency Property, Facilities & Asset Management**
+
+**Quotes:**
+*   "It may lease land, buildings, and other facilities as may be necessary to carry into effect the purposes of part one of this article." (§ 1102.15)
+*   "The board of supervisors of such county may acquire land, construct buildings and other facilities for the use of the vocational education and extension board of the county and shall have the power to expend moneys for and make appropriations to pay the cost thereof and to finance the cost thereof pursuant to the local finance law." (§ 1107)
+*   "To purchase, lease, rent, improve or sell land, and build, repair, improve, lease, rent, buy and sell buildings." (§ 1111.7)
+*   "To acquire real property by condemnation for the purposes of such special education district. Such condemnation proceedings shall be instituted and conducted by such commission in the name of the district, under the provisions of the statutes relating to the condemnation of real property." (§ 1111.8)
+*   "To purchase all necessary furniture, implements, books, materials, equipment and supplies." (§ 1111.9)
+
+**Why:** This data tracks all agency-owned or leased property, facilities, and assets, including acquisition, maintenance, and disposal.
+**One row represents:** A single piece of property, facility, or significant asset.
+**Covers:** Land, buildings, furniture, implements, books, materials, equipment, and supplies across all agency departments.
+**Columns:**
+*   Asset ID
+*   Asset Type (e.g., Land, Building, Furniture, Equipment, Supply)
+*   Asset Description
+*   Location/Address
+*   Acquisition Date
+*   Acquisition Method (e.g., Purchase, Lease, Condemnation, Construction)
+*   Cost/Value
+*   Current Status (e.g., Active, In Repair, Disposed)
+*   Maintenance Schedule
+*   Last Maintenance Date
+*   Next Scheduled Maintenance Date
+*   Repair History
+*   Disposal Date (if applicable)
+*   Lease Start Date (if leased)
+*   Lease End Date (if leased)
+*   Lessor Name (if leased)
+*   Condemnation Case ID (if acquired by condemnation)
+*   Department/Program Responsible
+
+**10. Agency Financial Transactions & Budget**
+
+**Quotes:**
+*   "The board of supervisors of such county may acquire land, construct buildings and other facilities for the use of the vocational education and extension board of the county and shall have the power to expend moneys for and make appropriations to pay the cost thereof and to finance the cost thereof pursuant to the local finance law." (§ 1107)
+*   "It shall be the duty of the commission to make an itemized estimate of the money needed for the ensuing year for the purposes of part two of this article and file the same with the clerk of the board of supervisors or other governing elective body at least sixty days before the annual meeting of such board." (§ 1111.13)
+*   "It shall not incur liabilities against county funds in excess of the amounts appropriated by the board of supervisors or other governing elective body." (§ 1111.16)
+*   "The board of supervisors or other governing elective body may make appropriations and levy taxes upon all the taxable property included within the boundaries of the special education district to carry out the purposes of part two of this article, and such taxes shall be assessed, levied and collected at the same time and in the same manner as county taxes are assessed, levied and collected within the boundaries of such special education district." (§ 1114)
+*   "For the purpose of giving effect to the provisions of part two of this article the board of supervisors or other governing elective body of such county may issue obligations of the county pursuant to the provisions of the local finance law, which obligations shall be a charge upon the special education district." (§ 1115)
+*   "All moneys collected from taxes levied in accordance with the provisions of part two of this article and all moneys apportioned by the commissioner of education, and any and all moneys received from any and all sources whatsoever for carrying out the provisions of part two of this article, shall be paid to the county treasurer. Such funds shall be disbursed by such county treasurer upon audit by the special education commission." (§ 1116)
+*   "Service centers for independent living shall be funded out of appropriations available for such purposes to the extent of the entire approved budget of such centers." (§ 1124.1)
+*   "Budgets submitted by service centers shall be approved in accordance with regulations of the commissioner, subject to approval of the director of the budget." (§ 1124.2)
+
+**Why:** This data tracks all financial inflows, outflows, budget allocations, and debt obligations for comprehensive financial management and accountability.
+**One row represents:** A single financial transaction (e.g., appropriation, expenditure, tax levy, debt issuance, audit finding).
+**Covers:** All financial activities including appropriations, expenditures, budget estimates, tax levies, debt, and audit results across all agency departments and programs.
+**Columns:**
+*   Transaction ID
+*   Date
+*   Transaction Type (e.g., Appropriation, Expenditure, Revenue, Debt Issuance, Tax Levy, Audit Finding)
+*   Amount
+*   Account/Fund
+*   Department/Program
+*   Budget Category
+*   Fiscal Year
+*   Budget Estimate ID (if related to an estimate)
+*   Appropriation ID (if related to an appropriation)
+*   Debt Instrument ID (if related to debt)
+*   Tax Levy ID (if related to a tax levy)
+*   Audit Report ID (if related to an audit)
+*   Audit Finding Description
+*   Approval Status (e.g., Approved, Pending, Denied)
+*   Approving Authority
+
+**11. Student Support & Special Program Records**
+
+**Quotes:**
+*   "To establish schools or classes for physically handicapped children and to provide other necessary educational services, including transportation and home teaching." (§ 1111.2)
+*   "To establish and maintain vocational schools and classes for the purpose of providing instruction in agricultural, industrial, commercial, technical and home making subjects." (§ 1111.3)
+*   "To provide vocational and educational guidance service." (§ 1111.4)
+*   "Education of homeless children." (§ 3209)
+*   "The cost of instruction of children in foster care shall be borne by the school district of origin." (§ 3202.4.b)
+*   "Children who reside in a school for individuals with developmental disabilities operated by the department of mental hygiene... shall be admitted to the schools of the school district in which such family home or institution is located." (§ 3202.5.a)
+*   "Children who reside in an intermediate care facility for individuals with developmental disabilities... shall be admitted to the public schools..." (§ 3202.5.d.1)
+
+**Why:** This data tracks students participating in specialized programs and the support services they receive, ensuring appropriate care and compliance.
+**One row represents:** A student's enrollment or participation in a specific support service or special program.
+**Covers:** Physically handicapped children's services, vocational programs, guidance services, homeless student support, foster care student placements, and developmental disability student placements.
+**Columns:**
+*   Program Enrollment ID
+*   Student ID (links to **6. Student Enrollment & Academic Records**)
+*   Program Type (e.g., Physically Handicapped Services, Vocational Education, Guidance, Homeless Support, Foster Care, DD Facility Placement)
+*   Enrollment Date
+*   Exit Date (if applicable)
+*   Services Provided (e.g., Transportation, Home Teaching, Specific Vocational Course, Counseling)
+*   Service Provider ID (links to **5. Employee Records & Certifications**)
+*   District of Origin ID (for foster care/DD students)
+*   Placement Facility ID (for foster care/DD students)
+*   Placement Start Date
+*   Placement End Date
+*   Tuition Responsibility Determined (Yes/No)
+*   Tuition Responsibility District ID
+*   Appeal Status (if applicable, links to **16. Agency Governance & Administrative Decisions**)
+
+**12. Agency Contract Records**
+
+**Quotes:**
+*   "It may lease land, buildings, and other facilities as may be necessary to carry into effect the purposes of part one of this article." (§ 1102.15)
+*   "To make contracts with cities, villages, school districts or other agencies for carrying out the purposes of part two of this article." (§ 1111.10)
+*   "In any case where an oral or written allegation is made to a school bus driver employed by a school or a person or entity that contracts with a school to provide transportation services to children that a child has been subjected to child abuse by an employee or volunteer in an educational setting, such driver shall upon receipt of such allegation, promptly report or cause a report to be made to his or her supervisor employed by such school or contracting person or entity." (§ 1126.1-a.i)
+*   "In any case where an oral or written report or allegation is made to a supervisor who is employed by a school or a person or entity that contracts with a school to provide transportation services to children from a person employed by the school or the contracted person or entity, that a child in such school has been subjected to child abuse by an employee or volunteer in an educational setting, such supervisor shall upon receipt of such allegation promptly complete a written report of such allegation..." (§ 1126.1-a.ii)
+*   "Such intermediate care facility is authorized to contract with the trustees or board of education of such school district for the provision of services, including transportation." (§ 3202.5.d.3)
+
+**Why:** This data tracks all contracts and agreements the agency enters into, ensuring proper management and compliance.
+**One row represents:** A single contract or agreement.
+**Covers:** Leases for facilities, contracts for special education services, transportation services, and other agency agreements.
+**Columns:**
+*   Contract ID
+*   Contract Type (e.g., Facility Lease, Service Agreement, Transportation Contract)
+*   Contracting Parties
+*   Contract Start Date
+*   Contract End Date
+*   Contract Value
+*   Scope of Work/Services
+*   Payment Terms
+*   Renewal Options
+*   Contract Status (e.g., Active, Expired, Terminated)
+*   Compliance Requirements (e.g., training for contractors' employees)
+*   Related Asset ID (if applicable, links to **9. Agency Property, Facilities & Asset Management**)
+
+**13. General Compliance & Incident Records**
+
+**Quotes:**
+*   "No person shall be refused admission into or be excluded from any public school in the state of New York on account of race, creed, color or national origin." (§ 3201.1)
+*   "No student shall be assigned or compelled to attend any school on account of race, creed, color or national origin, or for the purpose of achieving equality in attendance or increased attendance or reduced attendance, at any school, of persons of one or more particular races, creeds, colors, or national origins..." (§ 3201.2)
+*   "No person shall be refused admission into or be excluded from any course of instruction offered in the state public and high school systems by reason of that person's sex. No person shall be disqualified from state public and high school athletic teams, by reason of that person's sex, except pursuant to regulations promulgated by the state commissioner of education." (§ 3201-a)
+*   "Such service centers shall be in compliance with all applicable local laws and ordinances." (§ 1121.4)
+*   "Willful failure of an employee to prepare and submit a written report of an allegation of child abuse as required by this article shall be a class A misdemeanor." (§ 1129.1)
+*   "Willful failure of a school administrator or superintendent to submit a written report of child abuse to an appropriate law enforcement authority, as required by this article, shall be a class A misdemeanor." (§ 1129.2.a)
+*   "Notwithstanding paragraph (a) of this subdivision, any failure to submit a written report of child abuse to an appropriate law enforcement authority as required by this article, shall be punishable by a civil penalty not to exceed five thousand dollars upon an administrative determination by the commissioner." (§ 1129.2.b)
+*   "A school administrator or superintendent shall not make any agreement to withhold from law enforcement authorities, the superintendent or the commissioner, where appropriate, the fact that an allegation of child abuse in an educational setting on the part of any employee or volunteer as required by this article in return for the resignation or voluntary suspension from his or her position of such person, against whom the allegation is made." (§ 1133.1)
+*   "Each violation of subdivision one of this section shall constitute a class E felony, and shall also be punishable by a civil penalty not to exceed twenty thousand dollars." (§ 1133.2)
+*   "Unlawful employment." (§ 3215)
+*   "Duties of employers." (§ 3223)
+*   "Penalties." (§ 3233)
+
+**Why:** This data tracks various compliance issues, complaints, and penalties across different agency functions, ensuring adherence to laws and regulations.
+**One row represents:** A single compliance incident, complaint, or penalty.
+**Covers:** Discrimination complaints, SCIL compliance issues, child abuse reporting non-compliance, unlawful resignation agreements, unlawful child employment, and other general violations.
+**Columns:**
+*   Incident ID
+*   Date of Incident/Complaint
+*   Incident Type (e.g., Discrimination Complaint, SCIL Compliance Violation, Child Abuse Reporting Non-Compliance, Unreported Resignation Agreement, Unlawful Child Employment, Other Violation)
+*   Description of Incident/Complaint
+*   Reporting Party ID
+*   Reporting Party Type
+*   Subject Party ID (e.g., Employee ID, School ID, SCIL ID, Employer ID)
+*   Investigation Status
+*   Investigation Outcome
+*   Penalty Imposed (Yes/No)
+*   Penalty Type (e.g., Civil Penalty, Misdemeanor, Felony)
+*   Penalty Amount
+*   Date Penalty Imposed
+*   Resolution Date
+*   Related Case ID (e.g., Child Abuse Allegation ID, if applicable, links to **1. Child Abuse Incident & Case Management**)
+
+**14. Vehicle Management Records**
+
+**Quotes:**
+*   "collision insurance shall be provided in the amount of value of the vehicle to protect the lessor. No part of the cost and expenses resulting from operation, maintenance and repair of such vehicles during the leasing thereof shall be included in determining the amount of any form of state aid received by such county vocational education and extension board." (§ 1102.14)
+
+**Why:** This data tracks leased vehicles, their insurance, and maintenance to manage operational costs and compliance.
+**One row represents:** A single vehicle leased or operated by the agency.
+**Covers:** Vehicles used by vocational education and extension boards.
+**Columns:**
+*   Vehicle ID
+*   Vehicle Type
+*   Make
+*   Model
+*   Year
+*   VIN
+*   Lease Start Date
+*   Lease End Date
+*   Lessor Name
+*   Insurance Provider
+*   Insurance Policy Number
+*   Insurance Coverage Amount
+*   Maintenance Date
+*   Maintenance Description
+*   Maintenance Cost
+*   Repair Date
+*   Repair Description
+*   Repair Cost
+*   Operational Cost (excluding maintenance/repair for state aid calculation)
+*   State Aid Exclusion Status (Yes/No)
+
+**15. SCIL Monitoring & Evaluation Records**
+
+**Quotes:**
+*   "The department shall assist individuals and organizations in the planning and establishment of such service centers. The department shall ensure program accountability and shall monitor and evaluate such centers." (§ 1122)
+*   "Budgets submitted by service centers shall be approved in accordance with regulations of the commissioner, subject to approval of the director of the budget." (§ 1124.2)
+
+**Why:** This data tracks the monitoring and evaluation activities performed by the Education Department for SCILs, ensuring accountability and program effectiveness.
+**One row represents:** A single monitoring or evaluation event for a SCIL.
+**Covers:** All monitoring, evaluation, and budget approval activities for Service Centers for Independent Living.
+**Columns:**
+*   Monitoring Event ID
+*   SCIL ID (links to **16. Agency Governance & Administrative Decisions**)
+*   Event Date
+*   Event Type (e.g., Program Monitoring, Financial Audit, Performance Evaluation, Budget Review)
+*   Monitoring/Evaluation Team
+*   Findings/Observations
+*   Recommendations
+*   Corrective Actions Required (Yes/No)
+*   Corrective Action Due Date
+*   Corrective Action Status
+*   Budget Submission Date
+*   Budget Approval Status
+*   Date of Budget Approval/Denial
+*   Approved Budget Amount
+
+**16. Agency Governance & Administrative Decisions**
+
+**Quotes:**
+*   "Upon the recommendation of the county vocational education and extension board, the board of supervisors or other governing elective body of any county may exempt any city or union free school district from the raising of moneys for the purpose of paying the cost of operating and maintaining the program of the county vocational education and extension board." (§ 1105)
+*   "The board of supervisors or other governing elective body of Westchester county shall have power to adopt a resolution by a majority vote of the members of such board to establish within the county a special education district which shall include all the territory within the county. A city school district in such county having a population of fifty thousand or more inhabitants shall be excluded from such special education district provided the board of education of such city shall adopt a resolution requesting that such city school district be so excluded and file such resolution with the board of supervisors or other governing elective body within sixty days after the establishment of such special education district. With the approval of the county commission for special education to be appointed as hereinafter provided, a city school district so excluded may later become a part of such special education district upon the written application by the board of education of such city school district." (§ 1110.1)
+*   "Upon the establishment of such special education district the board of supervisors or other governing elective body shall appoint a board which shall be known as the county commission for special education. Such commission shall consist of five members who shall serve for a period of five years each, except that members first appointed shall be appointed for such terms that the term of one member will expire each year, and their successors shall thereafter each be appointed for a full term of five years, respectively. Vacancies occurring in such office shall be filled by the board of supervisors or other governing elective body for the unexpired term." (§ 1110.2)
+*   "To appoint advisory committees." (§ 1111.11)
+*   "It shall be the duty of the commission to make an annual report in writing to the regents of The University of the State of New York and to the board of supervisors or other governing elective body on or before the first day of October in each year. It shall also be its duty to make such other reports as may be required by the commissioner of education and by such board or body." (§ 1111.14)
+*   "A service center for independent living shall be a community based non-residential program designed to promote independent living for persons with disabilities. (i) be a private not-for-profit corporation, pursuant to subdivision five of paragraph a of section one hundred two of the not-for-profit corporation law; provided, however, that persons with disabilities comprise at least fifty-one percent of the membership of the board of directors" (§ 1121.1.a.i)
+*   "Service centers shall be located in the cities of Albany, Buffalo, Rochester, Syracuse, Utica, White Plains, Binghamton, Kingston, Poughkeepsie, Jamestown, Yonkers, the counties of Queens, Kings, Nassau, Bronx, Richmond, New York and Suffolk." (§ 1124.3)
+*   "Additional service centers shall be located in the cities of Niagara Falls, Olean, Troy, Amsterdam, Newburgh, Corning, Ithaca, Cortland, Auburn, Watertown, Plattsburgh, Batavia, Massena and Glens Falls, the counties of Delaware and Rockland, the county of Orange, in either the city of Middletown or Port Jervis or in the town of Deerpark, Greenville, Mount Hope, Warwick or Wawayanda or in the village of Goshen, in the county of New York to serve the Harlem community, and in the counties of Putnam, Sullivan and Herkimer." (§ 1124.4)
+*   "Within ten days of the placement of such pupil, the public agency or its designee shall give written notice of such placement to the board of education of the school district believed to be the school district of origin. Such notification shall include the name of the pupil and any particulars about the pupil that pertain to the identification of the school district as the school district of origin as defined in paragraph a of this subdivision." (§ 3202.4.f.i)
+*   "The board of education of the school district finally determined by the public agency to be the pupil's school district of origin may appeal such determination to the commissioner within thirty days of its receipt of final notification pursuant to this paragraph." (§ 3202.4.f.iv)
+*   "A board of education of a school district which receives notification that a child has been placed in an intermediate care facility for individuals with developmental disabilities may deny financial responsibility for any child by written notice within twenty days of such notification to the school district furnishing instruction and the intermediate care facility." (§ 3202.5.d.8)
+*   "An intermediate care facility responsible for placing the child, the school district furnishing instruction or the parent or guardian of the child involved may appeal a denial of responsibility to the commissioner of education." (§ 3202.5.d.9)
+
+**Why:** This data tracks high-level administrative decisions, appointments, and appeals related to agency structure, governance, and program operations.
+**One row represents:** A single administrative decision, appointment, or appeal.
+**Covers:** District exemptions, special education district establishment/exclusion, commission member appointments, advisory committee appointments, SCIL board member composition, SCIL locations, and appeals regarding student tuition responsibility.
+**Columns:**
+*   Decision/Appointment/Appeal ID
+*   Date of Decision/Appointment/Appeal
+*   Type (e.g., District Exemption, Special Ed District Establishment, Commission Member Appointment, Advisory Committee Appointment, SCIL Board Member, SCIL Location, Foster Care District of Origin Appeal, DD Student Responsibility Appeal)
+*   Subject Entity ID (e.g., District ID, County ID, SCIL ID)
+*   Decision/Outcome
+*   Approving/Appointing Authority
+*   Member ID (if appointment)
+*   Member Name (if appointment)
+*   Term Start Date (if appointment)
+*   Term End Date (if appointment)
+*   Vacancy Reason (if applicable)
+*   Appeal Status (e.g., Filed, Under Review, Upheld, Overturned)
+*   Related Student ID (if appeal, links to **6. Student Enrollment & Academic Records**)
+*   Related District ID (if appeal)
+*   SCIL Board Member Disability Status (Yes/No)
+*   SCIL Location (City/County)
+*   Date of Annual Report Submission (for tracking compliance with §1111.14)
+
+**17. SCIL Program Training & Outreach**
+
+**Quotes:**
+*   "train personnel for the purpose of attendant care in assisting and serving persons with disabilities" (§ 1121.1.a.iv)
+*   "Such center may also, but need not limit itself to, provide disability awareness programs, peer counseling, role modeling and any other appropriate services within elementary and secondary schools." (§ 1121.1.b)
+
+**Why:** This data tracks training provided by SCILs for attendant care personnel and outreach programs delivered in schools.
+**One row represents:** A single training session or school outreach event conducted by a SCIL.
+**Covers:** Attendant care training and disability awareness/peer counseling programs in schools.
+**Columns:**
+*   Event ID
+*   SCIL ID (links to **16. Agency Governance & Administrative Decisions**)
+*   Event Date
+*   Event Type (e.g., Attendant Care Training, Disability Awareness Program, Peer Counseling in Schools)
+*   Target Audience (e.g., Attendant Care Personnel, Elementary Students, Secondary Students)
+*   Number of Participants
+*   Trainer/Facilitator ID (links to **5. Employee Records & Certifications**)
+*   School ID (if applicable)
+*   Program Description
+*   Outcome/Feedback
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications (resumes, cover letters, etc.)
+*   Rules and regulations (text documents, legal codes)
+*   Receipts (individual transaction documents, but the *record* of the transaction is tabular)
+*   Photos (e.g., of facilities, events)
+*   Research documents (studies, reports, analyses)
+*   Annual reports (the *content* of the reports, not the fact of their submission)
+*   Written statements of parental rights (the *content* of the statement provided to parents)
+*   Forms prescribed by the commissioner (the *template* of the form, not the filled-out instance)
+*   Indictments, accusatory instruments (legal documents)
+*   Court orders/judgments (legal documents)
+*   Written notices of placement (the *content* of the notice, not the record of its sending)
+*   Written applications for district inclusion/exclusion (the *content* of the application)
+*   Survey instruments (the *design* of the survey, not the collected data)

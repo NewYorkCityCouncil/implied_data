@@ -1,0 +1,455 @@
+**1. Inmate Infractions**
+
+**Quotes:**
+- "§ 1-03 Rules of Conduct. This section sets forth the behavior that is prohibited in Department of Correction ("Department") facilities. The grade of each offense is listed."
+- "§ 1-03(c) Prohibited conduct. An inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade I" offense shall be guilty of the stated Grade I offense; an inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade II" offense shall be guilty of the stated Grade II offense; and an inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade III" offense shall be guilty of the stated Grade III offense."
+- (Followed by detailed descriptions of Grade I, II, and III offenses, e.g., "100.10. An inmate is guilty of arson when he or she intentionally starts or attempts to start any fire or causes or attempts to cause any explosion.")
+
+**Why:** To record all alleged rule violations by inmates for disciplinary action and enforcement.
+
+**One row represents:** A single alleged inmate rule violation incident.
+
+**Covers:** All reported violations of the Department's rules of conduct (Grade I, II, and III offenses).
+
+**Columns:**
+- Infraction ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Reporting Staff ID (Foreign Key to Staff Profile, implied)
+- Date and Time of Incident
+- Facility ID (Foreign Key to Facility Inventory, implied)
+- Location of Incident (e.g., cell, recreation yard, specific area)
+- Rule Violated Code (e.g., 100.10, 101.10)
+- Offense Grade (Grade I, II, III)
+- Description of Incident
+- Evidence Collected (summary/reference)
+- Date Reported
+- Status (Reported, Under Investigation, Hearing Scheduled, Adjudicated)
+- Associated Criminal Offense (Y/N)
+- Forwarded to Law Enforcement (Y/N)
+
+**2. Disciplinary Hearings**
+
+**Quotes:**
+- "§ 1-04 Hearing Procedures."
+- "§ 1-04(a)(1) When you are placed in any of the most restrictive security categories (other than Pre-Hearing Detention, which is addressed in subsection (b) below), you will be given written notice of: (i) The reasons for the designation. (ii) The evidence relied upon. (iii) The right to a hearing before an impartial Adjudication Captain... (iv) Your rights at the hearing."
+- "§ 1-04(b) Disciplinary hearing procedures. (1) Pre-Hearing Detention (PHD). When you are placed in Pre-Hearing Detention (PHD) prior to your disciplinary hearing, (i) You will be issued a Notice of Pre-Hearing Detention within twenty-four (24) hours... (iii) The infraction hearing will be completed within three (3) business days of your transfer to PHD whenever possible, but you shall not be held in PHD for more than seven (7) business days."
+- "§ 1-04(b)(2) Disciplinary Infraction Hearings. If you are not placed in PHD, the infraction hearing will take place within three (3) business days after you receive written notice..."
+- "§ 1-04(b)(3) At your hearing, you have the following rights: (i) To personally appear; (ii) To make statements; (iii) To present material, relevant, and non-duplicative evidence; (iv) To have witnesses testify... (v) If you are non-English speaking, illiterate, blind, deaf, have poor vision, are hard of hearing, or if your case is very complicated, you have a right to be helped by a "hearing facilitator"... (vi) If you do not understand or are not able to communicate in English... you have a right to an interpreter... (vii) You have a right to appeal a decision against you. (viii) You have a right to have the hearing recorded."
+
+**Why:** To track the due process for inmate infractions and record hearing outcomes and compliance with timelines.
+
+**One row represents:** A single disciplinary hearing conducted for an inmate.
+
+**Covers:** All disciplinary infraction hearings, including those preceded by Pre-Hearing Detention.
+
+**Columns:**
+- Hearing ID (Primary Key)
+- Infraction ID (Foreign Key to Dataset 1: Inmate Infractions)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Hearing Date and Time
+- Adjudication Captain ID (Foreign Key to Staff Profile, implied)
+- Pre-Hearing Detention (PHD) Placement Date (if applicable)
+- PHD Notice Issued Date (if applicable)
+- PHD Release Date (if applicable, if hearing not held in time)
+- Hearing Completed within 3 business days of notice (Y/N)
+- Hearing Completed within 7 business days of PHD (Y/N)
+- Inmate Present (Y/N)
+- Reason for Hearing in Absentia (if applicable)
+- Hearing Facilitator ID (if applicable, Foreign Key to Staff Profile, implied)
+- Interpreter ID (if applicable, Foreign Key to Staff Profile, implied)
+- Language of Interpreter (if applicable)
+- Evidence Presented (summary/reference)
+- Witnesses Testified (list/reference)
+- Hearing Outcome (Guilty, Not Guilty, Dismissed)
+- Reasons for Decision
+- Decision Date
+- Appeal Status (Pending, Appealed, Decision Upheld, Decision Overturned, Modified) (Foreign Key to Dataset 4: Inmate Appeals)
+- Hearing Recorded (Y/N)
+
+**3. Inmate Penalties**
+
+**Quotes:**
+- "§ 1-05 Penalties. If you are found guilty of violating a Department rule of conduct, your penalty will depend on the seriousness of your offense."
+- "§ 1-05(b) Reprimand. You may lose one or more privileges, temporarily or permanently..."
+- "§ 1-05(c) Loss of Good Time. If you are sentenced and serving your time in a Department facility, you may lose good time."
+- "§ 1-05(d) Punitive Segregation. The maximum period of punitive segregation for a Grade I offense is ninety (90) days..."
+- "§ 1-05(e) Restitution. If you are found guilty of damaging or destroying City property... you may be ordered to pay restitution..."
+- "§ 1-05(f) Repeated offenses. The third time you are found guilty of a rule of conduct violation for the same offense... you may be sentenced to a penalty that applies to the next higher grade of offenses."
+- "§ 1-05(g) Surcharge. A disciplinary surcharge... may be imposed on you..."
+
+**Why:** To record all penalties imposed on inmates following disciplinary hearings and ensure compliance with penalty guidelines.
+
+**One row represents:** A single penalty imposed on an inmate.
+
+**Covers:** All penalties resulting from disciplinary actions (reprimand, loss of good time, punitive segregation, restitution, surcharge).
+
+**Columns:**
+- Penalty ID (Primary Key)
+- Hearing ID (Foreign Key to Dataset 2: Disciplinary Hearings)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Penalty Type (Reprimand, Loss of Good Time, Punitive Segregation, Restitution, Surcharge, Combination)
+- Penalty Details (e.g., specific privileges lost, duration of segregation, amount of good time lost, restitution amount, surcharge amount)
+- Penalty Start Date
+- Penalty End Date (if applicable)
+- Mitigating Circumstances Considered (Y/N)
+- Repeated Offense (Y/N)
+- Original Offense Grade
+- Applied Penalty Grade (if escalated due to repeated offense)
+- Restitution Order ID (Foreign Key to Dataset 12: Inmate Restitution Orders, if applicable)
+
+**4. Inmate Appeals**
+
+**Quotes:**
+- "§ 1-02(d) Telephone calls... If you are affected by a determination made pursuant to this subdivision, you may appeal such determination to the New York City Board of Correction by providing written notice."
+- "§ 1-02(e) Visits... If you are affected by a determination made pursuant to this subdivision, you may appeal such determination to the New York City Board of Correction and to the Commanding Officer by providing written notice."
+- "§ 1-04(b)(3)(vii) You have a right to appeal a decision against you."
+- "§ 1-06 Appeals. You have the right to appeal an adverse decision rendered by the Adjudication Captain within two (2) business days of service of the decision."
+- "§ 1-06 Appeals... If you have been sentenced to a total of thirty (30) days or more of punitive segregation or loss of all your good time... your appeal shall be forwarded to the General Counsel... Within five (5) business days of the receipt of your appeal, you will receive a written decision..."
+
+**Why:** To track all inmate appeals against agency determinations and disciplinary decisions, ensuring due process and timely responses.
+
+**One row represents:** A single appeal filed by an inmate.
+
+**Covers:** Appeals related to telephone calls, visits, disciplinary decisions, and protective custody placements.
+
+**Columns:**
+- Appeal ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Original Decision Type (Telephone Call Limit, Visit Limit, Disciplinary Hearing, Protective Custody)
+- Original Decision ID (Foreign Key to relevant dataset, e.g., Dataset 2: Disciplinary Hearings, Dataset 10: Inmate Rights Determinations, or Dataset 5: Inmate Housing Assignments)
+- Appeal Filing Date
+- Written Notice Provided (Y/N)
+- Additional Materials Submitted (Y/N)
+- Reviewing Authority (NYC Board of Correction, Commanding Officer, Warden, General Counsel)
+- Appeal Decision Date
+- Decision Issued within 5 business days (Y/N)
+- Reason for Extension (if applicable)
+- Appeal Outcome (Upheld, Overturned, Modified, Denied)
+- General Counsel Decision Date (if applicable)
+- Article 78 Petition Filed (Y/N)
+
+**5. Inmate Housing Assignments**
+
+**Quotes:**
+- "§ 1-04(a) General procedures. (1) When you are placed in any of the most restrictive security categories (other than Pre-Hearing Detention, which is addressed in subsection (b) below), you will be given written notice of: (i) The reasons for the designation. (ii) The evidence relied upon."
+- "§ 1-04(b)(1) Pre-Hearing Detention (PHD). When you are placed in Pre-Hearing Detention (PHD) prior to your disciplinary hearing, (i) You will be issued a Notice of Pre-Hearing Detention within twenty-four (24) hours of the placement, which will state the reason for the placement in PHD."
+- "§ 1-04(c) Protective custody. (1) If you are transferred to protective custody (PC), the Department will determine within two (2) business days whether you should continue in such housing. If you do not consent to a decision to continue PC placement, you will be provided with written notice as set forth in 39 RCNY § 1-04(a)(1)."
+- "§ 1-04(c)(4) If you are placed in PC the Department will review your placement thirty (30) days after OSIU initially determined the assignment and then every sixty (60) days thereafter to see if you should remain in PC. You will be notified in writing of the results of that review."
+
+**Why:** To track inmates' housing locations and security classifications, especially restrictive ones, and ensure proper notice and reviews.
+
+**One row represents:** A single assignment of an inmate to a specific housing location or security category.
+
+**Covers:** All housing assignments, including general population, Pre-Hearing Detention, Protective Custody, and other restrictive security categories.
+
+**Columns:**
+- Assignment ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Facility ID (Foreign Key to Facility Inventory, implied)
+- Housing Unit/Cell ID
+- Assignment Type (General Population, Pre-Hearing Detention, Protective Custody, Other Restrictive Security Category)
+- Assignment Start Date and Time
+- Assignment End Date and Time (if applicable)
+- Reason for Assignment (e.g., initial placement, disciplinary, security threat, inmate request)
+- Written Notice Provided (Y/N)
+- Notice Date
+- Evidence Relied Upon (summary/reference)
+- Hearing Scheduled (Y/N) (Foreign Key to Dataset 2: Disciplinary Hearings or Dataset 10: Inmate Rights Determinations)
+- Review Date (for PC, every 30/60 days)
+- Review Outcome (Continue PC, Release from PC)
+- OSIU Decision Date (for PC)
+- Consent to PC (Y/N)
+
+**6. Inmate Movement Log**
+
+**Quotes:**
+- "§ 1-03(c)(19) Inmate Movement. (117.10) Inmates shall follow facility rules and staff orders relating to movement inside and outside the facility, including, but not limited to, rules and orders dealing with seating, lock-in and lock-out. (117.11) Inmates shall not be out of their assigned area, including being in a cell to which they are not assigned, nor shall inmates leave an assigned area such as a work area or program area, without authorization."
+
+**Why:** To maintain a detailed record of inmate movements for security, accountability, and rule enforcement.
+
+**One row represents:** A single instance of an inmate moving from one location to another.
+
+**Covers:** All authorized and unauthorized movements of inmates within and outside facilities.
+
+**Columns:**
+- Movement ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Date and Time of Movement
+- Origin Location (e.g., cell, recreation yard, program area)
+- Destination Location
+- Authorized (Y/N)
+- Authorizing Staff ID (if authorized)
+- Escorting Staff ID (if applicable)
+- Reason for Movement (e.g., program, visit, court, medical, transfer)
+- Unauthorized Movement Infraction ID (Foreign Key to Dataset 1: Inmate Infractions, if applicable)
+
+**7. Inmate Testing Events (DNA/Drug/Alcohol)**
+
+**Quotes:**
+- "§ 1-03(c)(30) Refusal to Provide Sample for DNA Bank. (129.10) Inmates shall not refuse to provide a DNA sample if they meet the criteria as set forth in Article 49-B of the New York State Executive Law qualifying a person as a designated offender."
+- "§ 1-03(c)(31) Refusal to Provide Sample for Random Drug/Alcohol Testing. (130.10) Inmates shall not refuse to provide a urine, hair, saliva, or other sample... when they have been notified... that they have been selected for drug/alcohol testing, whether by random selection or based on reasonable suspicion."
+- "§ 1-03(c)(32) Testing Positive for Alcohol or Illegal Drugs/Substances. (130.11) Inmates shall not test positive for nor be found under the influence of alcohol or illegal drugs/substances. (130.12) Inmates shall not adulterate or tamper with... a urine sample..."
+
+**Why:** To track all mandatory and random DNA, drug, and alcohol testing of inmates for legal compliance and security.
+
+**One row represents:** A single test event for an inmate.
+
+**Covers:** All DNA sample collections and drug/alcohol tests.
+
+**Columns:**
+- Test Event ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Test Date and Time
+- Test Type (DNA, Drug, Alcohol)
+- Reason for Test (Designated Offender, Random Selection, Reasonable Suspicion)
+- Sample Provided (Y/N)
+- Refusal Infraction ID (Foreign Key to Dataset 1: Inmate Infractions, if applicable)
+- Test Result (Positive, Negative, Refused, Adulterated/Tampered)
+- Substance Detected (if positive)
+- Testing Staff ID
+- Lab Analysis ID (if applicable)
+- Result Infraction ID (Foreign Key to Dataset 1: Inmate Infractions, if applicable)
+
+**8. Inmate Property Records**
+
+**Quotes:**
+- "§ 1-02(a) Property. When you first come to jail, any property that is taken from you that involves a criminal offense may be forwarded to the appropriate law enforcement agency for possible criminal prosecution and subject you to disciplinary action. Property taken from you that does not involve a criminal offense will be identified, receipted, stored and returned to you after your discharge from Department custody."
+
+**Why:** To legally track all personal property taken from inmates upon incarceration, ensuring proper handling and return.
+
+**One row represents:** A single item of inmate property.
+
+**Covers:** All personal property taken from inmates upon entry to a facility.
+
+**Columns:**
+- Property Record ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Date Property Taken
+- Item Description
+- Quantity
+- Condition
+- Receipt ID
+- Storage Location
+- Property Status (Stored, Returned, Forwarded to Law Enforcement, Confiscated)
+- Date of Status Change
+- Reason for Status Change (e.g., discharge, criminal offense, contraband)
+- Law Enforcement Agency (if forwarded)
+- Date Returned to Inmate (if applicable)
+- Staff ID (who handled property)
+
+**9. Confiscated Contraband Records**
+
+**Quotes:**
+- "§ 1-03(b) Contraband" shall mean any item that is not sold in the commissary, that is not on the approved list of permissible items, that is possessed in more than the approved amount, or that the inmate does not have permission to possess. Contraband includes items that may disrupt the safety, security, good order and discipline of the facility. Any item that is illegal for an individual not on Department property to possess is also illegal to use or possess on Department property. Possession of contraband may subject an inmate to criminal prosecution as well as disciplinary action. Any person who tries to introduce contraband into a facility may also be subject to criminal prosecution."
+- "§ 1-03(c)(4) Contraband" (lists specific contraband offenses, e.g., 103.05, 103.10, 103.11, 103.12.7)
+- "§ 1-03(c)(4) 103.12.7: Inmates shall not possess money whose value exceeds twenty (20) dollars... Money confiscated as contraband will be deposited in the City's treasury and will not be returned to the inmate."
+
+**Why:** To track all items confiscated as contraband, their disposition, and financial implications for accountability and legal compliance.
+
+**One row represents:** A single item or group of items confiscated as contraband.
+
+**Covers:** All items identified and confiscated as contraband from inmates or attempted to be introduced into a facility.
+
+**Columns:**
+- Confiscation ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied, if confiscated from an inmate)
+- Date and Time of Confiscation
+- Location of Confiscation
+- Item Description
+- Quantity
+- Estimated Value (if applicable, e.g., for money)
+- Contraband Rule Violated (e.g., 103.05, 103.10)
+- Infraction ID (Foreign Key to Dataset 1: Inmate Infractions, if applicable)
+- Confiscating Staff ID
+- Disposition (Destroyed, Stored, Forwarded to Law Enforcement, Deposited to Treasury, Returned to Owner if not inmate)
+- Date of Disposition
+- Treasury Deposit Amount (if applicable)
+- Law Enforcement Agency (if forwarded)
+
+**10. Inmate Rights Determinations**
+
+**Quotes:**
+- "§ 1-02(b) Recreation. The Department may limit your right to participate in recreation for a security related reason in accordance with State Commission of Correction standards (9 NYCRR § 7028.6)."
+- "§ 1-02(d) Telephone calls. The Department may limit your telephone calls if they constitute a threat to institutional safety or security, if you abuse the telephone regulations or in accordance with a court order."
+- "§ 1-02(e) Visits. The Department may revoke, deny or limit your contact visits if they constitute a serious threat to institutional safety or security."
+
+**Why:** To track decisions made by the Department regarding limitations on inmate rights and privileges, ensuring proper justification and appeal options.
+
+**One row represents:** A single determination to limit an inmate's right or privilege.
+
+**Covers:** Decisions to limit recreation, telephone calls, or visits.
+
+**Columns:**
+- Determination ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Date of Determination
+- Right/Privilege Affected (Recreation, Telephone Calls, Visits, Contact Visits)
+- Type of Limitation (Limit, Revoke, Deny)
+- Reason for Limitation (Security Related, Abuse of Regulations, Court Order, Threat to Institutional Safety/Security)
+- Specific Details of Limitation
+- Written Notice Provided (Y/N)
+- Appeal Status (Pending, Appealed, Decision Upheld, Decision Overturned, Modified) (Foreign Key to Dataset 4: Inmate Appeals)
+- Staff ID (who made determination)
+
+**11. Inmate Good Time Adjustments**
+
+**Quotes:**
+- "§ 1-03(b) "Good Time" shall mean a discretionary reduction of up to one third of the term of commitment for a definite sentence or certain civil commitments, as allowed by the New York State Correction Law."
+- "§ 1-05(c) Loss of Good Time. If you are sentenced and serving your time in a Department facility, you may lose good time. (i) You may lose all your good time for a Grade I offense. (ii) The maximum that you can lose for a Grade II offense is two-thirds of all of your good time. (iii) The maximum that you can lose for a Grade III offense is one-third of all of your good time."
+
+**Why:** To track all changes to an inmate's earned "Good Time" for accurate sentence management and compliance with legal limits.
+
+**One row represents:** A single adjustment (addition or reduction) to an inmate's good time.
+
+**Covers:** All instances where an inmate's good time is earned, lost, or restored.
+
+**Columns:**
+- Adjustment ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Date of Adjustment
+- Adjustment Type (Earned, Lost, Restored)
+- Amount of Good Time (days)
+- Reason for Adjustment (e.g., disciplinary penalty, program participation, appeal outcome)
+- Reference ID (e.g., Dataset 3: Inmate Penalties, or program completion record)
+- Current Total Good Time (calculated field, but useful to store for audit)
+
+**12. Inmate Restitution Orders**
+
+**Quotes:**
+- "§ 1-05(e) Restitution. If you are found guilty of damaging or destroying City property, you may be ordered to pay restitution, which can be as much as the replacement cost of the item or property, plus the labor costs of fixing or replacing the item you damaged or destroyed. If you are found guilty of an assault that causes a need for medical services, you can be ordered to make a restitution payment towards the cost to the City of providing such medical services."
+
+**Why:** To track all restitution orders issued to inmates and their payment status for financial accountability.
+
+**One row represents:** A single restitution order.
+
+**Covers:** Restitution for damaged City property, private property, or medical services due to assault.
+
+**Columns:**
+- Restitution Order ID (Primary Key)
+- Hearing ID (Foreign Key to Dataset 2: Disciplinary Hearings)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Date Ordered
+- Amount Ordered
+- Reason for Restitution (Property Damage, Medical Services)
+- Description of Damaged Property/Medical Service
+- Property Value/Medical Cost
+- Payment Status (Outstanding, Partially Paid, Paid in Full)
+- Date Paid in Full (if applicable)
+- Payment Method (e.g., deduction from commissary account)
+
+**13. Inmate Identification Records**
+
+**Quotes:**
+- "§ 1-03(b) "Department ID" shall mean any form of Department-issued tag, card, wristband, or other object that serves to identify an inmate."
+- "§ 1-03(c)(17) Identification Procedures. (115.10) Inmates shall carry and display their Department ID at all times... (115.11) Inmates shall promptly produce their Department ID... (115.12) Inmates shall report the loss of their Department ID promptly... Inmates shall be charged restitution for a new Department ID. (115.13) Inmates shall not intentionally tamper with or destroy their Department ID."
+
+**Why:** To track the issuance, status, and incidents related to inmate identification for security and operational efficiency.
+
+**One row represents:** A single Department ID issued to an inmate.
+
+**Covers:** All Department-issued IDs (tags, cards, wristbands) for inmates.
+
+**Columns:**
+- ID Record ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- ID Number
+- ID Type (Tag, Card, Wristband, Other)
+- Issue Date
+- Status (Active, Lost, Damaged, Replaced)
+- Date of Status Change
+- Reported Lost Date (if applicable)
+- Restitution Charged for Replacement (Y/N)
+- Restitution Amount (if applicable)
+- Restitution Order ID (Foreign Key to Dataset 12: Inmate Restitution Orders, if applicable)
+- Tampering/Destruction Infraction ID (Foreign Key to Dataset 1: Inmate Infractions, if applicable)
+
+**14. Facility Property Damage Incidents**
+
+**Quotes:**
+- "§ 1-03(c)(8) Destruction of Property. (107.10) An inmate is guilty of the offense of Destruction of Property Grade I when such inmate misuses, defaces, or destroys City property, or private property belonging to another, with a value greater than one hundred dollars ($100.00)."
+- "§ 1-05(e) Restitution. If you are found guilty of damaging or destroying City property, you may be ordered to pay restitution..."
+
+**Why:** To track incidents of property damage within facilities, especially those caused by inmates, for repair, replacement, and restitution purposes.
+
+**One row represents:** A single incident of property damage.
+
+**Covers:** Damage to City property or private property within Department facilities.
+
+**Columns:**
+- Damage Incident ID (Primary Key)
+- Date and Time of Incident
+- Facility ID (Foreign Key to Facility Inventory, implied)
+- Location of Damage
+- Property Type (City Property, Private Property)
+- Description of Property
+- Estimated Value of Damage
+- Repair/Replacement Cost
+- Inmate ID (if known, Foreign Key to Inmate Profile, implied)
+- Infraction ID (Foreign Key to Dataset 1: Inmate Infractions, if applicable)
+- Restitution Ordered (Y/N) (Foreign Key to Dataset 12: Inmate Restitution Orders, if applicable)
+- Damage Report Status (Reported, Assessed, Repaired/Replaced)
+
+**15. Inmate Count Events**
+
+**Quotes:**
+- "§ 1-03(c)(5) Count Procedures. (104.10) Inmates shall not intentionally cause a miscount. (104.11) Inmates shall not intentionally delay the count."
+
+**Why:** To record all inmate counts conducted in facilities for security, operational oversight, and to identify potential rule violations.
+
+**One row represents:** A single inmate count event.
+
+**Covers:** All official counts of inmates within Department facilities.
+
+**Columns:**
+- Count Event ID (Primary Key)
+- Date and Time of Count
+- Facility ID (Foreign Key to Facility Inventory, implied)
+- Housing Unit/Area Counted
+- Staff ID (who conducted count)
+- Expected Inmate Count
+- Actual Inmate Count
+- Count Discrepancy (Y/N)
+- Reason for Discrepancy (if applicable)
+- Miscount/Delay Infraction ID (Foreign Key to Dataset 1: Inmate Infractions, if applicable)
+- Count Status (Completed, Delayed, Resolved)
+
+**16. Inmate Razor Issuance/Return Log**
+
+**Quotes:**
+- "§ 1-03(c)(4) Contraband. (103.10.5) Inmates shall not possess or transport a Department-issued razor outside the housing area. (103.10.6) Inmates shall return all Department-issued razors after shaving is completed, in accordance with Department or facility procedures. Razors shall be returned in the same condition as received; for example, blade and handle shall be intact. (103.10.7) Inmates shall not possess more than one Department-issued razor."
+
+**Why:** To track the issuance and return of Department-issued razors to enforce rules and ensure accountability for these specific items.
+
+**One row represents:** A single instance of a razor being issued to or returned by an inmate.
+
+**Covers:** All Department-issued razors provided to inmates.
+
+**Columns:**
+- Transaction ID (Primary Key)
+- Inmate ID (Foreign Key to Inmate Profile, implied)
+- Razor ID (Unique identifier for each physical razor, implied operational need)
+- Transaction Type (Issued, Returned)
+- Date and Time of Transaction
+- Staff ID (who handled transaction)
+- Condition of Razor (upon return)
+- Location of Transaction (e.g., housing area)
+- Violation Infraction ID (Foreign Key to Dataset 1: Inmate Infractions, if applicable, for not returning, possessing too many, or transporting outside area)
+
+---
+
+**Non-Tabular Information:**
+
+- Inmate Rule Book (the text itself)
+- Detailed information relating to incarceration (provided separately to inmates)
+- State Commission of Correction standards (9 NYCRR § 7028.6)
+- New York City Board of Correction standards (40 RCNY § 1-07)
+- Court orders (limiting telephone calls)
+- Written notice forms (for PHD, security categories, PC, hearings, appeals)
+- Directive 6007R-A (for PC adjournments)
+- New York State Correction Law (for Good Time)
+- Prison Rape Elimination Act (for Sexual Abuse definition)
+- New York State Executive Law Article 49-B (for DNA sample criteria)
+- Department's policy and procedures (for drug/alcohol testing)
+- Physical receipts (for inmate property)
+- Photos (e.g., of damaged property, contraband)
+- Video recordings of hearings

@@ -1,0 +1,747 @@
+**1. Student Daily Attendance Records**
+
+**Quotes:**
+*   § 3210.1.a: "A minor required by the provisions of part one of this article to attend upon instruction shall attend regularly as prescribed where he resides or is employed, for the entire time the appropriate public schools or classes are in session and shall be subordinate and orderly while so attending."
+*   § 3211.1: "The teacher of every minor required by the provisions of part one of this article to attend upon instruction, or any other school district employee as may be designated by the commissioner of education under section three thousand twenty-four of this chapter, shall keep an accurate record of the attendance and absence of such minor. Such record shall be in such form as may be prescribed by the commissioner of education."
+*   § 3211.2: "A duly certified transcript of the record of attendance and absence of a child which has been kept, as provided in this section, shall be accepted as presumptive evidence of the attendance of such child in any proceeding brought under the provisions of part one of this article."
+*   § 3211.3: "An attendance officer, or any other duly authorized representative of the school authorities, may at any time during school hours, demand the production of the records of attendance of minors required to be kept by the provisions of part one of this article, and may inspect or copy the same and make all proper inquiries of a teacher or principal concerning the records and the attendance of such minors."
+*   § 3211.4: "The principal of a school, or other person in charge of the instruction upon which a minor attends, as provided by part one of this article, shall cause the record of his attendance to be kept and produced and all appropriate inquiries in relation thereto answered as hereinbefore required."
+
+**Why:** Accurate daily attendance records are legally mandated for all students and are fundamental for tracking compliance and identifying truancy.
+
+**One row represents:** A student's attendance status for a specific school day.
+
+**Covers:** Daily attendance for all minors required to attend instruction.
+
+**Columns:**
+*   Student ID
+*   School ID
+*   Date
+*   Attendance Status (Present, Absent, Tardy, Excused Absence, Unexcused Absence, Religious Observance)
+*   Absence Reason (if applicable)
+*   Teacher ID
+*   Record Last Updated By (Employee ID)
+
+**2. Student Enrollment and Demographic Information**
+
+**Quotes:**
+*   § 3211.4: "He shall give prompt notification in writing to the school authorities of the city or district of the discharge or transfer of any such minor from attendance upon instruction, stating the date of the discharge, its cause, the name of the minor, his date of birth, his place of residence prior to and following discharge, if such place of residence be known, and the name of the person in parental relation to the minor."
+*   § 3212.2.a: "Shall submit at the time such individual begins to attend upon instruction evidence of age as required for the issuance of an employment certificate, or show that such evidence cannot be produced. When such evidence cannot be produced, or when circumstances exist which reasonably indicate that such individual may be a missing child, the superintendent of schools or his or her authorized representative shall report and make inquiry to the statewide central register for missing children pursuant to section eight hundred thirty-seven-e of the executive law."
+*   § 3212.2.d: "Shall furnish proof that an individual who is not attending upon instruction at a public or parochial school in the city or district where the person in parental relation resides is attending upon required instruction elsewhere. Failure to furnish such proof shall be presumptive evidence that such individual is not attending."
+*   § 3212.2.e: "Shall furnish, with respect to an individual from seventeen to twenty-one years of age, on demand of a duly authorized representative of the school authorities, satisfactory proof that he is able to speak, read and write English as required for the completion of the fifth year of the elementary school course of study, or cause such individual to submit to an examination to determine his ability in these respects."
+*   § 3212.6: "For the purpose of part one of this article, the board of health upon request shall furnish to the school authorities, or to the person in parental relation to a minor, or to an individual from five to twenty-one years of age, a duly certified transcript of the birth certificate, filed according to law, of an individual from five to twenty-one years of age."
+*   § 3212-a.1: "Each school shall maintain a record of the telephone number of each pupil enrolled in the school and each person in parental relation to such pupil including the residential and business telephone numbers of persons in parental relation to pupils unless such person or pupil chooses not to supply such numbers. The record of such telephone numbers shall, except as otherwise provided by law, be accessible solely for emergency purposes."
+*   § 3214.5.a: "The board of education... may transfer a pupil who has not been determined to be a student with a disability as defined in section forty-four hundred one of this chapter, or a student presumed to have a disability for discipline purposes as defined in paragraph g of subdivision three of this section from regular classroom instruction to an appropriate educational setting in another school..."
+
+**Why:** Essential for student identification, legal compliance (age, missing child checks, alternative instruction), communication, and managing student transfers.
+
+**One row represents:** A student's enrollment record within a school district.
+
+**Covers:** All enrolled students, including their demographic, contact, and enrollment-related compliance information.
+
+**Columns:**
+*   Student ID
+*   School ID
+*   Student Name (First, Last)
+*   Date of Birth
+*   Current Residence Address
+*   Parent/Guardian Name(s)
+*   Parent/Guardian Relationship to Student
+*   Parent/Guardian Residential Phone Number
+*   Parent/Guardian Business Phone Number
+*   Student Phone Number (if provided)
+*   Emergency Contact Opt-Out (Y/N)
+*   Date of Enrollment
+*   Date of Discharge (if applicable)
+*   Discharge Cause (if applicable)
+*   Previous Residence Address (if discharged/transferred)
+*   Evidence of Age Provided (Y/N)
+*   Missing Child Inquiry Made (Y/N)
+*   Missing Child Match (Y/N)
+*   Alternative Instruction Proof Provided (Y/N)
+*   English Proficiency Proof Provided (Y/N, for 17-21 year olds)
+*   Is Student Homeless? (Y/N) (Links to Dataset 3)
+*   Is Student Indigent? (Y/N) (Links to Dataset 6)
+*   Is Student a Student with a Disability? (Y/N)
+*   Is Student Presumed to have a Disability for Discipline Purposes? (Y/N)
+*   Current Educational Placement (e.g., Regular Classroom, Special Day School, Interim Alternative Educational Setting)
+
+**3. Homeless Child Status and Placement Records**
+
+**Quotes:**
+*   § 3209.3.a: "The school district of origin shall reimburse the department for its expenditure for educational services on behalf of a homeless child..."
+*   § 3209.4.a: "A social services district shall provide for the transportation of each homeless child, including those in preschool and students with disabilities identified pursuant to sections forty-four hundred one and forty-four hundred two of this chapter whose individualized education programs include special transportation services, who is eligible for benefits pursuant to section three hundred fifty-j of the social services law, to and from a temporary housing location in which the child was placed by the social services district and the school attended by such child pursuant to this section, if such temporary housing facility is located outside of the designated school district pursuant to paragraph a of subdivision two of this section."
+*   § 3209.4.b: "The designated school district of attendance shall provide for the transportation of each homeless child who is living in a residential program for runaway and homeless youth established pursuant to article nineteen-H of the executive law, to and from such residential program, and the school attended by such child pursuant to this section, if such temporary housing location is located outside the designated school district."
+*   § 3209.4.i: "Transportation as described in this subdivision must be provided to the homeless child by the designated school district of attendance or the social services district for the duration of homelessness. The designated district of attendance must transport the child for the remainder of the school year in which the child becomes permanently housed and one additional year if that year constitutes the child's terminal year in the designated school."
+*   § 3209.8: "Information about a homeless child's or youth's living situation shall be treated as a student educational record, and shall not be deemed to be directory information, under the McKinney-Vento Homeless Assistance Act, as amended by the Every Student Succeeds Act of 2015."
+
+**Why:** Tracking homeless child status and placement is critical for determining eligibility for educational services, transportation, and reimbursements.
+
+**One row represents:** A period of homelessness for a specific child, including their temporary housing and school placement.
+
+**Covers:** All children identified as homeless, their temporary housing situations, and designated school placements.
+
+**Columns:**
+*   Student ID (Links to Dataset 2)
+*   Homeless Status Start Date
+*   Homeless Status End Date (if applicable)
+*   Temporary Housing Location Type (e.g., Shelter, Residential Program for Runaway Youth, Other)
+*   Temporary Housing Address
+*   Social Services District ID (if placed by SSD)
+*   Designated School District of Attendance ID
+*   School of Origin ID (if different from designated school)
+*   Reason for School Designation (e.g., School of Origin, Current Location)
+*   Permanently Housed Date (if applicable)
+*   Transportation Eligibility Duration (e.g., "duration of homelessness," "remainder of school year + 1 year")
+
+**4. Homeless Child Transportation Services**
+
+**Quotes:**
+*   § 3209.4.a: "A social services district shall provide for the transportation of each homeless child... to and from a temporary housing location... and the school attended by such child..."
+*   § 3209.4.b: "The designated school district of attendance shall provide for the transportation of each homeless child who is living in a residential program for runaway and homeless youth... to and from such residential program, and the school attended by such child..."
+*   § 3209.4.c: "The designated school district of attendance shall provide transportation to and from the child's temporary housing location and the school of origin. Such transportation shall not be in excess of fifty miles each way except where the commissioner certifies that transportation in excess of fifty miles is in the best interest of the child."
+*   § 3209.4.d: "where a homeless child designates the school district of current location as the district the child will attend and such child does not attend the school of origin, such school district shall provide transportation to such child on the same basis as a resident student."
+*   § 3209.4.e: "Where the designated school district of attendance has recommended that the homeless child attend a summer educational program... the designated school district of attendance shall provide transportation."
+*   § 3209.4.f: "The designated school district of attendance, or the social services district... shall provide or arrange for transportation to extracurricular or academic activities..."
+*   § 3209.4.g: "Where the homeless child is temporarily living in a contiguous state... the designated school district in New York state shall collaborate... to arrange for transportation..."
+*   § 3209.4.h: "Where the homeless child is temporarily living in New York state and continues to attend a school of origin located in a contiguous state, the school district of current location shall coordinate... to arrange for transportation..."
+*   § 3209.4.i: "Transportation as described in this subdivision must be provided to the homeless child by the designated school district of attendance or the social services district for the duration of homelessness."
+
+**Why:** Tracking the provision and arrangement of transportation for homeless children is a core legal requirement with various scenarios and reimbursement implications.
+
+**One row represents:** A specific transportation service provided or arranged for a homeless child.
+
+**Covers:** All transportation services provided to homeless children, including daily school transport, summer programs, and extracurricular activities.
+
+**Columns:**
+*   Transportation Service ID
+*   Student ID (Links to Dataset 2)
+*   Homeless Status Record ID (Links to Dataset 3)
+*   Service Start Date
+*   Service End Date (if applicable)
+*   Provider Type (e.g., Designated School District, Social Services District, Contracted Vendor)
+*   Transportation Type (e.g., Daily School, Summer Program, Extracurricular, Inter-state)
+*   Origin Address
+*   Destination Address
+*   Distance (miles, one way)
+*   Commissioner Certified Excess Miles (Y/N)
+*   Parent Accompaniment Reimbursable (Y/N)
+*   Cost of Service
+*   Reimbursement Claim ID (Links to Dataset 5)
+*   Contract ID (if applicable)
+
+**5. Homeless Child Educational & Transportation Reimbursement Claims**
+
+**Quotes:**
+*   § 3209.3.a: "The claim for such reimbursement shall be in a form prescribed by the commissioner. The educational costs for such children shall not be otherwise aidable or reimbursable."
+*   § 3209.3.b: "The school district of origin shall reimburse the department for its expenditure for educational services on behalf of a homeless child pursuant to paragraph a of this subdivision in an amount equal to the school district basic contribution... pro-rated for the period of time for which such services were provided... Upon certification by the commissioner, the comptroller shall deduct from any state funds which become due to the school district of origin an amount equal to the reimbursement required to be made by such school district..."
+*   § 3209.4.a: "Where the social services district requests that the designated school district of attendance provide or arrange for transportation for a homeless child... the designated school district of attendance shall provide or arrange for the transportation and the social services district shall fully and promptly reimburse the designated school district of attendance for the cost as determined by the designated school district."
+*   § 3209.4.b: "The department shall reimburse the designated school district of attendance for the cost of transporting such child... to the extent funds are provided for such purpose, as determined by the director of the budget."
+*   § 3209.4.c: "Any cost incurred for such transportation that is allowable... shall be aidable pursuant to subdivision seven of section thirty-six hundred two of this chapter..."
+*   § 3209.4.i: "The designated school district of attendance shall be entitled to reimbursement from the current school district in which the child becomes permanently housed for any cost incurred for transportation for the remainder of the school year after the child becomes permanently housed and one additional year..."
+
+**Why:** Tracking reimbursement claims and their status is essential for financial accountability and ensuring proper funding flows between entities.
+
+**One row represents:** A single reimbursement claim submitted for educational or transportation services for a homeless child.
+
+**Covers:** All claims for reimbursement related to educational services and transportation for homeless children.
+
+**Columns:**
+*   Claim ID
+*   Claim Submission Date
+*   Claiming Entity ID (e.g., School District ID, Department ID)
+*   Reimbursing Entity ID (e.g., School District ID, Social Services District ID, Department ID)
+*   Student ID (Links to Dataset 2)
+*   Homeless Status Record ID (Links to Dataset 3)
+*   Service Type (Educational, Transportation)
+*   Service Period Start Date
+*   Service Period End Date
+*   Claimed Amount
+*   Approved Amount
+*   Reimbursement Date
+*   Commissioner Certification Date (for deductions)
+*   Deduction from State Funds (Y/N)
+*   Transportation Service ID (Links to Dataset 4, if applicable)
+*   Educational Service Cost Calculation Details (e.g., basic contribution, pro-rated amount)
+
+**6. Indigent Child Necessaries Provision**
+
+**Quotes:**
+*   § 3209.7: "Public welfare officials, except as otherwise provided by law, shall furnish indigent children with suitable clothing, shoes, books, food, transportation and other necessaries to enable them to attend upon instruction as required by law. Upon demonstration of need, such necessaries shall also include transportation of indigent children for the purposes of evaluations pursuant to section forty-four hundred ten of this chapter and title II-A of article twenty-five of the public health law."
+
+**Why:** Tracking the provision of necessaries to indigent children is a legal obligation to ensure their ability to attend school.
+
+**One row represents:** A specific item or service provided as a "necessary" to an indigent child.
+
+**Covers:** All provisions of clothing, shoes, books, food, transportation, and other necessaries to indigent children.
+
+**Columns:**
+*   Provision ID
+*   Student ID (Links to Dataset 2)
+*   Date of Provision
+*   Item/Service Provided (e.g., "Shoes," "School Books," "Meal Voucher," "Transportation for Evaluation")
+*   Cost of Item/Service
+*   Demonstration of Need (Y/N)
+*   Public Welfare Official ID
+*   Transportation Service ID (Links to Dataset 4, if applicable, if transportation is provided)
+
+**7. Student Disciplinary Incidents**
+
+**Quotes:**
+*   § 3214.1: "A minor under seventeen years of age, required by any of the provisions of part one of this article to attend upon instruction, who is an habitual truant from such instruction or is irregular in such attendance or insubordinate or disorderly or disruptive or violent during such attendance, is a school delinquent."
+*   § 3214.2-a.a: "For the purposes of this section, a violent pupil is an elementary or secondary student under twenty-one years of age who: (1) commits an act of violence upon a teacher, administrator or other school employee; (2) commits, while on school district property, an act of violence upon another student or any other person lawfully upon said property; (3) possesses, while on school district property, a gun, knife, explosive or incendiary bomb, or other dangerous instrument capable of causing physical injury or death; (4) displays, while on school district property, what appears to be a gun, knife, explosive or incendiary bomb or other dangerous instrument capable of causing death or physical injury; (5) threatens, while on school district property, to use any instrument that appears capable of causing physical injury or death; (6) knowingly and intentionally damages or destroys the personal property of a teacher, administrator, other school district employee or any person lawfully upon school district property; or (7) knowingly and intentionally damages or destroys school district property."
+*   § 3214.2-a.b: "For the purposes of this section, a disruptive pupil is an elementary or secondary student under twenty-one years of age who is substantially disruptive of the educational process or substantially interferes with the teacher's authority over the classroom."
+*   § 3214.3.a: "The board of education... may suspend the following pupils from required attendance upon instruction: A pupil who is insubordinate or disorderly or violent or disruptive, or whose conduct otherwise endangers the safety, morals, health or welfare of others."
+*   § 3214.3.b.(2): "A teacher shall immediately report and refer a violent pupil to the principal or superintendent for a violation of the code of conduct and a minimum suspension period pursuant to section twenty-eight hundred one of this chapter."
+*   § 3214.3-a: "In addition, any teacher shall have the power and authority to remove a disruptive pupil... from such teacher's classroom consistent with discipline measures contained in the code of conduct adopted by the board pursuant to section twenty-eight hundred one of this chapter."
+
+**Why:** Tracking all disciplinary incidents is crucial for identifying school delinquents, violent/disruptive pupils, and initiating appropriate disciplinary actions.
+
+**One row represents:** A single reported disciplinary incident involving a student.
+
+**Covers:** All reported instances of student misconduct, including insubordination, disorderly conduct, violence, disruption, and endangerment.
+
+**Columns:**
+*   Incident ID
+*   Student ID (Links to Dataset 2)
+*   School ID
+*   Date of Incident
+*   Time of Incident
+*   Location of Incident (e.g., Classroom, Hallway, School Grounds)
+*   Incident Type (e.g., Insubordination, Disorderly Conduct, Violence, Disruption, Property Damage, Weapon Possession, Threat)
+*   Description of Incident
+*   Reporting Staff Member ID
+*   Initial Action Taken (e.g., Teacher Removal, Referral to Principal, Informal Conference)
+*   Is Student a Violent Pupil? (Y/N)
+*   Is Student a Disruptive Pupil? (Y/N)
+*   Weapon Involved (Y/N)
+*   Weapon Type (if applicable, e.g., Firearm, Knife, Explosive)
+*   Referral to Principal/Superintendent Date (if applicable)
+*   Disciplinary Action ID (Links to Dataset 8 or 9, if applicable)
+
+**8. Student Suspensions**
+
+**Quotes:**
+*   § 3214.3.b.(1): "The board of education... shall have the power to suspend a pupil for a period not to exceed five school days. In the case of such a suspension, the suspending authority shall provide the pupil with notice of the charged misconduct. If the pupil denies the misconduct, the suspending authority shall provide an explanation of the basis for the suspension. The pupil and the person in parental relation to the pupil shall, on request, be given an opportunity for an informal conference with the principal..."
+*   § 3214.3.c.(1): "No pupil may be suspended for a period in excess of five school days unless such pupil and the person in parental relation to such pupil shall have had an opportunity for a fair hearing, upon reasonable notice, at which such pupil shall have the right of representation by counsel, with the right to question witnesses against such pupil and to present witnesses and other evidence on his or her behalf."
+*   § 3214.3.d.(1): "Consistent with the federal gun-free schools act, any public school pupil who is determined under this subdivision to have brought a firearm to or possessed a firearm at a public school shall be suspended for a period of not less than one calendar year..."
+*   § 3214.3.e: "Where a pupil has been suspended pursuant to this subdivision and said pupil is of compulsory attendance age, immediate steps shall be taken for his or her attendance upon instruction elsewhere or for supervision or detention of said pupil pursuant to the provisions of article seven of the family court act. ... The board of education may also condition a student's early return to school and suspension revocation on the pupil's voluntary participation in counseling or specialized classes, including anger management or dispute resolution, where applicable."
+*   § 3214.3.g: "Discipline of students with disabilities and students presumed to have a disability for discipline purposes... may be suspended or removed from his or her current educational placement for violation of school rules only in accordance with the procedures established in this section..."
+
+**Why:** Tracking suspensions is a critical legal requirement, ensuring due process, appropriate duration, and compliance with federal laws (e.g., Gun-Free Schools Act, IDEA).
+
+**One row represents:** A single formal suspension action taken against a student.
+
+**Covers:** All student suspensions, including short-term, long-term, firearm-related, and those involving students with disabilities.
+
+**Columns:**
+*   Suspension ID
+*   Incident ID (Links to Dataset 7)
+*   Student ID (Links to Dataset 2)
+*   School ID
+*   Suspending Authority (e.g., Principal, Superintendent, Board of Education)
+*   Suspension Start Date
+*   Suspension End Date
+*   Duration (school days)
+*   Reason for Suspension (e.g., Insubordination, Firearm Possession)
+*   Notice Provided Date
+*   Informal Conference Offered (Y/N)
+*   Informal Conference Date (if held)
+*   Fair Hearing Required (Y/N, for >5 days)
+*   Fair Hearing Date (if held)
+*   Hearing Officer ID (if applicable)
+*   Hearing Officer Recommendation
+*   Final Decision Date
+*   Appeal to Board of Education (Y/N)
+*   Appeal Outcome
+*   Alternative Instruction Provided (Y/N)
+*   Alternative Instruction Placement (e.g., Home Instruction, Special Day School)
+*   Referral to External Agency (Y/N) (Links to Dataset 10)
+*   Suspension Revoked (Y/N)
+*   Revocation Condition (e.g., Counseling, Anger Management)
+*   Is Student a Student with a Disability? (Y/N)
+*   Manifestation Determination Review Date (if applicable)
+*   Behavior a Manifestation of Disability (Y/N)
+*   Interim Alternative Educational Setting Placement (Y/N)
+*   Interim Alternative Educational Setting Start Date
+*   Interim Alternative Educational Setting End Date
+
+**9. Student Classroom Removals (Teacher-Initiated)**
+
+**Quotes:**
+*   § 3214.3-a: "In addition, any teacher shall have the power and authority to remove a disruptive pupil... from such teacher's classroom consistent with discipline measures contained in the code of conduct adopted by the board pursuant to section twenty-eight hundred one of this chapter."
+*   § 3214.3-a.a: "Such teacher shall inform the pupil and the school principal of the reasons for the removal. If the teacher finds that the pupil's continued presence in the classroom does not pose a continuing danger to persons or property and does not present an ongoing threat of disruption to the academic process, the teacher shall, prior to removing the student from the classroom, provide the student with an explanation of the basis for the removal and allow the pupil to informally present the pupil's version of relevant events. In all other cases, the teacher shall provide the pupil with an explanation of the basis for the removal and an informal opportunity to be heard within twenty-four hours of the pupil's removal..."
+*   § 3214.3-a.b: "The principal shall inform the person in parental relation to such pupil of the removal and the reasons therefor within twenty-four hours of the pupil's removal... The pupil and the person in parental relation shall, upon request, be given an opportunity for an informal conference with the principal to discuss the reasons for the removal."
+*   § 3214.3-a.c: "The principal shall not set aside the discipline imposed by the teacher unless the principal finds that the charges against the pupil are not supported by substantial evidence or that the pupil's removal is otherwise in violation of law or that the conduct warrants suspension from school pursuant to this section and a suspension will be imposed."
+
+**Why:** Tracking teacher-initiated classroom removals ensures proper procedures are followed, parents are notified, and continued educational programming is provided.
+
+**One row represents:** A single teacher-initiated removal of a student from a classroom.
+
+**Covers:** All instances where a teacher removes a disruptive pupil from their classroom.
+
+**Columns:**
+*   Removal ID
+*   Incident ID (Links to Dataset 7)
+*   Student ID (Links to Dataset 2)
+*   School ID
+*   Teacher ID
+*   Date of Removal
+*   Time of Removal
+*   Reason for Removal (e.g., Disruptive, Endangering)
+*   Explanation to Pupil Date
+*   Pupil Informal Hearing Date (if applicable)
+*   Parent/Guardian Notification Date
+*   Parent/Guardian Informal Conference Date (if requested)
+*   Principal Review Date
+*   Principal Decision (e.g., Uphold Removal, Set Aside, Convert to Suspension)
+*   Continued Educational Programming Provided (Y/N)
+*   Return to Classroom Date
+
+**10. Student Referrals to External Agencies**
+
+**Quotes:**
+*   § 3214.3.d.(1): "A superintendent shall refer the pupil under the age of sixteen who has been determined to have brought a weapon or firearm to school in violation of this subdivision to a presentment agency for a juvenile delinquency proceeding consistent with article three of the family court act except a student fourteen or fifteen years of age who qualifies for juvenile offender status under subdivision forty-two of section 1.20 of the criminal procedure law. A superintendent shall refer any pupil sixteen years of age or older or a student fourteen or fifteen years of age who qualifies for juvenile offender status under subdivision forty-two of section 1.20 of the criminal procedure law, who has been determined to have brought a weapon or firearm to school in violation of this subdivision to the appropriate law enforcement officials."
+*   § 3214.3.e: "Where a pupil has been suspended pursuant to this subdivision and said pupil is of compulsory attendance age, immediate steps shall be taken for his or her attendance upon instruction elsewhere or for supervision or detention of said pupil pursuant to the provisions of article seven of the family court act."
+
+**Why:** Tracking referrals to external agencies is a legal requirement for serious offenses (e.g., firearm possession) and for ensuring appropriate supervision/detention for suspended students.
+
+**One row represents:** A single referral of a student to an external agency.
+
+**Covers:** All referrals of students to law enforcement, presentment agencies, or family court.
+
+**Columns:**
+*   Referral ID
+*   Student ID (Links to Dataset 2)
+*   Incident ID (Links to Dataset 7, if applicable)
+*   Suspension ID (Links to Dataset 8, if applicable)
+*   Referring Authority (e.g., Superintendent)
+*   Referral Date
+*   Agency Referred To (e.g., Law Enforcement, Presentment Agency, Family Court)
+*   Reason for Referral (e.g., Firearm Possession, Juvenile Delinquency, Supervision/Detention)
+*   Student Age at Referral
+*   Juvenile Offender Status (Y/N, if applicable)
+*   Outcome of Referral (e.g., Charges Filed, Case Closed, Detention Ordered)
+
+**11. Student Involuntary Transfer Cases**
+
+**Quotes:**
+*   § 3214.5.a: "The board of education... may transfer a pupil who has not been determined to be a student with a disability... from regular classroom instruction to an appropriate educational setting in another school upon the written recommendation of the school principal and following independent review thereof."
+*   § 3214.5.b: "No recommendation for pupil transfer shall be initiated by the principal until such pupil and a person in parental relation has been sent written notification of the consideration of transfer recommendation. Such notice shall set a time and place of an informal conference with the principal and shall inform such person in parental relation and such pupil of their right to be accompanied by counsel or an individual of their choice."
+*   § 3214.5.c: "After the conference and if the principal concludes that the pupil would benefit from a transfer... the principal may issue a recommendation of transfer to the superintendent. Such recommendation shall include a description of behavior and/or academic problems indicative of the need for transfer; a description of alternatives explored and prior action taken to resolve the problem."
+*   § 3214.5.d: "Upon receipt of the principal's recommendation for transfer... the superintendent shall notify the person in parental relation and the pupil of the proposed transfer and of their right to a fair hearing... The written notice shall include a statement that the pupil or person in parental relation has ten days to request a hearing and that the proposed transfer shall not take effect, except upon written parental consent, until the ten day period has elapsed, or, if a fair hearing is requested, until after a formal decision following the hearing is rendered, whichever is later."
+*   § 3214.6: "Where a suspended pupil is to be transferred pursuant to subdivision five of this section, he or she shall remain on the register of the original school for two school days following transmittal of his or her records to the school to which he or she is to be transferred. The receiving school shall immediately upon receiving those records transmitted by the original school, review them to insure proper placement of the pupil. Staff members who are involved in the pupil's education must be provided with pertinent records and information relating to the background and problems of the pupil before the pupil is placed in a classroom."
+
+**Why:** Tracking involuntary transfers ensures due process, proper notification, and appropriate placement for students not identified as having disabilities.
+
+**One row represents:** A single involuntary transfer case for a student.
+
+**Covers:** All involuntary transfers of non-disabled students to alternative educational settings.
+
+**Columns:**
+*   Transfer Case ID
+*   Student ID (Links to Dataset 2)
+*   Initiating School ID
+*   Receiving School ID
+*   Date Initiated
+*   Principal Recommendation Date
+*   Reason for Transfer (e.g., Behavioral, Academic Benefit)
+*   Informal Conference Date (with principal)
+*   Superintendent Notification Date
+*   Fair Hearing Requested (Y/N)
+*   Fair Hearing Date (if requested)
+*   Parental Consent to Transfer (Y/N)
+*   Final Decision Date
+*   Transfer Effective Date
+*   Records Transmittal Date
+*   Receiving School Review Date
+*   Staff Briefing Date (at receiving school)
+
+**12. Student Disciplinary Record Transfers**
+
+**Quotes:**
+*   § 3214.7: "Notwithstanding any other provision of law to the contrary, each local educational agency... shall establish procedures... to facilitate the transfer of disciplinary records relating to the suspension or expulsion of a student to any public or nonpublic elementary or secondary school in which such student enrolls or seeks, intends or is instructed to enroll, on a full-time or part-time basis."
+
+**Why:** Tracking the transfer of disciplinary records is a legal requirement to ensure new schools are informed of a student's disciplinary history.
+
+**One row represents:** A single instance of a student's disciplinary records being transferred to another school.
+
+**Covers:** All transfers of disciplinary records (suspensions, expulsions) for students enrolling in new schools.
+
+**Columns:**
+*   Record Transfer ID
+*   Student ID (Links to Dataset 2)
+*   Sending School ID
+*   Receiving School ID
+*   Date of Transfer Request
+*   Date Records Transferred
+*   Records Transferred By (Employee ID)
+*   Method of Transfer (e.g., Secure Electronic, Mail)
+*   Types of Records Transferred (e.g., Suspension Records, Expulsion Records)
+*   Confirmation of Receipt (Y/N)
+
+**13. School District Homeless Child Program Compliance Monitoring**
+
+**Quotes:**
+*   § 3209.6.b: "The commissioner shall periodically monitor local school districts to ensure their compliance with the provisions of this article, and that such districts review and revise any local regulations, policies, or practices that may act as barriers to the enrollment or attendance of homeless children in school or their receipt of comparable services as defined in Part B of Title VII of the Federal Stewart B. McKinney Act."
+
+**Why:** Tracking monitoring activities and findings is essential for the commissioner to ensure school districts comply with homeless child provisions.
+
+**One row represents:** A single monitoring event conducted by the commissioner's office for a school district's homeless child program.
+
+**Covers:** All monitoring activities performed by the commissioner on local school districts regarding homeless child education.
+
+**Columns:**
+*   Monitoring ID
+*   School District ID
+*   Monitoring Date
+*   Monitoring Officer ID
+*   Compliance Status (e.g., Compliant, Non-Compliant, Needs Improvement)
+*   Findings/Violations Identified
+*   Corrective Actions Required
+*   Follow-up Date
+*   Resolution Status
+
+**14. Homeless Child Enrollment/Transportation Dispute Cases**
+
+**Quotes:**
+*   § 3209.5.a: "Each school district shall: establish procedures, in accordance with 42 U.S.C. section 11432(g)(3)(E), for the prompt resolution of disputes regarding school selection or enrollment of a homeless child or youth, including, but not limited to, disputes regarding transportation and/or a child's or youth's status as a homeless child or unaccompanied youth;"
+*   § 3209.5.b: "provide a written explanation, including a statement regarding the right to appeal pursuant to 42 U.S.C. section 11432(g)(3)(E)(ii), the name, post office address and telephone number of the local educational agency liaison and the form petition for commencing an appeal to the commissioner pursuant to section three hundred ten of this chapter of a final determination regarding enrollment, school selection and/or transportation, to the homeless child's or youth's parent or guardian, if the school district declines to either enroll and/or transport such child or youth to the school of origin or a school requested by the parent or guardian;"
+*   § 3209.5.c: "shall immediately enroll the child or youth in the school in which enrollment is sought pending final resolution of the dispute over the school district's final determination of the child's or youth's homeless status, including all available appeals within the local educational agency and the commissioner pursuant to the provisions of section three hundred ten of this chapter."
+
+**Why:** Tracking disputes ensures prompt resolution, proper notification of rights, and compliance with federal and state laws regarding homeless child enrollment.
+
+**One row represents:** A single dispute case regarding a homeless child's enrollment, school selection, or transportation.
+
+**Covers:** All disputes initiated by parents/guardians of homeless children regarding their educational access.
+
+**Columns:**
+*   Dispute ID
+*   Student ID (Links to Dataset 2)
+*   Homeless Status Record ID (Links to Dataset 3)
+*   Date Dispute Filed
+*   Dispute Type (e.g., Enrollment, School Selection, Transportation, Homeless Status)
+*   School District ID
+*   Parent/Guardian Name
+*   Parent/Guardian Contact Information
+*   Initial Determination Date (by school district)
+*   Initial Determination Outcome (e.g., Denied Enrollment, Denied Transportation)
+*   Written Explanation Provided (Y/N)
+*   Appeal to Commissioner (Y/N)
+*   Appeal Date
+*   Final Resolution Date
+*   Final Resolution Outcome
+*   Enrollment Pending Resolution (Y/N)
+
+**15. School District Child Abuse Prevention Training Events**
+
+**Quotes:**
+*   § 3209-a.(2): "establish, and implement on an ongoing basis, a training program for all current and new school officials regarding the policies and procedures established pursuant to this section."
+
+**Why:** Tracking training events is necessary to demonstrate compliance with the mandate to provide ongoing child abuse prevention training for school officials.
+
+**One row represents:** A single child abuse prevention training session conducted by a school district.
+
+**Covers:** All training programs for school officials on child abuse prevention, reporting, and related procedures.
+
+**Columns:**
+*   Training Event ID
+*   School District ID
+*   Date of Training
+*   Training Title/Topic
+*   Trainer Name/Organization
+*   Duration of Training (hours)
+*   Number of Attendees
+*   Training Type (e.g., Initial, Refresher)
+*   Training Materials Provided (Y/N)
+
+**16. School Official Child Abuse Prevention Training Records**
+
+**Quotes:**
+*   § 3209-a.(2): "establish, and implement on an ongoing basis, a training program for all current and new school officials regarding the policies and procedures established pursuant to this section."
+
+**Why:** Tracking individual school officials' training completion is essential to ensure all personnel meet the mandatory training requirements.
+
+**One row represents:** A single school official's attendance and completion of a child abuse prevention training event.
+
+**Covers:** All school officials required to receive child abuse prevention training.
+
+**Columns:**
+*   Training Record ID
+*   Employee ID (School Official)
+*   School ID
+*   Training Event ID (Links to Dataset 15)
+*   Date of Completion
+*   Training Type (e.g., Initial, Refresher)
+*   Certification/Completion Status
+*   Next Training Due Date
+
+**17. Truancy Interventions and Referrals**
+
+**Quotes:**
+*   § 3213.2.a: "A supervisor of attendance, attendance teacher or attendance officer, as the case may be, may arrest without warrant any minor who is unlawfully absent from attendance upon instruction. He shall forthwith place the minor so arrested in attendance upon required instruction and shall notify the parent or guardian of the minor, and he may then begin proceedings for his commitment as a school delinquent or arraign him before a court having jurisdiction."
+*   § 3214.1: "A minor under seventeen years of age... who is an habitual truant from such instruction or is irregular in such attendance... is a school delinquent."
+
+**Why:** Tracking truancy interventions is necessary to address unlawful absences, ensure students attend school, and initiate legal proceedings if required.
+
+**One row represents:** A single intervention or referral action taken by an attendance officer regarding a truant minor.
+
+**Covers:** All instances where attendance officers intervene with unlawfully absent minors.
+
+**Columns:**
+*   Intervention ID
+*   Student ID (Links to Dataset 2)
+*   Date of Intervention
+*   Attendance Officer ID (Links to Dataset 20)
+*   Type of Intervention (e.g., Arrest, Placement in Instruction, Parent Notification)
+*   Parent/Guardian Notified (Y/N)
+*   Referral to Court/School Delinquent Proceedings (Y/N)
+*   Court Case ID (if applicable)
+*   Outcome of Intervention
+
+**18. Minor Employment Compliance Inspections**
+
+**Quotes:**
+*   § 3213.2.b.(1): "A supervisor of attendance, attendance teacher or attendance officer... may enter during business hours any factory, mercantile or other establishment, or other place in which a minor is believed to be employed... and shall be entitled to examine on demand the employment certificates or work permits of minors therein employed, for whose lawful employment such certificates or permits are required by the provisions of part one of this article."
+*   § 3213.2.b.(2): "He may also enter any public place during the hours in which the public have access thereto, to ascertain if any minor is therein who is required to attend upon instruction by the provisions of part one of this article, or engaged in a street trade contrary to the provisions of part one of this article, or to collect information required for the school census."
+*   § 3215.1: "It shall be unlawful, except as otherwise provided by law, to employ in any trade, business or service a minor who does not present an employment certificate or permit issued in accordance with this article."
+*   § 3215.2: "No minor shall be employed during the hours when attendance upon instruction is required by this chapter."
+*   § 3215.3: "No minor shall be employed in violation of any provision of the labor law or other law."
+
+**Why:** Tracking inspections of minor employment ensures compliance with labor laws, attendance requirements, and proper certification.
+
+**One row represents:** A single inspection conducted by an attendance officer regarding minor employment or street trade.
+
+**Covers:** All inspections of businesses and public places for compliance with minor employment and street trade regulations.
+
+**Columns:**
+*   Inspection ID
+*   Date of Inspection
+*   Time of Inspection
+*   Attendance Officer ID (Links to Dataset 20)
+*   Establishment Name/Location (if applicable)
+*   Establishment Address
+*   Type of Inspection (e.g., Employment Certificate Check, Street Trade Check)
+*   Minors Encountered (Count)
+*   Employment Certificates/Work Permits Examined (Count)
+*   Violations Found (Y/N)
+*   Violation Details (e.g., No Certificate, Employed During School Hours, Labor Law Violation)
+*   Action Taken (e.g., Warning, Referral to Law Enforcement)
+
+**19. Minor Employment Certificates/Permits**
+
+**Quotes:**
+*   § 3215.1: "It shall be unlawful, except as otherwise provided by law, to employ in any trade, business or service a minor who does not present an employment certificate or permit issued in accordance with this article."
+*   § 3212.2.a: "Shall submit at the time such individual begins to attend upon instruction evidence of age as required for the issuance of an employment certificate..."
+*   § 3212.5.c: "No person shall violate any provision of part one of this article in relation to employment of minors, duties of employers, issuance or transfer of any paper authorizing the employment of minors."
+*   § 3212.5.d: "No person shall make a false oral or written statement in or in relation to any employment certificate or other paper required by part one of this article as to any matter required to appear therein."
+*   § 3212.5.f: "No person shall present as his own any substitute, altered or transferred certificate or badge."
+
+**Why:** Issuing and tracking employment certificates/permits is essential for regulating minor employment and ensuring legal compliance.
+
+**One row represents:** A single employment certificate or work permit issued to a minor.
+
+**Covers:** All employment certificates and work permits issued to minors.
+
+**Columns:**
+*   Certificate/Permit ID
+*   Student ID (Links to Dataset 2)
+*   Date of Issue
+*   Issuing Authority
+*   Type of Permit (e.g., Employment Certificate, Work Permit)
+*   Minor's Age at Issue
+*   Employer Name (if specific to one employer)
+*   Employer Address
+*   Expiration Date
+*   Status (e.g., Active, Expired, Revoked)
+*   Date of Revocation (if applicable)
+*   Reason for Revocation (if applicable)
+
+**20. Attendance Officer Appointments**
+
+**Quotes:**
+*   § 3213.1.a: "The school authorities of each city school district... shall appoint and may remove one or more supervisors of attendance or attendance teachers of such district. A supervisor of attendance shall be appointed in accordance with the civil service law and rules, unless he or she is a licensed attendance teacher or a teacher licensed to teach in New York state, with such further qualifications as the board of regents shall establish. On and after July first, nineteen hundred fifty-five no full-time supervisor of attendance shall be appointed unless he or she holds a license as attendance teacher."
+*   § 3213.1.b: "The town board of each town, with the approval, in writing, of the district superintendent, shall appoint, on or before August first of each year, one or more attendance officers and shall fix their compensation. During the school year it shall also fill promptly any vacancy after notification thereof by the district superintendent."
+
+**Why:** Tracking attendance officer appointments is necessary for ensuring adequate staffing to enforce attendance laws and manage truancy.
+
+**One row represents:** A single appointment record for an attendance supervisor, teacher, or officer.
+
+**Covers:** All appointed attendance supervisors, teachers, and officers within school districts and towns.
+
+**Columns:**
+*   Employee ID
+*   Name (First, Last)
+*   Appointment Date
+*   Position (e.g., Supervisor of Attendance, Attendance Teacher, Attendance Officer)
+*   Appointing Authority (e.g., School District, Town Board)
+*   District/Town ID
+*   License Held (Y/N, if applicable)
+*   License Type (e.g., Attendance Teacher License)
+*   Age at Appointment
+*   Physical Condition Verified (Y/N)
+*   Compensation
+*   Removal Date (if applicable)
+*   Reason for Removal (if applicable)
+
+**21. Parent Absence Notification Requests**
+
+**Quotes:**
+*   § 3213.2.c: "It shall be the duty of every school district to inform persons in parental relation to elementary school pupils of such person's right to be notified when such pupil is deemed absent from attendance at his designated school. Persons in parental relation to elementary school pupils shall, if such notification is desired, forward a request in writing to the principal of the pupil's designated school. Such request shall contain the telephone number of person or persons in parental relation to the pupil or other information to facilitate communication with such persons by the most expedient means available."
+
+**Why:** Tracking parent requests for absence notifications is necessary to fulfill the school district's duty to inform parents of elementary school pupils' absences.
+
+**One row represents:** A single request from a parent/guardian for absence notification for an elementary school pupil.
+
+**Covers:** All written requests from parents/guardians of elementary school pupils for absence notifications.
+
+**Columns:**
+*   Request ID
+*   Student ID (Links to Dataset 2)
+*   School ID
+*   Parent/Guardian Name
+*   Date of Request
+*   Preferred Notification Method (e.g., Phone, Email)
+*   Contact Information for Notification (e.g., Phone Number, Email Address)
+*   Request Status (e.g., Active, Inactive)
+
+**22. Parent Absence Notifications**
+
+**Quotes:**
+*   § 3213.2.d: "A supervisor of attendance, attendance teacher, attendance officer, or other person authorized by the school district, as the case may be, shall, where a request for notification has been made pursuant to paragraph c of this subdivision, notify a person in parental relation to any elementary school pupil by the means designated in such request when such pupil is deemed absent from required attendance at his designated school without prior notification and consent to such absence by the person in parental relation."
+
+**Why:** Tracking absence notifications ensures that school districts fulfill their obligation to inform parents of elementary school pupils' unexcused absences.
+
+**One row represents:** A single notification sent to a parent/guardian regarding an elementary school pupil's absence.
+
+**Covers:** All notifications sent to parents/guardians of elementary school pupils who have requested absence notifications.
+
+**Columns:**
+*   Notification ID
+*   Student ID (Links to Dataset 2)
+*   School ID
+*   Date of Absence
+*   Date of Notification
+*   Time of Notification
+*   Notifying Staff Member ID
+*   Notification Method Used (e.g., Phone Call, Text, Email)
+*   Parent/Guardian Contacted (Name)
+*   Absence Notification Request ID (Links to Dataset 21)
+*   Absence Status (e.g., Unexcused, Without Prior Consent)
+
+**23. Student Standardized Reading Test Results**
+
+**Quotes:**
+*   § 3211-a: "The results of any standardized reading test administered by a district or school to determine the level at which a pupil is capable of reading shall be reported to the parents (including persons in parental relationship) of any pupil who shall attain a score at the twenty-third percentile or below. Local school districts shall determine the means of reporting these scores to parents. If the parent requests an interpretation of such test results, such scores shall be interpreted for the parent by a certified teacher of reading, or, in the absence of a certified teacher of reading, by other appropriate school district personnel."
+
+**Why:** Tracking reading test results, especially for low-scoring students, is necessary for reporting to parents and providing required interpretations.
+
+**One row represents:** A single student's result from a standardized reading test.
+
+**Covers:** All standardized reading test results, with a focus on those at or below the 23rd percentile.
+
+**Columns:**
+*   Test Result ID
+*   Student ID (Links to Dataset 2)
+*   School ID
+*   Test Name
+*   Test Date
+*   Raw Score
+*   Percentile Score
+*   Score at or Below 23rd Percentile (Y/N)
+*   Parent Notification Date
+*   Parent Requested Interpretation (Y/N)
+*   Interpretation Provided Date (if requested)
+*   Interpreter ID (if applicable)
+
+**24. School Delinquent Maintenance Costs and Parental Contributions**
+
+**Quotes:**
+*   § 3214.4.a: "The expense attending the commitment and costs of maintenance of any school delinquent shall be a charge against the city or district where he resides, if such city or district employs a superintendent of schools; otherwise it shall be a county charge."
+*   § 3214.4.b: "The school authorities may institute proceedings before a court having jurisdiction to determine the liability of a person in parental relation to contribute towards the maintenance of a school delinquent under sixteen years of age ordered to attend upon instruction under confinement. If the court shall find the person in parental relation able to contribute towards the maintenance of such a minor, it may issue an order fixing the amount to be paid weekly."
+
+**Why:** Tracking the costs associated with school delinquents and any parental contributions is necessary for financial accountability and legal enforcement.
+
+**One row represents:** A single record of maintenance cost or parental contribution for a school delinquent.
+
+**Covers:** All expenses related to the commitment and maintenance of school delinquents, and any court-ordered parental contributions.
+
+**Columns:**
+*   Cost Record ID
+*   Student ID (Links to Dataset 2)
+*   School Delinquent Status Start Date
+*   School Delinquent Status End Date
+*   Cost Type (e.g., Commitment, Maintenance, Parental Contribution)
+*   Date of Expense/Contribution
+*   Amount
+*   Charged To (e.g., City, District, County, Parent)
+*   Court Order for Parental Contribution (Y/N)
+*   Court Order Date (if applicable)
+*   Weekly Contribution Amount (if applicable)
+*   Payment Status (for parental contributions)
+
+**25. Student Release Authorizations**
+
+**Quotes:**
+*   § 3210.1.c: "In the event that a person requests the release of a minor required by the provisions of part one of this article to attend upon instruction, the identity of such person shall be verified against a list of names provided by the person or persons in parental relation to the minor... If such person is identified as one of those persons included on such list, such minor may be released from attendance. If such person is identified as a person not included on such list, such minor may not be released except in the event of an emergency as determined in the sole discretion of the principal of the school, or his designee, provided that the person or persons in parental relation to the minor have been contacted and have agreed to such release."
+
+**Why:** Tracking authorized individuals for student release and emergency releases is critical for student safety and legal compliance.
+
+**One row represents:** A single authorized person for student release or a single emergency release event.
+
+**Covers:** All individuals authorized by parents/guardians to pick up a student, and all instances of emergency student release.
+
+**Columns:**
+*   Release Authorization ID
+*   Student ID (Links to Dataset 2)
+*   Parent/Guardian Name (who provided the list)
+*   Authorized Person Name
+*   Authorized Person Relationship to Student
+*   Authorized Person Contact Information
+*   Authorization Start Date
+*   Authorization End Date (if applicable)
+*   Is this an Emergency Release? (Y/N)
+*   Emergency Release Date (if applicable)
+*   Emergency Release Time (if applicable)
+*   Principal/Designee Approving Emergency Release (Employee ID)
+*   Parent/Guardian Contacted for Emergency Release (Y/N)
+*   Parent/Guardian Agreed to Emergency Release (Y/N)
+
+**26. Student Discharge/Transfer Notifications**
+
+**Quotes:**
+*   § 3211.4: "He shall give prompt notification in writing to the school authorities of the city or district of the discharge or transfer of any such minor from attendance upon instruction, stating the date of the discharge, its cause, the name of the minor, his date of birth, his place of residence prior to and following discharge, if such place of residence be known, and the name of the person in parental relation to the minor."
+
+**Why:** Tracking notifications of student discharge or transfer is necessary for maintaining accurate enrollment records and ensuring continuity of education.
+
+**One row represents:** A single notification of a student's discharge or transfer from a school.
+
+**Covers:** All formal notifications of student discharges or transfers.
+
+**Columns:**
+*   Notification ID
+*   Student ID (Links to Dataset 2)
+*   Notifying School ID
+*   Date of Notification
+*   Date of Discharge/Transfer
+*   Cause of Discharge/Transfer
+*   Minor's Date of Birth
+*   Minor's Residence Prior to Discharge/Transfer
+*   Minor's Residence Following Discharge/Transfer (if known)
+*   Person in Parental Relation Name
+*   Receiving School District ID (if transfer)
+
+**Non-Tabular Information:**
+
+*   **Regulations of the Commissioner:** (e.g., for educational costs, religious observance, parent accompaniment for transportation, student discipline procedures). These are policy documents.
+*   **Individualized Education Programs (IEPs):** While they contain structured data, the IEP itself is a comprehensive document, not a single tabular record for this context. Specific services from an IEP (like special transportation) would be referenced in other datasets.
+*   **Written Explanations for Dispute Appeals:** The content of the explanation is text, not tabular data. The *fact* of providing it is a column in Dataset 14.
+*   **Plan for Coordination and Access to Education for Homeless Children:** This is a strategic document. Its annual review is a process, not a dataset.
+*   **Local Regulations, Policies, or Practices (barriers to homeless child enrollment):** These are policy documents.
+*   **Child Abuse Prevention Policies and Procedures:** These are policy documents.
+*   **Code of Conduct (for student discipline):** This is a policy document.
+*   **Legally Binding Instruments (e.g., court order or decree of divorce, separation or custody):** These are legal documents, not tabular data. Their existence might be noted in a student's record.
+*   **Testimony and Evidence from Disciplinary Hearings:** These are records of proceedings, not tabular data. The *record of the hearing* is a column in Dataset 8.
+*   **Description of Behavior and/or Academic Problems (for involuntary transfers):** This is narrative text within a recommendation document.
+*   **Description of Alternatives Explored and Prior Action Taken (for involuntary transfers):** This is narrative text within a recommendation document.
+*   **List of Community Agencies and Free Legal Assistance (for involuntary transfers):** This is a resource list.

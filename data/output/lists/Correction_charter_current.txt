@@ -1,0 +1,443 @@
+**Department of Correction Data Systems**
+
+**1. Incarcerated Individual Master Record**
+
+**Quotes:**
+*   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants, all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment and violators of ordinances or local laws and for the detention of witnesses who are unable to furnish security for their appearance in criminal proceedings" (Section 623.1)
+*   "All authority, except as otherwise provided by law, concerning the care and custody of felons, misdemeanants and violators of local laws held in the institutions under his charge." (Section 623.4)
+*   "All authority in relation to the custody and transportation of persons held for any cause in criminal proceedings and all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment, in any county within the city." (Section 623.5)
+*   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Section 623.6)
+*   "Every incarcerated individual of an institution under the authority of the commissioner shall be employed in some form of industry, in farming operations or other employment" (Section 625)
+*   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance (1) by or on behalf of any person held or confined under the jurisdiction of the department" (Section 626.f)
+*   "Such report shall incorporate direct feedback from incarcerated individuals and proposed recommendations for relevant improvements, and shall include a section of recommendations on how to improve the grievance process for vulnerable populations, including incarcerated individuals who are lesbian, gay, bisexual, transgender, intersex, and gender nonconforming." (Section 626.f)
+*   "the board shall investigate such death and prepare a report about such investigation." (Section 626.i.2)
+*   "Upon request from the next of kin of an incarcerated individual who has died, the board shall provide to such next of kin records provided to the board by the department and correctional health services for purposes of such investigation" (Section 626.i.4)
+
+**Why:** This dataset is fundamental for managing the identity, legal status, and core needs of every individual under DOC custody.
+
+**One row represents:** A single incarcerated individual.
+
+**Covers:** All persons held or confined under the jurisdiction of the Department of Correction.
+
+**Columns:**
+*   Individual ID
+*   Full Name
+*   Date of Birth
+*   Gender
+*   Legal Status (e.g., Felon, Misdemeanant, Violator of Local Law, Awaiting Arraignment, Awaiting Trial, Sentenced, Witness)
+*   Arrest Date
+*   Admission Date to DOC Custody
+*   Expected Release Date
+*   Actual Release Date
+*   Sentence Details (if sentenced)
+*   Psychiatric Observation/Treatment Required (Y/N)
+*   Hospital Care Required (Y/N)
+*   Vulnerable Population Flag (e.g., LGBTQI+, based on self-identification or assessment)
+*   Next of Kin Name
+*   Next of Kin Contact Information
+*   Death Date (if applicable)
+
+**2. Incarcerated Individual Location Tracking**
+
+**Quotes:**
+*   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants, all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment and violators of ordinances or local laws and for the detention of witnesses who are unable to furnish security for their appearance in criminal proceedings" (Section 623.1)
+*   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York, the family court of the state of New York within the city of New York, the supreme court in the counties of New York, Bronx, Kings, Queens and Richmond" (Section 623.2)
+*   "All authority in relation to the custody and transportation of persons held for any cause in criminal proceedings and all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment, in any county within the city." (Section 623.5)
+
+**Why:** This dataset is crucial for real-time accountability, security, and managing the movements of incarcerated individuals.
+
+**One row represents:** A single change in an incarcerated individual's location.
+
+**Covers:** All movements and location assignments of incarcerated individuals within and between DOC facilities, court pens, and hospital wards.
+
+**Columns:**
+*   Location Change ID
+*   Individual ID (linked to Dataset 1)
+*   Date and Time of Change
+*   Previous Location Type (e.g., Institution, Hospital Ward, Court Pen)
+*   Previous Location ID (linked to Dataset 5)
+*   New Location Type
+*   New Location ID (linked to Dataset 5)
+*   Reason for Change (e.g., Cell Transfer, Court Appearance, Medical Appointment, Program Participation, Hospitalization)
+*   Staff Member Initiating Change (Employee ID, linked to Dataset 11)
+
+**3. Incarcerated Individual Death Investigations**
+
+**Quotes:**
+*   "Except where the commissioner of investigation, the attorney general, or the district attorney for the county in which a death of an incarcerated individual held or confined under the jurisdiction of the department occurred investigates such death or prosecutes any alleged criminal offense related to such death and requests or directs the board not to investigate such death, the board shall investigate such death and prepare a report about such investigation." (Section 626.i.2)
+*   "Such report shall include any recommendations about measures the department or correctional health services may implement to prevent the circumstances that contributed to the individual’s death." (Section 626.i.2)
+*   "The board shall submit such report to the department and correctional health services for review by the department and correctional health services pursuant to subdivision h of section 9-171 of the administrative code." (Section 626.i.2.a)
+*   "No later than 30 days after the board submits the report to the department and correctional health services, the board shall post such report and any response to such report from the department and correctional health services on the website of the board" (Section 626.i.2.b)
+*   "where the board has not concluded an investigation of a death of an incarcerated individual pursuant to this subdivision within 180 days of such death, the board shall, every 60 days until the board concludes such investigation and posts a report about such investigation, post on its website a statement that the board has not concluded such investigation" (Section 626.i.3)
+*   "Upon request from the next of kin of an incarcerated individual who has died, the board shall provide to such next of kin records provided to the board by the department and correctional health services for purposes of such investigation" (Section 626.i.4)
+
+**Why:** This dataset tracks mandated investigations into incarcerated individual deaths, ensuring accountability and informing preventative measures.
+
+**One row represents:** A single investigation into the death of an incarcerated individual.
+
+**Covers:** All deaths of incarcerated individuals held or confined under the jurisdiction of the department.
+
+**Columns:**
+*   Investigation ID
+*   Individual ID (linked to Dataset 1)
+*   Date of Death
+*   Time of Death
+*   Location of Death (Facility ID, linked to Dataset 5)
+*   Primary Cause of Death
+*   Contributing Factors to Death
+*   Investigating Authority (e.g., Board of Correction, Commissioner of Investigation, Attorney General, District Attorney)
+*   Investigation Start Date
+*   Investigation Conclusion Date
+*   Report Submission Date to Department/Correctional Health Services
+*   Report Posting Date on Board Website
+*   Date of 60-day Status Statement Posting (if applicable)
+*   Recommendations Made (summary or link to document)
+*   Next of Kin Records Request Date
+*   Next of Kin Records Provided Date
+
+**4. Incarcerated Individual and Employee Grievances**
+
+**Quotes:**
+*   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance (1) by or on behalf of any person held or confined under the jurisdiction of the department or (2) by any employee of the department." (Section 626.f)
+*   "Starting July 1, 2021, the board shall issue a report, at least every three years, on issues related to the department's grievance process. Such report shall incorporate direct feedback from incarcerated individuals and proposed recommendations for relevant improvements, and shall include a section of recommendations on how to improve the grievance process for vulnerable populations, including incarcerated individuals who are lesbian, gay, bisexual, transgender, intersex, and gender nonconforming." (Section 626.f)
+
+**Why:** This dataset is essential for tracking and resolving complaints from both incarcerated individuals and employees, ensuring due process and identifying systemic issues.
+
+**One row represents:** A single grievance, complaint, or request for assistance.
+
+**Covers:** All grievances, complaints, or requests for assistance filed by or on behalf of any person held or confined under DOC jurisdiction, or by any employee of the department.
+
+**Columns:**
+*   Grievance ID
+*   Filing Party Type (Incarcerated Individual, Employee, On Behalf Of)
+*   Filing Party ID (linked to Dataset 1 or Dataset 11)
+*   Date Filed
+*   Time Filed
+*   Grievance Category (e.g., Conditions of Confinement, Staff Conduct, Medical Care, Program Access, Employee Workplace Issue)
+*   Description of Grievance
+*   Facility ID (if applicable, linked to Dataset 5)
+*   Status (e.g., Filed, Under Review, Investigated, Resolved, Appealed, Closed)
+*   Resolution Date
+*   Resolution Details
+*   Vulnerable Population Flag (if applicable, linked to Dataset 1)
+*   Date of Last Update
+
+**5. Institution and Facility Inventory**
+
+**Quotes:**
+*   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants, all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment and violators of ordinances or local laws and for the detention of witnesses who are unable to furnish security for their appearance in criminal proceedings, except such places for the detention of prisoners or persons charged with crime as are by law placed under the charge of some other agency." (Section 623.1)
+*   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York, the family court of the state of New York within the city of New York, the supreme court in the counties of New York, Bronx, Kings, Queens and Richmond" (Section 623.2)
+*   "Charge and management of persons or any other institution of the city placed under his jurisdiction by law." (Section 623.3)
+*   "The commissioner shall maintain and operate buildings and structures under his jurisdiction." (Section 624)
+*   "The inspection and visitation at any time of all institutions and facilities under the jurisdiction of the department" (Section 626.c.1)
+*   "Any council member is authorized to inspect and visit at any time the institutions and facilities under the jurisdiction of the department." (Section 627)
+
+**Why:** This dataset provides a comprehensive record of all physical assets and locations managed by the Department of Correction.
+
+**One row represents:** A single institution, facility, hospital ward, or court pen.
+
+**Covers:** All buildings, structures, institutions, hospital wards, and court pens under the jurisdiction of the Department of Correction.
+
+**Columns:**
+*   Facility ID
+*   Facility Name
+*   Facility Type (e.g., Correctional Institution, Hospital Ward, Court Pen, Administrative Building)
+*   Address
+*   Date Established
+*   Total Capacity (e.g., number of beds, number of holding cells)
+*   Current Operational Status (e.g., Active, Under Renovation, Closed)
+*   Date of Last Major Renovation
+*   Square Footage
+*   Number of Buildings/Structures
+*   Security Level
+
+**6. Facility Inspection and Visit Log**
+
+**Quotes:**
+*   "The inspection and visitation at any time of all institutions and facilities under the jurisdiction of the department" (Section 626.c.1)
+*   "Any council member is authorized to inspect and visit at any time the institutions and facilities under the jurisdiction of the department." (Section 627)
+
+**Why:** This dataset documents all official inspections and visits to facilities, ensuring oversight and compliance with standards.
+
+**One row represents:** A single inspection or visit event to a facility.
+
+**Covers:** All inspections and visits conducted by the Board of Correction, its designees, and Council members to institutions and facilities under DOC jurisdiction.
+
+**Columns:**
+*   Visit ID
+*   Facility ID (linked to Dataset 5)
+*   Date of Visit
+*   Time of Visit
+*   Visiting Party Type (e.g., Board of Correction, BoC Member, BoC Executive Director, BoC Employee, Council Member)
+*   Visitor Name(s) / ID(s) (linked to Dataset 11 or Dataset 14)
+*   Purpose of Visit (e.g., Routine Inspection, Specific Investigation, Oversight)
+*   Key Findings / Observations (summary or link to detailed report)
+*   Recommendations Made (summary or link to detailed report)
+*   Follow-up Actions Required (Y/N)
+*   Date of Follow-up
+
+**7. Prisoner Transportation Events**
+
+**Quotes:**
+*   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York, the family court of the state of New York within the city of New York, the supreme court in the counties of New York, Bronx, Kings, Queens and Richmond and of all vehicles employed in the transportation of prisoners who have been sentenced, are awaiting trial or are held for any other cause." (Section 623.2)
+*   "All authority in relation to the custody and transportation of persons held for any cause in criminal proceedings and all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment, in any county within the city." (Section 623.5)
+
+**Why:** This dataset tracks all prisoner movements, ensuring security, accountability, and efficient logistics for transportation.
+
+**One row represents:** A single transportation event for one or more prisoners.
+
+**Covers:** All instances of transporting prisoners who have been sentenced, are awaiting trial, or are held for any other cause.
+
+**Columns:**
+*   Transportation Event ID
+*   Date of Transport
+*   Time of Departure
+*   Time of Arrival
+*   Origin Location Type (e.g., Institution, Court Pen, Hospital)
+*   Origin Location ID (linked to Dataset 5)
+*   Destination Location Type
+*   Destination Location ID (linked to Dataset 5)
+*   Vehicle ID (linked to Dataset 12)
+*   Primary Transporting Officer ID (linked to Dataset 11)
+*   Additional Transporting Officer IDs (linked to Dataset 11)
+*   Number of Prisoners Transported
+*   List of Individual IDs Transported (linked to Dataset 1)
+*   Reason for Transport (e.g., Court Appearance, Medical Transfer, Facility Transfer)
+*   Security Incidents During Transport (Y/N)
+
+**8. Building Maintenance and Repair Work Orders**
+
+**Quotes:**
+*   "The commissioner shall maintain and operate buildings and structures under his jurisdiction." (Section 624)
+*   "The commissioner may construct such additions and repairs to buildings under his jurisdiction as can be accomplished by the use of the labor of persons under his care and custody and with materials in the possession of the department." (Section 624)
+*   "Such incarcerated individuals or prisoners held for trial may be detailed by the commissioner to perform work or service on the grounds and buildings or on any public improvement under the charge of any other agency." (Section 625)
+
+**Why:** This dataset tracks all maintenance and repair activities, ensuring facilities are safe, operational, and compliant with standards.
+
+**One row represents:** A single work order for maintenance, repair, or construction.
+
+**Covers:** All maintenance, repair, and construction activities on buildings and structures under DOC jurisdiction.
+
+**Columns:**
+*   Work Order ID
+*   Facility ID (linked to Dataset 5)
+*   Date Requested
+*   Date Approved
+*   Description of Work
+*   Work Type (e.g., Routine Maintenance, Emergency Repair, Addition, Renovation)
+*   Priority Level
+*   Status (e.g., Pending, In Progress, Completed, Cancelled)
+*   Completion Date
+*   Labor Source (e.g., DOC Staff, Incarcerated Individual Labor, External Contractor)
+*   DOC Staff Hours (if applicable, linked to Dataset 11)
+*   Incarcerated Individual Labor Hours (if applicable, linked to Dataset 9)
+*   Materials Cost
+*   Total Cost
+*   Inspected By (Employee ID, linked to Dataset 11)
+*   Inspection Date
+
+**9. Incarcerated Individual Work Assignments**
+
+**Quotes:**
+*   "Every incarcerated individual of an institution under the authority of the commissioner shall be employed in some form of industry, in farming operations or other employment, and products thereof shall be utilized in the institutions under the commissioner or in any other agency." (Section 625)
+*   "Those persons held for trial may be employed in the same manner as sentenced prisoners, provided they give their consent in writing." (Section 625)
+*   "Such incarcerated individuals or prisoners held for trial may be detailed by the commissioner to perform work or service on the grounds and buildings or on any public improvement under the charge of any other agency." (Section 625)
+
+**Why:** This dataset tracks the employment of incarcerated individuals, ensuring compliance with mandates and managing labor resources.
+
+**One row represents:** A single work assignment for an incarcerated individual.
+
+**Covers:** All employment of incarcerated individuals in industry, farming, building maintenance, or public improvement work.
+
+**Columns:**
+*   Assignment ID
+*   Individual ID (linked to Dataset 1)
+*   Assignment Start Date
+*   Assignment End Date
+*   Work Type (e.g., Industry, Farming, Building Maintenance, Public Improvement, Other)
+*   Work Location (Facility ID, linked to Dataset 5, or External Agency Name)
+*   Supervisor ID (linked to Dataset 11)
+*   Total Hours Worked
+*   Consent Obtained for Trial Prisoner (Y/N)
+*   Date Consent Obtained
+*   Products Produced (if applicable)
+*   Utilized By (e.g., DOC, Other Agency)
+
+**10. Rehabilitative Program Participation**
+
+**Quotes:**
+*   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Section 623.6)
+
+**Why:** This dataset tracks individual participation and progress in mandated rehabilitative programs.
+
+**One row represents:** A single incarcerated individual's enrollment in a specific program.
+
+**Covers:** All incarcerated individuals participating in re-training, counseling, and rehabilitative programs.
+
+**Columns:**
+*   Participation ID
+*   Individual ID (linked to Dataset 1)
+*   Program ID (linked to Dataset 13)
+*   Enrollment Date
+*   Completion Date
+*   Status (e.g., Active, Completed, Dropped Out, Transferred)
+*   Reason for Status Change (if applicable)
+*   Program Outcome (e.g., Certificate Earned, Skill Acquired, Behavioral Improvement)
+*   Program Instructor ID (linked to Dataset 11)
+
+**11. Department Staff Roster**
+
+**Quotes:**
+*   "The commissioner may appoint two deputies." (Section 622)
+*   "The board may appoint an executive director to serve at its pleasure with such duties and responsibilities as the board may assign, and other professional, clerical, and support personnel within appropriations for such purpose." (Section 626.b)
+*   "The commissioner shall designate such of the department's stenographic, clerical and other assistance to the board as may be necessary for the proper performance of its functions." (Section 626.b)
+*   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance (1) by or on behalf of any person held or confined under the jurisdiction of the department or (2) by any employee of the department." (Section 626.f)
+
+**Why:** This dataset is essential for human resources, payroll, and managing the entire workforce of the Department of Correction and Board of Correction.
+
+**One row represents:** A single employee of the Department of Correction or the Board of Correction.
+
+**Covers:** All employees of the Department of Correction and the Board of Correction.
+
+**Columns:**
+*   Employee ID
+*   Full Name
+*   Job Title
+*   Department/Division
+*   Hire Date
+*   Termination Date (if applicable)
+*   Employment Status (e.g., Active, Leave, Terminated)
+*   Required Certifications (e.g., Peace Officer, Medical, Counseling)
+*   Certification Expiration Dates
+*   Training Records (e.g., annual refreshers, specialized training)
+*   Supervisor ID (linked to Dataset 11)
+
+**12. Department Vehicle Inventory**
+
+**Quotes:**
+*   "all vehicles employed in the transportation of prisoners who have been sentenced, are awaiting trial or are held for any other cause." (Section 623.2)
+
+**Why:** This dataset tracks all vehicles used for prisoner transportation, ensuring operational readiness and asset management.
+
+**One row represents:** A single vehicle owned or operated by the department for prisoner transportation.
+
+**Covers:** All vehicles employed in the transportation of prisoners.
+
+**Columns:**
+*   Vehicle ID
+*   Make
+*   Model
+*   Year
+*   License Plate Number
+*   Vehicle Type (e.g., Bus, Van, Sedan)
+*   Acquisition Date
+*   Current Mileage
+*   Maintenance Schedule
+*   Last Maintenance Date
+*   Next Scheduled Maintenance Date
+*   Current Operational Status (e.g., In Service, Out of Service for Repair)
+*   Date of Last Safety Inspection
+
+**13. Rehabilitative Program Catalog**
+
+**Quotes:**
+*   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Section 623.6)
+
+**Why:** This dataset provides a master list of all available rehabilitative programs, serving as a reference for program participation.
+
+**One row represents:** A single rehabilitative program offered by the department.
+
+**Covers:** All re-training, counseling, and rehabilitative programs planned and implemented by the department.
+
+**Columns:**
+*   Program ID
+*   Program Name
+*   Program Description
+*   Program Type (e.g., Re-training, Counseling, Education, Vocational)
+*   Target Population (e.g., Felons, Misdemeanants, Specific Age Group)
+*   Program Start Date (overall program offering)
+*   Program End Date (if applicable)
+*   Program Coordinator ID (linked to Dataset 11)
+*   Associated Facility ID (if facility-specific, linked to Dataset 5)
+
+**14. Board of Correction Member Roster**
+
+**Quotes:**
+*   "There shall be a city board of correction to consist of nine members. Members shall be appointed for a term of six years. Vacancies shall be filled for the remainder of the unexpired term. Three members shall be appointed by the mayor, three by the council, and three by the mayor on the nomination jointly by the presiding justices of the appellate division of the supreme court for the first and second judicial departments. Appointments shall be made by the three respective appointing authorities on a rotating basis to fill any vacancy occurring on or after the effective date of this charter. Members of the board may be reimbursed for expenses incurred in the performance of their duties. The chairman of the board shall be designated from time to time by the mayor from among its members. Members of the board may be removed by the mayor for cause and after a hearing at which they shall be entitled to representation by counsel." (Section 626.a)
+
+**Why:** This dataset tracks the composition, appointments, and terms of the Board of Correction members, ensuring proper governance and oversight.
+
+**One row represents:** A single member of the Board of Correction.
+
+**Covers:** All members of the City Board of Correction.
+
+**Columns:**
+*   Member ID
+*   Full Name
+*   Appointing Authority (e.g., Mayor, Council, Presiding Justices)
+*   Appointment Date
+*   Term Start Date
+*   Term End Date
+*   Is Chairman (Y/N)
+*   Date Designated Chairman (if applicable)
+*   Date Removed (if applicable)
+*   Reason for Removal (if applicable)
+*   Reimbursement for Expenses (Y/N)
+
+**15. Board of Correction Investigation Cases**
+
+**Quotes:**
+*   "The board, or by written designation of the board, any member of it, the executive director, or other employee, shall have the following powers and duties: 1. The inspection and visitation at any time of all institutions and facilities under the jurisdiction of the department; 2. The inspection of all books, records, documents, and papers of the department;" (Section 626.c)
+*   "The board, annually and at such other times as it may determine, shall submit to the mayor, the council, and the commissioner reports, findings and recommendations in regard to the matters within its jurisdiction." (Section 626.d)
+*   "Within the scope of its authority pursuant to this section, the board may compel the attendance of witnesses, require the production of books, accounts, papers and other evidence, administer oaths, examine persons, and conduct public or private hearings, studies and investigations." (Section 626.g)
+*   "The board may institute proceedings in a court of appropriate jurisdiction to enforce its subpoena power and other authority pursuant to this section." (Section 626.g)
+*   "The board, or by written designation, a member of the board or the executive director, may conduct hearings, or study or investigate any matter within the jurisdiction of the department, and the board may make recommendations and submit reports of its findings to the appropriate authorities." (Section 626.h)
+
+**Why:** This dataset documents the Board of Correction's exercise of its broad investigative powers, tracking cases and their outcomes.
+
+**One row represents:** A single investigation, study, or hearing initiated by the Board of Correction.
+
+**Covers:** All investigations, studies, and hearings conducted by the Board of Correction or its designees into matters within the department's jurisdiction.
+
+**Columns:**
+*   Case ID
+*   Investigation Type (e.g., General Investigation, Study, Public Hearing, Private Hearing)
+*   Initiating Board Member/Employee ID (linked to Dataset 11 or Dataset 14)
+*   Start Date
+*   End Date
+*   Subject Matter/Scope of Investigation
+*   Related Facility ID (if applicable, linked to Dataset 5)
+*   Related Individual ID (if applicable, linked to Dataset 1)
+*   Subpoenas Issued (Y/N)
+*   Number of Witnesses Examined
+*   Key Findings (summary or link to detailed report)
+*   Recommendations Made (summary or link to detailed report)
+*   Report Submission Date to Authorities
+*   Court Proceedings Initiated (Y/N)
+*   Outcome of Court Proceedings (if applicable)
+
+---
+
+**Non-Tabular Information:**
+
+The following information is mentioned in the charter but is likely not maintained in a tabular format as per the instructions:
+
+*   **Rules and Regulations:**
+    *   Board of Correction rules to govern its own proceedings (Section 626.b)
+    *   Minimum standards for care, custody, correction, treatment, supervision, and discipline (Section 626.e)
+*   **Reports and Proposals (the documents themselves):**
+    *   Proposals for capital planning and improvements (Section 626.c.3)
+    *   Studies and reports concerned with correctional program planning (Section 626.c.3)
+    *   Studies and reports in regard to promoting closer cooperation of agencies and courts (Section 626.c.3)
+    *   Annual and other reports, findings, and recommendations from the Board (Section 626.d)
+    *   Reports on issues related to the department's grievance process (Section 626.f)
+    *   Reports about death investigations (Section 626.i.2)
+    *   Statements posted on the website regarding ongoing death investigations (Section 626.i.3)
+*   **Legal Documents/Records:**
+    *   Written consent from prisoners held for trial to perform work (Section 625)
+    *   Books, records, documents, and papers of the department (Section 626.c.2, S626.g)
+    *   Records provided to the board by the department and correctional health services for death investigations (Section 626.i.4)
+*   **Meeting Minutes:**
+    *   Records of Board of Correction meetings (implied by "adopt rules to govern its own proceedings" S626.b)
+*   **Legal Directives:**
+    *   Requests or directions from Commissioner of Investigation, Attorney General, or District Attorney not to investigate a death (Section 626.i.2, S626.i.3)

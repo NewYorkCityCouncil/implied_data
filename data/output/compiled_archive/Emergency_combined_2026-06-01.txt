@@ -1,0 +1,479 @@
+**Section 1, Mission Summary:**
+
+The agency's mission is to coordinate the city's multi-agency response to all emergency conditions and potential incidents, ensuring public safety and health. Key programs include emergency response coordination, preparedness planning, training, public awareness campaigns, resource management, and specific disaster response plans for events like snow, heat, and flash floods. The agency impacts constituents by safeguarding public health and safety, enhancing community preparedness, facilitating rapid response and recovery, and providing critical information during emergencies.
+
+**Section 2, Data Summary:**
+
+1.  **Emergency Incident Log**
+2.  **Emergency Response Actions Log**
+3.  **EOC Activation Log**
+4.  **Incident Monitoring Observations**
+5.  **Emergency Plan & Protocol Inventory**
+6.  **Emergency Plan Review Sessions**
+7.  **Coordination Meetings Log**
+8.  **Emergency Facility Locations**
+9.  **Shelter Resident Tracking**
+10. **Vulnerable Population Registry**
+11. **Vulnerable Population Outreach Log**
+12. **Emergency Personnel & Volunteer Registry**
+13. **Emergency Equipment Inventory**
+14. **Emergency Supplies Inventory**
+15. **Public Awareness & Outreach Activities**
+16. **Emergency Alerts Log**
+17. **Public Feedback & Complaint Log**
+18. **Business & Non-Profit Registry**
+19. **Business & Non-Profit Impact Survey Responses**
+20. **Flash Flood Prone Locations**
+21. **Heat-Related Mortality Data**
+22. **Inter-Agency Resource Contributions**
+23. **Mayoral Recommendations Log**
+24. **Funding Applications and Awards**
+25. **Agency Contract Register**
+26. **Department Personnel Records**
+27. **Department Personnel Certifications**
+28. **Department Asset Inventory**
+29. **Department Facility Maintenance Records**
+30. **Emergency Food Delivery Program (Historical)**
+    *   Emergency Food Delivery Program Termination Record
+    *   Emergency Food Delivery Records (Historical)
+    *   Emergency Food Delivery Program Participant Records (Historical)
+    *   Emergency Food Delivery Program Vendor/Partner Records (Historical)
+
+**Section 3, Data Details:**
+
+**1. Emergency Incident Log**
+*   **Open Data Match:** Emergency Response Incidents (95% similarity)
+*   **Quotes:**
+    *   "a. coordinate the city's response to all emergency conditions and potential incidents which require a multi-agency response, including but not limited to severe weather, threats from natural hazards and natural disasters, power and other public service outages, labor unrest other than the keeping of the peace, water main breaks, transportation and transit incidents, hazardous substance discharges, building collapses, aviation disasters, explosions, acts of terrorism and such other emergency conditions and incidents which affect public health and safety;" (Section 497.a)
+    *   "g. operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+    *   "498.a. The department shall be the lead agency in the coordination and facilitation of resources in incidents involving public safety and health, including incidents which may involve acts of terrorism." (Section 498.a)
+    *   "what specific actions the office may take when the national weather service forecasts the occurrence of certain specified severe weather conditions, as determined by the office" § 30-102.a.1
+    *   "a list of all snow events during the reporting period" § 30-103.b.1
+    *   "a list of any snow-related emergency warnings or declarations issued by the city or state during the reporting period" § 30-103.b.4
+    *   "a food and water access plan to be utilized after coastal storms and other severe weather and natural disaster events" § 30-104
+    *   "a sheltering plan... as a result of coastal storms and other severe weather and natural disaster events" § 30-105
+    *   "a community recovery plan to be utilized before, during and after coastal storms and other severe weather and natural disaster events" § 30-106
+    *   "a small business and non-profit organization recovery plan to be utilized after coastal storms and other severe weather and natural disaster events" § 30-107.a.1
+    *   "a traffic management plan... to be utilized during and after coastal storms and other severe weather and natural disaster events" § 30-108
+    *   "a fuel management plan... to be utilized during and after coastal storms and other severe weather and natural disaster events" § 30-109
+    *   "a plan... for the tracking of persons in special medical needs shelters established as a result of coastal storms and other severe weather and natural disaster events" § 30-110
+    *   "an outreach and recovery plan to assist vulnerable and homebound individuals before, during and after coastal storms and other severe weather and natural disaster events" § 30-111
+    *   "Cooling center. The term “cooling center” means a building that is air-conditioned where members of the public may seek relief from heat during a heat-related emergency" § 30-116.a
+    *   "Heat-related emergency. The term “heat-related emergency” means an occurrence of high temperatures or other circumstances during which the national weather service issues a warning or alert relating to extreme heat, or during which the commissioner of health and mental hygiene determines that the level of the heat index is unsafe or unhealthy for vulnerable populations." § 30-116.a
+    *   "Flash flood. The term “flash flood” means flooding that begins within 6 hours, and often within 3 hours, of heavy rainfall." § 30-117.a
+*   **Why:** To effectively coordinate and manage emergency responses, the agency must track each incident's details and status.
+*   **One row represents:** A single emergency condition or incident requiring a multi-agency response.
+*   **Covers:** All emergency conditions and potential incidents that require multi-agency response, as defined in the charter and administrative code.
+*   **Columns:** Incident ID (PK), Incident Name/Title, Incident Type (e.g., Severe Weather, Natural Disaster, Power Outage, Water Main Break, Transportation Incident, Hazardous Substance Discharge, Building Collapse, Aviation Disaster, Explosion, Act of Terrorism, Snowfall, Coastal Storm, Heat Wave, Flash Flood, Utility Outage, Other), Incident Sub-Type, Date/Time Reported, Date/Time Incident Start, Date/Time Incident End, Geographic Location (Address, Coordinates, Borough, Zip Codes affected), Initial Severity Assessment, Current Severity Level, Status (e.g., Reported, Active, Contained, Resolved, Post-Incident Review), Lead Agency (if not EMD), Agencies Involved (list of agency IDs), Key Contact Person for Incident, Description of Incident, Impact on Public Health and Safety, Mayoral Emergency Order Issued (Yes/No), Date/Time Mayoral Order Issued, Incident Commander ID (links to Dataset 13), Incident Commander Name, Related Weather Service Forecast, Snowfall Amount (if snow event), Heat Index (if heat event), Commissioner of Health determination (if heat event), Utility Outage Duration (if applicable), Notes/Description, Date/Time Last Update.
+
+**2. Emergency Response Actions Log**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "what specific actions the office may take when the national weather service forecasts the occurrence of certain specified severe weather conditions" § 30-102.a.1
+    *   "whether and at what level to activate emergency support functions" § 30-102.a.2
+    *   "the circumstances under which the office would call upon the state emergency management office or other jurisdictions for assistance, or request mutual aid assistance from the state or other jurisdictions" § 30-102.a.3
+    *   "the actions taken by the office pursuant to the protocols" § 30-102.b
+    *   "actions taken pursuant to each such warning or declaration" § 30-103.b.4
+*   **Why:** Tracks the operational response to emergencies, crucial for performance assessment and reporting.
+*   **One row represents:** A specific action taken in response to an emergency.
+*   **Covers:** All actions taken by OEM or coordinated with other agencies during an emergency event.
+*   **Columns:** Action ID (PK), Incident ID (FK to Dataset 1), Action Date/Time, Action Description, Responsible Agency/Department, Emergency Support Function (ESF) Activated (if applicable), Mutual Aid Requested (Y/N), Mutual Aid Provider (if applicable), Outcome/Status, Notes.
+
+**3. EOC Activation Log**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "g. operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+*   **Why:** To track the operational status and resource deployment of the Emergency Operations Center during incidents.
+*   **One row represents:** A single activation period of the Emergency Operations Center (EOC).
+*   **Covers:** All activations of the Emergency Operations Center for emergency conditions or potential incidents.
+*   **Columns:** EOC Activation ID (PK), Incident ID (FK to Dataset 1), Activation Start Date/Time, Activation End Date/Time, Activation Level (e.g., Level 1 - Full, Level 2 - Partial, Monitoring), EOC Manager ID (FK to Dataset 13), EOC Manager Name, Number of Personnel Deployed to EOC, Key Decisions Made During Activation, Resources Managed/Coordinated (summary or link to resource log), Status (e.g., Active, Deactivated, Standby), Date/Time Last Update.
+
+**4. Incident Monitoring Observations**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "b. monitor on a constant basis all potential emergency conditions and potential incidents which may require a multi-agency response;" (Section 497.b)
+*   **Why:** To systematically record and assess potential threats and conditions that could escalate into emergencies.
+*   **One row represents:** A single observation or alert regarding a potential emergency condition or incident.
+*   **Covers:** All monitored potential emergency conditions and incidents that may require a multi-agency response.
+*   **Columns:** Observation ID (PK), Date/Time of Observation, Source of Information (e.g., Weather Service, Public Report, Intelligence, Sensor), Potential Incident Type (e.g., Severe Weather, Infrastructure Threat, Public Health Concern), Geographic Area of Concern, Initial Assessment of Threat Level (e.g., Low, Medium, High), Description of Observation, Actions Taken (e.g., Internal Alert, Agency Notification, Further Investigation), Escalation Status (e.g., Monitored, Elevated, Incident Declared), Incident ID (FK to Dataset 1, if escalated to an incident), Observer ID (FK to Dataset 13), Observer Name, Date/Time Last Update.
+
+**5. Emergency Plan & Protocol Inventory**
+*   **Open Data Match:** Hazard Mitigation Plan - Mitigation Actions Database (Maybe, 40% similarity - this is more about the plan itself, not actions)
+*   **Quotes:**
+    *   "d. prepare plans for responding to emergency conditions and potential incidents, including but not limited to plans for the implementation of such emergency orders as may be approved by the mayor to protect public safety and facilitate the rapid response and mobilization of agencies and resources;" (Section 497.d)
+    *   "j. coordinate with all city agencies to ensure that all such agencies develop, implement and periodically review citywide emergency plans;" (Section 497.j)
+    *   "498.b. No later than two years after the effective date of the local law that created this subdivision, and every two years thereafter, the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (Section 498.b)
+    *   "498.c. Following each review conducted pursuant to subdivision b of this section, the department shall publish on its website a list of citywide emergency plans coordinated by the department and a summary of each such plan, including but not limited to information on the roles and responsibilities of relevant agencies and other partners." (Section 498.c)
+    *   "The commissioner shall develop protocols" § 30-102.a
+    *   "The commissioner shall develop or update... a food and water access plan" § 30-104
+    *   "The commissioner... shall develop or update a sheltering plan" § 30-105
+    *   "The commissioner shall develop or update... a community recovery plan" § 30-106
+    *   "The commissioner... shall develop or update... a small business and non-profit organization recovery plan" § 30-107.a.1
+    *   "The commissioner shall develop or update... a traffic management plan" § 30-108
+    *   "The commissioner shall develop or update... a fuel management plan" § 30-109
+    *   "The commissioner... shall develop or update a plan... for the tracking of persons in special medical needs shelters" § 30-110
+    *   "The commissioner... shall develop or update... an outreach and recovery plan to assist vulnerable and homebound individuals" § 30-111
+    *   "The commissioner shall provide to the city council a copy of any plan prepared by the New York city office of emergency management... The commissioner shall also provide the city council with updated versions of such plans within sixty days of plan revisions." § 30-112.a
+    *   "The commissioner shall assess any plan referenced in subdivision a of this section whenever such plan is activated. Such assessment shall consider the reports and recommendations issued by any task force or commission following such activation. The commissioner shall report to the city council any subsequent changes to such plan and provide a copy of such updated plan to the city council, no later than sixty days after such assessment is completed. The commissioner shall also assess any such plan at least once every two years, whether or not such plan has been activated, and shall report to the city council any subsequent changes to such plan and provide a copy of such updated plan to the city council no later than sixty days after such assessment is completed." § 30-112.b
+    *   "The commissioner... shall submit to the speaker of the council and make available to the public on the city’s website a plan describing how the city will provide individuals with information on the dangers of heat exposure, access to cooling... The commissioner shall update such plan by no later than May 15 of each year." § 30-116.d
+*   **Why:** To maintain a comprehensive, up-to-date record of all citywide emergency plans and their key attributes, including their assessment and revision history.
+*   **One row represents:** A single citywide emergency plan or protocol.
+*   **Covers:** All citywide emergency plans and protocols coordinated, developed, or updated by the department, including those prepared by the department and those developed by other agencies.
+*   **Columns:** Plan ID (PK), Plan Title, Plan Version, Plan/Protocol Type (e.g., "Weather Emergency Protocol," "Sheltering Plan," "Food & Water Plan," "Cooling Plan"), Date Created, Date Last Updated, Date Last Reviewed (FK to Dataset 6), Next Review Due Date, Responsible Department/Agency, Scope of Plan (e.g., Citywide, Borough-specific, Hazard-specific), Hazard(s) Covered (e.g., Severe Weather, Terrorism, Public Health), Key Objectives, Status (e.g., Active, Draft, Archived), Publicly Available (Yes/No), Summary Published (Yes/No), Mayor's Determination for Non-Publication (if applicable), Relevant Agencies/Partners Involved (list of agency IDs), Assessment ID (FK to Dataset 5, for latest assessment), Assessment Date, Assessment Trigger (e.g., "Activated," "Biennial Review," "Scheduled Update"), Key Findings/Recommendations, Changes Made (Y/N), Date of Revision, Report Submitted to Council (Y/N), Date Report Submitted, Date/Time Last Update.
+
+**6. Emergency Plan Review Sessions**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "j. coordinate with all city agencies to ensure that all such agencies develop, implement and periodically review citywide emergency plans;" (Section 497.j)
+    *   "498.b. No later than two years after the effective date of the local law that created this subdivision, and every two years thereafter, the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (Section 498.b)
+    *   "498.c. Following each review conducted pursuant to subdivision b of this section, the department shall publish on its website a list of citywide emergency plans coordinated by the department and a summary of each such plan, including but not limited to information on the roles and responsibilities of relevant agencies and other partners." (Section 498.c)
+*   **Why:** To track the mandatory biennial review sessions for citywide emergency plans, ensuring compliance and plan currency.
+*   **One row represents:** A single session where citywide emergency plans are reviewed.
+*   **Covers:** All biennial review sessions for citywide emergency plans coordinated by the department.
+*   **Columns:** Review Session ID (PK), Date of Review Session, Lead Coordinator ID (FK to Dataset 13), Lead Coordinator Name, Plans Reviewed (list of Plan IDs, FK to Dataset 5), Participating Agencies (list of agency IDs), Key Outcomes/Recommendations from Review, Action Items Generated, Date Action Items Due, Status of Action Items, Date/Time Last Update.
+
+**7. Coordination Meetings Log**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "h. hold regular and frequent meetings of designated emergency response personnel of all city agencies that are determined by the commissioner to have a direct or support role in the city's management of emergency conditions and potential incidents which may require a multi-agency response;" (Section 497.h)
+    *   "k. coordinate with state, federal and other governmental bodies to effectuate the purposes of the department;" (Section 497.k)
+    *   "l. coordinate the operation of the local emergency planning committee established pursuant to Title III of the federal Superfund Amendments and Reauthorization Act;" (Section 497.l)
+    *   "identifying what other agencies or offices of city, state or federal government shall be contacted or consulted" § 30-102.a.1
+    *   "inter-agency communications" § 30-102.a.2
+    *   "a list of all city and state agencies or offices and private entities that acted on behalf of the city that were involved in snow event preparation and response" § 30-103.b.2
+    *   "an assessment of interagency coordination" § 30-103.b.3
+    *   "In consultation with appropriate federal, state, and city government agencies" § 30-104
+    *   "in consultation with relevant federal, state and local agencies" § 30-105
+    *   "the office, along with relevant agencies and other partners" § 30-106
+    *   "in consultation with the commissioner of small business services and other government or private organizations having expertise" § 30-107.a.1
+    *   "in consultation with other city agencies and relevant governmental entities" § 30-108
+    *   "in consultation with other city agencies and other relevant governmental entities" § 30-109
+    *   "the establishment and maintenance of lines of communication between the city and the industries that provide fuel to the city of New York" § 30-109.c
+    *   "in consultation with relevant federal, state and local agencies" § 30-110
+    *   "in consultation with relevant federal, state and local agencies" § 30-111
+    *   "Coordinating with relevant agencies including the department of buildings, the department of housing preservation and development, and the fire department" § 30-113.a
+    *   "in consultation with the department of city planning" § 30-114.f
+    *   "in consultation with the department of city planning" § 30-115.a
+    *   "in consultation with the commissioner of health and mental hygiene" § 30-116.b
+    *   "in consultation with the commissioner of health and mental hygiene, the director of long-term planning and sustainability, and any other office or agency the commissioner deems relevant" § 30-116.d
+    *   "coordinate efforts across agencies to increase public awareness regarding the appropriate responses by members of the public to flash flood risks" § 30-117.c
+*   **Why:** To document all coordination meetings and communications with city, state, federal, and other governmental bodies, including the LEPC.
+*   **One row represents:** A single coordination meeting or instance of inter-agency communication.
+*   **Covers:** All regular and frequent meetings with city agencies, state/federal/other governmental bodies, and the Local Emergency Planning Committee, as well as formal and informal communications related to emergency planning and response.
+*   **Columns:** Meeting ID (PK), Meeting Date, Meeting Time, Meeting Type (e.g., Inter-Agency, State/Federal, LEPC, Other Governmental, Consultation), Meeting Title/Purpose, Host Department/Agency, Chair/Facilitator ID (FK to Dataset 13), Chair/Facilitator Name, Attendees (list of attendee names and affiliations), Key Discussion Points, Decisions Made, Action Items Generated, Date Action Items Due, Status of Action Items, Associated Incident ID (FK to Dataset 1, if applicable), Initiating Agency, Contacted Agency/Entity, Contact Person (if known), Outcome/Decision, Date/Time Last Update.
+
+**8. Emergency Facility Locations**
+*   **Open Data Match:** Hurricane Evacuation Centers (90% similarity), Hurricane Evacuation Centers (Map) (90% similarity)
+*   **Quotes:**
+    *   "criteria for how food and water distribution points are identified and how such distribution points will be publicized" § 30-104.d
+    *   "a description of the types of evacuation centers and shelters, number and location of evacuation centers, how persons are transferred from an evacuation center to a shelter, and a mechanism to identify locations to be used as shelters, including shelters that are adequate for habitability for long-term stays" § 30-105.a
+    *   "the establishment of field recovery offices in or near affected communities as soon as practicable after such events take place" § 30-106.e
+    *   "identify any local evacuation zones, evacuation centers or other such geographic information relevant to an evacuation" § 30-114.b
+    *   "the commissioner... shall designate cooling centers when there is a heat-related emergency in the city" § 30-116.b
+    *   "a list of potential locations of cooling centers by street address, cross streets, and ZIP code" § 30-116.d.4.c
+    *   "existing public or private facilities suitable for individuals seeking refuge in anticipation of a flash flood event" § 30-117.b.iii
+*   **Why:** Critical for managing and publicizing locations for public services during emergencies.
+*   **One row represents:** A single emergency facility location.
+*   **Covers:** All designated or potential evacuation centers, shelters (general and special medical needs), food/water distribution points, field recovery offices, and cooling centers.
+*   **Columns:** Facility ID (PK), Facility Name, Facility Type (e.g., "Evacuation Center," "General Shelter," "Special Medical Needs Shelter," "Food/Water Distribution Point," "Field Recovery Office," "Cooling Center"), Address, Zip Code, Borough, Latitude, Longitude, Owner/Operator (City, Private, Non-Profit), Capacity, Accessibility Features (e.g., ADA compliant), Available Services (e.g., restrooms, drinking water, showers, laundry), Staffing Needs, Status (e.g., "Active," "Standby," "Closed"), Last Inspection Date, Notes.
+
+**9. Shelter Resident Tracking**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "a mechanism for tracking the daily census at each shelter, including the number of persons with special medical needs, the number of persons who enter and exit each day, and to the extent practicable, a general description of the locations to which such persons exited" § 30-105.h
+    *   "a mechanism to track the medical needs of persons at shelters who request assistance in meeting such needs, including but not limited to needed medications and placement in the proper type of shelter" § 30-105.i
+    *   "a mechanism to advise persons who receive federal, state or city public assistance benefits of how to avoid disruption of such benefits due to an inability to meet program requirements as a result of their stay in such shelter" § 30-105.j
+    *   "a mechanism to adequately track persons who enter or exit a special medical needs shelter" § 30-110.a
+    *   "a mechanism for the dissemination of bracelets or other wearable identification devices to be used on a voluntary basis by any person entering a special medical needs shelter... which shall include to the extent permitted by state and federal law such person's name, address, emergency contact information, and information provided regarding the medical needs of such person, or an identification number or other identifier that will enable the shelter operator to locate such information" § 30-110.b
+    *   "a mechanism to track the medical needs of any person using a special medical needs shelter" § 30-110.c
+    *   "a mechanism for enabling persons who use special medical needs shelters and who do not object to disclosure of their location to be contacted by their family members and guardians" § 30-110.d
+*   **Why:** Legally required for managing shelter populations, ensuring safety, and addressing individual needs.
+*   **One row represents:** A single entry or exit event for a person at a shelter.
+*   **Covers:** All individuals utilizing general and special medical needs shelters.
+*   **Columns:** Tracking ID (PK), Facility ID (FK to Dataset 8), Incident ID (FK to Dataset 1), Person ID (unique identifier, potentially anonymized), Entry Date/Time, Exit Date/Time, Exit Destination (general description), Special Medical Needs (Y/N), Medical Needs Description (e.g., needed medications), Disability Status (Y/N), Public Assistance Recipient (Y/N), Wearable ID Provided (Y/N), Wearable ID Number, Emergency Contact Name, Emergency Contact Phone, Consent to Share Location (Y/N), Notes.
+
+**10. Vulnerable Population Registry**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "a description of how the office will identify, conduct outreach to, communicate with, and otherwise assist vulnerable and homebound individuals" § 30-111.a
+    *   "the development of a mechanism for utilizing lists of homebound and vulnerable individuals, to the extent consistent with applicable confidentiality requirements, which shall include: (1) the use of existing lists of such individuals maintained by community based organizations, service providers and relevant agencies... (2) the office's Advance Warning System or successor system; and (3) a process whereby vulnerable and homebound individuals receive information about how to request that they be included in such existing lists or system" § 30-111.b
+    *   "Vulnerable population. The term “vulnerable population” means any group of persons at a greater risk of harm from a heat-related emergency than a person in the general population" § 30-116.a
+*   **Why:** Crucial for targeted outreach and assistance to at-risk populations.
+*   **One row represents:** A single vulnerable or homebound individual.
+*   **Covers:** Individuals identified as vulnerable or homebound through various sources (existing lists, self-registration, Advance Warning System).
+*   **Columns:** Person ID (PK), Name, Contact Information (phone, email, address), Vulnerability Type (e.g., "Homebound," "Medical Needs," "Elderly"), Source of Identification (e.g., "DFTA List," "DOHMH List," "Self-Registered," "AWS"), Registration Date, Opt-in for Communications (Y/N), Language Preference, Emergency Contact Information, Notes on specific needs.
+
+**11. Vulnerable Population Outreach Log**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "a description of how the office will identify, conduct outreach to, communicate with, and otherwise assist vulnerable and homebound individuals before, during and after the impact of such events" § 30-111.a
+    *   "the creation of a Door-to-Door Task Force that will be responsible for developing and implementing a strategy to locate and assist vulnerable and homebound individuals, provide such individuals with information, and assist with any recovery efforts that take place after such events, including the delivery of necessary supplies and services" § 30-111.d
+    *   "a description of how information, supplies, services, and transportation will be made available to such individuals to facilitate the relocation of such individuals if necessary" § 30-111.e
+*   **Why:** Documents efforts to reach and assist vulnerable populations, essential for accountability and effectiveness assessment.
+*   **One row represents:** A single outreach attempt or interaction with a vulnerable individual.
+*   **Covers:** All outreach activities, including Door-to-Door Task Force efforts, to vulnerable and homebound individuals.
+*   **Columns:** Outreach ID (PK), Incident ID (FK to Dataset 1), Person ID (FK to Dataset 10), Date/Time of Outreach, Outreach Method (e.g., "Door-to-Door Visit," "Phone Call," "Email," "Supply Delivery"), Outreach Personnel ID (FK to Dataset 21), Outcome of Outreach (e.g., "Contact Made," "No Contact," "Assistance Provided," "Information Shared"), Supplies/Services Provided, Follow-up Needed (Y/N), Notes.
+
+**12. Emergency Personnel & Volunteer Registry**
+*   **Open Data Match:** Community Emergency Response Team (CERT) (80% similarity), Partners in Preparedness (80% similarity)
+*   **Quotes:**
+    *   "the number of individuals who registered with the city to work during any snow event, and assessment on how such individuals were deployed and overseen by city agencies or offices and strategies, contracts or agreements used to ensure that such individuals were available to the city" § 30-103.c.3
+    *   "a description of shelter staffing and management, including but not limited to an explanation of how key shelter staff positions such as shelter managers and clinical staff will be determined and how shelters will be adequately staffed with trained medical personnel to the extent necessary for each such shelter's needs" § 30-105.b
+    *   "a mechanism for clearly identifying to residents, volunteers and other staff at each shelter the individuals filling key staff positions at such shelter" § 30-105.c
+    *   "the establishment of community recovery directors and deputy recovery directors or other such similar positions for each of the five boroughs" § 30-106.a
+    *   "a description of the basic duties and responsibilities of such directors, deputies or other such similar positions including... how such director, deputies or other such similar positions will work with community based organizations, service providers and volunteers in recovery assistance operations" § 30-106.a.2
+    *   "ways to leverage the participation of community based organizations, service providers, and volunteers" § 30-106.b
+*   **Why:** Manages human resources for emergency response and recovery, including volunteers and specialized staff.
+*   **One row represents:** A single individual registered or designated for emergency work.
+*   **Covers:** City employees designated for emergency roles (external to EMD), registered volunteers, and temporary staff hired for emergency events.
+*   **Columns:** Person ID (PK), Name, Contact Information, Affiliation (e.g., "City Employee," "Volunteer," "Contractor"), Primary Role/Skill (e.g., "Shelter Manager," "Medical Personnel," "Snow Removal," "Community Recovery Director"), Availability Status, Training/Certification Records, Deployment History (FK to Dataset 1), Notes.
+
+**13. Emergency Equipment Inventory**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "an inventory of all city-owned snow management equipment and resources that were used during any snow event" § 30-103.c.1
+    *   "an inventory of privately-owned snow management equipment and resources used by the city during any snow event" § 30-103.c.2
+    *   "the installation of back-up power capability, including but not limited to the consideration of the effectiveness of installing solar power and other alternative energy sources with respect to street lights and traffic control signals to keep the roadway network functioning to the maximum possible extent during power outages" § 30-108.a
+*   **Why:** Necessary for resource allocation, tracking deployment, and reporting on preparedness.
+*   **One row represents:** A single piece of emergency equipment.
+*   **Covers:** All city-owned and privately-owned equipment and resources used for emergency management (e.g., snow plows, generators, communication devices, traffic control equipment).
+*   **Columns:** Equipment ID (PK), Equipment Type (e.g., "Snow Plow," "Generator," "Satellite Phone," "Traffic Signal Battery Backup"), Description, Make/Model, Ownership Type (City-owned, Private Contractor), Current Location, Status (e.g., "Available," "Deployed," "Maintenance"), Last Maintenance Date, Acquisition Date, Condition, Notes.
+
+**14. Emergency Supplies Inventory**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "a reassessment of the emergency shelter supply stockpile at least annually, as well as immediately before and after such plan is activated, to determine whether appropriate supplies are available and adequate" § 30-105.f
+    *   "a mechanism to provide that there is adequate food and water at every shelter" § 30-105.e
+    *   "the criteria for determining the amount of fuel reserves in the city of New York that should be maintained and for what priority purposes" § 30-109.b
+*   **Why:** Ensures adequate supplies are available for shelter operations and other emergency needs.
+*   **One row represents:** A specific type of emergency supply item.
+*   **Covers:** All items in the emergency shelter supply stockpile, food, water, and fuel reserves.
+*   **Columns:** Supply Item ID (PK), Item Name, Category (e.g., "Food," "Water," "Medical," "Hygiene," "Fuel"), Unit of Measure, Quantity in Stock, Minimum Stock Level, Reorder Point, Expiration Date (if applicable), Storage Location, Last Inventory Date, Last Reassessment Date, Notes.
+
+**15. Public Awareness & Outreach Activities**
+*   **Open Data Match:** Ready NY Events (Maybe, 60% similarity - Ready NY Events could be a subset of this)
+*   **Quotes:**
+    *   "f. increase public awareness as to the appropriate responses by members of the public to emergency conditions and potential incidents, and review the city's systems for disseminating information to the public;" (Section 497.f)
+    *   "The commissioner shall develop and disseminate localized emergency preparedness materials for communities" § 30-114
+    *   "The office... shall conduct a public education and outreach campaign on heat-related emergencies and strategies for preventing health risks" § 30-116.e
+    *   "The office shall provide an owner or operator of a building designated as a cooling center with a flyer or other written notice stating that such building is a cooling center and direct or request the owner or operator to post such flyer or notice" § 30-116.f
+    *   "The commissioner shall establish an outreach program to increase registration for Notify NYC alerts and to coordinate efforts across agencies to increase public awareness regarding the appropriate responses by members of the public to flash flood risks, including evacuation planning... Such program shall include the distribution of emergency preparedness materials and information in-person, and distribution through mass mail, guidance for building and property owners, and any other means the commissioner deems appropriate for locations prone to flash floods" § 30-117.c
+    *   "the office shall include in their annual report the details of the outreach program established by subdivision c, including the locations selected for outreach" § 30-117.e
+*   **Why:** To record and evaluate efforts to increase public awareness regarding appropriate responses to emergency conditions and document mandated outreach programs.
+*   **One row represents:** A single public awareness activity or outreach event.
+*   **Covers:** All activities undertaken to increase public awareness regarding emergency conditions and appropriate responses, including localized preparedness material distribution, heat-related emergency public education campaigns, flash flood preparedness outreach, and Notify NYC registration drives.
+*   **Columns:** Activity ID (PK), Activity Name/Campaign Title, Activity Type (e.g., Public Service Announcement, Workshop, Online Campaign, Brochure Distribution, In-person, Mass Mail), Start Date, End Date, Target Audience, Channels Used (e.g., TV, Radio, Social Media, Website, Community Events), Key Messages, Estimated Reach, Materials Developed (e.g., PSA script, brochure title), Review of Dissemination System (Yes/No, if applicable), Outcome/Effectiveness Assessment, Incident ID (FK to Dataset 1, if event-specific), Program Name (e.g., "Localized Preparedness," "Heat Education," "Flash Flood Outreach," "Notify NYC Registration"), Date/Time, Location/Target Area (e.g., Zip Code, Neighborhood), Materials Distributed (Y/N), Material Type, Languages Used, Number of People Reached (estimate), Partner Agencies Involved, Notes, Date/Time Last Update.
+
+**16. Emergency Alerts Log**
+*   **Open Data Match:** NYCEM Emergency Notifications (95% similarity)
+*   **Quotes:**
+    *   "Any emergency alert originated by a city office or city agency that is issued through a commercial mobile service alert system established pursuant to 47 U.S.C. § 1201 shall, to the extent practicable and to the extent permissible under regulations enacted pursuant to such section, be issued in no fewer than the two most commonly spoken languages within the area covered by the emergency alert" § 30-115.a
+    *   "Any emergency notification system operated and controlled by the office of emergency management for the purposes of aggregating information obtained from other offices or agencies to inform the public about emergencies or disruptive events through e-mail, text, phone, social media platform, or internet-based feed shall offer each notification in no fewer than the seven most commonly spoken languages within the city" § 30-115.b
+*   **Why:** Mandated tracking of emergency alerts, including language compliance.
+*   **One row represents:** A single emergency alert issued.
+*   **Covers:** Alerts issued via commercial mobile service alert systems and OEM's multi-channel notification system.
+*   **Columns:** Alert ID (PK), Incident ID (FK to Dataset 1), Date/Time Issued, Alert System (e.g., "CMAS," "Notify NYC"), Message Content, Geographic Area Covered, Languages Issued In, Exigent Circumstances (if language requirement waived), Number of Recipients (if available), Notes.
+
+**17. Public Feedback & Complaint Log**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "498.d. The department shall establish procedures through which members of the public can submit public comments on emergency planning." (Section 498.d)
+    *   "information about how to submit feedback about a cooling center, including any obstacles to accessing such cooling center" § 30-116.e
+    *   "Such flyer or other written notice shall... include information about how to submit feedback about a cooling center, including any obstacles to accessing such cooling center" § 30-116.f
+*   **Why:** Collects public input for continuous improvement of emergency services and planning.
+*   **One row represents:** A single public comment submission or piece of feedback/complaint.
+*   **Covers:** All public comments submitted by members of the public on emergency planning, and feedback/complaints related to emergency services or facilities.
+*   **Columns:** Comment ID (PK), Date/Time Received, Commenter Name (if provided), Commenter Contact Information (e.g., Email, Phone, Address - if provided), Subject of Comment (e.g., Specific Plan, General Planning Process, Cooling Center, Shelter), Associated Emergency Plan ID (FK to Dataset 5, if applicable), Related Service/Facility (e.g., "Cooling Center," "Shelter"), Facility ID (FK to Dataset 8, if applicable), Content of Comment, Obstacles Reported, Departmental Reviewer ID (FK to Dataset 13), Departmental Reviewer Name, Date of Review, Departmental Response/Action Taken, Date/Time Last Update.
+
+**18. Business & Non-Profit Registry**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "the establishment of a voluntary database of small businesses and non-profit organizations, including but not limited to utilizing any existing database of small businesses and non-profit organizations maintained by the department of small business services, to provide that such businesses and organizations receive alerts regarding such events, recovery assistance, and other relevant information and to conduct outreach with such small businesses and non-profit organizations to encourage their registration in such database" § 30-107.a.3.ii
+*   **Why:** Facilitates targeted communication and recovery assistance for affected businesses and non-profits.
+*   **One row represents:** A single small business or non-profit organization.
+*   **Covers:** Organizations that voluntarily register with the city for emergency alerts and recovery assistance.
+*   **Columns:** Organization ID (PK), Organization Name, Business Type/Non-Profit Category, Address, Contact Person, Contact Information (phone, email), Registration Date, Opt-in for Alerts (Y/N), Language Preference, Notes on critical resources/needs.
+
+**19. Business & Non-Profit Impact Survey Responses**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "conducting a survey of small business owners and non-profit organizations after such events to identify resources necessary for recovery, which shall include but not be limited to an assessment of small businesses such as whether a business is open, closed or partially in operation, damage to business facilities, lost revenues, the number of employees affected and whether there is a plan for employees to return to such business if such employees are unable to work, whether additional workers are needed or hired to assist with recovery efforts, a description of the type of assistance necessary for recovery, the type and amount of insurance that such business has, and whether such business has filed insurance claims and the status of such claims" § 30-107.a.3.iii
+*   **Why:** Gathers critical data for assessing economic impact and tailoring recovery efforts.
+*   **One row represents:** A single survey response from a business or non-profit for a specific event.
+*   **Covers:** Survey data collected from small businesses and non-profits after emergency events.
+*   **Columns:** Survey Response ID (PK), Organization ID (FK to Dataset 18), Incident ID (FK to Dataset 1), Survey Date, Business Status (Open, Closed, Partially Operational), Damage to Facilities (Y/N), Estimated Damage Cost, Lost Revenues, Number of Employees Affected, Employee Return Plan (Y/N), Additional Workers Needed (Y/N), Type of Assistance Necessary, Insurance Type, Insurance Amount, Insurance Claim Filed (Y/N), Insurance Claim Status, Notes.
+
+**20. Flash Flood Prone Locations**
+*   **Open Data Match:** Hurricane Inundation by Evacuation Zone (Maybe, 50% similarity - this is more specific to flash floods and prevalence of dwellings)
+*   **Quotes:**
+    *   "The program established by subdivision c of this section shall target locations based on but not limited to the following factors: 1. A history of flash flood events; or 2. The prevalence of basement or cellar dwellings, to the extent such information is available." § 30-117.d
+*   **Why:** Essential for targeted outreach and evacuation guidance for flash flood preparedness.
+*   **One row represents:** A single location identified as prone to flash floods.
+*   **Covers:** Specific addresses, blocks, or neighborhoods identified as having a history of flash floods or a high prevalence of cellar/basement dwellings.
+*   **Columns:** Location ID (PK), Address/Area Description, Zip Code, Borough, History of Flash Flood Events (Y/N), Number of Past Events, Prevalence of Cellar/Basement Dwellings (e.g., "High," "Medium," "Low"), Flood Zone Designation, Evacuation Zone Designation, Date Identified, Notes.
+
+**21. Heat-Related Mortality Data**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "an evaluation of the measures taken to reduce the impact of heat-related emergencies and the number of heat-related deaths during the previous summer seasons and a description of the measures the commissioner and the commissioner of health and mental hygiene will take to further reduce the impact of heat-related emergencies and the number of heat-related deaths in the upcoming summer season" § 30-116.d.8
+*   **Why:** Required for reporting on the impact of heat-related emergencies and evaluating mitigation efforts.
+*   **One row represents:** A single heat-related death.
+*   **Covers:** Heat-related deaths within the city, likely provided by DOHMH but tracked by OEM for reporting.
+*   **Columns:** Death ID (PK), Date of Death, Age, Gender, Location (Borough/Zip Code), Contributing Factors (e.g., "No AC," "Pre-existing Condition"), Incident ID (FK to Dataset 1, if during an emergency), Notes.
+
+**22. Inter-Agency Resource Contributions**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "498.a. All agencies shall provide the department promptly with all information relevant to the performance of the emergency management functions and shall collect and make available any information requested by the department for use in emergency planning. All agencies further shall promptly provide the department with all appropriate material, equipment and resources needed for emergency management functions, including personnel." (Section 498.a)
+*   **Why:** To track the provision of information, material, equipment, and personnel from other agencies to support emergency management functions.
+*   **One row represents:** A single instance of a resource (information, material, equipment, or personnel) being provided by another agency.
+*   **Covers:** All information, material, equipment, and personnel provided by other agencies to the department for emergency management functions.
+*   **Columns:** Contribution ID (PK), Date/Time of Contribution, Contributing Agency ID, Resource Type (e.g., Information, Material, Equipment, Personnel), Resource Description (e.g., specific data, type of material, model of equipment, personnel role), Quantity/Duration (e.g., number of units, hours of personnel support), Purpose of Contribution (e.g., Emergency Planning, Incident Response), Associated Incident ID (FK to Dataset 1, if applicable), Associated Emergency Plan ID (FK to Dataset 5, if applicable), Status (e.g., Provided, Returned, Consumed), Date/Time Last Update.
+
+**23. Mayoral Recommendations Log**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "e. make recommendations to the mayor concerning the city's emergency response capabilities and concerning the city's capacity to address potential emergency conditions and potential incidents;" (Section 497.e)
+*   **Why:** To track all formal recommendations made to the Mayor regarding emergency response capabilities and capacity.
+*   **One row represents:** A single recommendation submitted to the Mayor.
+*   **Covers:** All recommendations made by the commissioner to the mayor concerning the city's emergency response capabilities and capacity.
+*   **Columns:** Recommendation ID (PK), Date Submitted, Subject of Recommendation, Description of Recommendation, Rationale/Supporting Information, Recommended Action(s), Mayor's Response (e.g., Approved, Denied, Under Review, Modified), Date of Mayor's Response, Implementation Status, Date/Time Last Update.
+
+**24. Funding Applications and Awards**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "i. acquire federal and other funding for emergency management, including but not limited to disaster relief, and civil defense, and assist other agencies in obtaining such funding;" (Section 497.i)
+*   **Why:** To manage and track all applications for federal and other funding, as well as the awards received.
+*   **One row represents:** A single funding application or award.
+*   **Covers:** All federal and other funding applications submitted by the department, and awards received, including assistance to other agencies.
+*   **Columns:** Funding Record ID (PK), Application Date, Funding Source (e.g., FEMA, State Grant, Private Foundation), Grant/Program Name, Application Status (e.g., Submitted, Pending, Approved, Denied), Award Date (if approved), Award Amount, Purpose of Funding (e.g., Disaster Relief, Civil Defense, Equipment, Training), Departmental Use (Yes/No), Assisted Agency ID (if assisting another agency), Project ID (if linked to a specific project), Reporting Requirements, Date/Time Last Update.
+
+**25. Agency Contract Register**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+    *   "strategies, contracts or agreements used to ensure that such snow management equipment and resources were available to the city" § 30-103.c.2
+    *   "strategies, contracts or agreements used to ensure that such individuals were available to the city" § 30-103.c.3
+    *   "identification of contracts, if any, that can be activated during and immediately after such events for vendors that can provide and distribute food and water, including but not limited to, hot food providers, trucks and drivers" § 30-104.f
+*   **Why:** To manage all contracts for services, software, equipment, and other agreements necessary for the department's operations and emergency response.
+*   **One row represents:** A single contract or agreement entered into by the department or for emergency services.
+*   **Covers:** All contracts for services, software, equipment, and other operational needs of the department, including contracts for snow management equipment, temporary staff, food/water provision, transportation, and other emergency-related services.
+*   **Columns:** Contract ID (PK), Contract Title/Description, Vendor Name, Vendor Contact Info, Contract Type (e.g., Software License, Service Agreement, Equipment Purchase, Consulting, Snow Management, Food/Water Provision), Start Date, End Date, Contract Value, Payment Terms, Renewal Option (Yes/No), Next Renewal Date, Contract Manager ID (FK to Dataset 13), Contract Status (e.g., Active, Expired, Under Negotiation), Service/Resource Provided, Activation Criteria, Performance Metrics, Notes, Date/Time Last Update.
+
+**26. Department Personnel Records**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "Section 496. Deputies. The commissioner shall have the power to appoint and, at pleasure, remove deputies, one to be known as first deputy commissioner. During the absence or disability of the commissioner, the first deputy commissioner, or if the first deputy commissioner shall be absent or under disability, the deputy commissioner designated by the commissioner, shall possess all the powers and perform all the duties of the commissioner, except the power of making appointments and transfers." (Section 496)
+    *   "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+*   **Why:** To manage all departmental staff, including appointments, roles, and administrative details, essential for agency operations.
+*   **One row represents:** A single employee of the department.
+*   **Covers:** All employees of the Emergency Management Department, including the commissioner and deputies.
+*   **Columns:** Employee ID (PK), First Name, Last Name, Job Title, Department/Division, Date of Appointment, Date of Removal (if applicable), Employment Status (e.g., Active, Leave, Terminated), Is Deputy Commissioner (Yes/No), Is First Deputy Commissioner (Yes/No), Contact Information (Email, Phone), Manager ID (FK to Dataset 26), Required Certifications (list of Certification IDs, FK to Dataset 27), Date/Time Last Update.
+
+**27. Department Personnel Certifications**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+    *   *Implied operational need:* "ensuring specialists are up to date on required certifications" (from prompt's general context)
+*   **Why:** To track all required and obtained certifications for departmental personnel, ensuring compliance and readiness.
+*   **One row represents:** A single certification held by a department employee.
+*   **Covers:** All certifications relevant to the roles and responsibilities of the department's personnel.
+*   **Columns:** Certification Record ID (PK), Employee ID (FK to Dataset 26), Certification Name, Issuing Body, Date Issued, Expiration Date, Status (e.g., Active, Expired, In Progress), Required for Role (Yes/No), Date/Time Last Update.
+
+**28. Department Asset Inventory**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+    *   *Implied operational need:* "computers they maintain, or MRI machines and their status, etc." (from prompt's general context)
+*   **Why:** To manage and track all physical assets and equipment owned or maintained by the department for operational use.
+*   **One row represents:** A single physical asset or piece of equipment.
+*   **Covers:** All physical assets and equipment, including IT equipment, vehicles, communication devices, and specialized emergency response gear.
+*   **Columns:** Asset ID (PK), Asset Name/Description, Asset Type (e.g., Vehicle, Computer, Radio, Generator, Furniture), Manufacturer, Model Number, Serial Number, Acquisition Date, Acquisition Cost, Current Location (e.g., EOC, Warehouse, Vehicle), Condition (e.g., New, Good, Fair, Needs Repair), Status (e.g., In Use, Stored, Out for Repair, Retired), Last Maintenance Date (FK to Dataset 29), Next Scheduled Maintenance Date, Responsible Employee ID (FK to Dataset 26), Date/Time Last Update.
+
+**29. Department Facility Maintenance Records**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+    *   "g. operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+    *   *Implied operational need:* "Building repair" (from prompt's general context)
+*   **Why:** To track all maintenance activities for departmental facilities, ensuring operational readiness of critical infrastructure like the EOC.
+*   **One row represents:** A single maintenance event or repair for a departmental facility.
+*   **Covers:** All maintenance, repairs, and inspections performed on departmental facilities, including the Emergency Operations Center.
+*   **Columns:** Maintenance Record ID (PK), Facility ID (e.g., EOC, Office Building), Facility Name/Location, Date of Service, Service Type (e.g., Routine Maintenance, Repair, Inspection, Upgrade), Description of Work Performed, Vendor/Technician Name, Cost of Service, Outcome (e.g., Repaired, Inspected, Replaced), Next Scheduled Service Date, Performed By Employee ID (FK to Dataset 26, if internal), Date/Time Last Update.
+
+**30. Emergency Food Delivery Program (Historical)**
+
+**30a. Emergency Food Delivery Program Termination Record**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "§ 1-01 Emergency Food Delivery. [Terminated*]" (Rules)
+    *   "* Editor's note: Subsection e. of 72 RCNY § 1-01 provided: "The program provided for in this section will terminate at the end of the COVID-19 public health emergency, as determined by Order of the Mayor, or on such other date as determined by the Commissioner of Emergency Management or such other person as may be designated to succeed such Commissioner in managing the program provided for in this section". Executive Order 126, declaring the public health emergency, ended on June 20, 2023." (Rules)
+*   **Why:** The termination of a program is a legal event requiring formal documentation and tracking for compliance.
+*   **One row represents:** The official record of the Emergency Food Delivery Program's termination.
+*   **Covers:** The formal cessation of the Emergency Food Delivery Program.
+*   **Columns:** Program Name (PK), Program Start Date, Program End Date, Termination Date (Official), Termination Authority (e.g., Executive Order 126), Commissioner's Determination Date, Reason for Termination, Record Retention Policy Applied.
+
+**30b. Emergency Food Delivery Records (Historical)**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "§ 1-01 Emergency Food Delivery. [Terminated*]" (Rules)
+    *   "* Editor's note: Subsection e. of 72 RCNY § 1-01 provided: "The program provided for in this section will terminate at the end of the COVID-19 public health emergency..." (Rules)
+*   **Why:** To fulfill its mission during its active period, the agency needed to track individual food deliveries for accountability and reporting.
+*   **One row represents:** A single food delivery event made under the program.
+*   **Covers:** All individual food deliveries made during the active period of the Emergency Food Delivery Program.
+*   **Columns:** Delivery ID (PK), Recipient ID (FK to Dataset 30c), Delivery Date, Delivery Time, Delivery Address, Food Items Delivered, Quantity Delivered, Delivery Status (e.g., delivered, attempted, cancelled), Driver/Volunteer ID, Delivery Vehicle Information, Program Phase (e.g., initial, amended).
+
+**30c. Emergency Food Delivery Program Participant Records (Historical)**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "§ 1-01 Emergency Food Delivery. [Terminated*]" (Rules)
+    *   "* Editor's note: Subsection e. of 72 RCNY § 1-01 provided: "The program provided for in this section will terminate at the end of the COVID-19 public health emergency..." (Rules)
+*   **Why:** To manage and account for services provided, the agency would have tracked individuals or households receiving food assistance.
+*   **One row represents:** A single participant (individual or household) registered in the program.
+*   **Covers:** All individuals or households registered to receive food assistance through the Emergency Food Delivery Program during its active period.
+*   **Columns:** Participant ID (PK), Name/Household Name, Primary Contact Name, Primary Contact Phone Number, Primary Contact Email, Address, Eligibility Criteria Met, Enrollment Date, Program Status (e.g., active, inactive, suspended), Number of Household Members, Special Dietary Needs.
+
+**30d. Emergency Food Delivery Program Vendor/Partner Records (Historical)**
+*   **Open Data Match:** None
+*   **Quotes:**
+    *   "§ 1-01 Emergency Food Delivery. [Terminated*]" (Rules)
+    *   "* Editor's note: Subsection e. of 72 RCNY § 1-01 provided: "The program provided for in this section will terminate at the end of the COVID-19 public health emergency..." (Rules)
+*   **Why:** To operate the program, the agency would have engaged with vendors or partners, requiring tracking of these relationships and transactions.
+*   **One row represents:** A single vendor or partner organization involved in the program.
+*   **Covers:** All vendors, suppliers, or partner organizations that provided services or goods to the Emergency Food Delivery Program during its active period.
+*   **Columns:** Vendor/Partner ID (PK), Organization Name, Contact Person, Contact Information, Contract Start Date, Contract End Date, Services/Goods Provided, Contract Value, Payment Status, Performance Notes.
+
+**Section 4, Unmatched Open Datasets:**
+
+*   Hurricane Inundation by Evacuation Zone (Map)
+*   Hurricane Inundation by Evacuation Zone
+*   Hazard Mitigation Plan - Mitigation Actions Database (Polygons, Lines, Points, General)
+
+**Section 5, Non-tabular Data Summary:**
+
+*   Rules and Regulations (e.g., 72 RCNY § 1-01 text itself)
+*   Emergency Plans (Full Text): The detailed content of the plans themselves (Section 497.d, § 30-104, § 30-105, § 30-106, § 30-107.a.1, § 30-108, § 30-109, § 30-110, § 30-111, § 30-112.a, § 30-116.d)
+*   Public Awareness Campaign Materials: Brochures, PSAs, website content (Section 497.f, § 30-116.e)
+*   Mayoral Recommendations (Full Text): The detailed written recommendations (Section 497.e)
+*   Public Comments (Full Text): The raw text of public submissions (Section 498.d)
+*   Meeting Minutes/Agendas: Detailed records of coordination meetings (Section 497.h, k, l)
+*   Training Curricula/Materials: Content used for training programs (Section 497.c)
+*   Disaster Relief Applications/Documentation: Detailed supporting documents for funding (Section 497.i)
+*   Legal Documents: Related to civil defense efforts (Section 497.m)
+*   Agency-provided Information: Relevant information from other agencies for emergency planning (Section 498.a)
+*   Published Plan Summaries: The actual text summaries published on the website (Section 498.c)
+*   Protocols regarding weather emergencies document: § 30-102.a
+*   Reports to the council setting forth actions taken pursuant to weather emergency protocols: § 30-102.b
+*   Annual snow preparedness and response report: § 30-103.b
+*   Recommendations for residential and commercial property owners to prepare for emergencies (document): § 30-113.a
+*   Localized emergency preparedness materials (documents): § 30-114
+*   Cooling center flyers or written notices (documents): § 30-116.f
+*   Annual report on cooling center efforts: § 30-116.g
+*   Guidance for facilitating safe evacuation before flash flood emergencies (document): § 30-117.b
+*   Emergency preparedness materials for flash flood outreach (documents/media): § 30-117.c
+*   Annual report on flash flood outreach program details: § 30-117.e
+*   Executive Orders (e.g., Executive Order 126)
+*   Legal opinions or interpretations regarding program termination
+*   Internal policy documents related to program operation or termination
+*   Any research documents or reports generated during the program's active phase
+*   Photos or other media related to food delivery operations

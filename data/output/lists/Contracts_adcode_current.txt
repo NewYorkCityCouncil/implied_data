@@ -1,0 +1,1270 @@
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations
+*   Receipts
+*   Photos
+*   Research documents
+*   Text or image information
+*   Concept reports (§ 6-111.2.a)
+*   Subcontractor resource guide (§ 6-142.b)
+*   Guidelines for insurance requirements for food procurement vendors (§ 6-130.1.b)
+*   Standard specifications for commodities (§ 6-120)
+*   Hospital protocol for treatment of victims of sexual assault (§ 6-125.d)
+*   Labor and human rights disclosure form (§ 6-151.c)
+*   Standards and procedures for conflicts of interest and misconduct (§ 6-150.b)
+
+---
+
+**Identified Datasets:**
+
+**1. Central Contract Registry**
+
+*   **Quotes:**
+    *   "Any contract, except as otherwise provided in this section, shall not be binding or of any force, unless the comptroller shall indorse thereon the comptroller's certificate that there remains unexpended and unapplied a balance of the appropriation or fund applicable thereto, sufficient to pay the estimated expense of executing such contract, as certified by the officer making the same." (§ 6-101.a)
+    *   "Each agency shall require and enforce the faithful performance of every contract made by it." (§ 6-102.a)
+    *   "The board of estimate, by a unanimous vote, may extend the time for the performance of any contract." (§ 6-103)
+    *   "Within five days after his or her acceptance of any work under contract, the head of an agency shall file with the comptroller a final certificate of the completion and acceptance thereof, signed by the chief engineer or head of such agency." (§ 6-106)
+    *   "All requests for proposals and any other public notices of opportunities to contract with the city shall, simultaneously with their publication, be posted on the city's website in a location that is accessible by the public." (§ 6-111.1)
+    *   "The comptroller and the mayor shall jointly maintain, at the financial information services agency, a computerized data base. Such data base shall contain information for every franchise and concession and every contract for goods or services involving the expenditure of more than ten thousand dollars or in the case of construction, repair, rehabilitation or alteration, the expenditure of more than fifteen thousand dollars, entered into by an agency, New York city affiliated agency, elected official or the council, including, but not limited to: (1) the name, address, and federal taxpayer's identification number of the contractor, franchisee or concessionaire where available in accordance with applicable law; (2) the dollar amount of each contract including original maximum and revised maximum expenditure authorized, current encumbrance and actual expenditures; (3) the type of goods or services to be provided pursuant to the contract; (4) the term of the contract, or in the case of a construction contract the starting and scheduled completion date of the contract and the date final payment is authorized; (5) the agency, New York city affiliated agency, elected official or the council that awarded the contract, franchise or concession and the contract registration number, if any, assigned by the comptroller; (6) the manner in which the contractor, franchisee or concessionaire was selected, including, but not limited to, in the case of a contractor, whether the contractor was selected through public letting and if so, whether the contractor was the lowest responsible bidder; whether the contractor was selected through a request for proposal procedure, and if so, whether the contractor's response to the request offered the lowest price option; whether the contractor was selected without competition or as a sole source; whether the contractor was selected through the emergency procedure established in the charter or the general municipal law, where applicable; or whether the contractor was selected from a list of prequalified bidders, and if applicable, whether the contractor was the lowest responsible bidder; and (9) the contract budget category to which the contract is assigned, where applicable." (§ 6-116.2.a)
+    *   "Every contract shall contain a provision which permits the agency, in addition to any other right or remedy, to give notice to the contractor that the agency finds the contractor's performance to be improper, dilatory or otherwise not in compliance with the requirements of the contract." (§ 6-116.a)
+    *   "If an agency that has entered into a contract for construction and/or services with a maximum expenditure of more than ten million dollars in connection with a project included in the capital budget enters into a contract modification or extension that results in a total revised maximum expenditure that exceeds the original contract maximum expenditure by twenty percent or more, the mayor shall notify the council of such contract modification or extension, including details of the basis for and scope of the estimated additional costs." (§ 6-133.b)
+    *   "No later than July first two thousand twelve, the mayor shall establish a public online searchable database on an official website of the city, that shall include summaries of the material terms of city contracts. Such contract summaries shall include, but not be limited to, the following categories of information, where applicable: (1) the legal name of the contractor, franchisee or concessionaire where available, in accordance with applicable law; (2) the dollar amount of the revised maximum expenditure authorized under each contract; (3) the dollar amount of the original maximum expenditure authorized under each contract; (4) a description in plain language of the scope of services to be provided pursuant to the contract; (5) the starting and scheduled completion date of the contract; (6) the name of the agency, elected official or the council that awarded the contract; (7) the contract, franchise or concession and the contract registration number, if any, assigned by the comptroller; (8) the date and reason for any modification or amendment of the contract; (9) the percentage change from original contract amount; (10) the award method; (11) the contract type; and (12) the contract category." (§ 6-131.a)
+    *   "The total number and dollar value of contracts registered during the previous fiscal year, including the number and value of retroactive contract registrations" (§ 6-149.b.i)
+*   **Why:** Centralized tracking of all contracts is fundamental for financial oversight, performance management, and legal compliance across the agency.
+*   **One row represents:** A single contract, franchise, or concession agreement.
+*   **Covers:** All contracts, franchises, and concessions entered into by the city, including initial awards, modifications, and completion.
+*   **Columns:**
+    *   Contract ID (Primary Key)
+    *   Contract Registration Number
+    *   Contract Type (e.g., Goods, Services, Construction, Franchise, Concession)
+    *   Contract Category (e.g., Client Services, City Service, Shelter, Food Purchase)
+    *   Awarding Agency ID
+    *   Awarding Agency Name
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Contractor Name
+    *   Original Maximum Expenditure Authorized
+    *   Revised Maximum Expenditure Authorized
+    *   Current Encumbrance
+    *   Actual Expenditures
+    *   Scope of Services (Plain Language Description)
+    *   Contract Term (Start Date)
+    *   Contract Term (Scheduled Completion Date)
+    *   Date Final Payment Authorized
+    *   Award Method (e.g., Public Letting, RFP, Non-Competition, Sole Source, Emergency, Prequalified List)
+    *   Was Contractor Lowest Responsible Bidder? (Yes/No/NA)
+    *   Was Contractor's RFP Response Lowest Price Option? (Yes/No/NA)
+    *   Date of Public Hearing (if applicable)
+    *   Date and Agenda Number of Franchise/Concession Review Committee Action (if applicable)
+    *   Comptroller's Certificate Indorsement Date
+    *   Comptroller's Certificate Fund Balance Sufficient (Yes/No)
+    *   Officer Certifying Estimated Expense
+    *   Contract Status (e.g., Active, Completed, Terminated, Abandoned)
+    *   Date of Contract Acceptance
+    *   Certificate of Completion Filed Date
+    *   Chief Engineer/Agency Head Signing Completion Certificate
+    *   Date of Last Performance Notice
+    *   Performance Notice Details (e.g., Improper, Dilatory, Non-Compliant)
+    *   Date of Last Modification/Amendment
+    *   Reason for Last Modification/Amendment
+    *   Percentage Change from Original Contract Amount (due to modification)
+    *   Is Contract Subject to Federal/State Funding Requirements Precluding City Requirements? (Yes/No)
+    *   Is Contract Subject to Federal/State Law Participation Requirements? (Yes/No)
+    *   Is Contract between Agencies? (Yes/No)
+    *   Is Procurement through Federal/State/Other Governmental Agency? (Yes/No)
+    *   Is Contract for Human Services? (Yes/No)
+    *   Is Contract Awarded to Not-for-Profit? (Yes/No)
+    *   Is Contract Exempt from M/WBE/EBE Goals? (Yes/No)
+    *   Retroactive Registration (Yes/No)
+    *   Retroactive Registration Date (if applicable)
+
+**2. Contractor/Vendor/Recipient Registry**
+
+*   **Quotes:**
+    *   "The comptroller and the mayor shall jointly maintain, at the financial information services agency, a computerized data base. Such data base shall contain information for every franchise and concession and every contract... including, but not limited to: (1) the name, address, and federal taxpayer's identification number of the contractor, franchisee or concessionaire where available in accordance with applicable law." (§ 6-116.2.a.1)
+    *   "This system shall have access to information stored on other computerized data systems maintained by agencies, which information shall collectively include, but not be limited to: (1) the current addresses and telephone numbers of: A. the contractor's principal executive offices and the contractor's primary place of business in the New York city metropolitan area, if different, B. the addresses of the three largest sites at which it is anticipated that work would occur in connection with the proposed contract, based on the number of persons to be employed at each site, C. any other names under which the contractor has conducted business within the prior five years, and D. the addresses and telephone numbers of all principal places of business and primary places of business in the New York city metropolitan area, if different, where the contractor has conducted business within the prior five years; (2) the Dun & Bradstreet number of the contractor, if any; (3) the taxpayer identification numbers, employer identification numbers or social security numbers of the contractor or the division or branch of the contractor which is actually entering into the contract; (4) the type of business entity of the contractor including, but not limited to, sole proprietorship, partnership, joint venture or corporation; (5) the date such business entity was formed, the state, county and country, if not within the United States, in which it was formed and the other counties within New York State in which a certificate of incorporation, certificate of doing business, or the equivalent, has been filed within the prior five years; (6) the principal owners and officers of the contractor, their dates of birth, taxpayer identification numbers, social security numbers and their current business addresses and telephone numbers; (7) the names, current business addresses and telephone numbers, taxpayer identification numbers and employer identification numbers of affiliates of the contractors; (8) the principal owners and officers of affiliates of the contractor and their current business addresses and telephone numbers; (9) the principal owners and officers of every subcontractor; (10) the type, amount and contract registration number of all other contracts awarded to the contractor, as reflected in the database maintained pursuant to subdivision a of this section; (11) the contract sanction history of the contractor for the prior five years, including, but not limited to, all cautions, suspensions, debarments, cancellations of a contract based upon the contractor's business conduct, declarations of default on any contract made by any governmental entity, determinations of ineligibility to bid or propose on contracts and whether any proceedings to determine eligibility to bid or propose on contracts are pending; (12) the contract sanction history for the prior five years of affiliates of the contractor including, but not limited to, all cautions, suspensions, debarments, cancellations of a contract based upon such entity's business conduct, declarations of default on any contract made by any governmental entity, determinations of ineligibility to bid or propose on contracts and whether any proceedings to determine eligibility to bid or propose on contracts are pending; (14) judgments or injunctions obtained within the prior five years in any judicial actions or proceedings initiated by any agency, any elected official or the council against the contractor with respect to a contract and any such judicial actions or proceedings that are pending; (15) record of all sanctions imposed within the prior five years as a result of judicial or administrative disciplinary proceedings with respect to any professional licenses held by the contractor, or a principal owner or officer of the contractor; (16) whether city of New York income tax returns, where required, have been filed for the past five years; (17) outstanding tax warrants and unsatisfied tax liens, as reflected in the records of the city; (18) information from public reports of the organized crime control bureau and the New York state organized crime task force which indicates involvement in criminal activity; (19) criminal proceedings pending against the contractor and any principal owner or officer of such contractor; (20) record of all criminal convictions of the contractor, any current principal owner or officer for any crime related to truthfulness or business conduct and for any other felony committed within the prior ten years, and of any former principal owner or officer, within the prior ten years, for any crime related to truthfulness or business conduct and for any other felony committed while he or she held such position or status; (21) all pending bankruptcy proceedings and all bankruptcy proceedings initiated within the past seven years by or against the contractor and its affiliates; (22) whether the contractor has certified that it was not founded or established or is not operated in a manner to evade the application or defeat the purpose of this section and is not the successor, assignee or affiliate of an entity which is ineligible to bid or propose on contracts or against which a proceeding to determine eligibility to bid or propose on contracts is pending; (23) the name and main business address of anyone who the contractor retained, employed or designated to influence the preparation of contract specifications or the solicitation or award of this contract." (§ 6-116.2.b.i)
+    *   "The information required to be provided by contractors or subcontractors pursuant to subdivision b of this section shall be submitted electronically in such form and manner as the mayor may determine." (§ 6-116.2.c-1)
+    *   "Contractor" means a person who is a party or a proposed party to a contract with a contracting agency as those terms are defined herein." (§ 6-123.a.3)
+    *   "The city shall include on its website a list of city agencies, with the contact information for the M/WBE officer of each city agency and information about whether the agency's staff have been trained as required by paragraph 14 of this subdivision." (§ 6-129.e.15)
+    *   "The city shall maintain a list of covered lessors that shall include the address of the building to which the lease pertains. Such list shall be updated and published as often as is necessary to keep it current." (§ 6-130.b.7)
+    *   "The city shall maintain a list of financial assistance recipients subject to project agreements that shall include, where a project agreement is targeted to particular real property, the address of each such property. Such list shall be updated and published as often as is necessary to keep it current." (§ 6-134.f.5)
+*   **Why:** A comprehensive registry of all entities doing business with the city is essential for due diligence, compliance tracking, and reporting.
+*   **One row represents:** A unique contractor, vendor, franchisee, concessionaire, or financial assistance recipient.
+*   **Covers:** All individuals and business entities that have or seek contracts, franchises, concessions, or financial assistance from the city.
+*   **Columns:**
+    *   Contractor ID (Primary Key)
+    *   Legal Name
+    *   Business Entity Type (e.g., Sole Proprietorship, Partnership, LLC, Corporation, Joint Venture)
+    *   Federal Taxpayer's Identification Number (TIN)
+    *   Employer Identification Number (EIN)
+    *   Dun & Bradstreet Number
+    *   Principal Executive Office Address
+    *   Principal Executive Office Phone Number
+    *   Primary Business Address in NYC Metro Area (if different)
+    *   Primary Business Phone Number in NYC Metro Area (if different)
+    *   Other Business Names Used (past 5 years)
+    *   Formation Date
+    *   State of Formation
+    *   County of Formation
+    *   Country of Formation (if not US)
+    *   Other NYS Counties with Business Filings (past 5 years)
+    *   Principal Owners/Officers (List of IDs, Foreign Key to Dataset 3)
+    *   Affiliates (List of IDs, Foreign Key to Dataset 2)
+    *   Affiliate EINs
+    *   City Income Tax Returns Filed (past 5 years, Yes/No)
+    *   Outstanding Tax Warrants (Yes/No)
+    *   Unsatisfied Tax Liens (Yes/No)
+    *   Involvement in Criminal Activity (from public reports, Yes/No)
+    *   Pending Criminal Proceedings (Yes/No)
+    *   Criminal Convictions (past 10 years, Yes/No)
+    *   Pending Bankruptcy Proceedings (Yes/No)
+    *   Bankruptcy Proceedings Initiated (past 7 years, Yes/No)
+    *   Certified Not Formed to Evade Regulations (Yes/No)
+    *   Successor/Assignee/Affiliate of Ineligible Entity (Yes/No)
+    *   Lobbyist/Influencer Name (if retained for contract specs/award)
+    *   Lobbyist/Influencer Business Address
+    *   Lobbyist/Influencer Phone Number
+    *   Is M/WBE Certified? (Yes/No)
+    *   Is EBE Certified? (Yes/No)
+    *   Is LBE Certified? (Yes/No)
+    *   Is Graduate LBE Certified? (Yes/No)
+    *   Is Graduate MBE/WBE/EBE Certified? (Yes/No)
+    *   M/WBE/EBE Certification Date
+    *   M/WBE/EBE Certification Expiration Date
+    *   M/WBE/EBE Certification Rescinded (Yes/No, Date)
+    *   Is Small Business (for Living Wage exemption)? (Yes/No)
+    *   Is Not-for-Profit (for Living Wage exemption)? (Yes/No)
+    *   Principal Industry (for Living Wage exemption, e.g., Manufacturing)
+    *   Is Financial Institution? (Yes/No)
+    *   Is Predatory Lender? (Yes/No, Date of Determination)
+    *   Predatory Lending Corrective Plan Approved (Yes/No, Date)
+    *   Is Covered Lessor? (Yes/No)
+    *   Leased Building Address (if Covered Lessor)
+    *   Is Covered Developer/Protected Developer? (Yes/No)
+    *   Financially Assisted Property Address (if Covered Developer)
+    *   Is Worker Cooperative? (Yes/No)
+    *   Worker Cooperative Assistance Received (Yes/No)
+    *   Is Preferred Source Vendor? (Yes/No)
+    *   Is Community-Based Organization (CBO) for Language Services? (Yes/No)
+    *   CBO Language Services Capacity (e.g., languages, types of services)
+    *   CBO Language Services Survey Date
+    *   CBO Language Services Challenges
+    *   CBO Language Services Barriers Removed (Yes/No)
+
+**3. Individual Principal/Officer/Employee Registry**
+
+*   **Quotes:**
+    *   "The name, age, gender, residence and business address, and telephone numbers of the applicant, each member of the partnership, limited liability company or group, and each officer of the corporation, as applicable" (§ 17-373.d.1 - *from example, but relevant for general contractor info*)
+    *   "the principal owners and officers of the contractor, their dates of birth, taxpayer identification numbers, social security numbers and their current business addresses and telephone numbers" (§ 6-116.2.b.i.6)
+    *   "the principal owners and officers of affiliates of the contractor and their current business addresses and telephone numbers" (§ 6-116.2.b.i.8)
+    *   "the principal owners and officers of every subcontractor" (§ 6-116.2.b.i.9)
+    *   "record of all criminal convictions of the contractor, any current principal owner or officer for any crime related to truthfulness or business conduct and for any other felony committed within the prior ten years, and of any former principal owner or officer, within the prior ten years, for any crime related to truthfulness or business conduct and for any other felony committed while he or she held such position or status" (§ 6-116.2.b.i.20)
+    *   "Any person who makes or causes to be made a false, deceptive or fraudulent representation in any statement required by the board of estimate to set forth the financial condition, present plant and equipment, working organization, prior experience, and other information pertinent to the qualifications of any bidder, shall be guilty of an offense punishable by a fine of not more than one hundred dollars nor more than one thousand dollars, by imprisonment for a period not exceeding six months, or both; and the person on whose behalf such false, deceptive or fraudulent representation was made, shall thenceforth be disqualified from bidding on any contracts for the city." (§ 6-112)
+    *   "It shall be unlawful for any covered employer to retaliate, discharge, demote, suspend, take adverse employment action in the terms and conditions of employment or otherwise discriminate against any covered employee for reporting or asserting a violation of this section, for seeking or communicating information regarding rights conferred by this section, for exercising any other rights protected under this section, or for participating in any investigatory or court proceeding relating to this section." (§ 6-109.b.5)
+    *   "Employee" means any person who performs work on a full-time, part-time, temporary, or seasonal basis and includes employees, independent contractors, and contingent or contracted workers, including persons made available to work through the services of a temporary services, staffing or employment agency or similar entity." (§ 6-109.a.15)
+    *   "Covered employee" means an employee entitled to be paid the living wage or the prevailing wage and/or health benefits as provided in subdivision b of this section." (§ 6-109.a.16)
+    *   "Covered guard" means a security guard or a fire guard." (§ 6-109.1.a)
+    *   "Building service employee" means any person, the majority of whose employment consists of performing building service work, including but not limited to a watchperson, guard, doorperson, building cleaner, porter, handyperson, janitor, gardener, groundskeeper, stationary fireman, elevator operator and starter, or window cleaner." (§ 6-130.a - *second § 6-130*)
+    *   "Employee" means any person employed by a covered employer within the city of New York. This definition includes persons performing work on a full-time, part-time, temporary or seasonal basis, and includes employees, independent contractors, and contingent or contracted workers, including persons made available to work through the services of a temporary services, staffing or employment agency or similar entity." (§ 6-134.b.5)
+    *   "Construction employee" means a person employed to perform labor of a type that the comptroller has identified in a published schedule as a classification of work performed by laborers, workmen or mechanics pursuant to section 220 of the labor law, regardless of whether such labor constitutes public work pursuant to such section." (§ 6-146.a)
+    *   "Covered employee" means an employee, other than a building service employee or construction employee, working at a retail or food service establishment or a distribution center" (§ 6-146.a)
+*   **Why:** Tracking individuals associated with contractors and employees performing work under city contracts is crucial for compliance with wage laws, anti-discrimination, and integrity checks.
+*   **One row represents:** A unique individual (principal owner, officer, or employee) associated with a contractor or performing work under a city contract.
+*   **Covers:** All principal owners, officers, and employees of contractors, subcontractors, and financial assistance recipients, as well as covered employees under various wage and labor laws.
+*   **Columns:**
+    *   Person ID (Primary Key)
+    *   Associated Contractor ID (Foreign Key to Dataset 2)
+    *   Role (e.g., Principal Owner, Officer, Employee, Subcontractor Employee)
+    *   First Name
+    *   Last Name
+    *   Date of Birth
+    *   Taxpayer Identification Number (TIN)
+    *   Social Security Number (SSN)
+    *   Current Business Address
+    *   Current Business Phone Number
+    *   Criminal Convictions (past 10 years, Yes/No)
+    *   Criminal Conviction Details (if Yes)
+    *   Pending Criminal Proceedings (Yes/No)
+    *   Professional Licenses Held (List)
+    *   Professional License Sanctions (past 5 years, Yes/No)
+    *   Professional License Sanction Details (if Yes)
+    *   Is Covered Employee (Living Wage/Prevailing Wage)? (Yes/No)
+    *   Is Covered Guard? (Yes/No)
+    *   Is Building Service Employee? (Yes/No)
+    *   Is Construction Employee? (Yes/No)
+    *   Is Covered Employee (Economic Development Project)? (Yes/No)
+    *   Union Apprenticeship Program Participation (Yes/No)
+    *   Workforce Development Program Participation (Yes/No)
+    *   Program Names (if participating)
+    *   Retaliation/Discrimination Complaint Filed (Yes/No)
+    *   Retaliation/Discrimination Complaint Details (if Yes)
+
+**4. Contract Financial Certifications**
+
+*   **Quotes:**
+    *   "Any contract, except as otherwise provided in this section, shall not be binding or of any force, unless the comptroller shall indorse thereon the comptroller's certificate that there remains unexpended and unapplied a balance of the appropriation or fund applicable thereto, sufficient to pay the estimated expense of executing such contract, as certified by the officer making the same." (§ 6-101.a)
+    *   "In contracts for the purchase of food supplies, forage, fuel, printing, stationery, books and other supplies required for daily or continuous use, or of supplies, materials and equipment needed for use immediately after the beginning of the next succeeding fiscal year, to be delivered within a period of one year from the date thereof, the comptroller shall indorse thereon the comptroller's certificate that there remains unexpended and unapplied a balance of the appropriation or fund applicable thereto, sufficient to pay the estimated expense of executing such contract in so far as the same is to be executed during the current fiscal year, as certified by the officer making the same. Upon the first of the following fiscal year the comptroller shall certify by indorsement upon such contract as to the portion of such contract then unexecuted, and such certification by the comptroller shall make any such contract binding and of full force." (§ 6-101.b)
+    *   "It shall be the duty of the comptroller to make such indorsement upon every contract so presented to him or her, if there remains unapplied and unexpended the amount so specified by the officer making the contract, and thereafter to hold and retain such sum to pay the expense incurred until such contract shall be fully performed. Such indorsement shall be sufficient evidence of such appropriation or fund in any action." (§ 6-101.c)
+*   **Why:** Tracking the comptroller's financial certification for each contract is a legal requirement for contract validity and financial control.
+*   **One row represents:** A financial certification event for a specific contract.
+*   **Covers:** All comptroller certifications regarding fund availability for contracts, including initial and subsequent fiscal year certifications.
+*   **Columns:**
+    *   Certification ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Certification Date
+    *   Certifying Officer Name
+    *   Estimated Expense Certified
+    *   Appropriation/Fund Balance Certified
+    *   Balance Sufficient (Yes/No)
+    *   Fiscal Year Covered
+    *   Comptroller Indorsement Date
+    *   Comptroller Indorsement Status (e.g., Certified, Pending, Rejected)
+
+**5. Payment Vouchers and Warrants**
+
+*   **Quotes:**
+    *   "The comptroller shall issue warrants for work done or supplies furnished only upon proper vouchers rendered by the head of the appropriate agency." (§ 6-105)
+    *   "All warrants upon vouchers for payment of amounts due under contracts, duly audited and approved, shall refer by number or other description to the voucher, the fund and the contract upon which the payment is to be made." (§ 6-107.a)
+    *   "All checks issued by the commissioner of finance on warrants duly approved and executed pursuant to law, as payments on contracts, may be mailed or delivered to the contractor or the contractor's authorized representative." (§ 6-107.a)
+    *   "The indorsement by the contractor upon a check attached to such a warrant, which has been paid by the bank or depository upon which the same has been drawn, shall be considered as a receipt for the amount of such check." (§ 6-107.b)
+    *   "Notwithstanding any other provision of law, except as otherwise provided in this section all payments made by the city of New York to any contractor of the city shall be paid by electronic funds transfer." (§ 6-107.1.b)
+    *   "Each contractor shall, prior to the first payment made under a contract to which this law applies, designate one financial institution or other authorized payment agent and provide the commissioner of finance information necessary for the contractor to receive electronic funds transfer payments through the financial institution or other authorized payment agent so designated." (§ 6-107.1.c)
+    *   "The crediting of the amount of a payment to the appropriate account on the books of a financial institution or other authorized payment agent designated by a contractor under this section shall constitute full satisfaction by the city of New York for the amount of the payment." (§ 6-107.1.e)
+    *   "The average number of days from invoice submission to payment for such contracts during the previous fiscal year" (§ 6-149.b.ii)
+    *   "The total accrued payments owed to contractors at the end of the previous fiscal year." (§ 6-149.b.iii)
+*   **Why:** Tracking all payment requests, approvals, and disbursements is essential for financial accountability and contract fulfillment.
+*   **One row represents:** A single payment voucher or warrant issued for a contract.
+*   **Covers:** All vouchers submitted by agencies for work done or supplies furnished, and the subsequent warrants issued for payment, including electronic funds transfers.
+*   **Columns:**
+    *   Voucher/Warrant ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Agency Submitting Voucher
+    *   Voucher Submission Date
+    *   Work Done/Supplies Furnished Description
+    *   Voucher Amount Requested
+    *   Voucher Approval Date
+    *   Warrant Issue Date
+    *   Payment Amount
+    *   Payment Method (e.g., Check, EFT)
+    *   EFT Financial Institution Name (if EFT)
+    *   EFT Account Details (masked/securely referenced)
+    *   Payment Date
+    *   Check Endorsement/EFT Receipt Confirmation
+    *   Invoice Submission Date (for payment tracking)
+    *   Payment Due Date
+    *   Payment Status (e.g., Paid, Pending, Overdue)
+
+**6. Contractor Compliance Certifications (General)**
+
+*   **Quotes:**
+    *   "The wording of subdivisions a and b of this section shall appear on all contracts entered into by the city, and disobedience thereto shall be deemed a violation of a material provision of the contract." (§ 6-108.c)
+    *   "Every contract for or on behalf of the city for the manufacture, furnishing or purchasing of supplies, material or equipment or for the furnishing of work, labor or services, in an amount exceeding five thousand dollars, shall contain a stipulation, as a material condition of the contract, by which the contractor agrees that neither the contractor nor any substantially-owned affiliated company is participating or shall participate in an international boycott in violation of the provisions of the export administration act of nineteen hundred sixty-nine, as amended, or the regulations of the United States department of commerce promulgated thereunder." (§ 6-114.a)
+    *   "no agency, elected official or the council shall contract for the supply of goods, services or construction with any contractor who does not agree to stipulate to the following, if there is another contractor who will contract to supply goods, services or construction of comparable quality at a comparable price: the contractor and any individual or legal entity in which the contractor holds a ten percent or greater ownership interest and any individual or legal entity that holds a ten percent or greater ownership interest in the contractor either (a) have no business operations in Northern Ireland, or (b) shall take lawful steps in good faith to conduct any business operations they have in Northern Ireland in accordance with the MacBride Principles, and shall permit independent monitoring of their compliance with such principles." (§ 6-115.1.b.1)
+    *   "All contractors doing business with the city without regard to the dollar amount shall not engage in any unlawful discriminatory practice as defined and pursuant to the terms of title viii of the administrative code. Every contract in excess of $50,000 shall contain a provision or provisions detailing the requirements of this section." (§ 6-123.b)
+    *   "Every contractor or subcontractor having a contract valued in excess of one hundred thousand dollars or more shall post a notice, in a prominent and accessible place on any site where work pursuant to such contract or subcontract is performed, containing information about (1) how its employees can report to the New York city department of investigation allegations of fraud, false claims, criminality or corruption arising out of or in connection with such contract or subcontract, and (2) the rights and remedies afforded to its employees under sections 7-805 and 12-113 of the administrative code for lawful acts taken in connection with the reporting of allegations of fraud, false claims, criminality or corruption in connection with such contract or subcontract." (§ 6-132.b)
+    *   "A covered contract shall include a provision requiring a contractor to use the standards and procedures established pursuant to subdivision b of this section to determine the existence of: 1. Any conflict of interest relating to such covered contract for any officer or employee of such contractor, or for any officer or employee of a subcontractor of such contractor... 2. Any conduct involving corruption, criminal activity, gross mismanagement, or abuse of authority by any owner, officer, or employee of such contractor, or by any owner, officer, or employee of a subcontractor of such contractor, relating to such covered contract." (§ 6-150.c)
+    *   "A contractor who has been awarded a covered contract shall, upon execution of such covered contract, certify to the agency that awarded such contract that such contractor has used the standards and procedures established pursuant to subdivision b of this section to determine the existence of a conflict of interest or conduct involving corruption, criminal activity, gross mismanagement, or abuse of authority as required by subdivision c of this section." (§ 6-150.d)
+*   **Why:** Tracking contractor certifications for various compliance requirements is essential for ensuring adherence to legal and ethical standards in city contracts.
+*   **One row represents:** A specific compliance certification or stipulation made by a contractor for a contract.
+*   **Covers:** Certifications related to non-discrimination, international boycotts, MacBride Principles, human rights, whistleblower notice posting, and conflicts of interest/misconduct.
+*   **Columns:**
+    *   Certification ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Certification Type (e.g., Non-Discrimination, International Boycott, MacBride Principles, Human Rights, Whistleblower Notice, Conflict of Interest/Misconduct)
+    *   Certification Date
+    *   Certified By (Person ID, Foreign Key to Dataset 3)
+    *   Certification Status (e.g., Compliant, Non-Compliant, Waived)
+    *   Waiver Granted (Yes/No)
+    *   Waiver Reason (if applicable)
+    *   Date of Waiver (if applicable)
+    *   Notice Posted (for Whistleblower, Yes/No)
+    *   Conflict of Interest/Misconduct Standards Used (Yes/No)
+    *   Conflict of Interest/Misconduct Found (Yes/No)
+    *   Conflict of Interest/Misconduct Notification Date (if found)
+
+**7. Contractor Performance Evaluations**
+
+*   **Quotes:**
+    *   "Each agency shall require and enforce the faithful performance of every contract made by it." (§ 6-102.a)
+    *   "If the contractor or contractors shall fail in any respect to fulfill the contract within the time limited for its performance, then the agency in charge thereof shall complete the same in the manner provided for in the contract. The cost of such completion shall be a charge against such delinquent contractor or contractors." (§ 6-102.b)
+    *   "If any work shall be abandoned by any contractor, the appropriate agency, if the best interest of the city be thereby served, and subject to the approval of the board of estimate, may adopt all subcontracts made by such contractor for such work." (§ 6-102.c)
+    *   "All agencies letting contracts shall monitor the performance of every contractor. Information with respect to contractor performance shall be maintained by the city at a central location and shall be accessible to the members of the board of estimate, the members of the city council and city agencies upon request." (§ 6-116.1)
+    *   "The provisions of the contract and the procedure set forth therein for making the finding and declaration referred to in subdivisions a and b shall be consistent with applicable rules and regulations of the board of estimate." (§ 6-116.c)
+    *   "cautionary information" shall mean, in regard to a contractor, any adverse action by any New York city affiliated agency, including but not limited to poor performance evaluation, default, non-responsibility determination, debarment, suspension, withdrawal of prequalified status, or denial of prequalified status" (§ 6-116.2.i.2)
+    *   "A contractor's record in implementing its contractor utilization plan shall be a factor in the evaluation of its performance. Whenever a contracting agency determines that a contractor's compliance with a contractor utilization plan has been unsatisfactory, the agency shall, after consultation with the city chief procurement officer, file an advice of caution form for inclusion in the computerized data system maintained pursuant to subdivision b of section 6-116.2, or any successor to such system, as caution data." (§ 6-129.o.8)
+*   **Why:** Systematically tracking contractor performance is essential for ensuring quality, accountability, and informing future procurement decisions.
+*   **One row represents:** A performance evaluation or incident for a specific contractor on a contract.
+*   **Covers:** All formal evaluations, incidents of non-performance, defaults, and other adverse actions related to contractor performance.
+*   **Columns:**
+    *   Performance Evaluation ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Evaluation Date
+    *   Evaluating Agency
+    *   Overall Performance Rating (e.g., Satisfactory, Unsatisfactory, Excellent)
+    *   Specific Performance Issues (e.g., Improper, Dilatory, Non-Compliant, Abandoned Work)
+    *   Cost of Completion (if work abandoned/failed)
+    *   Subcontracts Adopted (Yes/No, if work abandoned)
+    *   Non-Responsible Bidder Declared (Yes/No)
+    *   Non-Responsible Bidder Declaration Date
+    *   Non-Responsible Bidder Period (e.g., 3 years)
+    *   Cautionary Information Filed (Yes/No)
+    *   Cautionary Information Type (e.g., Poor Performance, Default, Debarment, Suspension)
+    *   Date Cautionary Information Filed
+    *   M/WBE/EBE Utilization Plan Compliance (Satisfactory/Unsatisfactory)
+    *   M/WBE/EBE Utilization Plan Non-Compliance Details
+
+**8. Contractor Sanction History**
+
+*   **Quotes:**
+    *   "the contract sanction history of the contractor for the prior five years, including, but not limited to, all cautions, suspensions, debarments, cancellations of a contract based upon the contractor's business conduct, declarations of default on any contract made by any governmental entity, determinations of ineligibility to bid or propose on contracts and whether any proceedings to determine eligibility to bid or propose on contracts are pending" (§ 6-116.2.b.i.11)
+    *   "the contract sanction history for the prior five years of affiliates of the contractor including, but not limited to, all cautions, suspensions, debarments, cancellations of a contract based upon such entity's business conduct, declarations of default on any contract made by any governmental entity, determinations of ineligibility to bid or propose on contracts and whether any proceedings to determine eligibility to bid or propose on contracts are pending" (§ 6-116.2.b.i.12)
+    *   "Any person who makes or causes to be made a false, deceptive or fraudulent representation in any statement required by the board of estimate to set forth the financial condition, present plant and equipment, working organization, prior experience, and other information pertinent to the qualifications of any bidder, shall be guilty of an offense punishable by a fine of not less than one hundred dollars nor more than one thousand dollars, by imprisonment for a period not exceeding six months, or both; and the person on whose behalf such false, deceptive or fraudulent representation was made, shall thenceforth be disqualified from bidding on any contracts for the city." (§ 6-112)
+    *   "Upon the final determination by the commerce department or any other agency of the United States as to, or conviction of any contractor or substantially-owned affiliated company thereof, participation in an international boycott in violation of the provisions of the export administration act of nineteen hundred sixty-nine, as amended, or the regulations promulgated thereunder, the comptroller may, at his or her option, render forfeit and void any contract containing the conditions specified in this section." (§ 6-114.b)
+    *   "If the contracting entity finds that a violation has occurred, it shall take such action as may be appropriate and provided for by law, rule or contract, including, but not limited to, imposing sanctions, seeking compliance, recovering damages, declaring the contractor in default and/or seeking debarment or suspension of the contractor." (§ 6-115.1.c)
+    *   "If the contractor or subcontractor does not agree to adopt or does not adhere to such a program, the commissioner shall make a determination as to whether the contractor or subcontractor is in compliance with the provisions of this section, and shall notify the head of the contracting agency of such determination and any sanctions, including the withholding of payment, imposition of an employment program, finding the contractor to be in default, cancellation of the contract, or other sanction or remedy provided by law or by contract, which the commissioner believes should be imposed." (§ 6-123.d)
+    *   "Notwithstanding any city laws, rules or regulations to the contrary, any financial institution or its affiliate that has been found by a city agency to be a predatory lender shall be prohibited from applying for or receiving any city financial assistance from any city agency for a period of three years from the date of the last disbursement or approval of an award, grant or other financial assistance, or from the date of the finding, whichever is later." (§ 6-128.b.6)
+    *   "Notwithstanding any city laws, rules or regulations to the contrary, any financial institution or affiliate that has been found by a city agency to be a predatory lender shall be prohibited from contracting with any city agency for a period of three years from the termination date of the contract or the date of the finding, whichever is later." (§ 6-128.c.7)
+    *   "Whenever a contracting agency has determined that a bidder or proposer has violated this section, or rules promulgated pursuant to its provisions, the agency may disqualify such bidder or proposer from competing for such contract and the agency may revoke such bidder's or proposer's prequalification status." (§ 6-129.o.3.b)
+    *   "In the event that a contractor has been found to have violated this section, rules promulgated pursuant to its provisions, or any provision of a contract that implements this section, including, but not limited to any contractor utilization plan, the contracting agency shall, after consulting with the city chief procurement officer and the division, determine whether any of the following actions should be taken: (i) enter an agreement with the contractor allowing the contractor to cure the violation; (ii) revoke the contractor's pre-qualification to bid or make proposals for future contracts; (iii) make a finding that the contractor is in default of the contract; (iv) terminate the contract; (v) declare the contractor to be in breach of contract; (vi) withhold payment or reimbursement; (vii) determine not to renew the contract; (viii) assess actual and consequential damages; (ix) assess liquidated damages or reduction of fees... (x) exercise rights under the contract to procure goods, services or construction from another contractor and charge the cost of such contract to the contractor that has been found to be in noncompliance; or (xi) take any other appropriate remedy." (§ 6-129.o.4.c)
+    *   "When, pursuant to the provisions of this section, a final disposition has been entered against a covered employer in two instances within any consecutive six year period determining that such covered employer has failed to comply with the wage, benefits, anti-retaliation, record-keeping or reporting requirements of this section, such covered employer, and any principal or officer of such covered employer who knowingly participated in such failure, shall be ineligible to submit a bid on or be awarded any city service contract for a period of five years from the date of the second disposition." (§ 6-109.e.1.e)
+    *   "Declare ineligible to receive financial assistance or prohibit from operating as a covered employer on the premises of a financial assistance recipient or on real property improved or developed with financial assistance any person against whom a final disposition has been entered in two instances within any consecutive six year period determining that such person has willfully failed to pay the required wages in accordance with the provisions of this section or to comply with the anti-retaliation, recordkeeping, notice, or reporting requirements of this section." (§ 6-134.g.2.f)
+    *   "When, pursuant to the provisions of this section, a final disposition has been entered against a covered employer in two instances within any consecutive six year period determining that such covered employer has failed to comply with the requirements of this section, such covered employer, and any principal or officer of such covered employer who knowingly participated in such failure, shall be ineligible to submit a bid or proposal on or be awarded any city service contract for a period of five years from the date of the second disposition." (§ 6-145.f.3)
+    *   "Direct the imposition of sanctions against the city financial assistance recipient or covered employer in accordance with rules promulgated pursuant to subdivision g" (§ 6-146.f.1.b)
+*   **Why:** Tracking all sanctions and adverse actions against contractors is critical for risk management, fair procurement, and enforcing compliance.
+*   **One row represents:** A single sanction or adverse action imposed on a contractor or its affiliate.
+*   **Covers:** All cautions, suspensions, debarments, contract cancellations, declarations of default, determinations of ineligibility to bid, and other penalties imposed by any governmental entity.
+*   **Columns:**
+    *   Sanction ID (Primary Key)
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Affiliate ID (if sanction applies to affiliate, Foreign Key to Dataset 2)
+    *   Sanction Type (e.g., Caution, Suspension, Debarment, Contract Cancellation, Default, Ineligibility to Bid, Fine, Civil Penalty)
+    *   Sanctioning Entity (e.g., City Agency, Comptroller, Federal Agency, State Agency)
+    *   Date of Sanction
+    *   Reason for Sanction (e.g., False Statement, International Boycott, MacBride Principles Violation, Discrimination, Predatory Lending, Wage Violation, M/WBE Non-Compliance, Whistleblower Retaliation, Conflict of Interest/Misconduct)
+    *   Related Contract ID (Foreign Key to Dataset 1, if applicable)
+    *   Sanction Duration (e.g., 3 years, 5 years, indefinite)
+    *   Amount of Fine/Penalty (if applicable)
+    *   Status (e.g., Active, Expired, Appealed)
+    *   Date Sanction Lifted/Expired (if applicable)
+    *   Pending Proceedings (Yes/No)
+    *   Date Proceedings Initiated
+
+**9. Employee Wage and Benefit Payments**
+
+*   **Quotes:**
+    *   "A city service contractor or city service subcontractor that provides homecare services, day care services, head start services or services to persons with cerebral palsy must pay its covered employees that directly render such services in performance of the city service contract or subcontract no less than the living wage and must either provide its employees health benefits or must supplement their hourly wage rate by an amount no less than the health benefits supplement rate. This requirement applies for each hour that the employee works performing the city service contract or subcontract." (§ 6-109.b.1.a)
+    *   "A city service contractor or city service subcontractor that provides building services, food services or temporary services must pay its employees that are engaged in performing the city service contract or subcontract no less than the living wage or the prevailing wage, whichever is greater. Where the living wage is greater than the prevailing wage, the city service contractor or city service subcontractor must either provide its employees health benefits or must supplement their hourly wage rate by an amount no less than the health benefits supplement rate. Where the prevailing wage is greater than the living wage, the city service contractor or city service subcontractor must provide its employees the prevailing wage and supplements as provided in paragraph 18 of subdivision a of this section. These requirements apply for each hour that the employee works performing the city service contract or subcontract." (§ 6-109.b.1.b)
+    *   "A covered employer shall maintain original payroll records for each of its covered employees reflecting the days and hours worked on contracts, projects or assignments that are subject to the requirements of this section, and the wages paid and benefits provided for such hours worked." (§ 6-109.c.2.c)
+    *   "A city service contractor providing building services, food services or temporary services shall, as required by the predecessor version of this section, continue to submit copies of such payroll records, certified by the city service contractor under penalty of perjury to be true and accurate, to the contracting agency with every requisition for payment." (§ 6-109.c.2.d)
+    *   "A shelter operator or covered guard service company that employs covered guards at a shelter shall pay such guards no less than the prevailing wage determined in a manner consistent with the requirements of section 234 of the labor law." (§ 6-109.1.b.1)
+    *   "Each covered employer shall maintain original payroll records for each of the covered guards it employs to perform services pursuant to such shelter contract reflecting the days and hours worked, and the wages paid and benefits paid for such hours worked, and shall retain such records for the duration of its provision of services under a shelter contract and at least six years after the end of the contract term." (§ 6-109.1.b.3)
+    *   "Covered lessors shall ensure that all building service employees performing building service work at the premises to which a lease pertains are paid no less than the prevailing wage." (§ 6-130.b.1 - *second § 6-130*)
+    *   "Each covered lessor shall be required to submit copies of records, certified under penalty of perjury to be true and accurate, for the building service employees performing services in the building or buildings to each contracting agency with every request for payment under the lease. Such records shall include the days and hours worked, and the wages paid and benefits provided to each building service employee." (§ 6-130.b.3 - *second § 6-130*)
+    *   "Covered developers shall ensure that all building service employees performing building service work in connection with a city development project are paid no less than the prevailing wage." (§ 6-130.c.1.A - *second § 6-130*)
+    *   "Protected developers shall ensure that all building service employees performing building service work in connection with a preservation project are paid no less than the protected wage." (§ 6-130.c.1.B - *second § 6-130*)
+    *   "Each covered developer and protected developer shall maintain original payroll records for each building service employee subject to subparagraphs (A) or (B) of paragraph 1 of this section reflecting the days and hours worked, and the wages paid and benefits provided for such hours worked, and shall retain such records for at least six years after the building service work is performed." (§ 6-130.c.3 - *second § 6-130*)
+    *   "Covered employers shall pay their employees no less than a living wage." (§ 6-134.c.1)
+    *   "A covered employer shall maintain original payroll records for each of its employees reflecting the days and hours worked, and the wages paid and benefits provided for such hours worked, and shall retain such records for at least six years after the work is performed." (§ 6-134.e.2)
+    *   "The percentage of employees on Hurricane Sandy funded projects earning up to twenty thousand dollars per year; the percentage of employees on Hurricane Sandy funded projects earning more than twenty thousand dollars per year up to thirty-five thousand dollars per year; the percentage of employees on Hurricane Sandy funded projects earning more than thirty-five thousand dollars per year up to fifty thousand dollars per year; the percentage of employees on Hurricane Sandy funded projects earning more than fifty thousand dollars per year;" (§ 6-143.c.2)
+    *   "the percentage of full-time employees on Hurricane Sandy funded projects and the percentage of part-time employees on Hurricane Sandy funded projects to whom their employers offer health benefits" (§ 6-143.c.3)
+    *   "the zip code of residence of employees on Hurricane Sandy funded projects and the zip code of the Hurricane Sandy funded project location on which the employee is employed" (§ 6-143.c.4)
+*   **Why:** Detailed payroll records are essential for verifying compliance with living wage, prevailing wage, and health benefit requirements across various contract types.
+*   **One row represents:** A single payroll record entry for an employee for a specific pay period or work assignment.
+*   **Covers:** All covered employees under city service contracts, shelter contracts, city leases, city development projects, and financially assisted workplaces.
+*   **Columns:**
+    *   Payroll Record ID (Primary Key)
+    *   Employee ID (Foreign Key to Dataset 3)
+    *   Contractor ID (Employer, Foreign Key to Dataset 2)
+    *   Contract ID (Foreign Key to Dataset 1, if applicable)
+    *   Project ID (Foreign Key to Dataset 10, if applicable)
+    *   Lease ID (Foreign Key to Dataset 11, if applicable)
+    *   Pay Period Start Date
+    *   Pay Period End Date
+    *   Days Worked
+    *   Hours Worked (on covered contract/project)
+    *   Base Hourly Wage Paid
+    *   Tips Received and Retained (if applicable)
+    *   Total Cash Wages Paid
+    *   Health Benefits Provided (Yes/No)
+    *   Value of Health Benefits Provided (per hour/period)
+    *   Other Benefits Provided (Description, Value)
+    *   Required Wage Rate (e.g., Living Wage, Prevailing Wage, Protected Wage)
+    *   Required Health Benefits Supplement Rate
+    *   Compliance Status (e.g., Compliant, Underpaid)
+    *   Underpayment Amount (if applicable)
+    *   Employee Residence Zip Code (for reporting)
+    *   Work Site Zip Code (for reporting)
+    *   Employee Salary Range (for reporting)
+    *   Full-time/Part-time Status
+
+**10. Wage and Benefit Compliance Investigations**
+
+*   **Quotes:**
+    *   "Whenever the comptroller has reason to believe that a covered employer or other person has not complied with the requirements of this section, or upon a verified complaint in writing from a covered employee, a former employee, an employee's representative, a labor union with an interest in the city service contract at issue, the comptroller shall conduct an investigation to determine the facts relating thereto." (§ 6-109.e.1.a)
+    *   "Based upon such investigation, hearing, and findings, the comptroller shall report the results of such investigation and hearing to the contracting agency, who shall issue such order, determination or other disposition. Such disposition may: (i) Direct payment of wages and/or the monetary equivalent of benefits wrongly denied, including interest from the date of the underpayment to the worker... (iv) Direct payment of a further sum as a civil penalty... (vi) Declare a finding of non-responsibility and bar the covered employer from receiving city service contracts from the contracting agency for a prescribed period of time." (§ 6-109.e.1.a)
+    *   "Whenever the comptroller has reason to believe that there has been a violation of this section, or upon a verified complaint in writing from a covered guard, a former covered guard, or a covered guard's representative claiming a violation of this section, the comptroller shall conduct an investigation to determine the facts relating thereto." (§ 6-109.1.c.3)
+    *   "The comptroller shall report the results of such investigation to the mayor. Upon receipt of the results of such investigation, or based on other appropriate findings, the mayor shall... issue an order, determination, or other disposition, which may include a stipulation of settlement. Such disposition may: (i) Direct payment of wages and/or the monetary equivalent of benefits that were underpaid... (iii) Direct payment of a further sum as a civil penalty... (v) Direct payment of a further sum as a civil penalty up to three times the actual damages sustained when in two or more instances within the last six years final determinations by the mayor... has found that the covered employer willfully failed to pay the prevailing wage." (§ 6-109.1.c.4)
+    *   "Whenever the comptroller has reason to believe there has been a violation of this section, or upon a verified complaint in writing from a building service employee, a former building service employee, or a building service employee's representative claiming a violation of this section, the comptroller shall conduct an investigation to determine the facts relating thereto." (§ 6-130.d.3 - *second § 6-130*)
+    *   "The comptroller shall report the results of such investigation to the mayor or his or her designee, who shall... issue an order, determination, or other disposition... (i) direct payment of wages and/or the monetary equivalent of benefits wrongly denied... (ii) direct payment of a further sum as a civil penalty... (iv) direct the reinstatement of, or other appropriate relief for, any person found to have been subject to retaliation or discrimination in violation of this section" (§ 6-130.d.4 - *second § 6-130*)
+    *   "Whenever the comptroller has reason to believe there has been a violation of this section, or upon a verified complaint in writing from an employee or an employee's representative claiming a violation of this section, the comptroller shall conduct an investigation to determine the facts relating thereto." (§ 6-134.g.1)
+    *   "The comptroller shall report the results of such investigation to the mayor, or his or her designee, who shall... issue an order, determination, or other disposition... (a) Direct payment of wages and/or the monetary equivalent of benefits wrongly denied... (b) Direct payment of a further sum as a civil penalty... (d) Direct the reinstatement of, or other appropriate relief for, any person found to have been subjected to retaliation or discrimination in violation of this section" (§ 6-134.g.2)
+*   **Why:** Tracking investigations and their outcomes is essential for enforcing wage and benefit laws and ensuring contractor accountability.
+*   **One row represents:** A single investigation into alleged wage or benefit non-compliance.
+*   **Covers:** Investigations related to living wage, prevailing wage, and health benefits for city service contracts, shelter contracts, city leases, and financially assisted workplaces.
+*   **Columns:**
+    *   Investigation ID (Primary Key)
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Contract ID (Foreign Key to Dataset 1, if applicable)
+    *   Project ID (Foreign Key to Dataset 10, if applicable)
+    *   Lease ID (Foreign Key to Dataset 11, if applicable)
+    *   Complaint ID (Foreign Key to Dataset 12, if applicable)
+    *   Investigation Start Date
+    *   Investigating Entity (e.g., Comptroller, Agency)
+    *   Alleged Violation Type (e.g., Underpayment of Wages, No Health Benefits, Retaliation, Record-Keeping)
+    *   Investigation Findings (e.g., Violation Found, No Violation)
+    *   Date of Findings
+    *   Order/Determination Issued (Yes/No)
+    *   Order/Determination Date
+    *   Remedy Ordered (e.g., Back Pay, Interest, Civil Penalty, Reinstatement, Non-Responsibility)
+    *   Amount of Back Pay Ordered
+    *   Amount of Interest Ordered
+    *   Amount of Civil Penalty Ordered
+    *   Willful Failure Found (Yes/No, for repeat violations)
+    *   Sanction Imposed (Yes/No, Foreign Key to Dataset 8)
+    *   Status (e.g., Open, Closed, Appealed, Remedied)
+    *   Date Remedied
+
+**11. Prevailing Wage and Living Wage Rates**
+
+*   **Quotes:**
+    *   "Prevailing Wage and Supplements" means the rate of wage and supplemental benefits per hour paid in the locality to workers in the same trade or occupation and annually determined by the comptroller in accordance with the provisions of section 234 of the New York state labor law or, for titles not specifically enumerated in or covered by that law, determined by the comptroller at the request of a contracting agency or a covered employer in accordance with the procedures of section 234 of the New York state labor law." (§ 6-109.a.18)
+    *   "The Living Wage. The living wage shall be an hourly wage rate of ten dollars per hour and will be phased in as provided below." (§ 6-109.b.2)
+    *   "The Health Benefits Supplement Rate shall be $1.50 per hour." (§ 6-109.b.3.b)
+    *   "The comptroller shall be responsible for publishing the living wage and for calculating and publishing all applicable prevailing wage and health benefits supplement rates. The comptroller shall annually publish the adjusted rates. The adjusted living wage and health benefits supplement rate shall take effect on July 1 of each year, and the adjusted prevailing wage rates shall take effect on whatever date revised prevailing wage rates determined under section 230 of the state labor law are made effective." (§ 6-109.d.1.a)
+    *   "Prevailing wage" means the rate of wage and supplemental benefits paid in the locality to workers in the same trade or occupation and determined by the comptroller in a manner consistent with the provisions of section 234 of the labor law." (§ 6-109.1.a)
+    *   "Protected wage" means the rate of wages and cost of benefits paid to a building service employee in a preservation project on the date that the financial assistance for such project is received plus an annual increase to account for any change in the cost of living and in the cost of providing benefits. Such increase shall be determined by a standard determined pursuant to rule, as required by paragraph (9) of subdivision d of this section." (§ 6-130.a - *second § 6-130*)
+    *   "Beginning in 2013 and each year thereafter, the living wage rate and the health benefits supplement rate shall be adjusted based upon the twelve-month percentage increases, if any, in the Consumer Price Index for All Urban Consumers for All Items and the Consumer Price Index for All Urban Consumers for Medical Care, respectively, (or their successor indexes, if any) as published by the Bureau of Labor Statistics of the United States Department of Labor, based on the most recent twelve-month period for which data is available. The adjusted living wage rate and health benefits supplement rate shall each then be rounded to the nearest five cents. Such adjusted rates shall be announced no later than January 1 of each year and shall become effective as the new living wage rate and health benefits supplement rate on April 1 of each year." (§ 6-134.b.9)
+*   **Why:** Maintaining a historical record of all published wage and benefit rates is necessary for accurate compliance checks and enforcement.
+*   **One row represents:** A specific wage or benefit rate for a given job classification and effective date.
+*   **Covers:** All living wage rates, prevailing wage rates, health benefits supplement rates, and protected wage rates published by the comptroller.
+*   **Columns:**
+    *   Rate ID (Primary Key)
+    *   Rate Type (e.g., Living Wage, Prevailing Wage, Health Benefits Supplement, Protected Wage)
+    *   Job Classification (if Prevailing Wage)
+    *   Effective Date
+    *   Expiration Date (if applicable)
+    *   Hourly Wage Rate
+    *   Health Benefits Supplement Rate
+    *   Total Hourly Compensation (Wage + Supplement)
+    *   Source Index (e.g., CPI-U All Items, CPI-U Medical Care)
+    *   Adjustment Calculation Method
+    *   Comptroller Announcement Date
+
+**12. M/WBE/EBE Certification Applications**
+
+*   **Quotes:**
+    *   "The mayor shall establish a procedure for the certification of businesses which meet the requirements of this section and regulations promulgated hereunder as locally based enterprises or graduate locally based enterprises." (§ 6-108.1.f.1)
+    *   "The division shall, upon reviewing applications for certification and recertification, determine whether a firm qualifies as a graduate MBE, WBE or EBE." (§ 6-129.e.13.a)
+    *   "The division shall promulgate regulations establishing a process by which a certified MBE, WBE or EBE may challenge a determination that it qualifies as a graduate MBE, WBE or EBE." (§ 6-129.e.13.b)
+    *   "At any time more than two years after the division has determined that a firm qualifies as a graduate MBE, WBE or EBE, the firm may apply to have such designation lifted." (§ 6-129.e.13.c)
+    *   "The number of firms certified or recertified in accordance with section 1304 of the charter during the six months immediately preceding such report" (§ 6-129.l.1.e)
+    *   "Whenever an agency has reason to believe that an MBE, WBE or EBE is not qualified for certification, or is participating in a contract in a manner that does not serve a commercially useful function, or has violated any provision of this section, the agency shall notify the commissioner who shall determine whether the certification of such business enterprise should be revoked." (§ 6-129.o.6)
+    *   "The making of a false or fraudulent statement by an MBE, WBE or EBE in any instrument submitted pursuant to these rules shall, in addition, be grounds for revocation of its certification." (§ 6-129.o.7)
+*   **Why:** Tracking the certification process for M/WBE/EBE firms is essential for administering the program and maintaining accurate directories.
+*   **One row represents:** A single application for M/WBE/EBE certification or recertification.
+*   **Covers:** All applications for certification, recertification, graduate status determination, and challenges/rescissions for MBEs, WBEs, and EBEs.
+*   **Columns:**
+    *   Application ID (Primary Key)
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Application Date
+    *   Application Type (e.g., Initial Certification, Recertification, Graduate Status Determination, Challenge, Rescission Request)
+    *   Certification Sought (e.g., MBE, WBE, EBE, Graduate MBE, Graduate WBE, Graduate EBE)
+    *   Application Status (e.g., Submitted, Under Review, Approved, Denied, Rescinded)
+    *   Approval/Denial Date
+    *   Reason for Denial/Rescission (if applicable)
+    *   Reviewing Division/Agency
+    *   False/Fraudulent Statement Found (Yes/No)
+    *   Date of False Statement Finding
+    *   Certification Expiration Date (if approved)
+    *   Graduate Status Determination Date (if applicable)
+    *   Graduate Status Lifted (Yes/No, Date)
+
+**13. M/WBE/EBE Contract Participation Goals**
+
+*   **Quotes:**
+    *   "Each contracting agency shall, consistent with the requirements of applicable city, state and federal law, include in every contract to which it becomes a party such terms and conditions as may be required by regulation promulgated pursuant to this section to provide that if any or all of the contract is subcontracted, not less than ten percent of the total dollar amount of the contract shall be awarded to locally based enterprises or graduate locally based enterprises; except that, where an amount less than such percentage is subcontracted, such lesser percentage shall be so awarded." (§ 6-108.1.c)
+    *   "Each contracting agency shall, consistent with the requirements of applicable city, state and federal law, seek to ensure that not less than ten percent of the total dollar amount of all contracts awarded for construction projects during each fiscal year shall be awarded to locally based enterprises or graduate locally based enterprises." (§ 6-108.1.b)
+    *   "The citywide contracting participation goals for MBEs, WBEs and EBEs, which may be met through awards of prime contracts or subcontracts as described in subdivision j of this section, shall be as follows: For construction contracts: Black Americans 12%... Women 25.66%... Emerging 6%..." (§ 6-129.d.1)
+    *   "Agencies shall develop agency utilization plans pursuant to subdivision g of this section. The citywide goals shall not be summarily adopted as goals for all annual agency utilization plans; rather, goals for such plans may be set at levels higher, lower, or the same as the citywide goals, subject to the approval of the commissioner as described in paragraph three of subdivision g of this section." (§ 6-129.d.2.b)
+    *   "Prior to issuing the solicitation of bids or proposals for individual contracts that present opportunities for participation by certified firms, agencies shall establish participation goals for MBEs, WBEs and/or EBEs. Such goals may be greater than, less than or the same as the relevant citywide goal or goals established pursuant to subdivision d of this section." (§ 6-129.i.1)
+    *   "For each contract in which a contracting agency has established participation goals, such agency shall state in the solicitation for such contract that bidders and/or proposers shall be required to agree as a material term of the contract that the contractor shall meet the participation goals unless such goals are waived or modified by the agency in accordance with this section." (§ 6-129.i.3.a)
+    *   "A bidder or proposer may request that an agency change the participation goal or goals established for the procurement on the grounds that goals are unreasonable in light of the availability of certified firms to perform the services required, or by demonstrating that it has legitimate business reasons for proposing a lower level of subcontracting in its utilization plan." (§ 6-129.i.11.a)
+    *   "A contractor may request modification of its utilization plan after the award of a contract." (§ 6-129.i.12.a)
+*   **Why:** Tracking specific participation goals for each contract and any modifications is essential for monitoring and enforcing M/WBE/EBE program requirements.
+*   **One row represents:** A specific participation goal set for a contract for a particular group (MBE, WBE, EBE, LBE, GLE).
+*   **Covers:** All participation goals established for individual contracts, including initial goals, waivers, and modifications.
+*   **Columns:**
+    *   Contract Goal ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Goal Type (e.g., MBE, WBE, EBE, LBE, Graduate LBE)
+    *   Minority Group (if MBE, e.g., Black American, Asian American)
+    *   Industry Classification (e.g., Construction, Professional Services, Standard Services, Goods)
+    *   Goal Percentage (Initial)
+    *   Goal Percentage (Current)
+    *   Goal Set Date
+    *   Waiver Requested (Yes/No)
+    *   Waiver Request Date
+    *   Waiver Approved (Yes/No)
+    *   Waiver Approval Date
+    *   Waiver Reason
+    *   Modification Requested (Yes/No)
+    *   Modification Request Date
+    *   Modification Approved (Yes/No)
+    *   Modification Approval Date
+    *   Modification Reason
+    *   Contractor Utilization Plan Submitted (Yes/No)
+    *   Contractor Utilization Plan Met (Yes/No)
+    *   Contractor Utilization Plan Details (e.g., proposed subcontracting percentage, identified firms)
+
+**14. Subcontractor Payments and Utilization**
+
+*   **Quotes:**
+    *   "Each contracting agency shall, consistent with the requirements of applicable city, state and federal law, include in every contract to which it becomes a party such terms and conditions as may be required by regulation promulgated pursuant to this section to provide that if any or all of the contract is subcontracted, not less than ten percent of the total dollar amount of the contract shall be awarded to locally based enterprises or graduate locally based enterprises; except that, where an amount less than such percentage is subcontracted, such lesser percentage shall be so awarded." (§ 6-108.1.c)
+    *   "For each contract for which a contractor utilization plan has been submitted, the contractor shall, with each voucher for payment, and/or periodically as the agency may require, submit statements, certified under penalty of perjury, which shall include, but not be limited to, the total amount the contractor paid to its direct subcontractors, and, where applicable pursuant to subparagraph (l) of paragraph (1) of subdivision j of this section, the total amount direct subcontractors paid to indirect subcontractors, the names, addresses and contact numbers of each MBE, WBE or EBE hired as a subcontractor by the contractor or any of the contractor's direct subcontractors, as well as the dates and amounts paid to each MBE, WBE or EBE." (§ 6-129.i.7)
+    *   "The contractor shall also submit, along with its voucher for final payment, the total amount it paid to subcontractors, and, where applicable pursuant to subparagraph (l) of paragraph (1) of subdivision j of this section, the total amount its direct subcontractors paid directly to their indirect subcontractors; and a final list, certified under penalty of perjury, which shall include the name, address and contact information of each subcontractor that is an MBE, WBE or EBE, the work performed by, and the dates and amounts paid to each." (§ 6-129.i.7)
+    *   "If payments made to, or work performed by, MBEs, WBEs or EBEs are less than the amount specified in the contractor's utilization plan, the agency shall take appropriate action in accordance with subdivision o of this section, unless the contractor has obtained a modification of its utilization plan pursuant to paragraph 12 of this subdivision." (§ 6-129.i.8)
+    *   "The total dollar amount that an agency has paid or is obligated to pay to a prime contractor that is an MBE, WBE or EBE, reduced by the dollar amount the contractor has paid or is obligated to pay its direct subcontractors upon their completion of work, shall be credited toward the relevant goal." (§ 6-129.j.1.a)
+    *   "the total dollar amount that a prime contractor of an agency has paid or is obligated to pay to a direct subcontractor that is an MBE, WBE or EBE shall be credited toward the relevant goal." (§ 6-129.j.1.b)
+    *   "In the case of contracts of the types identified pursuant to subparagraph (l) of this paragraph, the total dollar amount that a direct subcontractor of the prime contractor has paid or is obligated to pay to an indirect subcontractor that is an MBE, WBE or EBE shall be credited toward the relevant goal." (§ 6-129.j.1.d)
+    *   "No credit shall be given for participation in a contract by an MBE, WBE or EBE that does not perform a commercially useful function." (§ 6-129.j.1.g)
+    *   "No credit shall be given for the participation in a contract by any firm that has not been certified as an MBE, WBE or EBE in accordance with section 1304 of the charter." (§ 6-129.j.1.h)
+    *   "The participation of a certified company shall not be credited toward more than one participation goal." (§ 6-129.j.1.k)
+*   **Why:** Tracking actual payments to subcontractors, especially certified firms, is crucial for verifying compliance with utilization plans and M/WBE/EBE goals.
+*   **One row represents:** A payment made by a contractor to a direct subcontractor, or by a direct subcontractor to an indirect subcontractor.
+*   **Covers:** All payments made to subcontractors under contracts with M/WBE/EBE participation goals, including details on the subcontractor's certification status and the work performed.
+*   **Columns:**
+    *   Subcontractor Payment ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Prime Contractor ID (Foreign Key to Dataset 2)
+    *   Direct Subcontractor ID (Foreign Key to Dataset 2)
+    *   Indirect Subcontractor ID (Foreign Key to Dataset 2, if applicable)
+    *   Subcontractor Role (e.g., Direct, Indirect)
+    *   Payment Date
+    *   Amount Paid
+    *   Work Performed Description
+    *   Subcontractor Certified (Yes/No)
+    *   Subcontractor Certification Type (e.g., MBE, WBE, EBE, LBE, Graduate LBE)
+    *   Commercially Useful Function Performed (Yes/No)
+    *   Credit Applied to Goal Type (e.g., MBE, WBE, EBE, LBE, None)
+    *   Payment Certified by Prime Contractor (Yes/No)
+    *   Certification Date
+
+**15. Financial Assistance Awards (Non-Contractual)**
+
+*   **Quotes:**
+    *   "No city agency shall approve, grant, award, pay, distribute or issue any city financial assistance to a financial institution where the financial institution or an affiliate of the financial institution is a predatory lender as defined by this section." (§ 6-128.b.1)
+    *   "As a condition to receiving any form of financial assistance from a city agency, a financial institution shall provide a statement to the city agency certifying that neither the financial institution nor any of its affiliates is or will become a predatory lender." (§ 6-128.b.2)
+    *   "For the purposes of this section, city financial assistance shall include, but not be limited to, tax abatements (including, but not limited to, abatements of property, sales or mortgage recording taxes), cash payments or grants." (§ 6-128.b.4)
+    *   "Financial assistance" means assistance that is provided to a financial assistance recipient for the improvement or development of real property, economic development, job retention and growth, or other similar purposes, and that is provided either (a) directly by the city, or (b) indirectly by a city economic development entity and that is paid in whole or in part by the city, and that at the time the financial assistance recipient enters into a project agreement with the city or city economic development entity is expected to have a total present financial value of one million dollars or more." (§ 6-134.b.7)
+    *   "Financial assistance includes, but is not limited to, cash payments or grants, bond financing, tax abatements or exemptions (including, but not limited to, abatements or exemptions from real property, mortgage recording, sales and use taxes, or the difference between any payments in lieu of taxes and the amount of real property or other taxes that would have been due if the property were not exempted from the payment of such taxes), tax increment financing, filing fee waivers, energy cost reductions, environmental remediation costs, write-downs in the market value of building, land, or leases, or the cost of capital improvements undertaken for the benefit of a project subject to a project agreement." (§ 6-134.b.7)
+    *   "For each grant or loan issuance associated with COVID-19 funds, the awarding agency, the recipient name, the recipient's zip code, the grant or loan name, the purpose of the grant or loan, the grant or loan award amount, whether the grant or loan was subject to a selective award process and the nature of that process, the award status and information on the value of the grant or loan eligible for reimbursement from a COVID-19 funds award." (§ 6-144.b.1.d)
+    *   "City financial assistance. The term "city financial assistance" means financial assistance, other than as-of-right assistance, that is provided directly by the city or by a city economic development entity using funds provided in whole or in part by the city to a person for the improvement or development of property and that, at the time the city financial assistance recipient enters into a project agreement with the city or city economic development entity, is expected to have a total present financial value of at least $500,000" (§ 6-146.a)
+*   **Why:** Tracking all forms of financial assistance, grants, and loans is necessary for financial oversight, compliance with predatory lending laws, and economic development goals.
+*   **One row represents:** A single award of financial assistance, grant, or loan.
+*   **Covers:** All city financial assistance, grants, and loans provided to entities, including those for economic development, real property improvement, and COVID-19 response.
+*   **Columns:**
+    *   Financial Assistance ID (Primary Key)
+    *   Recipient ID (Foreign Key to Dataset 2)
+    *   Awarding Agency/Entity (e.g., City Agency, City Economic Development Entity)
+    *   Award Date
+    *   Assistance Type (e.g., Grant, Loan, Bond Financing, Tax Abatement, Tax Exemption, Tax Increment Financing, Filing Fee Waiver, Energy Cost Reduction, Environmental Remediation, Write-down, Capital Improvement)
+    *   Total Present Financial Value
+    *   Project Agreement ID (if applicable)
+    *   Project ID (Foreign Key to Dataset 16, if applicable)
+    *   Purpose of Assistance (e.g., Real Property Improvement, Economic Development, Job Retention, COVID-19 Response)
+    *   Is Predatory Lender Certified (Recipient)? (Yes/No)
+    *   Predatory Lender Certification Date
+    *   Award Status (e.g., Approved, Disbursed, Rescinded)
+    *   Date of Last Disbursement
+    *   Recipient Zip Code (if applicable)
+    *   Selective Award Process (Yes/No)
+    *   Description of Award Process (if selective)
+    *   Eligible for COVID-19 Funds Reimbursement (Yes/No)
+    *   COVID-19 Funds Reimbursement Value
+
+**16. Projects (Development, Financial Assistance, Hurricane Sandy, COVID-19)**
+
+*   **Quotes:**
+    *   "City development project" means any project that: (a) is a large development project or a residential project; and (b) has received financial assistance." (§ 6-130.a - *second § 6-130*)
+    *   "Large development project" means a project undertaken by a city agency or a city economic development entity for the purpose of improvement or development of real property, economic development, job retention or growth, or other similar purposes where the project is expected to be larger than 100,000 square feet." (§ 6-130.a - *second § 6-130*)
+    *   "Residential project" means a project undertaken by a city agency or a city economic development entity to develop or improve no less than 120 residential units in one or more buildings." (§ 6-130.a - *second § 6-130*)
+    *   "Preservation project" means a (i) small residential project; or (ii) residential project that includes an existing building that is subject to a regulatory agreement with a federal, state or local government agency, provided that such agreement requires all of the residential units, other than units for resident employees of such building, to be affordable for households earning on average up to 50 percent of the area median income, adjusted for household size, and provided, further, that such project receives financial assistance: (A) solely in the form of a tax benefit or (B) that averages less than $35,000 per residential unit, except that "preservation project" shall not include a supportive housing project." (§ 6-130.a - *second § 6-130*)
+    *   "Hurricane Sandy funded projects" means any construction, services, or programs, paid for, in whole or in part, with any Hurricane Sandy funds." (§ 6-143.a.2)
+    *   "For each Hurricane Sandy funded project for construction, the name of the contractor, and subcontractor, if known, a detailed description of the Hurricane Sandy funded project, including, but not limited to, the physical address, block and lot numbers, estimated dates of start and completion, and purpose of the project in relation to the city's recovery and rebuilding efforts, the value and type of funding provided, including but not limited to grants, loans, contracts, or other such forms of financial assistance, the total number of jobs at the time of award of Hurricane Sandy funds, and the total number of additional jobs to be created and retained over the life of the Hurricane Sandy funded project." (§ 6-143.b.1)
+    *   "For Hurricane Sandy funded projects relating to the rebuilding or repairing of four or fewer residential units, data shall not include the physical address, block and lot numbers, site-specific dates of start and completion and the value and type of funding provided; any data provided for such projects shall be aggregated by zip code" (§ 6-143.b.1)
+    *   "COVID-19 expenditure" means any expense or capital expenditure by a city agency for services, goods or materials, programs or construction paid for, in whole or in part, with any COVID-19 funds, provided that such term shall only include personnel expenditures that are tracked as such for reimbursement." (§ 6-144.a)
+    *   "For each COVID-19 capital expenditure, where applicable, the administering agency, the budget line, the project identification number, the project description, the amount submitted for reimbursement, the amount reimbursed and the source of reimbursement" (§ 6-144.b.1.b)
+    *   "Project agreement" means a written agreement between the city or a city economic development entity and a city financial assistance recipient through which city financial assistance is provided." (§ 6-146.a)
+    *   "Project commencement date" means the date on which a city financial assistance recipient commences operations at a project, as further defined by a rule promulgated pursuant to subdivision g of this section." (§ 6-146.a)
+*   **Why:** Tracking details of all city-supported projects (development, disaster recovery, COVID-19 response) is essential for managing resources, monitoring progress, and ensuring compliance.
+*   **One row represents:** A unique project (e.g., city development project, Hurricane Sandy funded project, COVID-19 capital expenditure project).
+*   **Covers:** All projects receiving city financial assistance, disaster recovery funds, or COVID-19 capital expenditures.
+*   **Columns:**
+    *   Project ID (Primary Key)
+    *   Project Name/Description
+    *   Project Type (e.g., City Development, Preservation, Supportive Housing, Hurricane Sandy Recovery, COVID-19 Capital)
+    *   Administering Agency/Entity
+    *   Financial Assistance ID (Foreign Key to Dataset 15, if applicable)
+    *   Property Address (if applicable)
+    *   Block Number (if applicable)
+    *   Lot Number (if applicable)
+    *   Estimated Start Date
+    *   Estimated Completion Date
+    *   Actual Start Date
+    *   Actual Completion Date
+    *   Project Purpose
+    *   Total Project Value
+    *   Total Square Footage (if applicable)
+    *   Number of Residential Units (if applicable)
+    *   Affordability Requirements (if residential)
+    *   Regulatory Agreement (Yes/No, if residential)
+    *   On-site Supportive Services (Yes/No, if supportive housing)
+    *   Hurricane Sandy Funds Used (Yes/No)
+    *   COVID-19 Funds Used (Yes/No)
+    *   COVID-19 Budget Line (if applicable)
+    *   COVID-19 Reimbursement Submitted Amount
+    *   COVID-19 Reimbursement Received Amount
+    *   COVID-19 Reimbursement Source
+    *   Total Jobs at Award
+    *   Additional Jobs Created
+    *   Jobs Retained
+    *   Project Commencement Date (for economic development projects)
+    *   Operational Commencement Date (for economic development projects)
+    *   HUD Act Section 3 Compliance (Yes/No)
+    *   Project Zip Code (for aggregated reporting)
+
+**17. City Leases**
+
+*   **Quotes:**
+    *   "Lease" means any agreement whereby a contracting agency contracts for, or leases or rents, commercial office space or commercial office facilities of 10,000 square feet or more from a non-governmental entity provided the city, whether through a single agreement or multiple agreements, leases or rents no less than 51 percent of the total square footage of the building to which the lease applies, or if such space or such facility is entirely located within the geographic area in the borough of Staten Island, or in an area not defined as an exclusion area pursuant to section 421-a of the real property tax law on the date of enactment of the local law that added this section, then no less than 80 percent of the total square footage of the building to which the lease applies. Such agreements do not include agreements between not-for-profit organizations and a contracting agency." (§ 6-130.a - *second § 6-130*)
+    *   "Prior to entering into a lease, or extension, renewal, amendment or modification thereof, and annually thereafter for the term of the lease the contracting agency shall obtain from the prospective covered lessor, and provide to the comptroller, a certification, executed under penalty of perjury, that all building service employees employed in the building to which the lease pertains or under contract with the covered lessor to perform building service work in such building will be and/or have been paid the prevailing wage for the term of the lease." (§ 6-130.b.2 - *second § 6-130*)
+    *   "The requirements of this section shall apply for the term of the lease." (§ 6-130.b.6 - *second § 6-130*)
+*   **Why:** Tracking city leases is necessary for managing real estate, ensuring prevailing wage compliance for building service employees, and financial oversight.
+*   **One row represents:** A single lease agreement for commercial office space.
+*   **Covers:** All leases for commercial office space meeting the specified square footage and city occupancy thresholds.
+*   **Columns:**
+    *   Lease ID (Primary Key)
+    *   Contracting Agency ID
+    *   Covered Lessor ID (Foreign Key to Dataset 2)
+    *   Lease Start Date
+    *   Lease End Date
+    *   Leased Property Address
+    *   Total Square Footage Leased
+    *   Total Building Square Footage
+    *   City Occupancy Percentage
+    *   Is Not-for-Profit Lessor? (Yes/No)
+    *   Lease Extension/Renewal/Amendment Date (if applicable)
+    *   Prevailing Wage Certification Required (Yes/No)
+    *   Prevailing Wage Certification Status (e.g., Submitted, Compliant)
+    *   Date of Last Prevailing Wage Certification
+
+**18. City Fleet Vehicle Inventory**
+
+*   **Quotes:**
+    *   "Low-emission motor vehicles which meet the standards prescribed by subdivision e of this section, and which have been determined by the department of citywide administrative services to be suitable for use as a substitute for a class or model of motor vehicles presently in use by the city of New York, shall be purchased by the city for use by the city government in lieu of other vehicles, provided that the commissioner of citywide administrative services shall first determine that such low-emission motor vehicles have procurement and maintenance costs not substantially greater than those of the class or model of motor vehicles for which they are to be substituted." (§ 6-121.c)
+    *   "The commissioner of citywide administrative services of the city of New York shall, upon request of the commissioner of environmental protection of the city of New York, and after such tests as he or she may deem appropriate, certify as a low-emission motor vehicle any particular class or model of motor vehicles that: 1. meets the California Low-Emission Vehicle (LEV) III or successor standards; or 2. meets either (i) the hydrocarbon and carbon monoxide exhaust emission standards as defined and as specified for nineteen hundred seventy-five model year vehicles and the oxides of nitrogen exhaust emission standard as defined and as specified for the then current model year or (ii) the oxides of nitrogen exhaust emission standard as defined and as specified for nineteen hundred seventy-six model year vehicles and the hydrocarbon and carbon monoxide exhaust emission standards as defined and as specified for the then current model year; and 3. meets the crankcase emission standard as defined and as specified and the fuel evaporative emission standard as defined and as specified; and 4. will not emit an air contaminant not emitted by the class or model of motor vehicle presently in use in the city of New York unless the commissioner of environmental protection determines that such air contaminant will not cause significant detriment to the health, safety, welfare or comfort of any person, or injury to plant and animal life, or damage to property or business." (§ 6-121.d)
+    *   "The city shall establish a car sharing program for city agencies utilizing light-duty motor vehicles." (§ 6-140.b)
+    *   "Beginning January 1, 2016 and during each of the following three consecutive years thereafter through December 31, 2019, the city shall remove from service without replacement at least two percent of the total existing number of light-duty motor vehicles in the city fleet through the use of strategies including, but not limited to, car sharing." (§ 6-140.c)
+    *   "No later than January 1, 2023, all large vehicles in the city fleet shall be equipped with side guards." (§ 6-141.b.1)
+*   **Why:** Managing the city's vehicle fleet, including low-emission vehicle purchases, car sharing, and side guard installation, requires a detailed inventory.
+*   **One row represents:** A single motor vehicle in the city fleet.
+*   **Covers:** All city-owned or leased motor vehicles, including light-duty vehicles and large vehicles.
+*   **Columns:**
+    *   Vehicle ID (Primary Key)
+    *   Agency ID (Owning/Operating Agency)
+    *   Vehicle Type (e.g., Light-Duty, Large Vehicle, Sedan, Truck, Van)
+    *   Make
+    *   Model
+    *   Model Year
+    *   License Plate Number
+    *   Acquisition Date
+    *   Acquisition Cost
+    *   Is Low-Emission Vehicle (LEV) Certified? (Yes/No)
+    *   LEV Certification Date
+    *   LEV Emission Standards Met
+    *   LEV Air Contaminant Check Status
+    *   LEV Safety/Performance/Reliability/Fuel Availability Assessment
+    *   Is Part of Car Sharing Program? (Yes/No)
+    *   Car Sharing Program Start Date
+    *   Date Removed from Service (if applicable)
+    *   Reason for Removal (if applicable)
+    *   Equipped with Side Guard? (Yes/No)
+    *   Side Guard Installation Date
+    *   Side Guard Specifications Met (Yes/No)
+    *   Side Guard Exemption Granted (Yes/No)
+    *   Side Guard Exemption Reason
+
+**19. City Contracted Vehicles (Side Guard Compliance)**
+
+*   **Quotes:**
+    *   "City contracted vehicle. The term "city contracted vehicle" means any large vehicle that is utilized within the city on a weekly or more frequent basis to fulfill requirements material to the scope of a contract registered with the comptroller, where such contract has an estimated value of $2 million or more." (§ 6-141.a)
+    *   "No later than 12 months from the issuance of a notice to proceed pursuant to an individual contract utilizing 10 or fewer trucks, and 18 months for an individual contract utilizing more than 10 trucks, any city contracted vehicle covered by such contract shall be equipped with side guards." (§ 6-141.b.2)
+    *   "The department shall have the authority to promulgate any rules necessary to administer the provision of this section, including but not limited to rules establishing side guard specifications that depart from the default specifications set forth in subdivision a of this section when such departure is deemed necessary by the department, as well as rules governing when the installation of side guards on certain city vehicles or city contracted vehicles is impractical or will disrupt provision of public safety or public health services and will not be required. Such rules may also govern when written exemptions may be authorized, including due to limitations in vendor capacity to supply side-guards and circumstances in which city-owned trucks are in the order cycle for replacement." (§ 6-141.c)
+    *   "Contract requirements shall include, but not be limited to, a penalty of up to $4,000 for each city contracted vehicle that is found to be out of compliance with the requirements of this section." (§ 6-141.d)
+*   **Why:** Tracking side guard compliance for city-contracted vehicles is a legal requirement for public safety and contract enforcement.
+*   **One row represents:** A single city-contracted vehicle subject to side guard requirements.
+*   **Covers:** All large vehicles utilized by contractors for city contracts with an estimated value of $2 million or more.
+*   **Columns:**
+    *   Contracted Vehicle ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Vehicle Make
+    *   Vehicle Model
+    *   Gross Vehicle Weight Rating (GVWR)
+    *   Notice to Proceed Date (for contract)
+    *   Side Guard Installation Deadline
+    *   Equipped with Side Guard? (Yes/No)
+    *   Side Guard Installation Date
+    *   Side Guard Specifications Met (Yes/No)
+    *   Side Guard Exemption Granted (Yes/No)
+    *   Side Guard Exemption Reason
+    *   Compliance Inspection Date
+    *   Compliance Status (e.g., Compliant, Non-Compliant)
+    *   Penalty Imposed (Yes/No)
+    *   Penalty Amount
+    *   Date Penalty Imposed
+
+**20. Procurement Solicitations and Bid Openings**
+
+*   **Quotes:**
+    *   "All bids shall be publicly opened by the officer or officers advertising therefor in the presence of the comptroller, or the comptroller's representative. The opening of such bids shall not be postponed if the comptroller or the comptroller's representative shall, after due notice, fail to attend." (§ 6-111)
+    *   "All requests for proposals and any other public notices of opportunities to contract with the city shall, simultaneously with their publication, be posted on the city's website in a location that is accessible by the public." (§ 6-111.1)
+    *   "No request for proposal for new client services program contracts shall be released to the public unless at least 45 days prior to such release a concept report regarding such request for proposal is released to the public. Prior to the release of concept reports, the city shall publish a notification of the release in five consecutive editions of the city record and electronically on the city's website in a location that is accessible to the public, and upon release, concept reports shall be posted on the city's website in a location that is accessible by the public." (§ 6-111.2.a)
+    *   "When advertising a solicitation for bids or proposals for a contract for which a participation goal has been established, agencies shall include in the advertisement a general statement that the contract will be subject to participation goals for MBEs, WBEs and/or EBEs." (§ 6-129.i.9)
+*   **Why:** Tracking all procurement solicitations and bid opening events ensures transparency, fairness, and compliance with public notice requirements.
+*   **One row represents:** A single procurement solicitation (RFP, IFB) or a bid opening event.
+*   **Covers:** All public notices for contracting opportunities and the associated bid opening processes.
+*   **Columns:**
+    *   Solicitation ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Solicitation Type (e.g., RFP, IFB, Public Notice)
+    *   Issuing Agency
+    *   Publication Date
+    *   Posting Location (e.g., City Website, City Record)
+    *   Bid/Proposal Submission Deadline
+    *   Bid Opening Date
+    *   Bid Opening Time
+    *   Comptroller Representative Present (Yes/No)
+    *   Bid Opening Postponed (Yes/No)
+    *   Reason for Postponement (if applicable)
+    *   Concept Report Released (Yes/No, if Client Services)
+    *   Concept Report Release Date
+    *   M/WBE/EBE Participation Goals Stated (Yes/No)
+    *   Number of Bids/Proposals Received
+
+**21. Agency Purchase Orders/Deliveries**
+
+*   **Quotes:**
+    *   "The department of citywide administrative services shall furnish each agency for which it has purchased supplies, materials and equipment with a monthly statement of such purchases, with details of the quantities and prices paid, showing the quantities delivered for the account of such agency." (§ 6-117)
+    *   "The department of citywide administrative services shall purchase all printing and stationery for all agencies." (§ 6-118)
+    *   "The total dollar value of each product procured from preferred source vendors; (2) the total dollar value of each product procured from vendors not identified as preferred source vendors; and (3) the total dollar value of all products procured." (§ 6-136.b)
+*   **Why:** Tracking agency-specific purchases of supplies, materials, and equipment is necessary for inventory management, budgeting, and reporting.
+*   **One row represents:** A single purchase order or delivery of supplies, materials, or equipment to an agency.
+*   **Covers:** All purchases made by the Department of Citywide Administrative Services (DCAS) for other agencies, including printing, stationery, and preferred source products.
+*   **Columns:**
+    *   Purchase Order ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1, if applicable)
+    *   Ordering Agency ID
+    *   Vendor ID (Foreign Key to Dataset 2)
+    *   Item Description
+    *   Quantity Ordered
+    *   Unit Price
+    *   Total Price
+    *   Order Date
+    *   Delivery Date
+    *   Quantity Delivered
+    *   Is Printing/Stationery? (Yes/No)
+    *   Is Preferred Source Product? (Yes/No)
+    *   Preferred Source Vendor ID (Foreign Key to Dataset 2, if applicable)
+    *   Monthly Statement Date (when reported to agency)
+
+**22. Hospital Emergency Contraception Provision Reports**
+
+*   **Quotes:**
+    *   "No city agency shall enter into a covered agreement or covered contract with any hospital that does not contain a provision whereby such hospital agrees to inform rape victims presenting to its emergency department of the availability of emergency contraception and, if requested, to administer, if medically appropriate, such contraception in a timely manner." (§ 6-125.b)
+    *   "No city agency shall enter into a covered agreement or covered contract with any hospital that does not contain a provision whereby such hospital agrees to provide the department of health and mental hygiene, on an annual basis, a report indicating the following information with respect to each reporting period: (i) the number of rape victims treated in such hospital's emergency department; (ii) the number of rape victims treated in such hospital's emergency department which were offered emergency contraception; (iii) the number of rape victims treated in such hospital's emergency department for whom the administration of emergency contraception was not medically indicated and a brief explanation of the contraindication; and iv) the number of times emergency contraception was accepted or declined by a rape victim treated in such hospital's emergency department." (§ 6-125.c)
+    *   "A hospital shall be liable for a civil penalty of not less than five thousand dollars upon a determination that such hospital has been found, through litigation or arbitration, to have made a false claim with respect to its provision of information to rape victims regarding the availability of emergency contraception or its provision of emergency contraception, if medically indicated, to rape victims in a timely manner." (§ 6-125.e)
+*   **Why:** Tracking hospital compliance with emergency contraception provision and reporting requirements is essential for public health and legal enforcement.
+*   **One row represents:** An annual report submitted by a hospital regarding emergency contraception (EC) provision to rape victims.
+*   **Covers:** Annual reports from hospitals with city agreements/contracts on EC services for rape victims.
+*   **Columns:**
+    *   Report ID (Primary Key)
+    *   Hospital ID (Foreign Key to Dataset 2)
+    *   Contract/Agreement ID (Foreign Key to Dataset 1)
+    *   Reporting Period Start Date
+    *   Reporting Period End Date
+    *   Number of Rape Victims Treated
+    *   Number of Rape Victims Offered EC
+    *   Number of Rape Victims for Whom EC Not Medically Indicated
+    *   Explanation for Medical Contraindication (if applicable)
+    *   Number of Times EC Accepted
+    *   Number of Times EC Declined
+    *   False Claim Found (Yes/No)
+    *   Date of False Claim Finding
+    *   Civil Penalty Imposed (Yes/No)
+    *   Civil Penalty Amount
+
+**23. Home Loan Characteristics (for Predatory Lending Analysis)**
+
+*   **Quotes:**
+    *   "High-Cost Home Loan" means a home loan that meets or exceeds the threshold set forth in either subparagraph a or b of this definition: (a) the total points and fees on the loan exceed four percent of the total loan amount... (b) for a first-lien home loan, the annual percentage rate of the home loan at consummation of the transaction equals or exceeds six percentage points over the yield on United States treasury securities... or for a junior-lien home loan, the annual percentage rate... equals or exceeds eight percentage points over the yield on United States treasury securities..." (§ 6-128.a.8)
+    *   "Predatory Loan" means any high-cost home loan with one or more of the following characteristics: (a) Proceeds of the high-cost home loan are used to pay all or part of an existing home loan and the borrower does not receive a reasonable and tangible benefit from the new home loan... (b) The lender does not reasonably believe at the time it makes the high-cost home loan that the borrower will be able to make the scheduled payments... (c) The lender finances points and fees... in an amount that exceeds four percent of the total loan amount... (d) Prior to making the high-cost home loan, the lender does not receive a written certification from an independent housing or credit counselor... (e) More than two periodic payments required under the high-cost home loan are consolidated and paid in advance from the loan proceeds... (f) Default by the borrower triggers an interest rate increase... (g) The lender, at its sole discretion, may accelerate the indebtedness... (h) The payment schedule for the high-cost home loan requires regular periodic payments that cause the principal balance to increase... (i) There is a required scheduled payment that is twice as large as the average of the earlier scheduled payments... (j) The loan agreement imposes a penalty or fee on the borrower in violation of section 5-501(3)(b) of the general obligations law or section 393(2) of the banking law for paying the balance of the loan... (k) The loan agreement contains a mandatory arbitration clause that is oppressive, unfair, unconscionable, or substantially in derogation of the rights of the borrower... (l) Any of the proceeds of the high-cost home loan are paid to either a home improvement contractor that is an affiliate of the lender or any home improvement contractor other than: (i) by an instrument payable solely to the borrower; or (ii) at the election of the borrower, through a third-party escrow agent... (m) The high-cost home loan finances any credit life, credit disability, credit property, credit unemployment, health or life insurance... (n) The borrower is charged any fees or other charges to modify, renew, extend or amend a high-cost home loan or to defer any payment due under the terms of the loan... (o) The high-cost home loan refinances an existing home loan that is a special mortgage originated, subsidized or guaranteed by or through a state, tribal or local government, or nonprofit organization... (p) The lender charges points and fees on a high-cost home loan that refinances a prior high-cost home loan extended by the same lender or an affiliate of the lender and the refinancing occurs within five years of the extension of the prior home loan. (q) The home loan is secured as a result of fraudulent or deceptive marketing or sales efforts. (r) The home loan violates any applicable provision of the federal truth in lending act... or any regulations implementing these statutes, or the restrictions and limitations on high-cost home loans in the general regulations of the New York state banking board (3 NYCRR Part 41)..." (§ 6-128.a.16)
+    *   "For purposes of this clause iii, "procedures consistent with industry practice" shall include, but not be limited to, a random statistical sample of not less than ten percent of the home loans for real property located in the city of New York included in the home loan pool to be securitized or purchased, except that if the lender has an established business relationship with the originator or wholesaler of the home loans being purchased or securitized, as demonstrated by the lender having completed not less than four transactions with said entity during the preceding two years, the lender may conduct a random statistical sample of not less than five percent of the home loans described above." (§ 6-128.a.15.b.iii)
+*   **Why:** Detailed loan-level data is required to identify high-cost and predatory home loans and enforce prohibitions against predatory lending practices.
+*   **One row represents:** A single home loan transaction.
+*   **Covers:** All home loans (residential mortgages, open-end lines of credit) where the property is in NYC and the principal amount is within specified limits, for analysis of predatory lending.
+*   **Columns:**
+    *   Loan ID (Primary Key)
+    *   Lender ID (Foreign Key to Dataset 2)
+    *   Borrower ID (Foreign Key to Dataset 3)
+    *   Loan Origination Date
+    *   Loan Type (e.g., Residential Mortgage, Open-End Line of Credit)
+    *   Lien Priority (First-Lien, Junior-Lien)
+    *   Property Address
+    *   Principal Loan Amount
+    *   Annual Percentage Rate (APR) at Consummation
+    *   Total Points and Fees
+    *   Points and Fees as % of Loan Amount
+    *   Bona Fide Loan Discount Points (Yes/No, Amount)
+    *   Financed Points and Fees Amount
+    *   Tangible Benefit to Borrower (Yes/No, if refinance)
+    *   Borrower Ability to Pay Assessment (Yes/No)
+    *   Housing/Credit Counselor Certification Received (Yes/No)
+    *   Counseling Waiver (Yes/No, Date)
+    *   Consolidated Advance Payments (Number of payments)
+    *   Interest Rate Increase on Default (Yes/No)
+    *   Lender Discretionary Acceleration (Yes/No)
+    *   Negative Amortization (Yes/No)
+    *   Balloon Payment (Yes/No)
+    *   Prepayment Penalty (Yes/No)
+    *   Mandatory Arbitration Clause (Yes/No)
+    *   Proceeds Paid to Affiliate Home Improvement Contractor (Yes/No)
+    *   Financed Insurance (Yes/No, Type)
+    *   Fees for Modification/Renewal/Extension (Yes/No, Amount)
+    *   Refinances Special Mortgage (Yes/No)
+    *   Refinances Prior High-Cost Loan (Yes/No, Date of Prior Loan)
+    *   Fraudulent/Deceptive Marketing (Yes/No)
+    *   Violates Federal/State Lending Laws (Yes/No, Specific Law)
+    *   Is High-Cost Home Loan (Yes/No)
+    *   Is Predatory Loan (Yes/No)
+    *   Compliance Worksheet Completed (Yes/No)
+
+**24. Predatory Lending Investigations/Findings**
+
+*   **Quotes:**
+    *   "During the period of a city contract, the comptroller may conduct an investigation pursuant to subdivision f of this section to determine whether a financial institution or one of its affiliates is a predatory lender as defined by this section." (§ 6-128.c.3)
+    *   "Whenever the comptroller has reason to believe that a financial institution or its affiliate has violated any provisions of this section, or upon a verified complaint in writing by an aggrieved borrower, the comptroller may conduct an investigation to determine whether a violation has occurred." (§ 6-128.f.2)
+    *   "If the financial institution or affiliate has been found to have violated the provisions of this section, the financial institution or affiliate shall have thirty days to cure the violation or to submit to the comptroller for his or her approval a corrective plan to discontinue the predatory lending practices according to clauses i and ii of subparagraph b of paragraph fifteen of subdivision a of this section." (§ 6-128.f.3.b)
+    *   "If the financial institution or affiliate fails to cure the violation within the thirty days or to submit and obtain the comptroller's approval for a corrective plan pursuant to this section, the comptroller shall inform the appropriate city agency or the banking commission, as applicable, and request that it take action pursuant to either paragraph 3 of subdivision b, paragraph 3 of subdivision c, or paragraph 3 of subdivision d of this section." (§ 6-128.f.3.c)
+    *   "Any person found to have made a false statement in a certification required under this section shall be liable to the city for a civil penalty of not less than $25,000 in addition to the other remedies that the city agency may have under this local law." (§ 6-128.f.4)
+*   **Why:** Tracking investigations into predatory lending allegations and their outcomes is essential for enforcing financial regulations and protecting consumers.
+*   **One row represents:** A single investigation into alleged predatory lending practices.
+*   **Covers:** Investigations initiated by the comptroller based on belief of violation or verified complaints from borrowers.
+*   **Columns:**
+    *   Investigation ID (Primary Key)
+    *   Financial Institution ID (Foreign Key to Dataset 2)
+    *   Affiliate ID (if applicable, Foreign Key to Dataset 2)
+    *   Complaint ID (if applicable)
+    *   Investigation Start Date
+    *   Alleged Violation Type (e.g., Predatory Loan Characteristics, False Certification)
+    *   Investigation Findings (e.g., Violation Found, No Violation)
+    *   Date of Findings
+    *   Violation Cured (Yes/No, Date)
+    *   Corrective Plan Submitted (Yes/No, Date)
+    *   Corrective Plan Approved (Yes/No, Date)
+    *   Action Requested from City Agency/Banking Commission (Yes/No, Date)
+    *   Action Taken by City Agency/Banking Commission (Description)
+    *   Civil Penalty Imposed (Yes/No)
+    *   Civil Penalty Amount
+    *   Status (e.g., Open, Closed, Remedied, Referred for Action)
+
+**25. City Deposits and Investments**
+
+*   **Quotes:**
+    *   "A financial institution that is a predatory lender as defined by this section, or that has affiliates that are predatory lenders, shall not be a depository for the funds of any city agency." (§ 6-128.d.1)
+    *   "As a condition for being a depository of city agency funds, the financial institution shall provide a statement to the city banking commission certifying that neither the financial institution nor any of its affiliates is or will become a predatory lender." (§ 6-128.d.2)
+    *   "The comptroller may, in his or her discretion, recommend that city moneys or funds not be invested or permitted to remain invested in the stocks, securities or other obligations of any financial institution that is a predatory lender or of an affiliate of a predatory lender." (§ 6-128.e.1)
+    *   "The comptroller, when investing city funds in a financial institution or an affiliate of the financial institution, may consider the institution or affiliate's compliance with federal, state and local laws or regulations governing predatory lending." (§ 6-128.e.2)
+*   **Why:** Tracking city deposits and investments with financial institutions is necessary to ensure compliance with predatory lending prohibitions.
+*   **One row represents:** A single city deposit account or investment.
+*   **Covers:** All city funds deposited with financial institutions or invested in their stocks, securities, or other obligations.
+*   **Columns:**
+    *   Deposit/Investment ID (Primary Key)
+    *   Financial Institution ID (Foreign Key to Dataset 2)
+    *   Type (e.g., Deposit Account, Stock, Security, Obligation)
+    *   Amount
+    *   Date Initiated
+    *   Date Terminated (if applicable)
+    *   Is Depository for City Funds? (Yes/No)
+    *   Predatory Lender Certification (Yes/No, Date)
+    *   Predatory Lender Status at Initiation (Yes/No)
+    *   Predatory Lender Status Current (Yes/No)
+    *   Comptroller Recommendation to Remove Investment (Yes/No, Date)
+    *   Investment Removed (Yes/No, Date)
+    *   Reason for Not Removing Investment (if applicable)
+
+**26. Agency M/WBE/EBE Utilization Plans**
+
+*   **Quotes:**
+    *   "Beginning May 15, 2006, and on July 31 of each year thereafter, each agency which, during the fiscal year which ended on June 30 of the preceding fiscal year, has made procurements in excess of five million dollars, without counting procurements that are exempt pursuant to paragraph two of subdivision q of this section, shall submit an agency utilization plan for the fiscal year commencing in July of the year when such plan is to be submitted to the commissioner." (§ 6-129.g.1)
+    *   "Each such plan shall, at a minimum, include the following: (a) the agency's participation goals for MBEs, WBEs and EBEs for the year... (b) an explanation for any agency goal that is different than the participation goal for the relevant group and industry classification as determined pursuant to subdivision d of this section; (c) a list of the names and titles of agency personnel responsible for implementation of the agency utilization plan; (d) methods and relevant activities proposed for achieving the agency's participation goals; and (e) any other information which the agency or the commissioner deems relevant or necessary." (§ 6-129.g.1)
+    *   "An agency utilization plan may be amended from time to time to reflect changes in the agency's projected expenditures or other relevant circumstances and resulting changes in such agency's participation goals." (§ 6-129.g.3)
+    *   "If an agency that has submitted an agency utilization plan pursuant to subdivision g of this section fails to achieve its utilization goal, the agency head shall prepare and submit to the director, the commissioner, the city chief procurement officer, and the speaker of the council by January 31 a performance improvement plan which shall describe in detail the efforts such agency intends to undertake to increase M/WBE participation." (§ 6-129.l.3)
+*   **Why:** Agency utilization plans are central to the M/WBE/EBE program, requiring tracking of goals, strategies, and performance.
+*   **One row represents:** An annual utilization plan submitted by an agency.
+*   **Covers:** All agency utilization plans for M/WBE/EBE participation, including initial submissions, amendments, and performance improvement plans.
+*   **Columns:**
+    *   Plan ID (Primary Key)
+    *   Agency ID
+    *   Fiscal Year Covered
+    *   Submission Date
+    *   Approval Date (by Commissioner)
+    *   Plan Status (e.g., Approved, Amended, Under Review)
+    *   MBE Participation Goal (%)
+    *   WBE Participation Goal (%)
+    *   EBE Participation Goal (%)
+    *   Explanation for Goal Deviation (if applicable)
+    *   Personnel Responsible (List of Person IDs, Foreign Key to Dataset 3)
+    *   Methods/Activities Proposed
+    *   MBE Utilization Rate (Actual)
+    *   WBE Utilization Rate (Actual)
+    *   EBE Utilization Rate (Actual)
+    *   Substantial Progress Achieved (Yes/No)
+    *   Performance Improvement Plan Submitted (Yes/No, Date)
+    *   Performance Improvement Plan Details
+
+**27. M/WBE/EBE Program Complaints/Violations**
+
+*   **Quotes:**
+    *   "Any person who believes that a violation of the requirements of this section, rules promulgated pursuant to its provisions, or any provision of a contract that implements this section or such rules, including, but not limited to, any contractor utilization plan, has occurred may submit a complaint in writing to the division, the city chief procurement officer and the comptroller." (§ 6-129.o.1)
+    *   "Any complaint alleging fraud, corruption or other criminal behavior on, the part of a bidder, proposer, contractor, subcontractor or supplier shall be referred to the commissioner of the department of investigation." (§ 6-129.o.2)
+    *   "Whenever an agency believes that a contractor or a subcontractor is not in compliance with this section, rules promulgated pursuant to its provisions or any provision of a contract that implements this section, including, but not limited to any contractor utilization plan, the agency shall send a written notice to the city chief procurement officer, the division and the contractor describing the alleged noncompliance and offering the contractor an opportunity to be heard." (§ 6-129.o.4.b)
+    *   "In the event that a contractor has been found to have violated this section, rules promulgated pursuant to its provisions, or any provision of a contract that implements this section, including, but not limited to any contractor utilization plan, the contracting agency shall, after consulting with the city chief procurement officer and the division, determine whether any of the following actions should be taken: (i) enter an agreement with the contractor allowing the contractor to cure the violation; (ii) revoke the contractor's pre-qualification to bid or make proposals for future contracts; (iii) make a finding that the contractor is in default of the contract; (iv) terminate the contract; (v) declare the contractor to be in breach of contract; (vi) withhold payment or reimbursement; (vii) determine not to renew the contract; (viii) assess actual and consequential damages; (ix) assess liquidated damages or reduction of fees... (x) exercise rights under the contract to procure goods, services or construction from another contractor and charge the cost of such contract to the contractor that has been found to be in noncompliance; or (xi) take any other appropriate remedy." (§ 6-129.o.4.c)
+    *   "Whenever an agency has reason to believe that an MBE, WBE or EBE is not qualified for certification, or is participating in a contract in a manner that does not serve a commercially useful function, or has violated any provision of this section, the agency shall notify the commissioner who shall determine whether the certification of such business enterprise should be revoked." (§ 6-129.o.6)
+*   **Why:** Tracking complaints and violations related to the M/WBE/EBE program is essential for enforcement and program integrity.
+*   **One row represents:** A single complaint or a finding of non-compliance related to the M/WBE/EBE program.
+*   **Covers:** All complaints submitted by the public and all non-compliance findings by agencies regarding M/WBE/EBE participation.
+*   **Columns:**
+    *   Complaint/Violation ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1, if applicable)
+    *   Contractor ID (Foreign Key to Dataset 2)
+    *   Subcontractor ID (Foreign Key to Dataset 2, if applicable)
+    *   Complainant Type (e.g., Public, Agency)
+    *   Complaint Date
+    *   Alleged Violation Type (e.g., Failure to Meet Goals, No Commercially Useful Function, False Certification, Fraud, Criminal Behavior)
+    *   Investigation Start Date
+    *   Investigation Findings (e.g., Violation Found, No Violation, Referred to DOI)
+    *   Date of Findings
+    *   Remedy/Action Taken (e.g., Cure Agreement, Revoke Prequalification, Default, Termination, Withhold Payment, Damages, Liquidated Damages, Certification Revocation)
+    *   Sanction ID (Foreign Key to Dataset 8, if applicable)
+    *   Status (e.g., Open, Closed, Resolved, Referred)
+
+**28. Public Contracting Discrimination Protests**
+
+*   **Quotes:**
+    *   "It is unlawful for an agency to deny a contract because of the actual or perceived race, creed, color, national origin, age, gender, disability, sexual orientation or alienage or citizenship status of the owners of the bidder or proposer." (§ 6-129.1.b)
+    *   "A bidder or proposer who believes that a violation of the requirements of this section has occurred may protest an agency determination pursuant to the rules of the procurement policy board." (§ 6-129.1.d)
+*   **Why:** Tracking protests alleging discrimination in public contracting is necessary to ensure fair procurement practices.
+*   **One row represents:** A single protest filed by a bidder or proposer.
+*   **Covers:** Protests against agency contract determinations based on alleged discrimination.
+*   **Columns:**
+    *   Protest ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Bidder/Proposer ID (Foreign Key to Dataset 2)
+    *   Protest Date
+    *   Alleged Discrimination Basis (e.g., Race, Creed, Color, Gender, Age, Disability)
+    *   Agency Determination Being Protested
+    *   Protest Status (e.g., Submitted, Under Review, Dismissed, Upheld)
+    *   Resolution Date
+    *   Resolution Outcome
+
+**29. Vendor Food Product Reports**
+
+*   **Quotes:**
+    *   "The city chief procurement officer shall encourage agencies to make best efforts to purchase New York state food in ways including, but not limited to: (1) within one hundred eighty days of the effective date of the local law that added this section, establishing guidelines for agencies that will assist in increasing the purchase of New York state food products, pursuant to the process set forth in subdivision eight-a of New York general municipal law section one hundred three, applicable to both food purchase contracts and food-related services contracts" (§ 6-130.b.1 - *first § 6-130*)
+    *   "The commissioner of the department of citywide administrative services, with respect to food purchase contracts, and the city chief procurement officer, with respect to food-related services contracts, shall ensure that the city guidelines and the listing of New York state food products promulgated by the New York state commissioner of markets and agriculture pursuant to subdivision eight-a of New York general municipal law section one hundred three are made a part of each solicitation for all such contracts and shall request that each vendor supplying food products or processed food under a contract issued as a result of such solicitations: (1) review the list of New York state food products to determine whether any such products are being provided under such contract(s); (2) report to the procuring agency all of the food products and processed food procured under such contract(s), categorized by specific type, together with the dollar value of each such type procured under such contract(s), to the extent practicable and known to such vendor; and (3) for each such type of food product or processed food included on the listing of New York state food products, report to the procuring agency, to the extent practicable and known to such vendor: (a) any such New York state food product procured under such contract(s), together with the dollar value of each such type procured under such contract(s); (b) any such food product from outside of New York state procured under such contract(s) during its listed New York state availability period, together with the dollar value of each such type procured under such contract(s); and (c) any other such food product from outside of New York state or processed food from facilities outside of New York state procured under such contract(s) from outside New York state, together with the dollar value of each such type procured under such contract(s)." (§ 6-130.c - *first § 6-130*)
+*   **Why:** Tracking vendor reports on food product origins is necessary to monitor and promote the purchase of New York State food.
+*   **One row represents:** A specific food product or processed food item reported by a vendor under a contract.
+*   **Covers:** All food products and processed food procured under city food purchase contracts and food-related services contracts.
+*   **Columns:**
+    *   Report Entry ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Vendor ID (Foreign Key to Dataset 2)
+    *   Reporting Date
+    *   Food Product Type (Specific)
+    *   Dollar Value Procured (for this type)
+    *   Is New York State Food Product? (Yes/No)
+    *   Procured During NYS Availability Period (Yes/No, if not NYS)
+    *   Origin (e.g., New York State, Outside NYS)
+    *   Processing Location (if processed food)
+
+**30. Worker Cooperative Assistance Records**
+
+*   **Quotes:**
+    *   "the number of worker cooperatives that applied for assistance from the department in the previous fiscal year; the number of worker cooperatives assisted by the department in the previous fiscal year; the industries in which such worker cooperatives operate and the community districts in which such worker cooperatives are headquartered; and the specific actions taken by the department in the previous fiscal year to assist the development of worker cooperatives, including, but not limited to, the services rendered by the department to enhance the ability of such worker cooperatives to compete for and obtain city contracts" (§ 6-139.c.1.a)
+    *   "for each of the worker cooperatives assisted by the department in the previous fiscal year as described in subparagraph (a) of this paragraph, the department shall furnish the name and address of such worker cooperative; the number of natural persons who became worker-members during the previous fiscal year, where made available to the department; the number of non-member workers who were hired during the previous fiscal year, where made available to the department; and a summary of the services provided by the department to such worker cooperative in the previous fiscal year." (§ 6-139.c.1.b)
+*   **Why:** Tracking assistance provided to worker cooperatives helps assess program effectiveness and identify areas for improvement.
+*   **One row represents:** A specific instance of assistance provided to a worker cooperative.
+*   **Covers:** All applications for and services provided to worker cooperatives by the Department of Small Business Services.
+*   **Columns:**
+    *   Assistance Record ID (Primary Key)
+    *   Worker Cooperative ID (Foreign Key to Dataset 2)
+    *   Application Date (if applicable)
+    *   Assistance Date
+    *   Assistance Type (e.g., Technical Assistance, Educational Program, Contract Competition Support)
+    *   Services Rendered Description
+    *   Industry of Cooperative
+    *   Community District (Headquarters)
+    *   Number of New Worker-Members (during fiscal year)
+    *   Number of New Non-Member Workers (during fiscal year)
+    *   Fiscal Year of Assistance
+
+**31. Car Sharing Usage Logs**
+
+*   **Quotes:**
+    *   "The city shall establish a car sharing program for city agencies utilizing light-duty motor vehicles." (§ 6-140.b)
+    *   "data regarding the use of car sharing, disaggregated by city agency" (§ 6-140.d.3)
+    *   "the utilization of services of car sharing organizations, if applicable" (§ 6-140.d.4)
+    *   "the impact of such car sharing program on expenses related to the city fleet" (§ 6-140.d.5)
+*   **Why:** Tracking car sharing usage is necessary to evaluate the program's effectiveness, impact on fleet size, and associated expenses.
+*   **One row represents:** A single instance of a vehicle being used through the car sharing program.
+*   **Covers:** All usage of city fleet vehicles through the internal car sharing program or services from car sharing organizations.
+*   **Columns:**
+    *   Usage Log ID (Primary Key)
+    *   Vehicle ID (Foreign Key to Dataset 18)
+    *   Agency ID (User's Agency)
+    *   Employee ID (User, Foreign Key to Dataset 3)
+    *   Trip Start Date/Time
+    *   Trip End Date/Time
+    *   Duration of Use
+    *   Distance Traveled (Miles/KM)
+    *   Purpose of Trip
+    *   Associated Project/Task (if applicable)
+    *   Cost of Trip (if external car sharing organization)
+    *   Car Sharing Organization ID (if applicable, Foreign Key to Dataset 2)
+
+**32. Subcontractor Approval Requests**
+
+*   **Quotes:**
+    *   "In the event that a contracting agency disapproves a contractor's selection of a subcontractor or subcontractors, the contracting agency shall allow such contractor a reasonable time to propose alternate subcontractors." (§ 6-129.i.6.a)
+    *   "A shelter operator shall not enter into any contract for an amount greater than $20,000 with a covered guard service company for the provision of security services or the services of a fire guard at a shelter in performance of a shelter contract without the department's prior approval of the proposed covered guard service company." (§ 6-109.1.f)
+    *   "Where an agency denies a request from a contractor for final approval of a subcontractor, such contractor may request from such agency a written explanation of the reasons for such denial." (§ 6-142.1.b)
+*   **Why:** Tracking subcontractor approval requests and their outcomes is necessary for oversight and transparency in subcontracting.
+*   **One row represents:** A single request for approval of a subcontractor.
+*   **Covers:** All requests from contractors for approval of subcontractors, including those for M/WBE/EBE utilization plans and covered guard services.
+*   **Columns:**
+    *   Approval Request ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Prime Contractor ID (Foreign Key to Dataset 2)
+    *   Subcontractor ID (Foreign Key to Dataset 2)
+    *   Request Date
+    *   Subcontract Value
+    *   Work to be Performed by Subcontractor
+    *   Approval Status (e.g., Approved, Denied, Pending)
+    *   Approval/Denial Date
+    *   Reason for Denial (if applicable)
+    *   Written Explanation Provided (Yes/No, Date)
+    *   Is Covered Guard Service Company? (Yes/No)
+    *   Is M/WBE/EBE Firm? (Yes/No)
+
+**33. Hurricane Sandy Project Job Data**
+
+*   **Quotes:**
+    *   "For each Hurricane Sandy funded project for construction, the name of the contractor, and subcontractor, if known, a detailed description of the Hurricane Sandy funded project... the total number of jobs at the time of award of Hurricane Sandy funds, and the total number of additional jobs to be created and retained over the life of the Hurricane Sandy funded project." (§ 6-143.b.1)
+    *   "the total number of jobs at the time of award of Hurricane Sandy funds and the total number of additional jobs to be created and retained in each Hurricane Sandy funding program (in the case of Community Development Block Grant assistance) or for each agency (in the case of Federal Emergency Management Agency), aggregated by zip code, based upon the best practicable methodology for calculating such number over the life of the Hurricane Sandy funded project, including the number of permanent full-time employees, the number of temporary full-time employees, the number of permanent part-time employees, the number of temporary part-time employees, and the total number of contract employees" (§ 6-143.c.1)
+    *   "the percentage of employees on Hurricane Sandy funded projects earning up to twenty thousand dollars per year; the percentage of employees on Hurricane Sandy funded projects earning more than twenty thousand dollars per year up to thirty-five thousand dollars per year; the percentage of employees on Hurricane Sandy funded projects earning more than thirty-five thousand dollars per year up to fifty thousand dollars per year; the percentage of employees on Hurricane Sandy funded projects earning more than fifty thousand dollars per year" (§ 6-143.c.2)
+    *   "the percentage of full-time employees on Hurricane Sandy funded projects and the percentage of part-time employees on Hurricane Sandy funded projects to whom their employers offer health benefits" (§ 6-143.c.3)
+    *   "the zip code of residence of employees on Hurricane Sandy funded projects and the zip code of the Hurricane Sandy funded project location on which the employee is employed" (§ 6-143.c.4)
+*   **Why:** Tracking job creation, retention, and employee demographics for Hurricane Sandy projects is essential for economic impact assessment and compliance.
+*   **One row represents:** Job data for a specific Hurricane Sandy funded project or aggregated by zip code.
+*   **Covers:** Job-related metrics for all Hurricane Sandy funded projects, including full-time, part-time, temporary, and contract employees, and their compensation and benefits.
+*   **Columns:**
+    *   Job Data ID (Primary Key)
+    *   Project ID (Foreign Key to Dataset 16)
+    *   Contractor ID (Foreign Key to Dataset 2, if applicable)
+    *   Subcontractor ID (Foreign Key to Dataset 2, if applicable)
+    *   Reporting Period
+    *   Total Jobs at Award
+    *   Additional Jobs Created
+    *   Jobs Retained
+    *   Number of Permanent Full-time Employees
+    *   Number of Temporary Full-time Employees
+    *   Number of Permanent Part-time Employees
+    *   Number of Temporary Part-time Employees
+    *   Number of Contract Employees
+    *   Employees Earning < $20k (%)
+    *   Employees Earning $20k-$35k (%)
+    *   Employees Earning $35k-$50k (%)
+    *   Employees Earning > $50k (%)
+    *   Full-time Employees Offered Health Benefits (%)
+    *   Part-time Employees Offered Health Benefits (%)
+    *   Employee Residence Zip Code (aggregated or specific)
+    *   Project Location Zip Code (aggregated or specific)
+    *   Union Construction Apprenticeship Program Participation (Yes/No)
+    *   Local Workforce Development Program Participation (Yes/No)
+    *   Prevailing Wage Laws Applicable (Yes/No)
+    *   HUD Act Section 3 Compliance (Yes/No)
+
+**34. COVID-19 Expenditure Tracking**
+
+*   **Quotes:**
+    *   "COVID-19 expenditure" means any expense or capital expenditure by a city agency for services, goods or materials, programs or construction paid for, in whole or in part, with any COVID-19 funds, provided that such term shall only include personnel expenditures that are tracked as such for reimbursement." (§ 6-144.a)
+    *   "For each COVID-19 expense expenditure, where applicable, the administering agency, the unit of appropriation, the budget code, the amount submitted for reimbursement, the amount reimbursed and the source of reimbursement" (§ 6-144.b.1.a)
+    *   "For each COVID-19 capital expenditure, where applicable, the administering agency, the budget line, the project identification number, the project description, the amount submitted for reimbursement, the amount reimbursed and the source of reimbursement" (§ 6-144.b.1.b)
+    *   "For each executed city procurement contract funded in whole or in part by COVID-19 funds, the awarding agency, the unit of appropriation, the budget code, the name and address of the contractor and, if known, subcontractors, the contract identification number, the purpose of the contract, the original contract value in dollars and any applicable contract modification value in dollars, the contract award method, the contract type, the contract start and end date and any revised contract end date, the original contract registration date and the registration date of any applicable contract modification, the status of any contractor and, if known, subcontractor, as a minority and women-owned business enterprise, the contract status, to the extent practicable the amount spent to date on the contract and, if known, subcontracts, and information on the value of the contract and, if known, subcontracts, eligible for reimbursement from a COVID-19 funds award" (§ 6-144.b.1.c)
+    *   "For each grant or loan issuance associated with COVID-19 funds, the awarding agency, the recipient name, the recipient's zip code, the grant or loan name, the purpose of the grant or loan, the grant or loan award amount, whether the grant or loan was subject to a selective award process and the nature of that process, the award status and information on the value of the grant or loan eligible for reimbursement from a COVID-19 funds award." (§ 6-144.b.1.d)
+    *   "To the extent that the city is awarded funding from any federal appropriation related to COVID-19 that is not covered by paragraph 1 of subdivision b of this section, the database shall include the amount of such funds, disaggregated by source, and how such funds were allocated and expended by agency, unit of appropriation and budget code." (§ 6-144.b.2)
+*   **Why:** Tracking all COVID-19 related expenditures, contracts, grants, and loans is essential for financial accountability and reporting.
+*   **One row represents:** A single COVID-19 related expenditure, contract, grant, or loan.
+*   **Covers:** All city agency expenses, capital expenditures, procurement contracts, grants, and loans funded by COVID-19 funds.
+*   **Columns:**
+    *   COVID-19 Expenditure ID (Primary Key)
+    *   Expenditure Type (e.g., Expense, Capital, Contract, Grant, Loan)
+    *   Administering/Awarding Agency ID
+    *   Unit of Appropriation (if expense/contract)
+    *   Budget Code (if expense/contract)
+    *   Project ID (Foreign Key to Dataset 16, if capital)
+    *   Contract ID (Foreign Key to Dataset 1, if contract)
+    *   Financial Assistance ID (Foreign Key to Dataset 15, if grant/loan)
+    *   Recipient ID (Foreign Key to Dataset 2, if contract/grant/loan)
+    *   Purpose of Expenditure/Contract/Grant/Loan
+    *   Original Value
+    *   Modified Value (if applicable)
+    *   Amount Submitted for Reimbursement
+    *   Amount Reimbursed
+    *   Source of Reimbursement (e.g., Federal, State, Local)
+    *   COVID-19 Fund Source (e.g., specific federal appropriation)
+    *   M/WBE Status of Contractor/Subcontractor (if contract)
+    *   Amount Spent to Date (if contract)
+    *   Eligible for Reimbursement from COVID-19 Funds Award (Yes/No)
+    *   Recipient Zip Code (if grant/loan)
+    *   Award Status (if grant/loan)
+
+**35. Labor Peace Agreement Attestations (Human Services)**
+
+*   **Quotes:**
+    *   "No later than 90 days after the award or renewal of a city service contract or approval of a city service subcontractor, such covered employer, shall either: (a) submit an attestation to the applicable contracting agency, signed by one or more labor organizations, as applicable, stating that the covered employer has entered into one or more labor peace agreements with such labor organizations, and identify: (i) the classes of covered employees covered by the labor peace agreements, (ii) the classes of covered employees not currently represented by a labor organization and that no labor organization has sought to represent, and (iii) the classes of covered employees for which labor peace agreement negotiations have not yet concluded; or (b) submit an attestation to the applicable contracting agency stating that the covered employer's covered employees are not currently represented by a labor organization and that no labor organization has sought to represent such covered employees." (§ 6-145.b.1)
+    *   "Where a labor organization seeks to represent the covered employees of a covered employer after the expiration of the 90-day period following the award date of the city service contract or the approval of a city service subcontractor, and the labor organization has provided notice to the contracting agency and the covered employer regarding such interest, the covered employer shall then submit an attestation signed by the labor organization to the applicable contracting agency no later than 90 days after the date of notice stating that it has entered into a labor peace agreement with such labor organization or that labor peace agreement negotiations have not yet concluded." (§ 6-145.b.2)
+    *   "A record of any instances during the preceding five years in which the bidder or proposer seeking award, or the city service contractor seeking renewal, as applicable, has been found by a court or government agency to have violated federal, state or local laws regulating labor relations, in which any government body initiated a judicial action, administrative proceeding or investigation of the bidder, proposer, or city service contractor in regard to such laws." (§ 6-145.c.1.c)
+*   **Why:** Tracking labor peace agreement attestations is essential for ensuring uninterrupted human services and compliance with labor relations requirements.
+*   **One row represents:** A single attestation submitted by a covered employer regarding labor peace agreements.
+*   **Covers:** All attestations from city service contractors and subcontractors providing human services.
+*   **Columns:**
+    *   Attestation ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Covered Employer ID (Foreign Key to Dataset 2)
+    *   Submission Date
+    *   Attestation Type (e.g., Initial, Subsequent Interest)
+    *   Labor Organization Name (if applicable)
+    *   Labor Peace Agreement Status (e.g., Entered, Negotiating, Not Sought to Represent)
+    *   Classes of Covered Employees Covered by LPA
+    *   Classes of Covered Employees Not Represented
+    *   Classes of Covered Employees in Negotiation
+    *   Labor Organization Notice Date (if subsequent interest)
+    *   Labor Relations Violations (past 5 years, Yes/No)
+    *   Labor Relations Violation Details (if Yes)
+    *   Certification Signed By (Person ID, Foreign Key to Dataset 3)
+
+**36. Labor Peace Agreement Attestations (Economic Development Projects)**
+
+*   **Quotes:**
+    *   "No later than 90 days after the operational commencement date, a covered employer shall either: (a) submit an attestation to the city or city economic development entity that provided the applicable city financial assistance, signed by one or more labor organizations, as applicable, stating that the covered employer has entered into or is negotiating one or more labor peace agreements, as applicable, with such labor organizations, and identify: (i) the classes of covered employees to whom the labor peace agreements apply, (ii) the classes of covered employees not currently represented by a labor organization and that no labor organization has sought to represent, and (iii) the classes of covered employees for which labor peace agreement negotiations have not yet concluded; or (b) submit an attestation to the city or city economic development entity stating that the covered employer's covered employees are not currently represented by a labor organization and that no labor organization has sought to represent such covered employees." (§ 6-146.b.1)
+    *   "Where a labor organization seeks to represent the covered employees of a covered employer after the expiration of the 90-day period following the operational commencement date, or after the covered employer has submitted an attestation pursuant to paragraph 1 of this subdivision, whichever occurs first, and the labor organization has provided notice to the city or city economic development entity that provided the city financial assistance, as applicable, and the covered employer regarding such interest, the covered employer shall no later than 90 days after the date of notice submit an attestation signed by the labor organization to the city or city economic development entity, as applicable, stating that it has entered into a labor peace agreement with such labor organization or that labor peace agreement negotiations have not yet concluded." (§ 6-146.b.2)
+    *   "Each city financial assistance recipient shall provide to the comptroller and the city or city economic development entity that executed the project agreement an annual certification: (a) confirming notification to all employers operating on the property improved or developed with city financial assistance that employers must comply with all requirements of this section, as applicable; (b) providing the names, addresses and telephone numbers of such employers; and (c) affirming the city financial assistance recipient's obligation to assist the city to investigate and to remedy non-compliance by any employers." (§ 6-146.e.1)
+    *   "Prior to commencing work at a property improved or developed with city financial assistance, each covered employer not subject to an exemption pursuant to subdivision d of this section shall provide to the comptroller and the city or city economic development entity that executed the project agreement a statement agreeing to comply with the requirements of this section" (§ 6-146.e.2)
+    *   "A person who qualifies for an exemption pursuant to subdivision d of this section shall provide to the comptroller and the city or city economic development entity that executed the project agreement a certification indicating the exception that such person qualifies for and specifying the basis for that exemption." (§ 6-146.e.3)
+*   **Why:** Tracking labor peace agreement attestations for economic development projects is essential for ensuring labor stability and compliance.
+*   **One row represents:** A single attestation or certification submitted by a covered employer or financial assistance recipient.
+*   **Covers:** All attestations and certifications related to labor peace agreements and exemptions for city economic development projects.
+*   **Columns:**
+    *   Attestation ID (Primary Key)
+    *   Project ID (Foreign Key to Dataset 16)
+    *   Financial Assistance ID (Foreign Key to Dataset 15)
+    *   Covered Employer ID (Foreign Key to Dataset 2)
+    *   Submission Date
+    *   Attestation Type (e.g., Initial LPA, Subsequent Interest, Annual Recipient Certification, Employer Compliance Statement, Exemption Certification)
+    *   Labor Organization Name (if applicable)
+    *   Labor Peace Agreement Status (e.g., Entered, Negotiating, Not Sought to Represent)
+    *   Classes of Covered Employees Covered by LPA
+    *   Classes of Covered Employees Not Represented
+    *   Classes of Covered Employees in Negotiation
+    *   Labor Organization Notice Date (if subsequent interest)
+    *   Exemption Claimed (if applicable, e.g., Small Business, Not-for-Profit, Residential Project)
+    *   Basis for Exemption
+    *   Certification Signed By (Person ID, Foreign Key to Dataset 3)
+
+**37. Human Services Procurement Process Steps**
+
+*   **Quotes:**
+    *   "The city chief procurement officer shall, no later than July 1, 2024, conduct a study on the timing and duration of the city’s procurement process, including the time to complete the steps of such process, for covered contracts." (§ 6-148.b)
+    *   "Such study shall, at minimum, include the following: 1. Identification of procurement methods utilized in the city’s procurement process for covered contracts; 2. Description of the steps of the procurement methods identified pursuant to paragraph 1 of this subdivision; and 3. An evaluation of the time needed for an agency or vendor to complete each step described pursuant to paragraph 2 of this subdivision." (§ 6-148.b)
+    *   "No later than October 1, 2026, and no later than October 1 of each year thereafter, the city chief procurement officer shall submit to the mayor, the speaker of the council and the procurement policy board a report on the completion of procurement method steps by agencies and vendors within the time schedules set forth in rules promulgated as described in subdivision d of this section." (§ 6-148.e)
+*   **Why:** Tracking the completion of procurement steps for human services contracts is necessary to monitor efficiency and compliance with established timelines.
+*   **One row represents:** A single step in the procurement process for a human services contract.
+*   **Covers:** All defined steps in the procurement process for human services contracts, including start and completion times for each step.
+*   **Columns:**
+    *   Procurement Step ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Procurement Method
+    *   Step Name
+    *   Responsible Party (e.g., Agency, Vendor)
+    *   Step Start Date
+    *   Step Completion Date
+    *   Time Taken (Days)
+    *   Target Completion Time (Days)
+    *   Completed Within Target (Yes/No)
+    *   Delay Reason (if applicable)
+
+**38. Agency Action Plans (Human Services)**
+
+*   **Quotes:**
+    *   "Beginning October 15, 2025 and each October 15 thereafter, each human services agency shall submit to the mayor and speaker of the council an annual report containing: (i) the total number and dollar value of contracts registered during the previous fiscal year, including the number and value of retroactive contract registrations; (ii) the average number of days from invoice submission to payment for such contracts during the previous fiscal year; and (iii) the total accrued payments owed to contractors at the end of the previous fiscal year." (§ 6-149.b)
+    *   "Any human services agency that either has registered 250 or more contracts within the previous fiscal year or has registered contracts in the prior fiscal year for which the total value of such contracts registered exceeds $25 million, and more than 50 percent of such contracts were registered more than 90 days after the start date of such contract, shall submit an action plan to the city chief procurement officer and the speaker of the council no later than January 1 containing, at a minimum: 1. An analysis of the causes of registration delays; 2. Specific procedural and operational improvements to be implemented; 3. An implementation timeline for such improvements with relevant milestones, including a timeline for implementation of recommendations included in the most recent report issued pursuant to subdivision e; and 4. Performance targets for the subsequent fiscal year." (§ 6-149.c)
+    *   "Beginning October 15, 2026, and each October 15 thereafter, the city chief procurement officer shall submit a report to the mayor and the speaker of the council analyzing citywide trends on the effectiveness of agency action plans. Such report shall include an assessment of each agency's progress toward meeting the performance targets established in such agency’s action plan. For any human services agency that did not meet its performance targets, the report shall include additional recommendations for improvement." (§ 6-149.e)
+*   **Why:** Tracking agency action plans for human services contracts is necessary to address procurement inefficiencies and improve performance.
+*   **One row represents:** A single action plan submitted by a human services agency.
+*   **Covers:** Action plans from human services agencies that meet specific thresholds for contract volume, value, and registration delays.
+*   **Columns:**
+    *   Action Plan ID (Primary Key)
+    *   Agency ID
+    *   Fiscal Year Covered
+    *   Submission Date
+    *   Analysis of Registration Delay Causes
+    *   Procedural/Operational Improvements Proposed
+    *   Implementation Timeline
+    *   Performance Targets (e.g., % contracts registered on time, average payment days)
+    *   Performance Target Met (Yes/No)
+    *   Assessment Date
+    *   Additional Recommendations (if applicable)
+
+**39. Contractor Labor & Human Rights Disclosures**
+
+*   **Quotes:**
+    *   "For covered contracts, an agency may request that a bidder submit a labor and human rights disclosure as part of a vendor responsibility determination under section 103 of the general municipal law." (§ 6-151.b)
+    *   "Labor and human rights disclosure" means a voluntary statement from a bidder describing such bidder’s efforts to identify and address risks related to child labor, forced labor, wage theft, unsafe working conditions, and violations of freedom of association in such bidder’s business operations and supply chains." (§ 6-151.a)
+*   **Why:** Tracking voluntary labor and human rights disclosures from bidders helps assess vendor responsibility and promote ethical supply chains.
+*   **One row represents:** A single labor and human rights disclosure submitted by a bidder.
+*   **Covers:** Voluntary disclosures from bidders for covered contracts regarding their efforts to address labor and human rights risks.
+*   **Columns:**
+    *   Disclosure ID (Primary Key)
+    *   Contract ID (Foreign Key to Dataset 1)
+    *   Bidder ID (Foreign Key to Dataset 2)
+    *   Submission Date
+    *   Disclosure Content (Summary of efforts)
+    *   Risks Identified (e.g., Child Labor, Forced Labor, Wage Theft, Unsafe Conditions, Freedom of Association Violations)
+    *   Actions Taken to Address Risks
+    *   Vendor Responsibility Determination (Yes/No)
+    *   Disclosure Considered in Determination (Yes/No)

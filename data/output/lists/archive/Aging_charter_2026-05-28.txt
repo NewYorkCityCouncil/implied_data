@@ -1,0 +1,339 @@
+**Identified Tabular Datasets**
+
+**1. Funding Disbursements**
+
+**Quotes:**
+ - "to disburse available city, state and federal funds to programs throughout the city and, when practical, coordinate such funds with available funding from the private sector" (Section 2402.e)
+
+**Why:** To fulfill its core duty of disbursing funds, the agency must meticulously track each financial transaction.
+
+**One row represents:** A single disbursement of funds.
+
+**Covers:** All city, state, federal, and coordinated private funds disbursed to programs and facilities.
+
+**Columns:**
+ - Disbursement ID
+ - Date of Disbursement
+ - Amount Disbursed
+ - Funding Source (e.g., City, State, Federal, Private)
+ - Program/Facility ID (links to Dataset 2)
+ - Recipient Organization Name
+ - Grant/Contract ID (links to Dataset 3)
+ - Purpose/Description of Funds
+
+**2. Program and Facility Inventory**
+
+**Quotes:**
+ - "to promulgate rules and regulations for the operation of facilities, services and programs under its jurisdiction" (Section 2402.g)
+ - "to maintain, operate and control such programs and facilities as may be necessary or required for the proper administration of the department." (Section 2402.h)
+
+**Why:** To manage and oversee programs and facilities, the agency needs a comprehensive record of each one.
+
+**One row represents:** A single program or facility under the department's jurisdiction or operation.
+
+**Covers:** All programs, services, and facilities that the department has jurisdiction over, operates, or funds.
+
+**Columns:**
+ - Program/Facility ID
+ - Name of Program/Facility
+ - Type (e.g., Senior Center, Workforce Development Program, Outreach Initiative)
+ - Location/Address
+ - Jurisdiction Status (e.g., Operated by Dept, Funded by Dept, Regulated by Dept)
+ - Operational Status (e.g., Active, Inactive, Under Development)
+ - Date Established/Opened
+ - Contact Information
+ - Capacity (if applicable)
+
+**3. Public Housing Senior Center Complaint Log**
+
+**Quotes:**
+ - "Establishing a system to receive and process complaints regarding senior center facilities located on property owned by the New York city housing authority, including assisting senior center participants with concerns about repairs at such facilities" (Section 2404.a)
+
+**Why:** To fulfill its mandated duty, the agency must systematically track and manage all complaints received.
+
+**One row represents:** A single complaint regarding a senior center facility on NYCHA property.
+
+**Covers:** All complaints received and processed by the public housing liaison regarding senior centers located on NYCHA property.
+
+**Columns:**
+ - Complaint ID
+ - Date Received
+ - Senior Center ID (links to Dataset 2)
+ - NYCHA Property ID
+ - Complainant Contact Information (if provided)
+ - Complaint Type (e.g., Repair, Facility Condition, Staff Conduct, Service Quality)
+ - Detailed Description of Complaint
+ - Date Assigned to Liaison
+ - Assigned Liaison Employee ID (links to Dataset 10)
+ - Resolution Status (e.g., Open, In Progress, Resolved, Closed)
+ - Date Resolved
+ - Resolution Details/Notes
+
+**4. Contract and Grant Management**
+
+**Quotes:**
+ - "to disburse available city, state and federal funds to programs throughout the city and, when practical, coordinate such funds with available funding from the private sector" (Section 2402.e)
+
+**Why:** Disbursing funds and coordinating with external entities necessitates tracking formal agreements and their terms.
+
+**One row represents:** A single contract or grant agreement.
+
+**Covers:** All contracts and grants entered into by the department for funding programs, services, or operations.
+
+**Columns:**
+ - Contract/Grant ID
+ - Program/Facility ID (links to Dataset 2)
+ - Funding Source (e.g., City, State, Federal, Private)
+ - Contractor/Grantee Name
+ - Contract/Grant Type (e.g., Service Agreement, Grant Award)
+ - Start Date
+ - End Date
+ - Total Award Amount
+ - Current Status (e.g., Active, Expired, Completed, Terminated)
+ - Key Deliverables/Milestones
+ - Departmental Contact Employee ID (links to Dataset 10)
+
+**5. Public Referral Log**
+
+**Quotes:**
+ - "to refer the public to appropriate departments and agencies of the city, state and federal governments for advice, assistance and available services in connection with particular problems" (Section 2402.b)
+
+**Why:** To ensure effective service delivery, the agency must track all referrals made to other government entities.
+
+**One row represents:** A single referral made by the department.
+
+**Covers:** All instances where the department refers members of the public to other city, state, or federal agencies.
+
+**Columns:**
+ - Referral ID
+ - Date of Referral
+ - Referrer Staff Employee ID (links to Dataset 10)
+ - Referred Individual/Household ID (if tracked and permissible)
+ - Problem Category (e.g., Housing, Health, Legal, Financial)
+ - Referred To Agency/Department
+ - Referral Method (e.g., Phone, Email, Direct Hand-off)
+ - Outcome (e.g., Contacted, Service Initiated, No Follow-up, Unknown)
+ - Notes
+
+**6. Advisory Council Member Roster**
+
+**Quotes:**
+ - "There shall be in the department an advisory council consisting of thirty-one members at least sixteen of whom shall be recipients of services rendered to older adults." (Section 2403.a)
+ - "The members of the council shall be appointed by the mayor." (Section 2403.c)
+ - "The terms of office of the thirty-one members of the council first appointed shall be as follows: ... Upon the expiration of such terms, the terms of office of their successors shall be three years. Vacancies occurring otherwise than by expiration of term shall be filled for the unexpired term in the same manner as regular appointments." (Section 2403.d)
+ - "The mayor shall designate one of the members of the council to be chairman and one to be vice-chairman." (Section 2403.e)
+
+**Why:** To ensure proper composition and terms, the agency must maintain a detailed record of all advisory council members.
+
+**One row represents:** A single advisory council member.
+
+**Covers:** All individuals appointed to the Department for the Aging Advisory Council.
+
+**Columns:**
+ - Member ID
+ - Name
+ - Appointment Date
+ - Term Start Date
+ - Term End Date
+ - Current Role (e.g., Member, Chairman, Vice-Chairman)
+ - Representation Area (e.g., Social Service, Health Care, Business, Legal Services, Academic, Local Neighborhood)
+ - Borough of Residence
+ - Recipient of Services (Yes/No)
+ - Appointing Authority (e.g., Mayor, City Council Recommendation)
+ - Contact Information
+
+**7. Advisory Council Meeting Log**
+
+**Quotes:**
+ - "It shall be the duty of the council to advise the commissioner and make recommendations. The council shall submit an annual report of its activities to the mayor and the speaker of the council." (Section 2403.b)
+
+**Why:** To track council activities and fulfill reporting requirements, the agency needs to log all meetings and their outcomes.
+
+**One row represents:** A single advisory council meeting.
+
+**Covers:** All meetings held by the Department for the Aging Advisory Council.
+
+**Columns:**
+ - Meeting ID
+ - Date of Meeting
+ - Time of Meeting
+ - Location
+ - Meeting Type (e.g., Regular, Special)
+ - List of Attendees (can link to Member IDs from Dataset 6)
+ - Key Topics Discussed
+ - Summary of Recommendations Made
+ - Annual Report Submitted (Yes/No)
+ - Annual Report Submission Date (if applicable)
+
+**8. Cabinet for Older New Yorkers Member Roster**
+
+**Quotes:**
+ - "The cabinet shall be composed of the following members, or their designees" (Section 2405.e)
+ - "The commissioner shall also invite to participate in the work of the cabinet the following persons, or their designees" (Section 2405.f)
+ - "The commissioner may invite representatives of any relevant federal, state, or local entity to participate in the work of the cabinet." (Section 2405.g)
+
+**Why:** To facilitate inter-agency coordination, the agency must maintain a record of all cabinet members and invited participants.
+
+**One row represents:** A single member or invited participant of the Cabinet for Older New Yorkers.
+
+**Covers:** All individuals who are statutory members or invited participants of the Cabinet for Older New Yorkers.
+
+**Columns:**
+ - Member ID
+ - Name
+ - Representing Agency/Entity
+ - Role (e.g., Chair, Statutory Member, Required Invite, Optional Invite)
+ - Appointment Date (if applicable)
+ - Contact Information
+
+**9. Cabinet for Older New Yorkers Meeting Log**
+
+**Quotes:**
+ - "The cabinet shall meet at least once quarterly." (Section 2405.c)
+ - "Such report shall include, but need not be limited to: 1. Actions taken or proposed as a result of the meeting of such cabinet; 2. Attendance at cabinet meetings; and 3. Minutes of cabinet meetings." (Section 2405.h)
+
+**Why:** To ensure quarterly meetings occur and to report on cabinet activities, the agency must track all meetings and their outcomes.
+
+**One row represents:** A single meeting of the Cabinet for Older New Yorkers.
+
+**Covers:** All meetings held by the Cabinet for Older New Yorkers.
+
+**Columns:**
+ - Meeting ID
+ - Date of Meeting
+ - Time of Meeting
+ - Location
+ - Meeting Type (e.g., Quarterly, Special)
+ - List of Attendees (can link to Member IDs from Dataset 8)
+ - Key Topics Discussed
+ - Summary of Actions Taken or Proposed
+ - Total Attendance Count
+ - Annual Report Submitted (Yes/No)
+ - Annual Report Submission Date (if applicable)
+
+**10. Employee Roster**
+
+**Quotes:**
+ - "There shall be a department for the aging, the head of which shall be the commissioner for the aging." (Section 2400)
+ - "The commissioner may appoint and at pleasure remove a deputy commissioner." (Section 2401)
+ - "to maintain, operate and control such programs and facilities as may be necessary or required for the proper administration of the department." (Section 2402.h)
+
+**Why:** To properly administer the department and its programs, the agency requires a fundamental record of its staff.
+
+**One row represents:** A single employee of the Department for the Aging.
+
+**Covers:** All full-time, part-time, and temporary employees of the Department for the Aging.
+
+**Columns:**
+ - Employee ID
+ - Name
+ - Job Title
+ - Department/Division
+ - Start Date
+ - End Date (if applicable)
+ - Employment Status (e.g., Active, Leave, Terminated)
+ - Contact Information (e.g., Email, Phone)
+ - Manager Employee ID (links to Dataset 10)
+
+**11. Outreach and Public Awareness Activities**
+
+**Quotes:**
+ - "to stimulate community interest in the problems of the aging" (Section 2402.a)
+ - "to promote public awareness of resources available for the aging" (Section 2402.b)
+ - "Conducting outreach to participants of senior centers located on property owned by the New York city housing authority about the existence of such liaison" (Section 2404.b)
+
+**Why:** To fulfill its duties of stimulating interest and promoting awareness, the agency must track its outreach efforts.
+
+**One row represents:** A single outreach or public awareness activity or event.
+
+**Covers:** All activities undertaken by the department to stimulate community interest, promote public awareness, and conduct specific outreach.
+
+**Columns:**
+ - Activity ID
+ - Date of Activity
+ - Type of Activity (e.g., Community Meeting, Workshop, Information Session, Public Campaign, Liaison Outreach)
+ - Topic/Focus
+ - Location
+ - Target Audience
+ - Staff Lead Employee ID (links to Dataset 10)
+ - Number of Participants/Estimated Reach
+ - Materials Distributed (Yes/No)
+ - Notes
+
+**12. Departmental Asset Inventory**
+
+**Quotes:**
+ - "to maintain, operate and control such programs and facilities as may be necessary or required for the proper administration of the department." (Section 2402.h)
+
+**Why:** To properly administer the department, the agency must track its internal operational assets.
+
+**One row represents:** A single physical asset owned or managed by the department for its internal operations.
+
+**Covers:** All physical assets (e.g., vehicles, IT equipment, office furniture, specialized equipment) used for the department's internal administration.
+
+**Columns:**
+ - Asset ID
+ - Asset Name
+ - Type (e.g., Vehicle, Computer, Printer, Office Furniture)
+ - Serial Number (if applicable)
+ - Purchase Date
+ - Purchase Cost
+ - Current Location (e.g., Office Address, Facility ID from Dataset 2)
+ - Condition
+ - Responsible Department/Staff Employee ID (links to Dataset 10)
+ - Last Maintenance Date
+ - Next Scheduled Maintenance Date
+
+**13. Program Development Support Log**
+
+**Quotes:**
+ - "to cooperate with and assist local neighborhoods in the development of programs and the establishment of local offices" (Section 2402.c)
+
+**Why:** To track its assistance to local neighborhoods, the agency needs to log each instance of support provided.
+
+**One row represents:** A single instance of the department providing assistance for program development or local office establishment.
+
+**Covers:** All instances where the department cooperates with and assists local neighborhoods in developing programs or establishing local offices.
+
+**Columns:**
+ - Support ID
+ - Date of Assistance
+ - Neighborhood/Community Group Name
+ - Program Idea/Focus
+ - Type of Assistance Provided (e.g., Consultation, Resource Sharing, Grant Application Support, Office Setup Guidance)
+ - Staff Lead Employee ID (links to Dataset 10)
+ - Outcome/Status of Program Development
+
+**14. Center for Older Workforce Development Guidance Log**
+
+**Quotes:**
+ - "to provide regular guidance and support to the center for older workforce development" (Section 2402.f)
+
+**Why:** To ensure regular guidance and support is provided, the agency must track each interaction with the center.
+
+**One row represents:** A single instance of guidance or support provided to the Center for Older Workforce Development.
+
+**Covers:** All instances of guidance and support provided by the department to the Center for Older Workforce Development.
+
+**Columns:**
+ - Guidance ID
+ - Date of Interaction
+ - Type of Guidance/Support (e.g., Meeting, Document Review, Policy Advice, Resource Provision)
+ - Staff Lead Employee ID (links to Dataset 10)
+ - Key Discussion Points/Guidance Provided
+ - Outcome/Action Items
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations promulgated by the department
+*   Receipts
+*   Photos
+*   Research documents (e.g., on age discrimination, new technologies)
+*   Advisory Council annual reports
+*   Minutes of Advisory Council meetings
+*   Recommendations from the Public Housing Liaison to the Commissioner
+*   Cabinet for Older New Yorkers annual reports
+*   Minutes of Cabinet for Older New Yorkers meetings

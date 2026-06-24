@@ -1,0 +1,482 @@
+**1. Emergency Incident Log**
+
+**Quotes:**
+- "a. coordinate the city's response to all emergency conditions and potential incidents which require a multi-agency response, including but not limited to severe weather, threats from natural hazards and natural disasters, power and other public service outages, labor unrest other than the keeping of the peace, water main breaks, transportation and transit incidents, hazardous substance discharges, building collapses, aviation disasters, explosions, acts of terrorism and such other emergency conditions and incidents which affect public health and safety;" (Section 497.a)
+- "g. operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+- "498.a. The department shall be the lead agency in the coordination and facilitation of resources in incidents involving public safety and health, including incidents which may involve acts of terrorism." (Section 498.a)
+
+**Why:** To effectively coordinate and manage emergency responses, the agency must track each incident's details and status.
+
+**One row represents:** A single emergency condition or incident requiring a multi-agency response.
+
+**Covers:** All emergency conditions and potential incidents that require multi-agency response, as defined in the charter.
+
+**Columns:**
+- Incident ID
+- Incident Name/Title
+- Incident Type (e.g., Severe Weather, Natural Disaster, Power Outage, Water Main Break, Transportation Incident, Hazardous Substance Discharge, Building Collapse, Aviation Disaster, Explosion, Act of Terrorism, Other)
+- Incident Sub-Type (if applicable)
+- Date/Time Reported
+- Date/Time Incident Start
+- Date/Time Incident End
+- Geographic Location (Address, Coordinates, Borough, etc.)
+- Initial Severity Assessment
+- Current Severity Level
+- Status (e.g., Reported, Active, Contained, Resolved, Post-Incident Review)
+- Lead Agency (if not EMD)
+- Agencies Involved (list of agency IDs)
+- Key Contact Person for Incident
+- Description of Incident
+- Impact on Public Health and Safety
+- Mayoral Emergency Order Issued (Yes/No)
+- Date/Time Mayoral Order Issued
+- Incident Commander ID (links to Dataset 13)
+- Incident Commander Name
+- Date/Time Last Update
+
+**2. EOC Activation Log**
+
+**Quotes:**
+- "g. operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+
+**Why:** To track the operational status and resource deployment of the Emergency Operations Center during incidents.
+
+**One row represents:** A single activation period of the Emergency Operations Center (EOC).
+
+**Covers:** All activations of the Emergency Operations Center for emergency conditions or potential incidents.
+
+**Columns:**
+- EOC Activation ID
+- Incident ID (links to Dataset 1)
+- Activation Start Date/Time
+- Activation End Date/Time
+- Activation Level (e.g., Level 1 - Full, Level 2 - Partial, Monitoring)
+- EOC Manager ID (links to Dataset 13)
+- EOC Manager Name
+- Number of Personnel Deployed to EOC
+- Key Decisions Made During Activation
+- Resources Managed/Coordinated (summary or link to resource log)
+- Status (e.g., Active, Deactivated, Standby)
+- Date/Time Last Update
+
+**3. Incident Monitoring Observations**
+
+**Quotes:**
+- "b. monitor on a constant basis all potential emergency conditions and potential incidents which may require a multi-agency response;" (Section 497.b)
+
+**Why:** To systematically record and assess potential threats and conditions that could escalate into emergencies.
+
+**One row represents:** A single observation or alert regarding a potential emergency condition or incident.
+
+**Covers:** All monitored potential emergency conditions and incidents that may require a multi-agency response.
+
+**Columns:**
+- Observation ID
+- Date/Time of Observation
+- Source of Information (e.g., Weather Service, Public Report, Intelligence, Sensor)
+- Potential Incident Type (e.g., Severe Weather, Infrastructure Threat, Public Health Concern)
+- Geographic Area of Concern
+- Initial Assessment of Threat Level (e.g., Low, Medium, High)
+- Description of Observation
+- Actions Taken (e.g., Internal Alert, Agency Notification, Further Investigation)
+- Escalation Status (e.g., Monitored, Elevated, Incident Declared)
+- Incident ID (if escalated to an incident, links to Dataset 1)
+- Observer ID (links to Dataset 13)
+- Observer Name
+- Date/Time Last Update
+
+**4. Training and Drill Events**
+
+**Quotes:**
+- "c. coordinate and implement training programs for public safety and health, including emergency response drills, to prepare for emergency conditions and potential incidents which may require a multi-agency response;" (Section 497.c)
+
+**Why:** To track all training programs and drills conducted to enhance public safety and health emergency preparedness.
+
+**One row represents:** A single training program session or emergency response drill event.
+
+**Covers:** All training programs and emergency response drills coordinated and implemented by the department.
+
+**Columns:**
+- Event ID
+- Event Name/Title
+- Event Type (e.g., Training Program, Emergency Response Drill)
+- Date of Event
+- Start Time
+- End Time
+- Location
+- Lead Instructor/Facilitator ID (links to Dataset 13)
+- Lead Instructor/Facilitator Name
+- Target Audience (e.g., Public Safety Personnel, Health Officials, General Public, Specific Agencies)
+- Number of Participants
+- Participating Agencies (list of agency IDs)
+- Objectives of Event
+- Outcome/Summary of Event
+- Lessons Learned (summary)
+- Associated Emergency Plan ID (links to Dataset 5)
+- Date/Time Last Update
+
+**5. Emergency Plan Inventory**
+
+**Quotes:**
+- "d. prepare plans for responding to emergency conditions and potential incidents, including but not limited to plans for the implementation of such emergency orders as may be approved by the mayor to protect public safety and facilitate the rapid response and mobilization of agencies and resources;" (Section 497.d)
+- "j. coordinate with all city agencies to ensure that all such agencies develop, implement and periodically review citywide emergency plans;" (Section 497.j)
+- "498.b. No later than two years after the effective date of the local law that created this subdivision, and every two years thereafter, the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (Section 498.b)
+- "498.c. Following each review conducted pursuant to subdivision b of this section, the department shall publish on its website a list of citywide emergency plans coordinated by the department and a summary of each such plan, including but not limited to information on the roles and responsibilities of relevant agencies and other partners." (Section 498.c)
+
+**Why:** To maintain a comprehensive, up-to-date record of all citywide emergency plans and their key attributes.
+
+**One row represents:** A single citywide emergency plan.
+
+**Covers:** All citywide emergency plans coordinated by the department, including those prepared by the department and those developed by other agencies.
+
+**Columns:**
+- Plan ID
+- Plan Title
+- Plan Version
+- Date Created
+- Date Last Updated
+- Date Last Reviewed (links to Dataset 6)
+- Next Review Due Date
+- Responsible Department/Agency
+- Scope of Plan (e.g., Citywide, Borough-specific, Hazard-specific)
+- Hazard(s) Covered (e.g., Severe Weather, Terrorism, Public Health)
+- Key Objectives
+- Status (e.g., Active, Draft, Archived)
+- Publicly Available (Yes/No)
+- Summary Published (Yes/No)
+- Mayor's Determination for Non-Publication (if applicable)
+- Relevant Agencies/Partners Involved (list of agency IDs)
+- Date/Time Last Update
+
+**6. Agency Emergency Plan Review Sessions**
+
+**Quotes:**
+- "j. coordinate with all city agencies to ensure that all such agencies develop, implement and periodically review citywide emergency plans;" (Section 497.j)
+- "498.b. No later than two years after the effective date of the local law that created this subdivision, and every two years thereafter, the department shall convene relevant agencies to review citywide emergency plans coordinated by the department." (Section 498.b)
+- "498.c. Following each review conducted pursuant to subdivision b of this section, the department shall publish on its website a list of citywide emergency plans coordinated by the department and a summary of each such plan, including but not limited to information on the roles and responsibilities of relevant agencies and other partners." (Section 498.c)
+
+**Why:** To track the mandatory biennial review sessions for citywide emergency plans, ensuring compliance and plan currency.
+
+**One row represents:** A single session where citywide emergency plans are reviewed.
+
+**Covers:** All biennial review sessions for citywide emergency plans coordinated by the department.
+
+**Columns:**
+- Review Session ID
+- Date of Review Session
+- Lead Coordinator ID (links to Dataset 13)
+- Lead Coordinator Name
+- Plans Reviewed (list of Plan IDs, links to Dataset 5)
+- Participating Agencies (list of agency IDs)
+- Key Outcomes/Recommendations from Review
+- Action Items Generated
+- Date Action Items Due
+- Status of Action Items
+- Date/Time Last Update
+
+**7. Coordination Meetings Log**
+
+**Quotes:**
+- "h. hold regular and frequent meetings of designated emergency response personnel of all city agencies that are determined by the commissioner to have a direct or support role in the city's management of emergency conditions and potential incidents which may require a multi-agency response;" (Section 497.h)
+- "k. coordinate with state, federal and other governmental bodies to effectuate the purposes of the department;" (Section 497.k)
+- "l. coordinate the operation of the local emergency planning committee established pursuant to Title III of the federal Superfund Amendments and Reauthorization Act;" (Section 497.l)
+
+**Why:** To document all coordination meetings with city, state, federal, and other governmental bodies, including the LEPC.
+
+**One row represents:** A single coordination meeting.
+
+**Covers:** All regular and frequent meetings with city agencies, state/federal/other governmental bodies, and the Local Emergency Planning Committee.
+
+**Columns:**
+- Meeting ID
+- Meeting Date
+- Meeting Time
+- Meeting Type (e.g., Inter-Agency, State/Federal, LEPC, Other Governmental)
+- Meeting Title/Purpose
+- Host Department/Agency
+- Chair/Facilitator ID (links to Dataset 13)
+- Chair/Facilitator Name
+- Attendees (list of attendee names and affiliations)
+- Key Discussion Points
+- Decisions Made
+- Action Items Generated
+- Date Action Items Due
+- Status of Action Items
+- Associated Incident ID (if applicable, links to Dataset 1)
+- Date/Time Last Update
+
+**8. Inter-Agency Resource Contributions**
+
+**Quotes:**
+- "498.a. All agencies shall provide the department promptly with all information relevant to the performance of the emergency management functions and shall collect and make available any information requested by the department for use in emergency planning. All agencies further shall promptly provide the department with all appropriate material, equipment and resources needed for emergency management functions, including personnel." (Section 498.a)
+
+**Why:** To track the provision of information, material, equipment, and personnel from other agencies to support emergency management functions.
+
+**One row represents:** A single instance of a resource (information, material, equipment, or personnel) being provided by another agency.
+
+**Covers:** All information, material, equipment, and personnel provided by other agencies to the department for emergency management functions.
+
+**Columns:**
+- Contribution ID
+- Date/Time of Contribution
+- Contributing Agency ID
+- Resource Type (e.g., Information, Material, Equipment, Personnel)
+- Resource Description (e.g., specific data, type of material, model of equipment, personnel role)
+- Quantity/Duration (e.g., number of units, hours of personnel support)
+- Purpose of Contribution (e.g., Emergency Planning, Incident Response)
+- Associated Incident ID (if applicable, links to Dataset 1)
+- Associated Emergency Plan ID (if applicable, links to Dataset 5)
+- Status (e.g., Provided, Returned, Consumed)
+- Date/Time Last Update
+
+**9. Public Awareness Activities**
+
+**Quotes:**
+- "f. increase public awareness as to the appropriate responses by members of the public to emergency conditions and potential incidents, and review the city's systems for disseminating information to the public;" (Section 497.f)
+
+**Why:** To record and evaluate efforts to increase public awareness regarding appropriate responses to emergency conditions.
+
+**One row represents:** A single public awareness activity or campaign.
+
+**Covers:** All activities undertaken to increase public awareness regarding emergency conditions and appropriate responses.
+
+**Columns:**
+- Activity ID
+- Activity Name/Campaign Title
+- Activity Type (e.g., Public Service Announcement, Workshop, Online Campaign, Brochure Distribution)
+- Start Date
+- End Date
+- Target Audience
+- Channels Used (e.g., TV, Radio, Social Media, Website, Community Events)
+- Key Messages
+- Estimated Reach
+- Materials Developed (e.g., PSA script, brochure title)
+- Review of Dissemination System (Yes/No, if applicable)
+- Outcome/Effectiveness Assessment
+- Date/Time Last Update
+
+**10. Mayoral Recommendations Log**
+
+**Quotes:**
+- "e. make recommendations to the mayor concerning the city's emergency response capabilities and concerning the city's capacity to address potential emergency conditions and potential incidents;" (Section 497.e)
+
+**Why:** To track all formal recommendations made to the Mayor regarding emergency response capabilities and capacity.
+
+**One row represents:** A single recommendation submitted to the Mayor.
+
+**Covers:** All recommendations made by the commissioner to the mayor concerning the city's emergency response capabilities and capacity.
+
+**Columns:**
+- Recommendation ID
+- Date Submitted
+- Subject of Recommendation
+- Description of Recommendation
+- Rationale/Supporting Information
+- Recommended Action(s)
+- Mayor's Response (e.g., Approved, Denied, Under Review, Modified)
+- Date of Mayor's Response
+- Implementation Status
+- Date/Time Last Update
+
+**11. Funding Applications and Awards**
+
+**Quotes:**
+- "i. acquire federal and other funding for emergency management, including but not limited to disaster relief, and civil defense, and assist other agencies in obtaining such funding;" (Section 497.i)
+
+**Why:** To manage and track all applications for federal and other funding, as well as the awards received.
+
+**One row represents:** A single funding application or award.
+
+**Covers:** All federal and other funding applications submitted by the department, and awards received, including assistance to other agencies.
+
+**Columns:**
+- Funding Record ID
+- Application Date
+- Funding Source (e.g., FEMA, State Grant, Private Foundation)
+- Grant/Program Name
+- Application Status (e.g., Submitted, Pending, Approved, Denied)
+- Award Date (if approved)
+- Award Amount
+- Purpose of Funding (e.g., Disaster Relief, Civil Defense, Equipment, Training)
+- Departmental Use (Yes/No)
+- Assisted Agency ID (if assisting another agency)
+- Project ID (if linked to a specific project)
+- Reporting Requirements
+- Date/Time Last Update
+
+**12. Public Comments on Planning**
+
+**Quotes:**
+- "498.d. The department shall establish procedures through which members of the public can submit public comments on emergency planning." (Section 498.d)
+
+**Why:** To systematically record and manage public comments received on emergency planning.
+
+**One row represents:** A single public comment submission.
+
+**Covers:** All public comments submitted by members of the public on emergency planning.
+
+**Columns:**
+- Comment ID
+- Date/Time Received
+- Commenter Name (if provided)
+- Commenter Contact Information (e.g., Email, Phone, Address - if provided)
+- Subject of Comment (e.g., Specific Plan, General Planning Process)
+- Associated Emergency Plan ID (if applicable, links to Dataset 5)
+- Content of Comment
+- Departmental Reviewer ID (links to Dataset 13)
+- Departmental Reviewer Name
+- Date of Review
+- Departmental Response/Action Taken
+- Date/Time Last Update
+
+**13. Department Personnel Records**
+
+**Quotes:**
+- "Section 496. Deputies. The commissioner shall have the power to appoint and, at pleasure, remove deputies, one to be known as first deputy commissioner. During the absence or disability of the commissioner, the first deputy commissioner, or if the first deputy commissioner shall be absent or under disability, the deputy commissioner designated by the commissioner, shall possess all the powers and perform all the duties of the commissioner, except the power of making appointments and transfers." (Section 496)
+- "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+
+**Why:** To manage all departmental staff, including appointments, roles, and administrative details, essential for agency operations.
+
+**One row represents:** A single employee of the department.
+
+**Covers:** All employees of the Emergency Management Department, including the commissioner and deputies.
+
+**Columns:**
+- Employee ID
+- First Name
+- Last Name
+- Job Title
+- Department/Division
+- Date of Appointment
+- Date of Removal (if applicable)
+- Employment Status (e.g., Active, Leave, Terminated)
+- Is Deputy Commissioner (Yes/No)
+- Is First Deputy Commissioner (Yes/No)
+- Contact Information (Email, Phone)
+- Manager ID (links to Dataset 13)
+- Required Certifications (list of Certification IDs, links to Dataset 14)
+- Date/Time Last Update
+
+**14. Department Personnel Certifications**
+
+**Quotes:**
+- "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+- *Implied operational need:* "ensuring specialists are up to date on required certifications" (from prompt's general context)
+
+**Why:** To track all required and obtained certifications for departmental personnel, ensuring compliance and readiness.
+
+**One row represents:** A single certification held by a department employee.
+
+**Covers:** All certifications relevant to the roles and responsibilities of the department's personnel.
+
+**Columns:**
+- Certification Record ID
+- Employee ID (links to Dataset 13)
+- Certification Name
+- Issuing Body
+- Date Issued
+- Expiration Date
+- Status (e.g., Active, Expired, In Progress)
+- Required for Role (Yes/No)
+- Date/Time Last Update
+
+**15. Department Asset Inventory**
+
+**Quotes:**
+- "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+- *Implied operational need:* "computers they maintain, or MRI machines and their status, etc." (from prompt's general context)
+
+**Why:** To manage and track all physical assets and equipment owned or maintained by the department for operational use.
+
+**One row represents:** A single physical asset or piece of equipment.
+
+**Covers:** All physical assets and equipment, including IT equipment, vehicles, communication devices, and specialized emergency response gear.
+
+**Columns:**
+- Asset ID
+- Asset Name/Description
+- Asset Type (e.g., Vehicle, Computer, Radio, Generator, Furniture)
+- Manufacturer
+- Model Number
+- Serial Number
+- Acquisition Date
+- Acquisition Cost
+- Current Location (e.g., EOC, Warehouse, Vehicle)
+- Condition (e.g., New, Good, Fair, Needs Repair)
+- Status (e.g., In Use, Stored, Out for Repair, Retired)
+- Last Maintenance Date (links to Dataset 16)
+- Next Scheduled Maintenance Date
+- Responsible Employee ID (links to Dataset 13)
+- Date/Time Last Update
+
+**16. Department Facility Maintenance Records**
+
+**Quotes:**
+- "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+- "g. operate an emergency operations center to assist the city in managing emergency conditions and potential incidents that may require a multi-agency response;" (Section 497.g)
+- *Implied operational need:* "Building repair" (from prompt's general context)
+
+**Why:** To track all maintenance activities for departmental facilities, ensuring operational readiness of critical infrastructure like the EOC.
+
+**One row represents:** A single maintenance event or repair for a departmental facility.
+
+**Covers:** All maintenance, repairs, and inspections performed on departmental facilities, including the Emergency Operations Center.
+
+**Columns:**
+- Maintenance Record ID
+- Facility ID (e.g., EOC, Office Building)
+- Facility Name/Location
+- Date of Service
+- Service Type (e.g., Routine Maintenance, Repair, Inspection, Upgrade)
+- Description of Work Performed
+- Vendor/Technician Name
+- Cost of Service
+- Outcome (e.g., Repaired, Inspected, Replaced)
+- Next Scheduled Service Date
+- Performed By Employee ID (if internal, links to Dataset 13)
+- Date/Time Last Update
+
+**17. Department Contract Register**
+
+**Quotes:**
+- "Section 497. The commissioner shall have cognizance and control of the government, administration, disposition and discipline of the department." (Section 497)
+- *Implied operational need:* "keeping software contracts" (from prompt's general context)
+
+**Why:** To manage all contracts for services, software, and other agreements necessary for the department's operations.
+
+**One row represents:** A single contract or agreement entered into by the department.
+
+**Covers:** All contracts for services, software, equipment, and other operational needs of the department.
+
+**Columns:**
+- Contract ID
+- Contract Title/Description
+- Vendor Name
+- Contract Type (e.g., Software License, Service Agreement, Equipment Purchase, Consulting)
+- Start Date
+- End Date
+- Contract Value
+- Payment Terms
+- Renewal Option (Yes/No)
+- Next Renewal Date
+- Contract Manager ID (links to Dataset 13)
+- Contract Status (e.g., Active, Expired, Under Negotiation)
+- Date/Time Last Update
+
+---
+
+**Non-Tabular Information:**
+
+This information is likely maintained in document management systems, file shares, or specialized applications rather than tabular databases.
+
+*   **Rules and Regulations:** Promulgated by the commissioner (Section 497.o).
+*   **Emergency Plans (Full Text):** The detailed content of the plans themselves (Section 497.d).
+*   **Public Awareness Campaign Materials:** Brochures, PSAs, website content (Section 497.f).
+*   **Mayoral Recommendations (Full Text):** The detailed written recommendations (Section 497.e).
+*   **Public Comments (Full Text):** The raw text of public submissions (Section 498.d).
+*   **Meeting Minutes/Agendas:** Detailed records of coordination meetings (Section 497.h, k, l).
+*   **Training Curricula/Materials:** Content used for training programs (Section 497.c).
+*   **Disaster Relief Applications/Documentation:** Detailed supporting documents for funding (Section 497.i).
+*   **Legal Documents:** Related to civil defense efforts (Section 497.m).
+*   **Agency-provided Information:** Relevant information from other agencies for emergency planning (Section 498.a).
+*   **Published Plan Summaries:** The actual text summaries published on the website (Section 498.c).

@@ -1,0 +1,764 @@
+**1. Special Education Student Determinations and Services**
+
+**Quotes:**
+ - "Every pupil, having been determined to be a "child with a handicapping condition" by a committee on the handicapped, shall be offered an opportunity to receive the benefits of an appropriate public education as prescribed in article eighty-nine of this chapter." (§ 3204.4-a)
+ - "If such screening indicates a suspected disability, which may require the provision of special education services or programs, a referral shall be made to the committee on special education." (§ 3208.5.c)
+ - "The school district shall not be responsible for providing or bear the cost of, any special or preventive measures or devices needed to protect the student unless such special or preventive measures or devices are contained in a student's individual education plan recommended by the school district committee on the handicapped and such student is a child with a handicapping condition, as defined in section forty-four hundred one of this chapter." (§ 3208-a.7)
+
+**Why:** To track determinations of handicapping conditions and the provision of mandated special education services.
+
+**One row represents:** A determination or service record for a student with a handicapping condition.
+
+**Covers:** Determinations of "child with a handicapping condition" and the provision of appropriate public education, including IEPs and services.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - Committee on Special Education (CSE) Determination Date
+ - Handicapping Condition Identified
+ - IEP Developed (Y/N)
+ - IEP Start Date
+ - Services Provided (e.g., resource room, therapy, specialized instruction)
+ - Service Provider ID
+ - Service Hours/Frequency
+ - Annual Review Date
+ - Educational Placement Type
+ - Related to Athletic Program Appeal (Y/N) (linked to Dataset 20)
+
+**2. LEP Student Assessments and Program Placements**
+
+**Quotes:**
+ - "pupils who, by reason of foreign birth or ancestry have limited English proficiency, shall be provided with instructional programs as specified in subdivision two-a of this section and the regulations of the commissioner." (§ 3204.2.i)
+ - "Eligibility for such programs shall be based on the following criteria. A pupil who by reason of foreign birth or ancestry speaks a language other than English, and either understands and speaks little or no English, or who has been identified by any English language assessment instrument approved by the commissioner as a pupil of limited English proficiency, shall receive a program of bilingual education or English as a second language in accordance with standards established by the commissioner." (§ 3204.2-a.3)
+ - "A pupil's proficiency in the English language shall be measured annually by such language assessment instrument in order to determine further participation in bilingual education or English as a second language program in accordance with standards established by the commissioner..." (§ 3204.2-a.3)
+ - "The parent or guardian of a pupil designated as limited English proficient shall be informed by the local school authorities of the pupil's placement in an instructional program." (§ 3204.2-a.3)
+
+**Why:** To track the assessment, eligibility, and program placement of Limited English Proficiency (LEP) students.
+
+**One row represents:** An assessment record or program placement for a specific LEP student.
+
+**Covers:** English language proficiency assessments, eligibility determinations, and program placements for students of foreign birth or ancestry.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - Assessment Date
+ - Assessment Instrument Used
+ - English Proficiency Score
+ - Eligibility Status (LEP, Not LEP)
+ - Program Type (Bilingual Education, ESL, Other)
+ - Program Start Date
+ - Program End Date
+ - Annual Proficiency Measurement Date
+ - Parent/Guardian Notified (Y/N)
+ - Notification Date
+ - Commissioner Extension Granted (Y/N)
+ - Extension Expiration Date
+
+**3. Homeless Child Designations and Enrollments**
+
+**Quotes:**
+ - "A homeless child... shall be entitled to attend a public school without the payment of tuition, in accordance with the provisions of section thirty-two hundred nine of this article." (§ 3202.8)
+ - "The designator shall have the right to designate one of the following as the school district within which the homeless child shall be entitled to attend upon instruction: (1) the school district of current location; (2) the school district of origin; or (3) a school district participating in a regional placement plan." (§ 3209.2.a)
+ - "Upon receipt of the designation form, the designated school district shall immediately: (1) review the designation form to ensure that it has been completed; (2) admit the homeless child even if the child or youth is unable to produce records normally a requirement for enrollment..." (§ 3209.2.f)
+ - "determine whether the designation made by the designator is consistent with the best interests of the homeless child or youth." (§ 3209.2.f.3)
+ - "make a written request to the school district where the child's records are located for a copy of such records" (§ 3209.2.f.5)
+ - "forward the designation form to the school district of origin where applicable." (§ 3209.2.f.6)
+ - "Where the school of origin is a charter school, the school district designated pursuant to this subdivision shall be deemed to be the school district of residence of such child for purposes of fiscal and programmatic responsibility under article fifty-six of this chapter and shall be responsible for transportation of the homeless child if a social services district is not otherwise responsible pursuant to subdivision four of this section." (§ 3209.2.h)
+
+**Why:** To track the designation of school districts/schools for homeless children and their enrollment status.
+
+**One row represents:** A designation and enrollment record for a homeless child.
+
+**Covers:** Designations by parents/guardians/youth/facility directors for homeless children's school attendance and their enrollment process.
+
+**Columns:**
+ - Child ID
+ - Designator Type (Parent, Guardian, Child, Facility Director)
+ - Designator Name
+ - Temporary Housing Arrangement Name
+ - Temporary Housing Location
+ - School District of Origin ID
+ - School District of Current Location ID
+ - School District Designated ID
+ - School Designated ID
+ - Designation Date
+ - Enrollment Date
+ - Enrollment Status (Enrolled, Pending, Denied)
+ - Best Interest Determination (Y/N)
+ - Best Interest Determination Reason (if not school of origin/designator's choice)
+ - Appeal Status (if applicable)
+ - Records Requested (Y/N)
+ - Records Received (Y/N)
+ - Records Request Date
+ - Records Received Date
+ - Permanently Housed Date (if applicable)
+ - Terminal Year in Building (Y/N)
+ - Charter School of Origin (Y/N)
+ - Fiscal/Programmatic Responsibility District ID (if charter school)
+
+**4. Incarcerated Youth Educational Service Requests**
+
+**Quotes:**
+ - "A person under twenty-one years of age who has not received a high school diploma and who is incarcerated in a correctional facility maintained by a county or by the city of New York or in a youth shelter is eligible for educational services pursuant to this subdivision..." (§ 3202.7.a)
+ - "the correctional facility maintained by the county or the city of New York shall furnish such child with information concerning the availability of such educational services and shall submit a request for educational services to the school district in which the facility is located." (§ 3202.7.c)
+ - "Such request shall conform to requirements prescribed by the commissioner by regulation... and shall include, but shall not be limited to, notice of: the name of the child, the name and location of the facility in which such child is incarcerated, the last grade completed by the child as reported by the child, the anticipated duration of the incarceration and the last known residence of such child at the time of the child's commitment to custody." (§ 3202.7.c)
+ - "The school district in which the facility is located shall notify other appropriate agencies, including, but not limited to, the education department and the school district identified as being responsible for the educational costs of such child pursuant to paragraph b of this subdivision, that such a request for educational services has been received." (§ 3202.7.c)
+
+**Why:** To track requests for educational services for incarcerated youth and associated notifications.
+
+**One row represents:** A request for educational services for an incarcerated youth.
+
+**Covers:** Requests for educational services for youth incarcerated in county correctional facilities or youth shelters.
+
+**Columns:**
+ - Request ID
+ - Youth ID
+ - Correctional Facility ID
+ - Facility Name
+ - Facility Location
+ - Request Date
+ - Last Grade Completed (Self-Reported)
+ - Anticipated Incarceration Duration
+ - Last Known Residence at Commitment
+ - School District of Residence at Commitment ID
+ - Notification Sent to Education Department (Y/N)
+ - Notification Sent to Responsible School District (Y/N)
+ - Notification Date
+ - School District Responsible for Costs ID (determined by review process)
+
+**5. Hospital/Institution Child Educational Service Agreements**
+
+**Quotes:**
+ - "children cared for in a hospital or other institution for the care, custody and treatment of children, other than a school... shall not, by reason of their presence in such hospital or institution, be deemed to be residents of the school district in which such hospital or institution is located. The trustees or board of education of the school district of their residence shall provide educational services for such children." (§ 3202.6)
+ - "Such services may be provided by a tutor employed by the district, by contract with a school connected with such hospital or institution, or by contract with the local public school district in which such hospital or institution is located. Such contracts shall be limited to the cost of educational services and shall not include maintenance or medical services." (§ 3202.6)
+ - "if such children are supported and maintained at the expense of a social services district, the cost of said instruction shall be paid by the social services district which is liable for payment of the cost of their support and maintenance." (§ 3202.6)
+ - "the trustees or board of education of a school district in which such a hospital or institution is located shall receive such children in the school or schools of the district for instruction for a compensation to be fixed by the trustee or board of education, unless such trustees or board of education shall establish to the satisfaction of the commissioner of education that there are valid and sufficient reasons for refusal to receive such children." (§ 3202.6)
+
+**Why:** To track the provision and funding of educational services for children in hospitals/institutions.
+
+**One row represents:** An agreement or arrangement for educational services for a specific child in a hospital/institution.
+
+**Covers:** Educational service arrangements for children residing in hospitals or other non-school institutions.
+
+**Columns:**
+ - Child ID
+ - Hospital/Institution ID
+ - School District of Residence ID
+ - Service Provider Type (District Tutor, Institution School Contract, Local Public School Contract)
+ - Service Provider ID (if applicable)
+ - Agreement Start Date
+ - Agreement End Date
+ - Cost of Educational Services
+ - Funding Source (School District of Residence, Social Services District)
+ - Social Services District ID (if applicable)
+ - Compensation to Local District (if applicable)
+ - Refusal Reason (if applicable)
+ - Commissioner Approval for Refusal (Y/N)
+
+**6. ICF/DD Child Educational Status Reports**
+
+**Quotes:**
+ - "The school district providing educational services to children placed pursuant to this paragraph shall provide a report on the status of each such child with a handicapping condition annually to the committee on special education of the school district in which the child resided at the time of admission to the intermediate care facility for individuals with developmental disabilities. Such report shall also be sent to the parent or guardian of the child and the office for people with developmental disabilities." (§ 3202.13)
+
+**Why:** To track annual reporting requirements for children with handicapping conditions in ICF/DD.
+
+**One row represents:** An annual status report for a specific child.
+
+**Covers:** Annual educational status reports for children with handicapping conditions placed in intermediate care facilities for individuals with developmental disabilities (ICF/DD).
+
+**Columns:**
+ - Child ID
+ - ICF/DD Facility ID
+ - Reporting School District ID
+ - School District of Residence ID
+ - Report Date
+ - Handicapping Condition Status
+ - Educational Progress Summary
+ - Special Education Services Provided
+ - Report Sent to CSE (Y/N)
+ - Report Sent to Parent/Guardian (Y/N)
+ - Report Sent to OPWDD (Y/N)
+
+**7. Student Health and Screening Records**
+
+**Quotes:**
+ - "A person included by the provisions of this part shall be required to attend upon instruction only if in proper mental and physical condition." (§ 3208.1)
+ - "A person whose mental or physical condition is such that his or her attendance upon instruction under the provisions of this part would endanger the health or safety of such person or of others shall not be permitted to attend..." (§ 3208.2)
+ - "The determination of mental or physical condition under the provisions of this part shall be based upon actual examination made by a person or persons qualified by appropriate training and experience, in accordance with regulations of the department." (§ 3208.4)
+ - "Officers or employees of the state, a school district... shall be prohibited from requiring a child... to obtain a prescription for a substance covered by the federal controlled substances act... as a condition of attending school, receiving an evaluation or reevaluation... or receiving special education programs or services." (§ 3208.4-a)
+ - "Each board of education or trustees of each school district shall provide for the screening of every new entrant to school to determine which pupils are or may be children with disabilities or gifted children, as well as all pupils who score below level two on either the third grade English language arts or mathematics assessments for New York state elementary schools, in accordance with regulations of the commissioner to determine whether such pupils may have disabilities." (§ 3208.5.a)
+ - "Such screening shall include, but not be limited to: (1) A physical examination pursuant to the provisions of sections nine hundred one, nine hundred three and nine hundred four of this chapter, including proof of immunization as required by section twenty-one hundred sixty-four of the public health law. (2) A language development assessment." (§ 3208.5.b)
+ - "If such screening indicates a suspected disability... a referral shall be made to the committee on special education." (§ 3208.5.c)
+ - "If such screening indicates a possibly gifted child, the name and finding shall be reported to the superintendent of schools of such district and to the parent or legal guardian of such child." (§ 3208.5.d)
+
+**Why:** To track student health conditions, mandatory screenings, and referrals for special services.
+
+**One row represents:** A health or screening record for a specific student.
+
+**Covers:** Mental/physical condition determinations for attendance, new entrant screenings (physical, immunization, language development), and identification of potential disabilities or giftedness.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - Screening Date
+ - Screening Type (New Entrant, 3rd Grade ELA/Math)
+ - Physical Exam Date
+ - Immunization Status (Compliant, Non-Compliant)
+ - Language Development Assessment Score
+ - Suspected Disability (Y/N)
+ - Referral to CSE (Y/N) (linked to Dataset 1)
+ - Referral Date
+ - Possibly Gifted (Y/N)
+ - Superintendent Notified (Y/N)
+ - Parent/Guardian Notified (Y/N)
+ - Attendance Permitted (Y/N)
+ - Reason for Denial (if applicable)
+ - Qualified Examiner ID
+ - Examiner Type
+ - Mandatory Medication Required (Y/N)
+
+**8. Student Attendance Records**
+
+**Quotes:**
+ - "In each school district of the state, each minor from six to sixteen years of age shall attend upon full time instruction." (§ 3205.1.a)
+ - "A minor who has completed a four-year high school course of study shall not be subject to the provisions of part one of this article in respect to required attendance upon instruction." (§ 3205.2.a)
+ - "A minor for whom application for a full-time employment certificate has been made and who is eligible therefor may, though unemployed, be permitted to attend part time school not less than twenty hours per week instead of full time school." (§ 3205.2.b)
+ - "The board of education of every school district within the state is hereby authorized to require minors who are five years of age on or before December first to attend kindergarten instruction." (§ 3205.2.c)
+ - "In each school district, the board of education shall have power to require minors from sixteen to seventeen years of age who are not employed to attend upon full time day instruction until the last day of session in the school year in which the student becomes seventeen years of age." (§ 3205.3)
+ - "For the purposes of attendance, any student so serving while school is in session shall be recorded as in attendance." (§ 3207-a)
+
+**Why:** To track student attendance and compliance with mandatory instruction requirements.
+
+**One row represents:** A student's attendance record for a specific period (e.g., daily).
+
+**Covers:** Attendance for all minors required to attend full-time, part-time, or evening instruction, including exceptions and exemptions.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - School ID
+ - Date
+ - Attendance Status (Present, Absent Excused, Absent Unexcused, Tardy)
+ - Reason for Absence (if excused)
+ - Age at Start of School Year
+ - Grade Level
+ - High School Diploma Received (Y/N)
+ - Full-time Employment Certificate Applied (Y/N)
+ - Kindergarten Enrollment (Y/N, if 5-year-old)
+ - Parent Election Not to Enroll (Y/N, if 5-year-old)
+ - Non-public School Enrollment (Y/N)
+ - Home Instruction (Y/N)
+ - Age 16-17 and Not Employed (Y/N)
+ - Election Service (Y/N) (linked to Dataset 22)
+
+**9. Nonpublic School Substantial Equivalence Compliance**
+
+**Quotes:**
+ - "The commissioner shall be the entity that determines whether nonpublic elementary and secondary schools are in compliance with the academic requirements set forth in paragraphs (ii) and (iii) of this subdivision." (§ 3204.2.v)
+ - "Instruction at a nonpublic school satisfies all the requirements of this part applicable to instruction... and shall thereby qualify as and be finally recognized to be at least substantially equivalent to the instruction given to minors of like age and attainments at the public schools of the city or district where the minor resides, if such nonpublic school is: (i) a registered high school or nonpublic school serving grades one through eight that has a registered high school; (ii) a state-approved private special education school or state-operated or state-supported school...; (iii) a nonpublic school that is accredited or is awarded provisional status by an accreditation body approved by the commissioner...; (iv) a nonpublic school that participates in the international baccalaureate program; (v) a nonpublic school whose instruction is approved by the United States government for instruction on a military base or service academy; (vi) a nonpublic school in which the percentage of students who score "proficient" on a year-end summative or cumulative assessment... is equal to or greater than one of the following metrics...; or (vii) a nonpublic school that administers a year-end summative or cumulative assessment... has a three-year average participation rate that is equal to or greater than the three-year statewide average participation rate, and uses the results to assess the school's educational program and to seek to improve instruction and its students' performance on such tests." (§ 3204.6.a)
+ - "A nonpublic school's satisfaction of one or more criteria listed in paragraph (a) of this subdivision in one school year shall not automatically be deemed satisfaction of such criteria in later school years if such school ceases to satisfy such criteria in such later years." (§ 3204.6.a-1)
+ - "The commissioner may, at any time, revoke such commissioner's approval of an accreditation body for cause, upon notice and hearing" (§ 3204.6.a.iii)
+
+**Why:** To track nonpublic schools' compliance with substantial equivalence requirements through various criteria.
+
+**One row represents:** A nonpublic school's compliance record for a specific school year.
+
+**Covers:** Nonpublic school compliance with academic requirements for substantial equivalence, including accreditation, test performance, and program participation.
+
+**Columns:**
+ - School ID
+ - School Name
+ - School Year
+ - Compliance Status (Compliant, Non-Compliant)
+ - Compliance Criteria Met (e.g., Registered High School, State-Approved SPED, Accredited, IB Program, US Gov Approved, State Test Performance, Assessment Use)
+ - Accreditation Body (if applicable)
+ - Accreditation Status (Provisional, Accredited)
+ - Provisional Status Start Date
+ - Provisional Status End Date
+ - State Test Performance Metric Used (if applicable)
+ - State Test Proficient Percentage
+ - Statewide Proficient Percentage (for comparison)
+ - Participation Rate
+ - Statewide Average Participation Rate (for comparison)
+ - Determination Date
+ - Commissioner Notes
+ - Accreditation Body Approval Status (Y/N) (if applicable)
+ - Accreditation Body Approval Revocation Date (if applicable)
+
+**10. Incarcerated Youth Educational Service Reimbursements**
+
+**Quotes:**
+ - "Except as otherwise provided in this paragraph, the school district in which the child resided at the time of the child's commitment to the custody of the sheriff or local commissioner of corrections or youth shelter shall reimburse the education department for its expenditure for the full time equivalent attendance of such child pursuant to subdivision thirteen of section thirty-six hundred two of this chapter on behalf of such child, in an amount equal to the product of such full time equivalent attendance and the school district basic contribution..." (§ 3202.7.b)
+ - "Upon certification by the commissioner, the comptroller shall deduct from any state funds which become due to a school district an amount equal to the reimbursement required to be made by such school district in accordance with this paragraph..." (§ 3202.7.b)
+
+**Why:** To track and process reimbursements for educational services provided to incarcerated youth.
+
+**One row represents:** A reimbursement transaction for educational services for an incarcerated youth.
+
+**Covers:** Reimbursements from school districts to the Education Department for educational services provided to incarcerated youth.
+
+**Columns:**
+ - Reimbursement ID
+ - Youth ID
+ - School District of Residence at Commitment ID
+ - School District Providing Services ID
+ - Service Period Start Date
+ - Service Period End Date
+ - Full Time Equivalent Attendance
+ - School District Basic Contribution
+ - Reimbursement Amount Due
+ - Reimbursement Status (Pending, Deducted, Paid)
+ - Deduction Date (if applicable)
+ - Related Request ID (linked to Dataset 4)
+
+**11. Homeless Child Reimbursement Claims**
+
+**Quotes:**
+ - "Where either the school district of current location or a school district participating in a regional placement plan is designated as the district in which the homeless child shall attend upon instruction and such homeless child's school district of origin is within New York state, the school district providing instruction, including preschool instruction, shall be eligible for reimbursement by the department, as approved by the commissioner, for the dire" (§ 3209.3.a)
+
+**Why:** To track and process reimbursement claims for educational services for homeless children.
+
+**One row represents:** A reimbursement claim for educational services for a specific homeless child.
+
+**Covers:** Reimbursement claims from school districts providing instruction to homeless children whose school district of origin is within New York State.
+
+**Columns:**
+ - Claim ID
+ - Child ID (linked to Dataset 3)
+ - School District Providing Instruction ID
+ - School District of Origin ID
+ - Service Period Start Date
+ - Service Period End Date
+ - Total Educational Costs
+ - Amount Reimbursed by Department
+ - Claim Status (Pending, Approved, Denied, Paid)
+ - Payment Date
+
+**12. Educational Service Reimbursement Claims (ICF/DD)**
+
+**Quotes:**
+ - "The department shall reimburse such school district of residence for all nonfederally reimbursable costs of such educational services in accordance with subparagraph four of this paragraph as if such district were the school district in which the intermediate care facility is located, and such school district of residence shall be responsible for reimbursement of the department for its expenditure on behalf of the child in an amount equal to the school district basic contribution, as defined in subdivision eight of section four thousand four hundred one of this chapter." (§ 3202.14)
+ - "The comptroller may deduct the amount of such reimbursement from any state funds due the district in the manner prescribed in subparagraph six of this paragraph." (§ 3202.14)
+
+**Why:** To track and process financial reimbursements for educational services provided to ICF/DD children.
+
+**One row represents:** A reimbursement claim for educational services for a specific child for a specific period.
+
+**Covers:** Reimbursement claims for non-federally reimbursable educational costs for children in ICF/DD facilities.
+
+**Columns:**
+ - Claim ID
+ - Child ID
+ - ICF/DD Facility ID
+ - School District of Residence ID
+ - School District Providing Services ID
+ - Service Period Start Date
+ - Service Period End Date
+ - Total Educational Costs
+ - Non-Federally Reimbursable Costs
+ - Amount Reimbursed by Department
+ - School District Basic Contribution Amount
+ - Amount Due from School District of Residence
+ - Reimbursement Status (Pending, Approved, Denied, Paid)
+ - Payment Date
+
+**13. OCFS Youth Educational Service Contracts**
+
+**Quotes:**
+ - "the commissioner of the office of children and family services shall be responsible for the secular education of youth under the jurisdiction of the office and may contract for such education with the trustees or board of education of the school district wherein a facility for the residential care of such youth is located or with the board of cooperative educational services at which any such school district is a component district for special education programs, related services and career and technical education services and music, art and foreign language programs..." (§ 3202.6-a)
+ - "A youth attending a local public school while in residence at such facility shall be deemed a resident of the school district where his parent or guardian resides at the commencement of each school year for the purpose of determining which school district shall be responsible for the youth's tuition pursuant to section five hundred four of the executive law." (§ 3202.6-a)
+
+**Why:** To track contracts and tuition responsibility for educational services for youth under OCFS jurisdiction.
+
+**One row represents:** A contract or tuition arrangement for educational services for a specific OCFS youth.
+
+**Covers:** Educational service contracts and tuition responsibility for youth under the jurisdiction of the Office of Children and Family Services.
+
+**Columns:**
+ - Youth ID
+ - OCFS Facility ID
+ - School District Providing Services ID
+ - BOCES ID (if applicable)
+ - Contract Start Date
+ - Contract End Date
+ - Educational Service Type (e.g., special education, career/technical, music, art, foreign language)
+ - Total Contract Cost
+ - School District of Parent/Guardian Residence ID
+ - Tuition Responsibility (OCFS, School District of Parent/Guardian Residence)
+ - Tuition Amount
+
+**14. Part-Time Instruction Enrollment and Compliance**
+
+**Quotes:**
+ - "The board of education of a city or district shall have power to require each employed minor from sixteen to seventeen years of age to attend upon part time instruction in accordance with the provisions of this section." (§ 3206.1)
+ - "A minor who is a graduate of a four-year high school course of study shall not be required to attend upon part time instruction." (§ 3206.2)
+ - "The attendance of an employed minor required to attend upon part time instruction by a board of education in accordance with the provisions of this section shall be for not less than four, nor more than eight hours per week, and on such day or days of the week as the school authorities may determine." (§ 3206.3)
+ - "An employed minor, while temporarily unemployed, or a minor attending part time school under the provisions of subdivision two, paragraph b, of section thirty-two hundred five, required to attend part time instruction by a board of education in accordance with the provisions of this section, shall attend upon part time instruction for not less than twenty hours a week." (§ 3206.4)
+ - "The absence of an employed minor during a rush season may be permitted by the school authorities on condition that the minor attend a greater number of hours per week thereafter until the absence is made up, and provided that the minor's employer is a party to such an agreement." (§ 3206.5)
+ - "An absence due to unlawful cause may be required to be made up by attendance in excess of the number of hours per week otherwise required." (§ 3206.6)
+ - "The school authorities of a city or district shall have power after a hearing to establish a half-time system or program of employment and required attendance at part time schools for minors who are included by the provisions of this section." (§ 3206.7)
+ - "Each minor above the age of sixteen years and under the age of eighteen years, who is not in regular full-time day attendance at a public, private or parochial school or who is regularly and lawfully employed in some occupation or service... shall attend a part-time school or class..." (§ 3206.8)
+
+**Why:** To track enrollment and compliance for minors required to attend part-time instruction.
+
+**One row represents:** A student's enrollment record in part-time instruction for a specific period.
+
+**Covers:** Enrollment and attendance compliance for employed minors (16-17) and other minors (16-18) required to attend part-time instruction.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - Enrollment Date
+ - Part-Time Instruction Type (Employed Minor, Temporarily Unemployed, Half-Time Program)
+ - Employer Name (if applicable)
+ - Required Hours Per Week
+ - Actual Hours Attended Per Week
+ - Compliance Status (Compliant, Non-Compliant)
+ - Make-Up Hours Required
+ - Make-Up Hours Completed
+ - Rush Season Agreement (Y/N)
+ - Agreement Details
+ - High School Diploma Received (Y/N)
+
+**15. Evening Instruction Enrollment and Attendance**
+
+**Quotes:**
+ - "In each city and school district in which evening instruction is provided... each person from seventeen to twenty-one years of age who is unable to speak, read and write English as required for the completion of the fifth year of the elementary school course of study, and who is not attending upon equivalent day instruction, shall attend upon such evening instruction." (§ 3207)
+
+**Why:** To track enrollment and attendance for individuals required to attend evening instruction.
+
+**One row represents:** An enrollment record for an individual in evening instruction.
+
+**Covers:** Enrollment and attendance for individuals (17-21) required to attend evening instruction due to limited English proficiency.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - Enrollment Date
+ - Age
+ - English Proficiency Level (at enrollment)
+ - Equivalent Day Instruction Attending (Y/N)
+ - Required Nights Per Year
+ - Actual Nights Attended
+ - Compliance Status
+
+**16. Curriculum Requirements and Changes**
+
+**Quotes:**
+ - "The course of study for the first eight years of full time public day schools shall provide for instruction in at least the twelve common school branches of arithmetic, reading, spelling, writing, the English language, geography, United States history, civics, hygiene, physical training, the history of New York state and science." (§ 3204.3.a.1)
+ - "The courses of study and of specialized training beyond the first eight years of full time public day schools shall provide for instruction in at least the English language and its use, in civics, hygiene, physical training, and American history including the principles of government proclaimed in the Declaration of Independence and established by the constitution of the United States." (§ 3204.3.a.2)
+ - "The state education department shall have power to alter the subjects of instruction as prescribed in this section." (§ 3204.3.e)
+
+**Why:** To track the mandated curriculum requirements and any changes made by the State Education Department.
+
+**One row represents:** A specific curriculum requirement or a change to a requirement.
+
+**Covers:** Mandated courses of study for public day schools (full-time, part-time, evening, parental) and changes made by the State Education Department.
+
+**Columns:**
+ - Requirement ID
+ - Grade Level (e.g., K-8, Beyond 8th, Part-time, Evening, Parental)
+ - Subject Area
+ - Specific Instruction Mandated
+ - Effective Date
+ - Amendment Date
+ - SED Approval Date (for changes)
+
+**17. School Session Compliance**
+
+**Quotes:**
+ - "A full time day school or class, except as otherwise prescribed, shall be in session for not less than one hundred eighty days each year, exclusive of legal holidays that occur during the term of said school and exclusive of Saturdays." (§ 3204.4.a)
+ - "A part time day school or class shall be in session each year for at least four hours of each week during which the full time day schools are in session." (§ 3204.4.b)
+ - "Evening schools shall be in session each year as follows: (1) In cities having a population of one hundred thousand or more, on at least one hundred nights; (2) In cities having a population of fifty thousand but less than one hundred thousand, on at least seventy-five nights; (3) In each other city, and in each school district where twenty or more persons from seventeen to twenty-one years of age are required to attend upon evening instruction, on at least fifty nights." (§ 3204.4.c)
+
+**Why:** To track school districts' compliance with minimum session length requirements.
+
+**One row represents:** An annual record of a school district's session length for a specific school type.
+
+**Covers:** Compliance with minimum session length requirements for full-time, part-time, and evening schools.
+
+**Columns:**
+ - School District ID
+ - School Year
+ - School Type (Full-time Day, Part-time Day, Evening)
+ - Minimum Required Days/Hours/Nights
+ - Actual Days/Hours/Nights in Session
+ - Compliance Status (Compliant, Non-Compliant)
+ - Notes on Exceptions
+
+**18. Graduation Ceremony Participation Policies**
+
+**Quotes:**
+ - "The board of education or the board of trustees of each school district shall establish a policy and adopt procedures to allow any student in such district to participate in the graduation ceremony of the student's high school graduating class and all related activities if such student has been awarded a skills and achievement commencement credential or career development and occupational studies commencement credential but has not otherwise qualified for a regents or local diploma." (§ 3204.4-b)
+ - "The policy and procedures shall provide annual written notice to all students and their parents or guardians about the school district's policy and procedures adopted in accordance with this subdivision." (§ 3204.4-b)
+
+**Why:** To track school district policies and annual notifications regarding graduation ceremony participation for credentialed students.
+
+**One row represents:** A school district's policy record for graduation ceremony participation.
+
+**Covers:** School district policies and procedures for allowing students with specific credentials to participate in graduation ceremonies.
+
+**Columns:**
+ - School District ID
+ - Policy Adoption Date
+ - Policy Description
+ - Annual Notice Provided (Y/N)
+ - Notice Date
+ - Student Eligibility Criteria (e.g., Skills and Achievement Credential, Career Development Credential)
+ - Number of Eligible Students
+ - Number of Participating Students
+
+**19. Gifted Student Program Determinations**
+
+**Quotes:**
+ - "The governing board of any school district and any community school district is hereby empowered to determine the circumstances wherein instruction shall be given to meet the special needs of gifted pupils as provided in this chapter." (§ 3204.2-b)
+ - "If such screening indicates a possibly gifted child, the name and finding shall be reported to the superintendent of schools of such district and to the parent or legal guardian of such child." (§ 3208.5.d)
+
+**Why:** To track school district determinations and provisions for gifted student instruction.
+
+**One row represents:** A determination or program record for gifted instruction within a school district.
+
+**Covers:** School district policies and programs for providing instruction to meet the special needs of gifted pupils.
+
+**Columns:**
+ - School District ID
+ - Policy Adoption Date
+ - Program Description
+ - Eligibility Criteria
+ - Number of Gifted Students Identified
+ - Number of Gifted Students Receiving Services
+ - Program Start Date
+ - Program End Date
+ - Related Screening ID (linked to Dataset 7)
+
+**20. Athletic Program Participation Appeals**
+
+**Quotes:**
+ - "Upon a school district's determination that a student shall not be permitted to participate in an athletic program by reason of a physical impairment, based on a medical examination conducted by the school physician, the student may commence a special proceeding in the supreme court... to enjoin the school district from prohibiting his participation." (§ 3208-a.1)
+ - "The petition in the proceeding shall be a verified petition of a parent or guardian of the student. The petition shall have annexed affidavits of at least two licensed physicians setting forth that in their opinion the student is physically capable of participating in an athletic program, that participation would be reasonably safe, and any special or preventive measures or devices needed to protect the student." (§ 3208-a.2)
+ - "The court shall grant such petition if it is satisfied that it is in the best interest of the student to participate in an athletic program and that it is reasonably safe for him to do so." (§ 3208-a.3)
+ - "Unless specifically prohibited by the court, an order granted pursuant to the provisions of this section shall be considered valid and sufficient for subsequent years, provided that the student has not changed athletic programs and, further, that two licensed physicians set forth current affidavits that, in their opinion, the student's physical impairment has not changed since the time of the original court order." (§ 3208-a.5)
+ - "The school district shall not be responsible for providing or bear the cost of, any special or preventive measures or devices needed to protect the student unless such special or preventive measures or devices are contained in a student's individual education plan recommended by the school district committee on the handicapped and such student is a child with a handicapping condition..." (§ 3208-a.7)
+
+**Why:** To track student appeals against denial of athletic program participation due to physical impairment.
+
+**One row represents:** A special proceeding (appeal) initiated by a student/parent regarding athletic program participation.
+
+**Covers:** Appeals by students/parents against school district decisions to prohibit athletic program participation due to physical impairment.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - Athletic Program Name
+ - School Physician Determination Date
+ - Reason for Denial (Physical Impairment)
+ - Appeal Filing Date
+ - Court Case ID
+ - Parent/Guardian Name (Petitioner)
+ - Physician Affidavit 1 (Y/N)
+ - Physician Affidavit 2 (Y/N)
+ - Court Decision Date
+ - Court Order Granted (Y/N)
+ - Special Measures/Devices Required (Y/N)
+ - Cost Responsibility for Measures (School District, Parent, IEP)
+ - IEP ID (if applicable) (linked to Dataset 1)
+ - Order Valid for Subsequent Years (Y/N)
+ - Annual Physician Affidavits Submitted (Y/N)
+
+**21. Intersecting Property School Designations**
+
+**Quotes:**
+ - "The owner of taxable property that is so located that the boundary line between two school districts intersects (a) the dwelling on said property or (b), in the case of an owner-occupied single family dwelling unit, the property on which the dwelling unit is located may designate the school in either of such districts to which the children lawfully residing in said dwelling on said property shall attend by filing with the district clerk of each of such districts a notice of such designation on or before August first in any year..." (§ 3203.1)
+ - "School taxes on such property shall continue to be levied and collected without reference to the aforesaid designation, but the school authorities of the district that levies and collects a tax upon such property and does not furnish instructional service to the children residing on such property shall pay to the district designated, in which such children are received and instructed, the amount of the tax on such property so levied and collected." (§ 3203.2)
+
+**Why:** To track school designations for properties intersected by school district lines and manage associated tax payments.
+
+**One row represents:** A designation for a property intersected by a school district line.
+
+**Covers:** Designations of school districts for children residing on properties intersected by school district boundary lines.
+
+**Columns:**
+ - Property ID
+ - Owner Name
+ - Property Address
+ - Intersecting School District 1 ID
+ - Intersecting School District 2 ID
+ - Designated School District ID
+ - Designation Filing Date
+ - Children Residing (Count)
+ - Tax Levying District ID
+ - Instructional Service Providing District ID
+ - Tax Amount Collected by Levying District
+ - Tax Amount Paid to Designated District
+ - Payment Date
+ - Designation Expiration/Change Date
+
+**22. Health/Hygiene Study Exemptions**
+
+**Quotes:**
+ - "Subject to rules and regulations of the board of regents, a pupil may, consistent with the requirements of public education and public health, be excused from such study of health and hygiene as conflicts with the religion of his parents or guardian. Such conflict must be certified by a proper representative of their religion as defined by section two of the religious corporations law." (§ 3204.5)
+
+**Why:** To track student exemptions from health and hygiene study due to religious conflict.
+
+**One row represents:** A student's exemption record from health and hygiene study.
+
+**Covers:** Exemptions for students from health and hygiene study based on religious conflict.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - Exemption Request Date
+ - Parent/Guardian Name
+ - Religious Representative Certification (Y/N)
+ - Certification Date
+ - Exemption Start Date
+ - Expiration Date (if temporary)
+
+**23. Incarcerated Youth Educational Service Plans**
+
+**Quotes:**
+ - "Such services shall be provided by the school district in which the facility or youth shelter is located, within the limits of the funds allocated by the commissioner for such purposes pursuant to section thirty-six hundred two of this chapter and pursuant to a plan approved by the commissioner. School districts shall submit such plan by July fifteenth of each school year." (§ 3202.7.a)
+
+**Why:** To track the annual plans submitted by school districts for providing educational services to incarcerated youth.
+
+**One row represents:** An annual educational service plan submitted by a school district.
+
+**Covers:** Annual plans for educational services for youth incarcerated in county correctional facilities or youth shelters.
+
+**Columns:**
+ - Plan ID
+ - School District ID (Facility Location)
+ - School Year
+ - Plan Submission Date
+ - Commissioner Approval Status
+ - Allocated Funds
+ - Description of Services Provided
+ - Number of Eligible Youth Served
+
+**24. School District LEP Program Plans and Funding Reports**
+
+**Quotes:**
+ - "Each school district which is receiving total foundation aid shall develop a comprehensive plan consistent with requirements as the commissioner may establish in regulations to meet the educational needs of pupils of limited English proficiency." (§ 3204.2-a.1)
+ - "On or before March first of each year commencing with March first, two thousand nine, the commissioner shall submit a report to the governor, the director of the budget, the speaker of the assembly, the temporary president of the senate, the chair of the fiscal committees of the senate and assembly on the expenditure of state, local and federal funds by school districts in the prior school year on programs, activities and services for pupils of limited English proficiency, along with recommendations for improvement of such programs." (§ 3204.2-a.1)
+
+**Why:** To track school district plans for LEP services and annual financial reporting.
+
+**One row represents:** An annual plan or funding report submitted by a school district for LEP programs.
+
+**Covers:** Comprehensive plans and annual expenditure reports for Limited English Proficiency (LEP) programs by school districts.
+
+**Columns:**
+ - School District ID
+ - School Year
+ - Plan Submission Date
+ - Commissioner Approval Status (for plan)
+ - Total Foundation Aid Received (Y/N)
+ - State Funds Expended
+ - Local Funds Expended
+ - Federal Funds Expended
+ - Report Submission Date
+ - Recommendations for Improvement
+
+**25. Incarcerated Youth Release Notifications**
+
+**Quotes:**
+ - "Upon release or discharge of a child eligible for educational services pursuant to this subdivision, the correctional facility shall apprise such child that further educational services may be available pursuant to this section through the school district in which the child resides or in which the child is otherwise entitled to attend school, and shall, at the request of the student, notify such district of the child's desire to enroll in such district." (§ 3202.7.d)
+
+**Why:** To track notifications to school districts about released youth desiring to enroll.
+
+**One row represents:** A notification to a school district about a released youth's desire to enroll.
+
+**Covers:** Notifications from correctional facilities to school districts regarding released youth desiring to enroll in further educational services.
+
+**Columns:**
+ - Notification ID
+ - Youth ID
+ - Correctional Facility ID
+ - Release Date
+ - Youth Desire to Enroll (Y/N)
+ - Notified School District ID (Residence/Entitlement)
+ - Notification Date
+
+**26. Claim Filing Waiver Requests**
+
+**Quotes:**
+ - "Notwithstanding the provisions of paragraph a of subdivision five of section thirty-six hundred four of this chapter, the commissioner shall be authorized to grant a waiver excusing the late filing of claims submitted for costs incurred pursuant to this subdivision, upon findings that the school district has submitted a timely request for a waiver and has submitted proof satisfactory to the commissioner that the delay in filing was caused by a party other than the school district." (§ 3202.5.e)
+
+**Why:** To track requests for waivers for late claim filings and their outcomes.
+
+**One row represents:** A request for a waiver for late claim filing.
+
+**Covers:** Requests from school districts for waivers excusing late filing of educational cost claims.
+
+**Columns:**
+ - Waiver Request ID
+ - School District ID
+ - Original Claim ID (linked to Dataset 12)
+ - Request Date
+ - Reason for Delay
+ - Supporting Proof Submitted (Y/N)
+ - Waiver Status (Pending, Granted, Denied)
+ - Decision Date
+ - Commissioner Notes
+
+**27. Homeless Child Liaisons**
+
+**Quotes:**
+ - "Notwithstanding any other provision of law to the contrary, each local educational agency... shall designate a local educational agency liaison for homeless children and youths and shall, consistent with the provisions of this section, otherwise comply with the applicable requirements of paragraphs three through seven of subsection (g) of section seven hundred twenty-two of subtitle B of title VII of the McKinney-Vento Assistance Act." (§ 3209.2-a)
+
+**Why:** To track the designated local educational agency liaisons for homeless children and youth.
+
+**One row represents:** A designated liaison for a local educational agency.
+
+**Covers:** Local educational agency liaisons for homeless children and youth.
+
+**Columns:**
+ - Local Educational Agency ID
+ - Liaison Name
+ - Liaison Contact Information (Email, Phone)
+ - Designation Date
+
+**28. Student Election Service Records**
+
+**Quotes:**
+ - "A school district may permit an enrolled student, with the consent of such student's parent, guardian, or other person in parental relation, to serve as an election inspector or poll clerk pursuant to section 3-400 of the election law (and other applicable provisions of this chapter and the labor law). For the purposes of attendance, any student so serving while school is in session shall be recorded as in attendance." (§ 3207-a)
+
+**Why:** To track student participation as election officials and ensure proper attendance credit.
+
+**One row represents:** A record of a student serving as an election inspector or poll clerk.
+
+**Covers:** Students (17+) serving as election inspectors or poll clerks.
+
+**Columns:**
+ - Student ID
+ - School District ID
+ - Election Date
+ - Role (Inspector, Poll Clerk)
+ - Parent/Guardian Consent (Y/N)
+ - School Day Missed (Y/N)
+ - Attendance Recorded (Y/N) (linked to Dataset 8)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations
+*   Receipts
+*   Photos
+*   Research documents
+*   Text or image information
+*   Guidelines for LEP services enhancement
+*   Comptroller deduction instructions
+*   Commissioner regulations
+*   School district basic contribution definition
+*   McKinney-Vento Homeless Assistance Act definitions
+*   Elementary and Secondary Education Act of 1965 definitions
+*   Religious corporations law definition
+*   American Medical Association Guide for Medical Evaluation for Candidates for School Sports
+*   Commissioner of education's regulations
+*   Affidavits from physicians
+*   Court orders
+*   Written explanations for best interest determination
+*   Annual written notice to students/parents about graduation policy

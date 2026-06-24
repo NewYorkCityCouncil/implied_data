@@ -1,0 +1,1061 @@
+**Section 1, Mission Summary:**
+
+The agency's mission is to advocate for and serve older adults in the city, ensuring their well-being, independence, and access to essential services. Key programs include funding and overseeing older adult centers and social adult day cares, providing housing support, offering digital literacy training, and coordinating inter-agency efforts for the aging population. The agency impacts constituents by enhancing their quality of life, protecting their rights, and connecting them to vital resources and community support.
+
+**Section 2, Data Summary:**
+
+1.  **Programs and Facilities (Including Older Adult Centers & Affiliated Sites)**
+2.  **Social Adult Day Cares (SADCs)**
+3.  **Contracts and Grants**
+4.  **Funding Disbursements**
+5.  **Complaints (General, SADC, Older Adult Center, Public Housing Senior Center)**
+6.  **SADC Investigations**
+7.  **SADC Factual Determinations**
+8.  **SADC Corrective Action Plans**
+9.  **SADC Appeals**
+10. **SADC Notices of Violation and Penalties**
+11. **Agency Employees**
+12. **Advisory Council Members**
+13. **Advisory Council Meetings**
+14. **Cabinet for Older New Yorkers Members**
+15. **Cabinet for Older New Yorkers Meetings**
+16. **Outreach Activities**
+17. **Public Referrals**
+18. **Departmental Asset Inventory**
+19. **Program Development Support**
+20. **Center for Older Workforce Development Guidance**
+21. **Older Adult Center Employee Training Compliance**
+22. **Older Adult Center Daily Participant Counts**
+23. **Older Adult Center Daily Meal Service**
+24. **Older Adult Center Activities & Programming**
+25. **Housing Support Program Cases**
+26. **Digital Literacy Training Sessions**
+27. **NORC/NNORC Inventory**
+28. **Aging in Place Projects**
+29. **Community-Based Organizations (CBOs)**
+30. **Unpaid Caregiver Survey Responses**
+31. **Digital Literacy Program Participant Feedback**
+32. **Elder Abuse Education Sessions (Public)**
+33. **Adjudication Cases**
+34. **Managed Long Term Care (MLTC) Plans**
+35. **External Agencies**
+36. **Program Participants**
+
+**Section 3, Data Details:**
+
+**1. Programs and Facilities (Including Older Adult Centers & Affiliated Sites)**
+*   **Open Data Match:**
+    *   "List of NYC Aging Providers with Sites Open to the Public" (1052) - 80% match. This dataset likely contains a subset of the information for facilities open to the public.
+    *   "Department for the Aging (NYC Aging) - Senior Center Local Law 140 Provider Data - FY 2020" (1392) - 90% match. This is highly specific to Older Adult Centers, which are a type of facility.
+*   **Quotes:**
+    *   "to promulgate rules and regulations for the operation of facilities, services and programs under its jurisdiction" (Charter 2402.g)
+    *   "to maintain, operate and control such programs and facilities as may be necessary or required for the proper administration of the department." (Charter 2402.h)
+    *   "The commissioner shall require that every senior center adopt a statement of the rights of all senior citizens who participate in activities and take advantage of services provided by such senior center and treat all senior citizens in accordance with the provisions of such statement." (§ 21-202.a)
+    *   "Every senior center shall post conspicuously: (i) in or near the entrance to such center a sign that states the rights of senior citizens as provided in this section; (ii) all regularly scheduled activities as defined in this section; and (iii) the department's phone number." (§ 21-202.c)
+    *   "The commissioner shall require that every senior center post signage in a prominent common area section within the center that directs those who need information regarding elder abuse detection, reporting, counseling and services to call either the 311 citizen service system or the department's Elderly Crime Victims Resource Center." (§ 21-203.d)
+    *   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: 1. The program name, sponsor name, address, New York city housing authority development in which such senior center is located if such senior center is located on property owned by the housing authority, borough, council district, community district, designation as a neighborhood senior center or innovative senior center, and days and hours of operation as well as such information for each affiliated site;" (§ 21-208.c.1)
+    *   "For each senior center located on property owned by the New York city housing authority, the name of the entity that operates such senior center;" (§ 21-208.c.12)
+    *   "Older adult center. The term "older adult center" means a facility, other than a social adult day care, operated by a person pursuant to a contract with the department to provide services to older adults on a regular basis including, but not limited to meals, recreation, and counseling." (§ 21-210.a)
+    *   "The department shall identify the communities served by each older adult center and the prevalent spoken languages of such communities, and notify each such center of such prevalent spoken languages at least once annually." (§ 21-210.b)
+    *   "Every senior citizen shall have the right to be informed of those senior centers that are handicapped accessible." (§ 21-202.b.8)
+    *   "The commissioner shall require every older adult center to post signage in prominent common areas within every older adult center. Such signage shall include contact information for the department or other relevant agencies or organizations that an older adult may contact to obtain additional information regarding internet scams, phone scams, and phishing scams." (§ 21-216.e)
+    *   "Affiliated sites. The term "affiliated sites" means department-funded congregate sites affiliated with a senior center, including any social club, satellite, or extended/social services." (§ 21-208.a)
+*   **Why this data is implied:** To manage and oversee all programs and facilities, the agency needs a comprehensive record of each one, including specific details for Older Adult Centers and their affiliated sites.
+*   **One row represents:** A single program or facility under the department's jurisdiction or operation, including Older Adult Centers and their affiliated sites.
+*   **Covers:** All programs, services, and facilities that the department has jurisdiction over, operates, or funds, with specific attributes for Older Adult Centers and their affiliated sites.
+*   **Columns:**
+    *   Program/Facility ID (PK)
+    *   Name of Program/Facility
+    *   Type (e.g., Senior Center, Workforce Development Program, Outreach Initiative, Social Club, Satellite, Extended Services)
+    *   Location/Address
+    *   Borough
+    *   Council District
+    *   Community District
+    *   NYCHA Development (if located on NYCHA property)
+    *   Operating Entity Name (if NYCHA-located)
+    *   Jurisdiction Status (e.g., Operated by Dept, Funded by Dept, Regulated by Dept)
+    *   Operational Status (e.g., Active, Inactive, Under Development)
+    *   Date Established/Opened
+    *   Contact Information
+    *   Capacity (if applicable)
+    *   Center Designation (e.g., Neighborhood Senior Center, Innovative Senior Center) (for OACs)
+    *   Handicapped Accessible (Yes/No) (for OACs)
+    *   Bill of Rights Adopted (Yes/No) (for OACs)
+    *   Bill of Rights Signage Posted (Yes/No) (for OACs)
+    *   Activities Signage Posted (Yes/No) (for OACs)
+    *   Department Phone Number Signage Posted (Yes/No) (for OACs)
+    *   Elder Abuse Signage Posted (Yes/No) (for OACs)
+    *   Elder Fraud Prevention Signage Posted (Yes/No) (for OACs)
+    *   Prevalent Spoken Languages (List of languages identified for the community served) (for OACs)
+    *   Date of Last Language Identification (for OACs)
+    *   Parent Older Adult Center ID (FK to Program/Facility ID, for affiliated sites)
+
+**2. Social Adult Day Cares (SADCs)**
+*   **Open Data Match:** "Department for the Aging (NYC Aging) - Social Adult Day Care Services" (1447) - 95% match. This dataset likely contains the core registration information for SADCs.
+*   **Quotes:**
+    *   "An individual, partnership, corporation, limited liability company, joint venture, association, or other business entity shall not operate as a social adult day care without having registered with the department. Registration shall include registrant's name, address, corporate structure and ownership, and other information as the department may require and shall be filed on forms to be prescribed by the department. The department may require social adult day cares to register electronically." (§ 21-204.b.1)
+    *   "Changes to information required under this subdivision must be submitted to the department no later than the effective date of such change in writing or electronically in a form and manner designated by the department." (§ 21-204.b.2)
+    *   "The department shall create and maintain an online public searchable database of social adult day cares registered with the department pursuant with subdivision b of this section, which the public shall be able to search by the name under which the social adult day care registered, by the name under which the social adult day care is doing business, by borough, and by zip code. The database shall include the following information reported to the department pursuant to such subdivision: (i) the name, address, telephone number, and website, if any, of the social adult day care; (ii) the corporate structure and ownership of the social adult day care; (iii) the days and hours of operation of the social adult day care; (iv) the year the social adult day care was established; and (v) the name, address and telephone number of any managed long term care company with which the social adult day care has a formal agreement. The database shall further include any other relevant information reported to the department pursuant to this section." (§ 21-204.e.1)
+    *   "A SADC must register on the Department's website or using an electronic form as designated by the Department in accordance with subdivision b of § 21-204 of the Administrative Code. Such registration must include at least the following information: 1. Registrant's name and if SADC is operating under any other business name or names; 2. Registrant's address; 3. Registrant's phone number; 4. Registrant's Tax ID; 5. Registrant’s days and hours of operation; 6. Year SADC established; 7. Registrant’s business type; 8. SADC Director's name and contact information; 9. Registrant's corporate structure and ownership; 10. Registrant's corporate address; 11. Expiration date of Registrant’s Food Service Establishment Permit (if applicable); 12. Registrant’s Certificate of Occupancy (yes/no); 13. Whether Registrant is certified with NYS Office of Medicaid Inspector General (yes/no); 14. Status of SADC operations; 15. Name of local fire jurisdiction and date notified of SADC's presence; 16. Physical accessibility of the SADC facility; 17. Registrant’s contracted Managed Long Term Care plans; 18. Registrant’s number of work shifts per day; 19. Registrant’s anticipated average attendance per shift or per day; and 20. Registrant’s anticipated average number of staff per shift or per day." (Rules § 2-21.a)
+    *   "A fee of $900 will be charged for each SADC registration." (Rules § 2-21.b)
+    *   "A SADC must submit changes to any of the information required by subdivision a of this section on the Department's website or an electronic form designated by the Department within 30 days of the effective date of such changes. A fee of $240 will be charged for each such submission." (Rules § 2-21.c)
+    *   "A SADC must notify the Department within 30 days of ceasing operation. Upon receipt of such notice, the Department will terminate such SADC’s registration." (Rules § 2-21.d)
+    *   "A SADC that has not operated for six months or more must immediately notify the Department. Upon receipt of such notice, the Department will terminate such SADC’s registration. In order to resume operations, such SADC must submit a new registration and pay the registration fee pursuant to subdivisions a and b of this section." (Rules § 2-21.e)
+*   **Why this data is implied:** To legally operate, SADCs must register and keep their information current, requiring the department to track these details for oversight and fee collection.
+*   **One row represents:** A single Social Adult Day Care (SADC) registration.
+*   **Covers:** All registered social adult day cares and their core identifying, operational, and compliance information.
+*   **Columns:**
+    *   SADC ID (PK)
+    *   Registration ID
+    *   Registration Status (e.g., Active, Pending, Inactive, Revoked, Terminated)
+    *   Registrant Name (Individual, Partnership, Corporation, LLC, etc.)
+    *   Doing Business As (DBA) Name
+    *   SADC Address
+    *   Borough
+    *   Zip Code
+    *   Telephone Number
+    *   Website (if any)
+    *   Corporate Structure
+    *   Ownership Information
+    *   Days of Operation
+    *   Hours of Operation
+    *   Year Established
+    *   Managed Long Term Care (MLTC) Company Name (if formal agreement)
+    *   MLTC Company Address
+    *   MLTC Company Telephone Number
+    *   Date of Last Information Change
+    *   Date of Registration
+    *   Tax ID
+    *   SADC Director Name
+    *   SADC Director Contact Information
+    *   Corporate Address
+    *   Food Service Establishment Permit Expiration Date (if applicable)
+    *   Certificate of Occupancy (Yes/No)
+    *   Certified with NYS Office of Medicaid Inspector General (Yes/No)
+    *   Local Fire Jurisdiction Name
+    *   Date Notified Fire Jurisdiction
+    *   Physical Accessibility of Facility
+    *   Contracted MLTC IDs (FK to **34. Managed Long Term Care (MLTC) Plans**)
+    *   Number of Work Shifts per Day
+    *   Anticipated Average Attendance per Shift
+    *   Anticipated Average Attendance per Day
+    *   Anticipated Average Staff per Shift
+    *   Anticipated Average Staff per Day
+    *   Registration Fee Paid (Yes/No)
+    *   Registration Fee Amount
+    *   Change Submission Fee Paid (Yes/No)
+    *   Change Submission Fee Amount
+    *   Date Ceased Operation (if applicable)
+    *   Date Non-Operation Exceeded 6 Months (if applicable)
+    *   Registration Termination Date (if applicable)
+
+**3. Contracts and Grants**
+*   **Open Data Match:**
+    *   "Department for the Aging (NYC Aging) - All Contracted Providers" (2866) - 85% match. This likely contains provider-level contract information.
+    *   "Department for the Aging (NYC Aging) - Budgeted Services" (337) - 70% match. This may contain aggregated budget data related to contracts.
+*   **Quotes:**
+    *   "to disburse available city, state and federal funds to programs throughout the city and, when practical, coordinate such funds with available funding from the private sector" (Charter 2402.e)
+    *   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: ... 2. The contract term, including any renewals; 3. The budgeted total annual contract amount and the total annual reimbursed expenditures paid; ... 11. The total budgeted amount for personnel services;" (§ 21-208.c.2, § 21-208.c.3, § 21-208.c.11)
+    *   "Subject to appropriation, a program to provide grant funding and other resources, including start-up grants, capacity-building support, and operational funding to support the operations of community-based organizations to provide services within identified naturally occurring retirement communities." (§ 21-205.1.d.6)
+*   **Why this data is implied:** Disbursing funds and coordinating with external entities necessitates tracking formal agreements and their terms, including specific details for Older Adult Center and CBO funding.
+*   **One row represents:** A single contract or grant agreement.
+*   **Covers:** All contracts and grants entered into by the department for funding programs, services, or operations, including those for Older Adult Centers and Community-Based Organizations.
+*   **Columns:**
+    *   Contract/Grant ID (PK)
+    *   Program/Facility ID (FK to **1. Programs and Facilities**)
+    *   CBO ID (FK to **29. Community-Based Organizations (CBOs)**)
+    *   Funding Source (e.g., City, State, Federal, Private)
+    *   Contractor/Grantee Name
+    *   Contract/Grant Type (e.g., Service Agreement, Grant Award, Start-up, Capacity-Building, Operational)
+    *   Start Date
+    *   End Date
+    *   Total Award Amount
+    *   Current Status (e.g., Active, Expired, Completed, Terminated)
+    *   Key Deliverables/Milestones
+    *   Departmental Contact Employee ID (FK to **11. Agency Employees**)
+    *   Fiscal Year (for OAC contracts)
+    *   Renewal Status (e.g., Original, Renewal 1, Renewal 2) (for OAC contracts)
+    *   Budgeted Total Annual Contract Amount (for OAC contracts)
+    *   Total Annual Reimbursed Expenditures Paid (for OAC contracts)
+    *   Total Budgeted Amount for Personnel Services (for OAC contracts)
+    *   Purpose of Grant (for CBO grants)
+    *   Reporting Requirements Met (Yes/No) (for CBO grants)
+    *   Funds Expended (Amount) (for CBO grants)
+
+**4. Funding Disbursements**
+*   **Open Data Match:** "Department for the Aging (NYC Aging) - Reported Expenditures" (2354) - 85% match. This dataset likely contains the individual disbursement records.
+*   **Quotes:**
+    *   "to disburse available city, state and federal funds to programs throughout the city and, when practical, coordinate such funds with available funding from the private sector" (Charter 2402.e)
+*   **Why this data is implied:** To fulfill its core duty of disbursing funds, the agency must meticulously track each financial transaction.
+*   **One row represents:** A single disbursement of funds.
+*   **Covers:** All city, state, federal, and coordinated private funds disbursed to programs and facilities.
+*   **Columns:**
+    *   Disbursement ID (PK)
+    *   Date of Disbursement
+    *   Amount Disbursed
+    *   Funding Source (e.g., City, State, Federal, Private)
+    *   Program/Facility ID (FK to **1. Programs and Facilities**)
+    *   Recipient Organization Name
+    *   Grant/Contract ID (FK to **3. Contracts and Grants**)
+    *   Purpose/Description of Funds
+
+**5. Complaints (General, SADC, Older Adult Center, Public Housing Senior Center)**
+*   **Open Data Match:** None directly, but "Department for the Aging (NYC Aging) - Senior Center Local Law 140 Client Data - FY 2020" (366) might contain some aggregated complaint data.
+*   **Quotes:**
+    *   "Establishing a system to receive and process complaints regarding senior center facilities located on property owned by the New York city housing authority, including assisting senior center participants with concerns about repairs at such facilities" (Charter 2404.a)
+    *   "The department shall designate an ombudsperson whose duties shall include, but not be limited to: (i) establishing a system to receive comments and complaints with respect to any social adult day care;" (§ 21-204.d.1.i)
+    *   "investigating complaints received pursuant to subparagraph (i) of this paragraph or based on any information known to the department related to a social adult day care that may be in violation of the provisions of subdivision a of this section and whether a social adult day care has violated subdivision a of this section and upon finding there has been such a violation: (A) promptly informing in writing such social adult day care and any managed long term care organization known to be reimbursing such social adult day care of such finding, and that such finding is appealable by writing to the commissioner in accordance with the rules of the department, and requesting any informed managed long term care organization to respond to the ombudsperson in writing as to whether and how such violations will be addressed, (B) at the ombudsperson's discretion, forwarding the results of such investigation and any such response from a managed long term care organization to the department of investigation, the state department of health or any office, agency, or entity responsible for the prevention, detection, and investigation of fraud and abuse in the medical assistance program described in title eleven of the social services law or for the recovery of any improperly expended medical assistance funds, and (C) taking other appropriate actions as determined by the commissioner." (§ 21-204.d.1.iii)
+    *   "Each such report shall include, but not be limited to: ... (ii) the total number of complaints received by the ombudsperson; (iii) a general description of the reason for each such complaint; (iv) the total number of investigations conducted by the ombudsperson, a general description of the reason for each such investigation, any findings that a social adult day care has violated of subdivision a of this section, and the outcome of each such investigation;" (§ 21-204.d.4.ii, § 21-204.d.4.iii, § 21-204.d.4.iv)
+    *   "The database shall allow an individual to submit complaints electronically about a social adult day care to the ombudsperson." (§ 21-204.e.3)
+    *   "Every senior citizen shall have the right to present grievances on behalf of himself or herself to the senior center's staff, board of directors or executive committee, or elected or other government officials, without fear of reprisal from officers or employees of the senior center." (§ 21-202.b.9)
+    *   "To the extent practicable, for each senior center located on property owned by the New York city housing authority, the number of complaints related to such senior center's facilities;" (§ 21-208.c.13)
+    *   "To the extent such information is available, any steps taken to address the complaints described in paragraph 13 of this subdivision." (§ 21-208.c.14)
+    *   "Complaints may be filed with the ombudsperson by a participant of an SADC; by the parent, child, spouse, sibling, or legal guardian of a participant of a SADC; or by a person working at an SADC as an employee, contractor, or volunteer. Complaints filed by any other person may also be received at the discretion of the ombudsperson, who will consider, among other factors, the nature or severity of the alleged misconduct, the availability of evidence or witnesses, the credibility of the complaint, and the number of complaints received by the ombudsperson regarding the SADC." (Rules § 2-02.a)
+    *   "Complaints to the ombudsperson may be submitted in a form and manner determined by the ombudsperson. If any complaint is submitted anonymously or without contact information, the ombudsperson will not be obligated to provide any notice to the complainant with respect to that complaint, notwithstanding any other provision of this chapter." (Rules § 2-02.b)
+    *   "The ombudsperson may dismiss any complaint that is not filed in accordance with this section." (Rules § 2-02.c)
+    *   "When a complaint is received, the ombudsperson will notify the complainant via email or first-class mail that their complaint has been received." (Rules § 2-03.a)
+    *   "Upon receipt of a complaint, the ombudsperson will determine whether the Complaint Subject is operating as an SADC in New York City. If so, the complaint will be accepted. If not, the complaint will be dismissed." (Rules § 2-03.b)
+    *   "Where the ombudsperson accepts a complaint that includes a matter within the sole jurisdiction of another agency... the ombudsperson will refer the complaint to the other agency." (Rules § 2-04.a)
+    *   "Where the ombudsperson accepts a complaint that includes a matter partly within the jurisdiction of another agency, the ombudsperson may refer the entire complaint to the other agency... or may refer only those elements of the complaint that are within the jurisdiction of the other agency to that agency." (Rules § 2-04.b)
+    *   "If the ombudsperson referred the entire complaint to another agency, the ombudsperson will dismiss the complaint and notify the Complaint Subject and the complainant, by email or first-class mail, that the complaint has been referred to another agency and dismissed before the ombudsperson." (Rules § 2-04.c)
+    *   "If an accepted complaint has not been referred entirely to another agency or dismissed pursuant to subdivision c of 69 RCNY § 2-04, the ombudsperson will investigate the complaint." (Rules § 2-05.a)
+    *   "If the ombudsperson determines that there is insufficient evidence of a violation, the complaint will be dismissed." (Rules § 2-06.b)
+    *   "If the corrective action plan is approved, the complaint will be marked resolved and the Complaint Subject will be responsible for implementing the corrective action plan." (Rules § 2-08.a.2.a)
+    *   "Where a complaint has been resolved through the approval of a corrective action plan, the ombudsperson will notify the complainant by email or first-class mail that a corrective action plan has been implemented and the complaint has been resolved." (Rules § 2-08.a.4)
+*   **Why this data is implied:** The agency is mandated to receive, process, and track all complaints and grievances against various programs and facilities.
+*   **One row represents:** A single complaint or grievance received by the department.
+*   **Covers:** All complaints received regarding Public Housing Senior Centers, Social Adult Day Cares, and Older Adult Centers.
+*   **Columns:**
+    *   Complaint ID (PK)
+    *   Date Received
+    *   Subject Entity Type (e.g., SADC, Older Adult Center, Public Housing Senior Center)
+    *   Subject Entity ID (FK to **1. Programs and Facilities** or **2. Social Adult Day Cares (SADCs)**)
+    *   NYCHA Property ID (if applicable, for PHSC)
+    *   Complainant Type (e.g., Participant, Family, Employee, Contractor, Volunteer, Senior Citizen, Staff, Anonymous, Other)
+    *   Complainant Name (if provided)
+    *   Complainant Contact Information (if provided)
+    *   Anonymous (Yes/No)
+    *   Complaint Type (e.g., Repair, Facility Condition, Staff Conduct, Service Quality, General Grievance, Operating Without Registration, Program Standards, Participant Rights)
+    *   Detailed Description of Complaint/Alleged Misconduct
+    *   Severity of Alleged Misconduct (Ombudsperson's assessment)
+    *   Availability of Evidence/Witnesses (Ombudsperson's assessment)
+    *   Credibility of Complaint (Ombudsperson's assessment)
+    *   Number of Prior Complaints against Subject Entity (for ombudsperson's discretion)
+    *   Initial Dismissal (Yes/No)
+    *   Initial Dismissal Reason (e.g., Not filed in accordance, Not SADC in NYC)
+    *   Complaint Received Notification Sent Date
+    *   SADC Operating in NYC (Yes/No)
+    *   SADC Registered (Yes/No)
+    *   Registration Enforcement Notified (Yes/No)
+    *   Date Assigned to Liaison (for PHSC)
+    *   Assigned Liaison Employee ID (FK to **11. Agency Employees**)
+    *   Resolution Status (e.g., Open, In Progress, Resolved, Closed, Dismissed, Referred, Resolved by CAP, Violation Issued, Escalated)
+    *   Date Resolved
+    *   Resolution Details/Notes/Steps Taken
+    *   NYCHA Property Related (Yes/No, if facility complaint)
+    *   Referred to Other Agency (Yes/No)
+    *   Referral Type (Sole Jurisdiction, Partial Jurisdiction, Entire Complaint)
+    *   Referred Agency ID (FK to **35. External Agencies**)
+    *   Referral Date
+    *   Subject Entity Notified of Referral (Yes/No)
+    *   NYS DOH Notified of Referral (Yes/No)
+    *   NYS OFA Notified of Referral (Yes/No)
+    *   NYS OMIG Notified of Referral (Yes/No)
+    *   Complainant Notified of Referral (Yes/No)
+    *   Dismissed After Entire Referral (Yes/No)
+    *   Investigation ID (FK to **6. SADC Investigations**, if SADC complaint)
+    *   Final Dismissal (Yes/No)
+    *   Final Dismissal Reason (e.g., Insufficient Evidence, Resolved by CAP)
+
+**6. SADC Investigations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "If an accepted complaint has not been referred entirely to another agency or dismissed pursuant to subdivision c of 69 RCNY § 2-04, the ombudsperson will investigate the complaint." (Rules § 2-05.a)
+    *   "As part of such investigation, the ombudsperson may require that the Complaint Subject or an MLTC provide any information or records necessary to conduct such investigation. The ombudsperson may also visit the Complaint Subject facilities and other locations relevant to the subject matter of the complaint during normal operating hours, conduct interviews, inspect any records required to be maintained by the Complaint Subject by the State SADC Regulations, and collect any other relevant evidence necessary to conduct a thorough investigation." (Rules § 2-05.b)
+    *   "If access to any property or records the ombudsperson seeks to inspect pursuant to this section is denied, the ombudsperson may seek judicial authorization and may access that property or records pursuant to the authorization. In exigent circumstances where there is an imminent and serious threat to health or safety, the ombudsperson may enter on any property without such judicial authorization to inspect for compliance with § 21-204 of the Administrative Code, in accordance with law." (Rules § 2-05.c)
+    *   "Upon completion of its investigation, the ombudsperson will determine either that there is insufficient evidence or sufficient evidence to substantiate a violation..." (Rules § 2-06.a)
+    *   "The ombudsperson will monitor compliance with an approved corrective action plan through the investigative tools provided in 69 RCNY § 2-05." (Rules § 2-08.a.5)
+*   **Why this data is implied:** The agency must track the progress and details of each investigation to ensure thoroughness and proper resolution of complaints.
+*   **One row represents:** A single investigation conducted by the ombudsperson.
+*   **Covers:** All investigations initiated by the ombudsperson following accepted SADC complaints or for CAP compliance monitoring.
+*   **Columns:**
+    *   Investigation ID (PK)
+    *   Complaint ID (FK to **5. Complaints**)
+    *   SADC ID (FK to **2. Social Adult Day Cares (SADCs)**)
+    *   Investigator Employee ID (FK to **11. Agency Employees**)
+    *   Investigation Start Date
+    *   Investigation End Date
+    *   Information/Records Requested (Yes/No)
+    *   Information/Records Provided (Yes/No)
+    *   Facility Visit Date(s)
+    *   Interviews Conducted (Yes/No)
+    *   Records Inspected (Yes/No)
+    *   Evidence Collected (Yes/No)
+    *   Access Denied (Yes/No)
+    *   Judicial Authorization Sought (Yes/No)
+    *   Judicial Authorization Granted (Yes/No)
+    *   Exigent Circumstances (Yes/No)
+    *   Determination ID (FK to **7. SADC Factual Determinations**)
+    *   Investigation Type (Complaint-driven, CAP Compliance Monitoring)
+    *   CAP ID (FK to **8. SADC Corrective Action Plans**, if applicable)
+
+**7. SADC Factual Determinations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Upon completion of its investigation, the ombudsperson will determine either that there is insufficient evidence or sufficient evidence to substantiate a violation of the provisions of subdivision a of § 21-204 of the Administrative Code." (Rules § 2-06.a)
+    *   "If the ombudsperson determines that there is insufficient evidence of a violation, the complaint will be dismissed. The ombudsperson will notify the Complaint Subject, all known MLTCs, and the complainant, by email or first- class mail, that the complaint has been dismissed." (Rules § 2-06.b)
+    *   "If the ombudsperson determines that there is sufficient evidence of a violation, a factual determination, in writing, describing the violation and the evidence of the violation will be made. The ombudsperson will notify the Complaint Subject, all known MLTCs, and the complainant, by email or first- class mail, of the determination that there is sufficient evidence of a violation. The notice must include the written factual determination. The notice must also include an explanation of the appeals process described in 69 RCNY § 2-07, including that the determination may be modified or overturned upon an appeal." (Rules § 2-06.c)
+    *   "A Complaint Subject or any MLTC may appeal a factual determination that there was a violation to the Commissioner." (Rules § 2-07.a)
+    *   "A written decision by the Commissioner upholding or modifying a factual determination will be considered a factual determination subject to 69 RCNY § 2-08." (Rules § 2-07.a.5)
+    *   "After making a factual determination of a violation pursuant to 69 RCNY § 2-06, the ombudsperson will request a corrective action plan from the Complaint Subject." (Rules § 2-08.a)
+    *   "If the ombudsperson determines the Complaint Subject has failed to fully implement the corrective action plan, the ombudsperson may make a new factual determination pursuant to 69 RCNY § 2-06..." (Rules § 2-08.a.5)
+*   **Why this data is implied:** The agency must track the outcomes of investigations, including findings of violations, to initiate corrective actions or penalties.
+*   **One row represents:** A single factual determination made by the ombudsperson or Commissioner.
+*   **Covers:** All determinations made after an SADC investigation, including initial findings and appeal outcomes.
+*   **Columns:**
+    *   Determination ID (PK)
+    *   Investigation ID (FK to **6. SADC Investigations**)
+    *   SADC ID (FK to **2. Social Adult Day Cares (SADCs)**)
+    *   Determination Date
+    *   Evidence Sufficient for Violation (Yes/No)
+    *   Violation Found (Yes/No)
+    *   Violation Description (Summary of the violation)
+    *   Evidence Description (Summary of the evidence)
+    *   Determination Type (Initial Ombudsperson, Commissioner Appeal Decision, CAP Failure)
+    *   Complaint Subject Notified (Yes/No)
+    *   MLTCs Notified (Yes/No)
+    *   Complainant Notified (Yes/No)
+    *   Appeals Process Explained (Yes/No)
+    *   Appeal ID (FK to **9. SADC Appeals**)
+    *   Determination Status (e.g., Final, Appealed, Overturned on Appeal, Modified on Appeal)
+    *   Corrective Action Plan Requested (Yes/No)
+    *   CAP ID (FK to **8. SADC Corrective Action Plans**)
+    *   Notice of Violation Issued (Yes/No)
+    *   Violation ID (FK to **10. SADC Notices of Violation and Penalties**)
+
+**8. SADC Corrective Action Plans**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "After making a factual determination of a violation pursuant to 69 RCNY § 2-06, the ombudsperson will request a corrective action plan from the Complaint Subject." (Rules § 2-08.a)
+    *   "Along with or in addition to the notice of a factual determination made to the Complaint Subject pursuant to subdivision c of 69 RCNY § 2-06, the ombudsperson will request that the Complaint Subject develop a corrective action plan in response to such determination." (Rules § 2-08.a.1)
+    *   "The ombudsman may approve a corrective action plan provided by the Complaint Subject where the ombudsperson determines such plan is sufficient to resolve the violation that was the subject of the factual determination, and where the Complaint Subject provides a certification that all MLTCs have consented to the corrective action plan as sufficient to address the violations." (Rules § 2-08.a.2.a)
+    *   "If the corrective action plan is approved, the complaint will be marked resolved and the Complaint Subject will be responsible for implementing the corrective action plan." (Rules § 2-08.a.2.a)
+    *   "The ombudsperson may deem that an MLTC has consented to a proposed corrective action plan in accordance with this paragraph upon a showing, made to the satisfaction of the ombudsperson, that: (i) the Complaint Subject presented the proposed corrective action plan to the MLTC, (ii) the Complaint Subject made attempts to gain the consent of the MLTC, and (iii) after a reasonable amount of time, but in no case less than one week, the MLTC did not provide consent, disapproval, or any other feedback on the proposed corrective action plan." (Rules § 2-08.a.2.b)
+    *   "In determining whether a corrective action plan is sufficient pursuant to paragraph 2 of this subdivision, the ombudsperson may consider the seriousness of the violation, the extent of any injuries or other detrimental effects caused by the violation, the Complaint Subject's past record of any related violations, and the Complaint Subject's past and present efforts to prevent any violations. The ombudsperson may also consider whether the corrective action plan identifies with specificity the causes of each violation described in the factual determination, provides a plan sufficient to correct each violation, and provides a plan to prevent the recurrence of each violation." (Rules § 2-08.a.3)
+    *   "Where a complaint has been resolved through the approval of a corrective action plan, the ombudsperson will notify the complainant by email or first-class mail that a corrective action plan has been implemented and the complaint has been resolved." (Rules § 2-08.a.4)
+    *   "The ombudsperson will monitor compliance with an approved corrective action plan through the investigative tools provided in 69 RCNY § 2-05. If the ombudsperson determines the Complaint Subject has failed to fully implement the corrective action plan, the ombudsperson may make a new factual determination pursuant to 69 RCNY § 2-06, and may consider the corrective action plan to not be implemented in accordance with subdivision b of this section." (Rules § 2-08.a.5)
+    *   "The Department may issue a notice of violation... when a corrective action plan is not implemented within 60 days of a request made pursuant to this section, or when the ombudsperson determines the Complaint Subject has failed to implement an approved corrective action plan." (Rules § 2-08.b)
+*   **Why this data is implied:** The agency must track the request, approval, and monitoring of corrective action plans to ensure violations are addressed and complaints resolved.
+*   **One row represents:** A single corrective action plan requested from an SADC.
+*   **Covers:** All corrective action plans requested, approved, and monitored by the ombudsperson.
+*   **Columns:**
+    *   CAP ID (PK)
+    *   Determination ID (FK to **7. SADC Factual Determinations**)
+    *   SADC ID (FK to **2. Social Adult Day Cares (SADCs)**)
+    *   Request Date
+    *   Plan Submitted Date
+    *   Approval Date
+    *   Approved (Yes/No)
+    *   Sufficiency Determination Factors Considered (e.g., Seriousness, Injuries, Past Record, Prevention Efforts, Specificity of Causes, Correction Plan, Prevention Plan)
+    *   MLTC Consent Certified (Yes/No)
+    *   MLTC Consent Deemed (Yes/No)
+    *   MLTC Consent Details (e.g., MLTC IDs, attempts made, feedback received)
+    *   Complaint Resolved (Yes/No)
+    *   Complainant Notified of Resolution (Yes/No)
+    *   Compliance Monitoring Start Date
+    *   Compliance Status (e.g., In Progress, Implemented, Failed)
+    *   Date of Compliance Determination
+    *   Failed to Implement (Yes/No)
+    *   New Factual Determination Made (Yes/No, FK to **7. SADC Factual Determinations**)
+    *   Notice of Violation Issued (Yes/No, FK to **10. SADC Notices of Violation and Penalties**)
+
+**9. SADC Appeals**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "A Complaint Subject or any MLTC may appeal a factual determination that there was a violation to the Commissioner." (Rules § 2-07.a)
+    *   "A notice of appeal must be filed with the Commissioner, at the address indicated in the notice of the factual determination, within 10 business days of the factual determination that there was a violation. The notice of appeal must include the full name of the appellant, the identity and location of the Complaint Subject, a copy of the factual determination being appealed, and a statement that the appellant intends to appeal the factual determination." (Rules § 2-07.a.1)
+    *   "The appeal must be perfected within 20 business days of the factual determination. The appeal must be filed in writing with the Commissioner at the address indicated in the notice of the factual determination. The appeal must include the identity of the Complaint Subject, a copy of the factual determination being appealed, and a statement of the reasons why the Complaint Subject believes the factual determination to be incorrect." (Rules § 2-07.a.2)
+    *   "Petitions for an extension of these deadlines may be presented in writing before the due date for a notice of appeal or the perfection of the appeal and will be granted upon a showing of reasonable cause." (Rules § 2-07.a.3)
+    *   "The Commissioner will make best efforts to render a written decision as to whether the factual determinations are correct or incorrect, including a statement of the reasons for the decision, within 60 business days of receipt of the perfected appeal. The Commissioner will provide its decision, by email or first-class mail, to the Complaint Subject, all MLTCs, and the complainant." (Rules § 2-07.a.4)
+    *   "A written decision by the Commissioner upholding or modifying a factual determination will be considered a factual determination subject to 69 RCNY § 2-08." (Rules § 2-07.a.5)
+    *   "If the Complaint Subject or an MLTC files a notice of appeal or perfects its appeal, the ombudsperson will notify all MLTCs of the action by email or first-class mail. The notice must include an explanation of the appeals process, including that the factual determination made by the ombudsperson may be modified or overturned upon appeal." (Rules § 2-07.c)
+    *   "The written decision of the Commissioner pursuant to this section may not be appealed." (Rules § 2-07.d)
+*   **Why this data is implied:** The agency must track all appeals of factual determinations to ensure due process and proper final resolution of violations.
+*   **One row represents:** A single appeal of a factual determination.
+*   **Covers:** All appeals filed by Complaint Subjects or MLTCs against factual determinations.
+*   **Columns:**
+    *   Appeal ID (PK)
+    *   Determination ID (FK to **7. SADC Factual Determinations**)
+    *   SADC ID (FK to **2. Social Adult Day Cares (SADCs)**)
+    *   Appellant Type (Complaint Subject, MLTC)
+    *   Appellant Name
+    *   Notice of Appeal Filing Date
+    *   Appeal Perfected Date
+    *   Extension Petitioned (Yes/No)
+    *   Extension Granted (Yes/No)
+    *   Extension Reason
+    *   Commissioner Decision Date
+    *   Commissioner Decision (Uphold, Modify, Overturn)
+    *   Reasons for Commissioner Decision
+    *   Complaint Subject Notified of Decision (Yes/No)
+    *   MLTCs Notified of Decision (Yes/No)
+    *   Complainant Notified of Decision (Yes/No)
+    *   MLTCs Notified of Appeal Filing (Yes/No)
+    *   Final Determination ID (FK to **7. SADC Factual Determinations**, if Commissioner decision results in new determination)
+
+**10. SADC Notices of Violation and Penalties**
+*   **Open Data Match:** "Department for the Aging (NYC Aging) - Social Adult Day Care Services" (1447) - Maybe 30% match. The open data mentions violations but doesn't seem to be a dedicated violations log.
+*   **Quotes:**
+    *   "The department shall adopt rules establishing civil penalties of not less than two hundred fifty dollars per day and not more than five hundred dollars per day to be assessed against social adult day cares for violations of subdivision a and any regulations promulgated thereunder. Such rules establishing civil penalties shall specify the violations subject to penalty." (§ 21-204.c.1)
+    *   "Any individual, partnership, corporation, limited liability company, joint venture, association, or other business entity that operates as a social adult day care without registering shall be subject to a civil penalty of not less than two hundred fifty dollars per day and not more than one thousand dollars per day such social adult day care operates without registering." (§ 21-204.c.2)
+    *   "The department and officers and employees of city agencies designated by the mayor shall have the authority to issue notices of violation, returnable at the environmental control board, any administrative tribunal within such designated agency, or any tribunal established within the office of administrative trials and hearings as designated by the commissioner, for violations of this section or any rules promulgated by the department pursuant to such section." (§ 21-204.c.3)
+    *   "Each such report shall include, but not be limited to: ... (v) the total number of notices of violation issued pursuant to subdivisions a and c of this section, disaggregated by the specific violation for which such notice was issued;" (§ 21-204.d.4.v)
+    *   "If applicable, the database shall indicate the number of notices of violation issued and the outcome of any adjudication conducted pursuant to subdivision c. The year and nature of the notice of violation and the adjudication shall be posted, but may not contain personally identifying information about a complainant." (§ 21-204.e.2)
+    *   "If not, the ombudsperson will notify the Complaint Subject via email or first-class mail and notify the official responsible for enforcing such requirement of the SADC's failure to register. Upon notification, the official may issue a notice of violation, returnable to the Office of Administrative Trials and Hearings, with a civil penalty pursuant to the schedule set forth in 69 RCNY § 2-31." (Rules § 2-03.c)
+    *   "The ombudsperson may not issue a notice of violation or impose civil penalties pursuant to 69 RCNY § 2-08 until: (i) the 10-business day period during which an appeal may be noticed has elapsed; or (ii) the 20-business day period during which an appeal may be perfected has elapsed where a notice of appeal has been timely filed; or (iii) the Commissioner has rendered a written decision on an appeal where a perfected appeal has been timely filed." (Rules § 2-07.b)
+    *   "The Department may issue a notice of violation, returnable to the Office of Administrative Tribunals and Hearings, and impose a civil penalty in accordance with the schedule in 69 RCNY § 2-31, when a corrective action plan is not implemented within 60 days of a request made pursuant to this section, or when the ombudsperson determines the Complaint Subject has failed to implement an approved corrective action plan." (Rules § 2-08.b)
+    *   "Civil penalties for the following violations of this chapter shall be assessed per day as follows: Unless otherwise specified in the notice of violation, if the Department charges a business or individual with a violation, there shall be a rebuttable presumption that the violation continued every day, without interruption, from the date specified by the Department in the notice of violation as the first date of violation through the hearing date." (Rules § 2-31.a.1)
+    *   "The first date of violation specified by the Department in the notice of violation may be the date of an inspection at which the violation(s) is identified, or any other date on which the violation(s) first occurred, such as the first date an SADC was operating without having registered with the Department." (Rules § 2-31.a.2)
+    *   "Regardless of the date specified by the Department in the notice of violation, if the Department presents at the hearing a copy of a decision or order from a prior proceeding finding that the business or individual engaged in the same violation, or a copy of a settlement from a prior proceeding resolving a charge of the same violation, there shall be a rebuttable presumption that the violation continued every day, without interruption, from the date of such decision, order or settlement through the date of the hearing, unless the decision, order or settlement specifically states otherwise." (Rules § 2-31.a.3)
+    *   "A party may present credible evidence at the hearing to rebut the presumption of continued violation, such as written proof, receipts, photographs or other documentation indicating that the party corrected the violation." (Rules § 2-31.a.4)
+    *   "Section of Law Violation Description Penalty Default Penalty Maximum Penalty" (Rules § 2-31.a.Table & § 2-31.b.Table)
+*   **Why this data is implied:** The agency is responsible for issuing notices of violation and imposing civil penalties, requiring detailed tracking of each enforcement action.
+*   **One row represents:** A single notice of violation issued to an SADC.
+*   **Covers:** All notices of violation and associated civil penalties issued by the Department.
+*   **Columns:**
+    *   Violation ID (PK)
+    *   SADC ID (FK to **2. Social Adult Day Cares (SADCs)**)
+    *   Issuance Date
+    *   Source of Violation (e.g., Failure to Register, CAP Failure, Factual Determination)
+    *   Determination ID (FK to **7. SADC Factual Determinations**, if applicable)
+    *   CAP ID (FK to **8. SADC Corrective Action Plans**, if applicable)
+    *   Returnable to OATH (Yes/No)
+    *   Penalty Schedule Section (e.g., 69 RCNY § 2-21, 69 RCNY § 2-22)
+    *   Violation Description (from penalty schedule)
+    *   Penalty Type (Per Day, Per Violation)
+    *   Default Penalty Amount
+    *   Maximum Penalty Amount
+    *   First Date of Violation
+    *   Hearing Date
+    *   Presumption of Continued Violation (Yes/No)
+    *   Prior Proceeding Decision/Settlement (Yes/No)
+    *   Rebuttal Evidence Provided (Yes/No)
+    *   Final Penalty Assessed
+    *   Penalty Payment Status (e.g., Paid, Outstanding, Appealed)
+    *   Date Penalty Paid
+
+**11. Agency Employees**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "There shall be a department for the aging, the head of which shall be the commissioner for the aging." (Charter 2400)
+    *   "The commissioner may appoint and at pleasure remove a deputy commissioner." (Charter 2401)
+    *   "to maintain, operate and control such programs and facilities as may be necessary or required for the proper administration of the department." (Charter 2402.h)
+    *   "New York City Department for the Aging adjudications regarding the fitness and discipline of agency employees..." (Rules § 1-01)
+    *   "The term "Commissioner" means the commissioner of the Department for the Aging." (Rules § 2-01)
+    *   "The ombudsperson may dismiss any complaint that is not filed in accordance with this section." (Rules § 2-02.c)
+    *   "If not, the ombudsperson will notify the Complaint Subject via email or first-class mail and notify the official responsible for enforcing such requirement of the SADC's failure to register." (Rules § 2-03.c)
+    *   "The Commissioner will make best efforts to render a written decision as to whether the factual determinations are correct or incorrect..." (Rules § 2-07.a.4)
+*   **Why this data is implied:** To properly administer the department and its programs, the agency requires a fundamental record of its staff.
+*   **One row represents:** A single employee of the Department for the Aging.
+*   **Covers:** All full-time, part-time, and temporary employees of the Department for the Aging.
+*   **Columns:**
+    *   Employee ID (PK)
+    *   Employee Name
+    *   Job Title (e.g., Commissioner, Ombudsperson, Investigator, Hearing Officer, Enforcement Official)
+    *   Department/Division
+    *   Start Date
+    *   End Date (if applicable)
+    *   Employment Status (e.g., Active, Leave, Terminated)
+    *   Contact Information (e.g., Email, Phone)
+    *   Manager Employee ID (FK to **11. Agency Employees**)
+    *   Adjudication Case ID (FK to **33. Adjudication Cases**, if subject of adjudication)
+    *   Active Status (Yes/No)
+
+**12. Advisory Council Members**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "There shall be in the department an advisory council consisting of thirty-one members at least sixteen of whom shall be recipients of services rendered to older adults." (Charter 2403.a)
+    *   "The members of the council shall be appointed by the mayor." (Charter 2403.c)
+    *   "The terms of office of the thirty-one members of the council first appointed shall be as follows: ... Upon the expiration of such terms, the terms of office of their successors shall be three years. Vacancies occurring otherwise than by expiration of term shall be filled for the unexpired term in the same manner as regular appointments." (Charter 2403.d)
+    *   "The mayor shall designate one of the members of the council to be chairman and one to be vice-chairman." (Charter 2403.e)
+*   **Why this data is implied:** To ensure proper composition and terms, the agency must maintain a detailed record of all advisory council members.
+*   **One row represents:** A single advisory council member.
+*   **Covers:** All individuals appointed to the Department for the Aging Advisory Council.
+*   **Columns:**
+    *   Member ID (PK)
+    *   Name
+    *   Appointment Date
+    *   Term Start Date
+    *   Term End Date
+    *   Current Role (e.g., Member, Chairman, Vice-Chairman)
+    *   Representation Area (e.g., Social Service, Health Care, Business, Legal Services, Academic, Local Neighborhood)
+    *   Borough of Residence
+    *   Recipient of Services (Yes/No)
+    *   Appointing Authority (e.g., Mayor, City Council Recommendation)
+    *   Contact Information
+
+**13. Advisory Council Meetings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "It shall be the duty of the council to advise the commissioner and make recommendations. The council shall submit an annual report of its activities to the mayor and the speaker of the council." (Charter 2403.b)
+*   **Why this data is implied:** To track council activities and fulfill reporting requirements, the agency needs to log all meetings and their outcomes.
+*   **One row represents:** A single advisory council meeting.
+*   **Covers:** All meetings held by the Department for the Aging Advisory Council.
+*   **Columns:**
+    *   Meeting ID (PK)
+    *   Date of Meeting
+    *   Time of Meeting
+    *   Location
+    *   Meeting Type (e.g., Regular, Special)
+    *   List of Attendees (FK to **12. Advisory Council Members**)
+    *   Key Topics Discussed
+    *   Summary of Recommendations Made
+    *   Annual Report Submitted (Yes/No)
+    *   Annual Report Submission Date (if applicable)
+
+**14. Cabinet for Older New Yorkers Members**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The cabinet shall be composed of the following members, or their designees" (Charter 2405.e)
+    *   "The commissioner shall also invite to participate in the work of the cabinet the following persons, or their designees" (Charter 2405.f)
+    *   "The commissioner may invite representatives of any relevant federal, state, or local entity to participate in the work of the cabinet." (Charter 2405.g)
+*   **Why this data is implied:** To facilitate inter-agency coordination, the agency must maintain a record of all cabinet members and invited participants.
+*   **One row represents:** A single member or invited participant of the Cabinet for Older New Yorkers.
+*   **Covers:** All individuals who are statutory members or invited participants of the Cabinet for Older New Yorkers.
+*   **Columns:**
+    *   Member ID (PK)
+    *   Name
+    *   Representing Agency/Entity
+    *   Role (e.g., Chair, Statutory Member, Required Invite, Optional Invite)
+    *   Appointment Date (if applicable)
+    *   Contact Information
+
+**15. Cabinet for Older New Yorkers Meetings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The cabinet shall meet at least once quarterly." (Charter 2405.c)
+    *   "Such report shall include, but need not be limited to: 1. Actions taken or proposed as a result of the meeting of such cabinet; 2. Attendance at cabinet meetings; and 3. Minutes of cabinet meetings." (Charter 2405.h)
+*   **Why this data is implied:** To ensure quarterly meetings occur and to report on cabinet activities, the agency must track all meetings and their outcomes.
+*   **One row represents:** A single meeting of the Cabinet for Older New Yorkers.
+*   **Covers:** All meetings held by the Cabinet for Older New Yorkers.
+*   **Columns:**
+    *   Meeting ID (PK)
+    *   Date of Meeting
+    *   Time of Meeting
+    *   Location
+    *   Meeting Type (e.g., Quarterly, Special)
+    *   List of Attendees (FK to **14. Cabinet for Older New Yorkers Members**)
+    *   Key Topics Discussed
+    *   Summary of Actions Taken or Proposed
+    *   Total Attendance Count
+    *   Annual Report Submitted (Yes/No)
+    *   Annual Report Submission Date (if applicable)
+
+**16. Outreach Activities**
+*   **Open Data Match:** None directly, but "Number of Participants in NYC Aging funded Programs" (2455) might contain aggregated outreach participation.
+*   **Quotes:**
+    *   "to stimulate community interest in the problems of the aging" (Charter 2402.a)
+    *   "to promote public awareness of resources available for the aging" (Charter 2402.b)
+    *   "Conducting outreach to participants of senior centers located on property owned by the New York city housing authority about the existence of such liaison" (Charter 2404.b)
+    *   "The department, in collaboration with relevant agencies, shall conduct outreach on such pamphlet in the designated citywide languages and in a manner that takes into account the cultural and ethnic backgrounds of the older adults who are the subjects of such outreach. Such outreach shall include, but need not be limited to, the following: 1. Conducting informational sessions about such pamphlet; and 2. Providing such pamphlet to organizations that have contracts with the department to serve older adults." (§ 21-211.c)
+    *   "The commissioner shall submit a report regarding the department's outreach efforts, as required by subdivision c of this section, to the mayor and the speaker of the council, and post such report on the department's website. Such report shall include, but need not be limited to, the following information for the previous year: 1. The number of informational sessions conducted on the pamphlet; 2. The number of pamphlets provided to organizations and institutions serving older adults;" (§ 21-211.e)
+    *   "The department shall conduct ongoing outreach and education to promote awareness of the program required by this section. Such outreach shall include, but not be limited to, an annual mailing to persons who may benefit from enrollment in such program or who may care for or serve such persons." (§ 21-212.e)
+    *   "The commissioner shall require older adult centers to distribute the materials created pursuant to subdivision b of this section to older adults entering such centers. The commissioner shall also ensure that such materials are distributed to homebound older adults. Such materials shall be updated and distributed twice annually." (§ 21-216.d.1)
+    *   "The commissioner shall require older adult centers to offer the materials created pursuant to subdivision b of this section to older adults entering such centers. The commissioner shall also ensure that such materials are distributed to homebound older adults. Such materials shall be updated and distributed as necessary, or least once every 2 years." (§ 21-217.c.1)
+*   **Why this data is implied:** To fulfill its duties of stimulating interest and promoting awareness, the agency must track its outreach efforts and material distribution.
+*   **One row represents:** A single outreach or public awareness activity or event, or material distribution.
+*   **Covers:** All activities undertaken by the department to stimulate community interest, promote public awareness, conduct specific outreach, and distribute materials.
+*   **Columns:**
+    *   Activity ID (PK)
+    *   Date of Activity
+    *   Type of Activity (e.g., Community Meeting, Workshop, Information Session, Public Campaign, Liaison Outreach, Material Distribution, Annual Mailing)
+    *   Topic/Focus (e.g., Know Your Rights Pamphlet, Housing Support, Elder Fraud Prevention, Financial Literacy)
+    *   Location (e.g., Older Adult Center ID (FK to **1. Programs and Facilities**), Community Location)
+    *   Target Audience (e.g., Older Adults, Caregivers, Homebound Older Adults, Organizations)
+    *   Staff Lead Employee ID (FK to **11. Agency Employees**)
+    *   Number of Participants/Estimated Reach (for sessions)
+    *   Number of Pamphlets/Materials Distributed
+    *   Materials Distributed (Yes/No)
+    *   Language(s) Used
+    *   Collaborating Agencies/Organizations
+    *   Notes
+
+**17. Public Referrals**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to refer the public to appropriate departments and agencies of the city, state and federal governments for advice, assistance and available services in connection with particular problems" (Charter 2402.b)
+*   **Why this data is implied:** To ensure effective service delivery, the agency must track all referrals made to other government entities.
+*   **One row represents:** A single referral made by the department.
+*   **Covers:** All instances where the department refers members of the public to other city, state, or federal agencies.
+*   **Columns:**
+    *   Referral ID (PK)
+    *   Date of Referral
+    *   Referrer Staff Employee ID (FK to **11. Agency Employees**)
+    *   Referred Individual/Household ID (if tracked and permissible, FK to **36. Program Participants**)
+    *   Problem Category (e.g., Housing, Health, Legal, Financial)
+    *   Referred To Agency/Department (FK to **35. External Agencies**)
+    *   Referral Method (e.g., Phone, Email, Direct Hand-off)
+    *   Outcome (e.g., Contacted, Service Initiated, No Follow-up, Unknown)
+    *   Notes
+
+**18. Departmental Asset Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to maintain, operate and control such programs and facilities as may be necessary or required for the proper administration of the department." (Charter 2402.h)
+*   **Why this data is implied:** To properly administer the department, the agency must track its internal operational assets.
+*   **One row represents:** A single physical asset owned or managed by the department for its internal operations.
+*   **Covers:** All physical assets (e.g., vehicles, IT equipment, office furniture, specialized equipment) used for the department's internal administration.
+*   **Columns:**
+    *   Asset ID (PK)
+    *   Asset Name
+    *   Type (e.g., Vehicle, Computer, Printer, Office Furniture)
+    *   Serial Number (if applicable)
+    *   Purchase Date
+    *   Purchase Cost
+    *   Current Location (e.g., Office Address, Facility ID (FK to **1. Programs and Facilities**))
+    *   Condition
+    *   Responsible Department/Staff Employee ID (FK to **11. Agency Employees**)
+    *   Last Maintenance Date
+    *   Next Scheduled Maintenance Date
+
+**19. Program Development Support**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to cooperate with and assist local neighborhoods in the development of programs and the establishment of local offices" (Charter 2402.c)
+*   **Why this data is implied:** To track its assistance to local neighborhoods, the agency needs to log each instance of support provided.
+*   **One row represents:** A single instance of the department providing assistance for program development or local office establishment.
+*   **Covers:** All instances where the department cooperates with and assists local neighborhoods in developing programs or establishing local offices.
+*   **Columns:**
+    *   Support ID (PK)
+    *   Date of Assistance
+    *   Neighborhood/Community Group Name
+    *   Program Idea/Focus
+    *   Type of Assistance Provided (e.g., Consultation, Resource Sharing, Grant Application Support, Office Setup Guidance)
+    *   Staff Lead Employee ID (FK to **11. Agency Employees**)
+    *   Outcome/Status of Program Development
+
+**20. Center for Older Workforce Development Guidance**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "to provide regular guidance and support to the center for older workforce development" (Charter 2402.f)
+*   **Why this data is implied:** To ensure regular guidance and support is provided, the agency must track each interaction with the center.
+*   **One row represents:** A single instance of guidance or support provided to the Center for Older Workforce Development.
+*   **Covers:** All instances of guidance and support provided by the department to the Center for Older Workforce Development.
+*   **Columns:**
+    *   Guidance ID (PK)
+    *   Date of Interaction
+    *   Type of Guidance/Support (e.g., Meeting, Document Review, Policy Advice, Resource Provision)
+    *   Staff Lead Employee ID (FK to **11. Agency Employees**)
+    *   Key Discussion Points/Guidance Provided
+    *   Outcome/Action Items
+
+**21. Older Adult Center Employee Training Compliance**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner shall require that employees of senior centers and employees of entities that contract with the department to provide services to senior citizens, be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years, if such employee has or is expected to have significant and direct person to person contact with senior citizens." (§ 21-203.b)
+    *   "Each caseworker shall complete a training to recognize the signs and symptoms of mental illness for older adults offered by the department of health and mental hygiene or a successor agency, provided that such department offers such training." (§ 21-209.b)
+    *   "At least once every three years after completing the training described in subdivision b of this section, each caseworker shall receive supplemental refresher training, provided that the department of health and mental hygiene or a successor agency offers such training." (§ 21-209.c)
+*   **Why this data is implied:** To ensure all required employees and caseworkers complete mandatory training and refresher courses, the department must track individual compliance.
+*   **One row represents:** A single employee's completion of a specific required training.
+*   **Covers:** Mandatory elder abuse and mental health training for Older Adult Center employees and caseworkers.
+*   **Columns:**
+    *   Employee Training ID (PK)
+    *   Employee ID (FK to **11. Agency Employees**)
+    *   Employee Name
+    *   Older Adult Center ID (FK to **1. Programs and Facilities**)
+    *   Training Type (e.g., Elder Abuse Detection, Mental Illness Recognition)
+    *   Training Date Completed
+    *   Training Provider
+    *   Refresher Training Required (Yes/No)
+    *   Next Refresher Training Due Date
+    *   Compliance Status (e.g., Compliant, Due Soon, Overdue)
+
+**22. Older Adult Center Daily Participant Counts**
+*   **Open Data Match:** "Number of Participants in NYC Aging funded Programs" (2455) - 90% match. This dataset likely contains the daily participant counts.
+*   **Quotes:**
+    *   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: ... 4. The average number of daily participants;" (§ 21-208.c.4)
+    *   "Not later than December 31, 2019, and by December 31 annually thereafter, the department shall submit to the speaker of the council and post to its website the following information in non-proprietary machine readable format for each department-funded senior center for the prior fiscal year: 1. The total number of participants per day, including the corresponding date;" (§ 21-208.d.1)
+    *   "The total number of participants served in each of the following areas per day, including the corresponding date, and the total number of participants served in the combined total of such areas: information and assistance; education and recreation; and health promotion." (§ 21-208.d.3)
+*   **Why this data is implied:** Daily participant counts are required for annual reporting and are fundamental to understanding center utilization and service reach.
+*   **One row represents:** The total number of participants at an Older Adult Center on a specific day.
+*   **Covers:** Daily attendance and service participation at all department-funded Older Adult Centers.
+*   **Columns:**
+    *   Daily Record ID (PK)
+    *   Older Adult Center ID (FK to **1. Programs and Facilities**)
+    *   Date
+    *   Total Participants (Daily)
+    *   Participants in Information & Assistance Services (Daily)
+    *   Participants in Education & Recreation Services (Daily)
+    *   Participants in Health Promotion Services (Daily)
+    *   Combined Total Participants in Services (Daily)
+
+**23. Older Adult Center Daily Meal Service**
+*   **Open Data Match:** None directly, but "Department for the Aging (NYC Aging) - Reported Service Units" (815) might contain aggregated meal service data.
+*   **Quotes:**
+    *   "Every senior citizen attending a senior center's regularly scheduled meal period shall be offered a balanced and nutritious meal to the extent that funding and space limitations permit. Those senior citizens that do not receive a balanced and nutritious meal shall be offered nourishment during a senior center's regularly scheduled meal period to the extent that funding permits." (§ 21-202.b.4)
+    *   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: ... 5. The total annual reimbursed expenditures for congregate meals, disaggregated by kosher and non-kosher meals; 6. The cost per meal for each senior center, disaggregated by kosher and non-kosher meals; 7. The method by which the senior center provides congregate meals, either by in-house preparation or catered meals, and whether the senior center provides meals for any other senior center;" (§ 21-208.c.5, § 21-208.c.6, § 21-208.c.7)
+    *   "Not later than December 31, 2019, and by December 31 annually thereafter, the department shall submit to the speaker of the council and post to its website the following information in non-proprietary machine readable format for each department-funded senior center for the prior fiscal year: ... 2. The total number of congregate meals served per day, including the corresponding date; disaggregated by breakfast, lunch, or dinner, where applicable; and type of meal, including but not limited to kosher and non-kosher;" (§ 21-208.d.2)
+*   **Why this data is implied:** The department is responsible for ensuring meals are provided and must track daily meal service, types, and associated costs for reporting and oversight.
+*   **One row represents:** Meals served of a specific type (e.g., kosher lunch) on a specific day at an Older Adult Center.
+*   **Covers:** Daily congregate meal provision, including type, quantity, and cost, at all department-funded Older Adult Centers.
+*   **Columns:**
+    *   Meal Service ID (PK)
+    *   Older Adult Center ID (FK to **1. Programs and Facilities**)
+    *   Date
+    *   Meal Period (e.g., Breakfast, Lunch, Dinner)
+    *   Meal Type (e.g., Kosher, Non-Kosher, Nourishment)
+    *   Number of Meals Served
+    *   Method of Meal Provision (e.g., In-house, Catered)
+    *   Cost Per Meal (for this specific meal type/period)
+    *   Total Reimbursed Expenditures for this meal type/period
+
+**24. Older Adult Center Activities & Programming**
+*   **Open Data Match:** "Older Adult Center (OAC) Activities" (1416) - 95% match. This dataset directly matches the description.
+*   **Quotes:**
+    *   "Every senior citizen shall have the right to participate in all regularly scheduled activities and take advantage of services provided by the center to the extent that funding and space limitations permit." (§ 21-202.b.2)
+    *   "Every senior center shall post conspicuously: ... (ii) all regularly scheduled activities as defined in this section;" (§ 21-202.c.ii)
+    *   "The total number of participants served in each of the following areas per day, including the corresponding date, and the total number of participants served in the combined total of such areas: information and assistance; education and recreation; and health promotion." (§ 21-208.d.3)
+    *   "The department shall require each older adult center to develop and conduct programming in each prevalent spoken language of such center as identified pursuant to subdivision b of this section. Such programming shall consider the cultural and ethnic background that relates to each prevalent spoken language." (§ 21-210.c)
+*   **Why this data is implied:** To ensure centers offer a variety of activities and programming, including culturally relevant options, and to track participation for reporting.
+*   **One row represents:** A single activity or program session offered at an Older Adult Center.
+*   **Covers:** All regularly scheduled activities, services, and cultural programming offered by Older Adult Centers.
+*   **Columns:**
+    *   Activity ID (PK)
+    *   Older Adult Center ID (FK to **1. Programs and Facilities**)
+    *   Activity Name/Title
+    *   Activity Type (e.g., Recreation, Education, Health Promotion, Information & Assistance, Cultural Programming)
+    *   Date of Activity
+    *   Time of Activity
+    *   Description of Activity
+    *   Language of Activity (if applicable, for cultural programming)
+    *   Cultural/Ethnic Background Addressed (if applicable)
+    *   Estimated/Actual Participant Count
+    *   Planned Units of Service
+    *   Actual Units of Service
+
+**25. Housing Support Program Cases**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The department shall establish a housing support program for the purpose of helping persons 60 years of age or older who are at risk of eviction or foreclosure to identify and access relevant aid and other support to remain in their residence." (§ 21-212.a)
+    *   "Such program shall provide case management services designed to provide situation-specific advice and support to each participating person. Such services shall be provided at no cost and, at minimum, include: 1. An intake session, which may be conducted at the participating person's residence, for the purpose of identifying and assessing the factors contributing to such person's risk of eviction or foreclosure, and how such factors could be addressed under relevant assistance, services or programs; 2. Referrals for assistance, services or programs that could address factors contributing to such person's risk of eviction or foreclosure; 3. Assistance completing applications for financial assistance or enrollment in services or programs; and 4. Ongoing support to monitor such person's risk of eviction or foreclosure, the effect of referred assistance, services or programs on reducing or eliminating such risk and any factors contributing to such risk that could be ameliorated with further advice and support." (§ 21-212.b)
+    *   "In assessing a person's risk for eviction or foreclosure, the department shall consider any relevant factor, including, but not limited to, such person's health status and whether other persons, including family members, also live in such person's residence." (§ 21-212.c)
+    *   "Maintain an online portal, accessible to program participants, for the purpose of tracking events and progress of individual cases and storing information relevant to each case;" (§ 21-212.d.1)
+*   **Why this data is implied:** To effectively manage and track the progress of individuals receiving housing support services, the department needs detailed case-level data.
+*   **One row represents:** A single case for an older adult participating in the housing support program.
+*   **Covers:** All individuals receiving housing support services, from intake to case closure.
+*   **Columns:**
+    *   Case ID (PK)
+    *   Participant ID (FK to **36. Program Participants**)
+    *   Participant Age
+    *   Participant Health Status
+    *   Other Residents in Residence (Yes/No)
+    *   Family Members in Residence (Yes/No)
+    *   Intake Date
+    *   Risk Factors Identified (e.g., Financial, Health, Legal)
+    *   Assessment Details
+    *   Case Manager Employee ID (FK to **11. Agency Employees**)
+    *   Referral Date
+    *   Referred Program/Service
+    *   Application Assistance Provided (Yes/No)
+    *   Financial Assistance Application Status
+    *   Ongoing Support Provided (Yes/No)
+    *   Monitoring Notes
+    *   Eviction/Foreclosure Risk Status (e.g., High, Medium, Low, Resolved)
+    *   Case Status (e.g., Open, Closed, On Hold)
+    *   Case Closure Date
+
+**26. Digital Literacy Training Sessions**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner for the aging in collaboration with the commissioner of information technology and telecommunications, and any relevant stakeholders deemed necessary by the mayor, shall administer a digital literacy training program to serve older adults. Such training program shall be offered to the public at no cost and shall include the following topics:..." (§ 21-213.a)
+    *   "The program established pursuant to subdivision a of this section shall be offered in person or through interactive live video instruction in at least one library or senior center in each community district and in any other facilities as deemed appropriate by the commissioner for the aging or the commissioner of information technology and telecommunications." (§ 21-213.e)
+*   **Why this data is implied:** To track the delivery of digital literacy training programs, including locations, topics, and attendance, for program management and reporting.
+*   **One row represents:** A single digital literacy training session.
+*   **Covers:** All digital literacy training sessions offered to older adults.
+*   **Columns:**
+    *   Session ID (PK)
+    *   Date of Session
+    *   Time of Session
+    *   Location Type (e.g., Library, Older Adult Center, Virtual)
+    *   Location Name/ID (FK to **1. Programs and Facilities** if Older Adult Center)
+    *   Community District
+    *   Instructor Employee ID (FK to **11. Agency Employees**)
+    *   Session Topic(s) (e.g., Telehealth, Online Platforms, HRA Benefits, Fraud Prevention)
+    *   Language of Instruction
+    *   Number of Participants
+    *   Program Partner (e.g., DoITT)
+
+**27. NORC/NNORC Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Naturally occurring retirement community. The term “naturally occurring retirement community” has the same meaning as set forth in section 209 of the elder law." (§ 21-205.1.a)
+    *   "Neighborhood naturally occurring retirement community. The term “neighborhood naturally occurring retirement community” has the same meaning as set forth in section 209 of the elder law." (§ 21-205.1.a)
+    *   "Such study shall include, but need not be limited to: 1. Information on the existing state of naturally occurring retirement communities, including their locations, supportive services provided at each such location, and contact information for buildings and service providers;" (§ 21-205.1.c.1)
+    *   "Identifications of potential naturally occurring retirement communities and neighborhood naturally occurring retirement communities as both such communities are defined in section 209 of the elder law, not currently designated or otherwise recognized by the New York state office for the aging or the department, accompanied by explanations of how and why each such potential community was identified;" (§ 21-205.1.c.2)
+    *   "Recommendations to the New York state office for the aging to designate any housing developments, buildings, or areas identified in the study conducted pursuant to subdivision c of this section as naturally occurring retirement communities or neighborhood naturally occurring retirement communities, as appropriate;" (§ 21-205.1.d.1)
+    *   "Naturally occurring retirement community. The term "naturally occurring retirement community" means an apartment building, a housing complex or a housing development, as identified by the department, (i) that was not constructed to house older adults, (ii) where dwelling units are not leased or sold exclusively to older adults, and (iii) where at least 2,500 older adults reside or at least 50 percent of the dwelling units are occupied by one or more older adults." (§ 21-211.a)
+*   **Why this data is implied:** The department is mandated to study and plan for NORCs/NNORCs, requiring a comprehensive inventory of existing and potential communities.
+*   **One row represents:** A single Naturally Occurring Retirement Community (NORC) or Neighborhood Naturally Occurring Retirement Community (NNORC).
+*   **Covers:** All identified and potential NORCs/NNORCs within the city.
+*   **Columns:**
+    *   NORC/NNORC ID (PK)
+    *   Community Name
+    *   Location (Address, Building Name, Area Description)
+    *   Type (e.g., NORC, NNORC, Potential NORC, Potential NNORC)
+    *   Designation Status (e.g., Designated by NYS, Recognized by Department, Potential)
+    *   Date of Identification/Designation
+    *   Supportive Services Provided (List/Description)
+    *   Contact Information for Buildings/Service Providers
+    *   Explanation for Potential Identification (if applicable)
+    *   Number of Older Adults Residing (if available)
+    *   Percentage of Dwelling Units Occupied by Older Adults (if available)
+
+**28. Aging in Place Projects**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Supportive services and accessibility improvement projects the department and coordinating agencies plan to initiate and complete in the 10- year period following submission of the plan, disaggregated by borough, community district, and address;" (§ 21-205.1.b.3)
+    *   "For each such supportive service and accessibility improvement project, (i) an estimate of how many older adults would be served, and (ii) a list of the boroughs, community districts, and neighborhoods that would be served." (§ 21-205.1.b.5)
+    *   "progress reports detailing the status of the implementation of projects and recommendations included in each such plan." (§ 21-205.1.f)
+*   **Why this data is implied:** To track the planning, initiation, and completion of projects aimed at supporting older adults aging in place.
+*   **One row represents:** A single aging in place project.
+*   **Covers:** All planned and implemented supportive services and accessibility improvement projects.
+*   **Columns:**
+    *   Project ID (PK)
+    *   Project Name/Description
+    *   Project Type (e.g., Supportive Service, Accessibility Improvement)
+    *   Planning Agency (e.g., Department, DOB, HPD, DOT, FK to **35. External Agencies**)
+    *   Borough
+    *   Community District
+    *   Address (if specific to a location)
+    *   Planned Start Date
+    *   Planned Completion Date
+    *   Actual Start Date
+    *   Actual Completion Date
+    *   Estimated Older Adults Served
+    *   Actual Older Adults Served
+    *   Neighborhoods Served (List)
+    *   Project Status (e.g., Planned, In Progress, Completed, Delayed)
+
+**29. Community-Based Organizations (CBOs)**
+*   **Open Data Match:** "Department for the Aging (NYC Aging) - All Contracted Providers" (2866) - 70% match. This dataset likely includes CBOs that are contracted providers.
+*   **Quotes:**
+    *   "In consultation with relevant council members and community stakeholders, information on the existing capacity of community-based organizations to support each such potential community;" (§ 21-205.1.c.3)
+    *   "Training and onboarding for community-based organizations to expand their capacity to support older adults in such potential communities;" (§ 21-205.1.d.3)
+*   **Why this data is implied:** To assess and track the capacity of CBOs to support NORCs/NNORCs and to manage training initiatives for these organizations.
+*   **One row represents:** A single Community-Based Organization (CBO) involved in supporting older adults.
+*   **Covers:** CBOs that support NORCs/NNORCs, including their capacity and training participation.
+*   **Columns:**
+    *   CBO ID (PK)
+    *   CBO Name
+    *   Contact Person
+    *   Contact Information (Address, Phone, Email)
+    *   Services Provided to Older Adults (Description)
+    *   Geographic Area Served
+    *   Capacity Assessment Date
+    *   Capacity Details (e.g., Staffing, Resources, Expertise)
+    *   NORC/NNORC ID(s) Supported (FK to **27. NORC/NNORC Inventory**)
+    *   Training Program Attended (e.g., NORC Support Training)
+    *   Training Completion Date
+
+**30. Unpaid Caregiver Survey Responses**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "the department shall develop and conduct a survey of unpaid caregivers and providers offering services to unpaid caregivers within the city to identify the needs of unpaid caregivers, as well as to assess existing caregiver services. Such survey shall be developed in consultation with academic experts in caregiving issues, service providers, and other appropriate stakeholders, and shall contain questions designed to collect information from a sample of unpaid caregivers and caregiver service providers on the following issues: 1. Availability of information about programs, services, and other resources designed to provide support to unpaid caregivers; 2. Accessibility of programs and services, including, but not limited to, hours of operation, location, transportation options for accessing such programs and services, cost, payment methods, eligibility restrictions, cultural competency, and language capacity; 3. Utilization of programs and services, including, but not limited to, the number of individuals requesting and receiving services, the types of services requested, and the number of individuals placed on waitlists for services where applicable; and 4. Recipient outcomes as a result of utilizing existing programs and services, including, but not limited to, the unpaid caregiver's health and employment circumstances, access to benefits, knowledge about the care recipient's illness or condition, and awareness and use of appropriate services for the care recipient's illness or condition." (§ 21-206.b)
+    *   "The plan required by subdivision c of this section shall include, but not be limited to: 1. The results of the survey required by subdivision b of this section;" (§ 21-206.d.1)
+*   **Why this data is implied:** To collect and analyze data on the needs of unpaid caregivers and the landscape of caregiver services, as mandated by the survey requirement.
+*   **One row represents:** A single response to the unpaid caregiver survey.
+*   **Covers:** Data collected from surveys of unpaid caregivers and caregiver service providers.
+*   **Columns:**
+    *   Survey Response ID (PK)
+    *   Survey Type (e.g., Unpaid Caregiver, Service Provider)
+    *   Date of Response
+    *   Caregiver Demographics (Age, Gender, Race, Ethnicity, Language, Income Level, Borough of Residence, Employment Status)
+    *   Care Recipient Demographics (Age, Gender, Borough of Residence, Health Condition, Living Situation)
+    *   Number of Caregivers for Recipient
+    *   Average Hours of Care Per Week
+    *   Daily Activities Necessitating Assistance
+    *   Availability of Information (Survey Question Response)
+    *   Accessibility of Programs/Services (Survey Question Responses for hours, location, transport, cost, payment, eligibility, cultural competency, language)
+    *   Utilization of Programs/Services (Survey Question Responses for requests, receipts, types, waitlists)
+    *   Caregiver Outcomes (Survey Question Responses for health, employment, benefits access, knowledge)
+    *   Care Recipient Service Use (Survey Question Response)
+
+**31. Digital Literacy Program Participant Feedback**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Such evaluation shall at minimum include an online or electronic survey for older adults who participate in such program to provide feedback regarding such program." (§ 21-213.b)
+*   **Why this data is implied:** To gather feedback from participants to evaluate and improve the digital literacy training program.
+*   **One row represents:** A single feedback submission from a digital literacy program participant.
+*   **Covers:** Feedback collected from older adults who participate in the digital literacy program.
+*   **Columns:**
+    *   Feedback ID (PK)
+    *   Session ID (FK to **26. Digital Literacy Training Sessions**)
+    *   Participant ID (if collected, anonymized if necessary, FK to **36. Program Participants**)
+    *   Date of Feedback
+    *   Feedback Channel (e.g., Online Survey, Electronic Survey)
+    *   Overall Program Satisfaction (e.g., Rating)
+    *   Feedback on Topics Covered
+    *   Feedback on Instructor Effectiveness
+    *   Recommendations for Improvement
+    *   Ease of Access to Program
+    *   Perceived Benefit of Program
+
+**32. Elder Abuse Education Sessions (Public)**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner shall require senior centers to hold at least two educational sessions per year during which guests and members of the senior center will receive counseling regarding elder abuse prevention and awareness and be instructed on how to detect and report instances of elder abuse." (§ 21-203.c)
+*   **Why this data is implied:** To ensure Older Adult Centers fulfill their mandate to provide regular public education sessions on elder abuse prevention and awareness.
+*   **One row represents:** A single public elder abuse education session held by an Older Adult Center.
+*   **Covers:** All public educational sessions on elder abuse prevention and awareness conducted by Older Adult Centers.
+*   **Columns:**
+    *   Session ID (PK)
+    *   Older Adult Center ID (FK to **1. Programs and Facilities**)
+    *   Date of Session
+    *   Time of Session
+    *   Session Leader Employee ID (FK to **11. Agency Employees**)
+    *   Number of Guests Attending
+    *   Number of Members Attending
+    *   Total Attendance
+    *   Topics Covered (e.g., Detection, Reporting, Counseling, Prevention, Awareness)
+
+**33. Adjudication Cases**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "New York City Department for the Aging adjudications regarding the fitness and discipline of agency employees, and adjudications conducted pursuant to its Expanded In-Home Services for the Elderly Program, will be conducted by the Office of Administrative Trials and Hearings." (Rules § 1-01)
+    *   "After conducting an adjudication and analyzing all testimony and other evidence, the hearing officer in both types of hearings shall make written proposed findings of fact and recommend decisions, which shall be reviewed and finally determined by the Commissioner." (Rules § 1-01)
+*   **Why this data is implied:** The agency is legally required to conduct and track adjudications for internal employee matters and specific program services.
+*   **One row represents:** A single adjudication case.
+*   **Covers:** Adjudications concerning agency employee fitness/discipline and the Expanded In-Home Services for the Elderly Program.
+*   **Columns:**
+    *   Adjudication Case ID (PK)
+    *   Case Type (Employee Fitness/Discipline, Expanded In-Home Services for the Elderly Program)
+    *   Subject ID (Employee ID (FK to **11. Agency Employees**) or Program ID)
+    *   Case Description
+    *   OATH Hearing Start Date
+    *   OATH Hearing End Date
+    *   Hearing Officer Employee ID (FK to **11. Agency Employees**)
+    *   Proposed Findings of Fact (Summary)
+    *   Recommended Decision (Summary)
+    *   Commissioner Review Date
+    *   Commissioner Final Determination
+    *   Final Determination Date
+    *   Case Status (e.g., Open, Closed, Appealed)
+
+**34. Managed Long Term Care (MLTC) Plans**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Managed Long Term Care or MLTC. The term "Managed Long Term Care" or "MLTC" means an entity that has received a certificate of authority from the New York State Department of Health to provide, or arrange for health and long term care services, including social adult day services, to people who are chronically ill or disabled and which held a contract for reimbursement with the Complaint Subject on the date of the complaint." (Rules § 2-01)
+    *   "Registrant’s contracted Managed Long Term Care plans" (Rules § 2-21.a.17)
+    *   "As part of such investigation, the ombudsperson may require that the Complaint Subject or an MLTC provide any information or records necessary to conduct such investigation." (Rules § 2-05.b)
+    *   "The ombudsperson will notify the Complaint Subject, all known MLTCs, and the complainant, by email or first- class mail, that the complaint has been dismissed." (Rules § 2-06.b)
+    *   "The ombudsperson will notify the Complaint Subject, all known MLTCs, and the complainant, by email or first- class mail, of the determination that there is sufficient evidence of a violation." (Rules § 2-06.c)
+    *   "A Complaint Subject or any MLTC may appeal a factual determination that there was a violation to the Commissioner." (Rules § 2-07.a)
+    *   "The Commissioner will provide its decision, by email or first-class mail, to the Complaint Subject, all MLTCs, and the complainant." (Rules § 2-07.a.4)
+    *   "If the Complaint Subject or an MLTC files a notice of appeal or perfects its appeal, the ombudsperson will notify all MLTCs of the action by email or first-class mail." (Rules § 2-07.c)
+    *   "The Complaint Subject provides a certification that all MLTCs have consented to the corrective action plan as sufficient to address the violations." (Rules § 2-08.a.2.a)
+    *   "The ombudsperson may deem that an MLTC has consented to a proposed corrective action plan in accordance with this paragraph upon a showing... that: (i) the Complaint Subject presented the proposed corrective action plan to the MLTC, (ii) the Complaint Subject made attempts to gain the consent of the MLTC, and (iii) after a reasonable amount of time, but in no case less than one week, the MLTC did not provide consent, disapproval, or any other feedback on the proposed corrective action plan." (Rules § 2-08.a.2.b)
+*   **Why this data is implied:** The agency needs to track MLTCs due to their contractual relationship with SADCs and their involvement in complaint resolution and appeals.
+*   **One row represents:** A single Managed Long Term Care (MLTC) plan.
+*   **Covers:** All MLTCs that contract with SADCs under the Department's oversight.
+*   **Columns:**
+    *   MLTC ID (PK)
+    *   MLTC Name
+    *   Certificate of Authority from NYS DOH (Yes/No)
+    *   Contact Information
+    *   SADC IDs Contracted (List of SADC IDs, FK to **2. Social Adult Day Cares (SADCs)**)
+    *   Information/Records Provided (Yes/No, in response to investigation requests)
+    *   Consent to CAP (Yes/No, for specific CAPs)
+    *   Consent Deemed (Yes/No, for specific CAPs)
+    *   Notification Dates (e.g., of complaint dismissal, violation determination, appeal filing, appeal decision)
+
+**35. External Agencies**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Where the ombudsperson accepts a complaint that includes a matter within the sole jurisdiction of another agency, including but not limited to the Department of Buildings, the Department of Health and Mental Hygiene, the Fire Department, the Commission on Human Rights, or the state Office of the Medicaid Inspector General, the ombudsperson will refer the complaint to the other agency." (Rules § 2-04.a)
+    *   "Where the ombudsperson accepts a complaint that includes a matter partly within the jurisdiction of another agency, the ombudsperson may refer the entire complaint to the other agency where, in the determination of the ombudsperson, it is appropriate for the entire complaint to be investigated by a single agency, or may refer only those elements of the complaint that are within the jurisdiction of the other agency to that agency." (Rules § 2-04.b)
+    *   "If the ombudsperson refers any element of an accepted complaint to another agency pursuant to this section, the ombudsperson must (i) notify the Complaint Subject of its referral, (ii) notify the state Department of Health, the state Office for the Aging, and the state Office of the Medicaid Inspector General of the complaint and its referral, and (iii) notify the complainant of its referral." (Rules § 2-04.c)
+*   **Why this data is implied:** The agency needs to track external agencies for complaint referrals and required notifications.
+*   **One row represents:** A single external agency.
+*   **Covers:** All external agencies with which the Department interacts for complaint referrals and notifications.
+*   **Columns:**
+    *   Agency ID (PK)
+    *   Agency Name
+    *   Agency Type (e.g., City, State, Federal)
+    *   Contact Information
+    *   Jurisdiction Type (e.g., Buildings, Health, Fire, Human Rights, Medicaid Inspector General, DOH, OFA)
+    *   Referral Dates (List of dates when complaints were referred)
+    *   Notification Dates (List of dates when notifications were sent)
+
+**36. Program Participants**
+*   **Open Data Match:** "Department for the Aging (NYC Aging) - Senior Center Local Law 140 Client Data - FY 2020" (366) - 80% match. This dataset likely contains participant-level data for OACs.
+*   **Quotes:**
+    *   "Referred Individual/Household ID (if tracked and permissible)" (Charter 5)
+    *   "Participant ID (Unique identifier for the older adult receiving services)" (§ 21-212.b)
+    *   "In assessing a person's risk for eviction or foreclosure, the department shall consider any relevant factor, including, but not limited to, such person's health status and whether other persons, including family members, also live in such person's residence." (§ 21-212.c)
+    *   "Participant ID (if collected, anonymized if necessary)" (§ 21-213.b)
+    *   "Complaints may be filed with the ombudsperson by a participant of an SADC; by the parent, child, spouse, sibling, or legal guardian of a participant of a SADC" (Rules § 2-02.a)
+*   **Why this data is implied:** Various programs track individual participants for service delivery, case management, and feedback, requiring a central participant record.
+*   **One row represents:** A single individual participating in or receiving services from a department program.
+*   **Covers:** Individuals referred by the department, participating in housing support, digital literacy, or SADC programs.
+*   **Columns:**
+    *   Participant ID (PK)
+    *   Name (if permissible)
+    *   Contact Information (if permissible)
+    *   Age
+    *   Gender
+    *   Borough of Residence
+    *   Health Status (if relevant to program)
+    *   Household Composition (e.g., Other Residents, Family Members)
+    *   Program Enrollment Dates (e.g., Housing Support Start Date, Digital Literacy Enrollment Date)
+    *   Anonymized Status (Yes/No)
+
+**Section 4, Unmatched Open Datasets:**
+
+*   Department for the Aging (NYC Aging) - Bottom Line Budget (1904) - This is likely aggregated budget data, not transactional.
+*   Department for the Aging (NYC Aging) - Reported Service Units (815) - This is likely aggregated service unit data, not incident-level.
+
+**Section 5, Non-tabular Data Summary:**
+
+*   Job applications
+*   Rules and regulations promulgated by the department (e.g., 69 RCNY, 9 NYCRR § 6654.20)
+*   Receipts/Invoices (for fees, but the *payment* of fees would be tabular)
+*   Photos
+*   Research documents (e.g., on age discrimination, new technologies, NORC study)
+*   Advisory Council annual reports
+*   Minutes of Advisory Council meetings
+*   Recommendations from the Public Housing Liaison to the Commissioner
+*   Cabinet for Older New Yorkers annual reports
+*   Minutes of Cabinet for Older New Yorkers meetings
+*   Testimony and other evidence from adjudications/investigations
+*   Written proposed findings of fact and recommended decisions from OATH
+*   Judicial authorizations
+*   Notices of appeal (the *filing* of which is tabular, but the document itself is not)
+*   Written factual determinations (the *existence* of which is tabular, but the document itself is not)
+*   Corrective action plans (the *approval* and *monitoring* are tabular, but the plan document itself is not)
+*   Notices of violation (the *issuance* is tabular, but the document itself is not)
+*   Evidence to rebut presumption of continued violation (e.g., written proof, receipts, photographs)
+*   SADC self-evaluation copies (9 NYCRR § 6654.20(d)(2)(ii)(b))
+*   Administrative, participant, and services records (9 NYCRR § 6654.20(d)(2)(iii)(a))
+*   Staff health status, PPD test results (9 NYCRR § 6654.20(d)(2)(iv)(a)(3))
+*   Documentation of fire drills (9 NYCRR § 6654.20(d)(2)(vii)(c))
+*   Emergency procedures (9 NYCRR § 6654.20(d)(2)(vii)(a))
+*   Emergency contact info for participants (9 NYCRR § 6654.20(d)(2)(vii)(b))
+*   Insurance coverage documents (9 NYCRR § 6654.20(d)(2)(viii))
+*   Participant rights postings (9 NYCRR § 6654.20(e)(3))
+*   Statements of Rights (e.g., § 21-202.a, § 21-202.b)
+*   Training Program Curricula/Materials (e.g., § 21-203.a)
+*   Aging in Place Guide (e.g., § 21-205)
+*   Ten-Year Plan for Aging in Place (e.g., § 21-205.1.b)
+*   Study on Naturally Occurring Retirement Communities (e.g., § 21-205.1.c)
+*   Plan to Support Naturally Occurring Retirement Communities (e.g., § 21-205.1.d)
+*   Unpaid Caregiver Plan (e.g., § 21-206.c, § 21-206.d)
+*   Written Materials from OEM (Life-Sustaining Equipment) (e.g., § 21-207)
+*   Annual Reports (Aggregated Data) (e.g., § 21-208.b, § 21-208.c, § 21-208.d, § 21-204.d.4, § 21-211.e)
+*   Pamphlet for Older Adults (Know Your Rights) (e.g., § 21-211.b)
+*   Digital Literacy Program Evaluation Updates (e.g., § 21-213.c)
+*   Information on NYC Care Initiative (e.g., § 21-214.b)
+*   Information on Older Adult Workforce Programs (e.g., § 21-215.b)
+*   Elder Fraud Prevention Materials (Printed/Digital/Audible) (e.g., § 21-216.b, § 21-216.c)
+*   Quarterly Guidance on Emerging Scams (e.g., § 21-216.f)
+*   Financial Literacy and End of Life Preparation Materials (e.g., § 21-217.b)
+*   Legal Documents/Contracts (full text)

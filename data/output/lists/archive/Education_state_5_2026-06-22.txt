@@ -1,0 +1,785 @@
+**1. Student Immunization Records**
+
+*   **Quotes:**
+    *   "Each school shall require of every child entering or attending such school proof of immunization in accordance with the provisions of section twenty-one hundred sixty-four of the public health law." § 914.1
+    *   "Each school district shall participate in the surveys directed by the state commissioner of health pursuant to section six hundred thirteen of the public health law of the immunization level of the children entering and attending school within such district, and which shall be subject to audit by the state commissioner of health. Each school and school district shall provide the state commissioner of health with any records and reports required for the purpose of such audit." § 914.3
+    *   "assisting in the collection and review of medical and immunization information which is required to be maintained for all children for which the provider is providing subsidized child care and the monitoring of those medical and immunization requirements;" § 21-120.1.b.7 (from example text)
+*   **Why:** To ensure compliance with immunization requirements and facilitate public health surveys and audits.
+*   **One row represents:** A record of a student's immunization status for a specific vaccine.
+*   **Covers:** All required immunizations for students entering or attending public schools, and for children in subsidized child care.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Immunization Type (e.g., Measles, Mumps, Rubella, Polio)
+    *   Date Administered
+    *   Proof Provided (Y/N)
+    *   Religious Exemption Claimed (Y/N)
+    *   Medical Exemption Claimed (Y/N)
+    *   Exemption Documentation Provided (Y/N)
+    *   Compliance Status (Compliant, Non-Compliant, Exempt)
+
+**2. Student Health Certificates**
+
+*   **Quotes:**
+    *   "A health certificate shall be furnished by each student in the public schools upon his or her entrance in such schools and upon his or her entry into the grades prescribed by the commissioner in regulations, provided that such regulations shall require such certificates at least twice during the elementary grades and twice in the secondary grades." § 903.1
+    *   "Each certificate shall be signed by a duly licensed physician, physician assistant, or nurse practitioner, who is authorized by law to practice in this state, and consistent with subdivision three of section six thousand nine hundred two of this chapter, or by a duly licensed physician, physician assistant, or nurse practitioner, who is authorized to practice in the jurisdiction in which the examination was given, provided that the commissioner has determined that such jurisdiction has standards of licensure and practice comparable to those of New York." § 903.1
+    *   "Each such certificate shall describe the condition of the student when the examination was made, which shall not be more than twelve months prior to the commencement of the school year in which the examination is required, and shall state whether such student is in a fit condition of health to permit his or her attendance at the public schools." § 903.1
+    *   "The examination may include a diabetes risk analysis. Each such certificate shall also state the student's body mass index (BMI) and weight status category." § 903.1
+    *   "In all school districts such physician, physician assistant or nurse practitioner shall determine whether a one-time test for sickle cell anemia is necessary or desirable and he or she shall conduct such a test and the certificate shall state the results." § 903.1
+    *   "Within thirty days after the student's entrance in such schools or grades, the health certificate shall be submitted to the principal or his or her designee and shall be filed in the student's cumulative health record." § 903.3.a
+    *   "If such student does not present a health certificate as required in this section, unless he or she has been accommodated on religious grounds, the principal or the principal's designee shall cause a notice to be sent to the parents or person in parental relationship to such student that if the required health certificate is not furnished within thirty days from the date of such notice, an examination will be made of such student, as provided in this article." § 903.3.a
+    *   "Parents or other persons in parental relation to a student may refuse to have the student's BMI and weight status category included in such survey." § 903.3.a
+    *   "no examinations for a health certificate or health history shall be required... where a student or the parent or person in parental relation to such student objects thereto on the grounds that such examinations or health history conflict with their genuine and sincere religious beliefs." § 903.4
+*   **Why:** To track student health status upon school entry and at prescribed grade levels, ensuring fitness for attendance and identifying health risks.
+*   **One row represents:** A health certificate submitted for a student.
+*   **Covers:** All health certificates submitted by students in public schools.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Certificate Submission Date
+    *   Required Grade Level
+    *   Examination Date (must be within 12 months of school year start)
+    *   Certifying Professional Name
+    *   Certifying Professional Type (Physician, PA, Nurse Practitioner)
+    *   Certifying Professional License Jurisdiction
+    *   Fit for School Attendance (Y/N)
+    *   Diabetes Risk Analysis Performed (Y/N)
+    *   BMI
+    *   Weight Status Category
+    *   Sickle Cell Anemia Test Performed (Y/N)
+    *   Sickle Cell Anemia Result
+    *   Religious Objection to Examination (Y/N)
+    *   Religious Objection to BMI Survey (Y/N)
+    *   Certificate Status (Submitted, Missing, Overdue)
+    *   Notice Sent Date (if missing)
+    *   School-Initiated Examination Required (Y/N)
+
+**3. Student Health Appraisals (School-Initiated)**
+
+*   **Quotes:**
+    *   "Each principal of a public school, or his or her designee, shall report to the director of school health services having jurisdiction over such school, the names of all students who have not furnished health certificates as provided in section nine hundred three of this article, or who are children with disabilities, as defined by article eighty-nine of this chapter, and the director of school health services shall cause such students to be separately and carefully examined and tested" § 904.1
+    *   "Each examination shall also include a calculation of the student's body mass index (BMI) and weight status category." § 904.1
+    *   "In all school districts, such physician, physician assistant or nurse practitioner shall determine whether a one-time test for sickle cell anemia is necessary or desirable and he or she shall conduct such tests and the certificate shall state the results." § 904.1
+    *   "If it should be ascertained, upon such test or examination, that any of such students have defective sight or hearing, or other physical disability, including sickle cell anemia, as above described, the principal or his or her designee shall notify the parents of, or other persons in parental relation to, the child as to the existence of such disability." § 904.1
+    *   "If the parents or other persons in parental relation are unable or unwilling to provide the necessary relief and treatment for such students, such fact shall be reported by the principal or his or her designee to the director of school health services, whose duty it shall be to provide relief for such students." § 904.1
+    *   "Parents or other persons in parental relation to a student may refuse to have the student's BMI and weight status category included in such survey." § 904.1
+    *   "no examinations shall be required pursuant to this section where a student or the parent or person in parental relation to such student objects thereto on the grounds that such examinations conflict with their genuine and sincere religious beliefs." § 904.2
+*   **Why:** To track health examinations initiated by the school for students who lack certificates or have disabilities, ensuring their educational needs are met.
+*   **One row represents:** A health appraisal conducted by the school for a student.
+*   **Covers:** Health appraisals for students who did not furnish health certificates or are children with disabilities.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Appraisal Date
+    *   Reason for Appraisal (e.g., No Health Certificate, Disability)
+    *   Appraising Professional Name
+    *   Appraising Professional Type (Physician, PA, Nurse Practitioner)
+    *   Defective Sight Found (Y/N)
+    *   Defective Hearing Found (Y/N)
+    *   Other Physical Disability Found (Y/N)
+    *   Disability Description
+    *   BMI
+    *   Weight Status Category
+    *   Sickle Cell Anemia Test Performed (Y/N)
+    *   Sickle Cell Anemia Result
+    *   Parent Notified of Disability Date
+    *   Parent Unable/Unwilling to Provide Relief (Y/N)
+    *   Relief Provided by School (Y/N)
+    *   Religious Objection to Examination (Y/N)
+    *   Religious Objection to BMI Survey (Y/N)
+
+**4. Student Health Screening Records**
+
+*   **Quotes:**
+    *   "The director of school health services of each school district... shall conduct screening examinations of vision, hearing, and scoliosis of all students at such times and as defined in the regulations of the commissioner, and at any time deemed necessary." § 905.1
+    *   "The positive results of any such screening examinations of students for the presence of scoliosis shall be in writing and the parent of, or person in parental relation to, any child in whom the presence of scoliosis is found shall be advised of such results by the school authorities within ninety days after the finding of the presence of scoliosis is made." § 905.2
+    *   "all students who enroll in a school of this state shall be tested for color perception, distance acuity and near vision within six months of admission to the school, or by such other date as may be prescribed in the regulations of the commissioner." § 905.4
+    *   "The results of any such vision screening examinations... shall be in writing and shall be made available to the student's parent or person in parental relation and to any teacher of the student within the school while the student is enrolled in the school, and shall be kept in a permanent file of the school for at least as long as the minimum retention period for such records" § 905.4
+    *   "no screening examinations for vision, hearing, or scoliosis condition shall be required where a student or the parent or person in parental relation to such student objects thereto on the grounds that such examinations conflict with their genuine and sincere religious beliefs." § 905.5
+    *   "School health services... shall include... dental inspection and/or screening, scoliosis screening, vision screening and audiometer tests" § 901.2
+*   **Why:** To track mandatory vision, hearing, and scoliosis screenings, ensuring early detection of issues and proper notification.
+*   **One row represents:** A single health screening event for a student.
+*   **Covers:** All vision, hearing, and scoliosis screening examinations conducted for students.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Screening Date
+    *   Screening Type (Vision, Hearing, Scoliosis)
+    *   Examiner Name
+    *   Results (e.g., Vision Acuity, Hearing Threshold, Scoliosis Presence)
+    *   Positive Result (Y/N)
+    *   Parent Notified Date (if positive result for scoliosis)
+    *   Teacher Notified (Y/N, for vision)
+    *   Religious Objection to Screening (Y/N)
+
+**5. Student Medication Administration Records**
+
+*   **Quotes:**
+    *   "Licensed nurses, nurse practitioners, physician assistants, or physicians employed by school districts or boards of cooperative educational services are authorized to calculate prescribed insulin dosages, administer prescribed insulin, program the prescribed insulin pump, refill the reservoir in the insulin pump, change the infusion site, inject prescribed glucagon, teach an unlicensed person to administer glucagon to an individual, and perform other authorized services... to pupils who have received written permission by a physician or other licensed health care provider, and written parental consent to carry and use insulin and glucagon pursuant to section nine hundred sixteen-b of this article" § 902-a.1
+    *   "Licensed nurses, nurse practitioners, physician assistants, or physicians employed by schools are authorized to administer prescribed epinephrine... to pupils diagnosed by a physician or other duly authorized health care provider with an allergy who have the written permission of a physician or other duly authorized health care provider for the administration of emergency epinephrine and written parental consent to carry and use an epinephrine device pursuant to section nine hundred sixteen-a of this article" § 902-b.1.a
+    *   "Pupils with asthma or another respiratory disease requiring rescue inhaler treatment." § 916
+    *   "Pupils with allergies." § 916-a
+    *   "Pupils with diabetes." § 916-b
+*   **Why:** To meticulously record all instances of medication administration to students, ensuring proper care and accountability.
+*   **One row represents:** A single instance of medication administration to a student.
+*   **Covers:** Administration of insulin, glucagon, epinephrine, rescue inhalers, and other prescribed medications by authorized school personnel.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Administration Date
+    *   Administration Time
+    *   Medication Name
+    *   Dosage
+    *   Administration Method (e.g., Injection, Pump, Inhaler)
+    *   Reason for Administration (e.g., Blood Sugar Low, Allergic Reaction, Asthma Attack)
+    *   Administering Personnel ID (links to School Health Professional Employment Records, #10, or Unlicensed Personnel Medication Administration Training Records, #19)
+    *   Administering Personnel Type (e.g., Nurse, PA, Unlicensed Trained Personnel)
+    *   Physician Order on File (Y/N)
+    *   Parental Consent on File (Y/N)
+    *   Outcome/Student Response
+
+**6. Student Communicable Disease Exclusion Records**
+
+*   **Quotes:**
+    *   "Whenever, upon investigation and evaluation by the director of school health services or other health professionals acting upon direction or referral of such director for care and treatment, a student in the public schools shows symptoms of any communicable or infectious disease reportable under the public health law that imposes a significant risk of infection of others in the school, he or she shall be excluded from the school and sent home immediately, in a safe and proper conveyance." § 906.1
+    *   "The director of school health services shall immediately notify a local public health agency of any disease reportable under the public health law." § 906.1
+    *   "Following absence on account of illness or from unknown cause, the director of school health services may examine each student returning to a school without a certificate from a local public health officer, a duly licensed physician, physician assistant, or nurse practitioner." § 906.2
+*   **Why:** To track student exclusions due to communicable diseases, ensuring public health and proper return-to-school procedures.
+*   **One row represents:** A student's exclusion from school due to a communicable disease.
+*   **Covers:** All instances of students being excluded from school due to symptoms of communicable or infectious diseases.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Exclusion Date
+    *   Disease/Symptom Description
+    *   Disease Reportable Under Public Health Law (Y/N)
+    *   Local Public Health Agency Notified (Y/N)
+    *   Return Date
+    *   Return Certificate Provided (Y/N)
+    *   Return Certificate Provider (e.g., Public Health Officer, Physician)
+    *   School Health Services Examination on Return (Y/N)
+    *   Examining Professional ID (links to School Health Professional Employment Records, #10)
+
+**7. Student Dental Health Certificates**
+
+*   **Quotes:**
+    *   "A dental health certificate shall be requested from each student. Each student is requested to furnish a dental health certificate at the same time that health certificates are required." § 903.2.a
+    *   "Each certificate shall be signed by a duly licensed dentist, or a registered dental hygienist who is authorized by law to practice in this state, and consistent with any applicable written practice agreement, or by a duly licensed dentist or registered dental hygienist who is authorized to practice in the jurisdiction in which the assessment was given, provided that the commissioner has determined that such jurisdiction has standards of licensure and practice comparable to those of New York." § 903.2.a
+    *   "Each such certificate shall describe the dental health condition of the student when the assessment was made, which shall not be more than twelve months prior to the commencement of the school year in which the assessment is requested, and shall state whether such student is in fit condition of dental health to permit his or her attendance at the public schools." § 903.2.a
+    *   "Within thirty days after the student's entrance in such schools or grades, the dental health certificate, if obtained, shall be filed in the student's cumulative health record." § 903.3.b
+    *   "no examinations for a health certificate or health history shall be required or dental certificate requested... where a student or the parent or person in parental relation to such student objects thereto on the grounds that such examinations or health history conflict with their genuine and sincere religious beliefs." § 903.4
+*   **Why:** To track the submission of dental health certificates, assessing student dental health and compliance with requests.
+*   **One row represents:** A dental health certificate submitted for a student.
+*   **Covers:** All dental health certificates requested from and furnished by students.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Certificate Submission Date
+    *   Required Grade Level
+    *   Assessment Date (must be within 12 months of school year start)
+    *   Certifying Professional Name
+    *   Certifying Professional Type (Dentist, Registered Dental Hygienist)
+    *   Certifying Professional License Jurisdiction
+    *   Fit for School Attendance (Y/N)
+    *   Religious Objection to Assessment (Y/N)
+    *   Certificate Status (Submitted, Not Submitted, Religious Objection)
+
+**8. School Meal Service Records**
+
+*   **Quotes:**
+    *   "All public school districts, charter schools and non-public schools in the state that participate in the national school lunch program or school breakfast program... shall develop a plan to ensure that a pupil whose parent or guardian has unpaid school meal fees is not shamed or treated differently" § 908
+    *   "The department shall require all school districts, charter schools and non-public schools in the state that participate in the national school lunch program or school breakfast program... to serve breakfast and lunch at no cost to the student." § 915-a.1
+    *   "School districts, charter schools and non-public schools shall maximize federal reimbursement for school breakfast and lunch programs by adopting Provision 2, the federal Community Eligibility Provision, or any other provision under such Act... that, in the opinion of the department, maximizes federal funding for meals served in such programs." § 915-a.1
+    *   "for each breakfast and lunch meal served, the department shall reimburse the school food authority the difference between (a) the combined state and federal reimbursement rate for a reduced-price or paid meal, respectively, for the current school year and (b) the combined state and federal reimbursement rate for a free meal for the current school year, provided that the total reimbursement rate for each meal served shall equal the combined state and federal reimbursement rate for a free meal for the current school year." § 915-a.2
+*   **Why:** To track the provision of school meals, ensure universal free meals, and manage federal and state reimbursements.
+*   **One row represents:** A daily record of meal service for a specific meal type at a school.
+*   **Covers:** All breakfast and lunch meals served in public schools, charter schools, and non-public schools participating in federal meal programs.
+*   **Columns:**
+    *   School ID (links to School Data, inferred)
+    *   Date
+    *   Meal Type (Breakfast, Lunch)
+    *   Total Meals Served
+    *   Number of Free Meals Served (for reimbursement calculation)
+    *   Number of Reduced-Price Meals Served (for reimbursement calculation)
+    *   Number of Paid Meals Served (for reimbursement calculation)
+    *   Federal Reimbursement Rate (Free)
+    *   Federal Reimbursement Rate (Reduced)
+    *   Federal Reimbursement Rate (Paid)
+    *   State Reimbursement Rate (Free)
+    *   State Reimbursement Rate (Reduced)
+    *   State Reimbursement Rate (Paid)
+    *   Total Federal Reimbursement Claimed
+    *   Total State Reimbursement Claimed
+    *   Community Eligibility Provision (CEP) Status (Y/N)
+    *   Provision 2 Status (Y/N)
+
+**9. Free/Reduced Meal Application Outreach Log**
+
+*   **Quotes:**
+    *   "A communication procedure designed to support eligible families enrolling in the national free and reduced price meal program. Such communication procedures shall also include a process for determining eligibility when a student owes money for five or more meals, wherein the school or school district shall: i. make every attempt to determine if a student is directly certified to be eligible for free meals; ii. make at least two attempts, not including the application or instructions included in a school enrollment packet, to reach the student's parent or guardian and have the parent or guardian fill out a meal application; and iii. require a school or school district to contact the parent or guardian to offer assistance with a meal application, determine if there are other issues within the household that have caused the child to have insufficient funds to purchase a school meal and offer any other assistance that is appropriate;" § 908.d
+    *   "If a school or school district becomes aware that a student who has not submitted a meal application is eligible for free or reduced-fee meals, the school or school district shall complete and file an application for the student pursuant to title seven, section 245.6(d) of the code of federal regulations;" § 908.h
+    *   "The department, in consultation with the office of temporary and disability assistance, shall promulgate any rule or regulation needed for school districts, charter schools and non-public schools to promote the supplemental nutrition assistance program to a student or person in parental relation to a student by providing either application assistance or a direct referral to an outreach partner" § 915-a.3
+*   **Why:** To track efforts to enroll eligible students in free/reduced-price meal programs and promote SNAP benefits.
+*   **One row represents:** A single outreach attempt or action related to free/reduced meal applications or SNAP.
+*   **Covers:** All attempts by schools/districts to contact parents/guardians regarding meal applications, direct certification, and SNAP promotion.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Date of Outreach/Action
+    *   Type of Outreach/Action (e.g., Meal Application Attempt 1, Meal Application Attempt 2, SNAP Application Assistance, SNAP Referral)
+    *   Method of Contact (e.g., Phone, Email, Letter, In-person)
+    *   Outcome (e.g., Contact Made, Application Sent, Application Received, Parent Declined, Direct Certified)
+    *   Staff Member ID (links to Employee Data, inferred)
+    *   Notes
+
+**10. School Health Professional Employment Records**
+
+*   **Quotes:**
+    *   "The board of education, and the trustee or board of trustees of each school district, shall employ, at a compensation to be agreed upon by the parties, a qualified physician, or a nurse practitioner... to perform the duties of the director of school health services... and to provide health appraisals of students" § 902.2.a
+    *   "Any such board or trustees may employ one or more school nurses, who shall be registered professional nurses, as well as other health professionals, as may be required." § 902.2.b
+    *   "Health professionals may be employed by the trustees or boards of education of two or more school districts, and the compensation of such health professionals, and the expenses incurred in providing school health services for students... shall be borne jointly by such districts" § 902.3
+    *   "The trustees or boards of education of two or more school districts in a supervisory district may enter into an agreement... with a board of cooperative educational services for the provision of the services of one or more registered professional nurses, and other health professionals to perform health services" § 902.3
+*   **Why:** To track the employment of licensed health professionals, ensuring adequate staffing for school health services.
+*   **One row represents:** A health professional employed by a school district or BOCES.
+*   **Covers:** All physicians, nurse practitioners, registered professional nurses, and other health professionals employed by school districts or BOCES.
+*   **Columns:**
+    *   Employee ID (links to Employee Data, inferred)
+    *   School District ID (links to School District Data, inferred)
+    *   Role (e.g., Director of School Health Services, School Physician, Nurse Practitioner, Registered Professional Nurse, Dentist, Audiologist)
+    *   License Type
+    *   License Number
+    *   Employment Start Date
+    *   Employment End Date (if applicable)
+    *   Compensation Agreement Details
+    *   Shared Employment (Y/N)
+    *   BOCES Agreement (Y/N)
+    *   BOCES ID (if applicable)
+
+**11. Employee Medical Examination Records**
+
+*   **Quotes:**
+    *   "In order to safeguard the health of children attending the public schools, the board of education or trustees of any school district or a board of cooperative educational services shall be empowered to require any person employed by the board of education or trustees or board of cooperative educational services to submit to a medical examination by a physician or other health care provider of his or her choice or the director of school health services... in order to determine the physical or mental capacity of such person to perform his or her duties." § 913
+    *   "The determination based upon such examination as to the physical or mental capacity of such person to perform his or her duties shall be reported to the board of education or trustees or board of cooperative educational services and may be referred to and considered for the evaluation of service of the person examined or for disability retirement." § 913
+*   **Why:** To track mandatory medical examinations for school employees, ensuring their fitness to perform duties and safeguarding student health.
+*   **One row represents:** A medical examination for a school employee.
+*   **Covers:** All required medical examinations for teachers and other employees of school districts or BOCES.
+*   **Columns:**
+    *   Employee ID (links to Employee Data, inferred)
+    *   School District ID (links to School District Data, inferred)
+    *   Examination Date
+    *   Examining Professional Name
+    *   Examining Professional Type (Physician, Other Health Care Provider, Director of School Health Services)
+    *   Physical Capacity to Perform Duties (Y/N)
+    *   Mental Capacity to Perform Duties (Y/N)
+    *   Summary of Findings
+    *   Disability Retirement Referral (Y/N)
+
+**12. Animal Experimentation Waiver Applications**
+
+*   **Quotes:**
+    *   "Notwithstanding any inconsistent provision of this section, the commissioner may, upon the submission of a written program plan, issue to such school a written waiver of such restrictions for students subject to the following provisions: (i) the student shall be in grade ten, eleven, or twelve; and (ii) the student shall be under the supervision of one or more teachers certified in science; and (iii) the student shall be pursuing an accelerated course of study in the sciences as defined by the commissioner in preparation for taking a state or national advanced placement examination." § 809.5.b
+    *   "The commissioner shall issue a waiver of such restrictions for any teacher certified in science instructing such student." § 809.5.b
+    *   "The written program plan shall include, but not be limited to: (i) the educational basis for requesting a waiver; (ii) the objective of the lesson or experiment; (iii) the methods and techniques to be used; and (iv) any other information required by the commissioner." § 809.5.b
+    *   "On or before the first day of January next succeeding the effective date of this amended section, the commissioner shall annually submit a report to the governor and the legislature which shall include, but not be limited to, the number of written program plan proposals submitted by schools and the number of such proposals subsequently approved by the commissioner." § 809.6
+*   **Why:** To track applications and approvals for waivers allowing restricted animal experimentation in schools, ensuring compliance and reporting.
+*   **One row represents:** A single application for an animal experimentation waiver.
+*   **Covers:** All program plan proposals submitted by schools requesting waivers for live vertebrate animal experimentation.
+*   **Columns:**
+    *   Application ID
+    *   School ID (links to School Data, inferred)
+    *   Submission Date
+    *   Student Grade Level (10, 11, or 12)
+    *   Science Teacher ID (links to Employee Data, inferred)
+    *   Teacher Certified in Science (Y/N)
+    *   Student Pursuing Accelerated Science Course (Y/N)
+    *   Educational Basis for Waiver
+    *   Objective of Lesson/Experiment
+    *   Methods and Techniques to be Used
+    *   Commissioner Approval Status (Approved, Denied, Pending)
+    *   Approval Date (if approved)
+    *   Waiver Expiration Date
+    *   Reason for Denial (if denied)
+
+**13. Hypodermic Needle Certificate of Need Applications**
+
+*   **Quotes:**
+    *   "it shall be lawful for authorized persons under the jurisdiction of the public school authorities in a public school; or of the state education department; or of the governing board of any other educational institution... to purchase, acquire, have under control, possess and use hypodermic syringes and needles for instructional or other educational purposes provided such school authorities... has filed with the commissioner of education and with the state department of health a certificate of need for such hypodermic needles" § 811.1
+    *   "such certificate shall set forth the following: a. The legal designation and address of the school district... and the exact location where such hypodermic syringes and needles will be used and stored. b. The name and address of the chief administrative officer of the school or institution. c. The use proposed to be made of such hypodermic needles. d. The names of persons employed in the school, the department, or other institution authorized to have custody and/or use of such hypodermic needles. e. The safeguards to be taken to prevent such instruments from falling into the hands of unauthorized persons. f. The disposition which will be made of unwanted or broken syringes and needles." § 811.1.a-f
+*   **Why:** To track applications and approvals for certificates of need for hypodermic syringes and needles, ensuring legal compliance and safe use.
+*   **One row represents:** A single certificate of need application for hypodermic syringes and needles.
+*   **Covers:** All applications from public schools, the state education department, or other educational institutions for hypodermic syringes and needles.
+*   **Columns:**
+    *   Application ID
+    *   Submitting Entity ID (School District ID, Department ID, Institution ID)
+    *   Submitting Entity Name
+    *   Exact Location of Use/Storage
+    *   Chief Administrative Officer Name
+    *   Proposed Use of Needles
+    *   Authorized Personnel Names (list)
+    *   Safeguards Description
+    *   Disposition Plan for Unwanted/Broken Needles
+    *   Filing Date with Commissioner of Education
+    *   Filing Date with State Department of Health
+    *   Approval Status (Approved, Denied, Pending)
+    *   Approval Date (if approved)
+
+**14. Student State Seal of Biliteracy Awards**
+
+*   **Quotes:**
+    *   "The state seal of biliteracy is established to recognize high school graduates who have attained a high level of proficiency in listening, speaking, reading, and writing in one or more languages in addition to English." § 815.1.a
+    *   "The state seal of biliteracy shall be awarded by the commissioner. School district participation in this program is voluntary." § 815.1.a
+    *   "The board of regents shall promulgate such regulations of the commissioner as may be necessary to establish the criteria that students must achieve to earn a state seal of biliteracy, which may include, but is not limited to attainment of units of credit in English language arts and languages other than English, passage of state assessments in English language arts and language other than English, and passage of such additional assessments of foreign language proficiency as may be approved by the commissioner for this purpose." § 815.2.b
+    *   "A school district that participates in the program under this section shall... Maintain appropriate records in order to identify pupils who have earned a state seal of biliteracy." § 815.4.a
+    *   "Affix the appropriate insignia to the diploma and transcript of each pupil who earns a state seal of biliteracy." § 815.4.b
+*   **Why:** To track high school graduates who have earned the State Seal of Biliteracy, recognizing their language proficiency.
+*   **One row represents:** A State Seal of Biliteracy awarded to a student.
+*   **Covers:** All high school graduates who have earned a State Seal of Biliteracy in participating school districts.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Graduation Year
+    *   Award Date
+    *   Language(s) Awarded (e.g., Spanish, French, American Sign Language)
+    *   English Language Arts Credit Units Met (Y/N)
+    *   Languages Other Than English (LOTE) Credit Units Met (Y/N)
+    *   State ELA Assessment Passed (Y/N)
+    *   State LOTE Assessment Passed (Y/N)
+    *   Other Approved LOTE Assessment Passed (Y/N)
+    *   Proficiency Criteria Met Details
+
+**15. Reading Curriculum Alignment Verification**
+
+*   **Quotes:**
+    *   "On or before January first, two thousand twenty-five, the commissioner shall provide school districts with the instructional best practices for the teaching of reading to students in prekindergarten through grade three. Instructional best practices for the teaching of reading shall be evidence-based and scientifically based, focusing on reading competency in the areas of phonemic awareness, phonics, vocabulary development, reading fluency, comprehension, including background knowledge, oral language and writing, oral skill development, and align with the department's culturally responsive-sustaining framework." § 818.1.a
+    *   "Every school district shall annually review their curriculum and instructional practices in the subject of reading for students in prekindergarten through grade three to ensure that they align with the reading instructional best practices provided by the commissioner, and that all early reading instructional practices and interventions are part of an aligned plan designed to improve student reading outcomes in prekindergarten through grade three." § 818.1.b
+    *   "On or before September first, two thousand twenty-five, every school district shall verify to the commissioner that their curriculum and instructional practices in the subject of reading in prekindergarten through grade three align with all of the elements of the instructional best practices provided by the commissioner pursuant to this section." § 818.3
+*   **Why:** To track school districts' annual verification of their reading curriculum and instructional practices aligning with state best practices.
+*   **One row represents:** A school district's annual verification submission regarding reading instruction alignment.
+*   **Covers:** All school districts' annual verification of PK-3 reading curriculum and instructional practices.
+*   **Columns:**
+    *   School District ID (links to School District Data, inferred)
+    *   Verification Date
+    *   School Year Covered
+    *   PK-3 Curriculum Aligned (Y/N)
+    *   Instructional Practices Aligned (Y/N)
+    *   Early Reading Interventions Aligned (Y/N)
+    *   Culturally Responsive-Sustaining Framework Aligned (Y/N)
+    *   Commissioner's Review Status (e.g., Accepted, Needs Revision)
+
+**16. Student Dissection Objection Records**
+
+*   **Quotes:**
+    *   "Any student expressing a moral or religious objection to the performance or witnessing of the dissection of an animal, either wholly or in part, shall be provided the opportunity to undertake and complete an alternative project that shall be approved by such student's teacher; provided, however, that such objection is substantiated in writing by the student's parent or legal guardian." § 809.4
+    *   "Students who perform alternative projects who do not perform or witness the dissection of animals shall not be penalized." § 809.4
+    *   "The board of education or trustees of a school district shall develop a policy to give reasonable notice to all students enrolled in a course that includes the dissection of an animal and students' parents or legal guardians about their rights under this subdivision." § 809.4
+*   **Why:** To track student objections to animal dissection, ensuring alternative projects are provided and students are not penalized.
+*   **One row represents:** A student's objection to animal dissection.
+*   **Covers:** All students who express moral or religious objections to animal dissection in courses.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Course ID (links to Course Catalog, inferred)
+    *   Objection Date
+    *   Objection Type (Moral, Religious)
+    *   Parent/Guardian Written Substantiation Provided (Y/N)
+    *   Alternative Project Provided (Y/N)
+    *   Alternative Project Description
+    *   Teacher Approval of Alternative Project (Y/N)
+    *   Penalty Applied (Y/N)
+    *   Date of Notice to Students/Parents (inferred from policy)
+
+**17. Student Drug Test Records**
+
+*   **Quotes:**
+    *   "The school authorities of each school district within the state may cause all children attending grades seven through twelve, inclusive, in the public and private schools located within such districts, to be separately and carefully examined in order to ascertain whether any such children are making use of dangerous drugs." § 912-a.1
+    *   "Such examination may be made only upon the written request or consent of a parent of, or person in parental relation to, a child." § 912-a.2
+    *   "Such examination shall be conducted without notice to the child and shall include the supervised taking of a urine sample which shall be analyzed for such drugs and in accordance with such standards as shall be acceptable to the New York state office of alcoholism and substance abuse services, or its successor agency." § 912-a.2
+    *   "The results of such examination shall be promptly forwarded to the school authorities. If it should be ascertained, upon such test or examination, that any child is making use of dangerous drugs, the school authorities shall report same to the social services department for the social services district wherein such school is located and to the parent of, or person in parental relation to, such child together with a statement to such parent or person in parental relation as to available programs and facilities to combat such dangerous drug usage." § 912-a.2
+    *   "information resulting from an examination conducted pursuant to this section shall be kept confidential and shall not be used for law enforcement purposes but may be utilized only for statistical, epidemiological or research purposes." § 912-a.3
+    *   "Any record or information compiled from such examination which identifies an individual student as a user of dangerous drugs shall be maintained separate and apart from such student's other educational records and in appropriate confidence and shall be destroyed upon such student's graduation or final severance from the secondary educational school system in this state." § 912-a.4
+    *   "no such examination shall be required where a student objects thereto on the grounds that such examinations conflict with their genuine and sincere religious beliefs." § 912-a.4
+*   **Why:** To track optional student drug tests, ensuring parental consent, proper reporting of results, and confidentiality.
+*   **One row represents:** A single drug test administered to a student.
+*   **Covers:** All drug tests conducted for students in grades 7-12 in public and private schools.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Test Date
+    *   Parent/Guardian Written Consent (Y/N)
+    *   Test Result (e.g., Positive, Negative, Inconclusive)
+    *   Drug(s) Detected (if positive)
+    *   Social Services Department Notified (Y/N)
+    *   Parent/Guardian Notified of Result (Y/N)
+    *   Programs/Facilities Information Provided (Y/N)
+    *   Religious Objection to Examination (Y/N)
+
+**18. School Medical Device Inventory**
+
+*   **Quotes:**
+    *   "On-site cardiac automated external defibrillator." § 917
+    *   "On-site cardiac automated external defibrillator in nonpublic schools." § 917-a
+    *   "On-site nebulizers." § 919
+    *   "On-site epinephrine device." § 921-a
+*   **Why:** To track the inventory, location, and maintenance status of critical medical devices in schools.
+*   **One row represents:** A single medical device located in a school.
+*   **Covers:** All Automated External Defibrillators (AEDs), nebulizers, and epinephrine devices in public and non-public schools.
+*   **Columns:**
+    *   Device ID
+    *   School ID (links to School Data, inferred)
+    *   Device Type (AED, Nebulizer, Epinephrine Device)
+    *   Manufacturer
+    *   Model
+    *   Serial Number
+    *   Location in School
+    *   Purchase Date
+    *   Last Inspection Date
+    *   Next Scheduled Inspection Date
+    *   Battery Expiration Date (for AEDs, Epinephrine Devices)
+    *   Pad Expiration Date (for AEDs)
+    *   Medication Expiration Date (for Epinephrine Devices, Nebulizers)
+    *   Maintenance Log (link to separate maintenance events, inferred)
+    *   Operational Status (e.g., Fully Functional, Needs Maintenance, Out of Service)
+
+**19. Unlicensed Personnel Medication Administration Training Records**
+
+*   **Quotes:**
+    *   "Training of unlicensed school personnel to administer certain medications." § 921
+    *   "Licensed nurses... are authorized to... teach an unlicensed person to administer glucagon to an individual" § 902-a.1
+    *   "A student who is unable to physically apply sunscreen may be assisted by unlicensed personnel when directed to do so by the student, if permitted by a parent or guardian and authorized by the school." § 907
+*   **Why:** To track the training and authorization of unlicensed school personnel to administer specific medications or assist students.
+*   **One row represents:** A training event for an unlicensed school personnel member to administer medication.
+*   **Covers:** All unlicensed school personnel trained to administer glucagon, epinephrine, or assist with sunscreen application.
+*   **Columns:**
+    *   Employee ID (links to Employee Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Training Date
+    *   Medication/Assistance Type (e.g., Glucagon, Epinephrine, Sunscreen Application)
+    *   Trainer Name/ID (links to School Health Professional Employment Records, #10)
+    *   Certification Date
+    *   Certification Expiration Date
+    *   Authorized to Administer/Assist (Y/N)
+
+**20. Student Sunscreen Permission Records**
+
+*   **Quotes:**
+    *   "The board of education or trustees of each school district and board of cooperative educational services, and the governing body of each private elementary, middle and secondary school, shall allow students to carry and use topical sunscreen products approved by the federal Food and Drug Administration for over-the-counter use for the purpose of avoiding overexposure to the sun and not for medical treatment of an injury or illness, with the written permission of the parent or guardian of the student." § 907
+    *   "A record of such permission shall be maintained by the school." § 907
+    *   "A student who is unable to physically apply sunscreen may be assisted by unlicensed personnel when directed to do so by the student, if permitted by a parent or guardian and authorized by the school." § 907
+*   **Why:** To maintain records of parental permission for students to carry and use sunscreen, and for assistance by unlicensed personnel.
+*   **One row represents:** A student's permission record for sunscreen use.
+*   **Covers:** All students with parental permission to carry and use topical sunscreen, including those requiring assistance.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Permission Date
+    *   Parent/Guardian Name
+    *   Permission to Carry/Use Sunscreen (Y/N)
+    *   Permission for Unlicensed Personnel Assistance (Y/N)
+    *   Permission Expiration Date (if applicable)
+
+**21. Non-Public School Health Service Contracts**
+
+*   **Quotes:**
+    *   "The voters and/or trustees or board of education of every school district shall, upon request of the authorities of a school other than public, provide resident children who attend such school with any or all of the health and welfare services and facilities which are made available by such voters and/or trustees or board of education to or for children attending the public schools of the district." § 912
+    *   "Where children residing in one school district attend a school other than public located in another school district, the school authorities of the district of residence shall contract with the school authorities of the district where such nonpublic school is located, for the provision of such health and welfare services and facilities to such children by the school district where such nonpublic school is located, for a consideration to be agreed upon between the school authorities of such districts, subject to the approval of the qualified voters of the district of residence when required under the provisions of this chapter." § 912
+    *   "Every such contract shall be in writing and in the form prescribed by the commissioner, and before such contract is executed the same shall be submitted for approval to the superintendent of schools having jurisdiction over such district of residence and such contract shall not become effective until approved by such superintendent." § 912
+*   **Why:** To track contracts between school districts for providing health and welfare services to non-public school students.
+*   **One row represents:** A single contract for health and welfare services to non-public school children.
+*   **Covers:** All contracts for health and welfare services provided to resident children attending non-public schools in other districts.
+*   **Columns:**
+    *   Contract ID
+    *   District of Residence ID (links to School District Data, inferred)
+    *   Non-Public School District ID (links to School District Data, inferred)
+    *   Non-Public School ID (links to School Data, inferred)
+    *   Contract Start Date
+    *   Contract End Date
+    *   Services Provided (list, e.g., Physician, Nurse, Dental Prophylaxis, Vision Screening)
+    *   Consideration Amount
+    *   Superintendent of Residence District Approval Date
+    *   Contract Status (Active, Expired, Pending Approval)
+
+**22. Scoliosis Screening Waiver Applications**
+
+*   **Quotes:**
+    *   "The provisions of this section relative to examination for scoliosis shall be waived by the commissioner upon the filing, in accordance with rules and regulations to be established and promulgated by the commissioner, of a resolution, duly adopted by a board of education, stating that the school district does not have the capability to comply with this section relative to the examination for scoliosis and that such compliance would place a financial cost upon the school district, provided, however, that such resolution may not be adopted prior to the holding of a public hearing on such proposed resolution." § 905.3
+*   **Why:** To track school district applications for waivers from scoliosis screening requirements due to capability or financial constraints.
+*   **One row represents:** A school district's application for a scoliosis screening waiver.
+*   **Covers:** All resolutions submitted by boards of education requesting waivers for scoliosis screening.
+*   **Columns:**
+    *   School District ID (links to School District Data, inferred)
+    *   Resolution Adoption Date
+    *   Public Hearing Date
+    *   Statement of Incapability to Comply (Y/N)
+    *   Statement of Financial Cost (Y/N)
+    *   Waiver Request Date
+    *   Commissioner Approval Status (Approved, Denied, Pending)
+    *   Approval Date (if approved)
+    *   Waiver Expiration Date
+
+**23. Student Health Training Program Placements**
+
+*   **Quotes:**
+    *   "The commissioner, in cooperation with the board of regents, is authorized and directed to establish and develop a program of credit for health training for those secondary school students evidencing an interest to pursue a health care services career." § 812.1
+    *   "Such program may be instituted by any school district seeking to provide its secondary school students with an opportunity to participate in a health care facility or agency training program wherein its secondary school students shall receive academic credit for work related training received at health care facilities or agencies." § 812.1
+    *   "The board of regents shall establish criteria to be used by school districts participating in such program for the selection of eligible secondary school students seeking placement in a health training program subject to availability of placement openings." § 812.2
+*   **Why:** To track secondary school students participating in health training programs for academic credit.
+*   **One row represents:** A student's placement in a health training program.
+*   **Covers:** All secondary school students participating in health care facility or agency training programs for academic credit.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School District ID (links to School District Data, inferred)
+    *   Health Care Facility/Agency Name
+    *   Placement Start Date
+    *   Placement End Date
+    *   Academic Credit Awarded (Y/N)
+    *   Number of Credits
+    *   Eligibility Criteria Met (Y/N)
+    *   Placement Opening Availability (Y/N)
+
+**24. Advanced Course Notification Records**
+
+*   **Quotes:**
+    *   "Each school district and charter school shall annually provide notification to parents and students of the benefits and the opportunities within the district or charter school of participating in advanced courses." § 817.1 (first § 817)
+    *   "Such notification shall include: a. the benefits of participating in advanced courses; b. a description of the advanced courses offered by the school district or charter school in middle and high school and how to prepare for and enroll in them; c. a description of the advanced courses to be offered by the school district or charter school in the following school year; and d. a description of the academic and non-academic support the school district or charter school provides to help students succeed in advanced courses, as well as any financial assistance available to reduce or eliminate any costs associated with participation in advanced courses, including but not limited to related fees, supplies, and assessments." § 817.2 (first § 817)
+    *   "Notification shall be provided electronically or by mail and be posted on the website of the school district or charter school." § 817.3 (first § 817)
+*   **Why:** To track annual notifications provided by school districts and charter schools regarding advanced course opportunities.
+*   **One row represents:** An annual notification event about advanced courses.
+*   **Covers:** All annual notifications provided by school districts and charter schools to parents and students about advanced courses.
+*   **Columns:**
+    *   School District/Charter School ID (links to School District/Charter School Data, inferred)
+    *   Notification Date
+    *   School Year Covered
+    *   Method of Notification (e.g., Electronic, Mail, Website Posting)
+    *   Benefits Description Included (Y/N)
+    *   Current Courses Offered Description Included (Y/N)
+    *   Next Year Courses Offered Description Included (Y/N)
+    *   Support Services Description Included (Y/N)
+    *   Financial Assistance Description Included (Y/N)
+
+**25. School Employee Health Evaluations (General)**
+
+*   **Quotes:**
+    *   "The director of school health services, or other health professionals acting upon direction or referral of such director, may make such evaluations of teachers and any other school employees, school buildings and premises as, in their discretion, they may deem necessary to protect the health of the students and staff." § 906.3
+*   **Why:** To track discretionary health evaluations of school employees to protect student and staff health.
+*   **One row represents:** A health evaluation of a school employee.
+*   **Covers:** Discretionary health evaluations of teachers and other school employees.
+*   **Columns:**
+    *   Employee ID (links to Employee Data, inferred)
+    *   School ID (links to School Data, inferred)
+    *   Evaluation Date
+    *   Evaluator Name/ID (links to School Health Professional Employment Records, #10)
+    *   Reason for Evaluation (e.g., Communicable Disease Exposure, General Health Concern)
+    *   Findings
+    *   Recommendations
+
+**26. School Hygiene District Budget/Expenditure Tracking**
+
+*   **Quotes:**
+    *   "When such a school hygiene district is established... the board of supervisors shall appropriate funds for the salary and necessary expenses of a district director of school hygiene. Funds may also be appropriated for assistants to the director of school hygiene." § 909.2
+    *   "If it be ascertained upon any test or examination held by a medical inspector... that any of the pupils are afflicted with defective sight or hearing or other physical disability and the parents... are unable to provide the necessary relief and treatment for such pupils... such district director shall have power and it shall be his duty to provide relief for such pupils within the amount appropriated for such purpose by the board of supervisors." § 909.4
+    *   "The board of supervisors, after determining the amount of the appropriation necessary for the salary and expenses of such district director of school hygiene and assistants, shall levy one-half of such amount by tax on the towns, union free school districts and cities... and shall apportion such amount, so levied, among such towns, union free school districts and cities, according to the assessed valuation of the taxable property therein." § 909.5
+    *   "The board of supervisors shall likewise, after determining the amount of the appropriation necessary for expenses incurred for the relief of pupils under subdivision four of this section, levy the total amount by tax upon the towns, union free school districts and cities... and shall apportion such amount so levied among such towns, union free school districts and cities according to the assessed valuation of the taxable property therein." § 909.5
+*   **Why:** To track appropriations, levies, and expenditures for school hygiene districts, including salaries, expenses, and pupil relief.
+*   **One row represents:** A budget or expenditure record for a school hygiene district for a specific fiscal period.
+*   **Covers:** All financial activities related to the operation of school hygiene districts.
+*   **Columns:**
+    *   School Hygiene District ID (links to School Hygiene District Data, inferred)
+    *   Fiscal Year
+    *   Total Appropriation Amount
+    *   Director Salary Expense
+    *   Assistant Salaries Expense
+    *   Other Operating Expenses
+    *   Pupil Relief Expenses
+    *   Amount Levied by Tax
+    *   Amount Apportioned by Commissioner of Education
+    *   County Treasurer Payment Date
+
+**27. Student Speech and Language Service Records**
+
+*   **Quotes:**
+    *   "The board of education or trustees of each school district... may provide speech and language improvement services to students in grades kindergarten through six with speech impairments of a severity that does not adversely affect the student's educational performance but does present a barrier to communication." § 912-b.1
+    *   "Any student, who is determined to be in need of such speech and language improvement services, shall receive such upon the recommendation of the building administrator." § 912-b.2
+    *   "A student, whose speech impairment adversely affects the student's educational performance shall be referred to the committee on special education for further evaluation and recommendation for special education services and programs, pursuant to article eighty-nine of this chapter." § 912-b.3
+*   **Why:** To track the provision of speech and language improvement services to students and referrals to special education.
+*   **One row represents:** A student receiving speech and language improvement services.
+*   **Covers:** All students in grades K-6 receiving speech and language improvement services.
+*   **Columns:**
+    *   Student ID (links to Student Enrollment Data, inferred)
+    *   School District ID (links to School District Data, inferred)
+    *   Service Start Date
+    *   Service End Date (if applicable)
+    *   Grade Level
+    *   Speech Impairment Description
+    *   Building Administrator Recommendation Date
+    *   Service Provider ID (links to Employee Data, inferred)
+    *   Referral to Committee on Special Education (Y/N)
+    *   Referral Date (if referred)
+
+**28. Approved Firearms/Game Law Courses**
+
+*   **Quotes:**
+    *   "The officer, board, or commission authorized or required to prescribe courses of instructions in any school under state control, may authorize instructions to be given in the safe and proper use of firearms allowed by law to be used in the taking of wild game, and may also authorize instructions to be given in the study of game laws and of proper hunting and conservation practices." § 809-a
+    *   "Such courses of instruction shall be approved by both the education department and the department of environmental conservation." § 809-a
+*   **Why:** To track courses approved for instruction in firearms safety and game laws by both the education and environmental conservation departments.
+*   **One row represents:** An approved course in firearms safety or game laws.
+*   **Covers:** All courses authorized for instruction in safe use of firearms and game laws.
+*   **Columns:**
+    *   Course ID
+    *   School ID (links to School Data, inferred)
+    *   Course Title
+    *   Education Department Approval Date
+    *   Department of Environmental Conservation Approval Date
+    *   Instruction Type (Firearms Safety, Game Laws, Hunting Practices, Conservation Practices)
+
+**29. Conservation Day Activity Log**
+
+*   **Quotes:**
+    *   "It shall be the duty of the authorities of every public school in this state to assemble the pupils in their charge on that day in the school building, or elsewhere, as they may deem proper, and to provide for and conduct (1) such exercises as shall tend to encourage the planting, protection and preservation of trees and shrubs, and an acquaintance with the best methods to be adopted to accomplish such results, and (2) such lectures, pictures or tours, as shall tend to increase the interest and knowledge of such pupils in the fish and wild life, soil and water of the state." § 810.2
+*   **Why:** To track the activities conducted by public schools on Conservation Day.
+*   **One row represents:** A specific activity conducted by a school on Conservation Day.
+*   **Covers:** All exercises, lectures, pictures, or tours conducted by public schools on Conservation Day.
+*   **Columns:**
+    *   School ID (links to School Data, inferred)
+    *   Conservation Day Date
+    *   Activity Type (e.g., Planting Exercise, Lecture, Tour, Picture Display)
+    *   Activity Description
+    *   Estimated Student Participation Count
+    *   Location of Activity
+
+**30. Library Material Distribution Log**
+
+*   **Quotes:**
+    *   "Upon the request of a public library that is located within the boundaries of a school district, the district shall disseminate informational materials provided by the library regarding the public library and applications for public library cards to students enrolled in the school district." § 816.3
+    *   "Such materials shall be distributed to any or all of the following, as requested by the public library: a. annually to every student of such school district upon his or her entry into kindergarten, grade six and grade nine, except that a library and school may agree to alternate or additional grades; b. to every student upon his or her enrollment as a new student; and c. available at all times in the school library in each school within the school district for students and parents who wish to obtain such materials." § 816.3.a-c
+    *   "The director of each participating public library shall consult annually with the school district in order to coordinate the provision of materials containing information regarding the library, instructions on how students may obtain a library card and an application for a library card." § 816.4
+    *   "Each public library that is located in the school district shall provide sufficient copies of such materials to the school district for distribution" § 816.5
+*   **Why:** To track the distribution of public library informational materials and library card applications by school districts.
+*   **One row represents:** A specific instance of library material distribution by a school district.
+*   **Covers:** All distributions of public library informational materials and applications to students.
+*   **Columns:**
+    *   School District ID (links to School District Data, inferred)
+    *   Public Library ID (links to Public Library Data, inferred)
+    *   Distribution Date
+    *   Material Type (e.g., Informational Brochure, Library Card Application)
+    *   Distribution Method (e.g., Annual K/6/9, New Student Enrollment, School Library Availability)
+    *   Grades Targeted (if annual)
+    *   Number of Materials Distributed
+
+**31. Student Government Establishment Records**
+
+*   **Quotes:**
+    *   "The board of education or trustees of every school district serving high school students in grades nine through twelve with no districtwide or school building peer selected student government shall establish at least one student government organization within such district or school building with the goal of ensuring all eligible students have the opportunity to participate in such student government." § 817 (second § 817)
+*   **Why:** To track the establishment of student government organizations in school districts and buildings serving high school students.
+*   **One row represents:** The establishment of a student government organization.
+*   **Covers:** All student government organizations established in school districts or school buildings serving grades 9-12.
+*   **Columns:**
+    *   School District ID (links to School District Data, inferred)
+    *   School Building ID (if applicable, links to School Data, inferred)
+    *   Establishment Date
+    *   Student Government Organization Name
+    *   Grades Served (e.g., 9-12)
+    *   Opportunity for All Eligible Students to Participate (Y/N)
+
+**32. Bedbug Infestation Records**
+
+*   **Quotes:**
+    *   "Public schools; infestation of bedbugs (Cimex lectularius)." § 920
+*   **Why:** To track bedbug infestations in public schools and the actions taken for remediation.
+*   **One row represents:** A reported bedbug infestation incident.
+*   **Covers:** All bedbug infestations reported in public schools.
+*   **Columns:**
+    *   School ID (links to School Data, inferred)
+    *   Infestation Report Date
+    *   Location in School (e.g., Classroom, Library, Office)
+    *   Severity of Infestation
+    *   Remediation Action Taken
+    *   Remediation Start Date
+    *   Remediation End Date
+    *   Re-inspection Date
+    *   Infestation Resolved (Y/N)
+
+**33. Opioid Overdose Prevention Program Records**
+
+*   **Quotes:**
+    *   "Opioid overdose prevention." § 922
+*   **Why:** To track the implementation and activities of opioid overdose prevention programs in schools.
+*   **One row represents:** A record of an opioid overdose prevention program's status or activity.
+*   **Covers:** All opioid overdose prevention programs implemented in schools.
+*   **Columns:**
+    *   School ID (links to School Data, inferred)
+    *   Program Start Date
+    *   Naloxone Available On-Site (Y/N)
+    *   Number of Staff Trained
+    *   Last Staff Training Date
+    *   Overdose Incident Response Plan (Y/N)
+    *   Number of Overdose Incidents (links to Incident Report Data, inferred)
+
+**34. Sudden Cardiac Arrest Response Plan Records**
+
+*   **Quotes:**
+    *   "Sudden cardiac arrest." § 923
+*   **Why:** To track the development and implementation of sudden cardiac arrest response plans in schools.
+*   **One row represents:** A record of a school's sudden cardiac arrest response plan.
+*   **Covers:** All sudden cardiac arrest response plans in schools.
+*   **Columns:**
+    *   School ID (links to School Data, inferred)
+    *   Plan Approval Date
+    *   Key Personnel Trained (Y/N)
+    *   Last Training Date for Key Personnel
+    *   Emergency Drills Conducted (Y/N)
+    *   Last Drill Date
+    *   AEDs Available (Y/N, links to School Medical Device Inventory, #18)
+    *   Emergency Contact Procedures (Y/N)
+
+**35. School Meal Ingredient and Nutritional Information Records**
+
+*   **Quotes:**
+    *   "Ingredient and nutritional information requirements." § 924
+*   **Why:** To track the ingredient and nutritional information for all meal items served in schools.
+*   **One row represents:** The ingredient and nutritional information for a specific meal item.
+*   **Covers:** All meal items served in school meal programs.
+*   **Columns:**
+    *   Meal Item ID
+    *   Meal Item Name
+    *   Full Ingredient List
+    *   Nutritional Information (e.g., Calories, Fat, Protein, Carbohydrates, Allergens)
+    *   Date Information Last Updated
+    *   Applicable School ID (if specific to a school, otherwise district-wide)
+
+**36. Water Safety Information Distribution Records**
+
+*   **Quotes:**
+    *   "Water safety information." § 926
+*   **Why:** To track the distribution of water safety information to students and parents.
+*   **One row represents:** A record of water safety information distribution.
+*   **Covers:** All instances of water safety information distribution by school districts.
+*   **Columns:**
+    *   School District ID (links to School District Data, inferred)
+    *   Distribution Date
+    *   Method of Distribution (e.g., Website, Newsletter, Handout)
+    *   Target Audience (e.g., Students, Parents)
+    *   Content Summary of Information Distributed
+
+**Non-Tabular Information:**
+
+*   Job applications
+*   Rules and regulations (e.g., commissioner's regulations, board of regents regulations)
+*   Receipts
+*   Photos
+*   Research documents
+*   Written program plans (for animal experimentation waivers, though the *proposals* are tracked in a dataset)
+*   School district policies (e.g., dissection policy, meal shaming plan, sudden cardiac arrest plan)
+*   Curriculum documents (e.g., internet safety curricula, reading instructional best practices)
+*   Course of exercises and instruction for Conservation Day (prescribed by commissioner)
+*   Lists of dental practices for free/reduced cost services
+*   Written permission from physicians/parents for medication administration (the *existence* of which is tracked in datasets)
+*   Sharing agreements for health professionals between districts
+*   Reports to the governor and legislature (e.g., on animal experimentation waivers)
+*   Annual reviews of reading curriculum and instructional practices (the *verification* is tabular)
+*   Written substantiation of religious objections (e.g., for dissection, health exams)
+*   Notices to parents (e.g., for missing health certificates, meal account balances)
+*   Program plans for health training for secondary students
+*   Insignia for State Seal of Biliteracy
+*   Informational materials from public libraries
+*   Website content (e.g., advanced course notifications)
+*   Meeting minutes and recommendations from Nutrition Advisory Committees

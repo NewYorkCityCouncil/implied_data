@@ -1,0 +1,321 @@
+# Implied Data Summary
+
+1.  Property & Facility Inventory
+2.  Tree Inventory
+3.  Maintenance & Work Orders (General Facilities)
+4.  Tree Maintenance & Work Orders
+5.  Inspection Records (General Facilities & Features)
+6.  Tree Inspection & Health Assessment Records
+7.  Violation & Enforcement Records
+8.  Public Complaint & Service Request Log
+9.  Permit Applications & Issuances (General)
+10. Tree Removal Permits & Replacement Obligations
+11. Special Event & Demonstration Permits
+12. Ballfield & Athletic Court Permits
+13. Marina Permits (Dockage, Mooring, Commercial)
+14. Marina Parking Permits
+15. GreenThumb Garden Licenses
+16. Capital Project Records
+17. Contracts & Agreements Register
+18. Donation & Sponsorship Register
+19. General Financial Transactions
+20. Marina Billing & Payments
+21. Staffing & Personnel Roster
+22. Recreational Facility Membership Register
+23. Program Activity Log (Recreation & Education)
+24. Equipment Inventory
+25. Vessel Inventory
+26. Mooring Inventory
+27. Mooring Inspection & Maintenance Records
+28. AED Inventory
+29. AED Training Records
+30. GreenThumb Garden Inventory
+31. GreenThumb Site Visit Records
+32. GreenThumb Garden Transfer Process Records
+33. Park Operating Hours & Closures
+34. Marina Waiting List Records
+35. Wildfire Incident Records
+36. Lifeguard Incident Records
+37. Vehicle Seizure & Release Tracking
+38. Compost Facility Operations Log
+39. Soil Lead Testing Records
+40. Urban Forest Canopy Data
+41. School Playground Public Access Records
+42. NYC Sports Commission Member Roster
+43. NYC Sports Commission Meeting Records
+44. NYC Sports Commission Budget Submissions
+45. NYC Sports Commission Recommendations Log
+
+# Compliant Datasets:
+
+1.  **Property & Facility Inventory**
+    *   **Open Data Match:** "Parks Properties" (map, dataset), "ARCHIVED - Parks Properties" (map), "OpenData_ParksProperties" (dataset), "DPR_FunctionalParkland_001" (dataset), "Functional Parkland Map" (map), "Functional Parkland" (dataset), "ARCHIVED - Functional Parkland" (map) - 95% match; "NYC Parks Structures" (dataset), "NYC Parks Structures Map" (map) - 95% match; "NYC Parks Drinking Fountains" (dataset), "NYC Parks Drinking Fountains Map" (map), "NYC Parks Spray Showers Map" (map), "NYC Parks Spray Showers" (dataset), "Canine Waste Dispensers Map" (map), "Canine Waste Dispensers" (dataset), "NYC Parks Water Features" (map), "WaterFeatures_20190417" (dataset), "NYC Parks Monuments" (dataset) - 90% match; "Beaches" (map, dataset), "ARCHIVE - Beaches" (map), "DPR_Beaches_001" (dataset) - 95% match; "Dog Runs" (dataset), "NYC Parks Dog Runs" (map) - 95% match; "Golf Courses" (map, dataset), "ARCHIVE - Golf Courses" (map), "DPR_GolfCourses_001" (dataset) - 95% match; "Skateparks" (map), "NYC Parks SkateParks" (dataset) - 95% match; "Outdoor Pools Session Information" (dataset), "NYC Parks Pools" (dataset), "NYC Parks Pools Map" (map) - 90% match; "Synthetic Turf Fields" (dataset), "Athletic Facilities" (map, dataset), "ARCHIVE - Athletic Facilities" (map), "DPR_AthleticFacilities_001" (dataset) - 95% match; "Parks Permit Areas" (dataset), "Parks Permit Areas Map" (map) - 90% match; "Community Parks Initiative Zone Boundaries" (map), "CPI_Zones" (dataset) - 90% match; "DPR_Landfills_001" (dataset), "Landfills" (map) - 95% match; "NYC Parks Forever Wild Map" (map), "NYC Parks Forever Wild" (dataset) - 95% match; "NYC Wetlands Map" (map), "NYC Wetlands" (dataset) - 95% match; "NYC Parks Ice Skating Rinks" (map), "IceSkatingRinks_20190417" (dataset) - 95% match; "Model Aircraft Fields" (map), "DPR_ModelAircraftFields_001" (dataset) - 95% match; "Parks Signs Map" (map), "Parks Signs" (dataset) - 90% match; "Parks Zones Map" (map), "Parks Zones" (dataset) - 90% match; "Play Areas" (map), "DPR_PlayAreas_001" (dataset) - 95% match; "Parks Inspection Program – Public Restroom Conditions & Hazards" (dataset), "Parks Inspection Program – Public Restroom Individual Room Inspections" (dataset), "Parks Inspection Program – Public Restroom Inspections" (dataset), "Parks Inspection Program – Public Restrooms" (dataset), "Parks Inspection Program – Public Restroom Feature Ratings" (dataset) - 85% match; "Restrictive Declaration Sites" (dataset), "Restrictive Declaration Sites Map" (map) - 95% match; "Greenstreets" (map, dataset), "ARCHIVE - Greenstreets" (map) - 95% match; "Directory of Boating and Marinas" (href) - 80% match.
+    *   **One row represents:** A single park, facility, building, structure, or fixed amenity.
+    *   **Covers:** All land-based properties, buildings, structures, and fixed amenities (e.g., seats, fountains, art, lamps, restrooms, athletic fields, pools, marinas, dog runs) under DPR jurisdiction.
+    *   **How it’s implied:** The agency is legally mandated to manage, care for, and maintain all parks, facilities, and public places (Charter 533.a.1, 533.a.3, Admin Code 18-108), including specific features like drinking fountains, statues (Charter 533.a.4), buildings (Charter 533.a.6), beaches (Admin Code 18-108), bicycle areas (Admin Code 18-122.b.1), and compost facilities (Admin Code 18-165.b). They must also report on accessible features (Admin Code 18-143.a.1) and functional acreage (Admin Code 18-144.a). This necessitates a comprehensive inventory.
+
+2.  **Tree Inventory**
+    *   **Open Data Match:** "2005 Street Tree Census" (dataset, map), "NewYorkCity_StreetTreeCensus_2005" (dataset), "2015 Street Tree Census - Tree Data" (dataset), "2015 Street Tree Census - Blockface Data" (map, dataset), "TreesCount2015Blockfaces" (dataset) - 95% match; "Forestry Tree Points" (dataset) - 95% match; "MillionTreesNYC Block Planting Locations" (map), "MTNYC_PlantedBlocks_20150930" (dataset), "Block Planting" (dataset) - 90% match; "Forestry Planting Spaces" (dataset) - 90% match; "Adopt-a-Tree Inventory" (file) - 90% match; "NYC Street Tree Map – Stewardship Activity" (href), "NYC Street Tree Map - Tree Edit Suggestions" (href), "NYC Street Tree Map - Favorite Trees" (href), "NYC Street Tree Map - Eco Benefits" (href), "NYC Street Tree Map - Stewardship Groups" (href) - 80% match.
+    *   **One row represents:** A single tree or a distinct planting area.
+    *   **Covers:** All trees and other plantings under the department's jurisdiction, including those in parks and on streets/avenues, subject to removal permits, damage assessments, or replacement obligations.
+    *   **How it’s implied:** The agency is responsible for planting and maintaining trees (Charter 533.a.4, 533.a.11) and has exclusive jurisdiction over street trees (Admin Code 18-104, 18-105). Rules (5-02(a)) define criteria for replacement trees based on size, condition, species, and location, requiring detailed tree data.
+
+3.  **Maintenance & Work Orders (General Facilities)**
+    *   **Open Data Match:** "Asset Management Parks System (AMPS) – Work Orders" (dataset) - 95% match; "Asset Management Parks System (AMPS) – Transactions" (dataset), "Asset Management Parks System (AMPS) – Transaction Details" (dataset) - 80% match; "Asset Management Parks System (AMPS) – Labor" (dataset) - 80% match; "Natural Turf Maintenance" (dataset), "Natural Turf Site List" (dataset) - 90% match; "Daily Tasks Park Cleaning Records" (dataset), "NYC Parks Daily Tasks Cleaning Routes, Fiscal Year 2016" (dataset) - 90% match; "Parks Inspection Program – Daily Immediate Attentions" (dataset) - 80% match.
+    *   **One row represents:** A single maintenance, repair, construction, or improvement activity.
+    *   **Covers:** All activities related to the care, maintenance, construction, improvement, alteration, and repair of parks, properties, buildings, structures, and amenities (excluding tree-specific work).
+    *   **How it’s implied:** The agency is mandated to manage and care for parks (Charter 533.a.1), maintain their beauty and utility (Charter 533.a.3), and maintain buildings and structures (Charter 533.a.6). Annual reports are required on maintenance work performed (Admin Code 18-144.b) and work undertaken to bring facilities into accessibility compliance (Admin Code 18-143.a.3, 18-143.a.4), necessitating detailed work order tracking.
+
+4.  **Tree Maintenance & Work Orders**
+    *   **Open Data Match:** "Forestry Work Orders" (dataset) - 95% match; "Forestry Tasks" (dataset) - 90% match; "Block Pruning" (dataset) - 90% match; "Tree Contract Work Details" (dataset) - 90% match; "Forestry Service Requests" (dataset) - 80% match.
+    *   **One row represents:** A single tree maintenance task or work order.
+    *   **Covers:** All activities related to tree planting, care, cultivation, pruning, stump removal, and removal, including those for obstruction, adjacent to buildings, and cleaning after pesticide exposure.
+    *   **How it’s implied:** The agency has exclusive jurisdiction over planting, care, and cultivation of street trees (Admin Code 18-104) and is required to prune trees obstructing traffic control devices (Admin Code 18-105.1.c). Criteria for prioritizing maintenance of trees adjacent to buildings must be developed (Admin Code 18-105.2.a), and cleaning after pesticide spraying is mandated (Admin Code 18-148.1.b). This requires detailed tracking of tree-specific work orders.
+
+5.  **Inspection Records (General Facilities & Features)**
+    *   **Open Data Match:** "Parks Inspection Program – Inspections" (dataset) - 95% match; "Parks Inspection Program – PIP Plus" (dataset) - 95% match; "Parks Inspection Program – All Sites (UNMAPPED)" (dataset), "Parks Inspection Program – All Sites (MAPPED)" (dataset), "Parks Inspection Program – All Sites (MAPPED) Map" (map) - 95% match; "Parks Inspection Program – Inventory" (dataset) - 90% match; "Parks Inspection Program – Element Tracking" (dataset) - 90% match; "Parks Inspection Program – Feature Ratings" (dataset) - 95% match; "Parks Inspection Program – Conditions & Hazards" (dataset) - 95% match; "Parks Supervisor Inspections - Inspection Results" (dataset) - 95% match; "Parks Supervisor Inspections - Feature Findings" (dataset) - 95% match; "Parks Inspection Program – Public Restroom Conditions & Hazards" (dataset), "Parks Inspection Program – Public Restroom Individual Room Inspections" (dataset), "Parks Inspection Program – Public Restroom Inspections" (dataset), "Parks Inspection Program – Public Restrooms" (dataset), "Parks Inspection Program – Public Restroom Feature Ratings" (dataset) - 95% match.
+    *   **One row represents:** A single inspection of a park feature or facility.
+    *   **Covers:** All inspections of park features (athletic fields, benches, fences, lawns, horticultural areas, paved surfaces, play equipment, public restrooms, safety surfacing, sidewalks, unpaved trails, cleanliness conditions) and facilities (playgrounds, pools, beaches, recreation centers), including accessibility assessments.
+    *   **How it’s implied:** The agency must post inspection dates and results on its website (Admin Code 18-131.d), assess facilities for compliance with accessibility standards (Admin Code 18-143.a.2.i), and develop standards for grading park features (Admin Code 18-158.b). Reporting on features with repeated unacceptable ratings is also required (Admin Code 18-158.d.1).
+
+6.  **Tree Inspection & Health Assessment Records**
+    *   **Open Data Match:** "Forestry Risk Assessments" (dataset) - 95% match; "Forestry Inspections" (dataset), "Forestry Inspections Map" (map) - 95% match.
+    *   **One row represents:** A single inspection of a tree.
+    *   **Covers:** All inspections of covered trees (>6 inches caliper, on streets or in landscaped parks), including those triggered by public notice or routine maintenance cycles.
+    *   **How it’s implied:** The agency is required to inspect locations within four days of notice regarding tree obstruction of traffic devices (Admin Code 18-105.1.b) and inspect covered trees (>6 inches caliper) at least once between pruning cycles to determine health or public safety threats (Admin Code 18-157.a). Reporting on inspection requests and actions taken is also mandated (Admin Code 18-157.c.2, 18-157.c.3, 18-157.c.4).
+
+7.  **Violation & Enforcement Records**
+    *   **Open Data Match:** "Social Distancing and Enforcement: Parks Patrol Data" (dataset) - 90% match; "Urban Park Ranger Engagement Tracker" (dataset) - 85% match.
+    *   **One row represents:** A single violation incident.
+    *   **Covers:** All violations of rules and regulations established by DPR or enforced by agreement with partner entities, including uniform non-compliance, unauthorized vehicle operation, unlawful tree cutting, exceeding concession boundaries, and general park prohibitions.
+    *   **How it’s implied:** The agency is empowered to establish and enforce rules and regulations for park use (Charter 533.a.9), with specific penalties for violations (Charter 533.a.9.i, Admin Code 18-108.1.c.1, 18-129.b, 18-147, Rules 1-03(c), 1-04, 1-05, 1-07). This requires tracking violation incidents, enforcement actions, and penalties.
+
+8.  **Public Complaint & Service Request Log**
+    *   **Open Data Match:** "Forestry Service Requests" (dataset) - 90% match.
+    *   **One row represents:** A single public notice, report, or service request.
+    *   **Covers:** All reports received from the public regarding traffic obstruction by vegetation, accidents, hazardous conditions, beach-related illnesses, tree inspection requests, and sidewalk damage caused by street trees.
+    *   **How it’s implied:** The agency must inspect locations within four days of receiving notice of traffic obstruction by vegetation (Admin Code 18-105.1.b) and maintain a log of such notices (Admin Code 18-105.1.e). A telephone reporting system for accidents or hazardous conditions is required, with annual reporting on responses (Admin Code 18-131.b.1, 18-131.b.2). Information on filing beach-related illness complaints (Admin Code 18-131.c.2.iii) and tracking 311 requests for tree inspections and sidewalk damage (Admin Code 18-157.c.2, 18-151.3) also necessitate this data.
+
+9.  **Permit Applications & Issuances (General)**
+    *   **Open Data Match:** "Parks Permit Areas" (dataset), "Parks Permit Areas Map" (map) - 80% match; "Research Permits" (dataset) - 95% match.
+    *   **One row represents:** A single application for a permit or authorization.
+    *   **Covers:** All permit applications and issuances for activities such as commercial activity, non-commercial distribution, sound reproduction, filming, construction, excavation, vehicle access on beaches, life-saving apparatus, bollard installation, planting, camping, solicitation, and variances.
+    *   **How it’s implied:** Various activities within parks, such as commercial activity (Admin Code 18-146.c.13), sound reproduction (Admin Code 18-146.c.17), construction (Admin Code 18-146.c.23), excavation (Admin Code 18-146.c.24), and vehicle operation on beaches (Admin Code 18-108.1.g), require permits. The agency must track these authorizations, including bollard installations (Admin Code 18-155.b.2) and variances (Rules 1-01(c)).
+
+11. **Special Event & Demonstration Permits**
+    *   **Open Data Match:** "Public Programs Division Special Events" (dataset) - 95% match; "NYC Parks Events Listing – Event Links" (dataset), "NYC Parks Events Listing – Event Listing" (dataset), "NYC Parks Events Listing – Event Images" (dataset), "NYC Parks Events Listing – Event YouTube Links" (dataset), "NYC Parks Events Listing – Event Organizers" (dataset), "NYC Parks Events Listing – Event Categories" (dataset), "NYC Parks Events Listing – Event Locations" (dataset), "NYC Parks Public Events – Upcoming 14 Days" (href) - 85% match.
+    *   **One row represents:** A single Special Event or Demonstration permit application.
+    *   **Covers:** All Special Event and Demonstration permits, including those on the Great Lawn, East Meadow, Bethesda Terrace, and Flushing Meadows Corona Park, and those at marinas.
+    *   **How it’s implied:** The agency requires permits for special events or demonstrations that significantly interfere with ordinary park use (Admin Code 18-146.c.14, Rules 1-05(a)(2)). Specific procedures for issuance, denial criteria, and conditions are outlined in the rules (Rules 2-08), including for events at marinas (Rules 3-25).
+
+15. **GreenThumb Garden Licenses**
+    *   **Open Data Match:** "GreenThumb Garden Info" (dataset) - 95% match; "ARCHIVED - NYC Greenthumb Community Gardens" (dataset) - 95% match; "GreenThumb Block-Lot" (dataset) - 90% match.
+    *   **One row represents:** A single GreenThumb Garden license.
+    *   **Covers:** All community gardens registered and licensed with GreenThumb.
+    *   **How it’s implied:** The agency issues licenses for Gardening Groups to operate gardens on City-owned land (Rules 6-01, 6-03(a)). These licenses set forth terms and conditions for garden design, installation, and maintenance (Rules 6-03(b)), requiring tracking of license details and compliance.
+
+16. **Capital Project Records**
+    *   **Open Data Match:** "Capital Project Tracker" (href, dataset) - 95% match; "Parks Inspection Program – Construction Information" (dataset) - 90% match; "Interagency Coordination and Construction Permits Data (MOSYS)" (dataset) - 85% match.
+    *   **One row represents:** A single capital project or a distinct phase of a capital project.
+    *   **Covers:** All capital projects under the department's jurisdiction, including construction, reconstruction, alterations, and improvements to parks and facilities.
+    *   **How it’s implied:** The agency uses sponsorship payments for capital projects (Admin Code 18-133.f.1) and has specific requirements for sidewalk and pathway construction at outdoor athletic facilities within capital projects (Admin Code 18-152.a). Written notification of capital project change orders is mandated (Admin Code 18-153), and soil lead testing is required for "covered capital projects" (Admin Code 18-156.b). Assessments of capital needs for swimming pools are also required (Admin Code 18-161.b.1).
+
+17. **Contracts & Agreements Register**
+    *   **Open Data Match:** "Directory of Concessions" (href) - 80% match; "Parks Concessions" (dataset) - 90% match; "Parks Concession Transactions" (dataset) - 80% match.
+    *   **One row represents:** A single contract, lease, rental agreement, license, permit, concession, or appropriation.
+    *   **Covers:** All contracts and arrangements with corporations, institutions, city, state, federal, private, voluntary, or commercial agencies for construction, maintenance, programs, services, operation, or use of park facilities, as well as city appropriations for these purposes and funding allocations for capital projects.
+    *   **How it’s implied:** The agency is authorized to enter into various contracts and agreements for construction, maintenance, and improvement of parks (Charter 533.a.6, 533.a.7), and to make arrangements with other agencies or private entities for conservation functions (Charter 533.a.10). Specific authorizations exist for agreements with entities like the New York Zoological Society (Admin Code 18-114, 18-127) and the USTA National Tennis Center (Admin Code 18-128.a), requiring a register of these agreements.
+
+21. **Staffing & Personnel Roster**
+    *   **Open Data Match:** "FY2016-2017 Administrative Code 18-144 Park Maintenance Report Payroll Data" (dataset) - 90% match.
+    *   **One row represents:** A single employee.
+    *   **Covers:** All administrative, clerical, and uniformed force employees, including maintenance staff, park enforcement patrol officers, and lifeguards.
+    *   **How it’s implied:** The agency's members are divided into administrative, clerical, and uniformed forces (Admin Code 18-102.a), with prescribed uniforms (Admin Code 18-102.b). Annual reports require the weekly mean of work-hours for maintenance staff (Admin Code 18-144.b.4) and the headcount of park enforcement patrol officers (Admin Code 18-144.d). The number of staff at compost facilities (Admin Code 18-165.d.4) and lifeguards hired and trained (Admin Code 18-163.a.1, 18-163.a.3) must also be tracked.
+
+23. **Program Activity Log (Recreation & Education)**
+    *   **Open Data Match:** "Summer Sports Experience: 2017 to 2021" (dataset), "Summer Sports Experience and "Kids in Motion" Programming: 2022 to current" (dataset) - 95% match; "Outdoor Aquatics Programming: 2018 to 2019" (dataset), "Aquatics Programming: 2021 to current" (dataset) - 95% match; "Outdoor Pools Session Information" (dataset) - 90% match; "Swim for Life: 2016 to 2020" (dataset), "Swim for Life: 2022 to current" (dataset) - 95% match; "Kids In Motion" Playground Programming: 2016 to 2021" (dataset) - 95% match; "POP for NYCHA Residents - Local Law 163" (dataset) - 90% match.
+    *   **One row represents:** A single program event, activity, or enrollment.
+    *   **Covers:** All conservation, environmental, nature education, and public recreation programs, research, demonstration projects, water safety instruction for public school second graders, swimming lessons for children and adults, Summer Day Camp registrations, Recreation Center session registrations, and Urban Park Ranger programs.
+    *   **How it’s implied:** The agency is mandated to plan, conduct, supervise, coordinate, and promote conservation, environmental, nature education, and public recreation programs (Charter 533.a.10, 533.b.2). Specific requirements include offering water safety instruction to public school second graders (Admin Code 18-160.b) and swimming lessons for children and adults at indoor pools (Admin Code 18-162). Urban Park Rangers also provide various programs (Rules 2-15(a)), all of which require activity logging.
+
+24. **Equipment Inventory**
+    *   **Open Data Match:** "Asset Management Parks System (AMPS) – Assets" (dataset) - 90% match.
+    *   **One row represents:** A single piece of equipment or furniture.
+    *   **Covers:** All instruments, furniture, and equipment provided for buildings and structures under DPR jurisdiction, including life-saving apparatus.
+    *   **How it’s implied:** The agency is responsible for providing necessary instruments, furniture, and equipment for buildings and structures under its jurisdiction (Charter 533.a.7), including life-saving apparatus on public beaches (Admin Code 18-110). This necessitates an inventory to manage these assets.
+
+28. **AED Inventory**
+    *   **Open Data Match:** "Automated External Defibrillators (AED) Assigned to Youth Baseball/Softball Leagues" (dataset) - 95% match.
+    *   **One row represents:** A single AED unit.
+    *   **Covers:** All AEDs placed by the Department in various facilities and those loaned to youth leagues.
+    *   **How it’s implied:** The agency is required to provide AEDs to youth leagues at no cost (Admin Code 18-150.c) and track their return in satisfactory condition, with penalties for non-return (Admin Code 18-150.i.2). The agency also places AEDs in specific locations (Rules 2-16), necessitating an inventory.
+
+30. **GreenThumb Garden Inventory**
+    *   **Open Data Match:** "GreenThumb Garden Info" (dataset) - 95% match; "ARCHIVED - NYC Greenthumb Community Gardens" (dataset) - 95% match; "GreenThumb Block-Lot" (dataset) - 90% match.
+    *   **One row represents:** A single GreenThumb community garden.
+    *   **Covers:** All community gardens registered and licensed with GreenThumb, including new gardens.
+    *   **How it’s implied:** The agency defines and licenses "Gardens" on "Lots" (Rules 6-01) and must prepare a "Garden Review Statement" for transfers, which includes a description of each affected Lot and existing Garden (Rules 6-05(b)(4)). This requires a comprehensive inventory of all GreenThumb gardens.
+
+31. **GreenThumb Site Visit Records**
+    *   **Open Data Match:** "GreenThumb Site Visits" (dataset) - 95% match.
+    *   **One row represents:** A single GreenThumb site visit.
+    *   **Covers:** Site visits to GreenThumb gardens.
+    *   **How it’s implied:** The agency must prepare a "Garden Review Statement" for transfers, which includes copies of the two most recent site visit forms (Rules 6-05(b)(4)). This implies regular site visits and documentation of their findings.
+
+32. **Park Operating Hours & Closures**
+    *   **Open Data Match:** "Parks Closure Status Due to COVID-19: Playgrounds" (dataset), "Parks Closure Status Due to COVID-19: Athletic Facilities" (dataset), "Parks Closure Status Due to COVID-19: Adult Exercise Equipment" (dataset), "Parks Closure Status Due to COVID-19: Skate Parks" (dataset), "Parks Closure Status Due to COVID-19: Dog Runs" (dataset), "Parks Closure Status Due to COVID-19: Comfort Stations" (dataset) - 90% match; "Park Closure Notifications" (href) - 80% match.
+    *   **One row represents:** A specific park's operating hours or a temporary closure event.
+    *   **Covers:** Standard operating hours for all parks and any temporary closures due to safety threats or other reasons.
+    *   **How it’s implied:** The agency sets standard operating hours for parks (Rules 1-03(a)(1)) and has the authority to close parks or parts thereof due to threats to public health or safety (Rules 1-03(a)(2)). This requires tracking and posting of operating hours and closure events.
+
+40. **Urban Forest Canopy Data**
+    *   **Open Data Match:** "NYC Urban Tree Canopy Assessment Metrics 2010" (file) - 95% match; "Landcover Raster Data (2010) – 3ft Resolution" (file), "Landcover Raster Data (2010) – 6in Resolution" (href) - 90% match.
+    *   **One row represents:** A measurement point or segment of tree canopy data.
+    *   **Covers:** Light Detection and Ranging (LiDAR) data or similar tree canopy assessment information for the entire city.
+    *   **How it’s implied:** The agency is mandated to consider data relevant to evaluating the urban forest (Admin Code 18-164.d.1) and to collect or procure light detection and ranging data every five years to monitor canopy coverage and track progress towards urban forest canopy goals (Admin Code 18-164.e).
+
+41. **School Playground Public Access Records**
+    *   **Open Data Match:** "Schoolyard to Playgrounds" (map, dataset), "ARCHIVE - DPR_SchoolyardsToPlaygrounds_001" (dataset), "ARCHIVE - Schoolyards To Playgrounds" (map) - 95% match.
+    *   **One row represents:** A single school playground designated for public access.
+    *   **Covers:** School playgrounds identified by the Department of Education for public access outside of school hours.
+    *   **How it’s implied:** The Department of Education, in consultation with the agency, must submit an annual report identifying playgrounds for public access, prioritizing environmental justice areas (Admin Code 18-167.b, 18-167.b.1). This report must also describe the duties and responsibilities of both departments and the estimated budget (Admin Code 18-167.b.2, 18-167.b.3), requiring tracking of these designated playgrounds.
+
+# Non-compliant Datasets:
+
+10. **Tree Removal Permits & Replacement Obligations**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single tree removal permit application.
+    *   **Covers:** All applications for permits to remove trees under the commissioner's jurisdiction and the subsequent replacement obligations, including zoning-related tree planting payments.
+    *   **How it’s implied:** The Administrative Code (18-107.a) and Rules (5-01(a)) require a permit for tree removal. The agency must track the fee charged to cover replacement costs (Admin Code 18-107.b, Rules 5-02(a)(6)), the number and size of replacement trees (Admin Code 18-107.c, Rules 5-02(a)), and the planting period (Admin Code 18-107.c, Rules 5-02(a)(7)). This data is also needed for zoning-related tree planting deposits (Rules 5-03).
+
+12. **Ballfield & Athletic Court Permits**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single ballfield or athletic court permit application.
+    *   **Covers:** Permits for basketball, handball, baseball, softball, cricket, roller hockey, volleyball, football, lacrosse, rugby, ultimate frisbee, soccer, or any other ballfield or court sport.
+    *   **How it’s implied:** The agency requires permits for organized sports activities on ballfields and athletic courts (Rules 1-05(r)(1)). Specific rules (Rules 2-12) govern the application process, seasonal periods, allocation priorities, and permit requirements, including a certification for youth leagues regarding AED compliance (Admin Code 18-150.d).
+
+13. **Marina Permits (Dockage, Mooring, Commercial)**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single marina or mooring permit application.
+    *   **Covers:** Seasonal dockage, transient dockage, mooring permits, commercial permits, dinghy/kayak/canoe storage permits, and boat launch permits.
+    *   **How it’s implied:** The agency issues various permits for marina and mooring field usage, including seasonal dockage, mooring, and commercial operations (Rules 3-02, 3-06, 3-22, 4-04, 4-16). These permits have detailed requirements regarding vessel conditions, insurance, registration, and can be revoked (Rules 3-06, 4-04), necessitating comprehensive permit tracking.
+
+14. **Marina Parking Permits**
+    *   **Open Data Match:** "DPR_ParkingLots_001" (dataset), "Parking Lots" (map) - 90% match (these are the lots themselves, not the permits).
+    *   **One row represents:** A single marina parking permit.
+    *   **Covers:** Parking permits for the Boat Basin Garage and World's Fair Marina parking lot.
+    *   **How it’s implied:** The agency requires parking permits for specific marina parking lots (Rules 3-17(a)) and maintains a waiting list if spaces are limited (Rules 3-17(a)). This necessitates tracking permit issuance, associated vehicles, and waitlist status.
+
+18. **Donation & Sponsorship Register**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single gift, devise, bequest, or sponsorship payment/contribution.
+    *   **Covers:** All non-governmental funds and goods donated to the department, including Adopt-a-Park sponsorships.
+    *   **How it’s implied:** The agency manages real or personal property granted, devised, bequeathed, or conveyed to the city for park improvements (Charter 533.a.8) and must make an annual statement of gifts (Admin Code 18-111.b). The agency is also authorized to enter into sponsorship agreements for park properties (Admin Code 18-133.b), with specific requirements for payment use and identification of grants over $5,000 (Admin Code 18-133.f.1). An annual report on donated funds and goods is also mandated (Admin Code 18-134).
+
+19. **General Financial Transactions**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single financial transaction (payment, refund, forfeiture, charge, credit).
+    *   **Covers:** All fees, bonds, charges, refunds, and credits for permits, facility use, programs, and services, excluding marina-specific billing.
+    *   **How it’s implied:** The agency is authorized to charge fees for permits (Rules 1-03(b)(3)) and require bonds (Rules 1-03(b)(4)), which can be forfeited (Rules 1-03(b)(7)(i)). Fees are also charged for tennis court reservations (Rules 2-01(b)(1)(i)), locker rentals (Rules 2-01(c)(6)), and various programs (Rules 2-15(a)). The agency also handles refunds and credits for cancellations (Rules 2-07(e)(1), 2-15(b)(1), 2-15(c)) and collects tree replacement fees (Rules 5-01(b), 5-02(d), 5-03).
+
+20. **Marina Billing & Payments**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single billing item or payment for marina services.
+    *   **Covers:** All fees, charges, and payments for dockage, mooring, transient stays, passenger pickup/drop-off, dinghy landing, dock & dine, commercial landing, commercial pickup, electricity, labor, pump-out services, towing, kayak/canoe storage, dinghy/motor storage, key deposits, parking passes, winter storage, hydrohoist wet storage, trailer storage, crane service, travel lift, forklift, haul out, launch, move one way, block, load on trailer, pressure wash bottom, step/unstep mast, bottom painting, and late fees.
+    *   **How it’s implied:** The agency manages billing and payments for a wide array of marina services, including dockage, mooring, electricity, labor, and various other charges (Rules 3-23). Outstanding fees must be paid for permit renewals (Rules 3-06(i)), and the agency can charge for services like replacing dock lines (Rules 3-09(b)), towing vessels (Rules 3-09(d)), and removing abandoned property (Rules 3-14(b), 3-15(a), 3-17(b)). Late fees are also assessed (Rules 3-23, 4-16(b)).
+
+22. **Recreational Facility Membership Register**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single membership for a recreational facility.
+    *   **Covers:** Tennis permits (seasonal, single-play, duplicate), croquet permits, lawn bowling permits, recreational locker permits, model yacht storage permits, kayak/canoe launch permits, golf ID cards, Ocean Breeze Track & Field Athletic Complex memberships, and Recreation Center memberships.
+    *   **How it’s implied:** The agency offers various memberships and permits for recreational facilities, including tennis courts (Rules 2-01(a)), recreation centers (Admin Code 18-149.a, 18-149.b, Rules 2-14), and the Ocean Breeze Park Track & Field Athletic Complex (Rules 2-13). Reduced or free memberships are mandated for certain populations (Admin Code 18-149.a, 18-149.b), and eligibility for free swimming lessons is tied to membership (Admin Code 18-162).
+
+25. **Vessel Inventory**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single vessel.
+    *   **Covers:** All vessels (boats, sailboats, motorboats, dinghies, canoes, kayaks, personal watercraft) associated with marina or mooring permits.
+    *   **How it’s implied:** The agency issues marina and mooring permits for vessels (Rules 3-06, 4-04) and has specific requirements for vessel ownership, registration, seaworthiness, operational condition, and safety equipment (Rules 3-06(c), 3-06(f)(1), 3-12, 4-04(f)). Structural modifications also require approval (Rules 3-10(b)). This necessitates a detailed inventory of vessels.
+
+26. **Mooring Inventory**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single mooring.
+    *   **Covers:** All moorings in Sheepshead Bay, Great Kills Harbor, and adjacent to the West 79th Street Boat Basin.
+    *   **How it’s implied:** The agency issues permits for the use of moorings that meet specific requirements (Rules 4-04(b), 4-07(a)). These rules detail specifications for anchors, chains, pendants, buoys, and installation (Rules 4-07(a)), requiring a comprehensive inventory of mooring characteristics for safety and compliance.
+
+27. **Mooring Inspection & Maintenance Records**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single mooring inspection or maintenance event.
+    *   **Covers:** All inspections and maintenance activities for moorings in the Department's mooring fields.
+    *   **How it’s implied:** The agency requires moorings to be inspected for deterioration at least every two years and repaired or replaced as necessary (Rules 4-07(e)). Evidence of inspection, including condition descriptions and inspector qualifications, may be required for permit renewal (Rules 4-07(e)).
+
+29. **AED Training Records**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single AED training course completion.
+    *   **Covers:** Records of individuals completing AED training courses provided by the department.
+    *   **How it’s implied:** The agency is required to provide AED training courses to youth leagues at no cost (Admin Code 18-150.c). Leagues must also maintain records of AED possession for three years (Admin Code 18-150.e), implying the agency needs to track who has completed the training it provides.
+
+32. **GreenThumb Garden Transfer Process Records**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single garden transfer or relocation process.
+    *   **Covers:** All proposed transfers of lots containing GreenThumb gardens, including offers of alternate sites and retention agreements.
+    *   **How it’s implied:** The agency has a detailed "Garden Review Process" (Rules 6-01, 6-05) for the "Transfer" of lots containing GreenThumb gardens. This process involves notifications, alternate site offers, preparation of "Garden Review Statements," public review, and potential "Retention Agreements" (Rules 6-01, 6-05), all of which require meticulous record-keeping.
+
+34. **Marina Waiting List Records**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single application to a marina waiting list.
+    *   **Covers:** Waiting lists for Boat Basin seasonal dockage, mooring permits, and marina parking permits.
+    *   **How it’s implied:** The agency maintains and utilizes waiting lists for seasonal dockage and mooring permits at the Boat Basin (Rules 3-02, 3-07) and for marina parking permits (Rules 3-17(a)). Applications to be added to these lists require a processing fee (Rules 3-07), necessitating tracking of applicants and their status on the lists.
+
+35. **Wildfire Incident Records**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single wildfire incident.
+    *   **Covers:** All wildfires occurring in parks under the department's jurisdiction.
+    *   **How it’s implied:** The agency is mandated to submit an annual report on wildfires in parks, including location, duration, mitigation efforts, cause, and damage (Admin Code 18-166.c). The report also requires a list of parks with multiple wildfires over 10 years and a description of mitigation actions (Admin Code 18-166.b.2, 18-166.b.3).
+
+36. **Lifeguard Incident Records**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single incident requiring lifeguard emergency assistance.
+    *   **Covers:** All incidents at beaches and pools where lifeguards provided emergency assistance.
+    *   **How it’s implied:** The agency is required to report annually on the number and location of incidents that required emergency assistance by a lifeguard at beaches and pools (Admin Code 18-163.a.4). This necessitates detailed incident-level data collection.
+
+37. **Vehicle Seizure & Release Tracking**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single vehicle seizure incident.
+    *   **Covers:** Motorcycles, all-terrain vehicles, snowmobiles, or motor vehicles operated by unauthorized persons on beaches.
+    *   **How it’s implied:** The agency is authorized to seize unauthorized vehicles on beaches (Rules 2-11(a)) and must follow specific procedures for notice to owners/operators (Rules 2-11(b)) and release of vehicles upon payment of fines and charges or posting of bond (Rules 2-11(c)). Abandoned vehicles must be disposed of according to state law (Rules 2-11(d)), requiring detailed tracking of each seizure incident.
+
+38. **Compost Facility Operations Log**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single batch of plant waste processed or a period of operational data for a compost facility.
+    *   **Covers:** Plant waste managed, operational costs, and staffing at compost facilities.
+    *   **How it’s implied:** The agency is required to establish compost facilities within parks (Admin Code 18-165.b) and use them to compost plant waste (Admin Code 18-165.c.1). An annual report on the operation of these facilities is mandated, including total plant waste managed, annual operating costs, prior disposal processes, and staff numbers (Admin Code 18-165.d).
+
+39. **Soil Lead Testing Records**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single soil lead test result.
+    *   **Covers:** Soil lead testing performed for covered capital projects.
+    *   **How it’s implied:** The agency is legally required to determine the lead level of soil within "covered capital projects" before construction commences (Admin Code 18-156.b). If lead levels exceed federal thresholds, remediation is required (Admin Code 18-156.b), necessitating detailed records of all soil testing and remediation actions.
+
+42. **NYC Sports Commission Member Roster**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single member of the New York City Sports Commission.
+    *   **Covers:** All current and past members of the New York City Sports Commission.
+    *   **How it’s implied:** The Charter (541.a) establishes the New York City Sports Commission with five members appointed by the Mayor and Speaker of the Council for three-year terms. Members may also designate representatives (Charter 541.b), requiring a roster to track appointments, terms, roles, and representatives.
+
+43. **NYC Sports Commission Meeting Records**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single meeting of the New York City Sports Commission.
+    *   **Covers:** All official meetings held by the New York City Sports Commission.
+    *   **How it’s implied:** The Charter (541.c.2) requires the commission to hold at least one meeting per month. Tracking meeting dates, attendance, and quorum (Charter 541.b) is essential for compliance and transparency.
+
+44. **NYC Sports Commission Budget Submissions**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single annual budget submission.
+    *   **Covers:** All proposed annual budgets submitted by the New York City Sports Commission to the council.
+    *   **How it’s implied:** The Charter (541.c.3) mandates the commission to submit a proposed annual budget to the council no later than March thirty-first of each year, requiring tracking of these submissions.
+
+45. **NYC Sports Commission Recommendations Log**
+    *   **Open Data Match:** None directly.
+    *   **One row represents:** A single recommendation made by the commission.
+    *   **Covers:** All recommendations made by the New York City Sports Commission regarding sports activities and city promotion.
+    *   **How it’s implied:** The Charter (541.c.1) requires the commission to make recommendations to ensure the continuation and growth of sports activities and to promote the city as a base for professional sports teams (Charter 541.c.4). This necessitates a log to track these recommendations and their status.

@@ -1,0 +1,780 @@
+**Identified Tabular Datasets**
+
+1.  **Employee Roster**
+    *   **Quotes:**
+        *   "employee timecards" (from instructions)
+        *   "ensuring specialists are up to date on required certifications" (from instructions)
+        *   "Staff Attendance Count" (from example Dataset 4: Senior Center Staff Training Events)
+        *   "Session Leader ID" (from example Dataset 4: Senior Center Staff Training Events)
+        *   "Inspector ID" (from example Dataset 2: Child Care Provider Home Inspections)
+    *   **Why:** Fundamental for managing human resources, payroll, and tracking staff involvement across all agency operations.
+    *   **One row represents:** A single employee of the agency.
+    *   **Covers:** All individuals employed by the agency.
+    *   **Columns:**
+        *   Employee ID
+        *   First Name
+        *   Last Name
+        *   Job Title
+        *   Department
+        *   Hire Date
+        *   Employment Status (Active, Leave, Terminated)
+        *   Contact Information (Email, Phone)
+        *   Supervisor ID (linked to Employee ID)
+
+2.  **Agency Facilities Registry**
+    *   **Quotes:**
+        *   "Building repair" (from instructions)
+        *   "Maintain and operate public health centers and clinics as shall be established in the department" (§ Section 556.d.1)
+        *   "employees of senior centers" (§ 21-203.b)
+        *   "maintain such facilities for the mentally disabled as may be authorized under such appropriations" (§ Section 556.d.10)
+    *   **Why:** Centralized record of all physical locations owned, operated, or managed by the agency for various programs.
+    *   **One row represents:** A single agency facility (e.g., building, clinic, office, senior center).
+    *   **Covers:** All physical locations under the agency's purview, including public health centers, senior centers, and administrative offices.
+    *   **Columns:**
+        *   Facility ID
+        *   Facility Name
+        *   Address
+        *   Type (e.g., Public Health Center, Senior Center, Administrative Office, Mentally Disabled Facility)
+        *   Square Footage
+        *   Ownership Status (Owned/Leased)
+        *   Date Acquired/Leased
+        *   Last Renovation Date
+        *   Capacity
+
+3.  **Asset Registry**
+    *   **Quotes:**
+        *   "MRI machines and their status" (from instructions)
+        *   "computers they maintain" (from instructions)
+        *   "uniform provision" (from instructions)
+        *   "Public Health Center Capital Tracking" (from example Dataset 7)
+    *   **Why:** Essential for tracking all physical assets, their location, and status for maintenance, inventory, and financial management.
+    *   **One row represents:** A single physical asset.
+    *   **Covers:** All agency-owned or managed physical assets, including equipment, vehicles, furniture, IT hardware, and uniforms.
+    *   **Columns:**
+        *   Asset ID
+        *   Asset Name
+        *   Description
+        *   Category (e.g., IT, Medical Equipment, Vehicle, Furniture, Uniform)
+        *   Serial Number
+        *   Purchase Date
+        *   Purchase Cost
+        *   Current Location (linked to Facility ID from Dataset 2: Agency Facilities Registry)
+        *   Status (In Use, In Repair, Retired)
+        *   Last Inventory Date
+        *   Expected Lifespan
+
+4.  **Vendor and Contractor Registry**
+    *   **Quotes:**
+        *   "enter into contracts for the rendition or operation of services and facilities for the mentally disabled on a per capita basis or otherwise" (§ Section 556.d.9)
+        *   "authorized family child care service" (§ 21-120.1.a.5)
+        *   "entities that contract with the department to provide services to senior citizens" (§ 21-203.b)
+    *   **Why:** Centralized record of all external entities the agency contracts with for services or goods.
+    *   **One row represents:** A single vendor, contractor, or authorized service provider.
+    *   **Covers:** All external organizations or individuals providing services or goods to the agency.
+    *   **Columns:**
+        *   Vendor ID
+        *   Vendor Name
+        *   Contact Person
+        *   Contact Information (Email, Phone, Address)
+        *   Services/Goods Provided
+        *   Status (Active, Inactive)
+
+5.  **Contract Management**
+    *   **Quotes:**
+        *   "enter into contracts for the rendition or operation of services and facilities for the mentally disabled on a per capita basis or otherwise" (§ Section 556.d.9)
+        *   "keeping software contracts" (from instructions)
+        *   "payment is made by or pursuant to grants or contracts with a child care provider or authorized family child care service" (§ 21-120.1.a.6)
+    *   **Why:** Essential for tracking all agency contracts, their terms, performance, and financial obligations.
+    *   **One row represents:** A single contract or agreement.
+    *   **Covers:** All contracts for services, goods, software, grants, and facility operations.
+    *   **Columns:**
+        *   Contract ID
+        *   Vendor ID (linked to Dataset 4: Vendor and Contractor Registry)
+        *   Contract Type (e.g., Service, Software License, Grant, Facility Operation)
+        *   Description
+        *   Start Date
+        *   End Date
+        *   Total Value
+        *   Payment Schedule
+        *   Department/Program Using
+        *   Contract Manager (linked to Employee ID from Dataset 1: Employee Roster)
+        *   Status (Active, Expired, Pending Renewal)
+
+6.  **Financial Transactions and Payments**
+    *   **Quotes:**
+        *   "unpaid outstanding fines, penalties or forfeitures imposed by any court, administrative tribunal" (§ 17-373.e)
+        *   "payment is made by or pursuant to grants or contracts with a child care provider or authorized family child care service or by issuance of a child care certificate to a parent" (§ 21-120.1.a.6)
+        *   "within the amounts appropriated therefor, enter into contracts" (§ Section 556.d.9)
+        *   "within the amounts appropriated therefor, execute such programs" (§ Section 556.d.10)
+        *   "Public Health Center Inventory Orders" (from example Dataset 6)
+        *   "Public Health Center Capital Tracking" (from example Dataset 7)
+    *   **Why:** Essential for financial accountability, budgeting, and tracking all monetary flows, including revenue and expenditures.
+    *   **One row represents:** A single financial transaction (e.g., payment, receipt, expenditure, fine assessment).
+    *   **Covers:** All financial transactions related to agency operations, programs, penalties, and grants.
+    *   **Columns:**
+        *   Transaction ID
+        *   Date
+        *   Type (e.g., Payment, Receipt, Fine, Grant Disbursement, Purchase)
+        *   Amount
+        *   Payer/Payee ID (linked to various registries like Applicant/Organization, Vendor ID from Dataset 4: Vendor and Contractor Registry, Employee ID from Dataset 1: Employee Roster, Child Care Provider ID from Dataset 13: Child Care Provider Registry)
+        *   Description
+        *   Program/Budget Code
+        *   Status (e.g., Paid, Outstanding, Received)
+        *   Related Contract ID (linked to Dataset 5: Contract Management)
+
+7.  **Employee Timecards**
+    *   **Quotes:**
+        *   "employee timecards" (from instructions)
+    *   **Why:** Essential for payroll processing, project costing, labor law compliance, and tracking employee work hours.
+    *   **One row represents:** A single employee's time entry for a specific period or task.
+    *   **Covers:** All employee work hours and activities.
+    *   **Columns:**
+        *   Timecard Entry ID
+        *   Employee ID (linked to Dataset 1: Employee Roster)
+        *   Date
+        *   Start Time
+        *   End Time
+        *   Break Time (minutes)
+        *   Project/Task Code
+        *   Department
+        *   Supervisor Approval (Boolean)
+        *   Hours Worked
+
+8.  **Employee Certifications and Training Compliance**
+    *   **Quotes:**
+        *   "ensuring specialists are up to date on required certifications" (from instructions)
+        *   "require that employees of senior centers ... be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years" (§ 21-203.b)
+        *   "Senior Center Staff Training Attendance" (from example Dataset 5)
+    *   **Why:** Ensures staff are qualified, compliant with professional standards, and meet mandatory training requirements.
+    *   **One row represents:** A single certification or mandatory training record for an employee.
+    *   **Covers:** All professional certifications, licenses, and mandatory training completions required for agency staff.
+    *   **Columns:**
+        *   Employee Certification ID
+        *   Employee ID (linked to Dataset 1: Employee Roster)
+        *   Certification/Training Name
+        *   Issuing Body/Training Provider
+        *   Date Issued/Completed
+        *   Expiration Date
+        *   Status (Active, Expired, Pending Renewal, Compliant)
+        *   Renewal Date Required By
+        *   Related Training Event ID (linked to Dataset 19: Senior Center Staff Training Events, if applicable)
+
+9.  **Call Center Complaint and Inquiry Logs**
+    *   **Quotes:**
+        *   "call center complaint logs" (from instructions)
+        *   "directs those who need information regarding elder abuse detection, reporting, counseling and services to call either the 311 citizen service system or the department's Elderly Crime Victims Resource Center" (§ 21-203.d)
+    *   **Why:** Essential for tracking public feedback, identifying systemic issues, ensuring timely resolution, and monitoring service quality.
+    *   **One row represents:** A single complaint, inquiry, or service request received.
+    *   **Covers:** All complaints, inquiries, and service requests received via call center or other public contact points.
+    *   **Columns:**
+        *   Complaint ID
+        *   Date Received
+        *   Time Received
+        *   Caller Information (Anonymous/Name/Contact Details)
+        *   Complaint/Inquiry Type
+        *   Program/Department Affected
+        *   Description
+        *   Status (Open, In Progress, Resolved, Escalated)
+        *   Resolution Details
+        *   Date Resolved
+        *   Employee ID (linked to Dataset 1: Employee Roster) who handled the initial contact/resolution
+
+10. **Maintenance Records**
+    *   **Quotes:**
+        *   "maintenance records" (from instructions)
+        *   "Maintain and operate public health centers and clinics" (§ Section 556.d.1)
+        *   "Building repair" (from instructions)
+    *   **Why:** Essential for facility and equipment upkeep, ensuring safety, operational continuity, and compliance with maintenance schedules.
+    *   **One row represents:** A single maintenance event or work order.
+    *   **Covers:** Maintenance activities for all agency buildings, facilities, and equipment.
+    *   **Columns:**
+        *   Maintenance ID
+        *   Asset ID (linked to Dataset 3: Asset Registry)
+        *   Facility ID (linked to Dataset 2: Agency Facilities Registry)
+        *   Maintenance Type (e.g., Preventive, Corrective, Emergency)
+        *   Description of Work
+        *   Date Requested
+        *   Date Completed
+        *   Performed By (linked to Employee ID from Dataset 1: Employee Roster or Vendor ID from Dataset 4: Vendor and Contractor Registry)
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+        *   Status (e.g., Scheduled, In Progress, Completed, Deferred)
+
+11. **Pet Shop Permits and Applications**
+    *   **Quotes:**
+        *   "An application for a permit required pursuant to section 17-372 of this title or for the renewal of such a permit shall be made and submitted on forms furnished by the department." (§ 17-373.a)
+        *   "The commissioner shall not issue or renew a permit unless department records show there are no finally determined uncorrected violations or unpaid outstanding fines, penalties or forfeitures" (§ 17-373.e)
+        *   "The commissioner shall not issue a new permit or renewal of an existing permit to any person listed on the animal abuse registry" (§ 17-373.f)
+    *   **Why:** In order to administer pet shop permits, the agency must track all applications, their status, and associated compliance information.
+    *   **One row represents:** An application for a pet shop permit.
+    *   **Covers:** New and renewed pet shop permits.
+    *   **Columns:**
+        *   Application ID
+        *   Application type: Initial, Renewal, or Transfer
+        *   Application status: Submitted, In Review, Active, Expired, Rejected
+        *   Shop ID (linked to Dataset 12: Permitted Business Registry)
+        *   Applicant type (sole proprietorship, partnership, corporation, limited liability company)
+        *   Applicant name
+        *   Applicant age
+        *   Applicant gender
+        *   Applicant residence address
+        *   Applicant business address
+        *   Applicant telephone number
+        *   Applicant email address
+        *   Did application provide proof of current workers' compensation and disability benefits insurance coverage?
+        *   Any uncorrected violations/unpaid outstanding fines, penalties or forfeitures by individual or org? (linked to Dataset 6: Financial Transactions and Payments)
+        *   Names of all officers/members of the partnership, limited liability company, group, or corporation
+        *   Animal Abuse Registry Check Status
+        *   Decision Date
+        *   Permit Expiration Date
+
+12. **Permitted Business Registry**
+    *   **Quotes:**
+        *   "An application for a permit required pursuant to section 17-372 of this title" (§ 17-373.a)
+        *   "The commissioner shall not issue a new permit to any entity based on a sale or change of ownership of a permitted business or activity regulated by laws or rules enforced by the department" (§ 17-373.g)
+        *   "permitting approvals" (from instructions)
+    *   **Why:** Centralized record of all businesses or entities that hold permits issued by the agency, for general oversight and compliance.
+    *   **One row represents:** A single permitted business or entity.
+    *   **Covers:** All businesses or entities that have been issued permits by the agency (including pet shops).
+    *   **Columns:**
+        *   Permitted Entity ID (Shop ID for pet shops)
+        *   Permitted Entity Name
+        *   Business Address
+        *   Contact Information
+        *   Permit Type (e.g., Pet Shop, General Permit Type X)
+        *   Current Permit ID (linked to Dataset 11: Pet Shop Permits and Applications or Dataset 13: General Permit Applications)
+        *   Permit Status (Active, Suspended, Revoked)
+        *   Date of Initial Permit Issuance
+        *   Last Inspection Date (linked to Dataset 14: General Inspections)
+
+13. **General Permit Applications**
+    *   **Quotes:**
+        *   "permitting approvals" (from instructions)
+        *   (Implied by the need for a general permitting system beyond specific pet shop permits)
+    *   **Why:** General agency function requiring tracking of all permit applications and decisions for various regulated activities.
+    *   **One row represents:** A single permit application (excluding pet shop permits).
+    *   **Covers:** All permits issued by the agency for various activities, excluding pet shop permits.
+    *   **Columns:**
+        *   Application ID
+        *   Permit Type
+        *   Applicant ID (linked to Dataset 12: Permitted Business Registry or other relevant entity registry)
+        *   Application Date
+        *   Decision Date
+        *   Decision (Approved/Denied)
+        *   Expiration Date
+        *   Conditions/Restrictions
+        *   Application Status (Submitted, In Review, Active, Expired, Rejected)
+        *   Associated Fees (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+14. **General Inspections**
+    *   **Quotes:**
+        *   "department or other investigatory or pre-permit inspections disclose conditions or circumstances indicating that a permit should not be issued or renewed" (§ 17-373.h)
+        *   "inspecting a child care provider's home" (§ 21-120.1.b.2) (This is specific, but implies a general inspection capability)
+        *   "inspecting the operation of every home where subsidized child care is provided" (§ 21-120.1.b.4)
+    *   **Why:** Essential for monitoring compliance across various regulated entities and programs, ensuring safety and adherence to standards.
+    *   **One row represents:** A single inspection event.
+    *   **Covers:** All inspections conducted by the agency across various programs and regulated entities (excluding specific child care home inspections which are covered in Dataset 15).
+    *   **Columns:**
+        *   Inspection ID
+        *   Inspected Entity ID (linked to Dataset 12: Permitted Business Registry, Dataset 2: Agency Facilities Registry, Dataset 18: Senior Center Registry, etc.)
+        *   Inspection Type (e.g., Pre-permit, Routine, Complaint-based, Environmental Compliance)
+        *   Inspection Date
+        *   Inspector ID (linked to Employee ID from Dataset 1: Employee Roster)
+        *   Findings/Violations
+        *   Corrective Actions Required
+        *   Compliance Status
+        *   Follow-up Date
+
+15. **Child Care Provider Registry**
+    *   **Quotes:**
+        *   "Family child care provider" shall mean an individual who is registered pursuant to section three hundred ninety of the social services law." (§ 21-120.1.a.1)
+        *   "Group family child care provider" shall mean an individual who is licensed pursuant to section three hundred ninety of the social services law." (§ 21-120.1.a.2)
+        *   "inspecting a child care provider's home" (§ 21-120.1.b.2)
+    *   **Why:** Centralized record of all registered and licensed child care providers for oversight and program administration.
+    *   **One row represents:** A single child care provider.
+    *   **Covers:** All family and group family child care providers registered or licensed by the agency.
+    *   **Columns:**
+        *   Child Care Provider ID
+        *   Provider Name
+        *   License/Registration Number
+        *   License Type (Family Child Care, Group Family Child Care)
+        *   Address
+        *   Contact Information
+        *   Capacity
+        *   Status (Active, Suspended, Revoked)
+        *   Date Licensed/Registered
+        *   Last Inspection Date (linked to Dataset 16: Child Care Provider Home Inspections)
+
+16. **Child Care Provider Home Inspections**
+    *   **Quotes:**
+        *   "inspecting a child care provider's home within thirty days of the placement of the first child receiving subsidized child care with that child care provider" (§ 21-120.1.b.2)
+        *   "arranging for a visit to a child care provider's home by a parent prior to the placement of such parent's child" (§ 21-120.1.b.3)
+        *   "inspecting the operation of every home where subsidized child care is provided no less than five times each year" (§ 21-120.1.b.4)
+        *   "inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months" (§ 21-120.1.b.5)
+        *   "inspecting the operation of every home where subsidized child care is provided no less than two times during the first six months after the provider has had eligibility to provide subsidized child care restored" (§ 21-120.1.b.6)
+    *   **Why:** Tracking inspections ensures compliance with mandated oversight schedules and safety standards for child care providers.
+    *   **One row represents:** An inspection of a child care provider's home.
+    *   **Covers:** Various types of inspections for subsidized child care providers.
+    *   **Columns:**
+        *   Inspection ID
+        *   Child Care Provider ID (linked to Dataset 15: Child Care Provider Registry)
+        *   Inspection Type: Initial, Parent Visit, Annual, First Six Months, Post-Restoration, Additional
+        *   Initial Child Placement Date (if applicable)
+        *   Exempted via providing care prior to the effective date of this section? (Boolean)
+        *   Exempted via receiving payment for such care exclusively through child care certificates? (Boolean)
+        *   Exempted via United States department of agriculture child and adult care food program? (Boolean)
+        *   Inspection Date
+        *   Inspector ID (linked to Employee ID from Dataset 1: Employee Roster)
+        *   Inspector Organization (linked to Vendor ID from Dataset 4: Vendor and Contractor Registry, if delegated)
+        *   Findings/Violations
+        *   Compliance Status
+        *   Follow-up Date
+
+17. **Subsidized Child Care Enrollment and Placements**
+    *   **Quotes:**
+        *   "placement of the first child receiving subsidized child care with that child care provider" (§ 21-120.1.b.2)
+        *   "monitoring the care provided to each child and ensuring that each child's individual needs are being met" (§ 21-120.1.b.1)
+        *   "Subsidized child care" shall mean all child care services provided by a child care provider paid for wholly or partially with public funds" (§ 21-120.1.a.6)
+    *   **Why:** Tracks which children are receiving subsidized care, their placement details, and ongoing monitoring.
+    *   **One row represents:** A single child's enrollment in subsidized child care.
+    *   **Covers:** All children receiving subsidized child care services.
+    *   **Columns:**
+        *   Enrollment ID
+        *   Child ID
+        *   Child Name
+        *   Parent ID
+        *   Child Care Provider ID (linked to Dataset 15: Child Care Provider Registry)
+        *   Placement Start Date
+        *   Placement End Date
+        *   Subsidy Type (e.g., Certificate, Grant)
+        *   Subsidy Amount
+        *   Status (Active, Ended, Suspended)
+        *   Monitoring Notes
+        *   Referral Made (Boolean)
+        *   Referral Type
+
+18. **Child Care Certificates and Vouchers**
+    *   **Quotes:**
+        *   "Child care certificate" shall mean a certificate or voucher that is issued directly to a parent" (§ 21-120.1.a.7)
+        *   "received payment for such care exclusively through child care certificates" (§ 21-120.1.b.4)
+    *   **Why:** Tracks the issuance, redemption, and financial value of child care certificates/vouchers.
+    *   **One row represents:** A single child care certificate or voucher.
+    *   **Covers:** All child care certificates issued to parents for subsidized child care.
+    *   **Columns:**
+        *   Certificate ID
+        *   Parent ID
+        *   Child ID (linked to Dataset 17: Subsidized Child Care Enrollment and Placements)
+        *   Issue Date
+        *   Expiration Date
+        *   Value
+        *   Status (Issued, Redeemed, Expired, Void)
+        *   Redemption Date
+        *   Child Care Provider ID (linked to Dataset 15: Child Care Provider Registry, if redeemed)
+        *   Transaction ID (linked to Dataset 6: Financial Transactions and Payments)
+
+19. **Child Immunization Information**
+    *   **Quotes:**
+        *   "assisting in the collection and review of medical and immunization information which is required to be maintained for all children for which the provider is providing subsidized child care and the monitoring of those medical and immunization requirements" (§ 21-120.1.b.7)
+    *   **Why:** Explicitly required to be collected and maintained to ensure health compliance for children in subsidized care.
+    *   **One row represents:** A single immunization record for a child.
+    *   **Covers:** Immunizations for children receiving subsidized child care.
+    *   **Columns:**
+        *   Immunization Record ID
+        *   Child ID (linked to Dataset 17: Subsidized Child Care Enrollment and Placements)
+        *   Child Name
+        *   Immunization Name (e.g., MMR, DTaP)
+        *   Date Administered
+        *   Administering Provider
+        *   Immunization Status (e.g., Up-to-date, Needs Booster, Exempt)
+        *   Next Due Date
+
+20. **Senior Center Registry**
+    *   **Quotes:**
+        *   "employees of senior centers" (§ 21-203.b)
+        *   "senior centers to hold at least two educational sessions per year" (§ 21-203.c)
+        *   "every senior center post signage" (§ 21-203.d)
+    *   **Why:** Centralized record of all senior centers for program administration, oversight, and compliance.
+    *   **One row represents:** A single senior center.
+    *   **Covers:** All senior centers operating under the agency's purview.
+    *   **Columns:**
+        *   Senior Center ID
+        *   Senior Center Name
+        *   Address (linked to Facility ID from Dataset 2: Agency Facilities Registry)
+        *   Contact Information
+        *   Operator (Agency/Contractor ID from Dataset 4: Vendor and Contractor Registry)
+        *   Capacity
+        *   Services Offered
+        *   Last Inspection Date (linked to Dataset 14: General Inspections)
+
+21. **Senior Center Staff Training Events**
+    *   **Quotes:**
+        *   "commissioner shall develop a program to train senior service providers in the detection and reporting of elder abuse" (§ 21-203.a)
+        *   "require that employees of senior centers ... be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years" (§ 21-203.b)
+        *   "shall require senior centers to hold at least two educational sessions per year during which guests and members of the senior center will receive counseling regarding elder abuse prevention and awareness" (§ 21-203.c)
+    *   **Why:** Tracking training events ensures compliance with mandatory public and staff education mandates.
+    *   **One row represents:** A training event held by a senior center.
+    *   **Covers:** Mandatory staff elder abuse detection trainings and public elder abuse prevention trainings.
+    *   **Columns:**
+        *   Training Event ID
+        *   Senior Center ID (linked to Dataset 20: Senior Center Registry)
+        *   Event Date
+        *   Event Time
+        *   Session Leader ID (linked to Employee ID from Dataset 1: Employee Roster)
+        *   Session Leader Name
+        *   Training Type (Staff, Public)
+        *   Attendance Count (Total)
+        *   Staff Attendance Count
+        *   Member/Public Attendance Count
+
+22. **Senior Center Staff Training Attendance**
+    *   **Quotes:**
+        *   "commissioner shall develop a program to train senior service providers in the detection and reporting of elder abuse" (§ 21-203.a)
+        *   "require that employees of senior centers ... be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years" (§ 21-203.b)
+    *   **Why:** Tracking individual employee attendance ensures compliance with mandatory training requirements for senior center staff.
+    *   **One row represents:** An elder abuse detection training event attended by senior center staff that counts towards compliance.
+    *   **Covers:** Attendance at mandatory elder abuse detection trainings for senior center employees.
+    *   **Columns:**
+        *   Attendance Record ID
+        *   Senior Center ID (linked to Dataset 20: Senior Center Registry)
+        *   Employee ID (linked to Dataset 1: Employee Roster)
+        *   Training Type (Initial, Refresher)
+        *   Date of Training
+        *   Training Event ID (linked to Dataset 21: Senior Center Staff Training Events)
+        *   Date Next Training Required By
+        *   In Compliance? (Boolean)
+
+23. **Senior Center Signage Inventory**
+    *   **Quotes:**
+        *   "The commissioner shall require that every senior center post signage in a prominent common area section within the center that directs those who need information regarding elder abuse detection, reporting, counseling and services to call either the 311 citizen service system or the department's Elderly Crime Victims Resource Center.” (§ 21-203.d)
+    *   **Why:** Tracking posted signage ensures compliance with mandatory public information requirements at senior centers.
+    *   **One row represents:** A single piece of signage posted at a senior center.
+    *   **Covers:** All mandatory signage related to elder abuse posted in senior centers.
+    *   **Columns:**
+        *   Signage ID
+        *   Senior Center ID (linked to Dataset 20: Senior Center Registry)
+        *   Location within Center (e.g., Lobby, Dining Area)
+        *   Date Posted
+        *   Last Inspected Date (linked to Dataset 14: General Inspections)
+        *   Content Type (e.g., Elder Abuse Reporting, Emergency Contact)
+        *   Status (Visible, Damaged, Missing)
+
+24. **Public Health Center Registry**
+    *   **Quotes:**
+        *   "Maintain and operate public health centers and clinics as shall be established in the department" (§ Section 556.d.1)
+        *   "Public Health Center Inventory Orders" (from example Dataset 6)
+        *   "Public Health Center Capital Tracking" (from example Dataset 7)
+    *   **Why:** Centralized record of all public health centers and clinics for operational management and service delivery.
+    *   **One row represents:** A single public health center or clinic.
+    *   **Covers:** All public health centers and clinics maintained and operated by the department.
+    *   **Columns:**
+        *   Center ID
+        *   Center Name
+        *   Address (linked to Facility ID from Dataset 2: Agency Facilities Registry)
+        *   Type (e.g., Clinic, Laboratory, General Health Center)
+        *   Services Provided
+        *   Operating Hours
+        *   Last Maintenance Date (linked to Dataset 10: Maintenance Records)
+        *   Capacity
+
+25. **Public Health Center Inventory Orders**
+    *   **Quotes:**
+        *   "Maintain and operate public health centers and clinics" (§ Section 556.d.1)
+        *   "conduct laboratory examinations for the diagnosis, prevention and control of disease" (§ Section 556.d.3)
+        *   "provide diagnostic and therapeutic services for maternity and child health" (§ Section 556.d.6)
+    *   **Why:** Essential for managing consumable supplies needed to operate public health centers and clinics effectively.
+    *   **One row represents:** An order of consumable stock for a public health center.
+    *   **Covers:** All orders for consumable stock across all Public Health Centers.
+    *   **Columns:**
+        *   Order ID
+        *   Order Date
+        *   Item Name
+        *   Quantity
+        *   Unit Cost
+        *   Total Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+        *   Center ID (linked to Dataset 24: Public Health Center Registry)
+        *   Vendor ID (linked to Dataset 4: Vendor and Contractor Registry)
+        *   Delivery Date
+        *   Status (Ordered, Received, Backordered)
+
+26. **Public Health Center Capital Tracking**
+    *   **Quotes:**
+        *   "Maintain and operate public health centers and clinics" (§ Section 556.d.1)
+        *   "conduct laboratory examinations for the diagnosis, prevention and control of disease" (§ Section 556.d.3)
+    *   **Why:** Essential for managing capital investments and major equipment in public health centers for long-term operational planning.
+    *   **One row represents:** An order or acquisition of a capital investment for a public health center.
+    *   **Covers:** All orders and tracking for capital needs across all Public Health Centers.
+    *   **Columns:**
+        *   Capital Acquisition ID
+        *   Order Date
+        *   Item Name
+        *   Quantity
+        *   Unit Cost
+        *   Total Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+        *   Center ID (linked to Dataset 24: Public Health Center Registry)
+        *   Vendor ID (linked to Dataset 4: Vendor and Contractor Registry)
+        *   Delivery Date
+        *   Installation Date
+        *   Asset ID (linked to Dataset 3: Asset Registry)
+        *   Expected Necessary Replacement Date
+
+27. **Laboratory Examinations Log**
+    *   **Quotes:**
+        *   "conduct laboratory examinations for the diagnosis, prevention and control of disease" (§ Section 556.d.3)
+    *   **Why:** Tracks individual laboratory tests performed for diagnosis, prevention, and control of diseases.
+    *   **One row represents:** A single laboratory examination.
+    *   **Covers:** All laboratory examinations conducted by the department.
+    *   **Columns:**
+        *   Examination ID
+        *   Patient ID
+        *   Date of Sample Collection
+        *   Date of Examination
+        *   Test Type
+        *   Results
+        *   Ordering Physician/Clinic (linked to Center ID from Dataset 24: Public Health Center Registry or other provider ID)
+        *   Status (Pending, Completed, Canceled)
+        *   Lab Technician ID (linked to Employee ID from Dataset 1: Employee Roster)
+
+28. **Diagnostic, Preventive, and Therapeutic Product Production and Distribution**
+    *   **Quotes:**
+        *   "produce, standardize and distribute certain diagnostic, preventive and therapeutic products" (§ Section 556.d.3)
+    *   **Why:** Tracks the production, standardization, and distribution of health products for public health initiatives.
+    *   **One row represents:** A single batch or unit of a product produced or distributed.
+    *   **Covers:** All diagnostic, preventive, and therapeutic products manufactured or distributed by the agency.
+    *   **Columns:**
+        *   Product Batch ID
+        *   Product Name
+        *   Product Type (Diagnostic, Preventive, Therapeutic)
+        *   Production Date
+        *   Expiration Date
+        *   Quantity Produced
+        *   Quantity Distributed
+        *   Distribution Date
+        *   Recipient Entity ID (linked to Facility ID from Dataset 2: Agency Facilities Registry, or other entity ID)
+        *   Cost of Production (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+29. **Health Research Projects**
+    *   **Quotes:**
+        *   "engage in or promote health research for the purpose of improving the quality of medical and health care" (§ Section 556.d.2)
+    *   **Why:** Tracks ongoing and completed health research initiatives to improve medical and health care quality.
+    *   **One row represents:** A single health research project.
+    *   **Covers:** All health research projects conducted or promoted by the department.
+    *   **Columns:**
+        *   Research Project ID
+        *   Project Title
+        *   Lead Researcher ID (linked to Employee ID from Dataset 1: Employee Roster)
+        *   Start Date
+        *   End Date
+        *   Funding Source (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+        *   Budget
+        *   Status (Planning, Active, Completed, Suspended)
+        *   Key Findings/Outcomes Summary
+
+30. **Public Education Programs and Events**
+    *   **Quotes:**
+        *   "promote or provide for public education on mental disability and the prevention and control of disease" (§ Section 556.d.4)
+    *   **Why:** Tracks public education initiatives and their reach to promote health and prevent disease.
+    *   **One row represents:** A single public education program or event.
+    *   **Covers:** All public education efforts related to health, mental disability, and disease prevention.
+    *   **Columns:**
+        *   Program/Event ID
+        *   Title
+        *   Topic
+        *   Date
+        *   Location (linked to Facility ID from Dataset 2: Agency Facilities Registry or other venue)
+        *   Target Audience
+        *   Number of Attendees
+        *   Materials Distributed
+        *   Lead Staff ID (linked to Employee ID from Dataset 1: Employee Roster)
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+31. **Disease Prevention and Control Programs**
+    *   **Quotes:**
+        *   "promote or provide for programs for the prevention and control of disease" (§ Section 556.d.5)
+    *   **Why:** Tracks initiatives aimed at preventing and controlling diseases within the city.
+    *   **One row represents:** A single disease prevention or control program.
+    *   **Covers:** All programs for disease prevention and control.
+    *   **Columns:**
+        *   Program ID
+        *   Title
+        *   Disease Targeted
+        *   Type of Intervention (e.g., Vaccination Campaign, Screening Program, Surveillance)
+        *   Start Date
+        *   End Date
+        *   Target Population
+        *   Number of Participants
+        *   Outcomes/Metrics
+        *   Lead Staff ID (linked to Employee ID from Dataset 1: Employee Roster)
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+32. **Mentally Disabled Facilities Registry**
+    *   **Quotes:**
+        *   "programs for the prevention, diagnosis, care, treatment, social and vocational rehabilitation, special education and training of the mentally disabled" (§ Section 556.d.5)
+        *   "enter into contracts for the rendition or operation of services and facilities for the mentally disabled" (§ Section 556.d.9)
+        *   "maintain such facilities for the mentally disabled as may be authorized under such appropriations" (§ Section 556.d.10)
+    *   **Why:** Centralized record of facilities dedicated to services for the mentally disabled, for oversight and resource allocation.
+    *   **One row represents:** A single facility for the mentally disabled.
+    *   **Covers:** All facilities for the mentally disabled operated or contracted by the agency.
+    *   **Columns:**
+        *   Facility ID (linked to Dataset 2: Agency Facilities Registry)
+        *   Facility Name
+        *   Address
+        *   Type of Facility (e.g., Residential, Day Program, Clinic)
+        *   Services Provided
+        *   Capacity
+        *   Operator (Agency/Contractor ID from Dataset 4: Vendor and Contractor Registry)
+        *   License Status
+        *   Last Inspection Date (linked to Dataset 14: General Inspections)
+
+33. **Mentally Disabled Service Encounters**
+    *   **Quotes:**
+        *   "promote or provide for programs for the prevention, diagnosis, care, treatment, social and vocational rehabilitation, special education and training of the mentally disabled" (§ Section 556.d.5)
+    *   **Why:** Tracks individual service delivery to mentally disabled persons, ensuring access to care and monitoring outcomes.
+    *   **One row represents:** A single service encounter for a mentally disabled person.
+    *   **Covers:** All diagnostic, care, treatment, rehabilitation, education, and training services provided to mentally disabled individuals.
+    *   **Columns:**
+        *   Service Encounter ID
+        *   Client ID
+        *   Date of Service
+        *   Service Type (e.g., Diagnosis, Therapy, Vocational Training, Residential Care)
+        *   Provider ID (linked to Employee ID from Dataset 1: Employee Roster, Facility ID from Dataset 32: Mentally Disabled Facilities Registry, or Vendor ID from Dataset 4: Vendor and Contractor Registry)
+        *   Duration
+        *   Outcome Notes
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+34. **Maternity and Child Health Service Encounters**
+    *   **Quotes:**
+        *   "promote or provide diagnostic and therapeutic services for maternity and child health" (§ Section 556.d.6)
+    *   **Why:** Tracks individual service delivery for maternity and child health, ensuring access to care and monitoring health outcomes.
+    *   **One row represents:** A single service encounter related to maternity or child health.
+    *   **Covers:** All diagnostic and therapeutic services for maternity and child health.
+    *   **Columns:**
+        *   Service Encounter ID
+        *   Client ID (Mother/Child)
+        *   Date of Service
+        *   Service Type (e.g., Prenatal Check-up, Pediatric Exam, Immunization)
+        *   Provider ID (linked to Employee ID from Dataset 1: Employee Roster or Center ID from Dataset 24: Public Health Center Registry)
+        *   Outcome Notes
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+35. **Family Planning Service Encounters**
+    *   **Quotes:**
+        *   "promote or provide diagnostic and therapeutic services for... family planning" (§ Section 556.d.6)
+    *   **Why:** Tracks individual service delivery for family planning, ensuring access to services and monitoring program effectiveness.
+    *   **One row represents:** A single service encounter related to family planning.
+    *   **Covers:** All diagnostic and therapeutic services for family planning.
+    *   **Columns:**
+        *   Service Encounter ID
+        *   Client ID
+        *   Date of Service
+        *   Service Type (e.g., Contraception Counseling, STI Screening, Pregnancy Testing)
+        *   Provider ID (linked to Employee ID from Dataset 1: Employee Roster or Center ID from Dataset 24: Public Health Center Registry)
+        *   Outcome Notes
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+36. **Communicable Disease Service Encounters**
+    *   **Quotes:**
+        *   "promote or provide diagnostic and therapeutic services for... communicable disease" (§ Section 556.d.6)
+    *   **Why:** Tracks individual service delivery for communicable diseases, crucial for public health surveillance and intervention.
+    *   **One row represents:** A single service encounter related to a communicable disease.
+    *   **Covers:** All diagnostic and therapeutic services for communicable diseases.
+    *   **Columns:**
+        *   Service Encounter ID
+        *   Client ID
+        *   Date of Service
+        *   Service Type (e.g., Testing, Treatment, Contact Tracing)
+        *   Disease
+        *   Provider ID (linked to Employee ID from Dataset 1: Employee Roster or Center ID from Dataset 24: Public Health Center Registry)
+        *   Outcome Notes
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+37. **Medical Rehabilitation Service Encounters**
+    *   **Quotes:**
+        *   "promote or provide diagnostic and therapeutic services for... medical rehabilitation" (§ Section 556.d.6)
+    *   **Why:** Tracks individual service delivery for medical rehabilitation, ensuring access to care and monitoring recovery progress.
+    *   **One row represents:** A single service encounter related to medical rehabilitation.
+    *   **Covers:** All diagnostic and therapeutic services for medical rehabilitation.
+    *   **Columns:**
+        *   Service Encounter ID
+        *   Client ID
+        *   Date of Service
+        *   Service Type (e.g., Physical Therapy, Occupational Therapy, Counseling)
+        *   Condition
+        *   Provider ID (linked to Employee ID from Dataset 1: Employee Roster or Center ID from Dataset 24: Public Health Center Registry)
+        *   Outcome Notes
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+38. **School Children Health Service Encounters**
+    *   **Quotes:**
+        *   "promote or provide medical and health services for school children" (§ Section 556.d.7)
+    *   **Why:** Tracks individual service delivery for school children, ensuring their health and well-being.
+    *   **One row represents:** A single service encounter for a school child.
+    *   **Covers:** All medical and health services provided to school children.
+    *   **Columns:**
+        *   Service Encounter ID
+        *   Child ID
+        *   School ID
+        *   Date of Service
+        *   Service Type (e.g., Vision Screening, Dental Check, Health Education)
+        *   Provider ID (linked to Employee ID from Dataset 1: Employee Roster or Center ID from Dataset 24: Public Health Center Registry)
+        *   Outcome Notes
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+39. **Ambulant Sick and Needy Service Encounters**
+    *   **Quotes:**
+        *   "promote or provide medical and health services for the ambulant sick and needy persons of the city" (§ Section 556.d.7)
+    *   **Why:** Tracks individual service delivery for ambulant sick and needy persons, ensuring access to essential health services.
+    *   **One row represents:** A single service encounter for an ambulant sick or needy person.
+    *   **Covers:** All medical and health services provided to ambulant sick and needy persons.
+    *   **Columns:**
+        *   Service Encounter ID
+        *   Client ID
+        *   Date of Service
+        *   Service Type (e.g., General Medical Consultation, Prescription Assistance, Referral)
+        *   Provider ID (linked to Employee ID from Dataset 1: Employee Roster or Center ID from Dataset 24: Public Health Center Registry)
+        *   Outcome Notes
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+40. **Incarcerated Individuals Health Service Encounters**
+    *   **Quotes:**
+        *   "promote or provide medical and health services for the incarcerated individuals of prisons maintained and operated by the city" (§ Section 556.d.8)
+    *   **Why:** Tracks individual service delivery for incarcerated individuals, ensuring their right to medical and health services.
+    *   **One row represents:** A single service encounter for an incarcerated individual.
+    *   **Covers:** All medical and health services provided to incarcerated individuals in city-maintained prisons.
+    *   **Columns:**
+        *   Service Encounter ID
+        *   Incarcerated Individual ID
+        *   Prison ID
+        *   Date of Service
+        *   Service Type (e.g., Medical Exam, Mental Health Counseling, Emergency Care)
+        *   Provider ID (linked to Employee ID from Dataset 1: Employee Roster or Center ID from Dataset 24: Public Health Center Registry)
+        *   Outcome Notes
+        *   Cost (linked to Transaction ID from Dataset 6: Financial Transactions and Payments)
+
+41. **Medical Audits**
+    *   **Quotes:**
+        *   "the department shall have the authority to conduct medical audits, to receive reports on forms prepared or prescribed by the department" (§ Section 556.d.2)
+    *   **Why:** Tracks the conduct and findings of medical audits to ensure quality of care and compliance with standards.
+    *   **One row represents:** A single medical audit event.
+    *   **Covers:** All medical audits conducted by the department.
+    *   **Columns:**
+        *   Audit ID
+        *   Audit Date
+        *   Audited Entity ID (linked to Facility ID from Dataset 2: Agency Facilities Registry, Provider ID from Dataset 15: Child Care Provider Registry, or other relevant entity)
+        *   Audit Scope
+        *   Findings
+        *   Recommendations
+        *   Status (Open, Closed, In Progress)
+        *   Follow-up Date
+        *   Auditor ID (linked to Employee ID from Dataset 1: Employee Roster)
+
+---
+
+**Non-Tabular Information:**
+
+*   Job applications (text, resumes, cover letters)
+*   Rules and regulations (legal documents)
+*   Receipts (individual paper/image, financial data is summarized in Dataset 6)
+*   Photos (image files)
+*   Research documents (reports, papers, presentations)
+*   Legal changes (legislative text, policy documents)
+*   Medical records (detailed patient charts, often semi-structured or free text)
+*   Parent visit records (the *arrangement* is a workflow task, the *visit itself* is captured in Dataset 16 as an inspection type)

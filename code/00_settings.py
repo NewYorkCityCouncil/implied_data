@@ -10,6 +10,7 @@ import sys
 import pathlib
 import glob
 from pathlib import Path
+import numpy as np
 
 exec(open("../tokens.py").read())
 genai.configure(api_key=gemini_key)
@@ -18,11 +19,14 @@ genai.configure(api_key=gemini_key)
 # prep + settings
 #-----------------------------------------------------------------------------------
 
-dept = "OCMH"
+dept = "Education"
 
 dept_options = ["Health", "Parks", "Probation", "Fire", "Emergency", "moRemediation", "Finance", 
                 "SocialServices", "SmallBusiness", "Taxi", "Police", "Environmental", "DCAS", 
-                "Transportation", "HPD", "Operations", "Design", "DYCD", "OCMH"]
+                "Transportation", "HPD", "Operations", "Design", "DYCD", "OCMH", "Aging", "Correction", 
+                "Consumer"]
+
+state_depts = ["Education", "DYCD"]
 
 
 #-----------------------------------------------------------------------------------
@@ -113,11 +117,12 @@ def pull_gemini_state(base_path, file_list, chunk_size=35000):
         out_name = f"{base_path}/data/output/lists/{dept}_state_{idx}_current.txt"
         with open(out_name, "w", encoding='utf-8') as out_file:
             out_file.write(response_text)
+        print(f"Done. Saved to {out_name}")
+
+        # save out for archive
         out_name = f"{base_path}/data/output/lists/archive/{dept}_state_{idx}_{date_str}.txt"
         with open(out_name, "w", encoding='utf-8') as out_file:
             out_file.write(response_text)
-        
-        print(f"Done. Saved to {out_name}")
 
 def save_file(to_save, dept, doc_type):
     # save out the one to use
@@ -137,6 +142,7 @@ def pull_gemini_ops(dept, level_gov, doc_type):
     f_exists = os.path.exists(file_type)
     if not f_exists: 
         save_file("NA", dept, doc_type)
+        return "NA"
 
     file = open(file_type).read()
 
@@ -190,7 +196,7 @@ def pull_gemini_db(dept, state_data=False):
                 "Here are the datasets identified from the Rules: " + rules +\
                 "Here are the datasets identified from the State Code: " + state_text +\
                 "Here are the titles and descriptions of all the datasets the agency has on Open Data: " +\
-                dept_opendata.to_string() + " \n\n " + "</context>\n\n " +\
+                dept_opendata + " \n\n " + "</context>\n\n " +\
             "<instructions>" + prompt_instructions_two + "</instructions>\n\n " +\
             "<output_format>" + prompt_format_two + "</output_format>\n\n " +\
             "<final_instructions>" + prompt_final + "</final_instructions>"
@@ -204,7 +210,7 @@ def pull_gemini_db(dept, state_data=False):
                 "Here are the datasets identified from the Administrative Code: " + adcode +\
                 "Here are the datasets identified from the Rules: " + rules +\
                 "Here are the titles and descriptions of all the datasets the agency has on Open Data: " +\
-                dept_opendata.to_string() + " \n\n " + "</context>\n\n " +\
+                dept_opendata + " \n\n " + "</context>\n\n " +\
             "<instructions>" + prompt_instructions_two + "</instructions>\n\n " +\
             "<output_format>" + prompt_format_two + "</output_format>\n\n " +\
             "<final_instructions>" + prompt_final + "</final_instructions>"
@@ -225,7 +231,7 @@ def pull_gemini_db(dept, state_data=False):
 def pull_gemini_statedb(dept, input_str = "state", output_str = "statecomb1", date_str = datetime.today().strftime('%Y-%m-%d'), chunk_size = 150000):
 
     # prep to read in data
-    files_to_load = sorted(glob.glob(f'data/output/*Education_{input_str}*{date_str}*'))
+    files_to_load = sorted(glob.glob(f'data/output/lists/*Education_{input_str}_*_current*'))
     i = 1
 
     # run in chunks. load in data and remove from the list until nothing left
@@ -249,30 +255,35 @@ def pull_gemini_statedb(dept, input_str = "state", output_str = "statecomb1", da
                 break
         state_text = "\n".join(state_text) # combine all of them
 
-        # if that file already exists
-        file_name = f"data/output/{dept}_{output_str}_{i}_{date_str}.txt" 
+        file_name = f"data/output/lists/{dept}_{output_str}_{i}_current.txt" 
         if Path(file_name).is_file():
+            # if that file already exists, skip
             print(f"Combination {i} has already been run. Skipping...")
-        
-        # create the prompt
-        prompt = "<instructions>" + prompt_instructions_two + " " +\
-                prompt_schemas + "</instructions>\n\n" +\
-                "<context>" +\
-                    "Here are the datasets identified from the State Code: " + state_text +\
-                    "Here are the titles and descriptions of all the datasets the agency has on Open Data: " +\
-                    dept_opendata.to_string() + " \n\n " + "</context>\n\n " +\
-                "<instructions>" + prompt_instructions_two + "</instructions>\n\n " +\
-                "<output_format>" + prompt_format_two + "</output_format>\n\n " +\
-                "<final_instructions>" + prompt_final + "</final_instructions>"
+        else: 
+            # if the file doesn't exist, create the prompt
+            prompt = "<instructions>" + prompt_instructions_two + " " +\
+                    prompt_schemas + "</instructions>\n\n" +\
+                    "<context>" +\
+                        "Here are the datasets identified from the State Code: " + state_text +\
+                        "Here are the titles and descriptions of all the datasets the agency has on Open Data: " +\
+                        dept_opendata + " \n\n " + "</context>\n\n " +\
+                    "<instructions>" + prompt_instructions_two + "</instructions>\n\n " +\
+                    "<output_format>" + prompt_format_two + "</output_format>\n\n " +\
+                    "<final_instructions>" + prompt_final + "</final_instructions>"
 
-        # actually call gemini
-        response = submit_gemini_query(api_key = gemini_key, 
-                                       system_message = prompt_persona_db, user_message = prompt)
+            # actually call gemini
+            response = submit_gemini_query(api_key = gemini_key, 
+                                        system_message = prompt_persona_db, user_message = prompt)
 
-        # save 
-        file_name = f"data/output/{dept}_{output_str}_{i}_{date_str}.txt" 
-        with open(file_name, "w") as file:
-            file.write(response)
+            # save 
+            file_name = f"data/output/lists/archive/{dept}_{output_str}_{i}_{date_str}.txt" 
+            with open(file_name, "w") as file:
+                file.write(response)
+
+            # save 
+            file_name = f"data/output/lists/{dept}_{output_str}_{i}_current.txt" 
+            with open(file_name, "w") as file:
+                file.write(response)
 
         # iterate
         i = i+1

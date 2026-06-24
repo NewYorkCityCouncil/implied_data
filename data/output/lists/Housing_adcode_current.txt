@@ -1,0 +1,408 @@
+**1. Building & Property Master Data**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-301.1.(a): "tenants of real property which the commissioner of housing preservation and development is authorized to maintain and supervise"
+- § 26-301.1.(a).(ii): "for tenants of real property acquired for public purposes"
+- § 26-301.1.(a).(iii): "for tenants of real property located in any neighborhood improvement district designated by the city planning commission"
+- § 26-301.1.(a).(iv): "for the tenants of any privately owned building or other improvement which is to be voluntarily rehabilitated"
+- § 26-301.1.e: "review conditions of city-owned dwellings used for residential purposes"
+- § 26-403.e.1: "any building or structure, permanent or temporary, or any part thereof, occupied or intended to be occupied by one or more individuals as a residence"
+- § 26-504.a: "Class A multiple dwellings not owned as a cooperative or as a condominium, ... containing six or more dwelling units"
+- § 26-505: "a class A multiple dwelling shall be deemed to include a multiple family garden-type maisonette dwelling complex containing six or more dwelling units"
+- § 26-517.a.1: "the name and address of the building or group of buildings or development in which such housing accommodation is located"
+- § 26-903.a.3: "the address; block; lot number; stories; square footage of the building at its base"
+- § 26-1702: "each zoning lot that contains a generating site, a compensated development, an MIH development or an MIH site"
+- § 26-1901: "report of vacant buildings or lots under the jurisdiction of the department categorized according to the potential development or feasibility status of such buildings or lots as affordable housing."
+- § 26-3101: "Class A multiple dwelling", "Private dwelling", "Class B multiple dwelling"
+- § 26-3602.b: "information indicating whether a building is located within the 10-year rainfall flood risk area"
+**Why:** Essential for identifying and managing all properties and buildings under agency jurisdiction or subject to its regulations.
+**One row represents:** A single building, property, or zoning lot.
+**Covers:** All real properties, buildings, and zoning lots relevant to HPD's mission, including city-owned, privately-owned, rent-regulated, and development sites.
+**Columns:**
+- **Building ID** (Primary Key)
+- **Property ID** (If multiple buildings on one property)
+- **Zoning Lot ID** (If applicable)
+- **Building Name**
+- **Street Address**
+- **Borough**
+- **Block Number**
+- **Lot Number**
+- **Community District**
+- **Council District**
+- **Building Type** (e.g., Class A Multiple Dwelling, Class B Multiple Dwelling, Private Dwelling, Garden-Type Maisonette, Mixed Use)
+- **Number of Stories**
+- **Square Footage (Building Base)**
+- **Year Built/Completed**
+- **Ownership Type** (e.g., Private, City-Owned, Cooperative, Condominium, Housing Company)
+- **City-Owned Status** (Yes/No)
+- **Vacant Property Status** (e.g., Vacant Building, Vacant Lot, Potential for Affordable Housing, Not Suitable)
+- **Neighborhood Improvement District** (Yes/No, if applicable)
+- **10-Year Rainfall Flood Risk Area** (Yes/No)
+- **Regulatory Agreement ID** (Foreign Key to **Dataset 16**)
+- **Last Inspection Date** (Foreign Key to **Dataset 9**)
+- **Last Violation Date** (Foreign Key to **Dataset 8**)
+
+**2. Dwelling Unit Master Data**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-403.e: ""Housing accommodation." ... any building or structure, permanent or temporary, or any part thereof, occupied or intended to be occupied by one or more individuals as a residence"
+- § 26-517.a: "Each housing accommodation which is subject to this law shall be registered by the owner thereof"
+- § 26-903.a.3: "the number of proposed dwelling units including the number of bedrooms, disaggregated by income limits and all initial legal and actual rents"
+- § 26-1801: ""Affordable unit." The term "affordable unit" means a dwelling unit for which occupancy or initial occupancy is required to be restricted based on the income of the occupant"
+- § 26-1801: "Floor area of such unit in square feet", "Number of bedrooms in such unit"
+- § 26-1801: "A statement as to whether such unit is occupied"
+- § 26-1801: "A statement as to whether such unit is an affordable unit and, if such unit is an affordable unit, (i) a description of each affordable housing program for which such unit is serving as an affordable unit, (ii) the maximum lawful rent for such unit and (iii) the actual rent being charged for such unit, if any"
+- § 26-1801: "Whether the owner will be responsible for payment of utility services for such unit and for which utility services the owner is responsible"
+- § 26-1801: "A description of the pet policy for such unit"
+- § 26-1801: "A statement as to whether the following amenities or services will be available to the occupant of such unit and whether such occupant will be required to pay a fee for using such amenities or services: (a) Air conditioning; (b) A gymnasium or pool located in or on the premises of such building; (c) A security guard, watch person or a person with similar responsibilities is routinely in or on the premises of such building; (d) A person responsible for accepting deliveries on behalf of such occupant is routinely in or on the premises of such building; and (e) An intercommunication device that such occupant can use to allow entry into such unit or such building"
+- § 26-2201: ""Affordable housing unit." The term "affordable housing unit" means a dwelling unit that is (i) required, pursuant to a federal, state or local law, rule or program administered by the city or an agreement with the city or a person acting on the city's behalf, to be affordable for an extremely low income household, a very low income household, a low income household, a moderate income household or a middle income household and (ii) operates pursuant to an agreement administered by the department."
+- § 26-2801: ""Class A dwelling unit" means a dwelling unit in a class A multiple dwelling"
+- § 26-3503.a: "incorporate the features identified in the universal design list developed pursuant to section 26-3502 in all of the dwelling units offered for rent in a housing development project."
+- § 26-3701: ""Converted homeownership unit" means a converted non-residential-to-homeownership unit or a converted rental-to-homeownership unit that qualifies as an income restricted unit."
+**Why:** Comprehensive tracking of individual housing units is essential for all housing programs and regulations.
+**One row represents:** A single dwelling unit.
+**Covers:** All housing accommodations/dwelling units, including rent-controlled, rent-stabilized, affordable housing units, and those in city-assisted projects.
+**Columns:**
+- **Unit ID** (Primary Key)
+- **Building ID** (Foreign Key to **Dataset 1**)
+- **Apartment/Unit Number**
+- **Floor Number**
+- **Number of Bedrooms**
+- **Floor Area (Square Feet)**
+- **Occupancy Status** (e.g., Occupied, Vacant, Temporarily Exempt)
+- **Occupant ID** (Foreign Key to **Dataset 4**)
+- **Affordable Unit Status** (Yes/No)
+- **Affordable Housing Program Type** (e.g., 421-a, MIH, PHFL Article II, IV, V, XI, Section 8)
+- **Income Band Restriction** (e.g., Extremely Low, Very Low, Low, Moderate, Middle Income)
+- **Maximum Lawful Rent (Affordable Unit)**
+- **Actual Rent Charged (Affordable Unit)**
+- **Universal Design Features Included** (List of features from **Dataset 52**)
+- **Amenities Available** (e.g., AC, Gym/Pool, Security, Delivery Person, Intercom)
+- **Amenity Fees** (For each amenity)
+- **Pet Policy** (e.g., Allowed, Not Allowed, Restrictions)
+- **Utility Responsibility (Owner)** (List of utilities, e.g., Electric, Gas, Heat, Hot Water)
+- **Unit Type** (e.g., Class A, Class B, Rooming Unit, Converted Homeownership, New Construction, Income Restricted, Down Payment Assistance)
+- **Converted From Use** (e.g., Non-residential, Rental)
+- **Initial Sales Price (Homeownership)**
+- **Regulatory Agreement ID** (Foreign Key to **Dataset 16**)
+- **Last Rent Registration ID** (Foreign Key to **Dataset 7**)
+
+**3. Owner/Landlord Master Data**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-305.1: ""Owner" for purposes of this section shall mean and include the owner or owners of the freehold of the premises or lesser estate therein, or any successor in interest of such owner or owners, a mortgagee or vendee in possession, a lienholder, assignee of rents, receiver, executor, trustee, lessee, agent, or any other person, firm or corporation, in whole or partial possession, or directly or indirectly in control of a building."
+- § 26-403.f: ""Landlord." An owner, lessor, sublessor, assignee, or other person receiving or entitled to receive rent for the use or occupancy of any housing accommodation or an agent of any of the foregoing."
+- § 26-517.a: "Each housing accommodation which is subject to this law shall be registered by the owner thereof"
+- § 26-801.m: ""Owner" shall mean any person or entity, or combination of such persons or entities, or any agent of such persons or entities, that has a controlling interest in assisted rental housing that is subject to conversion."
+- § 26-901.f: ""Developer" means an individual, sole proprietorship, partnership, joint venture, corporation or other entity that receives city financial assistance for a housing development project."
+- § 26-901.c: ""Contractor" means an individual, sole proprietorship, partnership, joint venture, corporation or other entity that enters into a contract or other agreement with or is otherwise engaged by a developer or the department to perform project work."
+- § 26-901.o: ""Subcontractor" means an individual, sole proprietorship, partnership, joint venture, corporation or other entity that enters into a contract or other agreement with or is otherwise engaged by a contractor, the department or other entity to perform project work."
+- § 26-902.b: "the name and address of each entity on such list and the name and title of each principal officer and principal owner of such entity"
+- § 26-3101: ""Registered host" or "host" means a natural person who is a permanent occupant of a dwelling unit registered in accordance with this chapter."
+- § 26-3701: ""Cooperative corporation" means a corporation that owns or holds a leasehold interest in residential real property and issues shares of stock or membership interests allocated to specific dwelling units"
+**Why:** Centralized information on all entities responsible for properties, projects, and services is crucial for oversight and communication.
+**One row represents:** A single owner, landlord, developer, contractor, subcontractor, cooperative corporation, or short-term rental host.
+**Covers:** All individuals and entities that own, manage, develop, or provide services for properties and dwelling units under HPD's purview.
+**Columns:**
+- **Owner/Entity ID** (Primary Key)
+- **Owner/Entity Name**
+- **Type of Entity** (e.g., Individual, Corporation, Partnership, LLC, Cooperative Corporation, Developer, Contractor, Subcontractor, Host)
+- **Business Address**
+- **Mailing Address**
+- **Phone Number**
+- **Email Address**
+- **Principal Officer Names & Titles** (For corporate/partnership entities)
+- **Principal Owner Names & Ownership Interest** (For corporate/partnership entities)
+- **Building ID** (Foreign Key to **Dataset 1**, if direct owner)
+- **Prequalified List Status** (Yes/No, if applicable)
+- **Disqualified List Status** (Yes/No, if applicable)
+- **Disqualification Reason** (If applicable)
+- **Annual Gross Revenue (Previous Tax Year)** (For covered contractors/subcontractors)
+- **Last Wage Reporting Date** (Foreign Key to **Dataset 17**)
+- **Last Compliance Certification Date** (Foreign Key to **Dataset 24**)
+- **Last Audit Date** (Foreign Key to **Dataset 9**)
+- **Last Enforcement Action ID** (Foreign Key to **Dataset 10**)
+
+**4. Tenant/Occupant Master Data**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-301.1.(a): "To provide and maintain tenant relocation services"
+- § 26-403.m: ""Tenant." A tenant, subtenant, lessee, sublessee, or other person entitled to the possession or to the use or occupancy of any housing accommodation."
+- § 26-405.m.2.(i): "the head of the household residing in the housing accommodation is sixty-two years of age or older or is a person with a disability"
+- § 26-601.d: ""Eligible head of the household" means a person or his or her spouse who is sixty-two years of age or older or who qualifies as a person with a disability"
+- § 26-601.f: ""Income" means income received by the eligible head of the household combined with the income of all other members of the household"
+- § 26-1301: ""Covered individual" means a tenant of a rental dwelling unit located in the city... who is a respondent in a covered proceeding."
+- § 26-1301: ""Income-eligible individual" means a covered individual who is 60 years of age or older or whose annual gross household income is not in excess of 200 percent of the federal poverty guidelines"
+- § 26-1304.a.2: "characteristics of such individuals: i. borough and postal code of residence; ii. age of head of household; iii. household size; iv. estimated length of tenancy; v. approximate household income; vi. receipt of ongoing public assistance at the time such legal services were initiated; vii. tenancy in rent-regulated housing; and viii. tenancy in housing operated by the New York city housing authority"
+- § 26-2602.b: "Applicant household size; and 2. Applicant household income, broken down into bands of extremely low income households, very low income households, low income households, moderate income households and middle income households."
+- § 26-2602.c: "Race or ethnicity of applicants, to the extent such information is reported to the department; and 2. Applicant preference category, such as veteran's preference, if any"
+- § 26-2602.d-1: "applicants with a mobility, or vision or hearing, disability who applied through the housing lottery system"
+- § 26-3001: ""User." The term "user" means a tenant of a smart access building, and any person a tenant has requested, in writing or through a mobile application, be granted access to such tenant's dwelling unit and such building's smart access system."
+**Why:** Tracking tenant demographics, eligibility, and interactions is vital for program administration and reporting.
+**One row represents:** A single tenant or household.
+**Covers:** All tenants/occupants of dwelling units, including those applying for services, rent exemptions, or participating in housing lotteries.
+**Columns:**
+- **Tenant/Household ID** (Primary Key)
+- **Unit ID** (Foreign Key to **Dataset 2**)
+- **Head of Household ID** (If different from Tenant ID)
+- **Head of Household Age**
+- **Disability Status** (Yes/No, Type of Disability)
+- **Household Size**
+- **Aggregate Disposable Income**
+- **Income Tax Year**
+- **Income Band** (e.g., Extremely Low, Very Low, Low, Moderate, Middle Income)
+- **Receives Monthly Allowance for Shelter (Social Services Law)** (Yes/No)
+- **Receives Public Assistance** (Yes/No)
+- **Tenancy Type** (e.g., Rent-Controlled, Rent-Stabilized, NYCHA, PHFL, Market Rate)
+- **Estimated Length of Tenancy (Years)**
+- **Race/Ethnicity**
+- **Applicant Preference Category** (e.g., Veteran, Mobility Disability, Vision Disability, Hearing Disability)
+- **Borough of Residence**
+- **Postal Code of Residence**
+- **Contact Information** (Phone, Email)
+- **Smart Access System User ID** (Foreign Key to **Dataset 42**)
+- **Last Application ID** (Foreign Key to **Dataset 15** or **Dataset 21**)
+- **Last Legal Service ID** (Foreign Key to **Dataset 38**)
+
+**5. Rent Control/Stabilization Maximum Rent Adjustments**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-405.a.1: "the city rent agency shall establish maximum rents which... shall be the maximum rents in effect on April thirtieth, nineteen hundred sixty-two"
+- § 26-405.a.2.(a): "effective August first, nineteen hundred seventy, the maximum rent in effect on July thirty-first, nineteen hundred seventy shall be adjusted as follows"
+- § 26-405.a.3: "The city rent agency shall establish maximum rents to be effective January first, nineteen hundred seventy-two by dividing the maximum gross building rental from all housing accommodations in the property"
+- § 26-405.g.1.(a): "The rental income from a property yields a net annual return of less than six per centum of the valuation of the property."
+- § 26-405.g.1.(d): "The landlord and tenant in occupancy voluntarily enter into a valid written lease in good faith with respect to any housing accommodation, which lease provides for an increase in the maximum rent on the basis of specified increased services, furniture, furnishings, or equipment"
+- § 26-405.g.1.(e): "The landlord and tenant by mutual voluntary written agreement demonstrating informed consent agree to a substantial increase or decrease in dwelling space or a change in furniture, furnishings or equipment provided in the housing accommodations."
+- § 26-405.g.1.(f): "There has been since March first, nineteen hundred fifty-nine, an increase in the rental value of the housing accommodations as a result of a substantial rehabilitation of the building or housing accommodation therein"
+- § 26-405.g.1.(g): "There has been since July first, nineteen hundred seventy, a major capital improvement essential for the preservation energy efficiency, functionality, or infrastructure of the entire building"
+- § 26-405.g.1.(k): "The landlord has incurred, since January first, nineteen hundred seventy, in connection with and in addition to a concurrent major capital improvement pursuant to subparagraph (g) of this paragraph, other expenditures to improve, restore or preserve the quality of the structure."
+- § 26-405.g.1.(o): "There has been an increase in heating and heating fuel expenditures in a property resulting from a city-wide rise in heating fuel costs"
+- § 26-510.b: "The rent guidelines board shall establish annual guidelines for rent adjustments"
+- § 26-511.c.6: "as to completed building-wide major capital improvements, for a finding that such improvements are deemed depreciable under the Internal Revenue Code and that the cost is to be amortized over a twelve-year period"
+- § 26-511.c.13: "an owner is entitled to a rent increase where there has been a substantial modification or increase of dwelling space, or installation of new equipment or improvements or new furniture or furnishings provided in or to a tenant's housing accommodation, on written informed tenant consent to the rent increase."
+- § 26-512.b: "The initial regulated rent for housing accommodations subject to this law... shall be... the rent reserved in the last effective lease or other rental agreement"
+- § 26-512.e: "the legal regulated rent authorized for a housing accommodation subject to the provisions of this law shall be the rent registered pursuant to section 26-517 of this chapter subject to any modification imposed pursuant to this law."
+**Why:** Tracking all rent adjustments and their underlying justifications is fundamental for rent regulation enforcement and transparency.
+**One row represents:** A single rent adjustment event for a dwelling unit.
+**Covers:** All initial rent establishments, annual guideline adjustments, and individual adjustments (e.g., hardship, MCI, IAI, increased services, fuel pass-along) for rent-controlled and rent-stabilized units.
+**Columns:**
+- **Adjustment ID** (Primary Key)
+- **Unit ID** (Foreign Key to **Dataset 2**)
+- **Owner ID** (Foreign Key to **Dataset 3**)
+- **Adjustment Type** (e.g., Initial Rent, Annual Guideline, Hardship, MCI, IAI, Increased Services/Equipment, Fuel Pass-Along, Substantial Rehabilitation, Heating Cost, Vacancy Lease)
+- **Application ID** (Foreign Key to **Dataset 15**)
+- **Effective Date**
+- **Old Rent**
+- **New Rent**
+- **Dollar Increase**
+- **Percentage Increase**
+- **Justification Details** (e.g., Net Annual Return calculation, MCI/IAI cost, description of services/equipment, fuel cost increase details)
+- **MCI/IAI Amortization Period (Years)**
+- **MCI/IAI Cost**
+- **MCI/IAI Grant/Insurance Reduction Amount**
+- **MCI/IAI Remaining Balance (upon vacancy)**
+- **Tenant Consent Obtained (for IAI)** (Yes/No)
+- **Tenant Consent Form ID** (Foreign Key to **Dataset 65**)
+- **Lease ID** (Foreign Key to **Dataset 23**)
+- **Order ID** (Foreign Key to **Dataset 15**)
+- **Related Violation ID** (Foreign Key to **Dataset 8**, if increase denied due to violations)
+- **Audit ID** (Foreign Key to **Dataset 9**, if part of an audit)
+
+**6. Rent Exemption Orders & Tax Abatement Certificates**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-405.m.1: "No increase in maximum rent... shall be collectible from a tenant to whom there has been issued a currently valid rent exemption order pursuant to this subdivision"
+- § 26-405.m.2: "A tenant is eligible for a rent exemption order pursuant to this subdivision if: (i) the head of the household residing in the housing accommodation is sixty-two years of age or older or is a person with a disability"
+- § 26-405.m.3.(b): "Each such order shall expire upon termination of occupancy of the housing accommodation by the tenant to whom it is issued. The landlord shall notify the department of finance... within thirty days of each such termination of occupancy."
+- § 26-405.m.6: "A rent exemption order shall be valid for a period of two years and may be renewed for further two year periods upon application by the tenant"
+- § 26-405.m.7: "a tenant who resides in a housing accommodation which becomes subject to this chapter upon the sale by the city of New York... may be issued a rent increase exemption order for increases in rent which occurred during ownership of such building by the city of New York"
+- § 26-405.m.8: "when a dwelling unit is subject to regulation under this chapter or chapter four of this title is reclassified by a city rent agency order subject to the other chapter, the tenant... may be issued a rent increase exemption order under the chapter to which the unit is thereafter subject"
+- § 26-405.m.9: "where a head of household holds a current, valid rent exemption order and... there is a permanent decrease in aggregate disposable income... such head of the household may apply for a redetermination of the amount set forth therein."
+- § 26-406.a: "Tax abatement... shall be granted with respect to any real property for which a rent exemption order is issued... The rent exemption order shall constitute the tax abatement certificate."
+- § 26-406.b: "The real estate tax imposed upon any real property... shall be reduced and abated by an amount equal to the difference between (1) the sum of the maximum rents collectible under such orders, and (2) the sum of rents that would be collectible from the tenants of such housing accommodations if no exemption had been granted"
+- § 26-509.b.1: "No increase in the legal regulated rent shall be collectible from a tenant to whom there has been issued a currently valid rent exemption order pursuant to this subdivision"
+- § 26-509.b.7: "when a head of a household to whom a then current, valid rent exemption order has been issued... moves his or her principal residence to a subsequent dwelling unit... may apply... for a rent exemption order relating to the subsequent dwelling unit"
+- § 26-605.a: "Subject to the provisions of this chapter an eligible head of the household may obtain a rent increase exemption order/tax abatement certificate"
+- § 26-606: "The supervising agency shall approve or disapprove applications and, if it approves, shall issue a rent increase exemption order/tax abatement certificate."
+- § 26-608: "Upon receipt of a copy of a rent increase exemption order/tax abatement certificate, the housing company managing the dwelling unit or the landlord... shall promptly accord to the eligible head of the household covered by such order / certificate the appropriate credit against the monthly maximum rent then and thereafter payable."
+- § 26-609: "a housing company or landlord of an applicable battery park city property must file with the department of finance a sworn application... for any period in which the housing company or landlord has accorded an eligible head of the household an exemption hereunder from the payment of the maximum rent."
+**Why:** Tracking rent exemptions and associated tax abatements is critical for providing benefits to eligible tenants and managing city finances.
+**One row represents:** A single rent exemption order or tax abatement certificate issued for a dwelling unit.
+**Covers:** Rent increase exemption orders and tax abatement certificates for senior citizens and persons with disabilities across rent-controlled, rent-stabilized, PHFL, HUD-insured, and Battery Park City properties.
+**Columns:**
+- **Exemption/Abatement ID** (Primary Key)
+- **Unit ID** (Foreign Key to **Dataset 2**)
+- **Tenant/Household ID** (Foreign Key to **Dataset 4**)
+- **Owner ID** (Foreign Key to **Dataset 3**)
+- **Program Type** (e.g., Rent Control SCRIE, Rent Stabilization SCRIE, PHFL DRIE, HUD SCRIE/DRIE, BPC SCRIE/DRIE)
+- **Application ID** (Foreign Key to **Dataset 15**)
+- **Eligibility Date**
+- **Order Issue Date**
+- **Effective Date**
+- **Expiration Date**
+- **Renewal Date**
+- **Status** (e.g., Active, Expired, Terminated, Renewed, Transferred)
+- **Exemption Amount (Monthly)**
+- **Tax Abatement Amount (Annual)**
+- **Income Threshold Met** (Yes/No)
+- **Rent-to-Income Ratio Met** (Yes/No)
+- **Previous Exemption ID** (For transfers or reclassifications)
+- **Termination of Occupancy Date**
+- **Landlord Notification of Termination Date**
+- **Redetermination Application Date** (If income decreased)
+- **Redetermined Exemption Amount**
+- **Reclassification Date** (If unit reclassified)
+- **City Ownership Exemption** (Yes/No, if applicable)
+- **Last Notice Sent ID** (Foreign Key to **Dataset 56**)
+- **Audit ID** (Foreign Key to **Dataset 9**, if part of an audit)
+
+**7. Rent Registration Statements (Rent Stabilization)**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-517.a: "Each housing accommodation which is subject to this law shall be registered by the owner thereof with the state division of housing and community renewal prior to July first, nineteen hundred eighty-four upon forms prescribed by the commissioner. The data to be provided on such forms shall include the following: (1) the name and address of the building or group of buildings or development in which such housing accommodation is located and the owner and the tenant thereof; (2) the number of housing accommodations in the building or group of buildings or development in which such housing accommodation is located; (3) the number of housing accommodations in such building or group of buildings or development subject to this code and the number of such housing accommodations subject to the local emergency housing rent control act; (4) the rent charged on the registration date; (5) the number of rooms in such housing accommodation; and (6) all services provided on the date that the housing accommodation became subject to this chapter."
+- § 26-517.c: "Housing accommodations which become subject to this chapter after the initial registration period must be registered within ninety days thereafter. Registration of housing accommodations subject to the local emergency housing rent control act immediately prior to the date of initial registration as provided in this section shall include, in addition to the items listed above, where existing, the maximum base rent immediately prior to the date that such housing accommodations become subject to this chapter."
+- § 26-517.e: "The failure to file a proper and timely initial or annual rent registration statement shall, until such time as such registration is filed, bar an owner from applying for or collecting any rent in excess of the legal regulated rent in effect on the date of the last preceding registration statement or if no such statements have been filed, the legal regulated rent in effect on the date that the housing accommodation became subject to the registration requirements of this section. The filing of a late registration shall result in the prospective elimination of such sanctions and provided that increases in the legal regulated rent were lawful except for the failure to file a timely registration, the owner, upon the service and filing of a late registration, shall not be found to have collected an overcharge at any time prior to the filing of the late registration. In addition to all other requirements set forth in this subdivision, in the event a timely rent registration is not filed and after notice of such delinquency is provided by the state division of housing and community renewal to the owner in the form of electronic mail and mail to the address listed in the owner's most recent registration statement, the owner shall be subject to a fine of five hundred dollars per unregistered unit for each month the registration is delinquent."
+- § 26-517.f: "An annual statement shall be filed containing the current rent for each unit and such other information contained in subdivision a of this section as shall be required by the division. The owner shall provide each tenant then in occupancy with a copy of that portion of such annual statement as pertains to the tenant's unit."
+**Why:** Maintaining a complete and accurate history of rent registrations is essential for determining legal regulated rents and enforcing rent stabilization laws.
+**One row represents:** A single rent registration statement for a dwelling unit.
+**Covers:** All initial and annual rent registration statements for rent-stabilized housing accommodations.
+**Columns:**
+- **Registration ID** (Primary Key)
+- **Unit ID** (Foreign Key to **Dataset 2**)
+- **Owner ID** (Foreign Key to **Dataset 3**)
+- **Tenant ID** (Foreign Key to **Dataset 4**)
+- **Registration Date**
+- **Registration Type** (e.g., Initial, Annual, Late)
+- **Rent Charged on Registration Date**
+- **Number of Rooms**
+- **Services Provided on Date Unit Became Subject to Chapter** (Text description or coded list)
+- **Maximum Base Rent (if formerly Rent Control)**
+- **Filing Status** (e.g., Timely, Late, Delinquent)
+- **Delinquency Notice Date**
+- **Fine Imposed (for delinquency)**
+- **Fine Payment Status**
+- **Tenant Notification Date**
+- **Audit ID** (Foreign Key to **Dataset 9**, if part of an audit)
+- **Overcharge Complaint ID** (Foreign Key to **Dataset 27**, if applicable)
+
+**8. Violation Records (Housing & Building Codes & Zoning)**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-301.1.e: "setting forth a finding that any such dwelling is in condition which endangers the life, health or safety of the occupants"
+- § 26-305.1: "conditions giving rise to the need for such relocation arose as a result of... failure of such owner to maintain or repair such building in accordance with the standards prescribed by the housing maintenance code, building code, health code, or any other applicable law"
+- § 26-405.g.6.(a).(1): "A report of search issued by the agency of the city having jurisdiction stating either that no violations against such property are recorded"
+- § 26-405.h.3: "Whenever any agency of the city having jurisdiction certifies that any housing accommodation is a fire hazard or is in a continued dangerous condition or detrimental to life or health, or is occupied in violation of law"
+- § 26-405.h.6: "all rent impairing violations (as defined by section three hundred two-a of the multiple dwelling law), and (b) at least eighty per centum of all other violations of the housing maintenance code or other state or local laws that impose requirements on property that were recorded against the property one year prior to such effective date have been cleared, corrected or abated"
+- § 26-511.1.a.4: "prohibit temporary major capital improvement increases for buildings with outstanding hazardous or immediately hazardous violations of the Uniform Fire Prevention and Building Code (Uniform Code), New York City Fire Code, or New York City Building and Housing Maintenance Codes, if applicable"
+- § 26-705: "a listing of all violations of record against such buildings as determined by the department of buildings and the department of housing preservation and development. All newly issued violations shall be posted within forty-eight hours of their issuance"
+- § 26-901.b: ""Construction condition" means: (1) a violation of the New York city construction codes issued to a housing development project, a developer or a covered contractor of such housing development project, during the project work or within a five-year period following the completion of such project; (2) a complaint related to the construction quality of a housing development project received by the department during the project work or within a five-year period following the completion of such project; (3) a determination by the department, during the project work or within a five-year period following completion of such project, that the construction quality of a housing development project does not comply with applicable law or does not conform to customary standards for construction in the city of New York."
+- § 26-3102.c.4: "no uncorrected violations of the New York city construction codes, the housing maintenance code or the fire code that would endanger occupants of such dwelling unit"
+- § 26-3304: "It shall be unlawful to erect, construct, alter, extend, occupy, use, operate, rent or sell any building or premises subject to applicable affordable housing provisions, or to cause or permit same to be done, in conflict with or in violation of any such provisions. It shall be unlawful to fail to comply with an order of the commissioner or to violate any order of the commissioner issued pursuant to this chapter, or to cause or permit same to be done."
+- § 26-3307: "provisions that prohibit the following, which shall constitute violations of section 23-90 or 23-154 of the zoning resolution: a. Occupancy of an affordable housing unit by other than a qualifying household; b. Unlawful configuration, distribution, sizing or use of an affordable housing unit; c. Charging unlawful monthly rent or fees for an affordable housing unit; d. Filing a certification of correction of a violation or a statement that an unlawful use or condition has been corrected or did not exist that contains material misstatements of fact; e. Failing to comply with an order of the commissioner issued pursuant to this chapter; f. Charging unlawful fees or an unlawful sales price for an affordable housing unit; g. Failing to comply with primary residence requirements; and h. Unlawful restriction of access to the premises."
+**Why:** Tracking all violations is fundamental for ensuring housing safety, quality, and compliance with all applicable laws and regulations.
+**One row represents:** A single violation or construction condition.
+**Covers:** All violations of housing maintenance code, building code, fire code, health code, zoning resolution, and construction conditions identified by HPD, DOB, FDNY, or other city agencies.
+**Columns:**
+- **Violation ID** (Primary Key)
+- **Building ID** (Foreign Key to **Dataset 1**)
+- **Unit ID** (Foreign Key to **Dataset 2**, if unit-specific)
+- **Issuing Agency** (e.g., HPD, DOB, FDNY, DOHMH)
+- **Violation Code/Type** (e.g., Fire Hazard, Dangerous Condition, Detrimental to Life/Health, Illegal Occupancy, Rent Impairing, Hazardous, Immediately Hazardous, Class C, Zoning Violation)
+- **Description of Violation**
+- **Date Issued**
+- **Date Found/Observed**
+- **Date Corrected**
+- **Correction Certified Date** (Foreign Key to **Dataset 41**)
+- **Status** (e.g., Open, Corrected, Abated, Dismissed, False Certification)
+- **Order ID** (Foreign Key to **Dataset 15** or **Dataset 41**)
+- **Enforcement Action ID** (Foreign Key to **Dataset 10**)
+- **Related Project ID** (Foreign Key to **Dataset 12**, if construction condition)
+- **Developer ID** (Foreign Key to **Dataset 3**, if construction condition)
+- **Contractor ID** (Foreign Key to **Dataset 3**, if construction condition)
+- **Subcontractor ID** (Foreign Key to **Dataset 3**, if construction condition)
+- **Nature of Construction Condition** (e.g., Violation, Complaint, Determination of Non-Compliance)
+- **Remedial Actions Taken/Ordered/Requested**
+- **Zoning Violation Classification** (e.g., Major, Minor)
+- **Material Misstatement Found** (Yes/No, Foreign Key to **Dataset 41**)
+
+**9. Inspection Records**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-301.1.e: "upon submission of a report by two qualified employees of the agency following a personal inspection"
+- § 26-301.4: "The commissioner shall have the power to investigate, examine and inspect relocation operations"
+- § 26-409.b: "the city rent agency may require any such person to permit the inspection and copying of records and other documents and the inspection of housing accommodations."
+- § 26-511.1.b: "The division shall establish an annual inspection and audit process which shall review twenty-five percent of applications for a temporary major capital improvement increase that have been submitted and approved. Such process shall include individual inspections and document review to ensure that owners complied with all obligations and responsibilities under the law for temporary major capital improvement increases. Inspections shall include in-person confirmation that such improvements have been completed in such way as described in the application."
+- § 26-516.f: "the state division of housing and community renewal shall be empowered to administer oaths, issue subpoenas, conduct investigations, make inspections and designate officers to hear and report."
+- § 26-2502.a: "The department of buildings shall audit no fewer than 15 percent of certifications of correction of immediately hazardous violations filed with such department. Such audit shall include, at minimum, an inspection by such department to ensure that the violating conditions cited in the notice of violation have been corrected."
+- § 26-2502.b: "The department of housing preservation and development shall audit no fewer than 15 percent of all certifications of correction of class C violations filed with such department. Such audit shall include, at minimum, an inspection by such department to ensure that the violating conditions cited in the notice of violation have been corrected."
+- § 26-3017.a: "An authorized representative of the department may, consistent with applicable law and in accordance with rules of the department, enter a building or premises described in the notice of violation or request for corrective action and access any records of the owner related to unlawful conduct under this chapter to confirm that such violation has been corrected."
+- § 26-3017.b: "The commissioner may delegate to authorized monitors the authority to carry out inspections pursuant to this chapter or any rule promulgated pursuant thereto and report their findings to the department."
+**Why:** Tracking all inspections and audits is crucial for verifying compliance, identifying issues, and ensuring accountability.
+**One row represents:** A single inspection or audit event.
+**Covers:** All inspections conducted by HPD, DOB, DHCR, or authorized monitors for various purposes, including relocation, rent regulation, MCI/IAI, violation correction, 421-a compliance, and zoning enforcement.
+**Columns:**
+- **Inspection ID** (Primary Key)
+- **Building ID** (Foreign Key to **Dataset 1**)
+- **Unit ID** (Foreign Key to **Dataset 2**, if unit-specific)
+- **Inspector ID** (Foreign Key to **Dataset 58**)
+- **Inspection Date**
+- **Inspection Type** (e.g., Relocation, Rent Control/Stabilization Compliance, MCI/IAI Verification, Violation Correction Audit, 421-a Affordability Audit, 421-a Rent Registration Audit, Zoning Compliance, Construction Condition Investigation)
+- **Purpose/Description**
+- **Findings** (e.g., Compliant, Non-Compliant, Violations Found, Improvements Verified)
+- **Related Violation ID** (Foreign Key to **Dataset 8**, if inspection for a specific violation)
+- **Related Application ID** (Foreign Key to **Dataset 15**, if for MCI/IAI or rent adjustment)
+- **Related Certification ID** (Foreign Key to **Dataset 41**, if audit of correction)
+- **Audit Result** (e.g., Compliant, False Certification Found)
+- **Audit Penalties Imposed** (Foreign Key to **Dataset 10**)
+- **Audit Cost** (If charged to owner)
+- **Authorized Monitor ID** (Foreign Key to **Dataset 41**, if conducted by monitor)
+- **Report Submission Date**
+
+**10. Enforcement Actions & Penalties**
+
+**No matching dataset on OpenData.**
+**Quotes:**
+- § 26-305.3: "The department may bring an action against the owner for the recovery of such expenses."
+- § 26-413.a: "Any person who wilfully violates any provision of section 26-412 of this chapter shall be guilty of and punishable for a crime as specified in subdivision ten of section one of the state enabling act, namely such persons shall be subject to a fine of not more than five thousand dollars, or to imprisonment for not more than two years in the case of a violation of subdivision c of section 26-412 of this chapter and for not more than one year in all other cases, or to both such fine and imprisonment. The city rent agency may certify such facts, which in its opinion constitute such violation, to the district attorney having jurisdiction thereof."
+- § 26-413.b.1: "The city rent agency may, whenever in its judgment any person has engaged in or is about to engage in acts or practices which constitute a violation of any provision of section 26-412 of this chapter, apply to the supreme court for an order (a) enjoining such acts or practices, (b) enforcing compliance with such provision of said section or with an order issued by the city rent agency, or (c) directing the landlord to correct such violation of such provision; and upon sufficient showing, the supreme court may issue a temporary or permanent injunction, restraining order or other order, all of which shall be granted without bond."
+- § 26-413.b.2.(a): "Impose by administrative order after hearing, a civil penalty for any violation of said section and bring an action to recover same in any court of competent jurisdiction. Such penalty in the case of a violation of subdivision d of such section shall be at minimum in the amount of two thousand but not to exceed three thousand dollars for the first such offense, and at minimum in the amount of ten thousand but not to exceed eleven thousand dollars for each subsequent offense or for a violation consisting of conduct directed at the tenants of more than one housing accommodation; and in the case of any other violation of such section at minimum in the amount of one thousand but not to exceed two thousand dollars for the first such offense, and at minimum in the amount of two thousand but not to exceed three thousand dollars for each subsequent offense."
+- § 26-413.b.3.(a): "make a finding of harassment whenever it determines the existence of a violation of subdivision d of section 26-412 of this chapter"
+- § 26-413.d.1: "such landlord shall, unless for good cause shown, be liable to the tenant for three times the damages sustained on account of such removal plus reasonable attorney's fees and costs as determined by the court."
+- § 26-515.d: "the commissioner shall impose upon such owner or successor in interest, by administrative order after hearing, a civil penalty for any such violation. Such penalty shall be in an amount of up to one thousand dollars for each offense."
+- § 26-516.a: "any owner of housing accommodations who... is found by the state division of housing and community renewal... to have collected an overcharge above the rent authorized... shall be liable to the tenant for a penalty equal to three times the amount of such overcharge."
+- § 26-523.b: "Such person shall also be subject to a civil penalty of not less than one thousand nor more than ten thousand dollars for each violation. Each such violation shall be a separate and distinct offense. In the case of a failure to take all reasonable and necessary action to restore an occupant pursuant to subdivision b of section 26-521 of this chapter, such person shall be subject to an additional civil penalty of not more than one hundred dollars per day from the date on which restoration to occupancy is requested until the date on which restoration occurs, provided, however, that such period shall not exceed six months."
+- § 26-525: "Every civil penalty imposed by judgment upon an owner pursuant to this chapter shall be a lien upon the dwelling with respect to which such civil penalty is imposed from the time of the filing of a notice of pendency"
+- § 26-708.a: "Any person who knowingly violates or assists in the violation of any section of this chapter shall be guilty of a misdemeanor and upon conviction thereof shall be punished by a fine of not less than one hundred nor more than one thousand dollars. ... Any person who violates or assists in the violation of any section of this chapter shall be subject to a civil penalty of one hundred dollars per day per unit for each day that a building is not in compliance with the provisions of such sections; provided, however, that such civil penalty shall not exceed one thousand dollars per unit."
+- § 26-708.b: "Any person who knowingly violates or assists in the violation of section 26-703 of this chapter shall be guilty of a misdemeanor and upon conviction thereof shall be punished by a fine not more than two times the amount required to be reserved by section 26-703 of this chapter which was not so reserved. Any person who violates or assists in the violation of section 26-703 of this chapter shall also be subject to a civil penalty of one thousand dollars per day for each day that the reserve fund required by section 26-703 of this chapter is not established; provided, however, that such civil penalty shall not exceed the amount required to be reserved pursuant to section 26-703 of this chapter."
+- § 26-811: "An owner found to have violated any provision of this chapter shall, in addition to any other monetary and/or equitable damages for which the owner may be liable, be liable for a civil penalty of five thousand dollars per month per dwelling unit in the assisted rental housing, and shall also pay to a tenant association, or if no tenant association exists, each tenant, or if applicable, a qualified entity, fees and costs incurred in bringing an enforcement proceeding. The total civil penalties may not exceed one hundred thousand dollars per dwelling unit."
+- § 26-1104: "Any owner who violates the provisions of subdivision a of section 26-1103 of this chapter shall be liable for a civil penalty of two hundred fifty dollars."
+- § 26-1202.a: "If such court finds that a person is in violation of such subdivision, such court shall, in addition to any other relief such court determines to be appropriate: 1. Award to each such occupant (i) compensatory damages and, in such court's discretion, punitive damages or (ii) at the election of each occupant, damages of $1,000; 2. Award to such occupants reasonable attorneys' fees and court costs; and 3. Issue an order restraining such person from engaging in further conduct in violation of such subdivision."
+- § 26-1503: "Where an audit performed pursuant to section 26-1502 reveals that a building owner is not in compliance with the applicable affordability requirements, the department shall take action to bring such building into compliance, which action may include, but need not be limited to, commencing tax exemption revocation proceedings."
+- § 26-1603: "Where an audit performed pursuant to section 26-1602 reveals that a building owner is not in compliance with the applicable rent registration requirements, the department shall take action to bring such building into compliance, which action may include, but need but need not be limited to, commencing tax exemption revocation proceedings."
+- § 26-1803.a: "An owner who fails to provide information with respect to a dwelling unit pursuant to subdivision b of section 26-1802 shall be subject to a civil penalty for each month as follows until such violation is corrected"
+- § 26-2405: "An owner who is required to file a buyout agreement under this chapter and who fails to file in the time required by section 26-2403 shall be liable for a non-hazardous violation pursuant to section 27-2115."
+- § 26-2902.a: "It shall be unlawful for a developer to use or consider any credit score, consumer debt judgment, collection account, student loan debt, or medical debt of a tenant or prospective tenant in the rental or lease of an affordable unit, except for delinquent debt of greater than $12,000 in the aggregate, of a tenant or prospective tenant."
+- § 26-2902.b: "It shall be unlawful for a developer, in connection with the rental or lease of an affordable unit to any tenant or prospective tenant, to (i) use or consider any consumer credit history of any member of such tenant or prospective tenant's household other than the member of such tenant or prospective tenant's household designated by such household to represent such household in all matters pertaining to the rental or lease of such unit or (ii) fail to disclose, in writing, to such designee the process and criteria by which such designee's consumer credit history will be evaluated."
+- § 26-3003.a: "It shall be unlawful for any owner of a smart access building or third party that collects reference data or authentication data pursuant to section 26-3002 to: 1. sell, lease or otherwise disclose such data to another person except: (a) pursuant to any law, subpoena, court ordered warrant, other authorized court ordered process or active law enforcement investigation; (b) to a third party that operates or facilitates the operation of such building's smart access system, provided that the user has given express authorization... (c) for data collected pursuant to subdivision f of section 26-3002, to an entity employed, retained or contracted by the owner to improve the energy efficiency of such building; (d) to a guest as expressly authorized, in writing or through a mobile application, by a tenant; or (e) as otherwise required by law; 2. utilize any satellite navigation system or other similar system in the equipment or software of a smart access system to track the location of any user of a smart access system outside of the building using such smart access system; 3. use a smart access system to capture the reference data of any minor, except as authorized in writing by such minor's parent or legal guardian; 4. use a smart access system to deliberately collect information on or track the relationship status of tenants and their guests, except as otherwise required by law; 5. use a smart access system to collect or track information about the frequency and time of use of such system by a tenant and their guests to harass or evict a tenant; 6. use a smart access system to collect reference data from a person who is not a tenant in such smart access building who has not given express consent, in writing or through a mobile application, provided that reference data may be collected for any employee or agent of an owner in a smart access building, and 7. share any data that may be collected from a smart access system regarding any minor, unless such entity has received the written authorization of such minor's parent or legal guardian."
+- § 26-3003.b: "It shall additionally be unlawful for any owner of a smart access building, or an agent thereof, to: 1. utilize data collected through a smart access system for any purpose other than: (i) to grant access to and monitor entrances and exits to the smart access building, and to common areas in such building, including but not limited to laundry rooms, mail rooms, and the like, and (ii) to grant access to dwelling units in such buildings that use a smart access system to grant entry into dwelling units; 2. use a smart access system to limit the time of entry into the building by any user except as requested by a tenant; 3. require a tenant to use a smart access system to gain entry to such tenant's dwelling unit; and 4. use any information collected through a smart access system to harass or evict a tenant."
+- § 26-3006.a: "A lawful occupant of a dwelling unit... may bring an action alleging an unlawful sale of data in violation of paragraph one of subdivision a of section 26-3003 in any court of competent jurisdiction. If such court finds that a person is in violation of such paragraph for the unlawful sale of data, such court shall, in addition to any other relief such court determines to be appropriate: 1. Award to each such occupant per each unlawful sale of such occupant's data: (i) compensatory damages and, in such court's discretion, punitive damages, or (ii) at the election of each occupant, damages ranging from $200 to $1,000; and 2. Award to such occupants reasonable attorneys' fees and court costs."
+- § 26-3104.a: "Any person who violates subdivision a of section 26-3102 shall be liable for a civil penalty of not more than the lesser of $5,000 or three times the revenue generated by the short-term rental for each such violation."
+- § 26-3104.b: "Any registered host who violates the provisions of this chapter or rules of the administering agency promulgated pursuant to this chapter shall be liable for a civil penalty of not more than $5,000 for each such violation."
+- § 26-3104.c: "Any person who makes a material false statement or conceals a material fact in connection with the filing of an application or renewal thereof pursuant to this chapter shall be liable for a civil penalty of not more than $1,000 for each such violation, in addition to revocation pursuant to the provisions of this section."
+- § 26-3104.d: "The registration of a dwelling unit shall be revoked, after notice and opportunity to be heard, where: 1. Such dwelling unit has been used in violation of restrictions in the zoning resolution, multiple dwelling law, housing maintenance code and New York city construction codes relating to the short-term rental of dwelling units in private dwellings and class A multiple dwellings, or in class A dwelling units within mixed use buildings; 2. The applicant made a material false statement or concealed a material fact in connection with the filing of an application or renewal thereof pursuant to this chapter; 3. The registered host has committed three or more violations of this chapter or rules of the administering agency within a period of 24 months; 4. The dwelling unit was added to the prohibited building list after the registration had been approved; or 5. The administering agency, subsequent to issuing the registration, discovers information that would have precluded the administering agency from granting the registration had it been known at the time."
+- § 26-3203.a: "For each transaction in which a booking service charges, collects or receives a fee, directly or indirectly, for activity described in the definition of booking service in relation to a short-term rental in violation of subdivision a of section 26-3202, such booking service shall be liable for a civil penalty of not more than $1,500; provided that if such booking service can establish the amount of such fee, such civil penalty shall be not more than three times such fee."
+- § 26-3203.b: "If a booking service fails to provide information in compliance with subdivision b of section 26-3202, such booking service shall be liable for a civil penalty to be assessed once per reporting period for each transaction the booking service has failed to report. The civil penalty shall not be more than the greater of $1,500 or the total fees collected during the preceding year by the booking service for transactions related to the registration number or uniform resource locater."
+- § 26-3308.a: "For major violations, a civil penalty of not more than $25,000 may be imposed for each violation. In addition to such civil penalty, a separate additional penalty may be imposed of not more than $1,000 for each day that the violation is not corrected."
+- § 26-3308.b: "For minor violations, a civil penalty of not more than $10,000 may be imposed for each violation. In addition to such civil penalty, a separate additional penalty may be imposed of not more than $250 for each 30-day period that the violation is not corrected."
+- § 26-3312: "Failure to comply with an order of the commissioner issued pursuant to this chapter to correct and to certify correction of a violation within the applicable time period shall be a violation of this chapter for which a civil penalty of not more than $10,000 may be imposed"
+- § 26-3318.a: "The owner, architect, builder, contractor, engineer or any other person who maintains any building or premises... in conflict with or in violation of any of such provisions, or who fails to comply with an order of the commissioner or violates any order of the commissioner issued pursuant to this chapter, shall be subject to an action or proceeding to restrain, correct or abate such violation, or to compel compliance with such order. Upon request of the commissioner, the corporation counsel may institute judicial actions or proceedings seeking such relief. In addition to any other remedies, in any such action or proceeding, the defendant or respondent shall be subject to the payment of civil penalties as provided in this chapter."
+- § 26-33

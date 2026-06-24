@@ -1,0 +1,469 @@
+**Identified Tabular Datasets:**
+
+1.  **Security Incident Log**
+    *   **Quotes:**
+        *   "Any city agency that owns, leases, or licenses data that includes private information shall promptly disclose to the chief privacy officer, office of cyber command and department of information technology and telecommunications any breach of security following discovery by a supervisor or manager, or following notification to a supervisor or manager, of such breach if such private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person." (§ 10-502.a)
+        *   "Any city agency that owns, leases, or licenses data that includes private information shall disclose, in accordance with the procedures set forth in subdivisions d, e and f of this section, any breach of security following discovery by a supervisor or manager, or following notification to a supervisor or manager, of such breach to any individual whose private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person." (§ 10-502.b)
+        *   "Any city agency that maintains but does not own, lease, or license data that includes private information shall disclose any breach of security following discovery by a supervisor or manager, or following notification to a supervisor or manager, of such breach to the owner, lessor or licensor of the data if the private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person." (§ 10-502.c)
+        *   "Notice to affected individuals under this section is not required if the exposure of private information was an inadvertent disclosure by persons authorized to access private information, and the agency reasonably determines, in accordance with the protocols established pursuant to subdivision i of this section, that such exposure will not likely result in misuse of such information, or financial, personal, or reputational harm to the affected individuals. Such a determination must be documented in writing and maintained for at least five years." (§ 10-502.g)
+        *   "The office of cyber command, in consultation with the chief privacy officer and the department of information technology and telecommunications, shall issue protocols for agency coordination and recordkeeping for any breach of security and any incident that is not a breach of security but involves the good faith or inadvertent access, acquisition, disclosure, or use of any private information by an employee or agent of an agency for the legitimate purposes of the agency." (§ 10-502.i)
+    *   **Why:** To track all security breaches and inadvertent disclosures of private information for compliance, internal reporting, and risk management.
+    *   **One row represents:** A single security incident (breach or inadvertent disclosure).
+    *   **Covers:** All security breaches and inadvertent disclosures of private information by any city agency.
+    *   **Columns:**
+        *   Incident ID
+        *   Incident Type (e.g., "Breach of Security", "Inadvertent Disclosure")
+        *   Discovery Date
+        *   Notification Date to Supervisor/Manager
+        *   Agency ID (Owner of data)
+        *   Agency ID (Maintaining data, if different)
+        *   Data Owner/Lessor/Licensor (if agency only maintains data)
+        *   Description of Incident
+        *   Type of Private Information Involved (e.g., SSN, DLN, Financial Account, Biometric, Email/Password)
+        *   Encryption Status of Data (at time of incident)
+        *   Reasonably Believed Accessed/Acquired/Disclosed/Used by Unauthorized Person (Boolean)
+        *   Was it an inadvertent disclosure by authorized personnel? (Boolean)
+        *   Determination of Likelihood of Misuse/Harm (for inadvertent disclosures)
+        *   Determination Document ID (for inadvertent disclosures, if applicable)
+        *   Determination Document Retention End Date (for inadvertent disclosures, if applicable)
+        *   Law Enforcement/Investigative Needs (Boolean)
+        *   Date of Disclosure to CPO, Cyber Command, DoITT
+        *   Date of Disclosure to Data Owner/Lessor/Licensor (if applicable)
+        *   Number of Affected Individuals (estimated)
+        *   Consumer Reporting Agency Notification Required (Boolean, if >5000 NY residents)
+        *   Date of Notification to Consumer Reporting Agencies (if applicable)
+        *   Compliance with State/Other Law Notification (Boolean)
+        *   State/Other Law Notification Details (if applicable)
+        *   Incident Status (e.g., "Reported", "Under Investigation", "Resolved", "Closed")
+        *   Related Protocols Followed (e.g., "Protocol ID" from non-tabular list)
+
+2.  **Identifying Information Access & Disclosure Events**
+    *   **Quotes:**
+        *   "Absent exigent circumstances, no employee shall collect identifying information without the written approval of the privacy officer of such employee's agency." (§ 23-1202.b.1)
+        *   "the privacy officer of an employee's agency may approve in advance certain routine collections of identifying information;" (§ 23-1202.b.2.a)
+        *   "the chief privacy officer may approve in advance a collection of identifying information not otherwise authorized by paragraph 1 of this subdivision upon the determination that such collection is in the best interests of the city;" (§ 23-1202.b.2.b)
+        *   "Absent exigent circumstances, no employee shall disclose identifying information to any party outside such employee's agency, including an employee of another city agency, without the written approval of the privacy officer of such agency." (§ 23-1202.c.1)
+        *   "the privacy officer of an employee's agency may approve in advance certain routine disclosures of identifying information;" (§ 23-1202.c.2.a)
+        *   "the chief privacy officer may approve in advance a disclosure to another city agency or agencies not otherwise authorized by paragraph 1 of this subdivision upon the determination that such disclosure is in the best interests of the city;" (§ 23-1202.c.2.b)
+        *   "Any request for identifying information or a proposal for the unsolicited disclosure of identifying information by an employee that does not concern a routine disclosure shall be sent to the privacy officer of such employee's agency as soon as practicable." (§ 23-1202.c.3)
+        *   "If an individual's identifying information is disclosed in violation of this chapter, the privacy officer of such employee's agency that becomes aware of such disclosure shall notify the chief privacy officer as soon as practicable and, if such disclosure is one described in policies and protocols issued pursuant to subdivision 6 of section 23-1203, the agency responsible for the disclosure shall make reasonable efforts to notify such individual in writing of the identifying information disclosed and to whom it was disclosed as soon as practicable;" (§ 23-1202.c.4)
+        *   "The chief privacy officer shall submit a quarterly report containing an anonymized compilation or summary of such disclosures to the speaker of the council and shall make such report available online." (§ 23-1202.c.4)
+        *   "In the event identifying information is collected or disclosed under exigent circumstances, information about such collection or request and disclosure, along with an explanation of why such exigent circumstances existed, shall be sent to the chief privacy officer as soon as practicable after such collection or disclosure." (§ 23-1202.d.1)
+        *   "The chief privacy officer shall submit a quarterly report containing an anonymized compilation or summary of such disclosures to the speaker of the council and make such report available online." (§ 23-1202.d.2)
+        *   "Each city agency shall require contractors that obtain identifying information, whether directly or through subcontractors, to apply the requirements of subdivisions b, c, d, and e of this section and any applicable policies and protocols adopted pursuant to this chapter;" (§ 23-1202.g)
+    *   **Why:** To meticulously track all instances of collection, disclosure, and unauthorized disclosure of identifying information, including approvals and exigent circumstances.
+    *   **One row represents:** A single event of identifying information collection, disclosure, or unauthorized disclosure.
+    *   **Covers:** All collections, disclosures, and unauthorized disclosures of identifying information by employees, contractors, and subcontractors.
+    *   **Columns:**
+        *   Event ID
+        *   Event Type (e.g., "Collection", "Disclosure", "Unauthorized Disclosure", "Exigent Collection", "Exigent Disclosure")
+        *   Timestamp of Event
+        *   Agency ID (Performing/Responsible Agency)
+        *   Employee ID / Contractor ID / Subcontractor ID (Initiating/Responsible Party)
+        *   Individual ID (to whom information pertains, anonymized if necessary)
+        *   Type of Identifying Information (e.g., "Name", "SSN", "Address", "Biometrics", "Immigration Status", "Arrest Record")
+        *   Purpose/Mission Furthered (for collection/disclosure)
+        *   Required by Law/Treaty (Boolean, for collection/disclosure)
+        *   Privacy Officer Approval Required (Boolean)
+        *   Privacy Officer Approval Date
+        *   Privacy Officer ID (Approving Officer)
+        *   Chief Privacy Officer Approval Required (Boolean)
+        *   Chief Privacy Officer Approval Date
+        *   Chief Privacy Officer ID (Approving Officer)
+        *   Routine Collection/Disclosure (Boolean)
+        *   Exigent Circumstances (Boolean)
+        *   Explanation of Exigent Circumstances (if applicable)
+        *   Recipient Type (e.g., "Internal Agency", "Other City Agency", "Third Party", "Individual")
+        *   Recipient Agency ID / Third Party Name (if applicable)
+        *   Individual Consent (Boolean, for disclosure)
+        *   Violation of Chapter (Boolean, for unauthorized disclosures)
+        *   Notification to CPO (Boolean, for unauthorized disclosures)
+        *   Notification to Affected Individual (Boolean, for unauthorized disclosures)
+        *   Notification Date to Affected Individual (for unauthorized disclosures)
+        *   Law Enforcement/Welfare Exemption (Boolean, for collection/disclosure)
+        *   Related Agreement ID (Foreign Key to Dataset 6, if applicable)
+
+3.  **Public Data Set Inventory & Compliance**
+    *   **Quotes:**
+        *   "Data" means final versions of statistical or factual information (1) in alphanumeric form reflected in a list, table, graph, chart or other non-narrative form, that can be digitally transmitted or processed; and (2) regularly created or maintained by or on behalf of and owned by an agency that records a measurement, transaction, or determination related to the mission of an agency." (§ 23-501.b)
+        *   "Within one year of the effective date of this chapter and thereafter, the public data sets that agencies make available on the Internet shall be accessible through a single web portal that is linked to nyc.gov or any successor website maintained by, or on behalf of, the city of New York. If an agency cannot make all such public data sets available on the single web portal pursuant to this subdivision, the agency shall report to the department and to the council which public data set or sets that it is unable to make available, the reasons why it cannot do so and the date by which the agency expects that such public data set or sets will be available on the single web portal." (§ 23-502.a)
+        *   "Such public data sets shall be made available in accordance with technical standards published by the department pursuant to section 23-505 of this chapter and shall be in a format that permits automated processing and shall make use of appropriate technology to notify the public of all updates." (§ 23-502.b)
+        *   "Such public data sets shall be updated as often as is necessary to preserve the integrity and usefulness of the data sets to the extent that the agency regularly maintains or updates the public data set... If there is a public data set for which such update schedule regularly cannot be met, the agency that maintains such public data set shall report to the department the reasons why it cannot meet such update schedule and the date by which the agency expects that it will be able to meet such schedule, and such information shall be disclosed in the compliance plan prepared pursuant to section 23-506." (§ 23-502.c)
+        *   "Each agency shall disclose in the update to such compliance plan the total number, since the last update, of such agency's freedom of information law responses that included the release of data, the total number of such responses determined to consist of or include a public data set that had not yet been included on the single web portal and the name of such public data set, where applicable, and the total number of such responses that resulted in voluntarily disclosed information being made accessible through the single web portal." (§ 23-502.f)
+        *   "Each data set on the single web portal shall include a plain language data dictionary... The most recent upload date and generation date for each data set shall be included directly on the single web portal." (§ 23-505.c)
+        *   "The manual described in subdivision a of this section shall include a technical standard requiring every public data set containing address information to utilize a standard field layout and presentation of address information and include corresponding community district and geospatial reference data. If there is a public data set for which an agency cannot utilize such standard field layout and presentation of address information, such agency shall report to the department and to the council the reasons why it cannot, and the date by which the agency expects that it will be able to utilize such standard field layout and presentation of address information, and such information shall be disclosed in the compliance plan prepared pursuant to section 23-506." (§ 23-505.d)
+        *   "The plan shall include a summary description of public data sets under the control of each agency on or after the effective date of this chapter, and shall prioritize such public data sets for inclusion on the single web portal on or before December 31, 2018 in accordance with the standards promulgated by the department pursuant to section 23-505 and shall create a timeline for their inclusion on the single web portal." (§ 23-506.a)
+        *   "Such update shall include the specific measures undertaken to make public data sets available on the single web portal since the immediately preceding update, specific measures that will be undertaken prior to the next update, an update to the list of public data sets, if necessary, any changes to the prioritization of public data sets and an update to the timeline for the inclusion of data sets on the single web portal, if necessary." (§ 23-506.c)
+        *   "the department shall provide, and update in real-time, the following information on each data set classified as a public data set on or after March 7, 2012: (1) Each scheduled publication date; (2) If such data set has been published, the date of such publication, the date of the most recent update to such data set, and the current location of the data set; (3) Status of compliance with subdivision c of section 23-502 of this chapter; (4) Status of compliance with subdivision c and subdivision d of section 23-505 of this chapter; (5) Whether the data set is automated; and (6) Whether the data set feasibly can be automated." (§ 23-509)
+    *   **Why:** To manage and track the status, metadata, and compliance of all public data sets for accessibility, transparency, and reporting.
+    *   **One row represents:** A single public data set.
+    *   **Covers:** All public data sets under the control of city agencies.
+    *   **Columns:**
+        *   Data Set ID
+        *   Agency ID (Owning/Maintaining Agency)
+        *   Data Set Name
+        *   Description
+        *   Scheduled Publication Date
+        *   Actual Publication Date (on web portal)
+        *   Current Location/URL of Data Set
+        *   Most Recent Update Date (on web portal)
+        *   Most Recent Generation Date (of data)
+        *   Automated Updates (Boolean)
+        *   Feasibly Automated (Boolean)
+        *   Compliance with Update Schedule (Boolean)
+        *   Reason for Non-Compliance with Update Schedule (if applicable)
+        *   Expected Date of Compliance with Update Schedule (if applicable)
+        *   Technical Standards Compliance (Boolean)
+        *   Data Dictionary Available (Boolean)
+        *   Data Dictionary Link/Location
+        *   Address Information Standard Layout Compliance (Boolean)
+        *   Reason for Non-Compliance with Address Layout (if applicable)
+        *   Expected Date of Compliance with Address Layout (if applicable)
+        *   Geospatial Reference Data Included (Boolean)
+        *   Accessible via Single Web Portal (Boolean)
+        *   Reason for Not Being on Web Portal (if applicable)
+        *   Expected Date of Web Portal Availability (if applicable)
+        *   Prioritization Criteria (e.g., "Accountability", "Public Knowledge", "Mission", "Economic Opportunity", "Public Demand")
+        *   Timeline for Inclusion on Web Portal
+        *   FOIL Request Triggered Inclusion (Boolean)
+        *   FOIL Request ID (Foreign Key to Dataset 13, if applicable)
+        *   Voluntarily Disclosed (Boolean)
+
+4.  **Website Feature Compliance Audits**
+    *   **Quotes:**
+        *   "Every website maintained by or on behalf of the city or a city agency shall include a translation feature for viewing the text of that website, wherever practicable, in languages other than English." (§ 23-801)
+        *   "The mayor or the mayor's designee shall adopt a protocol for websites maintained by or on behalf of the city or a city agency relating to website accessibility for persons with disabilities." (§ 23-802.a)
+        *   "No later than July 1, 2017, and every two years thereafter, the mayor or the mayor's designee shall submit to the council a written report that documents the compliance of websites maintained by or on behalf of the city or a city agency with the protocol adopted pursuant to subdivision a of this section." (§ 23-802.b)
+        *   "Every website maintained by or on behalf of the city or a city agency shall encrypt all exchanges and transfers between a web server, maintained by or on behalf of the city or a city agency, and a web browser: (i) of hypertext; or (ii) of electronic information, and require web browsers to request such encrypted exchange or transfer at all times for such websites, provided that such encryption shall not be required if such exchanges or transfers are conducted in a manner that provides at least an equivalent level of confidentiality, data integrity and authentication." (§ 23-805)
+    *   **Why:** To track the compliance of city websites with mandated translation, accessibility, and encryption standards for public service and legal requirements.
+    *   **One row represents:** An audit finding or status update for a specific website feature.
+    *   **Covers:** All city websites and their compliance with translation, accessibility, and encryption requirements.
+    *   **Columns:**
+        *   Audit ID
+        *   Website URL
+        *   Agency ID (Owning Agency)
+        *   Audit Date
+        *   Feature Type (e.g., "Translation", "Accessibility", "Encryption")
+        *   Compliance Status (e.g., "Compliant", "Non-Compliant", "Partial Compliance")
+        *   Standard Used (e.g., "WCAG 2.0 Level AA", "36 CFR § 1194.22", "HTTPS")
+        *   Description of Non-Compliance/Issue
+        *   Remediation Plan
+        *   Remediation Due Date
+        *   Remediation Completion Date
+        *   Report Submission Date (for biennial accessibility report)
+
+5.  **Electronic Equipment Disposal Records**
+    *   **Quotes:**
+        *   "Any agency that disposes of electronic equipment that contains a hard disk drive, solid state drive or similar device capable of storing information while powered off, including but not limited to printers, copiers and computers, shall ensure, before its disposal, the erasure of all information contained therein, either through degaussing, physical destruction of the drive, a data wiping that includes at least two full overwrites or another erasure method specified by the department of information technology and telecommunications after consultation with all relevant agencies." (§ 10-504.a)
+        *   "Each agency shall require any third party who disposes of electronic equipment on its behalf to provide the agency a written certification that the disposal complies with the requirements set forth in this section and shall forward such certification to the department of information technology and telecommunications. Every two years each agency that has disposed of electronic equipment itself shall submit a statement to the department of information technology and telecommunications certifying that its disposal of such electronic equipment complies with the requirements set forth in this section." (§ 10-504.b)
+        *   "For the purposes of this section, the term "dispose" includes a transfer of electronic equipment from one agency to another when such equipment has stored information that is confidential or sensitive in nature and is not relevant to the work of the agency receiving such equipment." (§ 10-504.c)
+    *   **Why:** To track the secure disposal of electronic equipment containing information, ensuring data erasure and certification compliance.
+    *   **One row represents:** A single piece of electronic equipment disposed of.
+    *   **Covers:** All electronic equipment with storage capabilities disposed of by the agency or a third party on its behalf.
+    *   **Columns:**
+        *   Equipment ID
+        *   Agency ID (Disposing Agency)
+        *   Disposal Date
+        *   Equipment Type (e.g., "Computer", "Printer", "Copier", "Hard Drive", "Solid State Drive")
+        *   Storage Device Type (e.g., "Hard Disk Drive", "Solid State Drive")
+        *   Information Confidential/Sensitive (Boolean, for transfers between agencies)
+        *   Erasure Method Used (e.g., "Degaussing", "Physical Destruction", "Data Wiping (2+ overwrites)", "Other DoITT Method")
+        *   Third-Party Disposer (Boolean)
+        *   Third-Party Disposer Name (if applicable)
+        *   Third-Party Certification Received (Boolean, if applicable)
+        *   Third-Party Certification Date (if applicable)
+        *   Internal Disposal Statement Submitted (Boolean, for biennial agency statement)
+        *   Internal Disposal Statement Submission Date (if applicable)
+        *   Receiving Agency ID (if transferred, for "dispose" definition)
+
+6.  **Identifying Information Third-Party Agreements**
+    *   **Quotes:**
+        *   "require any city agency disclosing identifying information to a third party when such a disclosure is not classified as routine pursuant to section 23-1202 to enter into an agreement ensuring that the anticipated use and any potential future use of such information by such third party occurs only in a manner consistent with this chapter unless: (i) such disclosure is made under exigent circumstances, or (ii) such an agreement would not further the purposes of this chapter due to the absence of circumstances in which such disclosure would unduly compromise an important privacy interest." (§ 23-1203.3)
+        *   "describe disclosures of identifying information to third parties when such a disclosure is classified as routine pursuant to section 23-1202 for which, because of the nature or extent of such disclosures or because of the nature of the relationship between the city agency and third party, such disclosing agency is required to enter into an agreement with such third party requiring that the anticipated use and any potential future use of such information by such third party occurs only in a manner consistent with this chapter;" (§ 23-1203.4)
+        *   "use of agreements regarding the anticipated use and any potential future use of identifying information disclosed;" (§ 23-1205.a.1.d)
+    *   **Why:** To track agreements with third parties for the disclosure of identifying information, ensuring consistent use and compliance with privacy regulations.
+    *   **One row represents:** A single agreement with a third party for identifying information disclosure.
+    *   **Covers:** Agreements for non-routine and certain routine disclosures of identifying information to third parties.
+    *   **Columns:**
+        *   Agreement ID
+        *   Agency ID (Disclosing Agency)
+        *   Third Party Name
+        *   Agreement Date
+        *   Agreement Type (e.g., "Non-Routine Disclosure", "Routine Disclosure (requiring agreement)")
+        *   Description of Identifying Information Disclosed
+        *   Anticipated Use of Information
+        *   Future Use Restrictions
+        *   Compliance with Chapter Ensured (Boolean)
+        *   Exigent Circumstances (Boolean, if agreement not required)
+        *   Reason Agreement Not Required (if applicable, e.g., "Absence of undue privacy compromise")
+        *   Standard Contract Provisions Used (Boolean)
+        *   Contract Document ID
+
+7.  **Security Incident Individual Notifications**
+    *   **Quotes:**
+        *   "Any city agency that owns, leases, or licenses data that includes private information shall disclose, in accordance with the procedures set forth in subdivisions d, e and f of this section, any breach of security following discovery by a supervisor or manager, or following notification to a supervisor or manager, of such breach to any individual whose private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person." (§ 10-502.b)
+        *   "Disclosures required by subdivision b of this section shall be made to each affected individual by at least one of the following means: 1. Written notice; or 2. Telephonic notification, provided that a log of each such notification is maintained by the agency that notifies the affected individuals; or 3. Electronic notification, provided that the affected individual has expressly consented to receiving such notification in electronic form and a log of each such notification is maintained by the agency that notifies affected individuals in such form;" (§ 10-502.d)
+        *   "Should disclosure pursuant to paragraph one, two or three of subdivision d be impracticable or inappropriate given the circumstances of the breach and the identity of the victim, such disclosure shall be made by a mechanism that is reasonably targeted to the individual in a manner that does not further compromise the integrity of the private information." (§ 10-502.e)
+    *   **Why:** To log all notifications made to affected individuals following a security incident, ensuring compliance with notification methods and record-keeping.
+    *   **One row represents:** A single notification attempt to an affected individual for a specific security incident.
+    *   **Covers:** All notifications to individuals whose private information was, or is reasonably believed to have been, accessed, acquired, disclosed, or used by an unauthorized person.
+    *   **Columns:**
+        *   Notification ID
+        *   Incident ID (Foreign Key to Dataset 1)
+        *   Affected Individual ID (or anonymized identifier)
+        *   Notification Method (e.g., "Written Notice", "Telephonic Notification", "Electronic Notification", "Impracticable/Targeted Mechanism")
+        *   Notification Date
+        *   Notification Content Summary
+        *   Log Entry Date (for telephonic/electronic)
+        *   Electronic Notification Consent (Boolean, if applicable)
+        *   Reason for Impracticable/Targeted Method (if applicable)
+        *   Further Compromise Risk (for impracticable/targeted method)
+
+8.  **Public Data Set Requests & Feedback**
+    *   **Quotes:**
+        *   "The department shall implement an on-line forum to solicit feedback from the public and to encourage public discussion on open data policies and public data set availability on the web portal." (§ 23-503.c)
+        *   "Requests received via the on-line forum for inclusion of particular public data sets shall be considered by agencies in making determinations as to priority for public data set inclusion on the single web portal pursuant to paragraph 5 of subdivision b of section 23-506. The department shall provide an initial response to each such request within two weeks of receipt. The agency to which the department refers the request shall post its final determination as to the request on the single web portal within two months of receipt." (§ 23-503.d)
+    *   **Why:** To manage public input on open data policies and specific data set requests, ensuring timely responses and agency determinations.
+    *   **One row represents:** A single request or piece of feedback from the public regarding open data.
+    *   **Covers:** All requests for public data sets and feedback submitted through the online forum.
+    *   **Columns:**
+        *   Request/Feedback ID
+        *   Submission Date
+        *   Requester/Submitter (Anonymized, if necessary)
+        *   Type (e.g., "Data Set Request", "Policy Feedback")
+        *   Requested Data Set Name/Description (if applicable)
+        *   Referred Agency ID (if data set request)
+        *   Department Initial Response Date
+        *   Department Initial Response Content
+        *   Agency Final Determination Date (if data set request)
+        *   Agency Final Determination Content
+        *   Considered for Prioritization (Boolean)
+        *   Included in Compliance Plan (Boolean)
+
+9.  **Web Portal Usage Analytics**
+    *   **Quotes:**
+        *   "The department shall collect, analyze and publish data on how users interact with the portal established pursuant to section 23-502. Such data shall include, but need not be limited to, number of page views, number of unique users and the location from which a user accesses such portal. Location shall not refer to any user's internet protocol address and it shall not include the user's personally identifying information." (§ 23-508)
+    *   **Why:** To collect and analyze user interaction data with the public data web portal to improve service delivery and fulfill reporting requirements.
+    *   **One row represents:** A single user interaction event (e.g., page view, unique user session).
+    *   **Covers:** User interactions with the single web portal for public data sets.
+    *   **Columns:**
+        *   Event ID
+        *   Timestamp
+        *   User Session ID (Anonymized)
+        *   Event Type (e.g., "Page View", "Data Set Download", "Search Query")
+        *   Page URL
+        *   Data Set ID (Foreign Key to Dataset 3, if applicable)
+        *   Location (General, non-identifying, e.g., city/state)
+        *   Browser/Device Information (Anonymized)
+
+10. **Online Payment System Failure Log**
+    *   **Quotes:**
+        *   "Electronic system failure. The term "electronic system failure" means a malfunction, or unauthorized denial of service, in an electronic system that makes it impossible for one or more persons to make payments to a city agency." (§ 23-806.a)
+        *   "In the event that an electronic system failure disables, for 24 hours or more, an electronic system used by persons to make payments to an agency, such affected agency shall establish a 48-hour grace period after such system is restored, during which no late payment fees or interest will be incurred for any payment due in the time period during which such electronic system failure disabled such system, provided that if only certain persons owing payments to such affected agency are unable to make such payments due to an electronic system failure, such affected agency shall allow such persons to file claims to forgive late payment fees and interest accrued during such electronic system failure." (§ 23-806.b)
+        *   "When an agency is required to establish a 48-hour grace period pursuant to this section, the agency head shall have the discretion to extend such grace period to a period not exceeding seven days;" (§ 23-806.c)
+    *   **Why:** To track electronic system failures that impact online payments and the implementation of grace periods, ensuring fair treatment for affected users.
+    *   **One row represents:** A single electronic system failure event.
+    *   **Covers:** Malfunctions or unauthorized denial of service in electronic systems used for payments to city agencies.
+    *   **Columns:**
+        *   System Failure ID
+        *   Affected Agency ID
+        *   Electronic System Name/Description
+        *   Failure Start Timestamp
+        *   Failure End Timestamp
+        *   Duration of Failure (hours)
+        *   Payment System Disabled (Boolean)
+        *   Grace Period Established (Boolean, if duration >= 24 hours)
+        *   Grace Period Start Date
+        *   Grace Period End Date
+        *   Grace Period Extension (Boolean)
+        *   Extended Grace Period End Date (if applicable)
+        *   Reason for Extension (if applicable)
+        *   Number of Persons Affected (if only certain persons)
+        *   Claims for Forgiveness Filed (Boolean, if applicable)
+        *   Number of Claims for Forgiveness
+
+11. **Wheelchair Repair Provider Directory**
+    *   **Quotes:**
+        *   "The office shall post on its website a list of wheelchair repair providers that operate in the city... The office shall update such list no less than once each year. Where practicable, such list shall include the following information for each wheelchair repair provider: 1. Name; 2. Address; 3. Email address; 4. Phone number; 5. Website domain name; 6. Hours of operation; 7. Insurance providers accepted, if any; and 8. Forms of payment accepted." (§ 23-807.b)
+    *   **Why:** To provide a publicly accessible, annually updated list of wheelchair repair providers with essential contact and service information.
+    *   **One row represents:** A single wheelchair repair provider.
+    *   **Covers:** Wheelchair repair providers operating in the city.
+    *   **Columns:**
+        *   Provider ID
+        *   Provider Name
+        *   Address
+        *   Email Address
+        *   Phone Number
+        *   Website Domain Name
+        *   Hours of Operation
+        *   Insurance Providers Accepted (List/Text)
+        *   Forms of Payment Accepted (List/Text)
+        *   Last Update Date
+        *   Source of Information (e.g., "Agency X", "Self-Reported")
+
+12. **Agency Privacy Policy & Practice Profile**
+    *   **Quotes:**
+        *   "Each city agency, acting in accordance with the policies and protocols of the chief privacy officer, may issue additional agency-specific guidance in furtherance of this chapter, including the policies and protocols promulgated pursuant to section 23-1203." (§ 23-1202.f)
+        *   "require the privacy officer of each city agency to issue guidance to city agency employees, contractors and subcontractors regarding such agency's collection, retention, and disclosure of identifying information;" (§ 23-1203.2)
+        *   "require the privacy officer of each city agency to arrange for dissemination of information to agency employees, contractors, and subcontractors and develop a plan for compliance with this chapter and any policies and protocols developed under this chapter;" (§ 23-1203.8)
+        *   "No later than July 31, 2018, and every two years thereafter by July 31, each city agency shall provide a report regarding the collection, retention, and disclosure of identifying information by such agency and any contractors or subcontractors utilized by such agency. Each such report shall include: 1. information concerning identifying information collected, retained, and disclosed, including: (a) the types of identifying information collected, retained, and disclosed... (b) the types of collections and disclosures classified as routine and any collections or disclosures approved by the chief privacy officer; (c) current policies regarding collection, retention, and disclosure... (d) use of agreements regarding the anticipated use and any potential future use of identifying information disclosed; (e) types of entities requesting the disclosure of identifying information or proposals for disclosures of identifying information... (f) the reasons why any collection and retention of identifying information furthers the purposes or mission of such agency; 2. the impact of any privacy policies and protocols issued by the chief privacy officer... 3. consideration and implementation... of alternative policies that minimize the collection, retention, and disclosure of identifying information... 4. policies on access to identifying information by employees, contractors, and subcontractors..." (§ 23-1205.a)
+    *   **Why:** To track each agency's specific policies, guidance, and practices related to identifying information, as required for biennial reporting and committee review.
+    *   **One row represents:** A snapshot of an agency's privacy policies and practices at a specific reporting period.
+    *   **Covers:** Each city agency's policies and practices regarding the collection, retention, and disclosure of identifying information.
+    *   **Columns:**
+        *   Report ID
+        *   Agency ID
+        *   Reporting Period (e.g., "2023-2025")
+        *   Report Submission Date
+        *   Types of Identifying Information Collected (List/Text)
+        *   Types of Identifying Information Retained (List/Text)
+        *   Types of Identifying Information Disclosed (List/Text)
+        *   Routine Collection Classifications (List/Text)
+        *   Routine Disclosure Classifications (List/Text)
+        *   CPO Approved Collections (List/Text)
+        *   CPO Approved Disclosures (List/Text)
+        *   Policy on Requests for Disclosures (Description/Link)
+        *   Policy on Proposals for Disclosures (Description/Link)
+        *   Policy on Exigent Circumstances Classification (Description/Link)
+        *   Policy on Routine Classification (Description/Link)
+        *   Divisions/Categories of Employees Making Disclosures (List/Text)
+        *   Use of Third-Party Agreements (Description/Link to Dataset 6 practices)
+        *   Types of Entities Requesting Disclosure
+        *   Reasons for Disclosure to Entities
+        *   Reasons for Collection/Retention
+        *   Impact of CPO Policies/Protocols (Description)
+        *   Alternative Policies Implemented (Description)
+        *   Policies on Employee/Contractor/Subcontractor Access (Description/Link)
+        *   Privacy Officer ID (of the agency's privacy officer)
+        *   Guidance Issued (Boolean)
+        *   Guidance Document ID (Link to non-tabular guidance)
+        *   Compliance Plan Developed (Boolean)
+        *   Compliance Plan Document ID (Link to non-tabular plan)
+
+13. **FOIL Requests for Data**
+    *   **Quotes:**
+        *   "Agencies shall review responses to freedom of information law requests that include the release of data to determine if such responses consist of or include public data sets that have not yet been included on the single web portal or the inclusion of which on the single web portal is not provided for in the compliance plan prepared pursuant to section 23-506. Each agency shall disclose in the update to such compliance plan the total number, since the last update, of such agency's freedom of information law responses that included the release of data, the total number of such responses determined to consist of or include a public data set that had not yet been included on the single web portal and the name of such public data set, where applicable, and the total number of such responses that resulted in voluntarily disclosed information being made accessible through the single web portal." (§ 23-502.f)
+    *   **Why:** To track Freedom of Information Law requests that involve the release of data, specifically to identify potential new public data sets for the open data portal.
+    *   **One row represents:** A single FOIL request that included the release of data.
+    *   **Covers:** All FOIL requests where data was released, specifically to identify potential new public data sets.
+    *   **Columns:**
+        *   FOIL Request ID
+        *   Agency ID (Responding Agency)
+        *   Request Date
+        *   Response Date
+        *   Data Released (Boolean)
+        *   Description of Data Released
+        *   Determined to be a Public Data Set (Boolean)
+        *   Public Data Set ID (Foreign Key to Dataset 3, if applicable)
+        *   Previously on Web Portal (Boolean)
+        *   Resulted in Voluntary Disclosure on Web Portal (Boolean)
+
+14. **Open Space Inventory**
+    *   **Quotes:**
+        *   "Open space. The term "open space" means a roadway space, park space, or another public outdoor location, including but not limited to a pedestrian plaza or public parking lot, that is made available by the office for use by art and cultural institutions for outdoor performances or as a rehearsal space." (§ 23-804.a)
+        *   "The office shall, in consultation with any other relevant agency or office... create a website that: 1. Provides information about open space; 2. Facilitates the use of open space by art and cultural institutions; 3. Allows users to search for open space, by location and on a map;" (§ 23-804.b)
+    *   **Why:** To provide information about available open spaces for art and cultural institutions and facilitate their use.
+    *   **One row represents:** A single designated open space.
+    *   **Covers:** Roadway spaces, park spaces, pedestrian plazas, public parking lots, and other public outdoor locations made available for use by art and cultural institutions.
+    *   **Columns:**
+        *   Open Space ID
+        *   Open Space Name
+        *   Open Space Type (e.g., "Roadway", "Park", "Pedestrian Plaza", "Public Parking Lot")
+        *   Location (Address, Coordinates)
+        *   Managing Agency ID (e.g., Parks & Rec, DOT)
+        *   Availability Status (e.g., "Available", "Reserved", "Closed")
+        *   Capacity
+        *   Amenities
+        *   Searchable on Website (Boolean)
+        *   Map Location Data
+
+15. **Cultural Program Events**
+    *   **Quotes:**
+        *   "The office shall... create a website that: ... 4. Allows users to search for information about outdoor programs offered by art and cultural institutions that are coordinated by the office. Such website may also provide information about other events hosted by art and cultural institutions and outdoor events held on private property, to the extent such information is provided to the office for inclusion on such website." (§ 23-804.b)
+    *   **Why:** To track outdoor programs offered by art and cultural institutions, especially those coordinated by the office, for public information and coordination.
+    *   **One row represents:** A single outdoor program event.
+    *   **Covers:** Outdoor performances or rehearsals by art and cultural institutions coordinated by the Mayor's Office of Citywide Event Coordination and Management, and other events provided for inclusion.
+    *   **Columns:**
+        *   Program Event ID
+        *   Program Name
+        *   Art/Cultural Institution Name
+        *   Open Space ID (Foreign Key to Dataset 14)
+        *   Event Date
+        *   Event Start Time
+        *   Event End Time
+        *   Program Type (e.g., "Performance", "Rehearsal")
+        *   Description
+        *   Searchable on Website (Boolean)
+        *   Other Events Hosted (Boolean, if applicable)
+        *   Private Property Event (Boolean, if applicable)
+
+16. **Identifying Information Privacy Complaints**
+    *   **Quotes:**
+        *   "establish a mechanism for accepting and investigating complaints for violations of this chapter." (§ 23-1203.9)
+    *   **Why:** To track and investigate complaints regarding violations of identifying information policies, ensuring accountability and resolution.
+    *   **One row represents:** A single complaint received regarding identifying information.
+    *   **Covers:** All complaints for violations of Chapter 12.
+    *   **Columns:**
+        *   Complaint ID
+        *   Complaint Date
+        *   Complainant (Anonymized)
+        *   Description of Alleged Violation
+        *   Agency ID (Alleged Violating Agency)
+        *   Employee ID / Contractor ID / Subcontractor ID (Alleged Violating Party)
+        *   Investigation Start Date
+        *   Investigation End Date
+        *   Investigation Outcome (e.g., "Substantiated", "Unsubstantiated", "Pending")
+        *   Remedial Actions Taken
+        *   Notification to Complainant Date
+
+17. **Open Data Agency Coordinators**
+    *   **Quotes:**
+        *   "The head of each agency shall designate an employee of such agency to serve as the open data coordinator for such agency. Such coordinator shall be responsible for ensuring that such agency complies with the requirements of this chapter and for receiving and responding to feedback from the public regarding such agency's public data sets." (§ 23-507)
+    *   **Why:** To maintain a record of the designated Open Data Coordinator for each agency, facilitating communication, compliance, and public engagement.
+    *   **One row represents:** An Open Data Coordinator designation for an agency.
+    *   **Covers:** All designated Open Data Coordinators across city agencies.
+    *   **Columns:**
+        *   Coordinator ID
+        *   Agency ID
+        *   Employee ID (of coordinator)
+        *   Coordinator Name
+        *   Coordinator Title
+        *   Contact Information (Email, Phone)
+        *   Designation Date
+        *   End Date (if applicable)
+
+18. **Online Interactive Map Status**
+    *   **Quotes:**
+        *   "The department of environmental protection shall provide to the public, at no charge, on the city's website, an online interactive map pursuant to section 24-309.1. All information required by section 24-309.1 shall be available on the city's website on or before June 1, 2019 and updated, at minimum, in June of each year. The mayor shall ensure that agencies provide such department with assistance and information as it requires to compile and update the interactive map." (§ 23-803)
+    *   **Why:** To track the availability, content, and update schedule of the Department of Environmental Protection's online interactive map.
+    *   **One row represents:** An update or status check for the online interactive map.
+    *   **Covers:** The online interactive map provided by the Department of Environmental Protection.
+    *   **Columns:**
+        *   Map ID (Primary Key, likely a single entry for this specific map)
+        *   Map Name (e.g., "DEP Online Interactive Map")
+        *   Agency ID (DEP)
+        *   Required Availability Date (June 1, 2019)
+        *   Actual Availability Date
+        *   Required Update Frequency (Annually in June)
+        *   Last Update Date
+        *   Next Scheduled Update Date
+        *   Compliance Status (e.g., "On Schedule", "Delayed")
+        *   Assistance/Information Provided by Other Agencies (Boolean)
+        *   Assisting Agency IDs
+
+**Non-Tabular Information:**
+
+*   **Protocols for Breach Coordination and Recordkeeping:** Issued by the Office of Cyber Command (§ 10-502.i).
+*   **Written Documentation of Inadvertent Disclosure Determinations:** Maintained for at least five years (§ 10-502.g).
+*   **Technical Standards Manual for Public Data Sets:** Prepared and published by the Department of Information Technology and Telecommunications (§ 23-505.a).
+*   **Open Data Legal Policy:** Published conspicuously on the web portal by the Department of Information Technology and Telecommunications (§ 23-504.b).
+*   **Agency Compliance Plan for Public Data Sets:** Submitted by the Department of Information Technology and Telecommunications to the Mayor and Council, and made public (§ 23-506.a).
+*   **Website Accessibility Protocol:** Adopted by the Mayor or Mayor's designee (§ 23-802.a).
+*   **Written Certifications from Third-Party Electronic Equipment Disposers:** Provided to agencies and forwarded to DoITT (§ 10-504.b).
+*   **Biennial Statements Certifying Agency Electronic Equipment Disposal Compliance:** Submitted by agencies to DoITT (§ 10-504.b).
+*   **Agency-Specific Guidance for Identifying Information:** Issued by each city agency's privacy officer (§ 23-1202.f, § 23-1203.2).
+*   **Standard Contract Provisions for Identifying Information Protection:** Established by the Chief Privacy Officer (§ 23-1203.7).
+*   **Quarterly Reports on Anonymized Compilation/Summary of Identifying Information Disclosures:** Submitted by the Chief Privacy Officer to the Speaker of the Council and made available online (§ 23-1202.c.4, § 23-1202.d.2).
+*   **Biennial City Agency Reports on Identifying Information Collection, Retention, and Disclosure:** Provided by each city agency to the Mayor, Council, CPO, and Committee (§ 23-1205.a).
+*   **Committee Recommendations on Identifying Information Policies and Procedures:** Communicated by the Identifying Information Protection Committee (§ 23-1204.c).
+*   **Plans for Compliance with Identifying Information Chapter:** Developed by each agency's privacy officer (§ 23-1203.8).

@@ -1,0 +1,318 @@
+**Department of Parks and Recreation and New York City Sports Commission Data Requirements**
+
+**Tabular Datasets**
+
+1.  **Park and Recreation Property Inventory**
+    *   **Quotes:**
+        *   "to manage and care for all parks, squares and public places, the sidewalks immediately adjoining the same and all playgrounds, playground fixtures and other recreation properties, except those within the jurisdiction of the board of education or other agencies" (Section 533.a.1)
+        *   "to prepare plans for the establishment and improvement of a park system for the city with due regard to proper connections with the systems of federal, state and county parks and recreation areas in the city and the counties adjacent to the city" (Section 533.a.2)
+        *   "to maintain the beauty and utility of all parks, squares, public places, playgrounds and other recreational properties" (Section 533.a.3)
+        *   "to establish and enforce rules and regulations for the use, government and protection of public parks and of all property under the charge and control of the department" (Section 533.a.9)
+        *   "to plan, acquire, construct, improve and manage facilities for the recreation of the public" (Section 533.b.1)
+    *   **Why:** To effectively manage, maintain, and plan for all park and recreation properties under the department's jurisdiction.
+    *   **One row represents:** A single park, square, public place, playground, or other recreation property.
+    *   **Covers:** All land-based and associated properties managed by the Department of Parks and Recreation.
+    *   **Columns:**
+        *   Property ID
+        *   Property Name
+        *   Property Type (e.g., Park, Square, Public Place, Playground, Recreation Area)
+        *   Location (Address, Borough, GPS Coordinates)
+        *   Size/Area
+        *   Acquisition Date
+        *   Jurisdiction (DPR, or shared with Battery Park City Authority, Hudson River Park Trust, Brooklyn Bridge Park Corporation)
+        *   Connection to Federal/State/County Systems (Yes/No)
+        *   Last Major Improvement Date
+        *   Current Status (e.g., Open, Under Renovation, Closed)
+
+2.  **Building and Structure Inventory**
+    *   **Quotes:**
+        *   "such jurisdiction shall not extend to or include the buildings which are not or hereafter may be erected in parks, squares or public places for governmental purposes other than those of the department" (Section 533.a.1)
+        *   "to maintain buildings and structures now or hereafter erected or established in any park, square, public place or playground under his or her jurisdiction and to carry out and perform existing contracts with corporations or institutions for the construction and maintenance of such buildings and structures" (Section 533.a.6)
+        *   "to provide the necessary instruments, furniture and equipment for the several buildings and structures within his or her jurisdiction" (Section 533.a.7)
+    *   **Why:** To track and manage all buildings and structures within the department's jurisdiction for maintenance and operational purposes.
+    *   **One row represents:** A single building or structure.
+    *   **Covers:** All buildings and structures located within parks, squares, public places, or playgrounds under DPR jurisdiction.
+    *   **Columns:**
+        *   Building/Structure ID
+        *   Building/Structure Name
+        *   **Property ID** (links to Dataset 1)
+        *   Building/Structure Type (e.g., Recreation Center, Restroom, Office, Pavilion, Monument)
+        *   Location within Property
+        *   Construction Date
+        *   Last Renovation Date
+        *   Current Condition Rating
+        *   Associated Contracts (Yes/No)
+
+3.  **Tree and Planting Inventory**
+    *   **Quotes:**
+        *   "to plant and maintain trees" (Section 533.a.4)
+        *   "to plan, plant and maintain trees and other plantings" (Section 533.a.11)
+    *   **Why:** To manage the planting, maintenance, and overall health of trees and other plantings across the city.
+    *   **One row represents:** A single tree or a distinct planting area.
+    *   **Covers:** All trees and other plantings under the department's jurisdiction, including those in parks and on streets/avenues.
+    *   **Columns:**
+        *   Tree/Planting ID
+        *   **Property ID** (links to Dataset 1, if applicable)
+        *   Location (GPS, Street Address, specific location within property)
+        *   Type of Planting (e.g., Tree, Shrub, Flowerbed)
+        *   Species (for trees/specific plantings)
+        *   Planting Date
+        *   Last Maintenance Date
+        *   Condition Rating
+        *   Maintenance Needs (e.g., Pruning, Watering, Pest Control)
+
+4.  **Park Amenity Inventory**
+    *   **Quotes:**
+        *   "to construct, erect and establish seats, drinking fountains, statues and works of art in any place within his or her jurisdiction, and to determine when and where lamps or lighting appliances shall be placed and lighted therein and the design thereof" (Section 533.a.4)
+        *   "to plan, acquire, design, construct, improve, alter, repair and maintain works of art" (Section 533.a.11)
+    *   **Why:** To track the location, type, and condition of all fixed amenities within parks and public spaces.
+    *   **One row represents:** A single amenity item.
+    *   **Covers:** Seats, drinking fountains, statues, works of art, lamps, and lighting appliances within DPR jurisdiction.
+    *   **Columns:**
+        *   Amenity ID
+        *   Amenity Type (e.g., Seat, Drinking Fountain, Statue, Work of Art, Lamp)
+        *   **Property ID** (links to Dataset 1)
+        *   Location within Property
+        *   Installation Date
+        *   Design Details (for lamps/art)
+        *   Current Condition
+        *   Last Maintenance Date
+
+5.  **Facility Equipment Inventory**
+    *   **Quotes:**
+        *   "to provide the necessary instruments, furniture and equipment for the several buildings and structures within his or her jurisdiction" (Section 533.a.7)
+    *   **Why:** To manage and track all movable instruments, furniture, and equipment within department buildings and structures.
+    *   **One row represents:** A single piece of equipment or furniture.
+    *   **Covers:** All instruments, furniture, and equipment provided for buildings and structures under DPR jurisdiction.
+    *   **Columns:**
+        *   Equipment ID
+        *   Item Name
+        *   Item Type (e.g., Instrument, Furniture, Office Equipment, Recreation Equipment)
+        *   **Building/Structure ID** (links to Dataset 2)
+        *   Acquisition Date
+        *   Purchase Cost
+        *   Current Condition
+        *   Last Service/Calibration Date
+        *   Assigned Department/Program
+
+6.  **Maintenance and Improvement Activity Log**
+    *   **Quotes:**
+        *   "to manage and care for all parks, squares and public places" (Section 533.a.1)
+        *   "to maintain the beauty and utility of all parks, squares, public places, playgrounds and other recreational properties, except those within the jurisdiction of the board of education and to institute and execute all measures for the improvement thereof for ornamental purposes and for the beneficial uses of the people of the city" (Section 533.a.3)
+        *   "to plant and maintain trees and to construct, erect and establish seats, drinking fountains, statues and works of art" (Section 533.a.4)
+        *   "to maintain buildings and structures now or hereafter erected or established in any park, square, public place or playground" (Section 533.a.6)
+        *   "to develop and improve the same subject to the provisions of law and existing contracts" (Section 533.a.7)
+        *   "to plan, acquire, design, construct, improve, alter, repair and maintain works of art" (Section 533.a.11)
+        *   "to plan, acquire, construct, improve and manage facilities for the recreation of the public" (Section 533.b.1)
+    *   **Why:** To track all maintenance, repair, construction, and improvement activities performed on department assets.
+    *   **One row represents:** A single maintenance, repair, construction, or improvement activity.
+    *   **Covers:** All activities related to the care, maintenance, construction, improvement, alteration, and repair of parks, properties, buildings, structures, trees, and amenities.
+    *   **Columns:**
+        *   Activity ID
+        *   Activity Type (e.g., Routine Maintenance, Repair, Construction, Improvement, Planting, Cleaning)
+        *   Description of Work
+        *   Start Date
+        *   Completion Date
+        *   Status (e.g., Scheduled, In Progress, Completed, Canceled)
+        *   Associated Asset Type (e.g., Property, Building, Tree, Amenity, Equipment)
+        *   **Associated Asset ID** (links to Dataset 1, 2, 3, 4, or 5)
+        *   Work Order ID
+        *   Department/Team Responsible
+        *   Personnel Involved
+        *   Cost of Activity
+        *   Contractor ID (if applicable)
+        *   Inspection Date (post-activity)
+
+7.  **Violation Incidents Log**
+    *   **Quotes:**
+        *   "to establish and enforce rules and regulations for the use, government and protection of public parks and of all property under the charge and control of the department" (Section 533.a.9)
+        *   "Any violation of such rules or regulations shall be an offense punishable by imprisonment of up to one day or by a fine of not more than 200 dollars. Any violation of such rules or regulations shall also subject the violator to a civil penalty of not more than 300 dollars for each violation" (Section 533.a.9.i)
+        *   "the civil penalty limitations in relation to open container restrictions, littering and urination, and noise set forth in sections 10-173, 16-141 and 24-270, respectively, shall govern where applicable." (Section 533.a.9.ii)
+        *   "the administrative code may classify violations of such rules as misdemeanors, and may prescribe sanctions consistent with such classification." (Section 533.a.9.iii)
+        *   "by agreement with the battery park city authority... to enforce the rules and regulations of such authority" (Section 533.a.9-a)
+        *   "by agreement with the Hudson river park trust... to enforce the rules and regulations of such trust" (Section 533.a.9-b)
+        *   "by agreement with the Brooklyn bridge park corporation... to enforce the rules and regulations of such corporation" (Section 533.a.9-c)
+    *   **Why:** To track all reported and adjudicated violations of park rules and regulations, including those enforced by agreement.
+    *   **One row represents:** A single violation incident.
+    *   **Covers:** All violations of rules and regulations established by DPR or enforced by agreement with partner entities.
+    *   **Columns:**
+        *   Violation ID
+        *   Date of Violation
+        *   Time of Violation
+        *   **Property ID** (links to Dataset 1)
+        *   Location within Property
+        *   Violation Type/Rule Violated (e.g., Littering, Open Container, Noise, Urination)
+        *   Issuing Officer ID
+        *   Issuing Agency (DPR, BPC Authority, HRPT, BBPC)
+        *   Violator Information (Name, Address, if recorded)
+        *   Penalty Imposed (Fine Amount, Imprisonment, Civil Penalty)
+        *   Adjudication Status (e.g., Issued, Paid, Contested, Default Judgment, Dismissed)
+        *   Date of Adjudication
+        *   Amount Paid
+        *   Misdemeanor Classification (Yes/No)
+
+8.  **Conservation & Education Program Activities**
+    *   **Quotes:**
+        *   "to plan, conduct, supervise, coordinate and promote conservation, environmental, and nature education programs and research and demonstration projects relating thereto" (Section 533.a.10)
+        *   "to plan, acquire, design, construct, improve, alter, maintain and manage areas and facilities for conservation and the preservation of natural beauty" (Section 533.a.10)
+        *   "undertake to enter into arrangements with other city, state or federal agencies and recommend to the mayor such arrangements with private, voluntary or commercial agencies, to be entered into subject to the provisions of law, for the performance of functions relating to conservation and the preservation of natural beauty" (Section 533.a.10)
+    *   **Why:** To track the planning, conduct, and outcomes of all conservation, environmental, and nature education programs.
+    *   **One row represents:** A single program event or activity.
+    *   **Covers:** All conservation, environmental, and nature education programs, research, and demonstration projects.
+    *   **Columns:**
+        *   Program Activity ID
+        *   Program Name
+        *   Activity Type (e.g., Workshop, Tour, Cleanup, Research Project, Demonstration)
+        *   Date of Activity
+        *   Time of Activity
+        *   **Property ID** (links to Dataset 1, if applicable)
+        *   Location
+        *   Program Lead/Coordinator ID
+        *   Number of Participants
+        *   Partner Agency/Organization (if applicable)
+        *   Arrangement Type (e.g., Inter-agency, Private, Voluntary, Commercial)
+        *   Outcome/Summary (e.g., trees planted, waste collected, educational reach)
+
+9.  **Recreation Program Activities**
+    *   **Quotes:**
+        *   "to plan, develop, conduct and supervise recreation programs for the public including research and demonstration projects relating thereto" (Section 533.b.2)
+        *   "to review and coordinate recreation activities and programs and facilities conducted by agencies of the city and the budget estimates submitted by such other agencies for such activities" (Section 533.b.3)
+        *   "to undertake, subject to the approval of the mayor, and to enter into arrangements with other agencies of the city, state or federal government and to recommend to the mayor such arrangements with private, voluntary or commercial agencies to be entered into, subject to the provisions of law, for the performance of any recreation functions conferred upon the department by this chapter or otherwise." (Section 533.b.4)
+    *   **Why:** To track the planning, development, and conduct of all public recreation programs.
+    *   **One row represents:** A single recreation program event or activity.
+    *   **Covers:** All public recreation programs, including research and demonstration projects, and coordinated activities with other city agencies.
+    *   **Columns:**
+        *   Program Activity ID
+        *   Program Name
+        *   Activity Type (e.g., Sports League, Class, Event, Camp, Research Project)
+        *   Date of Activity
+        *   Time of Activity
+        *   **Property ID** (links to Dataset 1, if applicable)
+        *   Location
+        *   Program Lead/Coordinator ID
+        *   Number of Participants
+        *   Partner Agency/Organization (if applicable)
+        *   Arrangement Type (e.g., Inter-agency, Private, Voluntary, Commercial)
+        *   Outcome/Summary (e.g., attendance, skill development)
+
+10. **Contract Register**
+    *   **Quotes:**
+        *   "to carry out and perform existing contracts with corporations or institutions for the construction and maintenance of such buildings and structures" (Section 533.a.6)
+        *   "to develop and improve the same subject to the provisions of law and existing contracts" (Section 533.a.7)
+        *   "undertake to enter into arrangements with other city, state or federal agencies and recommend to the mayor such arrangements with private, voluntary or commercial agencies, to be entered into subject to the provisions of law, for the performance of functions relating to conservation and the preservation of natural beauty" (Section 533.a.10)
+        *   "undertake to enter into arrangements with other agencies of the city, state and federal government and recommend to the mayor such arrangements with private, voluntary or commercial agencies, to be entered into subject to the provisions of law, for the performance of functions relating to neighborhood beautification." (Section 533.a.11)
+        *   "to undertake, subject to the approval of the mayor, and to enter into arrangements with other agencies of the city, state or federal government and to recommend to the mayor such arrangements with private, voluntary or commercial agencies to be entered into, subject to the provisions of law, for the performance of any recreation functions conferred upon the department by this chapter or otherwise." (Section 533.b.4)
+    *   **Why:** To manage and track all contracts and arrangements for construction, maintenance, programs, and services.
+    *   **One row represents:** A single contract or formal arrangement.
+    *   **Covers:** All contracts and arrangements with corporations, institutions, city, state, federal, private, voluntary, or commercial agencies.
+    *   **Columns:**
+        *   Contract ID
+        *   Contract Title/Description
+        *   Contract Type (e.g., Construction, Maintenance, Program Services, Inter-agency Agreement)
+        *   Contracting Party Name
+        *   Contracting Party Type (e.g., Corporation, Institution, City Agency, Private, Voluntary)
+        *   Start Date
+        *   End Date
+        *   Contract Value
+        *   Status (e.g., Active, Completed, Expired)
+        *   Associated **Building/Structure ID** (links to Dataset 2, if applicable)
+        *   Associated **Program Activity ID** (links to Dataset 8 or 9, if applicable)
+        *   Responsible Department/Unit
+
+11. **Donated Property Register**
+    *   **Quotes:**
+        *   "to have the management, direction and control of all real or personal property granted, devised, bequeathed or conveyed to the city for the extension, improvement or ornamentation of the parks, squares or public places in the city or for the establishment or maintenance, within the limits of any such park, square or public place, of playgrounds, other recreational properties and other facilities within the department's jurisdiction and upon such trusts and conditions as may be prescribed by the grantors or donors thereof and accepted by the commissioner, or proposed by the commissioner and accepted by the grantors or donor thereof" (Section 533.a.8)
+    *   **Why:** To track all real and personal property received through grants, devises, bequests, or conveyances.
+    *   **One row represents:** A single item of donated real or personal property.
+    *   **Covers:** All real or personal property granted, devised, bequeathed, or conveyed to the city for park and recreation purposes.
+    *   **Columns:**
+        *   Donation ID
+        *   Item Description
+        *   Property Type (e.g., Real Estate, Artwork, Equipment, Funds)
+        *   Donor Name
+        *   Date of Donation
+        *   Estimated Value
+        *   Conditions/Trusts (Summary)
+        *   Acceptance Date by Commissioner
+        *   **Associated Property ID** (links to Dataset 1, if applicable)
+        *   **Associated Amenity ID** (links to Dataset 4, if applicable)
+        *   Current Location/Custodian
+
+12. **NYC Sports Commission Member Roster**
+    *   **Quotes:**
+        *   "There shall be established a New York city sports commission consisting of five members who shall serve without compensation, each for a term of three years. Two members of the commission shall be appointed by the mayor, and two members shall be appointed by the speaker of the council, and one member shall be designated as chairperson by the mayor after consultation with the speaker." (Section 541.a)
+        *   "Each member may designate a representative who may vote on behalf of such member and who shall be counted as a member for the purpose of determining the existence of a quorum. The designation of a representative shall be made in prior written notice served upon the chairperson of the commission." (Section 541.b)
+    *   **Why:** To maintain an accurate record of commission members, their appointments, terms, and designated representatives.
+    *   **One row represents:** A single member of the New York City Sports Commission.
+    *   **Covers:** All current and past members of the New York City Sports Commission.
+    *   **Columns:**
+        *   Member ID
+        *   Member Name
+        *   Appointment Date
+        *   Appointing Authority (Mayor, Speaker of the Council)
+        *   Term Start Date
+        *   Term End Date
+        *   Role (Member, Chairperson)
+        *   Designated Representative Name (if applicable)
+        *   Representative Designation Date
+
+13. **NYC Sports Commission Meeting Records**
+    *   **Quotes:**
+        *   "hold at least one meeting per month" (Section 541.c.2)
+        *   "Each member may designate a representative who may vote on behalf of such member and who shall be counted as a member for the purpose of determining the existence of a quorum." (Section 541.b)
+    *   **Why:** To document all commission meetings, attendance, and quorum for legal and operational compliance.
+    *   **One row represents:** A single meeting of the New York City Sports Commission.
+    *   **Covers:** All official meetings held by the New York City Sports Commission.
+    *   **Columns:**
+        *   Meeting ID
+        *   Meeting Date
+        *   Meeting Time
+        *   Meeting Location
+        *   Chairperson Present (Yes/No)
+        *   Quorum Achieved (Yes/No)
+        *   Attendees (List of **Member IDs** or Representative Names)
+        *   Key Decisions Made (Summary)
+
+14. **NYC Sports Commission Budget Submissions**
+    *   **Quotes:**
+        *   "submit a proposed annual budget to the council no later than March thirty-first of each year" (Section 541.c.3)
+    *   **Why:** To track the submission of the annual budget to the council as required by the charter.
+    *   **One row represents:** A single annual budget submission.
+    *   **Covers:** All proposed annual budgets submitted by the New York City Sports Commission to the council.
+    *   **Columns:**
+        *   Budget Submission ID
+        *   Fiscal Year
+        *   Submission Date
+        *   Submitted By (e.g., Executive Director)
+        *   Approval Status (e.g., Pending, Approved, Revised)
+        *   Final Approved Budget Amount
+        *   Date of Council Approval
+
+15. **NYC Sports Commission Recommendations Log**
+    *   **Quotes:**
+        *   "make recommendations to insure the continuation and growth of a healthy environment for professional, amateur and scholastic sports activities in the city" (Section 541.c.1)
+        *   "seek to promote the city as a positive and profitable base for professional sports teams wishing to relocate their organizations" (Section 541.c.4)
+        *   "perform such other duties as may be necessary as determined by the commission." (Section 541.c.5)
+    *   **Why:** To track all recommendations made by the commission and their status or impact.
+    *   **One row represents:** A single recommendation made by the commission.
+    *   **Covers:** All recommendations made by the New York City Sports Commission regarding sports activities and city promotion.
+    *   **Columns:**
+        *   Recommendation ID
+        *   Date of Recommendation
+        *   Recommendation Topic (e.g., Professional Sports, Amateur Sports, Scholastic Sports, City Promotion)
+        *   Description of Recommendation
+        *   Target Audience/Recipient (e.g., Mayor, Council, Sports Organizations)
+        *   Status (e.g., Submitted, Under Review, Implemented, Rejected)
+        *   Outcome/Impact (if known)
+        *   Related **Meeting ID** (links to Dataset 13)
+
+**Non-Tabular Information**
+
+*   Plans for the establishment and improvement of a park system (Section 533.a.2)
+*   Rules and regulations for the use, government and protection of public parks (Section 533.a.9)
+*   Agreements with Hudson River Park Trust, Battery Park City Authority, and Brooklyn Bridge Park Corporation (Section 533.a.9, 9-a, 9-b, 9-c)
+*   Research and demonstration projects documents (Section 533.a.10, 533.b.2)
+*   Budget estimates submitted by other city agencies for recreation activities (Section 533.b.3)
+*   Written notices for representative designations for Sports Commission members (Section 541.b)
+*   Administrative Code Appendix A references (Editor's notes)
+*   Legal changes and provisions of law (implied throughout)

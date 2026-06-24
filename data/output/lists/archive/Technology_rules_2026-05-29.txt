@@ -1,0 +1,849 @@
+**1. Regulated Entity Registry (Franchisees/Owners/Cable Companies)**
+
+**Quotes:**
+*   "Owner" means the holder of a current telecommunications franchise pursuant to Section 1072(c) of the Charter, that proposes to install or has installed conduit. A franchise is not "current" if the term of the franchise agreement has expired and the franchise is in holdover status. (§ 1-01(g))
+*   "Telecommunications franchisee" means the holder of a current franchise pursuant to Section 1072(c) of the Charter, or of a revocable consent from the City of New York for installation of telecommunications equipment above, below or on any of the streets within the City. A franchise is not "current" if the term of the franchise agreement has expired and the franchise is in holdover status. (§ 1-01(h))
+*   "Cable television company" shall mean any person, firm, partnership, or corporation which provides one-way transmission to subscribers of video programming or other programming services. (§ 4-01)
+*   This chapter applies to all cable television companies authorized by New York City by means of a franchise or other municipal authorization to construct, operate, maintain, or manage a cable television system in New York City. (§ 4-02(a))
+*   "Owner" shall mean a natural person or business entity that owns, leases, or is otherwise responsible for the installation, operation and maintenance of a public pay telephone. (§ 6-01)
+*   unless the applicant possesses a franchise to install, maintain and operate public pay telephones on, over and under the streets and other inalienable property of the City; (§ 6-31(b)(1))
+
+**Why:** The agency needs a central record of all entities it regulates across different programs to manage compliance and interactions.
+
+**One row represents:** A single legal entity (company or individual) regulated by the Department.
+
+**Covers:** All telecommunications franchisees, microtrenching owners, cable television companies, and public pay telephone owners.
+
+**Columns:**
+*   **Entity ID** (Unique identifier for the regulated entity)
+*   Entity Name
+*   Entity Type (e.g., Corporation, Partnership, Sole Proprietorship)
+*   Business Address
+*   Contact Person Name
+*   Contact Person Title
+*   Contact Email
+*   Contact Phone Number
+*   Franchise Agreement Number (if applicable)
+*   Franchise Status (Current, Expired, Holdover)
+*   Is Telecommunications Franchisee? (Boolean)
+*   Is Microtrenching Owner? (Boolean)
+*   Is Cable Television Company? (Boolean)
+*   Is Public Pay Telephone Owner? (Boolean)
+*   Date Franchise Granted
+*   Date Franchise Expires
+
+**2. Public Pay Telephone Installation Inventory**
+
+**Quotes:**
+*   A "Public Pay Telephone Installation" shall mean an installation, including the telephone, pedestal and housing of such telephone, with one or more public pay telephones on a pedestal, one or more public pay telephones in an in-line configuration, or a public pay telephone attached to another structure. (§ 6-01)
+*   A public pay telephone shall comply with the requirements set forth in this subchapter provided, however, that the provisions of subdivision (d), subparagraphs (i), (ii), (vii), (viii) and (x) through (xxiv) of paragraph (e) (2), and subdivisions (f) through (n) of 67 RCNY § 6-41 shall not apply to a public pay telephone permitted pursuant to this chapter that was previously licensed pursuant to former § 19-131 or 19-128 of the Code. (§ 6-40)
+*   § 6-41 Siting and Clearance Requirements. (a) Pedestrian passage. (b) Crosswalks and sight lines. (c) Fire escapes and building access. (d) Underground vaults and sewers. (e) Distances required. (f) Required distance from other public pay telephone. (g) Distance from corner and curb. (h) Location of public pay telephones in relation to other street furniture or street conditions. (i) Measurements from enclosures. (j) Number of public pay telephones at any location. (l) Sidewalks of a distinctive design. (m) A public pay telephone must be installed upon a paved surface...
+*   Each public pay telephone location, single or multiple, shall have a sign in a form prescribed by the Commissioner... Such sign shall: (a) be of dimensions no less than 2" by 5"; (b) include Americans with Disabilities Act ("ADA") symbols... (c) be in compliance with requirements of the ADA; (d) clearly and legibly identify the owner... (e) clearly and legibly identify the New York State Public Service Commission certified Operator Service Provider... (f) contain the following statement: "To register a complaint with the City of New York, call 311."; and, (g) clearly and legibly identify the public pay telephone using the PPT identification number issued by the Department. (§ 6-42)
+*   A franchisee shall comply with the provisions of the Americans with Disabilities Act and the regulations promulgated thereunder... (§ 6-44)
+*   A public pay telephone shall be sited, installed, operated and maintained in compliance with all applicable provisions of Federal, State and local law... (§ 6-45(b))
+
+**Why:** The agency must track the location, characteristics, and compliance of each public pay telephone installation to ensure public safety and regulatory adherence.
+
+**One row represents:** A single public pay telephone installation.
+
+**Covers:** All permitted public pay telephone installations within the City.
+
+**Columns:**
+*   **PPT Installation ID** (Unique identifier for the installation)
+*   **Permit ID** (Links to Dataset 4: Public Pay Telephone Permits)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Installation Location (Street Address, Cross Street, Borough, Zip Code)
+*   Geographic Coordinates (Latitude, Longitude)
+*   Installation Type (Pedestal, In-line, Wall-mounted)
+*   Number of Telephones at Installation
+*   Footprint Dimensions (if in-line)
+*   Installation Date
+*   Exempt from certain §6-41 provisions? (Boolean, for pre-existing licenses)
+*   Sidewalk Clearance (feet)
+*   Obstructs Curb Cuts/Crosswalks? (Boolean)
+*   Interferes with Fire Escape/Egress? (Boolean)
+*   Prevents Cellar Door Opening? (Boolean)
+*   Affects Underground Vault/Sewer Integrity? (Boolean)
+*   Distance to Traffic Sign (feet)
+*   Distance to Traffic Light (feet)
+*   Distance to Wheelchair Lift Ramp (feet)
+*   Distance to Subway Entrance (feet)
+*   Distance to Fire Hydrant (feet)
+*   Distance to Standpipe/Sprinkler/Siamese Connection/Wall Hydrant (feet)
+*   Distance to Subway Grate/Utility Hole Cover/Transformer Vault (feet)
+*   Distance to Sidewalk Cafe (feet)
+*   Distance to Bus Stop Zone (feet)
+*   Distance to Newsstand (feet)
+*   Distance to Public Pay Toilet (feet)
+*   Distance to Curbline Bench (feet)
+*   Distance to Driveway (feet)
+*   Distance to Canopy (feet)
+*   Distance to Curbline Mailbox (feet)
+*   Distance to Street Light Base (feet)
+*   Distance to Parking Meter (feet)
+*   Distance to Fire Box (feet)
+*   Distance to Curbline News Rack (feet)
+*   Distance to Curbline Newsbox (feet)
+*   Distance to Tree (feet)
+*   Distance to Grating (if building line) (feet)
+*   Distance to Signpole (feet)
+*   Distance to Curbline Tree Pit/Planter (feet)
+*   Distance to Pedestal Structure (feet)
+*   Distance to Bicycle Rack (feet)
+*   Distance to Other Sidewalk Encumbrance (feet)
+*   Distance to Nearest Other PPT Installation (feet)
+*   Located in Historic District? (Boolean)
+*   Compliant with Landmarks Preservation Commission rules? (Boolean)
+*   Installed on Paved Surface? (Boolean)
+*   Sign Dimensions (e.g., 2"x5")
+*   ADA Symbols Present? (Boolean)
+*   Owner Identified on Sign? (Boolean)
+*   Operator Service Provider Identified on Sign? (Boolean)
+*   311 Complaint Statement Present on Sign? (Boolean)
+*   PPT Identification Number on Sign
+*   Wiring Type (Underground, Overhead, Mixed)
+*   Overhead Wiring Height (feet, if applicable)
+*   Last Paint Date
+*   ADA Compliant? (Boolean)
+
+**3. Microtrenching Conduit Inventory**
+
+**Quotes:**
+*   "Conduit" means equipment installed by means of microtrenching to house fiber-optic cabling in multiple enclosed pathways or pipes. (§ 1-01(a))
+*   "Duct" means one enclosed pathway or pipe within a conduit. (§ 1-01(c))
+*   "Excess capacity" means ducts within a conduit that may not be used by the owner or for the owner's business. Each excess capacity duct must be no smaller than the largest duct within the conduit that is reserved for use by the owner, but in any event each excess capacity duct must have the capacity to house at least 96 strands of fiber-optic cable. (§ 1-01(d))
+*   New microtrenching will not be permitted where sufficient excess capacity is available in existing microtrenching. (§ 1-02(a))
+*   An owner must install conduit in a way that will readily permit another owner to add length to the microtrenching by connecting its own conduit to the first owner's conduit. Where an owner connects its own conduit to another owner's previously installed conduit, the owner must install conduit that has the same number of pathways or pipes as the previous owner's conduit. (§ 1-02(b))
+*   Microtrenching will be permitted only for: a. fiber-optic service to properties within the following zoning districts... b. fiber-optic service to telecommunications structures or equipment within the boundaries of streets regardless of zoning. (§ 1-02(c))
+*   A map showing the street location of the conduit including the side of the street the conduit is on, the beginning and ending points of the conduit, the number of ducts in the conduit, and the number of ducts of excess capacity in the conduit. The map must accurately reflect the addresses of buildings that are passed by the conduit. (§ 1-02(f)(b))
+*   On a low density residential block, all conduit must have excess capacity of at least four ducts. (§ 1-03(b))
+*   In any other location, all conduit must have excess capacity of at least six ducts. (§ 1-03(c))
+*   the owner must retain title to the conduit and must maintain the conduit in working order and good repair, and in compliance with the rules of this chapter. (§ 1-04)
+*   An owner may transfer ownership of conduit to another entity that would be an "owner"... A transfer may not be made effective before the submission to the Department of the contract or other document effectuating the transfer. (§ 1-08(b))
+
+**Why:** The agency needs to track all installed microtrenching conduits, their characteristics, and ownership to manage excess capacity and ensure compliance.
+
+**One row represents:** A segment of microtrenching conduit installed by an owner.
+
+**Covers:** All microtrenching conduits installed under the Department's regulations.
+
+**Columns:**
+*   **Conduit Segment ID** (Unique identifier for the conduit segment)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Installation Date
+*   Street Location (Street Name, Side of Street, Borough, Zip Code)
+*   Geographic Start Coordinates (Latitude, Longitude)
+*   Geographic End Coordinates (Latitude, Longitude)
+*   Length of Conduit Segment (feet)
+*   Total Number of Ducts in Conduit
+*   Number of Ducts Reserved for Owner Use
+*   Number of Excess Capacity Ducts
+*   Minimum Excess Capacity Ducts Required (based on location)
+*   Is on Low Density Residential Block? (Boolean)
+*   Zoning District(s) Served
+*   Floor Area Ratio (if applicable for C4, M-1, M-2, M-3, special purpose districts)
+*   Addresses of Buildings Passed by Conduit
+*   Conduit Material/Equipment Type (to facilitate excess capacity use)
+*   Connection Capability (to other owners' conduits) (Boolean)
+*   Current Status (In Service, Removed, Transferred)
+*   Date of Last Maintenance Check
+*   Date of Last Repair
+*   Date of Last Service Outage
+*   Date of Ownership Transfer (if applicable)
+*   New Owner Entity ID (Links to Dataset 1: Regulated Entity Registry, if transferred)
+
+**4. Public Pay Telephone Permits**
+
+**Quotes:**
+*   No public pay telephone shall be installed, operated or maintained on, over or under any street or other inalienable property of the City... unless the owner of the public pay telephone has received a permit... (§ 6-30(a))
+*   A permit shall include such terms and conditions for the operation of a public pay telephone as the Commissioner deems necessary to protect the public safety and to safeguard the interests of the City... (§ 6-30(b))
+*   A permit issued pursuant to this subchapter is valid only for the public pay telephone installation at the location for which such permit was issued and may not be transferred to a person other than the owner to whom such permit was issued without the written approval of the Commissioner. (§ 6-30(c))
+*   A permit issued pursuant to this chapter may be transferred to an owner other than the owner to whom the permit was issued, provided that such transfer has the written approval of the Commissioner... (§ 6-31(c))
+*   A permit for a public pay telephone shall continue in effect... for the term of the franchise held by the owner of such telephone... (§ 6-33(a))
+*   The Commissioner may terminate a permit and require the removal of a public pay phone upon a determination that (i) the public pay telephone unreasonably interferes with... or constitutes a public nuisance; or (ii) that removal... is required in connection with a street widening or other capital project. (§ 6-33(b)(1))
+*   Where such permission is granted, the permittee shall not be required to obtain a new permit for the public pay telephone and the permit previously issued for such public pay telephone shall continue in effect. (§ 6-33(b)(3)(ii))
+*   A three hundred ninety five dollars ($395) fee will be required prior to the issuance of a new permit and shall be nonrefundable. (§ 6-48)
+
+**Why:** The agency issues permits for public pay telephones, and needs to track their status, terms, and associated fees to ensure legal operation.
+
+**One row represents:** A single permit issued for a public pay telephone installation.
+
+**Covers:** All permits issued, renewed, or transferred for public pay telephone installations.
+
+**Columns:**
+*   **Permit ID** (Unique identifier for the permit)
+*   **PPT Installation ID** (Links to Dataset 2: Public Pay Telephone Installation Inventory)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   **Application ID** (Links to Dataset 5: Public Pay Telephone Permit Applications)
+*   Permit Issue Date
+*   Permit Expiration Date
+*   Permit Status (Active, Suspended, Revoked, Terminated, Transferred)
+*   Permit Type (New, Renewal, Transfer, Reinstallation)
+*   Permit Fee Paid (Amount)
+*   Permit Fee Payment Date
+*   Permit Terms and Conditions (Summary or reference to document)
+*   Date of Last Transfer (if applicable)
+*   Previous Owner Entity ID (Links to Dataset 1: Regulated Entity Registry, if transferred)
+*   Reason for Termination/Revocation (if applicable)
+*   Date of Termination/Revocation (if applicable)
+*   Required Removal Date (if applicable)
+
+**5. Public Pay Telephone Permit Applications**
+
+**Quotes:**
+*   An application for a permit required pursuant to section 17-372 of this title or for the renewal of such a permit shall be made and submitted on forms furnished by the department. (§ 17-373(a) - *This is a general permit application quote, but the principle applies to PPTs*)
+*   No permit for a public pay telephone shall be issued or renewed pursuant to this subchapter without the written consent of the owner of an affected building or other private property... (§ 6-34(a))
+*   The Department will accept and review applications for proposed locations of installations other than those recommended by the Department. (§ 6-32(b))
+*   The Commissioner shall review any comments received from agencies, Borough Presidents, Council Members, Community Boards, and other members of the public prior to making a determination regarding such permits. (§ 6-35(b)(1))
+*   Upon approval of a location, a notice to proceed shall be granted to the franchisee. (§ 6-35(b)(2))
+*   Prior to the issuance of a permit for a new installation, franchisee must submit the permit fee of three hundred ninety-five dollars ($395). (§ 6-32(a))
+*   A permit shall not be issued: (1) unless the applicant possesses a franchise... (2) unless the applicant has... obtained the consent of the owner or commercial lessee... (3) where a public pay telephone will unreasonably interfere with the use of a street by the public or where it will unreasonably interfere with the use of the abutting property. (§ 6-31(b))
+
+**Why:** The agency processes applications for public pay telephone permits, requiring tracking of submission details, review progress, and associated documentation.
+
+**One row represents:** A single application for a public pay telephone permit.
+
+**Covers:** All applications for new, renewal, transfer, or reinstallation of public pay telephone permits.
+
+**Columns:**
+*   **Application ID** (Unique identifier for the application)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Application Type (New, Renewal, Transfer, Reinstallation)
+*   Application Submission Date
+*   Proposed PPT Installation Location (Street Address, Cross Street, Borough, Zip Code)
+*   Proposed Geographic Coordinates (Latitude, Longitude)
+*   Proposed Number of Telephones at Installation
+*   Proposed Installation Type (Pedestal, In-line, Wall-mounted)
+*   Permit Fee Payment Status (Paid/Unpaid)
+*   Building Owner/Commercial Lessee Consent Submitted? (Boolean)
+*   **Consent ID** (Links to Dataset 20: PPT Building Owner/Lessee Consents)
+*   DOT Notification Date
+*   Borough President Notification Date
+*   Council Member Notification Date
+*   Community Board Notification Date
+*   **Review Comments ID** (Links to Dataset 21: PPT Permit Application Review Comments)
+*   Landmarks Preservation Commission Compliance Required? (Boolean)
+*   Landmarks Preservation Commission Approval Status
+*   Application Status (Submitted, Under Review, Approved, Denied, Withdrawn)
+*   Date of Status Change
+*   Reason for Denial (if applicable)
+*   Notice to Proceed Granted? (Boolean)
+*   Notice to Proceed Date (if applicable)
+*   Franchise Status at Application (Current/Expired)
+
+**6. Enforcement Actions & Violations**
+
+**Quotes:**
+*   In the event of a violation of the rules of this chapter, the Department may initiate proceedings before the Office of Administrative Trials and Hearings (OATH) to seek the imposition of penalties on an owner, including fines or revocation or other limitation of the owner's right to engage in microtrenching. (§ 1-07(c))
+*   Penalties include fines no less than $100 and no more than $25,000 per violation, termination of the owner's right to engage in additional microtrenching, and revocation of the owner's right to own microtrenching. (§ 1-07(c)(b))
+*   Violations include the following. (Descriptions are for informational purposes only; the text of the rule itself determines the scope and meaning of the rule.) (§ 1-07(c)(c))
+*   an owner who maintains or operates a public pay telephone without a permit issued pursuant to this chapter shall be guilty of a misdemeanor... (§ 6-02(a))
+*   an owner who fails on two occasions within any three month period to provide phone service... or who fails to provide coinless twenty-four hour 911 service... shall be in violation... and shall be liable for a civil penalty of not more than two thousand five hundred dollars ($2,500) for each violation... (§ 6-02(b)(1))
+*   an owner who fails on at least two occasions... or on one occasion that lasts for a duration of seventy-two (72) hours to maintain a public pay telephone in compliance with the provisions of subdivision (c) of 67 RCNY § 6-05 shall be in violation... and shall be liable for a civil penalty of not more than one thousand dollars ($1,000) for each such violation. (§ 6-02(b)(2))
+*   violation of any provision of this chapter shall be punishable by a civil penalty of not more than one thousand dollars ($1,000) for each such violation... (§ 6-02(c))
+*   An owner who is liable for a civil penalty... shall also be liable in the amount of the expense... incurred by the city in the rendering inoperable, removal, storage and/or disposal of the public pay telephone and the performance of related repair and restoration work. (§ 6-02(d))
+*   If the Commissioner reasonably believes that an owner... has violated any provision... the Commissioner may... suspend review of all applications for the issuance of permits filed by such owner. (§ 6-02(f))
+*   A notice of violation may be issued for a violation of a provision of subdivision (a) of this section when inspections on two occasions within a period no shorter than twenty-four hours have disclosed a violation of such provision. (§ 6-05(e)(1))
+*   The Commissioner may take such action pursuant to this section that he or she deems necessary and appropriate where: (1) there is reasonable cause to believe that an owner... has violated the provisions... or any of the terms or conditions contained in the permit... (2) a public pay telephone unreasonably interferes with the use of a street... or constitutes a danger to life or property or a public nuisance; (3) a knowing material omission or false statement has been made... (4) an owner... has failed to pay any fines or penalties... (§ 6-36(a))
+*   In addition to any civil or criminal penalties provided by law, the Commissioner may take one or more of the following actions... (1) Revocation of permit and removal of telephone. (§ 6-36(b))
+
+**Why:** The agency needs to track all alleged and determined violations, associated enforcement actions, and penalties across all regulated programs to ensure accountability and compliance.
+
+**One row represents:** A single violation incident or enforcement action initiated by the Department.
+
+**Covers:** All violations of microtrenching rules, cable TV electricity usage rules, and public pay telephone rules, and the resulting enforcement actions.
+
+**Columns:**
+*   **Violation ID** (Unique identifier for the violation incident)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Program Area (Microtrenching, Cable TV Electricity, Public Pay Telephones)
+*   Related Asset ID (e.g., **Conduit Segment ID** from Dataset 3, **PPT Installation ID** from Dataset 2)
+*   Rule Violated (e.g., § 1-02(a), § 6-05(a))
+*   Violation Description (from rule text)
+*   Date of Alleged Violation
+*   Date Violation Discovered/Reported
+*   **Complaint ID** (Links to Dataset 11: Microtrenching Compliance Complaints, if applicable)
+*   **Inspection ID** (Links to Dataset 8: Public Pay Telephone Maintenance Inspections, or Dataset 10: Microtrenching Audits & Investigations, if applicable)
+*   **Nuisance Determination ID** (Links to Dataset 12: Public Pay Telephone Nuisance Determinations, if applicable)
+*   Enforcement Action Type (Notice of Violation, OATH Proceeding, Permit Suspension, Permit Revocation, Fine, Removal Order)
+*   Date Enforcement Action Initiated
+*   OATH Case Number (if applicable)
+*   Environmental Control Board Case Number (if applicable)
+*   Violation Status (Alleged, Adjudicated, Corrected, Dismissed)
+*   Date of Adjudication/Correction
+*   Final Determination (Guilty, Not Guilty)
+*   Penalty Imposed (Fine Amount, Revocation, Suspension, Removal)
+*   Date Penalty Imposed
+*   Fine Payment Status (Paid/Unpaid)
+*   Date Fine Paid (if applicable)
+*   City Costs Incurred (for removal, repair, storage, etc.)
+*   City Costs Payment Status (Paid/Unpaid)
+*   Date City Costs Paid (if applicable)
+*   Permit Review Suspended? (Boolean)
+*   Date Permit Review Suspension Started
+*   Date Permit Review Suspension Ended
+
+**7. Public Pay Telephone Maintenance Inspections**
+
+**Quotes:**
+*   An owner who fails on two occasions within any three month period to provide phone service from a public pay telephone for any period of time exceeding twenty-four continuous hours or who fails to provide coinless twenty-four hour 911 service from such public pay telephone in compliance with the provisions of subdivision (a) or subdivision (b) of 67 RCNY § 6-05, as the case may be, shall be in violation... (§ 6-02(b)(1))
+*   An owner who fails on at least two occasions, each such occasion lasting for a duration of forty-eight (48) hours, or on one occasion that lasts for a duration of seventy-two (72) hours to maintain a public pay telephone in compliance with the provisions of subdivision (c) of 67 RCNY § 6-05 shall be in violation... (§ 6-02(b)(2))
+*   § 6-05 Maintenance of Public Pay Telephones. (a) Coinless 911 service. (b) Telephone service. (c) Cleanliness. (d) Safety.
+*   A notice of violation may be issued for a violation of a provision of subdivision (a) of this section when inspections on two occasions within a period no shorter than twenty-four hours have disclosed a violation of such provision. (§ 6-05(e)(1))
+*   A notice of violation may be issued for violation of subdivision (b) of this section where inspections have disclosed that telephone service was unavailable on two occasions, each such occasion lasting for a duration of at least twenty-four (24) hours, within a period of ninety (90) calendar days. (§ 6-05(e)(2))
+*   A notice of violation for violation of a provision of subdivision (c) of this section may be issued where inspections disclose violation of such subdivision continuing at least forty-eight (48) hours on two separate occasions within a period of ninety (90) calendar days or a violation lasting at least seventy-two (72) hours on one occasion. (§ 6-05(e)(3))
+*   A notice of violation for a violation of a provision of subdivision (d) of this section may be issued where two inspections at least seventy-two (72) hours apart disclose that a displaced public pay telephone has not been restored to its original position or that an installation or portion of an installation has been broken in place, fractured, detached or is otherwise unsafe and has not been repaired or made safe. (§ 6-05(e)(4))
+*   Every public pay telephone installation... shall be maintained in a condition of good repair. All painted surfaces must receive a fresh coat of paint at least once a year. (§ 6-43(c)(1))
+*   Broken or missing lights, broken or unattached or missing advertising panels or other components... shall all be repaired or replaced... within seventy-two hours... (§ 6-43(c)(2))
+*   Dangling or protruding wires... shall be repaired within forty-eight (48) hours... (§ 6-43(c)(3))
+*   The pedestal(s)... shall be kept free of holes or missing or unattached plates... and upon notice of non-compliance... shall be repaired within forty-eight (48) hours. (§ 6-43(c)(4))
+*   any dangerous condition shall be fixed as soon as possible but no later than twenty-four hours. (§ 6-43(c)(5))
+*   A public pay telephone shall be maintained such that upon proper payment, a call can be completed. (§ 6-43(d))
+
+**Why:** The agency conducts regular inspections of public pay telephones to ensure they meet operational, cleanliness, and safety standards.
+
+**One row represents:** A single inspection of a public pay telephone installation.
+
+**Covers:** All inspections performed by the Department on public pay telephone installations.
+
+**Columns:**
+*   **Inspection ID** (Unique identifier for the inspection)
+*   **PPT Installation ID** (Links to Dataset 2: Public Pay Telephone Installation Inventory)
+*   Inspection Date
+*   Inspector Name/ID
+*   Inspection Type (Routine, Complaint-driven, Follow-up, Emergency)
+*   Coinless 911 Service Status (Working, Not Working)
+*   Dial Tone Present? (Boolean)
+*   Clear/Audible Transmission/Reception? (Boolean)
+*   Keyboard/Handset Working? (Boolean)
+*   Operator Service Access (Working, Not Working)
+*   Payment Acceptance (Coin, Credit Card, Debit Card) (Working, Not Working)
+*   Call Completion (Working, Not Working)
+*   Coin Return Mechanism (Working, Not Working)
+*   Free WiFi Service (if applicable) (Working, Not Working)
+*   Free Domestic Telephone Service (if applicable) (Working, Not Working)
+*   Free of Offensive Odors? (Boolean)
+*   Free of Litter/Debris/Damage? (Boolean)
+*   Free of Stickers/Graffiti? (Boolean)
+*   Clean Condition (Grime/Rust)? (Boolean)
+*   Lettering/Signage Clean/Legible? (Boolean)
+*   Painted Surfaces Condition (Good, Needs Repainting)
+*   Displaced from Original Configuration? (Boolean)
+*   Made Safe within 24 hours (if displaced)? (Boolean)
+*   Restored/Removed within 72 hours (if displaced)? (Boolean)
+*   Broken/Fractured/Detached Components? (Boolean)
+*   Made Safe within 24 hours (if broken)? (Boolean)
+*   Repaired within 72 hours (if broken)? (Boolean)
+*   Broken/Missing Lights? (Boolean)
+*   Broken/Missing Advertising Panels? (Boolean)
+*   Dangling/Protruding Wires? (Boolean)
+*   Pedestal Holes/Missing Plates/Brackets? (Boolean)
+*   Dangerous Condition Identified? (Boolean)
+*   Description of Dangerous Condition (if applicable)
+*   ADA Compliance Check (Pass/Fail)
+*   Overall Inspection Outcome (Compliant, Non-Compliant, Dangerous Condition)
+*   **Violation ID** (Links to Dataset 6: Enforcement Actions & Violations, if violation issued)
+*   Notes/Comments
+
+**8. Microtrenching Project Submissions & Notifications**
+
+**Quotes:**
+*   Before applying for a permit for microtrenching from the Department of Transportation the owner must submit the following documents to the Department: a. Proof of security. b. Indemnification. (§ 1-02(d))
+*   After obtaining a permit for microtrenching from the Department of Transportation, but before beginning mictrotrenching construction, the owner must notify the Department of the intended dates of the start and completion of microtrenching construction. Notification must be made on a form and in a format prescribed by the Department. (§ 1-02(e))
+*   Promptly after completion of microtrenching construction, and at most within 40 calendar days after the Department of Transportation issued the permit for microtrenching, the owner must file a document with the Department, in a format to be prescribed by the Department, containing the following information: a. An "as-built" drawing of the conduit installed. b. A map showing the street location of the conduit including the side of the street the conduit is on, the beginning and ending points of the conduit, the number of ducts in the conduit, and the number of ducts of excess capacity in the conduit. The map must accurately reflect the addresses of buildings that are passed by the conduit. (§ 1-02(f))
+
+**Why:** The agency requires owners to submit various documents and notifications throughout the microtrenching project lifecycle to ensure compliance and record-keeping.
+
+**One row represents:** A single submission or notification related to a microtrenching project.
+
+**Covers:** Proof of security, indemnification agreements, construction start/completion notifications, and as-built drawings/maps.
+
+**Columns:**
+*   **Submission ID** (Unique identifier for the submission)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   **Conduit Segment ID** (Links to Dataset 3: Microtrenching Conduit Inventory, if applicable)
+*   Submission Type (Proof of Security, Indemnification, Construction Start Notification, Construction Completion Notification, As-Built Drawing/Map)
+*   Submission Date
+*   DOT Permit Number
+*   Intended Construction Start Date (if applicable)
+*   Intended Construction Completion Date (if applicable)
+*   Actual Construction Start Date (if applicable)
+*   Actual Construction Completion Date (if applicable)
+*   As-Built Drawing Submitted? (Boolean)
+*   As-Built Map Submitted? (Boolean)
+*   Map Data Captured in Conduit Inventory? (Boolean)
+*   Security Coverage Extended? (Boolean)
+*   Indemnification Agreement Executed? (Boolean)
+*   Submission Status (Received, Reviewed, Accepted, Rejected)
+*   Reviewer Name/ID
+*   Review Date
+*   Notes/Comments
+
+**9. Microtrenching Excess Capacity Certifications**
+
+**Quotes:**
+*   Before applying to the Department of Transportation for such a permit, the owner must obtain a certification from the Department that no excess capacity is available in the location the owner proposes for microtrenching. The owner must submit that certification to the Department of Transportation as part of the owner's application for a permit. (§ 1-02(a))
+
+**Why:** The agency issues certifications regarding excess capacity availability, which is a prerequisite for DOT permits, and needs to track these determinations.
+
+**One row represents:** A single request for and issuance of an excess capacity certification.
+
+**Covers:** All requests from owners for certification of no available excess capacity.
+
+**Columns:**
+*   **Certification ID** (Unique identifier for the certification)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Request Date
+*   Proposed Microtrenching Location (Street Address, Geographic Coordinates)
+*   Department's Determination (Excess Capacity Available, No Excess Capacity Available)
+*   Date of Determination
+*   Certification Issue Date (if "No Excess Capacity Available")
+*   Certification Expiration Date (if applicable)
+*   Reason for Determination (e.g., based on existing conduit inventory)
+*   Reviewer Name/ID
+*   Notes/Comments
+
+**10. Excess Capacity Requests and Responses**
+
+**Quotes:**
+*   A City request to use excess capacity may be submitted to the owner only by the Department. (§ 1-05(d))
+*   A telecommunications franchisee's request to use excess capacity must be submitted by the telecommunications franchisee to the owner. The telecommunications franchisee must submit a copy of the request to the Department simultaneously with submission of the request to the owner. (§ 1-05(e))
+*   The owner must respond to a request to use excess capacity within fifteen business days of the owner's receipt of the request. The owner's response must either approve or deny the request, and if the owner denies the request the owner must state the reasons for the denial. If the request is a City request, the owner must submit its response to the Department. If the request is by a telecommunications franchisee, the owner must submit its response to the telecommunications franchisee and simultaneously submit a copy of its response to the Department. (§ 1-05(f))
+*   The owner must make excess capacity available to telecommunications franchisees on a first-come, first-served basis. (§ 1-05(g))
+*   The owner must make excess capacity available to a telecommunications franchisee no later than 45 calendar days of the owner's receipt of the telecommunications franchisee's request, unless the owner denies the request... (§ 1-05(h))
+*   If a telecommunications franchisee does not complete the installation of fiber-optic cable within 45 calendar days after the owner makes excess capacity available... the owner may deem any portion of the excess capacity that the telecommunications franchisee did not occupy by that time to be available... (§ 1-05(i))
+
+**Why:** The agency needs to track all requests for excess capacity (from City or franchisees) and the owners' responses to ensure fair and timely access.
+
+**One row represents:** A single request for excess capacity in a microtrenching conduit.
+
+**Covers:** All requests for excess capacity and the corresponding responses from conduit owners.
+
+**Columns:**
+*   **Request ID** (Unique identifier for the request)
+*   **Conduit Segment ID** (Links to Dataset 3: Microtrenching Conduit Inventory)
+*   Requesting Entity Type (City, Telecommunications Franchisee)
+*   **Requesting Entity ID** (Links to Dataset 1: Regulated Entity Registry, if franchisee; or City Agency ID)
+*   **Conduit Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Date Request Submitted to Owner
+*   Date Request Copy Submitted to Department (if franchisee request)
+*   Requested Ducts (Number)
+*   Requested Length (feet)
+*   Requested Start Point
+*   Requested End Point
+*   Owner Response Date
+*   Owner Response Status (Approved, Denied)
+*   Reason for Denial (if applicable)
+*   Date Owner Response Copy Submitted to Department
+*   First-Come, First-Served Order (Timestamp of request)
+*   Date Excess Capacity Made Available (if approved)
+*   Deadline for Installation Completion (45 days from availability)
+*   Installation Completed by Deadline? (Boolean)
+*   Portion Occupied by Deadline (if applicable)
+*   Notes/Comments
+
+**11. Excess Capacity Occupancy Reports**
+
+**Quotes:**
+*   No later than ten business days after the end of each calendar quarter, the owner must submit a report to the Department, in a format to be prescribed by the Department, stating: a. The name of each telecommunications franchisee that took occupancy of excess capacity during the previous quarter, and, for each such telecommunications franchisee, the location of the beginning and ending points of each length of duct the telecommunications franchisee occupied; and b. The name of each telecommunications franchisee that vacated excess capacity during the previous quarter, and, for each such telecommunications franchisee, the location of the beginning and ending points of each length of duct the telecommunications franchisee vacated. (§ 1-05(k))
+
+**Why:** The agency requires quarterly reports from conduit owners on the occupancy and vacation of excess capacity to monitor usage and availability.
+
+**One row represents:** A single reported occupancy or vacation event of an excess capacity duct.
+
+**Covers:** All quarterly reports submitted by microtrenching conduit owners regarding excess capacity usage.
+
+**Columns:**
+*   **Report Entry ID** (Unique identifier for each entry in a report)
+*   **Report Submission ID** (Links to a hypothetical "Report Submissions" dataset, or can be part of this dataset)
+*   **Conduit Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Reporting Quarter (e.g., Q1 2023)
+*   Report Submission Date
+*   Event Type (Occupancy, Vacation)
+*   **Telecommunications Franchisee Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   **Conduit Segment ID** (Links to Dataset 3: Microtrenching Conduit Inventory)
+*   Occupied/Vacated Duct Number (if specific duct ID is tracked)
+*   Occupied/Vacated Length (feet)
+*   Beginning Point of Occupancy/Vacation
+*   Ending Point of Occupancy/Vacation
+*   Date of Occupancy/Vacation
+*   Notes/Comments
+
+**12. Microtrenching Audits & Investigations**
+
+**Quotes:**
+*   The Department may audit or otherwise investigate or review an owner's use of microtrenching and compliance with the rules of this chapter. The owner and any telecommunications franchisee that uses or has applied to use the owner's excess capacity must cooperate with the Department in the conduct of such an audit, investigation or review, and must cooperate with any other governmental entity lawfully authorized to conduct such an audit, investigation or review. The owner must provide access to individuals, documents, records and information as may be reasonable and appropriate to such audit, investigation or review. (§ 1-07(b))
+*   Failure to cooperate with an audit, investigation or review. (§ 1-07(c)(c)(x))
+
+**Why:** The agency conducts audits and investigations to proactively ensure microtrenching owners comply with regulations.
+
+**One row represents:** A single audit or investigation conducted by the Department.
+
+**Covers:** All audits, investigations, or reviews of microtrenching owners and franchisees.
+
+**Columns:**
+*   **Audit/Investigation ID** (Unique identifier for the audit/investigation)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Audit/Investigation Start Date
+*   Audit/Investigation End Date
+*   Auditor/Investigator Name/ID
+*   Scope of Audit/Investigation (e.g., general compliance, specific complaint, excess capacity use)
+*   Documents/Records Reviewed
+*   Individuals Interviewed
+*   Cooperation Level (Full, Partial, Non-Cooperative)
+*   Findings (Summary of compliance/non-compliance)
+*   **Violation ID** (Links to Dataset 6: Enforcement Actions & Violations, if violations found)
+*   Audit/Investigation Status (Open, Closed, Pending Enforcement)
+*   Date Status Changed
+*   Notes/Comments
+
+**13. Microtrenching Compliance Complaints**
+
+**Quotes:**
+*   Telecommunications franchisees may submit complaints about owners' compliance with the rules of this chapter to the Department. (§ 1-07(a))
+
+**Why:** The agency receives complaints regarding microtrenching compliance, which serve as input for investigations and enforcement.
+
+**One row represents:** A single complaint submitted regarding microtrenching compliance.
+
+**Covers:** All complaints received by the Department from telecommunications franchisees about microtrenching owners.
+
+**Columns:**
+*   **Complaint ID** (Unique identifier for the complaint)
+*   Complaint Submission Date
+*   **Complainant Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry, against whom complaint is made)
+*   **Conduit Segment ID** (Links to Dataset 3: Microtrenching Conduit Inventory, if applicable)
+*   Complaint Description
+*   Rule(s) Allegedly Violated
+*   Complaint Status (Received, Under Review, Investigated, Resolved, Closed, Referred to Enforcement)
+*   Date Status Changed
+*   **Audit/Investigation ID** (Links to Dataset 12: Microtrenching Audits & Investigations, if investigation initiated)
+*   **Violation ID** (Links to Dataset 6: Enforcement Actions & Violations, if violation issued)
+*   Resolution Details (if applicable)
+*   Notes/Comments
+
+**14. Public Pay Telephone Nuisance Determinations**
+
+**Quotes:**
+*   "Public Nuisance" shall mean a public pay telephone which the Commissioner has reasonable cause to believe is used on a regular basis in furtherance of unlawful activity. (§ 6-01)
+*   The Commissioner may determine that a public pay telephone constitutes a public nuisance when a written complaint is made, including, but not limited to a complaint by the Community Board in the Community District in which such telephone is located stating that such public pay telephone constitutes a public nuisance, as so defined. The complaint must also be verified by the police precinct in which such telephone is located. (§ 6-37)
+*   Notwithstanding any other provision of this section the Commissioner may, upon determination that a public pay telephone constitutes a public nuisance, notify the permittee of such determination and order that such telephone be removed within five (5) business days. (§ 6-36(d))
+
+**Why:** The agency makes formal determinations of public nuisance for public pay telephones, which triggers specific removal procedures.
+
+**One row represents:** A single determination by the Commissioner that a public pay telephone constitutes a public nuisance.
+
+**Covers:** All instances where a public pay telephone is formally determined to be a public nuisance.
+
+**Columns:**
+*   **Nuisance Determination ID** (Unique identifier for the determination)
+*   **PPT Installation ID** (Links to Dataset 2: Public Pay Telephone Installation Inventory)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Date of Complaint (if applicable)
+*   Complainant Type (Community Board, Other)
+*   Police Precinct Verification Date
+*   Date of Commissioner's Determination
+*   Reason for Determination (e.g., evidence of unlawful activity)
+*   Determination Status (Confirmed, Overturned)
+*   Date of Status Change
+*   Notification Date to Permittee
+*   Required Removal Date (if applicable)
+*   **Removal Action ID** (Links to Dataset 15: Public Pay Telephone Removal & Disposal Actions, if removal ordered)
+*   Notes/Comments
+
+**15. Public Pay Telephone Removal & Disposal Actions**
+
+**Quotes:**
+*   The Commissioner may terminate a permit and require the removal of a public pay phone upon a determination that (i) the public pay telephone unreasonably interferes with or, as a result of changed conditions, will unreasonably interfere with the use of a street by the public or constitutes a public nuisance; or (ii) that removal of the public pay telephone is required in connection with a street widening or other capital project. (§ 6-33(b)(1))
+*   In the event that the permittee fails to remove the public pay telephone by the date specified by the Commissioner, the Commissioner may remove or cause the removal of the public pay telephones and have repair and restoration work performed at the expense of the permittee, who shall be liable in a civil action for the amount expended by the City. (§ 6-33(b)(2))
+*   The Commissioner may revoke a permit, and upon such revocation, may further order the removal of the public pay telephone for which such permit has been issued. In the event the permittee fails to remove the public pay telephone and to perform related repair and restoration work within the time period specified by such order, the Commissioner may remove or cause the removal of the public pay telephone and have repair and restoration work performed at the expense of the former permittee, who shall be liable for the amount expended by the City. (§ 6-36(b)(1))
+*   Notwithstanding any other provision of this section, if the Commissioner determines that an imminent threat to life or property exists, the Commissioner may remove or cause the removal of a public pay telephone and have repair and restoration work performed at the expense of the owner, without affording the owner an opportunity to be heard prior to such removal. (§ 6-36(e)(1))
+*   Any public pay telephones not removed by a permittee in compliance with an order of the Commissioner pursuant to this chapter shall be subject to removal pursuant to § 23-408 of the Code... (§ 6-39(a))
+*   Any telephone removed pursuant to this chapter that is not claimed by its owner within thirty (30) days of removal shall be deemed abandoned... All abandoned public pay telephones may be sold at public auction... or such abandoned telephones may be used or converted for use by the Department or by another City agency. (§ 6-39(b))
+*   A public pay telephone shall be released to the owner upon payment of the costs of removal, repair and restoration work, storage, and any fees for any administrative expense or expense of additional inspections incurred by the Department as a result of the violation... (§ 6-39(b))
+
+**Why:** The agency is responsible for ordering and executing the removal and disposal of non-compliant, unsafe, or abandoned public pay telephones.
+
+**One row represents:** A single action taken by the Department or an owner regarding the removal or disposal of a public pay telephone.
+
+**Covers:** All instances of public pay telephone removal, disposal, or transfer of ownership to the City.
+
+**Columns:**
+*   **Removal Action ID** (Unique identifier for the removal action)
+*   **PPT Installation ID** (Links to Dataset 2: Public Pay Telephone Installation Inventory)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Removal Action Type (Owner-initiated, Commissioner-ordered, Emergency Removal, Abandoned)
+*   Date Removal Ordered
+*   Date Removal Executed
+*   Removed By (Owner, Department, Contractor)
+*   Reason for Removal (e.g., Permit Termination, Public Nuisance, Capital Project, Unsafe, Abandoned)
+*   **Permit ID** (Links to Dataset 4: Public Pay Telephone Permits, if permit terminated/revoked)
+*   **Nuisance Determination ID** (Links to Dataset 14: Public Pay Telephone Nuisance Determinations, if applicable)
+*   City Costs for Removal/Repair/Storage (Amount)
+*   City Costs Payment Status (Paid/Unpaid)
+*   Date City Costs Paid (if applicable)
+*   Disposal Method (Scrapped, Sold at Auction, Transferred to City, Reinstalled)
+*   Date of Disposal
+*   Proceeds from Sale (if applicable)
+*   **City Operations/Lease ID** (Links to Dataset 23: Public Pay Telephone City Operations/Lease Records, if transferred to City operations)
+*   Notes/Comments
+
+**16. Microtrenching Conduit Removal & Disposal Orders**
+
+**Quotes:**
+*   If an owner no longer intends to maintain conduit in working order and good repair, the owner must either remove the conduit at its own expense, or, at the Department's option, transfer the conduit to another owner, or otherwise dispose of the conduit as directed by the Department. (§ 1-06(a))
+*   If an owner's telecommunications franchise or microtrenching permit is terminated or revoked, or if an owner's right to own microtrenching is revoked, the owner must either remove the conduit at its own expense, transfer the conduit to another owner, or otherwise dispose of the conduit as directed by the Department. (§ 1-06(b))
+*   If the Department determines that microtrenching is unsuitable or unsafe, either entirely or under specified conditions, the owner must remove the conduit and fiber-optic cable at the owner's expense, or, at the Department's option, transfer title to the conduit and fiber-optic cable to the City without fee or cost. (§ 1-06(c))
+*   if any court or other tribunal of competent jurisdiction invalidates any of those provisions, this chapter will be invalidated in its entirety and microtrenching will not be permitted, and owners must remove or otherwise dispose of all conduit as directed by the Department. (§ 1-08(e))
+
+**Why:** The agency directs owners on the removal or disposal of microtrenching conduits under various circumstances, requiring tracking of these orders and their execution.
+
+**One row represents:** A single order or action related to the removal or disposal of a microtrenching conduit.
+
+**Covers:** All instances where the Department directs or approves the removal, transfer, or disposal of microtrenching conduits.
+
+**Columns:**
+*   **Removal Order ID** (Unique identifier for the removal order)
+*   **Conduit Segment ID** (Links to Dataset 3: Microtrenching Conduit Inventory)
+*   **Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Order Date
+*   Required Action (Remove, Transfer to Another Owner, Transfer to City, Dispose as Directed)
+*   Reason for Order (e.g., Owner Intent, Franchise Termination, Permit Revocation, Unsuitable/Unsafe, Chapter Invalidation)
+*   Required Completion Date
+*   Actual Completion Date
+*   Action Performed By (Owner, Department, Contractor)
+*   Disposal Method (if applicable)
+*   **New Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry, if transferred)
+*   Transfer to City (Boolean)
+*   City Costs Incurred (if Department performs removal)
+*   City Costs Payment Status (Paid/Unpaid)
+*   Notes/Comments
+
+**17. Microtrenching Conduit Maintenance & Outage Reports**
+
+**Quotes:**
+*   No later than January 20 of each year, the owner must submit a report to the Department, in a format to be prescribed by the Department, stating the location of each conduit repair and service outage that occurred in the owner's microtrenching during the previous year. (§ 1-05(l))
+*   Failure to report to the Department as required. (§ 1-07(c)(c)(viii))
+
+**Why:** The agency requires annual reports from conduit owners on maintenance and service outages to monitor the condition and reliability of the microtrenching infrastructure.
+
+**One row represents:** A single reported conduit repair or service outage event.
+
+**Covers:** All annual reports submitted by microtrenching conduit owners regarding repairs and service outages.
+
+**Columns:**
+*   **Report Entry ID** (Unique identifier for each entry in a report)
+*   **Report Submission ID** (Links to a hypothetical "Report Submissions" dataset, or can be part of this dataset)
+*   **Conduit Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Reporting Year
+*   Report Submission Date
+*   Event Type (Repair, Service Outage)
+*   **Conduit Segment ID** (Links to Dataset 3: Microtrenching Conduit Inventory)
+*   Location of Event (Street Address, Geographic Coordinates)
+*   Date of Event Start
+*   Date of Event End (if applicable)
+*   Duration of Outage (hours, if applicable)
+*   Description of Repair/Outage
+*   Cause of Outage (if applicable)
+*   Notes/Comments
+
+**18. Cable TV Electricity Resale Reports**
+
+**Quotes:**
+*   To the extent allowable by applicable law and tariff, a cable television company may enter into a resale arrangement for use of electricity to operate equipment situated on premises not owned, operated or leased by the cable television company only upon prior written approval of the affected premises owner or authorized agent. (§ 4-03(b))
+*   The cable television company shall submit to the Department quarterly reports with respect to any resale arrangement for use of electricity to operate equipment situated on premises not owned, operated or leased by the cable television company in a form and containing such information as the Commissioner may reasonably specify. (§ 4-04(e))
+
+**Why:** The agency requires quarterly reports on electricity resale arrangements to monitor compliance with regulations regarding electricity usage by cable television companies.
+
+**One row represents:** A single reported electricity resale arrangement.
+
+**Covers:** All quarterly reports submitted by cable television companies regarding electricity resale arrangements.
+
+**Columns:**
+*   **Report Entry ID** (Unique identifier for each entry in a report)
+*   **Report Submission ID** (Links to a hypothetical "Report Submissions" dataset, or can be part of this dataset)
+*   **Cable TV Company Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Reporting Quarter (e.g., Q1 2023)
+*   Report Submission Date
+*   Premises Address (where equipment is situated)
+*   Premises Owner/Authorized Agent Name
+*   Date of Premises Owner/Agent Approval
+*   Resale Arrangement Start Date
+*   Resale Arrangement End Date (if applicable)
+*   Electricity Usage (Estimated or Metered, if reported)
+*   Notes/Comments
+
+**19. Cable TV Electricity Notice Reports**
+
+**Quotes:**
+*   The cable television company shall give each premises owner or authorized agent not less than fifteen (15) days written notice of its intention to locate equipment upon any premises not owned, operated or leased by the cable television company which may require the use of electricity. (§ 4-04(a))
+*   The cable television company shall contact the utility providing the electricity and arrange for direct billing for the use of electricity on premises not owned, operated or leased by the cable television company not less than fifteen (15) days prior to the installation of said equipment. (§ 4-04(b))
+*   The cable television company shall notify each affected premises owner or authorized agent when it has completed arrangements for direct billing when the utility providing electricity and the start date for such electricity usage. (§ 4-04(c))
+*   The cable television company shall submit to the Department summary quarterly reports containing information on each notice sent out pursuant to the requirements of subparagraphs a, b, and c of this section in a form and containing such information as the Commissioner may reasonably specify. (§ 4-04(f))
+
+**Why:** The agency requires quarterly reports summarizing notices sent by cable television companies regarding electricity usage arrangements.
+
+**One row represents:** A single reported notice sent by a cable television company.
+
+**Covers:** All quarterly reports submitted by cable television companies summarizing notices sent to premises owners/agents and utilities.
+
+**Columns:**
+*   **Report Entry ID** (Unique identifier for each entry in a report)
+*   **Report Submission ID** (Links to a hypothetical "Report Submissions" dataset, or can be part of this dataset)
+*   **Cable TV Company Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Reporting Quarter (e.g., Q1 2023)
+*   Report Submission Date
+*   Notice Type (Intent to Locate Equipment, Arrange Direct Billing, Direct Billing Arrangement Complete)
+*   Date Notice Sent
+*   Recipient Type (Premises Owner/Agent, Utility)
+*   Recipient Name
+*   Premises Address (if applicable)
+*   Utility Company Name (if applicable)
+*   Direct Billing Start Date (if applicable)
+*   Notes/Comments
+
+**20. PPT Building Owner/Lessee Consents**
+
+**Quotes:**
+*   No permit for a public pay telephone shall be issued or renewed pursuant to this subchapter without the written consent of the owner of an affected building or other private property where the installation of such public pay telephone requires the opening, drilling or other physical alteration of a building facade or other private property or the affixing of such telephone to a building facade or other private property. Such consent shall be provided to DoITT in either of the following two forms: (1) a photocopy of an effective and binding written agreement signed by the building owner... (2) an alternative consent form to be prescribed by the Commissioner. (§ 6-34(a))
+*   Where the installation of a public pay telephone... requires access through an existing conduit or other opening on a building facade or other private property, or such installation is to be made within six feet of a building line, no permit shall be issued or renewed without the written consent of either the building owner or the commercial lessee. (§ 6-34(b)(1))
+*   If the consent is from the commercial lessee... there shall also be required a certification by the commercial lessee certifying that the building owner has authorized the commercial lessee to grant such consent and the commercial lessee has provided the building owner (or its authorized agent) with written notification (by certified mail) of such granting of consent... (§ 6-34(b)(1)(ii))
+*   Within thirty (30) days of receipt by a building owner of a commercial lessee's consent... a building owner or an authorized agent of an owner may object to the installation of a public pay telephone... (§ 6-34(b)(2))
+
+**Why:** The agency requires and reviews consents from building owners or commercial lessees for public pay telephone installations, which must be tracked for permit issuance.
+
+**One row represents:** A single consent document or objection related to a public pay telephone installation.
+
+**Covers:** All building owner/commercial lessee consents and objections submitted for public pay telephone permit applications.
+
+**Columns:**
+*   **Consent ID** (Unique identifier for the consent/objection)
+*   **Application ID** (Links to Dataset 5: Public Pay Telephone Permit Applications)
+*   **PPT Installation ID** (Links to Dataset 2: Public Pay Telephone Installation Inventory)
+*   Consent Type (Building Owner Direct, Commercial Lessee with Owner Authorization)
+*   Consent Submission Date
+*   Consenting Party Name
+*   Consenting Party Type (Building Owner, Commercial Lessee, Authorized Agent)
+*   Building Address
+*   Nature of Consent (Physical Alteration, Access through Conduit, Within 6ft of Building Line)
+*   Commercial Lessee Certification Submitted? (Boolean, if applicable)
+*   Proof of Notification to Building Owner Submitted? (Boolean, if commercial lessee)
+*   Building Owner Objection Received? (Boolean)
+*   Date Objection Received
+*   Objecting Party Name
+*   Objection Reason
+*   Applicant Response to Objection (if applicable)
+*   Consent Status (Approved, Rejected, Objected, Resolved)
+*   Date of Status Change
+*   Notes/Comments
+
+**21. PPT Permit Application Review Comments**
+
+**Quotes:**
+*   The Department shall notify the Department of Transportation or any successor of such agency, on a periodic basis of the location of public pay telephones for which permits are being sought. The Department of Transportation may review such locations and, within thirty (30) business days of such notification, submit comments to the Commissioner in regard to any such telephone or telephones. (§ 6-35(a)(1))
+*   The Department shall also, on a periodic basis, notify the pertinent Borough Presidents, Council Members and Community Boards of the opportunity to review proposed locations. A Borough President, Council Member, or Community Board may review any such application and, within thirty business days of such notification, submit comments in writing to the Commissioner in regard to such application. (§ 6-35(a)(2))
+*   The Commissioner shall review any comments received from agencies, Borough Presidents, Council Members, Community Boards, and other members of the public prior to making a determination regarding such permits. (§ 6-35(b)(1))
+
+**Why:** The agency solicits and reviews comments from various governmental and public entities during the public pay telephone permit application process.
+
+**One row represents:** A single comment or set of comments received from an external entity regarding a public pay telephone permit application.
+
+**Covers:** All comments submitted by DOT, Borough Presidents, Council Members, Community Boards, and other public members on PPT permit applications.
+
+**Columns:**
+*   **Review Comments ID** (Unique identifier for the comment submission)
+*   **Application ID** (Links to Dataset 5: Public Pay Telephone Permit Applications)
+*   Commenting Entity Type (DOT, Borough President, Council Member, Community Board, Public)
+*   Commenting Entity Name (e.g., "Community Board 10")
+*   Date of Notification to Entity
+*   Date Comments Received
+*   Comments Summary/Content
+*   Impact on Permit Decision (e.g., No Impact, Condition Added, Denial Recommended)
+*   Commissioner's Response to Objection (if applicable)
+*   Notes/Comments
+
+**22. Cable TV Direct Billing Plan Approvals**
+
+**Quotes:**
+*   For electricity usage to operate equipment owned by the cable television company already situated on premises owned, operated or leased by an entity other than the cable television company as of the effective date of this rule, the cable television company shall contact the utility providing the electricity and arrange for direct billing for the use of electricity to operate such equipment on such premises. The cable television company shall submit a plan for the implementation of the requirements of this chapter for such electricity usage within thirty (30) days of the effective date of this chapter. Such plan shall be subject to the approval of the Commissioner. (§ 4-04(d))
+
+**Why:** The agency reviews and approves plans from cable television companies for implementing direct billing for existing electricity usage.
+
+**One row represents:** A single plan submitted by a cable television company for direct billing and the Department's approval decision.
+
+**Covers:** All plans submitted by cable television companies for direct billing arrangements for existing equipment.
+
+**Columns:**
+*   **Plan Approval ID** (Unique identifier for the plan approval)
+*   **Cable TV Company Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Plan Submission Date
+*   Plan Description (Summary of implementation strategy)
+*   Commissioner's Review Date
+*   Approval Status (Approved, Denied, Approved with Conditions)
+*   Date of Approval Decision
+*   Reason for Denial/Conditions (if applicable)
+*   Notes/Comments
+
+**23. Public Pay Telephone City Operations/Lease Records**
+
+**Quotes:**
+*   If pursuant to any provision of this chapter, a public pay telephone, or group of public pay telephones, becomes subject to removal by the Department, and if the location of such payphone or group of payphones is consistent with the requirements of Subchapter D of this chapter, then the Department shall have the authority to, in lieu of removal of such payphone or payphones, operate (directly or through a designee) such payphone or payphones for the account of the City and/or make such payphone or payphones available for purchase or lease from the City by holders of public pay telephone franchises granted by the City. (§ 6-47)
+*   The Department, or its designee, purchaser or lessee, shall be authorized to make any necessary or convenient modifications to such payphone or payphones to secure the service provided from such payphone or payphones and the revenues generated from such payphone or payphones. (§ 6-47)
+
+**Why:** The agency has the authority to take over and operate or lease public pay telephones that would otherwise be removed, requiring tracking of these arrangements.
+
+**One row represents:** A single instance of the City taking over operation or leasing a public pay telephone.
+
+**Covers:** All public pay telephones that are operated by the City or leased by the City to another franchisee.
+
+**Columns:**
+*   **City Operations/Lease ID** (Unique identifier for the City's operation/lease)
+*   **PPT Installation ID** (Links to Dataset 2: Public Pay Telephone Installation Inventory)
+*   **Original Owner Entity ID** (Links to Dataset 1: Regulated Entity Registry)
+*   Date City Assumed Control
+*   Reason for City Control (e.g., in lieu of removal, abandonment)
+*   Operation Type (Direct City Operation, Leased to Designee/Franchisee)
+*   **Designee/Lessee Entity ID** (Links to Dataset 1: Regulated Entity Registry, if applicable)
+*   Lease Agreement Details (if applicable)
+*   Revenue Generated (if applicable)
+*   Modifications Made (Description)
+*   Current Status (Active, Decommissioned)
+*   Date Status Changed
+*   Notes/Comments
+
+---
+
+**Non-Tabular Information:**
+
+The following information is mentioned in the text but is likely not maintained in a tabular format as per the instructions (e.g., job applications, rules and regulations, receipts, photos, research documents, and other text or image information):
+
+*   **Job applications:** Implied by the existence of an agency with staff.
+*   **Rules and regulations:** The entire provided text is an example of this.
+*   **Receipts:** For permit fees, fines, etc.
+*   **As-built drawings:** (§ 1-02(f)(a)) - explicitly mentioned as a "drawing."
+*   **Maps showing street location of conduit:** (§ 1-02(f)(b)) - explicitly mentioned as a "map."
+*   **Indemnification agreements:** (§ 1-02(d)(b)) - "an indemnification agreement prepared by the Department."
+*   **Proof of security (bond, insurance, letter of credit):** (§ 1-02(d)(a)) - "proof that the issuer of any bond, insurance, letter of credit or other security..."
+*   **Contracts or other documents effectuating conduit ownership transfer:** (§ 1-08(b))
+*   **Written approval of premises owner/authorized agent for electricity resale:** (§ 4-03(b))
+*   **Written notices sent by cable television companies:** (§ 4-04(a), (b), (c))
+*   **Plans for direct billing implementation:** (§ 4-04(d))
+*   **Written consent of building owner/commercial lessee for PPT installation:** (§ 6-34(a), (b)) - described as "photocopy of an effective and binding written agreement" or "alternative consent form."
+*   **Commercial lessee certification:** (§ 6-34(b)(1)(ii))
+*   **Proof of mailing of notification to building owner:** (§ 6-34(b)(1)(ii))
+*   **Written objections from building owners:** (§ 6-34(b)(2))
+*   **Written comments from DOT, Borough Presidents, Council Members, Community Boards, public:** (§ 6-35(a), (b))
+*   **Written objections to permit conditions:** (§ 6-35(b)(1))
+*   **Written responses to Commissioner's proposed actions (PPT permit revocation/removal):** (§ 6-36(c), (d), (e)(2))
+*   **Written complaints regarding public nuisance PPTs:** (§ 6-37)
+*   **Police precinct verification of public nuisance complaints:** (§ 6-37)
+*   **Franchise agreements:** Implied by "holder of a current telecommunications franchise" and "terms and conditions of a franchise agreement."
+*   **Utility service tariffs:** (§ 4-03(a))
+*   **New York City Zoning Resolution:** (§ 1-02(c)(a))
+*   **Landmarks Preservation Commission rules:** (§ 6-35(a)(3), § 6-41(e)(1)(ii))
+*   **National Electrical Safety Code:** (§ 6-43(a)(1))
+*   **Americans with Disabilities Act and regulations:** (§ 6-44)
+*   **Federal, State, and local laws/regulations:** (§ 6-45)
+*   **Executive Order No. 22 of 1995:** (§ 6-41(g))
+*   **New York State Public Service Commission rules and regulations:** (§ 6-42)

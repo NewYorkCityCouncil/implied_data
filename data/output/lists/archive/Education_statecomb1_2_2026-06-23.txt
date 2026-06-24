@@ -1,0 +1,1818 @@
+**Section 1, Mission Summary:**
+
+This agency is responsible for overseeing and regulating various aspects of education, from standardized testing to K-12 school operations and higher education instructional materials. Its key programs include administering and reporting on standardized tests, ensuring fire safety and emergency preparedness in schools and colleges, mandating and auditing curriculum compliance, managing state aid for instructional technology, and regulating the adoption and accessibility of instructional materials in both K-12 and higher education. The agency's impacts on constituents include ensuring fair and transparent testing, promoting student safety, guaranteeing equitable access to educational resources, and upholding educational standards across the state.
+
+**Section 2, Data Summary:**
+
+1.  **Test Catalog**
+2.  **Test Form Catalog**
+3.  **Test Item Catalog**
+4.  **Test Administrations**
+5.  **Test Subject Directory**
+6.  **Test Subject Performance Records**
+7.  **Test Subject Question Responses**
+8.  **Test Item Performance Metrics**
+9.  **Test Content Filings**
+10. **Test Subject Disclosure Requests**
+11. **Test Score Authenticity Investigations**
+12. **Test Question Challenge Log**
+13. **Agency Directory**
+14. **Agency Violation Records**
+15. **School District Directory**
+16. **School Directory (K-12)**
+17. **School Building Inventory (K-12)**
+18. **K-12 Student Directory**
+19. **School District Student Enrollment Records**
+20. **K-12 Textbook Designations**
+21. **K-12 Textbook Purchases**
+22. **K-12 Textbook Loans**
+23. **Seditious Textbook Complaints & Disapprovals**
+24. **K-12 Library Material Designations**
+25. **K-12 Library Material Purchases**
+26. **K-12 Library Material Loans**
+27. **K-12 Software Designations**
+28. **K-12 Software Purchases**
+29. **K-12 Software Loans**
+30. **Instructional Technology Equipment Inventory (K-12)**
+31. **Instructional Technology Apportionment Applications (K-12)**
+32. **Nonpublic School Student Technology Loan Requests (K-12)**
+33. **K-12 Teacher Directory**
+34. **K-12 Teacher Certification and Training Records**
+35. **School District Staff Development/Training Events (K-12)**
+36. **School Fire Inspection Reports (K-12)**
+37. **School Fire and Emergency Drill Records (K-12)**
+38. **School Curriculum Compliance Audits**
+39. **Comprehensive School Health Education Demonstration Program Grants (K-12)**
+40. **AANHPI History Advisory Committee Member Roster**
+41. **AANHPI History Advisory Committee Meeting Records**
+42. **College Directory**
+43. **College Building Inventory**
+44. **College Course Catalog**
+45. **College Student Directory**
+46. **College Faculty Directory**
+47. **College Fire Inspection Reports**
+48. **College Fire and Emergency Drill Records**
+49. **College Textbook Adoption Orders**
+50. **Publisher Directory**
+51. **Publisher Textbook Price Quotes (College)**
+52. **College Disability Instructional Material Requests**
+53. **Faculty Textbook-Related Compensation & Materials (College)**
+54. **Vendor Directory**
+
+**Section 3, Data Details:**
+
+**1. Test Catalog**
+*   **Open Data Match:** No direct match. Open data contains test *results*, not a catalog of tests offered.
+*   **Quotes:**
+    *   "a report relating to each test administered and disclosed pursuant to section three hundred forty-two of this article" (§ 341.4.a)
+    *   "each question used in calculating the subject's raw score on each test form administered" (§ 341.5.a)
+    *   "Disclosure of test contents." (§ 342)
+    *   "the dates of each test administered by the test agency during the testing year" (§ 342.9.a)
+*   **Why implied:** The agency must track and report on each standardized test it administers, requiring a master list of tests.
+*   **One row represents:** A specific standardized test offered by the agency.
+*   **Covers:** All standardized tests administered by the test agency.
+*   **Columns:**
+    *   Test ID (PK)
+    *   Test Name
+    *   Test Type (e.g., SAT, GRE General Test, MCAT, TOEFL, SAT Subject Test)
+    *   Sponsoring Agency/Manufacturer
+    *   Description of Test Purpose (§ 343.1.a)
+
+**2. Test Form Catalog**
+*   **Open Data Match:** No direct match. Open data contains test *results*, not details about specific test forms.
+*   **Quotes:**
+    *   "each question used in calculating the subject's raw score on each test form administered" (§ 341.5.a)
+    *   "the test agency shall designate the dates upon which test forms to be filed with the commissioner will be used." (§ 342.3.b)
+    *   "Within three years after the administration in New York of a standardized test form not required to be disclosed under subdivision three of this section the test agency shall file the test form and the corresponding acceptable answers with the commissioner." (§ 342.4)
+*   **Why implied:** Tests have multiple forms, each with specific questions and administration dates, requiring a catalog.
+*   **One row represents:** A specific version or form of a standardized test.
+*   **Covers:** All test forms used across all standardized tests administered by the agency.
+*   **Columns:**
+    *   Test Form ID (PK)
+    *   **Test ID** (FK to Dataset 1)
+    *   Test Form Name/Version
+    *   Creation Date
+    *   Status (e.g., Active, Retired)
+
+**3. Test Item Catalog**
+*   **Open Data Match:** No direct match. Open data contains test *results*, not individual item details.
+*   **Quotes:**
+    *   "an item report relating to each question used in calculating the subject's raw score on each test form administered" (§ 341.5.a)
+    *   "Each such item report shall show for each question used in calculating the test subject's raw score, the item's content area specification, and where disclosed pursuant to section three hundred forty-two of this article, information identifying the text of the item, and the correct answer-rates and R-biserial correlations" (§ 341.5.b)
+    *   "Content area specification shall be reported for each exam to indicate area of knowledge, skill or ability that an item purports to measure" (§ 341.5.b)
+    *   "a copy of all test questions used in calculating the test subject's raw score; b. the corresponding acceptable answers to those questions" (§ 342.1.a, b)
+*   **Why implied:** The agency needs a master record of all test questions, their content, and correct answers for analysis and disclosure.
+*   **One row represents:** A specific question (item) used in a test.
+*   **Covers:** All test questions used in calculating test subjects' raw scores across all test forms.
+*   **Columns:**
+    *   Test Item ID (PK)
+    *   **Test ID** (FK to Dataset 1)
+    *   **Test Form ID** (FK to Dataset 2)
+    *   Content Area Specification
+    *   Item Text (reference to document storage)
+    *   Correct Answer
+    *   Item Type (e.g., multiple choice, essay, fill-in-the-blank)
+    *   Disclosure Status (Disclosed, Non-Disclosed)
+
+**4. Test Administrations**
+*   **Open Data Match:** No direct match. Open data contains test *results*, not administration schedules.
+*   **Quotes:**
+    *   "a report relating to each test administered and disclosed pursuant to section three hundred forty-two of this article by the test agency in New York between July first, nineteen hundred eighty-eight and July first, nineteen hundred eighty-nine." (§ 341.4.a)
+    *   "the test agency shall designate the dates upon which test forms to be filed with the commissioner will be used." (§ 342.3.b)
+    *   "The test agency shall inform potential test subjects of these dates." (§ 342.3.b)
+    *   "the dates of each test administered by the test agency during the testing year" (§ 342.9.a)
+    *   "the total number of test subjects who took the test at each administration" (§ 342.9.b)
+    *   "Any test agency offering one or more nondisclosed administrations pursuant to this subdivision shall provide to test subjects, in a clear and conspicuous manner in its registration materials, notice of which test administrations will or will not be disclosed." (§ 342.10.f)
+    *   "When regular test administrations are given on days of religious observance... special administrations shall be offered" (§ 342-a.1)
+*   **Why implied:** The agency must manage and track all scheduled test administrations, including disclosure status and special accommodations.
+*   **One row represents:** A single scheduled test administration event.
+*   **Covers:** All regular and special test administrations conducted by the agency in New York.
+*   **Columns:**
+    *   Test Administration ID (PK)
+    *   **Test ID** (FK to Dataset 1)
+    *   **Test Form ID** (FK to Dataset 2)
+    *   Administration Date
+    *   Administration Type (Regular, Special, Makeup, Sabbath Observer, Other Special-Purpose)
+    *   Location
+    *   Disclosure Status (Disclosed, Non-Disclosed)
+    *   Number of Test Subjects (for this administration)
+    *   Special Administration Reason (if applicable, e.g., religious observance)
+
+**5. Test Subject Directory**
+*   **Open Data Match:** Maybe. "2009 Public Data File Students", "2016 Public Data File Student", "2017 Public Data File Student", "2021 Public Data File -Student", "2019 Public Data File - Students", "2326 2019 Public Data File - Students". These are student data files, but it's unclear if they are for *test subjects* specifically or general K-12 students. Similarity: 40%.
+*   **Quotes:**
+    *   "test agencies shall ask each test subject to report on the test answer sheet, test registration form, or other appropriate means all of the following information: a. The test subject's race or ethnicity... b. The test subject's gender... c. The test subject's linguistic background" (§ 341.2)
+    *   "The score of any test subject shall not be released or disclosed by the test agency... unless specifically authorized by the test subject." (§ 344)
+*   **Why implied:** To track individual test subjects and their demographic information across multiple test administrations.
+*   **One row represents:** A unique test subject.
+*   **Covers:** All individuals who have taken a standardized test administered by the agency.
+*   **Columns:**
+    *   Test Subject ID (PK)
+    *   Race or Ethnicity
+    *   Gender
+    *   Linguistic Background (English dominant household: Yes/No/Declined)
+    *   Date of Birth (implied for unique identification)
+    *   Contact Information (implied for disclosure)
+
+**6. Test Subject Performance Records**
+*   **Open Data Match:** "Math Test Results 2013-2023", "Regents", "SAT (College Board) 2010 School Level Results", "2012 SAT Results", "AP (College Board) School Level Results", "Specialized High Schools Admissions Tests Results", "English Language Arts (ELA) Test Results 2006-2012", "Math Test Results 2006-2012", "English Language Arts (ELA) Test Results 2013-2023". These are aggregated results or school-level data, not individual subject performance records. Similarity: 30%.
+*   **Quotes:**
+    *   "Each such test report shall show by race or ethnicity, linguistic background and gender, the mean-scaled scores of test subjects, the standard deviation of scaled scores, and the distribution of scaled scores." (§ 341.4.b)
+    *   "a statement of the raw score used to calculate the scores reported to the test subject." (§ 342.2.c)
+    *   "The score of any test subject shall not be released or disclosed by the test agency... unless specifically authorized by the test subject." (§ 344)
+*   **Why implied:** To record individual test subject demographic information and their overall performance on each test administration.
+*   **One row represents:** A single test subject's overall performance on a specific test administration.
+*   **Covers:** All test subjects who take a standardized test administered by the agency.
+*   **Columns:**
+    *   Test Subject Performance ID (PK)
+    *   **Test Subject ID** (FK to Dataset 5)
+    *   **Test Administration ID** (FK to Dataset 4)
+    *   **Test ID** (FK to Dataset 1)
+    *   **Test Form ID** (FK to Dataset 2)
+    *   Raw Score
+    *   Scaled Score
+    *   Date Score Reported
+    *   Score Release Authorization (Yes/No)
+
+**7. Test Subject Question Responses**
+*   **Open Data Match:** No direct match. Open data contains test *results*, not individual question responses.
+*   **Quotes:**
+    *   "Each such item report shall show for each question used in calculating the test subject's raw score, the item's content area specification, and where disclosed pursuant to section three hundred forty-two of this article, information identifying the text of the item, and the correct answer-rates and R-biserial correlations for all test subjects, combined and separately by race, ethnicity, gender or linguistic background as reported under subdivision two of this section." (§ 341.5.b)
+    *   "a copy of the test subject's answer sheet, or answer record where there is no answer sheet" (§ 342.2.b)
+*   **Why implied:** To store the raw, incident-level data of each test subject's response to individual questions for detailed item analysis.
+*   **One row represents:** A single test subject's response to a specific question on a test.
+*   **Covers:** All individual question responses from test subjects on administered tests.
+*   **Columns:**
+    *   Test Subject Response ID (PK)
+    *   **Test Subject Performance ID** (FK to Dataset 6)
+    *   **Test Item ID** (FK to Dataset 3)
+    *   Response Provided (e.g., A, B, C, D, or text for open-ended)
+    *   Is Correct (Yes/No)
+
+**8. Test Item Performance Metrics**
+*   **Open Data Match:** No direct match. Open data contains test *results*, not item-level performance metrics.
+*   **Quotes:**
+    *   "Each such item report shall show for each question used in calculating the test subject's raw score, the item's content area specification, and where disclosed pursuant to section three hundred forty-two of this article, information identifying the text of the item, and the correct answer-rates and R-biserial correlations for all test subjects, combined and separately by race, ethnicity, gender or linguistic background as reported under subdivision two of this section." (§ 341.5.b)
+    *   "Such item report shall also calculate the correct answer rates and R-biserial correlations comparing performance by gender and language dominance, within race and ethnic subgroups, including language dominance by the total gender group." (§ 341.5.b)
+    *   "The test report will also include data showing measures of differential item functioning on individual questions that take into account differences in overall test performance." (§ 341.5.d)
+*   **Why implied:** To store the calculated performance metrics for each test item, broken down by demographic groups, as required for reporting.
+*   **One row represents:** Performance metrics for a single test item for a specific demographic group comparison.
+*   **Covers:** Item performance data for all test questions, including overall and demographic-specific rates and correlations.
+*   **Columns:**
+    *   Test Item Metric ID (PK)
+    *   **Test Item ID** (FK to Dataset 3)
+    *   **Test Form ID** (FK to Dataset 2)
+    *   Demographic Group (e.g., "Overall", "Black", "White", "Male", "Female", "Black-White Comparison", "Male-Female Comparison")
+    *   Correct Answer Rate
+    *   R-biserial Correlation
+    *   Differential Item Functioning (DIF) Value (if applicable)
+    *   DIF Group 1 (e.g., Black)
+    *   DIF Group 2 (e.g., White)
+
+**9. Test Content Filings**
+*   **Open Data Match:** No direct match. This is about legal filings, not test results.
+*   **Quotes:**
+    *   "Within thirty days after the results of any standardized test are released, the test agency shall file or cause to be filed with the commissioner: a. a copy of all test questions used in calculating the test subject's raw score; b. the corresponding acceptable answers to those questions; and c. all rules for converting raw scores into those scores reported to the test subject together with an explanation of such rules." (§ 342.1)
+    *   "Within three years after the administration in New York of a standardized test form not required to be disclosed under subdivision three of this section the test agency shall file the test form and the corresponding acceptable answers with the commissioner." (§ 342.4)
+    *   "Subdivisions one, two, three, and four of this section shall not apply to the GRE Advanced Tests. With respect to such tests, the test agency shall file with the commissioner the following: a. a copy of all test questions... b. the corresponding acceptable answers; and c. all rules for converting raw scores..." (§ 342.5)
+    *   "Documents submitted to the commissioner pursuant to this section shall be public records" (§ 342.7)
+*   **Why implied:** To track all test forms and associated content (questions, answers, scoring rules) filed with the commissioner as legally required.
+*   **One row represents:** A specific test form's content filed with the commissioner.
+*   **Covers:** All test forms and their associated content that are legally required to be filed with the commissioner.
+*   **Columns:**
+    *   Filing ID (PK)
+    *   **Test ID** (FK to Dataset 1)
+    *   **Test Form ID** (FK to Dataset 2)
+    *   Filing Date
+    *   Administration Date(s) Covered
+    *   Commissioner Filing Status (e.g., Submitted, Approved)
+    *   Questions Document Reference (link to document storage)
+    *   Acceptable Answers Document Reference (link to document storage)
+    *   Scoring Rules Document Reference (link to document storage)
+    *   Disclosure Exemption Status (e.g., 5% rule, specific test exemptions)
+    *   Filing Frequency Requirement (e.g., 30 days after results, 3 years, 4 years, 5 years, 8 years)
+
+**10. Test Subject Disclosure Requests**
+*   **Open Data Match:** No direct match. This is about individual requests, not aggregated data.
+*   **Quotes:**
+    *   "Within ninety days after filing a standardized test pursuant to subdivision one of this section and for a period of not less than ninety days after the offer is made, the test agency shall provide to the test subject the opportunity to secure: a. a copy of the test questions used to calculate the test subject's raw score; b. a copy of the test subject's answer sheet, or answer record where there is no answer sheet, together with a copy of the correct answer sheet to the same test with questions used to calculate the test subject's raw score so marked; and c. a statement of the raw score used to calculate the scores reported to the test subject." (§ 342.2)
+    *   "The agency may charge a nominal fee for providing such information, not to exceed the direct cost thereof." (§ 342.2)
+    *   "a test agency shall permit a test subject to elect in writing this opportunity both at the time the test subject registers to take a test and at the time the test agency reports test scores to the test subject" (§ 342.2)
+*   **Why implied:** To track requests from test subjects for copies of their test materials and ensure timely provision.
+*   **One row represents:** A request by a test subject for their test materials.
+*   **Covers:** All requests from test subjects for disclosure of their test questions, answer sheets, and raw scores.
+*   **Columns:**
+    *   Request ID (PK)
+    *   **Test Subject ID** (FK to Dataset 5)
+    *   **Test Administration ID** (FK to Dataset 4)
+    *   Request Date
+    *   Materials Requested (e.g., Questions, Answer Sheet, Raw Score Statement)
+    *   Fee Charged
+    *   Fee Paid
+    *   Date Materials Provided
+    *   Method of Election (Registration, Score Report)
+
+**11. Test Score Authenticity Investigations**
+*   **Open Data Match:** No direct match. This is about investigations, not general test data.
+*   **Quotes:**
+    *   "Each test agency shall ensure due process protection of test subjects whose scores are being questioned for suspected inauthenticity or irregularity in test administration." (§ 344-b)
+    *   "When a test agency is presented with information which renders the test subject's test score suspect... the test agency is responsible for reviewing the information and determining if withholding the test subject's score is warranted." (§ 344-b.1)
+    *   "If the test agency determines that withholding the test subject's score is warranted, the test agency shall give the test subject written notice of the test agency's decision." (§ 344-b.2)
+    *   "When the test agency determines that substantial evidence exists to support cancellation or invalidation of a test score, the test agency shall provide the test subject with a choice of the following options: (a) cancellation of the test scores in question, with full refund of all test fees; (b) an opportunity to take the test again privately and without charge; or (c) an opportunity to seek arbitration or judicial review of the matter." (§ 344-b.5)
+*   **Why implied:** To track all investigations into suspected inauthenticity or irregularity of test scores, ensuring due process and proper resolution.
+*   **One row represents:** An investigation into a test subject's score authenticity.
+*   **Covers:** All instances where a test subject's score is questioned for authenticity or irregularity.
+*   **Columns:**
+    *   Investigation ID (PK)
+    *   **Test Subject ID** (FK to Dataset 5)
+    *   **Test Administration ID** (FK to Dataset 4)
+    *   Date Information Received
+    *   Reason for Suspicion (e.g., collusion, cheating, irregular administration, statistical data)
+    *   Date Decision to Withhold Score
+    *   Notice Sent Date
+    *   Test Subject Response Deadline
+    *   Test Subject Response Date
+    *   Final Decision Date
+    *   Decision Outcome (e.g., Score Validated, Score Canceled, Retest Offered, Arbitration/Judicial Review)
+    *   Option Chosen by Subject (if applicable: Cancellation, Retest, Arbitration/Judicial Review)
+    *   Refund Amount (if applicable)
+    *   **Retest Administration ID** (FK to Dataset 4, if applicable)
+    *   Retest Score (if applicable)
+    *   Score Release Status (Released, Withheld)
+
+**12. Test Question Challenge Log**
+*   **Open Data Match:** No direct match. This is about challenges to questions, not test results.
+*   **Quotes:**
+    *   "Within sixty days of the receipt of correspondence from a test subject, their representative, or a user institution challenging or questioning the keying, scoring, wording, or any aspect of a test question or questions used to calculate test subjects' raw scores... the test agency shall place such correspondence in a separately maintained file." (§ 342.8.a)
+    *   "Within thirty days of the test agency's sending out a response... the test agency shall place on file a copy of any of the test agency's written responses to such correspondence clarifying, explaining or defending the test question or questions." (§ 342.8.b)
+    *   "Test subjects and any other individual shall be able to gain access to such file by submitting a written request to the test agency." (§ 342.8.c)
+*   **Why implied:** To track all challenges to test questions and the agency's responses, ensuring transparency and accountability.
+*   **One row represents:** A challenge to a test question.
+*   **Covers:** All challenges received regarding test questions and the agency's official responses.
+*   **Columns:**
+    *   Challenge ID (PK)
+    *   **Test Item ID** (FK to Dataset 3)
+    *   **Test Administration ID** (FK to Dataset 4)
+    *   Challenger Type (Test Subject, Representative, User Institution)
+    *   Challenger ID (if authorized for identification)
+    *   Date of Challenge Correspondence Receipt
+    *   Nature of Challenge (e.g., keying error, scoring issue, wording ambiguity)
+    *   Date of Agency Response Sent
+    *   Agency Response Document Reference (link to document storage)
+    *   Resolution/Outcome of Challenge
+
+**13. Agency Directory**
+*   **Open Data Match:** No direct match. This is an internal directory for the agency itself.
+*   **Quotes:**
+    *   "Any test agency which violates any section of this article shall be liable for a civil penalty of not more than one thousand dollars for each violation." (§ 347)
+    *   "Each test agency shall report the following information to the commissioner annually" (§ 342.9)
+*   **Why implied:** The agency needs to identify itself and track its own compliance and financial reporting.
+*   **One row represents:** The agency itself.
+*   **Covers:** The single agency responsible for these legal requirements.
+*   **Columns:**
+    *   Agency ID (PK)
+    *   Agency Name
+    *   Address
+    *   Contact Information
+    *   Commissioner ID (if applicable)
+
+**14. Agency Violation Records**
+*   **Open Data Match:** No direct match. This is about internal violations, not public data.
+*   **Quotes:**
+    *   "Any test agency which violates any section of this article shall be liable for a civil penalty of not more than one thousand dollars for each violation." (§ 347)
+*   **Why implied:** To track instances where the test agency has violated legal requirements and the associated penalties.
+*   **One row represents:** A recorded violation by a test agency.
+*   **Covers:** All violations of the article committed by the test agency.
+*   **Columns:**
+    *   Violation ID (PK)
+    *   **Agency ID** (FK to Dataset 13)
+    *   Date of Violation
+    *   Section Violated
+    *   Description of Violation
+    *   Penalty Imposed (e.g., fine amount)
+    *   Date Penalty Paid
+    *   Resolution Status
+
+**15. School District Directory**
+*   **Open Data Match:** No direct match. Open data has school locations, but not a district directory.
+*   **Quotes:**
+    *   "a school district shall be eligible for an apportionment under the provisions of this section" (§ 753.1)
+    *   "In the several cities and school districts of the state, school authorities... shall have the power and duty... to loan... instructional computer hardware" (§ 754.1)
+    *   "The boards of education and trustees of the several cities and school districts of the state shall require instruction to be given in such courses" (§ 801.1, § 801.2, § 806.1)
+    *   "The commissioner may, in his discretion, cause all or a portion of the public school money to be apportioned to a district or city to be withheld for failure of the school authorities of such district or city to provide instruction in such courses" (§ 801.3, § 806.2)
+*   **Why implied:** To maintain a master list of all school districts for administrative, financial, and compliance tracking.
+*   **One row represents:** A single school district.
+*   **Covers:** All public school districts in the state.
+*   **Columns:**
+    *   School District ID (PK)
+    *   District Name
+    *   District Type (e.g., City, Central, Union Free)
+    *   Superintendent Name
+    *   Address
+    *   Contact Phone
+    *   Contact Email
+    *   Number of Teachers Employed
+    *   Exempt from §807-a (NYC, Buffalo, Rochester, Syracuse, Yonkers) (Yes/No)
+
+**16. School Directory (K-12)**
+*   **Open Data Match:** "School Locations", "232 School Locations", "1087 School Locations", "1315 School Point Locations", "466 School Point Locations", "1561 School Locations", "2915 School Locations", "997 School Locations", "1942 School Locations", "1355 NYC DOE Public School Location Information". These are strong matches for school location and basic directory information. Similarity: 90%.
+*   **Quotes:**
+    *   "all pupils legally attending nonpublic elementary or secondary schools located in the school district" (§ 754.1, § 755.1)
+    *   "to be maintained and followed in all the schools of the state." (§ 801.1, § 801.2, § 806.1)
+    *   "Similar courses of instruction shall be prescribed and maintained in private schools in the state" (§ 801.1, § 801.2, § 803.4, § 806.1)
+    *   "The board of education, trustees, principal or other person in charge of every public, private and parochial school in the state shall arrange for giving such course of instruction" (§ 808.2)
+    *   "The term "private school", as used in this section, means: a. Any nursery school or kindergarten attended by six or more pupils three years of age or older... b. Any establishment, other than a public school, attended by twenty-five or more pupils for the purpose of receiving the instruction of academic grade at the elementary or secondary level" (§ 807-a.9)
+*   **Why implied:** To maintain a master list of all public and private K-12 schools for compliance, resource allocation, and oversight.
+*   **One row represents:** A single school.
+*   **Covers:** All public, private, and parochial elementary and secondary schools in the state.
+*   **Columns:**
+    *   School ID (PK)
+    *   School Name
+    *   **School District ID** (FK to Dataset 15, if public)
+    *   School Type (Public, Private, Parochial, Nursery, Kindergarten)
+    *   Address
+    *   Principal Name
+    *   Contact Phone
+    *   Contact Email
+    *   Grades Served
+    *   Has Sleeping Accommodations (Yes/No)
+
+**17. School Building Inventory (K-12)**
+*   **Open Data Match:** No direct match. Open data has school locations, but not detailed building inventory with safety features.
+*   **Quotes:**
+    *   "cause the buildings of such school containing classroom, dormitory, laboratory, physical education, dining or recreational facilities for student use to be inspected at least annually for fire hazards" (§ 807-a.1)
+    *   "Eight of all such drills shall be evacuation drills, four of which shall be through use of the fire escapes on buildings where fire escapes are provided or through the use of identified secondary means of egress." (§ 807.1)
+    *   "Four additional drills shall be held in each school year during the hours after sunset and before sunrise in school buildings in which students are provided with sleeping accommodations." (§ 807.1)
+    *   "In all public and private school buildings having a central annunciator panel or fire alarm cabinet which displays a visual signal identifying any heat detector, smoke detector, or manually operated fire alarm box within the building which has been activated, there shall be provided as a part of or immediately adjacent to such panel or cabinet a chart or plan showing the specific location within the building of each such device." (§ 807-d.1)
+*   **Why implied:** To maintain a record of all school buildings and their key safety features for inspection and drill planning.
+*   **One row represents:** A single school building.
+*   **Covers:** All public and private K-12 school buildings subject to fire inspections and drills.
+*   **Columns:**
+    *   Building ID (PK)
+    *   **School ID** (FK to Dataset 16)
+    *   Building Name/Number
+    *   Address
+    *   Year Built
+    *   Building Type (e.g., Classroom, Dormitory, Lab, Gym, Dining, Multi-use)
+    *   Has Fire Escapes (Yes/No)
+    *   Has Secondary Means of Egress (Yes/No)
+    *   Provides Sleeping Accommodations (Yes/No)
+    *   Has Central Annunciator Panel/Fire Alarm Cabinet (Yes/No)
+    *   Fire Alarm System Interconnected with Fire Department (Yes/No)
+    *   Date of Interconnection (if applicable)
+    *   Fire Alarm Reporting Location/System ID (if interconnected)
+    *   Fire Alarm Chart/Plan Location (Inside, Outside)
+
+**18. K-12 Student Directory**
+*   **Open Data Match:** "2009 Public Data File Students", "2016 Public Data File Student", "2017 Public Data File Student", "2021 Public Data File -Student", "2019 Public Data File - Students", "2326 2019 Public Data File - Students". These are student data files, likely containing demographic and enrollment information. Similarity: 80%.
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to purchase and to loan upon individual request, textbooks, to all children residing in such district who are enrolled in a public school... and to all children residing in such district who are enrolled in a nonpublic school." (§ 701.3)
+    *   "to loan, upon request of an individual or a group of individual pupils, to all pupils legally attending nonpublic elementary or secondary schools located in the school district, instructional computer hardware..." (§ 754.1)
+*   **Why implied:** To track individual students for textbook, library material, software, and technology loan programs.
+*   **One row represents:** A single K-12 student.
+*   **Covers:** All students enrolled in public and nonpublic K-12 schools within the agency's jurisdiction.
+*   **Columns:**
+    *   Student ID (PK)
+    *   Student Name
+    *   Date of Birth
+    *   Gender
+    *   Race/Ethnicity
+    *   **School ID** (FK to Dataset 16)
+    *   Enrollment Type (Public School, Nonpublic School)
+    *   Grade Level
+
+**19. School District Student Enrollment Records**
+*   **Open Data Match:** "2019-20 Demographic Snapshot - Citywide", "2017-2018 Demographic Snapshot - Citywide", "2013 - 2018 Demographic Snapshot", "2016 - 2017 Demographic Snapshot", "2011 - 2016 Demographic Snapshot", "2014 - 2015 Demograpic Snapshot", "2018-2019 Citywide Demographic Snapshot", "2020-2021 Demographic Snapshot Citywide", "2017-18 - 2021-22 Demographic Snapshot". These are demographic snapshots, which include enrollment figures. Similarity: 85%.
+*   **Quotes:**
+    *   "to all children residing in such district who are enrolled in a public school... and to all children residing in such district who are enrolled in a nonpublic school." (§ 701.3)
+    *   "Enrollment shall be as defined in subdivision one of section thirty-six hundred two of this chapter." (§ 701.3)
+    *   "the number of children residing in such district and so enrolled in the base year" (§ 701.4)
+    *   "the sum of the enrollments in grades kindergarten through twelve in the base year calculated pursuant to subparagraphs four, five, and six of paragraph n of subdivision one of section thirty-six hundred two of this chapter." (§ 701.6)
+*   **Why implied:** To track student enrollment figures, which are critical for calculating state aid and determining resource allocation.
+*   **One row represents:** Annual enrollment figures for a school district for a specific school year.
+*   **Covers:** All public and nonpublic school enrollment within each school district.
+*   **Columns:**
+    *   Enrollment Record ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   School Year
+    *   Public School Enrollment (K-12)
+    *   Nonpublic School Enrollment (K-12)
+    *   Additional Public Enrollment (if applicable)
+    *   Total Enrollment (sum of above)
+
+**20. K-12 Textbook Designations**
+*   **Open Data Match:** No direct match. This is about official designations, not general curriculum.
+*   **Quotes:**
+    *   "boards of education... shall designate text-books to be used in the schools under their charge." (§ 701.1)
+    *   "A text-book, for the purposes of this section shall mean: (i) any book, or a book substitute... and (ii) for expenses incurred after July first, nineteen hundred ninety-nine, any courseware or other content-based instructional materials in an electronic format... (iii) For expenses incurred on or after July first, two thousand eleven, a text-book shall also mean items of expenditure that are eligible for an apportionment pursuant to sections seven hundred eleven, seven hundred fifty-one and/or seven hundred fifty-three of this title" (§ 701.2)
+    *   "When a text-book shall have been designated for use in a school district or city... it shall not be lawful to supersede such text-book by any other book within a period of five years from the time of such designation, except upon a three-fourths vote of the board of education" (§ 702.1)
+*   **Why implied:** To track the official designation of textbooks by school districts, including compliance with the five-year rule for changes.
+*   **One row represents:** A textbook designated for use by a school district.
+*   **Covers:** All textbooks, courseware, and electronic instructional materials designated for use in K-12 schools.
+*   **Columns:**
+    *   Designation ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   Textbook Title
+    *   Author
+    *   Publisher
+    *   ISBN/Identifier
+    *   Material Type (Book, Courseware, Electronic Format, Other)
+    *   Designation Date
+    *   Effective Start Date
+    *   Superseded (Yes/No)
+    *   Supersession Date (if applicable)
+    *   Supersession Vote (if applicable, e.g., 3/4 vote)
+    *   **Superseded By Designation ID** (FK to this dataset, if applicable)
+
+**21. K-12 Textbook Purchases**
+*   **Open Data Match:** No direct match. This is about specific purchases, not general budget data.
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to purchase and to loan upon individual request, textbooks" (§ 701.3)
+    *   "No school district shall be required to purchase or otherwise acquire textbooks, the cost of which shall exceed an amount equal to the apportionment pursuant to subdivision six of this section plus a minimum lottery grant" (§ 701.4)
+    *   "The commissioner... shall apportion to each school district an amount equal to the cost of the textbooks purchased and loaned by the district pursuant to this section in the base year" (§ 701.6)
+*   **Why implied:** To track the acquisition of textbooks by school districts, essential for aid calculations and inventory management.
+*   **One row represents:** A purchase of a specific textbook by a school district.
+*   **Covers:** All purchases of textbooks by school districts.
+*   **Columns:**
+    *   Purchase ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   **Designation ID** (FK to Dataset 20)
+    *   Purchase Date
+    *   Quantity Purchased
+    *   Unit Cost
+    *   Total Cost
+    *   **Vendor ID** (FK to Dataset 54)
+
+**22. K-12 Textbook Loans**
+*   **Open Data Match:** No direct match. This is about individual loans, not general resource distribution.
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to purchase and to loan upon individual request, textbooks, to all children residing in such district who are enrolled in a public school... and to all children residing in such district who are enrolled in a nonpublic school." (§ 701.3)
+    *   "Textbooks loaned to children enrolled in said nonpublic schools shall be textbooks which are designated for use in any public schools of the state or are approved by any boards of education, trustees or other school authorities." (§ 701.3)
+    *   "Such textbooks are to be loaned free to such children subject to such rules and regulations as are or may be prescribed by the board of regents and such boards of education, trustees or other school authorities." (§ 701.3)
+*   **Why implied:** To track the distribution of textbooks to students, ensuring equitable access and compliance with loan policies.
+*   **One row represents:** A loan of a specific textbook to a student.
+*   **Covers:** All textbook loans made by school districts to students.
+*   **Columns:**
+    *   Loan ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   **Designation ID** (FK to Dataset 20)
+    *   **Student ID** (FK to Dataset 18)
+    *   Student Enrollment Type (Public School, Nonpublic School)
+    *   Request Date
+    *   Loan Date
+    *   Return Date
+    *   Condition on Return
+    *   Loan Status (Active, Returned, Overdue, Lost)
+
+**23. Seditious Textbook Complaints & Disapprovals**
+*   **Open Data Match:** No direct match. This is about specific complaints and legal determinations.
+*   **Quotes:**
+    *   "No text-book in any subject used in the public schools in this state shall contain any matter or statements of any kind which are seditious in character, disloyal to the United States or favorable to the cause of any foreign country with which the United States may be at war." (§ 704)
+    *   "Any person may present a written complaint to such commission that a text-book... contains matter or statements in violation of this section, specifying such matter or statements in detail." (§ 704)
+    *   "If the commission determine that the text-book against which complaint is made contains any such matter or statements, it shall issue a certificate disapproving the use of such text-book in the public schools of this state, together with a statement of the reasons for its disapproval, specifying the matter found unlawful." (§ 704)
+*   **Why implied:** To track complaints regarding seditious or disloyal content in textbooks and the commission's determinations and disapprovals.
+*   **One row represents:** A complaint regarding a textbook's content or a commission's disapproval.
+*   **Covers:** All complaints received about textbook content and all official disapprovals issued by the commission.
+*   **Columns:**
+    *   Complaint/Disapproval ID (PK)
+    *   **Designation ID** (FK to Dataset 20)
+    *   Complainant Name (if provided)
+    *   Complaint Date
+    *   Details of Complaint
+    *   Commission Review Date
+    *   Commission Decision (Approved, Disapproved)
+    *   Disapproval Certificate Date (if disapproved)
+    *   Reasons for Disapproval
+    *   Affected School Districts (list of **School District IDs** from Dataset 15)
+
+**24. K-12 Library Material Designations**
+*   **Open Data Match:** No direct match. This is about official designations, not general curriculum.
+*   **Quotes:**
+    *   "boards of education... shall designate school library materials to be used in the schools in the district." (§ 711.1)
+    *   "School library materials, for the purposes of this article shall mean digital materials, audio/visual materials and printed materials that may or may not require magnification which meet all of the following criteria: (1) materials which are catalogued and processed as part of the school library or media center for use by elementary and/or secondary school children and teachers; (2) materials which with reasonable care and use may be expected to last more than one year; and (3) materials which would not be eligible for aid pursuant to sections seven hundred one and seven hundred fifty-one of this title." (§ 711.2)
+*   **Why implied:** To track the official designation of school library materials by school districts.
+*   **One row represents:** A school library material designated for use by a school district.
+*   **Covers:** All digital, audio/visual, and printed materials designated as school library materials.
+*   **Columns:**
+    *   Designation ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   Material Title
+    *   Author/Creator
+    *   Publisher
+    *   ISBN/Identifier (if applicable)
+    *   Material Type (Digital, Audio/Visual, Printed)
+    *   Designation Date
+    *   Effective Start Date
+    *   Catalogued as Library Material (Yes/No)
+    *   Expected Lifespan > 1 Year (Yes/No)
+
+**25. K-12 Library Material Purchases**
+*   **Open Data Match:** No direct match. This is about specific purchases, not general budget data.
+*   **Quotes:**
+    *   "No school district shall be required to purchase or otherwise acquire school library materials, the cost of which shall exceed an amount equal to the library materials factor multiplied by the sum of the public school district enrollment and the nonpublic school enrollment" (§ 711.3)
+    *   "the commissioner... shall apportion to each school district an amount equal to the cost of the school library materials purchased by the district pursuant to this section in the base year" (§ 711.4)
+*   **Why implied:** To track the acquisition of school library materials by school districts, essential for aid calculations and inventory management.
+*   **One row represents:** A purchase of a specific library material by a school district.
+*   **Covers:** All purchases of school library materials by school districts.
+*   **Columns:**
+    *   Purchase ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   **Designation ID** (FK to Dataset 24)
+    *   Purchase Date
+    *   Quantity Purchased
+    *   Unit Cost
+    *   Total Cost
+    *   **Vendor ID** (FK to Dataset 54)
+
+**26. K-12 Library Material Loans**
+*   **Open Data Match:** No direct match. This is about individual loans, not general resource distribution.
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to loan upon request of an individual or a group of individual pupils... school library materials." (§ 712.1)
+    *   "School library materials loaned to such pupils attending private schools shall be school library materials which are designated for use in any public elementary or secondary schools of the state or are approved by any board of education, trustees or other school authorities." (§ 712.1)
+    *   "Such school library materials are to be loaned free to such children subject to such rules and regulations as are or may be prescribed by the board of regents and such boards of education, trustees or other school authorities." (§ 712.1)
+*   **Why implied:** To track the distribution of school library materials to students, ensuring equitable access and compliance with loan policies.
+*   **One row represents:** A loan of a specific library material to a student.
+*   **Covers:** All school library material loans made by school districts to students.
+*   **Columns:**
+    *   Loan ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   **Designation ID** (FK to Dataset 24)
+    *   **Student ID** (FK to Dataset 18)
+    *   Student Enrollment Type (Public School, Nonpublic School)
+    *   Request Date
+    *   Loan Date
+    *   Return Date
+    *   Condition on Return
+    *   Loan Status (Active, Returned, Overdue, Lost)
+
+**27. K-12 Software Designations**
+*   **Open Data Match:** No direct match. This is about official designations, not general curriculum.
+*   **Quotes:**
+    *   "boards of education... shall designate software programs to be used in conjunction with computers of the school district." (§ 751.1)
+    *   "A software program, for the purposes of this article shall mean (a) a computer program which a pupil is required to use as a learning aid in a particular class in the school the pupil legally attends, or (b) for expenses incurred after July first, two thousand nine, any content-based instructional materials in an electronic format that are aligned with state standards which are accessed or delivered through the internet based on a subscription model." (§ 751.2)
+*   **Why implied:** To track the official designation of software programs by school districts.
+*   **One row represents:** A software program designated for use by a school district.
+*   **Covers:** All software programs and electronic instructional materials designated for use in K-12 schools.
+*   **Columns:**
+    *   Designation ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   Software Title
+    *   Publisher
+    *   Version
+    *   License Type (e.g., perpetual, subscription)
+    *   Designation Date
+    *   Effective Start Date
+    *   Required Learning Aid (Yes/No)
+    *   Content-Based Instructional Material (Yes/No)
+
+**28. K-12 Software Purchases**
+*   **Open Data Match:** No direct match. This is about specific purchases, not general budget data.
+*   **Quotes:**
+    *   "No school district shall be required to purchase or otherwise acquire software programs, the cost of which shall exceed an amount equal to the software factor multiplied by the sum of the public school district enrollment and the nonpublic school enrollment" (§ 751.3)
+    *   "The commissioner... shall apportion to each school district an amount equal to the cost of the software programs purchased by the district pursuant to this section in the base year" (§ 751.4)
+*   **Why implied:** To track the acquisition of software programs by school districts, essential for aid calculations and license management.
+*   **One row represents:** A purchase of a specific software program by a school district.
+*   **Covers:** All purchases of software programs by school districts.
+*   **Columns:**
+    *   Purchase ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   **Designation ID** (FK to Dataset 27)
+    *   Purchase Date
+    *   Quantity/Licenses Purchased
+    *   Unit Cost
+    *   Total Cost
+    *   **Vendor ID** (FK to Dataset 54)
+
+**29. K-12 Software Loans**
+*   **Open Data Match:** No direct match. This is about individual loans, not general resource distribution.
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to loan upon request of an individual or a group of individual pupils... software programs." (§ 752.1)
+    *   "Software programs loaned to such pupils attending private schools shall be software programs which are designated for use in any public elementary or secondary schools of the state or are approved by any board of education, trustees or other school authorities." (§ 752.1)
+    *   "Such software programs are to be loaned free to such children subject to such rules and regulations as are or may be prescribed by the board of regents and such boards of education, trustees or other school authorities." (§ 752.1)
+*   **Why implied:** To track the distribution of software programs to students, ensuring equitable access and compliance with loan policies.
+*   **One row represents:** A loan of a specific software program to a student.
+*   **Covers:** All software program loans made by school districts to students.
+*   **Columns:**
+    *   Loan ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   **Designation ID** (FK to Dataset 27)
+    *   **Student ID** (FK to Dataset 18)
+    *   Student Enrollment Type (Public School, Nonpublic School)
+    *   Request Date
+    *   Loan Date
+    *   Return Date
+    *   Condition on Return
+    *   Loan Status (Active, Returned, Overdue, Lost)
+
+**30. Instructional Technology Equipment Inventory (K-12)**
+*   **Open Data Match:** No direct match. This is about inventory, not general budget data.
+*   **Quotes:**
+    *   "approved expenses for (i) the purchase or lease of micro and/or mini computer equipment or terminals for instructional purposes or (ii) technology equipment, as defined in paragraph c of subdivision two of this section, used for instructional purposes, or (iii) for the repair of such equipment..." (§ 753.1)
+    *   "Such instructional computer hardware is to be loaned free to such children, commencing with the two thousand seven--two thousand eight school year, subject to such rules and regulations as are or may be prescribed by the board of regents and such school authorities." (§ 754.1)
+    *   "No school district shall be required to loan instructional computer hardware in excess of the instructional computer hardware acquired by such district pursuant to section seven hundred fifty-three of this article." (§ 754.2)
+*   **Why implied:** To track all instructional technology acquired by districts, its use, and its loan status to nonpublic schools.
+*   **One row represents:** A single piece of instructional technology equipment.
+*   **Covers:** All instructional computer hardware and technology equipment acquired by school districts, including those loaned to nonpublic school students.
+*   **Columns:**
+    *   Equipment ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   Equipment Type (e.g., Microcomputer, Mini-computer, Terminal, Video, Solar, Robotic, Satellite, Laser, Smart Classroom Technology)
+    *   Acquisition Date
+    *   Acquisition Cost
+    *   **Funding Source (Apportionment ID)** (FK to Dataset 31, or other funding source)
+    *   Current Status (In Use - Public School, Loaned - Nonpublic School, In Repair, Retired)
+    *   Useful Life (if applicable)
+    *   Last Maintenance Date
+    *   Next Scheduled Maintenance Date
+
+**31. Instructional Technology Apportionment Applications (K-12)**
+*   **Open Data Match:** No direct match. Open data has budget details, but not specific aid applications.
+*   **Quotes:**
+    *   "a school district shall be eligible for an apportionment under the provisions of this section for approved expenses for (i) the purchase or lease of micro and/or mini computer equipment or terminals for instructional purposes or (ii) technology equipment... used for instructional purposes, or (iii) for the repair of such equipment and training and staff development for instructional purposes... or (iv) for expenses incurred on or after July first, two thousand eleven, any items of expenditure that are eligible for an apportionment pursuant to sections seven hundred one, seven hundred eleven and/or seven hundred fifty-one of this title, where such items are designated by the school district as eligible for aid pursuant to this section..." (§ 753.1)
+    *   "Such aid shall be provided pursuant to a plan developed by the district which demonstrates to the satisfaction of the commissioner that the instructional computer hardware needs of the district's public school students have been adequately met and that the school district has provided for the loan of instructional computer hardware to students legally attending nonpublic schools pursuant to section seven hundred fifty-four of this article." (§ 753.1)
+*   **Why implied:** To manage the application, approval, and disbursement of state aid for instructional technology.
+*   **One row represents:** A single application for instructional computer hardware and technology equipment apportionment.
+*   **Covers:** All applications from school districts for state aid related to instructional technology.
+*   **Columns:**
+    *   Application ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   Application Date
+    *   Fiscal Year of Application
+    *   Base Year Expenses Reported
+    *   Approved Expenses
+    *   Technology Factor
+    *   Public School Enrollment (Base Year)
+    *   Nonpublic School Enrollment (Base Year)
+    *   Building Aid Ratio
+    *   Calculated Apportionment Amount
+    *   Approved Apportionment Amount
+    *   Date of Apportionment Payment
+    *   Plan Submission Date
+    *   Commissioner Approval Date
+    *   Percentage of Funds Allocated for Repair/Training (from plan)
+    *   Loan of Hardware to Nonpublic Schools Confirmed (Yes/No)
+
+**32. Nonpublic School Student Technology Loan Requests (K-12)**
+*   **Open Data Match:** No direct match. This is about specific requests, not general resource distribution.
+*   **Quotes:**
+    *   "school authorities... shall have the power and duty... to loan, upon request of an individual or a group of individual pupils, to all pupils legally attending nonpublic elementary or secondary schools located in the school district, instructional computer hardware..." (§ 754.1)
+    *   "Such instructional computer hardware shall be loaned on an equitable basis to children attending nonpublic schools in the district in the current year..." (§ 754.2)
+    *   "School authorities shall adopt regulations specifying the date by which requests for the purchase and loan of instructional computer hardware must be received by the district." (§ 754.3)
+    *   "to loan, upon request of an individual or a group of individual pupils, to all pupils legally attending nonpublic elementary or secondary schools located in the school district, smart schools classroom technology acquired pursuant to subdivision sixteen of section thirty-six hundred forty-one of this chapter..." (§ 755.1)
+*   **Why implied:** To manage and track requests for technology loans to nonpublic school students and ensure equitable distribution.
+*   **One row represents:** A single request from a nonpublic school student (or group) for instructional technology.
+*   **Covers:** Requests for instructional computer hardware and smart schools classroom technology from students attending nonpublic schools.
+*   **Columns:**
+    *   Request ID (PK)
+    *   **Student ID** (FK to Dataset 18)
+    *   **Nonpublic School ID** (FK to Dataset 16)
+    *   **School District ID** (FK to Dataset 15)
+    *   Request Date
+    *   Technology Type Requested (Instructional Computer Hardware, Smart Schools Classroom Technology)
+    *   Date Received by District
+    *   Loan Status (Approved, Denied, Fulfilled, Pending)
+    *   Loan Date (if fulfilled)
+    *   Expected Return Date
+    *   Actual Return Date
+    *   **Equipment ID** (FK to Dataset 30, if fulfilled)
+    *   Reason for Denial (if any)
+    *   Explanation for Late Request (if any)
+    *   Tuition Paid Under Article 89 (Yes/No)
+    *   Equitable Loan Calculation (e.g., value of loan vs. $250 limit for smart tech)
+
+**33. K-12 Teacher Directory**
+*   **Open Data Match:** "2017 Public Data File Teacher", "2021 Public Data File - Teacher", "2600 2019 Public Data File - Teachers", "2674 2016 Public Data File Teacher". These are teacher data files, likely containing demographic and employment information. Similarity: 80%.
+*   **Quotes:**
+    *   "The boards of education and trustees of the several cities and school districts of the state shall require instruction to be given in such courses, by the teachers employed in the schools therein." (§ 801.1, § 801.2, § 806.1)
+    *   "The board of education or trustees of every school district regularly employing twenty or more teachers shall employ a teacher or teachers qualified and duly licensed under the regulations of the regents to give such instruction" (§ 803.2)
+*   **Why implied:** To track all teachers employed by school districts for compliance with instructional mandates and certification requirements.
+*   **One row represents:** A single K-12 teacher.
+*   **Covers:** All teachers employed in public and private K-12 schools within the agency's jurisdiction.
+*   **Columns:**
+    *   Teacher ID (PK)
+    *   Teacher Name
+    *   Date of Birth
+    *   Gender
+    *   Race/Ethnicity
+    *   **School ID** (FK to Dataset 16)
+    *   Employment Start Date
+    *   Current Status (Active, Leave, Retired)
+
+**34. K-12 Teacher Certification and Training Records**
+*   **Open Data Match:** "2016-17 Physical Education - Licensed PE Teachers", "2017-2018 Physical Education - Licensed Teachers", "2015-16 Health Education K-12 - Licensed Health Instructors", "2015-16 Local Law 15 Health Data - Licensed Health Instructors", "2017-2018 Local Law 15 Health Instructor - Professional", "2017-2018 Local Law Licensed Health Instructor - School", "2017-2018 Local Law 15 Health Instructor - Community School District", "2015-16 Local Law 15 Health Data K-12 Health Instructor CCD", "2016 - 2017 Health Education Instructor Report", "2015-16 Local Law 15 Health Data - K-12 Health Instructor District", "2017-2018 Health Education Report MS (54) - City Council District", "2017-2018 Health Education Report MS (54) - District", "2017-2018 Health Education Report MS (54) - School". These are strong matches for licensed teachers in specific subjects. Similarity: 90%.
+*   **Quotes:**
+    *   "The board of education or trustees of every school district regularly employing twenty or more teachers shall employ a teacher or teachers qualified and duly licensed under the regulations of the regents to give such instruction" (§ 803.2)
+    *   "Such instruction shall be provided by or under the direct supervision of regular classroom teachers, provided, however, that such instruction may be provided by any other agency, public or private." (§ 803-a.1)
+    *   "Such instruction shall be taught by the regular classroom teachers or by teachers certified to teach health education." (§ 804.3)
+    *   "All pre-service training programs in the state for elementary teachers shall include adequate preparation regarding the instruction in alcohol, tobacco, and other drugs set forth herein, and no teacher shall be licensed except upon satisfactory demonstration of the competencies included in the institutional proposals approved by the department." (§ 804.8)
+    *   "persons instructing pupils in cardiopulmonary resuscitation shall possess valid certification by an agency offering such certification in the performance of cardiopulmonary resuscitation and in its instruction." (§ 804-c.1)
+*   **Why implied:** To ensure that teachers providing mandated instruction are qualified and have received necessary training.
+*   **One row represents:** A single teacher's certification or training completion for a specific subject.
+*   **Covers:** Certifications and training for teachers in subjects like Physical Education, Health Education (including mental health, substance abuse, cancer prevention, CPR, AED), Child Abduction Prevention, Child Sexual Exploitation Prevention, and other mandated courses.
+*   **Columns:**
+    *   Certification/Training ID (PK)
+    *   **Teacher ID** (FK to Dataset 33)
+    *   Certification/Training Type (e.g., Health Education Certification, CPR Instructor, AED Instructor, Child Abduction Prevention Training)
+    *   Issuing Authority/Training Provider
+    *   Date Issued/Completed
+    *   Expiration Date (if applicable)
+    *   Certification Number (if applicable)
+    *   Compliance Status (Certified, Training Completed, Expired)
+    *   Date Next Training Required (if applicable)
+
+**35. School District Staff Development/Training Events (K-12)**
+*   **Open Data Match:** No direct match. Open data has reports on health education, but not specific training events.
+*   **Quotes:**
+    *   "for the repair of such equipment and training and staff development for instructional purposes as provided hereinafter" (§ 753.1)
+    *   "A school district may use up to twenty percent of the product of (i) the technology factor... for the repair of instructional computer hardware and technology equipment and training and staff development for instructional purposes pursuant to a plan submitted to the commissioner." (§ 753.1)
+    *   "provision of inservice training and materials for elementary level school teachers in comprehensive health education" (§ 804-a.2.a.i.B)
+    *   "Regional training centers for the purpose of developing materials and providing training programs to meet the needs of teachers statewide in the implementation of comprehensive school health education programs at the elementary level will be established." (§ 804-a.2.b)
+*   **Why implied:** To track staff development and training events funded by state aid or related to mandated health education programs.
+*   **One row represents:** A single staff development or training event.
+*   **Covers:** Training and staff development for instructional technology and comprehensive health education.
+*   **Columns:**
+    *   Training Event ID (PK)
+    *   **School District ID** (FK to Dataset 15)
+    *   Date of Event
+    *   Topic (e.g., Instructional Computer Hardware Use, Health Education Curriculum, Alcohol/Drug Abuse Prevention)
+    *   **Funding Source (Apportionment ID)** (FK to Dataset 31, or **Grant ID** from Dataset 39)
+    *   Provider/Organizer
+    *   Duration
+    *   Number of Attendees
+    *   Cost of Event
+    *   Training Materials Provided (Yes/No)
+
+**36. School Fire Inspection Reports (K-12)**
+*   **Open Data Match:** No direct match. Open data does not contain fire inspection reports.
+*   **Quotes:**
+    *   "It shall be the duty of the school authorities in general charge of the operation of any public or private school to cause the buildings of such school containing classroom, dormitory, laboratory, physical education, dining or recreational facilities for student use to be inspected at least annually for fire hazards which might endanger the lives of students, teachers and employees therein." (§ 807-a.1)
+    *   "The annual fire inspection shall be made prior to the first day of December of every school year and the report thereof shall be filed by the school authorities in the places required by subdivision five of this section no later than the sixteenth day of December of every such year." (§ 807-a.2)
+    *   "If the report shows any alleged deficiencies, the school authorities shall provide the details of such deficiencies and the proposed actions to be taken to correct such deficiencies to the local government that administers and enforces the uniform fire prevention and building code for the municipality in which the building is located." (§ 807-a.5.e)
+    *   "The commissioner shall require a re-inspection of school buildings where a report of inspection identified violations until it is demonstrated to the satisfaction of the commissioner that said violations have been corrected." (§ 807-a.6.a)
+*   **Why implied:** Tracking annual fire inspections and identified hazards is critical for student safety and regulatory compliance.
+*   **One row represents:** A single fire inspection report for a school building.
+*   **Covers:** Annual fire inspections for public and private K-12 school buildings (excluding NYC, Buffalo, Rochester, Syracuse, Yonkers).
+*   **Columns:**
+    *   Inspection Report ID (PK)
+    *   **School ID** (FK to Dataset 16)
+    *   **Building ID** (FK to Dataset 17)
+    *   Inspection Date
+    *   Inspection Type (Annual, Re-inspection, Commissioner-initiated)
+    *   Inspecting Authority Type (Fire Department, Fire Corporation, County Coordinator, Certified Inspector)
+    *   Inspecting Authority Name/ID
+    *   Report Filing Date
+    *   Overall Compliance Status (Compliant, Non-Compliant)
+    *   Number of Deficiencies Found
+    *   Deficiencies Details (e.g., Fire Hazard Type, Location, Severity)
+    *   Proposed Corrective Actions
+    *   Date Corrective Actions Submitted
+    *   Re-inspection Required (Yes/No)
+    *   Re-inspection Date
+    *   Violations Corrected (Yes/No)
+    *   Certificate of Occupancy Status (Issued, Denied)
+    *   Public Notice Date
+    *   Fire Chief Notification Date
+
+**37. School Fire and Emergency Drill Records (K-12)**
+*   **Open Data Match:** No direct match. Open data does not contain drill records.
+*   **Quotes:**
+    *   "It shall be the duty of the principal or other person in charge of every public or private school or educational institution within the state, other than colleges or universities, to instruct and train the pupils by means of drills, so that they may in a sudden emergency be able to respond appropriately in the shortest possible time and without confusion or panic. Such drills shall be held at least twelve times in each school year, eight of which required drills shall be held between September first and December thirty-first of each such year." (§ 807.1)
+    *   "Eight of all such drills shall be evacuation drills, four of which shall be through use of the fire escapes on buildings where fire escapes are provided or through the use of identified secondary means of egress. Four of all such required drills shall be lock-down drills. Drills shall be conducted at different times of the school day." (§ 807.1)
+    *   "Four additional drills shall be held in each school year during the hours after sunset and before sunrise in school buildings in which students are provided with sleeping accommodations." (§ 807.1)
+*   **Why implied:** To ensure schools are conducting required emergency drills and training students for safety.
+*   **One row represents:** A single fire or emergency drill conducted at a school.
+*   **Covers:** All required fire and emergency drills in public and private K-12 schools.
+*   **Columns:**
+    *   Drill ID (PK)
+    *   **School ID** (FK to Dataset 16)
+    *   **Building ID** (FK to Dataset 17)
+    *   Drill Date
+    *   Drill Time (e.g., during school day, after sunset)
+    *   Drill Type (Evacuation, Lock-down, After-hours, Summer School)
+    *   Egress Method Used (for evacuation drills, e.g., main exit, fire escape, secondary egress)
+    *   Duration of Drill
+    *   Number of Students Participating
+    *   Number of Staff Participating
+    *   Principal/Person in Charge Name
+    *   Compliance Status (Met requirements, Deficient)
+    *   Notes/Observations
+    *   After-school Program Notification (Yes/No, if applicable)
+
+**38. School Curriculum Compliance Audits**
+*   **Open Data Match:** No direct match. Open data has reports on specific subjects (e.g., PE, Health Ed), but not compliance audits.
+*   **Quotes:**
+    *   "The regents of The University of the State of New York shall prescribe courses of instruction in patriotism, citizenship, civic education and values... to be maintained and followed in all the schools of the state." (§ 801.1)
+    *   "The commissioner shall be responsible for the enforcement of such section and shall cause to be inspected and supervise the instruction to be given in such subjects." (§ 801.3)
+    *   "The commissioner may, in his discretion, cause all or a portion of the public school money to be apportioned to a district or city to be withheld for failure of the school authorities of such district or city to provide instruction in such courses" (§ 801.3)
+    *   "The regents shall ensure that the course of instruction in grades kindergarten through twelve includes a component on civility, citizenship and character education." (§ 801-a)
+*   **Why implied:** To track and enforce compliance of public and private schools with mandated instructional courses.
+*   **One row represents:** A single curriculum compliance audit or inspection for a specific school and subject area.
+*   **Covers:** Audits of public and private schools for compliance with all mandated instructional courses (Patriotism, Civility, Physical Education, Child Abduction, Child Sexual Exploitation, Health Education, Highway Safety, Fire/Arson Prevention, Humane Treatment of Animals).
+*   **Columns:**
+    *   Audit ID (PK)
+    *   **School ID** (FK to Dataset 16)
+    *   School Type (Public, Private, Parochial)
+    *   Audit Date
+    *   Auditor/Inspector ID
+    *   Subject Area (e.g., Patriotism & Citizenship, Civility, Physical Education, Health Education, Fire Prevention)
+    *   Grade Levels Covered
+    *   Compliance Status (Compliant, Non-Compliant)
+    *   Findings/Deficiencies
+    *   Corrective Actions Required
+    *   Follow-up Date
+    *   Commissioner Action Taken (e.g., Funds Withheld, Fine Imposed)
+    *   Amount of Funds Withheld (if applicable)
+
+**39. Comprehensive School Health Education Demonstration Program Grants (K-12)**
+*   **Open Data Match:** No direct match. Open data has reports on health education, but not specific grant programs.
+*   **Quotes:**
+    *   "the commissioner is hereby authorized to establish a demonstration program and to distribute state funds to local school districts, boards of cooperative educational services and in certain instances community school districts, for the development, implementation, evaluation, validation, demonstration and replication of exemplary comprehensive health education programs" (§ 804-a.1)
+    *   "School districts or BOCES may contract with appropriate agencies or organizations to participate in such program." (§ 804-a.2)
+    *   "Such program shall be limited to health education at the elementary level and shall be designed on a multi-year basis." (§ 804-a.2)
+    *   "Developer grants for comprehensive school health education programs." (§ 804-a.2.a)
+*   **Why implied:** To track the allocation and use of funds for comprehensive health education demonstration programs.
+*   **One row represents:** A single grant awarded under the Comprehensive School Health Education Demonstration Program.
+*   **Covers:** All grants awarded to school districts or BOCES for comprehensive health education programs.
+*   **Columns:**
+    *   Grant ID (PK)
+    *   **Recipient ID** (FK to Dataset 15 for School District ID or BOCES ID)
+    *   Grant Type (Developer, Replication)
+    *   Application Date
+    *   Award Date
+    *   Grant Amount
+    *   Program Start Date
+    *   Program End Date
+    *   Program Status (Active, Completed, Evaluated)
+    *   Evaluation Results (e.g., Successful, Partially Successful)
+    *   Replication Activities (Yes/No, if applicable)
+    *   Contracting Agencies/Organizations (if any)
+
+**40. AANHPI History Advisory Committee Member Roster**
+*   **Open Data Match:** No direct match. This is about committee members, not general school data.
+*   **Quotes:**
+    *   "The committee shall be comprised of four members, to be appointed as follows: (i) one member appointed by the governor; (ii) one member appointed by the temporary president of the senate; (iii) one member appointed by the speaker of the assembly; and (iv) one member appointed by the commissioner." (§ 805.2.a)
+    *   "All members appointed to the committee shall be experts in Asian American, Native Hawaiians and/or Pacific Islander studies and/or have a background in educational instruction and/or educational administration." (§ 805.2.b)
+    *   "All members of the committee shall be appointed within ninety days of the effective date of this section." (§ 805.2.c)
+*   **Why implied:** To maintain a record of committee members, their appointments, and qualifications.
+*   **One row represents:** A single member of the AANHPI History Advisory Committee.
+*   **Covers:** All members appointed to the AANHPI History Advisory Committee.
+*   **Columns:**
+    *   Member ID (PK)
+    *   Member Name
+    *   Appointing Authority (Governor, Senate President, Assembly Speaker, Commissioner)
+    *   Appointment Date
+    *   Term Start Date
+    *   Term End Date (if applicable)
+    *   Expertise (AANHPI Studies, Educational Instruction, Educational Administration)
+    *   Contact Information
+    *   Expenses Reimbursed (Total)
+
+**41. AANHPI History Advisory Committee Meeting Records**
+*   **Open Data Match:** No direct match. This is about committee meetings, not general school data.
+*   **Quotes:**
+    *   "The commissioner shall establish an Asian American, Native Hawaiians and Pacific Islander (AANHPI) history advisory committee." (§ 805.1)
+    *   "The committee shall meet no less than four times per year." (§ 805.4)
+    *   "The committee shall provide recommendations on the following: (a) high-quality K-12 curricular and instructional resources on AANHPI history; and (b) strategies for strengthening and deepening public K-12 education programs in the areas of AANHPI history..." (§ 805.5)
+*   **Why implied:** To track the activities and recommendations of the advisory committee.
+*   **One row represents:** A single meeting of the AANHPI History Advisory Committee.
+*   **Covers:** All meetings of the AANHPI History Advisory Committee.
+*   **Columns:**
+    *   Meeting ID (PK)
+    *   Meeting Date
+    *   Meeting Number (e.g., 1st, 2nd, etc. for the year)
+    *   Attendees (list of **Member IDs** from Dataset 40)
+    *   Key Discussion Points
+    *   Recommendations Made (Yes/No)
+    *   Recommendation Details (e.g., link to document)
+    *   Expenses Incurred (for members)
+    *   Date of Disbandment (if applicable)
+
+**42. College Directory**
+*   **Open Data Match:** No direct match. Open data has school locations, but not college directories.
+*   **Quotes:**
+    *   "every public or private college or university within the state" (§ 807.3)
+    *   "every public or independent college" (§ 807-b.1)
+    *   "The term "public college" shall mean and include "state-operated institutions", "statutory or contract colleges" and "community colleges" as defined in section three hundred fifty of this chapter." (§ 807-b.10)
+    *   "The term "independent college" shall mean colleges other than those included within subdivision ten of this section." (§ 807-b.11)
+*   **Why implied:** To maintain a master list of all colleges and universities for administrative and compliance tracking.
+*   **One row represents:** A single college or university.
+*   **Covers:** All public and independent colleges and universities in the state.
+*   **Columns:**
+    *   College ID (PK)
+    *   College Name
+    *   College Type (Public, Independent, State-operated, Statutory/Contract, Community)
+    *   President/Head Name
+    *   Address
+    *   Contact Phone
+    *   Contact Email
+    *   Enrollment (Total)
+    *   Has Sleeping Accommodations (Yes/No)
+
+**43. College Building Inventory**
+*   **Open Data Match:** No direct match. Open data has school locations, but not college building inventory.
+*   **Quotes:**
+    *   "cause the buildings under the jurisdiction of such college containing classroom, dormitory, fraternities, sororities, laboratory, physical education, dining or recreational facilities for student use to be inspected at least annually for fire hazards" (§ 807-b.1)
+    *   "At least one of such required drills shall be through use of the fire escapes on buildings where fire escapes are provided." (§ 807.3)
+    *   "At least one additional drill shall be held in each year during the hours after sunset and before sunrise in college or university buildings in which students are provided with sleeping accommodations." (§ 807.3)
+*   **Why implied:** To maintain a record of all college buildings and their key safety features for inspection and drill planning.
+*   **One row represents:** A single college building.
+*   **Covers:** All public and independent college buildings subject to fire inspections and drills.
+*   **Columns:**
+    *   Building ID (PK)
+    *   **College ID** (FK to Dataset 42)
+    *   Building Name/Number
+    *   Address
+    *   Year Built
+    *   Building Type (e.g., Classroom, Dormitory, Fraternity, Sorority, Lab, Gym, Dining, Multi-use)
+    *   Has Fire Escapes (Yes/No)
+    *   Provides Sleeping Accommodations (Yes/No)
+
+**44. College Course Catalog**
+*   **Open Data Match:** No direct match. Open data does not contain college course catalogs.
+*   **Quotes:**
+    *   "Instructional material or materials" means textbooks and other materials written and published by commercial publishers primarily for use by students in postsecondary instruction that are required or essential to a student's success in a course of study in which a student with a disability is enrolled. The determination of which materials are "required or essential to student success" shall be made by the instructor of the course." (§ 715.1.b)
+    *   "Certifies that the commercially published printed instructional material is for use by the student in connection with a course in which he or she is registered or enrolled at the college." (§ 715.2.c)
+    *   "Textbook" means any textbook that is adopted for a course, as determined by the faculty member or members or entity charged with choosing that textbook." (§ 720.4)
+*   **Why implied:** To maintain a master list of courses offered by institutions of higher education, essential for tracking textbook adoptions and instructional material requests.
+*   **One row represents:** A course offered by a college.
+*   **Covers:** All courses offered by institutions of higher education.
+*   **Columns:**
+    *   Course ID (PK)
+    *   **College ID** (FK to Dataset 42)
+    *   Course Name
+    *   Department
+    *   **Instructor ID** (FK to Dataset 46)
+    *   Academic Year/Term
+
+**45. College Student Directory**
+*   **Open Data Match:** No direct match. Open data has K-12 student data, but not college student data.
+*   **Quotes:**
+    *   "Certifies that the electronic version of the commercially published printed instructional materials will be used by a student with a disability." (§ 715.2.a)
+    *   "Certifies that the student has a disability that prevents him or her from using standard commercially published instructional materials." (§ 715.2.b)
+    *   "Certifies that the commercially published printed instructional material is for use by the student in connection with a course in which he or she is registered or enrolled at the college." (§ 715.2.c)
+*   **Why implied:** To track student enrollment and disability status at colleges, necessary for fulfilling instructional material requests for disabled students.
+*   **One row represents:** A student enrolled in a college.
+*   **Covers:** All students enrolled in institutions of higher education.
+*   **Columns:**
+    *   Student ID (PK)
+    *   Student Name
+    *   Date of Birth
+    *   Gender
+    *   Race/Ethnicity
+    *   **College ID** (FK to Dataset 42)
+    *   Enrollment Date
+    *   Disability Status (Yes/No)
+    *   Disability Type (if provided)
+
+**46. College Faculty Directory**
+*   **Open Data Match:** No direct match. Open data has K-12 teacher data, but not college faculty data.
+*   **Quotes:**
+    *   "adopter" means any faculty member or academic department at institutions of higher learning responsible for considering and choosing textbooks and/or supplemental materials to be utilized in connection with the accredited courses taught at institutions of higher education." (§ 720.6)
+    *   "No employee at an institution of higher education shall demand or receive any payment, loan, advance, goods, or deposit of money, present or promised, for adopting specific course materials required for coursework or instruction" (§ 724)
+*   **Why implied:** To track faculty members responsible for textbook adoptions and compliance with compensation guidelines.
+*   **One row represents:** A single college faculty member.
+*   **Covers:** All faculty members at institutions of higher education involved in course material adoption.
+*   **Columns:**
+    *   Faculty Member ID (PK)
+    *   Faculty Name
+    *   **College ID** (FK to Dataset 42)
+    *   Department
+    *   Contact Information
+    *   Role (e.g., Instructor, Department Head)
+
+**47. College Fire Inspection Reports**
+*   **Open Data Match:** No direct match. Open data does not contain fire inspection reports.
+*   **Quotes:**
+    *   "It shall be the duty of the college authorities in general charge of the operation of any public or independent college to cause the buildings under the jurisdiction of such college containing classroom, dormitory, fraternities, sororities, laboratory, physical education, dining or recreational facilities for student use to be inspected at least annually for fire hazards which might endanger the lives of students, teachers and employees therein." (§ 807-b.1)
+    *   "Inspections of all public and independent college buildings, with the exception of those within a city having a population of one million or more, shall be conducted by the state office of fire prevention and control or a designee of the state fire administrator." (§ 807-b.1)
+    *   "An inspection report shall be produced by the inspecting agency for each building inspected." (§ 807-b.1)
+    *   "In the event violations of applicable codes, rules and regulations pertaining to fire safety are found during inspections, the office of fire prevention and control is authorized to take appropriate actions to ensure that violations are promptly remedied." (§ 807-b.3)
+*   **Why implied:** Essential for ensuring fire safety in college buildings and enforcing compliance with state standards.
+*   **One row represents:** A single fire inspection report for a college building.
+*   **Covers:** Annual fire inspections for public and independent college buildings (excluding NYC).
+*   **Columns:**
+    *   Inspection Report ID (PK)
+    *   **College ID** (FK to Dataset 42)
+    *   **Building ID** (FK to Dataset 43)
+    *   Inspection Date
+    *   Inspecting Authority (State Office of Fire Prevention and Control or designee)
+    *   Report Filing Date
+    *   Overall Compliance Status (Compliant, Non-Compliant)
+    *   Number of Violations Found
+    *   Violation Details (e.g., Code Violated, Description, Location, Severity)
+    *   Date College Authorities Notified of Violations
+    *   Date Violations Remedied
+    *   Fine Imposed (Yes/No)
+    *   Fine Amount
+    *   Fine Start Date
+    *   Fine End Date
+    *   Fire Chief Notification Date
+
+**48. College Fire and Emergency Drill Records**
+*   **Open Data Match:** No direct match. Open data does not contain drill records.
+*   **Quotes:**
+    *   "It shall be the duty of the person in charge of every public or private college or university within the state, to instruct and train the students by means of drills, so that they may in a sudden emergency be able to leave the college or university building in the shortest possible time and without confusion or panic. Such drills shall be held at least three times in each year, one of which required drills shall be held between September first and December first of each such year." (§ 807.3)
+    *   "In buildings where summer sessions are conducted, one of such required drills shall be held during the first week of such summer session." (§ 807.3)
+    *   "At least one of such required drills shall be through use of the fire escapes on buildings where fire escapes are provided." (§ 807.3)
+*   **Why implied:** To ensure colleges are conducting required emergency drills and training students for safety.
+*   **One row represents:** A single fire or emergency drill conducted at a college.
+*   **Covers:** All required fire and emergency drills in public and private colleges/universities.
+*   **Columns:**
+    *   Drill ID (PK)
+    *   **College ID** (FK to Dataset 42)
+    *   **Building ID** (FK to Dataset 43)
+    *   Drill Date
+    *   Drill Time (e.g., during session, after sunset)
+    *   Drill Type (Evacuation, After-hours, Summer Session)
+    *   Egress Method Used (e.g., main exit, fire escape)
+    *   Duration of Drill
+    *   Number of Students Participating
+    *   Number of Staff Participating
+    *   Person in Charge Name
+    *   Compliance Status (Met requirements, Deficient)
+    *   Notes/Observations
+
+**49. College Textbook Adoption Orders**
+*   **Open Data Match:** No direct match. This is about specific adoption orders, not general course catalogs.
+*   **Quotes:**
+    *   "Textbooks shall be sold in the same manner as ordered by such faculty member or entity in charge of selecting textbooks for courses." (§ 722)
+    *   "Each institution of higher education shall institute policies that encourage faculty members or the entity in charge of textbook adoptions to place their orders with sufficient lead-time to enable the university, or contract-managed, bookstore to confirm the availability of the requested materials and, when appropriate, the availability of used textbooks or alternate digital formats." (§ 723)
+*   **Why implied:** To track faculty and department decisions on textbooks for courses, ensuring timely ordering and availability.
+*   **One row represents:** A textbook adoption order placed by a faculty member or department for a specific course.
+*   **Covers:** All textbook adoption orders made by faculty or academic departments at institutions of higher education.
+*   **Columns:**
+    *   Adoption Order ID (PK)
+    *   **College ID** (FK to Dataset 42)
+    *   **Course ID** (FK to Dataset 44)
+    *   **Faculty Member ID** (FK to Dataset 46, or Department ID)
+    *   Textbook Title
+    *   Author
+    *   ISBN
+    *   Edition
+    *   Required/Recommended
+    *   Bundled/Unbundled (as ordered)
+    *   Supplemental Materials Included (if bundled)
+    *   Quantity Ordered
+    *   Order Date
+    *   Lead Time Provided (days)
+    *   Bookstore Confirmation Date
+    *   Availability of Used Textbooks (Yes/No)
+    *   Availability of Alternate Digital Formats (Yes/No)
+
+**50. Publisher Directory**
+*   **Open Data Match:** No direct match. This is an internal directory for publishers.
+*   **Quotes:**
+    *   "To ensure pricing transparency, all publishers of college textbooks shall, on request, make readily available to prospective adopters of their products who are members of the faculties or purchasing entities of institutions of higher education the price at which the publisher would make the products available to the college bookstore that would offer the products to students." (§ 721.1)
+    *   "An individual, firm, partnership or corporation that publishes or manufactures commercially published printed instructional materials for students attending college shall provide for purchase by students with disabilities such printed instructional material in an electronic format mutually agreed upon by the commercial publisher or manufacturer and the commissioner." (§ 715.2)
+*   **Why implied:** To track information about publishers for price quotes and accessible material requests.
+*   **One row represents:** A single publisher of instructional materials.
+*   **Covers:** All publishers interacting with colleges under these regulations.
+*   **Columns:**
+    *   Publisher ID (PK)
+    *   Publisher Name
+    *   Contact Information
+    *   Website
+
+**51. Publisher Textbook Price Quotes (College)**
+*   **Open Data Match:** No direct match. This is about specific price quotes, not general textbook information.
+*   **Quotes:**
+    *   "To ensure pricing transparency, all publishers of college textbooks shall, on request, make readily available to prospective adopters of their products who are members of the faculties or purchasing entities of institutions of higher education the price at which the publisher would make the products available to the college bookstore that would offer the products to students." (§ 721.1)
+    *   "For purposes of this section, the term "products" means all versions of a textbook or set of textbooks, except custom textbooks or special editions of textbooks, available in the subject area for which a prospective adopter is teaching a course, including supplemental materials, both when sold together or separately from a textbook." (§ 721.2)
+    *   "In the event such product is unavailable as ordered, the bookstore, faculty, and relevant publisher shall work together to provide the best possible substitute that most closely matches the requested item or items, and the publisher shall make available the price of such substitute or substitutes readily available." (§ 722)
+*   **Why implied:** To track price quotes provided by publishers to colleges, ensuring pricing transparency for textbook adoptions.
+*   **One row represents:** A price quote provided by a publisher for a specific textbook product.
+*   **Covers:** All price quotes provided by publishers to prospective adopters at institutions of higher education.
+*   **Columns:**
+    *   Quote ID (PK)
+    *   **Publisher ID** (FK to Dataset 50)
+    *   Textbook Title
+    *   Author
+    *   ISBN
+    *   Product Version (e.g., Hardcover, Paperback, Digital, Bundled, Unbundled)
+    *   Price to College Bookstore
+    *   Date of Quote
+    *   **Adopter ID** (FK to Dataset 46 for Faculty Member ID or Department ID)
+    *   **Institution ID** (FK to Dataset 42 for College ID)
+    *   Substitute Product (Yes/No, if applicable)
+    *   Substitute Product ISBN (if applicable)
+
+**52. College Disability Instructional Material Requests**
+*   **Open Data Match:** No direct match. This is about specific requests, not general student data.
+*   **Quotes:**
+    *   "An individual, firm, partnership or corporation that publishes or manufactures commercially published printed instructional materials for students attending college shall provide for purchase by students with disabilities such printed instructional material in an electronic format mutually agreed upon by the commercial publisher or manufacturer and the commissioner." (§ 715.2)
+    *   "The computer files or electronic versions of the commercially published printed instructional material shall be available to students with disabilities at a cost comparable to the printed version of such commercially published material and in a timely manner, upon receipt of a written request that does all of the following: (a) Certifies that the electronic version... will be used by a student with a disability. (b) Certifies that the student has a disability... (c) Certifies that the commercially published printed instructional material is for use by the student in connection with a course... (d) Is signed by the coordinator of services for students with disabilities at the college or by the campus or college official responsible for monitoring compliance with the Americans with Disabilities Act of 1990" (§ 715.2.a-d)
+*   **Why implied:** To track requests from students with disabilities for instructional materials in electronic formats and ensure compliance with accessibility requirements.
+*   **One row represents:** A request for instructional materials in an electronic format for a student with a disability.
+*   **Covers:** All requests for accessible instructional materials made by or on behalf of students with disabilities at colleges.
+*   **Columns:**
+    *   Request ID (PK)
+    *   **College ID** (FK to Dataset 42)
+    *   **Student ID** (FK to Dataset 45)
+    *   **Course ID** (FK to Dataset 44)
+    *   Material ID (e.g., ISBN for textbook)
+    *   Material Title
+    *   Author
+    *   **Publisher ID** (FK to Dataset 50)
+    *   Material Type (Printed, Nonprinted)
+    *   Requested Electronic Format
+    *   Request Date
+    *   Certification of Disability (Yes/No)
+    *   Certification of Course Use (Yes/No)
+    *   Coordinator/Official Signature Date
+    *   Student Agreement to Use (Yes/No)
+    *   Student Agreement to Not Copy (Yes/No)
+    *   Date Material Provided
+    *   Cost to Student
+    *   Timeliness of Provision (e.g., within X days)
+
+**53. Faculty Textbook-Related Compensation & Materials (College)**
+*   **Open Data Match:** No direct match. This is about faculty compensation, not general course data.
+*   **Quotes:**
+    *   "No employee at an institution of higher education shall demand or receive any payment, loan, advance, goods, or deposit of money, present or promised, for adopting specific course materials required for coursework or instruction; with the exception that the employee may receive: 1. sample copies, instructor's copies, or instructional material, that are not to be sold; 2. royalties or other compensation from sales of textbooks that include such instructor's own writing or work; 3. honoraria for academic peer review of course materials; or 4. training in the use of course materials and learning technologies." (§ 724)
+*   **Why implied:** To track permitted forms of compensation and materials received by faculty related to textbook adoptions, ensuring compliance with ethical guidelines.
+*   **One row represents:** A record of a faculty member receiving a permitted item or compensation related to textbook adoption.
+*   **Covers:** All instances where faculty members receive sample materials, royalties, honoraria, or training related to course materials.
+*   **Columns:**
+    *   Record ID (PK)
+    *   **Faculty Member ID** (FK to Dataset 46)
+    *   **College ID** (FK to Dataset 42)
+    *   Item Type (Sample Copy, Royalty, Honorarium, Training)
+    *   Description of Item/Compensation
+    *   Textbook ISBN (if applicable, links to Dataset 49 implicitly)
+    *   Date Received
+    *   Value (if applicable)
+    *   Source (e.g., Publisher, Institution)
+
+**54. Vendor Directory**
+*   **Open Data Match:** No direct match. This is an internal directory for vendors.
+*   **Quotes:**
+    *   "boards of education... shall have the power and duty to purchase and to loan upon individual request, textbooks" (§ 701.3)
+    *   "No school district shall be required to purchase or otherwise acquire textbooks, the cost of which shall exceed an amount equal to the apportionment pursuant to subdivision six of this section plus a minimum lottery grant" (§ 701.4)
+*   **Why implied:** To track information about vendors from whom school districts purchase instructional materials and technology.
+*   **One row represents:** A single vendor.
+*   **Covers:** All vendors supplying textbooks, library materials, software, and instructional technology to school districts.
+*   **Columns:**
+    *   Vendor ID (PK)
+    *   Vendor Name
+    *   Contact Information
+    *   Products/Services Offered
+
+**Section 4, Unmatched Open Datasets:**
+
+*   **Early Childhood Progress Reports:**
+    *   2012-2013 Early Childhood Progress Report (file)
+    *   2011-2012 Early Childhood Progress Report (file)
+*   **School Zones:**
+    *   School Zones 2024-2025 (Elementary School) (dataset)
+    *   School Zones 2024-2025 (High School) (dataset)
+    *   School Zones 2024-2025 (Middle School) (dataset)
+    *   School Zones Map 2024-2025 (map)
+*   **Student Discipline Reports:**
+    *   2015 2016 Student Discipline Annual Report - LENGTH IN DAYS (dataset)
+    *   2015 2016 Student Discipline Annual Report - GENDER (dataset)
+    *   2017-2018 Student Discipline Annual Report - GENDER (dataset)
+    *   2016-2017 Student Discipline Annual Report - LENGTH IN DAYS (dataset)
+    *   2017-2018 Student Discipline Annual Report - Length In Days (dataset)
+    *   2020-2021 09222021 LL93 Student Discipline Annual Report - ALL (dataset)
+    *   2015 2016 Student Discipline Annual Report - Transfers (dataset)
+    *   2017-2018 Student Discipline Annual Report - Transfers (dataset)
+    *   2016-2017 Student Discipline Annual Report - D CODE (dataset)
+    *   2017-2018 Student Discipline Annual Report - D Code (dataset)
+    *   2015 2016 Student Discipline Annual Report - IEP (dataset)
+    *   2016-2017 Student Discipline Annual Report - IEP (dataset)
+    *   2015 2016 Student Discipline Annual Report - AGE (dataset)
+    *   2016-2017 Student Discipline Annual Report - AGE (dataset)
+    *   2015 2016 Student Discipline Annual Report - RACE (dataset)
+    *   2017-2018 Student Discipline Annual Report - RACE (dataset)
+    *   2015 2016 Student Discipline Annual Report - R P S TOTALS (dataset)
+    *   2016-2017 Student Discipline Annual Report - RPS TOTALS (dataset)
+    *   2017-2018 Student Discipline Annual Report - R-P-S TOTALS (dataset)
+    *   2015 2016 Student Discipline Annual Report - GRADE LEVEL (dataset)
+    *   2016-2017 Student Discipline Annual Report - GRADE LEVEL (dataset)
+    *   2017-2018 Student Discipline Annual Report - Grade Level (dataset)
+    *   2015 2016 Student Discipline Annual Report - ELL (dataset)
+    *   2017-2018 Student Discipline Annual Report - ELL (dataset)
+    *   2016-2017 Student Discipline Annual Report - ELL (dataset)
+    *   2015 2016 Student Discipline Annual Report - Students In Temporary Housing (dataset)
+    *   2016-2017 Student Discipline Annual Report - Students In Temporary Housing (dataset)
+    *   2017-2018 Student Discipline Annual Report - Students In Temporary Housing (dataset)
+    *   2020-2021 09212021 LL93 Student Discipline 2 Annual Report - All (dataset)
+    *   2020-2021 Student Discipline Annual Report - All (dataset)
+    *   Multiple Removals 2015-2018 (dataset)
+    *   Suspension Report NYPD Contacts (2015-2018) (dataset)
+    *   2020-2021 Suspension Report NYPD Contacts - All (dataset)
+*   **Community Schools Data:**
+    *   2021 - 2022 Community Schools List (dataset)
+    *   2012 NYC Community Schools Survey (dataset)
+    *   2011 NYC Community Schools Survey (file)
+    *   2012 Community School Survey (file)
+    *   SY 2021-2022 Community Schools (dataset)
+*   **Childcare Programs:**
+    *   Childcare Regulated Programs Map (href)
+*   **Pre-Kindergarten Admissions Guides:**
+    *   2019 Pre-Kindergarten Admissions Guide (dataset)
+    *   2020 DOE Kindergarten Admissions Guide (dataset)
+    *   2021 DOE Kindergarten Admissions Guide (dataset)
+    *   2019 DOE Kindergarten Admissions Guide (dataset)
+    *   2021 DOE Kindergarten Admissions Guide (dataset)
+    *   2018 Pre-K School Directory (dataset)
+    *   Universal Pre-K (UPK) School Locations (dataset)
+    *   UNIVERSAL_PRE_K (dataset)
+    *   Universal Pre-K (map)
+*   **Demographic Snapshots (Detailed):**
+    *   2019-20 Demographic Snapshot - Citywide (dataset)
+    *   2021_Prelim_Distribution_ClassSize_City (dataset)
+    *   2017-2018 Demographic Snapshot - GENDER (dataset)
+    *   2015-16 Demographic Data - Grades K-8 Special Programs (dataset)
+    *   2016-2017 Diversity Report - Pre-Kindergarten, K-8 & Grades 9-12 District, Schools, Special Programs, Diversity Efforts, Admissions Methods (dataset)
+    *   2020 - 2021 Diversity Report (dataset)
+    *   2017 - 2018 Diversity Report Diversity Efforts (dataset)
+    *   2015-16 Demographic Data - Grades K-8 Special Programs (dataset)
+    *   2015-16 Demographic Data - Grades K-8 School (dataset)
+    *   2015-16 Demographic Data - Grades 9-12 District (dataset)
+    *   2015-16 Demographic Data - Grades 9-12 School (dataset)
+    *   2015-16 Demographic Data - Pre-Kindergarten (dataset)
+    *   2015-16 Demographic Data - Diversity Efforts (dataset)
+    *   2015-16 Demographic Data - Admissions Methods (dataset)
+    *   2018-2019 Demographic Snapshot by Borough (dataset)
+    *   2018-2019 PK For All Demographic Snapshot (dataset)
+    *   2018-2019 Demographic Snapshot by District (dataset)
+    *   2019-20 Demographic Snapshot - Borough (dataset)
+    *   2019-20 Demographic Snapshot - District (dataset)
+    *   2019-20 Demographic Snapshot - School (dataset)
+    *   2020-2021 Demographic Snapshot Borough (dataset)
+    *   2020-2021 Demographic Snapshot District (dataset)
+    *   2020-2021 Demographic Snapshot Citywide (dataset)
+    *   2017 - 2018 Demographic Snapshot 3- K For All (dataset)
+    *   2018-2019 3K For All Demographic Snapshot (dataset)
+    *   2013 - 2018 Demographic Snapshot School (dataset)
+    *   2013 - 2018 Demographic Snapshot Borough (dataset)
+    *   2013 - 2018 Demographic Snapshot District (dataset)
+    *   2013 - 2018 Demographic Snapshot (dataset)
+    *   2014-2015 Diversity Report - K-8 & Grades 9-12 District, Schools, Special Programs, Diversity Efforts (dataset)
+    *   2015-2016 Diversity Report - K-8 & Grades 9-12 District, Schools, Special Programs, Diversity Efforts, Admissions Methods (dataset)
+    *   2018-2019 Diversity Report - Pre-Kindergarten, K-8 & Grades 9-12 District, Schools, Special Programs, Diversity Efforts, Admissions Methods (dataset)
+    *   2019-20 Demographic Data In NYC Public Schools Suppressed - Pre-K, K-8 & 9-12 Grades (dataset)
+    *   2017 -2018 Diversity Report K - 8 School (dataset)
+    *   2017 - 2018 Diversity Report K-8 District (dataset)
+    *   2017 - 2018 Diversity Report Admission Methods (dataset)
+    *   2017 - 2018 Diversity Report 9 - 12 School (dataset)
+    *   2017 - 2018 Diversity Report 9 - 12 District (dataset)
+    *   2017 Diversity Report - Diversity Efforts (dataset)
+    *   2017 Diversity Report Pre-Kindergarten (dataset)
+    *   2017 Diversity Report K-8 - Special Programs (dataset)
+    *   2017 Diversity Report K-8 - School (dataset)
+    *   2017 Diversity Report K-8 - District (dataset)
+    *   2017 Diversity Report 9-12 - School (dataset)
+    *   2017 Diversity Report 9-12 - District (dataset)
+    *   2017 Diversity Report Admissions Methods (dataset)
+    *   2018 Diversity Report - Grades K-8 Special Programs (dataset)
+    *   2018 Diversity Report - Grades K-8 School (dataset)
+    *   2018 Diversity Report - Grades K-8 District (dataset)
+    *   2018 Diversity Report - Grades 9-12 School (dataset)
+    *   2018 Diversity Report - Grades 9-12 District (dataset)
+    *   2018 Diversity Report - Pre-Kindergarten (dataset)
+    *   2022 Fall Diversity in Admissions Outcomes - MS (dataset)
+*   **School Bus Delays & Transportation:**
+    *   April_2021_1173B_21-994 New York City School Bus Delays Report (dataset)
+    *   School Bus Routing Report October_2021_89C_21-996 (dataset)
+    *   School Bus Route Reporting April2020_21_996 - July 1, - December 31, 2019 (dataset)
+    *   Pupil Transportation Report April2020_21_995 - July 1, - December 31, 2019 (dataset)
+    *   October_2020_21-994_Appendix Delays Reported by School Bus Company Resulting in Failure to Arrive at School (dataset)
+    *   October_2020_21-996_Appendix New York City School Bus Route Reporting (dataset)
+    *   April_2021_89C_21-996 New York City School Bus Route Reporting (dataset)
+    *   School Bus Report October_2021_21-993 (dataset)
+    *   Bus Delays April2020 994 - July 1, - December 31, 2019 (dataset)
+    *   Pupil Transportation Investigations Reporting October_2021_929B_21-995 (dataset)
+    *   April_2021_929B_21-995 New York City Office of Pupil Transportation Investigations Reporting (dataset)
+    *   April_2021_21-993 New York City Transportation Reporting (dataset)
+    *   School Bus Delays Report October_2021_1173B_21-994 (dataset)
+    *   October_2020_21-995_Appendix New York City Office of Pupil Transportation Investigations Reporting (dataset)
+    *   October_2020_21-993-Appendix Students Assigned to General Education Stop-to-School Routes by Vendor (dataset)
+    *   Bus Breakdown and Delays (dataset)
+    *   Midday Trips (dataset)
+    *   Vehicles (dataset)
+    *   Routes (dataset)
+    *   Drivers and Attendants (dataset)
+    *   Pupil Transportation General & Special Education Student Bussing by Vendors & Routes updated 21-993 (dataset)
+    *   Pupil Transportation Count of Employees Bus Company - July 1, - December 31, 2021 (dataset)
+    *   Transportation Sites (dataset)
+    *   PreK Vendors by Transportation Site (dataset)
+    *   PreK Riders by Transportation Site (dataset)
+    *   School Age Ridership (dataset)
+*   **Physical Education Reports:**
+    *   2016-17 Physical Education - Licensed PE Teachers (dataset)
+    *   2017-2018 Physical Education Instruction - District Level (dataset)
+    *   2015-2016 Physical Education - PE Space - Supplemental Programs (dataset)
+    *   2015-2016 Physical Education - PE Instruction Borough (dataset)
+    *   2017-2018 Physical Education - Supplemental Programs (dataset)
+    *   2017-2018 Physical Education Instruction - Borough Level (dataset)
+    *   2017-2018 Physical Education Instruction - School Level (dataset)
+    *   2016-17 Physical Education - PE Instruction - District Level (dataset)
+    *   2016-17 Physical Education - PE Instruction - Borough Level (dataset)
+    *   2016-17 Physical Education - PE Instruction - School Level (dataset)
+    *   2015-2016 Physical Education - PE Space - Borough Level (dataset)
+    *   2015-2016 Physical Education - PE Space - School Level (dataset)
+    *   2015-2016 Physical Education - PE Space - Certified PE Teachers (dataset)
+    *   2015-2016 Physical Education - PE Space (dataset)
+    *   2016-17 Physical Education - PE Space (dataset)
+    *   2017-2018 Physical Education - PE Space (dataset)
+    *   2016-17 Physical Education - MTI All- Star Schools (dataset)
+    *   2017-2018 Physical Education - Licensed Teachers (dataset)
+    *   2020-2021 Local Law 102 Physical Education (dataset)
+    *   2019-2020 Local Law 102 Physical Education Report -Final (dataset)
+    *   PE Report (dataset)
+*   **School Quality Guides/Reviews:**
+    *   2019-20 School Quality Guide Elementary Middle School (dataset)
+    *   2019-20 School Quality Guide High School Transfer (dataset)
+    *   2018-2019 Quality Review School List (dataset)
+    *   2005 - 2020 Quality Review Ratings (dataset)
+    *   2019-20 School Quality Guide Citywide Distict 75 (dataset)
+    *   2019-20 School Quality Guide High Schools (dataset)
+    *   2019-20 School Quality Guide Early Childhood (dataset)
+    *   2019-2020 Quality Review School List (dataset)
+    *   2005 - 2012 Quality Review (dataset)
+    *   2017 - 2018 Quality Review Schools List (dataset)
+    *   2018 -2019 SQG EC (dataset)
+    *   2018- 2019 SQG EMS (href)
+    *   School Quality Reports Data (dataset)
+    *   School Progress Report (href)
+    *   2007 - 2008 School Progress Report (dataset)
+    *   2008 - 2009 School Progress Report (dataset)
+    *   2009 - 2010 School Progress Report (dataset)
+    *   2010 - 2011 School Progress Report (dataset)
+    *   2011-2012 School Progress Report - All Schools (dataset)
+    *   2012 - 2013 Citywide Progress Report (dataset)
+    *   2012 - 2013 High School Progress Report (dataset)
+    *   2012 - 2013 Transfer High School Progress Report (dataset)
+    *   2012 - 2013 YABC Progress Report (dataset)
+    *   2012 - 2013 D75 Progress Reports (dataset)
+    *   2011 - 2012 Citywide Progress Report (dataset)
+    *   2011 - 2012 D75 Progress Report (dataset)
+    *   2011 - 2012 YABC Progress Report (dataset)
+    *   2006 - 2011 School Progress Reports - All Schools - Multiyear Summary (dataset)
+    *   2006 - 2007 School Progress Reports - All Schools (dataset)
+    *   2007 - 2008 School Progress Reports - All Schools (dataset)
+    *   2008 - 2009 School Progress Reports - All Schools (dataset)
+    *   2009 - 2010 School Progress Reports - All Schools (dataset)
+    *   2010 - 2011 School Progress Reports - All Schools (dataset)
+    *   2006 - 2013 Citywide Progress Report (dataset)
+    *   Schools Progress Report 2012-2013 (dataset)
+    *   2011-2012 High School Progress Report (file)
+    *   2011-2012 Transfer High School Progress Report (file)
+*   **High School Directories/Performance:**
+    *   2013 - 2014 DOE High School Performance-Directory (dataset)
+    *   2016 DOE High School Performance-Directory (dataset)
+    *   2015-2016 DOE High School Performance-Directory (dataset)
+    *   2013-2014 DOE High School Programs (dataset)
+    *   2016 DOE High School Programs (dataset)
+    *   DOE High School Programs 2014-2015 (dataset)
+    *   2013-2014 NYC High School Directory (file)
+    *   2015-2016 NYC High School Directory (file)
+    *   2012-2013 NYC High School Directory (file)
+    *   2009-2010 NYC High School Directory (file)
+    *   2011-2012 NYC High School directory (file)
+    *   2014 - 2015 DOE High School Directory (dataset)
+    *   2018 DOE High School Directory (dataset)
+    *   2019 DOE High School Directory (dataset)
+    *   2020 DOE High School Directory (dataset)
+    *   2021 DOE High School Directory (dataset)
+    *   2008-2009 NYC High School Director (file)
+    *   2017 DOE High School Directory (dataset)
+    *   2011-2012 NYC High School directory (file)
+    *   DOE High School Directory 2013-2014 (dataset)
+*   **Class Size Reports:**
+    *   2017- 2018 Class Size Report Borough Middle And High School (dataset)
+    *   2017- 2018 Class Size Report District K-8 Class Size Distribution (dataset)
+    *   2017-2018 Class Size Report City K-8 Class Size Distribution (dataset)
+    *   2015-16 Class Size Report - MS And HS Average (dataset)
+    *   2018 -2019 Class Size Pct City MSHS (dataset)
+    *   2018 -2019 Average Class Size K8 Borough (dataset)
+    *   Prelim Percentage Class Size District - K-8TH (dataset)
+    *   2017 - 2018 Avg Class Size Borough MSHS (dataset)
+    *   2017-2018 November2017 Avg Class Size School PTR - Open Data Portal (dataset)
+    *   2021_Prelim_Distribution_ClassSize_City (dataset)
+    *   2021_Prelim_Avg_ClassSize_City (dataset)
+    *   2018 - 2019 Class Size Pupil to Teacher Ratio (dataset)
+    *   2018 - 2019 Average Class Size District MSHS (dataset)
+    *   Prelim Percentage Class Size District - MS & HS (dataset)
+    *   2015-16 Health Education K-12 - Licensed Health Instructors (dataset)
+    *   2017-2018 November2017 Pct Class Size District MSHS - Open Data Portal (dataset)
+    *   2018-2019 Prelim Percentage Class Size City - MS & HS (dataset)
+    *   2021 - 2022 Class Size Distribution Citywide (dataset)
+    *   Class Size Report (2006-2007) (dataset)
+    *   2018 - 2019  Average Class Size Report School K-8 (dataset)
+    *   2018 - 2019 Class Size Pct District MSHS (dataset)
+    *   2018 - 2019 Average Class Size Boro MSHS (dataset)
+    *   2018-2019 Prelim Percentage Class Size Borough - MS & HS (dataset)
+    *   2018-2019 Class Size Report Borough Middle & High School Class Size Distribution (dataset)
+    *   2018-2019 Class Size Report District K-8 Class Size Distribution (dataset)
+    *   2018-2019 Class Size Report City Middle & High School Class Size Distribution (dataset)
+    *   2018-2019 Class Size Report City K-8 Class Size Distribution (dataset)
+    *   2018-2019 Class Size Report Borough K-8 Class Size Distribution (dataset)
+    *   2018-2019 Class Size Report District Middle & High School Class Size Distribution (dataset)
+    *   2018-2019 Class Size Report District K-8 Class Size Distribution (dataset)
+    *   2018-2019 Class Size Report City K-8 Class Size Distribution (dataset)
+    *   2017- 2018 Class Size Report City Middle And High School Core Average Class Size (dataset)
+    *   2017- 2018 Class Size Report District Middle And High School Class Size Distribution (dataset)
+    *   2017- 2018 Class Size Report District K-8 Average Class Size (dataset)
+    *   2017- 2018 Class Size Report City K-8 Average Class Size (dataset)
+    *   2017- 2018 Class Size Report Borough K-8 Average Class Size (dataset)
+    *   2018-2019 Average Class Size City - Middle & High School (dataset)
+    *   2018-2019 Average Class Size City - K-8 (dataset)
+    *   2018-2019 Average Class Size District - K-8 (dataset)
+    *   2018-2019 Average Class Size District - Middle & High School (dataset)
+    *   2018-2019 Average Class Size Borough - K-8 (dataset)
+    *   2018-2019 Average Class Size Borough - Middle & High School (dataset)
+    *   2018-2019 Average Class Size School MSHS (dataset)
+    *   2018-2019 Average Class Size City MSHS (dataset)
+    *   2018-2019 Average Class Size District K8 (dataset)
+    *   2018-2019 Average Class Size Boro K8 (dataset)
+    *   2018-2019 Prelim Percentage Class Size Borough - K-8TH (dataset)
+    *   2018-2019 Prelim Percentage Class Size City - K-8TH (dataset)
+    *   2018-2019 Class Size Pct City K8 (dataset)
+    *   2018-2019 Class Size Pct District K8 (dataset)
+    *   2018-2019 Class Size Pct Boro MSHS (dataset)
+    *   2017-2018 November2017 Pct Class Size District K8 - Open Data Portal (dataset)
+    *   2017-2018 November2017 Pct Class Size City MSHS - Open Data Portal (dataset)
+    *   2017-2018 November2017 Pct Class Size City K8 - Open Data Portal (dataset)
+    *   2017-2018 November2017 Pct Class Size Borough K8 - Open Data Portal (dataset)
+    *   2017 - 2018 Pct Class Size Borough MSHS - Open Data Portal (dataset)
+    *   2015-2016 Final Class Size Report Pupil-to-Teacher Ratio (PTR) (dataset)
+    *   2015-2016 Final Class Size Report - K to 8 Average (dataset)
+    *   2015-2016 Final Class Size Report Middle & High School (dataset)
+    *   2015-2016 Class Size Report - Pupil To Teacher Ratio (dataset)
+    *   2015-16 Class Size Report - K To 8 Average (dataset)
+    *   Class Size Report Detail Summary (2010-2015) (dataset)
+    *   Class Size Report Distribution Summary (2010-2015) (dataset)
+    *   2021 - 2022 Average Class Size City (dataset)
+    *   2021 - 2022 Average Class Size Pilot (dataset)
+    *   2021 - 2022 Average Class Size by School (dataset)
+    *   2021 - 2022 Average Class Size by District (dataset)
+    *   2021 - 2022 Average Class Size by Borough (dataset)
+    *   2021_Prelim_Avg_ClassSize_District (dataset)
+    *   2021_Prelim_Avg_ClassSize_Borough (dataset)
+    *   2021_Prelim_Avg_ClassSize_School (dataset)
+    *   2021_Prelim_Distribution_ClassSize_District (dataset)
+    *   2021_Prelim_Distribution_ClassSize_Borough (dataset)
+    *   Average Class Size 2017-2019 (Preliminary) (dataset)
+    *   2017-2018 SCHOOL LEVEL CLASS SIZE REPORT (dataset)
+*   **Student Surveys:**
+    *   2017 - 2018 2018 NYC School Survey Student Data (file)
+    *   2012 D75 School Survey Data (dataset)
+    *   2010 D75 Survey Data (dataset)
+    *   2014 - 2015 Parent School Survey Data (dataset)
+    *   2010 NYC School Survey (href)
+    *   2008 NYC School Survey - - General Education (href)
+    *   2012 NYC School Survey (file)
+    *   2013 School Survey (file)
+    *   2014 School Survey (file)
+    *   2015 School Survey (file)
+    *   2016 NYC School Survey (file)
+    *   2017 NYC School Survey (href)
+    *   2019 NYC School Survey - Student (dataset)
+    *   2019 NYC School Survey - Teachers (dataset)
+    *   2019 NYC School Survey - Parents (dataset)
+    *   2017 - 2018 NYC School Survey Parent Data (file)
+    *   2017 - 2018 NYC School Survey Teacher Data (file)
+    *   2010 School Survey (file)
+    *   2011 School Survey (file)
+    *   2009 School Survey (file)
+    *   2007 NYC School Survey (file)
+    *   2008 General Education School Survey (file)
+    *   2009 GenEd Survey Data (dataset)
+    *   2010 Gen Ed Survey Data (dataset)
+    *   2012 NYC General Education School Survey (dataset)
+    *   2008 District 75 School Survey (file)
+    *   2009 District 75 Survey Data (dataset)
+    *   2011 D75 School Surveys (file)
+    *   2012 NYC District 75 Schools Survey (dataset)
+    *   2014 - 2015 Student School Survey Data (dataset)
+    *   2013 - 2014 School Survey Data (dataset)
+    *   2014 School Survey (file)
+    *   2015 School Survey (file)
+    *   2016 School Survey (file)
+    *   2013 NYC School Survey (dataset)
+*   **Arts Data/Reports:**
+    *   2018 - 2019 Arts Data Survey (file)
+    *   2014 - 2015 Arts Reports (dataset)
+    *   2019-2020 Arts Report (dataset)
+    *   2014-2015 Arts Survey Data (dataset)
+    *   2015-2016 Arts Survey Data (dataset)
+    *   2019-2020 Arts Survey Data (dataset)
+    *   2016 - 2017 Arts Survey data (dataset)
+    *   2017-2018 Arts Data Report (file)
+    *   2011 - 2014 Annual Arts in School Reports (file)
+    *   2015 - 2016 Arts Report (dataset)
+    *   2012 - 2013 Arts Report (dataset)
+    *   2016-2017 Arts Report (dataset)
+    *   2021 Arts Data Report (dataset)
+*   **COVID-19 Related Data:**
+    *   Student Covid Vaccinations (4/1/22) (dataset)
+    *   Student Covid Vaccinations (3/18/22) (dataset)
+    *   Student COVID Vaccinations (3-24-2022) (dataset)
+    *   Student COVID Vaccinations (2-22-2022) (dataset)
+    *   Student COVID Vaccinations (04/16 - 05/03/2022) (dataset)
+    *   COVID-19 Free Meals Locations (dataset)
+    *   COVID-19 DOE Active Testing Locations as of Feb 25 (dataset)
+    *   2020 Summer School Remote Learning (dataset)
+    *   Learning Preference City Remote Learning - as of Jan 4, 2021 (dataset)
+    *   2020 - 2021 Remote Learning Legislation Device Request (dataset)
+*   **Special Education Reports:**
+    *   2020-2021 Annual Report on Special Education (dataset)
+    *   2015-2016 Related Service (dataset)
+    *   2015 - 2016 Annual Report on Special Education (file)
+    *   2014–2015 Report on Special Education (file)
+    *   2015 - 2016 Special Education Report (file)
+    *   Students Receiving Recommended Special Education Programs by Program Type (dataset)
+    *   DOE Special Education City Council Report June 14, 2021 (dataset)
+    *   DOE Special Education City Council Report April 1, 2021 (dataset)
+*   **Attendance Data:**
+    *   2012 - 2015 Historical Daily Attendance By School (dataset)
+    *   Attendance Results 2013-2019 (dataset)
+    *   2008 - 2012 Historical Monthly Grade Level Attendance By School (dataset)
+    *   2016-17 - 2020-21 School End-of-Year Attendance and Chronic Absenteeism Data (dataset)
+    *   2016-17 - 2020-21 End-of-Year Borough Attendance and Chronic Absenteeism Data (dataset)
+    *   2016-17 - 2020-23 Citywide End-of-Year Attendance and Chronic Absenteeism Data (dataset)
+    *   2017 - 2018 Current Year Monthly Attendance (dataset)
+    *   2017-2018 Monthly Attendance (dataset)
+    *   2018-2019 Daily Attendance (dataset)
+    *   2013 - 2018 Demographic Snapshot Citywide (dataset)
+    *   2013 - 2018 Demographic Snapshot Borough (dataset)
+    *   2013 - 2018 Demographic Snapshot District (dataset)
+    *   2013 - 2018 Demographic Snapshot Pre- K For All (dataset)
+    *   2015 - 2016 Demographic Snapshot (dataset)
+    *   2016 - 2017 Demographic Snapshot (dataset)
+    *   2011 - 2016 Demographic Snapshot (dataset)
+    *   2014 - 2015 Demograpic Snapshot (dataset)
+    *   2017-18 - 2021-22 Demographic Snapshot (dataset)
+    *   2010 - 2011 School Attendance and Enrollment Statistics by District (dataset)
+    *   2009 - 2010 School Attendance And Enrollment By District (dataset)
+    *   2006-2009 Historical Daily Attendance By School (dataset)
+    *   2009-2012 Historical Daily Attendance By School (dataset)
+    *   2015-2018 Historical Daily Attendance By School (dataset)
+    *   2018-2021 Daily Attendance by School (dataset)
+    *   2012 - 2017 Historical Monthly Grade Level Attendance By School (dataset)
+    *   2017 - 2020 Monthly Grade Level Attendance by School (dataset)
+    *   2018 -2019 Monthly Grade Level Attendance By School (dataset)
+    *   2016-2017 Monthly Attendance (dataset)
+    *   City Council January 2021 Attendance (dataset)
+    *   2021 City Council February Attendance (dataset)
+    *   2021 City Council March Attendance (dataset)
+    *   2021 City Council April Attendance (dataset)
+    *   2021 City Council May Attendance (dataset)
+    *   2021 City Council June Attendance (dataset)
+    *   2021 City Council October Attendance (dataset)
+    *   2021 City Council - September Attendance Report (dataset)
+    *   School Attendance Statistics (href)
+    *   Statistical Summary Period Attendance Reporting (PAR) (dataset)
+*   **Students in Temporary Housing:**
+    *   2018-2019 Students, Applications, Admissions & Offers LL72 (dataset)
+    *   201105 Students In Temporary Housing (dataset)
+    *   2018 - 2019 Students in Temporary Housing Citywide Report (dataset)
+    *   2018 - 2019 Students in Temporary Housing School Level Report (dataset)
+    *   2018 - 2019 Students in Temporary Housing Additional Sections Report (dataset)
+    *   2019-20 Students In Temporary Housing (dataset)
+*   **Arts Data:**
+    *   2014 - 2015 Arts Reports (dataset)
+    *   2019-2020 Arts Report (dataset)
+    *   2014-2015 Arts Survey Data (dataset)
+    *   2015-2016 Arts Survey Data (dataset)
+    *   2019-2020 Arts Survey Data (dataset)
+    *   2016 - 2017 Arts Survey data (dataset)
+    *   2017-2018 Arts Data Report (file)
+    *   2011 - 2014 Annual Arts in School Reports (file)
+    *   2015 - 2016 Arts Report (dataset)
+    *   2012 - 2013 Arts Report (dataset)
+    *   2016-2017 Arts Report (dataset)
+    *   2021 Arts Data Report (dataset)
+*   **Co-Location Reports:**
+    *   2018 - 2019 Co-Location Report (dataset)
+    *   2014-2015 CoLocation Reporting (dataset)
+    *   2016-17 Co-Location Reporting (dataset)
+    *   2020-2021 Co-Location Report (dataset)
+    *   2012 2013 Co- Location Memorandums (dataset)
+    *   2015 - 2016 Co-Location Reports (dataset)
+    *   2014 - 2015 Co-Location Report (dataset)
+    *   2019-2020 Co-Location Reporting (dataset)
+*   **Guidance Counselor Reports:**
+    *   2016 - 2017 Guidance Counselor Report (dataset)
+    *   2015-16 Guidance Counselor Post Secondary Planning (dataset)
+    *   2018-19 Guidance Counselor Report - Social Worker (dataset)
+    *   2015-16 Guidance Counselor SW&GC - Data (dataset)
+    *   2015-16 Guidance Counselor Bill Demographic Data (dataset)
+    *   2017 - 2018 Guidance Counselor Report (dataset)
+    *   2018-19 Guidance Counselor Report - Guidance Counselor (dataset)
+    *   2018-19 Guidance Counselor Report - Demographic Data (dataset)
+    *   2015-16 Guidance Counselor Reporting - Post Secondary Planning (dataset)
+    *   2015-16 Guidance Counselor Reporting - Demographic Data (dataset)
+    *   2015-16 Guidance Counselor Reporting - Social Worker Data (dataset)
+    *   2015-16 Guidance Counselor Reporting - Guidance Counselor Data (dataset)
+    *   2014 - 15 Guidance Counselor Reporting - Social Worker Data (dataset)
+    *   2014 - 15 Guidance Counselor Bill Demographic Data (dataset)
+    *   2014 - 15 Guidance Counselor Reporting - Post Secondary Planning (dataset)
+    *   2014 - 15 Guidance Counselor Data (dataset)
+    *   2015 - 2016 Guidance Counselor Report (dataset)
+    *   2020-21 Guidance Counselor/Social Worker Data - Demographic, Post Secondary (dataset)
+    *   2021 -2022 Guidance Counselor (dataset)
+*   **Health Data/Reports:**
+    *   2015-16 Local Law 15 Health Data - K-12 Health Instructors (dataset)
+    *   2015-16 Local Law 15 Health Data - Licensed Health Instructors (dataset)
+    *   2015-16 Local Law 15 Health Data - K-12 Health Instructor District (dataset)
+    *   2015-16 Local Law 15 Health Data K-12 Health Instructor CCD (dataset)
+    *   Local Law 14 Health Data (HlV/AIDS Lessons) (dataset)
+    *   Local Law 14 Health Data (High School) (dataset)
+    *   Local Law 14 Health Data (Middle School) (dataset)
+    *   2017-2018 Health Education Report MS (54) - City Council District (dataset)
+    *   2017-2018 Health Education Report MS (54) - District (dataset)
+    *   2017-2018 Health Education Report MS (54) - School (dataset)
+*   **School Safety Reports:**
+    *   2010 - 2016 School Safety Report (dataset)
+    *   2015 - 16 School Safety Report (dataset)
+    *   2016 - 2017 School Safety Report (dataset)
+    *   Violent and Disruptive Incidents (dataset)
+*   **Budget/Financial Reports:**
+    *   Fair Student Funding Budget Detail 2 (dataset)
+    *   Fair Student Funding Budget Detail 1 (dataset)
+    *   2014 - 2015 School Budget Overview (dataset)
+    *   2015 School Allocation Memorandum (SAM) (dataset)
+    *   2016 School Allocation Memorandum ( SAM) (dataset)
+    *   2017 School Allocation Memorandums (dataset)
+    *   2016 - 2017 School Based Expenditure Report (file)
+*   **HSE Diplomas (NYCHA Residents):**
+    *   High School Equivalency (HSE) Diplomas Awarded to NYCHA Residents by Borough – Local Law 163 (dataset)
+    *   High School Equivalency (HSE) Diplomas Awarded to NYCHA Residents by Council District – Local Law 163 (dataset)
+    *   High School Equivalency (HSE) Diplomas Awarded to NYCHA Residents by NYCHA Development – Local Law 163 (dataset)
+    *   2018 Local Law 163 TASC Report (dataset)
+*   **Local Law Reports (General):**
+    *   Local Law 51 Fall Semester Final (dataset)
+    *   Local Law 51 - DL Final (dataset)
+    *   Local Law 51 Spring Semester Final (dataset)
+    *   2021 LL51 Spring Semester DL FINAL REDACT (dataset)
+    *   2015 - 2016 Local Law 60 Meal Periods (dataset)
+    *   2016 - 2017 Local Law 60 Bathroom& Non- Instructional Space (dataset)
+    *   2015 2016 Local Law 60 Bathroom& Non- Instructional Space (dataset)
+    *   2015 2016 Local Law 60 Summary (dataset)
+    *   2015 2016 Local Law 60 Room Detail (dataset)
+    *   SY2017-2018 Local Law 60 Annual Report (dataset)
+    *   SY2021 Local Law 60 Annual Report (dataset)
+    *   Local Law 68 - Billy's Law Reporting (file)
+    *   Billy's Law Reporting Local Law 68 - February 1, 2019 (file)
+    *   2019 Fall Admissions LL1486 (dataset)
+    *   Fall 2020 Admissions Report LL1486-A Part II (dataset)
+    *   2020 Fall Admission LL1486 (dataset)
+    *   2021 Fall Admission LL1486 (dataset)
+    *   2019 Fall Admission LL1486 Part II (dataset)
+    *   2019-2020 Local Law 231 (dataset)
+    *   2019- 2020 Submission MF LL231 7142020 (dataset)
+    *   2020-2021 Local Law 231 Training Data (dataset)
+    *   FY20 Local Law 16 Final Report (dataset)
+    *   FY2020 Local Law 16 Final Report (dataset)
+    *   2019 School Food Report LL215 (dataset)
+    *   2017 School Food Report LL215 (dataset)
+    *   2019-2020 Preschool Education Report LL21 (href)
+    *   2020 - 2021 LL Settlement Data (dataset)
+    *   2019-2020 PSAL Report - (December 2020) (dataset)
+    *   2018-2019 Local Law 120 Public School Athletic League (dataset)
+    *   2019-2020 Local Law 174 CTE Report (dataset)
+    *   2018-2019 Career and Technical Education Report Law 174 (dataset)
+    *   2016 - 2017 Career Technical Education Report (dataset)
+    *   2015 - 2016 Career Technical Education Report (dataset)
+    *   2017-2018 Career and Technical Report LL174 (dataset)
+    *   2018 - 2019 Career Technical Education Report (dataset)
+    *   2017-2018 Computer Science Report LL177 (dataset)
+    *   2015 - 2016 Computer Science Report (dataset)
+    *   2016 - 2017 Computer Science Report (dataset)
+    *   2019 - 2020 School Year Local Law 226 Report for the Demographics of School Staff - Gender (dataset)
+    *   2019 - 2020 School Year Local Law 226 Report for the Demographics of School Staff - Ethnicity (dataset)
+    *   School Discharge Reporting (Local Law 42) (dataset)
+*   **Other Directories/Lists:**
+    *   iZone School List (dataset)
+    *   iZone PLS School List (dataset)
+    *   Borough Enrollment Centers (Additional Ways To Graduate) (dataset)
+    *   Borough Enrollment Offices (dataset)
+    *   GED Plus Locations (dataset)
+    *   Referral Centers For High School Alternatives (dataset)
+    *   Court Liaison Contact Sheet (dataset)
+    *   Child Abuse Liaisons (dataset)
+    *   OACE (Office of Adult and Continuing Education) Sites (map)
+    *   Middle School Virtual Recruitment URLs Posted on MySchools - 2020-2021 School Year (dataset)
+    *   High School Virtual Recruitment URLs Posted on MySchools - 2020-2021 School Year (dataset)
+    *   2015-2016 MTI All-Star Schools (dataset)
+    *   2016-17 Physical Education - MTI All- Star Schools (dataset)
+    *   2018 Kindergarten Directory - Staten Island (file)
+    *   2018 Kindergarten Directory - Manhattan (file)
+    *   2018 Kindergarten Directory - Bronx (file)
+    *   2018 Kindergarten Directory - Queens (file)
+    *   2019 DOE Middle School Directory (dataset)
+    *   2020 DOE Middle School Directory (dataset)
+    *   2021 DOE Middle School Directory (dataset)
+    *   2018 DOE Middle School Directory (dataset)
+    *   2011-2012 Elem MS K-8 (file)
+    *   2012-2013 Elem MS K-8 (file)
+    *   2016-2017 Elem MS Quality Reports (file)
+    *   2011-2012 NYC Family Guides (dataset)
+    *   2018 - 2019 Gender and Sexuality Report (dataset)
+    *   2019-2020 Local Law 231 (dataset)
+    *   2022 Annual Sustainability Project Grant (dataset)
+    *   2020-21 SMH Service Coverage (dataset)
+    *   Underutilized Space Report (dataset)
+    *   2014 - 2015 Teacher Survey Data (dataset)
+    *   2016 Public Data File Parent (dataset)
+    *   2019 Public Data File - Parents (dataset)
+    *   2021 Public Data File - Parent (dataset)
+    *   2017 Public Data File Parents (dataset)
+    *   2009 Public Data File Students D75 (dataset)
+    *   2006 - 2012 School Demographics and Accountability Snapshot (dataset)
+    *   Graduation results for Cohorts 2001 to 2011 (Classes of 2005 to 2015) (dataset)
+    *   Graduation results for Cohorts 2012 to 2019 (Classes of 2016 to 2023) (dataset)
+    *   2009 - 2010 Graduation Outcomes - Regents-based Math- ELA APM - School Level (dataset)
+    *   2014-15 To 2016-17 School- Level NYC Regents Report For All Variables (dataset)
+    *   2014-15 - 2018-19 NYC Regents Exam - Public (dataset)
+    *   2014-15 to 2017-19 NYC Regents Exam Results - Public (dataset)
+    *   2013 - 2015 NYC Results On The New York State Math Test With Math Regents Included (dataset)
+    *   Energy Usage From DOE Buildings (dataset)
+    *   2018 - 2020 CLASS and ECERS-R Data (dataset)
+    *   2015 - 2016 Audited Register Data (dataset)
+
+**Section 5, Non-tabular Data Summary:**
+
+*   Job applications
+*   Rules and regulations (e.g., Board of Regents rules, Commissioner's regulations)
+*   Receipts (for expenses, but the *summary* of expenses would be tabular)
+*   Photos
+*   Research documents
+*   Curriculum materials (e.g., "suitable curriculum materials to aid in the instruction of pupils in grades kindergarten through six in the understanding and acceptance of children with disabilities" § 801.5)
+*   Plans developed by districts (e.g., for technology aid, for repair/training use of funds)
+*   Sample or facsimile ballots (§ 802-a)
+*   Interpersonal violence prevention education package (pamphlets, videotapes, materials) (§ 804.6.b)
+*   Curriculum for alcohol and drug education component in driver education (§ 806-a.1)
+*   Manuals or handbooks for teachers (§ 807.2)
+*   Chart or plan showing specific location of fire alarm devices (§ 807-d.1)
+*   Course of instruction in fire and arson prevention materials (§ 808.1)
+*   Agreements for cost apportionment of fire alarm interconnection (§ 807-c.2)
+*   Test Registration Forms (documents)
+*   Test Answer Sheets/Records (raw input documents)
+*   Rules for Converting Raw Scores (policy documents)
+*   Explanation of Scoring Rules (explanatory documents)
+*   Test Reports (Aggregated) (outputs derived from tabular data)
+*   Item Reports (Aggregated) (outputs derived from tabular data)
+*   Documentation of Differential Item Functioning Calculation Methods (explanatory documents)
+*   Copies of Test Questions (actual text/images)
+*   Corresponding Acceptable Answers (actual answers)
+*   Test Subject's Answer Sheet/Record (physical or digital record)
+*   Correct Answer Sheet (master answer key)
+*   Test Registration Form (for disclosure election) (specific form)
+*   Correspondence Challenging Test Questions (actual letters/emails)
+*   Test Agency's Written Responses to Challenges (actual letters/emails)
+*   Information Provided with Registration Form or Score Report (informational documents)
+*   Study on Effects of Pretesting (research document)
+*   Written Notice of Score Withholding (formal letter)
+*   Commissioner's Regulations (regulations)
+*   Computerized Test Review Process Report (report)
+*   Advisory Committee Study Design (document outlining plan)
+*   Advisory Committee Reports to State Legislature (findings and recommendations documents)
+*   Textbook Catalogs/Bulletins (College) (informational documents)
+*   Sample Test Forms (SAT Subject Tests) (representative test documents)
+*   Updated Information (SAT Subject Tests) (descriptions and sample items)
+*   Guidelines (Instructional Materials for Disabled Students) (information, training, technical guidance, and best practices documents)

@@ -1,0 +1,605 @@
+**Data Systems for the Department for the Aging**
+
+**1. Social Adult Day Care (SADC) Registrations**
+
+**Quotes:**
+*   "An individual, partnership, corporation, limited liability company, joint venture, association, or other business entity shall not operate as a social adult day care without having registered with the department. Registration shall include registrant's name, address, corporate structure and ownership, and other information as the department may require and shall be filed on forms to be prescribed by the department. The department may require social adult day cares to register electronically." (§ 21-204.b.1)
+*   "Changes to information required under this subdivision must be submitted to the department no later than the effective date of such change in writing or electronically in a form and manner designated by the department." (§ 21-204.b.2)
+*   "The department shall create and maintain an online public searchable database of social adult day cares registered with the department pursuant with subdivision b of this section, which the public shall be able to search by the name under which the social adult day care registered, by the name under which the social adult day care is doing business, by borough, and by zip code. The database shall include the following information reported to the department pursuant to such subdivision: (i) the name, address, telephone number, and website, if any, of the social adult day care; (ii) the corporate structure and ownership of the social adult day care; (iii) the days and hours of operation of the social adult day care; (iv) the year the social adult day care was established; and (v) the name, address and telephone number of any managed long term care company with which the social adult day care has a formal agreement. The database shall further include any other relevant information reported to the department pursuant to this section." (§ 21-204.e.1)
+
+**Why:** To legally operate, SADCs must register and keep their information current, requiring the department to track these details.
+
+**One row represents:** A registration record for a Social Adult Day Care.
+
+**Covers:** All registered social adult day cares and their core identifying and operational information.
+
+**Columns:**
+*   SADC ID (Unique identifier for the social adult day care)
+*   Registration ID
+*   Registration Status (e.g., Active, Pending, Inactive, Revoked)
+*   Registrant Name (Individual, Partnership, Corporation, LLC, etc.)
+*   Doing Business As (DBA) Name
+*   SADC Address
+*   Borough
+*   Zip Code
+*   Telephone Number
+*   Website (if any)
+*   Corporate Structure
+*   Ownership Information
+*   Days of Operation
+*   Hours of Operation
+*   Year Established
+*   Managed Long Term Care (MLTC) Company Name (if formal agreement)
+*   MLTC Company Address
+*   MLTC Company Telephone Number
+*   Date of Last Information Change
+*   Date of Registration
+
+**2. Older Adult Centers (Master Data)**
+
+**Quotes:**
+*   "The commissioner shall require that every senior center adopt a statement of the rights of all senior citizens who participate in activities and take advantage of services provided by such senior center and treat all senior citizens in accordance with the provisions of such statement." (§ 21-202.a)
+*   "Every senior center shall post conspicuously: (i) in or near the entrance to such center a sign that states the rights of senior citizens as provided in this section; (ii) all regularly scheduled activities as defined in this section; and (iii) the department's phone number." (§ 21-202.c)
+*   "The commissioner shall require that every senior center post signage in a prominent common area section within the center that directs those who need information regarding elder abuse detection, reporting, counseling and services to call either the 311 citizen service system or the department's Elderly Crime Victims Resource Center." (§ 21-203.d)
+*   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: 1. The program name, sponsor name, address, New York city housing authority development in which such senior center is located if such senior center is located on property owned by the housing authority, borough, council district, community district, designation as a neighborhood senior center or innovative senior center, and days and hours of operation as well as such information for each affiliated site;" (§ 21-208.c.1)
+*   "For each senior center located on property owned by the New York city housing authority, the name of the entity that operates such senior center;" (§ 21-208.c.12)
+*   "Older adult center. The term "older adult center" means a facility, other than a social adult day care, operated by a person pursuant to a contract with the department to provide services to older adults on a regular basis including, but not limited to meals, recreation, and counseling." (§ 21-210.a)
+*   "The department shall identify the communities served by each older adult center and the prevalent spoken languages of such communities, and notify each such center of such prevalent spoken languages at least once annually." (§ 21-210.b)
+*   "Every senior citizen shall have the right to be informed of those senior centers that are handicapped accessible." (§ 21-202.b.8)
+*   "The commissioner shall require every older adult center to post signage in prominent common areas within every older adult center. Such signage shall include contact information for the department or other relevant agencies or organizations that an older adult may contact to obtain additional information regarding internet scams, phone scams, and phishing scams." (§ 21-216.e)
+
+**Why:** The department needs a comprehensive record of all centers it funds or oversees to ensure compliance and service delivery.
+
+**One row represents:** A single Older Adult Center.
+
+**Covers:** All department-funded or contracted Older Adult Centers (also referred to as Senior Centers).
+
+**Columns:**
+*   Older Adult Center ID (Unique identifier for the center)
+*   Program Name
+*   Sponsor Name
+*   Center Address
+*   Borough
+*   Council District
+*   Community District
+*   NYCHA Development (if located on NYCHA property)
+*   Operating Entity Name (if NYCHA-located)
+*   Center Designation (e.g., Neighborhood Senior Center, Innovative Senior Center)
+*   Days of Operation
+*   Hours of Operation
+*   Handicapped Accessible (Yes/No)
+*   Bill of Rights Adopted (Yes/No)
+*   Bill of Rights Signage Posted (Yes/No)
+*   Activities Signage Posted (Yes/No)
+*   Department Phone Number Signage Posted (Yes/No)
+*   Elder Abuse Signage Posted (Yes/No)
+*   Elder Fraud Prevention Signage Posted (Yes/No)
+*   Prevalent Spoken Languages (List of languages identified for the community served)
+*   Date of Last Language Identification
+
+**3. Older Adult Center Contracts & Funding**
+
+**Quotes:**
+*   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: ... 2. The contract term, including any renewals; 3. The budgeted total annual contract amount and the total annual reimbursed expenditures paid; ... 11. The total budgeted amount for personnel services;" (§ 21-208.c.2, § 21-208.c.3, § 21-208.c.11)
+
+**Why:** To manage financial oversight and ensure proper allocation and expenditure of funds for each center.
+
+**One row represents:** A contract or funding period for an Older Adult Center.
+
+**Covers:** Financial and contractual details for all department-funded Older Adult Centers.
+
+**Columns:**
+*   Contract ID
+*   Older Adult Center ID (Links to Dataset 2)
+*   Fiscal Year
+*   Contract Term Start Date
+*   Contract Term End Date
+*   Renewal Status (e.g., Original, Renewal 1, Renewal 2)
+*   Budgeted Total Annual Contract Amount
+*   Total Annual Reimbursed Expenditures Paid
+*   Total Budgeted Amount for Personnel Services
+
+**4. Social Adult Day Care (SADC) Violations & Penalties**
+
+**Quotes:**
+*   "The department shall adopt rules establishing civil penalties of not less than two hundred fifty dollars per day and not more than five hundred dollars per day to be assessed against social adult day cares for violations of subdivision a and any regulations promulgated thereunder. Such rules establishing civil penalties shall specify the violations subject to penalty." (§ 21-204.c.1)
+*   "Any individual, partnership, corporation, limited liability company, joint venture, association, or other business entity that operates as a social adult day care without registering shall be subject to a civil penalty of not less than two hundred fifty dollars per day and not more than one thousand dollars per day such social adult day care operates without registering." (§ 21-204.c.2)
+*   "The department and officers and employees of city agencies designated by the mayor shall have the authority to issue notices of violation, returnable at the environmental control board, any administrative tribunal within such designated agency, or any tribunal established within the office of administrative trials and hearings as designated by the commissioner, for violations of this section or any rules promulgated by the department pursuant to such section." (§ 21-204.c.3)
+*   "Each such report shall include, but not be limited to: ... (v) the total number of notices of violation issued pursuant to subdivisions a and c of this section, disaggregated by the specific violation for which such notice was issued;" (§ 21-204.d.4.v)
+*   "If applicable, the database shall indicate the number of notices of violation issued and the outcome of any adjudication conducted pursuant to subdivision c. The year and nature of the notice of violation and the adjudication shall be posted, but may not contain personally identifying information about a complainant." (§ 21-204.e.2)
+
+**Why:** To enforce compliance with SADC regulations and track penalties, the department must record all violations and their outcomes.
+
+**One row represents:** A single notice of violation issued to a Social Adult Day Care.
+
+**Covers:** All violations and associated penalties for social adult day cares.
+
+**Columns:**
+*   Notice of Violation (NOV) ID
+*   SADC ID (Links to Dataset 1)
+*   Date Issued
+*   Issuing Agency/Officer
+*   Violation Type (e.g., Operating Without Registration, Program Standards, Participant Rights)
+*   Description of Violation
+*   Start Date of Violation
+*   End Date of Violation (if applicable, for per-day penalties)
+*   Proposed Penalty Amount
+*   Adjudication Status (e.g., Pending, Upheld, Dismissed, Settled)
+*   Adjudication Outcome (e.g., Fine Imposed, Corrective Action Required)
+*   Final Penalty Amount
+*   Date Penalty Paid/Resolved
+
+**5. Social Adult Day Care (SADC) Complaints & Investigations**
+
+**Quotes:**
+*   "The department shall designate an ombudsperson whose duties shall include, but not be limited to: (i) establishing a system to receive comments and complaints with respect to any social adult day care;" (§ 21-204.d.1.i)
+*   "investigating complaints received pursuant to subparagraph (i) of this paragraph or based on any information known to the department related to a social adult day care that may be in violation of the provisions of subdivision a of this section and whether a social adult day care has violated subdivision a of this section and upon finding there has been such a violation: (A) promptly informing in writing such social adult day care and any managed long term care organization known to be reimbursing such social adult day care of such finding, and that such finding is appealable by writing to the commissioner in accordance with the rules of the department, and requesting any informed managed long term care organization to respond to the ombudsperson in writing as to whether and how such violations will be addressed, (B) at the ombudsperson's discretion, forwarding the results of such investigation and any such response from a managed long term care organization to the department of investigation, the state department of health or any office, agency, or entity responsible for the prevention, detection, and investigation of fraud and abuse in the medical assistance program described in title eleven of the social services law or for the recovery of any improperly expended medical assistance funds, and (C) taking other appropriate actions as determined by the commissioner." (§ 21-204.d.1.iii)
+*   "Each such report shall include, but not be limited to: ... (ii) the total number of complaints received by the ombudsperson; (iii) a general description of the reason for each such complaint; (iv) the total number of investigations conducted by the ombudsperson, a general description of the reason for each such investigation, any findings that a social adult day care has violated of subdivision a of this section, and the outcome of each such investigation;" (§ 21-204.d.4.ii, § 21-204.d.4.iii, § 21-204.d.4.iv)
+*   "The database shall allow an individual to submit complaints electronically about a social adult day care to the ombudsperson." (§ 21-204.e.3)
+
+**Why:** The ombudsperson is mandated to receive and investigate complaints, requiring a system to track each complaint and its resolution.
+
+**One row represents:** A single complaint received about a Social Adult Day Care.
+
+**Covers:** All complaints and investigations related to social adult day cares.
+
+**Columns:**
+*   Complaint ID
+*   SADC ID (Links to Dataset 1)
+*   Date Received
+*   Complaint Source (e.g., Electronic, Phone, Mail)
+*   General Description of Complaint Reason
+*   Ombudsperson ID
+*   Investigation Status (e.g., Open, In Progress, Closed)
+*   Investigation Start Date
+*   Investigation End Date
+*   Findings (e.g., Violation Found, No Violation, Insufficient Evidence)
+*   Description of Findings
+*   Managed Long Term Care (MLTC) Organization Notified (Yes/No)
+*   MLTC Response Received (Yes/No)
+*   Referral to Other Agencies (e.g., DOI, State DOH) (Yes/No)
+*   Outcome of Investigation (e.g., Corrective Action, Penalty Issued, No Action)
+*   Date of Outcome
+
+**6. Older Adult Center Employee Training Compliance**
+
+**Quotes:**
+*   "The commissioner shall require that employees of senior centers and employees of entities that contract with the department to provide services to senior citizens, be trained in elder abuse detection, reporting and counseling, and receive supplemental refresher training regarding the same at least once every 3 years, if such employee has or is expected to have significant and direct person to person contact with senior citizens." (§ 21-203.b)
+*   "Each caseworker shall complete a training to recognize the signs and symptoms of mental illness for older adults offered by the department of health and mental hygiene or a successor agency, provided that such department offers such training." (§ 21-209.b)
+*   "At least once every three years after completing the training described in subdivision b of this section, each caseworker shall receive supplemental refresher training, provided that the department of health and mental hygiene or a successor agency offers such training." (§ 21-209.c)
+
+**Why:** To ensure all required employees and caseworkers complete mandatory training and refresher courses, the department must track individual compliance.
+
+**One row represents:** A single employee's completion of a specific required training.
+
+**Covers:** Mandatory elder abuse and mental health training for Older Adult Center employees and caseworkers.
+
+**Columns:**
+*   Employee Training ID
+*   Employee ID
+*   Employee Name
+*   Older Adult Center ID (Links to Dataset 2)
+*   Training Type (e.g., Elder Abuse Detection, Mental Illness Recognition)
+*   Training Date Completed
+*   Training Provider
+*   Refresher Training Required (Yes/No)
+*   Next Refresher Training Due Date
+*   Compliance Status (e.g., Compliant, Due Soon, Overdue)
+
+**7. Older Adult Center Daily Participant Counts**
+
+**Quotes:**
+*   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: ... 4. The average number of daily participants;" (§ 21-208.c.4)
+*   "Not later than December 31, 2019, and by December 31 annually thereafter, the department shall submit to the speaker of the council and post to its website the following information in non-proprietary machine readable format for each department-funded senior center for the prior fiscal year: 1. The total number of participants per day, including the corresponding date;" (§ 21-208.d.1)
+*   "The total number of participants served in each of the following areas per day, including the corresponding date, and the total number of participants served in the combined total of such areas: information and assistance; education and recreation; and health promotion." (§ 21-208.d.3)
+
+**Why:** Daily participant counts are required for annual reporting and are fundamental to understanding center utilization and service reach.
+
+**One row represents:** The total number of participants at an Older Adult Center on a specific day.
+
+**Covers:** Daily attendance and service participation at all department-funded Older Adult Centers.
+
+**Columns:**
+*   Daily Record ID
+*   Older Adult Center ID (Links to Dataset 2)
+*   Date
+*   Total Participants (Daily)
+*   Participants in Information & Assistance Services (Daily)
+*   Participants in Education & Recreation Services (Daily)
+*   Participants in Health Promotion Services (Daily)
+*   Combined Total Participants in Services (Daily)
+
+**8. Older Adult Center Daily Meal Service**
+
+**Quotes:**
+*   "Every senior citizen attending a senior center's regularly scheduled meal period shall be offered a balanced and nutritious meal to the extent that funding and space limitations permit. Those senior citizens that do not receive a balanced and nutritious meal shall be offered nourishment during a senior center's regularly scheduled meal period to the extent that funding permits." (§ 21-202.b.4)
+*   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: ... 5. The total annual reimbursed expenditures for congregate meals, disaggregated by kosher and non-kosher meals; 6. The cost per meal for each senior center, disaggregated by kosher and non-kosher meals; 7. The method by which the senior center provides congregate meals, either by in-house preparation or catered meals, and whether the senior center provides meals for any other senior center;" (§ 21-208.c.5, § 21-208.c.6, § 21-208.c.7)
+*   "Not later than December 31, 2019, and by December 31 annually thereafter, the department shall submit to the speaker of the council and post to its website the following information in non-proprietary machine readable format for each department-funded senior center for the prior fiscal year: ... 2. The total number of congregate meals served per day, including the corresponding date; disaggregated by breakfast, lunch, or dinner, where applicable; and type of meal, including but not limited to kosher and non-kosher;" (§ 21-208.d.2)
+
+**Why:** The department is responsible for ensuring meals are provided and must track daily meal service, types, and associated costs for reporting and oversight.
+
+**One row represents:** Meals served of a specific type (e.g., kosher lunch) on a specific day at an Older Adult Center.
+
+**Covers:** Daily congregate meal provision, including type, quantity, and cost, at all department-funded Older Adult Centers.
+
+**Columns:**
+*   Meal Service ID
+*   Older Adult Center ID (Links to Dataset 2)
+*   Date
+*   Meal Period (e.g., Breakfast, Lunch, Dinner)
+*   Meal Type (e.g., Kosher, Non-Kosher, Nourishment)
+*   Number of Meals Served
+*   Method of Meal Provision (e.g., In-house, Catered)
+*   Cost Per Meal (for this specific meal type/period)
+*   Total Reimbursed Expenditures for this meal type/period
+
+**9. Older Adult Center Activities & Programming**
+
+**Quotes:**
+*   "Every senior citizen shall have the right to participate in all regularly scheduled activities and take advantage of services provided by the center to the extent that funding and space limitations permit." (§ 21-202.b.2)
+*   "Every senior center shall post conspicuously: ... (ii) all regularly scheduled activities as defined in this section;" (§ 21-202.c.ii)
+*   "The total number of participants served in each of the following areas per day, including the corresponding date, and the total number of participants served in the combined total of such areas: information and assistance; education and recreation; and health promotion." (§ 21-208.d.3)
+*   "The department shall require each older adult center to develop and conduct programming in each prevalent spoken language of such center as identified pursuant to subdivision b of this section. Such programming shall consider the cultural and ethnic background that relates to each prevalent spoken language." (§ 21-210.c)
+
+**Why:** To ensure centers offer a variety of activities and programming, including culturally relevant options, and to track participation for reporting.
+
+**One row represents:** A single activity or program session offered at an Older Adult Center.
+
+**Covers:** All regularly scheduled activities, services, and cultural programming offered by Older Adult Centers.
+
+**Columns:**
+*   Activity ID
+*   Older Adult Center ID (Links to Dataset 2)
+*   Activity Name/Title
+*   Activity Type (e.g., Recreation, Education, Health Promotion, Information & Assistance, Cultural Programming)
+*   Date of Activity
+*   Time of Activity
+*   Description of Activity
+*   Language of Activity (if applicable, for cultural programming)
+*   Cultural/Ethnic Background Addressed (if applicable)
+*   Estimated/Actual Participant Count
+*   Planned Units of Service
+*   Actual Units of Service
+
+**10. Older Adult Center Grievances and Facility Complaints**
+
+**Quotes:**
+*   "Every senior citizen shall have the right to present grievances on behalf of himself or herself to the senior center's staff, board of directors or executive committee, or elected or other government officials, without fear of reprisal from officers or employees of the senior center." (§ 21-202.b.9)
+*   "To the extent practicable, for each senior center located on property owned by the New York city housing authority, the number of complaints related to such senior center's facilities;" (§ 21-208.c.13)
+*   "To the extent such information is available, any steps taken to address the complaints described in paragraph 13 of this subdivision." (§ 21-208.c.14)
+
+**Why:** To ensure senior citizens' rights to grievance are upheld and to track and address facility-related issues at centers.
+
+**One row represents:** A single grievance or facility complaint filed regarding an Older Adult Center.
+
+**Covers:** All grievances and facility-related complaints received concerning Older Adult Centers.
+
+**Columns:**
+*   Grievance/Complaint ID
+*   Older Adult Center ID (Links to Dataset 2)
+*   Date Received
+*   Complaint Type (e.g., General Grievance, Facility Complaint)
+*   Description of Grievance/Complaint
+*   Complainant Type (e.g., Senior Citizen, Staff, Anonymous)
+*   Resolution Status (e.g., Open, In Progress, Resolved, Escalated)
+*   Date of Resolution
+*   Resolution Details/Steps Taken
+*   NYCHA Property Related (Yes/No, if facility complaint)
+
+**11. Housing Support Program Cases**
+
+**Quotes:**
+*   "The department shall establish a housing support program for the purpose of helping persons 60 years of age or older who are at risk of eviction or foreclosure to identify and access relevant aid and other support to remain in their residence." (§ 21-212.a)
+*   "Such program shall provide case management services designed to provide situation-specific advice and support to each participating person. Such services shall be provided at no cost and, at minimum, include: 1. An intake session, which may be conducted at the participating person's residence, for the purpose of identifying and assessing the factors contributing to such person's risk of eviction or foreclosure, and how such factors could be addressed under relevant assistance, services or programs; 2. Referrals for assistance, services or programs that could address factors contributing to such person's risk of eviction or foreclosure; 3. Assistance completing applications for financial assistance or enrollment in services or programs; and 4. Ongoing support to monitor such person's risk of eviction or foreclosure, the effect of referred assistance, services or programs on reducing or eliminating such risk and any factors contributing to such risk that could be ameliorated with further advice and support." (§ 21-212.b)
+*   "In assessing a person's risk for eviction or foreclosure, the department shall consider any relevant factor, including, but not limited to, such person's health status and whether other persons, including family members, also live in such person's residence." (§ 21-212.c)
+*   "Maintain an online portal, accessible to program participants, for the purpose of tracking events and progress of individual cases and storing information relevant to each case;" (§ 21-212.d.1)
+
+**Why:** To effectively manage and track the progress of individuals receiving housing support services, the department needs detailed case-level data.
+
+**One row represents:** A single case for an older adult participating in the housing support program.
+
+**Covers:** All individuals receiving housing support services, from intake to case closure.
+
+**Columns:**
+*   Case ID
+*   Participant ID (Unique identifier for the older adult receiving services)
+*   Participant Age
+*   Participant Health Status
+*   Other Residents in Residence (Yes/No)
+*   Family Members in Residence (Yes/No)
+*   Intake Date
+*   Risk Factors Identified (e.g., Financial, Health, Legal)
+*   Assessment Details
+*   Case Manager ID
+*   Referral Date
+*   Referred Program/Service
+*   Application Assistance Provided (Yes/No)
+*   Financial Assistance Application Status
+*   Ongoing Support Provided (Yes/No)
+*   Monitoring Notes
+*   Eviction/Foreclosure Risk Status (e.g., High, Medium, Low, Resolved)
+*   Case Status (e.g., Open, Closed, On Hold)
+*   Case Closure Date
+
+**12. Digital Literacy Training Sessions**
+
+**Quotes:**
+*   "The commissioner for the aging in collaboration with the commissioner of information technology and telecommunications, and any relevant stakeholders deemed necessary by the mayor, shall administer a digital literacy training program to serve older adults. Such training program shall be offered to the public at no cost and shall include the following topics:..." (§ 21-213.a)
+*   "The program established pursuant to subdivision a of this section shall be offered in person or through interactive live video instruction in at least one library or senior center in each community district and in any other facilities as deemed appropriate by the commissioner for the aging or the commissioner of information technology and telecommunications." (§ 21-213.e)
+
+**Why:** To track the delivery of digital literacy training programs, including locations, topics, and attendance, for program management and reporting.
+
+**One row represents:** A single digital literacy training session.
+
+**Covers:** All digital literacy training sessions offered to older adults.
+
+**Columns:**
+*   Session ID
+*   Date of Session
+*   Time of Session
+*   Location Type (e.g., Library, Older Adult Center, Virtual)
+*   Location Name/ID (Links to Dataset 2 if Older Adult Center)
+*   Community District
+*   Instructor ID
+*   Session Topic(s) (e.g., Telehealth, Online Platforms, HRA Benefits, Fraud Prevention)
+*   Language of Instruction
+*   Number of Participants
+*   Program Partner (e.g., DoITT)
+
+**13. Naturally Occurring Retirement Communities (NORC/NNORC) Inventory**
+
+**Quotes:**
+*   "Naturally occurring retirement community. The term “naturally occurring retirement community” has the same meaning as set forth in section 209 of the elder law." (§ 21-205.1.a)
+*   "Neighborhood naturally occurring retirement community. The term “neighborhood naturally occurring retirement community” has the same meaning as set forth in section 209 of the elder law." (§ 21-205.1.a)
+*   "Such study shall include, but need not be limited to: 1. Information on the existing state of naturally occurring retirement communities, including their locations, supportive services provided at each such location, and contact information for buildings and service providers;" (§ 21-205.1.c.1)
+*   "Identifications of potential naturally occurring retirement communities and neighborhood naturally occurring retirement communities as both such communities are defined in section 209 of the elder law, not currently designated or otherwise recognized by the New York state office for the aging or the department, accompanied by explanations of how and why each such potential community was identified;" (§ 21-205.1.c.2)
+*   "Recommendations to the New York state office for the aging to designate any housing developments, buildings, or areas identified in the study conducted pursuant to subdivision c of this section as naturally occurring retirement communities or neighborhood naturally occurring retirement communities, as appropriate;" (§ 21-205.1.d.1)
+*   "Naturally occurring retirement community. The term "naturally occurring retirement community" means an apartment building, a housing complex or a housing development, as identified by the department, (i) that was not constructed to house older adults, (ii) where dwelling units are not leased or sold exclusively to older adults, and (iii) where at least 2,500 older adults reside or at least 50 percent of the dwelling units are occupied by one or more older adults." (§ 21-211.a)
+
+**Why:** The department is mandated to study and plan for NORCs/NNORCs, requiring a comprehensive inventory of existing and potential communities.
+
+**One row represents:** A single Naturally Occurring Retirement Community (NORC) or Neighborhood Naturally Occurring Retirement Community (NNORC).
+
+**Covers:** All identified and potential NORCs/NNORCs within the city.
+
+**Columns:**
+*   NORC/NNORC ID
+*   Community Name
+*   Location (Address, Building Name, Area Description)
+*   Type (e.g., NORC, NNORC, Potential NORC, Potential NNORC)
+*   Designation Status (e.g., Designated by NYS, Recognized by Department, Potential)
+*   Date of Identification/Designation
+*   Supportive Services Provided (List/Description)
+*   Contact Information for Buildings/Service Providers
+*   Explanation for Potential Identification (if applicable)
+*   Number of Older Adults Residing (if available)
+*   Percentage of Dwelling Units Occupied by Older Adults (if available)
+
+**14. Aging in Place Projects**
+
+**Quotes:**
+*   "Supportive services and accessibility improvement projects the department and coordinating agencies plan to initiate and complete in the 10- year period following submission of the plan, disaggregated by borough, community district, and address;" (§ 21-205.1.b.3)
+*   "For each such supportive service and accessibility improvement project, (i) an estimate of how many older adults would be served, and (ii) a list of the boroughs, community districts, and neighborhoods that would be served." (§ 21-205.1.b.5)
+*   "progress reports detailing the status of the implementation of projects and recommendations included in each such plan." (§ 21-205.1.f)
+
+**Why:** To track the planning, initiation, and completion of projects aimed at supporting older adults aging in place.
+
+**One row represents:** A single aging in place project.
+
+**Covers:** All planned and implemented supportive services and accessibility improvement projects.
+
+**Columns:**
+*   Project ID
+*   Project Name/Description
+*   Project Type (e.g., Supportive Service, Accessibility Improvement)
+*   Planning Agency (e.g., Department, DOB, HPD, DOT)
+*   Borough
+*   Community District
+*   Address (if specific to a location)
+*   Planned Start Date
+*   Planned Completion Date
+*   Actual Start Date
+*   Actual Completion Date
+*   Estimated Older Adults Served
+*   Actual Older Adults Served
+*   Neighborhoods Served (List)
+*   Project Status (e.g., Planned, In Progress, Completed, Delayed)
+
+**15. Community-Based Organization (CBO) Information & Capacity**
+
+**Quotes:**
+*   "In consultation with relevant council members and community stakeholders, information on the existing capacity of community-based organizations to support each such potential community;" (§ 21-205.1.c.3)
+*   "Training and onboarding for community-based organizations to expand their capacity to support older adults in such potential communities;" (§ 21-205.1.d.3)
+
+**Why:** To assess and track the capacity of CBOs to support NORCs/NNORCs and to manage training initiatives for these organizations.
+
+**One row represents:** A single Community-Based Organization (CBO) involved in supporting older adults.
+
+**Covers:** CBOs that support NORCs/NNORCs, including their capacity and training participation.
+
+**Columns:**
+*   CBO ID
+*   CBO Name
+*   Contact Person
+*   Contact Information (Address, Phone, Email)
+*   Services Provided to Older Adults (Description)
+*   Geographic Area Served
+*   Capacity Assessment Date
+*   Capacity Details (e.g., Staffing, Resources, Expertise)
+*   NORC/NNORC ID(s) Supported (Links to Dataset 13)
+*   Training Program Attended (e.g., NORC Support Training)
+*   Training Completion Date
+
+**16. Grant Funding for Community-Based Organizations**
+
+**Quotes:**
+*   "Subject to appropriation, a program to provide grant funding and other resources, including start-up grants, capacity-building support, and operational funding to support the operations of community-based organizations to provide services within identified naturally occurring retirement communities." (§ 21-205.1.d.6)
+
+**Why:** To manage and track the distribution of grant funding and resources to CBOs supporting NORCs/NNORCs.
+
+**One row represents:** A single grant awarded to a Community-Based Organization.
+
+**Covers:** All grant funding and resources provided to CBOs for NORC/NNORC support.
+
+**Columns:**
+*   Grant ID
+*   CBO ID (Links to Dataset 15)
+*   Grant Type (e.g., Start-up, Capacity-Building, Operational)
+*   Award Amount
+*   Award Date
+*   Grant Period Start Date
+*   Grant Period End Date
+*   Purpose of Grant
+*   Reporting Requirements Met (Yes/No)
+*   Funds Expended (Amount)
+
+**17. Unpaid Caregiver Survey Responses**
+
+**Quotes:**
+*   "the department shall develop and conduct a survey of unpaid caregivers and providers offering services to unpaid caregivers within the city to identify the needs of unpaid caregivers, as well as to assess existing caregiver services. Such survey shall be developed in consultation with academic experts in caregiving issues, service providers, and other appropriate stakeholders, and shall contain questions designed to collect information from a sample of unpaid caregivers and caregiver service providers on the following issues: 1. Availability of information about programs, services, and other resources designed to provide support to unpaid caregivers; 2. Accessibility of programs and services, including, but not limited to, hours of operation, location, transportation options for accessing such programs and services, cost, payment methods, eligibility restrictions, cultural competency, and language capacity; 3. Utilization of programs and services, including, but not limited to, the number of individuals requesting and receiving services, the types of services requested, and the number of individuals placed on waitlists for services where applicable; and 4. Recipient outcomes as a result of utilizing existing programs and services, including, but not limited to, the unpaid caregiver's health and employment circumstances, access to benefits, knowledge about the care recipient's illness or condition, and awareness and use of appropriate services for the care recipient's illness or condition." (§ 21-206.b)
+*   "The plan required by subdivision c of this section shall include, but not be limited to: 1. The results of the survey required by subdivision b of this section;" (§ 21-206.d.1)
+
+**Why:** To collect and analyze data on the needs of unpaid caregivers and the landscape of caregiver services, as mandated by the survey requirement.
+
+**One row represents:** A single response to the unpaid caregiver survey.
+
+**Covers:** Data collected from surveys of unpaid caregivers and caregiver service providers.
+
+**Columns:**
+*   Survey Response ID
+*   Survey Type (e.g., Unpaid Caregiver, Service Provider)
+*   Date of Response
+*   Caregiver Demographics (Age, Gender, Race, Ethnicity, Language, Income Level, Borough of Residence, Employment Status)
+*   Care Recipient Demographics (Age, Gender, Borough of Residence, Health Condition, Living Situation)
+*   Number of Caregivers for Recipient
+*   Average Hours of Care Per Week
+*   Daily Activities Necessitating Assistance
+*   Availability of Information (Survey Question Response)
+*   Accessibility of Programs/Services (Survey Question Responses for hours, location, transport, cost, payment, eligibility, cultural competency, language)
+*   Utilization of Programs/Services (Survey Question Responses for requests, receipts, types, waitlists)
+*   Caregiver Outcomes (Survey Question Responses for health, employment, benefits access, knowledge)
+*   Care Recipient Service Use (Survey Question Response)
+
+**18. Digital Literacy Program Participant Feedback**
+
+**Quotes:**
+*   "Such evaluation shall at minimum include an online or electronic survey for older adults who participate in such program to provide feedback regarding such program." (§ 21-213.b)
+
+**Why:** To gather feedback from participants to evaluate and improve the digital literacy training program.
+
+**One row represents:** A single feedback submission from a digital literacy program participant.
+
+**Covers:** Feedback collected from older adults who participate in the digital literacy program.
+
+**Columns:**
+*   Feedback ID
+*   Session ID (Links to Dataset 12)
+*   Participant ID (if collected, anonymized if necessary)
+*   Date of Feedback
+*   Feedback Channel (e.g., Online Survey, Electronic Survey)
+*   Overall Program Satisfaction (e.g., Rating)
+*   Feedback on Topics Covered
+*   Feedback on Instructor Effectiveness
+*   Recommendations for Improvement
+*   Ease of Access to Program
+*   Perceived Benefit of Program
+
+**19. Outreach and Material Distribution Events**
+
+**Quotes:**
+*   "The department, in collaboration with relevant agencies, shall conduct outreach on such pamphlet in the designated citywide languages and in a manner that takes into account the cultural and ethnic backgrounds of the older adults who are the subjects of such outreach. Such outreach shall include, but need not be limited to, the following: 1. Conducting informational sessions about such pamphlet; and 2. Providing such pamphlet to organizations that have contracts with the department to serve older adults." (§ 21-211.c)
+*   "The commissioner shall submit a report regarding the department's outreach efforts, as required by subdivision c of this section, to the mayor and the speaker of the council, and post such report on the department's website. Such report shall include, but need not be limited to, the following information for the previous year: 1. The number of informational sessions conducted on the pamphlet; 2. The number of pamphlets provided to organizations and institutions serving older adults;" (§ 21-211.e)
+*   "The department shall conduct ongoing outreach and education to promote awareness of the program required by this section. Such outreach shall include, but not be limited to, an annual mailing to persons who may benefit from enrollment in such program or who may care for or serve such persons." (§ 21-212.e)
+*   "The commissioner shall require older adult centers to distribute the materials created pursuant to subdivision b of this section to older adults entering such centers. The commissioner shall also ensure that such materials are distributed to homebound older adults. Such materials shall be updated and distributed twice annually." (§ 21-216.d.1)
+*   "The commissioner shall require older adult centers to offer the materials created pursuant to subdivision b of this section to older adults entering such centers. The commissioner shall also ensure that such materials are distributed to homebound older adults. Such materials shall be updated and distributed as necessary, or least once every 2 years." (§ 21-217.c.1)
+
+**Why:** To track all outreach activities and the distribution of various informational materials to ensure broad dissemination and compliance with reporting requirements.
+
+**One row represents:** A single outreach event or material distribution activity.
+
+**Covers:** Informational sessions, pamphlet distribution, mailings, and material distribution at centers and to homebound individuals for various programs.
+
+**Columns:**
+*   Outreach Event ID
+*   Date of Event/Distribution
+*   Activity Type (e.g., Informational Session, Material Distribution, Annual Mailing)
+*   Program/Material Type (e.g., Know Your Rights Pamphlet, Housing Support, Elder Fraud Prevention, Financial Literacy)
+*   Target Audience (e.g., Older Adults, Caregivers, Homebound Older Adults, Organizations)
+*   Location (if applicable, e.g., Older Adult Center ID (Links to Dataset 2), Community Location)
+*   Number of Pamphlets/Materials Distributed
+*   Number of Attendees (for informational sessions)
+*   Language(s) Used
+*   Collaborating Agencies/Organizations
+
+**20. Elder Abuse Education Sessions (Public)**
+
+**Quotes:**
+*   "The commissioner shall require senior centers to hold at least two educational sessions per year during which guests and members of the senior center will receive counseling regarding elder abuse prevention and awareness and be instructed on how to detect and report instances of elder abuse." (§ 21-203.c)
+
+**Why:** To ensure Older Adult Centers fulfill their mandate to provide regular public education sessions on elder abuse prevention and awareness.
+
+**One row represents:** A single public elder abuse education session held by an Older Adult Center.
+
+**Covers:** All public educational sessions on elder abuse prevention and awareness conducted by Older Adult Centers.
+
+**Columns:**
+*   Session ID
+*   Older Adult Center ID (Links to Dataset 2)
+*   Date of Session
+*   Time of Session
+*   Session Leader ID
+*   Number of Guests Attending
+*   Number of Members Attending
+*   Total Attendance
+*   Topics Covered (e.g., Detection, Reporting, Counseling, Prevention, Awareness)
+
+**21. Older Adult Center Affiliated Sites**
+
+**Quotes:**
+*   "Affiliated sites. The term "affiliated sites" means department-funded congregate sites affiliated with a senior center, including any social club, satellite, or extended/social services." (§ 21-208.a)
+*   "The annual report shall include, but need not be limited to, the following information in non-proprietary machine readable format for each such senior center for the prior fiscal year: 1. The program name, sponsor name, address, New York city housing authority development in which such senior center is located if such senior center is located on property owned by the housing authority, borough, council district, community district, designation as a neighborhood senior center or innovative senior center, and days and hours of operation as well as such information for each affiliated site;" (§ 21-208.c.1)
+
+**Why:** To maintain a complete record of all sites providing services under the umbrella of an Older Adult Center.
+
+**One row represents:** A single affiliated site linked to an Older Adult Center.
+
+**Covers:** All department-funded congregate sites affiliated with Older Adult Centers.
+
+**Columns:**
+*   Affiliated Site ID
+*   Older Adult Center ID (Links to Dataset 2)
+*   Site Name
+*   Site Address
+*   Borough
+*   Council District
+*   Community District
+*   NYCHA Development (if located on NYCHA property)
+*   Site Type (e.g., Social Club, Satellite, Extended Services)
+*   Days of Operation
+*   Hours of Operation
+
+---
+
+**Information Not Maintained in Tabular Format:**
+
+*   **Rules and Regulations:** (e.g., § 21-202.d, § 21-204.a.1, § 21-204.c.1)
+*   **Statements of Rights:** (e.g., § 21-202.a, § 21-202.b)
+*   **Training Program Curricula/Materials:** (e.g., § 21-203.a)
+*   **Aging in Place Guide:** (e.g., § 21-205)
+*   **Ten-Year Plan for Aging in Place:** (e.g., § 21-205.1.b)
+*   **Study on Naturally Occurring Retirement Communities:** (e.g., § 21-205.1.c)
+*   **Plan to Support Naturally Occurring Retirement Communities:** (e.g., § 21-205.1.d)
+*   **Unpaid Caregiver Plan:** (e.g., § 21-206.c, § 21-206.d)
+*   **Written Materials from OEM (Life-Sustaining Equipment):** (e.g., § 21-207)
+*   **Annual Reports (Aggregated Data):** (e.g., § 21-208.b, § 21-208.c, § 21-208.d, § 21-204.d.4, § 21-211.e) - *Note: The underlying incident-level data for these reports is captured in the tabular datasets.*
+*   **Pamphlet for Older Adults (Know Your Rights):** (e.g., § 21-211.b)
+*   **Digital Literacy Program Evaluation Updates:** (e.g., § 21-213.c)
+*   **Information on NYC Care Initiative:** (e.g., § 21-214.b)
+*   **Information on Older Adult Workforce Programs:** (e.g., § 21-215.b)
+*   **Elder Fraud Prevention Materials (Printed/Digital/Audible):** (e.g., § 21-216.b, § 21-216.c)
+*   **Quarterly Guidance on Emerging Scams:** (e.g., § 21-216.f)
+*   **Financial Literacy and End of Life Preparation Materials:** (e.g., § 21-217.b)
+*   **Job Applications:** (Implied operational overhead)
+*   **Receipts/Invoices:** (Implied operational overhead for financial tracking)
+*   **Legal Documents/Contracts (full text):** (Implied operational overhead)
+*   **Research Documents/Studies:** (e.g., § 21-205.1.c)

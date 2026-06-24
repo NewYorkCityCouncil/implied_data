@@ -1,0 +1,752 @@
+**Dataset 1: Notices of Violation (NOVs)**
+
+**Quotes:**
+- "Each inspector or other employee of the department who issues notices of violation shall, for provisions of law that are enforced exclusively by the department, have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." (§ 2203.f)
+- "All such proceedings shall be commenced by the service of a notice of violation. The commissioner shall prescribe the form and wording of notices of violation. The notice of violation or copy thereof when filled in and served shall constitute notice of the violation charged, and, if sworn to or affirmed, shall be prima facie evidence of the facts contained therein. The notice of violation shall contain information advising the person charged of the manner and the time in which such person may either admit or deny the violation charged in the notice. Such notice of violation shall also contain a warning to advise the person charged that failure to plead in the manner and time stated in the notice may result in a default decision and order being entered against such person. The original or a copy of the notice of violation shall be filed and retained by the department and shall be deemed a record kept in the ordinary course of business." (§ 2203.h.2)
+- "The department shall not enter any final decision or order pursuant to this subdivision unless the notice of violation shall have been served as follows:" (§ 2203.h.7)
+
+**Why:** To track all formal violations issued by the department, supporting enforcement and adjudication.
+
+**One row represents:** A single notice of violation issued.
+
+**Covers:** All notices of violation issued by the department across all enforcement areas.
+
+**Columns:**
+- NOV ID
+- **Investigation ID** (links to Dataset 3)
+- Issuing Inspector ID
+- Issuing Department/Office
+- Date of Violation
+- Time of Violation
+- Location of Violation (Address, Business Name)
+- Respondent Name/Entity
+- Respondent Type (Licensee, Non-Licensee)
+- **License ID** (links to Dataset 6, if applicable)
+- Violation Code/Description
+- Is this a first-time violation for this provision?
+- Was a warning issued instead? (links to Dataset 10)
+- Date NOV Issued
+- Date NOV Served
+- Method of Service (links to Dataset 11)
+- Due Date for Plea/Appearance
+- Status (Issued, Pleaded, Defaulted, Adjudicated, Closed)
+- Associated Penalty Amount (initial)
+- Associated Restitution/Equitable Relief (initial)
+
+---
+
+**Dataset 2: Adjudication Proceedings**
+
+**Quotes:**
+- "The department shall have the power to render decisions and orders. Notwithstanding any inconsistent provision of law, the department shall be authorized, upon due notice and hearing, to impose civil penalties for, and to order restitution or other forms of equitable relief, and payment of monetary damages, to a consumer or worker in connection with the violation of any laws or rules the enforcement of which is within the jurisdiction of the department pursuant to this charter, the administrative code or any other general, special or local law. Where the department has delegated any adjudicatory powers to the office of administrative trials and hearings, for all cases heard by the adjudicatory body authorized to conduct trials in such office, the office of administrative trials and hearings shall issue a recommended decision which the commissioner may adopt, reverse, modify, or remand in whole or in part for additional proceedings. Except to the extent that dollar limits are otherwise specifically provided, such civil penalties shall not exceed five hundred dollars for each violation. All proceedings authorized pursuant to this subdivision shall be conducted in accordance with rules promulgated by the commissioner." (§ 2203.h.1)
+- "All such proceedings shall be commenced by the service of a notice of violation." (§ 2203.h.2)
+- "Where a respondent has failed to plead within the time allowed by the rules of the commissioner or has failed to appear on a designated hearing date or a subsequent date following an adjournment of a violation, such failure to plead or appear shall be deemed, for all purposes, to be an admission of liability for the purposes of such violation and shall be grounds for rendering a default decision and order imposing a penalty up to the maximum amount prescribed under law for the violation charged." (§ 2203.h.3)
+
+**Why:** To track the formal legal process from a notice of violation through to a final decision.
+
+**One row represents:** A single adjudication proceeding for a notice of violation.
+
+**Covers:** All formal adjudication proceedings initiated by the department.
+
+**Columns:**
+- Adjudication Case ID
+- **NOV ID** (links to Dataset 1)
+- Respondent Name/Entity
+- Date Proceeding Initiated
+- Plea Received (Yes/No)
+- Plea Type (Admit, Deny, Default)
+- Hearing Scheduled Date
+- Hearing Adjournment Dates
+- Hearing Officer/Judge ID
+- Date of Recommended Decision (if OATH)
+- Date of Commissioner's Final Decision
+- Final Decision Status (Adopted, Reversed, Modified, Remanded, Default)
+- Final Penalty Imposed
+- Final Restitution Ordered
+- Final Equitable Relief Ordered
+- Consumer/Worker Impacted (Yes/No)
+- **Consumer/Worker ID** (links to Dataset 12, if applicable)
+- Is this a "designated violation"? (Yes/No)
+- Date Judgment Entered/Docketed (if applicable)
+- Status (Open, Closed, Appealed)
+
+---
+
+**Dataset 3: Investigations**
+
+**Quotes:**
+- "The commissioner, in the performance of said functions, shall be authorized to hold public and private hearings, administer oaths, take testimony, serve subpoenas, receive evidence, mediate disputes, receive and evaluate complaints, conduct investigations in response to complaints or upon his or her own initiative, and take appropriate action, including referral to a federal or state agency..." (§ 2203.f)
+- "The acceptance of an application and fee for a new permit or the renewal of a permit shall not preclude the commissioner from taking any action that he or she deems necessary, including, but not limited to, the denial of a new permit or renewal permit if department or other investigatory or pre-permit inspections disclose conditions or circumstances indicating that a permit should not be issued or renewed." (§ 2203.h)
+
+**Why:** To track all investigations conducted by the department, whether proactive or complaint-driven.
+
+**One row represents:** A single investigation conducted by the department.
+
+**Covers:** All investigations related to consumer protection, worker protection, weights and measures, advertising/sales, and licensing.
+
+**Columns:**
+- Investigation ID
+- **Complaint ID** (links to Dataset 4, if applicable)
+- Investigation Type (Proactive, Complaint-driven, Pre-permit, Other)
+- Initiating Department/Office
+- Investigator ID
+- Date Investigation Initiated
+- Date Investigation Closed
+- Subject Name/Entity
+- **License ID** (links to Dataset 6, if applicable)
+- Alleged Violation Type (e.g., Weights & Measures, Advertising, Labor Law, Unlicensed Activity)
+- Summary of Findings
+- Outcome (NOV Issued, Warning Issued, Referral, Mediation, No Violation, Insufficient Evidence, Closed)
+- **NOV ID** (links to Dataset 1, if applicable)
+- **Warning ID** (links to Dataset 10, if applicable)
+- **Enforcement Action ID** (links to Dataset 9, if applicable)
+- **Mediation ID** (links to Dataset 8, if applicable)
+- Status (Open, Closed)
+
+---
+
+**Dataset 4: Complaints and Inquiries**
+
+**Quotes:**
+- "The commissioner, in the performance of said functions, shall be authorized to hold public and private hearings, administer oaths, take testimony, serve subpoenas, receive evidence, mediate disputes, receive and evaluate complaints, conduct investigations in response to complaints or upon his or her own initiative, and take appropriate action, including referral to a federal or state agency..." (§ 2203.f)
+
+**Why:** To track all incoming complaints and inquiries from consumers and workers.
+
+**One row represents:** A single complaint or inquiry received by the department.
+
+**Covers:** All complaints and inquiries related to consumer and worker protection.
+
+**Columns:**
+- Complaint ID
+- Date Received
+- Source (Phone, Online, Mail, Walk-in, Referral)
+- Complainant Type (Consumer, Worker, Anonymous, Other)
+- Complainant Name (if provided)
+- Complainant Contact Information
+- Subject Name/Entity
+- **License ID** (links to Dataset 6, if applicable)
+- Nature of Complaint (e.g., Deceptive Advertising, Wage Theft, Unlicensed Activity, Weights & Measures Issue)
+- Initial Assessment/Categorization
+- Date Assigned to Investigator
+- **Investigator ID** (links to Dataset 23)
+- **Investigation ID** (links to Dataset 3, if applicable)
+- Status (Open, Under Investigation, Resolved, Referred, Closed)
+- Resolution Summary
+
+---
+
+**Dataset 5: License and Permit Applications**
+
+**Quotes:**
+- "The commissioner shall have cognizance and control of the granting, issuing, transferring, renewing, revoking, suspending and cancelling of all licenses and permits, except in the cases with respect to which and to the extent to which any of said powers are conferred on other persons or agency by laws, and shall collect all fees for licenses and permits the collection of which by some other person or agency is not authorized by law." (§ 2203.c)
+- "The acceptance of an application and fee for a new permit or the renewal of a permit shall not preclude the commissioner from taking any action that he or she deems necessary, including, but not limited to, the denial of a new permit or renewal permit if department or other investigatory or pre-permit inspections disclose conditions or circumstances indicating that a permit should not be issued or renewed. If an application for a new permit or renewal of an existing permit is denied, the application fee shall not be refunded." (§ 2203.h)
+
+**Why:** To track the lifecycle of all applications for licenses and permits.
+
+**One row represents:** A single application for a license or permit.
+
+**Covers:** All applications for new, renewal, transfer, or amendment of licenses and permits under the department's jurisdiction.
+
+**Columns:**
+- Application ID
+- Application Type (New, Renewal, Transfer, Amendment)
+- Date Submitted
+- Applicant Name/Entity
+- Applicant Contact Information
+- Business Type/Activity (e.g., Retail, Service, Open Air Market)
+- License/Permit Type Requested
+- Application Status (Submitted, Under Review, Approved, Denied, Withdrawn)
+- Date Approved/Denied
+- Reason for Denial (if applicable)
+- **License ID** (links to Dataset 6, if approved)
+- **Fee Transaction ID** (links to Dataset 7)
+- **Investigation ID** (links to Dataset 3, if pre-permit investigation conducted)
+- Associated Documents (e.g., proof of insurance, business registration)
+
+---
+
+**Dataset 6: Licenses and Permits Registry**
+
+**Quotes:**
+- "The commissioner shall have cognizance and control of the granting, issuing, transferring, renewing, revoking, suspending and cancelling of all licenses and permits, except in the cases with respect to which and to the extent to which any of said powers are conferred on other persons or agency by laws, and shall collect all fees for licenses and permits the collection of which by some other person or agency is not authorized by law." (§ 2203.c)
+- "If the respondent is a licensee of the department, notice shall be provided by first class mail or hand delivery to the address the licensee has filed with the department pursuant to section 20-112 of the administrative code." (§ 2203.h.6)
+- "for any respondent that is a licensee of the department, the department shall serve a notice of violation of a designated violation in one of the following ways: (i) by mailing a copy of such notice to the address the licensee has filed with the department pursuant to section 20-112 of the administrative code;" (§ 2203.h.7.A)
+
+**Why:** To maintain a comprehensive record of all active and historical licenses and permits.
+
+**One row represents:** A single license or permit issued by the department.
+
+**Covers:** All licenses and permits under the department's jurisdiction.
+
+**Columns:**
+- License ID
+- **Application ID** (links to Dataset 5)
+- License/Permit Type
+- Licensee Name/Entity
+- Business Address
+- Contact Person
+- Contact Email
+- Date Issued
+- Effective Date
+- Expiration Date
+- Status (Active, Suspended, Revoked, Expired, Transferred)
+- Date of Last Renewal
+- Date of Suspension/Revocation (if applicable)
+- Reason for Suspension/Revocation (if applicable)
+- Associated Conditions/Restrictions
+- Business Activity/Description
+- Is licensee address filed pursuant to section 20-112? (Yes/No)
+
+---
+
+**Dataset 7: License and Permit Fee Transactions**
+
+**Quotes:**
+- "The commissioner shall have cognizance and control of the granting, issuing, transferring, renewing, revoking, suspending and cancelling of all licenses and permits... and shall collect all fees for licenses and permits the collection of which by some other person or agency is not authorized by law." (§ 2203.c)
+- "The acceptance of an application and fee for a new permit or the renewal of a permit shall not preclude the commissioner from taking any action that he or she deems necessary... If an application for a new permit or renewal of an existing permit is denied, the application fee shall not be refunded." (§ 2203.h)
+
+**Why:** To track all financial transactions related to license and permit fees.
+
+**One row represents:** A single fee payment for a license or permit.
+
+**Covers:** All fees collected for licenses and permits.
+
+**Columns:**
+- Fee Transaction ID
+- **Application ID** (links to Dataset 5)
+- **License ID** (links to Dataset 6, if applicable)
+- Date of Payment
+- Amount Paid
+- Fee Type (Application Fee, Renewal Fee, Transfer Fee, Late Fee, Penalty Fee)
+- Payment Method
+- Payer Name/Entity
+- Refund Amount (if any)
+- Date of Refund (if any)
+
+---
+
+**Dataset 8: Dispute Mediations**
+
+**Quotes:**
+- "The commissioner, in the performance of said functions, shall be authorized to hold public and private hearings, administer oaths, take testimony, serve subpoenas, receive evidence, mediate disputes, receive and evaluate complaints, conduct investigations in response to complaints or upon his or her own initiative, and take appropriate action, including referral to a federal or state agency..." (§ 2203.f)
+
+**Why:** To track all attempts and outcomes of dispute mediation facilitated by the department.
+
+**One row represents:** A single dispute mediation event.
+
+**Covers:** All disputes mediated by the department, primarily related to consumer and worker issues.
+
+**Columns:**
+- Mediation ID
+- **Complaint ID** (links to Dataset 4, if applicable)
+- **Investigation ID** (links to Dataset 3, if applicable)
+- Date Mediation Initiated
+- Mediator ID
+- Parties Involved (Complainant, Respondent)
+- Nature of Dispute
+- Date Mediation Concluded
+- Outcome (Resolved, Unresolved, Referred to Adjudication, Referred to Other Agency)
+- Resolution Details (if resolved)
+- Status (Open, Closed)
+
+---
+
+**Dataset 9: Enforcement Actions and Referrals**
+
+**Quotes:**
+- "The commissioner, in the performance of said functions, shall be authorized to hold public and private hearings, administer oaths, take testimony, serve subpoenas, receive evidence, mediate disputes, receive and evaluate complaints, conduct investigations in response to complaints or upon his or her own initiative, and take appropriate action, including referral to a federal or state agency..." (§ 2203.f)
+- "The remedies and penalties provided for in this subdivision shall be in addition to any other remedies or penalties provided for the enforcement of such provisions under any other law including, but not limited to, civil or criminal actions or proceedings." (§ 2203.h.1)
+- "Entry and docketing of a judgment shall not limit the application of any other remedies or penalties provided for the enforcement of laws or rules under the jurisdiction of the department." (§ 2203.h.10)
+
+**Why:** To track enforcement actions taken by the department that are not Notices of Violation or formal adjudications, including referrals.
+
+**One row represents:** A single enforcement action or referral.
+
+**Covers:** All non-NOV enforcement actions and referrals to other agencies.
+
+**Columns:**
+- Enforcement Action ID
+- **Investigation ID** (links to Dataset 3)
+- Action Type (Referral, Cease and Desist, Compliance Order, Other)
+- Date of Action
+- Subject Name/Entity
+- **License ID** (links to Dataset 6, if applicable)
+- Referred Agency (if applicable)
+- Reason for Referral/Action
+- Outcome/Status
+- Date Closed
+
+---
+
+**Dataset 10: Warnings Issued**
+
+**Quotes:**
+- "Each inspector or other employee of the department who issues notices of violation shall, for provisions of law that are enforced exclusively by the department, have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." (§ 2203.f)
+
+**Why:** To track instances where a warning was issued instead of a formal notice of violation.
+
+**One row represents:** A single warning issued by an inspector.
+
+**Covers:** All warnings issued by department inspectors.
+
+**Columns:**
+- Warning ID
+- **Investigation ID** (links to Dataset 3)
+- Issuing Inspector ID
+- Date of Warning
+- Time of Warning
+- Location of Incident (Address, Business Name)
+- Subject Name/Entity
+- **License ID** (links to Dataset 6, if applicable)
+- Alleged Violation Code/Description (for which warning was issued)
+- Is this a first-time violation for this provision? (Yes/No)
+- Warning Details/Conditions
+- Date Closed (e.g., compliance achieved)
+
+---
+
+**Dataset 11: Proof of Service Records**
+
+**Quotes:**
+- "All such proceedings shall be commenced by the service of a notice of violation... The notice of violation or copy thereof when filled in and served shall constitute notice of the violation charged..." (§ 2203.h.2)
+- "The department shall not enter any final decision or order pursuant to this subdivision unless the notice of violation shall have been served as follows:" (§ 2203.h.7)
+- "Proof of service made pursuant to paragraph seven of this subdivision shall be maintained by, and preserved within, the department for at least six years following the date of the final decision or order relating to the adjudication of the subject notice of violation." (§ 2203.h.9)
+
+**Why:** To legally document the proper service of notices of violation and other official communications.
+
+**One row represents:** A single instance of service for an official document.
+
+**Covers:** Service records for notices of violation and other documents requiring formal service.
+
+**Columns:**
+- Service Record ID
+- **NOV ID** (links to Dataset 1)
+- Document Type (Notice of Violation, Default Notice, Decision & Order, etc.)
+- Recipient Name/Entity
+- Recipient Type (Licensee, Non-Licensee)
+- Date of Service
+- Method of Service (Mail, Personal Delivery, Affixing, Certified Mail, Electronic Mail, Secretary of State, Agent)
+- Service Address
+- Name of Person Served (if applicable)
+- Relationship to Recipient (e.g., employee of suitable age)
+- Proof of Delivery (e.g., Certified Mail Receipt Number, Affidavit of Service, Electronic Delivery Confirmation)
+- Service Status (Complete, Undeliverable, Refused)
+- Date of Final Decision/Order (for retention tracking)
+- Retention Expiration Date
+
+---
+
+**Dataset 12: Adjudication Decisions and Orders**
+
+**Quotes:**
+- "The department shall have the power to render decisions and orders. Notwithstanding any inconsistent provision of law, the department shall be authorized, upon due notice and hearing, to impose civil penalties for, and to order restitution or other forms of equitable relief, and payment of monetary damages, to a consumer or worker in connection with the violation of any laws or rules the enforcement of which is within the jurisdiction of the department pursuant to this charter, the administrative code or any other general, special or local law." (§ 2203.h.1)
+- "Where the department has delegated any adjudicatory powers to the office of administrative trials and hearings, for all cases heard by the adjudicatory body authorized to conduct trials in such office, the office of administrative trials and hearings shall issue a recommended decision which the commissioner may adopt, reverse, modify, or remand in whole or in part for additional proceedings." (§ 2203.h.1)
+- "Where a respondent has failed to plead within the time allowed by the rules of the commissioner or has failed to appear on a designated hearing date or a subsequent date following an adjournment of a violation, such failure to plead or appear shall be deemed, for all purposes, to be an admission of liability for the purposes of such violation and shall be grounds for rendering a default decision and order imposing a penalty up to the maximum amount prescribed under law for the violation charged." (§ 2203.h.3)
+- "At the request of a consumer or a worker, the department shall assign, without consideration or liability, a final decision or order, provided that such decision or order solely authorizes restitution, imposes an award of monetary damages or provides equitable relief to such consumer or a worker, or that portion of such award that authorizes restitution, imposes an award of monetary damages or provides equitable relief to such consumer or a worker. After such assignment, the department shall not be required to take any further action to enforce such restitution, award of monetary damages or equitable relief to such consumer." (§ 2203.h.4)
+- "Any final decision or order of the department relating to a designated violation, whether the adjudication was had by hearing or upon default or otherwise, shall constitute a judgment that may be entered and docketed in the civil court of the city of New York or any other place provided for the entry and docketing of civil judgments within the state and may be enforced without court proceedings in the same manner as the enforcement of money judgments entered and docketed in civil actions." (§ 2203.h.5)
+
+**Why:** To record the final legal determinations and remedies ordered in adjudication proceedings.
+
+**One row represents:** A single final decision or order issued by the department.
+
+**Covers:** All final decisions and orders resulting from adjudication proceedings.
+
+**Columns:**
+- Decision ID
+- **Adjudication Case ID** (links to Dataset 2)
+- **NOV ID** (links to Dataset 1)
+- Date of Decision/Order
+- Respondent Name/Entity
+- Decision Type (Default, Hearing Decision, Commissioner's Decision)
+- Violation Code/Description
+- Civil Penalty Amount Imposed
+- Restitution Amount Ordered
+- Equitable Relief Ordered (Description)
+- Consumer/Worker Beneficiary Name (if applicable)
+- Consumer/Worker Beneficiary Contact Info (if applicable)
+- Date of Assignment to Consumer/Worker (if applicable)
+- Date Judgment Entered/Docketed (if applicable)
+- Enforcement Status (Pending Payment, Paid, Assigned, Judgment Docketed)
+
+---
+
+**Dataset 13: Monies Collected and Distributed**
+
+**Quotes:**
+- "The commissioner, in the performance of said functions, shall be authorized... to receive, administer, pay over and distribute monies collected in and as a result of actions brought for violations of laws relating to deceptive or unconscionable trade practices, labor standards, or of related laws..." (§ 2203.f)
+- "The department shall have the power to render decisions and orders... to impose civil penalties for, and to order restitution or other forms of equitable relief, and payment of monetary damages, to a consumer or worker..." (§ 2203.h.1)
+- "At the request of a consumer or a worker, the department shall assign, without consideration or liability, a final decision or order, provided that such decision or order solely authorizes restitution, imposes an award of monetary damages or provides equitable relief to such consumer or a worker, or that portion of such award that authorizes restitution, imposes an award of monetary damages or provides equitable relief to such consumer or a worker. After such assignment, the department shall not be required to take any further action to enforce such restitution, award of monetary damages or equitable relief to such consumer." (§ 2203.h.4)
+
+**Why:** To track the financial flow of penalties, restitution, and damages collected and distributed.
+
+**One row represents:** A single financial transaction (collection or distribution) related to enforcement.
+
+**Covers:** All monies collected from violations and distributed as penalties, restitution, or damages.
+
+**Columns:**
+- Transaction ID
+- **Decision ID** (links to Dataset 12, if applicable)
+- **Adjudication Case ID** (links to Dataset 2, if applicable)
+- Transaction Date
+- Transaction Type (Collection, Distribution)
+- Amount
+- Source/Recipient Name (e.g., Violator, Consumer, Worker, General Fund)
+- Payment Method
+- Purpose (Civil Penalty, Restitution, Monetary Damages)
+- Status (Pending, Completed)
+
+---
+
+**Dataset 14: Weights and Measures Inspections**
+
+**Quotes:**
+- "The commissioner shall enforce all laws in relation to weights and measures." (§ 2203.b)
+
+**Why:** To track all inspections conducted to enforce weights and measures laws.
+
+**One row represents:** A single inspection of weights and measures devices.
+
+**Covers:** All inspections of weighing and measuring devices within the city.
+
+**Columns:**
+- Inspection ID
+- Date of Inspection
+- Inspector ID
+- Business Name
+- Business Address
+- **License ID** (links to Dataset 6, if applicable)
+- Device Type (e.g., Scale, Gas Pump, Meter)
+- Device ID/Serial Number
+- Inspection Result (Pass, Fail, Warning, Violation)
+- Specific Findings/Deficiencies
+- **NOV ID** (links to Dataset 1, if applicable)
+- **Warning ID** (links to Dataset 10, if applicable)
+- Follow-up Required (Yes/No)
+- Date of Follow-up (if applicable)
+
+---
+
+**Dataset 15: Advertising and Sales Enforcement Cases**
+
+**Quotes:**
+- "The commissioner shall enforce all laws relating to the advertising and offering for sale and the sale of all commodities, goods, wares and services." (§ 2203.d)
+
+**Why:** To track investigations and enforcement actions specifically related to advertising and sales laws.
+
+**One row represents:** A single case concerning advertising or sales law enforcement.
+
+**Covers:** All enforcement cases related to advertising and sales practices.
+
+**Columns:**
+- Case ID
+- **Investigation ID** (links to Dataset 3)
+- Date Case Opened
+- Date Case Closed
+- Subject Business Name
+- Subject Business Address
+- **License ID** (links to Dataset 6, if applicable)
+- Alleged Violation Type (e.g., Deceptive Advertising, Misleading Pricing, Unconscionable Trade Practice)
+- Product/Service Involved
+- Outcome (NOV Issued, Warning, Settlement, Referral, No Violation)
+- **NOV ID** (links to Dataset 1, if applicable)
+- **Warning ID** (links to Dataset 10, if applicable)
+- **Enforcement Action ID** (links to Dataset 9, if applicable)
+- Status (Open, Closed)
+
+---
+
+**Dataset 16: Labor Law Enforcement Cases**
+
+**Quotes:**
+- "The office of labor standards shall be established within the department. Such office shall be headed by a director who shall be appointed by the commissioner. The commissioner shall: (i) enforce municipal labor laws and other labor laws the commissioner is empowered to enforce;" (§ 2203.e.1.i)
+
+**Why:** To track investigations and enforcement actions specifically related to labor laws.
+
+**One row represents:** A single case concerning labor law enforcement.
+
+**Covers:** All enforcement cases related to municipal and other labor laws.
+
+**Columns:**
+- Case ID
+- **Investigation ID** (links to Dataset 3)
+- Date Case Opened
+- Date Case Closed
+- Subject Employer Name
+- Subject Employer Address
+- **License ID** (links to Dataset 6, if applicable)
+- Alleged Violation Type (e.g., Wage Theft, Paid Sick Leave, Worker Misclassification)
+- Number of Workers Affected
+- Outcome (NOV Issued, Warning, Settlement, Referral, No Violation)
+- **NOV ID** (links to Dataset 1, if applicable)
+- **Warning ID** (links to Dataset 10, if applicable)
+- **Enforcement Action ID** (links to Dataset 9, if applicable)
+- Status (Open, Closed)
+- Division/Office (e.g., Office of Labor Standards, Division of Paid Care)
+
+---
+
+**Dataset 17: Consumer Protection Program Activities**
+
+**Quotes:**
+- "The commissioner shall plan, make recommendations, conduct research and develop programs for consumer education and protection, facilitate the exchange and dissemination of information in consultation with agencies, federal and state officials, commercial interests, private groups and others working in this field and coordinate the consumer protection activities of other city agencies." (§ 2203.a)
+
+**Why:** To track the planning, development, and implementation of consumer education and protection programs.
+
+**One row represents:** A single consumer protection program activity or event.
+
+**Covers:** All programs, events, and initiatives for consumer education and protection.
+
+**Columns:**
+- Activity ID
+- Activity Name
+- Activity Type (Education Campaign, Workshop, Outreach Event, Information Dissemination)
+- Date of Activity
+- Location/Platform
+- Target Audience
+- Partners/Collaborators
+- Materials Distributed (Description)
+- Number of Participants/Reach
+- Program Lead ID
+- Status (Planned, Ongoing, Completed)
+- Outcome/Feedback Summary
+
+---
+
+**Dataset 18: Worker Protection Program Activities**
+
+**Quotes:**
+- "The commissioner shall: (ii) plan, make recommendations, conduct research and develop programs for worker education, worker safety and worker protection;" (§ 2203.e.1.ii)
+- "The commissioner shall: (iv) provide educational materials to employers and develop programs, including administrative support, to assist employers with compliance with labor laws;" (§ 2203.e.1.iv)
+- "The commissioner shall: (v) implement public education campaigns to heighten awareness of employee and independent contractor rights under federal, state, and local law;" (§ 2203.e.1.v)
+
+**Why:** To track the planning, development, and implementation of worker education, safety, and protection programs.
+
+**One row represents:** A single worker protection program activity or event.
+
+**Covers:** All programs, events, and initiatives for worker education, safety, and protection, including employer compliance assistance and public campaigns.
+
+**Columns:**
+- Activity ID
+- Activity Name
+- Activity Type (Worker Education, Employer Compliance Assistance, Public Campaign, Workshop, Outreach)
+- Date of Activity
+- Location/Platform
+- Target Audience (Workers, Employers, Independent Contractors)
+- Partners/Collaborators
+- Materials Distributed (Description)
+- Number of Participants/Reach
+- Program Lead ID
+- Status (Planned, Ongoing, Completed)
+- Outcome/Feedback Summary
+- Division/Office (e.g., Office of Labor Standards, Division of Paid Care)
+
+---
+
+**Dataset 19: Research Projects**
+
+**Quotes:**
+- "The commissioner shall plan, make recommendations, conduct research and develop programs for consumer education and protection..." (§ 2203.a)
+- "The commissioner shall: (ii) plan, make recommendations, conduct research and develop programs for worker education, worker safety and worker protection;" (§ 2203.e.1.ii)
+- "The commissioner shall: (vi) collect and analyze available federal, state, and local data on the city's workforce and workplaces and coordinate with federal and state officials and other city agencies to identify gaps and prioritize areas for the improvement of working conditions and practices for employees and independent contractors in the city and within particular industries, and to promote the implementation and enforcement of laws, rules and regulations designed to improve such working conditions and practices;" (§ 2203.e.1.vi)
+
+**Why:** To track research projects undertaken or commissioned by the department to inform policy and programs.
+
+**One row represents:** A single research project.
+
+**Covers:** All research projects related to consumer protection, worker protection, and workforce analysis.
+
+**Columns:**
+- Research Project ID
+- Project Title
+- Project Lead ID
+- Research Area (Consumer Protection, Worker Protection, Workforce Analysis, Weights & Measures, etc.)
+- Date Initiated
+- Expected Completion Date
+- Actual Completion Date
+- Research Objectives
+- Methodology
+- Data Sources Used (Internal, External)
+- Key Findings/Recommendations Summary
+- Publication Status (Internal Report, Public Report, Published Article)
+- **Related Program Activity ID** (links to Dataset 17 or 18, if applicable)
+
+---
+
+**Dataset 20: Rules and Regulations Log**
+
+**Quotes:**
+- "The commissioner, in the performance of said functions, shall be authorized... to promulgate, amend and modify rules and regulations necessary to carry out the powers and duties of the department." (§ 2203.f)
+- "All proceedings authorized pursuant to this subdivision shall be conducted in accordance with rules promulgated by the commissioner." (§ 2203.h.1)
+- "The commissioner shall prescribe the form and wording of notices of violation." (§ 2203.h.2)
+- "The commissioner shall determine the form of such notice." (§ 2203.h.6)
+
+**Why:** To track the creation, amendment, and modification of the department's rules and regulations.
+
+**One row represents:** A single action (promulgation, amendment, modification) on a rule or regulation.
+
+**Covers:** All rules and regulations promulgated, amended, or modified by the commissioner.
+
+**Columns:**
+- Rule Action ID
+- Rule/Regulation ID (unique identifier for the rule itself)
+- Rule/Regulation Title
+- Action Type (Promulgation, Amendment, Modification, Repeal)
+- Date of Action
+- Effective Date
+- Description of Changes
+- Legal Authority
+- Public Comment Period Dates
+- Commissioner Approval Date
+- Status (Draft, Proposed, Final, Repealed)
+- Related Section of Charter/Admin Code
+
+---
+
+**Dataset 21: Employee Roster and Certifications**
+
+**Quotes:**
+- "The commissioner may appoint such deputies as he or she deems necessary for the discharge of his or her duties." (§ 2202)
+- "The office of labor standards shall be established within the department. Such office shall be headed by a director who shall be appointed by the commissioner." (§ 2203.e)
+- "Division of paid care. The commissioner shall establish a division of paid care within the office of labor standards and shall appoint the division head, who shall be distinct from the director of the office of labor standards." (§ 2203.e.2)
+- "Each inspector or other employee of the department who issues notices of violation shall, for provisions of law that are enforced exclusively by the department, have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." (§ 2203.f)
+
+**Why:** To manage human resources, track staff roles, and ensure compliance with any required certifications.
+
+**One row represents:** A single employee of the department.
+
+**Covers:** All employees, including the commissioner, deputies, directors, and inspectors.
+
+**Columns:**
+- Employee ID
+- Employee Name
+- Job Title (Commissioner, Deputy, Director, Inspector, etc.)
+- Department/Office (e.g., Office of Labor Standards, Division of Paid Care)
+- Date of Hire
+- Employment Status (Active, Leave, Terminated)
+- Required Certifications (List)
+- Certification Expiration Dates
+- Training Records (e.g., for enforcement procedures, equipment use)
+- Contact Information
+- Is employee authorized to issue NOVs/Warnings? (Yes/No)
+
+---
+
+**Dataset 22: Agency Asset Inventory**
+
+**Quotes:**
+- "Each inspector or other employee of the department who issues notices of violation shall... have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." (§ 2203.f)
+
+**Why:** To track all physical assets, especially specialized equipment needed for enforcement.
+
+**One row represents:** A single physical asset owned or managed by the department.
+
+**Covers:** All equipment, vehicles, and other tangible assets used by the department.
+
+**Columns:**
+- Asset ID
+- Asset Name/Description
+- Asset Type (e.g., Inspection Equipment, Vehicle, Office Furniture, IT Equipment)
+- Serial Number
+- Purchase Date
+- Purchase Cost
+- Current Condition
+- Location (Department, Employee Assigned)
+- Maintenance Schedule
+- Last Maintenance Date
+- Next Maintenance Date
+- Status (In Use, In Repair, Retired)
+- Assigned Employee ID (links to Dataset 21, if applicable)
+
+---
+
+**Dataset 23: Agency Contracts**
+
+**Quotes:**
+- (Implied by general operations of a large agency, e.g., "keeping software contracts" from the prompt)
+
+**Why:** To manage all contracts the agency enters into for services, software, or other operational needs.
+
+**One row represents:** A single contract entered into by the department.
+
+**Covers:** All contracts for services, software, supplies, or other operational needs.
+
+**Columns:**
+- Contract ID
+- Contract Title/Description
+- Vendor Name
+- Vendor Contact Information
+- Contract Type (Service, Software License, Supply, Consulting)
+- Date Signed
+- Effective Date
+- Expiration Date
+- Contract Value
+- Payment Terms
+- Contract Manager ID (links to Dataset 21)
+- Status (Active, Expired, Terminated)
+- Renewal Options
+- Performance Metrics/Deliverables
+
+---
+
+**Dataset 24: Payroll Transactions**
+
+**Quotes:**
+- (Implied by general operations of a large agency, e.g., "managing payroll" from the prompt)
+
+**Why:** To track all payroll disbursements for agency employees.
+
+**One row represents:** A single payroll transaction for an employee.
+
+**Covers:** All payroll payments made to department employees.
+
+**Columns:**
+- Payroll Transaction ID
+- **Employee ID** (links to Dataset 21)
+- Pay Period Start Date
+- Pay Period End Date
+- Payment Date
+- Gross Pay
+- Net Pay
+- Taxes Withheld
+- Deductions (e.g., benefits, retirement)
+- Payment Method
+
+---
+
+**Dataset 25: Agency Expenditures**
+
+**Quotes:**
+- (Implied by general operations of a large agency, e.g., "building repair, uniform provision, environmental compliance" from the prompt)
+
+**Why:** To track all financial expenditures made by the agency for its operations.
+
+**One row represents:** A single expenditure made by the department.
+
+**Covers:** All operational expenditures, excluding payroll.
+
+**Columns:**
+- Expenditure ID
+- Date of Expenditure
+- Amount
+- Vendor/Recipient
+- Purpose (e.g., Office Supplies, Utilities, Training, Travel, Legal Fees, Building Maintenance)
+- Budget Code
+- Payment Method
+- Department/Office Making Expenditure
+- Approval ID
+
+---
+
+**Non-Tabular Information:**
+
+*   **Job Applications:** Information submitted by individuals seeking employment.
+*   **Rules and Regulations Documents:** The full text of promulgated rules and regulations.
+*   **Receipts:** Proof of purchase for individual transactions.
+*   **Research Documents:** Full reports, studies, and analyses from research projects.
+*   **Photos:** Visual evidence collected during investigations or inspections.
+*   **Educational Materials:** Content of brochures, guides, presentations for consumer/worker education.
+*   **Testimony Transcripts:** Records of spoken evidence given during hearings.
+*   **Evidence Documents:** Any documents, images, or other media collected as evidence in investigations.
+*   **Legal Changes:** External federal, state, or local laws that the agency must enforce or comply with.
+*   **Administrative Code Appendix A:** Reference material for related unconsolidated provisions.
+*   **Federal, state, and local data on the city's workforce and workplaces:** External datasets used for analysis, not generated by the agency.

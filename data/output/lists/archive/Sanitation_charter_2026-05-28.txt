@@ -1,0 +1,638 @@
+**Identified Tabular Datasets**
+
+**1. City Property and Street Inventory**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "cleanliness of the streets" (Section 753.a)
+- "cleaning of any other city-owned property." (Section 753.a.7)
+- "authority to enforce any laws, rules and regulations in force in the city as they relate to the cleanliness of streets, sidewalks, and the exterior of city-owned real property." (Section 753.g)
+- "the owner of any property at such owner's own cost shall keep any vacant lot or lots on such property in a clean and sanitary manner and free of debris and other litter." (Section 754)
+- "When used in this chapter "street" includes street, avenue, road, alley, lane, highway, parkway, boulevard, concourse, driveway, culvert and crosswalk, and every class of public road, square and place, except a wharf, pier, bulkhead or slip by law committed to the custody and control of any other agency." (Section 755)
+
+**Why:** To manage and perform cleaning, maintenance, and enforcement, the agency needs a comprehensive record of all relevant properties and streets.
+
+**One row represents:** A distinct street segment, city-owned property, or vacant lot under the agency's jurisdiction.
+
+**Covers:** All streets, sidewalks, city-owned real properties, and vacant lots that the Department of Sanitation is responsible for cleaning, maintaining, or enforcing cleanliness regulations upon.
+
+**Columns:**
+- Property/Street ID (Unique identifier for each segment/property)
+- Type (e.g., Street, Sidewalk, City-Owned Building Exterior, Vacant Lot, Parkway, Boulevard)
+- Location (Address, Cross Streets, GIS Coordinates, Borough, Neighborhood)
+- Jurisdiction Area ID (e.g., Sanitation District, Zone)
+- Owner Type (e.g., City, Private - for vacant lots)
+- Owner Contact Information (for private vacant lots)
+- Last Survey/Assessment Date
+- Condition Rating (e.g., Cleanliness Score)
+- Special Conditions (e.g., high traffic, commercial zone, historical area)
+
+---
+
+**2. Public/Residential Enforcement Incidents**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "commissioner may adopt regulations specifying the kind of ashes, garbage, refuse, rubbish or other material or substance that will be collected by the city, from whom it will be taken, the manner in which it shall be arranged or sorted, the time when it will be collected and the place at which it shall be deposited for collection, and may prescribe civil penalties for violations thereof." (Section 753.b)
+- "commissioner may adopt regulations controlling the use of sidewalks and gutters by abutting owners and occupants for the disposition of sweepings, garbage, refuse or rubbish, and may provide that the violation thereof shall be punishable by civil penalty, fine or imprisonment." (Section 753.d)
+- "Each inspector or other employee of the department who issues notices of violation shall, for provisions of law that are enforced exclusively by the department, have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." (Section 753.f)
+- "department of sanitation shall have the authority to enforce any laws, rules and regulations in force in the city as they relate to the cleanliness of streets, sidewalks, and the exterior of city-owned real property." (Section 753.g)
+- "The department of sanitation shall be responsible for the enforcement of this section [vacant lots] and may issue rules and regulations in furtherance of such authority." (Section 754)
+
+**Why:** To track all instances where regulations are violated or warnings are issued, enabling enforcement and compliance monitoring.
+
+**One row represents:** A single violation notice or warning issued by an inspector.
+
+**Covers:** All violations and warnings issued to property owners, occupants, or the public regarding waste set-out, sidewalk/gutter use, general cleanliness of streets/sidewalks/city-owned property exteriors, and vacant lot cleanliness.
+
+**Columns:**
+- Incident ID
+- Incident Type (e.g., Violation, Warning)
+- Date and Time of Incident
+- **Property/Street ID** (Links to Dataset 1)
+- Location Details (Address, GIS Coordinates)
+- Responsible Party Type (e.g., Property Owner, Occupant, General Public)
+- Responsible Party Name/Identifier (if available)
+- Regulation Violated (Specific code/rule)
+- Description of Violation/Condition
+- Inspector ID (Links to internal employee data)
+- Is First-Time Violation? (Yes/No)
+- Warning Issued (Yes/No)
+- Notice of Violation Number (if applicable)
+- Status (e.g., Issued, Appealed, Resolved, Pending Order)
+- Associated **Enforcement Order ID** (Links to Dataset 3, if an order is issued)
+- Associated **Penalty/Fine ID** (Links to Dataset 4, if a penalty is assessed)
+
+---
+
+**3. Public/Residential Enforcement Orders**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "Such regulations shall be enforced by order of the commissioner. Such order shall be addressed to the owner or owners, lessees or premises affected thereby. It shall not be necessary to designate such owner or owners, lessees or occupants by name in such order, however, the premises shall be designated in the address so that the same may be readily identified. Service of any such order may be made by delivery of a copy thereof to the owner or any one of several owners, to a lessee or any one of several lessees, or to any person of suitable age or discretion in charge of the premises, or if no person be found in charge of the premises, then by affixing a copy of such order prominently upon the premises." (Section 753.c)
+- "If such order is not complied with within the time specified therein, the commissioner shall prosecute the person or corporation liable therefor for the penalty prescribed by the regulation violated in furtherance of which such order shall have been issued and served." (Section 753.c)
+
+**Why:** To track formal directives issued to property owners/occupants to rectify violations and ensure compliance.
+
+**One row represents:** A single enforcement order issued by the commissioner.
+
+**Covers:** All orders issued to owners or lessees of premises affected by violations of sanitation regulations.
+
+**Columns:**
+- Order ID
+- **Associated Incident ID** (Links to Dataset 2)
+- Date Order Issued
+- **Property/Street ID** (Links to Dataset 1)
+- Premises Address/Identifier
+- Description of Required Action
+- Compliance Deadline
+- Date of Service
+- Method of Service (e.g., Delivery, Affixed)
+- Compliance Status (e.g., Pending, Complied, Non-Compliant)
+- Date of Compliance Verification
+- Inspector ID (for verification, links to internal employee data)
+- Associated **Penalty/Fine ID** (Links to Dataset 4, if non-compliance leads to a penalty)
+
+---
+
+**4. Public/Residential Penalties and Fines**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "commissioner may adopt regulations specifying the kind of ashes, garbage, refuse, rubbish or other material or substance that will be collected by the city... and may prescribe civil penalties for violations thereof." (Section 753.b)
+- "If such order is not complied with within the time specified therein, the commissioner shall prosecute the person or corporation liable therefor for the penalty prescribed by the regulation violated in furtherance of which such order shall have been issued and served." (Section 753.c)
+- "commissioner may adopt regulations controlling the use of sidewalks and gutters by abutting owners and occupants for the disposition of sweepings, garbage, refuse or rubbish, and may provide that the violation thereof shall be punishable by civil penalty, fine or imprisonment." (Section 753.d)
+
+**Why:** To track all civil penalties, fines, or other monetary punishments imposed for violations and non-compliance.
+
+**One row represents:** A single civil penalty or fine assessed.
+
+**Covers:** All civil penalties, fines, or other monetary punishments resulting from violations of sanitation regulations or non-compliance with enforcement orders.
+
+**Columns:**
+- Penalty/Fine ID
+- **Associated Incident ID** (Links to Dataset 2)
+- **Associated Order ID** (Links to Dataset 3, if applicable)
+- Date Penalty Assessed
+- Responsible Party Name/Identifier
+- **Property/Street ID** (Links to Dataset 1)
+- Amount of Penalty/Fine
+- Reason for Penalty (e.g., Violation of X, Non-compliance with Order Y)
+- Payment Due Date
+- Payment Status (e.g., Outstanding, Paid, Waived, Appealed)
+- Date Paid
+- Amount Paid
+- Collection Action Taken (if any)
+
+---
+
+**5. Waste Collection Activities**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "the removal and disposition of ashes, street sweepings, garbage, refuse, rubbish and waste" (Section 753.a.2)
+- "the manner in which garbage, refuse, rubbish or waste may be set out for collection, including, to the extent practicable, ensuring that garbage, refuse, rubbish, or waste are not placed directly on the street or sidewalk" (Section 753.a.6)
+- "commissioner may adopt regulations specifying the kind of ashes, garbage, refuse, rubbish or other material or substance that will be collected by the city, from whom it will be taken, the manner in which it shall be arranged or sorted, the time when it will be collected and the place at which it shall be deposited for collection" (Section 753.b)
+
+**Why:** To track the execution of waste collection services, including type, volume, and location, for operational efficiency and resource allocation.
+
+**One row represents:** A single waste collection event for a specific route or location.
+
+**Covers:** All municipal collection activities for ashes, street sweepings, garbage, refuse, rubbish, and other waste from designated areas.
+
+**Columns:**
+- Collection Event ID
+- Date and Time of Collection
+- Collection Route ID
+- **Jurisdiction Area ID** (Links to Dataset 1)
+- Collection Type (e.g., Residential Garbage, Residential Recycling, Street Sweeping Debris, Ashes)
+- Estimated Volume/Weight Collected (e.g., cubic yards, tons)
+- Number of Bags/Containers Collected
+- Collection Vehicle ID (Links to Dataset 20)
+- Driver ID (Links to internal employee data)
+- Crew Size
+- Disposal Facility ID (Links to Dataset 6)
+- Disposal Time
+- Notes/Incidents during collection (e.g., blocked access, unusual items)
+
+---
+
+**6. Street Cleaning and Maintenance Activities**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "the sweeping, cleaning, sprinkling, flushing, washing and sanding of the streets" (Section 753.a.1)
+- "cleaning of any other city-owned property." (Section 753.a.7)
+- "cleanliness of streets, sidewalks, and the exterior of city-owned real property." (Section 753.g)
+
+**Why:** To track all street cleaning and maintenance operations, ensuring coverage and assessing effectiveness.
+
+**One row represents:** A single street cleaning or maintenance activity performed on a specific street segment or property.
+
+**Covers:** All sweeping, cleaning, sprinkling, flushing, washing, and sanding activities on streets, sidewalks, and city-owned property exteriors.
+
+**Columns:**
+- Activity ID
+- Date and Time of Activity
+- Activity Type (e.g., Sweeping, Flushing, Washing, Sanding, Sprinkling, Manual Cleaning)
+- **Property/Street ID** (Links to Dataset 1)
+- Location Details (Street Segment, Cross Streets, GIS Coordinates)
+- Route ID (if applicable)
+- Vehicle/Equipment ID (Links to Dataset 20)
+- Operator ID (Links to internal employee data)
+- Crew Size
+- Duration of Activity
+- Resources Used (e.g., water volume, sand quantity)
+- Observed Condition Before Activity
+- Observed Condition After Activity
+- Notes/Incidents during activity
+
+---
+
+**7. Snow and Ice Removal Operations**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "the removal of ice and snow from the streets" (Section 753.a.3)
+
+**Why:** To track all snow and ice removal efforts, including resources deployed, areas covered, and materials used, for operational management and reporting.
+
+**One row represents:** A single snow or ice removal operation event for a specific route or area.
+
+**Covers:** All activities related to the removal of ice and snow from streets.
+
+**Columns:**
+- Operation ID
+- Date and Time of Operation Start
+- Date and Time of Operation End
+- Snow Event ID (Links to a master snow event record, if applicable)
+- Operation Type (e.g., Plowing, Salting, Brining, Manual Shoveling)
+- **Property/Street ID** (Links to Dataset 1, or a broader area ID)
+- Route ID
+- Vehicle/Equipment ID (Links to Dataset 20)
+- Operator ID (Links to internal employee data)
+- Crew Size
+- Materials Used (e.g., tons of salt, gallons of brine)
+- Area Covered (e.g., lane miles)
+- Observed Conditions (e.g., snow depth, ice presence)
+- Notes/Incidents during operation
+
+---
+
+**8. Encumbrance Removal and Disposal Records**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "the removal of encumbrances from the streets and the storage or disposal of such encumbrances" (Section 753.a.4)
+
+**Why:** To track all instances of encumbrance removal, including details of the item, location, and subsequent storage or disposal.
+
+**One row represents:** A single encumbrance removal event.
+
+**Covers:** All activities related to the removal of unauthorized items (encumbrances) from streets and their subsequent storage or disposal.
+
+**Columns:**
+- Removal Event ID
+- Date and Time of Removal
+- **Property/Street ID** (Links to Dataset 1)
+- Location Details (Address, GIS Coordinates)
+- Description of Encumbrance (e.g., abandoned vehicle, illegal vendor stand, construction debris)
+- Size/Weight of Encumbrance (estimated)
+- Removal Crew ID (Links to internal employee data)
+- Vehicle/Equipment ID (Links to Dataset 20)
+- Destination (e.g., Storage Facility, Landfill, Recycling Center)
+- Storage/Disposal Facility ID (Links to Dataset 6, if applicable)
+- Date of Storage/Disposal
+- Notes/Photos (if applicable, but not stored in tabular format)
+- Claim Status (e.g., Unclaimed, Claimed, Disposed)
+- Date Claimed (if applicable)
+
+---
+
+**9. Waste Management Facilities and Equipment Inventory**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "plans, design, construction, operation, alteration, repair, maintenance, replacement, enlargement and regulation of the use of incinerators, landfills and other plants, facilities and equipment necessary for or useful for performing the functions and exercising the powers and duties enumerated in this section" (Section 753.a.5)
+
+**Why:** To maintain a comprehensive inventory of all waste management facilities and specialized equipment, essential for operational planning and asset management.
+
+**One row represents:** A single waste management facility (e.g., incinerator, landfill, transfer station) or a piece of specialized equipment within such a facility.
+
+**Covers:** All incinerators, landfills, waste processing plants, transfer stations, and other specialized facilities and equipment directly involved in waste management and disposal.
+
+**Columns:**
+- Asset ID
+- Asset Name
+- Asset Type (e.g., Incinerator, Landfill, Transfer Station, Compactor, Sorting Machine)
+- Location (Address, GIS Coordinates)
+- Facility Type (if asset is part of a larger facility)
+- Status (e.g., Operational, Under Maintenance, Decommissioned, Under Construction)
+- Capacity (e.g., tons/day for facilities, throughput for equipment)
+- Acquisition Date
+- Manufacturer
+- Model Number
+- Serial Number
+- Expected Lifespan
+- Last Major Overhaul Date
+- Next Scheduled Maintenance Date (Links to Dataset 10)
+- Regulatory Compliance Status (e.g., permits, environmental standards)
+
+---
+
+**10. Facility and Equipment Maintenance Records**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "plans, design, construction, operation, alteration, repair, maintenance, replacement, enlargement and regulation of the use of incinerators, landfills and other plants, facilities and equipment necessary for or useful for performing the functions and exercising the powers and duties enumerated in this section" (Section 753.a.5)
+
+**Why:** To track all maintenance, repair, alteration, and replacement activities for waste management facilities and equipment, ensuring operational readiness and compliance.
+
+**One row represents:** A single maintenance, repair, alteration, or replacement event for a facility or equipment.
+
+**Covers:** All scheduled and unscheduled maintenance, repairs, alterations, replacements, and enlargements performed on assets listed in Dataset 9.
+
+**Columns:**
+- Maintenance Record ID
+- **Asset ID** (Links to Dataset 9)
+- Date of Service
+- Type of Service (e.g., Scheduled Maintenance, Emergency Repair, Alteration, Replacement, Enlargement)
+- Description of Work Performed
+- Problem Reported (for unscheduled work)
+- Technician/Crew ID (Links to internal employee data or contractor ID)
+- Duration of Work (hours)
+- Parts Used (List of parts, quantities, costs)
+- Cost of Service (Labor + Parts)
+- Downtime (hours asset was out of service)
+- Outcome/Resolution
+- Next Recommended Service Date
+
+---
+
+**11. Commercial Waste Collector Business Permits/Authorizations**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "The commissioner shall have the power and duty to regulate the conduct of businesses authorized to collect commercial waste in commercial waste zones pursuant to title 16-B of the administrative code and any other applicable law" (Section 753.e.2)
+
+**Why:** To track all businesses authorized to collect commercial waste, including their permit status and operational details, for regulatory oversight.
+
+**One row represents:** A single commercial waste collection business authorized to operate.
+
+**Covers:** All businesses that have been authorized or permitted to collect commercial waste within commercial waste zones.
+
+**Columns:**
+- Business ID
+- Business Name
+- Permit/Authorization Number
+- Permit Status (e.g., Active, Pending, Suspended, Revoked, Expired)
+- Date Issued
+- Expiration Date
+- Commercial Waste Zone(s) Authorized For
+- Business Address
+- Primary Contact Name
+- Primary Contact Phone
+- Primary Contact Email
+- Number of Vehicles Operated
+- Associated **Insurance Record ID** (Links to Dataset 14)
+- Associated **Contract Record ID** (Links to Dataset 15)
+- Last Inspection Date (Links to Dataset 12)
+- Total Violations (Calculated from Dataset 13)
+
+---
+
+**12. Commercial Waste Collector Compliance Inspections**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "The commissioner shall have the power and duty to regulate the conduct of businesses authorized to collect commercial waste... including but not limited to, the power and duty to establish and enforce: (a) environmental, safety and health standards; (b) standards for service; (c) requirements regarding contracts for commercial waste removal; (d) requirements regarding billing forms and procedures; (e) requirements regarding the maintenance and inspection of records; (f) requirements regarding the maintenance of appropriate insurance; and (g) requirements established in furtherance of the goals of reducing waste and promoting sustainability, safety and efficiency in the commercial waste zone system." (Section 753.e.2)
+
+**Why:** To track all inspections conducted on commercial waste collectors to ensure adherence to established standards and requirements.
+
+**One row represents:** A single compliance inspection of a commercial waste collector.
+
+**Covers:** All inspections performed on businesses authorized to collect commercial waste.
+
+**Columns:**
+- Inspection ID
+- **Business ID** (Links to Dataset 11)
+- Date of Inspection
+- Inspector ID (Links to internal employee data)
+- Inspection Type (e.g., Routine, Complaint-Driven, Follow-up)
+- Standards Checked (e.g., Environmental, Safety, Health, Service, Records, Insurance)
+- Findings (e.g., Compliant, Minor Deficiency, Major Violation)
+- Specific Deficiencies Noted
+- Corrective Actions Recommended
+- Follow-up Required (Yes/No)
+- Follow-up Date
+- Associated **Violation ID** (Links to Dataset 13, if a violation is issued)
+
+---
+
+**13. Commercial Waste Collector Violations and Enforcement Actions**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "The commissioner shall have the power and duty to regulate the conduct of businesses authorized to collect commercial waste... including but not limited to, the power and duty to establish and enforce: (a) environmental, safety and health standards; (b) standards for service; (c) requirements regarding contracts for commercial waste removal; (d) requirements regarding billing forms and procedures; (e) requirements regarding the maintenance and inspection of records; (f) requirements regarding the maintenance of appropriate insurance; and (g) requirements established in furtherance of the goals of reducing waste and promoting sustainability, safety and efficiency in the commercial waste zone system." (Section 753.e.2)
+- "The commissioner, in the performance of his or her powers and duties pursuant to paragraph 2 of this subdivision and title 16-B of the administrative code, shall be authorized to receive complaints, conduct investigations, hold public and private hearings, administer oaths, take testimony, serve subpoenas, receive evidence, issue orders, and mediate disputes." (Section 753.e.1)
+
+**Why:** To track all violations identified for commercial waste collectors and the subsequent enforcement actions taken, including orders, hearings, and penalties.
+
+**One row represents:** A single violation or formal enforcement action taken against a commercial waste collector.
+
+**Covers:** All violations of commercial waste regulations and the resulting enforcement actions (e.g., orders, hearings, penalties, suspensions, revocations).
+
+**Columns:**
+- Enforcement Action ID
+- **Business ID** (Links to Dataset 11)
+- Date of Action
+- Action Type (e.g., Violation Notice, Order to Comply, Hearing Scheduled, Penalty Assessed, Suspension, Revocation)
+- **Associated Inspection ID** (Links to Dataset 12, if applicable)
+- **Associated Complaint ID** (Links to Dataset 16, if applicable)
+- Regulation Violated/Basis for Action
+- Description of Violation/Action
+- Penalty Amount (if applicable)
+- Compliance Deadline (if applicable)
+- Status (e.g., Open, Resolved, Appealed, Paid, Implemented)
+- Date of Resolution
+- Hearing Date (if applicable)
+- Outcome of Hearing/Mediation
+
+---
+
+**14. Commercial Waste Collector Insurance Records**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "requirements regarding the maintenance of appropriate insurance" (Section 753.e.2.f)
+
+**Why:** To ensure all authorized commercial waste collectors maintain the required insurance coverage for their operations.
+
+**One row represents:** A single insurance policy record for a commercial waste collector.
+
+**Covers:** Records of insurance policies maintained by commercial waste collection businesses.
+
+**Columns:**
+- Insurance Record ID
+- **Business ID** (Links to Dataset 11)
+- Insurance Provider
+- Policy Number
+- Type of Coverage (e.g., General Liability, Auto, Workers' Comp)
+- Coverage Limits
+- Effective Date
+- Expiration Date
+- Proof of Insurance Received Date
+- Status (e.g., Active, Expired, Pending Renewal)
+- Notes (e.g., special conditions, claims history)
+
+---
+
+**15. Commercial Waste Collector Contracts and Billing Records**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "requirements regarding contracts for commercial waste removal" (Section 753.e.2.c)
+- "requirements regarding billing forms and procedures" (Section 753.e.2.d)
+
+**Why:** To track compliance with contract and billing requirements for commercial waste collectors, ensuring fair practices and transparency.
+
+**One row represents:** A single commercial waste removal contract or a billing record associated with a contract.
+
+**Covers:** Records pertaining to commercial waste removal contracts and billing practices of authorized businesses.
+
+**Columns:**
+- Contract/Billing Record ID
+- **Business ID** (Links to Dataset 11)
+- Record Type (e.g., Contract, Billing Audit)
+- Customer Name/Business (for contract records)
+- Contract Start Date
+- Contract End Date
+- Service Details (e.g., frequency, waste types)
+- Billing Cycle
+- Compliance with Billing Procedures (Yes/No, for audit records)
+- Billing Irregularities Noted (for audit records)
+- Date of Review/Audit
+- Reviewer ID (Links to internal employee data)
+- Status (e.g., Active, Expired, Under Review)
+
+---
+
+**16. Commercial Waste Complaints and Investigations**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "The commissioner, in the performance of his or her powers and duties pursuant to paragraph 2 of this subdivision and title 16-B of the administrative code, shall be authorized to receive complaints, conduct investigations, hold public and private hearings, administer oaths, take testimony, serve subpoenas, receive evidence, issue orders, and mediate disputes." (Section 753.e.1)
+
+**Why:** To systematically record and manage all complaints received regarding commercial waste collectors and track the progress and outcomes of investigations.
+
+**One row represents:** A single complaint received or an investigation initiated.
+
+**Covers:** All complaints from the public or commercial establishments regarding commercial waste collection and the subsequent investigations.
+
+**Columns:**
+- Complaint/Investigation ID
+- Date Received
+- Complainant Type (e.g., Public, Business, Internal)
+- Complainant Contact Info (if provided)
+- **Associated Business ID** (Links to Dataset 11, if complaint is against a specific business)
+- Nature of Complaint (e.g., Missed Collection, Overcharging, Safety Issue, Environmental Concern)
+- Date Investigation Initiated
+- Investigator ID (Links to internal employee data)
+- Investigation Status (e.g., Open, Under Review, Closed, Referred)
+- Findings of Investigation
+- Resolution/Outcome
+- Date Closed
+- Associated **Enforcement Action ID** (Links to Dataset 13, if enforcement action results)
+
+---
+
+**17. Vacant Lot Cleaning Services and Billing**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "In the event that an owner of property fails to comply with the provisions of this section, or the rules and regulations of such department, the department may provide for the cleaning of a vacant lot at the expense of the property owner in the manner to be provided by local law." (Section 754)
+
+**Why:** To track instances where the department cleans vacant lots due to owner non-compliance and to manage the billing process for these services.
+
+**One row represents:** A single instance of the department cleaning a vacant lot.
+
+**Covers:** All vacant lot cleaning services performed by the Department of Sanitation at the expense of the property owner.
+
+**Columns:**
+- Service Event ID
+- **Associated Incident ID** (Links to Dataset 2, if cleaning is due to a violation)
+- Date of Cleaning
+- **Property/Street ID** (Links to Dataset 1, specifically for vacant lots)
+- Owner Name/Identifier
+- Description of Cleaning Performed
+- Resources Used (e.g., crew hours, equipment, disposal fees)
+- Total Cost of Cleaning
+- Date Bill Issued to Owner
+- Bill Amount
+- Payment Due Date
+- Payment Status (e.g., Outstanding, Paid, Lien Placed)
+- Date Paid
+- Collection Action Taken (if any)
+
+---
+
+**18. Employee Violation Issuance Records**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "Each inspector or other employee of the department who issues notices of violation shall, for provisions of law that are enforced exclusively by the department, have access at the time that a violation is issued to equipment allowing such person: (1) to determine if such violation is a first-time violation of the applicable provision of law, and (2) if permitted by law, to issue a warning for such violation and to record that such a warning has been issued." (Section 753.f)
+
+**Why:** To track the performance of individual inspectors in issuing violations and warnings, and to ensure proper use of equipment for first-time violation checks.
+
+**One row represents:** A single instance of an employee issuing a violation notice or warning.
+
+**Covers:** All violation notices and warnings issued by department inspectors or other authorized employees.
+
+**Columns:**
+- Issuance Record ID
+- **Incident ID** (Links to Dataset 2)
+- Employee ID (Links to internal employee data)
+- Date and Time of Issuance
+- Type of Issuance (e.g., Violation Notice, Warning)
+- Regulation Enforced
+- Was First-Time Violation Check Performed? (Yes/No)
+- Equipment Used for Check (e.g., Handheld Device Model)
+- Notes on Issuance
+
+---
+
+**19. Public and Commercial Education Programs**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "The commissioner shall have the power and duty to establish programs for the education of the public and commercial establishments regarding the commercial waste zone system established pursuant to title 16-B of the administrative code." (Section 753.e.3)
+
+**Why:** To track the planning, execution, and attendance of educational programs for the public and commercial establishments.
+
+**One row represents:** A single educational program event or session.
+
+**Covers:** All educational programs and sessions conducted for the public and commercial establishments regarding the commercial waste zone system.
+
+**Columns:**
+- Program Event ID
+- Program Name/Topic
+- Date of Event
+- Time of Event
+- Location of Event (Address, Online Platform)
+- Target Audience (e.g., General Public, Commercial Establishments, Specific Business Type)
+- Presenter ID (Links to internal employee data or external speaker)
+- Estimated Attendance
+- Actual Attendance
+- Materials Distributed (e.g., Brochure ID)
+- Feedback Received (Summary, if applicable)
+- Notes
+
+---
+
+**20. Agency Asset Inventory (General Operational)**
+
+**OpenData Match:** Not applicable, as I do not have access to OpenData.
+
+**Quotes:**
+- "equipment necessary for or useful for performing the functions" (Section 753.a.5)
+- "Each inspector or other employee of the department who issues notices of violation shall... have access at the time that a violation is issued to equipment" (Section 753.f)
+
+**Why:** To manage all general operational assets, such as vehicles, IT equipment, and other tools not specific to waste facilities, for efficient resource allocation and maintenance.
+
+**One row represents:** A single general operational asset owned or managed by the agency.
+
+**Covers:** All vehicles (e.g., collection trucks, plows, inspection vehicles), IT equipment (e.g., computers, handheld devices), office equipment, and other general tools used across the department.
+
+**Columns:**
+- Asset ID
+- Asset Name
+- Asset Type (e.g., Collection Truck, Plow, Sedan, Handheld Device, Desktop Computer)
+- Department/Division Assigned To
+- Location/Storage
+- Status (e.g., In Service, Out of Service, Under Repair, Retired)
+- Acquisition Date
+- Manufacturer
+- Model Number
+- Serial Number
+- License Plate/Vehicle Identification Number (for vehicles)
+- Last Maintenance Date (Links to a general maintenance dataset, if separate from Dataset 10)
+- Next Scheduled Maintenance Date
+- Current Condition
+- Estimated Value
+
+---
+
+**Non-Tabular Information**
+
+The following information is likely not maintained in a tabular format by the agency, but rather as documents, records, or other non-structured data:
+
+*   **Rules and Regulations:** The actual text of regulations adopted by the commissioner (Section 753.b, 753.d, 754).
+*   **Public and Private Hearing Transcripts/Records:** Detailed minutes, recordings, or transcripts of hearings (Section 753.e.1).
+*   **Testimony Records:** Written or recorded statements given as testimony (Section 753.e.1).
+*   **Evidence Documents:** Physical or digital evidence collected during investigations (Section 753.e.1).
+*   **Subpoena Documents:** Copies of subpoenas issued (Section 753.e.1).
+*   **Plans, Designs, and Construction Documents for Facilities:** Architectural drawings, engineering specifications, and project plans for incinerators, landfills, and other plants (Section 753.a.5).
+*   **Commercial Waste Removal Contracts:** The full legal agreements between commercial waste collectors and their clients (Section 753.e.2.c).
+*   **Commercial Waste Billing Forms:** Templates or examples of billing forms used by commercial waste collectors (Section 753.e.2.d).
+*   **Commercial Waste Business Records:** Records maintained by commercial waste businesses that the department inspects (e.g., internal logs, financial statements) (Section 753.e.2.e).
+*   **Commercial Waste Insurance Policies:** The actual insurance policy documents held by commercial waste collectors (Section 753.e.2.f).
+*   **Public and Commercial Education Program Materials:** Brochures, presentations, videos, and other content used for educational outreach (Section 753.e.3).

@@ -1,0 +1,494 @@
+**Section 1, Mission Summary:**
+
+The Department of Correction (DOC) is responsible for the care, custody, and control of all persons incarcerated within the city's correctional institutions, including their transportation, management, and the provision of rehabilitative programs. The agency impacts constituents by ensuring public safety through secure detention, upholding the rights and welfare of incarcerated individuals, and facilitating their rehabilitation and reintegration into society.
+
+**Key Programs:**
+*   Management of correctional institutions, hospital wards, and court pens.
+*   Care, custody, and transportation of incarcerated individuals.
+*   Planning and implementation of re-training, counseling, and rehabilitative programs.
+*   Employment of incarcerated individuals in industry, farming, and public works.
+*   Investigation of incarcerated individual deaths and grievances.
+*   Maintenance and operation of departmental buildings and structures.
+
+---
+
+**Section 2, Data Summary:**
+
+1.  **Incarcerated Individual Profile & Custody Events**
+    *   1.1. Incarcerated Individual Demographics
+    *   1.2. Incarcerated Individual Custody & Movement Log
+    *   1.3. Incarcerated Individual Housing Assignments
+    *   1.4. Incarcerated Individual Identification Records
+    *   1.5. Incarcerated Individual Property Records
+    *   1.6. Incarcerated Individual Good Time Adjustments
+    *   1.7. Incarcerated Individual Death Events & Investigations
+    *   1.8. Incarcerated Individual Medical Appointment Log
+2.  **Incarcerated Individual Incidents & Discipline**
+    *   2.1. Incarcerated Individual Incidents & Infractions
+    *   2.2. Disciplinary Hearings
+    *   2.3. Inmate Penalties
+    *   2.4. Inmate Appeals
+    *   2.5. Inmate Restitution Orders
+    *   2.6. Confiscated Contraband Records
+    *   2.7. Inmate Testing Events (DNA/Drug/Alcohol)
+    *   2.8. Inmate Razor Transaction Log
+    *   2.9. Inmate Rights Determinations
+3.  **Facility & Operations Management**
+    *   3.1. Facility Inventory
+    *   3.2. Facility Inspection & Visit Log
+    *   3.3. Facility Maintenance Work Orders
+    *   3.4. Facility Property Damage Incidents
+    *   3.5. Facility Security Events
+    *   3.6. Inmate Count Events
+    *   3.7. Department Vehicle Inventory
+    *   3.8. Prisoner Transportation Events
+4.  **Programs & Work Assignments**
+    *   4.1. Rehabilitative Program Catalog
+    *   4.2. Rehabilitative Program Participation
+    *   4.3. Incarcerated Individual Work Assignments
+5.  **Personnel & Oversight**
+    *   5.1. Department Staff Roster
+    *   5.2. Staff Incident Log
+    *   5.3. Board of Correction Member Roster
+    *   5.4. Board of Correction Investigation Cases
+    *   5.5. Grievance Log
+
+---
+
+**Section 3, Data Details:**
+
+**1. Incarcerated Individual Profile & Custody Events**
+
+**1.1. Incarcerated Individual Demographics**
+*   **Open Data Match:** None directly, but "Inmate Admissions" (2952) and "Inmate Discharges" (318) would reference this data. Match percentage: 0% (as this is master data, not event data).
+*   **Quotes:**
+    *   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants, all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment and violators of ordinances or local laws and for the detention of witnesses who are unable to furnish security for their appearance in criminal proceedings" (Section 623.1)
+    *   "All authority, except as otherwise provided by law, concerning the care and custody of felons, misdemeanants and violators of local laws held in the institutions under his charge." (Section 623.4)
+    *   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Section 623.6)
+    *   "Such report shall incorporate direct feedback from incarcerated individuals and proposed recommendations for relevant improvements, and shall include a section of recommendations on how to improve the grievance process for vulnerable populations, including incarcerated individuals who are lesbian, gay, bisexual, transgender, intersex, and gender nonconforming." (Section 626.f)
+    *   "The commissioner of correction shall keep and preserve a proper record of all persons who shall come under the commissioner's care or custody, and of the disposition of each, with full particulars as to the name, age, sex, color, nativity and religious faith, together with a statement of the cause and length of detention." (§ 9-121)
+    *   "Adolescent. The term "adolescent" means an incarcerated individual 16 or 17 years of age." (§ 9-130.a)
+    *   "Adult. The term "adult" means an incarcerated individual 22 years of age or older." (§ 9-130.a)
+    *   "Young adult. The term "young adult" means an incarcerated individual 18 to 21 years of age." (§ 9-130.a)
+    *   "Age, in years, disaggregated as follows: 16-17, 18-21, 22-25, 26-29, 30-39, 40-49, 50-59, 60-69, 70 or older." (§ 9-137.a.1)
+    *   "Gender, including a separate category for those incarcerated individuals housed in any transgender housing unit." (§ 9-137.a.2)
+    *   "Race of incarcerated individuals, categorized as follows: African-American, Hispanic, Asian, white, or any other race." (§ 9-137.a.3)
+    *   "The borough in which the incarcerated individual was arrested." (§ 9-137.a.4)
+    *   "Educational background as self-reported by incarcerated individuals after admission to the custody of the department, categorized as follows based on the highest level of education achieved: no high school diploma or general education diploma, a general education diploma, a high school diploma, some college but no degree, an associate's degree, a bachelor's degree, or a post-collegiate degree." (§ 9-137.a.5)
+    *   "The number of incarcerated individuals identified by the department as a member of a security risk group, as defined by the department." (§ 9-137.a.6)
+    *   "The total and average numbers of persons in the Special Consideration Unit, or any other housing unit dedicated to the housing of transgender, gender non-binary, or intersex persons" (§ 9-165.b.2)
+    *   "The number and percentage of persons in the custody of the department who have identified themselves to the department, or have been identified by another person or agency on their behalf, as having a gender identity different from the sex assigned to the person at birth, or that were assigned an "X" gender marker or an intersex identification at birth; This data shall be further disaggregated by self-described gender identity including, but not limited to, transgender, gender non-conforming, non-binary, or intersex" (§ 9-165.b.3)
+    *   "The number of individuals who were identified through screening as being at risk of dyslexia disaggregated by race, gender, zip code of last known address, and age as follows: 18-21, 22-25, 26-29, 30-39, 40-49, 50-59, 60-69, 70 or older" (§ 9-166.f.4)
+*   **Why:** This dataset is fundamental for managing the identity, legal status, and core needs of every individual under DOC custody.
+*   **One row represents:** A single incarcerated individual.
+*   **Covers:** All persons held or confined under the jurisdiction of the Department of Correction.
+*   **Columns:** Individual ID (PK), Full Name, Date of Birth, Gender (Assigned at Birth), Gender Identity, Race, Nativity, Religious Faith, Legal Status, Arrest Date, Admission Date to DOC Custody, Expected Release Date, Actual Release Date, Sentence Details, Psychiatric Observation/Treatment Required (Y/N), Hospital Care Required (Y/N), Vulnerable Population Flag, Next of Kin Name, Next of Kin Contact Information, Cause of Detention, Length of Detention (Start Date, End Date), Arrest Borough, Educational Background, Security Risk Group (Y/N, Type), Dyslexia Risk Status, Last Known Address Zip Code.
+
+**1.2. Incarcerated Individual Custody & Movement Log**
+*   **Open Data Match:** "Inmate Discharges" (318) - 80%, "Inmate Admissions" (2952) - 80%.
+*   **Quotes:**
+    *   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants, all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment and violators of ordinances or local laws and for the detention of witnesses who are unable to furnish security for their appearance in criminal proceedings" (Section 623.1)
+    *   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York, the family court of the state of New York within the city of New York, the supreme court in the counties of New York, Bronx, Kings, Queens and Richmond" (Section 623.2)
+    *   "All authority in relation to the custody and transportation of persons held for any cause in criminal proceedings and all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment, in any county within the city." (Section 623.5)
+    *   "The commissioner of correction may designate any institution or part thereof under the jurisdiction of the commissioner for the safekeeping of persons committed to the department of correction." (§ 9-101)
+    *   "Officers charged with the transportation of persons committed to the department of correction shall deliver them to the institution or part thereof as may be directed by the commissioner." (§ 9-101)
+    *   "The commissioner of correction shall have power to transfer prisoners from any prison or correctional institution under his or her control to any other prison or correctional institution under the jurisdiction of the department." (§ 9-104)
+    *   "The commissioner of correction shall have authority concerning the care and custody of witnesses in criminal proceedings committed to the institutions under the commissioner's charge." (§ 9-105)
+    *   "Upon the recommendation of the district attorney, the commissioner of correction may transfer such witnesses from one institution under the commissioner's charge to another such institution." (§ 9-105)
+    *   "The chief officer of any institution under the charge of the commissioner of correction shall report once in each week to the commissioner of correction. Such report shall set forth: 1. The number of persons who have been received, discharged or transferred. 3. The number remaining in the institution under the charge of such chief officer." (§ 9-120)
+    *   "§ 1-03(c)(19) Inmate Movement. (117.10) Inmates shall follow facility rules and staff orders relating to movement inside and outside the facility, including, but not limited to, rules and orders dealing with seating, lock-in and lock-out. (117.11) Inmates shall not be out of their assigned area, including being in a cell to which they are not assigned, nor shall inmates leave an assigned area such as a work area or program area, without authorization."
+*   **Why:** This dataset is crucial for real-time accountability, security, and managing the movements of incarcerated individuals.
+*   **One row represents:** A single change in an incarcerated individual's location or custody status.
+*   **Covers:** All admissions, transfers, releases, and internal movements of persons under the department's care or custody.
+*   **Columns:** Event ID (PK), Individual ID (FK to 1.1), Event Type (Admission, Transfer In, Transfer Out, Release, Internal Movement), Event Date/Time, Origin Location Type, Origin Location ID (FK to 3.1), Destination Location Type, Destination Location ID (FK to 3.1), Reason for Change/Transfer/Release, Custody Status, Legal Authority for Custody, Officer ID (FK to 5.1), Authorized (Y/N), Authorizing Staff ID (FK to 5.1), Escorting Staff ID (FK to 5.1), Unauthorized Movement Infraction ID (FK to 2.1).
+
+**1.3. Incarcerated Individual Housing Assignments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-04(a) General procedures. (1) When you are placed in any of the most restrictive security categories (other than Pre-Hearing Detention, which is addressed in subsection (b) below), you will be given written notice of: (i) The reasons for the designation. (ii) The evidence relied upon."
+    *   "§ 1-04(b)(1) Pre-Hearing Detention (PHD). When you are placed in Pre-Hearing Detention (PHD) prior to your disciplinary hearing, (i) You will be issued a Notice of Pre-Hearing Detention within twenty-four (24) hours of the placement, which will state the reason for the placement in PHD."
+    *   "§ 1-04(c) Protective custody. (1) If you are transferred to protective custody (PC), the Department will determine within two (2) business days whether you should continue in such housing. If you do not consent to a decision to continue PC placement, you will be provided with written notice as set forth in 39 RCNY § 1-04(a)(1)."
+    *   "§ 1-04(c)(4) If you are placed in PC the Department will review your placement thirty (30) days after OSIU initially determined the assignment and then every sixty (60) days thereafter to see if you should remain in PC. You will be notified in writing of the results of that review."
+*   **Why:** To track inmates' housing locations and security classifications, especially restrictive ones, and ensure proper notice and reviews.
+*   **One row represents:** A single assignment of an inmate to a specific housing location or security category.
+*   **Covers:** All housing assignments, including general population, Pre-Hearing Detention, Protective Custody, and other restrictive security categories.
+*   **Columns:** Assignment ID (PK), Individual ID (FK to 1.1), Facility ID (FK to 3.1), Housing Unit/Cell ID, Assignment Type, Assignment Start Date and Time, Assignment End Date and Time, Reason for Assignment, Written Notice Provided (Y/N), Notice Date, Evidence Relied Upon, Hearing Scheduled (Y/N), Review Date, Review Outcome, OSIU Decision Date, Consent to PC (Y/N).
+
+**1.4. Incarcerated Individual Identification Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-03(b) "Department ID" shall mean any form of Department-issued tag, card, wristband, or other object that serves to identify an inmate."
+    *   "§ 1-03(c)(17) Identification Procedures. (115.10) Inmates shall carry and display their Department ID at all times... (115.11) Inmates shall promptly produce their Department ID... (115.12) Inmates shall report the loss of their Department ID promptly... Inmates shall be charged restitution for a new Department ID. (115.13) Inmates shall not intentionally tamper with or destroy their Department ID."
+*   **Why:** To track the issuance, status, and incidents related to inmate identification for security and operational efficiency.
+*   **One row represents:** A single Department ID issued to an inmate.
+*   **Covers:** All Department-issued IDs (tags, cards, wristbands) for inmates.
+*   **Columns:** ID Record ID (PK), Individual ID (FK to 1.1), ID Number, ID Type, Issue Date, Status, Date of Status Change, Reported Lost Date, Restitution Charged for Replacement (Y/N), Restitution Amount, Restitution Order ID (FK to 2.5), Tampering/Destruction Infraction ID (FK to 2.1).
+
+**1.5. Incarcerated Individual Property Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-02(a) Property. When you first come to jail, any property that is taken from you that involves a criminal offense may be forwarded to the appropriate law enforcement agency for possible criminal prosecution and subject you to disciplinary action. Property taken from you that does not involve a criminal offense will be identified, receipted, stored and returned to you after your discharge from Department custody."
+*   **Why:** To legally track all personal property taken from inmates upon incarceration, ensuring proper handling and return.
+*   **One row represents:** A single item of inmate property.
+*   **Covers:** All personal property taken from inmates upon entry to a facility.
+*   **Columns:** Property Record ID (PK), Individual ID (FK to 1.1), Date Property Taken, Item Description, Quantity, Condition, Receipt ID, Storage Location, Property Status, Date of Status Change, Reason for Status Change, Law Enforcement Agency, Date Returned to Inmate, Staff ID (FK to 5.1).
+
+**1.6. Incarcerated Individual Good Time Adjustments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-03(b) "Good Time" shall mean a discretionary reduction of up to one third of the term of commitment for a definite sentence or certain civil commitments, as allowed by the New York State Correction Law."
+    *   "§ 1-05(c) Loss of Good Time. If you are sentenced and serving your time in a Department facility, you may lose good time. (i) You may lose all your good time for a Grade I offense. (ii) The maximum that you can lose for a Grade II offense is two-thirds of all of your good time. (iii) The maximum that you can lose for a Grade III offense is one-third of all of your good time."
+*   **Why:** To track all changes to an inmate's earned "Good Time" for accurate sentence management and compliance with legal limits.
+*   **One row represents:** A single adjustment (addition or reduction) to an inmate's good time.
+*   **Covers:** All instances where an inmate's good time is earned, lost, or restored.
+*   **Columns:** Adjustment ID (PK), Individual ID (FK to 1.1), Date of Adjustment, Adjustment Type, Amount of Good Time (days), Reason for Adjustment, Reference ID (FK to 2.3 or 4.2), Current Total Good Time.
+
+**1.7. Incarcerated Individual Death Events & Investigations**
+*   **Open Data Match:** "Inmate Deaths" (1718) - 90%.
+*   **Quotes:**
+    *   "the board shall investigate such death and prepare a report about such investigation." (Section 626.i.2)
+    *   "Upon request from the next of kin of an incarcerated individual who has died, the board shall provide to such next of kin records provided to the board by the department and correctional health services for purposes of such investigation" (Section 626.i.4)
+    *   "Except where the commissioner of investigation, the attorney general, or the district attorney for the county in which a death of an incarcerated individual held or confined under the jurisdiction of the department occurred investigates such death or prosecutes any alleged criminal offense related to such death and requests or directs the board not to investigate such death, the board shall investigate such death and prepare a report about such investigation." (Section 626.i.2)
+    *   "Such report shall include any recommendations about measures the department or correctional health services may implement to prevent the circumstances that contributed to the individual’s death." (Section 626.i.2)
+    *   "The board shall submit such report to the department and correctional health services for review by the department and correctional health services pursuant to subdivision h of section 9-171 of the administrative code." (Section 626.i.2.a)
+    *   "No later than 30 days after the board submits the report to the department and correctional health services, the board shall post such report and any response to such report from the department and correctional health services on the website of the board" (Section 626.i.2.b)
+    *   "where the board has not concluded an investigation of a death of an incarcerated individual pursuant to this subdivision within 180 days of such death, the board shall, every 60 days until the board concludes such investigation and posts a report about such investigation, post on its website a statement that the board has not concluded such investigation" (Section 626.i.3)
+    *   "Upon request from the next of kin of an incarcerated individual who has died, the board shall provide to such next of kin records provided to the board by the department and correctional health services for purposes of such investigation" (Section 626.i.4)
+*   **Why:** This dataset tracks mandated investigations into incarcerated individual deaths, ensuring accountability and informing preventative measures.
+*   **One row represents:** A single death event and its associated investigation for an incarcerated individual.
+*   **Covers:** All deaths of incarcerated individuals held or confined under the jurisdiction of the department.
+*   **Columns:** Death Event ID (PK), Individual ID (FK to 1.1), Date of Death, Time of Death, Location of Death (Facility ID, FK to 3.1), Primary Cause of Death, Contributing Factors to Death, Investigating Authority, Investigation Start Date, Investigation Conclusion Date, Report Submission Date to Department/Correctional Health Services, Report Posting Date on Board Website, Date of 60-day Status Statement Posting, Recommendations Made, Next of Kin Records Request Date, Next of Kin Records Provided Date, Hart Island Burial Record ID (FK to 1.7.1, if created).
+
+**1.8. Incarcerated Individual Medical Appointment Log**
+*   **Open Data Match:** "Medical Non-production for Clinic Appointments" (1781) - 70%.
+*   **Quotes:**
+    *   "All authority in relation to the custody and transportation of persons held for any cause in criminal proceedings and all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment, in any county within the city." (Section 623.5)
+    *   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants, all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment and violators of ordinances or local laws and for the detention of witnesses who are unable to furnish security for their appearance in criminal proceedings" (Section 623.1)
+*   **Why:** To track all medical appointments and care provided to incarcerated individuals, ensuring health oversight.
+*   **One row represents:** A single medical appointment or care event for an incarcerated individual.
+*   **Covers:** All medical appointments, hospital care, and psychiatric observation/treatment for incarcerated individuals.
+*   **Columns:** Appointment ID (PK), Individual ID (FK to 1.1), Appointment Date/Time, Medical Provider ID (FK to 5.1), Appointment Type (e.g., Clinic Visit, Specialist, Psychiatric, Emergency), Location (Facility ID, FK to 3.1, or Hospital Name), Reason for Appointment, Outcome/Diagnosis, Medication Prescribed, Production Status (Produced, Non-Produced), Reason for Non-Production, Staff Escorting (FK to 5.1).
+
+---
+
+**2. Incarcerated Individual Incidents & Discipline**
+
+**2.1. Incarcerated Individual Incidents & Infractions**
+*   **Open Data Match:** "Inmate Assault on Staff" (119) - 80%, "Inmate Incidents - Slashing and Stabbing" (1506) - 80%, "Inmate Incidents - Inmate Fights" (2133) - 80%.
+*   **Quotes:**
+    *   "§ 1-03 Rules of Conduct. This section sets forth the behavior that is prohibited in Department of Correction ("Department") facilities. The grade of each offense is listed."
+    *   "§ 1-03(c) Prohibited conduct. An inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade I" offense shall be guilty of the stated Grade I offense; an inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade II" offense shall be guilty of the stated Grade II offense; and an inmate who violates a rule listed in any subsection of 39 RCNY § 1-03(c) as a "Grade III" offense shall be guilty of the stated Grade III offense."
+    *   "Assault. The term "assault" means any action taken with intent to cause physical injury to another person." (§ 9-130.a)
+    *   "Serious injury. The term "serious injury" means a physical injury that (i) creates a substantial risk of death or disfigurement; (ii) is a loss or impairment of a bodily organ; (iii) is a fracture or break to a bone other than fingers and toes; or (iv) is an injury defined as serious by a physician." (§ 9-130.a)
+    *   "Sexual abuse. The term "sexual abuse" has the same meaning as set forth in 28 CFR § 115.6, or successor regulation, promulgated pursuant to the federal prison rape elimination act of 2003." (§ 9-130.a)
+    *   "Use of force A. The term "use of force A" means a use of force by staff on an incarcerated individual resulting in an injury that requires medical treatment beyond the prescription of over-the-counter analgesics or the administration of minor first aid..." (§ 9-130.a)
+    *   "Use of force B. The term "use of force B" means a use of force by staff on an incarcerated individual which does not require hospitalization or medical treatment beyond the prescription of over-the-counter analgesics or the administration of minor first aid..." (§ 9-130.a)
+    *   "Use of force C. The term "use of force C" means a use of force by staff on an incarcerated individual resulting in no injury to staff or incarcerated individual..." (§ 9-130.a)
+    *   "fight infractions written against incarcerated individuals" (§ 9-130.b.1)
+    *   "assaults on incarcerated individuals by incarcerated individuals involving stabbings, shootings or slashings" (§ 9-130.b.2)
+    *   "assaults on incarcerated individuals by incarcerated individuals in which an incarcerated individual suffered a serious injury, excluding assaults involving stabbings, shootings or slashings" (§ 9-130.b.3)
+    *   "actual incidents of use of force A" (§ 9-130.b.4)
+    *   "actual incidents of use of force B" (§ 9-130.b.5)
+    *   "actual incidents of use of force C" (§ 9-130.b.6)
+    *   "assaults on staff by incarcerated individuals in which staff suffered serious injury." (§ 9-130.b.7)
+    *   "assaults on incarcerated individuals by incarcerated individuals involving stabbings" (§ 9-130.c.3)
+    *   "assaults on incarcerated individuals by incarcerated individuals involving shootings" (§ 9-130.c.4)
+    *   "assaults on incarcerated individuals by incarcerated individuals involving slashings" (§ 9-130.c.5)
+    *   "total number of assaults on incarcerated individuals by incarcerated individuals involving stabbings, shootings or slashings" (§ 9-130.c.6)
+*   **Why:** To record all alleged rule violations and significant incidents by inmates for disciplinary action, enforcement, and reporting.
+*   **One row represents:** A single alleged inmate rule violation or incident.
+*   **Covers:** All reported violations of the Department's rules of conduct (Grade I, II, and III offenses) and significant incidents involving incarcerated individuals.
+*   **Columns:** Incident/Infraction ID (PK), Individual ID (FK to 1.1), Reporting Staff ID (FK to 5.1), Date and Time of Incident, Facility ID (FK to 3.1), Location of Incident, Incident Type (e.g., Assault, Use of Force, Sexual Abuse, Fight, Rule Violation), Rule Violated Code (if applicable), Offense Grade (Grade I, II, III, if applicable), Description of Incident, Evidence Collected, Date Reported, Status, Associated Criminal Offense (Y/N), Forwarded to Law Enforcement (Y/N), Injury Type (Serious, Minor, None), Injured Party Type (Incarcerated Individual, Staff), Medical Treatment Required (Y/N), Weapon Used (Y/N, Type).
+
+**2.2. Disciplinary Hearings**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-04 Hearing Procedures."
+    *   "§ 1-04(a)(1) When you are placed in any of the most restrictive security categories (other than Pre-Hearing Detention, which is addressed in subsection (b) below), you will be given written notice of: (i) The reasons for the designation. (ii) The evidence relied upon. (iii) The right to a hearing before an impartial Adjudication Captain... (iv) Your rights at the hearing."
+    *   "§ 1-04(b) Disciplinary hearing procedures. (1) Pre-Hearing Detention (PHD). When you are placed in Pre-Hearing Detention (PHD) prior to your disciplinary hearing, (i) You will be issued a Notice of Pre-Hearing Detention within twenty-four (24) hours... (iii) The infraction hearing will be completed within three (3) business days of your transfer to PHD whenever possible, but you shall not be held in PHD for more than seven (7) business days."
+    *   "§ 1-04(b)(2) Disciplinary Infraction Hearings. If you are not placed in PHD, the infraction hearing will take place within three (3) business days after you receive written notice..."
+    *   "§ 1-04(b)(3) At your hearing, you have the following rights: (i) To personally appear; (ii) To make statements; (iii) To present material, relevant, and non-duplicative evidence; (iv) To have witnesses testify... (v) If you are non-English speaking, illiterate, blind, deaf, have poor vision, are hard of hearing, or if your case is very complicated, you have a right to be helped by a "hearing facilitator"... (vi) If you do not understand or are not able to communicate in English... you have a right to an interpreter... (vii) You have a right to appeal a decision against you. (viii) You have a right to have the hearing recorded."
+*   **Why:** To track the due process for inmate infractions and record hearing outcomes and compliance with timelines.
+*   **One row represents:** A single disciplinary hearing conducted for an inmate.
+*   **Covers:** All disciplinary infraction hearings, including those preceded by Pre-Hearing Detention.
+*   **Columns:** Hearing ID (PK), Incident/Infraction ID (FK to 2.1), Individual ID (FK to 1.1), Hearing Date and Time, Adjudication Captain ID (FK to 5.1), Pre-Hearing Detention (PHD) Placement Date, PHD Notice Issued Date, PHD Release Date, Hearing Completed within 3 business days of notice (Y/N), Hearing Completed within 7 business days of PHD (Y/N), Inmate Present (Y/N), Reason for Hearing in Absentia, Hearing Facilitator ID (FK to 5.1), Interpreter ID (FK to 5.1), Language of Interpreter, Evidence Presented, Witnesses Testified, Hearing Outcome, Reasons for Decision, Decision Date, Appeal Status (FK to 2.4), Hearing Recorded (Y/N).
+
+**2.3. Inmate Penalties**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-05 Penalties. If you are found guilty of violating a Department rule of conduct, your penalty will depend on the seriousness of your offense."
+    *   "§ 1-05(b) Reprimand. You may lose one or more privileges, temporarily or permanently..."
+    *   "§ 1-05(c) Loss of Good Time. If you are sentenced and serving your time in a Department facility, you may lose good time."
+    *   "§ 1-05(d) Punitive Segregation. The maximum period of punitive segregation for a Grade I offense is ninety (90) days..."
+    *   "§ 1-05(e) Restitution. If you are found guilty of damaging or destroying City property... you may be ordered to pay restitution..."
+    *   "§ 1-05(f) Repeated offenses. The third time you are found guilty of a rule of conduct violation for the same offense... you may be sentenced to a penalty that applies to the next higher grade of offenses."
+    *   "§ 1-05(g) Surcharge. A disciplinary surcharge... may be imposed on you..."
+*   **Why:** To record all penalties imposed on inmates following disciplinary hearings and ensure compliance with penalty guidelines.
+*   **One row represents:** A single penalty imposed on an inmate.
+*   **Covers:** All penalties resulting from disciplinary actions (reprimand, loss of good time, punitive segregation, restitution, surcharge).
+*   **Columns:** Penalty ID (PK), Hearing ID (FK to 2.2), Individual ID (FK to 1.1), Penalty Type, Penalty Details, Penalty Start Date, Penalty End Date, Mitigating Circumstances Considered (Y/N), Repeated Offense (Y/N), Original Offense Grade, Applied Penalty Grade, Restitution Order ID (FK to 2.5).
+
+**2.4. Inmate Appeals**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-02(d) Telephone calls... If you are affected by a determination made pursuant to this subdivision, you may appeal such determination to the New York City Board of Correction by providing written notice."
+    *   "§ 1-02(e) Visits... If you are affected by a determination made pursuant to this subdivision, you may appeal such determination to the New York City Board of Correction and to the Commanding Officer by providing written notice."
+    *   "§ 1-04(b)(3)(vii) You have a right to appeal a decision against you."
+    *   "§ 1-06 Appeals. You have the right to appeal an adverse decision rendered by the Adjudication Captain within two (2) business days of service of the decision."
+    *   "§ 1-06 Appeals... If you have been sentenced to a total of thirty (30) days or more of punitive segregation or loss of all your good time... your appeal shall be forwarded to the General Counsel... Within five (5) business days of the receipt of your appeal, you will receive a written decision..."
+*   **Why:** To track all inmate appeals against agency determinations and disciplinary decisions, ensuring due process and timely responses.
+*   **One row represents:** A single appeal filed by an inmate.
+*   **Covers:** Appeals related to telephone calls, visits, disciplinary decisions, and protective custody placements.
+*   **Columns:** Appeal ID (PK), Individual ID (FK to 1.1), Original Decision Type, Original Decision ID (FK to 2.2, 1.3, or 2.9), Appeal Filing Date, Written Notice Provided (Y/N), Additional Materials Submitted (Y/N), Reviewing Authority, Appeal Decision Date, Decision Issued within 5 business days (Y/N), Reason for Extension, Appeal Outcome, General Counsel Decision Date, Article 78 Petition Filed (Y/N).
+
+**2.5. Inmate Restitution Orders**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-05(e) Restitution. If you are found guilty of damaging or destroying City property, you may be ordered to pay restitution, which can be as much as the replacement cost of the item or property, plus the labor costs of fixing or replacing the item you damaged or destroyed. If you are found guilty of an assault that causes a need for medical services, you can be ordered to make a restitution payment towards the cost to the City of providing such medical services."
+*   **Why:** To track all restitution orders issued to inmates and their payment status for financial accountability.
+*   **One row represents:** A single restitution order.
+*   **Covers:** Restitution for damaged City property, private property, or medical services due to assault.
+*   **Columns:** Restitution Order ID (PK), Hearing ID (FK to 2.2), Individual ID (FK to 1.1), Date Ordered, Amount Ordered, Reason for Restitution, Description of Damaged Property/Medical Service, Property Value/Medical Cost, Payment Status, Date Paid in Full, Payment Method.
+
+**2.6. Confiscated Contraband Records**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-03(b) "Contraband" shall mean any item that is not sold in the commissary, that is not on the approved list of permissible items, that is possessed in more than the approved amount, or that the inmate does not have permission to possess. Contraband includes items that may disrupt the safety, security, good order and discipline of the facility. Any item that is illegal for an individual not on Department property to possess is also illegal to use or possess on Department property. Possession of contraband may subject an inmate to criminal prosecution as well as disciplinary action. Any person who tries to introduce contraband into a facility may also be subject to criminal prosecution."
+    *   "§ 1-03(c)(4) Contraband" (lists specific contraband offenses, e.g., 103.05, 103.10, 103.11, 103.12.7)
+    *   "§ 1-03(c)(4) 103.12.7: Inmates shall not possess money whose value exceeds twenty (20) dollars... Money confiscated as contraband will be deposited in the City's treasury and will not be returned to the inmate."
+*   **Why:** To track all items confiscated as contraband, their disposition, and financial implications for accountability and legal compliance.
+*   **One row represents:** A single item or group of items confiscated as contraband.
+*   **Covers:** All items identified and confiscated as contraband from inmates or attempted to be introduced into a facility.
+*   **Columns:** Confiscation ID (PK), Individual ID (FK to 1.1), Date and Time of Confiscation, Location of Confiscation, Item Description, Quantity, Estimated Value, Contraband Rule Violated, Incident/Infraction ID (FK to 2.1), Confiscating Staff ID (FK to 5.1), Disposition, Date of Disposition, Treasury Deposit Amount, Law Enforcement Agency.
+
+**2.7. Inmate Testing Events (DNA/Drug/Alcohol)**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-03(c)(30) Refusal to Provide Sample for DNA Bank. (129.10) Inmates shall not refuse to provide a DNA sample if they meet the criteria as set forth in Article 49-B of the New York State Executive Law qualifying a person as a designated offender."
+    *   "§ 1-03(c)(31) Refusal to Provide Sample for Random Drug/Alcohol Testing. (130.10) Inmates shall not refuse to provide a urine, hair, saliva, or other sample... when they have been notified... that they have been selected for drug/alcohol testing, whether by random selection or based on reasonable suspicion."
+    *   "§ 1-03(c)(32) Testing Positive for Alcohol or Illegal Drugs/Substances. (130.11) Inmates shall not test positive for nor be found under the influence of alcohol or illegal drugs/substances. (130.12) Inmates shall not adulterate or tamper with... a urine sample..."
+*   **Why:** To track all mandatory and random DNA, drug, and alcohol testing of inmates for legal compliance and security.
+*   **One row represents:** A single test event for an inmate.
+*   **Covers:** All DNA sample collections and drug/alcohol tests.
+*   **Columns:** Test Event ID (PK), Individual ID (FK to 1.1), Test Date and Time, Test Type, Reason for Test, Sample Provided (Y/N), Refusal Incident/Infraction ID (FK to 2.1), Test Result, Substance Detected, Testing Staff ID (FK to 5.1), Lab Analysis ID, Result Incident/Infraction ID (FK to 2.1).
+
+**2.8. Inmate Razor Transaction Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-03(c)(4) Contraband. (103.10.5) Inmates shall not possess or transport a Department-issued razor outside the housing area. (103.10.6) Inmates shall return all Department-issued razors after shaving is completed, in accordance with Department or facility procedures. Razors shall be returned in the same condition as received; for example, blade and handle shall be intact. (103.10.7) Inmates shall not possess more than one Department-issued razor."
+*   **Why:** To track the issuance and return of Department-issued razors to enforce rules and ensure accountability for these specific items.
+*   **One row represents:** A single instance of a razor being issued to or returned by an inmate.
+*   **Covers:** All Department-issued razors provided to inmates.
+*   **Columns:** Transaction ID (PK), Individual ID (FK to 1.1), Razor ID, Transaction Type, Date and Time of Transaction, Staff ID (FK to 5.1), Condition of Razor, Location of Transaction, Violation Incident/Infraction ID (FK to 2.1).
+
+**2.9. Inmate Rights Determinations**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-02(b) Recreation. The Department may limit your right to participate in recreation for a security related reason in accordance with State Commission of Correction standards (9 NYCRR § 7028.6)."
+    *   "§ 1-02(d) Telephone calls. The Department may limit your telephone calls if they constitute a threat to institutional safety or security, if you abuse the telephone regulations or in accordance with a court order."
+    *   "§ 1-02(e) Visits. The Department may revoke, deny or limit your contact visits if they constitute a serious threat to institutional safety or security."
+*   **Why:** To track decisions made by the Department regarding limitations on inmate rights and privileges, ensuring proper justification and appeal options.
+*   **One row represents:** A single determination to limit an inmate's right or privilege.
+*   **Covers:** Decisions to limit recreation, telephone calls, or visits.
+*   **Columns:** Determination ID (PK), Individual ID (FK to 1.1), Date of Determination, Right/Privilege Affected, Type of Limitation, Reason for Limitation, Specific Details of Limitation, Written Notice Provided (Y/N), Appeal Status (FK to 2.4), Staff ID (FK to 5.1).
+
+---
+
+**3. Facility & Operations Management**
+
+**3.1. Facility Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Charge and management of all institutions of the city, including all hospital wards therein for the care and custody of felons, misdemeanants, all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment and violators of ordinances or local laws and for the detention of witnesses who are unable to furnish security for their appearance in criminal proceedings, except such places for the detention of prisoners or persons charged with crime as are by law placed under the charge of some other agency." (Section 623.1)
+    *   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York, the family court of the state of New York within the city of New York, the supreme court in the counties of New York, Bronx, Kings, Queens and Richmond" (Section 623.2)
+    *   "Charge and management of persons or any other institution of the city placed under his jurisdiction by law." (Section 623.3)
+    *   "The commissioner shall maintain and operate buildings and structures under his jurisdiction." (Section 624)
+    *   "The inspection and visitation at any time of all institutions and facilities under the jurisdiction of the department" (Section 626.c.1)
+    *   "Any council member is authorized to inspect and visit at any time the institutions and facilities under the jurisdiction of the department." (Section 627)
+*   **Why:** This dataset provides a comprehensive record of all physical assets and locations managed by the Department of Correction.
+*   **One row represents:** A single institution, facility, hospital ward, or court pen.
+*   **Covers:** All buildings, structures, institutions, hospital wards, and court pens under the jurisdiction of the Department of Correction.
+*   **Columns:** Facility ID (PK), Facility Name, Facility Type, Address, Date Established, Total Capacity, Current Operational Status, Date of Last Major Renovation, Square Footage, Number of Buildings/Structures, Security Level.
+
+**3.2. Facility Inspection & Visit Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The inspection and visitation at any time of all institutions and facilities under the jurisdiction of the department" (Section 626.c.1)
+    *   "Any council member is authorized to inspect and visit at any time the institutions and facilities under the jurisdiction of the department." (Section 627)
+*   **Why:** This dataset documents all official inspections and visits to facilities, ensuring oversight and compliance with standards.
+*   **One row represents:** A single inspection or visit event to a facility.
+*   **Covers:** All inspections and visits conducted by the Board of Correction, its designees, and Council members to institutions and facilities under DOC jurisdiction.
+*   **Columns:** Visit ID (PK), Facility ID (FK to 3.1), Date of Visit, Time of Visit, Visiting Party Type, Visitor Name(s) / ID(s) (FK to 5.1 or 5.3), Purpose of Visit, Key Findings / Observations, Recommendations Made, Follow-up Actions Required (Y/N), Date of Follow-up.
+
+**3.3. Facility Maintenance Work Orders**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The commissioner shall maintain and operate buildings and structures under his jurisdiction." (Section 624)
+    *   "The commissioner may construct such additions and repairs to buildings under his jurisdiction as can be accomplished by the use of the labor of persons under his care and custody and with materials in the possession of the department." (Section 624)
+    *   "Such incarcerated individuals or prisoners held for trial may be detailed by the commissioner to perform work or service on the grounds and buildings or on any public improvement under the charge of any other agency." (Section 625)
+*   **Why:** This dataset tracks all maintenance and repair activities, ensuring facilities are safe, operational, and compliant with standards.
+*   **One row represents:** A single work order for maintenance, repair, or construction.
+*   **Covers:** All maintenance, repair, and construction activities on buildings and structures under DOC jurisdiction.
+*   **Columns:** Work Order ID (PK), Facility ID (FK to 3.1), Date Requested, Date Approved, Description of Work, Work Type, Priority Level, Status, Completion Date, Labor Source, DOC Staff Hours (FK to 5.1), Incarcerated Individual Labor Hours (FK to 4.3), Materials Cost, Total Cost, Inspected By (Employee ID, FK to 5.1), Inspection Date.
+
+**3.4. Facility Property Damage Incidents**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-03(c)(8) Destruction of Property. (107.10) An inmate is guilty of the offense of Destruction of Property Grade I when such inmate misuses, defaces, or destroys City property, or private property belonging to another, with a value greater than one hundred dollars ($100.00)."
+    *   "§ 1-05(e) Restitution. If you are found guilty of damaging or destroying City property, you may be ordered to pay restitution..."
+*   **Why:** To track incidents of property damage within facilities, especially those caused by inmates, for repair, replacement, and restitution purposes.
+*   **One row represents:** A single incident of property damage.
+*   **Covers:** Damage to City property or private property within Department facilities.
+*   **Columns:** Damage Incident ID (PK), Date and Time of Incident, Facility ID (FK to 3.1), Location of Damage, Property Type, Description of Property, Estimated Value of Damage, Repair/Replacement Cost, Individual ID (FK to 1.1), Incident/Infraction ID (FK to 2.1), Restitution Ordered (Y/N), Restitution Order ID (FK to 2.5), Damage Report Status.
+
+**3.5. Facility Security Events**
+*   **Open Data Match:** "Emergency Lock-In Data" (2217) - 70%.
+*   **Quotes:**
+    *   "§ 1-03(c)(19) Inmate Movement. (117.10) Inmates shall follow facility rules and staff orders relating to movement inside and outside the facility, including, but not limited to, rules and orders dealing with seating, lock-in and lock-out."
+*   **Why:** To record significant security events within facilities, such as lock-downs, for operational oversight and analysis.
+*   **One row represents:** A single security event affecting a facility or part of it.
+*   **Covers:** All emergency lock-ins, lock-outs, or other significant security-related operational changes within facilities.
+*   **Columns:** Security Event ID (PK), Facility ID (FK to 3.1), Event Type (e.g., Emergency Lock-In, Lock-Out, Security Alert), Start Date/Time, End Date/Time, Reason for Event, Affected Areas/Units, Number of Inmates Affected, Initiating Staff ID (FK to 5.1), Resolution Details.
+
+**3.6. Inmate Count Events**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "§ 1-03(c)(5) Count Procedures. (104.10) Inmates shall not intentionally cause a miscount. (104.11) Inmates shall not intentionally delay the count."
+*   **Why:** To record all inmate counts conducted in facilities for security, operational oversight, and to identify potential rule violations.
+*   **One row represents:** A single inmate count event.
+*   **Covers:** All official counts of inmates within Department facilities.
+*   **Columns:** Count Event ID (PK), Date and Time of Count, Facility ID (FK to 3.1), Housing Unit/Area Counted, Staff ID (FK to 5.1), Expected Inmate Count, Actual Inmate Count, Count Discrepancy (Y/N), Reason for Discrepancy, Miscount/Delay Incident/Infraction ID (FK to 2.1), Count Status.
+
+**3.7. Department Vehicle Inventory**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "all vehicles employed in the transportation of prisoners who have been sentenced, are awaiting trial or are held for any other cause." (Section 623.2)
+*   **Why:** This dataset tracks all vehicles used for prisoner transportation, ensuring operational readiness and asset management.
+*   **One row represents:** A single vehicle owned or operated by the department for prisoner transportation.
+*   **Covers:** All vehicles employed in the transportation of prisoners.
+*   **Columns:** Vehicle ID (PK), Make, Model, Year, License Plate Number, Vehicle Type, Acquisition Date, Current Mileage, Maintenance Schedule, Last Maintenance Date, Next Scheduled Maintenance Date, Current Operational Status, Date of Last Safety Inspection.
+
+**3.8. Prisoner Transportation Events**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Sole power and authority concerning the care, custody and control of all court pens for the detention of prisoners while in the criminal courts of the city of New York, the family court of the state of New York within the city of New York, the supreme court in the counties of New York, Bronx, Kings, Queens and Richmond and of all vehicles employed in the transportation of prisoners who have been sentenced, are awaiting trial or are held for any other cause." (Section 623.2)
+    *   "All authority in relation to the custody and transportation of persons held for any cause in criminal proceedings and all prisoners under arrest awaiting arraignment who require hospital care, including those requiring psychiatric observation or treatment, in any county within the city." (Section 623.5)
+*   **Why:** This dataset tracks all prisoner movements, ensuring security, accountability, and efficient logistics for transportation.
+*   **One row represents:** A single transportation event for one or more prisoners.
+*   **Covers:** All instances of transporting prisoners who have been sentenced, are awaiting trial, or are held for any other cause.
+*   **Columns:** Transportation Event ID (PK), Date of Transport, Time of Departure, Time of Arrival, Origin Location Type, Origin Location ID (FK to 3.1), Destination Location Type, Destination Location ID (FK to 3.1), Vehicle ID (FK to 3.7), Primary Transporting Officer ID (FK to 5.1), Additional Transporting Officer IDs (FK to 5.1), Number of Prisoners Transported, List of Individual IDs Transported (FK to 1.1), Reason for Transport, Security Incidents During Transport (Y/N).
+
+---
+
+**4. Programs & Work Assignments**
+
+**4.1. Rehabilitative Program Catalog**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Section 623.6)
+*   **Why:** This dataset provides a master list of all available rehabilitative programs, serving as a reference for program participation.
+*   **One row represents:** A single rehabilitative program offered by the department.
+*   **Covers:** All re-training, counseling, and rehabilitative programs planned and implemented by the department.
+*   **Columns:** Program ID (PK), Program Name, Program Description, Program Type, Target Population, Program Start Date, Program End Date, Program Coordinator ID (FK to 5.1), Associated Facility ID (FK to 3.1).
+
+**4.2. Rehabilitative Program Participation**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "General supervision and responsibility for the planning and implementation of re-training, counseling and rehabilitative programs for felons, misdemeanants and violators of local laws who have been sentenced and are held in institutions under his charge." (Section 623.6)
+*   **Why:** This dataset tracks individual participation and progress in mandated rehabilitative programs.
+*   **One row represents:** A single incarcerated individual's enrollment in a specific program.
+*   **Covers:** All incarcerated individuals participating in re-training, counseling, and rehabilitative programs.
+*   **Columns:** Participation ID (PK), Individual ID (FK to 1.1), Program ID (FK to 4.1), Enrollment Date, Completion Date, Status, Reason for Status Change, Program Outcome, Program Instructor ID (FK to 5.1).
+
+**4.3. Incarcerated Individual Work Assignments**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "Every incarcerated individual of an institution under the authority of the commissioner shall be employed in some form of industry, in farming operations or other employment, and products thereof shall be utilized in the institutions under the commissioner or in any other agency." (Section 625)
+    *   "Those persons held for trial may be employed in the same manner as sentenced prisoners, provided they give their consent in writing." (Section 625)
+    *   "Such incarcerated individuals or prisoners held for trial may be detailed by the commissioner to perform work or service on the grounds and buildings or on any public improvement under the charge of any other agency." (Section 625)
+*   **Why:** This dataset tracks the employment of incarcerated individuals, ensuring compliance with mandates and managing labor resources.
+*   **One row represents:** A single work assignment for an incarcerated individual.
+*   **Covers:** All employment of incarcerated individuals in industry, farming, building maintenance, or public improvement work.
+*   **Columns:** Assignment ID (PK), Individual ID (FK to 1.1), Assignment Start Date, Assignment End Date, Work Type, Work Location (Facility ID, FK to 3.1, or External Agency Name), Supervisor ID (FK to 5.1), Total Hours Worked, Consent Obtained for Trial Prisoner (Y/N), Date Consent Obtained, Products Produced, Utilized By.
+
+---
+
+**5. Personnel & Oversight**
+
+**5.1. Department Staff Roster**
+*   **Open Data Match:** None directly, but "Aggregate Employee Statistics" (880) is aggregated from this. Match percentage: 0% (as this is master data, not aggregated).
+*   **Quotes:**
+    *   "The commissioner may appoint two deputies." (Section 622)
+    *   "The board may appoint an executive director to serve at its pleasure with such duties and responsibilities as the board may assign, and other professional, clerical, and support personnel within appropriations for such purpose." (Section 626.b)
+    *   "The commissioner shall designate such of the department's stenographic, clerical and other assistance to the board as may be necessary for the proper performance of its functions." (Section 626.b)
+    *   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance (1) by or on behalf of any person held or confined under the jurisdiction of the department or (2) by any employee of the department." (Section 626.f)
+*   **Why:** This dataset is essential for human resources, payroll, and managing the entire workforce of the Department of Correction and Board of Correction.
+*   **One row represents:** A single employee of the Department of Correction or the Board of Correction.
+*   **Covers:** All employees of the Department of Correction and the Board of Correction.
+*   **Columns:** Employee ID (PK), Full Name, Job Title, Department/Division, Hire Date, Termination Date, Employment Status, Required Certifications, Certification Expiration Dates, Training Records, Supervisor ID (FK to 5.1).
+
+**5.2. Staff Incident Log**
+*   **Open Data Match:** "Staff Injuries - Class A Injuries" (1786) - 80%.
+*   **Quotes:**
+    *   "assaults on staff by incarcerated individuals in which staff suffered serious injury." (§ 9-130.b.7)
+*   **Why:** To track all incidents involving staff, including injuries, for safety, accountability, and reporting.
+*   **One row represents:** A single incident involving a staff member.
+*   **Covers:** All incidents where staff are injured, assaulted, or involved in significant events.
+*   **Columns:** Staff Incident ID (PK), Employee ID (FK to 5.1), Date and Time of Incident, Facility ID (FK to 3.1), Location of Incident, Incident Type (e.g., Assault, Injury, Other), Description of Incident, Injury Type (e.g., Class A, Minor, None), Medical Treatment Required (Y/N), Perpetrator Type (Incarcerated Individual, Other Staff, External), Perpetrator ID (FK to 1.1 or 5.1), Investigation Status, Outcome.
+
+**5.3. Board of Correction Member Roster**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "There shall be a city board of correction to consist of nine members. Members shall be appointed for a term of six years. Vacancies shall be filled for the remainder of the unexpired term. Three members shall be appointed by the mayor, three by the council, and three by the mayor on the nomination jointly by the presiding justices of the appellate division of the supreme court for the first and second judicial departments. Appointments shall be made by the three respective appointing authorities on a rotating basis to fill any vacancy occurring on or after the effective date of this charter. Members of the board may be reimbursed for expenses incurred in the performance of their duties. The chairman of the board shall be designated from time to time by the mayor from among its members. Members of the board may be removed by the mayor for cause and after a hearing at which they shall be entitled to representation by counsel." (Section 626.a)
+*   **Why:** This dataset tracks the composition, appointments, and terms of the Board of Correction members, ensuring proper governance and oversight.
+*   **One row represents:** A single member of the Board of Correction.
+*   **Covers:** All members of the City Board of Correction.
+*   **Columns:** Member ID (PK), Full Name, Appointing Authority, Appointment Date, Term Start Date, Term End Date, Is Chairman (Y/N), Date Designated Chairman, Date Removed, Reason for Removal, Reimbursement for Expenses (Y/N).
+
+**5.4. Board of Correction Investigation Cases**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The board, or by written designation of the board, any member of it, the executive director, or other employee, shall have the following powers and duties: 1. The inspection and visitation at any time of all institutions and facilities under the jurisdiction of the department; 2. The inspection of all books, records, documents, and papers of the department;" (Section 626.c)
+    *   "The board, annually and at such other times as it may determine, shall submit to the mayor, the council, and the commissioner reports, findings and recommendations in regard to the matters within its jurisdiction." (Section 626.d)
+    *   "Within the scope of its authority pursuant to this section, the board may compel the attendance of witnesses, require the production of books, accounts, papers and other evidence, administer oaths, examine persons, and conduct public or private hearings, studies and investigations." (Section 626.g)
+    *   "The board may institute proceedings in a court of appropriate jurisdiction to enforce its subpoena power and other authority pursuant to this section." (Section 626.g)
+    *   "The board, or by written designation, a member of the board or the executive director, may conduct hearings, or study or investigate any matter within the jurisdiction of the department, and the board may make recommendations and submit reports of its findings to the appropriate authorities." (Section 626.h)
+*   **Why:** This dataset documents the Board of Correction's exercise of its broad investigative powers, tracking cases and their outcomes.
+*   **One row represents:** A single investigation, study, or hearing initiated by the Board of Correction.
+*   **Covers:** All investigations, studies, and hearings conducted by the Board of Correction or its designees into matters within the department's jurisdiction.
+*   **Columns:** Case ID (PK), Investigation Type, Initiating Board Member/Employee ID (FK to 5.1 or 5.3), Start Date, End Date, Subject Matter/Scope of Investigation, Related Facility ID (FK to 3.1), Related Individual ID (FK to 1.1), Subpoenas Issued (Y/N), Number of Witnesses Examined, Key Findings, Recommendations Made, Report Submission Date to Authorities, Court Proceedings Initiated (Y/N), Outcome of Court Proceedings.
+
+**5.5. Grievance Log**
+*   **Open Data Match:** None.
+*   **Quotes:**
+    *   "The board shall establish procedures for the hearing of grievances, complaints or requests for assistance (1) by or on behalf of any person held or confined under the jurisdiction of the department or (2) by any employee of the department." (Section 626.f)
+    *   "Starting July 1, 2021, the board shall issue a report, at least every three years, on issues related to the department's grievance process. Such report shall incorporate direct feedback from incarcerated individuals and proposed recommendations for relevant improvements, and shall include a section of recommendations on how to improve the grievance process for vulnerable populations, including incarcerated individuals who are lesbian, gay, bisexual, transgender, intersex, and gender nonconforming." (Section 626.f)
+*   **Why:** This dataset is essential for tracking and resolving complaints from both incarcerated individuals and employees, ensuring due process and identifying systemic issues.
+*   **One row represents:** A single grievance, complaint, or request for assistance.
+*   **Covers:** All grievances, complaints, or requests for assistance filed by or on behalf of any person held or confined under DOC jurisdiction, or by any employee of the department.
+*   **Columns:** Grievance ID (PK), Filing Party Type, Filing Party ID (FK to 1.1 or 5.1), Date Filed, Time Filed, Grievance Category, Description of Grievance, Facility ID (FK to 3.1), Status, Resolution Date, Resolution Details, Vulnerable Population Flag, Date of Last Update.
+
+---
+
+**Section 4, Unmatched Open Datasets:**
+
+*   **Aggregate Employee Statistics** (880) - This is aggregated data, not event-level.
+*   **Local Law 85 – Visitation Quarterly** (991) - This is aggregated data, likely a report.
+*   **Article 730 Transfer Waitlist** (1574) - This is a specialized list, not a core entity or event.
+*   **Local Law 33 - Security Indicators Report** (1596) - This is a report, likely aggregated.
+*   **Daily Inmates In Custody** (1916) - This is aggregated data (daily count), not event-level.
+
+---
+
+**Section 5, Non-tabular Data Summary:**
+
+*   **Rules and Regulations:** Board of Correction rules, minimum standards for care, custody, correction, treatment, supervision, and discipline.
+*   **Reports and Proposals (the documents themselves):** Proposals for capital planning and improvements, studies and reports concerned with correctional program planning, studies and reports in regard to promoting closer cooperation of agencies and courts, annual and other reports, findings, and recommendations from the Board, reports on issues related to the department's grievance process, reports about death investigations, statements posted on the website regarding ongoing death investigations.
+*   **Legal Documents/Records:** Written consent from prisoners held for trial to perform work, books, records, documents, and papers of the department, records provided to the board by the department and correctional health services for death investigations, court orders (limiting telephone calls), Directive 6007R-A (for PC adjournments), New York State Correction Law, Prison Rape Elimination Act, New York State Executive Law Article 49-B, Department's policy and procedures (for drug/alcohol testing).
+*   **Meeting Minutes:** Records of Board of Correction meetings.
+*   **Legal Directives:** Requests or directions from Commissioner of Investigation, Attorney General, or District Attorney not to investigate a death.
+*   **Forms/Notices:** Written notice forms (for PHD, security categories, PC, hearings, appeals).
+*   **Physical Evidence:** Physical receipts (for inmate property), photos (e.g., of damaged property, contraband), video recordings of hearings.
+*   **Inmate Rule Book:** The text itself.
+*   **Detailed information relating to incarceration:** Provided separately to inmates.
+*   **External Standards:** State Commission of Correction standards (9 NYCRR § 7028.6), New York City Board of Correction standards (40 RCNY § 1-07).

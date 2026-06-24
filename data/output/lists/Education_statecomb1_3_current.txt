@@ -1,0 +1,1579 @@
+**Section 1, Mission Summary:**
+
+This agency is responsible for overseeing and implementing educational and vocational rehabilitation programs, with a strong emphasis on student health, safety, and academic achievement, as well as supporting individuals with disabilities in achieving vocational independence. The agency is required to run key programs including student health services (immunizations, screenings, medication administration), school meal programs, special education support, vocational rehabilitation services, and various educational compliance and reporting initiatives. The agency's impacts on constituents include ensuring student well-being and readiness for learning, promoting academic success, facilitating access to career opportunities for individuals with disabilities, and maintaining safe and compliant school environments.
+
+**Section 2, Data Summary:**
+
+1.  **Student Health Assessments**
+2.  **Student Immunization Records**
+3.  **Student Health Screening Records**
+4.  **Student Medication Administration Records**
+5.  **Student Self-Administered Medication Permissions**
+6.  **Student Spare Medication Custody Log**
+7.  **Student Communicable Disease Exclusion Records**
+8.  **Student Athletic Activity Medical Clearances**
+9.  **Student Drug Test Records**
+10. **Student Dissection Objection Records**
+11. **School Medical Device Inventory**
+12. **Emergency Medical Equipment Usage Log**
+13. **Emergency Medical Equipment Notifications**
+14. **School Emergency Response Program Records**
+15. **School Bedbug Infestation Records**
+16. **Water Safety Information Distribution Records**
+17. **School Meal Service Records**
+18. **Student Meal Eligibility Records**
+19. **Free/Reduced Meal Application Outreach Log**
+20. **Food Service Contracts**
+21. **Meal Nutritional Information Publication Records**
+22. **School Meal Ingredient and Nutritional Information Records**
+23. **Nutrition Advisory Committee Meeting Records**
+24. **Employee Employment Records (School & Vocational Board)**
+25. **Employee Medical Examination Records**
+26. **Staff Medical Training Records**
+27. **Unlicensed Personnel Medication Administration Training Records**
+28. **Student Sunscreen Permission Records**
+29. **Non-Public School Health Service Contracts**
+30. **School Hygiene District Budget/Expenditure Tracking**
+31. **Student Speech and Language Service Records**
+32. **Student Health Training Program Placements**
+33. **Vocational Rehabilitation Client Applications**
+34. **Vocational Rehabilitation Client Case Management**
+35. **Approved Vocational Rehabilitation Organizations Register**
+36. **Vocational Rehabilitation Service Provider Contracts**
+37. **Vocational Rehabilitation Facility Development Projects**
+38. **Sheltered Employment Client Review Records**
+39. **Vocational Rehabilitation Gifts and Donations**
+40. **Vocational Education and Extension Board Member & Officer Appointments**
+41. **Vocational Education and Extension Board District Service Contracts**
+42. **Vocational Education and Extension Board Pupil Transportation Records**
+43. **Vocational Education and Extension Board Vehicle Inventory**
+44. **Reading Curriculum Alignment Verification**
+45. **Animal Experimentation Waiver Applications**
+46. **Hypodermic Needle Certificate of Need Applications**
+47. **Scoliosis Screening Waiver Applications**
+48. **Student State Seal of Biliteracy Awards**
+49. **Advanced Course Notification Records**
+50. **Approved Firearms/Game Law Courses**
+51. **Conservation Day Activity Log**
+52. **Library Material Distribution Log**
+53. **Student Government Establishment Records**
+
+**Section 3, Data Details:**
+
+**1. Student Health Assessments**
+*   **Matching Open Dataset(s):** None directly matching comprehensive student health assessments.
+*   **Quotes:**
+    *   "A health certificate shall be furnished by each student in the public schools upon his or her entrance in such schools and upon his or her entry into the grades prescribed by the commissioner in regulations, provided that such regulations shall require such certificates at least twice during the elementary grades and twice in the secondary grades." § 903.1 (1)
+    *   "Each such certificate shall describe the condition of the student when the examination was made... and shall state whether such student is in a fit condition of health to permit his or her attendance at the public schools." § 903.1 (1)
+    *   "Each principal of a public school... shall report to the director of school health services... the names of all students who have not furnished health certificates... and the director of school health services shall cause such students to be separately and carefully examined and tested" § 904.1 (1)
+    *   "Each examination shall also include a calculation of the student's body mass index (BMI) and weight status category." § 904.1 (1)
+    *   "A dental health certificate shall be requested from each student. Each student is requested to furnish a dental health certificate at the same time that health certificates are required." § 903.2.a (1)
+    *   "Each such certificate shall describe the dental health condition of the student when the assessment was made... and shall state whether such student is in fit condition of dental health to permit his or her attendance at the public schools." § 903.2.a (1)
+*   **Why:** To track all required and school-initiated health and dental assessments for students, ensuring fitness for attendance and identifying health needs.
+*   **One row represents:** A single health or dental assessment event for a student.
+*   **Covers:** All health certificates submitted by students, health appraisals initiated by schools, and dental health certificates requested from students.
+*   **Columns:**
+    *   Assessment ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Assessment Type (e.g., Health Certificate, School-Initiated Appraisal, Dental Certificate)
+    *   Submission Date
+    *   Required Grade Level (if applicable)
+    *   Examination/Assessment Date
+    *   Certifying/Appraising Professional Name
+    *   Certifying/Appraising Professional Type (Physician, PA, Nurse Practitioner, Dentist, RDH)
+    *   Certifying Professional License Jurisdiction
+    *   Fit for School Attendance (Y/N)
+    *   Diabetes Risk Analysis Performed (Y/N)
+    *   BMI
+    *   Weight Status Category
+    *   Sickle Cell Anemia Test Performed (Y/N)
+    *   Sickle Cell Anemia Result
+    *   Defective Sight Found (Y/N)
+    *   Defective Hearing Found (Y/N)
+    *   Other Physical Disability Found (Y/N)
+    *   Disability Description
+    *   Parent Notified of Disability Date
+    *   Parent Unable/Unwilling to Provide Relief (Y/N)
+    *   Relief Provided by School (Y/N)
+    *   Religious Objection to Examination (Y/N)
+    *   Religious Objection to BMI Survey (Y/N)
+    *   Certificate Status (Submitted, Missing, Overdue, Religious Objection)
+    *   Notice Sent Date (if missing)
+    *   School-Initiated Examination Required (Y/N)
+
+**2. Student Immunization Records**
+*   **Matching Open Dataset(s):** "Student Covid Vaccinations (4/1/22)", "Student Covid Vaccinations (3/18/22)", "Student COVID Vaccinations (3-24-2022)", "Student COVID Vaccinations (04/16 - 05/03/2022". Match percentage: 40% (These are specific to COVID, not general immunizations, but cover the same entity type: student vaccinations).
+*   **Quotes:**
+    *   "Each school shall require of every child entering or attending such school proof of immunization in accordance with the provisions of section twenty-one hundred sixty-four of the public health law." § 914.1 (1)
+    *   "Each school district shall participate in the surveys directed by the state commissioner of health... of the immunization level of the children entering and attending school within such district..." § 914.3 (1)
+    *   "assisting in the collection and review of medical and immunization information which is required to be maintained for all children for which the provider is providing subsidized child care and the monitoring of those medical and immunization requirements;" § 21-120.1.b.7 (1)
+*   **Why:** To ensure compliance with immunization requirements for school attendance and facilitate public health surveys and audits.
+*   **One row represents:** A record of a student's immunization status for a specific vaccine.
+*   **Covers:** All required immunizations for students entering or attending public schools, and for children in subsidized child care.
+*   **Columns:**
+    *   Immunization Record ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Immunization Type (e.g., Measles, Mumps, Rubella, Polio, COVID-19)
+    *   Date Administered
+    *   Proof Provided (Y/N)
+    *   Religious Exemption Claimed (Y/N)
+    *   Medical Exemption Claimed (Y/N)
+    *   Exemption Documentation Provided (Y/N)
+    *   Compliance Status (Compliant, Non-Compliant, Exempt)
+
+**3. Student Health Screening Records**
+*   **Matching Open Dataset(s):** None directly matching vision, hearing, and scoliosis screenings.
+*   **Quotes:**
+    *   "The director of school health services of each school district... shall conduct screening examinations of vision, hearing, and scoliosis of all students at such times and as defined in the regulations of the commissioner, and at any time deemed necessary." § 905.1 (1)
+    *   "The positive results of any such screening examinations of students for the presence of scoliosis shall be in writing and the parent of... any child in whom the presence of scoliosis is found shall be advised of such results by the school authorities within ninety days after the finding of the presence of scoliosis is made." § 905.2 (1)
+    *   "all students who enroll in a school of this state shall be tested for color perception, distance acuity and near vision within six months of admission to the school..." § 905.4 (1)
+    *   "School health services... shall include... dental inspection and/or screening, scoliosis screening, vision screening and audiometer tests" § 901.2 (1)
+*   **Why:** To track mandatory vision, hearing, and scoliosis screenings, ensuring early detection of issues and proper notification.
+*   **One row represents:** A single health screening event for a student.
+*   **Covers:** All vision, hearing, and scoliosis screening examinations conducted for students.
+*   **Columns:**
+    *   Screening ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Screening Date
+    *   Screening Type (Vision, Hearing, Scoliosis, Dental)
+    *   Examiner Name
+    *   Results (e.g., Vision Acuity, Hearing Threshold, Scoliosis Presence, Dental Condition Summary)
+    *   Positive Result (Y/N)
+    *   Parent Notified Date (if positive result for scoliosis)
+    *   Teacher Notified (Y/N, for vision)
+    *   Religious Objection to Screening (Y/N)
+
+**4. Student Medication Administration Records**
+*   **Matching Open Dataset(s):** "2016-2017 EMS Transport Final - 6 Month/Date of Birth/Race/IEP", "2015 2016 EMS Transport Final Students With Disabilities", "2017-2018 EMS Transports Final 6 Months", "2020-2021 EMS Transport Full Year - Race, SWD, YOB", "2017-2018 EMS Transport Final Students With Disabilities", "2015 2016 EMS Transports Final Student Race", "2015 2016 EMS Transports Final Student Date Of Birth", "2017-2018 EMS Transport Final Race", "2017- 2018 EMS Transports Final Student Date Of Birth", "2018-2019 EMS Transports Final Student Date Of Birth". Match percentage: 30% (These are EMS transports, which might involve medication, but are not records of *school personnel* administering medication. The entity is different.)
+*   **Quotes:**
+    *   "Licensed nurses, nurse practitioners, physician assistants, or physicians employed by school districts... are authorized to calculate prescribed insulin dosages, administer prescribed insulin, program the prescribed insulin pump, refill the reservoir in the insulin pump, change the infusion site, inject prescribed glucagon, teach an unlicensed person to administer glucagon to an individual, and perform other authorized services... to pupils who have received written permission by a physician... and written parental consent..." § 902-a.1 (1)
+    *   "Licensed nurses... are authorized to administer prescribed epinephrine... to pupils diagnosed by a physician... with an allergy who have the written permission of a physician... for the administration of emergency epinephrine and written parental consent..." § 902-b.1.a (1)
+*   **Why:** To meticulously record all instances of medication administration to students by authorized school personnel, ensuring proper care and accountability.
+*   **One row represents:** A single instance of medication administration to a student.
+*   **Covers:** Administration of insulin, glucagon, epinephrine, rescue inhalers, and other prescribed medications by authorized school personnel.
+*   **Columns:**
+    *   Administration ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Administration Date
+    *   Administration Time
+    *   Medication Name
+    *   Dosage
+    *   Administration Method (e.g., Injection, Pump, Inhaler)
+    *   Reason for Administration (e.g., Blood Sugar Low, Allergic Reaction, Asthma Attack)
+    *   Administering Personnel ID (FK to 14)
+    *   Administering Personnel Type (e.g., Nurse, PA, Unlicensed Trained Personnel)
+    *   Physician Order on File (Y/N)
+    *   Parental Consent on File (Y/N)
+    *   Outcome/Student Response
+
+**5. Student Self-Administered Medication Permissions**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The board of education or trustees of each school district... shall allow pupils who have been diagnosed by a physician... with an asthmatic condition or another respiratory disease to carry and use a prescribed inhaler and self-administer inhaled rescue medications... with the written permission of a physician... and written parental consent." (§ 916.1) (2)
+    *   "The written permission shall include an attestation by the physician... confirming the following: (a) the pupil is diagnosed with asthma...; and (b) that the pupil has demonstrated that he or she can self-administer... The written permission shall also include the name of the prescribed inhaled rescue medication, the dose, the times when the medication is to be taken, the circumstances which may warrant the use of the medication and the length of time for which the inhaler is prescribed." (§ 916.1) (2)
+    *   "The board of education or trustees of each school district... shall allow pupils who have been diagnosed by a physician... with an allergy to carry and use a prescribed epinephrine device... with the written permission of a physician... and written parental consent." (§ 916-a.1) (2)
+    *   "The board of education or trustees of each school district... shall allow pupils who have been diagnosed with diabetes to carry glucagon and carry and use insulin through appropriate medication delivery devices and equipment and/or to carry and use equipment and supplies necessary to check blood glucose levels and ketone levels, as prescribed by a physician... with parental consent and the written permission of a physician..." (§ 916-b.1) (2)
+*   **Why:** To track student permissions for self-administration of critical medications and related medical details, ensuring compliance and student safety.
+*   **One row represents:** A student's permission to self-administer a specific medication or manage a medical condition.
+*   **Covers:** All students with physician-diagnosed asthma, respiratory disease, allergies, or diabetes requiring self-administered medication or condition management.
+*   **Columns:**
+    *   Permission ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Condition Type (Asthma/Respiratory, Allergy, Diabetes)
+    *   Medication/Device Name (e.g., Inhaler, Epinephrine Device, Insulin, Glucagon, Glucose Meter)
+    *   Prescription Dose/Range
+    *   Prescription Times/Circumstances for Use
+    *   Insulin Delivery System Type (if applicable)
+    *   Physician Permission Date
+    *   Physician Attestation of Diagnosis (Y/N)
+    *   Physician Attestation of Self-Administration Capability (Y/N)
+    *   Parental Consent Date
+    *   Permission Expiration Date
+    *   Record Maintained in Student Health Record (Y/N)
+
+**6. Student Spare Medication Custody Log**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "upon the written request of a parent or person in parental relation, the board of education or trustees of a school district... shall allow such pupils to maintain an extra such inhaler in the care and custody of a licensed nurse, nurse practitioner, physician assistant, or physician employed by such district... and shall be readily accessible to such pupil." (§ 916.1) (2)
+    *   "Similar language for "extra epinephrine device" (§ 916-a.1) (2)
+    *   "Similar language for "extra insulin and an insulin delivery system, glucagon, blood glucose meters and related supplies" (§ 916-b.1) (2)
+*   **Why:** To track the custody of spare medications and supplies for students with medical conditions, ensuring availability and proper management.
+*   **One row represents:** A record of a spare medication or supply item held in custody for a student.
+*   **Covers:** All spare inhalers, epinephrine devices, insulin, glucagon, blood glucose meters, and related supplies held in the care and custody of school health professionals.
+*   **Columns:**
+    *   Custody Record ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Medication/Supply Name
+    *   Quantity
+    *   Expiration Date
+    *   Date Received into Custody
+    *   Custodian Staff ID (FK to 14)
+    *   Custodian Staff Name
+    *   Parent/Guardian Request Date
+    *   Location of Storage
+    *   Date Returned/Disposed (if applicable)
+
+**7. Student Communicable Disease Exclusion Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Whenever, upon investigation and evaluation by the director of school health services... a student in the public schools shows symptoms of any communicable or infectious disease reportable under the public health law that imposes a significant risk of infection of others in the school, he or she shall be excluded from the school and sent home immediately..." § 906.1 (1)
+    *   "The director of school health services shall immediately notify a local public health agency of any disease reportable under the public health law." § 906.1 (1)
+    *   "Following absence on account of illness or from unknown cause, the director of school health services may examine each student returning to a school without a certificate from a local public health officer, a duly licensed physician, physician assistant, or nurse practitioner." § 906.2 (1)
+*   **Why:** To track student exclusions due to communicable diseases, ensuring public health and proper return-to-school procedures.
+*   **One row represents:** A student's exclusion from school due to a communicable disease.
+*   **Covers:** All instances of students being excluded from school due to symptoms of communicable or infectious diseases.
+*   **Columns:**
+    *   Exclusion ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Exclusion Date
+    *   Disease/Symptom Description
+    *   Disease Reportable Under Public Health Law (Y/N)
+    *   Local Public Health Agency Notified (Y/N)
+    *   Return Date
+    *   Return Certificate Provided (Y/N)
+    *   Return Certificate Provider (e.g., Public Health Officer, Physician)
+    *   School Health Services Examination on Return (Y/N)
+    *   Examining Professional ID (FK to 14)
+
+**8. Student Athletic Activity Medical Clearances**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The commissioner shall promulgate rules and regulations requiring that any student displaying signs or symptoms of pending or increased risk of sudden cardiac arrest shall be immediately removed from athletic activities and shall not resume athletic activity until he or she has been evaluated by and received written and signed authorization from a licensed physician." (§ 923.b) (2)
+    *   "Such authorization shall be kept on file in the pupil's permanent health record." (§ 923.b) (2)
+*   **Why:** To track student participation in athletics, medical removals, and physician clearances for return to play after sudden cardiac arrest concerns.
+*   **One row represents:** A student's medical clearance status for athletic activities following a sudden cardiac arrest concern.
+*   **Covers:** Students participating in interscholastic athletics who are removed due to sudden cardiac arrest symptoms.
+*   **Columns:**
+    *   Clearance ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Athletic Activity/Team
+    *   Date of Removal from Activity
+    *   Reason for Removal (e.g., Symptoms of Sudden Cardiac Arrest)
+    *   Physician Evaluation Date
+    *   Physician Name
+    *   Physician License Number
+    *   Date of Written Authorization to Return
+    *   Authorization Kept on File (Y/N)
+    *   Return to Activity Date
+
+**9. Student Drug Test Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The school authorities of each school district... may cause all children attending grades seven through twelve... to be separately and carefully examined in order to ascertain whether any such children are making use of dangerous drugs." § 912-a.1 (1)
+    *   "Such examination may be made only upon the written request or consent of a parent of... a child." § 912-a.2 (1)
+    *   "The results of such examination shall be promptly forwarded to the school authorities. If it should be ascertained... that any child is making use of dangerous drugs, the school authorities shall report same to the social services department... and to the parent of... such child together with a statement... as to available programs and facilities to combat such dangerous drug usage." § 912-a.2 (1)
+    *   "information resulting from an examination conducted pursuant to this section shall be kept confidential and shall not be used for law enforcement purposes but may be utilized only for statistical, epidemiological or research purposes." § 912-a.3 (1)
+*   **Why:** To track optional student drug tests, ensuring parental consent, proper reporting of results, and confidentiality.
+*   **One row represents:** A single drug test administered to a student.
+*   **Covers:** All drug tests conducted for students in grades 7-12 in public and private schools.
+*   **Columns:**
+    *   Drug Test ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Test Date
+    *   Parent/Guardian Written Consent (Y/N)
+    *   Test Result (e.g., Positive, Negative, Inconclusive)
+    *   Drug(s) Detected (if positive)
+    *   Social Services Department Notified (Y/N)
+    *   Parent/Guardian Notified of Result (Y/N)
+    *   Programs/Facilities Information Provided (Y/N)
+    *   Religious Objection to Examination (Y/N)
+
+**10. Student Dissection Objection Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Any student expressing a moral or religious objection to the performance or witnessing of the dissection of an animal... shall be provided the opportunity to undertake and complete an alternative project that shall be approved by such student's teacher; provided, however, that such objection is substantiated in writing by the student's parent or legal guardian." § 809.4 (1)
+    *   "Students who perform alternative projects who do not perform or witness the dissection of animals shall not be penalized." § 809.4 (1)
+*   **Why:** To track student objections to animal dissection, ensuring alternative projects are provided and students are not penalized.
+*   **One row represents:** A student's objection to animal dissection.
+*   **Covers:** All students who express moral or religious objections to animal dissection in courses.
+*   **Columns:**
+    *   Objection ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Course ID (FK to Course Catalog, inferred)
+    *   Objection Date
+    *   Objection Type (Moral, Religious)
+    *   Parent/Guardian Written Substantiation Provided (Y/N)
+    *   Alternative Project Provided (Y/N)
+    *   Alternative Project Description
+    *   Teacher Approval of Alternative Project (Y/N)
+    *   Penalty Applied (Y/N)
+    *   Date of Notice to Students/Parents (inferred from policy)
+
+**11. School Medical Device Inventory**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "On-site cardiac automated external defibrillator." § 917 (1)
+    *   "On-site cardiac automated external defibrillator in nonpublic schools." § 917-a (1)
+    *   "On-site nebulizers." § 919 (1)
+    *   "On-site epinephrine device." § 921-a (1)
+    *   "School districts... shall provide and maintain on-site in each instructional school facility automated external defibrillator (AED) equipment..." (§ 917.1) (2)
+    *   "Nonpublic schools shall provide and maintain on-site in each instructional school facility automated external defibrillator (AED) equipment..." (§ 917-a.1) (2)
+    *   "School districts... may provide and maintain on-site in each instructional school facility epinephrine devices..." (§ 921-a.1) (2)
+    *   "School districts, public libraries... may provide and maintain on-site in each instructional school facility or library, opioid antagonists..." (§ 922.1) (2)
+*   **Why:** To track the inventory, location, and maintenance status of critical medical devices and emergency equipment in schools and libraries.
+*   **One row represents:** A single medical device or piece of emergency medical equipment.
+*   **Covers:** All Automated External Defibrillators (AEDs), nebulizers, epinephrine devices, and opioid antagonists in public and non-public schools and libraries.
+*   **Columns:**
+    *   Device ID (PK)
+    *   School ID (FK to School Data, inferred)
+    *   Facility ID (School ID or Library ID, inferred)
+    *   Facility Name
+    *   Device Type (AED, Nebulizer, Epinephrine Device, Opioid Antagonist)
+    *   Manufacturer
+    *   Model
+    *   Serial Number
+    *   Location in Facility
+    *   Purchase/Acquisition Date
+    *   Last Inspection/Maintenance Date
+    *   Next Scheduled Inspection/Maintenance Date
+    *   Battery Expiration Date (for AEDs, Epinephrine Devices)
+    *   Pad Expiration Date (for AEDs)
+    *   Medication Expiration Date (for Epinephrine Devices, Nebulizers, Opioid Antagonists)
+    *   Operational Status (e.g., Fully Functional, Needs Maintenance, Out of Service)
+    *   Quantity (if multiple of same type/model at location)
+    *   Notified Regional EMS Council (Y/N, for AEDs)
+    *   Sign Posted (Y/N, for AEDs)
+
+**12. Emergency Medical Equipment Usage Log**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Every use of an AED on a patient in a nonpublic school shall be immediately reported to the appropriate local emergency medical services system, emergency communications center or emergency vehicle dispatch center, as appropriate." (§ 917-a.4) (2)
+    *   "Any school district... shall comply with the requirements of section three thousand three hundred nine of the public health law including, but not limited to, appropriate clinical oversight, record keeping and reporting." (§ 922.2) (2)
+*   **Why:** To record each instance of emergency medical equipment use, supporting reporting and oversight.
+*   **One row represents:** A single instance of emergency medical equipment being used on a patient.
+*   **Covers:** All uses of AEDs, Epinephrine Devices, and Opioid Antagonists in schools and libraries.
+*   **Columns:**
+    *   Usage Incident ID (PK)
+    *   Equipment ID (FK to 11)
+    *   Facility ID (School ID, Library ID)
+    *   Date of Use
+    *   Time of Use
+    *   Patient Type (Student, Staff, Other)
+    *   Patient ID (if student/staff and identifiable)
+    *   Nature of Emergency (e.g., Cardiac Arrest, Anaphylaxis, Opioid Overdose)
+    *   Administering Staff ID (FK to 26)
+    *   Administering Staff Name
+    *   Outcome (e.g., Patient Revived, EMS Arrived, No Change)
+    *   Reported to EMS (Y/N)
+    *   EMS Notification Date/Time
+    *   Follow-up Actions Taken
+
+**13. Emergency Medical Equipment Notifications**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Nonpublic schools shall notify the appropriate regional emergency services council of the existence, location and type of any AED they possess." (§ 917-a.5) (2)
+*   **Why:** To track notifications sent to regional emergency services councils regarding AEDs.
+*   **One row represents:** A notification sent to a regional emergency services council about an AED.
+*   **Covers:** All notifications made by nonpublic schools to regional emergency services councils regarding AEDs.
+*   **Columns:**
+    *   Notification ID (PK)
+    *   School ID (FK to School Data, inferred)
+    *   AED ID (FK to 11)
+    *   Regional EMS Council Notified
+    *   Date of Notification
+    *   Method of Notification
+    *   Information Provided (Existence, Location, Type)
+    *   Confirmation of Receipt (Y/N)
+
+**14. School Emergency Response Program Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Opioid overdose prevention." § 922 (1)
+    *   "Sudden cardiac arrest." § 923 (1)
+*   **Why:** To track the implementation and activities of opioid overdose prevention and sudden cardiac arrest response programs in schools.
+*   **One row represents:** A record of a school's emergency response program or plan.
+*   **Covers:** All opioid overdose prevention programs and sudden cardiac arrest response plans implemented in schools.
+*   **Columns:**
+    *   Program ID (PK)
+    *   School ID (FK to School Data, inferred)
+    *   Program Type (Opioid Overdose Prevention, Sudden Cardiac Arrest Response)
+    *   Program Start Date
+    *   Naloxone Available On-Site (Y/N)
+    *   Number of Staff Trained
+    *   Last Staff Training Date
+    *   Overdose Incident Response Plan (Y/N)
+    *   Number of Overdose Incidents (FK to Incident Report Data, inferred)
+    *   Plan Approval Date
+    *   Key Personnel Trained (Y/N)
+    *   Last Training Date for Key Personnel
+    *   Emergency Drills Conducted (Y/N)
+    *   Last Drill Date
+    *   AEDs Available (Y/N, FK to 11)
+    *   Emergency Contact Procedures (Y/N)
+
+**15. School Bedbug Infestation Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Public schools; infestation of bedbugs (Cimex lectularius)." § 920 (1)
+    *   "In a city school district having a population of one million or more inhabitants, the principal of each public school shall provide immediate notification to parents... disclosing a finding relating to the infestation of bedbugs... in such school..." (§ 920.1) (2)
+    *   "The principal shall ensure that the bedbug infestation at the school is properly addressed in the most effective and safe manner." (§ 920.3) (2)
+*   **Why:** To track bedbug infestations in public schools, including notifications to parents and remediation efforts.
+*   **One row represents:** A single bedbug infestation incident at a school.
+*   **Covers:** All bedbug infestations reported in public schools, especially in large city school districts.
+*   **Columns:**
+    *   Infestation ID (PK)
+    *   School ID (FK to School Data, inferred)
+    *   School Name
+    *   Infestation Report Date
+    *   Date of Infestation Finding
+    *   Location in School (e.g., Classroom, Library, Office)
+    *   Severity of Infestation
+    *   Remediation Action Taken
+    *   Remediation Start Date
+    *   Remediation End Date
+    *   Remediation Method Used
+    *   Remediation Company/Personnel
+    *   Re-inspection Date
+    *   Infestation Resolved (Y/N)
+    *   Post-Remediation Inspection Date
+    *   Infestation Status (Active, Resolved, Recurrence)
+    *   Date of Resolution
+    *   Date of Parent/Guardian Notification
+    *   Scope of Notification (e.g., All Students, Affected Area Only)
+
+**16. Water Safety Information Distribution Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Water safety information." § 926 (1)
+    *   "At the beginning of the two thousand twenty-six--two thousand twenty-seven school year, each school district shall provide, to the parent or guardian of each student enrolled in such school district, information on drowning prevention, water safety, and safe and healthy swimming." (§ 926.1) (2)
+    *   "Each school year thereafter such information shall be provided to the parent or guardian of a student upon enrollment in the school district." (§ 926.1) (2)
+    *   "If the student is eighteen years of age or older, such information shall be provided to the student." (§ 926.1) (2)
+*   **Why:** To track the distribution of water safety information to students and parents, ensuring compliance with annual and enrollment requirements.
+*   **One row represents:** The provision of water safety information to a student or their parent/guardian.
+*   **Covers:** All instances of water safety information distribution by school districts to students and parents/guardians.
+*   **Columns:**
+    *   Provision ID (PK)
+    *   School District ID (FK to School District Data, inferred)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   Recipient Type (Parent/Guardian, Student)
+    *   Distribution Date
+    *   Method of Distribution (e.g., Website, Newsletter, Handout, Electronic, Paper)
+    *   Target Audience (e.g., Students, Parents)
+    *   Content Summary of Information Distributed
+    *   Enrollment Year (for annual provision)
+    *   Initial Enrollment (Y/N, if provided upon enrollment)
+    *   Translation Requested (Y/N)
+    *   Language of Translation (if requested)
+
+**17. School Meal Service Records**
+*   **Matching Open Dataset(s):** "COVID-19 Free Meals Locations" (425). Match percentage: 20% (This is about locations, not daily meal service counts or reimbursements).
+*   **Quotes:**
+    *   "All public school districts... that participate in the national school lunch program or school breakfast program... shall develop a plan to ensure that a pupil whose parent or guardian has unpaid school meal fees is not shamed or treated differently" § 908 (1)
+    *   "The department shall require all school districts... to serve breakfast and lunch at no cost to the student." § 915-a.1 (1)
+    *   "for each breakfast and lunch meal served, the department shall reimburse the school food authority the difference between (a) the combined state and federal reimbursement rate for a reduced-price or paid meal... and (b) the combined state and federal reimbursement rate for a free meal..." § 915-a.2 (1)
+*   **Why:** To track the provision of school meals, ensure universal free meals, and manage federal and state reimbursements.
+*   **One row represents:** A daily record of meal service for a specific meal type at a school.
+*   **Covers:** All breakfast and lunch meals served in public schools, charter schools, and non-public schools participating in federal meal programs.
+*   **Columns:**
+    *   Meal Service ID (PK)
+    *   School ID (FK to School Data, inferred)
+    *   Date
+    *   Meal Type (Breakfast, Lunch)
+    *   Total Meals Served
+    *   Number of Free Meals Served (for reimbursement calculation)
+    *   Number of Reduced-Price Meals Served (for reimbursement calculation)
+    *   Number of Paid Meals Served (for reimbursement calculation)
+    *   Federal Reimbursement Rate (Free)
+    *   Federal Reimbursement Rate (Reduced)
+    *   Federal Reimbursement Rate (Paid)
+    *   State Reimbursement Rate (Free)
+    *   State Reimbursement Rate (Reduced)
+    *   State Reimbursement Rate (Paid)
+    *   Total Federal Reimbursement Claimed
+    *   Total State Reimbursement Claimed
+    *   Community Eligibility Provision (CEP) Status (Y/N)
+    *   Provision 2 Status (Y/N)
+
+**18. Student Meal Eligibility Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "School districts... shall maximize the number of students eligible for free meals by conducting the Direct Certification Matching Process at a minimum of three times per year, designating children as "Other Source Categorically Eligible"... or... by annually collecting the free and reduced-price meal application." (§ 916.5) (2)
+*   **Why:** To track student eligibility for free/reduced meals and compliance with federal requirements.
+*   **One row represents:** A student's eligibility determination for free or reduced-price meals.
+*   **Covers:** All students in school districts, charter schools, and non-public schools eligible for free or reduced-price meals.
+*   **Columns:**
+    *   Eligibility ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Eligibility Determination Date
+    *   Eligibility Status (Free, Reduced, Paid)
+    *   Eligibility Method (Direct Certification, Application, Other Source Categorically Eligible)
+    *   Direct Certification Run Date (if applicable)
+    *   Application Submission Date (if applicable)
+    *   Application Approval Date (if applicable)
+    *   Parent/Guardian Name (if by application)
+    *   Household Income (if by application)
+    *   Number of Household Members (if by application)
+    *   Federal Reimbursement Provision (e.g., Community Eligibility Provision, Provision 2)
+
+**19. Free/Reduced Meal Application Outreach Log**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "A communication procedure designed to support eligible families enrolling in the national free and reduced price meal program. Such communication procedures shall also include a process for determining eligibility when a student owes money for five or more meals, wherein the school or school district shall: i. make every attempt to determine if a student is directly certified to be eligible for free meals; ii. make at least two attempts... to reach the student's parent or guardian and have the parent or guardian fill out a meal application; and iii. require a school or school district to contact the parent or guardian to offer assistance with a meal application..." § 908.d (1)
+    *   "If a school or school district becomes aware that a student who has not submitted a meal application is eligible for free or reduced-fee meals, the school or school district shall complete and file an application for the student..." § 908.h (1)
+    *   "The department... shall promulgate any rule or regulation needed for school districts... to promote the supplemental nutrition assistance program to a student or person in parental relation to a student by providing either application assistance or a direct referral to an outreach partner" § 915-a.3 (1)
+*   **Why:** To track efforts to enroll eligible students in free/reduced-price meal programs and promote SNAP benefits.
+*   **One row represents:** A single outreach attempt or action related to free/reduced meal applications or SNAP.
+*   **Covers:** All attempts by schools/districts to contact parents/guardians regarding meal applications, direct certification, and SNAP promotion.
+*   **Columns:**
+    *   Outreach ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Date of Outreach/Action
+    *   Type of Outreach/Action (e.g., Meal Application Attempt 1, Meal Application Attempt 2, SNAP Application Assistance, SNAP Referral)
+    *   Method of Contact (e.g., Phone, Email, Letter, In-person)
+    *   Outcome (e.g., Contact Made, Application Sent, Application Received, Parent Declined, Direct Certified)
+    *   Staff Member ID (FK to 14)
+    *   Notes
+
+**20. Food Service Contracts**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "All contracts entered into for the two thousand twenty-three--two thousand twenty-four school year, and thereafter, to provide, maintain and operate cafeteria or restaurant service by a private food service management company shall include provisions requiring such private food service management company to disclose ingredients lists and nutritional information to school districts for all meals that such company provides." (§ 924.a) (2)
+*   **Why:** To track contracts with private food service management companies and ensure compliance with disclosure requirements.
+*   **One row represents:** A contract between a school district and a private food service management company.
+*   **Covers:** All contracts for cafeteria or restaurant services with private food service management companies.
+*   **Columns:**
+    *   Contract ID (PK)
+    *   School District ID (FK to School District Data, inferred)
+    *   Food Service Company Name
+    *   Contract Start Date
+    *   Contract End Date
+    *   Services Provided (e.g., Cafeteria Service, Restaurant Service)
+    *   Provision for Ingredient/Nutritional Disclosure (Y/N)
+    *   Date of Last Disclosure Receipt (FK to 19)
+    *   Contract Status (Active, Expired, Terminated)
+
+**21. Meal Nutritional Information Publication Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "All ingredients lists and nutritional information provided to school districts shall be published and publicly shared on such school district's website." (§ 924.b) (2)
+*   **Why:** To track the publication of nutritional information on school district websites as required by law.
+*   **One row represents:** The publication event of nutritional information for a specific meal or period.
+*   **Covers:** All instances of school districts publishing ingredient lists and nutritional information from their food service providers.
+*   **Columns:**
+    *   Publication ID (PK)
+    *   School District ID (FK to School District Data, inferred)
+    *   Contract ID (FK to 20)
+    *   Food Service Company Name
+    *   Date Information Received from Company
+    *   Date Information Published on Website
+    *   Website URL for Information
+    *   Period Covered by Information (e.g., Monthly Menu, Specific Meal)
+    *   Compliance Status (Published, Not Published)
+
+**22. School Meal Ingredient and Nutritional Information Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Ingredient and nutritional information requirements." § 924 (1)
+    *   "All contracts entered into for the two thousand twenty-three--two thousand twenty-four school year, and thereafter, to provide, maintain and operate cafeteria or restaurant service by a private food service management company shall include provisions requiring such private food service management company to disclose ingredients lists and nutritional information to school districts for all meals that such company provides." (§ 924.a) (2)
+*   **Why:** To track the ingredient and nutritional information for all meal items served in schools.
+*   **One row represents:** The ingredient and nutritional information for a specific meal item.
+*   **Covers:** All meal items served in school meal programs.
+*   **Columns:**
+    *   Meal Item ID (PK)
+    *   Meal Item Name
+    *   Full Ingredient List
+    *   Nutritional Information (e.g., Calories, Fat, Protein, Carbohydrates, Allergens)
+    *   Date Information Last Updated
+    *   Applicable School ID (if specific to a school, otherwise district-wide, FK to School Data, inferred)
+
+**23. Nutrition Advisory Committee Meeting Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The district advisory committee is encouraged to meet at least quarterly." (§ 918.1.b) (2)
+    *   "The committee is encouraged to study and make recommendations on all facets of the current nutritional policies of the district..." (§ 918.4) (2)
+    *   "Each June, the committee shall report to the board of the local school district regarding the status of the implementation of the district's programs to improve students' nutritional awareness and healthy diet." (§ 918.6) (2)
+*   **Why:** To track the meetings and activities of school district nutrition advisory committees, including recommendations and reports.
+*   **One row represents:** A single meeting of a school district's nutrition advisory committee.
+*   **Covers:** All meetings of child nutrition advisory committees established by school districts.
+*   **Columns:**
+    *   Meeting ID (PK)
+    *   School District ID (FK to School District Data, inferred)
+    *   Meeting Date
+    *   Meeting Time
+    *   Attendance Count
+    *   Key Topics Discussed
+    *   Recommendations Made (Summary/Reference to document)
+    *   Report Submitted (Y/N, for annual report)
+    *   Report Submission Date (if annual report)
+
+**24. Employee Employment Records (School & Vocational Board)**
+*   **Matching Open Dataset(s):** "2016-17 Physical Education - Licensed PE Teachers", "2017-2018 Physical Education - Licensed PE Teachers", "2015-16 Health Education K-12 - Licensed Health Instructors", "2017-2018 Local Law 15 Health Instructor - Professional", "2017-2018 Local Law Licensed Health Instructor - School", "2016 - 2017 Guidance Counselor Report", "2017 - 2018 Guidance Counselor Report", "2018-19 Guidance Counselor Report - Guidance Counselor", "2015-16 Guidance Counselor Reporting - Guidance Counselor Data", "2016 - 2017 Health Education Instructor Report", "2015-16 Health Education K-12 - Health Instructors", "2017-2018 Local Law 15 Health Instructor - Community School District", "2015-16 Local Law 15 Health Data - Licensed Health Instructors", "2016 Public Data File Teacher", "2017 Public Data File Teacher", "2021 Public Data File - Teacher", "2019 Public Data File - Teachers", "2017 - 2018 NYC School Survey Teacher Data", "2018-2019 Career and Technical Education Report Law 174", "2016 - 2017 Career Technical Education Report", "2018 - 2019 Career Technical Education Report", "2019-2020 Local Law 174 CTE Report", "2015 - 2016 Career Technical Education Report", "Child Abuse Liaisons", "Drivers and Attendants". Match percentage: 80% (These datasets track various types of school employees and their roles, aligning with the concept of employment records for different staff types.)
+*   **Quotes:**
+    *   "The board of education... shall employ, at a compensation to be agreed upon by the parties, a qualified physician, or a nurse practitioner... to perform the duties of the director of school health services..." § 902.2.a (1)
+    *   "Any such board or trustees may employ one or more school nurses, who shall be registered professional nurses, as well as other health professionals, as may be required." § 902.2.b (1)
+    *   "It shall have full power and authority to employ supervisors and teachers and all other persons necessary to carry on career education and extension work and to determine the salaries to be paid." (§ 1102.3) (2)
+    *   "Members of the teaching and supervisory staff shall be appointed by a majority vote of the vocational education and extension board upon recommendation of the director for a probationary period not to exceed three years..." (§ 1102.3) (2)
+*   **Why:** To track the employment of all staff, including licensed health professionals, teachers, and vocational board personnel, ensuring adequate staffing and compliance.
+*   **One row represents:** A staff member's employment record with a school district, BOCES, or vocational education and extension board.
+*   **Covers:** All physicians, nurse practitioners, registered professional nurses, other health professionals, teachers, supervisors, and other personnel employed by school districts, BOCES, or county vocational education and extension boards.
+*   **Columns:**
+    *   Employee ID (PK)
+    *   Employee Name
+    *   Employing Entity ID (School District ID, BOCES ID, Board ID, inferred)
+    *   Employing Entity Type (School District, BOCES, Vocational Board)
+    *   Role (e.g., Director of School Health Services, School Physician, Nurse Practitioner, Registered Professional Nurse, Teacher, Supervisor, Driver, Attendant)
+    *   License Type (if applicable)
+    *   License Number (if applicable)
+    *   Employment Start Date
+    *   Employment End Date (if applicable)
+    *   Compensation Agreement Details/Salary
+    *   Shared Employment (Y/N)
+    *   BOCES Agreement (Y/N)
+    *   BOCES ID (if applicable)
+    *   Employment Type (Probationary, Tenured, Other)
+    *   Probationary Period End Date (if applicable)
+    *   Tenure Grant Date (if applicable)
+    *   Employment Status (Active, Terminated, Leave)
+    *   Termination Date (if applicable)
+    *   Reason for Termination (if applicable)
+
+**25. Employee Medical Examination Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "In order to safeguard the health of children attending the public schools, the board of education... shall be empowered to require any person employed by the board of education... to submit to a medical examination by a physician or other health care provider of his or her choice or the director of school health services... in order to determine the physical or mental capacity of such person to perform his or her duties." § 913 (1)
+    *   "The determination based upon such examination as to the physical or mental capacity of such person to perform his or her duties shall be reported to the board of education... and may be referred to and considered for the evaluation of service of the person examined or for disability retirement." § 913 (1)
+    *   "The director of school health services... may make such evaluations of teachers and any other school employees, school buildings and premises as, in their discretion, they may deem necessary to protect the health of the students and staff." § 906.3 (1)
+*   **Why:** To track mandatory and discretionary medical examinations for school employees, ensuring their fitness to perform duties and safeguarding student and staff health.
+*   **One row represents:** A medical examination or health evaluation for a school employee.
+*   **Covers:** All required and discretionary medical examinations for teachers and other employees of school districts or BOCES.
+*   **Columns:**
+    *   Examination ID (PK)
+    *   Employee ID (FK to 24)
+    *   School District ID (FK to School District Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Examination Date
+    *   Examining Professional Name
+    *   Examining Professional Type (Physician, Other Health Care Provider, Director of School Health Services)
+    *   Physical Capacity to Perform Duties (Y/N)
+    *   Mental Capacity to Perform Duties (Y/N)
+    *   Summary of Findings
+    *   Disability Retirement Referral (Y/N)
+    *   Reason for Evaluation (e.g., Communicable Disease Exposure, General Health Concern, Mandated)
+    *   Recommendations
+
+**26. Staff Medical Training Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "public school officials and administrators... shall ensure the presence of at least one staff person who is trained... in the operation and use of an AED." (§ 917.2) (2)
+    *   "nonpublic school officials and administrators... shall ensure the presence of at least one staff person who is trained... in the operation and use of an AED." (§ 917-a.2) (2)
+    *   "No person may operate an AED in a nonpublic school facility unless the person has successfully completed a training course in the operation of an AED approved by a nationally-recognized organization..." (§ 917-a.3) (2)
+    *   "The board of education... and nonpublic schools are authorized... to have licensed registered professional nurses... train unlicensed school personnel to administer prescribed glucagon or epinephrine devices in emergency situations..." (§ 921.1.a) (2)
+    *   "Any school district... that has elected to participate may administer an opioid antagonist in the event of an emergency, provided that such person shall have been trained by a program approved under section three thousand three hundred nine of the public health law." (§ 922.2) (2)
+*   **Why:** To track which staff members are trained in emergency medical procedures and when their training is current.
+*   **One row represents:** A staff member's completion of a specific emergency medical training course.
+*   **Covers:** All staff members trained in the operation of AEDs, administration of glucagon/epinephrine, or administration of opioid antagonists.
+*   **Columns:**
+    *   Training Record ID (PK)
+    *   Staff ID (FK to 24)
+    *   Staff Name
+    *   Facility ID (School ID, Library ID)
+    *   Training Type (AED Operation, Glucagon/Epinephrine Administration, Opioid Antagonist Administration)
+    *   Training Course Name/Provider
+    *   Training Completion Date
+    *   Certification Expiration Date (if applicable)
+    *   Trainer Name/License (for glucagon/epinephrine)
+    *   Is this staff member designated as "at least one staff person trained" for AEDs? (Y/N)
+
+**27. Unlicensed Personnel Medication Administration Training Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Training of unlicensed school personnel to administer certain medications." § 921 (1)
+    *   "Licensed nurses... are authorized to... teach an unlicensed person to administer glucagon to an individual" § 902-a.1 (1)
+    *   "A student who is unable to physically apply sunscreen may be assisted by unlicensed personnel when directed to do so by the student, if permitted by a parent or guardian and authorized by the school." § 907 (1)
+*   **Why:** To track the training and authorization of unlicensed school personnel to administer specific medications or assist students.
+*   **One row represents:** A training event for an unlicensed school personnel member to administer medication or assist.
+*   **Covers:** All unlicensed school personnel trained to administer glucagon, epinephrine, or assist with sunscreen application.
+*   **Columns:**
+    *   Training ID (PK)
+    *   Employee ID (FK to 24)
+    *   School ID (FK to School Data, inferred)
+    *   Training Date
+    *   Medication/Assistance Type (e.g., Glucagon, Epinephrine, Sunscreen Application)
+    *   Trainer Name/ID (FK to 14)
+    *   Certification Date
+    *   Certification Expiration Date
+    *   Authorized to Administer/Assist (Y/N)
+
+**28. Student Sunscreen Permission Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The board of education or trustees of each school district... shall allow students to carry and use topical sunscreen products... with the written permission of the parent or guardian of the student." § 907 (1)
+    *   "A record of such permission shall be maintained by the school." § 907 (1)
+    *   "A student who is unable to physically apply sunscreen may be assisted by unlicensed personnel when directed to do so by the student, if permitted by a parent or guardian and authorized by the school." § 907 (1)
+*   **Why:** To maintain records of parental permission for students to carry and use sunscreen, and for assistance by unlicensed personnel.
+*   **One row represents:** A student's permission record for sunscreen use.
+*   **Covers:** All students with parental permission to carry and use topical sunscreen, including those requiring assistance.
+*   **Columns:**
+    *   Permission ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Permission Date
+    *   Parent/Guardian Name
+    *   Permission to Carry/Use Sunscreen (Y/N)
+    *   Permission for Unlicensed Personnel Assistance (Y/N)
+    *   Permission Expiration Date (if applicable)
+
+**29. Non-Public School Health Service Contracts**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Where children residing in one school district attend a school other than public located in another school district, the school authorities of the district of residence shall contract with the school authorities of the district where such nonpublic school is located, for the provision of such health and welfare services and facilities to such children by the school district where such nonpublic school is located, for a consideration to be agreed upon between the school authorities of such districts..." § 912 (1)
+    *   "Every such contract shall be in writing and in the form prescribed by the commissioner, and before such contract is executed the same shall be submitted for approval to the superintendent of schools having jurisdiction over such district of residence and such contract shall not become effective until approved by such superintendent." § 912 (1)
+*   **Why:** To track contracts between school districts for providing health and welfare services to non-public school students.
+*   **One row represents:** A single contract for health and welfare services to non-public school children.
+*   **Covers:** All contracts for health and welfare services provided to resident children attending non-public schools in other districts.
+*   **Columns:**
+    *   Contract ID (PK)
+    *   District of Residence ID (FK to School District Data, inferred)
+    *   Non-Public School District ID (FK to School District Data, inferred)
+    *   Non-Public School ID (FK to School Data, inferred)
+    *   Contract Start Date
+    *   Contract End Date
+    *   Services Provided (list, e.g., Physician, Nurse, Dental Prophylaxis, Vision Screening)
+    *   Consideration Amount
+    *   Superintendent of Residence District Approval Date
+    *   Contract Status (Active, Expired, Pending Approval)
+
+**30. School Hygiene District Budget/Expenditure Tracking**
+*   **Matching Open Dataset(s):** "Fair Student Funding Budget Detail 2", "Fair Student Funding Budget Detail 1", "2014 - 2015 School Budget Overview", "2015 School Allocation Memorandum (SAM)", "2016 School Allocation Memorandum ( SAM)", "2017 School Allocation Memorandums", "2016 - 2017 School Based Expenditure Report". Match percentage: 30% (These are general school/district budget datasets, not specific to school hygiene districts or their unique funding mechanisms.)
+*   **Quotes:**
+    *   "When such a school hygiene district is established... the board of supervisors shall appropriate funds for the salary and necessary expenses of a district director of school hygiene. Funds may also be appropriated for assistants to the director of school hygiene." § 909.2 (1)
+    *   "If it be ascertained... that any of the pupils are afflicted with defective sight or hearing or other physical disability and the parents... are unable to provide the necessary relief and treatment for such pupils... such district director shall have power and it shall be his duty to provide relief for such pupils within the amount appropriated for such purpose by the board of supervisors." § 909.4 (1)
+    *   "The board of supervisors... shall levy one-half of such amount by tax on the towns, union free school districts and cities... and shall apportion such amount, so levied, among such towns, union free school districts and cities, according to the assessed valuation of the taxable property therein." § 909.5 (1)
+*   **Why:** To track appropriations, levies, and expenditures for school hygiene districts, including salaries, expenses, and pupil relief.
+*   **One row represents:** A budget or expenditure record for a school hygiene district for a specific fiscal period.
+*   **Covers:** All financial activities related to the operation of school hygiene districts.
+*   **Columns:**
+    *   Budget Record ID (PK)
+    *   School Hygiene District ID (FK to School Hygiene District Data, inferred)
+    *   Fiscal Year
+    *   Total Appropriation Amount
+    *   Director Salary Expense
+    *   Assistant Salaries Expense
+    *   Other Operating Expenses
+    *   Pupil Relief Expenses
+    *   Amount Levied by Tax
+    *   Amount Apportioned by Commissioner of Education
+    *   County Treasurer Payment Date
+
+**31. Student Speech and Language Service Records**
+*   **Matching Open Dataset(s):** "Students Receiving Recommended Special Education Programs by Program Type" (371, 2105), "2015-2016 Related Service" (1543), "DOE Special Education City Council Report June 14, 2021", "DOE Special Education City Council Report April 1, 2021", "2015 - 2016 Annual Report on Special Education", "2014–2015 Report on Special Education", "2020-2021 Annual Report on Special Education", "2015 - 2016 Special Education Report". Match percentage: 60% (These are general special education reports/data, which would include speech and language services, but are not specific to the K-6 non-adverse impact services described here.)
+*   **Quotes:**
+    *   "The board of education... may provide speech and language improvement services to students in grades kindergarten through six with speech impairments of a severity that does not adversely affect the student's educational performance but does present a barrier to communication." § 912-b.1 (1)
+    *   "Any student, who is determined to be in need of such speech and language improvement services, shall receive such upon the recommendation of the building administrator." § 912-b.2 (1)
+    *   "A student, whose speech impairment adversely affects the student's educational performance shall be referred to the committee on special education for further evaluation and recommendation for special education services and programs, pursuant to article eighty-nine of this chapter." § 912-b.3 (1)
+*   **Why:** To track the provision of speech and language improvement services to students and referrals to special education.
+*   **One row represents:** A student receiving speech and language improvement services.
+*   **Covers:** All students in grades K-6 receiving speech and language improvement services.
+*   **Columns:**
+    *   Service ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School District ID (FK to School District Data, inferred)
+    *   Service Start Date
+    *   Service End Date (if applicable)
+    *   Grade Level
+    *   Speech Impairment Description
+    *   Building Administrator Recommendation Date
+    *   Service Provider ID (FK to 24)
+    *   Referral to Committee on Special Education (Y/N)
+    *   Referral Date (if referred)
+
+**32. Student Health Training Program Placements**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The commissioner... is authorized and directed to establish and develop a program of credit for health training for those secondary school students evidencing an interest to pursue a health care services career." § 812.1 (1)
+    *   "Such program may be instituted by any school district seeking to provide its secondary school students with an opportunity to participate in a health care facility or agency training program wherein its secondary school students shall receive academic credit for work related training received at health care facilities or agencies." § 812.1 (1)
+*   **Why:** To track secondary school students participating in health training programs for academic credit.
+*   **One row represents:** A student's placement in a health training program.
+*   **Covers:** All secondary school students participating in health care facility or agency training programs for academic credit.
+*   **Columns:**
+    *   Placement ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School District ID (FK to School District Data, inferred)
+    *   Health Care Facility/Agency Name
+    *   Placement Start Date
+    *   Placement End Date
+    *   Academic Credit Awarded (Y/N)
+    *   Number of Credits
+    *   Eligibility Criteria Met (Y/N)
+    *   Placement Opening Availability (Y/N)
+
+**33. Vocational Rehabilitation Client Applications**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Any handicapped person available for vocational rehabilitation services may apply to the department for advice and assistance regarding his vocational rehabilitation." (§ 1003.a) (2)
+    *   "The state may... furnish vocational rehabilitation services to applicants for and beneficiaries of disability benefits under the social security act..." (§ 1003.b) (2)
+    *   "Within its discretion, to consider financial need of handicapped individuals for the purposes of determining the extent of their respective participation in the costs of vocational rehabilitation services..." (§ 1004.7) (2)
+    *   "It shall be unlawful... to solicit, disclose, receive, or make use of... any information concerning, persons applying for or receiving vocational rehabilitation..." (§ 1007.1) (2)
+*   **Why:** To manage the intake of individuals seeking vocational rehabilitation services and track their initial eligibility.
+*   **One row represents:** A single application for vocational rehabilitation services.
+*   **Covers:** All applications from handicapped persons for vocational rehabilitation services.
+*   **Columns:**
+    *   Client ID (PK)
+    *   Application Date
+    *   Applicant Name
+    *   Applicant Contact Information
+    *   Date of Birth
+    *   Disability Type (Physical, Mental)
+    *   Description of Disability
+    *   Substantial Handicap to Employment (Y/N)
+    *   Rehabilitation Potential Ascertained (Y/N)
+    *   Application Status (Submitted, Under Review, Approved, Denied, Withdrawn)
+    *   Approval Date
+    *   Denial Reason
+    *   Financial Need Assessment Required (Y/N)
+    *   Financial Need Status (Met, Not Met, Exempt)
+    *   Source of Referral (e.g., Self, Social Security Act, Other Agency)
+    *   Confidentiality Agreement Acknowledged (Y/N)
+
+**34. Vocational Rehabilitation Client Case Management**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The education department shall have the responsibility of and is hereby authorized: ... To provide vocational rehabilitation services directly or through public or private instrumentalities for handicapped persons... whose vocational rehabilitation the department determines after full investigation may be satisfactorily achieved." (§ 1004.2) (2)
+    *   "In the course of its investigation of an individual applicant's vocational rehabilitation potential the department may conduct an extended evaluation program including utilization of such vocational rehabilitation services as it deems necessary." (§ 1004.2) (2)
+    *   "To contract with not-for-profit organizations for the provision of supported employment services..." (§ 1004.9) (2)
+    *   "The department is authorized to contract with such organization for the furnishing of such sheltered employment to such individual with a developmental disability..." (§ 1004-a.2) (2)
+    *   "The department shall assure that individuals in long-term sheltered employment operated by not-for-profit agencies are periodically reviewed to determine the feasibility of their employment, or training for employment, in integrated work settings..." (§ 1004-a.5) (2)
+*   **Why:** To track the progress, services, and outcomes for each vocational rehabilitation client, from evaluation to employment.
+*   **One row represents:** A specific service or significant event within a client's vocational rehabilitation plan.
+*   **Covers:** All vocational rehabilitation services provided to handicapped persons, including evaluations, training, placement, and supported employment.
+*   **Columns:**
+    *   Case Event ID (PK)
+    *   Client ID (FK to 33)
+    *   Case ID
+    *   Service Date
+    *   Service Type (e.g., Evaluation, Counseling, Training, Placement, Physical Restoration, Supported Employment)
+    *   Service Provider ID (FK to 36 or 35)
+    *   Service Provider Name
+    *   Service Cost
+    *   Funding Source (State, Federal, Client Contribution)
+    *   Service Outcome/Status
+    *   Employment Status Post-Service (e.g., Employed, Sheltered Employment, Unemployed)
+    *   Employment Type (if employed, e.g., Competitive, Supported, Sheltered)
+    *   Wage/Compensation (if employed)
+    *   Review Date (for sheltered employment clients)
+    *   Feasibility of Integrated Employment (for sheltered employment clients)
+    *   Transition Status (e.g., From Sheltered Workshop, To Integrated Employment)
+    *   Waiting List Status (Y/N, for integrated employment)
+
+**35. Approved Vocational Rehabilitation Organizations Register**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The department shall maintain a register of such nonprofit organizations which, after inspection of the facilities for sheltered employment provided by them, it deems qualified to meet the needs of such individuals with developmental disabilities, mental illness or a severe physical handicap." (§ 1004-a.3) (2)
+    *   "Such inspection shall also determine the eligibility of such organization to receive the funds hereinbefore specified." (§ 1004-a.3) (2)
+*   **Why:** To maintain a list of approved and qualified non-profit organizations for vocational rehabilitation services.
+*   **One row represents:** A registered non-profit organization approved to provide vocational rehabilitation services.
+*   **Covers:** All non-profit organizations deemed qualified by the department to provide sheltered employment and other vocational rehabilitation services.
+*   **Columns:**
+    *   Organization ID (PK)
+    *   Organization Name
+    *   Address
+    *   Contact Information
+    *   Date of Registration
+    *   Services Approved For (e.g., Sheltered Employment, Supported Employment, Training)
+    *   Last Inspection Date
+    *   Inspection Outcome (Qualified, Conditional, Not Qualified)
+    *   Eligibility for Funding (Y/N)
+    *   Date of Last Eligibility Determination
+    *   Status (Active, Suspended, Revoked)
+
+**36. Vocational Rehabilitation Service Provider Contracts**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "To provide vocational rehabilitation services directly or through public or private instrumentalities for handicapped persons..." (§ 1004.2) (2)
+    *   "To contract with not-for-profit organizations for the provision of supported employment services... to individuals having severe disabilities... in integrated work settings." (§ 1004.9) (2)
+    *   "The department is authorized to contract with such organization for the furnishing of such sheltered employment to such individual with a developmental disability, mental illness or a severe physical handicap..." (§ 1004-a.2) (2)
+*   **Why:** To manage agreements with external organizations providing vocational rehabilitation services.
+*   **One row represents:** A contract with a public or private instrumentality for vocational rehabilitation services.
+*   **Covers:** All contracts for vocational rehabilitation services, including supported employment and sheltered employment.
+*   **Columns:**
+    *   Contract ID (PK)
+    *   Provider Organization ID (FK to 35)
+    *   Provider Organization Name
+    *   Contract Start Date
+    *   Contract End Date
+    *   Service Type(s) Covered (e.g., Supported Employment, Sheltered Employment, Training, Evaluation)
+    *   Contract Amount
+    *   Payment Terms
+    *   Reporting Requirements
+    *   Performance Metrics
+    *   Status (Active, Expired, Terminated)
+    *   Funding Source (State, Federal)
+    *   Cost per Annum per Individual (for sheltered employment, § 1004-a.2)
+
+**37. Vocational Rehabilitation Facility Development Projects**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "To arrange and pay part of the cost of projects leading to the construction of workshops and rehabilitation facilities and the extension and improvement or the establishment of vocational rehabilitation services for handicapped persons, including the furnishing of equipment or the furnishing of funds for the purchase of equipment and supplies, personnel and other necessary and proper expenses in the construction, establishment, improvement, continuation or extension of rehabilitation facilities and workshops operated by public or nonprofit organizations and agencies." (§ 1004.5) (2)
+    *   "Establishment of a workshop" or "rehabilitation facility" means: a. In the case of a workshop, the expansion, remodeling, or alteration of existing buildings... and the acquisition of initial equipment... b. In the case of a rehabilitation facility, the expansion, remodeling, or alteration of existing buildings, and initial equipment of such buildings..." (§ 1002.9) (2)
+    *   "Construction" includes construction of new buildings, acquisition of existing buildings, and expansion, remodeling, alteration, and renovation of existing buildings, and initial equipment of such new, newly acquired, expanded, remodeled, altered or renovated buildings..." (§ 1002.10) (2)
+*   **Why:** To track projects for the construction, establishment, expansion, or improvement of vocational rehabilitation facilities and workshops.
+*   **One row represents:** A single project for the development or improvement of a vocational rehabilitation facility or workshop.
+*   **Covers:** All projects involving construction, acquisition, expansion, remodeling, alteration, renovation, or initial equipping/staffing of rehabilitation facilities and workshops.
+*   **Columns:**
+    *   Project ID (PK)
+    *   Facility ID (if existing, FK to 35)
+    *   Project Type (Construction, Expansion, Remodeling, Equipment Acquisition, Initial Staffing)
+    *   Project Description
+    *   Start Date
+    *   Expected Completion Date
+    *   Actual Completion Date
+    *   Total Project Cost
+    *   State Contribution Amount
+    *   Federal Contribution Amount
+    *   Other Funding Sources
+    *   Architect Fees (Y/N)
+    *   Land Acquisition Cost (if applicable)
+    *   Includes Residential Accommodations (Y/N)
+    *   Project Status (Planned, In Progress, Completed, Delayed)
+
+**38. Sheltered Employment Client Review Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The department shall assure that individuals in long-term sheltered employment operated by not-for-profit agencies are periodically reviewed to determine the feasibility of their employment, or training for employment, in integrated work settings and that maximum efforts toward such employment occur, whenever it is determined to be feasible." (§ 1004-a.5) (2)
+*   **Why:** To track the periodic reviews of clients in sheltered employment to assess their potential for integrated employment.
+*   **One row represents:** A periodic review conducted for a client in sheltered employment.
+*   **Covers:** All individuals with developmental disabilities, mental illness, or severe physical handicaps in long-term sheltered employment.
+*   **Columns:**
+    *   Review ID (PK)
+    *   Client ID (FK to 34)
+    *   Organization ID (FK to 35)
+    *   Review Date
+    *   Reviewer Name/Title
+    *   Feasibility of Integrated Employment (Y/N)
+    *   Efforts Made Towards Integrated Employment (Description)
+    *   Recommendations for Future Steps
+    *   Next Review Date
+
+**39. Vocational Rehabilitation Gifts and Donations**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The department is authorized to receive, accept and use gifts and donations for the purpose of this article which may be offered, conditionally or unconditionally..." (§ 1005) (2)
+    *   "All money received as gifts or donations shall be paid to the commissioner of taxation and finance... and shall constitute a special fund to be used under the direction of the department for the purpose of this article." (§ 1005) (2)
+    *   "A full report of all such gifts and donations, together with the names of the donors, the amounts contributed by each and all disbursements therefrom shall be submitted annually to the legislature as part of the report of the department." (§ 1005) (2)
+*   **Why:** To track all gifts and donations received for vocational rehabilitation purposes, including donor information and amounts.
+*   **One row represents:** A single gift or donation received for vocational rehabilitation.
+*   **Covers:** All gifts and donations received by the department for vocational rehabilitation.
+*   **Columns:**
+    *   Donation ID (PK)
+    *   Date Received
+    *   Donor Name
+    *   Donation Amount
+    *   Donation Type (e.g., Monetary, In-kind)
+    *   Conditions (if any)
+    *   Date Paid to Commissioner of Taxation and Finance
+    *   Special Fund Allocation (Y/N)
+    *   Annual Report Inclusion (Y/N)
+
+**40. Vocational Education and Extension Board Member & Officer Appointments**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The board of supervisors... shall appoint a board which shall be known as "The Vocational Education and Extension Board of the County of .................... " (insert here the name of the county). Such board shall consist of nine members who shall serve for a period of nine years each except that members first appointed shall be appointed for such terms that the term of one member will expire each year..." (§ 1101.2) (2)
+    *   "At least three members of this board shall be appointed upon recommendations made by the farm and home bureau associations of the county and at least three members upon recommendations made by the district superintendents of the county." (§ 1101.2) (2)
+    *   "It shall appoint one of its members as president, one of its members or another qualified school district voter in the county as clerk and another qualified school district voter in the county as treasurer." (§ 1102.9) (2)
+*   **Why:** To track the appointment and terms of members and officers on county vocational education and extension boards.
+*   **One row represents:** A single appointment of a member or officer to a vocational education and extension board.
+*   **Covers:** All members and officers appointed to county vocational education and extension boards.
+*   **Columns:**
+    *   Appointment ID (PK)
+    *   Board ID (County Vocational Education and Extension Board ID, inferred)
+    *   Member/Officer Name
+    *   Appointment Date
+    *   Term Start Date
+    *   Term End Date
+    *   Appointment Type (Initial Member, Full Term Member, Vacancy Member, President, Clerk, Treasurer)
+    *   Recommended By (e.g., Farm and Home Bureau, District Superintendent, Other)
+    *   Status (Active, Expired, Resigned, Removed)
+    *   Is Officer a Board Member? (Y/N)
+    *   Compensation (if applicable, for Clerk/Treasurer)
+    *   Treasurer Bond Furnished (Y/N)
+    *   Bond Amount (if applicable)
+    *   Bond Approval Date (if applicable)
+
+**41. Vocational Education and Extension Board District Service Contracts**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "It shall have the authority to make contracts with the school authorities of school districts within the county, or without the county where such contract will result in no additional expense being incurred by such county, for services to be rendered by it to such school districts, and such school authorities shall have the authority to enter into such contracts." (§ 1102.12) (2)
+    *   "Payments shall be made by the school districts at least as often as quarterly." (§ 1102.12) (2)
+*   **Why:** To track agreements between the vocational education board and school districts for services.
+*   **One row represents:** A contract for services between a vocational education and extension board and a school district.
+*   **Covers:** All contracts for services rendered by vocational education and extension boards to school districts.
+*   **Columns:**
+    *   Contract ID (PK)
+    *   Board ID (County Vocational Education and Extension Board ID, inferred)
+    *   School District ID (FK to School District Data, inferred)
+    *   School District Name
+    *   Contract Start Date
+    *   Contract End Date
+    *   Services Provided (e.g., Career Education Instruction, Extension Work)
+    *   Contract Amount
+    *   Payment Schedule (e.g., Quarterly)
+    *   Last Payment Date
+    *   Contract Status (Active, Expired, Terminated)
+
+**42. Vocational Education and Extension Board Pupil Transportation Records**
+*   **Matching Open Dataset(s):** "Pupil Transportation Count of Employees Bus Company - July 1, - December 31, 2021", "Pupil Transportation Report April2020_21_995 - July 1, - December 31, 2019", "Pupil Transportation Investigations Reporting October_2021_929B_21-995", "Pupil Transportation General & Special Education Student Bussing by Vendors & Routes updated 21-993", "School Bus Route Reporting April2020_21_996 - July 1, - December 31, 2019", "School Bus Routing Report October_2021_89C_21-996", "School Bus Report October_2021_21-993", "April_2021_21-993 New York City Transportation Reporting", "October_2020_21-993-Appendix Students Assigned to General Education Stop-to-School Routes by Vendor", "School Age Ridership", "Routes by Transportation Sites", "PreK Riders by Transportation Site", "PreK Vendors by Transportation Site", "Transportation Sites", "Midday Trips", "Routes", "Vehicles", "Drivers and Attendants", "Bus Breakdown and Delays", "April_2021_1173B_21-994 New York City School Bus Delays Report", "Bus Delays April2020 994 - July 1, - December 31, 2019", "October_2020_21-994_Appendix Delays Reported by School Bus Company Resulting in Failure to Arrive at School", "April_2021_929B_21-995 New York City Office of Pupil Transportation Investigations Reporting", "October_2020_21-995_Appendix New York City Office of Pupil Transportation Investigations Reporting", "School Bus Delays Report October_2021_1173B_21-994", "October_2020_21-996_Appendix New York City School Bus Route Reporting", "April_2021_89C_21-996 New York City School Bus Route Reporting". Match percentage: 70% (These datasets cover various aspects of pupil transportation, including routes, delays, and general bussing, but are not specifically framed for vocational education and extension board transportation.)
+*   **Quotes:**
+    *   "It may transport pupils under twenty-one years of age to and from schools and classes maintained by such vocational education and extension board for instruction in career education." (§ 1102.13) (2)
+    *   "In providing such transportation, the board may transport pupils residing outside the county who are attending such schools and classes maintained by such board pursuant to subdivision twelve of this section." (§ 1102.13) (2)
+*   **Why:** To track the transportation services provided to pupils by the vocational education and extension board.
+*   **One row represents:** A record of a pupil being transported by the vocational education and extension board.
+*   **Covers:** All pupils transported by county vocational education and extension boards for career education instruction.
+*   **Columns:**
+    *   Transportation Record ID (PK)
+    *   Board ID (County Vocational Education and Extension Board ID, inferred)
+    *   Pupil ID (FK to Student Enrollment Data, inferred)
+    *   Pupil Age
+    *   School/Class Attended
+    *   Transportation Date
+    *   Route ID
+    *   Vehicle ID (FK to 43)
+    *   Driver ID (FK to 24)
+    *   Origin Address
+    *   Destination Address
+    *   Residency Status (In-county, Out-of-county)
+    *   Associated District Contract ID (if out-of-county, FK to 41)
+
+**43. Vocational Education and Extension Board Vehicle Inventory**
+*   **Matching Open Dataset(s):** "Vehicles". Match percentage: 80% (This is a general vehicle inventory, which would include vehicles used by the vocational board.)
+*   **Quotes:**
+    *   "It may purchase and maintain a motor vehicle or vehicles to be used for the transportation of school children under twenty-one years of age to schools and classes maintained by the county vocational education and extension board." (§ 1102.14) (2)
+    *   "Such motor vehicle or vehicles may be leased to a school district when not needed for such transportation." (§ 1102.14) (2)
+*   **Why:** To manage the inventory and status of vehicles used for pupil transportation by the board.
+*   **One row represents:** A single motor vehicle owned or maintained by a vocational education and extension board.
+*   **Covers:** All motor vehicles used for pupil transportation by county vocational education and extension boards.
+*   **Columns:**
+    *   Vehicle ID (PK)
+    *   Board ID (County Vocational Education and Extension Board ID, inferred)
+    *   Make
+    *   Model
+    *   Year
+    *   License Plate Number
+    *   Acquisition Date
+    *   Maintenance Schedule
+    *   Last Maintenance Date
+    *   Current Status (In Service, Out of Service, Leased)
+    *   Lease Agreement ID (if leased)
+    *   Insurance Policy Details (Public Liability, Property Damage, Fire, Compensation)
+
+**44. Reading Curriculum Alignment Verification**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "On or before January first, two thousand twenty-five, the commissioner shall provide school districts with the instructional best practices for the teaching of reading to students in prekindergarten through grade three." § 818.1.a (1)
+    *   "Every school district shall annually review their curriculum and instructional practices in the subject of reading for students in prekindergarten through grade three to ensure that they align with the reading instructional best practices provided by the commissioner..." § 818.1.b (1)
+    *   "On or before September first, two thousand twenty-five, every school district shall verify to the commissioner that their curriculum and instructional practices in the subject of reading in prekindergarten through grade three align with all of the elements of the instructional best practices provided by the commissioner pursuant to this section." § 818.3 (1)
+*   **Why:** To track school districts' annual verification of their reading curriculum and instructional practices aligning with state best practices.
+*   **One row represents:** A school district's annual verification submission regarding reading instruction alignment.
+*   **Covers:** All school districts' annual verification of PK-3 reading curriculum and instructional practices.
+*   **Columns:**
+    *   Verification ID (PK)
+    *   School District ID (FK to School District Data, inferred)
+    *   Verification Date
+    *   School Year Covered
+    *   PK-3 Curriculum Aligned (Y/N)
+    *   Instructional Practices Aligned (Y/N)
+    *   Early Reading Interventions Aligned (Y/N)
+    *   Culturally Responsive-Sustaining Framework Aligned (Y/N)
+    *   Commissioner's Review Status (e.g., Accepted, Needs Revision)
+
+**45. Animal Experimentation Waiver Applications**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Notwithstanding any inconsistent provision of this section, the commissioner may, upon the submission of a written program plan, issue to such school a written waiver of such restrictions for students subject to the following provisions: (i) the student shall be in grade ten, eleven, or twelve; and (ii) the student shall be under the supervision of one or more teachers certified in science; and (iii) the student shall be pursuing an accelerated course of study in the sciences as defined by the commissioner in preparation for taking a state or national advanced placement examination." § 809.5.b (1)
+    *   "The written program plan shall include, but not be limited to: (i) the educational basis for requesting a waiver; (ii) the objective of the lesson or experiment; (iii) the methods and techniques to be used; and (iv) any other information required by the commissioner." § 809.5.b (1)
+    *   "On or before the first day of January next succeeding the effective date of this amended section, the commissioner shall annually submit a report to the governor and the legislature which shall include, but not be limited to, the number of written program plan proposals submitted by schools and the number of such proposals subsequently approved by the commissioner." § 809.6 (1)
+*   **Why:** To track applications and approvals for waivers allowing restricted animal experimentation in schools, ensuring compliance and reporting.
+*   **One row represents:** A single application for an animal experimentation waiver.
+*   **Covers:** All program plan proposals submitted by schools requesting waivers for live vertebrate animal experimentation.
+*   **Columns:**
+    *   Application ID (PK)
+    *   School ID (FK to School Data, inferred)
+    *   Submission Date
+    *   Student Grade Level (10, 11, or 12)
+    *   Science Teacher ID (FK to 24)
+    *   Teacher Certified in Science (Y/N)
+    *   Student Pursuing Accelerated Science Course (Y/N)
+    *   Educational Basis for Waiver
+    *   Objective of Lesson/Experiment
+    *   Methods and Techniques to be Used
+    *   Commissioner Approval Status (Approved, Denied, Pending)
+    *   Approval Date (if approved)
+    *   Waiver Expiration Date
+    *   Reason for Denial (if denied)
+
+**46. Hypodermic Needle Certificate of Need Applications**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "it shall be lawful for authorized persons under the jurisdiction of the public school authorities in a public school... to purchase, acquire, have under control, possess and use hypodermic syringes and needles for instructional or other educational purposes provided such school authorities... has filed with the commissioner of education and with the state department of health a certificate of need for such hypodermic needles" § 811.1 (1)
+    *   "such certificate shall set forth the following: a. The legal designation and address of the school district... and the exact location where such hypodermic syringes and needles will be used and stored. b. The name and address of the chief administrative officer of the school or institution. c. The use proposed to be made of such hypodermic needles. d. The names of persons employed in the school, the department, or other institution authorized to have custody and/or use of such hypodermic needles. e. The safeguards to be taken to prevent such instruments from falling into the hands of unauthorized persons. f. The disposition which will be made of unwanted or broken syringes and needles." § 811.1.a-f (1)
+*   **Why:** To track applications and approvals for certificates of need for hypodermic syringes and needles, ensuring legal compliance and safe use.
+*   **One row represents:** A single certificate of need application for hypodermic syringes and needles.
+*   **Covers:** All applications from public schools, the state education department, or other educational institutions for hypodermic syringes and needles.
+*   **Columns:**
+    *   Application ID (PK)
+    *   Submitting Entity ID (School District ID, Department ID, Institution ID, inferred)
+    *   Submitting Entity Name
+    *   Exact Location of Use/Storage
+    *   Chief Administrative Officer Name
+    *   Proposed Use of Needles
+    *   Authorized Personnel Names (list)
+    *   Safeguards Description
+    *   Disposition Plan for Unwanted/Broken Needles
+    *   Filing Date with Commissioner of Education
+    *   Filing Date with State Department of Health
+    *   Approval Status (Approved, Denied, Pending)
+    *   Approval Date (if approved)
+
+**47. Scoliosis Screening Waiver Applications**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The provisions of this section relative to examination for scoliosis shall be waived by the commissioner upon the filing... of a resolution, duly adopted by a board of education, stating that the school district does not have the capability to comply with this section relative to the examination for scoliosis and that such compliance would place a financial cost upon the school district, provided, however, that such resolution may not be adopted prior to the holding of a public hearing on such proposed resolution." § 905.3 (1)
+*   **Why:** To track school district applications for waivers from scoliosis screening requirements due to capability or financial constraints.
+*   **One row represents:** A school district's application for a scoliosis screening waiver.
+*   **Covers:** All resolutions submitted by boards of education requesting waivers for scoliosis screening.
+*   **Columns:**
+    *   Application ID (PK)
+    *   School District ID (FK to School District Data, inferred)
+    *   Resolution Adoption Date
+    *   Public Hearing Date
+    *   Statement of Incapability to Comply (Y/N)
+    *   Statement of Financial Cost (Y/N)
+    *   Waiver Request Date
+    *   Commissioner Approval Status (Approved, Denied, Pending)
+    *   Approval Date (if approved)
+    *   Waiver Expiration Date
+
+**48. Student State Seal of Biliteracy Awards**
+*   **Matching Open Dataset(s):** "2019-2020 Bilingual Program List (Final Publication)", "2021 - 2022 Bilingual Program List", "2017 – 2018 Anticipated Bilingual Education Programs". Match percentage: 30% (These are about bilingual programs, not specific student awards for biliteracy.)
+*   **Quotes:**
+    *   "The state seal of biliteracy is established to recognize high school graduates who have attained a high level of proficiency in listening, speaking, reading, and writing in one or more languages in addition to English." § 815.1.a (1)
+    *   "The state seal of biliteracy shall be awarded by the commissioner. School district participation in this program is voluntary." § 815.1.a (1)
+    *   "The board of regents shall promulgate such regulations of the commissioner as may be necessary to establish the criteria that students must achieve to earn a state seal of biliteracy, which may include, but is not limited to attainment of units of credit in English language arts and languages other than English, passage of state assessments in English language arts and language other than English, and passage of such additional assessments of foreign language proficiency as may be approved by the commissioner for this purpose." § 815.2.b (1)
+*   **Why:** To track high school graduates who have earned the State Seal of Biliteracy, recognizing their language proficiency.
+*   **One row represents:** A State Seal of Biliteracy awarded to a student.
+*   **Covers:** All high school graduates who have earned a State Seal of Biliteracy in participating school districts.
+*   **Columns:**
+    *   Award ID (PK)
+    *   Student ID (FK to Student Enrollment Data, inferred)
+    *   School ID (FK to School Data, inferred)
+    *   Graduation Year
+    *   Award Date
+    *   Language(s) Awarded (e.g., Spanish, French, American Sign Language)
+    *   English Language Arts Credit Units Met (Y/N)
+    *   Languages Other Than English (LOTE) Credit Units Met (Y/N)
+    *   State ELA Assessment Passed (Y/N)
+    *   State LOTE Assessment Passed (Y/N)
+    *   Other Approved LOTE Assessment Passed (Y/N)
+    *   Proficiency Criteria Met Details
+
+**49. Advanced Course Notification Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Each school district and charter school shall annually provide notification to parents and students of the benefits and the opportunities within the district or charter school of participating in advanced courses." § 817.1 (first § 817) (1)
+    *   "Such notification shall include: a. the benefits of participating in advanced courses; b. a description of the advanced courses offered by the school district or charter school in middle and high school and how to prepare for and enroll in them; c. a description of the advanced courses to be offered by the school district or charter school in the following school year; and d. a description of the academic and non-academic support the school district or charter school provides to help students succeed in advanced courses, as well as any financial assistance available to reduce or eliminate any costs associated with participation in advanced courses, including but not limited to related fees, supplies, and assessments." § 817.2 (first § 817) (1)
+*   **Why:** To track annual notifications provided by school districts and charter schools regarding advanced course opportunities.
+*   **One row represents:** An annual notification event about advanced courses.
+*   **Covers:** All annual notifications provided by school districts and charter schools to parents and students about advanced courses.
+*   **Columns:**
+    *   Notification ID (PK)
+    *   School District/Charter School ID (FK to School District/Charter School Data, inferred)
+    *   Notification Date
+    *   School Year Covered
+    *   Method of Notification (e.g., Electronic, Mail, Website Posting)
+    *   Benefits Description Included (Y/N)
+    *   Current Courses Offered Description Included (Y/N)
+    *   Next Year Courses Offered Description Included (Y/N)
+    *   Support Services Description Included (Y/N)
+    *   Financial Assistance Description Included (Y/N)
+
+**50. Approved Firearms/Game Law Courses**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The officer, board, or commission authorized or required to prescribe courses of instructions in any school under state control, may authorize instructions to be given in the safe and proper use of firearms allowed by law to be used in the taking of wild game, and may also authorize instructions to be given in the study of game laws and of proper hunting and conservation practices." § 809-a (1)
+    *   "Such courses of instruction shall be approved by both the education department and the department of environmental conservation." § 809-a (1)
+*   **Why:** To track courses approved for instruction in firearms safety and game laws by both the education and environmental conservation departments.
+*   **One row represents:** An approved course in firearms safety or game laws.
+*   **Covers:** All courses authorized for instruction in safe use of firearms and game laws.
+*   **Columns:**
+    *   Course ID (PK)
+    *   School ID (FK to School Data, inferred)
+    *   Course Title
+    *   Education Department Approval Date
+    *   Department of Environmental Conservation Approval Date
+    *   Instruction Type (Firearms Safety, Game Laws, Hunting Practices, Conservation Practices)
+
+**51. Conservation Day Activity Log**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "It shall be the duty of the authorities of every public school in this state to assemble the pupils in their charge on that day in the school building, or elsewhere, as they may deem proper, and to provide for and conduct (1) such exercises as shall tend to encourage the planting, protection and preservation of trees and shrubs... and (2) such lectures, pictures or tours, as shall tend to increase the interest and knowledge of such pupils in the fish and wild life, soil and water of the state." § 810.2 (1)
+*   **Why:** To track the activities conducted by public schools on Conservation Day.
+*   **One row represents:** A specific activity conducted by a school on Conservation Day.
+*   **Covers:** All exercises, lectures, pictures, or tours conducted by public schools on Conservation Day.
+*   **Columns:**
+    *   Activity Log ID (PK)
+    *   School ID (FK to School Data, inferred)
+    *   Conservation Day Date
+    *   Activity Type (e.g., Planting Exercise, Lecture, Tour, Picture Display)
+    *   Activity Description
+    *   Estimated Student Participation Count
+    *   Location of Activity
+
+**52. Library Material Distribution Log**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "Upon the request of a public library that is located within the boundaries of a school district, the district shall disseminate informational materials provided by the library regarding the public library and applications for public library cards to students enrolled in the school district." § 816.3 (1)
+    *   "Such materials shall be distributed to any or all of the following, as requested by the public library: a. annually to every student of such school district upon his or her entry into kindergarten, grade six and grade nine... b. to every student upon his or her enrollment as a new student; and c. available at all times in the school library in each school within the school district for students and parents who wish to obtain such materials." § 816.3.a-c (1)
+*   **Why:** To track the distribution of public library informational materials and library card applications by school districts.
+*   **One row represents:** A specific instance of library material distribution by a school district.
+*   **Covers:** All distributions of public library informational materials and applications to students.
+*   **Columns:**
+    *   Distribution ID (PK)
+    *   School District ID (FK to School District Data, inferred)
+    *   Public Library ID (FK to Public Library Data, inferred)
+    *   Distribution Date
+    *   Material Type (e.g., Informational Brochure, Library Card Application)
+    *   Distribution Method (e.g., Annual K/6/9, New Student Enrollment, School Library Availability)
+    *   Grades Targeted (if annual)
+    *   Number of Materials Distributed
+
+**53. Student Government Establishment Records**
+*   **Matching Open Dataset(s):** None.
+*   **Quotes:**
+    *   "The board of education or trustees of every school district serving high school students in grades nine through twelve with no districtwide or school building peer selected student government shall establish at least one student government organization within such district or school building with the goal of ensuring all eligible students have the opportunity to participate in such student government." § 817 (second § 817) (1)
+*   **Why:** To track the establishment of student government organizations in school districts and buildings serving high school students.
+*   **One row represents:** The establishment of a student government organization.
+*   **Covers:** All student government organizations established in school districts or school buildings serving grades 9-12.
+*   **Columns:**
+    *   Establishment ID (PK)
+    *   School District ID (FK to School District Data, inferred)
+    *   School Building ID (if applicable, FK to School Data, inferred)
+    *   Establishment Date
+    *   Student Government Organization Name
+    *   Grades Served (e.g., 9-12)
+    *   Opportunity for All Eligible Students to Participate (Y/N)
+
+**Section 4, Unmatched Open Datasets:**
+
+*   **Academic Performance & Results:**
+    *   2012 AP Results
+    *   2010 AP (College Board) School Level Results
+    *   Math Test Results (2006-2012, 2013-2023)
+    *   English Language Arts (ELA) Test Results (2006-2012, 2013-2023)
+    *   SAT (College Board) 2010 School Level Results
+    *   2012 SAT Results
+    *   Regents Exam Results (2014-2017, 2014-15 to 2017-19, 2014-15 To 2016-17 School- Level NYC Regents Report For All Variables)
+    *   2013 - 2015 NYC Results On The New York State Math Test With Math Regents Included
+    *   Graduation results for Cohorts (2001 to 2011, 2012 to 2019)
+    *   2009 - 2010 Graduation Outcomes - Regents-based Math- ELA APM - School Level
+    *   High School Equivalency (HSE) Diplomas Awarded to NYCHA Residents by Borough – Local Law 163
+    *   High School Equivalency (HSE) Diplomas Awarded to NYCHA Residents by Council District – Local Law 163
+    *   High School Equivalency (HSE) Diplomas Awarded to NYCHA Residents by NYCHA Development – Local Law 163
+    *   2018 Local Law 163 TASC Report
+*   **Attendance & Enrollment:**
+    *   Historical Daily Attendance By School (2006-2009, 2009-2012, 2012-2015, 2015-2018, 2018-2021)
+    *   Historical Monthly Grade Level Attendance By School (2008 - 2012, 2012 - 2017)
+    *   Monthly Grade Level Attendance By School (2018 -2019, 2017 - 2020)
+    *   Attendance Results 2013-2019
+    *   Current Year Monthly Attendance (2017 - 2018, 2017-2018, 2016-2017)
+    *   City Council Attendance (January 2021, February 2021, March 2021, April 2021, May 2021, June 2021, October 2021, September 2021)
+    *   School Attendance Statistics
+    *   Statistical Summary Period Attendance Reporting (PAR)
+    *   End-of-Year Attendance and Chronic Absenteeism Data (2016-17 - 2020-21 School, 2016-17 - 2020-21 Borough, 2016-17 - 2020-21 District, 2016-17 - 2020-23 Citywide)
+    *   School Attendance And Enrollment Statistics by District (2010 - 2011, 2009 - 2010)
+    *   2018-2019 Daily Attendance
+    *   2021 City Council February Attendance
+    *   2021 City Council March Attendance
+    *   2021 City Council April Attendance
+    *   2021 City Council May Attendance
+    *   2021 City Council June Attendance
+    *   2021 City Council October Attendance
+    *   2021 City Council - September Attendance Report
+*   **Class Size & Staffing:**
+    *   Class Size Report (2006-2007)
+    *   Class Size Report Detail Summary (2010-2015)
+    *   Class Size Report Distribution Summary (2010-2015)
+    *   Class Size - School-level Detail (2007-08, 2008-09, 2009-10)
+    *   Class Size Report Pupil-to-Teacher Ratio (PTR) (2015-2016, 2018 - 2019)
+    *   Average Class Size (2017-2019 Preliminary, 2018 -2019 K8 Borough, 2018 - 2019 District MSHS, 2018 - 2019 Average Class Size Report School K-8, 2018 - 2019 Average Class Size Boro MSHS, 2018-2019 Average Class Size District - K-8, 2018 - 2019 Average Class Size School MSHS, 2018 - 2019 Average Class Size City MSHS, 2018-2019 Average Class Size City - K-8, 2018 - 2019 Average Class Size Boro K8, 2018-2019 Average Class Size Borough - Middle & High School, 2018-2019 Average Class Size District - Middle & High School, 2018-2019 Average Class Size Borough - K-8, 2018-2019 Average Class Size City - Middle & High School, 2021 -2022 City, 2021 - 2022 Pilot, 2021 - 2022 by School, 2021 - 2022 by District, 2021 - 2022 by Borough, 2021_Prelim_Avg_ClassSize_City, 2021_Prelim_Avg_ClassSize_District, 2021_Prelim_Avg_ClassSize_Borough, 2021_Prelim_Avg_ClassSize_School)
+    *   Percentage Class Size (2017-2018 November2017 Pct Class Size District MSHS, 2017-2018 November2017 Pct Class Size District K8, 2017-2018 November2017 Pct Class Size City MSHS, 2017-2018 November2017 Pct Class Size City K8, 2018-2019 Prelim Percentage Class Size City - MS & HS, 2018-2019 Prelim Percentage Class Size Borough - MS & HS, 2018-2019 Prelim Percentage Class Size City - K-8TH, 2018-2019 Prelim Percentage Class Size Borough - K-8TH, Prelim Percentage Class Size District - K-8TH, Prelim Percentage Class Size District - MS & HS, 2018 - 2019 Class Size Pct City MSHS, 2018 - 2019 Class Size Pct Boro MSHS, 2018 - 2019 Class Size Pct District MSHS, 2018 - 2019 Class Size Pct District K8, 2018 - 2019 Class Size Pct City K8, 2021_Prelim_Distribution_ClassSize_City, 2021_Prelim_Distribution_ClassSize_District, 2021_Prelim_Distribution_ClassSize_Borough)
+    *   Class Size Distribution (2017- 2018 Class Size Report Borough Middle And High School, 2017- 2018 Class Size Report District K-8 Class Size Distribution, 2017-2018 Class Size Report City K-8 Class Size Distribution, 2018-2019 Class Size Report Borough Middle & High School Class Size Distribution, 2018-2019 Class Size Report Borough K-8 Class Size Distribution, 2018-2019 Class Size Report City Middle & High School Class Size Distribution, 2018-2019 Class Size Report District K-8 Class Size Distribution, 2017- 2018 Class Size Report City Middle And High School Core Average Class Size, 2017- 2018 Class Size Report District K-8 Average Class Size, 2017-2018 Class Size Report City K-8 Average Class Size, 2017-2018 Class Size Report Borough K-8 Average Class Size, 2021 - 2022 Class Size Distribution Citywide, 2021 - 2022 Class Size Distribution by District, 2021 - 2022 Class Size Distribution by Borough, 2017- 2018 Class Size Report District Middle And High School Class Size Distribution)
+    *   Final Class Size Report (2015 - 2016 Pupil-to-Teacher Ratio (PTR), 2015 - 2016 K to 8 Average, 2015 - 2016 Middle & High School)
+    *   2017-2018 SCHOOL LEVEL CLASS SIZE REPORT
+    *   2015-16 Class Size Report - MS And HS Average
+    *   2015-16 Class Size Report - K To 8 Average
+    *   2015-2016 Class Size Report - Pupil To Teacher Ratio
+    *   2017 - 2018 Avg Class Size Borough MSHS
+    *   2018 -2019 Average Class Size K8 Borough
+    *   2018 - 2019 Average Class Size District MSHS
+    *   2018 - 2019 Class Size Pupil to Teacher Ratio
+    *   2018 - 2019 Average Class Size Report School K-8
+    *   2018 - 2019 Average Class Size Boro MSHS
+    *   2018-2019 Average Class Size District - K-8
+    *   2018-2019 Average Class Size City - Middle & High School
+    *   2018-2019 Average Class Size Borough - K-8
+    *   2018-2019 Average Class Size City - K-8
+    *   2018-2019 Average Class Size District K8
+    *   2018-2019 Average Class Size Borough - Middle & High School
+    *   2021 -2022 Average Class Size City
+    *   2021 - 2022 Average Class Size by School
+    *   2021 - 2022 Average Class Size by District
+    *   2021 - 2022 Average Class Size by Borough
+    *   2017-2018 Physical Education - Licensed PE Teachers
+    *   2017-2018 Physical Education Instruction - District Level
+    *   2017-2018 Physical Education Instruction - Borough Level
+    *   2017-2018 Physical Education Instruction - School Level
+    *   2016-17 Physical Education - Licensed PE Teachers
+    *   2016-17 Physical Education - PE Instruction - District Level
+    *   2016-17 Physical Education - PE Instruction - Borough Level
+    *   2016-17 Physical Education - PE Instruction - School Level
+    *   2015-16 Physical Education - Licensed PE Teachers
+    *   2015-2016 Physical Education - PE Instruction Borough
+    *   2015-2016 Physical Education - PE Instruction - District Level
+    *   2017-2018 Physical Education - Supplemental Programs
+    *   2015-2016 Physical Education - PE Space - Supplemental Programs
+    *   2015-2016 Physical Education - PE Space - Borough Level
+    *   2015-2016 Physical Education - PE Space - Certified PE Teachers
+    *   2015-2016 Physical Education - PE Space - School Level
+    *   2016-17 Physical Education - PE Space
+    *   2017-2018 Physical Education - PE Space
+    *   2015-2016 Physical Education - PE Space
+    *   PE Report
+    *   2020-2021 Local Law 102 Physical Education
+    *   2019-2020 Local Law 102 Physical Education Report -Final
+    *   2015-16 Guidance Counselor Post Secondary Planning
+    *   2017-2018 Guidance Counselor Report
+    *   2018-19 Guidance Counselor Report - Guidance Counselor
+    *   2018-19 Guidance Counselor Report - Social Worker
+    *   2018-19 Guidance Counselor Report - Post Secondary Planning
+    *   2018-19 Guidance Counselor Report - Demographic Data
+    *   2016 - 2017 Guidance Counselor Report
+    *   2015 - 2016 Guidance Counselor Report
+    *   2014 - 2015 Guidance Counselor Report
+    *   2014 - 15 Guidance Counselor Data
+    *   2014 - 15 Guidance Counselor Reporting - Social Worker Data
+    *   2014 - 15 Guidance Counselor Reporting - Post Secondary Planning
+    *   2014 - 15 Guidance Counselor Bill Demographic Data
+    *   2015-16 Guidance Counselor SW&GC - Data
+    *   2015-16 Guidance Counselor Bill Demographic Data
+    *   2015-16 Guidance Counselor Reporting - Social Worker Data
+    *   2015-16 Guidance Counselor Reporting - Post Secondary Planning
+    *   2015-16 Guidance Counselor Reporting - Guidance Counselor Data
+    *   2015-16 Social Worker Data
+    *   2020-21 Guidance Counselor/Social Worker Data - Demographic, Post Secondary
+    *   2021 -2022 Guidance Counselor
+    *   2015-16 Health Education K-12 - Licensed Health Instructors
+    *   2015-16 Local Law 15 Health Data - K-12 Health Instructors
+    *   2017-2018 Health Education Report MS (54) - City Council District
+    *   2017-2018 Health Education Report MS (54) - District
+    *   2017-2018 Health Education Report MS (54) - School
+    *   2017-2018 Local Law 15 Health Instructor - Professional
+    *   2017-2018 Local Law Licensed Health Instructor - School
+    *   2015-16 Local Law 15 Health Data K-12 Health Instructor CCD
+    *   2016 - 2017 Health Education Instructor Report
+    *   2015-16 Health Education K-12 - Health Instructors
+    *   2017-2018 Local Law 15 Health Instructor - Community School District
+    *   2016-2017 Local Law 15 K-12 Health Data - Health Instructor
+    *   2015-16 Local Law 15 Health Data - Licensed Health Instructors
+    *   Local Law 14 Health Data (HlV/AIDS Lessons)
+    *   Local Law 14 Health Data (High School)
+    *   Local Law 14 Health Data (Middle School)
+    *   2019 - 2020 School Year Local Law 226 Report for the Demographics of School Staff - Gender
+    *   2019 - 2020 School Year Local Law 226 Report for the Demographics of School Staff - Ethnicity
+    *   2018 - 2019 Gender and Sexuality Report
+*   **Demographics & Enrollment:**
+    *   Demographic Snapshot (2013-2018 School, 2013-2018, 2013-2018 Borough, 2013-2018 District, 2016 - 2017, 2018-2019 School, 2018-2019 Borough, 2018-2019 District, 2019-20 Citywide, 2019-20 Borough, 2019-20 District, 2019-20 School, 2020-2021 Citywide, 2020-2021 District, 2020-2021 Borough, 2020-2021 School, 2017-18 - 2021-22, 2011 - 2016, 2014 - 2015, 2018-2019 Citywide, 2013-2014 - 2017- 2018 Citywide)
+    *   Demographic Data (2015-16 Grades K-8 Special Programs, 2015-16 Grades K-8 School, 2015-16 Grades 9-12 District, 2015-16 Grades 9-12 School, 2015-16 Admissions Methods, 2015-16 Pre-Kindergarten, 2015-16 Diversity Efforts, 2015-16 Grades K-8 District)
+    *   Diversity Report (2016-2017 Pre-Kindergarten, K-8 & Grades 9-12 District, Schools, Special Programs, Diversity Efforts, Admissions Methods, 2017 Pre-Kindergarten, 2017 K-8 District, 2017 K-8 School, 2017 K-8 Special Programs, 2017 9-12 District, 2017 9-12 School, 2017 Diversity Efforts, 2017 Admissions Methods, 2018 Pre-Kindergarten, 2018 K-8 District, 2018 K-8 School, 2018 K-8 Special Programs, 2018 9-12 District, 2018 9-12 School, 2018 Diversity Efforts, 2018 Admissions Methods, 2018-2019 Pre-Kindergarten, K-8 & Grades 9-12 District, Schools, Special Programs, Diversity Efforts, Admissions Methods, 2020 - 2021, 2014-2015 K-8 & Grades 9-12 District, Schools, Special Programs, Diversity Efforts, 2015-2016 K-8 & Grades 9-12 District, Schools, Special Programs, Diversity Efforts, Admissions Methods)
+    *   Pre-K For All Demographic Snapshot (2018-2019, 2013-2018)
+    *   3K For All Demographic Snapshot (2018-2019, 2017 - 2018)
+    *   Students in Temporary Housing (2019-2020, 2021, 2018 - 2019 Citywide Report, 2018 - 2019 School Level Report, 2018 - 2019 Additional Sections Report, 2018-2019 School)
+    *   2009 Public Data File Students
+    *   2016 Public Data File Student
+    *   2017 Public Data File Student
+    *   2019 Public Data File - Students
+    *   2021 Public Data File -Student
+    *   2009 Public Data File Students D75
+    *   2008 Public Data File Gen Ed
+    *   2010 Gen Ed Survey Data
+    *   2012 NYC General Education School Survey
+    *   2008 General Education School Survey
+    *   2009 GenEd Survey Data
+    *   2016 - 2012 School Demographics and Accountability Snapshot
+    *   2019-20 Demographic Data In NYC Public Schools Suppressed - Pre-K, K-8 & 9-12 Grades
+    *   2022 Fall Diversity in Admissions Outcomes - MS
+*   **School Information & Directories:**
+    *   School Zones (2024-2025 Elementary School, 2024-2025 High School, 2024-2025 Middle School)
+    *   School Zones Map 2024-2025
+    *   School Point Locations (2019 - 2020, General)
+    *   School Locations (2013 - 2014, 2014 - 2015, 2015 - 2016, 2016 - 2017, 2017 - 2018, 2018 - 2019, 2019 - 2020, 2012 - 2013)
+    *   NYC DOE Public School Location Information
+    *   High School Directory (2009-2010, 2011-2012, 2012-2013, 2013-2014, 2014-2015, 2015-2016, 2016, 2017, 2018, 2019, 2020, 2021, 2008-2009)
+    *   Middle School Directory (2018, 2019, 2020, 2021)
+    *   Kindergarten Directory (2018 Staten Island, 2018 Manhattan, 2018 Bronx, 2018 Brooklyn, 2018 Queens)
+    *   Pre-K School Directory (2018)
+    *   Universal Pre-K (UPK) School Locations
+    *   UNIVERSAL_PRE_K
+    *   Universal Pre-K (map)
+    *   Community Schools List (2021 - 2022, SY 2021-2022)
+    *   2012 NYC Community Schools Survey
+    *   2011 NYC Community Schools Survey
+    *   2012 Community School Survey
+    *   iZone School List
+    *   iZone PLS School List
+    *   Borough Enrollment Centers (Additional Ways To Graduate)
+    *   Borough Enrollment Offices
+    *   GED Plus Locations
+    *   Referral Centers For High School Alternatives
+    *   OACE (Office of Adult and Continuing Education) Sites
+    *   2018 - 2019 Co-Location Report
+    *   2019-2020 Co-Location Reporting
+    *   2020-2021 Co-Location Report
+    *   2014 - 2015 Co-Location Report
+    *   2015 - 2016 Co-Location Reports
+    *   2016-17 Co-Location Reporting
+    *   2012 2013 Co- Location Memorandums
+    *   2014-2015 CoLocation Reporting
+    *   Underutilized Space Report
+*   **School Quality & Progress Reports:**
+    *   School Progress Report (2007 - 2008, 2008 - 2009, 2009 - 2010, 2010 - 2011, 2011 - 2012, 2012-2013, General)
+    *   School Progress Reports - All Schools (2006-07, 2007 - 2008, 2008 - 2009, 2009 - 2010, 2010 - 2011, 2011-2012)
+    *   School Progress Report Multi-year (2006 - 2011, 2007 - 2011)
+    *   Citywide Progress Report (2011 - 2012, 2012 - 2013, 2006 - 2013)
+    *   Transfer High School Progress Report (2012 - 2013, 2011-2012)
+    *   YABC Progress Report (2012 - 2013, 2011 - 2012, 2012-2013 Young Adult Borough Centers, 2017 - 2018 Young Adult Borough Centers)
+    *   D75 Progress Reports (2012 - 2013, 2011 - 2012)
+    *   School Quality Reports Data
+    *   School Quality Guide (2019-20 Elementary Middle School, 2019-20 High School Transfer, 2019-20 High Schools, 2019-20 Citywide Distict 75, 2019-20 Early Childhood, 2018 -2019 SQG EC, 2018- 2019 SQG EMS)
+    *   Quality Review Ratings (2005 - 2020, 2005 - 2012)
+    *   Quality Review School List (2018-2019, 2019 - 2020, 2017 - 2018)
+    *   2016-2017 Elem MS Quality Reports
+    *   2012-2013 Elem MS K-8
+    *   2011-2012 Elem MS K-8
+    *   2012-2013 Early Childhood Progress Report
+    *   2011-2012 Early Childhood Progress Report
+    *   2015-2016 MTI All-Star Schools
+    *   2016-17 Physical Education - MTI All- Star Schools
+*   **School Surveys (General):**
+    *   NYC School Survey (2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2019)
+    *   D75 School Survey Data (2009, 2010, 2011, 2012, 2013, 2008, 2012 NYC District 75 Schools Survey, 2011 NYC District 75 School Survey, 2009 District 75 Survey Data, 2008 District 75 School Survey)
+    *   Student Survey Data (2017 - 2018, 2019)
+    *   Parent School Survey Data (2014 - 2015, 2017 - 2018, 2019, 2021 Public Data File - Parent)
+    *   Teacher Survey Data (2014 - 2015, 2017 - 2018, 2019, 2021 Public Data File - Teacher)
+*   **Student Discipline & Safety:**
+    *   Student Discipline Annual Report (2015 2016 LENGTH IN DAYS, 2017-2018 GENDER, 2017-2018 LENGTH IN DAYS, 2016-2017 LENGTH IN DAYS, 2016-2017 GENDER, 2016-2017 D CODE, 2016-2017 Students In Temporary Housing, 2016-2017 AGE, 2016-2017 RACE, 2016-2017 IEP, 2016-2017 TRANSFERS, 2016-2017 RPS TOTALS, 2015 2016 GENDER, 2015 2016 IEP, 2015 2016 GRADE LEVEL, 2015 2016 AGE, 2015 2016 D Code, 2015 2016 ELL, 2015 2016 RACE, 2015 2016 R P S TOTALS, 2015 2016 Students In Temporary Housing, 2015 2016 Transfers, 2017-2018 Transfers, 2017-2018 ELL, 2017-2018 D Code, 2017-2018 RACE, 2017-2018 AGE, 2017-2018 Students in Temporary Housing, 2017-2018 Grade Level, 2017-2018 IEP, 2017-2018 R-P-S TOTALS, 2020-2021 All, 2020-2021 09222021 LL93 All, 2020-2021 09212021 LL93 All)
+    *   Suspension Report NYPD Contacts (2015-2018, 2020-2021 All)
+    *   Multiple Removals 2015-2018
+    *   Violent and Disruptive Incidents
+    *   School Safety Report (2010 - 2016, 2015 - 16, 2016 - 2017)
+    *   2017 - 2018 Schools NYPD Crime Data Report
+    *   2018-2019 Bullying Harassment Discrimination Bi- Annual Report
+    *   2017 - 2018 Bullying Harassment Dicrimination Bi- Annual Report
+    *   2019-2020 Local Law 231
+    *   2020-2021 Local Law 231 Training Data
+    *   2019- 2020 Submission MF LL231 7142020
+    *   2019-2020 PSAL Report - (December 2020)
+    *   2018-2019 Local Law 120 Public School Athletic League
+*   **Admissions & Guides:**
+    *   Pre-Kindergarten Admissions Guide (2019, 2020, 2021)
+    *   Kindergarten Admissions Guide (2019, 2020, 2021)
+    *   Gifted and Talented Admissions Guide (2019, 2020)
+    *   2019 Fall Admissions LL1486
+    *   Fall 2020 Admissions Report LL1486-A Part II
+    *   2020 Fall Admission LL1486
+    *   2021 Fall Admission LL1486
+    *   2019 Fall Admission LL1486 Part II
+    *   Specialized High Schools Admissions Overall Summary
+    *   Specialized High Schools Admissions Tests Results
+    *   Selection Criteria for Fall 2021 High School Admissions
+    *   Middle School Virtual Recruitment URLs Posted on MySchools - 2020-2021 School Year
+    *   High School Virtual Recruitment URLs Posted on MySchools - 2020-2021 School Year
+*   **Other Reports & Data:**
+    *   2015 NYC School Survey
+    *   2014 NYC School Survey
+    *   2016 NYC School Survey
+    *   2010 NYC School Survey
+    *   2012 NYC School Survey
+    *   2013 NYC School Survey
+    *   2017 NYC School Survey
+    *   2015 - 2016 Computer Science Report
+    *   2017-2018 Computer Science Report LL177
+    *   2014 - 2015 Arts Reports
+    *   2015-2016 Arts Survey Data
+    *   2016 - 2017 Arts Survey data
+    *   2017-2018 Arts Data Report
+    *   2018 - 2019 Arts Data Survey
+    *   2019-2020 Arts Report
+    *   2019-2020 Arts Survey Data
+    *   2021 Arts Data Report
+    *   2011 - 2014 Annual Arts in School Reports
+    *   2015-16 Local Law 60 Meal Periods
+    *   2015 2016 Local Law 60 Summary
+    *   2015 2016 Local Law 60 Bathroom& Non- Instructional Space
+    *   2017-2018 Local Law 60 Annual Report
+    *   SY2021 Local Law 60 Annual Report
+    *   2015 2016 Local Law 60 Room Detail
+    *   Local Law 51 Fall Semester Final
+    *   Local Law 51 Spring Semester Final
+    *   Local Law 51 - DL Final
+    *   2021 LL51 Spring Semester DL FINAL REDACT
+    *   Local Law 68 - Billy's Law Reporting
+    *   Billy's Law Reporting Local Law 68 - February 1, 2019
+    *   FY20 Local Law 16 Final Report
+    *   FY2020 Local Law 16 Final Report
+    *   2020 - 2021 LL Settlement Data
+    *   2012 - 2015 Historical Daily Attendance By School
+    *   2015 - 2018 Historical Daily Attendance By School
+    *   2018-2021 Daily Attendance by School
+    *   2017 - 2018 Current Year Monthly Attendance
+    *   Learning Preference City Remote Learning - as of Jan 4, 2021
+    *   2020 Summer School Remote Learning
+    *   2020 - 2021 Remote Learning Legislation Device Request
+    *   School Closure Discharge Reporting (2012-2015, 2015-2018, Local Law 42)
+    *   2012 - 2013 High School Performance-Directory
+    *   2014-2015 DOE High School Performance-Directory
+    *   2016 DOE High School Performance Directory
+    *   2013-2014 DOE High School Programs
+    *   2014-2015 DOE High School Programs
+    *   2016 DOE High School Programs
+    *   2012 - 2013 Transfer High School Progress Report
+    *   2011-2012 Transfer High School Progress Report
+    *   2012 - 2013 YABC Progress Report
+    *   2011 - 2012 YABC Progress Report
+    *   2017 - 2018 Young Adult Borough Centers
+    *   2012 - 2013 D75 Progress Reports
+    *   2011 - 2012 D75 Progress Report
+    *   2012 D75 School Survey Data
+    *   2011 D75 School Surveys
+    *   2009 District 75 Survey Data
+    *   2008 District 75 School Survey
+    *   2012 NYC District 75 Schools Survey
+    *   2011 NYC District 75 School Survey
+    *   2015 - 2016 Audited Register Data
+    *   Energy Usage From DOE Buildings
+    *   2022 Annual Sustainability Project Grant
+    *   Court Liaison Contact Sheet
+    *   2018 - 2020 CLASS and ECERS-R Data
+
+**Section 5, Non-tabular Data Summary:**
+
+The agency maintains a variety of non-tabular information crucial for its operations and compliance, including:
+
+*   **Application and Consent Forms:** Signed job applications, physician orders, parental consent forms for medication administration, and written substantiation of religious objections (e.g., for dissection, health exams).
+*   **Policy and Program Documents:** Rules and regulations (commissioner's, board of regents, federal), school district policies (e.g., dissection policy, meal shaming plan, sudden cardiac arrest plan), curriculum documents (e.g., internet safety curricula, reading instructional best practices), written program plans (for animal experimentation waivers, health training), program plans for health training for secondary students, policies and procedures for supported employment programs.
+*   **Reports and Studies:** Research documents, reports to the governor and legislature (e.g., on animal experimentation waivers, integrated employment implementation), annual reviews of reading curriculum and instructional practices, vocational rehabilitation studies, investigations, demonstrations, research, reports, state interagency plan for integrated employment opportunities, annual reports on integrated employment implementation plan, vocational education and extension board annual reports, vocational education and extension board survey reports on career education and extension needs, gifts and donations annual report.
+*   **Financial and Administrative Records:** Receipts, compensation agreement details, audit protocols for verifying costs of integrated employment programs, sharing agreements for health professionals between districts.
+*   **Communication and Outreach Materials:** Notices to parents (e.g., for missing health certificates, meal account balances), informational materials from public libraries, website content (e.g., advanced course notifications), newsletters used by nutrition advisory committees to inform parents, written informational material on epinephrine device use (provided to teachers), information on sudden cardiac arrest (developed by Commissioner of Health and Department, posted on websites, included in athletic permission forms), food service ingredient lists and nutritional information (detailed content provided by food service companies), water safety information documents (produced by Commissioner of Health, provided to school districts and parents), bedbug prevention information (developed by the board of education in consultation with city agencies, provided to parents).
+*   **Physical Assets/Records:** Photos, insignia for State Seal of Biliteracy, signs/notices for AED locations, student cumulative health records, pupil's permanent health record.
+*   **Meeting Records:** Meeting minutes and recommendations from Nutrition Advisory Committees, vocational education and extension board advisory committee records.
+*   **Operational Guidelines:** Course of exercises and instruction for Conservation Day (prescribed by commissioner), lists of dental practices for free/reduced cost services, vocational education and extension board rules and regulations for transaction of business and administration of work.
