@@ -2,12 +2,12 @@
 
 Here's the October update on datasets that the Parks Department releases on Open Data. 
 
-**Datasets that are behind on target updates: **
+**Datasets that are behind on target updates:**
 | Dataset name | URL | Date made public | Last updated on | Automation | Update frequency | Updated on time | Number of rows |
 |---|---|---|---|---|---|---|---|
 | Forestry Planting Spaces | https://data.cityofnewyork.us/d/82zj-84is | 8-Mar-17 | 5-Mar-25 | Yes | Every 2 weeks | No | 1,091,709 |
 
-**Datasets without specific target updates, with no update in over a year: **
+**Datasets without specific target updates, with no update in over a year:**
 These datasets may not require updates, since the "As needed" update tag indicates that they aren't changed on a regular frequency. 
 
 | Dataset name | URL | Date made public | Last updated on | Automation | Update frequency | Updated on time | Number of rows |
